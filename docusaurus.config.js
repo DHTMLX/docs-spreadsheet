@@ -125,10 +125,10 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
-    title: 'DHTMLX Suite 7 Docs',
-    tagline: 'DHTMLX Suite 7 Docs',
+    title: 'DHTMLX Spreadsheet Doc',
+    tagline: 'DHTMLX Spreadsheet Doc',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/suite/',
+    baseUrl: '/spreadsheet/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
