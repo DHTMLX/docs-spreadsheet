@@ -125,15 +125,16 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
+    noIndex: true, // todo: delete before release
     title: 'DHTMLX Spreadsheet Doc',
     tagline: 'DHTMLX Spreadsheet Doc',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/spreadsheet/',
+    baseUrl: '/spreadsheet_new/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name
-    projectName: 'docs-suite', // Usually your repo name
+    projectName: 'docs-spreadsheet', // Usually your repo name
     trailingSlash: true,
     themeConfig: {
         colorMode: {
