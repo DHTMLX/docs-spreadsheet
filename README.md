@@ -1,4 +1,4 @@
-## DHTMLX Suite Documentation
+## DHTMLX Spreadsheet Documentation
 
 ### Installation
 
