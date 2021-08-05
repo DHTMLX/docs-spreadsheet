@@ -129,7 +129,7 @@ module.exports = {
     title: 'DHTMLX Spreadsheet Doc',
     tagline: 'DHTMLX Spreadsheet Doc',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/spreadsheet_new/',
+    baseUrl: '/spreadsheetalt/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
