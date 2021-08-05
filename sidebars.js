@@ -6,25 +6,35 @@ module.exports = {
     },
     {
       type: "category",
-      label: "SpreadSheet API",
+      label: "Spreadsheet API",
       collapsible: true,
       collapsed: false,
       items: [
-        // "whatsnew",
+        "api/api_overview",
         // "migration",
       ],
     },
     {
-      type: "doc",
-      id: "whats_new",
+      type: "category",
+      label: "Whats new and migration",
+      collapsible: true,
+      collapsed: false,
+      items: [
+        "whats_new",
+        "migration",
+      ],
+    },
+    {
+      //type: "doc",
+      //id: "whats_new",
+    },
+    {
+      //type: "doc",
+      //id: "migration",
     },
     {
       type: "doc",
-      id: "migration",
-    },
-    {
-      type: "doc",
-      id: "overview",
+      id: "overview", //to index?
     },
     {
       type: "category",

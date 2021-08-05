@@ -3,6 +3,9 @@ sidebar_label: What's New
 title: What's New
 description: changetext
 ---
+
+# What's new
+
 ```
 <style>
 .rel_date_pivot{

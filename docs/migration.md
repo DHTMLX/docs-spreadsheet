@@ -1,11 +1,18 @@
-Migration from 2.1 to 3.0
-======================
+---
+sidebar_label: Migration
+title: Migration
+description: changetext
+---
+
+# Migration
+
+## Migration from 2.1 to 3.0
+
 
 This article will help you to migrate from the [previous version 2.1](https://docs.dhtmlx.com/spreadsheet__index.html) where dhtmlxSpreadSheet was PHP-based
 to the totally renewed version 3.0 in which the component is totally built on JavaScript. Check the list below to explore all the changes.
 
-2.1 -> 3.0
----------
+## 2.1 -> 3.0
 
 {{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](api/refs/spreadsheet.md).}}
 
