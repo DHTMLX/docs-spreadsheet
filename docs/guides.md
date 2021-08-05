@@ -10,7 +10,7 @@ adaptable structure of a spreadsheet, readonly mode, wide possibilities for look
 {{note There is a [User Guide](user_guide.md) provided to make work with SpreadSheet easy for your end users.}}
 
 
-<table  style='border-left:none !important;' cellspacing="0" cellpadding="5" border="0">
+<table  cellspacing="0" cellpadding="5" border="0">
 	<tbody>
     <tr>
 		<td id="data" class='topics'>
