@@ -1,3 +1,9 @@
+---
+sidebar_label: spreadsheet
+title: JavaScript Spreadsheet - 
+description: changetext
+---
+
 getFormat
 ================
 

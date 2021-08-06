@@ -11,6 +11,8 @@ module.exports = {
       collapsed: false,
       items: [
         "api/api_overview",
+        "api/spreadsheet_addrow",
+        "api/spreadsheet_addcolumn"
         // "migration",
       ],
     },

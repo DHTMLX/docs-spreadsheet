@@ -1,8 +1,13 @@
-addRow
-==============
+---
+sidebar_label: addRow()
+title: JavaScript Spreadsheet - addRow Method
+description: changetext
+---
 
-@short:
-	adds a new row into the spreadsheet
+# addRow()
+
+@short: adds a new row into the spreadsheet
+
 @params:
 - cell		string			the id of a cell that contains the id of a row that should be added
 

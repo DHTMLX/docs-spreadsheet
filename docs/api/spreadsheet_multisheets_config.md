@@ -4,14 +4,15 @@ title: multiSheets
 description: changetext
 ---
 
+# multiSheets
+
 @short: enables/disables the ability to work with multiple sheets in the spreadsheet
-	
 
 @type: boolean
-@default: true 
+@default: true
 
 @example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {			
+var spreadsheet = new dhx.Spreadsheet(document.body, {
 	multiSheets: false
 });
 

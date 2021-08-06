@@ -1,8 +1,13 @@
+---
+sidebar_label: spreadsheet
+title: JavaScript Spreadsheet - 
+description: changetext
+---
+
 addColumn
 ==============
 
-@short:
-	adds a new column into the spreadsheet
+@short: adds a new column into the spreadsheet
     
 @params:
 - cell		string			the id of the cell that contains the id of a column that should be added
