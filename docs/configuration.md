@@ -1,5 +1,11 @@
-Configuration
-==================
+---
+sidebar_label: Configuration
+title: JavaScript Spreadsheet - Configuration
+description: changetext
+---
+
+# Configuration
+
 
 You can adjust the desired settings of dhtmlxSpreadSheet to meet your needs. The available configuration options allow you to limit the number of rows and columns, change the toolbar appearance and control
 the visibility of the menu and the editing bar. You can also initialize SpreadSheet in the readonly mode, if needed.

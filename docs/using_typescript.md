@@ -1,5 +1,11 @@
-Using SpreadSheet with TypeScript
-=========================
+---
+sidebar_label: Using SpreadSheet with TypeScript
+title: JavaScript Spreadsheet - Using SpreadSheet with TypeScript
+description: changetext
+---
+
+# Using SpreadSheet with TypeScript
+
 
 Starting from v4.0, the library of dhtmlxSpreadSheet provides the ability to use TypeScript definitions. The built-in support of Typescript works out of the box.
 

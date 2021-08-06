@@ -1,5 +1,11 @@
-Integration with Angular
-========================
+---
+sidebar_label: Integration with Angular
+title: JavaScript Spreadsheet - Integration with Angular
+description: changetext
+---
+
+# Integration with Angular
+
 
 You can use dhtmlxSpreadSheet in an application created with the [Angular](https://vuejs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/angular-widgets).
 

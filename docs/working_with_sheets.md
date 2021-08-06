@@ -1,5 +1,11 @@
-Work with Sheets
-=========================
+---
+sidebar_label: Work with Sheets
+title: JavaScript Spreadsheet - Work with Sheets
+description: changetext
+---
+
+# Work with Sheets
+
 
 Starting from v4.1, the library allows working with [multiple sheets](api/spreadsheet_multisheets_config.md) in the spreadsheet.
 

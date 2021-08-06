@@ -1,5 +1,11 @@
-Event Handling
-================
+---
+sidebar_label: Event Handling
+title: JavaScript Spreadsheet - Event Handling
+description: changetext
+---
+
+# Event Handling
+
 
 ## Attaching Event Listeners
 

@@ -1,5 +1,11 @@
-Number Formatting
-==================
+---
+sidebar_label: Number Formatting
+title: JavaScript Spreadsheet - Number Formatting
+description: changetext
+---
+
+# Number Formatting
+
 
 DHTMLX SpreadSheet supports number formatting that you can apply for numeric values in cells. 
 

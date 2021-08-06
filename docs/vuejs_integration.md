@@ -1,5 +1,11 @@
-Integration with Vue.js
-=====================
+---
+sidebar_label: Integration with Vue.js
+title: JavaScript Spreadsheet - Integration with Vue.js
+description: changetext
+---
+
+# Integration with Vue.js
+
 
 You can use dhtmlxSpreadSheet in an application created with the [Vue.js](https://vuejs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/vuejs-widgets).
 

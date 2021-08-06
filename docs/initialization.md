@@ -1,5 +1,11 @@
-Initialization
-=========================
+---
+sidebar_label: Initialization
+title: JavaScript Spreadsheet - Initialization
+description: changetext
+---
+
+# Initialization
+
 
 This guide will give you detailed instructions on how to create dhtmlxSpreadSheet on a page to enrich your application with features of a mighty worksheet.
 Follow the steps below to get a ready-to-use component:

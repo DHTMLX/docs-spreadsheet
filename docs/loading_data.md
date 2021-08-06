@@ -1,5 +1,11 @@
-Data Loading and Export
-==========================
+---
+sidebar_label: Data Loading and Export
+title: JavaScript Spreadsheet - Data Loading and Export
+description: changetext
+---
+
+# Data Loading and Export
+
 
 You can populate dhtmlxSpreadSheet with a ready dataset that may include the data itself and styling for cells. The component supports two ways of data loading:
 

@@ -1,5 +1,11 @@
-Data Formatting
-==================
+---
+sidebar_label: Data Formatting
+title: JavaScript Spreadsheet - Data Formatting
+description: changetext
+---
+
+# Data Formatting
+
 
 Color and style
 ---------------------

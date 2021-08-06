@@ -1,11 +1,10 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: addColumn() 
+title: JavaScript Spreadsheet - addColumn Method
 description: changetext
 ---
 
-addColumn
-==============
+# addColumn()
 
 @short: adds a new column into the spreadsheet
     

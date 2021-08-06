@@ -1,11 +1,11 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: addSheet
+title: JavaScript Spreadsheet - addSheet Method
 description: changetext
 ---
 
-addSheet
-==============
+# addSheet
+
 
 @short:
 	adds a new sheet into the spreadsheet

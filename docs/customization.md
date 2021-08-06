@@ -1,5 +1,11 @@
-Customization
-==================
+---
+sidebar_label: Customization
+title: JavaScript Spreadsheet - Customization
+description: changetext
+---
+
+# Customization
+
 
 You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for SpreadSheet.
 

@@ -1,5 +1,11 @@
-Work with Rows and Columns
-==================
+---
+sidebar_label: Work with Rows and Columns
+title: JavaScript Spreadsheet - Work with Rows and Columns
+description: changetext
+---
+
+# Work with Rows and Columns
+
 
 dhtmlxSpreadSheet allows adding and removing columns and rows into a sheet via both toolbar buttons and options of the context menu.
 

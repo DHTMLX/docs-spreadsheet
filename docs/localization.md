@@ -1,5 +1,11 @@
-Localization
-===================
+---
+sidebar_label: Localization
+title: JavaScript Spreadsheet - Localization
+description: changetext
+---
+
+# Localization
+
 
 You can localize labels in the interface of dhtmlxSpreadSheet and present it in any necessary language. You just need to provide localized strings for labels and apply your locale to the component.
 

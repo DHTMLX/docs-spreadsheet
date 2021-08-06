@@ -1,5 +1,11 @@
-Integration with React
-=============================
+---
+sidebar_label: Integration with React
+title: JavaScript Spreadsheet - Integration with React
+description: changetext
+---
+
+# Integration with React
+
 
 You can use dhtmlxSpreadSheet in an application created with the [React](https://reactjs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/react-widgets).
 

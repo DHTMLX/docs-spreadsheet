@@ -1,6 +1,6 @@
 ---
 sidebar_label: What's New
-title: What's New
+title: JavaScript Spreadsheet - What's New
 description: changetext
 ---
 

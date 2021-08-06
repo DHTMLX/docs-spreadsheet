@@ -1,5 +1,11 @@
-How to Install dhtmlxSpreadSheet
-====================
+---
+sidebar_label: How to Install dhtmlxSpreadSheet
+title: JavaScript Spreadsheet - How to Install dhtmlxSpreadSheet
+description: changetext
+---
+
+# How to Install dhtmlxSpreadSheet
+
 
 To install SpreadSheet package into your project you need to download the component package and include source files on a page by setting paths to them.  
 

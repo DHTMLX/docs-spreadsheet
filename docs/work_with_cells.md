@@ -1,5 +1,11 @@
-Work with Cells
-==================
+---
+sidebar_label: Work with Cells
+title: JavaScript Spreadsheet - Work with Cells
+description: changetext
+---
+
+# Work with Cells
+
 
 Entering content in a cell
 -------------------------------

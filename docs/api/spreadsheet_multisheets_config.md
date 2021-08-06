@@ -1,6 +1,6 @@
 ---
 sidebar_label: multiSheets
-title: multiSheets
+title: JavaScript Spreadsheet - multiSheets Config
 description: changetext
 ---
 

@@ -1,5 +1,11 @@
-Work with SpreadSheet
-=========================
+---
+sidebar_label: Work with SpreadSheet
+title: JavaScript Spreadsheet - Work with SpreadSheet
+description: changetext
+---
+
+# Work with SpreadSheet
+
 
 While users interact with SpreadSheet via its intuitive interface, you can work with the component using [simple API](api/refs/spreadsheet.md).
 

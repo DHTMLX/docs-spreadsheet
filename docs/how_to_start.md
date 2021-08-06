@@ -1,5 +1,11 @@
-How to Start
-=============
+---
+sidebar_label: How to Start
+title: JavaScript Spreadsheet - How to Start
+description: changetext
+---
+
+# How to Start
+
 
 {{note This documentation is dedicated to the renewed dhtmlxSpreadSheet of version 3.0. To get information about the previous version 2.1, 
 [follow the related documentation](https://docs.dhtmlx.com/spreadsheet__index.html).}}
