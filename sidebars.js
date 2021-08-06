@@ -11,9 +11,40 @@ module.exports = {
       collapsed: false,
       items: [
         "api/api_overview",
-        "api/spreadsheet_addrow",
-        "api/spreadsheet_addcolumn"
-        // "migration",
+        {
+          type: "category",
+          label: "Spreadsheet methods",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/api_overview",
+            "api/spreadsheet_addrow",
+            "api/spreadsheet_addcolumn"
+          ],
+        },
+        {
+          type: "category",
+          label: "Spreadsheet events",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/api_overview",
+            //"api/spreadsheet_addrow",
+            //"api/spreadsheet_addcolumn"
+          ],
+        },
+        {
+          type: "category",
+          label: "Spreadsheet properties",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/api_overview",
+            //"api/spreadsheet_addrow",
+            //"api/spreadsheet_addcolumn"
+            
+          ],
+        },
       ],
     },
     {
