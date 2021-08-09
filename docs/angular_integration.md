@@ -6,23 +6,19 @@ description: changetext
 
 # Integration with Angular
 
+You can use dhtmlxSpreadSheet in an application created with the [Angular](https://angular.io/) framework. [Check the demo on Github](https://github.com/DHTMLX/angular-widgets).
 
-You can use dhtmlxSpreadSheet in an application created with the [Angular](https://vuejs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/angular-widgets).
+{{note Please note that the implementation provided below is not the only way to use dhtmlxSpreadSheet in a Angular-based application. It gives you initial schema of the integration and implies further extension of the app functionality depending on your goals.}}
 
-{{note Please note that the implementation provided below is not the only way to use dhtmlxSpreadSheet in a Angular-based application. It gives you initial schema of the integration and implies further 
-extension of the app functionality depending on your goals.}}
-
-Including source files
------------------
+## Including source files
 
 To add SpreadSheet package into your Angular-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
 
-Then include **spreadsheet.js** and **spreadsheet.css** files into a page. 
+Then include **spreadsheet.js** and **spreadsheet.css** files into a page.
 
 The source files are represented in two versions: the **full** version and the **minified** one. Make sure that you set correct relative paths to these files:
 
-{{snippet	index.html}}
-~~~html
+~~~ html title="index.html"
 // full version
 <script type="text/javascript" src="codebase/spreadsheet.js"></script>  
 <link rel="stylesheet" href="codebase/spreadsheet.css">
@@ -32,31 +28,27 @@ The source files are represented in two versions: the **full** version and the *
 <link rel="stylesheet" href="codebase/spreadsheet.min.css">
 ~~~
 
-Initialization
------------------
+## Initialization
 
-There are two possible scenarios of initializing SpreadSheet inside an Angular application. One consists in isolating SpreadSheet structure and data inside of the Angular component and another one suggests 
-separating view and data parts with the possibility of interaction between them.
+There are two possible scenarios of initializing SpreadSheet inside an Angular application. One consists in isolating SpreadSheet structure and data inside of the Angular component and another one suggests separating view and data parts with the possibility of interaction between them.
 
-###Scenario 1. Isolating SpreadSheet in an Angular component
+### Scenario 1. Isolating SpreadSheet in an Angular component
 
-In this variant SpreadSheet configuration and data are held inside of the Angular component with no bonds with the external part of the application. 
+In this variant SpreadSheet configuration and data are held inside of the Angular component with no bonds with the external part of the application.
 
-####SpreadSheet initialization
+#### SpreadSheet initialization
 
 - Create a *SpreadSheet.ts* file, where you will define a Component. Each component must have a template assigned, for SpreadSheet it will be a plain DIV tag with a named reference.
 
-{{snippet SpreadSheet.ts}}
-~~~js
+~~~js title="SpreadSheet.ts"
 @Component({
  	template: `<div #widget class='widget-box-wide'></div>`
 })
 ~~~
 
-- Use the `new Spreadsheet` constructor to initialize SpreadSheet inside of the container that you've set above: 
+- Use the `new Spreadsheet` constructor to initialize SpreadSheet inside of the container that you've set above:
 
-{{snippet SpreadSheet.ts}}
-~~~js
+~~~js title="SpreadSheet.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
   	@ViewChild('widget') container: ElementRef;
   	spreadsheet: Spreadsheet;
@@ -69,12 +61,11 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-####Loading data and changing config
+#### Loading data and changing config
 
 - Next you can load data into the SpreadSheet and do some actions, e.g. change style of a cell:
 
-{{snippet SpreadSheet.ts}}
-~~~js
+~~~js title="SpreadSheet.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
 	@ViewChild('widget') container: ElementRef;
   	spreadsheet: Spreadsheet;
@@ -92,17 +83,15 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-
-###Scenario 2. Exposing SpreadSheet data and config 
+### Scenario 2. Exposing SpreadSheet data and config
 
 This variant adds flexibility in the control over SpreadSheet data and configuration by allowing access to them from other parts of the application.
 
-####SpreadSheet  initialization
+#### SpreadSheet  initialization
 
 - The first step is the same. Create a file, let it be *SpreadSheet2.ts* this time, and add a container for the SpreadSheet:
 
-{{snippet SpreadSheet2.ts}}
-~~~js
+~~~js title="SpreadSheet2.ts"
 @Component({
  	template: `<div #widget class='widget-box'></div>`
 })
@@ -110,8 +99,7 @@ This variant adds flexibility in the control over SpreadSheet data and configura
 
 - Then initialize SpreadSheet with the `new SpreadSheet` constructor and define the configuration properties of SpreadSheet in the object passed as a second parameter of the constructor:
 
-{{snippet SpreadSheet2.ts}}
-~~~js
+~~~js title="SpreadSheet2.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
   	@ViewChild('widget') container: ElementRef;
   	spreadsheet: Spreadsheet;
@@ -128,12 +116,11 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-####Working with configuration options
+#### Working with configuration options
 
 - Set the list of used SpreadSheet configuration properties and their types before the initialization function:
 
-{{snippet SpreadSheet2.ts}}
-~~~js
+~~~js title="SpreadSheet2.ts"
 export class SpreadsheetComponent implements OnInit, OnDestroy {
   @ViewChild('widget') container: ElementRef;
   spreadsheet: Spreadsheet;
@@ -159,8 +146,7 @@ export class SpreadsheetComponent implements OnInit, OnDestroy {
 
 The properties of SpreadSheet are exposed and available to work with outside the component. In the example below the "grid" mode of rendering a list of files is enabled:
 
-{{snippet BasicSample.ts}}
-~~~js
+~~~js title="BasicSample.ts"
 @Component({
 	template: `
     <div class='app-box'>
@@ -169,14 +155,13 @@ The properties of SpreadSheet are exposed and available to work with outside the
 }}
 ~~~
 
-####Working with SpreadSheet API
+#### Working with SpreadSheet API
 
-This variant of using SpreadSheet in a Angular application allows working with its API moving all calls of methods and event handlers into a separate file. 
+This variant of using SpreadSheet in a Angular application allows working with its API moving all calls of methods and event handlers into a separate file.
 
-- Create a *DataSample.vue* file and add a link to the spreadsheet: 
+- Create a *DataSample.vue* file and add a link to the spreadsheet:
 
-{{snippet DataSample.ts}}
-~~~js
+~~~js title="DataSample.ts"
 @Component({
   template: `
 <div class='app-box'>
@@ -188,8 +173,7 @@ This variant of using SpreadSheet in a Angular application allows working with i
 - Define some actions that will be implemented on initialization of the SpreadSheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method
 that will set certain values in particular cells:
 
-{{snippet DataSample.ts}}
-~~~js
+~~~js title="DataSample.ts"
 export class SpreadsheetComponent implements AfterViewInit {
   event: string;
   @ViewChild('spreadsheet') spreadsheet;
@@ -205,10 +189,9 @@ export class SpreadsheetComponent implements AfterViewInit {
 }
 ~~~
 
-- Describe the methods you want to use while working with the spreadsheet: 
+- Describe the methods you want to use while working with the spreadsheet:
 
-{{snippet DataSample.ts}}
-~~~js
+~~~js title="DataSample.ts"
 export class SpreadsheetComponent implements AfterViewInit {
   event: string;
   @ViewChild('spreadsheet') spreadsheet;
@@ -237,11 +220,7 @@ export class SpreadsheetComponent implements AfterViewInit {
 
 - Bind related buttons to the SpreadSheet methods by subscribing them to the *click* event to make changes in the data:
 
-{{snippet DataSample.ts}}
-~~~js
+~~~js title="DataSample.ts"
 <input type="button" (click)="parseData()" value="Parse data">
 <input type="button" (click)="clearAll()" value="Clear all">
 ~~~
-
-
-
