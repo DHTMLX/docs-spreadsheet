@@ -1,19 +1,17 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: parse()
+title: JavaScript Spreadsheet - parse Method
 description: changetext
 ---
 
-parse
-=========
+# parse()
 
-@short:
-	loads data into spreadsheet from a local data source 
+@short: loads data into spreadsheet from a local data source
+
+@signature:
 
 @params:
-
-- data			any 		the data to load
-
+`data: any` - the data to load
 
 @example:
 
@@ -46,9 +44,8 @@ var styledData = {
 var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(styledData);
 
-
-@template:	api_method
 @descr:
+
 Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object* with the following attributes:
 
 - **styles** - (*object*) an object with CSS classes applied to particular cells
@@ -108,3 +105,5 @@ spreadsheet.parse(styledData);
 @relatedsample:
 01_init/01_basic.html
 01_init/02_styled_data.html
+
+@template:	api_method

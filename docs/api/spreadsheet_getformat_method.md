@@ -1,27 +1,25 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: getFormat()
+title: JavaScript Spreadsheet - getFormat Method
 description: changetext
 ---
 
-getFormat
-================
+# getFormat()
 
 @short: returns the number format applied to the value of a cell
 
-@params:
-- cell		string		the id of a cell
+@signature:
 
+@params:
+`cell: string` - the id of a cell
 
 @returns:
-- format		string		the format applied to the value of a cell
+The format applied to the value of a cell.
 
 @example:
-var format = spreadsheet.getFormat("A1"); 
+var format = spreadsheet.getFormat("A1");
 // ->"currency"
 
-
-@template: api_method
 @descr:
 Starting with v4.1, the reference to a cell can be specified in the following format:
 
@@ -45,3 +43,4 @@ number_formatting.md
 @relatedsample:
 01_init/01_basic.html
 
+@template: api_method

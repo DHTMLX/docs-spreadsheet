@@ -1,34 +1,34 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: getStyle()
+title: JavaScript Spreadsheet - getStyle Method
 description: changetext
 ---
 
-getStyle
-=============
+# getStyle()
 
-@short:
-	returns styles applied to a cell(s)	
+@short: returns styles applied to a cell(s)
+
+@signature:
 
 @params:
-- cells			string			the id of a cell or a range of cells
+`cells: string` - the id of a cell or a range of cells
 
 @returns:
-- style			object,array		styles set for a cell/cells
+Styles set for a cell/cells.
 
 @example:
 // getting style of one cell
-var style = spreadsheet.getStyle("A1"); 
+var style = spreadsheet.getStyle("A1");
 // -> {background: "#8DE9E1", color: "#03A9F4"}
 
 // getting styles of a range of cells
 var rangeStyles = spreadsheet.getStyle("A1:D1"); // -> see details
 
 // getting styles of different cells
-var values = spreadsheet.getStyle("A1,B1,C1:C3"); 
+var values = spreadsheet.getStyle("A1,B1,C1:C3");
 
-@template: api_method
 @descr:
+
 1\. For multiple cells the method returns an array of objects with styles applied to a cell:
 
 ~~~js
@@ -54,3 +54,4 @@ In case the name of the tab isn't specified, the method will return the style(s)
 @relatedapi:
 api/spreadsheet_setstyle_method.md
 
+@template: api_method

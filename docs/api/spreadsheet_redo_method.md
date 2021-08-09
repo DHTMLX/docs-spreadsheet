@@ -1,23 +1,23 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: redo()
+title: JavaScript Spreadsheet - redo Method
 description: changetext
 ---
 
-redo
-=========
+# redo()
 
-@short:
-	applies the reverted action once again
+@short: applies the reverted action once again
+
+@signature:
+
 @params:
-
-
 
 @example:
 spreadsheet.redo();
 
-@template: api_method
 @descr:
 
 @relatedapi:
 api/spreadsheet_undo_method.md
+
+@template: api_method

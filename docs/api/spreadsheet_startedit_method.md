@@ -1,25 +1,24 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: startEdit()
+title: JavaScript Spreadsheet - startEdit Method
 description: changetext
 ---
 
-startEdit
-=============
+# startEdit()
 
-@short:
-	starts editing in the selected cell
+@short: starts editing in the selected cell
+
+@signature:
 
 @params:
-* cell		string		 optional, the id of a cell
-* value		string		 optional, the cell value
-
+- `cell: string` - optional, the id of a cell
+- `value: string` - optional, the cell value
 
 @example:
 spreadsheet.startEdit();
 
-@template: api_method
 @descr:
+
 If the id of a cell isn't passed, editing will start in the currently selected cell.
 
 @relatedapi:
@@ -27,3 +26,6 @@ api/spreadsheet_endedit_method.md
 
 @related:
 working_with_ssheet.md#editingcell
+
+
+@template: api_method

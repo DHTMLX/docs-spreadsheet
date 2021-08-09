@@ -1,24 +1,23 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: undo()
+title: JavaScript Spreadsheet - undo Method
 description: changetext
 ---
 
-undo
-=========
+# undo()
 
-@short:
-	reverts the latest action
+@short: reverts the latest action
+
+@signature:
 
 @params:
-
-
 
 @example:
 spreadsheet.undo();
 
-@template: api_method
 @descr:
 
 @relatedapi:
 api/spreadsheet_redo_method.md
+
+@template: api_method

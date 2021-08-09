@@ -1,32 +1,30 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: unlock()
+title: JavaScript Spreadsheet - unlock Method
 description: changetext
 ---
 
-unlock
-============
+# unlock()
 
-@short:
-	unlocks a locked cell(s)
-    
+@short: unlocks a locked cell(s)
+
+@signature:
+
 @params:
-- cell		string		the id(s) of a cell(s) or a range of cells
-
+`cell: string` - the id(s) of a cell(s) or a range of cells
 
 @example:
 // unlocks a cell
 spreadsheet.unlock("A1");
- 
+
 // unlocks a range of cells
 spreadsheet.unlock("A1:C1");
- 
+
 // unlocks specified cells
 spreadsheet.unlock("A1,B5,B7,D4:D6");
 
-
-@template: api_method
 @descr:
+
 Starting with v4.1, the reference to a cell or a range of cells can be specified in the following format:
 
 ~~~js
@@ -40,3 +38,5 @@ In case the name of the tab isn't specified, the method will unlock the cell(s) 
 @relatedapi:
 api/spreadsheet_islocked_method.md
 api/spreadsheet_lock_method.md
+
+@template: api_method

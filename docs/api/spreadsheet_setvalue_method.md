@@ -1,19 +1,18 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: setValue()
+title: JavaScript Spreadsheet - setValue Method
 description: changetext
 ---
 
-setValue
-===========
+# setValue()
 
-@short:
-	sets a value for a cell(s) 
-    
+@short: sets a value for a cell(s)
+
+@signature:
+
 @params:
-- cells 	string					the id of a cell or a range of cells
-- value		string,number,array		the value(s) to be set for a cell/cells
-
+- `cells: string` - the id of a cell or a range of cells
+- `value: string,number,array` - the value(s) to be set for a cell/cells
 
 @example:
 // setting value for one cell
@@ -25,8 +24,8 @@ spreadsheet.setValue("B6,A1:D1",5);
 // setting values from an array for cells in a range alternately
 spreadsheet.setValue("A1:D1",[1,2,3]);
 
-@template: api_method
 @descr:
+
 1\. The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.
 
 {{sample 01_init/01_basic.html}}
@@ -45,3 +44,4 @@ In case the name of the tab isn't specified, the method will set the value(s) fo
 api/spreadsheet_getvalue_method.md
 api/spreadsheet_parse_method.md
 
+@template: api_method

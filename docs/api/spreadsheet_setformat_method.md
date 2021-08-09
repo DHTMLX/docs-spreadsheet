@@ -1,26 +1,27 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: setFormat()
+title: JavaScript Spreadsheet - setFormat Method
 description: changetext
 ---
 
-setFormat
-=============
+# setFormat()
 
 @short: sets a specified format to the value of a cell
 
+@signature:
+
 @params:
 
-- cell		string			the id of a cell the value of which should be formatted
-- format	string			the name of the number format to apply to a cell value
+- `cell: string` - the id of a cell the value of which should be formatted
+- `format: string` - the name of the number format to apply to a cell value
 
 @example:
 
 // applies the currency format to the cell A1
 spreadsheet.setFormat("A1","currency");
 
-@template: api_method
 @descr:
+
 Starting with v4.1, the reference to a cell can be specified in the following format:
 
 ~~~js
@@ -40,4 +41,4 @@ api/spreadsheet_afterformatchange_event.md
 @related:
 number_formatting.md
 
-
+@template: api_method

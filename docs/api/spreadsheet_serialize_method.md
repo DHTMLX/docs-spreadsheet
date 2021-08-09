@@ -1,29 +1,29 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: serialize()
+title: JavaScript Spreadsheet - serialize Method
 description: changetext
 ---
 
-serialize
-=============
+# serialize()
 
-@short:
-	serializes data of spreadsheet into a JSON object
+@short: serializes data of spreadsheet into a JSON object
+
+@signature:
 
 @params:
 
 @returns:
-- data		object		a serialized JSON object with cells data and styles
+A serialized JSON object with cells data and styles.
 
 @example:
 var data = spreadsheet.serialize();
 
-@template:	api_method
 @descr:
-Serialized data presents an object with data and styles. 
+
+Serialized data presents an object with data and styles.
 
 - the **data** array includes objects with cells ids and values
-- the **styles** object contains the applied CSS classes 
+- the **styles** object contains the applied CSS classes
 
 ~~~js
 {
@@ -48,3 +48,4 @@ loading_data.md#savingandrestoringstate
 @relatedapi:
 api/spreadsheet_parse_method.md
 
+@template: api_method

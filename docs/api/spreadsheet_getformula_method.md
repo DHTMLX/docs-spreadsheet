@@ -1,28 +1,27 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: getFormula()
+title: JavaScript Spreadsheet - getFormula Method
 description: changetext
 ---
 
-getFormula
-==============
+# getFormula()
 
-@short:
-	returns the formula of a cell
-    
+@short: returns the formula of a cell
+
+@signature:
+
 @params:
-- cell		string	the id of a cell				
+`cell: string` - the id of a cell
 
 @returns:
-- param     string  the formula of the cell
+The formula of the cell.
 
 @example:
 var formula = spreadsheet.getFormula("B2");
 // -> "ABS(C2)"
 
-
-@template: api_method
 @descr:
+
 The reference to a cell can be specified in the following format:
 
 ~~~js
@@ -34,3 +33,5 @@ where *sheet1* is the name of the tab.
 In case the name of the tab isn't specified, the method will return the formula of the cell from the active tab. 
 
 @changelog: added in v4.1
+
+@template: api_method

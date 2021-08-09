@@ -1,18 +1,18 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: eachCell()
+title: JavaScript Spreadsheet - eachCell Method
 description: changetext
 ---
 
-eachCell
-==============
+# eachCell()
 
-@short:
-	iterates cells in the spreadsheet
-    
+@short: iterates cells in the spreadsheet
+
+@signature:
+
 @params:
-- callback		function	a callback function				
-- range			string		a range of cells to iterate 
+- `callback: function` - a callback function
+- `range: string` - a range of cells to iterate
 
 @example:
 spreadsheet.menu.data.add({
@@ -51,13 +51,12 @@ spreadsheet.menu.events.on("click", function (id) {
 	}
 });
 
-
-@template: api_method
 @descr:
- 
 
 @relatedsample:
 04_customization/02_menu.html
 
 @related:
 customization.md#menu
+
+@template: api_method

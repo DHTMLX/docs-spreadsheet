@@ -1,22 +1,21 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: getValue()
+title: JavaScript Spreadsheet - getValue Method
 description: changetext
 ---
 
-getValue
-============
+# getValue()
 
-@short:
-	returns the value(s) of a cell(s)
+@short: returns the value(s) of a cell(s)
+
+@signature:
+
 @params:
 
-- cells		string		the id(s) of a cell(s) or a range of cells
-
+`cells: string` - the id(s) of a cell(s) or a range of cells
 
 @returns:
-- value		string,number,array		the values of cells
-
+The values of cells.
 
 @example:
 // returning the value of one cell
@@ -29,8 +28,8 @@ var rangeValues = spreadsheet.getValue("A1:A3"); // -> ["Country","Ecuador","Bel
 var values = spreadsheet.getValue("A1,B1,C1:C3");
 //-> ["Country", "Product", "Price", 6.68, 3.75]
 
-@template: api_method
 @descr:
+
 Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 
 ~~~js
@@ -44,3 +43,4 @@ In case the name of the tab isn't specified, the method will return the value(s)
 @relatedapi:
 api/spreadsheet_setvalue_method.md
 
+@template: api_method

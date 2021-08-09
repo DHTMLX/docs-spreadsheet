@@ -1,18 +1,18 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: setStyle()
+title: JavaScript Spreadsheet - setStyle Method
 description: changetext
 ---
 
-setStyle
-============
+# setStyle()
 
-@short:
-	sets style to a cell(s)	
-    
+@short: sets style to a cell(s)
+
+@signature:
+
 @params:
-- cells			string					the id of a cell or a range of cells
-- style			object,array			styles that should be applied to cells
+- `cells: string` - the id of a cell or a range of cells
+- `style: object,array` - styles that should be applied to cells
 
 @example:
 // setting style for one cell
@@ -24,8 +24,8 @@ spreadsheet.setStyle("B6,A1:D1",{color:"blue"});
 // setting styles from an array for cells in a range alternately
 spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 
-@template: api_method
 @descr:
+
 1\. The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.
 
 {{sample 01_init/02_styled_data.html}}
@@ -44,3 +44,4 @@ In case the name of the tab isn't specified, the method will apply the style to 
 api/spreadsheet_getstyle_method.md
 api/spreadsheet_parse_method.md
 
+@template: api_method

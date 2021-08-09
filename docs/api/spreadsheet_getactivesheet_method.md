@@ -1,27 +1,24 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: getActiveSheet()
+title: JavaScript Spreadsheet - getActiveSheet Method
 description: changetext
 ---
 
-getActiveSheet
-==============
+# getActiveSheet()
 
-@short:
-	returns the sheet that is currently active
-    
-			
+@short: returns the sheet that is currently active
+
+@signature:
+
 @returns:
-- param     object       an object with the name and id attributes of the active sheet
+`param: object` - an object with the name and id attributes of the active sheet
 
 @example:
 spreadsheet.getActiveSheet();
 // ->  {name: "sheet", id: "u1614675531904"}
 
-
-@template: api_method
 @descr:
 
-
-
 @changelog: added in v4.1
+
+@template: api_method

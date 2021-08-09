@@ -1,18 +1,17 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: lock()
+title: JavaScript Spreadsheet - lock Method
 description: changetext
 ---
 
-lock
-========
+# lock()
 
-@short:
-	locks the specified cell(s)
-    
+@short: locks the specified cell(s)
+
+@signature:
+
 @params:
-- cell		string		the id of a cell(s) or a range of cells
-
+`cell: string` - the id of a cell(s) or a range of cells
 
 @example:
 // locks a cell
@@ -24,7 +23,6 @@ spreadsheet.lock("A1:C1");
 // locks specified cells
 spreadsheet.lock("A1,B5,B7,D4:D6");
 
-@template: api_method
 @descr:
 Starting with v4.1, the reference to a cell or a range of cells can be specified in the following format:
 
@@ -42,3 +40,5 @@ api/spreadsheet_unlock_method.md
 
 @relatedsample:
 02_usage/01_locked_cells.html
+
+@template: api_method
