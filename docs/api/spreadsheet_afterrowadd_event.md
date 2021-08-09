@@ -1,29 +1,26 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: afterRowAdd
+title: JavaScript Spreadsheet - afterRowAdd Event
 description: changetext
 ---
 
-AfterRowAdd
-=============
+# afterRowAdd
 
 @short: fires after a new row is added
-	
-@params:
-- cells		string		the id(s) of a cell(s)
 
+@signature:
+
+@params:
+`cells: string` - the id(s) of a cell(s)
 
 @example:
 spreadsheet.events.on("afterRowAdd", function(cells){
 	console.log("A new row is added");
 });
 
-
-@template:	api_event
 @descr:
-
-
 
 @relatedapi:
 api/spreadsheet_beforerowadd_event.md
 
+@template:api_event

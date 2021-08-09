@@ -1,29 +1,24 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: afterEditStart
+title: JavaScript Spreadsheet - afterEditStart Event
 description: changetext
 ---
 
-AfterEditStart
-=====================
+# afterEditStart
 
-@short: 
-	fires after editing of a cell has started
-    
+@short: fires after editing of a cell has started
+
+@signature:
+
 @params:
-
 
 @example:
 spreadsheet.events.on("afterEditStart", function(){
  	console.log("Editing has started");
 });
 
-
-@template:api_event
 @descr:
 
+@relatedapi: api/spreadsheet_beforeeditstart_event.md
 
-
-@relatedapi:
-	api/spreadsheet_beforeeditstart_event.md
-
+@template:api_event

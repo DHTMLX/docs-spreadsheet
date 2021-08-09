@@ -1,20 +1,20 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: beforeSheetRemove
+title: JavaScript Spreadsheet - beforeSheetRemove Event
 description: changetext
 ---
 
-BeforeSheetRemove
-=============
+# beforeSheetRemove
 
 @short: fires before a sheet is removed
-	
+
+@signature:
+
 @params:
-- sheet     object  the object of a sheet
+`sheet: object` - the object of a sheet
 
 @returns:
-- param     boolean     true to remove a sheet, false to prevent removing of a sheet
-
+*True* to remove a sheet, *false* to prevent removing of a sheet.
 
 @example:
 spreadsheet.events.on("beforeSheetRemove", function(sheet) {
@@ -22,9 +22,8 @@ spreadsheet.events.on("beforeSheetRemove", function(sheet) {
     return true;
 });
 
-
-@template:	api_event
 @descr:
+
 The sheet object contains the following parameters:
 
 - **name** - (*string*) the name of the sheet to be deleted
@@ -32,7 +31,6 @@ The sheet object contains the following parameters:
 
 The event is blockable, returning false will prevent removing of a sheet.
 
-
-
 @changelog: added in v4.1
 
+@template:api_event

@@ -1,28 +1,26 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: selectionSet
+title: JavaScript Spreadsheet - selectionSet Event
 description: changetext
 ---
 
-SelectionSet
-=================
+# selectionSet
 
-@short: 
-	fires when a cell is selected
+@short: fires when a cell is selected
+
+@signature:
+
 @params:
-- cell		string		the id of a selected cell
-
+`cell: string` - the id of a selected cell
 
 @example:
 spreadsheet.events.on("SelectionSet", function(cell){
 	console.log("The cell "+spreadsheet.selection.get()+" is selected");
 });
 
-
-@template:	api_event
 @descr:
-
 
 @relatedapi:
 api/spreadsheet_selectionchange_event.md
 
+@template:api_event

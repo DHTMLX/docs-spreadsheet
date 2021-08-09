@@ -1,28 +1,26 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: valueChange
+title: JavaScript Spreadsheet - valueChange Event
 description: changetext
 ---
 
-ValueChange
-===========
+# valueChange
 
-@short: 
-	fires when the value of a cell is changed
+@short: fires when the value of a cell is changed
+
+@signature:
+
 @params:
-- cell 			string				the id of a cell
-- value			string,number		the value of a cell		
-
+- `cell: string` - the id of a cell
+- `value: string,number` - the value of a cell
 
 @example:
 spreadsheet.events.on("ValueChange", function(cell,value){
   console.log("The value of the cell " + spreadsheet.selection.get() +" is changed");
 });
 
-
-@template:	api_event
 @descr:
 
-@relatedapi:
-	api/spreadsheet_beforevaluechange_event.md
+@relatedapi:api/spreadsheet_beforevaluechange_event.md
 
+@template:api_event

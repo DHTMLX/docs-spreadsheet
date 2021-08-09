@@ -1,30 +1,26 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: styleChange
+title: JavaScript Spreadsheet - styleChange Event
 description: changetext
 ---
 
-StyleChange
-===============
+# styleChange
 
-@short: 
-	fires when the style of the cell is changed
+@short: fires when the style of the cell is changed
+
+@signature:
+
 @params:
-- cell		string		the id of a cell
-- style		object		an object with a style for a cell
-
+- `cell: string` - the id of a cell
+- `style: object` - an object with a style for a cell
 
 @example:
 spreadsheet.events.on("StyleChange", function(id){
   console.log("The style of cell "+spreadsheet.selection.get()+" is changed");
 });
 
-
-@template:	api_event
 @descr:
 
+@relatedapi:api/spreadsheet_beforestylechange_event.md
 
-
-@relatedapi:
-	api/spreadsheet_beforestylechange_event.md
-
+@template:api_event

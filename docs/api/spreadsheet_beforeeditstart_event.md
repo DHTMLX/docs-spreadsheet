@@ -1,19 +1,19 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: beforeEditStart
+title: JavaScript Spreadsheet - beforeEditStart Event
 description: changetext
 ---
 
-BeforeEditStart
-=====================
+# beforeEditStart
 
-@short: 
-	fires before editing of a cell has started
-    
+@short: fires before editing of a cell has started
+
+@signature:
+
 @params:
 
 @returns:
-- mode		boolean		true to edit a cell, false to prevent editing
+`mode: boolean` - true to edit a cell, false to prevent editing
 
 @example:
 spreadsheet.events.on("beforeEditStart", function(){
@@ -21,12 +21,9 @@ spreadsheet.events.on("beforeEditStart", function(){
     return true;
 });
 
-
-@template:api_event
 @descr:
 The event is blockable, returning false will prevent editing of a cell.
 
+@relatedapi: api/spreadsheet_aftereditstart_event.md
 
-@relatedapi:
-	api/spreadsheet_aftereditstart_event.md
-
+@template:api_event
