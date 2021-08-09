@@ -13,7 +13,7 @@ description: changetext
 
 
 @example:
-// adds an empty second row 
+// adds an empty second row
 spreadsheet.addRow("G2");
 
 @template: api_method
@@ -22,7 +22,7 @@ The method finds the specified cell, selects it, moves the row where the cell is
 
 
 @relatedapi:
-api/spreadsheet_deleterow.md
+api/spreadsheet_deleterow_method.md
 
 @related:
 working_with_ssheet.md#addingremovingrowsandcolumns

@@ -26,7 +26,7 @@ spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 
 @template: api_method
 @descr:
-1\. The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the api/spreadsheet_parse.md method.
+1\. The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.
 
 {{sample 01_init/02_styled_data.html}}
 
@@ -41,6 +41,6 @@ where *sheet1* is the name of the tab.
 In case the name of the tab isn't specified, the method will apply the style to the cell(s) of the active tab.
 
 @relatedapi:
-api/spreadsheet_getstyle.md
-api/spreadsheet_parse.md
+api/spreadsheet_getstyle_method.md
+api/spreadsheet_parse_method.md
 

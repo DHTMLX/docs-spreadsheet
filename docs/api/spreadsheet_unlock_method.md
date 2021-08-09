@@ -38,5 +38,5 @@ where *sheet1* is the name of the tab.
 In case the name of the tab isn't specified, the method will unlock the cell(s) of the active tab.
 
 @relatedapi:
-api/spreadsheet_islocked.md
-api/spreadsheet_lock.md
+api/spreadsheet_islocked_method.md
+api/spreadsheet_lock_method.md

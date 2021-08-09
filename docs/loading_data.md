@@ -107,7 +107,7 @@ External data loading
 
 ### Loading JSON data
 
-By default, SpreadSheet expects data in JSON format. To load data from an external source, use the api/spreadsheet_load.md method. It takes the URL of the file with data as a parameter:
+By default, SpreadSheet expects data in JSON format. To load data from an external source, use the api/spreadsheet_load_method.md method. It takes the URL of the file with data as a parameter:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("container");
@@ -118,7 +118,7 @@ spreadsheet.load("../common/data.json");
 
 ### Loading CSV data
 
-You can also load data in the CSV format. For this, you need to call the api/spreadsheet_load.md method and pass the name of the format ("csv") as the second parameter:
+You can also load data in the CSV format. For this, you need to call the api/spreadsheet_load_method.md method and pass the name of the format ("csv") as the second parameter:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("container");
@@ -159,7 +159,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 {{sample  03_configuration/07_custom_import_export_path.html}}
 
-To load data from an Excel file, pass a string with the type of the extension ("xlsx") as the second parameter of the api/spreadsheet_load.md method :
+To load data from an Excel file, pass a string with the type of the extension ("xlsx") as the second parameter of the api/spreadsheet_load_method.md method :
 
 ~~~js
 // .xlsx only
@@ -187,7 +187,7 @@ spreadsheet.load("/some/data").then(function(){
 Loading from local source
 ---------------
 
-To load data from a local source, make use of the api/spreadsheet_parse.md method. The method takes an array with data objects as a parameter:
+To load data from a local source, make use of the api/spreadsheet_parse_method.md method. The method takes an array with data objects as a parameter:
 
 ~~~js
 var data = [
@@ -215,7 +215,7 @@ For details on how to load multiple sheets into the spreadsheet, see the [Work w
 Saving and restoring state
 ---------------
 
-To save the current state of a spreadsheet, use the api/spreadsheet_serialize.md method. It converts data into an array of JSON objects. Each JSON object contains the configuration of a cell.
+To save the current state of a spreadsheet, use the api/spreadsheet_serialize_method.md method. It converts data into an array of JSON objects. Each JSON object contains the configuration of a cell.
 
 
 ~~~js

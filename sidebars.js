@@ -17,9 +17,8 @@ module.exports = {
           collapsible: true,
           collapsed: false,
           items: [
-            "api/api_overview",
-            "api/spreadsheet_addrow",
-            "api/spreadsheet_addcolumn"
+            "api/spreadsheet_addcolumn_method",
+            "api/spreadsheet_addrow_method",
           ],
         },
         {

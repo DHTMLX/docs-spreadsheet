@@ -23,7 +23,7 @@ The method finds the specified cell, selects it, removes the row where the cell 
 
 
 @relatedapi:
-api/spreadsheet_addrow.md
+api/spreadsheet_addrow_method.md
 
 @related:
 working_with_ssheet.md#addingremovingrowsandcolumns

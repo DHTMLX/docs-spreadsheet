@@ -49,7 +49,7 @@ spreadsheet.parse(styledData);
 
 @template:	api_method
 @descr:
-Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse.md) method as a parameter. The data should be an *object* with the following attributes:
+Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object* with the following attributes:
 
 - **styles** - (*object*) an object with CSS classes applied to particular cells
 - **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
@@ -102,8 +102,8 @@ spreadsheet.parse(styledData);
 	loading_data.md
     
 @relatedapi:
-	api/spreadsheet_load.md
-    api/spreadsheet_serialize.md
+	api/spreadsheet_load_method.md
+    api/spreadsheet_serialize_method.md
     
 @relatedsample:
 01_init/01_basic.html

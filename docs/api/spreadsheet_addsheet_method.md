@@ -11,7 +11,7 @@ description: changetext
 	adds a new sheet into the spreadsheet
     
 @params:
-- name		string	the name of the new sheet				
+- name		string	the name of the new sheet
 
 @returns:
 - id     string  the id of the new sheet

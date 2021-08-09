@@ -50,7 +50,7 @@ dhtmlxSpreadSheet uses the WebAssembly-based library [Excel2Json](https://github
 
 
 @relatedapi:
-	api/spreadsheet_parse.md
+	api/spreadsheet_parse_method.md
 @relatedsample:
 	01_init/03_load_data.html
     01_init/05_csv_load.html

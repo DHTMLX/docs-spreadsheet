@@ -31,32 +31,32 @@ Parameters:
 <div class='h2' id="methods">Methods</div>
 
 {{api
-- api/spreadsheet_addcolumn.md - adds a new column into the spreadsheet
-- api/spreadsheet_addrow.md - adds a new row into the spreadsheet
-- api/spreadsheet_addsheet.md - adds a new sheet into the spreadsheet
-- api/spreadsheet_deletecolumn.md - removes a column from the spreadsheet
-- api/spreadsheet_deleterow.md - removes a row from the spreadsheet
-- api/spreadsheet_eachcell.md - iterates over cells in the spreadsheet
-- api/spreadsheet_endedit.md - finishes editing in a cell
-- api/spreadsheet_getactivesheet.md - returns the sheet that is currently active
-- api/spreadsheet_getformat.md - gets the number format applied to the value of a cell
-- api/spreadsheet_getformula.md - returns the formula of a cell
-- api/spreadsheet_getsheets.md - gets all sheets of the spreadsheet
-- api/spreadsheet_getstyle.md - returns styles applied to the spreadsheet cells
-- api/spreadsheet_getvalue.md - returns the value(s) of a cell(s)
-- api/spreadsheet_islocked.md - checks whether a cell is locked
-- api/spreadsheet_load.md - loads data from an external file
-- api/spreadsheet_lock.md - locks the specified cell
-- api/spreadsheet_parse.md - loads data into spreadsheet from a local data source
-- api/spreadsheet_redo.md - applies the reverted action once again
-- api/spreadsheet_removesheet.md - removes a sheet from the spreadsheet by its id
-- api/spreadsheet_serialize.md - serializes data of spreadsheet into an array of JSON objects
-- api/spreadsheet_setformat.md - sets a specified format to the value of a cell
-- api/spreadsheet_setstyle.md - applies styling to spreadsheet cells
-- api/spreadsheet_setvalue.md - sets a value for a cell(s)
-- api/spreadsheet_startedit.md - starts editing in a cell
-- api/spreadsheet_undo.md - reverts the latest action
-- api/spreadsheet_unlock.md - unlocks a locked cell
+- api/spreadsheet_addcolumn_method.md - adds a new column into the spreadsheet
+- api/spreadsheet_addrow_method.md - adds a new row into the spreadsheet
+- api/spreadsheet_addsheet_method.md - adds a new sheet into the spreadsheet
+- api/spreadsheet_deletecolumn_method.md - removes a column from the spreadsheet
+- api/spreadsheet_deleterow_method.md - removes a row from the spreadsheet
+- api/spreadsheet_eachcell_method.md - iterates over cells in the spreadsheet
+- api/spreadsheet_endedit_method.md - finishes editing in a cell
+- api/spreadsheet_getactivesheet_method.md - returns the sheet that is currently active
+- api/spreadsheet_getformat_method.md - gets the number format applied to the value of a cell
+- api/spreadsheet_getformula_method.md - returns the formula of a cell
+- api/spreadsheet_getsheets_method.md - gets all sheets of the spreadsheet
+- api/spreadsheet_getstyle_method.md - returns styles applied to the spreadsheet cells
+- api/spreadsheet_getvalue_method.md - returns the value(s) of a cell(s)
+- api/spreadsheet_islocked_method.md - checks whether a cell is locked
+- api/spreadsheet_load_method.md - loads data from an external file
+- api/spreadsheet_lock_method.md - locks the specified cell
+- api/spreadsheet_parse_method.md - loads data into spreadsheet from a local data source
+- api/spreadsheet_redo_method.md - applies the reverted action once again
+- api/spreadsheet_removesheet_method.md - removes a sheet from the spreadsheet by its id
+- api/spreadsheet_serialize_method.md - serializes data of spreadsheet into an array of JSON objects
+- api/spreadsheet_setformat_method.md - sets a specified format to the value of a cell
+- api/spreadsheet_setstyle_method.md - applies styling to spreadsheet cells
+- api/spreadsheet_setvalue_method.md - sets a value for a cell(s)
+- api/spreadsheet_startedit_method.md - starts editing in a cell
+- api/spreadsheet_undo_method.md - reverts the latest action
+- api/spreadsheet_unlock_method.md - unlocks a locked cell
 }}
 
 

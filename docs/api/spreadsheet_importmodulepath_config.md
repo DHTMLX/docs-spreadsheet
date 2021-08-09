@@ -31,7 +31,7 @@ To import files you need to:
 By default the link to CDN is used.
 
 @relatedapi:
-api/spreadsheet_load.md
+api/spreadsheet_load_method.md
 api/spreadsheet_exportmodulepath_config.md
 
 @related:

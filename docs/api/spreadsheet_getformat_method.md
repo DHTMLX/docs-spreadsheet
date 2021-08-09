@@ -34,7 +34,7 @@ where *sheet1* is the name of the tab.
 In case the name of the tab isn't specified, the method will return the format applied to the value of a cell from the tab that is currently active.
 
 @relatedapi:
-api/spreadsheet_setformat.md
+api/spreadsheet_setformat_method.md
 api/spreadsheet_formats_config.md
 api/spreadsheet_beforeformatchange_event.md
 api/spreadsheet_afterformatchange_event.md

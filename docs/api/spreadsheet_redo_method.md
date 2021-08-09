@@ -4,21 +4,20 @@ title: JavaScript Spreadsheet -
 description: changetext
 ---
 
-undo
+redo
 =========
 
 @short:
-	reverts the latest action
-
+	applies the reverted action once again
 @params:
 
 
 
 @example:
-spreadsheet.undo();
+spreadsheet.redo();
 
 @template: api_method
 @descr:
 
 @relatedapi:
-api/spreadsheet_redo.md
+api/spreadsheet_undo_method.md

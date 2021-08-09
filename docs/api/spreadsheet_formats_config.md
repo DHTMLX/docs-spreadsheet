@@ -49,7 +49,7 @@ defaultFormats = [
 
 Each number format is an object that includes a set of properties:
 
-- **id** - the id of a format that is used to set format to a cell via the api/spreadsheet_setformat.md method
+- **id** - the id of a format that is used to set format to a cell via the api/spreadsheet_setformat_method.md method
 - **mask** - a mask for a number format
 - **name** - the name of a format displayed in the toolbar and menu drop-down lists
 - **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
@@ -60,8 +60,8 @@ Read detailed information about number formatting in dhtmlxSpreadSheet in the ar
 number_formatting.md#formatscustomization
 
 @relatedapi:
-api/spreadsheet_setformat.md
-api/spreadsheet_getformat.md
+api/spreadsheet_setformat_method.md
+api/spreadsheet_getformat_method.md
 api/spreadsheet_beforeformatchange_event.md
 api/spreadsheet_afterformatchange_event.md
 

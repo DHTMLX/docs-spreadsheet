@@ -23,7 +23,7 @@ spreadsheet.startEdit();
 If the id of a cell isn't passed, editing will start in the currently selected cell.
 
 @relatedapi:
-api/spreadsheet_endedit.md
+api/spreadsheet_endedit_method.md
 
 @related:
 working_with_ssheet.md#editingcell

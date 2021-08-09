@@ -29,8 +29,8 @@ The event is blockable. Return *false* to cancel changing of the format.
 
 @relatedapi:
 api/spreadsheet_afterformatchange_event.md
-api/spreadsheet_setformat.md
-api/spreadsheet_getformat.md
+api/spreadsheet_setformat_method.md
+api/spreadsheet_getformat_method.md
 	
 @related:
 number_formatting.md

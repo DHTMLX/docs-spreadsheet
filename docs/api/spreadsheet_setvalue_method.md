@@ -27,7 +27,7 @@ spreadsheet.setValue("A1:D1",[1,2,3]);
 
 @template: api_method
 @descr:
-1\. The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the api/spreadsheet_parse.md method.
+1\. The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.
 
 {{sample 01_init/01_basic.html}}
 
@@ -42,6 +42,6 @@ where *sheet1* is the name of the tab.
 In case the name of the tab isn't specified, the method will set the value(s) for the cell(s) of the active tab.
 
 @relatedapi:
-api/spreadsheet_getvalue.md
-api/spreadsheet_parse.md
+api/spreadsheet_getvalue_method.md
+api/spreadsheet_parse_method.md
 

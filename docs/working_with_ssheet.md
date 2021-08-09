@@ -12,13 +12,13 @@ While users interact with SpreadSheet via its intuitive interface, you can work 
 Undo/redo actions
 --------------
 
-There is the api/spreadsheet_undo.md API method that allows reverting the latest action:
+There is the api/spreadsheet_undo_method.md API method that allows reverting the latest action:
 
 ~~~js
 spreadsheet.undo();
 ~~~
 
-To reapply a reverted action once again use the api/spreadsheet_redo.md method:
+To reapply a reverted action once again use the api/spreadsheet_redo_method.md method:
 
 ~~~js
 spreadsheet.redo();
@@ -31,8 +31,8 @@ Adding/removing rows and columns
 
 To add/delete a column, use the related API methods:
 
-- api/spreadsheet_addcolumn.md
-- api/spreadsheet_deletecolumn.md
+- api/spreadsheet_addcolumn_method.md
+- api/spreadsheet_deletecolumn_method.md
 
 Pass to the methods the id of the cell that contains the id of a column that should be added.
 
@@ -49,8 +49,8 @@ When a new column is added, neighboring columns are moved to the right.
 
 To add/delete a row, use the API methods below:
 
-- api/spreadsheet_addrow.md
-- api/spreadsheet_deleterow.md
+- api/spreadsheet_addrow_method.md
+- api/spreadsheet_deleterow_method.md
 
 Pass to the methods the id of the cell that contains the id of a row that should be added.
 
@@ -68,7 +68,7 @@ Styling cells
 
 ###Set styles
 
-You can apply certain styling to a cell or a range of cells via the api/spreadsheet_setstyle.md method. It takes two parameters:
+You can apply certain styling to a cell or a range of cells via the api/spreadsheet_setstyle_method.md method. It takes two parameters:
 
 - **cells**	- (*string*) the id(s) of a cell(s) or a range of cells
 - **style**	- (*object/array*) styles that should be applied to cells
@@ -84,11 +84,11 @@ spreadsheet.setStyle("B6,A1:D1",{color:"blue"});
 spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 ~~~
 
-{{note The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the api/spreadsheet_parse.md method.}}
+{{note The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.}}
 
 ###Get styles
 
-To get the styles applied to a cell(s), use the api/spreadsheet_getstyle.md method. Pass the *id(s) of a cell(s) or a range of cells* to it:
+To get the styles applied to a cell(s), use the api/spreadsheet_getstyle_method.md method. Pass the *id(s) of a cell(s) or a range of cells* to it:
 
 ~~~js
 // getting style of one cell
@@ -118,7 +118,7 @@ Setting cell value
 
 ###Set values
 
-To set value for a cell(s) via the API, make use of the api/spreadsheet_setvalue.md method. Pass the following parameters to it:
+To set value for a cell(s) via the API, make use of the api/spreadsheet_setvalue_method.md method. Pass the following parameters to it:
 
 - **cells**	- (*string*) the id(s) of a cell(s) or a range of cells
 - **value**	- (*string/number/array*)	the value to be set for a cell/cells
@@ -134,11 +134,11 @@ spreadsheet.setValue("B6,A1:D1",5);
 spreadsheet.setValue("A1:D1",[1,2,3]);
 ~~~
 
-{{note Please note that the method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the api/spreadsheet_parse.md method.}}
+{{note Please note that the method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.}}
 
 ###Get values
 
-It is also possible to return the value(s) set in a cell(s) by passing the *id(s) of the necessary cell(s) or a range of cells* to the api/spreadsheet_getvalue.md method.
+It is also possible to return the value(s) set in a cell(s) by passing the *id(s) of the necessary cell(s) or a range of cells* to the api/spreadsheet_getvalue_method.md method.
 
 The method will return the value(s) as a string,number or array:
 
@@ -159,7 +159,7 @@ Locking cells
 
 ###Lock cells
 
-You can lock a cell or several cells programmatically to make them read-only for users. Use the api/spreadsheet_lock.md method for this purpose. The method takes as a parameter the id of a cell(s) or a range of cells to lock.
+You can lock a cell or several cells programmatically to make them read-only for users. Use the api/spreadsheet_lock_method.md method for this purpose. The method takes as a parameter the id of a cell(s) or a range of cells to lock.
 
 ~~~js
 // locks a cell
@@ -176,7 +176,7 @@ spreadsheet.lock("A1,B5,B7,D4:D6");
 
 ###Unlock cells
 
-To unlock the locked cell(s), use the api/spreadsheet_unlock.md method. Pass the id(s) of the cell(s) or a range that contains locked cells as a parameter:
+To unlock the locked cell(s), use the api/spreadsheet_unlock_method.md method. Pass the id(s) of the cell(s) or a range that contains locked cells as a parameter:
 
 ~~~js
 // unlocks a cell
@@ -191,7 +191,7 @@ spreadsheet.unlock("A1,B5,B7,D4:D6");
 
 ###Check whether a cell is locked
 
-To check whether a cell or several cells are locked, use the api/spreadsheet_islocked.md method and pass the *id of a cell(s)* or a *range of cells* to it:
+To check whether a cell or several cells are locked, use the api/spreadsheet_islocked_method.md method and pass the *id of a cell(s)* or a *range of cells* to it:
 
 ~~~js
 // checks whether a cell is locked
@@ -211,7 +211,7 @@ Editing cell
 
 ###Enable cell editor
 
-You can add an input into a cell by calling the api/spreadsheet_startedit.md method:
+You can add an input into a cell by calling the api/spreadsheet_startedit_method.md method:
 
 ~~~js
 spreadsheet.startEdit();
@@ -226,7 +226,7 @@ If the id of a cell isn't passed, input will be added into the currently selecte
 
 ###Disable cell editor
 
-To finish editing of a cell, use the api/spreadsheet_endedit.md method that will close the editor while saving the entered value.
+To finish editing of a cell, use the api/spreadsheet_endedit_method.md method that will close the editor while saving the entered value.
 
 ~~~js
 spreadsheet.endEdit();

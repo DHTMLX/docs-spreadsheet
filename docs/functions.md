@@ -173,7 +173,7 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 Getting cell formula
 ---------------------------
 
-Starting with v4.1, you can get the formula applied to a cell via the [getFormula()](api/spreadsheet_getformula.md) method. The method takes the id of the cell as a parameter:
+Starting with v4.1, you can get the formula applied to a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method. The method takes the id of the cell as a parameter:
 
 ~~~js
 var formula = spreadsheet.getFormula("B2");

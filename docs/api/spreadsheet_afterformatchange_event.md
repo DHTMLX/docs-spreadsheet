@@ -26,8 +26,8 @@ spreadsheet.events.on("afterFormatChange", function(cell, format){
 
 @relatedapi:
 api/spreadsheet_beforeformatchange_event.md
-api/spreadsheet_setformat.md
-api/spreadsheet_getformat.md
+api/spreadsheet_setformat_method.md
+api/spreadsheet_getformat_method.md
 
 @related:
 number_formatting.md
