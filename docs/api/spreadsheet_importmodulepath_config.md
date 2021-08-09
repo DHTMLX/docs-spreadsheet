@@ -1,25 +1,25 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: importModulePath
+title: JavaScript Spreadsheet - importModulePath Config
 description: changetext
 ---
 
-importModulePath
-==================
+# importModulePath
 
 @short: sets the path to the import module
-	
+
+@signature:
+
 @type: string
+
 @example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {          
+var spreadsheet = new dhx.Spreadsheet(document.body, {
     importModulePath: "../libs/excel2json/1.0/worker.js"
 });
 
-
-@template:	api_config
 @descr:
 
-{{note dhtmlxSpreadSheet uses the WebAssembly-based library [Excel2json](https://github.com/DHTMLX/excel2json) for import of data from Excel.}} 
+{{note dhtmlxSpreadSheet uses the WebAssembly-based library [Excel2json](https://github.com/DHTMLX/excel2json) for import of data from Excel.}}
 
 To import files you need to:
 
@@ -40,3 +40,4 @@ loading_data.md#importexcel
 @relatedsample:
 02_usage/03_import_xlsx.html
 
+@template:api_config

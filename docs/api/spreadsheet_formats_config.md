@@ -1,17 +1,17 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: formats
+title: JavaScript Spreadsheet - formats Config
 description: changetext
 ---
 
-formats
-===========
+# formats
 
 @short: defines the list of number formats  
-	
+
 @type: array
+
 @example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {          
+var spreadsheet = new dhx.Spreadsheet(document.body, {
     formats: [
     	{
     		name: "U.S. Dollar",
@@ -32,9 +32,8 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
     ]
 });
 
-
-@template:	api_config
 @descr:
+
 The default number formats are the following:
 
 ~~~js
@@ -66,3 +65,5 @@ api/spreadsheet_beforeformatchange_event.md
 api/spreadsheet_afterformatchange_event.md
 
 @changelog: The "Text" format has been appeared in v4.0.
+
+@template:api_config

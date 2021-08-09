@@ -1,29 +1,30 @@
 ---
-sidebar_label: spreadsheet
-title: JavaScript Spreadsheet - 
+sidebar_label: toolbarBlocks
+title: JavaScript Spreadsheet - toolbarBlocks Config
 description: changetext
 ---
 
-toolbarBlocks
-=============
+# toolbarBlocks
 
-@short:  
-	specifies blocks of buttons that will be shown in the toolbar of spreadsheet
-    
-@default: ["undo","colors","decoration","align","format","help"]
+@short: specifies blocks of buttons that will be shown in the toolbar of spreadsheet
+
+@signature:
+
+@default: ["undo", "colors", "decoration", "align", "format", "help"]
+
 @type: array
+
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
 	// full toolbar
 	toolbarBlocks: [
-    	"undo", "colors", "decoration", "align", "lock", "clear", 
+    	"undo", "colors", "decoration", "align", "lock", "clear",
         "rows", "columns", "help", "format", "file"
     ]
 });
 
-
-@template:	api_config
 @descr:
+
 You can specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example:
 
 ~~~js
@@ -44,3 +45,5 @@ customization.md
 03_configuration/01_full_toolbar.html
 
 @todo: update image
+
+@template:api_config

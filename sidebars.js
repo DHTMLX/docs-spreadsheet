@@ -81,8 +81,6 @@ module.exports = {
             "api/spreadsheet_beforesheetrename_event",
             "api/spreadsheet_beforestylechange_event",
             "api/spreadsheet_beforevaluechange_event",
-            //"api/spreadsheet_addrow",
-            //"api/spreadsheet_addcolumn"
           ],
         },
         {
@@ -91,10 +89,19 @@ module.exports = {
           collapsible: true,
           collapsed: false,
           items: [
-            "api/api_overview",
-            //"api/spreadsheet_addrow",
-            //"api/spreadsheet_addcolumn"
-            
+            //"api/spreadsheet_autoformat_config", ?
+            "api/spreadsheet_colscount_config",
+            "api/spreadsheet_editline_config",
+            "api/spreadsheet_exportmodulepath_config",
+            //"api/spreadsheet_formataliases_config", ?
+            "api/spreadsheet_formats_config",
+            "api/spreadsheet_importmodulepath_config",
+            "api/spreadsheet_leftsplit_config",
+            "api/spreadsheet_menu_config",
+            "api/spreadsheet_multisheets_config",
+            "api/spreadsheet_readonly_config",
+            "api/spreadsheet_rowscount_config",
+            "api/spreadsheet_toolbarblocks_config",
           ],
         },
       ],
