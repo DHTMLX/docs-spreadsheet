@@ -19,7 +19,7 @@ var selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8
  
 
 @relatedapi:
-api/selection/setselectedcell.md
+api/selection_setselectedcell_method.md
 
 @related:
 working_with_ssheet.md#selectingcells

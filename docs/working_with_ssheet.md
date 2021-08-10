@@ -237,7 +237,7 @@ Selecting cells
 
 SpreadSheet provides a handy way of setting selection for cells via the API of the *Selection* object.
 
-You can select cell(s) by passing its/their id(s) to the api/selection/setselectedcell.md method:
+You can select cell(s) by passing its/their id(s) to the api/selection_setselectedcell_method.md method:
 
 ~~~js
 // selecting a cell
@@ -248,7 +248,7 @@ spreadsheet.selection.setSelectedCell("B1:B5");
 spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 ~~~
 
-It is also possible to get the id(s) of the selected cell(s) via the api/selection/getselectedcell.md method:
+It is also possible to get the id(s) of the selected cell(s) via the api/selection_getselectedcell_method.md method:
 
 ~~~js
 var selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
@@ -260,14 +260,14 @@ Setting focus on a cell
 
 The *Selection* object allows setting focus on a desired spreadsheet cell, as well as getting the id of the cell in focus. Use the corresponding methods for this purpose:
 
-- api/selection/setfocusedcell.md
+- api/selection_setfocusedcell_method.md
 
 ~~~js
 // pass the id of the cell to set focus on
 spreadsheet.selection.setFocusedCell("D4");
 ~~~
 
-- api/selection/getfocusedcell.md
+- api/selection_getfocusedcell_method.md
 
 ~~~js
 // getting the focused cell 

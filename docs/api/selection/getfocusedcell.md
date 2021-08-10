@@ -23,7 +23,7 @@ var focused = spreadsheet.selection.getFocusedCell(); // ->"D4"
 
 
 @relatedapi:
-api/selection/setfocusedcell.md
+api/selection_setfocusedcell_method.md
 
 @related:
 working_with_ssheet.md#settingfocusonacell

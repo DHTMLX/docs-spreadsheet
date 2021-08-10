@@ -15,7 +15,7 @@ spreadsheet.selection.setFocusedCell("D4");
  
 
 @relatedapi:
-api/selection/getfocusedcell.md
+api/selection_getfocusedcell_method.md
 
 
 @related:

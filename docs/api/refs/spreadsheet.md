@@ -62,10 +62,10 @@ Parameters:
 
 {{block Selection}}
 {{api
-- api/selection/getfocusedcell.md - returns the id of a focused cell
-- api/selection/getselectedcell.md - returns the id(s) of selected cells
-- api/selection/setfocusedcell.md - sets focus on the specified cell
-- api/selection/setselectedcell.md - selects the specified cell(s)
+- api/selection_getfocusedcell_method.md - returns the id of a focused cell
+- api/selection_getselectedcell_method.md - returns the id(s) of selected cells
+- api/selection_setfocusedcell_method.md - sets focus on the specified cell
+- api/selection_setselectedcell_method.md - selects the specified cell(s)
 }}
 {{end}}
 

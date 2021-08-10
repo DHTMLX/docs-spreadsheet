@@ -51,10 +51,10 @@ module.exports = {
           collapsible: true,
           collapsed: false,
           items: [
-            "api/spreadsheet_addcolumn_method",
-            "api/spreadsheet_addrow_method",
-            "api/spreadsheet_addsheet_method",
-            "api/spreadsheet_deletecolumn_method",
+            "api/selection_getfocusedcell_method",
+            "api/selection_getselectedcell_method",
+            "api/selection_setfocusedcell_method",
+            "api/selection_setselectedcell_method",
           ],
         },
         {
