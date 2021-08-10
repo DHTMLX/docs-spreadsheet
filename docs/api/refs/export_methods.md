@@ -2,11 +2,11 @@ Export
 ==========
 
 {{api
-- api/export/xlsx.md - exports data from a spreadsheet into an Excel (.xlsx) file
+- api/export/export_xlsx_method.md - exports data from a spreadsheet into an Excel (.xlsx) file
 }}
 
 @index:
-- api/export/xlsx.md
+- api/export_xlsx_method.md
 
 
 @linkclass:hidden

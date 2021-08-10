@@ -81,7 +81,7 @@ Parameters:
 
 {{block Export}}
 {{api
-- api/export/xlsx.md
+- api/export_xlsx_method.md
 }}
 {{end}}
 

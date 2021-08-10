@@ -47,6 +47,38 @@ module.exports = {
         },
         {
           type: "category",
+          label: "Selection methods",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/spreadsheet_addcolumn_method",
+            "api/spreadsheet_addrow_method",
+            "api/spreadsheet_addsheet_method",
+            "api/spreadsheet_deletecolumn_method",
+          ],
+        },
+        {
+          type: "category",
+          label: "Events Bus methods",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/spreadsheet_addcolumn_method",
+            "api/spreadsheet_addrow_method",
+            "api/spreadsheet_addsheet_method",
+          ],
+        },
+        {
+          type: "category",
+          label: "Export methods",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/export_xlsx_method",
+          ],
+        },
+        {
+          type: "category",
           label: "Spreadsheet events",
           collapsible: true,
           collapsed: false,

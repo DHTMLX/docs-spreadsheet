@@ -264,7 +264,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 {{sample  03_configuration/07_custom_import_export_path.html}}
 
-Once you've adjusted the required sources, you can use the related API method api/export/xlsx.md of the api/refs/export_methods.md object to export data of the component, as in:
+Once you've adjusted the required sources, you can use the related API method api/export_xlsx_method.md (to do delate: of the api/refs/export_methods.md object) to export data of the component, as in:
 
 ~~~js
 spreadsheet.export.xlsx();

@@ -31,7 +31,7 @@ To export files you need to:
 By default the link to CDN is used.
 
 @relatedapi:
-api/export/xlsx.md
+api/export_xlsx_method.md
 api/spreadsheet_importmodulepath_config.md
 
 @related:

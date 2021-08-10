@@ -6,8 +6,6 @@ description: changetext
 
 # API overview
 
-
-
 ## Spreadsheet methods
 
 | Name | Description |
@@ -16,6 +14,23 @@ description: changetext
 |      |             |
 |      |             |
 
+### Selection methods
+
+| Name | Description |
+| ---- | ----------- |
+|      |             |
+
+### Events Bus methods
+
+| Name | Description |
+| ---- | ----------- |
+|      |             |
+
+### Export methods
+
+| Name | Description |
+| ---- | ----------- |
+|      |             |
 
 ## Spreadsheet events
 
@@ -24,7 +39,6 @@ description: changetext
 |      |             |
 |      |             |
 |      |             |
-
 
 ## Spreadsheet properties
 
