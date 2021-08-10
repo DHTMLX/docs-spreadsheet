@@ -275,7 +275,7 @@ of SpreadSheet. Together with the fresh appearance the usability of dhtmlxSpread
 
 - [Entire redesign of the interface](overview.md)
 - [Fully customizable structure and adjustable look and feel](customization.md)
-- [Completely refreshed API](api/refs/spreadsheet.md)
+- [Completely refreshed API](api/api_overview.md)
 
 
 

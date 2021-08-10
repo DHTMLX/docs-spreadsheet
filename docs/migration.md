@@ -12,7 +12,7 @@ to the totally renewed version 3.0 in which the component is totally built on Ja
 
 ## 2.1 -> 3.0
 
-{{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](api/refs/spreadsheet.md).}}
+{{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](api/api_overview.md).}}
 
 ### Changed API
 

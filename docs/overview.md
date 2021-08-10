@@ -63,7 +63,7 @@ Now you can get down to using dhtmlxSpreadSheet in your application. Follow the 
 
 To dive deeper into the specificity of dhtmlxSpreadSheet, go into more profound manuals:
 
-- api/refs/spreadsheet.md
+- api/api_overview.md
 - guides.md
 
 

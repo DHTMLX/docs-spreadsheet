@@ -140,6 +140,6 @@ That's all. Just four simple steps and you have a handy tool for work with data 
 
 - [dhtmlxSpreadSheet Overview](overview.md)
 - [Guides](guides.md)
-- [dhtmlxSpreadSheet API](api/refs/spreadsheet.md)
+- [dhtmlxSpreadSheet API](api/api_overview.md)
 
 @linkclass:hidden

@@ -6,8 +6,7 @@ description: changetext
 
 # rowsCount
 
-@short:  
-	sets the number of rows a spreadsheet will have on initialization
+@short: sets the number of rows a spreadsheet will have on initialization
 
 @signature:
 

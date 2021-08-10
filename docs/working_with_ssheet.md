@@ -7,7 +7,7 @@ description: changetext
 # Work with SpreadSheet
 
 
-While users interact with SpreadSheet via its intuitive interface, you can work with the component using [simple API](api/refs/spreadsheet.md).
+While users interact with SpreadSheet via its intuitive interface, you can work with the component using [simple API](api/api_overview.md).
 
 Undo/redo actions
 --------------
