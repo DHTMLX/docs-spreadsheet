@@ -17,8 +17,8 @@ spreadsheet.events.on("StyleChange", function(id){
 
 @template:	api_method
 @relatedapi:
-	api/events/detach.md
-	api/events/fire.md
+	api/eventsbus_detach_method.md
+	api/eventsbus_fire_method.md
 @relatedsample:
 05_events/01_events.html
 	

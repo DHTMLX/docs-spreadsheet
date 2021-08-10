@@ -2,7 +2,7 @@ Export
 ==========
 
 {{api
-- api/export/export_xlsx_method.md - exports data from a spreadsheet into an Excel (.xlsx) file
+- api/export_xlsx_method.md - exports data from a spreadsheet into an Excel (.xlsx) file
 }}
 
 @index:

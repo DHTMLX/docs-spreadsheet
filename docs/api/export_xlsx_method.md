@@ -1,6 +1,6 @@
 ---
 sidebar_label: xlsx()
-title: JavaScript Spreadsheet - xlsx() export Method
+title: JavaScript Spreadsheet - xlsx() Export Method
 description: changetext
 ---
 

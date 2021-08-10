@@ -63,9 +63,9 @@ module.exports = {
           collapsible: true,
           collapsed: false,
           items: [
-            "api/spreadsheet_addcolumn_method",
-            "api/spreadsheet_addrow_method",
-            "api/spreadsheet_addsheet_method",
+            "api/eventsbus_detach_method",
+            "api/eventsbus_fire_method",
+            "api/eventsbus_on_method",
           ],
         },
         {

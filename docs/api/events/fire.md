@@ -20,8 +20,8 @@ var res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
 
 @template:	api_method
 @relatedapi:
-	api/events/detach.md
-	api/events/on.md
+	api/eventsbus_detach_method.md
+	api/eventsbus_on_method.md
 @descr:
 Normally, events are called automatically and you don't need to use this method.
 
