@@ -1,22 +1,26 @@
-AfterColumnDelete
-=============
+---
+sidebar_label: afterColumnDelete
+title: JavaScript Spreadsheet - afterColumnDelete Event
+description: changetext
+---
+
+# afterColumnDelete
 
 @short: fires after a column is deleted
-	
-@params:
-- cells		string		the id(s) of a cell(s)
 
+@signature:
+
+@params:
+`cells: string` - the id(s) of a cell(s)
 
 @example:
 spreadsheet.events.on("afterColumnDelete", function(cells){
 	console.log("A new column is added");
 });
 
-
-@template:	api_event
 @descr:
 
-
-
 @relatedapi:
-api/spreadsheet_beforecolumndelete_event.md	
+api/spreadsheet_beforecolumndelete_event.md
+
+@template:api_event

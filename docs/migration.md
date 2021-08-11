@@ -1,22 +1,27 @@
-Migration from 2.1 to 3.0
-======================
+---
+sidebar_label: Migration from 2.1 to 3.0
+title: Migration
+description: changetext
+---
+
+# Migration from 2.1 to 3.0
+
 
 This article will help you to migrate from the [previous version 2.1](https://docs.dhtmlx.com/spreadsheet__index.html) where dhtmlxSpreadSheet was PHP-based
 to the totally renewed version 3.0 in which the component is totally built on JavaScript. Check the list below to explore all the changes.
 
-2.1 -> 3.0
----------
+## 2.1 -> 3.0
 
-{{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](api/refs/spreadsheet.md).}}
+{{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](api/api_overview.md).}}
 
 ### Changed API
 
-- getStyle -> [spreadsheet.getStyle](api/spreadsheet_getstyle.md) - returns styles applied to a cell(s)	
-- getValue -> [spreadsheet.getValue](api/spreadsheet_getvalue.md) - returns an object with the value(s) of a cell(s)
-- setStyle -> [spreadsheet.setStyle](api/spreadsheet_setstyle.md) - sets style for a cell or a range of cells 
-- setValue -> [spreadsheet.setValue](api/spreadsheet_setvalue.md) - sets value for a cell or a range of cells 
-- lock -> [spreadsheet.lock](api/spreadsheet_lock.md) - locks a cell or a range of cells
-- unlock -> [spreadsheet.unlock](api/spreadsheet_unlock.md) - unlocks a locked cell or a range of cells
+- getStyle -> [spreadsheet.getStyle](api/spreadsheet_getstyle_method.md) - returns styles applied to a cell(s)	
+- getValue -> [spreadsheet.getValue](api/spreadsheet_getvalue_method.md) - returns an object with the value(s) of a cell(s)
+- setStyle -> [spreadsheet.setStyle](api/spreadsheet_setstyle_method.md) - sets style for a cell or a range of cells 
+- setValue -> [spreadsheet.setValue](api/spreadsheet_setvalue_method.md) - sets value for a cell or a range of cells 
+- lock -> [spreadsheet.lock](api/spreadsheet_lock_method.md) - locks a cell or a range of cells
+- unlock -> [spreadsheet.unlock](api/spreadsheet_unlock_method.md) - unlocks a locked cell or a range of cells
 
 
 ### Removed API

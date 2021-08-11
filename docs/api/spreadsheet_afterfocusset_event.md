@@ -1,23 +1,25 @@
-AfterFocusSet
-=====================
+---
+sidebar_label: afterFocusSet
+title: JavaScript Spreadsheet - afterFocusSet Event
+description: changetext
+---
 
-@short: 
-	fires after focus is set on a cell
-    
+# afterFocusSet
+
+@short: fires after focus is set on a cell
+
+@signature:
+
 @params:
-- cell		string		the id of a cell
+`cell: string` - the id of a cell
 
 @example:
 spreadsheet.events.on("afterFocusSet", function(cell){
  	console.log("Focus is set on a cell "+spreadsheet.selection.getSelectedCell());
 });
 
-
-@template:api_event
 @descr:
 
+@relatedapi: api/spreadsheet_beforefocusset_event.md
 
-
-@relatedapi:
-	api/spreadsheet_beforefocusset_event.md
-
+@template:api_event

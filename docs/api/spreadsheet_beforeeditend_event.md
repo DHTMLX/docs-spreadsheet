@@ -1,13 +1,19 @@
-BeforeEditEnd
-=====================
+---
+sidebar_label: beforeEditEnd
+title: JavaScript Spreadsheet - beforeEditEnd Event
+description: changetext
+---
 
-@short: 
-	fires before editing of a cell is finished
-    
+# beforeEditEnd
+
+@short: fires before editing of a cell is finished
+
+@signature:
+
 @params:
 
 @returns:
-- mode		boolean		true to finish editing a cell, false to prevent closing of an editor
+*True* to finish editing a cell, *false* to prevent closing of an editor.
 
 @example:
 spreadsheet.events.on("beforeEditEnd", function(){
@@ -15,11 +21,13 @@ spreadsheet.events.on("beforeEditEnd", function(){
     return true;
 });
 
-
-@template:api_event
 @descr:
+
 The event is blockable, returning false will prevent closing of an editor.
 
 
 @relatedapi:
-	api/spreadsheet_aftereditend_event.md
+api/spreadsheet_aftereditend_event.md
+
+
+@template:api_event

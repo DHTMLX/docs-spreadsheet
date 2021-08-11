@@ -1,5 +1,11 @@
-Excel Import/Export
-=======================
+---
+sidebar_label: Excel Import/Export
+title: JavaScript Spreadsheet - Excel Import/Export
+description: changetext
+---
+
+# Excel Import/Export
+
 
 Import from Excel
 --------------------

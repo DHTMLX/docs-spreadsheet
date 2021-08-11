@@ -1,11 +1,17 @@
-BeforeSheetAdd
-=============
+---
+sidebar_label: beforeSheetAdd
+title: JavaScript Spreadsheet - beforeSheetAdd Event
+description: changetext
+---
+
+# beforeSheetAdd
 
 @short: fires before a new sheet is added
-	
-@returns:
-- param     boolean     true to add a sheet, false to prevent adding of a sheet
 
+@signature:
+
+@returns:
+*True* to add a sheet, *false* to prevent adding of a sheet.
 
 @example:
 spreadsheet.events.on("beforeSheetAdd", function() {
@@ -13,11 +19,10 @@ spreadsheet.events.on("beforeSheetAdd", function() {
     return true;
 });
 
-
-@template:	api_event
 @descr:
-The event is blockable, returning false will prevent adding of a sheet.
 
+The event is blockable, returning false will prevent adding of a sheet.
 
 @changelog: added in v4.1
 
+@template:api_event

@@ -1,5 +1,11 @@
-Work with Sheets
-=========================
+---
+sidebar_label: Work with Sheets
+title: JavaScript Spreadsheet - Work with Sheets
+description: changetext
+---
+
+# Work with Sheets
+
 
 Starting from v4.1, the library allows working with [multiple sheets](api/spreadsheet_multisheets_config.md) in the spreadsheet.
 
@@ -11,7 +17,7 @@ In this article we'll discuss the details on how to implement such operations as
 Loading multiple sheets
 ------------------------
 
-To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse.md) method as a parameter. The data should be an *object* with the following attributes:
+To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object* with the following attributes:
 
 - **styles** - (*object*) an object with CSS classes applied to particular cells
 - **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
@@ -65,7 +71,7 @@ spreadsheet.parse(styledData);
 Adding a new sheet
 ---------------------
 
-To add a new sheet into the spreadsheet, use the [addSheet()](api/spreadsheet_addsheet.md) method and pass the name of the new sheet as a parameter:
+To add a new sheet into the spreadsheet, use the [addSheet()](api/spreadsheet_addsheet_method.md) method and pass the name of the new sheet as a parameter:
 
 ~~~js
 spreadsheet.addSheet("New Sheet");
@@ -77,7 +83,7 @@ The method returns the id of the created sheet.
 Removing a sheet
 --------------------
 
-You can remove a sheet from the spreadsheet by its id via the [removeSheet()](api/spreadsheet_removesheet.md) method:
+You can remove a sheet from the spreadsheet by its id via the [removeSheet()](api/spreadsheet_removesheet_method.md) method:
 
 ~~~js
 spreadsheet.removeSheet("u1614669331209");
@@ -88,7 +94,7 @@ Note, that a sheet won't be deleted if the number of sheets in the spreadsheet i
 Getting active sheet
 ----------------------
 
-It is possible to get the sheet that is currently active by applying the [getActiveSheet()](api/spreadsheet_getactivesheet.md) method:
+It is possible to get the sheet that is currently active by applying the [getActiveSheet()](api/spreadsheet_getactivesheet_method.md) method:
 
 ~~~js
 spreadsheet.getActiveSheet();
@@ -100,7 +106,7 @@ The method returns an object with the name and id attributes of the currently ac
 Getting sheets
 ---------------
 
-The [getSheets()](api/spreadsheet_getsheets.md) method allows you to get all sheets of the spreadsheet. The method returns an array with a set of sheet objects:
+The [getSheets()](api/spreadsheet_getsheets_method.md) method allows you to get all sheets of the spreadsheet. The method returns an array with a set of sheet objects:
 
 ~~~js
 spreadsheet.getSheets();

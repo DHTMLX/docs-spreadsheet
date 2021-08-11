@@ -1,14 +1,20 @@
-BeforeSheetChange
-=============
+---
+sidebar_label: beforeSheetChange
+title: JavaScript Spreadsheet - beforeSheetChange Event
+description: changetext
+---
+
+# beforeSheetChange
 
 @short: fires before changing the currently active sheet
-	
+
+@signature:
+
 @params:
-- sheet     object  the object of the currently active sheet   
+`sheet: object` - the object of the currently active sheet
 
 @returns:
-- param     boolean     true to change the active sheet, false to prevent the active sheet from being changed
-
+*True* to change the active sheet, *false* to prevent the active sheet from being changed.
 
 @example:
 spreadsheet.events.on("beforeSheetChange", function(sheet) {
@@ -16,9 +22,8 @@ spreadsheet.events.on("beforeSheetChange", function(sheet) {
     return true;
 });
 
-
-@template:	api_event
 @descr:
+
 The sheet object contains the following parameters:
 
 - **name** - (*string*) the name of the currently active sheet
@@ -26,7 +31,6 @@ The sheet object contains the following parameters:
 
 The event is blockable, returning false will prevent changing of the active sheet.
 
-
-
 @changelog: added in v4.1
 
+@template:api_event

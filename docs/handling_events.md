@@ -1,9 +1,15 @@
-Event Handling
-================
+---
+sidebar_label: Event Handling
+title: JavaScript Spreadsheet - Event Handling
+description: changetext
+---
+
+# Event Handling
+
 
 ## Attaching Event Listeners
 
-You can attach event listeners with the [spreadsheet.events.on()](api/events/on.md) method:
+You can attach event listeners with the [spreadsheet.events.on()](api/eventsbus_on_method.md) method:
 
 ~~~js
 spreadsheet.events.on("AfterColumnAdd", function(cells){
@@ -17,7 +23,7 @@ spreadsheet.events.on("AfterColumnAdd", function(cells){
 
 ## Detaching Event Listeners
 
-To detach events, use [spreadsheet.events.detach()](api/events/detach.md):
+To detach events, use [spreadsheet.events.detach()](api/eventsbus_detach_method.md):
 
 ~~~js
 var addcolumn = spreadsheet.events.on("AfterColumnAdd", function(cells){
@@ -28,7 +34,7 @@ spreadsheet.events.detach(addcolumn);
 
 ## Calling Events
 
-To call events, use [spreadsheet.events.fire()](api/events/fire.md):
+To call events, use [spreadsheet.events.fire()](api/eventsbus_fire_method.md):
 
 ~~~js
 spreadsheet.events.fire("name",args);

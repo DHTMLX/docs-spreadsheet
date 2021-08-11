@@ -1,5 +1,11 @@
-Work with Sheets
-=========================
+---
+sidebar_label: Work with Sheets
+title: JavaScript Spreadsheet - Work with Sheets
+description: changetext
+---
+
+# Work with Sheets
+
 
 Adding a new sheet
 -----------------------

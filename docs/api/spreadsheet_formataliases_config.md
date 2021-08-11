@@ -1,11 +1,19 @@
-formatAliases
-================
+---
+sidebar_label: formatAliases
+title: JavaScript Spreadsheet - formatAliases Config
+description: changetext
+---
 
-@short: defines the list of number formats  
-	
+# formatAliases
+
+@short: defines the list of number formats
+
+@signature:
+
 @type: array
+
 @example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {          
+var spreadsheet = new dhx.Spreadsheet(document.body, {
     formats:[
     	alias: formatAliases | string;
 		mask: string;
@@ -14,10 +22,8 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
     }
 );
 
-
-
-@template:	api_config
 @descr:
+
 The default number formats are the following:
 
 - *common* ("")
@@ -25,8 +31,8 @@ The default number formats are the following:
 - *number* ("#,##0.00")
 - *percent* (#,##0.00%)
 
-
 @related:
 
-
 @todo: move to "formats" page
+
+@template:api_config

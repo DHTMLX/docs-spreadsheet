@@ -1,5 +1,11 @@
-Number Formatting
-==================
+---
+sidebar_label: Number Formatting
+title: JavaScript Spreadsheet - Number Formatting
+description: changetext
+---
+
+# Number Formatting
+
 
 Supported number formats
 ----------------------------

@@ -1,5 +1,11 @@
-Work with Functions
-==================
+---
+sidebar_label: Work with Functions
+title: JavaScript Spreadsheet - Work with Functions
+description: changetext
+---
+
+# Work with Functions
+
 
 Starting from v4.0, the package of dhtmlxSpreadSheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
 
@@ -167,7 +173,7 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 Getting cell formula
 ---------------------------
 
-Starting with v4.1, you can get the formula applied to a cell via the [getFormula()](api/spreadsheet_getformula.md) method. The method takes the id of the cell as a parameter:
+Starting with v4.1, you can get the formula applied to a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method. The method takes the id of the cell as a parameter:
 
 ~~~js
 var formula = spreadsheet.getFormula("B2");

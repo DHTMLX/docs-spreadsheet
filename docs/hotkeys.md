@@ -1,5 +1,11 @@
-Hot Keys List
-==================
+---
+sidebar_label: Hot Keys List
+title: JavaScript Spreadsheet - Hot Keys List
+description: changetext
+---
+
+# Hot Keys List
+
 
 Here is a list of hotkeys that you can use while working with dhtmlxSpreadSheet.
 

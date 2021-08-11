@@ -1,5 +1,11 @@
-User Guide
-==========
+---
+sidebar_label: User Guide
+title: JavaScript Spreadsheet - User Guide
+description: changetext
+---
+
+# User Guide
+
 
 - [Hot Keys](hotkeys.md) 
 - [Work with Cells](work_with_cells.md)

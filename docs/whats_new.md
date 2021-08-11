@@ -1,8 +1,11 @@
 ---
 sidebar_label: What's New
-title: What's New
+title: JavaScript Spreadsheet - What's New
 description: changetext
 ---
+
+# What's new
+
 ```
 <style>
 .rel_date_pivot{
@@ -56,13 +59,13 @@ Version 4.1
 - The ability to [work with multiple sheets](work_with_sheets.md) in the spreadsheet
 - The ability to use [cross-references in multiple sheets](work_with_sheets.md#crossreferencesbetweensheets)
 - The ability to [load several sheets](working_with_sheets.md#loadingmultiplesheets) into the spreadsheet at once
-- New methods for working with [multiple sheets](working_with_sheets.md) are added: [addSheet()](api/spreadsheet_addsheet.md), [removeSheet()](api/spreadsheet_removesheet.md), [getActiveSheet()](api/spreadsheet_getactivesheet.md), [getSheets()](api/spreadsheet_getsheets.md)
+- New methods for working with [multiple sheets](working_with_sheets.md) are added: [addSheet()](api/spreadsheet_addsheet_method.md), [removeSheet()](api/spreadsheet_removesheet_method.md), [getActiveSheet()](api/spreadsheet_getactivesheet_method.md), [getSheets()](api/spreadsheet_getsheets_method.md)
 - New events are added: [BeforeSheetAdd](api/spreadsheet_beforesheetadd_event.md), [AfterSheetAdd](api/spreadsheet_aftersheetadd_event.md), [BeforeSheetChange](api/spreadsheet_beforesheetchange_event.md), [AfterSheetChange](api/spreadsheet_aftersheetchange_event.md), [BeforeSheetRemove](api/spreadsheet_beforesheetremove_event.md), [AfterSheetRemove](api/spreadsheet_aftersheetremove_event.md), [BeforeSheetRename](api/spreadsheet_beforesheetrename_event.md), [AfterSheetRename](api/spreadsheet_aftersheetrename_event.md)
-- The ability to get the formula of a cell via the [getFormula()](api/spreadsheet_getformula.md) method
+- The ability to get the formula of a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method
 
 ### Updates
 
-- The format of the "cell" parameter of the [getValue()](api/spreadsheet_getvalue.md), [setValue()](api/spreadsheet_setvalue.md), [getStyle()](api/spreadsheet_getstyle.md), [setStyle()](api/spreadsheet_setstyle.md), [getFormat()](api/spreadsheet_getformat.md), [setFormat()](api/spreadsheet_setformat.md), [isLocked()](api/spreadsheet_islocked.md), [lock()](api/spreadsheet_lock.md), [unlock()](api/spreadsheet_unlock.md) methods is updated. Now the reference to a cell, or a range of cells can contain the name of the tab.
+- The format of the "cell" parameter of the [getValue()](api/spreadsheet_getvalue_method.md), [setValue()](api/spreadsheet_setvalue_method.md), [getStyle()](api/spreadsheet_getstyle_method.md), [setStyle()](api/spreadsheet_setstyle_method.md), [getFormat()](api/spreadsheet_getformat_method.md), [setFormat()](api/spreadsheet_setformat_method.md), [isLocked()](api/spreadsheet_islocked_method.md), [lock()](api/spreadsheet_lock_method.md), [unlock()](api/spreadsheet_unlock_method.md) methods is updated. Now the reference to a cell, or a range of cells can contain the name of the tab.
 
 Version 4.0.5
 --------------
@@ -98,7 +101,7 @@ Version 4.0.3
 - Fix the issue with setting the format for the value of a cell within a data set 
 - Fix the error that occurred when attaching the spreadsheet to the layout
 - Fix the issue which caused the formula set for a cell not being edited after the result was calculated
-- Fix the incorrect work of the [setFocusedCell()](api/selection/setfocusedcell.md) method
+- Fix the incorrect work of the [setFocusedCell()](api/selection_setfocusedcell_method.md) method
 - Fix the incorrect behavior of focus when working with formulas
 - Fix the issue with selecting a range of cells using the "ctrl" key
 - Fix the issue with adding a range of cells via "ctrl+click" to a cell with a formula
@@ -128,7 +131,7 @@ Version 4.0.1
 
 - The incorrect displaying of the tooltips when hovering over the Undo/Redo buttons in the toolbar
 - The issue which happened when removing the last column of the spreadsheet after importing the data bigger than the size of the spreadsheet
-- The issue with the [setSelectedCell()](api/selection/setselectedcell.md) method which caused the formula of the selected cell not to be shown in the formula bar
+- The issue with the [setSelectedCell()](api/selection_setselectedcell_method.md) method which caused the formula of the selected cell not to be shown in the formula bar
 - The incorrect generation of the typescript definitions
 - The visual issue with the alignment of the cell content
 - The issue with serializing of empty cells or cells with zero value
@@ -272,7 +275,7 @@ of SpreadSheet. Together with the fresh appearance the usability of dhtmlxSpread
 
 - [Entire redesign of the interface](overview.md)
 - [Fully customizable structure and adjustable look and feel](customization.md)
-- [Completely refreshed API](api/refs/spreadsheet.md)
+- [Completely refreshed API](api/api_overview.md)
 
 
 

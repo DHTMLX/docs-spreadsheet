@@ -1,17 +1,24 @@
-autoFormat
-==============
+---
+sidebar_label: autoFormat
+title: JavaScript Spreadsheet - autoFormat Config
+description: changetext
+---
 
-@short: defines whether the format of a cell content is detected automatically 
-	
+# autoFormat
+
+@short: defines whether the format of a cell content is detected automatically
+
+@signature:
+
 @default: true
+
 @type: boolean
+
 @example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {          
+var spreadsheet = new dhx.Spreadsheet(document.body, {
     autoFormat:false
 });
 
-
-@template:	api_config
 @descr:
 
 @related:
@@ -22,8 +29,9 @@ number_formatting.md#autodetectingcellformat
 
 @relatedapi:
 api/spreadsheet_formats_config.md
-api/spreadsheet_setformat.md
-api/spreadsheet_getformat.md
+api/spreadsheet_setformat_method.md
+api/spreadsheet_getformat_method.md
 api/spreadsheet_beforeformatchange_event.md
 api/spreadsheet_afterformatchange_event.md
 
+@template:api_config

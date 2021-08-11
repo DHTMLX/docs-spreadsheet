@@ -1,14 +1,20 @@
-BeforeFocusSet
-=====================
+---
+sidebar_label: beforeFocusSet
+title: JavaScript Spreadsheet - beforeFocusSet Event
+description: changetext
+---
 
-@short: 
-	fires before focus is set on a cell
-    
+# beforeFocusSet
+
+@short: fires before focus is set on a cell
+
+@signature:
+
 @params:
-- cell		string		the id of a cell
+`cell: string` - the id of a cell
 
 @returns:
-- mode		boolean		true to set focus on a cell, false to prevent setting focus
+*True* to set focus on a cell, *false* to prevent setting focus.
 
 @example:
 spreadsheet.events.on("beforeFocusSet", function(cell){
@@ -16,12 +22,10 @@ spreadsheet.events.on("beforeFocusSet", function(cell){
   return true;
 });
 
-
-@template:api_event
 @descr:
+
 The event is blockable, returning false will prevent setting focus on a cell.
 
+@relatedapi:api/spreadsheet_afterfocusset_event.md
 
-@relatedapi:
-	api/spreadsheet_afterfocusset_event.md
-
+@template:api_event
