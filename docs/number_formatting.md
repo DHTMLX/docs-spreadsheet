@@ -6,7 +6,6 @@ description: changetext
 
 # Number Formatting
 
-
 DHTMLX SpreadSheet supports number formatting that you can apply for numeric values in cells. 
 
 <img style="margin: 20px auto 20px auto; display: block;" src="number_format_options.png">
@@ -95,7 +94,6 @@ A mask may contain a set of common syntax characters that include digit placehol
 - **.(period)**	- applies a decimal point to numbers.
 - **,(comma)** - applies a thousands separator to numbers.
 
-
 ## Setting format
 
 In order to apply the necessary format to a numeric value, make use of the api/spreadsheet_setformat_method.md method. It takes two parameters:
@@ -110,10 +108,9 @@ For example:
 spreadsheet.setFormat("A1","percent");
 ~~~
 
-
 ## Getting format
 
-You can get the number format applied to the value of a cell with the help of the api/spreadsheet_getformat_method.md method. The method takes the id of a cell as a parameter. 
+You can get the number format applied to the value of a cell with the help of the api/spreadsheet_getformat_method.md method. The method takes the id of a cell as a parameter.
 
 ~~~js
 var format = spreadsheet.getFormat("A1"); 
@@ -126,5 +123,3 @@ There is a pair of events you can use to control the process of cell's format ch
 
 - api/spreadsheet_beforeformatchange_event.md - fires before the format of a cell is changed
 - api/spreadsheet_afterformatchange_event.md - fires after the format of a cell is changed
-
-

@@ -6,11 +6,9 @@ description: changetext
 
 # Work with SpreadSheet
 
-
 While users interact with SpreadSheet via its intuitive interface, you can work with the component using [simple API](api/api_overview.md).
 
-Undo/redo actions
---------------
+## Undo/redo actions
 
 There is the api/spreadsheet_undo_method.md API method that allows reverting the latest action:
 
@@ -24,8 +22,7 @@ To reapply a reverted action once again use the api/spreadsheet_redo_method.md m
 spreadsheet.redo();
 ~~~
 
-Adding/removing rows and columns
-------------------
+## Adding/removing rows and columns
 
 ### Columns
 
@@ -62,11 +59,10 @@ spreadsheet.deleteRow("A2");
 ~~~
 
 When a new row is added, neighboring rows are moved one cell down.
- 
-Styling cells
--------------------------
 
-###Set styles
+## Styling cells
+
+### Set styles
 
 You can apply certain styling to a cell or a range of cells via the api/spreadsheet_setstyle_method.md method. It takes two parameters:
 
@@ -86,7 +82,7 @@ spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 
 {{note The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.}}
 
-###Get styles
+### Get styles
 
 To get the styles applied to a cell(s), use the api/spreadsheet_getstyle_method.md method. Pass the *id(s) of a cell(s) or a range of cells* to it:
 
@@ -113,10 +109,9 @@ For multiple cells the method returns an array of objects with styles applied to
 ]
 ~~~
 
-Setting cell value
---------------------
+## Setting cell value
 
-###Set values
+### Set values
 
 To set value for a cell(s) via the API, make use of the api/spreadsheet_setvalue_method.md method. Pass the following parameters to it:
 
@@ -136,7 +131,7 @@ spreadsheet.setValue("A1:D1",[1,2,3]);
 
 {{note Please note that the method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.}}
 
-###Get values
+### Get values
 
 It is also possible to return the value(s) set in a cell(s) by passing the *id(s) of the necessary cell(s) or a range of cells* to the api/spreadsheet_getvalue_method.md method.
 
@@ -154,10 +149,9 @@ var values = spreadsheet.getValue("A1,B1,C1:C3");
 //-> ["Country", "Product", "Price", 6.68, 3.75]
 ~~~
 
-Locking cells
-----------------
+## Locking cells
 
-###Lock cells
+### Lock cells
 
 You can lock a cell or several cells programmatically to make them read-only for users. Use the api/spreadsheet_lock_method.md method for this purpose. The method takes as a parameter the id of a cell(s) or a range of cells to lock.
 
@@ -174,7 +168,7 @@ spreadsheet.lock("A1,B5,B7,D4:D6");
 
 {{sample 02_usage/01_locked_cells.html}}
 
-###Unlock cells
+### Unlock cells
 
 To unlock the locked cell(s), use the api/spreadsheet_unlock_method.md method. Pass the id(s) of the cell(s) or a range that contains locked cells as a parameter:
 
@@ -189,7 +183,7 @@ spreadsheet.unlock("A1:C1");
 spreadsheet.unlock("A1,B5,B7,D4:D6");
 ~~~
 
-###Check whether a cell is locked
+### Check whether a cell is locked
 
 To check whether a cell or several cells are locked, use the api/spreadsheet_islocked_method.md method and pass the *id of a cell(s)* or a *range of cells* to it:
 
@@ -206,10 +200,9 @@ var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 
 The method will return *true* or *false* depending on the state of the cell. If several cells are checked at once, the method will return *true*, if there is at least one locked cell among the specified cells.
 
-Editing cell
--------------------------
+## Editing cell
 
-###Enable cell editor
+### Enable cell editor
 
 You can add an input into a cell by calling the api/spreadsheet_startedit_method.md method:
 
@@ -224,7 +217,7 @@ The method may take two optional parameters:
 
 If the id of a cell isn't passed, input will be added into the currently selected cell.
 
-###Disable cell editor
+### Disable cell editor
 
 To finish editing of a cell, use the api/spreadsheet_endedit_method.md method that will close the editor while saving the entered value.
 
@@ -232,8 +225,7 @@ To finish editing of a cell, use the api/spreadsheet_endedit_method.md method th
 spreadsheet.endEdit();
 ~~~
 
-Selecting cells
------------------------
+## Selecting cells
 
 SpreadSheet provides a handy way of setting selection for cells via the API of the *Selection* object.
 
@@ -254,9 +246,7 @@ It is also possible to get the id(s) of the selected cell(s) via the api/selecti
 var selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
 ~~~
 
-
-Setting focus on a cell
------------------------
+## Setting focus on a cell
 
 The *Selection* object allows setting focus on a desired spreadsheet cell, as well as getting the id of the cell in focus. Use the corresponding methods for this purpose:
 
@@ -273,6 +263,3 @@ spreadsheet.selection.setFocusedCell("D4");
 // getting the focused cell 
 var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
 ~~~
-
-
-

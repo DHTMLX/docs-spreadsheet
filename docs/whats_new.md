@@ -16,8 +16,21 @@ description: changetext
 </style>
 ```
 
-Version 4.1.2
---------------
+## Version 4.1.3
+
+<span class="rel_date_pivot">released on August 31, 2021</span>
+
+### Fixes
+
+- Fix the incorrect behavior of the undo operation when reverting the row/column after its removing
+- Fix the incorrect work of the "mask" property specified in the number format object
+- Fix the issue which caused empty cells/rows at the top of the selection to be trimmed after pasting the data from Excel to the spreadsheet
+- Fix the issue which caused the cells the absolute formula refers to not being marked
+- Fix the issue with the "afterSelectionSet" event which caused the event to occur twice after a range of cells is selected
+- Fix the issue with TypeScript definitions
+- Fix the issues with the "text" number format
+
+## Version 4.1.2
 
 <span class="rel_date_pivot">released on June 3, 2021</span>
 
@@ -35,8 +48,7 @@ Version 4.1.2
 - Fix the issues with incorrect behavior of the horizontal scrollbar and display of columns when working with the spreadsheet that contains a lot of columns
 - Fix the script error that appears after using key navigation in the empty spreadsheet
 
-Version 4.1.1
---------------
+## Version 4.1.1
 
 <span class="rel_date_pivot">released on April 14, 2021</span>
 
@@ -48,8 +60,7 @@ Version 4.1.1
 - Fix the issue with incorrect pasting of the data copied from the Excel file
 - Fix the issue that caused the wrong result to return when summing float numbers
 
-Version 4.1
---------------
+## Version 4.1
 
 <span class="rel_date_pivot">released on March 24, 2021</span>
 
@@ -67,8 +78,7 @@ Version 4.1
 
 - The format of the "cell" parameter of the [getValue()](api/spreadsheet_getvalue_method.md), [setValue()](api/spreadsheet_setvalue_method.md), [getStyle()](api/spreadsheet_getstyle_method.md), [setStyle()](api/spreadsheet_setstyle_method.md), [getFormat()](api/spreadsheet_getformat_method.md), [setFormat()](api/spreadsheet_setformat_method.md), [isLocked()](api/spreadsheet_islocked_method.md), [lock()](api/spreadsheet_lock_method.md), [unlock()](api/spreadsheet_unlock_method.md) methods is updated. Now the reference to a cell, or a range of cells can contain the name of the tab.
 
-Version 4.0.5
---------------
+## Version 4.0.5
 
 <span class="rel_date_pivot">released on February 3, 2021</span>
 
@@ -91,8 +101,7 @@ Version 4.0.4
 - Fix the issue with initialization of the spreadsheet after calling "destructor()"
 - Fix the issue with types
 
-Version 4.0.3
---------------
+## Version 4.0.3
 
 <span class="rel_date_pivot">released on December 28, 2020</span>
 
@@ -108,9 +117,7 @@ Version 4.0.3
 - Fix the incorrect work of Math functions
 - Fix the issue with the SUM() formula when selecting it via the popup and a mouse click 
 
-
-Version 4.0.2
---------------
+## Version 4.0.2
 
 <span class="rel_date_pivot">released on December 21, 2020</span>
 
@@ -120,10 +127,7 @@ Version 4.0.2
 - Fix the issue with the error thrown from the types.d.ts file
 - Fix issues with copying and pasting a range of cells
 
-
-
-Version 4.0.1
---------------
+## Version 4.0.1
 
 <span class="rel_date_pivot">released on December 2, 2020</span>
 
@@ -136,9 +140,7 @@ Version 4.0.1
 - The visual issue with the alignment of the cell content
 - The issue with serializing of empty cells or cells with zero value
 
-
-Version 4.0
---------------
+## Version 4.0
 
 <span class="rel_date_pivot">released on October 19, 2020</span>
 
@@ -158,8 +160,7 @@ Version 4.0
 - Fix the incorrect work of the [editLine:false](api/spreadsheet_editline_config.md) property that caused the edit operation to finish with an error in the console
 - Fix the issue with the [AfterValueChange](api/spreadsheet_aftervaluechange_event.md) event which caused the event to be called twice
 
-Version 3.1.4
---------------
+## Version 3.1.4
 
 <span class="rel_date_pivot">released on September 19, 2019</span>
 
@@ -167,8 +168,7 @@ Version 3.1.4
 
 - Styles fixes
 
-Version 3.1.3
---------------
+## Version 3.1.3
 
 <span class="rel_date_pivot">released on September 19, 2019</span>
 
@@ -176,8 +176,7 @@ Version 3.1.3
 
 - Issue with focus on a cell when Spreadsheet is attached to Layout
 
-Version 3.1.2
---------------
+## Version 3.1.2
 
 <span class="rel_date_pivot">released on March 25, 2019</span>
 
@@ -186,9 +185,7 @@ Version 3.1.2
 - Issues with text styles in Excel export
 - Issue with underlining right-aligned text
 
-
-Version 3.1.1
---------------
+## Version 3.1.1
 
 <span class="rel_date_pivot">released on March 25, 2019</span>
 
@@ -196,8 +193,7 @@ Version 3.1.1
 
 - Issues with export to Excel
 
-Version 3.1
---------------
+## Version 3.1
 
 <span class="rel_date_pivot">released on March 21, 2019</span>
 
@@ -208,7 +204,6 @@ Version 3.1
 - [Number formatting](number_formatting.md)
 - [Auto filling of cells](work_with_cells.md#autofillingcellswithcontent) 
 
-
 ### Updates
 
 - [Hotkeys behavior in a range of cells](hotkeys.md)
@@ -217,8 +212,7 @@ Version 3.1
 
 - Issues with hotkeys on the active cell
 
-Version 3.0.3
-----------------
+## Version 3.0.3
 
 <span class="rel_date_pivot">released on December 13, 2018</span>
 
@@ -229,8 +223,7 @@ Version 3.0.3
 - Issues with loss of focus on the edit line
 - Issues with hotkeys on the active cell
 
-Version 3.0.2
---------------
+## Version 3.0.2
 
 <span class="rel_date_pivot">released on December 6, 2018</span>
 
@@ -243,8 +236,7 @@ Version 3.0.2
 - Incorrect behavior of hotkeys on the active cell
 - Incorrect behavior of scrolling by arrow keys
 
-Version 3.0.1
--------------
+## Version 3.0.1
 
 <span class="rel_date_pivot">released on November 8, 2018</span>
 
@@ -253,9 +245,7 @@ Version 3.0.1
 - Incorrect behavior of the undo operation
 - Incorrect behavior of the cut-paste operation on a group of cells
 
-
-Version 3.0
-------------------
+## Version 3.0
 
 <span class="rel_date_pivot">released on October 25, 2018</span>
 
@@ -263,12 +253,12 @@ Version 3.0
 
 {{note API of the version 3.0 is not compatible with API v2.1.}}
 
-In comparison to the previous PHP-based version, dhtmlxSpreadSheet of version 3.0 is a completely client-side JavaScript component. 
+In comparison to the previous PHP-based version, dhtmlxSpreadSheet of version 3.0 is a completely client-side JavaScript component.
 
 Check the [Migration](migration.md) article to get information about the usage of new API. 
 If you feel like keep using the previous version for a while, [the documentation for dhtmlxSpreadSheet v2.1](https://docs.dhtmlx.com/spreadsheet__index.html) is still available.
 
-###New functionality
+### New functionality
 
 The API of SpreadSheet has been changed and became more handy to work with. One more significant update is the total redesign of the component which gave a modern look to the interface
 of SpreadSheet. Together with the fresh appearance the usability of dhtmlxSpreadSheet is greatly enhanced.
@@ -276,6 +266,3 @@ of SpreadSheet. Together with the fresh appearance the usability of dhtmlxSpread
 - [Entire redesign of the interface](overview.md)
 - [Fully customizable structure and adjustable look and feel](customization.md)
 - [Completely refreshed API](api/api_overview.md)
-
-
-

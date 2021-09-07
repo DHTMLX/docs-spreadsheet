@@ -6,11 +6,9 @@ description: changetext
 
 # Work with Rows and Columns
 
-
 dhtmlxSpreadSheet allows adding and removing columns and rows into a sheet via both toolbar buttons and options of the context menu.
 
-Adding rows
----------------
+## Adding rows
 
 To add a new row, take the following steps:
 
@@ -25,8 +23,7 @@ To add a new row, take the following steps:
 
 <img src="adding_rows.gif"/>
 
-Removing rows
----------------
+## Removing rows
 
 To remove a row, take the following steps:
 
@@ -39,8 +36,7 @@ To remove a row, take the following steps:
 
 <img src="removing_rows.gif"/>
 
-Adding columns
----------------
+## Adding columns
 
 To add a new column, take the following steps:
 
@@ -55,8 +51,7 @@ To add a new column, take the following steps:
 
 <img src="adding_cols.gif"/>
 
-Removing columns
-----------------
+## Removing columns
 
 To remove a column, take the following steps:
 

@@ -6,9 +6,7 @@ description: changetext
 
 # Work with Cells
 
-
-Entering content in a cell
--------------------------------
+## Entering content in a cell
 
 - Click a desired cell on a sheet.
 - Type a text or a number(s), and press **Enter**.
@@ -17,8 +15,7 @@ Entering content in a cell
 
 You can enter the same data into several cells by using the **Fill Handle** to automatically fill data in worksheet cells. See the details below.
 
-Auto filling cells with content
----------------------------------
+## Auto filling cells with content
 
 You can automatically fill cells with data.  This is how it works:
 
@@ -34,14 +31,13 @@ You can automatically fill cells with data.  This is how it works:
     - to make a series 1, 2, 3, 4, 5, ... , type 1 and 2 into the first two cells.
     - to make a series 1 ,3, 5, 7, 9, ... , type 1 and 3 into the first two cells.
     - to make a series 2 ,4, 6, 8, 10, ... , type 2 and 4 into the first two cells.
-    - besides numbers, you can also use letters in a pattern, e.g. to make a series like 1, a, 2, b, 3, a, 4, b, ..., type 1, a, 2, b into the first four cells. 
+    - besides numbers, you can also use letters in a pattern, e.g. to make a series like 1, a, 2, b, 3, a, 4, b, ..., type 1, a, 2, b into the first four cells.
 
 3\. Drag the **Fill Handle**
 
 <img src="autofill.gif"/>
 
-Locking cells
--------------------
+## Locking cells
 
 You can lock cells to protect them from changing their values. When you lock a cell, it gets a gray "key" in the top right corner. Locked cells remain unresponsive to any attempts of editing them.
 

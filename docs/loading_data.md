@@ -6,7 +6,6 @@ description: changetext
 
 # Data Loading and Export
 
-
 You can populate dhtmlxSpreadSheet with a ready dataset that may include the data itself and styling for cells. The component supports two ways of data loading:
 
 - load from an external file
@@ -14,16 +13,15 @@ You can populate dhtmlxSpreadSheet with a ready dataset that may include the dat
 
 The component also supports [export of data into an Excel file](#exportingdata).
 
-Preparing data
----------
+## Preparing data
 
 dhtmlxSpreadSheet expects data in the JSON format. It is an array with data objects each of which has two properties:
- 
+
 - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
 - **value** - (*string,number*) the value of a cell
- 
+
 The example below demonstrates a simple data set for SpreadSheet:
- 
+
 ~~~js
  var data = [
 	{ cell: "a1", value: "Country" },
@@ -81,7 +79,7 @@ var styledData = {
 ### Setting number formats for cells
 
 You can specify particular number format for values of cells within a data set. A format is set for a cell via the **format** property. As the value of this property you should set the id of any of the 
-[default formats](number_formatting.md#defaultnumberformats) or of a [custom format](number_formatting.md#formatscustomization) that you've added. 
+[default formats](number_formatting.md#defaultnumberformats) or of a [custom format](number_formatting.md#formatscustomization) that you've added.
 
 ~~~js
  var data = [
@@ -102,8 +100,7 @@ You can specify particular number format for values of cells within a data set. 
 ];
 ~~~
 
-External data loading
----------------
+## External data loading
 
 ### Loading JSON data
 
@@ -127,7 +124,6 @@ spreadsheet.load("../common/data.csv", "csv");
 
 {{sample  01_init/05_csv_load.html}}
 
-
 <h3 id="importexcel"> Loading Excel file (.xlsx)</h3>
 
 It is possible to load a file in the Excel format with the **.xlsx** extension into a spreadsheet. There are corresponding controls in the Toolbar and Menu in the user interface:
@@ -140,6 +136,7 @@ It is possible to load a file in the Excel format with the **.xlsx** extension i
 ```
 ![Import from Excel toolbar](import_xlsx_toolbar.png)
 ```
+
 #### How to import data
 
 {{note Please note that the import feature won't work in the Internet Explorer browser.}}
@@ -172,7 +169,6 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 You can also [export data from a spreadsheet into an Excel file](#exportingdata), if needed.
 
-
 ### Processing after-loading code
 
 The component will make an AJAX call and expect the remote URL to provide valid data. Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
@@ -183,9 +179,7 @@ spreadsheet.load("/some/data").then(function(){
 });
 ~~~
 
-
-Loading from local source
----------------
+## Loading from local source
 
 To load data from a local source, make use of the api/spreadsheet_parse_method.md method. The method takes an array with data objects as a parameter:
 
@@ -212,11 +206,9 @@ spreadsheet.parse(data);
 
 For details on how to load multiple sheets into the spreadsheet, see the [Work with Sheets](working_with_sheets.md#loadingmultiplesheets) article.
 
-Saving and restoring state
----------------
+## Saving and restoring state
 
 To save the current state of a spreadsheet, use the api/spreadsheet_serialize_method.md method. It converts data into an array of JSON objects. Each JSON object contains the configuration of a cell.
-
 
 ~~~js
 // saving state of the spreadsheet1
@@ -232,8 +224,7 @@ var spreadsheet2 = new dhx.Spreadsheet(document.body);
 spreadsheet2.parse(state);
 ~~~
 
-Exporting data 
---------------------
+## Exporting data 
 
 dhtmlxSpreadSheet provides the ability to export data from a spreadsheet into an Excel file. There are corresponding controls in the Toolbar and Menu in the user interface:
 
@@ -245,6 +236,7 @@ dhtmlxSpreadSheet provides the ability to export data from a spreadsheet into an
 ```
 ![Export from Excel toolbar](export_xlsx_toolbar.png)
 ```
+
 ### How to export data
 
 {{note Please note that the export feature won't work in the Internet Explorer browser.}}
@@ -275,4 +267,3 @@ spreadsheet.export.xlsx();
 {{sample 02_usage/04_export_xlsx.html}}
 
 Check the steps of [importing data from an Excel file into SpreadSheet](#importexcel).
-

@@ -6,7 +6,6 @@ description: changetext
 
 # Migration from 2.1 to 3.0
 
-
 This article will help you to migrate from the [previous version 2.1](https://docs.dhtmlx.com/spreadsheet__index.html) where dhtmlxSpreadSheet was PHP-based
 to the totally renewed version 3.0 in which the component is totally built on JavaScript. Check the list below to explore all the changes.
 
@@ -23,18 +22,16 @@ to the totally renewed version 3.0 in which the component is totally built on Ja
 - lock -> [spreadsheet.lock](api/spreadsheet_lock_method.md) - locks a cell or a range of cells
 - unlock -> [spreadsheet.unlock](api/spreadsheet_unlock_method.md) - unlocks a locked cell or a range of cells
 
-
 ### Removed API
 
-####SpreadSheet class
+#### SpreadSheet class
 
 - getCell 
 - getCells 
 - isCell 
 - setSheetId 
 
-
-####SpreadSheetCell
+#### SpreadSheetCell
 
 <table>
 <tr>
@@ -76,5 +73,3 @@ to the totally renewed version 3.0 in which the component is totally built on Ja
     <td>setAlign</td>    
 </tr>
 </table>
-
-

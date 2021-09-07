@@ -6,7 +6,6 @@ description: changetext
 
 # Initialization
 
-
 This guide will give you detailed instructions on how to create dhtmlxSpreadSheet on a page to enrich your application with features of a mighty worksheet.
 Follow the steps below to get a ready-to-use component:
 
@@ -57,8 +56,7 @@ The structure of the SpreadSheet pack is the following:
 - **samples** - the code samples;
 - **docs** - the full documentation of the component.
 
-
-## Creating container 
+## Creating container
 
 Add a container for SpreadSheet and give it an id, for example "ssheet":
 
@@ -95,7 +93,6 @@ This is a list of [properties](api/refs/spreadsheet_props.md) that you can speci
 - **importModulePath** - (*string*)	sets the path to the import module
 - **autoFormat** - (*boolean*) defines whether the format of a cell content is detected automatically
 - **formats** - (*array*) defines the list of number formats
-
 
 You can set configuration options during initialization as the second parameter of the constructor:
 
