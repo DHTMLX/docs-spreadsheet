@@ -61,29 +61,6 @@ Parameters:
 | [](api/spreadsheet_undo_method.md)           | @getshort(api/spreadsheet_undo_method.md)           |
 | [](api/spreadsheet_unlock_method.md)         | @getshort(api/spreadsheet_unlock_method.md)         |
 
-### Selection methods
-
-| Name                                        | Description                                        |
-| ------------------------------------------- | -------------------------------------------------- |
-| [](api/selection_getfocusedcell_method.md)  | @getshort(api/selection_getfocusedcell_method.md)  |
-| [](api/selection_getselectedcell_method.md) | @getshort(api/selection_getselectedcell_method.md) |
-| [](api/selection_setfocusedcell_method.md)  | @getshort(api/selection_setfocusedcell_method.md)  |
-| [](api/selection_setselectedcell_method.md) | @getshort(api/selection_setselectedcell_method.md) |
-
-### Events Bus methods
-
-| Name                               | Description                               |
-| ---------------------------------- | ----------------------------------------- |
-| [](api/eventsbus_detach_method.md) | @getshort(api/eventsbus_detach_method.md) |
-| [](api/eventsbus_fire_method.md)   | @getshort(api/eventsbus_fire_method.md)   |
-| [](api/eventsbus_on_method.md)     | @getshort(api/eventsbus_on_method.md)     |
-
-### Export methods
-
-| Name                          | Description                          |
-| ----------------------------- | ------------------------------------ |
-| [](api/export_xlsx_method.md) | @getshort(api/export_xlsx_method.md) |
-
 ## Spreadsheet events
 
 | Name                                            | Description                                            |
@@ -134,3 +111,26 @@ Parameters:
 | [](api/spreadsheet_readonly_config.md)         | @getshort(api/spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
+
+## Selection methods
+
+| Name                                        | Description                                        |
+| ------------------------------------------- | -------------------------------------------------- |
+| [](api/selection_getfocusedcell_method.md)  | @getshort(api/selection_getfocusedcell_method.md)  |
+| [](api/selection_getselectedcell_method.md) | @getshort(api/selection_getselectedcell_method.md) |
+| [](api/selection_setfocusedcell_method.md)  | @getshort(api/selection_setfocusedcell_method.md)  |
+| [](api/selection_setselectedcell_method.md) | @getshort(api/selection_setselectedcell_method.md) |
+
+## Events Bus methods
+
+| Name                               | Description                               |
+| ---------------------------------- | ----------------------------------------- |
+| [](api/eventsbus_detach_method.md) | @getshort(api/eventsbus_detach_method.md) |
+| [](api/eventsbus_fire_method.md)   | @getshort(api/eventsbus_fire_method.md)   |
+| [](api/eventsbus_on_method.md)     | @getshort(api/eventsbus_on_method.md)     |
+
+## Export methods
+
+| Name                          | Description                          |
+| ----------------------------- | ------------------------------------ |
+| [](api/export_xlsx_method.md) | @getshort(api/export_xlsx_method.md) |

@@ -67,39 +67,7 @@ module.exports = {
             "api/spreadsheet_unlock_method",
           ],
         },
-        {
-          type: "category",
-          label: "Selection methods",
-          collapsible: true,
-          collapsed: false,
-          items: [
-            "api/selection_getfocusedcell_method",
-            "api/selection_getselectedcell_method",
-            "api/selection_setfocusedcell_method",
-            "api/selection_setselectedcell_method",
-          ],
-        },
-        {
-          type: "category",
-          label: "Events Bus methods",
-          collapsible: true,
-          collapsed: false,
-          items: [
-            "api/eventsbus_detach_method",
-            "api/eventsbus_fire_method",
-            "api/eventsbus_on_method",
-          ],
-        },
-        {
-          type: "category",
-          label: "Export methods",
-          collapsible: true,
-          collapsed: false,
-          items: [
-            "api/export_xlsx_method",
-          ],
-        },
-        {
+         {
           type: "category",
           label: "Spreadsheet events",
           collapsible: true,
@@ -158,20 +126,52 @@ module.exports = {
             "api/spreadsheet_toolbarblocks_config",
           ],
         },
+        {
+          type: "category",
+          label: "Selection methods",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/selection_getfocusedcell_method",
+            "api/selection_getselectedcell_method",
+            "api/selection_setfocusedcell_method",
+            "api/selection_setselectedcell_method",
+          ],
+        },
+        {
+          type: "category",
+          label: "Events Bus methods",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/eventsbus_detach_method",
+            "api/eventsbus_fire_method",
+            "api/eventsbus_on_method",
+          ],
+        },
+        {
+          type: "category",
+          label: "Export methods",
+          collapsible: true,
+          collapsed: false,
+          items: [
+            "api/export_xlsx_method",
+          ],
+        },
       ],
     },
     {
       type: "category",
       label: "Guides",
       collapsible: true,
-      collapsed: true,
+      collapsed: false,
       items: [
         "guides",
         {
           type: "category",
           label: "Developer guides",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "initialization",
             "configuration",
@@ -191,9 +191,9 @@ module.exports = {
         },
         {
           type: "category",
-          label: "User guides",
+          label: "User guide",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "hotkeys",
             "work_with_cells",
@@ -206,45 +206,5 @@ module.exports = {
         },
       ],
     },
-    {
-      type: "doc",
-      id: "overview", //to index? // to do delete?
-    },
-    {
-      type: "category",
-      label: "Guides",
-      collapsible: false,
-      items: [
-        "initialization",
-        "configuration",
-        "localization",
-        "loading_data",
-        "working_with_ssheet",
-        "working_with_sheets",
-        "number_formatting",
-        "functions",
-        "handling_events",
-        "customization",
-        "using_typescript",
-        "angular_integration",
-        "react_integration",
-        "vuejs_integration",
-      ],
-    },
-    {
-      type: "category",
-      label: "User guides",
-      collapsible: false,
-      items: [
-        "hotkeys",
-        "work_with_cells",
-        "work_with_rows_cols",
-        "work_with_sheets",
-        "data_formatting",
-        "number_formatting_guide",
-        "excel_import_export",
-      ],
-    },
-
   ],
 };

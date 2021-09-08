@@ -124,7 +124,7 @@ spreadsheet.load("../common/data.csv", "csv");
 
 {{sample  01_init/05_csv_load.html}}
 
-<h3 id="importexcel"> Loading Excel file (.xlsx)</h3>
+### Loading Excel file (.xlsx)
 
 It is possible to load a file in the Excel format with the **.xlsx** extension into a spreadsheet. There are corresponding controls in the Toolbar and Menu in the user interface:
 
