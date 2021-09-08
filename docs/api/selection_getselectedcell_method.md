@@ -27,5 +27,3 @@ api/selection_setselectedcell_method.md
 
 @related:
 working_with_ssheet.md#selectingcells
-
-@template: api_method

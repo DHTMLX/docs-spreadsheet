@@ -29,5 +29,3 @@ api/selection_setfocusedcell_method.md
 
 @related:
 working_with_ssheet.md#settingfocusonacell
-
-@template: api_method

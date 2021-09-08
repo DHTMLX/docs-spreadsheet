@@ -27,5 +27,3 @@ spreadsheet.events.on("beforeFocusSet", function(cell){
 The event is blockable, returning false will prevent setting focus on a cell.
 
 @relatedapi:api/spreadsheet_afterfocusset_event.md
-
-@template:api_event

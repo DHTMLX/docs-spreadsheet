@@ -26,5 +26,3 @@ configuration.md#menu
 
 @relatedsample:
 03_configuration/04_menu.html
-
-@template:api_config

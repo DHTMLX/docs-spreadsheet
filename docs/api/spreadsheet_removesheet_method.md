@@ -23,6 +23,3 @@ To apply this method, you need to enable the [multiSheets](api/spreadsheet_multi
 Also note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
 
 @changelog: added in v4.1
-
-
-@template: api_method

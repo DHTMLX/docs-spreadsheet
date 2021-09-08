@@ -39,5 +39,3 @@ loading_data.md#importexcel
 
 @relatedsample:
 02_usage/03_import_xlsx.html
-
-@template:api_config

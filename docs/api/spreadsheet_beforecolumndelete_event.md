@@ -27,5 +27,3 @@ The event is blockable, returning false will prevent deleting of a column.
 
 @relatedapi:
 api/spreadsheet_aftercolumndelete_event.md
-
-@template:api_event

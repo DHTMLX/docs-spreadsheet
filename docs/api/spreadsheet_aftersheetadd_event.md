@@ -25,5 +25,3 @@ The sheet object contains the following parameters:
 - **id** - (*string*) the id of the new sheet
 
 @changelog: added in v4.1
-
-@template:api_event

@@ -27,5 +27,3 @@ The event is blockable, returning false will prevent deleting of a row.
 
 @relatedapi:
 api/spreadsheet_afterrowdelete_event.md
-
-@template:api_event

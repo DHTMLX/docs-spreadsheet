@@ -25,9 +25,5 @@ spreadsheet.events.on("beforeEditEnd", function(){
 
 The event is blockable, returning false will prevent closing of an editor.
 
-
 @relatedapi:
 api/spreadsheet_aftereditend_event.md
-
-
-@template:api_event

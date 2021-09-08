@@ -43,5 +43,3 @@ In case the name of the tab isn't specified, the method will check the cell(s) o
 @relatedapi:
 api/spreadsheet_lock_method.md
 api/spreadsheet_unlock_method.md
-
-@template: api_method

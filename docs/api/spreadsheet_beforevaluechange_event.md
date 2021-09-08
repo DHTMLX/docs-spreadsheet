@@ -28,5 +28,3 @@ spreadsheet.events.on("beforeValueChange", function(cell,value){
 The event is blockable, returning false will prevent changing of value(s).
 
 @relatedapi: api/spreadsheet_aftervaluechange_event.md
-
-@template:api_event

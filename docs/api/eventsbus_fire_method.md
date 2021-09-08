@@ -34,5 +34,3 @@ api/eventsbus_on_method.md
 
 @related:
 handling_events.md
-
-@template:api_method

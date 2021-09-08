@@ -22,5 +22,3 @@ spreadsheet.events.on("afterRowAdd", function(cells){
 
 @relatedapi:
 api/spreadsheet_beforerowadd_event.md
-
-@template:api_event

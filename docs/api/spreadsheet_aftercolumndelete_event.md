@@ -22,5 +22,3 @@ spreadsheet.events.on("afterColumnDelete", function(cells){
 
 @relatedapi:
 api/spreadsheet_beforecolumndelete_event.md
-
-@template:api_event

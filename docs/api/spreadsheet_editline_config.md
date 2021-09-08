@@ -26,5 +26,3 @@ configuration.md#editingbar
 
 @relatedsample:
 03_configuration/02_disabled_line.html
-
-@template:api_config

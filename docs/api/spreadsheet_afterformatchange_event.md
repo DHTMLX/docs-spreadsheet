@@ -31,5 +31,3 @@ number_formatting.md
 
 @relatedsample:
 05_events/01_events.html
-
-@template:api_event
