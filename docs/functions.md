@@ -6,13 +6,11 @@ description: changetext
 
 # Work with Functions
 
-
 Starting from v4.0, the package of dhtmlxSpreadSheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
 
 {{sample 01_init/06_formulas.html}}
 
-Functions
-------------
+## Functions
 
 Here's a list of all the available functions with detailed descriptions.
 
@@ -125,7 +123,6 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 </table>
 <br>
 
-
 ### String functions
 
 <table class="webixdoc_links">
@@ -170,8 +167,7 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 </table>
 <br>
 
-Getting cell formula
----------------------------
+## Getting cell formula
 
 Starting with v4.1, you can get the formula applied to a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method. The method takes the id of the cell as a parameter:
 
@@ -179,4 +175,3 @@ Starting with v4.1, you can get the formula applied to a cell via the [getFormul
 var formula = spreadsheet.getFormula("B2");
 // -> "ABS(C2)"
 ~~~
-

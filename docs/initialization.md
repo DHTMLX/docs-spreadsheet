@@ -14,6 +14,7 @@ Follow the steps below to get a ready-to-use component:
 3. [Initialize dhtmlxSpreadSheet with the object constructor](#initializingdhtmlxspreadsheet).
 
 {{snippet index.html}}
+
 ~~~html
 <!DOCTYPE html>
 <html>
@@ -44,6 +45,7 @@ To create dhtmlxSpreadSheet, you need to include 2 source files on your page:
 Make sure that you set correct relative paths to these files:
 
 {{snippet	index.html}}
+
 ~~~html
 <script type="text/javascript" src="codebase/spreadsheet.js"></script>  
 <link rel="stylesheet" href="codebase/spreadsheet.css">

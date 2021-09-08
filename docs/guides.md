@@ -6,7 +6,6 @@ description: changetext
 
 # Guides
 
-
 {{note This documentation is dedicated to the renewed dhtmlxSpreadSheet of version 3.0 and upper. To get information about the previous version 2.1, 
 [follow the related documentation](https://docs.dhtmlx.com/spreadsheet__index.html).}}
 

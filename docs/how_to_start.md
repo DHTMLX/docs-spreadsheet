@@ -26,6 +26,7 @@ There are two necessary files:
 - the link to the Google Fonts source file for the correct rendering of fonts.<br><br>
 
 {{snippet index.html}}
+
 ~~~html
 <!DOCTYPE html>
 <html>
@@ -55,6 +56,7 @@ Now you are ready to add SpreadSheet to the page. First, let's create a DIV cont
 As parameters, the constructor function takes the HTML container to place SpreadSheet into and the SpreadSheet configuration object. <br><br>
 
 {{snippet index.html}}
+
 ~~~html
 <!DOCTYPE html>
 <html>
@@ -98,6 +100,7 @@ The last step is to populate SpreadSheet with data. dhtmlxSpreadSheet takes data
 pass an object with data to it as in the example below:
 
 {{snippet data.json}}
+
 ~~~js
 var data = [
 	{ "cell": "a1", "value": "Country" },

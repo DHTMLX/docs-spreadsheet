@@ -6,7 +6,6 @@ description: changetext
 
 # Event Handling
 
-
 ## Attaching Event Listeners
 
 You can attach event listeners with the [spreadsheet.events.on()](api/eventsbus_on_method.md) method:
@@ -42,4 +41,3 @@ spreadsheet.events.fire("name",args);
 ~~~
 
 The list of events is available in the [API section](api/refs/spreadsheet_events.md).
-
