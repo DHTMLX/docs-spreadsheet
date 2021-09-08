@@ -5,10 +5,32 @@ module.exports = {
       id: "index",
     },
     {
+      type: "doc",
+      id: "how_to_start",
+    },
+    {
+      type: "category",
+      label: "Whats new and migration",
+      collapsible: true,
+      collapsed: false,
+      items: [
+        "whats_new",
+        "migration",
+      ],
+    },
+    {
+      //type: "doc",
+      //id: "whats_new",
+    },
+    {
+      //type: "doc",
+      //id: "migration",
+    },
+    {
       type: "category",
       label: "Spreadsheet API",
       collapsible: true,
-      collapsed: false,
+      collapsed: true,
       items: [
         "api/api_overview",
         {
@@ -139,26 +161,8 @@ module.exports = {
       ],
     },
     {
-      type: "category",
-      label: "Whats new and migration",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        "whats_new",
-        "migration",
-      ],
-    },
-    {
-      //type: "doc",
-      //id: "whats_new",
-    },
-    {
-      //type: "doc",
-      //id: "migration",
-    },
-    {
       type: "doc",
-      id: "overview", //to index?
+      id: "overview", //to index? // to do delete?
     },
     {
       type: "category",

@@ -6,9 +6,7 @@ description: changetext
 
 # Number Formatting
 
-
-Supported number formats
-----------------------------
+## Supported number formats
 
 There are 4 number formats your can apply to format numeric values of cells:
 
@@ -39,13 +37,14 @@ There are 4 number formats your can apply to format numeric values of cells:
 ```
 <img src="number_formats.png">
 ```
-How to set format
--------------------
+
+## How to set format
 
 Follow the steps below to apply a particular number format to SpreadSheet data via the toolbar:
 
 - Select a cell or several cells that you want to format.
 - Click the **Number format** button:
+
 ```
 <img src="number_format_button.png">
 

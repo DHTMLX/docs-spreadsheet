@@ -6,15 +6,13 @@ description: changetext
 
 # Using SpreadSheet with TypeScript
 
-
 Starting from v4.0, the library of dhtmlxSpreadSheet provides the ability to use TypeScript definitions. The built-in support of Typescript works out of the box.
 
 {{note You can try out the functionality directly in our <a href="https://snippet.dhtmlx.com/ihtkdcoc"  target="_blank">Snippet Tool</a>.}}
 
 <a href="https://snippet.dhtmlx.com/ihtkdcoc"  target="_blank"><img src="typescript.png"/></a>
 
-Advantages of using TypeScript
-------------------------------
+## Advantages of using TypeScript
 
 Why do you need to use dhtmlxSpreadSheet with TypeScript?
 

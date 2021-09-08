@@ -6,17 +6,15 @@ description: changetext
 
 # How to Start
 
-
 {{note This documentation is dedicated to the renewed dhtmlxSpreadSheet of version 3.0. To get information about the previous version 2.1, 
 [follow the related documentation](https://docs.dhtmlx.com/spreadsheet__index.html).}}
 
 This clear and comprehensive tutorial will guide your through the steps you need to complete in order to get a full-functional dhtmlxSpreadSheet on a page. The component will be especially effective for 
-managing large amounts of data when you need to save the results of calculations and reproduce them. 
+managing large amounts of data when you need to save the results of calculations and reproduce them.
 
 <img style="margin: 20px auto; display: block;" src="spreadsheet_init.png">
 
-Step 1. Including source files
-----------------------
+## Step 1. Including source files
 
 Start from creating an HTML file and call it *index.html*. Then proceed to include SpreadSheet source files into the created file. 
 [The detailed description of the dhtmlxSpreadSheet package is given here](initialization.md#includingsourcefiles).
@@ -28,6 +26,7 @@ There are two necessary files:
 - the link to the Google Fonts source file for the correct rendering of fonts.<br><br>
 
 {{snippet index.html}}
+
 ~~~html
 <!DOCTYPE html>
 <html>
@@ -47,8 +46,7 @@ There are two necessary files:
 </html>
 ~~~
 
-Step 2. Creating SpreadSheet
----------------------
+## Step 2. Creating SpreadSheet
 
 Now you are ready to add SpreadSheet to the page. First, let's create a DIV container and then place dhtmlxSpreadSheet into it. So, your steps will be:
 
@@ -58,6 +56,7 @@ Now you are ready to add SpreadSheet to the page. First, let's create a DIV cont
 As parameters, the constructor function takes the HTML container to place SpreadSheet into and the SpreadSheet configuration object. <br><br>
 
 {{snippet index.html}}
+
 ~~~html
 <!DOCTYPE html>
 <html>
@@ -79,8 +78,7 @@ As parameters, the constructor function takes the HTML container to place Spread
 </html>
 ~~~
 
-Step 3. Setting SpreadSheet configuration
-----------------------------
+## Step 3. Setting SpreadSheet configuration
 
 Next you can specify additional configuration options you want the SpreadSheet component to have when initialized besides the default ones.
 
@@ -94,16 +92,15 @@ var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 ~~~
 
-The configuration of dhtmlxSpreadSheet is quite flexible, so you can change it at any time. [Read the related guide](configuration.md) to go into the basics of configuring SpreadSheet. 
+The configuration of dhtmlxSpreadSheet is quite flexible, so you can change it at any time. [Read the related guide](configuration.md) to go into the basics of configuring SpreadSheet.
 
-
-Step 4. Loading data into SpreadSheet
------------------
+## Step 4. Loading data into SpreadSheet
 
 The last step is to populate SpreadSheet with data. dhtmlxSpreadSheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse** method and
 pass an object with data to it as in the example below:
 
 {{snippet data.json}}
+
 ~~~js
 var data = [
 	{ "cell": "a1", "value": "Country" },
@@ -133,8 +130,7 @@ spreadsheet.parse(data);
 
 {{sample 01_init/01_basic.html}}
 
-What's next
---------------
+## What's next
 
 That's all. Just four simple steps and you have a handy tool for work with data in the tabular form. Now you can start working with your data or keep exploring the inner world of dhtmlxSpreadSheet.
 

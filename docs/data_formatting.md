@@ -6,9 +6,7 @@ description: changetext
 
 # Data Formatting
 
-
-Color and style
----------------------
+## Color and style
 
 The toolbar of dhtmlxSpreadSheet contains several sections with buttons for modifying the style of data in a cell. 
 
@@ -20,15 +18,13 @@ What you can do:
 - change the color of text background via color picker linked to the **Background color** button
 - apply *Bold*, *Italic* and *Underline* styles to a text
 
-Alignment
--------------
+## Alignment
 
-You can use the corresponding toolbar controls to align data in a cell, as needed: along the left/right edges of a cell , or in its center. 
+You can use the corresponding toolbar controls to align data in a cell, as needed: along the left/right edges of a cell , or in its center.
 
 <img src="alignment.png"/>
 
-Removing styles and values
------------------------
+## Removing styles and values
 
 To clear styles applied to data in a cell, or values entered into cells, or remove both data and formatting, you can choose one of the two ways:
 

@@ -6,8 +6,7 @@ description: changetext
 
 # User Guide
 
-
-- [Hot Keys](hotkeys.md) 
+- [Hot Keys](hotkeys.md)
 - [Work with Cells](work_with_cells.md)
 - [Work with Rows and Columns](work_with_rows_cols.md)
 - [Work with Sheets](work_with_sheets.md)

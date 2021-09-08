@@ -6,11 +6,9 @@ description: changetext
 
 # Hot Keys List
 
-
 Here is a list of hotkeys that you can use while working with dhtmlxSpreadSheet.
 
-Editing
----------
+## Editing
 
 <table class="webixdoc_links">
 	<tbody>
@@ -33,9 +31,7 @@ Editing
     </tbody>
 </table>
 
-
-Work with cell content
-------------------------
+## Work with cell content
 
 <table class="webixdoc_links">
 	<tbody>
@@ -90,9 +86,7 @@ Work with cell content
     </tbody>
 </table>
 
-
-Navigation
-------------
+## Navigation
 
 {{note Navigation works in case no cell is being edited}}
 
@@ -165,9 +159,7 @@ Navigation
     </tbody>
 </table>
 
-
-Selection
-----------------
+## Selection
 
 <table class="webixdoc_links">
 	<tbody>
@@ -185,6 +177,3 @@ Selection
 		</tr>
     </tbody>
 </table>
-
-
-​
