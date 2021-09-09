@@ -1,12 +1,12 @@
 ---
-sidebar_label: Number Formatting
+sidebar_label: Number formatting
 title: JavaScript Spreadsheet - Number Formatting
 description: changetext
 ---
 
-# Number Formatting
+# Number formatting
 
-DHTMLX SpreadSheet supports number formatting that you can apply for numeric values in cells. 
+DHTMLX Spreadsheet supports number formatting that you can apply for numeric values in cells.
 
 <img style="margin: 20px auto 20px auto; display: block;" src="number_format_options.png">
 
@@ -16,8 +16,8 @@ DHTMLX SpreadSheet supports number formatting that you can apply for numeric val
 
 A number format is an object that includes a set of properties:
 
-- **id** - the id of a format that is used to set format to a cell via the api/spreadsheet_setformat_method.md method
-- **mask** - a mask for a number format. Check the list of characters available in a mask [below](#structure)
+- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
+- **mask** - a mask for a number format. Check the list of characters available in a mask [below](#the-structure-of-a-mask)
 - **name** - the name of a format displayed in the toolbar and menu drop-down lists
 - **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
 
@@ -34,6 +34,7 @@ defaultFormats = [
 ~~~
 
 This is how a spreadsheet with data in various number formats looks like:
+
 ```
 ![Number format](number_format.png)
 ```
@@ -42,17 +43,19 @@ This is how a spreadsheet with data in various number formats looks like:
 
 ## Formats customization
 
-You are not limited by [default number formats](#defaultnumberformats) only. There are two options of formats customization available:
+You are not limited by [default number formats](#default-number-formats) only. There are two options of formats customization available:
 
 - changing the settings of default number formats
 - adding custom number formats into spreadsheet
+
 ```
 ![Custom number formats](custom_number_formats.png)
 ```
-All such modifications can be implemented via the api/spreadsheet_formats_config.md configuration option. It represents an array of format objects each of which contains a set of properties: 
 
-- **id** - (*string*) mandatory, the id of a format that is used to set format to a cell via the api/spreadsheet_setformat_method.md method
-- **mask** - (*string*) mandatory, a mask for a number format. Check the list of characters available in a mask [below](#structure)
+All such modifications can be implemented via the [](api/spreadsheet_formats_config.md) configuration option. It represents an array of format objects each of which contains a set of properties:
+
+- **id** - (*string*) mandatory, the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
+- **mask** - (*string*) mandatory, a mask for a number format. Check the list of characters available in a mask [below](#the-structure-of-a-mask)
 - **name** - (*string*) optional, the name of a format that will be displayed in the toolbar and menu drop-down lists
 - **example** - (*string*) optional, an example that shows how a formatted number will look like
 
@@ -83,7 +86,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 {{sample 03_configuration/06_custom_formats.html}}
 
-### The structure of a mask {#structure}
+### The structure of a mask
 
 A mask may contain a set of common syntax characters that include digit placeholders, separators, percent and currency signs:
 
@@ -91,15 +94,15 @@ A mask may contain a set of common syntax characters that include digit placehol
 - **#** - a digit in the number. Used to display only significant numbers (insignificant zeros will be ommitted, if a number has fewer digits than there are # symbols in the format).
 - **$** - formats numbers as a dollar value. To use a different currency sign, you need to define it in a mask as **[$ your_currency_sign]**#,##0.00 ,e.g. [$ €]#,##0.00.
 {{note Note that all characters between [$ and ] will be interpreted as a currency sign.}}
-- **.(period)**	- applies a decimal point to numbers.
+- **.(period)** - applies a decimal point to numbers.
 - **,(comma)** - applies a thousands separator to numbers.
 
 ## Setting format
 
-In order to apply the necessary format to a numeric value, make use of the api/spreadsheet_setformat_method.md method. It takes two parameters:
+In order to apply the necessary format to a numeric value, make use of the [](api/spreadsheet_setformat_method.md) method. It takes two parameters:
 
 - **cell** - (*string*) the id of a cell the value of which should be formatted
-- **format** - (*string*) the name of the [default number format](#defaultnumberformats) to apply to the cell value
+- **format** - (*string*) the name of the [default number format](#default-number-formats) to apply to the cell value
 
 For example:
 
@@ -110,7 +113,7 @@ spreadsheet.setFormat("A1","percent");
 
 ## Getting format
 
-You can get the number format applied to the value of a cell with the help of the api/spreadsheet_getformat_method.md method. The method takes the id of a cell as a parameter.
+You can get the number format applied to the value of a cell with the help of the [](api/spreadsheet_getformat_method.md) method. The method takes the id of a cell as a parameter.
 
 ~~~js
 var format = spreadsheet.getFormat("A1"); 
@@ -121,5 +124,5 @@ var format = spreadsheet.getFormat("A1");
 
 There is a pair of events you can use to control the process of cell's format changing. They are:
 
-- api/spreadsheet_beforeformatchange_event.md - fires before the format of a cell is changed
-- api/spreadsheet_afterformatchange_event.md - fires after the format of a cell is changed
+- [](api/spreadsheet_beforeformatchange_event.md) - fires before the format of a cell is changed
+- [](api/spreadsheet_afterformatchange_event.md) - fires after the format of a cell is changed

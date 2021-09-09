@@ -14,7 +14,7 @@ In this article we'll discuss the details on how to implement such operations as
 
 ## Loading multiple sheets
 
-To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object* with the following attributes:
+To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [parse()](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object* with the following attributes:
 
 - **styles** - (*object*) an object with CSS classes applied to particular cells
 - **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
@@ -61,7 +61,7 @@ var styledData = {
 spreadsheet.parse(styledData);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/6s3ng2hi	Spreadsheet. Multiple Sheets}}
+**Related sample**: [Spreadsheet. Multiple Sheets](https://snippet.dhtmlx.com/6s3ng2hi)
 
 {{note In case the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
 

@@ -10,7 +10,7 @@ description: changetext
 
 @signature:
 
-@default:false
+@default: false
 
 @type: boolean
 

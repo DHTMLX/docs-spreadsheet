@@ -1,14 +1,14 @@
 ---
-sidebar_label: Excel Import/Export
+sidebar_label: Excel import/export
 title: JavaScript Spreadsheet - Excel Import/Export
 description: changetext
 ---
 
-# Excel Import/Export
+# Excel import/export
 
 ## Import from Excel
 
-You can load data from an Excel file into SpreadSheet. There is quite a simple way to do this:
+You can load data from an Excel file into Spreadsheet. There is quite a simple way to do this:
 
 1\.  Click the **Import** button in the toolbar and select *Microsoft Excel (.xlsx)*
 
@@ -24,7 +24,7 @@ Go to: *File -> Import As... -> Microsoft Excel (.xlsx)* in the menu
 
 ## Export to Excel
 
-The data you've entered into SpreadSheet can be exported to an Excel file. Complete the steps below:
+The data you've entered into Spreadsheet can be exported to an Excel file. Complete the steps below:
 
 1\. Click the **Export** button in the toolbar:
 
@@ -36,4 +36,4 @@ Go to: *File -> Download As... -> Microsoft Excel (.xlsx)* in the menu
 
 <img src="file_export.png"/>
 
-2\. Check the directory with downloaded files on your computer to find a downloaded Excel file with data from SpreadSheet.
+2\. Check the directory with downloaded files on your computer to find a downloaded Excel file with data from Spreadsheet.

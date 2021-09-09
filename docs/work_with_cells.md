@@ -1,10 +1,10 @@
 ---
-sidebar_label: Work with Cells
+sidebar_label: Work with cells
 title: JavaScript Spreadsheet - Work with Cells
 description: changetext
 ---
 
-# Work with Cells
+# Work with cells
 
 ## Entering content in a cell
 
@@ -47,14 +47,14 @@ To lock/unlock a cell, go one of the ways described below:
 
 ### Lock cells via the toolbar button
 
-- Select the cells you want to lock/unlock (they do not have to be adjacent). 
-- Click the **Lock cell** button in the toolbar 
+- Select the cells you want to lock/unlock (they do not have to be adjacent).
+- Click the **Lock cell** button in the toolbar.
 
 <img src="lock.png"/>
 
 ### Lock cells via the context menu
 
-- Right-click a cell/a range of cells you want to lock/unlock
+- Right-click a cell/a range of cells you want to lock/unlock.
 - Choose the Lock/Unlock cell option in the appeared context menu.
 
 <img src="unlock.png"/>

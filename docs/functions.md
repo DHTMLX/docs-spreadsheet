@@ -1,12 +1,12 @@
 ---
-sidebar_label: Work with Functions
+sidebar_label: Work with functions
 title: JavaScript Spreadsheet - Work with Functions
 description: changetext
 ---
 
-# Work with Functions
+# Work with functions
 
-Starting from v4.0, the package of dhtmlxSpreadSheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
+Starting from v4.0, the package of DHTMLX Spreadsheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
 
 {{sample 01_init/06_formulas.html}}
 

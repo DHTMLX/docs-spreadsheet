@@ -1,10 +1,10 @@
 ---
-sidebar_label: Work with Sheets
+sidebar_label: Work with sheets
 title: JavaScript Spreadsheet - Work with Sheets
 description: changetext
 ---
 
-# Work with Sheets
+# Work with sheets
 
 ## Adding a new sheet
 
@@ -28,7 +28,7 @@ To remove a sheet from the spreadsheet, right-click the sheet tab and choose *De
 
 ## Changing the active sheet
 
-To change the currently active sheet, just click a different sheet tab with the mouse pointer. 
+To change the currently active sheet, just click a different sheet tab with the mouse pointer.
 
 <img src="change_active_sheet.gif"/>
 

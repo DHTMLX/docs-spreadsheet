@@ -8,6 +8,8 @@ description: changetext
 
 @short: defines the list of number formats  
 
+@signature:
+
 @type: array
 
 @example:

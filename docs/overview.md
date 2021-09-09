@@ -71,3 +71,5 @@ To dive deeper into the specificity of dhtmlxSpreadSheet, go into more profound 
 
 @index:
 how_to_start.md
+
+todo: delete

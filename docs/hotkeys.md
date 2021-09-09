@@ -1,12 +1,12 @@
 ---
-sidebar_label: Hot Keys List
+sidebar_label: Hot keys list
 title: JavaScript Spreadsheet - Hot Keys List
 description: changetext
 ---
 
-# Hot Keys List
+# Hot keys list
 
-Here is a list of hotkeys that you can use while working with dhtmlxSpreadSheet.
+Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet.
 
 ## Editing
 

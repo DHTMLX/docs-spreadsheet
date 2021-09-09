@@ -260,6 +260,8 @@ Check the [Migration](migration.md) article to get information about the usage o
 
 The API of Spreadsheet has been changed and became more handy to work with. One more significant update is the total redesign of the component which gave a modern look to the interface of Spreadsheet. Together with the fresh appearance the usability of DHTMLX Spreadsheet is greatly enhanced.
 
-- [Entire redesign of the interface](index.md)
+- [](index.md)
 - [Fully customizable structure and adjustable look and feel](customization.md)
 - [Completely refreshed API](api/api_overview.md)
+
+to do: not working [Entire redesign of the interface](index.md)
