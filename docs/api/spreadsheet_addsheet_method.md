@@ -25,4 +25,3 @@ spreadsheet.addSheet("New Sheet");
 To apply this method, you need to enable the [multisheets](api/spreadsheet_multisheets_config.md) configuration option.
 
 @changelog: added in v4.1
-

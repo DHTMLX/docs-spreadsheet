@@ -8,7 +8,7 @@ description: changetext
 
 You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for Spreadsheet.
 
-# Default and custom icons
+## Default and custom icons
 
 DHTMLX Spreadsheet uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons in any possible part of the spreadsheet: in Toolbar controls, Menu and Context menu items.
 

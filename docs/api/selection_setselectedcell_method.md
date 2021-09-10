@@ -22,7 +22,7 @@ spreadsheet.selection.setSelectedCell("B1:B5");
 spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 
 @descr:
- 
+
 @relatedapi:
 api/selection_getselectedcell_method.md
 

@@ -19,7 +19,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 @descr:
 
-{{note dhtmlxSpreadSheet uses the WebAssembly-based library [Excel2json](https://github.com/DHTMLX/excel2json) for import of data from Excel.}}
+{{note DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2json](https://github.com/DHTMLX/excel2json) for import of data from Excel.}}
 
 To import files you need to:
 
@@ -35,7 +35,7 @@ api/spreadsheet_load_method.md
 api/spreadsheet_exportmodulepath_config.md
 
 @related:
-loading_data.md#importexcel
+loading_data.md#loading-excel-file-xlsx
 
 @relatedsample:
 02_usage/03_import_xlsx.html

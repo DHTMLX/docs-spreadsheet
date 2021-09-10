@@ -19,7 +19,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 @descr:
 
-{{note dhtmlxSpreadSheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.}}
+{{note DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.}}
 
 To export files you need to:
 
@@ -35,7 +35,7 @@ api/export_xlsx_method.md
 api/spreadsheet_importmodulepath_config.md
 
 @related:
-loading_data.md#exportingdata
+loading_data.md#exporting-data
 
 @relatedsample:
 02_usage/04_export_xlsx.html

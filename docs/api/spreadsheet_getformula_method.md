@@ -30,6 +30,6 @@ var formula = spreadsheet.getFormula("sheet1!B2"); // -> "ABS(C2)"
 
 where *sheet1* is the name of the tab.
 
-In case the name of the tab isn't specified, the method will return the formula of the cell from the active tab. 
+In case the name of the tab isn't specified, the method will return the formula of the cell from the active tab.
 
 @changelog: added in v4.1
