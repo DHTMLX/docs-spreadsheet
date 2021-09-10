@@ -31,7 +31,7 @@ and
 <!DOCTYPE html>
 <html>
 <head>
-  <title>How to Start with dhtmlxSpreadSheet</title>
+  <title>How to Start with DHTMLX Spreadsheet</title>
   <script src="codebase/spreadsheet.js"></script>   
   
   <link href="codebase/spreadsheet.css" rel="stylesheet"> 
@@ -59,7 +59,7 @@ As parameters, the constructor function takes the HTML container to place Spread
 <!DOCTYPE html>
 <html>
 <head>
- <title>How to Start with dhtmlxSpreadSheet</title>
+ <title>How to Start with DHTMLX Spreadsheet</title>
  <script src="codebase/spreadsheet.js"></script>   
    
  <link href="codebase/spreadsheet.css" rel="stylesheet">  
@@ -92,11 +92,11 @@ var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 ~~~
 
-The configuration of dhtmlxSpreadSheet is quite flexible, so you can change it at any time. [Read the related guide](configuration.md) to go into the basics of configuring SpreadSheet.
+The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it at any time. [Read the related guide](configuration.md) to go into the basics of configuring SpreadSheet.
 
 ## Step 4. Loading data into SpreadSheet
 
-The last step is to populate SpreadSheet with data. dhtmlxSpreadSheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse()** method and pass an object with data to it as in the example below:
+The last step is to populate SpreadSheet with data. DHTMLX Spreadsheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse()** method and pass an object with data to it as in the example below:
 
 ~~~js title="data.json"
 var data = [
