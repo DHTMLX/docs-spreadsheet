@@ -25,4 +25,4 @@ If the id of a cell isn't passed, editing will start in the currently selected c
 api/spreadsheet_endedit_method.md
 
 @related:
-working_with_ssheet.md#editingcell
+working_with_ssheet.md#editing-cell
