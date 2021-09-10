@@ -18,7 +18,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 @descr:
 
-@related:
+**Related articles**
 configuration.md#frozen-columns
 
 @changelog: added in v4.0

@@ -33,5 +33,5 @@ You can attach several handlers to the same event and all of them will be execut
 api/eventsbus_detach_method.md
 api/eventsbus_fire_method.md
 
-@related:
+**Related articles**
 handling_events.md

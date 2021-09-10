@@ -21,7 +21,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 @relatedapi:
 api/spreadsheet_rowscount_config.md
 
-@related:
+**Related articles**
 configuration.md#numberofrowsandcolumns
 
 @relatedsample:

@@ -95,7 +95,7 @@ spreadsheet.parse(styledData);
 
 {{note In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
 
-@related:
+**Related articles**
 loading_data.md
 
 @relatedapi:

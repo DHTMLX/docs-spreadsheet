@@ -24,5 +24,5 @@ The method finds the specified cell, selects it, moves the column where the cell
 @relatedapi:
 api/spreadsheet_deletecolumn_method.md
 
-@related:
+**Related articles**
 working_with_ssheet.md#addingremovingrowsandcolumns

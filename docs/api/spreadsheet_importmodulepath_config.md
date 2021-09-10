@@ -34,7 +34,7 @@ By default the link to CDN is used.
 api/spreadsheet_load_method.md
 api/spreadsheet_exportmodulepath_config.md
 
-@related:
+**Related articles**
 loading_data.md#loading-excel-file-xlsx
 
 @relatedsample:

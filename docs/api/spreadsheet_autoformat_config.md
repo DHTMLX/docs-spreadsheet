@@ -21,7 +21,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 @descr:
 
-@related:
+**Related articles**
 number_formatting.md#autodetectingcellformat
 
 @relatedsample:

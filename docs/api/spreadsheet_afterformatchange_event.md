@@ -26,7 +26,7 @@ api/spreadsheet_beforeformatchange_event.md
 api/spreadsheet_setformat_method.md
 api/spreadsheet_getformat_method.md
 
-@related:
+**Related articles**
 number_formatting.md
 
 @relatedsample:

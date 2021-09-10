@@ -39,7 +39,7 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 
 Check how you can [customize the toolbar](customization.md/#toolbar).
 
-@related:
+**Related articles**
 configuration.md#toolbar
 customization.md
 

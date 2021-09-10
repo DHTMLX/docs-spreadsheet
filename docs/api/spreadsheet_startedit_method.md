@@ -24,5 +24,5 @@ If the id of a cell isn't passed, editing will start in the currently selected c
 @relatedapi:
 api/spreadsheet_endedit_method.md
 
-@related:
+**Related articles**
 working_with_ssheet.md#editing-cell

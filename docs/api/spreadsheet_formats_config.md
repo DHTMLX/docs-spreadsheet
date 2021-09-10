@@ -57,7 +57,7 @@ Each number format is an object that includes a set of properties:
 
 Read detailed information about number formatting in DHTMLX Spreadsheet in the article [Number formatting](number_formatting.md).
 
-@related:
+**Related articles**
 number_formatting.md#formats-customization
 
 @relatedapi:

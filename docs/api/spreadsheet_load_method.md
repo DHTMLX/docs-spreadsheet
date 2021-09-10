@@ -54,5 +54,5 @@ api/spreadsheet_parse_method.md
 01_init/05_csv_load.html
 02_usage/03_import_xlsx.html
 
-@related:
+**Related articles**
 loading_data.md

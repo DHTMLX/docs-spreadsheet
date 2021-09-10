@@ -42,7 +42,7 @@ Serialized data presents an object with data and styles.
 }
 ~~~
 
-@related:
+**Related articles**
 loading_data.md#saving-and-restoring-state
 
 @relatedapi:

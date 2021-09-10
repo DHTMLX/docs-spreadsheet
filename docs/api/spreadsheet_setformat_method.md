@@ -38,5 +38,5 @@ api/spreadsheet_formats_config.md
 api/spreadsheet_beforeformatchange_event.md
 api/spreadsheet_afterformatchange_event.md
 
-@related:
+**Related articles**
 number_formatting.md

@@ -21,7 +21,7 @@ spreadsheet.export.xlsx();
 
 DHTMLX Spreadsheet uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for import of data from Excel. [Check the details](loading_data.md#exporting-data).
 
-@related:
+**Related articles**
 loading_data.md#exportingdata
 
 @relatedsample:

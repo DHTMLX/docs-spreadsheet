@@ -20,5 +20,5 @@ spreadsheet.endEdit();
 @relatedapi:
 api/spreadsheet_startedit_method.md
 
-@related:
+**Related articles**
 working_with_ssheet.md#editing-cell

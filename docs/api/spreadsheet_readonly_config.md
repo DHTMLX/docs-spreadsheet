@@ -21,7 +21,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 @descr:
 
-@related:
+**Related articles**
 configuration.md#read-only-mode
 customization.md#custom-read-only-mode
 

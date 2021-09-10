@@ -32,5 +32,5 @@ Normally, events are called automatically and you don't need to use this method.
 api/eventsbus_detach_method.md
 api/eventsbus_on_method.md
 
-@related:
+**Related articles**
 handling_events.md
