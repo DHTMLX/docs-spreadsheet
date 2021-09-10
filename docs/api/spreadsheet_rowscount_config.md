@@ -23,7 +23,8 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 api/spreadsheet_colscount_config.md
 
 **Related articles**
-configuration.md#number-of-rows-and-columns
+
+[Configuration](configuration.md#number-of-rows-and-columns)
 
 @relatedsample:
 03_configuration/01_full_toolbar.html

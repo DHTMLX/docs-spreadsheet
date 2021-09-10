@@ -57,4 +57,5 @@ spreadsheet.menu.events.on("click", function (id) {
 04_customization/02_menu.html
 
 **Related articles**
-customization.md#menu
+
+[Customization](customization.md#menu)

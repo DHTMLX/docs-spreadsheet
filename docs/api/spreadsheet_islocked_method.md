@@ -39,7 +39,3 @@ var cellsLocked = spreadsheet.isLocked("sheet1!A2");
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will check the cell(s) of the active tab.
-
-@relatedapi:
-api/spreadsheet_lock_method.md
-api/spreadsheet_unlock_method.md

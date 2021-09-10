@@ -28,9 +28,6 @@ var res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
 
 Normally, events are called automatically and you don't need to use this method.
 
-@relatedapi:
-api/eventsbus_detach_method.md
-api/eventsbus_on_method.md
-
 **Related articles**
-handling_events.md
+
+[Event Handling](handling_events.md)

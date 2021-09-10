@@ -40,8 +40,10 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 Check how you can [customize the toolbar](customization.md/#toolbar).
 
 **Related articles**
-configuration.md#toolbar
-customization.md
+
+[Configuration](configuration.md#toolbar)
+
+[Customization](customization.md)
 
 @relatedsample:
 03_configuration/01_full_toolbar.html

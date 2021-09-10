@@ -30,12 +30,9 @@ To import files you need to:
 
 By default the link to CDN is used.
 
-@relatedapi:
-api/spreadsheet_load_method.md
-api/spreadsheet_exportmodulepath_config.md
-
 **Related articles**
-loading_data.md#loading-excel-file-xlsx
+
+[Data loading and export](loading_data.md#loading-excel-file-xlsx)
 
 @relatedsample:
 02_usage/03_import_xlsx.html

@@ -22,7 +22,8 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 @descr:
 
 **Related articles**
-configuration.md#menu
+
+[Configuration](configuration.md#menu)
 
 @relatedsample:
 03_configuration/04_menu.html

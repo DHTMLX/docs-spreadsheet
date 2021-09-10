@@ -24,6 +24,3 @@ spreadsheet.events.on("beforeRowAdd", function(cells){
 
 @descr:
 The event is blockable, returning false will prevent adding of a row.
-
-@relatedapi:
-api/spreadsheet_afterrowadd_event.md

@@ -29,9 +29,6 @@ spreadsheet.events.on("StyleChange", function(id){
 
 You can attach several handlers to the same event and all of them will be executed. If some of handlers return *false*, the related operations will be blocked. Event handlers are processed in the same order that they are attached.
 
-@relatedapi:
-api/eventsbus_detach_method.md
-api/eventsbus_fire_method.md
-
 **Related articles**
-handling_events.md
+
+[Event Handling](handling_events.md)

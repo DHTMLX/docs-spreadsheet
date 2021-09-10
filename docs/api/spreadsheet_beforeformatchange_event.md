@@ -30,7 +30,8 @@ api/spreadsheet_setformat_method.md
 api/spreadsheet_getformat_method.md
 
 **Related articles**
-number_formatting.md
+
+[Number formatting](number_formatting.md)
 
 @relatedsample:
 05_events/01_events.html

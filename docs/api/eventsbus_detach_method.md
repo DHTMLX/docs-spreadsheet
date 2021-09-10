@@ -36,4 +36,4 @@ spreadsheet.events.detach("StyleChange", marker);
 
 **Related articles**
 
-- [Event Handling](handling_events.md)
+[Event Handling](handling_events.md)

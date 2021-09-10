@@ -25,4 +25,5 @@ The method finds the specified cell, selects it, removes the row where the cell 
 api/spreadsheet_addrow_method.md
 
 **Related articles**
-working_with_ssheet.md#addingremoving-rows-and-columns
+
+[Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

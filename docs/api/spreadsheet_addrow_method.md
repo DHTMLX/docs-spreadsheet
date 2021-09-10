@@ -21,8 +21,6 @@ spreadsheet.addRow("G2");
 
 The method finds the specified cell, selects it, moves the row where the cell is located one cell below and adds an empty row instead.
 
-@relatedapi:
-api/spreadsheet_deleterow_method.md
-
 **Related articles**
-working_with_ssheet.md#addingremoving-rows-and-columns
+
+[Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

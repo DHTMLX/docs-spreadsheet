@@ -16,6 +16,3 @@ description: changetext
 spreadsheet.undo();
 
 @descr:
-
-@relatedapi:
-api/spreadsheet_redo_method.md

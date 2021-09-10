@@ -19,6 +19,3 @@ spreadsheet.events.on("SelectionSet", function(cell){
 });
 
 @descr:
-
-@relatedapi:
-api/spreadsheet_selectionchange_event.md

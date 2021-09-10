@@ -50,6 +50,3 @@ var style = spreadsheet.getStyle("sheet1!A2");
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will return the style(s) of the cell(s) from the active tab.
-
-@relatedapi:
-api/spreadsheet_setstyle_method.md

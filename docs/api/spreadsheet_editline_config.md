@@ -22,7 +22,8 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 @descr:
 
 **Related articles**
-configuration.md#editing-bar
+
+[Configuration](configuration.md#editing-bar)
 
 @relatedsample:
 03_configuration/02_disabled_line.html

@@ -55,4 +55,5 @@ api/spreadsheet_parse_method.md
 02_usage/03_import_xlsx.html
 
 **Related articles**
-loading_data.md
+
+[Data loading and export](loading_data.md)

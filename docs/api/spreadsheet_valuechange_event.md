@@ -20,5 +20,3 @@ spreadsheet.events.on("ValueChange", function(cell,value){
 });
 
 @descr:
-
-@relatedapi:api/spreadsheet_beforevaluechange_event.md

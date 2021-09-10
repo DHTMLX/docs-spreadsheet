@@ -19,6 +19,3 @@ spreadsheet.events.on("afterColumnDelete", function(cells){
 });
 
 @descr:
-
-@relatedapi:
-api/spreadsheet_beforecolumndelete_event.md
