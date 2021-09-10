@@ -21,5 +21,3 @@ spreadsheet.events.on("afterFocusSet", function(cell){
 @descr:
 
 @relatedapi: api/spreadsheet_beforefocusset_event.md
-
-@template:api_event

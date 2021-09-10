@@ -25,5 +25,3 @@ spreadsheet.events.on("beforeEditStart", function(){
 The event is blockable, returning false will prevent editing of a cell.
 
 @relatedapi: api/spreadsheet_aftereditstart_event.md
-
-@template:api_event

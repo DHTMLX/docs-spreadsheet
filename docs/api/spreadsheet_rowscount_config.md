@@ -27,6 +27,3 @@ configuration.md#numberofrowsandcolumns
 
 @relatedsample:
 03_configuration/01_full_toolbar.html
-
-
-@template:api_config

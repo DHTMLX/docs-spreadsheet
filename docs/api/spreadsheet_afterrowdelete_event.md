@@ -22,5 +22,3 @@ spreadsheet.events.on("afterRowDelete", function(cells){
 
 @relatedapi:
 api/spreadsheet_beforerowdelete_event.md
-
-@template:api_event

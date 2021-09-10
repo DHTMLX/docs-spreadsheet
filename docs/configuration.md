@@ -6,7 +6,7 @@ description: changetext
 
 # Configuration
 
-You can adjust the desired settings of dhtmlxSpreadSheet to meet your needs. The available configuration options allow you to limit the number of rows and columns, change the toolbar appearance and control the visibility of the menu and the editing bar. You can also initialize SpreadSheet in the readonly mode, if needed.
+You can adjust the desired settings of DHTMLX Spreadsheet to meet your needs. The available configuration options allow you to limit the number of rows and columns, change the toolbar appearance and control the visibility of the menu and the editing bar. You can also initialize Spreadsheet in the readonly mode, if needed.
 
 ## Toolbar
 
@@ -22,7 +22,7 @@ You can add more blocks from the list: "lock", "clear", "rows", "columns", "file
 ![Extra buttons](toolbar_extra_buttons.png)
 ```
 
-The structure of toolbar can be adjusted via the api/spreadsheet_toolbarblocks_config.md configuration option of the component, which is an array with strings presenting the names of controls.
+The structure of toolbar can be adjusted via the [](api/spreadsheet_toolbarblocks_config.md) configuration option of the component, which is an array with strings presenting the names of controls.
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {
@@ -52,7 +52,7 @@ Toolbar is [highly customizable](customization.md). You can add new controls, ch
 
 ## Editing bar
 
-Since the structure of SpreadSheet is flexible, you can switch on/off the editing bar to get the desired look and feel of the component. Use the api/spreadsheet_editline_config.md configuration option to hide/show
+Since the structure of SpreadSheet is flexible, you can switch on/off the editing bar to get the desired look and feel of the component. Use the [](api/spreadsheet_editline_config.md) configuration option to hide/show
 the editing bar:
 
 ~~~js
@@ -65,7 +65,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 ## Number of rows and columns
 
-When SpreadSheet is initialized, it has the initial configuration of grid which consists of 1000 columns and 25 rows. However, when this limit runs out, additional rows and columns are rendered automatically, so you don't need to add them. Nevertheless, you can specify the exact number of rows and columns in the grid, if you want to limit them. Use the api/spreadsheet_colscount_config.md and api/spreadsheet_rowscount_config.md options for this purpose:  
+When SpreadSheet is initialized, it has the initial configuration of grid which consists of 1000 columns and 25 rows. However, when this limit runs out, additional rows and columns are rendered automatically, so you don't need to add them. Nevertheless, you can specify the exact number of rows and columns in the grid, if you want to limit them. Use the [](api/spreadsheet_colscount_config.md) and [](api/spreadsheet_rowscount_config.md) options for this purpose:  
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
@@ -90,7 +90,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 ## Menu
 
-The menu of the SpreadSheet is hidden by default. You can switch it on/off via the corresponding configuration option api/spreadsheet_menu_config.md:
+The menu of the SpreadSheet is hidden by default. You can switch it on/off via the corresponding configuration option [](api/spreadsheet_menu_config.md):
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {
@@ -102,7 +102,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 ## Read-only mode
 
-It is also possible to enable the read-only mode to prevent editing of SpreadSheet cells via the api/spreadsheet_readonly_config.md configuration option:
+It is also possible to enable the read-only mode to prevent editing of SpreadSheet cells via the [](api/spreadsheet_readonly_config.md) configuration option:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("cont", {
@@ -112,9 +112,9 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 
 {{sample 	03_configuration/05_readonly.html}}
 
-You can also [customize the readonly behavior of SpreadSheet](customization.md#customreadonlymode).
+You can also [customize the readonly behavior of SpreadSheet](customization.md#custom-read-only-mode).
 
-## Custom number formats for cells 
+## Custom number formats for cells
 
 There are 5 default formats that can be applied to the values of cells:
 
@@ -128,7 +128,7 @@ defaultFormats = [
 ];
 ~~~
 
-You can redefine configuration of default formats or specify your own number format via the api/spreadsheet_formats_config.md config option:
+You can redefine configuration of default formats or specify your own number format via the [](api/spreadsheet_formats_config.md) config option:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
@@ -155,15 +155,14 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 {{sample 03_configuration/06_custom_formats.html}}
 
-Check the details in the number_formatting.md article.
+Check the details in the [Number Formatting](number_formatting.md) article.
 
 ## Path to export/import modules
 
-dhtmlxSpreadSheet provides the possibility to import/export data in the Excel format. The component uses WebAssembly-based libraries: [Excel2Json](https://github.com/dhtmlx/excel2json)
-and [JSON2Excel](https://github.com/dhtmlx/json2excel) for import/export of data. 
+DHTMLX Spreadsheet provides the possibility to import/export data in the Excel format. The component uses WebAssembly-based libraries: [Excel2Json](https://github.com/dhtmlx/excel2json) and [JSON2Excel](https://github.com/dhtmlx/json2excel) for import/export of data.
 
 After installing the necessary library, you need to set path to the **worker.js** file (either local or at CDN)
-via the corresponding configuration option - api/spreadsheet_importmodulepath_config.md or api/spreadsheet_exportmodulepath_config.md:
+via the corresponding configuration option - [](api/spreadsheet_importmodulepath_config.md) or [](api/spreadsheet_exportmodulepath_config.md):
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {  
@@ -172,7 +171,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 });
 ~~~
 
-All the details are given in the loading_data.md article.
+All the details are given in the [Data Loading and Export](loading_data.md) article.
 
 @todo: 
 add list with toolbar blocks descr<br>

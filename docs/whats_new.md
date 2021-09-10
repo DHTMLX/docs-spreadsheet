@@ -68,8 +68,8 @@ description: changetext
 
 - New [multiSheets](api/spreadsheet_multisheets_config.md) configuration option is added
 - The ability to [work with multiple sheets](work_with_sheets.md) in the spreadsheet
-- The ability to use [cross-references in multiple sheets](work_with_sheets.md#crossreferencesbetweensheets)
-- The ability to [load several sheets](working_with_sheets.md#loadingmultiplesheets) into the spreadsheet at once
+- The ability to use [cross-references in multiple sheets](work_with_sheets.md#cross-references-between-sheets)
+- The ability to [load several sheets](working_with_sheets.md#loading-multiple-sheets) into the spreadsheet at once
 - New methods for working with [multiple sheets](working_with_sheets.md) are added: [addSheet()](api/spreadsheet_addsheet_method.md), [removeSheet()](api/spreadsheet_removesheet_method.md), [getActiveSheet()](api/spreadsheet_getactivesheet_method.md), [getSheets()](api/spreadsheet_getsheets_method.md)
 - New events are added: [BeforeSheetAdd](api/spreadsheet_beforesheetadd_event.md), [AfterSheetAdd](api/spreadsheet_aftersheetadd_event.md), [BeforeSheetChange](api/spreadsheet_beforesheetchange_event.md), [AfterSheetChange](api/spreadsheet_aftersheetchange_event.md), [BeforeSheetRemove](api/spreadsheet_beforesheetremove_event.md), [AfterSheetRemove](api/spreadsheet_aftersheetremove_event.md), [BeforeSheetRename](api/spreadsheet_beforesheetrename_event.md), [AfterSheetRename](api/spreadsheet_aftersheetrename_event.md)
 - The ability to get the formula of a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method
@@ -90,8 +90,7 @@ description: changetext
 - Fix the issue that caused values from a range of cell to be truncated after inserting into a single cell
 - Fix the issue with recognition of the format of a cell after the cell is cut and then pasted for a second time 
 
-Version 4.0.4
---------------
+## Version 4.0.4
 
 <span class="rel_date_pivot">released on January 12, 2021</span>
 
@@ -148,7 +147,7 @@ Version 4.0.4
 
 - [Math functions](functions.md)
 - [TypeScript Support](using_typescript.md)
-- The ability [to freeze columns on the left side of the spreadsheet](configuration.md#frozencolumns) via the api/spreadsheet_leftsplit_config.md configuration property
+- The ability [to freeze columns on the left side of the spreadsheet](configuration.md#frozen-columns) via the api/spreadsheet_leftsplit_config.md configuration property
 - [The Text format for displaying the content of a cell as text is added to default number formats](number_formatting.md#defaultnumberformats)
 - The ability to select multiple scattered ranges of cells by using ["Ctrl+Shift+Left Click"](hotkeys.md#selection) combination
 
@@ -199,10 +198,10 @@ Version 4.0.4
 
 ### New functionality
 
-- [Import from Excel](loading_data.md#importexcel)
-- [Export to Excel](loading_data.md#exportingdata)
+- [Import from Excel](loading_data.md#loading-excel-file-xlsx)
+- [Export to Excel](loading_data.md#exporting-data)
 - [Number formatting](number_formatting.md)
-- [Auto filling of cells](work_with_cells.md#autofillingcellswithcontent) 
+- [Auto filling of cells](work_with_cells.md#auto-filling-cells-with-content)
 
 ### Updates
 
@@ -219,7 +218,7 @@ Version 4.0.4
 ### Fixes
 
 - Incorrect behavior in the custom read-only mode
-- Issues with methods of removing a column/row 
+- Issues with methods of removing a column/row
 - Issues with loss of focus on the edit line
 - Issues with hotkeys on the active cell
 
@@ -230,7 +229,7 @@ Version 4.0.4
 ### Fixes
 
 - Issues with hotkeys behavior
-- Issues with placement of the selection handle 
+- Issues with placement of the selection handle
 - Issues with loss of focus on the active cell
 - Incorrect behavior of selection on the active cell
 - Incorrect behavior of hotkeys on the active cell
@@ -249,20 +248,20 @@ Version 4.0.4
 
 <span class="rel_date_pivot">released on October 25, 2018</span>
 
-###Breaking change
+### Breaking change
 
 {{note API of the version 3.0 is not compatible with API v2.1.}}
 
-In comparison to the previous PHP-based version, dhtmlxSpreadSheet of version 3.0 is a completely client-side JavaScript component.
+In comparison to the previous PHP-based version, DHTMLX Spreadsheet of version 3.0 is a completely client-side JavaScript component.
 
-Check the [Migration](migration.md) article to get information about the usage of new API. 
-If you feel like keep using the previous version for a while, [the documentation for dhtmlxSpreadSheet v2.1](https://docs.dhtmlx.com/spreadsheet__index.html) is still available.
+Check the [Migration](migration.md) article to get information about the usage of new API. If you feel like keep using the previous version for a while, [the documentation for DHTMLX Spreadsheet v2.1](https://docs.dhtmlx.com/spreadsheet__index.html) is still available.
 
 ### New functionality
 
-The API of SpreadSheet has been changed and became more handy to work with. One more significant update is the total redesign of the component which gave a modern look to the interface
-of SpreadSheet. Together with the fresh appearance the usability of dhtmlxSpreadSheet is greatly enhanced.
+The API of Spreadsheet has been changed and became more handy to work with. One more significant update is the total redesign of the component which gave a modern look to the interface of Spreadsheet. Together with the fresh appearance the usability of DHTMLX Spreadsheet is greatly enhanced.
 
-- [Entire redesign of the interface](overview.md)
+- [](index.md)
 - [Fully customizable structure and adjustable look and feel](customization.md)
 - [Completely refreshed API](api/api_overview.md)
+
+to do: not working [Entire redesign of the interface](index.md)

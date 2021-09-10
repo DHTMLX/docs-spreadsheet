@@ -21,5 +21,3 @@ spreadsheet.events.on("afterSelectionSet", function(cells){
 @descr:
 
 @relatedapi: api/spreadsheet_beforeselectionset_event.md
-
-@template:api_event

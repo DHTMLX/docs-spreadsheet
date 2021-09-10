@@ -22,5 +22,3 @@ spreadsheet.events.on("StyleChange", function(id){
 @descr:
 
 @relatedapi:api/spreadsheet_beforestylechange_event.md
-
-@template:api_event

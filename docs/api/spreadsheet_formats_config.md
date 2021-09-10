@@ -8,6 +8,8 @@ description: changetext
 
 @short: defines the list of number formats  
 
+@signature:
+
 @type: array
 
 @example:
@@ -65,5 +67,3 @@ api/spreadsheet_beforeformatchange_event.md
 api/spreadsheet_afterformatchange_event.md
 
 @changelog: The "Text" format has been appeared in v4.0.
-
-@template:api_config

@@ -43,5 +43,3 @@ In case the name of the tab isn't specified, the method will apply the style to 
 @relatedapi:
 api/spreadsheet_getstyle_method.md
 api/spreadsheet_parse_method.md
-
-@template: api_method

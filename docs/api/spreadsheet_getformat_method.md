@@ -42,5 +42,3 @@ number_formatting.md
 
 @relatedsample:
 01_init/01_basic.html
-
-@template: api_method

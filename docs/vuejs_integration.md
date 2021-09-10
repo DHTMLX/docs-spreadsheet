@@ -6,13 +6,13 @@ description: changetext
 
 # Integration with Vue.js
 
-You can use dhtmlxSpreadSheet in an application created with the [Vue.js](https://vuejs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/vuejs-widgets).
+You can use DHTMLX Spreadsheet in an application created with the [Vue.js](https://vuejs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/vuejs-widgets).
 
-{{note Please note that the implementation provided below is not the only way to use dhtmlxSpreadSheet in a Vue.js-based application. It gives you initial schema of integration and implies further extension of the app functionality depending on your goals.}}
+{{note Please note that the implementation provided below is not the only way to use DHTMLX Spreadsheet in a Vue.js-based application. It gives you initial schema of integration and implies further extension of the app functionality depending on your goals.}}
 
 ## Including source files
 
-To add SpreadSheet package into your Vue.js-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
+To add Spreadsheet package into your Vue.js-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
 
 Then include **spreadsheet.js** and **spreadsheet.css** files into a page.
 
@@ -32,13 +32,13 @@ The source files are represented in two versions: the **full** version and the *
 
 There are two possible scenarios of initializing SpreadSheet inside a Vue application. One consists in isolating SpreadSheet structure and data inside of the Vue component and another one suggests separating view and data parts with the possibility of interaction between them.
 
-### Scenario 1. Isolating SpreadSheet in a Vue component
+### Scenario 1. Isolating Spreadsheet in a Vue component
 
 In this variant SpreadSheet configuration and data are held inside of the Vie component with no bonds with the external part of the application.
 
-#### SpreadSheet initialization
+#### Spreadsheet initialization
 
-- Create a *SpreadSheet.vue* file and add a container for SpreadSheet inside the **&lt;template&gt;&lt;/template&gt;** tags. Define the name of the container in the **ref** attribute:
+- Create a *SpreadSheet.vue* file and add a container for Spreadsheet inside the **&lt;template&gt;&lt;/template&gt;** tags. Define the name of the container in the **ref** attribute:
 
 ~~~js title="SpreadSheet.vue"
 <template>
@@ -46,7 +46,7 @@ In this variant SpreadSheet configuration and data are held inside of the Vie co
 </template>
 ~~~
 
-- Define the JS part of the Vue component and use the `new SpreadSheet` constructor to initialize SpreadSheet inside of the container that you've set above:
+- Define the JS part of the Vue component and use the `new Spreadsheet` constructor to initialize Spreadsheet inside of the container that you've set above:
 
 ~~~js title="SpreadSheet.vue"
 <script>
@@ -62,7 +62,7 @@ export default {
 
 #### Loading data and changing config
 
-- Next you can load data into the SpreadSheet and do some actions, e.g. change style of a cell:
+- Next you can load data into the Spreadsheet and do some actions, e.g. change style of a cell:
 
 ~~~js title="SpreadSheet.vue"
 <script>
@@ -81,11 +81,11 @@ export default {
 </script>
 ~~~
 
-### Scenario 2. Exposing SpreadSheet data and config
+### Scenario 2. Exposing Spreadsheet data and config
 
-This variant adds flexibility in the control over SpreadSheet data and configuration by allowing access to them from other parts of the application.
+This variant adds flexibility in the control over Spreadsheet data and configuration by allowing access to them from other parts of the application.
 
-#### SpreadSheet initialization
+#### Spreadsheet initialization
 
 - The first step is the same. Create a file, let it be *SpreadSheet2.vue* this time, and add a container for the SpreadSheet inside the **&lt;template&gt;&lt;/template&gt;** tags:
 
@@ -95,7 +95,7 @@ This variant adds flexibility in the control over SpreadSheet data and configura
 </template>
 ~~~
 
-- Then initialize SpreadSheet with the `new SpreadSheet` constructor and define the configuration properties of SpreadSheet in the object passed as a second parameter of the constructor:
+- Then initialize SpreadSheet with the `new Spreadsheet` constructor and define the configuration properties of SpreadSheet in the object passed as a second parameter of the constructor:
 
 ~~~js title="SpreadSheet2.vue"
 <script>
@@ -140,9 +140,9 @@ export default {
 </script>
 ~~~
 
-The properties of SpreadSheet are exposed and available to work with outside the component. For example, you can:
+The properties of Spreadsheet are exposed and available to work with outside the component. For example, you can:
 
-- Create another file and change the configuration of SpreadSheet from there. In the example below the editing line is disabled in the spreadsheet:
+- Create another file and change the configuration of Spreadsheet from there. In the example below the editing line is disabled in the spreadsheet:
 
 ~~~js title="BasicSample.vue"
 <template>
@@ -152,9 +152,9 @@ The properties of SpreadSheet are exposed and available to work with outside the
 </template>
 ~~~
 
-#### Working with SpreadSheet API
+#### Working with Spreadsheet API
 
-This variant of using SpreadSheet in a Vue.js application allows working with its API moving all calls of methods and event handlers into a separate file.
+This variant of using Spreadsheet in a Vue.js application allows working with its API moving all calls of methods and event handlers into a separate file.
 
 - Create a *DataSample.vue* file and add a link to the spreadsheet:
 
@@ -164,8 +164,7 @@ This variant of using SpreadSheet in a Vue.js application allows working with it
 </div>
 ~~~
 
-- Define some actions that will be implemented on initialization of the SpreadSheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method
-that will set certain values in particular cells:
+- Define some actions that will be implemented on initialization of the Spreadsheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method that will set certain values in particular cells:
 
 ~~~js title="DataSample.vue"
 <script>
@@ -222,7 +221,7 @@ export default {
 </script>
 ~~~
 
-- Use the *v-on* directive of Vue.js to subscribe buttons to the SpreadSheet methods to make changes in the data:
+- Use the *v-on* directive of Vue.js to subscribe buttons to the Spreadsheet methods to make changes in the data:
 
 ~~~js title="DataSample.vue"
 <button v-on:click="parseData">Parse data</button>

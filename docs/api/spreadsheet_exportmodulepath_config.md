@@ -39,6 +39,3 @@ loading_data.md#exportingdata
 
 @relatedsample:
 02_usage/04_export_xlsx.html
-
-
-@template:api_config

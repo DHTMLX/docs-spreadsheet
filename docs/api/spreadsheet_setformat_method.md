@@ -40,5 +40,3 @@ api/spreadsheet_afterformatchange_event.md
 
 @related:
 number_formatting.md
-
-@template: api_method

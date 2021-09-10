@@ -1,14 +1,14 @@
 ---
-sidebar_label: Data Formatting
+sidebar_label: Data formatting
 title: JavaScript Spreadsheet - Data Formatting
 description: changetext
 ---
 
-# Data Formatting
+# Data formatting
 
 ## Color and style
 
-The toolbar of dhtmlxSpreadSheet contains several sections with buttons for modifying the style of data in a cell. 
+The toolbar of DHTMLX Spreadsheet contains several sections with buttons for modifying the style of data in a cell.
 
 <img src="color.png"/>
 
@@ -30,7 +30,7 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 
 1\. via the toolbar button:
 
-- Choose necessary cell/cells. 
+- Choose necessary cell/cells.
 - Use the **Clear** button in the toolbar.
 - Choose the desired option in the drop-down list:
 

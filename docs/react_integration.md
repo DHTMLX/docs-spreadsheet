@@ -6,9 +6,9 @@ description: changetext
 
 # Integration with React
 
-You can use dhtmlxSpreadSheet in an application created with the [React](https://reactjs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/react-widgets).
+You can use DHTMLX Spreadsheet in an application created with the [React](https://reactjs.org/) framework. [Check the demo on Github](https://github.com/DHTMLX/react-widgets).
 
-{{note Please note that the implementation provided below is not the only way to use dhtmlxSpreadSheet in a React-based application. It gives you initial schema of the integration and implies further extension of the app functionality depending on your goals.}}
+{{note Please note that the implementation provided below is not the only way to use DHTMLX Spreadsheet in a React-based application. It gives you initial schema of the integration and implies further extension of the app functionality depending on your goals.}}
 
 ## Including source files
 
@@ -30,15 +30,15 @@ The source files are represented in two versions: the **full** version and the *
 
 ## Initialization
 
-There are two possible scenarios of initializing SpreadSheet inside a React application. One consists in isolating SpreadSheet structure and data inside of the React component and another one suggests separating view and data parts with the possibility of interaction between them.
+There are two possible scenarios of initializing SpreadSheet inside a React application. One consists in isolating Spreadsheet structure and data inside of the React component and another one suggests separating view and data parts with the possibility of interaction between them.
 
-### Scenario 1. Isolating SpreadSheet in a React component
+### Scenario 1. Isolating Spreadsheet in a React component
 
 In this variant SpreadSheet configuration and data are held inside of the React component with no bonds with the external part of the application.
 
-#### SpreadSheet initialization
+#### Spreadsheet initialization
 
-- Create a *SpreadSheet.js* file, then create the *SpreadSheet* class and add a container for SpreadSheet using the **render()** function. Store the reference to the container in the **el** property:
+- Create a *SpreadSheet.js* file, then create the *SpreadSheet* class and add a container for Spreadsheet using the **render()** function. Store the reference to the container in the **el** property:
 
 ~~~js title="SpreadSheet.js"
 class SpreadSheetComponent extends Component {
@@ -50,7 +50,7 @@ class SpreadSheetComponent extends Component {
 }
 ~~~
 
-- After that use the `new SpreadsheetBase` constructor to initialize SpreadSheet in the container created above: 
+- After that use the `new SpreadsheetBase` constructor to initialize Spreadsheet in the container created above:
 
 ~~~js title="SpreadSheet.js"
 class SpreadsheetComponent extends Component {
@@ -87,13 +87,13 @@ class SpreadSheetComponent extends Component {
 }
 ~~~
 
-### Scenario 2. Exposing SpreadSheet data and config
+### Scenario 2. Exposing Spreadsheet data and config
 
-This variant adds flexibility in the control over SpreadSheet data and configuration by allowing access to them from other parts of the application.
+This variant adds flexibility in the control over Spreadsheet data and configuration by allowing access to them from other parts of the application.
 
 #### SpreadSheet initialization
 
-- The first step is the same. Create a file, let it be *SpreadSheet2.js* this time, and add the *SpreadSheet* class and use the `new SpreadSheetBase` constructor to initialize SpreadSheet.
+- The first step is the same. Create a file, let it be *SpreadSheet2.js* this time, and add the *SpreadSheet* class and use the `new SpreadsheetBase` constructor to initialize Spreadsheet.
 
 ~~~js title="SpreadSheet2.js"
 class SpreadSheetComponent extends Component {
@@ -105,7 +105,7 @@ class SpreadSheetComponent extends Component {
 }
 ~~~
 
-- Define the configuration properties of SpreadSheet in the object passed as a second parameter of the constructor:
+- Define the configuration properties of Spreadsheet in the object passed as a second parameter of the constructor:
 
 ~~~js
 class SpreadSheetComponent extends Component {
@@ -121,7 +121,7 @@ class SpreadSheetComponent extends Component {
 }
 ~~~
 
-Thus the **props** configuration option will be applied to the SpreadSheet widget configuration.
+Thus the **props** configuration option will be applied to the Spreadsheet widget configuration.
 
 - Then create a container for SpreadSheet using the **render()** function:
 
@@ -135,7 +135,7 @@ render() {
 
 #### Working with configuration options
 
-Since the properties of SpreadSheet are exposed they are available to work with outside the component. In the example below editing line is disabled in the spreadsheet:
+Since the properties of Spreadsheet are exposed they are available to work with outside the component. In the example below editing line is disabled in the spreadsheet:
 
 ~~~js title="BasicSample.js"
 <div className='app-box'>
@@ -143,9 +143,9 @@ Since the properties of SpreadSheet are exposed they are available to work with 
 </div>
 ~~~
 
-#### Working with SpreadSheet API
+#### Working with Spreadsheet API
 
-This variant of using SpreadSheet in a React application allows working with its API moving all calls of methods and event handlers into a separate file.
+This variant of using Spreadsheet in a React application allows working with its API moving all calls of methods and event handlers into a separate file.
 
 - Create a *DataSample.js* file and add a link to the spreadsheet:
 
@@ -165,8 +165,7 @@ class SpreadsheetComponent extends Component {
 }
 ~~~
 
-- Define some actions that will be implemented on initialization of the SpreadSheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method
-that will set certain values in particular cells:
+- Define some actions that will be implemented on initialization of the Spreadsheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method that will set certain values in particular cells:
 
 ~~~js title="DataSample.js"
 class SpreadsheetComponent extends Component {
@@ -219,7 +218,7 @@ class SpreadsheetComponent extends Component {
 }
 ~~~
 
-- Bind related buttons to the SpreadSheet methods by subscribing them to the *onClick* event to make changes in the data:
+- Bind related buttons to the Spreadsheet methods by subscribing them to the *onClick* event to make changes in the data:
 
 ~~~js title="DataSample.js"
 class SpreadsheetComponent extends Component {

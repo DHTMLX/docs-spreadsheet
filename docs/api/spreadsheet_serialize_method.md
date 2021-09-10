@@ -47,5 +47,3 @@ loading_data.md#savingandrestoringstate
 
 @relatedapi:
 api/spreadsheet_parse_method.md
-
-@template: api_method

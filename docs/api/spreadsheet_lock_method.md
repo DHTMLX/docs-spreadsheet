@@ -40,5 +40,3 @@ api/spreadsheet_unlock_method.md
 
 @relatedsample:
 02_usage/01_locked_cells.html
-
-@template: api_method

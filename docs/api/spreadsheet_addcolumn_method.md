@@ -26,5 +26,3 @@ api/spreadsheet_deletecolumn_method.md
 
 @related:
 working_with_ssheet.md#addingremovingrowsandcolumns
-
-[comment]: # (@template: api_method)

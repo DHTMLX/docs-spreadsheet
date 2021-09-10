@@ -10,7 +10,7 @@ description: changetext
 
 @signature:
 
-@default:false
+@default: false
 
 @type: boolean
 
@@ -26,5 +26,3 @@ configuration.md#editingbar
 
 @relatedsample:
 03_configuration/02_disabled_line.html
-
-@template:api_config

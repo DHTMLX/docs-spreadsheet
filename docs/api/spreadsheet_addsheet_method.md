@@ -26,4 +26,3 @@ To apply this method, you need to enable the [multisheets](api/spreadsheet_multi
 
 @changelog: added in v4.1
 
-@template: api_method

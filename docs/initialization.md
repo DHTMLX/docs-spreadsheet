@@ -6,28 +6,25 @@ description: changetext
 
 # Initialization
 
-This guide will give you detailed instructions on how to create dhtmlxSpreadSheet on a page to enrich your application with features of a mighty worksheet.
-Follow the steps below to get a ready-to-use component:
+This guide will give you detailed instructions on how to create DHTMLX Spreadsheet on a page to enrich your application with features of a mighty worksheet. Follow the steps below to get a ready-to-use component:
 
-1. [Include the dhtmlxSpreadSheet source files on a page](#includingsourcefiles).
-2. [Create a container for dhtmlxSpreadSheet](#creatingcontainer).
-3. [Initialize dhtmlxSpreadSheet with the object constructor](#initializingdhtmlxspreadsheet).
+1. [Include the DHTMLX Spreadsheet source files on a page](#including-source-files).
+2. [Create a container for DHTMLX Spreadsheet](#creating-container).
+3. [Initialize DHTMLX Spreadsheet with the object constructor](#initializing-dhtmlx-spreadsheet).
 
-{{snippet index.html}}
-
-~~~html
+~~~html title="index.html"
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>How to Start with dhtmlxSpreadSheet</title>
+		<title>How to Start with DHTMLX Spreadsheet</title>
 		<script type="text/javascript" src="/codebase/spreadsheet.js"></script>
 		<link rel="stylesheet" type="text/css" href="/codebase/spreadsheet.css">
 	</head>
  	<body>
 	 	<div id="spreadsheet"></div>
 		<script>
-			// creating dhtmlxSpreadSheet
-			var spreadsheet = new dhx.SpreadSheet("spreadsheet",{document.body});
+			// creating DHTMLX Spreadsheet
+			var spreadsheet = new dhx.Spreadsheet("spreadsheet",{document.body});
 		</script>
  	</body>
 </html>
@@ -37,21 +34,19 @@ Follow the steps below to get a ready-to-use component:
 
 [Download the package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
 
-To create dhtmlxSpreadSheet, you need to include 2 source files on your page:
+To create DHTMLX Spreadsheet, you need to include 2 source files on your page:
 
 - spreadsheet.js
 - spreadsheet.css
 
 Make sure that you set correct relative paths to these files:
 
-{{snippet	index.html}}
-
-~~~html
+~~~html title="index.html"
 <script type="text/javascript" src="codebase/spreadsheet.js"></script>  
 <link rel="stylesheet" href="codebase/spreadsheet.css">
 ~~~
 
-The structure of the SpreadSheet pack is the following:
+The structure of the Spreadsheet pack is the following:
 
 - **sources** - the source code files of the library; they are easy-to-read and are mostly intended for debugging;
 - **codebase** - the obfuscated code files of the library; they are much smaller and intended for use in production. **Include these files in your apps when they are ready**;
@@ -60,41 +55,42 @@ The structure of the SpreadSheet pack is the following:
 
 ## Creating container
 
-Add a container for SpreadSheet and give it an id, for example "ssheet":
+Add a container for Spreadsheet and give it an id, for example "ssheet":
 
-{{snippet	index.html}}
-~~~html
+~~~html title="index.html"
 <div id="ssheet"></div>
 ~~~
 
-## Initializing dhtmlxSpreadSheet
+## Initializing DHTMLX Spreadsheet
 
-Initialize dhtmlxSpreadSheet with the `dhx.Spreadsheet` object constructor. The constructor has two parameters:
+Initialize DHTMLX Spreadsheet with the `dhx.Spreadsheet` object constructor. The constructor has two parameters:
 
 - the HTML container for Spreadsheet,
-- an object with configuration properties. [See the full list below](#configurationproperties).
+- an object with configuration properties. [See the full list below](#configuration-properties).
 
-{{snippet	index.html}}
-~~~js
-// creating dhtmlxSpreadSheet
-var ssheet = new dhx.Spreadsheet("ssheet", {// config options});
+~~~js title="index.html"
+// creating DHTMLX Spreadsheet
+var ssheet = new dhx.Spreadsheet("ssheet", {
+    // config options
+});
 ~~~
 
-### <span id="configurationproperties">Configuration properties</span>
+### Configuration properties
 
-This is a list of [properties](api/refs/spreadsheet_props.md) that you can specify in the SpreadSheet configuration object:
+This is a list of [properties](api/api_overview.md/#spreadsheet-properties) that you can specify in the Spreadsheet configuration object:
 
-- **toolbarBlocks** - (*array*) specifies blocks of buttons that will be shown in the toolbar of spreadsheet
+- **autoFormat** - (*boolean*) defines whether the format of a cell content is detected automatically
+- **colsCount** - (*number*) sets the number of columns a spreadsheet will have on initialization
 - **editLine** - (*boolean*) hides/shows the editing bar
+- **exportModulePath** - (*string*) sets the path to the export module
+- **formats** - (*array*) defines the list of number formats
+- **importModulePath** - (*string*) sets the path to the import module
+- **leftSplit** - (*number*) sets the number of columns fixed to the left side of the spreadsheet
 - **menu** - (*boolean*) hides/shows the menu
 - **multiSheets** - (*boolean*) enables/disables the ability to work with multiple sheets in the spreadsheet
-- **colsCount** - (*number*) sets the number of columns a spreadsheet will have on initialization
-- **rowsCount** - (*number*) sets the number of rows a spreadsheet will have on initialization
 - **readonly** - (*boolean*) enables/disables the readonly mode
-- **exportModulePath** - (*string*)	sets the path to the export module
-- **importModulePath** - (*string*)	sets the path to the import module
-- **autoFormat** - (*boolean*) defines whether the format of a cell content is detected automatically
-- **formats** - (*array*) defines the list of number formats
+- **rowsCount** - (*number*) sets the number of rows a spreadsheet will have on initialization
+- **toolbarBlocks** - (*array*) specifies blocks of buttons that will be shown in the toolbar of spreadsheet
 
 You can set configuration options during initialization as the second parameter of the constructor:
 

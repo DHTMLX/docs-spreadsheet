@@ -32,5 +32,3 @@ The sheet object contains the following parameters:
 The event is blockable, returning false will prevent removing of a sheet.
 
 @changelog: added in v4.1
-
-@template:api_event

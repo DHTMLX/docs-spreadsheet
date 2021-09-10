@@ -6,14 +6,13 @@ description: changetext
 
 # Customization
 
-You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for SpreadSheet.
+You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for Spreadsheet.
 
 # Default and custom icons
 
 DHTMLX Spreadsheet uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons in any possible part of the spreadsheet: in Toolbar controls, Menu and Context menu items.
 
-For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxSpreadSheet as follows:
+For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) after the source files of DHTMLX Spreadsheet as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/spreadsheet.js"></script>
@@ -43,7 +42,7 @@ The **button** object has the following properties:
 - **twoState** -  the flag that defines whether a button can be used in two states
 - **active** - the state of a button: *true* - active, *false* - inactive
 
-The **menuItem** object	has the properties below:
+The **menuItem** object has the properties below:
 
 - **type** - the type of a menu item, set it to "menuItem"
 - **id** - the id of a menu item
@@ -113,15 +112,15 @@ spreadsheet.toolbar.data.remove("control-id");
 
 ### Default controls
 
-The [default toolbar](overview.md#toolbar) contains the following blocks of controls:
+The [default toolbar](/#toolbar) contains the following blocks of controls:
 
 - the **Undo** block
 	- the *Undo* button (id:"undo")
     - the *Redo* button (id:"redo")
 - the **Colors** block
-	- the *Text color* button (id:"color") 
+	- the *Text color* button (id:"color")
     - the *Background color* button (id:"background")
-- the **Decoration** block 
+- the **Decoration** block
 	- the *Bold* button (id:"font-weight-bold")
     - the *Italic* button (id:"font-style-italic")
     - the *Underline* button (id:"text-decoration-underline")
@@ -133,23 +132,23 @@ The [default toolbar](overview.md#toolbar) contains the following blocks of cont
 	- the *Number format* menuItem (id:"format")
 - the **Help** block
 	- the *Help* button (id:"help")
-    
+
 It is also possible to add the blocks enumerated below:
 
 - the **Lock** block
 	- the *Lock* button (id:"lock")
-- the **Clear** block 
+- the **Clear** block
 	- the *Clear group* menuItem (id:"clear-group")
     	- the *Clear value* menuItem (id:"clear-value")
-        - the *Clear styles* menuItem (id:"clear-styles") 
+        - the *Clear styles* menuItem (id:"clear-styles")
         - the *Clear all* menuItem (id:"clear-all")
 - the **Rows** block
 	- the *Add row* button (id:"add-row")
     - the *Remove row* button (id:"remove-row")
 - the **Columns** block
 	- the *Add column* button (id:"add-col")
-    - the *Remove column* button (id:"remove-col")	 
-- the **File** block 
+    - the *Remove column* button (id:"remove-col")
+- the **File** block
 	- the *Export* menuItem (id:"export")
     	- the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
     - the *Import* menuItem (id:"import")
@@ -222,7 +221,7 @@ spreadsheet.toolbar.data.remove("undo");
 
 ### Default controls
 
-The [default menu](overview.md#menu) has the following structure:
+The [default menu](/#menu) has the following structure:
 
 - the **File** menuItem (id:"edit")
 	- the *Export* menuItem (id:"download")
@@ -237,8 +236,8 @@ The [default menu](overview.md#menu) has the following structure:
 	- the separator
 	- the *Clear* menuItem (id:"clear")
     	- the *Clear value* menuItem (id:"clear-value")
-    	- the *Clear styles* menuItem (id:"clear-styles") 
-    	- the *Clear all* menuItem (id:"clear-all")    
+    	- the *Clear styles* menuItem (id:"clear-styles")
+    	- the *Clear all* menuItem (id:"clear-all")
 - the **Insert** menuItem (id:"insert")
 	- the *Columns* menuItem (id:"columns")
 		- the *Add column* menuItem (id:"add-col")
@@ -309,13 +308,13 @@ spreadsheet.menu.data.remove("undo");
 
 ### Default controls
 
-The [default context menu](overview.md#context) has the following structure:
+The [default context menu](/#context-menu) has the following structure:
 
 - the **Lock** menuItem (id:"lock")
 - the **Clear** menuItem (id:"clear")
     - the *Clear value* menuItem (id:"clear-value")
-    - the *Clear styles* menuItem (id:"clear-styles") 
-    - the *Clear all* menuItem (id:"clear-all")    
+    - the *Clear styles* menuItem (id:"clear-styles")
+    - the *Clear all* menuItem (id:"clear-all")
 - the **Columns** menuItem (id:"columns")
 	- the *Add column* menuItem (id:"add-col")
     - the *Remove column* menuItem (id:"remove-col")
@@ -363,11 +362,11 @@ spreadsheet.contextMenu.data.remove("undo");
 
 ## Custom read-only mode
 
-Besides applying the [read-only mode](configuration.md#readonlymode) to the whole SpreadSheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
+Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole SpreadSheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
-- api/spreadsheet_beforeeditstart_event.md
-- api/spreadsheet_beforestylechange_event.md
-- api/spreadsheet_beforevaluechange_event.md
+- [](api/spreadsheet_beforeeditstart_event.md)
+- [](api/spreadsheet_beforestylechange_event.md)
+- [](api/spreadsheet_beforevaluechange_event.md)
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("cont");

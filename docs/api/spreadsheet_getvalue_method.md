@@ -42,5 +42,3 @@ In case the name of the tab isn't specified, the method will return the value(s)
 
 @relatedapi:
 api/spreadsheet_setvalue_method.md
-
-@template: api_method

@@ -20,5 +20,3 @@ spreadsheet.getActiveSheet();
 @descr:
 
 @changelog: added in v4.1
-
-@template: api_method

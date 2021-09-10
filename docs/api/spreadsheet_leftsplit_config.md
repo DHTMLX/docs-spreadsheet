@@ -24,5 +24,3 @@ configuration.md#frozencolumns
 @changelog: added in v4.0
 
 @relatedsample: 03_configuration/08_frozen_columns.html
-
-@template:api_config

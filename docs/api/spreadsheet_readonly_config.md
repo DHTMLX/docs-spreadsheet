@@ -27,5 +27,3 @@ customization.md#customreadonlymode
 
 @relatedsample:
 03_configuration/05_readonly.html
-
-@template:api_config

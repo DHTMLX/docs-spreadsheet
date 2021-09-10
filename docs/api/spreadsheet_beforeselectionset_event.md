@@ -27,5 +27,3 @@ spreadsheet.events.on("beforeSelectionSet", function(cells){
 The event is blockable, returning false will prevent selection of cells.
 
 @relatedapi:api/spreadsheet_afterselectionset_event.md
-
-@template:api_event

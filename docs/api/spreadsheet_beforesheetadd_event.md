@@ -24,5 +24,3 @@ spreadsheet.events.on("beforeSheetAdd", function() {
 The event is blockable, returning false will prevent adding of a sheet.
 
 @changelog: added in v4.1
-
-@template:api_event

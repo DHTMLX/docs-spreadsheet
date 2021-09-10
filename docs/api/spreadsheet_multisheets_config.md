@@ -24,5 +24,3 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 Setting the property to *false* will hide the bottom tabbar with sheet tabs.
 
 @changelog: added in v4.1
-
-@template:api_config
