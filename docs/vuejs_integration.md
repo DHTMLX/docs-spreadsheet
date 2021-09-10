@@ -34,7 +34,7 @@ There are two possible scenarios of initializing SpreadSheet inside a Vue applic
 
 ### Scenario 1. Isolating Spreadsheet in a Vue component
 
-In this variant SpreadSheet configuration and data are held inside of the Vie component with no bonds with the external part of the application.
+In this variant Spreadsheet configuration and data are held inside of the Vie component with no bonds with the external part of the application.
 
 #### Spreadsheet initialization
 

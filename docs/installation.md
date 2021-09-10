@@ -1,12 +1,12 @@
 ---
-sidebar_label: How to Install dhtmlxSpreadSheet
-title: JavaScript Spreadsheet - How to Install dhtmlxSpreadSheet
+sidebar_label: How to Install DHTMLX Spreadsheet
+title: JavaScript Spreadsheet - How to Install DHTMLX Spreadsheet
 description: changetext
 ---
 
-# How to Install dhtmlxSpreadSheet
+# How to Install DHTMLX Spreadsheet
 
-To install SpreadSheet package into your project you need to download the component package and include source files on a page by setting paths to them.  
+To install Spreadsheet package into your project you need to download the component package and include source files on a page by setting paths to them.  
 
 The source files are represented in two versions: the **full** version and the **minified** one.
 
@@ -14,7 +14,7 @@ The source files are represented in two versions: the **full** version and the *
 
 ### GPL version
 
-[Download the package of dhtmlxSpreadSheet GPL version](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml). 
+[Download the package of DHTMLX Spreadsheet GPL version](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml). 
 
 ### PRO version
 

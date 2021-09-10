@@ -143,7 +143,7 @@ It is possible to load a file in the Excel format with the **.xlsx** extension i
 
 {{note Please note that the import feature won't work in the Internet Explorer browser.}}
 
-DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. So, to enable the possibility to load data from Excel into SpreadSheet, you need to:
+DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. So, to enable the possibility to load data from Excel into Spreadsheet, you need to:
 
 - install the **Excel2Json** library
 - specify the [](api/spreadsheet_importmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file in one of the two ways:

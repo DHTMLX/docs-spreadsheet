@@ -362,7 +362,7 @@ spreadsheet.contextMenu.data.remove("undo");
 
 ## Custom read-only mode
 
-Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole SpreadSheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
+Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
 - [](api/spreadsheet_beforeeditstart_event.md)
 - [](api/spreadsheet_beforestylechange_event.md)
