@@ -46,9 +46,6 @@ spreadsheet.load("../some/data.json").then(function(){
 
 DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. [Check the details](loading_data.md#loading-excel-file-xlsx).
 
-@relatedapi:
-api/spreadsheet_parse_method.md
-
 @relatedsample:
 01_init/03_load_data.html
 01_init/05_csv_load.html

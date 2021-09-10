@@ -19,9 +19,6 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 @descr:
 
-@relatedapi:
-api/spreadsheet_colscount_config.md
-
 **Related articles**
 
 [Configuration](configuration.md#number-of-rows-and-columns)
