@@ -26,7 +26,7 @@ spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 
 @descr:
 
-1\. The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.
+1\. The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
 
 {{sample 01_init/02_styled_data.html}}
 

@@ -10,7 +10,7 @@ DHTMLX Spreadsheet supports number formatting that you can apply for numeric val
 
 <img style="margin: 20px auto 20px auto; display: block;" src="number_format_options.png">
 
-{{note There is a [User Guide](number_formatting_guide.md) provided to make work with SpreadSheet easy for your end users.}}
+{{note There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.}}
 
 ## Default number formats
 

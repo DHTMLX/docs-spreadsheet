@@ -12,7 +12,7 @@ You can use DHTMLX Spreadsheet in an application created with the [React](https:
 
 ## Including source files
 
-To add SpreadSheet package into your React-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
+To add Spreadsheet package into your React-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
 
 Then include **spreadsheet.js** and **spreadsheet.css** files into a page.
 
@@ -91,7 +91,7 @@ class SpreadSheetComponent extends Component {
 
 This variant adds flexibility in the control over Spreadsheet data and configuration by allowing access to them from other parts of the application.
 
-#### SpreadSheet initialization
+#### Spreadsheet initialization
 
 - The first step is the same. Create a file, let it be *SpreadSheet2.js* this time, and add the *SpreadSheet* class and use the `new SpreadsheetBase` constructor to initialize Spreadsheet.
 

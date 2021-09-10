@@ -15,7 +15,7 @@ description: changetext
 - `newVal: string` - the new name of the sheet
 
 @returns:
-`True` to rename a sheet, `false` to prevent a sheet from being renamed.
+*True* to rename a sheet, *false* to prevent a sheet from being renamed.
 
 @example:
 spreadsheet.events.on("beforeSheetRename", function(sheet, newVal) {

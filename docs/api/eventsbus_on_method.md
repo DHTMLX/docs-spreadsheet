@@ -6,7 +6,7 @@ description: changetext
 
 # on()
 
-@short: attaches a handler to an inner event of SpreadSheet
+@short: attaches a handler to an inner event of Spreadsheet
 
 @signature:
 
@@ -25,7 +25,7 @@ spreadsheet.events.on("StyleChange", function(id){
 
 @descr:
 
-[See the list of SpreadSheet events](api/refs/spreadsheet_events.md).
+[See the list of Spreadsheet events](api/api_overview.md/#spreadsheet-events).
 
 You can attach several handlers to the same event and all of them will be executed. If some of handlers return *false*, the related operations will be blocked. Event handlers are processed in the same order that they are attached.
 

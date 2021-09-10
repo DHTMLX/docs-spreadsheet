@@ -12,7 +12,7 @@ You can use DHTMLX Spreadsheet in an application created with the [Angular](http
 
 ## Including source files
 
-To add SpreadSheet package into your Angular-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
+To add Spreadsheet package into your Angular-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
 
 Then include **spreadsheet.js** and **spreadsheet.css** files into a page.
 
@@ -34,11 +34,11 @@ There are two possible scenarios of initializing SpreadSheet inside an Angular a
 
 ### Scenario 1. Isolating SpreadSheet in an Angular component
 
-In this variant SpreadSheet configuration and data are held inside of the Angular component with no bonds with the external part of the application.
+In this variant Spreadsheet configuration and data are held inside of the Angular component with no bonds with the external part of the application.
 
 #### Spreadsheet initialization
 
-- Create a *SpreadSheet.ts* file, where you will define a Component. Each component must have a template assigned, for SpreadSheet it will be a plain DIV tag with a named reference.
+- Create a *SpreadSheet.ts* file, where you will define a Component. Each component must have a template assigned, for Spreadsheet it will be a plain DIV tag with a named reference.
 
 ~~~js title="SpreadSheet.ts"
 @Component({
@@ -46,7 +46,7 @@ In this variant SpreadSheet configuration and data are held inside of the Angula
 })
 ~~~
 
-- Use the `new Spreadsheet` constructor to initialize SpreadSheet inside of the container that you've set above:
+- Use the `new Spreadsheet` constructor to initialize Spreadsheet inside of the container that you've set above:
 
 ~~~js title="SpreadSheet.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
@@ -63,7 +63,7 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 
 #### Loading data and changing config
 
-- Next you can load data into the SpreadSheet and do some actions, e.g. change style of a cell:
+- Next you can load data into the Spreadsheet and do some actions, e.g. change style of a cell:
 
 ~~~js title="SpreadSheet.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
@@ -87,7 +87,7 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 
 This variant adds flexibility in the control over Spreadsheet data and configuration by allowing access to them from other parts of the application.
 
-#### SpreadSheet  initialization
+#### Spreadsheet  initialization
 
 - The first step is the same. Create a file, let it be *SpreadSheet2.ts* this time, and add a container for the Spreadsheet:
 

@@ -25,4 +25,4 @@ The method finds the specified cell, selects it, removes the column where the ce
 api/spreadsheet_addcolumn_method.md
 
 @related:
-working_with_ssheet.md#addingremovingrowsandcolumns
+working_with_ssheet.md#addingremoving-rows-and-columns

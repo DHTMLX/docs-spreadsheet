@@ -10,7 +10,7 @@ You can adjust the desired settings of DHTMLX Spreadsheet to meet your needs. Th
 
 ## Toolbar
 
-The toolbar of the SpreadSheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo","colors","decoration","align","format","help":
+The toolbar of the Spreadsheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo","colors","decoration","align","format","help":
 
 ```
 ![Basic toolbar](basic_toolbar.png)
@@ -52,7 +52,7 @@ Toolbar is [highly customizable](customization.md). You can add new controls, ch
 
 ## Editing bar
 
-Since the structure of SpreadSheet is flexible, you can switch on/off the editing bar to get the desired look and feel of the component. Use the [](api/spreadsheet_editline_config.md) configuration option to hide/show
+Since the structure of Spreadsheet is flexible, you can switch on/off the editing bar to get the desired look and feel of the component. Use the [](api/spreadsheet_editline_config.md) configuration option to hide/show
 the editing bar:
 
 ~~~js
@@ -65,7 +65,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 ## Number of rows and columns
 
-When SpreadSheet is initialized, it has the initial configuration of grid which consists of 1000 columns and 25 rows. However, when this limit runs out, additional rows and columns are rendered automatically, so you don't need to add them. Nevertheless, you can specify the exact number of rows and columns in the grid, if you want to limit them. Use the [](api/spreadsheet_colscount_config.md) and [](api/spreadsheet_rowscount_config.md) options for this purpose:  
+When Spreadsheet is initialized, it has the initial configuration of grid which consists of 1000 columns and 25 rows. However, when this limit runs out, additional rows and columns are rendered automatically, so you don't need to add them. Nevertheless, you can specify the exact number of rows and columns in the grid, if you want to limit them. Use the [](api/spreadsheet_colscount_config.md) and [](api/spreadsheet_rowscount_config.md) options for this purpose:  
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
@@ -90,7 +90,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 ## Menu
 
-The menu of the SpreadSheet is hidden by default. You can switch it on/off via the corresponding configuration option [](api/spreadsheet_menu_config.md):
+The menu of the Spreadsheet is hidden by default. You can switch it on/off via the corresponding configuration option [](api/spreadsheet_menu_config.md):
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {
@@ -102,7 +102,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 ## Read-only mode
 
-It is also possible to enable the read-only mode to prevent editing of SpreadSheet cells via the [](api/spreadsheet_readonly_config.md) configuration option:
+It is also possible to enable the read-only mode to prevent editing of Spreadsheet cells via the [](api/spreadsheet_readonly_config.md) configuration option:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("cont", {
@@ -112,7 +112,7 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 
 {{sample 	03_configuration/05_readonly.html}}
 
-You can also [customize the readonly behavior of SpreadSheet](customization.md#custom-read-only-mode).
+You can also [customize the readonly behavior of Spreadsheet](customization.md#custom-read-only-mode).
 
 ## Custom number formats for cells
 

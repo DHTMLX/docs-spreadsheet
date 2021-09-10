@@ -43,7 +43,7 @@ Serialized data presents an object with data and styles.
 ~~~
 
 @related:
-loading_data.md#savingandrestoringstate
+loading_data.md#saving-and-restoring-state
 
 @relatedapi:
 api/spreadsheet_parse_method.md

@@ -25,4 +25,4 @@ The method finds the specified cell, selects it, moves the row where the cell is
 api/spreadsheet_deleterow_method.md
 
 @related:
-working_with_ssheet.md#addingremovingrowsandcolumns
+working_with_ssheet.md#addingremoving-rows-and-columns
