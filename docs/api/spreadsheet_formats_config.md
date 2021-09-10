@@ -50,15 +50,15 @@ defaultFormats = [
 
 Each number format is an object that includes a set of properties:
 
-- **id** - the id of a format that is used to set format to a cell via the api/spreadsheet_setformat_method.md method
+- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
 - **mask** - a mask for a number format
 - **name** - the name of a format displayed in the toolbar and menu drop-down lists
 - **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
 
-Read detailed information about number formatting in dhtmlxSpreadSheet in the article number_formatting.md.
+Read detailed information about number formatting in DHTMLX Spreadsheet in the article [Number formatting](number_formatting.md).
 
 @related:
-number_formatting.md#formatscustomization
+number_formatting.md#formats-customization
 
 @relatedapi:
 api/spreadsheet_setformat_method.md

@@ -32,10 +32,12 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 	toolbarBlocks: ["help","colors", "align", "decoration", "lock", "clear"]
 });
 ~~~
+
 ```
 ![Custom toolbar](custom_toolbar.png)
 ```
-Check how you can [customize the toolbar](customization.md).
+
+Check how you can [customize the toolbar](customization.md/#toolbar).
 
 @related:
 configuration.md#toolbar

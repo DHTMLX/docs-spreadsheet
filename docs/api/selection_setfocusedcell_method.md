@@ -17,7 +17,7 @@ description: changetext
 spreadsheet.selection.setFocusedCell("D4");
 
 @descr:
- 
+
 @relatedapi:
 api/selection_getfocusedcell_method.md
 

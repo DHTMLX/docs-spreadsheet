@@ -26,7 +26,7 @@ spreadsheet.setValue("A1:D1",[1,2,3]);
 
 @descr:
 
-1\. The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the api/spreadsheet_parse_method.md method.
+1\. The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
 
 {{sample 01_init/01_basic.html}}
 

@@ -19,7 +19,7 @@ spreadsheet.export.xlsx();
 
 {{note Please note that the component supports export to Excel files with the **.xlsx** extension only. }}
 
-dhtmlxSpreadSheet uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for import of data from Excel. [Check the details](loading_data.md#exportingdata).
+DHTMLX Spreadsheet uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for import of data from Excel. [Check the details](loading_data.md#exporting-data).
 
 @related:
 loading_data.md#exportingdata
