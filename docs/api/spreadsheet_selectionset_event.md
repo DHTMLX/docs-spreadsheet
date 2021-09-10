@@ -22,5 +22,3 @@ spreadsheet.events.on("SelectionSet", function(cell){
 
 @relatedapi:
 api/spreadsheet_selectionchange_event.md
-
-@template:api_event

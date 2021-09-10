@@ -35,5 +35,3 @@ api/eventsbus_fire_method.md
 
 @related:
 handling_events.md
-
-@template:api_method

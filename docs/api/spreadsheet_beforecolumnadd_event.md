@@ -28,5 +28,3 @@ The event is blockable, returning false will prevent adding of a column.
 
 @relatedapi:
 api/spreadsheet_aftercolumnadd_event.md
-
-@template:api_event

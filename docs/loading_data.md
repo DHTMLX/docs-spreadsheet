@@ -1,29 +1,27 @@
 ---
-sidebar_label: Data Loading and Export
+sidebar_label: Data loading and export
 title: JavaScript Spreadsheet - Data Loading and Export
 description: changetext
 ---
 
-# Data Loading and Export
+# Data loading and export
 
-
-You can populate dhtmlxSpreadSheet with a ready dataset that may include the data itself and styling for cells. The component supports two ways of data loading:
+You can populate DHTMLX Spreadsheet with a ready dataset that may include the data itself and styling for cells. The component supports two ways of data loading:
 
 - load from an external file
 - load from a local source
 
-The component also supports [export of data into an Excel file](#exportingdata).
+The component also supports [export of data into an Excel file](#exporting-data).
 
-Preparing data
----------
+## Preparing data
 
-dhtmlxSpreadSheet expects data in the JSON format. It is an array with data objects each of which has two properties:
- 
+DHTMLX Spreadsheet expects data in the JSON format. It is an array with data objects each of which has two properties:
+
 - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
 - **value** - (*string,number*) the value of a cell
- 
+
 The example below demonstrates a simple data set for SpreadSheet:
- 
+
 ~~~js
  var data = [
 	{ cell: "a1", value: "Country" },
@@ -50,7 +48,7 @@ The example below demonstrates a simple data set for SpreadSheet:
 
 ### Setting styles for cells
 
-You can also define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells. 
+You can also define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells.
 
 A CSS class is set for a cell via the **css** property.
 
@@ -80,8 +78,7 @@ var styledData = {
 
 ### Setting number formats for cells
 
-You can specify particular number format for values of cells within a data set. A format is set for a cell via the **format** property. As the value of this property you should set the id of any of the 
-[default formats](number_formatting.md#defaultnumberformats) or of a [custom format](number_formatting.md#formatscustomization) that you've added. 
+You can specify particular number format for values of cells within a data set. A format is set for a cell via the **format** property. As the value of this property you should set the id of any of the [default formats](number_formatting.md#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added.
 
 ~~~js
  var data = [
@@ -102,12 +99,11 @@ You can specify particular number format for values of cells within a data set. 
 ];
 ~~~
 
-External data loading
----------------
+## External data loading
 
 ### Loading JSON data
 
-By default, SpreadSheet expects data in JSON format. To load data from an external source, use the api/spreadsheet_load_method.md method. It takes the URL of the file with data as a parameter:
+By default, SpreadSheet expects data in JSON format. To load data from an external source, use the [](api/spreadsheet_load_method.md) method. It takes the URL of the file with data as a parameter:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("container");
@@ -118,7 +114,7 @@ spreadsheet.load("../common/data.json");
 
 ### Loading CSV data
 
-You can also load data in the CSV format. For this, you need to call the api/spreadsheet_load_method.md method and pass the name of the format ("csv") as the second parameter:
+You can also load data in the CSV format. For this, you need to call the [](api/spreadsheet_load_method.md) method and pass the name of the format ("csv") as the second parameter:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("container");
@@ -127,29 +123,32 @@ spreadsheet.load("../common/data.csv", "csv");
 
 {{sample  01_init/05_csv_load.html}}
 
-
-<h3 id="importexcel"> Loading Excel file (.xlsx)</h3>
+### Loading Excel file (.xlsx)
 
 It is possible to load a file in the Excel format with the **.xlsx** extension into a spreadsheet. There are corresponding controls in the Toolbar and Menu in the user interface:
 
 - Menu: File -> Import as..-> Microsoft Excel(.xlsx)
+
 ```
 ![Import from Excel menu](import_xlsx_menu.png)
 ```
+
 - Toolbar: Import -> Microsoft Excel(.xlsx)
+
 ```
 ![Import from Excel toolbar](import_xlsx_toolbar.png)
 ```
+
 #### How to import data
 
 {{note Please note that the import feature won't work in the Internet Explorer browser.}}
 
-dhtmlxSpreadSheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. So, to enable the possibility to load data from Excel into SpreadSheet, you need to:
+DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. So, to enable the possibility to load data from Excel into SpreadSheet, you need to:
 
 - install the **Excel2Json** library
-- specify the api/spreadsheet_importmodulepath_config.md option in the SpreadSheet configuration and set the path to the **worker.js** file in one of the two ways:
-	- by providing a local path to the file on your computer, like: **"../libs/excel2json/1.0/worker.js"**
-    - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/excel2json/1.0/worker.js"**
+- specify the [](api/spreadsheet_importmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file in one of the two ways:
+  - by providing a local path to the file on your computer, like: **"../libs/excel2json/1.0/worker.js"**
+  - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/excel2json/1.0/worker.js"**
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
@@ -159,7 +158,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 {{sample  03_configuration/07_custom_import_export_path.html}}
 
-To load data from an Excel file, pass a string with the type of the extension ("xlsx") as the second parameter of the api/spreadsheet_load_method.md method :
+To load data from an Excel file, pass a string with the type of the extension ("xlsx") as the second parameter of the [](api/spreadsheet_load_method.md) method :
 
 ~~~js
 // .xlsx only
@@ -170,8 +169,7 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 {{sample  02_usage/03_import_xlsx.html}}
 
-You can also [export data from a spreadsheet into an Excel file](#exportingdata), if needed.
-
+You can also [export data from a spreadsheet into an Excel file](#exporting-data), if needed.
 
 ### Processing after-loading code
 
@@ -183,11 +181,9 @@ spreadsheet.load("/some/data").then(function(){
 });
 ~~~
 
+## Loading from local source
 
-Loading from local source
----------------
-
-To load data from a local source, make use of the api/spreadsheet_parse_method.md method. The method takes an array with data objects as a parameter:
+To load data from a local source, make use of the [](api/spreadsheet_parse_method.md) method. The method takes an array with data objects as a parameter:
 
 ~~~js
 var data = [
@@ -210,13 +206,11 @@ spreadsheet.parse(data);
 
 {{sample 01_init/01_basic.html}}
 
-For details on how to load multiple sheets into the spreadsheet, see the [Work with Sheets](working_with_sheets.md#loadingmultiplesheets) article.
+For details on how to load multiple sheets into the spreadsheet, see the [Work with Sheets](working_with_sheets.md#loading-multiple-sheets) article.
 
-Saving and restoring state
----------------
+## Saving and restoring state
 
-To save the current state of a spreadsheet, use the api/spreadsheet_serialize_method.md method. It converts data into an array of JSON objects. Each JSON object contains the configuration of a cell.
-
+To save the current state of a spreadsheet, use the [](api/spreadsheet_serialize_method.md) method. It converts data into an array of JSON objects. Each JSON object contains the configuration of a cell.
 
 ~~~js
 // saving state of the spreadsheet1
@@ -232,19 +226,22 @@ var spreadsheet2 = new dhx.Spreadsheet(document.body);
 spreadsheet2.parse(state);
 ~~~
 
-Exporting data 
---------------------
+## Exporting data
 
-dhtmlxSpreadSheet provides the ability to export data from a spreadsheet into an Excel file. There are corresponding controls in the Toolbar and Menu in the user interface:
+DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into an Excel file. There are corresponding controls in the Toolbar and Menu in the user interface:
 
 - Menu: File -> Download as..-> Microsoft Excel(.xlsx)
+
 ```
 ![Export to Excel menu](export_xlsx_menu.png)
 ```
+
 - Toolbar: Export -> Microsoft Excel(.xlsx)
+
 ```
 ![Export from Excel toolbar](export_xlsx_toolbar.png)
 ```
+
 ### How to export data
 
 {{note Please note that the export feature won't work in the Internet Explorer browser.}}
@@ -252,9 +249,9 @@ dhtmlxSpreadSheet provides the ability to export data from a spreadsheet into an
 The library uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the functionality of export to Excel. Thus, to have the possibility of exporting files you need to:
 
 - install the **JSON2Excel** library
-- specify the api/spreadsheet_exportmodulepath_config.md option in the SpreadSheet configuration and set the path to the **worker.js** file in one of the two ways:
-	- by providing a local path to the file on your computer, like: **"../libs/json2excel/1.0/worker.js"**
-    - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"**
+- specify the [](api/spreadsheet_exportmodulepath_config.md) option in the SpreadSheet configuration and set the path to the **worker.js** file in one of the two ways:
+  - by providing a local path to the file on your computer, like: **"../libs/json2excel/1.0/worker.js"**
+  - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"**
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
@@ -264,7 +261,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 {{sample  03_configuration/07_custom_import_export_path.html}}
 
-Once you've adjusted the required sources, you can use the related API method api/export_xlsx_method.md (to do delate: of the api/refs/export_methods.md object) to export data of the component, as in:
+Once you've adjusted the required sources, you can use the related [](api/export_xlsx_method.md) API method of the Export object to export data of the component, as in:
 
 ~~~js
 spreadsheet.export.xlsx();
@@ -274,5 +271,4 @@ spreadsheet.export.xlsx();
 
 {{sample 02_usage/04_export_xlsx.html}}
 
-Check the steps of [importing data from an Excel file into SpreadSheet](#importexcel).
-
+Check the steps of [importing data from an Excel file into Spreadsheet](#loading-excel-file-xlsx).

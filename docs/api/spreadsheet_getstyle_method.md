@@ -53,5 +53,3 @@ In case the name of the tab isn't specified, the method will return the style(s)
 
 @relatedapi:
 api/spreadsheet_setstyle_method.md
-
-@template: api_method

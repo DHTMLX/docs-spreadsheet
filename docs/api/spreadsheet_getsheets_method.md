@@ -22,5 +22,3 @@ spreadsheet.getSheets();
 Each sheet object includes the **name** and **id** attributes of the sheet.
 
 @changelog: added in v4.1
-
-@template: api_method

@@ -19,5 +19,3 @@ spreadsheet.undo();
 
 @relatedapi:
 api/spreadsheet_redo_method.md
-
-@template: api_method

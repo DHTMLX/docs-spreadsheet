@@ -58,5 +58,3 @@ spreadsheet.menu.events.on("click", function (id) {
 
 @related:
 customization.md#menu
-
-@template: api_method

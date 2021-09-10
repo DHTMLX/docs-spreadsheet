@@ -26,5 +26,3 @@ api/spreadsheet_addrow_method.md
 
 @related:
 working_with_ssheet.md#addingremovingrowsandcolumns
-
-@template: api_method

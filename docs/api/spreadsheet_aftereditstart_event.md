@@ -20,5 +20,3 @@ spreadsheet.events.on("afterEditStart", function(){
 @descr:
 
 @relatedapi: api/spreadsheet_beforeeditstart_event.md
-
-@template:api_event

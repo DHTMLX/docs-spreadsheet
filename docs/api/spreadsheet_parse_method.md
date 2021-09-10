@@ -105,5 +105,3 @@ spreadsheet.parse(styledData);
 @relatedsample:
 01_init/01_basic.html
 01_init/02_styled_data.html
-
-@template:	api_method

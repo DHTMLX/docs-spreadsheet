@@ -6,13 +6,11 @@ description: changetext
 
 # Localization
 
-
-You can localize labels in the interface of dhtmlxSpreadSheet and present it in any necessary language. You just need to provide localized strings for labels and apply your locale to the component.
+You can localize labels in the interface of DHTMLX Spreadsheet and present it in any necessary language. You just need to provide localized strings for labels and apply your locale to the component.
 
 <img style="margin: 20px auto 20px auto; display: block;" src="ssheet_locale.png">
 
-Default locale
----------------------
+## Default locale
 
 The English locale is used by default:
 
@@ -67,12 +65,11 @@ var en = {
 };
 ~~~
 
-Custom locale
----------------
+## Custom locale
 
 To apply a different locale you need to:
 
-- provide translation for all text labels in SpreadSheet, e.g. the Russian locale looks like this:
+- provide translation for all text labels in Spreadsheet, e.g. the Russian locale looks like this:
 
 ~~~js
 var ru = {
@@ -126,7 +123,7 @@ var ru = {
 };
 ~~~
 
-- apply the new locale by calling the **dhx.i18n.setLocale()** method before initializing SpreadSheet:
+- apply the new locale by calling the **dhx.i18n.setLocale()** method before initializing Spreadsheet:
 
 ~~~js
 dhx.i18n.setLocale("spreadsheet", ru);

@@ -6,17 +6,13 @@ description: changetext
 
 # Customization
 
+You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for Spreadsheet.
 
-You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for SpreadSheet.
+# Default and custom icons
 
-Default and custom icons
-----------
+DHTMLX Spreadsheet uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons in any possible part of the spreadsheet: in Toolbar controls, Menu and Context menu items.
 
-dhtmlxSpreadSheet uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
-a page and apply icons in any possible part of the spreadsheet: in Toolbar controls, Menu and Context menu items.
-
-For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxSpreadSheet as follows:
+For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) after the source files of DHTMLX Spreadsheet as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/spreadsheet.js"></script>
@@ -29,10 +25,9 @@ after the source files of dhtmlxSpreadSheet as follows:
 
 Then you can use the name of the icon as the value of the **icon** property in the object with the control parameters for toolbar, menu or context menu. See details below.
 
-Controls types and operations
--------------------------
+## Controls types and operations
 
-###Types
+### Types
 
 There are the following types of controls you can add: *button*, *menuItem*, *separator* and *spacer*.
 
@@ -47,7 +42,7 @@ The **button** object has the following properties:
 - **twoState** -  the flag that defines whether a button can be used in two states
 - **active** - the state of a button: *true* - active, *false* - inactive
 
-The **menuItem** object	has the properties below:
+The **menuItem** object has the properties below:
 
 - **type** - the type of a menu item, set it to "menuItem"
 - **id** - the id of a menu item
@@ -59,7 +54,7 @@ The **menuItem** object	has the properties below:
 The data collection API of the **toolbar**, **menu** and **context menu** allows you to manipulate the controls, namely to add custom controls, remove the controls you don't need, or update the controls,
 e.g. change their icons.
 
-###Adding controls
+### Adding controls
 
 To add a new control, apply the **spreadsheet.{name}.data.add()** method. It takes the parameters below:
 
@@ -90,7 +85,7 @@ spreadsheet.toolbar.data.add({
 }, -1, "parent-id");
 ~~~
 
-###Updating controls
+### Updating controls
 
 You can change the icon of the control and its other config options via the **spreadsheet.{name}.data.update()** method. It takes two parameters:
 
@@ -104,7 +99,7 @@ spreadsheet.toolbar.data.update("add", {
 });
 ~~~
 
-###Deleting controls
+### Deleting controls
 
 To remove a control, make use of the **spreadsheet.{name}.data.remove()** method. Pass the id of the control that should be removed to the method:
 
@@ -113,20 +108,19 @@ To remove a control, make use of the **spreadsheet.{name}.data.remove()** method
 spreadsheet.toolbar.data.remove("control-id");
 ~~~
 
-Toolbar 
----------
+## Toolbar
 
-###Default controls
+### Default controls
 
-The [default toolbar](overview.md#toolbar) contains the following blocks of controls:
+The [default toolbar](/#toolbar) contains the following blocks of controls:
 
 - the **Undo** block
 	- the *Undo* button (id:"undo")
     - the *Redo* button (id:"redo")
 - the **Colors** block
-	- the *Text color* button (id:"color") 
+	- the *Text color* button (id:"color")
     - the *Background color* button (id:"background")
-- the **Decoration** block 
+- the **Decoration** block
 	- the *Bold* button (id:"font-weight-bold")
     - the *Italic* button (id:"font-style-italic")
     - the *Underline* button (id:"text-decoration-underline")
@@ -138,31 +132,29 @@ The [default toolbar](overview.md#toolbar) contains the following blocks of cont
 	- the *Number format* menuItem (id:"format")
 - the **Help** block
 	- the *Help* button (id:"help")
-    
+
 It is also possible to add the blocks enumerated below:
 
 - the **Lock** block
 	- the *Lock* button (id:"lock")
-- the **Clear** block 
+- the **Clear** block
 	- the *Clear group* menuItem (id:"clear-group")
     	- the *Clear value* menuItem (id:"clear-value")
-        - the *Clear styles* menuItem (id:"clear-styles") 
+        - the *Clear styles* menuItem (id:"clear-styles")
         - the *Clear all* menuItem (id:"clear-all")
 - the **Rows** block
 	- the *Add row* button (id:"add-row")
     - the *Remove row* button (id:"remove-row")
 - the **Columns** block
 	- the *Add column* button (id:"add-col")
-    - the *Remove column* button (id:"remove-col")	 
-- the **File** block 
+    - the *Remove column* button (id:"remove-col")
+- the **File** block
 	- the *Export* menuItem (id:"export")
     	- the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
     - the *Import* menuItem (id:"import")
     	- the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
-    
-                
-    
-###Adding controls
+
+### Adding controls
 
 In the example below a new button is added into the toolbar:
 
@@ -176,6 +168,7 @@ spreadsheet.toolbar.data.add({
 ~~~
 
 {{sample 04_customization/01_toolbar_buttons.html}}
+
 ```
 ![Custom Toolbar Button](custom_toolbar_button.png)
 ```
@@ -201,8 +194,7 @@ spreadsheet.toolbar.data.add({
 });
 ~~~
 
-###Updating controls
-
+### Updating controls
 
 In the example below the default icons of the toolbar Undo/Redo buttons are changed to Font Awesome ones:
 
@@ -210,12 +202,14 @@ In the example below the default icons of the toolbar Undo/Redo buttons are chan
 spreadsheet.toolbar.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 ~~~
+
 ```
 ![Custom Toolbar Icons](custom_toolbar_icons.png)
 ```
+
 {{sample 04_customization/04_toolbar_icons.html}}
 
-###Deleting controls
+### Deleting controls
 
 In the example below the Undo button is removed from the toolbar:
 
@@ -223,12 +217,11 @@ In the example below the Undo button is removed from the toolbar:
 spreadsheet.toolbar.data.remove("undo");
 ~~~
 
-Menu
--------------
+## Menu
 
-###Default controls
+### Default controls
 
-The [default menu](overview.md#menu) has the following structure:
+The [default menu](/#menu) has the following structure:
 
 - the **File** menuItem (id:"edit")
 	- the *Export* menuItem (id:"download")
@@ -243,8 +236,8 @@ The [default menu](overview.md#menu) has the following structure:
 	- the separator
 	- the *Clear* menuItem (id:"clear")
     	- the *Clear value* menuItem (id:"clear-value")
-    	- the *Clear styles* menuItem (id:"clear-styles") 
-    	- the *Clear all* menuItem (id:"clear-all")    
+    	- the *Clear styles* menuItem (id:"clear-styles")
+    	- the *Clear all* menuItem (id:"clear-all")
 - the **Insert** menuItem (id:"insert")
 	- the *Columns* menuItem (id:"columns")
 		- the *Add column* menuItem (id:"add-col")
@@ -263,10 +256,10 @@ The [default menu](overview.md#menu) has the following structure:
     - the *Number format* menuItem (id:"format")
 - the **Help** menuItem (id:"help")
 
-###Adding controls
+### Adding controls
 
 In the example below a new menuItem is added into the menu:
- 
+
 ~~~js
 spreadsheet.menu.data.add({
 	id: "validate",
@@ -287,9 +280,10 @@ spreadsheet.menu.data.add({
 ```
 ![Custom Menu Item](custom_menuitem.png)
 ```
+
 {{sample 04_customization/02_menu.html}}
 
-###Updating controls
+### Updating controls
 
 In the example below the default icons of the Undo/Redo menuItems are changed to Font Awesome ones:
 
@@ -297,11 +291,12 @@ In the example below the default icons of the Undo/Redo menuItems are changed to
 spreadsheet.menu.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.menu.data.update("redo", { icon: "fa fa-redo" });
 ~~~
+
 ```
 ![Custom Menu Icons](custom_menu_icons.png)
 ```
 
-###Deleting controls
+### Deleting controls
 
 In the example below the Undo menuItem is removed from the menu:
 
@@ -309,18 +304,17 @@ In the example below the Undo menuItem is removed from the menu:
 spreadsheet.menu.data.remove("undo");
 ~~~
 
-Context menu
----------------
+## Context menu
 
-###Default controls
+### Default controls
 
-The [default context menu](overview.md#context) has the following structure:
+The [default context menu](/#context-menu) has the following structure:
 
 - the **Lock** menuItem (id:"lock")
 - the **Clear** menuItem (id:"clear")
     - the *Clear value* menuItem (id:"clear-value")
-    - the *Clear styles* menuItem (id:"clear-styles") 
-    - the *Clear all* menuItem (id:"clear-all")    
+    - the *Clear styles* menuItem (id:"clear-styles")
+    - the *Clear all* menuItem (id:"clear-all")
 - the **Columns** menuItem (id:"columns")
 	- the *Add column* menuItem (id:"add-col")
     - the *Remove column* menuItem (id:"remove-col")
@@ -328,7 +322,7 @@ The [default context menu](overview.md#context) has the following structure:
     - the *Add rows* menuItem (id:"add-row")
     - the *Remove rows* menuItem (id:"remove-row")
 
-###Adding controls
+### Adding controls
 
 In the example below a new menuItem is added into the context menu:
 
@@ -339,23 +333,26 @@ spreadsheet.contextMenu.data.add({
 	id: "paint-format"
 });
 ~~~
+
 ```
 ![Custom Context Menu Item](custom_context_menuitem.png)
 ```
+
 {{sample 04_customization/03_context_menu.html}}
 
-###Updating controls
+### Updating controls
 
 In the example below the default icons of the Lock menuItem is changed to the Font Awesome one:
 
 ~~~js
 spreadsheet.contextMenu.data.update("lock", { icon: "fa fa-key" });
 ~~~
+
 ```
 ![Custom Context Menu Icon](custom_context_icon.png)
 ```
 
-###Deleting controls
+### Deleting controls
 
 In the example below the Undo menuItem is removed from the context menu:
 
@@ -363,15 +360,13 @@ In the example below the Undo menuItem is removed from the context menu:
 spreadsheet.contextMenu.data.remove("undo");
 ~~~
 
-Custom read-only mode
---------------
+## Custom read-only mode
 
-Besides applying the [read-only mode](configuration.md#readonlymode) to the whole SpreadSheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
+Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole SpreadSheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
-
-- api/spreadsheet_beforeeditstart_event.md
-- api/spreadsheet_beforestylechange_event.md
-- api/spreadsheet_beforevaluechange_event.md
+- [](api/spreadsheet_beforeeditstart_event.md)
+- [](api/spreadsheet_beforestylechange_event.md)
+- [](api/spreadsheet_beforevaluechange_event.md)
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("cont");
@@ -390,7 +385,6 @@ spreadsheet.events.on("beforeStyleChange", function(){
 
 spreadsheet.parse(data);
 ~~~
-
 
 {{sample 04_customization/05_custom_readonly.html}}
 

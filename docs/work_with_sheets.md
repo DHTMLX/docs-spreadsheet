@@ -1,14 +1,12 @@
 ---
-sidebar_label: Work with Sheets
+sidebar_label: Work with sheets
 title: JavaScript Spreadsheet - Work with Sheets
 description: changetext
 ---
 
-# Work with Sheets
+# Work with sheets
 
-
-Adding a new sheet
------------------------
+## Adding a new sheet
 
 To add a new sheet, take the following steps:
 
@@ -20,8 +18,7 @@ To add a new sheet, take the following steps:
 
 <img src="add_sheet.png"/>
 
-Removing a sheet
------------------
+## Removing a sheet
 
 To remove a sheet from the spreadsheet, right-click the sheet tab and choose *Delete*.
 
@@ -29,22 +26,19 @@ To remove a sheet from the spreadsheet, right-click the sheet tab and choose *De
 
 <img src="remove_sheet.gif"/>
 
-Changing the active sheet
---------------------------
+## Changing the active sheet
 
-To change the currently active sheet, just click a different sheet tab with the mouse pointer. 
+To change the currently active sheet, just click a different sheet tab with the mouse pointer.
 
 <img src="change_active_sheet.gif"/>
 
-Renaming a sheet
---------------------
+## Renaming a sheet
 
 To rename a sheet, right-click the sheet tab, click *Rename*, and type the new name.
 
 <img src="rename_sheet.gif"/>
 
-Cross-references between Sheets
-----------------------------
+## Cross-references between Sheets
 
 You can easily consolidate data from multiple sheets into a single one by using cross-referencing. <br> For that, take the following steps:
 

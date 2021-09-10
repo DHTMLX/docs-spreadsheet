@@ -22,5 +22,3 @@ api/spreadsheet_startedit_method.md
 
 @related:
 working_with_ssheet.md#editingcell
-
-@template: api_method

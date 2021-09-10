@@ -43,5 +43,3 @@ In case the name of the tab isn't specified, the method will set the value(s) fo
 @relatedapi:
 api/spreadsheet_getvalue_method.md
 api/spreadsheet_parse_method.md
-
-@template: api_method

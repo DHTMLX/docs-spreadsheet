@@ -38,5 +38,3 @@ In case the name of the tab isn't specified, the method will unlock the cell(s) 
 @relatedapi:
 api/spreadsheet_islocked_method.md
 api/spreadsheet_lock_method.md
-
-@template: api_method

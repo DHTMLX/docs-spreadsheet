@@ -6,9 +6,9 @@ description: changetext
 
 # Integration with Angular
 
-You can use dhtmlxSpreadSheet in an application created with the [Angular](https://angular.io/) framework. [Check the demo on Github](https://github.com/DHTMLX/angular-widgets).
+You can use DHTMLX Spreadsheet in an application created with the [Angular](https://angular.io/) framework. [Check the demo on Github](https://github.com/DHTMLX/angular-widgets).
 
-{{note Please note that the implementation provided below is not the only way to use dhtmlxSpreadSheet in a Angular-based application. It gives you initial schema of the integration and implies further extension of the app functionality depending on your goals.}}
+{{note Please note that the implementation provided below is not the only way to use DHTMLX Spreadsheet in a Angular-based application. It gives you initial schema of the integration and implies further extension of the app functionality depending on your goals.}}
 
 ## Including source files
 
@@ -36,7 +36,7 @@ There are two possible scenarios of initializing SpreadSheet inside an Angular a
 
 In this variant SpreadSheet configuration and data are held inside of the Angular component with no bonds with the external part of the application.
 
-#### SpreadSheet initialization
+#### Spreadsheet initialization
 
 - Create a *SpreadSheet.ts* file, where you will define a Component. Each component must have a template assigned, for SpreadSheet it will be a plain DIV tag with a named reference.
 
@@ -83,13 +83,13 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-### Scenario 2. Exposing SpreadSheet data and config
+### Scenario 2. Exposing Spreadsheet data and config
 
-This variant adds flexibility in the control over SpreadSheet data and configuration by allowing access to them from other parts of the application.
+This variant adds flexibility in the control over Spreadsheet data and configuration by allowing access to them from other parts of the application.
 
 #### SpreadSheet  initialization
 
-- The first step is the same. Create a file, let it be *SpreadSheet2.ts* this time, and add a container for the SpreadSheet:
+- The first step is the same. Create a file, let it be *SpreadSheet2.ts* this time, and add a container for the Spreadsheet:
 
 ~~~js title="SpreadSheet2.ts"
 @Component({
@@ -97,7 +97,7 @@ This variant adds flexibility in the control over SpreadSheet data and configura
 })
 ~~~
 
-- Then initialize SpreadSheet with the `new SpreadSheet` constructor and define the configuration properties of SpreadSheet in the object passed as a second parameter of the constructor:
+- Then initialize Spreadsheet with the `new Spreadsheet` constructor and define the configuration properties of Spreadsheet in the object passed as a second parameter of the constructor:
 
 ~~~js title="SpreadSheet2.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
@@ -118,7 +118,7 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 
 #### Working with configuration options
 
-- Set the list of used SpreadSheet configuration properties and their types before the initialization function:
+- Set the list of used Spreadsheet configuration properties and their types before the initialization function:
 
 ~~~js title="SpreadSheet2.ts"
 export class SpreadsheetComponent implements OnInit, OnDestroy {
@@ -144,7 +144,7 @@ export class SpreadsheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-The properties of SpreadSheet are exposed and available to work with outside the component. In the example below the "grid" mode of rendering a list of files is enabled:
+The properties of Spreadsheet are exposed and available to work with outside the component. In the example below the "grid" mode of rendering a list of files is enabled:
 
 ~~~js title="BasicSample.ts"
 @Component({
@@ -155,9 +155,9 @@ The properties of SpreadSheet are exposed and available to work with outside the
 }}
 ~~~
 
-#### Working with SpreadSheet API
+#### Working with Spreadsheet API
 
-This variant of using SpreadSheet in a Angular application allows working with its API moving all calls of methods and event handlers into a separate file.
+This variant of using Spreadsheet in a Angular application allows working with its API moving all calls of methods and event handlers into a separate file.
 
 - Create a *DataSample.vue* file and add a link to the spreadsheet:
 
@@ -170,7 +170,7 @@ This variant of using SpreadSheet in a Angular application allows working with i
 })
 ~~~
 
-- Define some actions that will be implemented on initialization of the SpreadSheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method
+- Define some actions that will be implemented on initialization of the Spreadsheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method
 that will set certain values in particular cells:
 
 ~~~js title="DataSample.ts"
@@ -218,7 +218,7 @@ export class SpreadsheetComponent implements AfterViewInit {
 }
 ~~~
 
-- Bind related buttons to the SpreadSheet methods by subscribing them to the *click* event to make changes in the data:
+- Bind related buttons to the Spreadsheet methods by subscribing them to the *click* event to make changes in the data:
 
 ~~~js title="DataSample.ts"
 <input type="button" (click)="parseData()" value="Parse data">

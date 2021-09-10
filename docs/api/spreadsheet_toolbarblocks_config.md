@@ -45,5 +45,3 @@ customization.md
 03_configuration/01_full_toolbar.html
 
 @todo: update image
-
-@template:api_config

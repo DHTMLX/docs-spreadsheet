@@ -56,5 +56,3 @@ api/spreadsheet_parse_method.md
 
 @related:
 loading_data.md
-
-@template: api_method

@@ -1,14 +1,12 @@
 ---
-sidebar_label: Number Formatting
+sidebar_label: Number formatting
 title: JavaScript Spreadsheet - Number Formatting
 description: changetext
 ---
 
-# Number Formatting
+# Number formatting
 
-
-Supported number formats
-----------------------------
+## Supported number formats
 
 There are 4 number formats your can apply to format numeric values of cells:
 
@@ -39,17 +37,20 @@ There are 4 number formats your can apply to format numeric values of cells:
 ```
 <img src="number_formats.png">
 ```
-How to set format
--------------------
 
-Follow the steps below to apply a particular number format to SpreadSheet data via the toolbar:
+## How to set format
+
+Follow the steps below to apply a particular number format to Spreadsheet data via the toolbar:
 
 - Select a cell or several cells that you want to format.
 - Click the **Number format** button:
+
 ```
 <img src="number_format_button.png">
+```
 
 - Select the format you want to apply among the suggested options:
 
+```
 <img style="margin: 20px auto 20px auto; display: block;" src="number_format_options.png">
 ```

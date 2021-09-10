@@ -6,8 +6,7 @@ description: changetext
 
 # User Guide
 
-
-- [Hot Keys](hotkeys.md) 
+- [Hot Keys](hotkeys.md)
 - [Work with Cells](work_with_cells.md)
 - [Work with Rows and Columns](work_with_rows_cols.md)
 - [Work with Sheets](work_with_sheets.md)
@@ -23,3 +22,6 @@ description: changetext
 - data_formatting.md
 - number_formatting_guide.md
 - excel_import_export.md
+
+
+todo: delete
