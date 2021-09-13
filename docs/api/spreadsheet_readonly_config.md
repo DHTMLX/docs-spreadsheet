@@ -19,6 +19,9 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 	readonly: true
 });
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
+
 @descr:
 
 **Related articles**
@@ -26,6 +29,3 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 [Configuration](configuration.md#read-only-mode)
 
 [Customization](customization.md#custom-read-only-mode)
-
-@relatedsample:
-03_configuration/05_readonly.html

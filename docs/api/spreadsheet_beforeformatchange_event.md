@@ -20,6 +20,9 @@ spreadsheet.events.on("beforeFormatChange", function(cell, format){
  console.log("Format of cell "+spreadsheet.selection.getSelectedCell()+" will change");
 });
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
+
 @descr:
 
 The event is blockable. Return *false* to cancel changing of the format.
@@ -27,6 +30,3 @@ The event is blockable. Return *false* to cancel changing of the format.
 **Related articles**
 
 [Number formatting](number_formatting.md)
-
-@relatedsample:
-05_events/01_events.html

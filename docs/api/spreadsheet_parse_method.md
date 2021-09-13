@@ -44,6 +44,11 @@ var styledData = {
 var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(styledData);
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+
+**Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
+
 @descr:
 
 Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object* with the following attributes:
@@ -98,7 +103,3 @@ spreadsheet.parse(styledData);
 **Related articles**
 
 [Data loading and export](loading_data.md)
-
-@relatedsample:
-01_init/01_basic.html
-01_init/02_styled_data.html

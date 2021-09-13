@@ -23,6 +23,9 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
     ]
 });
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
+
 @descr:
 
 You can specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example:
@@ -44,8 +47,5 @@ Check how you can [customize the toolbar](customization.md/#toolbar).
 [Configuration](configuration.md#toolbar)
 
 [Customization](customization.md)
-
-@relatedsample:
-03_configuration/01_full_toolbar.html
 
 @todo: update image

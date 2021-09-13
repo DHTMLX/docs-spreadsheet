@@ -17,6 +17,9 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
     exportModulePath: "../libs/json2excel/1.0/worker.js"
 });
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
+
 @descr:
 
 {{note DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.}}
@@ -33,6 +36,3 @@ By default the link to CDN is used.
 **Related articles**
 
 [Data loading and export](loading_data.md#exporting-data)
-
-@relatedsample:
-02_usage/04_export_xlsx.html

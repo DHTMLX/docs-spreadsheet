@@ -25,6 +25,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 [Number formatting](number_formatting.md#autodetectingcellformat)
 
+
 @relatedsample:
 03_configuration/07_autoformat.html
 

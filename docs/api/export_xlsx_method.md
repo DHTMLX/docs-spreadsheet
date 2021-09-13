@@ -15,6 +15,9 @@ description: changetext
 @example:
 spreadsheet.export.xlsx();
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
+
 @descr:
 
 {{note Please note that the component supports export to Excel files with the **.xlsx** extension only. }}
@@ -24,6 +27,3 @@ DHTMLX Spreadsheet uses the WebAssembly-based library [Json2Excel](https://githu
 **Related articles**
 
 [Data loading and export](loading_data.md)
-
-@relatedsample:
-02_usage/04_export_xlsx.html

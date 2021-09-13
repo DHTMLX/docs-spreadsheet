@@ -16,6 +16,9 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
     leftSplit:3 /*!*/
 });
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Frozen columns](https://snippet.dhtmlx.com/iazmc27w)
+
 @descr:
 
 **Related articles**
@@ -23,5 +26,3 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 [Configuration](configuration.md#frozen-columns)
 
 @changelog: added in v4.0
-
-@relatedsample: 03_configuration/08_frozen_columns.html

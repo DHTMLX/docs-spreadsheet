@@ -21,9 +21,6 @@ spreadsheet.deleteRow("G2");
 
 The method finds the specified cell, selects it, removes the row where the cell is located and moves the row below to its position.
 
-@relatedapi:
-api/spreadsheet_addrow_method.md
-
 **Related articles**
 
 [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)
