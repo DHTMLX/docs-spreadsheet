@@ -30,7 +30,7 @@ The source files are represented in two versions: the **full** version and the *
 
 ## Initialization
 
-There are two possible scenarios of initializing SpreadSheet inside a Vue application. One consists in isolating SpreadSheet structure and data inside of the Vue component and another one suggests separating view and data parts with the possibility of interaction between them.
+There are two possible scenarios of initializing Spreadsheet inside a Vue application. One consists in isolating Spreadsheet structure and data inside of the Vue component and another one suggests separating view and data parts with the possibility of interaction between them.
 
 ### Scenario 1. Isolating Spreadsheet in a Vue component
 
@@ -87,7 +87,7 @@ This variant adds flexibility in the control over Spreadsheet data and configura
 
 #### Spreadsheet initialization
 
-- The first step is the same. Create a file, let it be *SpreadSheet2.vue* this time, and add a container for the SpreadSheet inside the **&lt;template&gt;&lt;/template&gt;** tags:
+- The first step is the same. Create a file, let it be *SpreadSheet2.vue* this time, and add a container for the Spreadsheet inside the **&lt;template&gt;&lt;/template&gt;** tags:
 
 ~~~js title="SpreadSheet2.vue"
 <template>
@@ -115,7 +115,7 @@ export default {
 
 #### Working with configuration options
 
-- Set the list of used SpreadSheet configuration properties and their types in the **props** configuration option:
+- Set the list of used Spreadsheet configuration properties and their types in the **props** configuration option:
 
 ~~~js title="SpreadSheet2.vue"
 <script>

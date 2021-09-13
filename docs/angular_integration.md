@@ -30,9 +30,9 @@ The source files are represented in two versions: the **full** version and the *
 
 ## Initialization
 
-There are two possible scenarios of initializing SpreadSheet inside an Angular application. One consists in isolating SpreadSheet structure and data inside of the Angular component and another one suggests separating view and data parts with the possibility of interaction between them.
+There are two possible scenarios of initializing Spreadsheet inside an Angular application. One consists in isolating Spreadsheet structure and data inside of the Angular component and another one suggests separating view and data parts with the possibility of interaction between them.
 
-### Scenario 1. Isolating SpreadSheet in an Angular component
+### Scenario 1. Isolating Spreadsheet in an Angular component
 
 In this variant Spreadsheet configuration and data are held inside of the Angular component with no bonds with the external part of the application.
 
