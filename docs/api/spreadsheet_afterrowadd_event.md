@@ -19,6 +19,3 @@ spreadsheet.events.on("afterRowAdd", function(cells){
 });
 
 @descr:
-
-@relatedapi:
-api/spreadsheet_beforerowadd_event.md

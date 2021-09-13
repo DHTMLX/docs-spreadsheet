@@ -17,8 +17,6 @@ spreadsheet.endEdit();
 
 @descr:
 
-@relatedapi:
-api/spreadsheet_startedit_method.md
+**Related articles**
 
-@related:
-working_with_ssheet.md#editing-cell
+[Work with Spreadsheet](working_with_ssheet.md#editing-cell)

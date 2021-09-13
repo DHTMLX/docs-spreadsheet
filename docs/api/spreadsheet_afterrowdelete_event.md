@@ -19,6 +19,3 @@ spreadsheet.events.on("afterRowDelete", function(cells){
 });
 
 @descr:
-
-@relatedapi:
-api/spreadsheet_beforerowdelete_event.md

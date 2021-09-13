@@ -56,5 +56,6 @@ spreadsheet.menu.events.on("click", function (id) {
 @relatedsample:
 04_customization/02_menu.html
 
-@related:
-customization.md#menu
+**Related articles**
+
+[Customization](customization.md#menu)

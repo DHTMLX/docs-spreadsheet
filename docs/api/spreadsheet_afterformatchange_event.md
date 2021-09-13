@@ -21,13 +21,9 @@ spreadsheet.events.on("afterFormatChange", function(cell, format){
 
 @descr:
 
-@relatedapi:
-api/spreadsheet_beforeformatchange_event.md
-api/spreadsheet_setformat_method.md
-api/spreadsheet_getformat_method.md
+**Related articles**
 
-@related:
-number_formatting.md
+[Number formatting](number_formatting.md)
 
 @relatedsample:
 05_events/01_events.html

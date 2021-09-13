@@ -39,7 +39,3 @@ spreadsheet.setStyle("sheet1!A2", {background:"red", border:"solid 1px yellow"})
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will apply the style to the cell(s) of the active tab.
-
-@relatedapi:
-api/spreadsheet_getstyle_method.md
-api/spreadsheet_parse_method.md

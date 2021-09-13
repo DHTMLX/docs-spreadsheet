@@ -21,8 +21,6 @@ spreadsheet.deleteColumn("G2");
 
 The method finds the specified cell, selects it, removes the column where the cell is located and moves the column on the left to its position.
 
-@relatedapi:
-api/spreadsheet_addcolumn_method.md
+**Related articles**
 
-@related:
-working_with_ssheet.md#addingremoving-rows-and-columns
+[Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

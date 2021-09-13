@@ -30,12 +30,9 @@ To export files you need to:
 
 By default the link to CDN is used.
 
-@relatedapi:
-api/export_xlsx_method.md
-api/spreadsheet_importmodulepath_config.md
+**Related articles**
 
-@related:
-loading_data.md#exporting-data
+[Data loading and export](loading_data.md#exporting-data)
 
 @relatedsample:
 02_usage/04_export_xlsx.html

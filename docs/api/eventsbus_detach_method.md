@@ -34,13 +34,6 @@ spreadsheet.events.on("StyleChange", handler2, marker);
 spreadsheet.events.detach("StyleChange", marker);
 ~~~
 
-@relatedapi:
-**Related API**
-
-- [](api/eventsbus_fire_method.md)
-- [](api/eventsbus_on_method.md)
-
-@related:
 **Related articles**
 
-- [Event Handling](handling_events.md)
+[Event Handling](handling_events.md)

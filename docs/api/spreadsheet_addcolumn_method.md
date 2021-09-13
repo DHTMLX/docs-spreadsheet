@@ -21,8 +21,6 @@ spreadsheet.addColumn("G1");
 
 The method finds the specified cell, selects it, moves the column where the cell is located one cell left and adds an empty column instead.
 
-@relatedapi:
-api/spreadsheet_deletecolumn_method.md
+**Related articles**
 
-@related:
-working_with_ssheet.md#addingremovingrowsandcolumns
+[Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

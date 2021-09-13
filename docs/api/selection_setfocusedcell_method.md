@@ -18,8 +18,6 @@ spreadsheet.selection.setFocusedCell("D4");
 
 @descr:
 
-@relatedapi:
-api/selection_getfocusedcell_method.md
+**Related articles**
 
-@related:
-working_with_ssheet.md#settingfocusonacell
+[Work with Spreadsheet](working_with_ssheet.md#setting-focus-on-a-cell)

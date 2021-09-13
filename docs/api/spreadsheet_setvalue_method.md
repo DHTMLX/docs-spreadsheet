@@ -39,7 +39,3 @@ spreadsheet.setValue("sheet1!A1",5);
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will set the value(s) for the cell(s) of the active tab.
-
-@relatedapi:
-api/spreadsheet_getvalue_method.md
-api/spreadsheet_parse_method.md

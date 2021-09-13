@@ -24,13 +24,9 @@ spreadsheet.events.on("beforeFormatChange", function(cell, format){
 
 The event is blockable. Return *false* to cancel changing of the format.
 
-@relatedapi:
-api/spreadsheet_afterformatchange_event.md
-api/spreadsheet_setformat_method.md
-api/spreadsheet_getformat_method.md
+**Related articles**
 
-@related:
-number_formatting.md
+[Number formatting](number_formatting.md)
 
 @relatedsample:
 05_events/01_events.html

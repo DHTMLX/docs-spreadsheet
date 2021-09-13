@@ -31,7 +31,6 @@ The default number formats are the following:
 - *number* ("#,##0.00")
 - *percent* (#,##0.00%)
 
-@related:
 
 @todo: move to "formats" page
 

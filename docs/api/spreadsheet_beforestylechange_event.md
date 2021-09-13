@@ -26,5 +26,3 @@ console.log("Style of cell "+spreadsheet.selection.getSelectedCell()+" will chan
 @descr:
 
 The event is blockable, returning false will prevent changing of style.
-
-@relatedapi:api/spreadsheet_afterstylechange_event.md

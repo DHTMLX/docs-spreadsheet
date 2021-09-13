@@ -57,13 +57,8 @@ Each number format is an object that includes a set of properties:
 
 Read detailed information about number formatting in DHTMLX Spreadsheet in the article [Number formatting](number_formatting.md).
 
-@related:
-number_formatting.md#formats-customization
+**Related articles**
 
-@relatedapi:
-api/spreadsheet_setformat_method.md
-api/spreadsheet_getformat_method.md
-api/spreadsheet_beforeformatchange_event.md
-api/spreadsheet_afterformatchange_event.md
+[Number formatting](number_formatting.md#formats-customization)
 
 @changelog: The "Text" format has been appeared in v4.0.
