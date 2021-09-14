@@ -8,9 +8,7 @@ description: changetext
 
 @short: sets the number of rows a spreadsheet will have on initialization
 
-@signature:
-
-@type: number
+@signature: rowsCount?: number;
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

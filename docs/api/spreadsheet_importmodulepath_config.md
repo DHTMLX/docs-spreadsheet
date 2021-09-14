@@ -8,9 +8,7 @@ description: changetext
 
 @short: sets the path to the import module
 
-@signature:
-
-@type: string
+@signature: importModulePath?: string;
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

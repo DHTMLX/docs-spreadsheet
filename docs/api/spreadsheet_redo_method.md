@@ -8,9 +8,7 @@ description: changetext
 
 @short: applies the reverted action once again
 
-@signature:
-
-@params:
+@signature: redo(): void;
 
 @example:
 spreadsheet.redo();

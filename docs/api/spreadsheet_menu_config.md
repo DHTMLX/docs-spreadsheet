@@ -8,11 +8,9 @@ description: changetext
 
 @short: shows/hides the menu
 
-@signature:
+@signature: menu?: boolean;
 
 @default: true
-
-@type: boolean
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

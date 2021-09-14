@@ -8,11 +8,9 @@ description: changetext
 
 @short: shows/hides the editing bar
 
-@signature:
+@signature: editLine?: boolean;
 
 @default: false
-
-@type: boolean
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

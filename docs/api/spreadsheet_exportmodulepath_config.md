@@ -8,9 +8,7 @@ description: changetext
 
 @short: sets the path to the export module
 
-@signature:
-
-@type: string
+@signature: exportModulePath?: string;
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

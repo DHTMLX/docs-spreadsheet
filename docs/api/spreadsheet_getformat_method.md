@@ -8,7 +8,7 @@ description: changetext
 
 @short: returns the number format applied to the value of a cell
 
-@signature:
+@signature: getFormat: (cell: string) => string | string[];
 
 @params:
 `cell: string` - the id of a cell

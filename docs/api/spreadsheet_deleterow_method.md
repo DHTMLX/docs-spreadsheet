@@ -8,7 +8,7 @@ description: changetext
 
 @short: removes a row from the spreadsheet
 
-@signature:
+@signature: deleteRow: (cell: string) => void;
 
 @params:
 `cell: string` - the id of a cell that contains the id of a row that should be deleted

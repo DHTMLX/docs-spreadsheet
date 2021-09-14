@@ -8,9 +8,8 @@ description: changetext
 
 @short: sets the number of columns a spreadsheet will have on initialization
 
-@signature:
+@signature: colsCount?: number;
 
-@type:number
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
 	colsCount: 10

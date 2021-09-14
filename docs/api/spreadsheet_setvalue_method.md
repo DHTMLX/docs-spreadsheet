@@ -8,11 +8,11 @@ description: changetext
 
 @short: sets a value for a cell(s)
 
-@signature:
+@signature: setValue: (cell: string, value: any | any[]) => void;
 
 @params:
 - `cells: string` - the id of a cell or a range of cells
-- `value: string,number,array` - the value(s) to be set for a cell/cells
+- `value: string, number, array` - the value(s) to be set for a cell/cells
 
 @example:
 // setting value for one cell

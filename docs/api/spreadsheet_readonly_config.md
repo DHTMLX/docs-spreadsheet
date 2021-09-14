@@ -8,11 +8,9 @@ description: changetext
 
 @short: enables/disables the readonly mode
 
-@signature:
+@signature: readonly?: boolean;
 
 @default: false
-
-@type: boolean
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

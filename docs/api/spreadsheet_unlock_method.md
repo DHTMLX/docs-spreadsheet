@@ -8,7 +8,7 @@ description: changetext
 
 @short: unlocks a locked cell(s)
 
-@signature:
+@signature: unlock: (cell: string) => void;
 
 @params:
 `cell: string` - the id(s) of a cell(s) or a range of cells

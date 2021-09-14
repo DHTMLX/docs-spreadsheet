@@ -8,7 +8,7 @@ description: changetext
 
 @short: starts editing in the selected cell
 
-@signature:
+@signature: startEdit(cell?: string, initialValue?: string);
 
 @params:
 - `cell: string` - optional, the id of a cell

@@ -6,6 +6,8 @@ description: changetext
 
 # Event Handling
 
+<iframe src="https://snippet.dhtmlx.com/2vkjyvsi?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
 ## Attaching Event Listeners
 
 You can attach event listeners with the [spreadsheet.events.on()](api/eventsbus_on_method.md) method:
@@ -15,10 +17,6 @@ spreadsheet.events.on("AfterColumnAdd", function(cells){
     console.log("A new column is added");
 });
 ~~~
-
-{{sample 05_events/01_events.html}}
-
-{{note The names of events are case-insensitive.}}
 
 ## Detaching Event Listeners
 
@@ -41,3 +39,5 @@ spreadsheet.events.fire("name",args);
 ~~~
 
 The list of events is available in the [API section](api/api_overview.md#spreadsheet-events).
+
+{{note The names of events are case-insensitive.}}

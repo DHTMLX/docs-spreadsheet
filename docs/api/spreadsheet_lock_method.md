@@ -8,7 +8,7 @@ description: changetext
 
 @short: locks the specified cell(s)
 
-@signature:
+@signature: lock: (cell: string) => void;
 
 @params:
 `cell: string` - the id of a cell(s) or a range of cells
