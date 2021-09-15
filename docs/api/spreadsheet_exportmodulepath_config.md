@@ -8,14 +8,15 @@ description: changetext
 
 @short: sets the path to the export module
 
-@signature:
-
-@type: string
+@signature: exportModulePath?: string;
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
     exportModulePath: "../libs/json2excel/1.0/worker.js"
 });
+
+@relatedsample:
+**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
 
 @descr:
 
@@ -33,6 +34,3 @@ By default the link to CDN is used.
 **Related articles**
 
 [Data loading and export](loading_data.md#exporting-data)
-
-@relatedsample:
-02_usage/04_export_xlsx.html

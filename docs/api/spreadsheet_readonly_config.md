@@ -8,16 +8,17 @@ description: changetext
 
 @short: enables/disables the readonly mode
 
-@signature:
+@signature: readonly?: boolean;
 
 @default: false
-
-@type: boolean
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
 	readonly: true
 });
+
+@relatedsample:
+**Related sample**: [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
 
 @descr:
 
@@ -26,6 +27,3 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 [Configuration](configuration.md#read-only-mode)
 
 [Customization](customization.md#custom-read-only-mode)
-
-@relatedsample:
-03_configuration/05_readonly.html

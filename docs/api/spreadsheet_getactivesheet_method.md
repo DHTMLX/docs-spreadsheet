@@ -8,7 +8,7 @@ description: changetext
 
 @short: returns the sheet that is currently active
 
-@signature:
+@signature: getActiveSheet: () => ISheet;
 
 @returns:
 `param: object` - an object with the name and id attributes of the active sheet

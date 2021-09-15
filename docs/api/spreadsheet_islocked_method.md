@@ -8,7 +8,7 @@ description: changetext
 
 @short: checks whether a cell(s) is(are) locked
 
-@signature:
+@signature: isLocked: (cell: string) => boolean;
 
 @params:
 `cell: string` - the id of a cell

@@ -8,9 +8,7 @@ description: changetext
 
 @short: enables/disables the ability to work with multiple sheets in the spreadsheet
 
-@signature:
-
-@type: boolean
+@signature: multiSheets?: boolean;
 
 @default: true
 

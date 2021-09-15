@@ -8,7 +8,7 @@ description: changetext
 
 @short: removes a row from the spreadsheet
 
-@signature:
+@signature: deleteRow: (cell: string) => void;
 
 @params:
 `cell: string` - the id of a cell that contains the id of a row that should be deleted
@@ -20,9 +20,6 @@ spreadsheet.deleteRow("G2");
 @descr:
 
 The method finds the specified cell, selects it, removes the row where the cell is located and moves the row below to its position.
-
-@relatedapi:
-api/spreadsheet_addrow_method.md
 
 **Related articles**
 

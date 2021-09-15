@@ -8,7 +8,7 @@ description: changetext
 
 @short: loads data from an external file
 
-@signature:
+@signature: 
 
 @params:
 
@@ -28,6 +28,13 @@ spreadsheet.load("../common/data.csv", "csv");
 // load data in the Excel format, (.xlsx only)
 spreadsheet.load("../common/data.xlsx", "xlsx");
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Load Data](https://snippet.dhtmlx.com/ih9zmc3e)
+
+**Related sample**: [Spreadsheet. CSV Load](https://snippet.dhtmlx.com/1f87y71v)
+
+**Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
+
 @descr:
 
 The component will make an AJAX call and expect the remote URL to provide valid data.
@@ -45,11 +52,6 @@ spreadsheet.load("../some/data.json").then(function(){
 {{note Please note that the component supports import from Excel files with the **.xlsx** extension only. }}
 
 DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. [Check the details](loading_data.md#loading-excel-file-xlsx).
-
-@relatedsample:
-01_init/03_load_data.html
-01_init/05_csv_load.html
-02_usage/03_import_xlsx.html
 
 **Related articles**
 

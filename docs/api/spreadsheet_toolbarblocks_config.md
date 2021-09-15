@@ -8,20 +8,32 @@ description: changetext
 
 @short: specifies blocks of buttons that will be shown in the toolbar of spreadsheet
 
-@signature:
+@signature: toolbarBlocks?: ToolbarBlocks[];
 
 @default: ["undo", "colors", "decoration", "align", "format", "help"]
 
 @type: array
 
 @example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-	// full toolbar
-	toolbarBlocks: [
-    	"undo", "colors", "decoration", "align", "lock", "clear",
-        "rows", "columns", "help", "format", "file"
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // full toolbar
+    toolbarBlocks: [
+        "undo",
+        "colors",
+        "decoration",
+        "align",
+        "lock",
+        "clear",
+        "rows",
+        "columns",
+        "help",
+        "format",
+        "file"
     ]
 });
+
+@relatedsample:
+**Related sample**: [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
 
 @descr:
 
@@ -45,7 +57,5 @@ Check how you can [customize the toolbar](customization.md/#toolbar).
 
 [Customization](customization.md)
 
-@relatedsample:
-03_configuration/01_full_toolbar.html
-
 @todo: update image
+todo: check and upd

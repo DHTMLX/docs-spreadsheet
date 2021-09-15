@@ -8,11 +8,9 @@ description: changetext
 
 @short: shows/hides the editing bar
 
-@signature:
+@signature: editLine?: boolean;
 
 @default: false
-
-@type: boolean
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
@@ -21,9 +19,9 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 @descr:
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Disabled Line](https://snippet.dhtmlx.com/unem2jkh)
+
 **Related articles**
 
 [Configuration](configuration.md#editing-bar)
-
-@relatedsample:
-03_configuration/02_disabled_line.html

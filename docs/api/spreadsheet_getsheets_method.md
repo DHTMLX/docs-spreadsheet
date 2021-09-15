@@ -8,7 +8,7 @@ description: changetext
 
 @short: gets all sheets of the spreadsheet
 
-@signature:
+@signature: getSheets: () => ISheet[];
 
 @returns:
 `param: array` - an array of sheets objects

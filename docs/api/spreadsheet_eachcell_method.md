@@ -8,7 +8,7 @@ description: changetext
 
 @short: iterates cells in the spreadsheet
 
-@signature:
+@signature: eachCell: (cb: (cellName: string, cellValue: any) => any, range?: string) => void;
 
 @params:
 - `callback: function` - a callback function
@@ -51,10 +51,10 @@ spreadsheet.menu.events.on("click", function (id) {
 	}
 });
 
-@descr:
-
 @relatedsample:
-04_customization/02_menu.html
+**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v?)
+
+@descr:
 
 **Related articles**
 

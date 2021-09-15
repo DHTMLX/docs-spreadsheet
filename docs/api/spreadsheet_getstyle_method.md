@@ -8,7 +8,7 @@ description: changetext
 
 @short: returns styles applied to a cell(s)
 
-@signature:
+@signature: getStyle: (cell: string) => IStylesList | IStylesList[];
 
 @params:
 `cells: string` - the id of a cell or a range of cells

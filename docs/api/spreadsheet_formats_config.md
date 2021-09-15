@@ -8,9 +8,9 @@ description: changetext
 
 @short: defines the list of number formats  
 
-@signature:
+@signature: formats?: IFormats[];
 
-@type: array
+@type: array todo:check
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
@@ -62,3 +62,5 @@ Read detailed information about number formatting in DHTMLX Spreadsheet in the a
 [Number formatting](number_formatting.md#formats-customization)
 
 @changelog: The "Text" format has been appeared in v4.0.
+
+todo:check

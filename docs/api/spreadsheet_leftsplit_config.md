@@ -8,13 +8,15 @@ description: changetext
 
 @short: sets the number of columns fixed to the left side of the spreadsheet
 
-@signature:
+@signature: leftSplit?: number;
 
-@type: number
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
-    leftSplit:3 /*!*/
+    leftSplit:3
 });
+
+@relatedsample:
+**Related sample**: [Spreadsheet. Frozen columns](https://snippet.dhtmlx.com/iazmc27w)
 
 @descr:
 
@@ -23,5 +25,3 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 [Configuration](configuration.md#frozen-columns)
 
 @changelog: added in v4.0
-
-@relatedsample: 03_configuration/08_frozen_columns.html

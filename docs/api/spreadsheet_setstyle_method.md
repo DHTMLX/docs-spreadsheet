@@ -8,11 +8,11 @@ description: changetext
 
 @short: sets style to a cell(s)
 
-@signature:
+@signature: setStyle: (cell: string, styles: string | string[] | IStylesList | IStylesList[]) => void;
 
 @params:
 - `cells: string` - the id of a cell or a range of cells
-- `style: object,array` - styles that should be applied to cells
+- `style: object, array` - styles that should be applied to cells
 
 @example:
 // setting style for one cell

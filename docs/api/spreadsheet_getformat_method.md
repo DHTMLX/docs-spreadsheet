@@ -8,7 +8,7 @@ description: changetext
 
 @short: returns the number format applied to the value of a cell
 
-@signature:
+@signature: getFormat: (cell: string) => string | string[];
 
 @params:
 `cell: string` - the id of a cell
@@ -19,6 +19,9 @@ The format applied to the value of a cell.
 @example:
 var format = spreadsheet.getFormat("A1");
 // ->"currency"
+
+@relatedsample:
+**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
 
 @descr:
 Starting with v4.1, the reference to a cell can be specified in the following format:
@@ -34,6 +37,3 @@ In case the name of the tab isn't specified, the method will return the format a
 **Related articles**
 
 [Number formatting](number_formatting.md)
-
-@relatedsample:
-01_init/01_basic.html

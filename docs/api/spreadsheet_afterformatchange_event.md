@@ -19,11 +19,11 @@ spreadsheet.events.on("afterFormatChange", function(cell, format){
  console.log("Format of cell "+spreadsheet.selection.getSelectedCell()+" has changed");
 });
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
+
 @descr:
 
 **Related articles**
 
 [Number formatting](number_formatting.md)
-
-@relatedsample:
-05_events/01_events.html

@@ -21,7 +21,7 @@ spreadsheet.events.on("StyleChange", function(id){
 });
 
 @relatedsample:
-05_events/01_events.html
+**Related sample**: [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
 
 @descr:
 

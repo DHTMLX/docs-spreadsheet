@@ -8,14 +8,15 @@ description: changetext
 
 @short: sets the path to the import module
 
-@signature:
-
-@type: string
+@signature: importModulePath?: string;
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
     importModulePath: "../libs/excel2json/1.0/worker.js"
 });
+
+@relatedsample:
+**Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
 
 @descr:
 
@@ -33,6 +34,3 @@ By default the link to CDN is used.
 **Related articles**
 
 [Data loading and export](loading_data.md#loading-excel-file-xlsx)
-
-@relatedsample:
-02_usage/03_import_xlsx.html

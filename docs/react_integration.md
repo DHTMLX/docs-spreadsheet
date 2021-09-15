@@ -30,11 +30,11 @@ The source files are represented in two versions: the **full** version and the *
 
 ## Initialization
 
-There are two possible scenarios of initializing SpreadSheet inside a React application. One consists in isolating Spreadsheet structure and data inside of the React component and another one suggests separating view and data parts with the possibility of interaction between them.
+There are two possible scenarios of initializing Spreadsheet inside a React application. One consists in isolating Spreadsheet structure and data inside of the React component and another one suggests separating view and data parts with the possibility of interaction between them.
 
 ### Scenario 1. Isolating Spreadsheet in a React component
 
-In this variant SpreadSheet configuration and data are held inside of the React component with no bonds with the external part of the application.
+In this variant Spreadsheet configuration and data are held inside of the React component with no bonds with the external part of the application.
 
 #### Spreadsheet initialization
 
@@ -64,7 +64,7 @@ class SpreadsheetComponent extends Component {
 
 #### Loading data and changing config
 
-- Next you can load data into the SpreadSheet and do some actions, e.g. change style of a cell:
+- Next you can load data into the Spreadsheet and do some actions, e.g. change style of a cell:
 
 ~~~js title="SpreadSheet.js"
 class SpreadSheetComponent extends Component {
@@ -123,7 +123,7 @@ class SpreadSheetComponent extends Component {
 
 Thus the **props** configuration option will be applied to the Spreadsheet widget configuration.
 
-- Then create a container for SpreadSheet using the **render()** function:
+- Then create a container for Spreadsheet using the **render()** function:
 
 ~~~js title="SpreadSheet2.js"
 render() {

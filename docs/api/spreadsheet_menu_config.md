@@ -8,22 +8,20 @@ description: changetext
 
 @short: shows/hides the menu
 
-@signature:
+@signature: menu?: boolean;
 
 @default: true
-
-@type: boolean
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
 	menu: false
 });
 
+@relatedsample:
+**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)
+
 @descr:
 
 **Related articles**
 
 [Configuration](configuration.md#menu)
-
-@relatedsample:
-03_configuration/04_menu.html

@@ -8,7 +8,7 @@ description: changetext
 
 @short: loads data into spreadsheet from a local data source
 
-@signature:
+@signature: parse: (data: any) => void;
 
 @params:
 `data: any` - the data to load
@@ -43,6 +43,11 @@ var styledData = {
 
 var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(styledData);
+
+@relatedsample:
+**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+
+**Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 
 @descr:
 
@@ -98,7 +103,3 @@ spreadsheet.parse(styledData);
 **Related articles**
 
 [Data loading and export](loading_data.md)
-
-@relatedsample:
-01_init/01_basic.html
-01_init/02_styled_data.html

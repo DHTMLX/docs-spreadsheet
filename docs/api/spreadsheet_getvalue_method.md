@@ -8,11 +8,11 @@ description: changetext
 
 @short: returns the value(s) of a cell(s)
 
-@signature:
+@signature: getValue: (cell: string) => any | any[];
 
 @params:
 
-`cells: string` - the id(s) of a cell(s) or a range of cells
+`cell: string` - the id(s) of a cell(s) or a range of cells
 
 @returns:
 The values of cells.
