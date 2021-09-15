@@ -22,46 +22,7 @@ To load several sheets into the spreadsheet, you should prepare data with the de
     - **id** - (*string*) the sheet id
     - **data** - (*array*) an array with data of the sheet
 
-~~~js
-var styledData = {
-    styles: {
-        someclass: {
-            background: "#F2F2F2",
-            color: "#F57C00"
-        }
-    },
-    sheets : [
-        // create sheets with custom configurations (names and ids)
-        { 
-            name: "sheet 1", 
-            id: "sheet_1", 
-            data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
-            ]
-        }, 
-        { 
-            name: "sheet 2", 
-            id: "sheet_2", 
-            data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
-            ]
-        },
-        // create a sheet with the default configuration
-        { 
-            data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
-            ]
-        } 
-    ]
-};
-
-spreadsheet.parse(styledData);
-~~~
-
-**Related sample**: [Spreadsheet. Multiple Sheets](https://snippet.dhtmlx.com/6s3ng2hi)
+<iframe src="https://snippet.dhtmlx.com/6s3ng2hi?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 {{note In case the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
 
@@ -105,3 +66,49 @@ The [getSheets()](api/spreadsheet_getsheets_method.md) method allows you to get 
 spreadsheet.getSheets();
 // ->  [{name: "sheet1", id: "u1614669331194"}, …]
 ~~~
+
+
+-----------
+
+todo: del
+
+~~~js
+var styledData = {
+    styles: {
+        someclass: {
+            background: "#F2F2F2",
+            color: "#F57C00"
+        }
+    },
+    sheets : [
+        // create sheets with custom configurations (names and ids)
+        { 
+            name: "sheet 1", 
+            id: "sheet_1", 
+            data: [
+                { cell: "a1", value: "Country" },
+                { cell: "b1", value: "Product" },
+            ]
+        }, 
+        { 
+            name: "sheet 2", 
+            id: "sheet_2", 
+            data: [
+                { cell: "a1", value: "Country" },
+                { cell: "b1", value: "Product" },
+            ]
+        },
+        // create a sheet with the default configuration
+        { 
+            data: [
+                { cell: "a1", value: "Country" },
+                { cell: "b1", value: "Product" },
+            ]
+        } 
+    ]
+};
+
+spreadsheet.parse(styledData);
+~~~
+
+**Related sample**: [Spreadsheet. Multiple Sheets](https://snippet.dhtmlx.com/6s3ng2hi)

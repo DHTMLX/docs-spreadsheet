@@ -167,6 +167,8 @@ spreadsheet.toolbar.data.add({
 });
 ~~~
 
+**Related sample**: [Spreadsheet. Toolbar Buttons](https://snippet.dhtmlx.com/qopk6lta)
+
 {{sample 04_customization/01_toolbar_buttons.html}}
 
 ```
@@ -206,6 +208,8 @@ spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 ```
 ![Custom Toolbar Icons](custom_toolbar_icons.png)
 ```
+
+**Related sample**: [Spreadsheet. Toolbar Icons](https://snippet.dhtmlx.com/mvnx43o0)
 
 {{sample 04_customization/04_toolbar_icons.html}}
 
@@ -281,6 +285,8 @@ spreadsheet.menu.data.add({
 ![Custom Menu Item](custom_menuitem.png)
 ```
 
+**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)
+
 {{sample 04_customization/02_menu.html}}
 
 ### Updating controls
@@ -338,6 +344,8 @@ spreadsheet.contextMenu.data.add({
 ![Custom Context Menu Item](custom_context_menuitem.png)
 ```
 
+**Related sample**: [Spreadsheet. Context Menu](https://snippet.dhtmlx.com/atl9gd4h)
+
 {{sample 04_customization/03_context_menu.html}}
 
 ### Updating controls
@@ -385,6 +393,8 @@ spreadsheet.events.on("beforeStyleChange", function(){
 
 spreadsheet.parse(data);
 ~~~
+
+**Related sample**: [Spreadsheet. Custom Readonly](https://snippet.dhtmlx.com/8xcursbe)
 
 {{sample 04_customization/05_custom_readonly.html}}
 
