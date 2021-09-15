@@ -10,7 +10,7 @@ description: changetext
 
 The toolbar of DHTMLX Spreadsheet contains several sections with buttons for modifying the style of data in a cell.
 
-<img src="color.png"/>
+![Color](assets/color.png)
 
 What you can do:
 
@@ -22,7 +22,7 @@ What you can do:
 
 You can use the corresponding toolbar controls to align data in a cell, as needed: along the left/right edges of a cell , or in its center.
 
-<img src="alignment.png"/>
+![Alignment](assets/alignment.png)
 
 ## Removing styles and values
 
@@ -34,7 +34,7 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 - Use the **Clear** button in the toolbar.
 - Choose the desired option in the drop-down list:
 
-<img src="clear_button.png"/>
+![Clear button](assets/clear_button.png)
 
 2\. via the context menu of a cell:
 
@@ -42,4 +42,4 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 - Right-click the selection to call the context menu.
 - Choose the **Clear** option and then select one of the options in the drop-down list:
 
-<img src="clear_option.png"/>
+![Clear option](assets/clear_option.png)

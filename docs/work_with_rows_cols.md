@@ -21,7 +21,7 @@ To add a new row, take the following steps:
 
 {{note Note that a new row will be added above the selected one.}}
 
-<img src="adding_rows.gif"/>
+![Adding rows](assets/adding_rows.gif)
 
 ## Removing rows
 
@@ -34,7 +34,7 @@ To remove a row, take the following steps:
 - click the **Remove row** button in the toolbar
 - or right-click the row and choose *Rows -> Remove row*
 
-<img src="removing_rows.gif"/>
+![Removing rows](assets/removing_rows.gif)
 
 ## Adding columns
 
@@ -49,7 +49,7 @@ To add a new column, take the following steps:
 
 {{note Note that a new column will be added to the left of the selected one.}}
 
-<img src="adding_cols.gif"/>
+![Adding columns](assets/adding_cols.gif)
 
 ## Removing columns
 
@@ -62,4 +62,4 @@ To remove a column, take the following steps:
 - click the Remove column button in the toolbar
 - or right-click the column and choose *Columns -> Remove column*
 
-<img src="removing_cols.gif"/>
+![Removing columns](assets/removing_cols.gif)

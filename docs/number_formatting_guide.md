@@ -34,9 +34,8 @@ There are 4 number formats your can apply to format numeric values of cells:
 		</tr>
     </tbody>
 </table>
-```
-<img src="number_formats.png">
-```
+
+![Number formats](assets/number_formats.png)
 
 ## How to set format
 
@@ -45,12 +44,8 @@ Follow the steps below to apply a particular number format to Spreadsheet data v
 - Select a cell or several cells that you want to format.
 - Click the **Number format** button:
 
-```
-<img src="number_format_button.png">
-```
+![Number format button](assets/number_format_button.png)
 
 - Select the format you want to apply among the suggested options:
 
-```
-<img style="margin: 20px auto 20px auto; display: block;" src="number_format_options.png">
-```
+![Number format options](assets/number_format_options.png)
