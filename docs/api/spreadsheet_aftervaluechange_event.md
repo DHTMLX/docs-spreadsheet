@@ -8,11 +8,11 @@ description: changetext
 
 @short: fires after the value of a cell changes
 
-@signature:
+@signature: afterValueChange: (cell: string, value: string) => void;
 
 @params:
-- `cells: string` - the id(s) of a cell(s)
-- `value: string,number,array` - the value(s) of a cell(s)
+- `cell: string` - the id of a cell
+- `value: string` - the value of a cell
 
 @example:
 spreadsheet.events.on("afterValueChange", function(cell,value){

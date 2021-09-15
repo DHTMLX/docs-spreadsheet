@@ -8,11 +8,11 @@ description: changetext
 
 @short: fires after the style of a cell is changed
 
-@signature:
+@signature: afterStyleChange: (cell: string, style: string | string[] | IStylesList | IStylesList[]) => void;
 
 @params:
-- `cells: string` - the id(s) of a cell(s)
-- `style: object,array` - styles set for a cell/cells
+- `cell: string` - the id of a cell
+- `style: object, array` - styles set for a cell/cells
 
 @example:
 spreadsheet.events.on("afterStyleChange", function(cells,style){

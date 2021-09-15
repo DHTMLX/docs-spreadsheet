@@ -8,11 +8,11 @@ description: changetext
 
 @short: fires before the values of cells change
 
-@signature:
+@signature: beforeValueChange: (cell: string, value: string) => void | boolean;
 
 @params:
-- `cells: string` - the id(s) of a cell(s)
-- `value: string,number,array` - the value(s) of a cell(s)
+- `cell: string` - the id of a cell
+- `value: string` - the value of a cell
 
 @returns:
 *True* to change the value(s) of a cell(s), *false* to prevent changing of value(s).

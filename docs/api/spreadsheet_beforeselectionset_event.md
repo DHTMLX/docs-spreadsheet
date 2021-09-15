@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires before cells are selected
 
-@signature:
+@signature: beforeSelectionSet: (cell: string) => void | boolean;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @returns:
 *True* to select cells, *false* to prevent selection of cells.

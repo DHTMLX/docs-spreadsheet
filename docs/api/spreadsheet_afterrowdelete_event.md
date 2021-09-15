@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires after a row is deleted
 
-@signature:
+@signature: afterRowDelete: (cell: string) => void;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @example:
 spreadsheet.events.on("afterRowDelete", function(cells){

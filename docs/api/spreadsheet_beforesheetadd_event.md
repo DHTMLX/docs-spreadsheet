@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before a new sheet is added
 
-@signature:
+@signature: beforeSheetAdd: (name: string) => void | boolean;
 
 @returns:
 *True* to add a sheet, *false* to prevent adding of a sheet.

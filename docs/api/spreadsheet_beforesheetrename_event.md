@@ -8,7 +8,9 @@ description: changetext
 
 @short: fires before a sheet is renamed
 
-@signature:
+`check`
+
+@signature: beforeSheetRename: (sheet: ISheet, value: string) => void | boolean;
 
 @params:
 - `sheet: object` - the object of a sheet

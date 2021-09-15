@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before editing of a cell has started
 
-@signature:
+@signature: beforeEditStart: (cell: string, value: string) => void | boolean;
 
 @params:
 

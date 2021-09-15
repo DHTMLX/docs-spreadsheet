@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires before a new row is added
 
-@signature:
+@signature: beforeRowAdd: (cell: string) => void | boolean;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @returns:
 *True* to add a row, *false* to prevent adding of a row.

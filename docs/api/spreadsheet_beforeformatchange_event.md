@@ -8,6 +8,8 @@ description: changetext
 
 @short: fires before the format of a cell is changed
 
+@signature: beforeFormatChange: (cell: string, format: string) => void | boolean;
+
 @params:
 - `cell: string` - the id of a cell
 - `format: string` - a new format applied for a cell

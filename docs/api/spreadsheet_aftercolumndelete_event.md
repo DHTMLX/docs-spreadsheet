@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires after a column is deleted
 
-@signature:
+@signature: afterColumnDelete: (cell: string) => void;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @example:
 spreadsheet.events.on("afterColumnDelete", function(cells){
