@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires after a new row is added
 
-@signature:
+@signature: afterRowAdd: (cell: string) => void;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @example:
 spreadsheet.events.on("afterRowAdd", function(cells){

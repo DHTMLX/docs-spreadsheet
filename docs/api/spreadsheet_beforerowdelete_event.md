@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires before a row is deleted
 
-@signature:
+@signature: beforeRowDelete: (cell: string) => void | boolean;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id(s) of a cell(s)
 
 @returns:
 *True* to delete a row, *false* to prevent deleting of a row.

@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires after a new column is added
 
-@signature:
+@signature: afterColumnAdd: (cell: string) => void;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @example:
 spreadsheet.events.on("afterColumnAdd", function(cells){

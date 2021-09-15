@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after focus is set on a cell
 
-@signature:
+@signature: afterFocusSet: (cell: string) => void;
 
 @params:
 `cell: string` - the id of a cell

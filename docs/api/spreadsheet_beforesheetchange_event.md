@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before changing the currently active sheet
 
-@signature:
+@signature: beforeSheetChange: (sheet: ISheet) => void | boolean;
 
 @params:
 `sheet: object` - the object of the currently active sheet

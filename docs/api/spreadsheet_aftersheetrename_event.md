@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after a sheet is renamed
 
-@signature:
+@signature: afterSheetRename: (sheet: ISheet) => void;
 
 @params:
 `sheet: object` - the object of a sheet

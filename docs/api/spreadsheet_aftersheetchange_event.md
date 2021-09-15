@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after the currently active sheet is changed
 
-@signature:
+@signature: afterSheetChange: (sheet: ISheet) => void;
 
 @params:
 `sheet: object` - the object of the newly active sheet

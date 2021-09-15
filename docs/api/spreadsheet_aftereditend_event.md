@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after editing of a cell is finished
 
-@signature:
+@signature: afterEditEnd: (cell: string, value: string) => void
 
 @params:
 

@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after the format of a cell is changed
 
-@signature:
+@signature: afterFormatChange: (cell: string, format: string) => void;
 
 @params:
 - `cell: string` - the id of a cell 
