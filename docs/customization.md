@@ -169,11 +169,7 @@ spreadsheet.toolbar.data.add({
 
 **Related sample**: [Spreadsheet. Toolbar Buttons](https://snippet.dhtmlx.com/qopk6lta)
 
-{{sample 04_customization/01_toolbar_buttons.html}}
-
-```
-![Custom Toolbar Button](custom_toolbar_button.png)
-```
+![Custom Toolbar Button](assets/custom_toolbar_button.png)
 
 In the example below a new menuItem option is added into the "clear-group" control:
 
@@ -205,13 +201,9 @@ spreadsheet.toolbar.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 ~~~
 
-```
-![Custom Toolbar Icons](custom_toolbar_icons.png)
-```
+![Custom Toolbar Icons](assets/custom_toolbar_icons.png)
 
 **Related sample**: [Spreadsheet. Toolbar Icons](https://snippet.dhtmlx.com/mvnx43o0)
-
-{{sample 04_customization/04_toolbar_icons.html}}
 
 ### Deleting controls
 
@@ -281,13 +273,9 @@ spreadsheet.menu.data.add({
 });
 ~~~
 
-```
-![Custom Menu Item](custom_menuitem.png)
-```
+![Custom Menu Item](assets/custom_menuitem.png)
 
 **Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)
-
-{{sample 04_customization/02_menu.html}}
 
 ### Updating controls
 
@@ -298,9 +286,7 @@ spreadsheet.menu.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.menu.data.update("redo", { icon: "fa fa-redo" });
 ~~~
 
-```
-![Custom Menu Icons](custom_menu_icons.png)
-```
+![Custom Menu Icons](assets/custom_menu_icons.png)
 
 ### Deleting controls
 
@@ -340,13 +326,9 @@ spreadsheet.contextMenu.data.add({
 });
 ~~~
 
-```
-![Custom Context Menu Item](custom_context_menuitem.png)
-```
+![Custom Context Menu Item](assets/custom_context_menuitem.png)
 
 **Related sample**: [Spreadsheet. Context Menu](https://snippet.dhtmlx.com/atl9gd4h)
-
-{{sample 04_customization/03_context_menu.html}}
 
 ### Updating controls
 
@@ -356,9 +338,7 @@ In the example below the default icons of the Lock menuItem is changed to the Fo
 spreadsheet.contextMenu.data.update("lock", { icon: "fa fa-key" });
 ~~~
 
-```
-![Custom Context Menu Icon](custom_context_icon.png)
-```
+![Custom Context Menu Icon](assets/custom_context_icon.png)
 
 ### Deleting controls
 
@@ -395,7 +375,5 @@ spreadsheet.parse(data);
 ~~~
 
 **Related sample**: [Spreadsheet. Custom Readonly](https://snippet.dhtmlx.com/8xcursbe)
-
-{{sample 04_customization/05_custom_readonly.html}}
 
 @todo: update images
