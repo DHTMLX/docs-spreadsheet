@@ -1,5 +1,5 @@
 import Short from './Short';
-import Changelog from './Сhangelog';
+import Changelog from './Changelog';
 import Signature from './Signature';
 import Type from './Type';
 import Descr from './Descr';

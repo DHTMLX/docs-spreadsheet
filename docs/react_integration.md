@@ -38,9 +38,9 @@ In this variant Spreadsheet configuration and data are held inside of the React 
 
 #### Spreadsheet initialization
 
-- Create a *SpreadSheet.js* file, then create the *SpreadSheet* class and add a container for Spreadsheet using the **render()** function. Store the reference to the container in the **el** property:
+- Create a *Spreadsheet.js* file, then create the *Spreadsheet* class and add a container for Spreadsheet using the **render()** function. Store the reference to the container in the **el** property:
 
-~~~js title="SpreadSheet.js"
+~~~js title="Spreadsheet.js"
 class SpreadSheetComponent extends Component {
   render() {
 	return (
@@ -52,7 +52,7 @@ class SpreadSheetComponent extends Component {
 
 - After that use the `new SpreadsheetBase` constructor to initialize Spreadsheet in the container created above:
 
-~~~js title="SpreadSheet.js"
+~~~js title="Spreadsheet.js"
 class SpreadsheetComponent extends Component {
   componentDidMount() {
     this.spreadsheet = new SpreadsheetBase(this.el, {
@@ -66,7 +66,7 @@ class SpreadsheetComponent extends Component {
 
 - Next you can load data into the Spreadsheet and do some actions, e.g. change style of a cell:
 
-~~~js title="SpreadSheet.js"
+~~~js title="Spreadsheet.js"
 class SpreadSheetComponent extends Component {
   componentDidMount() {
     this.spreadsheet = new SpreadsheetBase(this.el, {
@@ -93,9 +93,9 @@ This variant adds flexibility in the control over Spreadsheet data and configura
 
 #### Spreadsheet initialization
 
-- The first step is the same. Create a file, let it be *SpreadSheet2.js* this time, and add the *SpreadSheet* class and use the `new SpreadsheetBase` constructor to initialize Spreadsheet.
+- The first step is the same. Create a file, let it be *Spreadsheet2.js* this time, and add the *Spreadsheet* class and use the `new SpreadsheetBase` constructor to initialize Spreadsheet.
 
-~~~js title="SpreadSheet2.js"
+~~~js title="Spreadsheet2.js"
 class SpreadSheetComponent extends Component {
   componentDidMount() {
     this.spreadsheet = new SpreadsheetBase(this.el, {
@@ -125,7 +125,7 @@ Thus the **props** configuration option will be applied to the Spreadsheet widge
 
 - Then create a container for Spreadsheet using the **render()** function:
 
-~~~js title="SpreadSheet2.js"
+~~~js title="Spreadsheet2.js"
 render() {
 	return (
       <div ref={el => this.el = el} className="widget-box" style={{width:800,height:400}}></div>

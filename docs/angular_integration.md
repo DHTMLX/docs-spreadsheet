@@ -38,9 +38,9 @@ In this variant Spreadsheet configuration and data are held inside of the Angula
 
 #### Spreadsheet initialization
 
-- Create a *SpreadSheet.ts* file, where you will define a Component. Each component must have a template assigned, for Spreadsheet it will be a plain DIV tag with a named reference.
+- Create a *Spreadsheet.ts* file, where you will define a Component. Each component must have a template assigned, for Spreadsheet it will be a plain DIV tag with a named reference.
 
-~~~js title="SpreadSheet.ts"
+~~~js title="Spreadsheet.ts"
 @Component({
  	template: `<div #widget class='widget-box-wide'></div>`
 })
@@ -48,7 +48,7 @@ In this variant Spreadsheet configuration and data are held inside of the Angula
 
 - Use the `new Spreadsheet` constructor to initialize Spreadsheet inside of the container that you've set above:
 
-~~~js title="SpreadSheet.ts"
+~~~js title="Spreadsheet.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
   	@ViewChild('widget') container: ElementRef;
   	spreadsheet: Spreadsheet;
@@ -65,7 +65,7 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 
 - Next you can load data into the Spreadsheet and do some actions, e.g. change style of a cell:
 
-~~~js title="SpreadSheet.ts"
+~~~js title="Spreadsheet.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
 	@ViewChild('widget') container: ElementRef;
   	spreadsheet: Spreadsheet;
@@ -89,9 +89,9 @@ This variant adds flexibility in the control over Spreadsheet data and configura
 
 #### Spreadsheet  initialization
 
-- The first step is the same. Create a file, let it be *SpreadSheet2.ts* this time, and add a container for the Spreadsheet:
+- The first step is the same. Create a file, let it be *Spreadsheet2.ts* this time, and add a container for the Spreadsheet:
 
-~~~js title="SpreadSheet2.ts"
+~~~js title="Spreadsheet2.ts"
 @Component({
  	template: `<div #widget class='widget-box'></div>`
 })
@@ -99,7 +99,7 @@ This variant adds flexibility in the control over Spreadsheet data and configura
 
 - Then initialize Spreadsheet with the `new Spreadsheet` constructor and define the configuration properties of Spreadsheet in the object passed as a second parameter of the constructor:
 
-~~~js title="SpreadSheet2.ts"
+~~~js title="Spreadsheet2.ts"
 export class SpreadSheetComponent implements OnInit, OnDestroy {
   	@ViewChild('widget') container: ElementRef;
   	spreadsheet: Spreadsheet;
@@ -120,7 +120,7 @@ export class SpreadSheetComponent implements OnInit, OnDestroy {
 
 - Set the list of used Spreadsheet configuration properties and their types before the initialization function:
 
-~~~js title="SpreadSheet2.ts"
+~~~js title="Spreadsheet2.ts"
 export class SpreadsheetComponent implements OnInit, OnDestroy {
   @ViewChild('widget') container: ElementRef;
   spreadsheet: Spreadsheet;

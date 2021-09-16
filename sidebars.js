@@ -111,11 +111,11 @@ module.exports = {
           collapsible: true,
           collapsed: false,
           items: [
-            //"api/spreadsheet_autoformat_config", ?
+            //"api/spreadsheet_autoformat_config", delete - old functionality
             "api/spreadsheet_colscount_config",
             "api/spreadsheet_editline_config",
             "api/spreadsheet_exportmodulepath_config",
-            //"api/spreadsheet_formataliases_config", ?
+            //"api/spreadsheet_formataliases_config", delete - public
             "api/spreadsheet_formats_config",
             "api/spreadsheet_importmodulepath_config",
             "api/spreadsheet_leftsplit_config",

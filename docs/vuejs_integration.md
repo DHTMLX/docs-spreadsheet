@@ -38,9 +38,9 @@ In this variant Spreadsheet configuration and data are held inside of the Vie co
 
 #### Spreadsheet initialization
 
-- Create a *SpreadSheet.vue* file and add a container for Spreadsheet inside the **&lt;template&gt;&lt;/template&gt;** tags. Define the name of the container in the **ref** attribute:
+- Create a *Spreadsheet.vue* file and add a container for Spreadsheet inside the **&lt;template&gt;&lt;/template&gt;** tags. Define the name of the container in the **ref** attribute:
 
-~~~js title="SpreadSheet.vue"
+~~~js title="Spreadsheet.vue"
 <template>
 	<div ref="container" class="widget-box"></div>
 </template>
@@ -48,7 +48,7 @@ In this variant Spreadsheet configuration and data are held inside of the Vie co
 
 - Define the JS part of the Vue component and use the `new Spreadsheet` constructor to initialize Spreadsheet inside of the container that you've set above:
 
-~~~js title="SpreadSheet.vue"
+~~~js title="Spreadsheet.vue"
 <script>
 export default {
   mounted: function() {
@@ -64,7 +64,7 @@ export default {
 
 - Next you can load data into the Spreadsheet and do some actions, e.g. change style of a cell:
 
-~~~js title="SpreadSheet.vue"
+~~~js title="Spreadsheet.vue"
 <script>
 export default {
     mounted: function() {
@@ -87,17 +87,17 @@ This variant adds flexibility in the control over Spreadsheet data and configura
 
 #### Spreadsheet initialization
 
-- The first step is the same. Create a file, let it be *SpreadSheet2.vue* this time, and add a container for the Spreadsheet inside the **&lt;template&gt;&lt;/template&gt;** tags:
+- The first step is the same. Create a file, let it be *Spreadsheet2.vue* this time, and add a container for the Spreadsheet inside the **&lt;template&gt;&lt;/template&gt;** tags:
 
-~~~js title="SpreadSheet2.vue"
+~~~js title="Spreadsheet2.vue"
 <template>
 	<div ref="container" class="widget-box"></div>
 </template>
 ~~~
 
-- Then initialize SpreadSheet with the `new Spreadsheet` constructor and define the configuration properties of SpreadSheet in the object passed as a second parameter of the constructor:
+- Then initialize Spreadsheet with the `new Spreadsheet` constructor and define the configuration properties of Spreadsheet in the object passed as a second parameter of the constructor:
 
-~~~js title="SpreadSheet2.vue"
+~~~js title="Spreadsheet2.vue"
 <script>
 export default {
   mounted: function() {
@@ -117,7 +117,7 @@ export default {
 
 - Set the list of used Spreadsheet configuration properties and their types in the **props** configuration option:
 
-~~~js title="SpreadSheet2.vue"
+~~~js title="Spreadsheet2.vue"
 <script>
 export default {
   props: {

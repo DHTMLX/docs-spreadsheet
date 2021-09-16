@@ -63,7 +63,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 This is a list of [properties](api/api_overview.md/#spreadsheet-properties) that you can specify in the Spreadsheet configuration object:
 
-- **autoFormat** - (*boolean*) defines whether the format of a cell content is detected automatically
 - **colsCount** - (*number*) sets the number of columns a spreadsheet will have on initialization
 - **editLine** - (*boolean*) hides/shows the editing bar
 - **exportModulePath** - (*string*) sets the path to the export module
@@ -157,7 +156,6 @@ var ssheet = new dhx.Spreadsheet("ssheet", {
 
 This is a list of [properties](api/api_overview.md/#spreadsheet-properties) that you can specify in the Spreadsheet configuration object:
 
-- **autoFormat** - (*boolean*) defines whether the format of a cell content is detected automatically
 - **colsCount** - (*number*) sets the number of columns a spreadsheet will have on initialization
 - **editLine** - (*boolean*) hides/shows the editing bar
 - **exportModulePath** - (*string*) sets the path to the export module

@@ -103,7 +103,7 @@ You can specify particular number format for values of cells within a data set. 
 
 ### Loading JSON data
 
-By default, SpreadSheet expects data in JSON format. To load data from an external source, use the [](api/spreadsheet_load_method.md) method. It takes the URL of the file with data as a parameter:
+By default, Spreadsheet expects data in JSON format. To load data from an external source, use the [](api/spreadsheet_load_method.md) method. It takes the URL of the file with data as a parameter:
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("container");
@@ -143,8 +143,8 @@ DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://githu
 
 - install the **Excel2Json** library
 - specify the [](api/spreadsheet_importmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file in one of the two ways:
-  - by providing a local path to the file on your computer, like: **"../libs/excel2json/1.0/worker.js"**
-  - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/excel2json/1.0/worker.js"**
+  - by providing a local path to the file on your computer, like: `"../libs/excel2json/1.0/worker.js"`
+  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/excel2json/1.0/worker.js"`
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
@@ -241,9 +241,9 @@ DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into a
 The library uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the functionality of export to Excel. Thus, to have the possibility of exporting files you need to:
 
 - install the **JSON2Excel** library
-- specify the [](api/spreadsheet_exportmodulepath_config.md) option in the SpreadSheet configuration and set the path to the **worker.js** file in one of the two ways:
-  - by providing a local path to the file on your computer, like: **"../libs/json2excel/1.0/worker.js"**
-  - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"**
+- specify the [](api/spreadsheet_exportmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file in one of the two ways:
+  - by providing a local path to the file on your computer, like: `"../libs/json2excel/1.0/worker.js"`
+  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {          

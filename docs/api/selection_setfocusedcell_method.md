@@ -8,7 +8,7 @@ description: changetext
 
 @short: sets focus on the specified cell
 
-@signature:
+@signature: setFocusedCell(cell: string);
 
 @params:
 `cell: string` - the id of a cell to set focus on

@@ -82,7 +82,7 @@ All the details are given in the [Data Loading and Export](loading_data.md) arti
 
 ## Toolbar
 
-The toolbar of the SpreadSheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo","colors","decoration","align","format","help":
+The toolbar of the Spreadsheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo","colors","decoration","align","format","help":
 
 ![Basic toolbar](assets/basic_toolbar.png)
 

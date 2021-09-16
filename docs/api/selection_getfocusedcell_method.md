@@ -8,12 +8,10 @@ description: changetext
 
 @short: returns the id of a focused cell
 
-@signature:
-
-@params:
+@signature: getFocusedCell(): string;
 
 @returns:
-`cell: string` - the id of a focused cell
+The id of a focused cell.
 
 @example:
 // setting focus on a cell

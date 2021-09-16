@@ -29,4 +29,4 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 @relatedsample:
 03_configuration/07_autoformat.html
 
-todo: check
+todo: check `delete - old functionality`

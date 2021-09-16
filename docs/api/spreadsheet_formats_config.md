@@ -10,8 +10,6 @@ description: changetext
 
 @signature: formats?: IFormats[];
 
-@type: array todo:check
-
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
     formats: [

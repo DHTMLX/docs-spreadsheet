@@ -227,7 +227,7 @@ spreadsheet.endEdit();
 
 ## Selecting cells
 
-SpreadSheet provides a handy way of setting selection for cells via the API of the *Selection* object.
+Spreadsheet provides a handy way of setting selection for cells via the API of the *Selection* object.
 
 You can select cell(s) by passing its/their id(s) to the [](api/selection_setselectedcell_method.md) method:
 

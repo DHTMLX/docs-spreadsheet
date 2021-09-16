@@ -1,6 +1,6 @@
 ---
 sidebar_label: Spreadsheet overview
-title: DHTMLX SpreadSheet JavaScript Component Overview 
+title: DHTMLX Spreadsheet JavaScript Component Overview 
 slug: /
 description: changetext
 ---

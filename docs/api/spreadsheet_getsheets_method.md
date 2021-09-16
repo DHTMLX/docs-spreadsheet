@@ -11,7 +11,7 @@ description: changetext
 @signature: getSheets: () => ISheet[];
 
 @returns:
-`param: array` - an array of sheets objects
+An array of sheets objects
 
 @example:
 spreadsheet.getSheets();

@@ -263,5 +263,3 @@ The API of Spreadsheet has been changed and became more handy to work with. One 
 - [](index.md)
 - [Fully customizable structure and adjustable look and feel](customization.md)
 - [Completely refreshed API](api/api_overview.md)
-
-to do: not working [Entire redesign of the interface](index.md)

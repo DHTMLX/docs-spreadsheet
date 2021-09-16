@@ -78,11 +78,11 @@ As parameters, the constructor function takes the HTML container to place Spread
 </html>
 ~~~
 
-## Step 3. Setting SpreadSheet configuration
+## Step 3. Setting Spreadsheet configuration
 
 Next you can specify additional configuration options you want the Spreadsheet component to have when initialized besides the default ones.
 
-There are several options you can use to adjust the look and feel of SpreadSheet to your needs, e.g.: **toolbarBlocks**, **rowsCount** and **colsCount**. [Check the details](configuration.md).
+There are several options you can use to adjust the look and feel of Spreadsheet to your needs, e.g.: **toolbarBlocks**, **rowsCount** and **colsCount**. [Check the details](configuration.md).
 
 ~~~js
 var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
@@ -92,11 +92,11 @@ var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 ~~~
 
-The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it at any time. [Read the related guide](configuration.md) to go into the basics of configuring SpreadSheet.
+The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it at any time. [Read the related guide](configuration.md) to go into the basics of configuring Spreadsheet.
 
-## Step 4. Loading data into SpreadSheet
+## Step 4. Loading data into Spreadsheet
 
-The last step is to populate SpreadSheet with data. DHTMLX Spreadsheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse()** method and pass an object with data to it as in the example below:
+The last step is to populate Spreadsheet with data. DHTMLX Spreadsheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse()** method and pass an object with data to it as in the example below:
 
 ~~~js title="data.json"
 var data = [
