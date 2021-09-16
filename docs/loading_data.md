@@ -20,7 +20,7 @@ DHTMLX Spreadsheet expects data in the JSON format. It is an array with data obj
 - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
 - **value** - (*string,number*) the value of a cell
 
-The example below demonstrates a simple data set for SpreadSheet:
+The example below demonstrates a simple data set for Spreadsheet:
 
 ~~~js
  var data = [
@@ -110,7 +110,7 @@ var spreadsheet = new dhx.Spreadsheet("container");
 spreadsheet.load("../common/data.json");
 ~~~
 
-{{sample  01_init/03_load_data.html}}
+**Related sample**: [Spreadsheet. Load Data](https://snippet.dhtmlx.com/ih9zmc3e)
 
 ### Loading CSV data
 
@@ -121,7 +121,7 @@ var spreadsheet = new dhx.Spreadsheet("container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
-{{sample  01_init/05_csv_load.html}}
+**Related sample**: [Spreadsheet. CSV Load](https://snippet.dhtmlx.com/1f87y71v)
 
 ### Loading Excel file (.xlsx)
 
@@ -129,15 +129,11 @@ It is possible to load a file in the Excel format with the **.xlsx** extension i
 
 - Menu: File -> Import as..-> Microsoft Excel(.xlsx)
 
-```
-![Import from Excel menu](import_xlsx_menu.png)
-```
+![Import from Excel menu](assets/import_xlsx_menu.png)
 
 - Toolbar: Import -> Microsoft Excel(.xlsx)
 
-```
-![Import from Excel toolbar](import_xlsx_toolbar.png)
-```
+![Import from Excel toolbar](assets/import_xlsx_toolbar.png)
 
 #### How to import data
 
@@ -156,7 +152,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 });
 ~~~
 
-{{sample  03_configuration/07_custom_import_export_path.html}}
+**Related sample**: [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
 
 To load data from an Excel file, pass a string with the type of the extension ("xlsx") as the second parameter of the [](api/spreadsheet_load_method.md) method :
 
@@ -167,7 +163,7 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 {{note Please note that the component supports import from Excel files with the **.xlsx** extension only.}}
 
-{{sample  02_usage/03_import_xlsx.html}}
+**Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
 
 You can also [export data from a spreadsheet into an Excel file](#exporting-data), if needed.
 
@@ -204,7 +200,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body);
 spreadsheet.parse(data);
 ~~~
 
-{{sample 01_init/01_basic.html}}
+**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
 
 For details on how to load multiple sheets into the spreadsheet, see the [Work with Sheets](working_with_sheets.md#loading-multiple-sheets) article.
 
@@ -232,15 +228,11 @@ DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into a
 
 - Menu: File -> Download as..-> Microsoft Excel(.xlsx)
 
-```
-![Export to Excel menu](export_xlsx_menu.png)
-```
+![Export to Excel menu](assets/export_xlsx_menu.png)
 
 - Toolbar: Export -> Microsoft Excel(.xlsx)
 
-```
-![Export from Excel toolbar](export_xlsx_toolbar.png)
-```
+![Export from Excel toolbar](assets/export_xlsx_toolbar.png)
 
 ### How to export data
 
@@ -259,7 +251,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 });
 ~~~
 
-{{sample  03_configuration/07_custom_import_export_path.html}}
+**Related sample**: [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
 
 Once you've adjusted the required sources, you can use the related [](api/export_xlsx_method.md) API method of the Export object to export data of the component, as in:
 
@@ -269,6 +261,6 @@ spreadsheet.export.xlsx();
 
 {{note Please note that the component supports export to Excel files with the **.xlsx** extension only.}}
 
-{{sample 02_usage/04_export_xlsx.html}}
+**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
 
 Check the steps of [importing data from an Excel file into Spreadsheet](#loading-excel-file-xlsx).

@@ -8,7 +8,7 @@ description: changetext
 
 DHTMLX Spreadsheet supports number formatting that you can apply for numeric values in cells.
 
-<img style="margin: 20px auto 20px auto; display: block;" src="number_format_options.png">
+![Number format options](assets/number_format_options.png)
 
 {{note There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.}}
 
@@ -35,11 +35,9 @@ defaultFormats = [
 
 This is how a spreadsheet with data in various number formats looks like:
 
-```
-![Number format](number_format.png)
-```
+<iframe src="https://snippet.dhtmlx.com/ihtkdcoc?mode=mobile" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
-{{sample 01_init/01_basic.html}}
+**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
 
 ## Formats customization
 
@@ -48,9 +46,7 @@ You are not limited by [default number formats](#default-number-formats) only. T
 - changing the settings of default number formats
 - adding custom number formats into spreadsheet
 
-```
-![Custom number formats](custom_number_formats.png)
-```
+<iframe src="https://snippet.dhtmlx.com/4c0c0zm7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 All such modifications can be implemented via the [](api/spreadsheet_formats_config.md) configuration option. It represents an array of format objects each of which contains a set of properties:
 
@@ -58,33 +54,6 @@ All such modifications can be implemented via the [](api/spreadsheet_formats_con
 - **mask** - (*string*) mandatory, a mask for a number format. Check the list of characters available in a mask [below](#the-structure-of-a-mask)
 - **name** - (*string*) optional, the name of a format that will be displayed in the toolbar and menu drop-down lists
 - **example** - (*string*) optional, an example that shows how a formatted number will look like
-
-For example:
-
-~~~js
-var spreadsheet = new dhx.Spreadsheet(document.body, {          
-    formats: [
-    	{
-    		name: "U.S. Dollar",
-    		id: "currency",
-    		mask: "$#,##0.00"
-    	},
-    	{
-    		name: "Euro",
-    		id: "euro",
-    		mask: "[$€]#.##0,00",
-    		example: "1000.50"
-    	},
-    	{
-    		name: "Swiss franc",
-    		id: "franc",
-    		mask: "[$CHF ]#.##0,00"
-    	}
-    ]
-});
-~~~
-
-{{sample 03_configuration/06_custom_formats.html}}
 
 ### The structure of a mask
 
@@ -126,3 +95,8 @@ There is a pair of events you can use to control the process of cell's format ch
 
 - [](api/spreadsheet_beforeformatchange_event.md) - fires before the format of a cell is changed
 - [](api/spreadsheet_afterformatchange_event.md) - fires after the format of a cell is changed
+
+
+-------
+todo: del
+![Number format](assets/number_format.png)

@@ -88,7 +88,7 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 
 ## Navigation
 
-{{note Navigation works in case no cell is being edited}}
+{{note Navigation works in case no cell is being edited.}}
 
 <table class="webixdoc_links">
 	<tbody>

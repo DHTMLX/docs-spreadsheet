@@ -35,13 +35,13 @@ You can automatically fill cells with data.  This is how it works:
 
 3\. Drag the **Fill Handle**
 
-<img src="autofill.gif"/>
+![Autofill](assets/autofill.gif)
 
 ## Locking cells
 
 You can lock cells to protect them from changing their values. When you lock a cell, it gets a gray "key" in the top right corner. Locked cells remain unresponsive to any attempts of editing them.
 
-<img src="lockedcells.png"/>
+![Locked cells](assets/lockedcells.png)
 
 To lock/unlock a cell, go one of the ways described below:
 
@@ -50,11 +50,11 @@ To lock/unlock a cell, go one of the ways described below:
 - Select the cells you want to lock/unlock (they do not have to be adjacent).
 - Click the **Lock cell** button in the toolbar.
 
-<img src="lock.png"/>
+![Lock](assets/lock.png)
 
 ### Lock cells via the context menu
 
 - Right-click a cell/a range of cells you want to lock/unlock.
 - Choose the Lock/Unlock cell option in the appeared context menu.
 
-<img src="unlock.png"/>
+![Unlock](assets/unlock.png)
