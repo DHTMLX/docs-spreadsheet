@@ -15,7 +15,7 @@ description: changetext
 - `value: string` - the value of a cell
 
 @returns:
-*True* to change the value(s) of a cell(s), *false* to prevent changing of value(s).
+*True* to change the value of a cell, *false* to prevent changing of value.
 
 @example:
 spreadsheet.events.on("beforeValueChange", function(cell,value){

@@ -11,7 +11,7 @@ description: changetext
 @signature: getStyle: (cell: string) => IStylesList | IStylesList[];
 
 @params:
-`cells: string` - the id of a cell or a range of cells
+`cell: string` - the id of a cell
 
 @returns:
 Styles set for a cell/cells.

@@ -26,8 +26,8 @@ To export files you need to:
 
 - install the **JSON2excel** library
 - set the path to the **worker.js** file via the **exportModulePath** option in one of the two ways:
-  - by providing a local path to the file on your computer, like: **"../libs/json2excel/1.0/worker.js"**
-  - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"**
+  - by providing a local path to the file on your computer, like: `"../libs/json2excel/1.0/worker.js"`
+  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
 
 By default the link to CDN is used.
 

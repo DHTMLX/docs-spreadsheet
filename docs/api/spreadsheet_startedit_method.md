@@ -12,7 +12,7 @@ description: changetext
 
 @params:
 - `cell: string` - optional, the id of a cell
-- `value: string` - optional, the cell value
+- `initialValue: string` - optional, the cell value
 
 @example:
 spreadsheet.startEdit();

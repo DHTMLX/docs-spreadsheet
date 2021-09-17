@@ -12,7 +12,7 @@ description: changetext
 
 @params:
 
-`cell: string` - the id(s) of a cell(s) or a range of cells
+`cell: string` - the id of a cell
 
 @returns:
 The values of cells.

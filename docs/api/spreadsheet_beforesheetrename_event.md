@@ -8,20 +8,18 @@ description: changetext
 
 @short: fires before a sheet is renamed
 
-`check`
-
 @signature: beforeSheetRename: (sheet: ISheet, value: string) => void | boolean;
 
 @params:
 - `sheet: object` - the object of a sheet
-- `newVal: string` - the new name of the sheet
+- `value: string` - the new name of the sheet
 
 @returns:
 *True* to rename a sheet, *false* to prevent a sheet from being renamed.
 
 @example:
-spreadsheet.events.on("beforeSheetRename", function(sheet, newVal) {
-    console.log("The ", sheet.name, "sheet will be renamed to ", newVal);
+spreadsheet.events.on("beforeSheetRename", function(sheet, value) {
+    console.log("The ", sheet.name, "sheet will be renamed to ", value);
     return true;
 });
 

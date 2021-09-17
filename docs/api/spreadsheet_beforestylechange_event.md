@@ -11,11 +11,11 @@ description: changetext
 @signature: beforeStyleChange: (cell: string, style: string | string[] | IStylesList | IStylesList[]) => void | boolean;
 
 @params:
-- `cell: string` - the id(s) of a cell(s)
+- `cell: string` - the id of a cell
 - `style: object, array` - styles set for a cell/cells
 
 @returns:
-*True* to change the style of a cell(s), *false* to prevent changing of style.
+*True* to change the style of a cell, *false* to prevent changing of style.
 
 @example:
 spreadsheet.events.on("beforeStyleChange", function(cell,style){

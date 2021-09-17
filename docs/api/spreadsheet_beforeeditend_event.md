@@ -11,6 +11,8 @@ description: changetext
 @signature: beforeEditEnd: (cell: string, value: string) => void | boolean;
 
 @params:
+- `cell: string` - the id of a cell
+- `value: string` - the value of a cell
 
 @returns:
 *True* to finish editing a cell, *false* to prevent closing of an editor.

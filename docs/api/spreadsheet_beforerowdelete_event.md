@@ -11,7 +11,7 @@ description: changetext
 @signature: beforeRowDelete: (cell: string) => void | boolean;
 
 @params:
-`cell: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @returns:
 *True* to delete a row, *false* to prevent deleting of a row.

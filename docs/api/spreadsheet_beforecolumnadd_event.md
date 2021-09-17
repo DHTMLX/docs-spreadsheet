@@ -11,7 +11,7 @@ description: changetext
 @signature: beforeColumnAdd: (cell: string) => void | boolean;
 
 @params:
-`cell: string` - the id(s) of a cell
+`cell: string` - the id of a cell
 
 @returns:
 *True* to add a column, *false* to prevent adding of a column.

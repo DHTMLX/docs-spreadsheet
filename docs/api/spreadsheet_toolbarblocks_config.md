@@ -12,8 +12,6 @@ description: changetext
 
 @default: ["undo", "colors", "decoration", "align", "format", "help"]
 
-@type: array
-
 @example:
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // full toolbar
@@ -45,9 +43,7 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 });
 ~~~
 
-```
-![Custom toolbar](custom_toolbar.png)
-```
+![Custom toolbar](../assets/custom_toolbar.png)
 
 Check how you can [customize the toolbar](customization.md/#toolbar).
 
@@ -56,6 +52,3 @@ Check how you can [customize the toolbar](customization.md/#toolbar).
 [Configuration](configuration.md#toolbar)
 
 [Customization](customization.md)
-
-@todo: update image
-todo: check and upd

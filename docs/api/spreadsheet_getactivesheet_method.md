@@ -11,7 +11,7 @@ description: changetext
 @signature: getActiveSheet: () => ISheet;
 
 @returns:
-`param: object` - an object with the name and id attributes of the active sheet
+An object with the name and id attributes of the active sheet.
 
 @example:
 spreadsheet.getActiveSheet();
