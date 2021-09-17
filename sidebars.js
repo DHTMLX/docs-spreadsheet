@@ -19,14 +19,6 @@ module.exports = {
       ],
     },
     {
-      //type: "doc",
-      //id: "whats_new",
-    },
-    {
-      //type: "doc",
-      //id: "migration",
-    },
-    {
       type: "category",
       label: "Spreadsheet API",
       collapsible: true,
@@ -111,11 +103,9 @@ module.exports = {
           collapsible: true,
           collapsed: false,
           items: [
-            //"api/spreadsheet_autoformat_config", delete - old functionality
             "api/spreadsheet_colscount_config",
             "api/spreadsheet_editline_config",
             "api/spreadsheet_exportmodulepath_config",
-            //"api/spreadsheet_formataliases_config", delete - public
             "api/spreadsheet_formats_config",
             "api/spreadsheet_importmodulepath_config",
             "api/spreadsheet_leftsplit_config",

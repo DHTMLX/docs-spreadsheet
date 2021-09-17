@@ -93,7 +93,7 @@ This variant adds flexibility in the control over Spreadsheet data and configura
 
 #### Spreadsheet initialization
 
-- The first step is the same. Create a file, let it be *Spreadsheet2.js* this time, and add the *Spreadsheet* class and use the `new SpreadsheetBase` constructor to initialize Spreadsheet.
+- The first step is the same. Create a file, let it be *Spreadsheet2.js* this time, and add the *Spreadsheet* class and use the <br> `new SpreadsheetBase` constructor to initialize Spreadsheet.
 
 ~~~js title="Spreadsheet2.js"
 class SpreadSheetComponent extends Component {

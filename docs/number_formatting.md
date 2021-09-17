@@ -95,8 +95,3 @@ There is a pair of events you can use to control the process of cell's format ch
 
 - [](api/spreadsheet_beforeformatchange_event.md) - fires before the format of a cell is changed
 - [](api/spreadsheet_afterformatchange_event.md) - fires after the format of a cell is changed
-
-
--------
-todo: del
-![Number format](assets/number_format.png)
