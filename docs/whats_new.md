@@ -6,16 +6,6 @@ description: changetext
 
 # What's new
 
-```
-<style>
-.rel_date_pivot{
-	color: #a0a0a0;
-    font-size: 13px;
-    margin-left: 20px;
-}
-</style>
-```
-
 ## Version 4.1.3
 
 <span class="rel_date_pivot">released on August 31, 2021</span>

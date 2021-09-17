@@ -11,6 +11,8 @@ description: changetext
 @signature: afterEditEnd: (cell: string, value: string) => void
 
 @params:
+- `cell: string` - the id of a cell
+- `value: string` - the value of a cell
 
 @example:
 spreadsheet.events.on("afterEditEnd", function(){

@@ -11,9 +11,11 @@ description: changetext
 @signature: beforeEditStart: (cell: string, value: string) => void | boolean;
 
 @params:
+- `cell: string` - the id of a cell
+- `value: string` - the value of a cell
 
 @returns:
-`mode: boolean` - true to edit a cell, false to prevent editing
+*True* to edit a cell, *false* to prevent editing
 
 @example:
 spreadsheet.events.on("beforeEditStart", function(){

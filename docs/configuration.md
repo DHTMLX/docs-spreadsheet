@@ -25,31 +25,31 @@ Toolbar is [highly customizable](customization.md). You can add new controls, ch
 Since the structure of Spreadsheet is flexible, you can switch on/off the editing bar to get the desired look and feel of the component. Use the [](api/spreadsheet_editline_config.md) configuration option to hide/show
 the editing bar.
 
-<iframe src="https://snippet.dhtmlx.com/unem2jkh?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/unem2jkh?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 ## Number of rows and columns
 
 When Spreadsheet is initialized, it has the initial configuration of grid which consists of 1000 columns and 25 rows. However, when this limit runs out, additional rows and columns are rendered automatically, so you don't need to add them. Nevertheless, you can specify the exact number of rows and columns in the grid, if you want to limit them. Use the [](api/spreadsheet_colscount_config.md) and [](api/spreadsheet_rowscount_config.md) options for this purpose.  
 
-<iframe src="https://snippet.dhtmlx.com/vc3mstsw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/vc3mstsw?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 ## Frozen columns
 
 Starting from v4.0, it is possible to fix (or "freeze") columns on the left side of the spreadsheet, so that they will become static, while the rest of columns remain movable. To do that, just set the number of columns you want to freeze as a value of the [leftSplit](api/spreadsheet_leftsplit_config.md) property.
 
-<iframe src="https://snippet.dhtmlx.com/iazmc27w?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/iazmc27w?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 ## Menu
 
 The menu of the Spreadsheet is hidden by default. You can switch it on/off via the corresponding configuration option [](api/spreadsheet_menu_config.md):
 
-<iframe src="https://snippet.dhtmlx.com/uulux27v?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/uulux27v?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 ## Read-only mode
 
 It is also possible to enable the read-only mode to prevent editing of Spreadsheet cells via the [](api/spreadsheet_readonly_config.md) configuration option.
 
-<iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 You can also [customize the readonly behavior of Spreadsheet](customization.md#custom-read-only-mode).
 
@@ -57,7 +57,7 @@ You can also [customize the readonly behavior of Spreadsheet](customization.md#c
 
 There are 5 default formats that can be applied to the values of cells: "Common", "Number", "Percent", "Currency", "Text".
 
-<iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="200"></iframe>
+<iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 You can redefine configuration of default formats or specify your own number format via the [](api/spreadsheet_formats_config.md) config option. Check the details in the [Number Formatting](number_formatting.md) article.
 
@@ -112,9 +112,7 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 });
 ~~~
 
-
 ![Custom toolbar](assets/custom_toolbar.png)
-
 
 Toolbar is [highly customizable](customization.md). You can add new controls, change the icons of controls and apply the desired icon pack.
 

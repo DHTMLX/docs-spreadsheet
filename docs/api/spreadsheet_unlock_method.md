@@ -6,12 +6,12 @@ description: changetext
 
 # unlock()
 
-@short: unlocks a locked cell(s)
+@short: unlocks a locked cell
 
 @signature: unlock: (cell: string) => void;
 
 @params:
-`cell: string` - the id(s) of a cell(s) or a range of cells
+`cell: string` - the id of a cell
 
 @example:
 // unlocks a cell

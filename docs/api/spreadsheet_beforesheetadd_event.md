@@ -10,6 +10,9 @@ description: changetext
 
 @signature: beforeSheetAdd: (name: string) => void | boolean;
 
+@params:
+`name: string` - the name of the new sheet
+
 @returns:
 *True* to add a sheet, *false* to prevent adding of a sheet.
 

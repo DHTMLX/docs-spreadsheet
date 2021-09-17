@@ -34,4 +34,4 @@ The default number formats are the following:
 
 @todo: move to "formats" page
 
-todo: check, `looks like it is not public`
+todo: `delete`, `looks like it is not public`

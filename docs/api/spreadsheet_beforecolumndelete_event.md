@@ -11,7 +11,7 @@ description: changetext
 @signature: beforeColumnDelete: (cell: string) => void | boolean;
 
 @params:
-`cells: string` - the id(s) of a cell(s)
+`cell: string` - the id of a cell
 
 @returns:
 *True* to delete a column, *false* to prevent deleting of a column.

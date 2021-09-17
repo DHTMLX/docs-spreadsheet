@@ -28,7 +28,7 @@ spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 
 1\. The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
 
-{{sample 01_init/02_styled_data.html}}
+**Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 
 2\. Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 
