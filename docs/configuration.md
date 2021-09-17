@@ -12,7 +12,7 @@ You can adjust the desired settings of DHTMLX Spreadsheet to meet your needs. Th
 
 The toolbar of the Spreadsheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo","colors","decoration","align","format","help". You can add more blocks from the list: "lock", "clear", "rows", "columns", "file".
 
-<iframe src="https://snippet.dhtmlx.com/b1btvnyo?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+<iframe src="https://snippet.dhtmlx.com/kpm017nx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 The structure of toolbar can be adjusted via the [](api/spreadsheet_toolbarblocks_config.md) configuration option of the component, which is an array with strings presenting the names of controls.
 

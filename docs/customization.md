@@ -115,44 +115,44 @@ spreadsheet.toolbar.data.remove("control-id");
 The [default toolbar](/#toolbar) contains the following blocks of controls:
 
 - the **Undo** block
-	- the *Undo* button (id:"undo")
-    - the *Redo* button (id:"redo")
+  - the *Undo* button (id:"undo")
+  - the *Redo* button (id:"redo")
 - the **Colors** block
-	- the *Text color* button (id:"color")
-    - the *Background color* button (id:"background")
+  - the *Text color* button (id:"color")
+  - the *Background color* button (id:"background")
 - the **Decoration** block
-	- the *Bold* button (id:"font-weight-bold")
-    - the *Italic* button (id:"font-style-italic")
-    - the *Underline* button (id:"text-decoration-underline")
+  - the *Bold* button (id:"font-weight-bold")
+  - the *Italic* button (id:"font-style-italic")
+  - the *Underline* button (id:"text-decoration-underline")
 - the **Align** block
-	- the *Align left* button (id: "align-left")
-    - the *Align center* button (id: "align-center")
-    - the *Align right* button (id: "align-right")
+  - the *Align left* button (id: "align-left")
+  - the *Align center* button (id: "align-center")
+  - the *Align right* button (id: "align-right")
 - the **Number format** block
-	- the *Number format* menuItem (id:"format")
+  - the *Number format* menuItem (id:"format")
 - the **Help** block
-	- the *Help* button (id:"help")
+  - the *Help* button (id:"help")
 
 It is also possible to add the blocks enumerated below:
 
 - the **Lock** block
 	- the *Lock* button (id:"lock")
 - the **Clear** block
-	- the *Clear group* menuItem (id:"clear-group")
-    	- the *Clear value* menuItem (id:"clear-value")
-        - the *Clear styles* menuItem (id:"clear-styles")
-        - the *Clear all* menuItem (id:"clear-all")
+  - the *Clear group* menuItem (id:"clear-group")
+    - the *Clear value* menuItem (id:"clear-value")
+    - the *Clear styles* menuItem (id:"clear-styles")
+    - the *Clear all* menuItem (id:"clear-all")
 - the **Rows** block
-	- the *Add row* button (id:"add-row")
-    - the *Remove row* button (id:"remove-row")
+  - the *Add row* button (id:"add-row")
+  - the *Remove row* button (id:"remove-row")
 - the **Columns** block
-	- the *Add column* button (id:"add-col")
-    - the *Remove column* button (id:"remove-col")
+  - the *Add column* button (id:"add-col")
+  - the *Remove column* button (id:"remove-col")
 - the **File** block
-	- the *Export* menuItem (id:"export")
-    	- the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
-    - the *Import* menuItem (id:"import")
-    	- the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
+  - the *Export* menuItem (id:"export")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
+  - the *Import* menuItem (id:"import")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
 
 ### Adding controls
 
@@ -167,9 +167,9 @@ spreadsheet.toolbar.data.add({
 });
 ~~~
 
-**Related sample**: [Spreadsheet. Toolbar Buttons](https://snippet.dhtmlx.com/qopk6lta)
-
 ![Custom Toolbar Button](assets/custom_toolbar_button.png)
+
+**Related sample**: [Spreadsheet. Toolbar Buttons](https://snippet.dhtmlx.com/qopk6lta)
 
 In the example below a new menuItem option is added into the "clear-group" control:
 
@@ -220,36 +220,36 @@ spreadsheet.toolbar.data.remove("undo");
 The [default menu](/#menu) has the following structure:
 
 - the **File** menuItem (id:"edit")
-	- the *Export* menuItem (id:"download")
-    	- the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
-    - the *Import* menuItem (id:"import")
-    	- the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
+  - the *Export* menuItem (id:"download")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
+  - the *Import* menuItem (id:"import")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
 - the **Edit** menuItem (id:"edit")
-	- the *Undo* menuItem (id:"undo")
-    - the *Redo* menuItem (id:"redo")
-	- the separator
-    - the *Lock* menuItem (id:"lock")
-	- the separator
-	- the *Clear* menuItem (id:"clear")
-    	- the *Clear value* menuItem (id:"clear-value")
-    	- the *Clear styles* menuItem (id:"clear-styles")
-    	- the *Clear all* menuItem (id:"clear-all")
+  - the *Undo* menuItem (id:"undo")
+  - the *Redo* menuItem (id:"redo")
+  - the separator
+  - the *Lock* menuItem (id:"lock")
+  - the separator
+  - the *Clear* menuItem (id:"clear")
+    - the *Clear value* menuItem (id:"clear-value")
+    - the *Clear styles* menuItem (id:"clear-styles")
+    - the *Clear all* menuItem (id:"clear-all")
 - the **Insert** menuItem (id:"insert")
-	- the *Columns* menuItem (id:"columns")
-		- the *Add column* menuItem (id:"add-col")
-    	- the *Remove column* menuItem (id:"remove-col")
-    - the *Rows* menuItem (id:"rows")
-    	- the *Add rows* menuItem (id:"add-row")
-    	- the *Remove rows* menuItem (id:"remove-row")
+  - the *Columns* menuItem (id:"columns")
+    - the *Add column* menuItem (id:"add-col")
+    - the *Remove column* menuItem (id:"remove-col")
+  - the *Rows* menuItem (id:"rows")
+    - the *Add rows* menuItem (id:"add-row")
+    - the *Remove rows* menuItem (id:"remove-row")
 - the **Format** menuItem (id:"configuration")
-	- the *Bold* menuItem (id:"font-weight-bold")
-    - the *Italic* menuItem (id:"font-style-italic")
-    - the *Underline* menuItem (id:"text-decoration-underline")
-	- the *Align* menuItem (id:"align")
-		- the *Align left* menuItem (id:"align-left")
-    	- the *Align center* menuItem (id:"align-center")
-    	- the *Align right* menuItem (id:"align-right")
-    - the *Number format* menuItem (id:"format")
+  - the *Bold* menuItem (id:"font-weight-bold")
+  - the *Italic* menuItem (id:"font-style-italic")
+  - the *Underline* menuItem (id:"text-decoration-underline")
+  - the *Align* menuItem (id:"align")
+    - the *Align left* menuItem (id:"align-left")
+    - the *Align center* menuItem (id:"align-center")
+    - the *Align right* menuItem (id:"align-right")
+  - the *Number format* menuItem (id:"format")
 - the **Help** menuItem (id:"help")
 
 ### Adding controls
@@ -304,15 +304,15 @@ The [default context menu](/#context-menu) has the following structure:
 
 - the **Lock** menuItem (id:"lock")
 - the **Clear** menuItem (id:"clear")
-    - the *Clear value* menuItem (id:"clear-value")
-    - the *Clear styles* menuItem (id:"clear-styles")
-    - the *Clear all* menuItem (id:"clear-all")
+  - the *Clear value* menuItem (id:"clear-value")
+  - the *Clear styles* menuItem (id:"clear-styles")
+  - the *Clear all* menuItem (id:"clear-all")
 - the **Columns** menuItem (id:"columns")
-	- the *Add column* menuItem (id:"add-col")
-    - the *Remove column* menuItem (id:"remove-col")
+  - the *Add column* menuItem (id:"add-col")
+  - the *Remove column* menuItem (id:"remove-col")
 - the **Rows** menuItem (id:"rows")
-    - the *Add rows* menuItem (id:"add-row")
-    - the *Remove rows* menuItem (id:"remove-row")
+  - the *Add rows* menuItem (id:"add-row")
+  - the *Remove rows* menuItem (id:"remove-row")
 
 ### Adding controls
 
@@ -375,5 +375,3 @@ spreadsheet.parse(data);
 ~~~
 
 **Related sample**: [Spreadsheet. Custom Readonly](https://snippet.dhtmlx.com/8xcursbe)
-
-@todo: update images
