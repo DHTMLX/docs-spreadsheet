@@ -189,12 +189,12 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com',
+                    href: 'https://snippet.dhtmlx.com/atl9gd4h?text=#spreadsheet',
                     position: 'right',
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/suite7',
+                    href: 'https://forum.dhtmlx.com',
                     position: 'right'
                 },
                 {
@@ -204,7 +204,7 @@ module.exports = {
                 },
                 {
                     label: 'Download',
-                    href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml',
+                    href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml',
                     position: 'right',
                 },
             ],
@@ -214,13 +214,13 @@ module.exports = {
             links: [{
                     title: 'Development center',
                     items: [{
-                            label: 'Download Suite',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml',
+                            label: 'Download Spreadsheet',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml',
                             position: 'right',
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com',
+                            href: 'https://snippet.dhtmlx.com/atl9gd4h?text=#spreadsheet',
                             position: 'right',
                         },
                         {
@@ -229,7 +229,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/suite7',
+                            href: 'https://forum.dhtmlx.com',
                             position: 'right'
                         },
                     ],
