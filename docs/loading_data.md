@@ -259,8 +259,8 @@ Once you've adjusted the required sources, you can use the related [](api/export
 spreadsheet.export.xlsx();
 ~~~
 
-{{note Please note that the component supports export to Excel files with the **.xlsx** extension only.}}
-
 **Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
+
+{{note Please note that the component supports export to Excel files with the **.xlsx** extension only.}}
 
 Check the steps of [importing data from an Excel file into Spreadsheet](#loading-excel-file-xlsx).

@@ -166,7 +166,7 @@ spreadsheet.lock("A1:C1");
 spreadsheet.lock("A1,B5,B7,D4:D6");
 ~~~
 
-{{sample 02_usage/01_locked_cells.html}}
+**Related sample**: [Spreadsheet. Locked Cells](https://snippet.dhtmlx.com/czeyiuf8)
 
 ### Unlock cells
 
