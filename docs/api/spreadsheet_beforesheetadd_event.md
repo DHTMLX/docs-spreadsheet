@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before a new sheet is added
 
-@signature: beforeSheetAdd: (name: string) => void | boolean;
+@signature: {`beforeSheetAdd: (name: string) => void | boolean;`}
 
 @params:
 `name: string` - the name of the new sheet

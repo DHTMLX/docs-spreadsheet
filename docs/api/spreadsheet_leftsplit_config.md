@@ -8,7 +8,7 @@ description: changetext
 
 @short: sets the number of columns fixed to the left side of the spreadsheet
 
-@signature: leftSplit?: number;
+@signature: {`leftSplit?: number;`}
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

@@ -8,7 +8,7 @@ description: changetext
 
 @short: serializes data of spreadsheet into a JSON object
 
-@signature: serialize: () => any[] | IDataWithStyles;
+@signature: {`serialize: () => any[] | IDataWithStyles;`}
 
 @returns:
 A serialized JSON object with cells data and styles.

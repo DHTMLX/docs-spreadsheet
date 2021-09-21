@@ -11,8 +11,8 @@ description: changetext
 @signature: {`setStyle: (cell: string, styles: string | string[] | IStylesList | IStylesList[]) => void;`}
 
 @params:
-- `cell: string` - the id of a cell or a range of cells
-- `style: object, array` - styles that should be applied to cells
+- `cell: string` - the id(s) of a cell(s) or a range of cells
+- `style: object | array` - styles that should be applied to cells
 
 @example:
 // setting style for one cell

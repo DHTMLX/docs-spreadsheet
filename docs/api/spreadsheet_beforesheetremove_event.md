@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before a sheet is removed
 
-@signature: beforeSheetRemove: (sheet: ISheet) => void | boolean;
+@signature: {`beforeSheetRemove: (sheet: ISheet) => void | boolean;`}
 
 @params:
 `sheet: object` - the object of a sheet

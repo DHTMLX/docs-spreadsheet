@@ -8,10 +8,10 @@ description: changetext
 
 @short: checks whether a cell(s) is(are) locked
 
-@signature: isLocked: (cell: string) => boolean;
+@signature: {`isLocked: (cell: string) => boolean;`}
 
 @params:
-`cell: string` - the id of a cell
+`cell: string` - the id(s) of a cell(s) or a range of cells
 
 @returns:
 *True*, if the cell is locked, *false* if it's unlocked.

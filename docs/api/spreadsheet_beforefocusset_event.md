@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before focus is set on a cell
 
-@signature: beforeFocusSet: (cell: string) => void | boolean;
+@signature: {`beforeFocusSet: (cell: string) => void | boolean;`}
 
 @params:
 `cell: string` - the id of a cell

@@ -8,13 +8,13 @@ description: changetext
 
 @short: returns the number format applied to the value of a cell
 
-@signature: getFormat: (cell: string) => string | string[];
+@signature: {`getFormat: (cell: string) => string | string[];`}
 
 @params:
-`cell: string` - the id of a cell
+`cell: string` - the id(s) of a cell(s) or a range of cells
 
 @returns:
-The format applied to the value of a cell.
+The format(s) applied to the value of the cell(s).
 
 @example:
 var format = spreadsheet.getFormat("A1");

@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before a new row is added
 
-@signature: beforeRowAdd: (cell: string) => void | boolean;
+@signature: {`beforeRowAdd: (cell: string) => void | boolean;`}
 
 @params:
 `cell: string` - the id of a cell

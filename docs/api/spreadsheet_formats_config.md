@@ -8,7 +8,7 @@ description: changetext
 
 @short: defines the list of number formats  
 
-@signature: formats?: IFormats[];
+@signature: {`formats?: IFormats[];`}
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

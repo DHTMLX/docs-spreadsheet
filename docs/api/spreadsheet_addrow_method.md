@@ -8,7 +8,7 @@ description: changetext
 
 @short: adds a new row into the spreadsheet
 
-@signature: addRow: (cell: string) => void;
+@signature: {`addRow: (cell: string) => void;`}
 
 @params:
 `cell: string` - the id of a cell that contains the id of a row that should be added

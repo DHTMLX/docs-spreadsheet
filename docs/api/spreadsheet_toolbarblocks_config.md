@@ -8,7 +8,7 @@ description: changetext
 
 @short: specifies blocks of buttons that will be shown in the toolbar of spreadsheet
 
-@signature: toolbarBlocks?: ToolbarBlocks[];
+@signature: {`toolbarBlocks?: ToolbarBlocks[];`}
 
 @default: ["undo", "colors", "decoration", "align", "format", "help"]
 

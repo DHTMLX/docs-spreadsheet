@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after a new column is added
 
-@signature: afterColumnAdd: (cell: string) => void;
+@signature: {`afterColumnAdd: (cell: string) => void;`}
 
 @params:
 `cell: string` - the id of a cell

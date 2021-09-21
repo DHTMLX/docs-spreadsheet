@@ -8,10 +8,10 @@ description: changetext
 
 @short: returns the sheet that is currently active
 
-@signature: getActiveSheet: () => ISheet;
+@signature: {`getActiveSheet: () => ISheet;`}
 
 @returns:
-An object with the name and id attributes of the active sheet.
+The object with the name and id attributes of the active sheet.
 
 @example:
 spreadsheet.getActiveSheet();

@@ -20,3 +20,5 @@ spreadsheet.events.on("ValueChange", function(cell,value){
 });
 
 @descr:
+
+todo `delete`
