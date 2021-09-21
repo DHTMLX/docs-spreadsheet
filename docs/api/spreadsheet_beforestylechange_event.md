@@ -8,11 +8,11 @@ description: changetext
 
 @short: fires before the style of cells is changed
 
-@signature: beforeStyleChange: (cell: string, style: string | string[] | IStylesList | IStylesList[]) => void | boolean;
+@signature: {`beforeStyleChange: (cell: string, style: string | string[] | IStylesList | IStylesList[]) => void | boolean;`}
 
 @params:
-- `cell: string` - the id of a cell
-- `style: object, array` - styles set for a cell/cells
+- `cell: string` - the id(s) of a cell(s)
+- `style: string, object, array` - styles set for a cell/cells
 
 @returns:
 *True* to change the style of a cell, *false* to prevent changing of style.

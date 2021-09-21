@@ -8,10 +8,10 @@ description: changetext
 
 @short: fires after cells are selected
 
-@signature: afterSelectionSet: (cell: string) => void;
+@signature: {`afterSelectionSet: (cell: string) => void;`}
 
 @params:
-`cell: string` - the id of a cell
+`cell: string` - the id(s) of a cell(s)
 
 @example:
 spreadsheet.events.on("afterSelectionSet", function(cells){
