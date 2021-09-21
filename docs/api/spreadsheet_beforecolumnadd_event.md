@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before a new column is added
 
-@signature: beforeColumnAdd: (cell: string) => void | boolean;
+@signature: {`beforeColumnAdd: (cell: string) => void | boolean;`}
 
 @params:
 `cell: string` - the id of a cell

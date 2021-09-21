@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after editing of a cell has started
 
-@signature: afterEditStart: (cell: string, value: string) => void;
+@signature: {`afterEditStart: (cell: string, value: string) => void;`}
 
 @params:
 - `cell: string` - the id of a cell

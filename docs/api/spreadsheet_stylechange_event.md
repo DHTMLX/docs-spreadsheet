@@ -20,3 +20,6 @@ spreadsheet.events.on("StyleChange", function(id){
 });
 
 @descr:
+
+
+todo `delete`

@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after a new row is added
 
-@signature: afterRowAdd: (cell: string) => void;
+@signature: {`afterRowAdd: (cell: string) => void;`}
 
 @params:
 `cell: string` - the id of a cell

@@ -8,7 +8,7 @@ description: changetext
 
 @short: shows/hides the menu
 
-@signature: menu?: boolean;
+@signature: {`menu?: boolean;`}
 
 @default: true
 

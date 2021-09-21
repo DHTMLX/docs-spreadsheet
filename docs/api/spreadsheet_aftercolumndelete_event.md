@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after a column is deleted
 
-@signature: afterColumnDelete: (cell: string) => void;
+@signature: {`afterColumnDelete: (cell: string) => void;`}
 
 @params:
 `cell: string` - the id of a cell

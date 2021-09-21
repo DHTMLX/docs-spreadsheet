@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after a row is deleted
 
-@signature: afterRowDelete: (cell: string) => void;
+@signature: {`afterRowDelete: (cell: string) => void;`}
 
 @params:
 `cell: string` - the id of a cell

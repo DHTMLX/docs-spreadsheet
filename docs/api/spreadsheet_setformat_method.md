@@ -12,8 +12,8 @@ description: changetext
 
 @params:
 
-- `cell: string` - the id of a cell the value of which should be formatted
-- `format: string` - the name of the number format to apply to a cell value
+- `cell: string` - the id(s) of a cell(s) or a range of cells
+- `format: string | array` - the name(s) of the number format to apply to cells value
 
 @example:
 

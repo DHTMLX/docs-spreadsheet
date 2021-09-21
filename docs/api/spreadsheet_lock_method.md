@@ -8,10 +8,10 @@ description: changetext
 
 @short: locks the specified cell
 
-@signature: lock: (cell: string) => void;
+@signature: {`lock: (cell: string) => void;`}
 
 @params:
-`cell: string` - the id of a cell
+`cell: string` - the id(s) of a cell(s) or a range of cells
 
 @example:
 // locks a cell

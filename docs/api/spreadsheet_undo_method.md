@@ -8,7 +8,7 @@ description: changetext
 
 @short: reverts the latest action
 
-@signature: undo(): void;
+@signature: {`undo(): void;`}
 
 @example:
 spreadsheet.undo();

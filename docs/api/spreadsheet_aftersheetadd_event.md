@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after a new sheet is added
 
-@signature: afterSheetAdd: (sheet: ISheet) => void;
+@signature: {`afterSheetAdd: (sheet: ISheet) => void;`}
 
 @params:
 `sheet: object` - the object of a new sheet

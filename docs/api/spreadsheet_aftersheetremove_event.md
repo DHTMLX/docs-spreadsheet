@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires after a sheet is removed
 
-@signature: afterSheetRemove: (sheet: ISheet) => void;
+@signature: {`afterSheetRemove: (sheet: ISheet) => void;`}
 
 @params:
 `sheet: object` - the object of a sheet

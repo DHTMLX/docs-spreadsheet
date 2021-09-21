@@ -8,7 +8,7 @@ description: changetext
 
 @short: adds a new sheet into the spreadsheet
 
-@signature: addSheet: (name?: string) => string;
+@signature: {`addSheet: (name?: string) => string;`}
 
 @params:
 `name: string` - the name of the new sheet

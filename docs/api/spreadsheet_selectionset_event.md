@@ -19,3 +19,5 @@ spreadsheet.events.on("SelectionSet", function(cell){
 });
 
 @descr:
+
+todo `delete` 

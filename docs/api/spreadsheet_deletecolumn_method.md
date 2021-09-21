@@ -8,7 +8,7 @@ description: changetext
 
 @short: removes a column from the spreadsheet
 
-@signature: deleteColumn: (cell: string) => void;
+@signature: {`deleteColumn: (cell: string) => void;`}
 
 @params:
 `cell: string` - the id of a cell that contains the name of the column that should be deleted

@@ -8,7 +8,7 @@ description: changetext
 
 @short: enables/disables the readonly mode
 
-@signature: readonly?: boolean;
+@signature: {`readonly?: boolean;`}
 
 @default: false
 

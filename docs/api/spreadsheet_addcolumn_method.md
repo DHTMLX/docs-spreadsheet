@@ -8,7 +8,7 @@ description: changetext
 
 @short: adds a new column into the spreadsheet
 
-@signature: addColumn: (cell: string) => void;
+@signature: {`addColumn: (cell: string) => void;`}
 
 @params:
 `cell: string` - the id of the cell that contains the id of a column that should be added

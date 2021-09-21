@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before a column is deleted
 
-@signature: beforeColumnDelete: (cell: string) => void | boolean;
+@signature: {`beforeColumnDelete: (cell: string) => void | boolean;`}
 
 @params:
 `cell: string` - the id of a cell

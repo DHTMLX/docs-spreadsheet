@@ -8,7 +8,7 @@ description: changetext
 
 @short: removes a sheet from the spreadsheet by its id
 
-@signature: removeSheet: (id: string) => void;
+@signature: {`removeSheet: (id: string) => void;`}
 
 @params:
 `id: string` - the id of a sheet

@@ -8,7 +8,7 @@ description: changetext
 
 @short: shows/hides the editing bar
 
-@signature: editLine?: boolean;
+@signature: {`editLine?: boolean;`}
 
 @default: true
 

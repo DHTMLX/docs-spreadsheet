@@ -11,8 +11,8 @@ description: changetext
 @signature: {`setValue: (cell: string, value: any | any[]) => void;`}
 
 @params:
-- `cell: string` - the id of a cell or a range of cells
-- `value: string, number, array` - the value(s) to be set for a cell
+- `cell: string` - the id(s) of a cell(s) or a range of cells
+- `value: string | number | array` - the value(s) to be set for cells
 
 @example:
 // setting value for one cell

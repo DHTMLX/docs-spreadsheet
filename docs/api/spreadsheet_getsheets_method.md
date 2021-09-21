@@ -8,10 +8,10 @@ description: changetext
 
 @short: gets all sheets of the spreadsheet
 
-@signature: getSheets: () => ISheet[];
+@signature: {`getSheets: () => ISheet[];`}
 
 @returns:
-An array of sheets objects
+The array of sheets objects.
 
 @example:
 spreadsheet.getSheets();

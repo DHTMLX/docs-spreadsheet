@@ -8,7 +8,7 @@ description: changetext
 
 @short: fires before a row is deleted
 
-@signature: beforeRowDelete: (cell: string) => void | boolean;
+@signature: {`beforeRowDelete: (cell: string) => void | boolean;`}
 
 @params:
 `cell: string` - the id of a cell

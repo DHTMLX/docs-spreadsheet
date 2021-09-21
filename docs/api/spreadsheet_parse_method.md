@@ -8,7 +8,7 @@ description: changetext
 
 @short: loads data into spreadsheet from a local data source
 
-@signature: parse: (data: any) => void;
+@signature: {`parse: (data: any) => void;`}
 
 @params:
 `data: any` - the data to load

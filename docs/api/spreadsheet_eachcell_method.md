@@ -8,7 +8,7 @@ description: changetext
 
 @short: iterates cells in the spreadsheet
 
-@signature: eachCell: (cb: (cellName: string, cellValue: any) => any, range?: string) => void;
+@signature: {`eachCell: (cb: (cellName: string, cellValue: any) => any, range?: string) => void;`}
 
 @params:
 - `callback: function` - a callback function

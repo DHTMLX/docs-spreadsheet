@@ -8,7 +8,7 @@ description: changetext
 
 @short: finishes editing in the selected cell, closes editor and saves the entered value
 
-@signature: endEdit(): void;
+@signature: {`endEdit(): void;`}
 
 @example:
 spreadsheet.endEdit();
