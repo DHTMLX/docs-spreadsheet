@@ -8,7 +8,7 @@ description: changetext
 
 @short: returns the id(s) of selected cell(s)
 
-@signature: getSelectedCell(): string;
+@signature: {`getSelectedCell(): string;`}
 
 @returns:
 The id(s) or a range of selected cell(s).

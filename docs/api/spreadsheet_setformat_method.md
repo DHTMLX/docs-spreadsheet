@@ -8,7 +8,7 @@ description: changetext
 
 @short: sets a specified format to the value of a cell
 
-@signature: setFormat: (cell: string, format: string | string[]) => void;
+@signature: {`setFormat: (cell: string, format: string | string[]) => void;`}
 
 @params:
 

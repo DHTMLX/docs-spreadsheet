@@ -8,7 +8,7 @@ description: changetext
 
 @short: returns the formula of a cell
 
-@signature: getFormula: (cell: string) => string | string[];
+@signature: {`getFormula: (cell: string) => string | string[];`}
 
 @params:
 `cell: string` - the id of a cell

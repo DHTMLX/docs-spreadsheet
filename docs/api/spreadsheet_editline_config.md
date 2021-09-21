@@ -10,7 +10,7 @@ description: changetext
 
 @signature: editLine?: boolean;
 
-@default: false
+@default: true
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {

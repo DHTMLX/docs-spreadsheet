@@ -8,7 +8,7 @@ description: changetext
 
 @short: loads data from an external file
 
-@signature: 
+@signature: {`load: (url: string, type?: FileFormat) => Promise<any>;`}
 
 @params:
 

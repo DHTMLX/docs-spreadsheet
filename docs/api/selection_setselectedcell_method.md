@@ -8,10 +8,10 @@ description: changetext
 
 @short: selects the specified cell(s)
 
-@signature: setSelectedCell(cell: string);
+@signature: {`setSelectedCell(cell: string);`}
 
 @params:
-`cells: string` - the id(s) or a range of selected cell(s)
+`cell: string` - the id(s) or a range of selected cell(s)
 
 @example:
 // selecting a cell
