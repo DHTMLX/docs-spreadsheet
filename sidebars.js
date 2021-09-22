@@ -44,7 +44,7 @@ module.exports = {
             "api/spreadsheet_getsheets_method",
             "api/spreadsheet_getstyle_method",
             "api/spreadsheet_getvalue_method",
-            "api/spreadsheet_islocked_method",
+            "api/spreadsheet_islocked_method", 
             "api/spreadsheet_load_method",
             "api/spreadsheet_lock_method",
             "api/spreadsheet_parse_method",
@@ -95,6 +95,7 @@ module.exports = {
             "api/spreadsheet_beforesheetrename_event",
             "api/spreadsheet_beforestylechange_event",
             "api/spreadsheet_beforevaluechange_event",
+            "api/spreadsheet_groupfill_event",
           ],
         },
         {
