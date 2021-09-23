@@ -68,6 +68,12 @@ DHTMLX Spreadsheet provides the possibility to import/export data in the Excel f
 After installing the necessary library, you need to set path to the **worker.js** file (either local or at CDN)
 via the corresponding configuration option - [](api/spreadsheet_importmodulepath_config.md) or [](api/spreadsheet_exportmodulepath_config.md).
 
+All the details are given in the [Data Loading and Export](loading_data.md) article.
+
+<iframe src="https://snippet.dhtmlx.com/wykwzfhm?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+
+
+
 ~~~js
 var spreadsheet = new dhx.Spreadsheet(document.body, {  
 	importModulePath: "../libs/excel2json/1.0/worker.js"
@@ -75,4 +81,4 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 });
 ~~~
 
-All the details are given in the [Data Loading and Export](loading_data.md) article.
+
