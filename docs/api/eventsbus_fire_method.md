@@ -8,11 +8,11 @@ description: changetext
 
 @short: triggers an inner event
 
-@signature:
+@signature: {`fire(name: string, arguments: any[]): boolean;`}
 
 @params:
 - `name: string` - the event's name, case-insensitive
-- `params: array` - an array of the event-related data
+- `arguments: array` - an array of the event-related data
 
 @returns:
 *False*, if some of the event handlers return *false*. Otherwise, *true*.

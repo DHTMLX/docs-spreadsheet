@@ -8,11 +8,10 @@ description: changetext
 
 @short: detaches a handler from an event (which was attached before by the on() method)
 
-@signature:
+@signature: {`detach(name: string):  void;`}
 
 @params:
 - `name: string` - the name of event to detach
-- `context: any` - a context marker
 
 @example:
 spreadsheet.events.on("StyleChange", function(id){

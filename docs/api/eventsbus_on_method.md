@@ -8,12 +8,11 @@ description: changetext
 
 @short: attaches a handler to an inner event of Spreadsheet
 
-@signature:
+@signature: {`on(name: string, callback: Function): void;`}
 
 @params:
 - `name: string` - the event's name, case-insensitive
-- `handler: function` - the handler function
-- `context: any` - the value will be accessible as "this" inside of the event handler
+- `callback: function` - the handler function
 
 @example:
 spreadsheet.events.on("StyleChange", function(id){

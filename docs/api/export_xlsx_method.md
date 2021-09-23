@@ -8,9 +8,7 @@ description: changetext
 
 @short: exports data from a spreadsheet into an Excel (.xlsx) file
 
-@signature:
-
-@params:
+@signature: xlsx(): void;
 
 @example:
 spreadsheet.export.xlsx();

@@ -16,7 +16,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 });
 
 @relatedsample:
-**Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
+**Related sample**: [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
 
 @descr:
 
