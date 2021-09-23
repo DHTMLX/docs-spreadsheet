@@ -22,7 +22,7 @@ To load several sheets into the spreadsheet, you should prepare data with the de
     - **id** - (*string*) the sheet id
     - **data** - (*array*) an array with data of the sheet
 
-<iframe src="https://snippet.dhtmlx.com/6s3ng2hi?mode=html" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/6s3ng2hi?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 {{note In case the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
 
