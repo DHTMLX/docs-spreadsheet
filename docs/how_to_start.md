@@ -6,9 +6,7 @@ description: changetext
 
 # How to Start
 
-{{note This documentation is dedicated to the renewed DHTMLX Spreadsheet of version 3.0.
-
-To get information about the previous version 2.1, [follow the related documentation](https://docs.dhtmlx.com/spreadsheet__index.html).}}
+{{note This documentation is dedicated to the renewed DHTMLX Spreadsheet of version 3.0. To get information about the previous version 2.1, [follow the related documentation](https://docs.dhtmlx.com/spreadsheet__index.html).}}
 
 This clear and comprehensive tutorial will guide your through the steps you need to complete in order to get a full-functional DHTMLX Spreadsheet on a page. The component will be especially effective for managing large amounts of data when you need to save the results of calculations and reproduce them.
 
