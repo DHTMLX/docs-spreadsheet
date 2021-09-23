@@ -275,7 +275,7 @@ spreadsheet.menu.data.add({
 
 ![Custom Menu Item](assets/custom_menuitem.png)
 
-**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)
+**Related sample**: [Spreadsheet. Menu data](https://snippet.dhtmlx.com/2mlv2qaz)
 
 ### Updating controls
 
