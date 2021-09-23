@@ -71,14 +71,3 @@ via the corresponding configuration option - [](api/spreadsheet_importmodulepath
 All the details are given in the [Data Loading and Export](loading_data.md) article.
 
 <iframe src="https://snippet.dhtmlx.com/wykwzfhm?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
-
-
-
-~~~js
-var spreadsheet = new dhx.Spreadsheet(document.body, {  
-	importModulePath: "../libs/excel2json/1.0/worker.js"
-	exportModulePath: "../libs/json2excel/1.0/worker.js"
-});
-~~~
-
-
