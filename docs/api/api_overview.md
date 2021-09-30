@@ -20,16 +20,6 @@ Parameters:
 - an HTML container (or the ID of an HTML container)
 - a hash of config options (check below)
 
-## Objects
-
-- contextMenu
-- [config](api/refs/spreadsheet_props.md)
-- [events](api/refs/events_methods.md)
-- [export](api/refs/export_methods.md)
-- menu
-- [selection](api/refs/selection_methods.md)
-- toolbar
-
 ## Spreadsheet methods
 
 | Name                                         | Description                                         |
