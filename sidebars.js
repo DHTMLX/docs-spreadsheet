@@ -12,7 +12,7 @@ module.exports = {
       type: "category",
       label: "Whats new and migration",
       collapsible: true,
-      collapsed: false,
+      collapsed: true,
       items: [
         "whats_new",
         "migration",
@@ -29,7 +29,7 @@ module.exports = {
           type: "category",
           label: "Spreadsheet methods",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "api/spreadsheet_addcolumn_method",
             "api/spreadsheet_addrow_method",
@@ -63,7 +63,7 @@ module.exports = {
           type: "category",
           label: "Spreadsheet events",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "api/spreadsheet_aftercolumnadd_event",
             "api/spreadsheet_aftercolumndelete_event",
@@ -102,7 +102,7 @@ module.exports = {
           type: "category",
           label: "Spreadsheet properties",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "api/spreadsheet_colscount_config",
             "api/spreadsheet_editline_config",
@@ -121,7 +121,7 @@ module.exports = {
           type: "category",
           label: "Selection methods",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "api/selection_getfocusedcell_method",
             "api/selection_getselectedcell_method",
@@ -133,7 +133,7 @@ module.exports = {
           type: "category",
           label: "Events Bus methods",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "api/eventsbus_detach_method",
             "api/eventsbus_fire_method",
@@ -144,7 +144,7 @@ module.exports = {
           type: "category",
           label: "Export methods",
           collapsible: true,
-          collapsed: false,
+          collapsed: true,
           items: [
             "api/export_xlsx_method",
           ],
