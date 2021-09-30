@@ -180,9 +180,9 @@ module.exports = {
             darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
-            title: 'Suite Documentation',
+            title: 'Spreadsheet Documentation',
             logo: {
-                alt: 'DHTMLX Suite Documentation',
+                alt: 'DHTMLX Spreadsheet Documentation',
                 src: 'img/dhtmlx_logo.svg',
                 href: 'https://docs.dhtmlx.com/',
 
@@ -287,7 +287,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/DHTMLX/docs-suite/edit/master/',
+                    editUrl: 'https://github.com/DHTMLX/docs-spreadsheet/edit/master/',
                     routeBasePath: '/',
                 },
                 // blog: {
