@@ -26,5 +26,3 @@ spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 **Related articles**
 
 [Work with Spreadsheet](working_with_ssheet.md#selecting-cells)
-
-todo: check
