@@ -8,12 +8,12 @@ description: changetext
 
 @short: loads data from an external file
 
-@signature: {`load: (url: string, type?: FileFormat) => Promise<any>;`}
+@signature: {`load: (url: string, type?: string) => Promise<any>;`}
 
 @params:
 
 - `url: string` - the URL of an external file
-- `format: string` - optional, the type of data to load: "json" (default), "csv", "xlsx"
+- `type: string` - optional, the type of data to load: "json" (default), "csv", "xlsx"
 
 @returns:
 A promise of data loading.
