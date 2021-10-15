@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration with React
-title: JavaScript Spreadsheet - Integration with React
-description: changetext
+title: React Integration | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the React integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Integration with React

@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSelectionSet
-title: JavaScript Spreadsheet - beforeSelectionSet Event
-description: changetext
+title: beforeselectionset event | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the beforeselectionset event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeSelectionSet

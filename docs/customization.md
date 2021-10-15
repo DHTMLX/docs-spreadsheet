@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
-title: JavaScript Spreadsheet - Customization
-description: changetext
+title: Customization | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the customization of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Customization

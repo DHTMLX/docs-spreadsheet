@@ -1,7 +1,7 @@
 ---
 sidebar_label: getSheets()
-title: JavaScript Spreadsheet - getSheets Method
-description: changetext
+title: getsheets method | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the getsheets method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getSheets()

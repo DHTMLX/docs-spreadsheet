@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFocusedCell() 
-title: JavaScript Spreadsheet - setFocusedCell Selection Method
-description: changetext
+title: setfocusedcell selection method | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the setfocusedcell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # setFocusedCell()

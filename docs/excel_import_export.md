@@ -1,7 +1,7 @@
 ---
 sidebar_label: Excel import/export
-title: JavaScript Spreadsheet - Excel Import/Export
-description: changetext
+title: Excel import and export | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the excel import and export in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Excel import/export

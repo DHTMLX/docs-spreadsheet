@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSheetRemove
-title: JavaScript Spreadsheet - afterSheetRemove Event
-description: changetext
+title: aftersheetremove event | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the aftersheetremove event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterSheetRemove

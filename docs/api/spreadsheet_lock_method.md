@@ -1,7 +1,7 @@
 ---
 sidebar_label: lock()
-title: JavaScript Spreadsheet - lock Method
-description: changetext
+title: lock method | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the lock method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # lock()

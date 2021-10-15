@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with functions
-title: JavaScript Spreadsheet - Work with Functions
-description: changetext
+title: Functions | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the functions of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Work with functions

@@ -1,7 +1,7 @@
 ---
 sidebar_label: on()
-title: JavaScript Spreadsheet - on() Events Bus Method
-description: changetext
+title: on events bus method | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the on events bus method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # on()

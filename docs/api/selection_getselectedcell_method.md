@@ -1,7 +1,7 @@
 ---
 sidebar_label: getSelectedCell() 
-title: JavaScript Spreadsheet - getSelectedCell Selection Method
-description: changetext
+title: getselectedcell selection method | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the getselectedcell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getSelectedCell()

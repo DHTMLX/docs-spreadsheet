@@ -1,7 +1,7 @@
 ---
 sidebar_label: Guides overview
-title: JavaScript Spreadsheet - Guides
-description: changetext
+title: Developer Guides | DHTMLX JavaScript Spreadsheet Docs
+description: You can study developer guides in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Guides

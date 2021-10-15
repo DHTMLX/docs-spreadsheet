@@ -1,7 +1,7 @@
 ---
 sidebar_label: What's New
-title: JavaScript Spreadsheet - What's New
-description: changetext
+title: What's New in DHTMLX Spreadsheet | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn what's new in the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # What's new

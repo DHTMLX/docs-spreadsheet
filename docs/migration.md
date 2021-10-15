@@ -1,7 +1,7 @@
 ---
 sidebar_label: Migration from 2.1 to 3.0
-title: Migration
-description: changetext
+title: Migration | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about migration in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Migration from 2.1 to 3.0

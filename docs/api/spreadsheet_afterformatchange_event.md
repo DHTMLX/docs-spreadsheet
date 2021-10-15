@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterFormatChange
-title: JavaScript Spreadsheet - afterFormatChange Event
-description: changetext
+title: afterformatchange event | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the afterformatchange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterFormatChange

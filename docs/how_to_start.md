@@ -1,7 +1,7 @@
 ---
 sidebar_label: How to Start
-title: JavaScript Spreadsheet - How to Start
-description: changetext
+title: How to Start with DHTMLX Spreadsheet | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn how to start with the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # How to Start

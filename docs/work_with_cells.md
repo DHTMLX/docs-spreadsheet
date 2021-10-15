@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with cells
-title: JavaScript Spreadsheet - Work with Cells
-description: changetext
+title: Work with Cells | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the work with cells in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Work with cells

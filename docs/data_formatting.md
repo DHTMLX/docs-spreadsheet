@@ -1,7 +1,7 @@
 ---
 sidebar_label: Data formatting
-title: JavaScript Spreadsheet - Data Formatting
-description: changetext
+title: Data Formatting | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about data formatting in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Data formatting

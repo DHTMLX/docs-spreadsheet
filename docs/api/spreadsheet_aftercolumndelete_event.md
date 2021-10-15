@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterColumnDelete
-title: JavaScript Spreadsheet - afterColumnDelete Event
-description: changetext
+title: aftercolumndelete event | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the aftercolumndelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterColumnDelete

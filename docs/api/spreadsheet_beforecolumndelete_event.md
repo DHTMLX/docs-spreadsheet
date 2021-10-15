@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeColumnDelete
-title: JavaScript Spreadsheet - beforeColumnDelete Event
-description: changetext
+title: beforecolumndelete event | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the beforecolumndelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeColumnDelete

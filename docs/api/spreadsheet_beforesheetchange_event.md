@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSheetChange
-title: JavaScript Spreadsheet - beforeSheetChange Event
-description: changetext
+title: beforesheetchange event | DHTMLX JavaScript Spreadsheet Docs
+description: You can learn about the beforesheetchange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeSheetChange
