@@ -126,8 +126,8 @@ const onAfterDataTransformation = (data) => {
 
 module.exports = {
     noIndex: true, // todo: delete before release
-    title: 'DHTMLX Spreadsheet Doc',
-    tagline: 'DHTMLX Spreadsheet Doc',
+    title: 'DHTMLX JavaScript Spreadsheet Docs',
+    tagline: 'DHTMLX JavaScript Spreadsheet Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/spreadsheetalt/',
     onBrokenLinks: 'warn',
