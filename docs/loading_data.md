@@ -1,6 +1,6 @@
 ---
 sidebar_label: Data loading and export
-title: Loading data | DHTMLX JavaScript Spreadsheet Docs
+title: Loading data
 description: You can learn about loading data in the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

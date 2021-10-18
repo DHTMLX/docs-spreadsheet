@@ -1,6 +1,6 @@
 ---
 sidebar_label: Work with Spreadsheet
-title: Working with Spreadsheet | DHTMLX JavaScript Spreadsheet Docs
+title: Working with Spreadsheet
 description: You can learn about working with spreadsheet in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: Using Spreadsheet with TypeScript
-title: Using typescript | DHTMLX JavaScript Spreadsheet Docs
+title: Using typescript
 description: You can learn about using typescript with the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: redo()
-title: redo method | DHTMLX JavaScript Spreadsheet Docs
+title: redo method
 description: You can learn about the redo method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

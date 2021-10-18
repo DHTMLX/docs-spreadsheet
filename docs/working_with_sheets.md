@@ -1,6 +1,6 @@
 ---
 sidebar_label: Work with Sheets
-title: Working with Sheets | DHTMLX JavaScript Spreadsheet Docs
+title: Working with Sheets
 description: You can learn about working with sheets in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

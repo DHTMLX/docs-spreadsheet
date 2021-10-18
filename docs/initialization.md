@@ -1,6 +1,6 @@
 ---
 sidebar_label: Initialization
-title: Initialization | DHTMLX JavaScript Spreadsheet Docs
+title: Initialization
 description: You can learn about the initialization of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

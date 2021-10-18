@@ -1,6 +1,6 @@
 ---
 sidebar_label: Integration with Vue.js
-title: Vue.js Integration | DHTMLX JavaScript Spreadsheet Docs
+title: Vue.js Integration
 description: You can learn about the Vue.js integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

@@ -1,6 +1,6 @@
 ---
 sidebar_label: Spreadsheet overview
-title: DHTMLX Spreadsheet Overview | DHTMLX JavaScript Spreadsheet Docs
+title: DHTMLX Spreadsheet Overview
 slug: /
 description: You can have an overview of the JavaScript Spreadsheet library in the DHTMLX documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar_label: serialize()
-title: serialize method | DHTMLX JavaScript Spreadsheet Docs
+title: serialize method
 description: You can learn about the serialize method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
@@ -11,14 +11,14 @@ description: You can learn about the serialize method in the documentation of th
 @signature: {`serialize: () => any[] | IDataWithStyles;`}
 
 @returns:
-A serialized JSON object with cells data and styles.
+A serialized JSON object.
 
 @example:
 var data = spreadsheet.serialize();
 
 @descr:
 
-Serialized data presents an object with data and styles.
+Serialized data presents an object with:
 
 - the **data** array includes objects with cells ids and values
 - the **styles** object contains the applied CSS classes
@@ -36,7 +36,14 @@ Serialized data presents an object with data and styles.
 			"background": "#F2F2F2",
 			"color": "#F57C00"
 		}		
-	}
+	},
+	"formats": [
+        { name: "Common", id: "common", mask: "", example: "2702.31" },
+        { name: "Number", id: "number", mask: "#,##0.00", example: "2702.31" },
+        { name: "Percent", id: "percent", mask: "#,##0.00%", example: "27.0231%" },
+        { name: "Currency", id: "currency", mask: "$#,##0.00", example: "$2702.31" },
+        { name: "Text", id: "text", mask: "abc", example: "'2702.31'" }
+    ];
 }
 ~~~
 

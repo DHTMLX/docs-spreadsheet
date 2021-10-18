@@ -1,6 +1,6 @@
 ---
 sidebar_label: Work with rows and columns
-title: Work with Rows and Columns | DHTMLX JavaScript Spreadsheet Docs
+title: Work with Rows and Columns
 description: You can learn about the work with rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 

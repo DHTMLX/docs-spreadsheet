@@ -1,6 +1,6 @@
 ---
 sidebar_label: afterValueChange
-title: aftervaluechange event | DHTMLX JavaScript Spreadsheet Docs
+title: aftervaluechange event
 description: You can learn about the aftervaluechange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
