@@ -219,7 +219,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/atl9gd4h?text=#spreadsheet',
+                            href: 'https://snippet.dhtmlx.com/ihtkdcoc?text=%23spreadsheet',
                             position: 'right',
                         },
                         {
