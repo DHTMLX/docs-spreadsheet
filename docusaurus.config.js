@@ -193,7 +193,7 @@ module.exports = {
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com',
+                    href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
                     position: 'right'
                 },
                 {
@@ -228,7 +228,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com',
+                            href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
                             position: 'right'
                         },
                     ],
@@ -271,7 +271,7 @@ module.exports = {
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/#licensing',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/',
                         },
                     ],
                 },

@@ -20,9 +20,9 @@ var data = spreadsheet.serialize();
 
 Serialized data presents an object with:
 
-- the **formats** array - the array of the number format
+- the **formats** array - the array of objects with number formats
 - the **styles** object - the object with the applied CSS classes
-- the **sheets** array - the array of sheets with name and data:
+- the **sheets** array - the array of sheet objects with name and data:
   - **name** - the sheet name
   - **data** - the array of objects with cells id, format and value
 
