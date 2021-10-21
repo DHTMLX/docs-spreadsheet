@@ -271,7 +271,7 @@ module.exports = {
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/#editions-licenses',
                         },
                     ],
                 },
