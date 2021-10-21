@@ -18,6 +18,14 @@ var data = spreadsheet.serialize();
 
 @descr:
 
+Serialized data presents an object with:
+
+- the **formats** array - the array of the number format
+- the **styles** object - the object with the applied CSS classes
+- the **sheets** array - the array of sheets with name and data:
+  - **name** - the sheet name
+  - **data** - the array of objects with cells id, format and value
+
 **Related articles**
 
 [Data loading and export](loading_data.md#saving-and-restoring-state)
