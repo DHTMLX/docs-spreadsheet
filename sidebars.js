@@ -125,6 +125,7 @@ module.exports = {
           items: [
             "api/selection_getfocusedcell_method",
             "api/selection_getselectedcell_method",
+            "api/selection_removeselectedcell_method",
             "api/selection_setfocusedcell_method",
             "api/selection_setselectedcell_method",
           ],

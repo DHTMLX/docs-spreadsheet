@@ -243,7 +243,19 @@ spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 It is also possible to get the id(s) of the selected cell(s) via the [](api/selection_getselectedcell_method.md) method:
 
 ~~~js
-var selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
+const selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
+~~~
+
+To remove selection from cell(s), pass its/their id(s) to the [](api/selection_removeselectedcell_method.md) method:
+
+~~~js
+// sets selection
+spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
+// removes selection
+spreadsheet.selection.removeSelectedCell("B7,D4,E5:E7");
+
+const selected = spreadsheet.selection.getSelectedCell();
+console.log(selected); // -> "B3,D6,E4,E8"
 ~~~
 
 ## Setting focus on a cell

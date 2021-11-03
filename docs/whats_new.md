@@ -6,6 +6,14 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 # What's new
 
+## Version 4.2
+
+<span class="rel_date_pivot">released on November 16, 2021</span>
+
+### New functionality
+
+- New [removeSelectedCell()](api/selection_removeselectedcell_method.md) method of the Selection object
+
 ## Version 4.1.3
 
 <span class="rel_date_pivot">released on August 31, 2021</span>
