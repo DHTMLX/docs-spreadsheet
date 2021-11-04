@@ -47,6 +47,16 @@ spreadsheet.removeSheet("u1614669331209");
 
 Note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
 
+## Setting active sheet
+
+To change the active sheet dynamically after initialization of the spreadsheet, use the [setActiveSheet()](api/spreadsheet_setactivesheet_method.md) method. It takes the id of a sheet as a parameter:
+
+~~~js
+spreadsheet.setActiveSheet("u1636003130922");
+~~~
+
+**Related sample:** [Spreadsheet. Set active sheet](https://snippet.dhtmlx.com/iowl449t)
+
 ## Getting active sheet
 
 It is possible to get the sheet that is currently active by applying the [getActiveSheet()](api/spreadsheet_getactivesheet_method.md) method:

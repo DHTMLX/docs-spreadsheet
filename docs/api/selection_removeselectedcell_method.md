@@ -24,3 +24,5 @@ spreadsheet.selection.removeSelectedCell("A3:A6,C2");
 **Related articles**
 
 [Work with Spreadsheet](working_with_ssheet.md#selecting-cells)
+
+@changelog: added in v4.2

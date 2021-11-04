@@ -51,6 +51,7 @@ module.exports = {
             "api/spreadsheet_redo_method",
             "api/spreadsheet_removesheet_method",
             "api/spreadsheet_serialize_method",
+            "api/spreadsheet_setactivesheet_method",
             "api/spreadsheet_setformat_method",
             "api/spreadsheet_setstyle_method",
             "api/spreadsheet_setvalue_method",
