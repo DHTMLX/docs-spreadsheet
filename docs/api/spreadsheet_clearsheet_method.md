@@ -20,7 +20,7 @@ spreadsheet.clearSheet("u1636003130922");
 spreadsheet.clearSheet();
 
 @descr:
-**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/iowl449t)
+**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
 @changelog: added in v4.2
 

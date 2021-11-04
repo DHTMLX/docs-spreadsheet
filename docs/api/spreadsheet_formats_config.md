@@ -38,11 +38,12 @@ The default number formats are the following:
 
 ~~~js
 defaultFormats = [
-	{ name: "Common", id: "common", mask: "", example: "2702.31" },
-	{ name: "Number", id: "number", mask: "#,##0.00", example: "2702.31" },
-	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "27.0231%" },
-	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$2702.31" },
-    { name: "Text", id: "text", mask: "abc", example: "'2702.31'" }
+	{ name: "Common", id: "common", mask: "", example: "1500.31" },
+	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
+	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
+	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
+	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021 15:30" },
+    { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~
 
@@ -59,4 +60,6 @@ Read detailed information about number formatting in DHTMLX Spreadsheet in the a
 
 [Number formatting](number_formatting.md#formats-customization)
 
-@changelog: The "Text" format has been appeared in v4.0.
+@changelog:
+- The "Date" format has been added in v4.2.
+- The "Text" format has been added in v4.0.

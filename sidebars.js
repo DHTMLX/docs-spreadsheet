@@ -112,6 +112,7 @@ module.exports = {
           collapsed: true,
           items: [
             "api/spreadsheet_colscount_config",
+            "api/spreadsheet_dateformat_config",
             "api/spreadsheet_editline_config",
             "api/spreadsheet_exportmodulepath_config",
             "api/spreadsheet_formats_config",

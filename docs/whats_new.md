@@ -17,7 +17,8 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 - [clear()](api/spreadsheet_clear_method.md), [clearSheet()](api/spreadsheet_clearsheet_method.md)  methods
 - [beforeClear](api/spreadsheet_beforeclear_event.md), [afterClear](api/spreadsheet_afterclear_event.md), [beforeSheetClear](api/spreadsheet_beforesheetclear_event.md), [afterSheetClear](api/spreadsheet_aftersheetclear_event.md) events
-
+- [dateFormat](api/spreadsheet_dateformat_config.md)
+- date format
 
 ## Version 4.1.3
 

@@ -8,7 +8,7 @@ description: You can study the user guide about number formatting in the documen
 
 ## Supported number formats
 
-There are 4 number formats your can apply to format numeric values of cells:
+There are several number formats you can apply to format numeric values of cells:
 
 <table class="webixdoc_links">
 	<tbody>
@@ -27,6 +27,10 @@ There are 4 number formats your can apply to format numeric values of cells:
         <tr>
 			<td class="webixdoc_links0"><b>Percent</b></td>
 			<td>together with the <b>Number</b> format numbers get the percent sign (<i>141,504,592,800.00%</i> )</td>
+		</tr>
+		<tr>
+			<td class="webixdoc_links0"><b>Date</b></td>
+			<td>numbers are displayed as dates</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>Text</b></td>

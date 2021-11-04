@@ -85,7 +85,7 @@ There is the ability to clear the data of the specified sheet by its id via the 
 spreadsheet.clearSheet("income_id");
 ~~~
 
-**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/iowl449t)
+**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
 To clear the currently active sheet, call the [clearSheet()](api/spreadsheet_clearsheet_method.md) method without the parameter:
 

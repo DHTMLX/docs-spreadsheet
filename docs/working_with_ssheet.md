@@ -284,6 +284,6 @@ You can clear the whole spreadsheet at once via the [clear()](api/spreadsheet_cl
 spreadsheet.clear();
 ~~~
 
-**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/iowl449t)
+**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
 If you need to clear a specific sheet, use the [clearSheet()](api/spreadsheet_clearsheet_method.md) method.

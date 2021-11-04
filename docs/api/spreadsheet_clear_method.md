@@ -14,7 +14,7 @@ description: You can learn about the clear method in the documentation of the DH
 spreadsheet.clear();
 
 @descr:
-**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/iowl449t)
+**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
 @changelog: added in v4.2
 
