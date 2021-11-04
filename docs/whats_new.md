@@ -15,6 +15,9 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 - New [removeSelectedCell()](api/selection_removeselectedcell_method.md) method of the Selection object
 - The ability to set the active sheet via the [setActiveSheet()](api/spreadsheet_setactivesheet_method.md) method
 
+- [clear()](api/spreadsheet_clear_method.md), [clearSheet()](api/spreadsheet_clearsheet_method.md)  methods
+- [beforeClear](api/spreadsheet_beforeclear_event.md), [afterClear](api/spreadsheet_afterclear_event.md), [beforeSheetClear](api/spreadsheet_beforesheetclear_event.md), [afterSheetClear](api/spreadsheet_aftersheetclear_event.md) events
+
 
 ## Version 4.1.3
 

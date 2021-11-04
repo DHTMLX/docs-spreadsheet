@@ -275,3 +275,15 @@ spreadsheet.selection.setFocusedCell("D4");
 // getting the focused cell 
 var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
 ~~~
+
+## Clearing spreadsheet
+
+You can clear the whole spreadsheet at once via the [clear()](api/spreadsheet_clear_method.md) method:
+
+~~~js
+spreadsheet.clear();
+~~~
+
+**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/iowl449t)
+
+If you need to clear a specific sheet, use the [clearSheet()](api/spreadsheet_clearsheet_method.md) method.

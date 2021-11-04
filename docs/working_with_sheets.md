@@ -76,3 +76,21 @@ The [getSheets()](api/spreadsheet_getsheets_method.md) method allows you to get 
 spreadsheet.getSheets();
 // ->  [{name: "sheet1", id: "u1614669331194"}, …]
 ~~~
+
+## Clearing sheets
+
+There is the ability to clear the data of the specified sheet by its id via the [clearSheet()](api/spreadsheet_clearsheet_method.md) method:
+
+~~~js
+spreadsheet.clearSheet("income_id");
+~~~
+
+**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/iowl449t)
+
+To clear the currently active sheet, call the [clearSheet()](api/spreadsheet_clearsheet_method.md) method without the parameter:
+
+~~~js
+spreadsheet.clearSheet();
+~~~
+
+If you need to clear the whole spreadsheet at once, use the [clear()](api/spreadsheet_clear_method.md) method.
