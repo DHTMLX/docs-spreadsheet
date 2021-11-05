@@ -17,8 +17,8 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 	dateFormat: "%d/%m/%Y"
 });
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Date format](https://snippet.dhtmlx.com/rrn7te4z)
+@descr:
+**Related sample**: [Spreadsheet. Number format](https://snippet.dhtmlx.com/wkoznm3n)
 
 @descr:
 
@@ -49,4 +49,6 @@ DHTMLX Spreadsheet uses the following characters for setting a date format:
 @changelog: added in v4.2
 
 @descr:
+#### Related article
 
+[Date format](number_formatting.md/#date-format)

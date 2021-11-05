@@ -8,38 +8,38 @@ description: You can study the user guide about number formatting in the documen
 
 ## Supported number formats
 
+<iframe src="https://snippet.dhtmlx.com/wkoznm3n?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
 There are several number formats you can apply to format numeric values of cells:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>Common</b></td>
-			<td>numbers are displayed as is, with no formatting applied (<i>1415045928</i> )</td>
+			<td><b>Common</b></td>
+			<td>numbers are displayed as is, with no formatting applied</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Number</b></td>
-			<td>numbers are displayed with tens, hundreds and thousands separated by specified delimiters (<i>1,415,045,928.00</i> )</td>
+			<td><b>Number</b></td>
+			<td>numbers are displayed with tens, hundreds and thousands separated by specified delimiters</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Currency</b></td>
-			<td>together with the <b>Number</b> format numbers get the currency sign (<i>$1,415,045,928.00</i> )</td>
+			<td><b>Currency</b></td>
+			<td>numbers are displayed with the currency sign ($)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Percent</b></td>
-			<td>together with the <b>Number</b> format numbers get the percent sign (<i>141,504,592,800.00%</i> )</td>
+			<td><b>Percent</b></td>
+			<td>numbers are displayed with the percent sign (%)</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>Date</b></td>
+			<td><b>Date</b></td>
 			<td>numbers are displayed as dates</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Text</b></td>
-			<td>numbers are displayed as text and exactly as you type them (<i>'1415045928'</i> )</td>
+			<td><b>Text</b></td>
+			<td>numbers are displayed as text and exactly as you type them</td>
 		</tr>
     </tbody>
 </table>
-
-![Number formats](assets/number_formats.png)
 
 ## How to set format
 
@@ -52,4 +52,4 @@ Follow the steps below to apply a particular number format to Spreadsheet data v
 
 - Select the format you want to apply among the suggested options:
 
-![Number format options](assets/number_format_options.png)
+![Number format options](assets/number_format_overview.png)

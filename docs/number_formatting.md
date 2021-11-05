@@ -8,7 +8,9 @@ description: You can study the developer guide about number formatting in the do
 
 DHTMLX Spreadsheet supports number formatting that you can apply for numeric values in cells.
 
-![Number format options](assets/number_format_options.png)
+![Number format options](assets/number_format_overview.png)
+
+**Related sample**: [Spreadsheet. Number format](https://snippet.dhtmlx.com/wkoznm3n)
 
 {{note There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.}}
 
@@ -36,9 +38,19 @@ defaultFormats = [
 
 This is how a spreadsheet with data in various number formats looks like:
 
-<iframe src="https://snippet.dhtmlx.com/ihtkdcoc?mode=mobile" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+<iframe src="https://snippet.dhtmlx.com/ihtkdcoc?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+## Date format
+
+You can define the format the dates to be displayed in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property. The default format is "%d/%m/%Y %H:%i". 
+
+~~~js
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+	dateFormat: "%d/%m/%Y"
+});
+~~~
+
+Check [the full list of available characters used to make formats]((api/spreadsheet_dateformat_config.md)).
 
 ## Formats customization
 
