@@ -18,13 +18,15 @@ var data = spreadsheet.serialize();
 
 @descr:
 
-Serialized data presents an object with:
+Serialized data presents an object with the following attributes:
 
-- the **formats** array - the array of objects with number formats
-- the **styles** object - the object with the applied CSS classes
-- the **sheets** array - the array of sheet objects with name and data:
+- **formats** - an array of objects with number formats
+- **styles** - an object with the applied CSS classes
+- **sheets** - an array of sheet objects. Each object contains the following attributes:
   - **name** - the sheet name
-  - **data** - the array of objects with cells id, format and value
+  - **data** - an array of data objects
+  - **rows** - an array of height objects
+  - **cols** - an array of width objects
 
 **Related articles**
 

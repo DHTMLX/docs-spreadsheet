@@ -19,6 +19,8 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 - [beforeClear](api/spreadsheet_beforeclear_event.md), [afterClear](api/spreadsheet_afterclear_event.md), [beforeSheetClear](api/spreadsheet_beforesheetclear_event.md), [afterSheetClear](api/spreadsheet_aftersheetclear_event.md) events
 - [dateFormat](api/spreadsheet_dateformat_config.md)
 - date format
+- the ability to resize rows from UI
+- The [parse()](api/spreadsheet_parse_method.md) and [serialize()](api/spreadsheet_serialize_method.md) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet
 
 ## Version 4.1.3
 
