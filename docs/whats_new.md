@@ -21,6 +21,7 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 - date format
 - the ability to resize rows from UI
 - The [parse()](api/spreadsheet_parse_method.md) and [serialize()](api/spreadsheet_serialize_method.md) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet
+- Support for [Boolean operators](functions.md/#boolean-operators) added
 
 ## Version 4.1.3
 
