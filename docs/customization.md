@@ -124,10 +124,14 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the *Bold* button (id:"font-weight-bold")
   - the *Italic* button (id:"font-style-italic")
   - the *Underline* button (id:"text-decoration-underline")
-- the **Align** block
-  - the *Align left* button (id: "align-left")
-  - the *Align center* button (id: "align-center")
-  - the *Align right* button (id: "align-right")
+- the **Horizontal align** block
+  - the *Left* button (id: "halign-left")
+  - the *Center* button (id: "halign-center")
+  - the *Right* button (id: "halign-right")
+- the **Vertical align** block
+  - the *Top* button (id: "valign-top")
+  - the *Center* button (id: "valign-center")
+  - the *Bottom* button (id: "valign-bottom")
 - the **Number format** block
   - the *Number format* menuItem (id:"format")
 - the **Help** block

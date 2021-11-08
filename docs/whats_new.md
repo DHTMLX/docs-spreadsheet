@@ -18,10 +18,12 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 - [clear()](api/spreadsheet_clear_method.md), [clearSheet()](api/spreadsheet_clearsheet_method.md)  methods
 - [beforeClear](api/spreadsheet_beforeclear_event.md), [afterClear](api/spreadsheet_afterclear_event.md), [beforeSheetClear](api/spreadsheet_beforesheetclear_event.md), [afterSheetClear](api/spreadsheet_aftersheetclear_event.md) events
 - [dateFormat](api/spreadsheet_dateformat_config.md)
-- date format
+- [The Date format for displaying the content of a cell as dates is added to default number formats](number_formatting.md/#date-format)
 - the ability to resize rows from UI
 - The [parse()](api/spreadsheet_parse_method.md) and [serialize()](api/spreadsheet_serialize_method.md) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet
-- Support for [Boolean operators](functions.md/#boolean-operators) added
+- Support for [logical operators](functions.md/#boolean-operators) added
+- New [Vertical align](data_formatting.md/#alignment) button is added into the toolbar
+- Extended list of [locale options](localization.md)
 
 ## Version 4.1.3
 
