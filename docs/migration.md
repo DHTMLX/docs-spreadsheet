@@ -1,14 +1,63 @@
 ---
-sidebar_label: Migration from 2.1 to 3.0
+sidebar_label: Migration to newer versions
 title: Migration
 description: You can learn about migration in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Migration from 2.1 to 3.0
+# Migration to Newer Versions
 
-This article will help you to migrate from the [previous version 2.1](https://docs.dhtmlx.com/spreadsheet__index.html) where DHTMLX Spreadsheet was PHP-based to the totally renewed version 3.0 in which the component is totally built on JavaScript. Check the list below to explore all the changes.
+## 4.1 -> 4.2
+
+In v4.2, the [Align](customization.md/#default-controls) block of the Spreadsheet toolbar is divided into two sub-blocks: Horizontal align and Vertical align. Thus, the list of ids of the default controls of the Align block is changed and extended:
+
+`Before v4.2`:
+
+The **Align** block:
+
+- the *Align left* button (id: "align-left")
+- the *Align center* button (id: "align-center")
+- the *Align right* button (id: "align-right")
+
+`From v7.2`:
+
+The **Horizontal align** sub-block of the **Align** block:
+
+- the *Left* button (id: "halign-left")
+- the *Center* button (id: "halign-center")
+- the *Right* button (id: "halign-right")
+  
+The **Vertical align** sub-block of the **Align** block:
+    
+- the *Top* button (id: "valign-top")
+- the *Center* button (id: "valign-center")
+- the *Bottom* button (id: "valign-bottom")
+
+### Localization
+
+Note, that the [locale options](localization.md/) for the **Align** block have been also updated:
+
+`Before v4.2`:
+
+~~~js
+const locale = {
+    align: "Align",
+    ...
+}
+~~~
+
+`From v7.2`:
+
+~~~js
+const locale = {
+    halign: "Horizontal align",
+    valign: "Vertical align",
+    ...
+}
+~~~
 
 ## 2.1 -> 3.0
+
+This list of changes will help you to migrate from the [previous version 2.1](https://docs.dhtmlx.com/spreadsheet__index.html) where DHTMLX Spreadsheet was PHP-based to the totally renewed version 3.0 in which the component is totally built on JavaScript. Check the list below to explore all the changes.
 
 {{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](api/api_overview.md).}}
 

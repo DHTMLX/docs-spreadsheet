@@ -129,11 +129,11 @@ It is possible to load a file in the Excel format with the **.xlsx** extension i
 
 - Menu: File -> Import as..-> Microsoft Excel(.xlsx)
 
-![Import from Excel menu](assets/import_xlsx_menu.png)
+![Import from Excel menu](assets/file_import.png)
 
 - Toolbar: Import -> Microsoft Excel(.xlsx)
 
-![Import from Excel toolbar](assets/import_xlsx_toolbar.png)
+![Import from Excel toolbar](assets/import_xlsx.png)
 
 #### How to import data
 
@@ -228,11 +228,11 @@ DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into a
 
 - Menu: File -> Download as..-> Microsoft Excel(.xlsx)
 
-![Export to Excel menu](assets/export_xlsx_menu.png)
+![Export to Excel menu](assets/file_export.png)
 
 - Toolbar: Export -> Microsoft Excel(.xlsx)
 
-![Export from Excel toolbar](assets/export_xlsx_toolbar.png)
+![Export from Excel toolbar](assets/export_xlsx.png)
 
 ### How to export data
 
