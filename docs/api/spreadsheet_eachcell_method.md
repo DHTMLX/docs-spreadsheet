@@ -18,7 +18,7 @@ description: You can learn about the eachcell method in the documentation of the
 spreadsheet.menu.data.add({
 	id: "validate",
 	value: "Validate",
-	childs: [
+	items: [
 		{
 			id: "isNumber",
 			value: "Is number"
@@ -52,9 +52,11 @@ spreadsheet.menu.events.on("click", function (id) {
 });
 
 @relatedsample:
-**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v?)
+**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/2mlv2qaz)
 
 @descr:
+
+If the range of cells is not specified, the method iterates the selected cells.
 
 **Related articles**
 
