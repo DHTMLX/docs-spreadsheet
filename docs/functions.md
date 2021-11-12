@@ -375,9 +375,37 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 
 <table>
 	<tbody>
+		<tr>
+			<td><b>CHAR(number)</b></td>
+			<td>Returns the character (from the character set used by your computer) specified by a number. Number must be between 1 and 255. </td>
+		</tr>
+		<tr>
+			<td><b>CLEAN(text)</b></td>
+			<td>Removes characters, which are not printed when you use the print option, from the text.</td>
+		</tr>
+		<tr>
+			<td><b>CODE(text)</b></td>
+			<td>Returns a numeric code for the first character in a text string.</td>
+		</tr>
         <tr>
 			<td><b>CONCATENATE(A1,"",B2:C3)</b></td>
 			<td>Joins two or more text strings into one string.</td>
+		</tr>
+		<tr>
+			<td><b>DOLLAR(number, decimals)</b></td>
+			<td>Converts a number to text using the currency format, based on the number of digits to the right of the decimal point you specify (by default, 2).</td>
+		</tr>
+		<tr>
+			<td><b>EXACT(text1, text2)</b></td>
+			<td>Compares two strings and returns TRUE if they are exactly the same; otherwise, returns FALSE.</td>
+		</tr>
+		<tr>
+			<td><b>FIND(find_text, within_text, [start_num])</b></td>
+			<td>Returns the position (as a number) of one text string inside another, starting at the position you specify (by default, 1).</td>
+		</tr>
+		<tr>
+			<td><b>FIXED(number, [decimals])</b></td>
+			<td>Rounds a number to the specified number of decimals, formats the number in decimal format using a period and commas, and converts the result to text.</td>
 		</tr>
         <tr>
 			<td><b>LEFT(text, count)</b></td>
@@ -399,9 +427,21 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 			<td><b>PROPER(text)</b></td>
 			<td>Sets the first character in each word to uppercase <br>and converts all other characters to lowercase.</td>
 		</tr>
+		<tr>
+			<td><b>REPT(text, number_times)</b></td>
+			<td>Repeats text a specified number of times.</td>
+		</tr>
         <tr>
 			<td><b>RIGHT(text, count)</b></td>
 			<td>Returns the last character or characters (rightmost) in a text string, <br>based on the number of characters you specify.</td>
+		</tr>
+		<tr>
+			<td><b>SEARCH(find_text, within_text, [start_num])</b></td>
+			<td>Returns the position (as a number) of the first character of <i>find_text</i> inside <i>within_text</i>, starting at the position you specify (by default, 1).</td>
+		</tr>
+		<tr>
+			<td><b>SUBSTITUTE(text, old_text, new_text)</b></td>
+			<td>Replaces old text with new text in a text string.</td>
 		</tr>
         <tr>
 			<td><b>TRIM(text)</b></td>
@@ -414,6 +454,291 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
     </tbody>
 </table>
 <br>
+
+### Other functions
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>Function</b></td>
+			<td><b>Example</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>AND</b></td>
+			<td>=AND(logical1, [logical2], ...)</td>
+			<td>Returns either TRUE or FALSE depending on<br> whether multiple conditions are met or not.</td>
+		</tr>
+		<tr>
+			<td><b>CHOOSE</b></td>
+			<td>=CHOOSE (index_num, value1, [value2], ...)</td>
+			<td>Returns a value from the list of value arguments based on a position or index you specify.</td>
+		</tr>
+		<tr>
+			<td><b>IF</b></td>
+			<td>=IF(condition, [value_if_true], [value_if_false])</td>
+			<td>Returns one value if a condition is TRUE<br> and another value if it's FALSE.</td>
+		</tr>
+		<tr>
+			<td><b>NOT</b></td>
+			<td>=NOT(logical)</td>
+			<td>Returns the opposite of a given logical or Boolean value.</td>
+		</tr>
+		<tr>
+			<td><b>OR</b></td>
+			<td>=OR(logical1, [logical2], ...)</td>
+			<td>Returns TRUE if at least one of the logical expressions is TRUE; otherwise, FALSE.</td>
+		</tr>
+    </tbody>
+</table>
+<br>
+
+### Information functions
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>Function</b></td>
+			<td><b>Formula</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>ISBINARY</b></td>
+			<td>=ISBINARY(value)</td>
+			<td>Returns TRUE if the value is binary; otherwise, returns FALSE.</td>
+		</tr>
+		<tr>
+			<td><b>ISBLANK</b></td>
+			<td>=ISBLANK(A1)</td>
+			<td>Returns TRUE if a cell is empty; otherwise, returns FALSE.</td>
+		</tr>
+		<tr>
+			<td><b>ISEVEN</b></td>
+			<td>=ISEVEN(number)</td>
+			<td>Returns TRUE if a number is even, or FALSE if number is odd. <br>Works with integer numbers.</td>
+		</tr>
+		<tr>
+			<td><b>ISNOTEXT</b></td>
+			<td>=ISNOTEXT(value)</td>
+			<td>Returns TRUE if a cell contains any value except text; otherwise, returns FALSE.</td>
+		</tr>
+		<tr>
+			<td><b>ISNUMBER</b></td>
+			<td>=ISNUMBER(value)</td>
+			<td>Returns TRUE if a cell contains a number; otherwise, returns FALSE.</td>
+		</tr>
+		<tr>
+			<td><b>ISODD</b></td>
+			<td>=ISODD(number)</td>
+			<td>Returns TRUE if a number is odd, or FALSE if number is even. <br>Works with integer numbers.</td>
+		</tr>
+		<tr>
+			<td><b>ISTEXT</b></td>
+			<td>=ISTEXT(value)</td>
+			<td>Returns TRUE if a value is text; otherwise, returns FALSE.</td>
+		</tr>
+		<tr>
+			<td><b>N</b></td>
+			<td>=N(value)</td>
+			<td>Returns a value converted to a number.</td>
+		</tr>
+    </tbody>
+</table>
+<br>
+
+### Financial functions
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>Function</b></td>
+			<td><b>Formula</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>ACCRINT</b></td>
+			<td>=ACCRINT(issue, id, sd, rate, par, frequency, [basis], [calc_method]), <br><br> where:
+			<ul>
+				<li><i>issue</i> - the issue date of the security;</li>
+				<li><i>id</i> - the security's first interest date;</li>
+				<li><i>sd</i> - the security's settlement date;</li>
+				<li><i>rate</i> - the security's annual coupon rate;</li>
+				<li><i>par</i> - the security's par value, $1,000 by default;</li>
+				<li><i>frequency</i> - the number of coupon payments per year:<br> - 1 for annual payments; <br>- 2 for semi-annual payments;<br>- 4 for quarterly payments.</li>
+				<li><i>basis</i> - optional, the type of day count basis to use (0-4, 0 by default);</li>
+				<li><i>calc_method</i> - optional, the way to calculate the total accrued interest when the date of settlement is later than the date of first interest (0 or 1(default)).</li>
+			</ul></td>
+			<td>Returns the accrued interest for a security that pays periodic interest.</td>
+		</tr>
+		<tr>
+			<td><b>PMT</b></td>
+			<td>=PMT(rate, nper, pv, [fv], [type]), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the interest rate for the loan. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>nper</i> - the total number of months of payments for the loan. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pv</i> - the present value (or the current total amount of loan);</li>
+				<li><i>fv</i> - optional, the future value, 0 by default;</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Calculates the monthly payment for a loan based on constant payments and a constant interest rate.</td>
+		</tr>
+		<tr>
+			<td><b>FV</b></td>
+			<td>=FV(rate, nper, pmt, [pv], [type]), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>nper</i> - the total number of payment periods in an annuity. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pmt</i> - the payment made each period;</li>
+				<li><i>pv</i> - optional, the present value, or the lump-sum amount that a series of future payments is worth right now, 0 by default;</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Calculates the future value of an investment. </td>
+		</tr>
+		<tr>
+			<td><b>DB</b></td>
+			<td>=DB(cost, salvage, life, period, [month]), <br><br> where:
+			<ul>
+				<li><i>cost</i> - the initial cost of the asset;</li>
+				<li><i>salvage</i> - the value of the asset at the end of the depreciation;</li>
+				<li><i>life</i> - the number of periods over which the asset is being depreciated;</li>
+				<li><i>period</i> - the period to calculate depreciation for;</li>
+				<li><i>month</i> - optional, the number of months in the first year, 12 by default.</li>
+			</ul></td>
+			<td>Calculates the depreciation of an asset for a specified period using the fixed-declining balance method.</td>
+		</tr>
+		<tr>
+			<td><b>DDB</b></td>
+			<td>=DDB(cost, salvage, life, period, [factor]), <br><br> where:
+			<ul>
+				<li><i>cost</i> - the initial cost of the asset;</li>
+				<li><i>salvage</i> - the value of the asset at the end of the depreciation;</li>
+				<li><i>life</i> - the number of periods over which the asset is being depreciated;</li>
+				<li><i>period</i> - the period to calculate depreciation for;</li>
+				<li><i>factor</i> - optional, the rate at which the balance declines, 2 (the double-declining balance method) by default</li>
+			</ul></td>
+			<td>Calculates the depreciation of an asset for a specified period using the double-declining balance method or another method you specify.</td>
+		</tr>
+		<tr>
+			<td><b>DOLLARDE</b></td>
+			<td>=DOLLARDE(fractional_dollar, fraction)</td>
+			<td>Converts a dollar price specified as an integer part and a fraction part into a dollar price displayed as a decimal number.</td>
+		</tr>
+		<tr>
+			<td><b>DOLLARFR</b></td>
+			<td>=DOLLARFR(decimal_dollar, fraction)</td>
+			<td>Converts a decimal number into fractional dollar number.</td>
+		</tr>
+		<tr>
+			<td><b>EFFECT</b></td>
+			<td>=EFFECT(nominal_rate, npery)<br><br> <i>nominal_rate</i> must be >= 0, <i>npery</i> must be > 1.</td>
+			<td>Returns the effective annual interest rate on the base of the nominal annual interest rate and the number of compounding periods per year you specify.<br> Works with numeric values. </td>
+		</tr>
+		<tr>
+			<td><b>FVSCHEDULE</b></td>
+			<td>=FVSCHEDULE(principal, schedule), <br><br> where:
+			<ul>
+				<li><i>principal</i> - the present value;</li>
+				<li><i>schedule</i> - an array of interest rates to apply. The values in the array can be numbers or blank cells; any other value produces the error value. Blank cells are taken as zeros.</li>
+			</ul></td>
+			<td>Returns the future value of an initial principal (=present value) after applying a series of compound interest rates.</td>
+		</tr>
+		<tr>
+			<td><b>IRR</b></td>
+			<td>=IRR(values, [guess]), <br><br> where:
+			<ul>
+				<li><i>values</i> - an array or reference to cells that contain values. The array must contain at least one positive value and one negative value;</li>
+				<li><i>guess</i> - optional, an estimate for expected IRR, .1 (=10%) by default.</li>
+			</ul></td>
+			<td>Returns the internal rate of return (IRR) for a series of cash flows that occur at regular intervals.</td>
+		</tr>
+		<tr>
+			<td><b>IPMT</b></td>
+			<td>=IPMT(rate, per, nper, pv, [fv], [type]), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>per</i> - the period for which you want to find the interest and must be in the range between 1 and nper;</li>
+				<li><i>nper</i> - the total number of payment periods in an annuity. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pv</i> - the present value, or the lump-sum amount that a series of future payments is worth right now;</li>
+				<li><i>fv</i> - optional, the future value, 0 by default;</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.</td>
+		</tr>
+		<tr>
+			<td><b>ISPMT</b></td>
+			<td>=ISPMT(rate, per, nper, pv), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the interest rate for the investment. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>per</i> - the period for which you want to find the interest and must be in the range between 1 and nper;</li>
+				<li><i>nper</i> - the total number of payment periods for the investment. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pv</i> - the present value of the investment. For a loan, pv is the loan amount.</li>
+			</ul></td>
+			<td>Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.</td>
+		</tr>
+		<tr>
+			<td><b>NPV</b></td>
+			<td>=NPV(rate,value1,[value2],...), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the rate of discount over one year;</li>
+				<li><i>value1, value2</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
+			</ul></td>
+			<td>Calculates the net present value of an investment by using a discount rate and a series of future payments (negative values) and income (positive values).</td>
+		</tr>
+		<tr>
+			<td><b>NOMINAL</b></td>
+			<td>=NOMINAL(effect_rate, npery), <br><br><i>effect_rate</i> must be >= 0, <i>npery</i> must be > 1. </td>
+			<td>Returns the nominal annual interest rate on the base of the effective rate and the number of compounding periods per year you specify.</td>
+		</tr>
+		<tr>
+			<td><b>NPER</b></td>
+			<td>=NPER(rate,pmt,pv,[fv],[type]), <br><br>where:
+			<ul>
+				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>pmt</i> - the payment made each period;</li>
+				<li><i>pv</i> - the present value, or the lump-sum amount that a series of future payments is worth right now;</li>
+				<li><i>fv</i> - optional, the future value, 0 by default;</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.<br></td>
+		</tr>
+		<tr>
+			<td><b>PDURATION</b></td>
+			<td>=PDURATION(rate, pv, fv), <br><br>where:
+			<ul>
+				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>pv</i> - the present value of the investment;</li>
+				<li><i>fv</i> - the desired future value of the investment.</li>
+			</ul><br> All arguments must be positive values.</td>
+			<td>Returns the number of periods required by an investment to reach a specified value.<br></td>
+		</tr>
+		<tr>
+			<td><b>PPMT</b></td>
+			<td>=PPMT(rate, per, nper, pv, [fv], [type]), <br><br>where:
+			<ul>
+				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>per</i> - the period for which you want to find the interest and must be in the range between 1 and nper;</li>
+				<li><i>nper</i> - the total number of payment years in an annuity. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pv</i> - the present value - the total amount that a series of future payments is worth now;</li>
+				<li><i>fv</i> - the desired future value or a cash balance.</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Returns the payment on the principal for a specified period for an investment based on periodic, constant payments and a constant interest rate.<br></td>
+		</tr>
+		<tr>
+			<td><b>PV</b></td>
+			<td>=PV(rate, nper, pmt, [fv], [type]), <br><br>where:
+			<ul>
+				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>nper</i> - the total number of payment years in an annuity. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pmt</i> - the payment made each period. If <i>pmt</i> is omitted, you must include the <i>fv</i> argument;</li>
+				<li><i>fv</i> - optional, the desired future value or a cash balance.</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Returns the present value of a loan or an investment, based on a constant interest rate.<br></td>
+		</tr>
+    </tbody>
+</table>
+
 
 ### Boolean operators
 
