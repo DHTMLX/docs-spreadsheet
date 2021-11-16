@@ -42,11 +42,11 @@ This is how a spreadsheet with data in various number formats looks like:
 
 ## Date format
 
-You can define the format the dates to be displayed in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property. The default format is "%d/%m/%Y %H:%i". 
+You can define the format the dates to be displayed in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property. The default format is "%d/%m/%Y". 
 
 ~~~js
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	dateFormat: "%d/%m/%Y"
+	dateFormat: "%D/%M/%Y"
 });
 ~~~
 

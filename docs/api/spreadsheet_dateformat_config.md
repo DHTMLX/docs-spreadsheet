@@ -10,11 +10,11 @@ description: You can learn about the dateFormat config in the documentation of t
 
 @signature: {`dateFormat?: string;`}
 
-@default: "%d/%m/%Y %H:%i"
+@default: "%d/%m/%Y"
 
 @example:
 var spreadsheet = new dhx.Spreadsheet(document.body, {
-	dateFormat: "%d/%m/%Y"
+	dateFormat: "%D/%M/%Y"
 });
 
 @descr:
