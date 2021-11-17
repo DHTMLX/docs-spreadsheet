@@ -41,11 +41,10 @@ const styledData = {
 	}
 };
 
-var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
+var spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(styledData);
 
 @relatedsample:
-**Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 
 **Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 
@@ -58,7 +57,7 @@ Starting from v4.1, you can load several sheets into the spreadsheet by preparin
 {{note In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
 
 ~~~js
-var styledData = {
+const styledData = {
     styles: {
         someclass: {
             background: "#F2F2F2",
@@ -119,6 +118,8 @@ The data should be an *object* with the following attributes:
         - **value** - (string,number) the value of a cell
         - **css** - (*string*) optional, the name of the CSS class
         - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+
+**Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 
 @changelog:
 The **rows** and **cols** properties of the sheet object have been added in v4.2

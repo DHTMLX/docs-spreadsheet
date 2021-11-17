@@ -28,7 +28,7 @@ spreadsheet.setValue("A1:D1",[1,2,3]);
 
 1\. The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
 
-**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+**Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 
 2\. Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 

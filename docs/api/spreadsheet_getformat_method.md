@@ -20,9 +20,6 @@ The format(s) applied to the value of the cell(s).
 var format = spreadsheet.getFormat("A1");
 // ->"currency"
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
-
 @descr:
 Starting with v4.1, the reference to a cell can be specified in the following format:
 

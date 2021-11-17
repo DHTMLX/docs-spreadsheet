@@ -15,73 +15,18 @@ The component also supports [export of data into an Excel file](#exporting-data)
 
 ## Preparing data
 
-DHTMLX Spreadsheet expects data in the JSON format. It is an array with data objects each of which has two properties:
+DHTMLX Spreadsheet expects data in the JSON format. 
 
-- **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
-- **value** - (*string,number*) the value of a cell
+It can be a simple array with data objects each of which can have the following properties:
 
-The example below demonstrates a simple data set for Spreadsheet:
+- **cell** - (*string*) mandatory, the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+- **value** - (*string,number*) mandatory, the value of a cell
+- **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
 
-~~~js
- var data = [
-	{ cell: "a1", value: "Country" },
-	{ cell: "b1", value: "Product" },
-	{ cell: "c1", value: "Price" },
-	{ cell: "d1", value: "Amount" },
-	{ cell: "e1", value: "Total Price" },
-
-	{ cell: "a2", value: "Ecuador" },
-	{ cell: "b2", value: "Banana" },
-	{ cell: "c2", value: 6.68},
-	{ cell: "d2", value: 430 },
-	{ cell: "e2", value: 2872.4 },
-    
-    { cell: "a3", value: "Belarus" },
-	{ cell: "b3", value: "Apple" },
-	{ cell: "c3", value: 3.75},
-	{ cell: "d3", value: 600 },
-	{ cell: "e3", value: 2250 },
-    
-    // more data
-];
-~~~
-
-### Setting styles for cells
-
-You can also define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells.
-
-A CSS class is set for a cell via the **css** property.
+{{note Use this way if you need to create a data set for one sheet only.}}
 
 ~~~js
-var styledData = {
-    data: [
-        { cell: "a1", value: "Country" },
-        { cell: "b1", value: "Product" },
-        { cell: "c1", value: "Price" },
-        { cell: "d1", value: "Amount" },
-        { cell: "e1", value: "Total Price" },
-
-        { cell: "a2", value: "Ecuador" },
-        { cell: "b2", value: "Banana" },
-        { cell: "c2", value: 6.68, css: "someclass" },
-        { cell: "d2", value: 430, css: "someclass" },
-        { cell: "e2", value: 2872.4 }
-    ],
-	styles: {
-		someclass: {
-			background: "#F2F2F2",
-			color: "#F57C00"
-		}
-	}
-}
-~~~
-
-### Setting number formats for cells
-
-You can specify particular number format for values of cells within a data set. A format is set for a cell via the **format** property. As the value of this property you should set the id of any of the [default formats](number_formatting.md#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added.
-
-~~~js
- var data = [
+const data = [
 	{ cell: "a1", value: "Country" },
 	{ cell: "b1", value: "Product" },
 	{ cell: "c1", value: "Price" },
@@ -99,6 +44,66 @@ You can specify particular number format for values of cells within a data set. 
 ];
 ~~~
 
+Or it can be an object which allows you to prepare a data set for several sheets at once. It can look like this:
+
+~~~js
+const data = {
+    sheets : [
+        { 
+            name: "sheet 1", 
+            id: "sheet_1",
+            data: [
+                { cell: "a1", value: "Country" },
+                { cell: "b1", value: "Product" },
+				// more data
+            ]
+        }, 
+        { 
+            name: "sheet 2", 
+            id: "sheet_2", 
+            data: [
+                { cell: "a1", value: "Country" },
+                { cell: "b1", value: "Product" },
+				// more data
+            ]
+        },
+		// more sheets 
+    ]
+};
+~~~
+
+Check the [details](api/spreadsheet_parse_method.md/#details).
+
+### Setting styles for cells
+
+You may need to define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells.
+
+A CSS class is set for a cell via the **css** property.
+
+~~~js
+const styledData = {
+	styles: {
+		someclass: {
+			background: "#F2F2F2",
+			color: "#F57C00"
+		}
+	},
+    data: [
+        { cell: "a1", value: "Country" },
+        { cell: "b1", value: "Product" },
+        { cell: "c1", value: "Price" },
+        { cell: "d1", value: "Amount" },
+        { cell: "e1", value: "Total Price" },
+
+        { cell: "a2", value: "Ecuador" },
+        { cell: "b2", value: "Banana" },
+        { cell: "c2", value: 6.68, css: "someclass" },
+        { cell: "d2", value: 430, css: "someclass" },
+        { cell: "e2", value: 2872.4 }
+    ],
+}
+~~~
+
 ## External data loading
 
 ### Loading JSON data
@@ -106,7 +111,7 @@ You can specify particular number format for values of cells within a data set. 
 By default, Spreadsheet expects data in JSON format. To load data from an external source, use the [](api/spreadsheet_load_method.md) method. It takes the URL of the file with data as a parameter:
 
 ~~~js
-var spreadsheet = new dhx.Spreadsheet("container");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -117,7 +122,7 @@ spreadsheet.load("../common/data.json");
 You can also load data in the CSV format. For this, you need to call the [](api/spreadsheet_load_method.md) method and pass the name of the format ("csv") as the second parameter:
 
 ~~~js
-var spreadsheet = new dhx.Spreadsheet("container");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -179,28 +184,14 @@ spreadsheet.load("/some/data").then(function(){
 
 ## Loading from local source
 
-To load data from a local source, make use of the [](api/spreadsheet_parse_method.md) method. The method takes an array with data objects as a parameter:
+To load data from a local source, make use of the [](api/spreadsheet_parse_method.md) method. Pass a [predefined data set](#preparing-data) as a parameter of this method:
 
 ~~~js
-var data = [
-	{ cell: "a1", value: "Country" },
-	{ cell: "b1", value: "Product" },
-	{ cell: "c1", value: "Price" },
-
-	{ cell: "a2", value: "Ecuador" },
-	{ cell: "b2", value: "Banana" },
-	{ cell: "c2", value: 6.68},
-
-	{ cell: "a3", value: "Belarus" },
-	{ cell: "b3", value: "Apple" },
-	{ cell: "c3", value: 3.75}
-];
-
-var spreadsheet = new dhx.Spreadsheet(document.body);
+const spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.parse(data);
 ~~~
 
-**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+**Related sample**: [Spreadsheet. Custom Cells Count](https://snippet.dhtmlx.com/vc3mstsw)
 
 For details on how to load multiple sheets into the spreadsheet, see the [Work with Sheets](working_with_sheets.md#loading-multiple-sheets) article.
 
