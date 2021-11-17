@@ -6,7 +6,7 @@ description: You can learn about the dateFormat config in the documentation of t
 
 # dateFormat
 
-@short: sets the number of columns a spreadsheet will have on initialization
+@short: defines the format of dates in the spreadsheet
 
 @signature: {`dateFormat?: string;`}
 

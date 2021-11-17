@@ -8,22 +8,32 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 ## Version 4.2
 
-<span class="rel_date_pivot">released on November 16, 2021</span>
+<span class="rel_date_pivot">released on November 23, 2021</span>
 
 ### New functionality
 
-- New [removeSelectedCell()](api/selection_removeselectedcell_method.md) method of the Selection object
-- The ability to set the active sheet via the [setActiveSheet()](api/spreadsheet_setactivesheet_method.md) method
-
-- [clear()](api/spreadsheet_clear_method.md), [clearSheet()](api/spreadsheet_clearsheet_method.md)  methods
-- [beforeClear](api/spreadsheet_beforeclear_event.md), [afterClear](api/spreadsheet_afterclear_event.md), [beforeSheetClear](api/spreadsheet_beforesheetclear_event.md), [afterSheetClear](api/spreadsheet_aftersheetclear_event.md) events
-- [dateFormat](api/spreadsheet_dateformat_config.md)
-- [The Date format for displaying the content of a cell as dates is added to default number formats](number_formatting.md/#date-format)
-- the ability to resize rows from UI
-- The [parse()](api/spreadsheet_parse_method.md) and [serialize()](api/spreadsheet_serialize_method.md) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet
-- Support for [logical operators](functions.md/#boolean-operators) added
+- Support for [boolean operators](functions.md/#boolean-operators)
+- Support for [date and time](functions.md/#date-and-time-functions), [financial](functions.md/#financial-functions), [information](functions.md/#information-functions), [regex](functions.md/#regex-functions), and [other](functions.md/#other-functions) functions
+- The ability to define the format of dates in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property
+- [Date format is added to default number formats](number_formatting.md/#default-number-formats)
 - New [Vertical align](data_formatting.md/#alignment) button is added into the toolbar
+- The ability to resize rows from UI
+- The ability to remove selection from the specified cells via the [removeSelectedCell()](api/selection_removeselectedcell_method.md) method of the Selection object
+- The ability to set the active sheet via the [setActiveSheet()](api/spreadsheet_setactivesheet_method.md) method
+- The ability to clear a spreadsheet or its sheet via the [clear()](api/spreadsheet_clear_method.md) or [clearSheet()](api/spreadsheet_clearsheet_method.md) method correspondingly
+- New events are added: [beforeClear](api/spreadsheet_beforeclear_event.md), [afterClear](api/spreadsheet_afterclear_event.md), [beforeSheetClear](api/spreadsheet_beforesheetclear_event.md), [afterSheetClear](api/spreadsheet_aftersheetclear_event.md)
+
+### Updates
+
 - Extended list of [locale options](localization.md)
+- Extended list of [math](functions.md/#math-functions) and [string](functions.md/#string-functions) functions
+- The Align block of the Spreadsheet toolbar is updated. Check the details in the [Migration article](migration.md/#41---42)
+- The [parse()](api/spreadsheet_parse_method.md) and [serialize()](api/spreadsheet_serialize_method.md) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet.
+
+### Fixes
+
+- Issue with the CTRL-X shortcut key
+- Issue which caused the script error to appear when editing a cell in the spreadsheet with hidden [editing bar](api/spreadsheet_editline_config.md/)
 
 ## Version 4.1.3
 
