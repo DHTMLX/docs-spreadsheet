@@ -27,7 +27,7 @@ You can compare two values via using logical expressions that in any given case 
 | &gt;=    | =A1&gt;=B1    | Returns TRUE if the value in cell A1 is greater than or equal to the value in cell B1; otherwise, FALSE. |
 | &lt;=    | =A1&lt;=B1    | Returns TRUE if the value in cell A1 is less than or equal to the value in cell B1; otherwise, FALSE.    |
 
-### Date and time functions
+### Date functions
 
 <table>
 	<tbody>
@@ -43,8 +43,8 @@ You can compare two values via using logical expressions that in any given case 
 		</tr>
 		<tr>
 			<td><b>DATEDIF</b></td>
-			<td>=DATEDIF(start_date,end_date,unit)<br><br> The <a href="https://support.microsoft.com/en-us/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c">unit</a> argument is used to define which type of information you want returned.</td>
-			<td>Returns the number of days, months, or years between two dates.</td>
+			<td>=DATEDIF(start_date,end_date,unit)</td>
+			<td>Returns the number of days, months, or years between two dates.<br> The <a href="https://support.microsoft.com/en-us/office/datedif-function-25dba1a4-2812-480b-84dd-8b32a451b35c">unit</a> argument is used to define which type of information you want returned.</td>
 		</tr>
 		<tr>
 			<td><b>DATEVALUE</b></td>
@@ -63,7 +63,7 @@ You can compare two values via using logical expressions that in any given case 
 		</tr>
 		<tr>
 			<td><b>DAYS360</b></td>
-			<td>=DAYS360(start_date,end_date)</td>
+			<td>=DAYS360(start_date,end_date,[method]])</td>
 			<td>Returns the number of days between 2 dates, based on a 360-day year (twelve 30-days months).</td>
 		</tr>
 		<tr>
@@ -88,13 +88,13 @@ You can compare two values via using logical expressions that in any given case 
 		</tr>
 		<tr>
 			<td><b>NETWORKDAYS</b></td>
-			<td>=NETWORKDAYS(start_date, end_date)</td>
-			<td>Returns the number of whole working days between two dates. Working days exclude weekends.</td>
+			<td>=NETWORKDAYS(start_date, end_date, [holidays])</td>
+			<td>Returns the number of whole working days between two dates. Working days exclude weekends and any dates specified in <i>holidays</i>.</td>
 		</tr>
 		<tr>
 			<td><b>NETWORKDAYSINTL</b></td>
-			<td>=NETWORKDAYSINTL(start_date, end_date, [weekend])</td>
-			<td>Returns the number of whole working days between two dates. The optional <a href="https://support.microsoft.com/en-us/office/networkdays-intl-function-a9b26239-4f20-46a1-9ab8-4e925bfd5e28">weekend</a> parameter is used to specify which days of the week are considered weekends.</td>
+			<td>=NETWORKDAYSINTL(start_date, end_date, [weekend], [holidays])</td>
+			<td>Returns the number of whole working days between two dates. <br>The optional <a href="https://support.microsoft.com/en-us/office/networkdays-intl-function-a9b26239-4f20-46a1-9ab8-4e925bfd5e28">weekend</a> parameter is used to specify which days of the week are considered weekends. <br><i>Weekend days</i> and <i>holidays</i> are not considered as workdays.</td>
 		</tr>
 		<tr>
 			<td><b>NOW</b></td>
@@ -102,34 +102,24 @@ You can compare two values via using logical expressions that in any given case 
 			<td>Returns the current date.</td>
 		</tr>
 		<tr>
-			<td><b>TIME</b></td>
-			<td>=TIME(hour,minute,second)</td>
-			<td>Returns the decimal number (the value in the range from 0 to 0.99988426 representing the times from 0:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 P.M.)) for a particular time.</td>
-		</tr>
-		<tr>
-			<td><b>TIMEVALUE</b></td>
-			<td>=TIMEVALUE(time_text)</td>
-			<td>Returns the decimal number of the time represented by a text string. The decimal number is the value in the range from 0 to 0.99988426 representing the times from 0:00:00 (12:00:00 AM) to 23:59:59 (11:59:59 P.M.).</td>
-		</tr>
-		<tr>
 			<td><b>WEEKDAY</b></td>
 			<td>=WEEKDAY(date,[return_type])</td>
-			<td>Returns the day of the week for the specified date. The <a href="https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a">return_type</a> argument is used to define which day of the week is considered the first day.</td>
+			<td>Returns the day of the week for the specified date. <br>The <a href="https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a">return_type</a> argument is used to define which day of the week is considered the first day.</td>
 		</tr>
 		<tr>
 			<td><b>WEEKNUM</b></td>
 			<td>=WEEKNUM(date,[return_type])</td>
-			<td>Returns the week number for the specified date. The <a href="https://support.microsoft.com/en-us/office/weeknum-function-e5c43a03-b4ab-426c-b411-b18c13c75340">return_type</a> argument is used to define which day of the week is considered the first day.</td>
+			<td>Returns the week number for the specified date. <br>The <a href="https://support.microsoft.com/en-us/office/weeknum-function-e5c43a03-b4ab-426c-b411-b18c13c75340">return_type</a> argument is used to define which day of the week is considered the first day.</td>
 		</tr>
 		<tr>
 			<td><b>WORKDAY</b></td>
-			<td>=WORKDAY(start_date, days)</td>
-			<td>Returns the date of the nearest working day n days in the future or past. Working days exclude weekends.</td>
+			<td>=WORKDAY(start_date, days, [holidays])</td>
+			<td>Returns the date of the nearest working day n days in the future or past.<br>Working days exclude weekends and any dates specified in <i>holidays</i>.</td>
 		</tr>
 		<tr>
 			<td><b>WORKDAYINTL</b></td>
-			<td>=WORKDAYINTL(start_date, days, [weekend])</td>
-			<td>Returns the date of the nearest working day n days in the future or past. The optional <a href="https://support.microsoft.com/en-us/office/workday-intl-function-a378391c-9ba7-4678-8a39-39611a9bf81d">weekend</a> parameter is used to specify which days of the week are considered weekends.</td>
+			<td>=WORKDAYINTL(start_date, days, [weekend], [holidays])</td>
+			<td>Returns the date of the nearest working day n days in the future or past. <br>The optional <a href="https://support.microsoft.com/en-us/office/workday-intl-function-a378391c-9ba7-4678-8a39-39611a9bf81d">weekend</a> parameter is used to specify which days of the week are considered weekends. <br><i>Weekend days</i> and <i>holidays</i> are not considered as workdays.</td>
 		</tr>
 		<tr>
 			<td><b>YEAR</b></td>
@@ -139,7 +129,7 @@ You can compare two values via using logical expressions that in any given case 
 		<tr>
 			<td><b>YEARFRAC</b></td>
 			<td>=YEARFRAC(start_date, end_date, [basis])</td>
-			<td>Returns the year of the specified date. The optional <a href="https://support.microsoft.com/en-us/office/yearfrac-function-3844141e-c76d-4143-82b6-208454ddc6a8">basis</a> argument is used to define the type of day count basis.</td>
+			<td>Returns the year of the specified date. <br>The optional <a href="https://support.microsoft.com/en-us/office/yearfrac-function-3844141e-c76d-4143-82b6-208454ddc6a8">basis</a> argument is used to define the type of day count basis.</td>
 		</tr>
     </tbody>
 </table>
@@ -164,34 +154,10 @@ You can compare two values via using logical expressions that in any given case 
 				<li><i>rate</i> - the security's annual coupon rate;</li>
 				<li><i>par</i> - the security's par value, $1,000 by default;</li>
 				<li><i>frequency</i> - the number of coupon payments per year:<br> - 1 for annual payments; <br>- 2 for semi-annual payments;<br>- 4 for quarterly payments.</li>
-				<li><i>basis</i> - optional, the type of day count basis to use (<a href="https://support.microsoft.com/en-us/office/accrint-function-fe45d089-6722-4fb3-9379-e1f911d8dc74">0-4, 0 by default</a>);</li>
+				<li><i>basis</i> - optional, the type of day count basis to use;</li>
 				<li><i>calc_method</i> - optional, the way to calculate the total accrued interest when the date of settlement is later than the date of first interest (<a href="https://support.microsoft.com/en-us/office/accrint-function-fe45d089-6722-4fb3-9379-e1f911d8dc74">0 or 1(default)</a>).</li>
 			</ul></td>
 			<td>Returns the accrued interest for a security that pays periodic interest.</td>
-		</tr>
-		<tr>
-			<td><b>PMT</b></td>
-			<td>=PMT(rate, nper, pv, [fv], [type]), <br><br> where:
-			<ul>
-				<li><i>rate</i> - the interest rate for the loan. For monthly payments, <i>rate</i>  =  rate/12;</li>
-				<li><i>nper</i> - the total number of months of payments for the loan. For monthly payments, <i>nper</i>=nper*12;</li>
-				<li><i>pv</i> - the present value (or the current total amount of loan);</li>
-				<li><i>fv</i> - optional, the future value, 0 by default;</li>
-				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
-			</ul></td>
-			<td>Calculates the monthly payment for a loan based on constant payments and a constant interest rate.</td>
-		</tr>
-		<tr>
-			<td><b>FV</b></td>
-			<td>=FV(rate, nper, pmt, [pv], [type]), <br><br> where:
-			<ul>
-				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
-				<li><i>nper</i> - the total number of payment periods in an annuity. For monthly payments, <i>nper</i>=nper*12;</li>
-				<li><i>pmt</i> - the payment made each period;</li>
-				<li><i>pv</i> - optional, the present value, or the lump-sum amount that a series of future payments is worth right now, 0 by default;</li>
-				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
-			</ul></td>
-			<td>Calculates the future value of an investment. </td>
 		</tr>
 		<tr>
 			<td><b>DB</b></td>
@@ -233,6 +199,18 @@ You can compare two values via using logical expressions that in any given case 
 			<td>Returns the effective annual interest rate on the base of the nominal annual interest rate and the number of compounding periods per year you specify.<br> Works with numeric values. </td>
 		</tr>
 		<tr>
+			<td><b>FV</b></td>
+			<td>=FV(rate, nper, pmt, [pv], [type]), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the interest rate per period. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>nper</i> - the total number of payment periods in an annuity. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pmt</i> - the payment made each period;</li>
+				<li><i>pv</i> - optional, the present value, or the lump-sum amount that a series of future payments is worth right now, 0 by default;</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Calculates the future value of an investment. </td>
+		</tr>
+		<tr>
 			<td><b>FVSCHEDULE</b></td>
 			<td>=FVSCHEDULE(principal, schedule), <br><br> where:
 			<ul>
@@ -240,15 +218,6 @@ You can compare two values via using logical expressions that in any given case 
 				<li><i>schedule</i> - an array of interest rates to apply. The values in the array can be numbers or blank cells; any other value produces the error value. Blank cells are taken as zeros.</li>
 			</ul></td>
 			<td>Returns the future value of an initial principal (=present value) after applying a series of compound interest rates.</td>
-		</tr>
-		<tr>
-			<td><b>IRR</b></td>
-			<td>=IRR(values, [guess]), <br><br> where:
-			<ul>
-				<li><i>values</i> - an array or reference to cells that contain values. The array must contain at least one positive value and one negative value;</li>
-				<li><i>guess</i> - optional, an estimate for expected IRR, .1 (=10%) by default.</li>
-			</ul></td>
-			<td>Returns the internal rate of return (IRR) for a series of cash flows that occur at regular intervals.</td>
 		</tr>
 		<tr>
 			<td><b>IPMT</b></td>
@@ -264,6 +233,15 @@ You can compare two values via using logical expressions that in any given case 
 			<td>Returns the interest payment for a given period for an investment based on periodic, constant payments and a constant interest rate.</td>
 		</tr>
 		<tr>
+			<td><b>IRR</b></td>
+			<td>=IRR(values, [guess]), <br><br> where:
+			<ul>
+				<li><i>values</i> - an array or reference to cells that contain values. The array must contain at least one positive value and one negative value;</li>
+				<li><i>guess</i> - optional, an estimate for expected IRR, .1 (=10%) by default.</li>
+			</ul></td>
+			<td>Returns the internal rate of return (IRR) for a series of cash flows that occur at regular intervals.</td>
+		</tr>
+		<tr>
 			<td><b>ISPMT</b></td>
 			<td>=ISPMT(rate, per, nper, pv), <br><br> where:
 			<ul>
@@ -273,15 +251,6 @@ You can compare two values via using logical expressions that in any given case 
 				<li><i>pv</i> - the present value of the investment. For a loan, pv is the loan amount.</li>
 			</ul></td>
 			<td>Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.</td>
-		</tr>
-		<tr>
-			<td><b>NPV</b></td>
-			<td>=NPV(rate,value1,[value2],...), <br><br> where:
-			<ul>
-				<li><i>rate</i> - the rate of discount over one year;</li>
-				<li><i>value1, value2</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
-			</ul></td>
-			<td>Calculates the net present value of an investment by using a discount rate and a series of future payments (negative values) and income (positive values).</td>
 		</tr>
 		<tr>
 			<td><b>NOMINAL</b></td>
@@ -301,6 +270,15 @@ You can compare two values via using logical expressions that in any given case 
 			<td>Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.<br></td>
 		</tr>
 		<tr>
+			<td><b>NPV</b></td>
+			<td>=NPV(rate,value1,[value2],...), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the rate of discount over one year;</li>
+				<li><i>value1, value2</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
+			</ul></td>
+			<td>Calculates the net present value of an investment by using a discount rate and a series of future payments (negative values) and income (positive values).</td>
+		</tr>
+		<tr>
 			<td><b>PDURATION</b></td>
 			<td>=PDURATION(rate, pv, fv), <br><br>where:
 			<ul>
@@ -309,6 +287,18 @@ You can compare two values via using logical expressions that in any given case 
 				<li><i>fv</i> - the desired future value of the investment.</li>
 			</ul><br> All arguments must be positive values.</td>
 			<td>Returns the number of periods required by an investment to reach a specified value.<br></td>
+		</tr>
+		<tr>
+			<td><b>PMT</b></td>
+			<td>=PMT(rate, nper, pv, [fv], [type]), <br><br> where:
+			<ul>
+				<li><i>rate</i> - the interest rate for the loan. For monthly payments, <i>rate</i>  =  rate/12;</li>
+				<li><i>nper</i> - the total number of months of payments for the loan. For monthly payments, <i>nper</i>=nper*12;</li>
+				<li><i>pv</i> - the present value (or the current total amount of loan);</li>
+				<li><i>fv</i> - optional, the future value, 0 by default;</li>
+				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
+			</ul></td>
+			<td>Calculates the monthly payment for a loan based on constant payments and a constant interest rate.</td>
 		</tr>
 		<tr>
 			<td><b>PPMT</b></td>
@@ -363,8 +353,8 @@ You can compare two values via using logical expressions that in any given case 
 			<td>Returns TRUE if a number is even, or FALSE if number is odd. <br>Works with integer numbers.</td>
 		</tr>
 		<tr>
-			<td><b>ISNOTEXT</b></td>
-			<td>=ISNOTEXT(value)</td>
+			<td><b>ISNONTEXT</b></td>
+			<td>=ISNONTEXT(value)</td>
 			<td>Returns TRUE if a cell contains any value except text; otherwise, returns FALSE.</td>
 		</tr>
 		<tr>
@@ -816,7 +806,7 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 		<tr>
 			<td><b>DOLLAR</b></td>
 			<td>=DOLLAR(number, decimals)</td>
-			<td>Converts a number to text using the currency format, based on the number of digits to the right of the decimal point you specify (by default, 2).</td>
+			<td>Converts a number to text using the currency format, based on the number of digits to the right/left of the decimal point you specify (by default, 2).</td>
 		</tr>
 		<tr>
 			<td><b>EXACT</b></td>
@@ -830,8 +820,13 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 		</tr>
 		<tr>
 			<td><b>FIXED</b></td>
-			<td>=FIXED(number, [decimals])</td>
-			<td>Rounds a number to the specified number of decimals, formats the number in decimal format using a period and commas, and converts the result to text.</td>
+			<td>=FIXED(number, [decimals], [no_commas])</td>
+			<td>Rounds a number to the specified number of decimals, formats the number in decimal format using a period and commas, and converts the result to text. If <i>no_commas</i> is set to 1, the returned text won't include commas.</td>
+		</tr>
+		<tr>
+			<td><b>JOIN</b></td>
+			<td>=JOIN(separator, value1, value2,...)</td>
+			<td>Concatenates values using a specified separator.</td>
 		</tr>
         <tr>
 			<td><b>LEFT</b></td>
@@ -875,8 +870,8 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 		</tr>
 		<tr>
 			<td><b>SUBSTITUTE</b></td>
-			<td>=SUBSTITUTE(text, old_text, new_text)</td>
-			<td>Replaces old text with new text in a text string.</td>
+			<td>=SUBSTITUTE(text, old_text, new_text, [instance_num])</td>
+			<td>Replaces old text with new text in a text string. If you specify <i>instance_num</i>, only that instance of <i>old_text</i> is replaced; otherwise, all instances are replaced.</td>
 		</tr>
 		<tr>
 			<td><b>T</b></td>
