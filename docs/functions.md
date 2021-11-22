@@ -27,6 +27,8 @@ You can compare two values via using logical expressions that in any given case 
 | &gt;=    | =A1&gt;=B1    | Returns TRUE if the value in cell A1 is greater than or equal to the value in cell B1; otherwise, FALSE. |
 | &lt;=    | =A1&lt;=B1    | Returns TRUE if the value in cell A1 is less than or equal to the value in cell B1; otherwise, FALSE.    |
 
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
+
 ### Date functions
 
 <table>
@@ -134,6 +136,8 @@ You can compare two values via using logical expressions that in any given case 
     </tbody>
 </table>
 <br>
+
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ### Financial functions
 
@@ -328,6 +332,8 @@ You can compare two values via using logical expressions that in any given case 
     </tbody>
 </table>
 
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
+
 ### Information functions
 
 <table>
@@ -380,6 +386,8 @@ You can compare two values via using logical expressions that in any given case 
     </tbody>
 </table>
 <br>
+
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ### Math functions
 
@@ -746,6 +754,8 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 </table>
 <br>
 
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
+
 ### Regex functions
 
 <table>
@@ -773,6 +783,8 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
     </tbody>
 </table>
 <br>
+
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ### String functions
 
@@ -892,6 +904,8 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 </table>
 <br>
 
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
+
 ### Other functions
 
 <table>
@@ -940,7 +954,7 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 </table>
 <br>
 
-
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ## Getting cell formula
 

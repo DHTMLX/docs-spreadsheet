@@ -42,7 +42,7 @@ defaultFormats = [
 	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
 	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
 	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
-	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021 15:30" },
+	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
     { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~

@@ -258,6 +258,8 @@ const selected = spreadsheet.selection.getSelectedCell();
 console.log(selected); // -> "B3,D6,E4,E8"
 ~~~
 
+**Related sample:** [Spreadsheet. Remove selection](https://snippet.dhtmlx.com/u4j76cuh)
+
 ## Setting focus on a cell
 
 The *Selection* object allows setting focus on a desired spreadsheet cell, as well as getting the id of the cell in focus. Use the corresponding methods for this purpose:

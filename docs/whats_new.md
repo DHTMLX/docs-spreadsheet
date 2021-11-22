@@ -13,7 +13,7 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 ### New functionality
 
 - Support for [boolean operators](functions.md/#boolean-operators)
-- Support for [date and time](functions.md/#date-and-time-functions), [financial](functions.md/#financial-functions), [information](functions.md/#information-functions), [regex](functions.md/#regex-functions), and [other](functions.md/#other-functions) functions
+- Support for [date](functions.md/#date-functions), [financial](functions.md/#financial-functions), [information](functions.md/#information-functions), [regex](functions.md/#regex-functions), and [other](functions.md/#other-functions) functions
 - The ability to define the format of dates in the spreadsheet via the [`dateFormat`](api/spreadsheet_dateformat_config.md) property
 - [Date format is added to default number formats](number_formatting.md/#default-number-formats)
 - New [Vertical align](data_formatting.md/#alignment) button is added into the toolbar

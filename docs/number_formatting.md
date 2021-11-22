@@ -10,7 +10,7 @@ DHTMLX Spreadsheet supports number formatting that you can apply for numeric val
 
 ![Number format options](assets/number_format_overview.png)
 
-**Related sample**: [Spreadsheet. Number format](https://snippet.dhtmlx.com/wkoznm3n)
+**Related sample**: [Spreadsheet. Number format](https://snippet.dhtmlx.com/b4bfmatt)
 
 {{note There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.}}
 
@@ -31,7 +31,7 @@ defaultFormats = [
 	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
 	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
 	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
-	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021 15:30" },
+	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
     { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~
@@ -50,7 +50,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-Check [the full list of available characters used to make formats]((api/spreadsheet_dateformat_config.md)).
+Check [the full list of available characters used to make formats](api/spreadsheet_dateformat_config.md).
 
 ## Formats customization
 

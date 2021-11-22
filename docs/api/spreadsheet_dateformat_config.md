@@ -18,7 +18,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 });
 
 @descr:
-**Related sample**: [Spreadsheet. Number format](https://snippet.dhtmlx.com/wkoznm3n)
+**Related sample**: [Spreadsheet. Number format](https://snippet.dhtmlx.com/b4bfmatt)
 
 @descr:
 
