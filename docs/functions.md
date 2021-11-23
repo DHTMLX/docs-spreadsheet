@@ -157,7 +157,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>sd</i> - the security's settlement date;</li>
 				<li><i>rate</i> - the security's annual coupon rate;</li>
 				<li><i>par</i> - the security's par value, $1,000 by default;</li>
-				<li><i>frequency</i> - the number of coupon payments per year:<br> - 1 for annual payments; <br>- 2 for semi-annual payments;<br>- 4 for quarterly payments.</li>
+				<li><i>frequency</i> - the number of coupon payments per year (1 for annual payments); </li>
 				<li><i>basis</i> - optional, the type of day count basis to use;</li>
 				<li><i>calc_method</i> - optional, the way to calculate the total accrued interest when the date of settlement is later than the date of first interest (<a href="https://support.microsoft.com/en-us/office/accrint-function-fe45d089-6722-4fb3-9379-e1f911d8dc74">0 or 1(default)</a>).</li>
 			</ul></td>
@@ -597,10 +597,6 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>NE</b></td>
 			<td>Returns TRUE if the first argument is not equal to the second; otherwise FALSE.</td>
 		</tr>
-		<tr>
-			<td><b>NUMBERVALUE</b></td>
-			<td>Converts a number in text format to numeric value, using specified decimal and group separators.</td>
-		</tr>
         <tr>
 			<td><b>ODD</b></td>
 			<td>Returns a number rounded up to the nearest odd integer.</td>
@@ -859,6 +855,10 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>MID</b></td>
 			<td>=MID(text, start, count)</td>
 			<td>Returns a specific number of characters from a text string,<br> starting at the position you specify, based on the number <br>of characters you specify.</td>
+		</tr>
+		<tr>
+			<td><b>NUMBERVALUE</b></td>
+			<td>Converts a number in text format to numeric value, using specified decimal and group separators.</td>
 		</tr>
         <tr>
 			<td><b>PROPER</b></td>
