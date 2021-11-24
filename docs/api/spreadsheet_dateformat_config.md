@@ -18,9 +18,6 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 });
 
 @descr:
-**Related sample**: [Spreadsheet. Number format](https://snippet.dhtmlx.com/b4bfmatt)
-
-@descr:
 
 DHTMLX Spreadsheet uses the following characters for setting a date format:
 

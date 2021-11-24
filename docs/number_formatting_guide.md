@@ -8,8 +8,6 @@ description: You can study the user guide about number formatting in the documen
 
 ## Supported number formats
 
-<iframe src="https://snippet.dhtmlx.com/b4bfmatt?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
-
 There are several number formats you can apply to format numeric values of cells:
 
 <table>
@@ -52,4 +50,4 @@ Follow the steps below to apply a particular number format to Spreadsheet data v
 
 - Select the format you want to apply among the suggested options:
 
-![Number format options](assets/number_format_overview.png)
+![](assets/number_format_options.png)
