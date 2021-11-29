@@ -23,10 +23,12 @@ Parameters:
 ## Spreadsheet methods
 
 | Name                                         | Description                                         |
-| -------------------------------------------- | --------------------------------------------------- |
+| :------------------------------------------- | :-------------------------------------------------- |
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(api/spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(api/spreadsheet_addrow_method.md)         |
 | [](api/spreadsheet_addsheet_method.md)       | @getshort(api/spreadsheet_addsheet_method.md)       |
+| [](api/spreadsheet_clear_method.md)          | @getshort(api/spreadsheet_clear_method.md)          |
+| [](api/spreadsheet_clearsheet_method.md)     | @getshort(api/spreadsheet_clearsheet_method.md)     |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(api/spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(api/spreadsheet_deleterow_method.md)      |
 | [](api/spreadsheet_eachcell_method.md)       | @getshort(api/spreadsheet_eachcell_method.md)       |
@@ -44,6 +46,7 @@ Parameters:
 | [](api/spreadsheet_redo_method.md)           | @getshort(api/spreadsheet_redo_method.md)           |
 | [](api/spreadsheet_removesheet_method.md)    | @getshort(api/spreadsheet_removesheet_method.md)    |
 | [](api/spreadsheet_serialize_method.md)      | @getshort(api/spreadsheet_serialize_method.md)      |
+| [](api/spreadsheet_setactivesheet_method.md) | @getshort(api/spreadsheet_setactivesheet_method.md) |
 | [](api/spreadsheet_setformat_method.md)      | @getshort(api/spreadsheet_setformat_method.md)      |
 | [](api/spreadsheet_setstyle_method.md)       | @getshort(api/spreadsheet_setstyle_method.md)       |
 | [](api/spreadsheet_setvalue_method.md)       | @getshort(api/spreadsheet_setvalue_method.md)       |
@@ -54,7 +57,8 @@ Parameters:
 ## Spreadsheet events
 
 | Name                                            | Description                                            |
-| ----------------------------------------------- | ------------------------------------------------------ |
+| :---------------------------------------------- | :----------------------------------------------------- |
+| [](api/spreadsheet_afterclear_event.md)         | @getshort(api/spreadsheet_afterclear_event.md)         |
 | [](api/spreadsheet_aftercolumnadd_event.md)     | @getshort(api/spreadsheet_aftercolumnadd_event.md)     |
 | [](api/spreadsheet_aftercolumndelete_event.md)  | @getshort(api/spreadsheet_aftercolumndelete_event.md)  |
 | [](api/spreadsheet_aftereditend_event.md)       | @getshort(api/spreadsheet_aftereditend_event.md)       |
@@ -66,10 +70,12 @@ Parameters:
 | [](api/spreadsheet_afterselectionset_event.md)  | @getshort(api/spreadsheet_afterselectionset_event.md)  |
 | [](api/spreadsheet_aftersheetadd_event.md)      | @getshort(api/spreadsheet_aftersheetadd_event.md)      |
 | [](api/spreadsheet_aftersheetchange_event.md)   | @getshort(api/spreadsheet_aftersheetchange_event.md)   |
+| [](api/spreadsheet_aftersheetclear_event.md)    | @getshort(api/spreadsheet_aftersheetclear_event.md)    |
 | [](api/spreadsheet_aftersheetremove_event.md)   | @getshort(api/spreadsheet_aftersheetremove_event.md)   |
 | [](api/spreadsheet_aftersheetrename_event.md)   | @getshort(api/spreadsheet_aftersheetrename_event.md)   |
 | [](api/spreadsheet_afterstylechange_event.md)   | @getshort(api/spreadsheet_afterstylechange_event.md)   |
 | [](api/spreadsheet_aftervaluechange_event.md)   | @getshort(api/spreadsheet_aftervaluechange_event.md)   |
+| [](api/spreadsheet_beforeclear_event.md)        | @getshort(api/spreadsheet_beforeclear_event.md)        |
 | [](api/spreadsheet_beforecolumnadd_event.md)    | @getshort(api/spreadsheet_beforecolumnadd_event.md)    |
 | [](api/spreadsheet_beforecolumndelete_event.md) | @getshort(api/spreadsheet_beforecolumndelete_event.md) |
 | [](api/spreadsheet_beforeeditend_event.md)      | @getshort(api/spreadsheet_beforeeditend_event.md)      |
@@ -81,6 +87,7 @@ Parameters:
 | [](api/spreadsheet_beforeselectionset_event.md) | @getshort(api/spreadsheet_beforeselectionset_event.md) |
 | [](api/spreadsheet_beforesheetadd_event.md)     | @getshort(api/spreadsheet_beforesheetadd_event.md)     |
 | [](api/spreadsheet_beforesheetchange_event.md)  | @getshort(api/spreadsheet_beforesheetchange_event.md)  |
+| [](api/spreadsheet_beforesheetclear_event.md)   | @getshort(api/spreadsheet_beforesheetclear_event.md)   |
 | [](api/spreadsheet_beforesheetremove_event.md)  | @getshort(api/spreadsheet_beforesheetremove_event.md)  |
 | [](api/spreadsheet_beforesheetrename_event.md)  | @getshort(api/spreadsheet_beforesheetrename_event.md)  |
 | [](api/spreadsheet_beforestylechange_event.md)  | @getshort(api/spreadsheet_beforestylechange_event.md)  |
@@ -91,6 +98,7 @@ Parameters:
 | Name                                           | Description                                           |
 | ---------------------------------------------- | ----------------------------------------------------- |
 | [](api/spreadsheet_colscount_config.md)        | @getshort(api/spreadsheet_colscount_config.md)        |
+| [](api/spreadsheet_dateformat_config.md)        | @getshort(api/spreadsheet_dateformat_config.md)        |
 | [](api/spreadsheet_editline_config.md)         | @getshort(api/spreadsheet_editline_config.md)         |
 | [](api/spreadsheet_exportmodulepath_config.md) | @getshort(api/spreadsheet_exportmodulepath_config.md) |
 | [](api/spreadsheet_formats_config.md)          | @getshort(api/spreadsheet_formats_config.md)          |
@@ -104,12 +112,13 @@ Parameters:
 
 ## Selection methods
 
-| Name                                        | Description                                        |
-| ------------------------------------------- | -------------------------------------------------- |
-| [](api/selection_getfocusedcell_method.md)  | @getshort(api/selection_getfocusedcell_method.md)  |
-| [](api/selection_getselectedcell_method.md) | @getshort(api/selection_getselectedcell_method.md) |
-| [](api/selection_setfocusedcell_method.md)  | @getshort(api/selection_setfocusedcell_method.md)  |
-| [](api/selection_setselectedcell_method.md) | @getshort(api/selection_setselectedcell_method.md) |
+| Name                                           | Description                                           |
+| :--------------------------------------------- | :---------------------------------------------------- |
+| [](api/selection_getfocusedcell_method.md)     | @getshort(api/selection_getfocusedcell_method.md)     |
+| [](api/selection_getselectedcell_method.md)    | @getshort(api/selection_getselectedcell_method.md)    |
+| [](api/selection_removeselectedcell_method.md) | @getshort(api/selection_removeselectedcell_method.md) |
+| [](api/selection_setfocusedcell_method.md)     | @getshort(api/selection_setfocusedcell_method.md)     |
+| [](api/selection_setselectedcell_method.md)    | @getshort(api/selection_setselectedcell_method.md)    |
 
 ## Events Bus methods
 

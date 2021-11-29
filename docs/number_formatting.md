@@ -8,7 +8,7 @@ description: You can study the developer guide about number formatting in the do
 
 DHTMLX Spreadsheet supports number formatting that you can apply for numeric values in cells.
 
-![Number format options](assets/number_format_options.png)
+![](assets/number_format_options.png)
 
 {{note There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.}}
 
@@ -25,19 +25,30 @@ The default number formats are the following:
 
 ~~~js
 defaultFormats = [
-	{ name: "Common", id: "common", mask: "", example: "2702.31" },
-	{ name: "Number", id: "number", mask: "#,##0.00", example: "2702.31" },
-	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "27.0231%" },
-	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$2702.31" },
-    { name: "Text", id: "text", mask: "abc", example: "'2702.31'" }
+	{ name: "Common", id: "common", mask: "", example: "1500.31" },
+	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
+	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
+	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
+	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
+    { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~
 
 This is how a spreadsheet with data in various number formats looks like:
 
-<iframe src="https://snippet.dhtmlx.com/ihtkdcoc?mode=mobile" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+<iframe src="https://snippet.dhtmlx.com/ihtkdcoc?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+## Date format
+
+You can define the format the dates to be displayed in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property. The default format is "%d/%m/%Y". 
+
+~~~js
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+	dateFormat: "%D/%M/%Y"
+});
+~~~
+
+Check [the full list of available characters used to make formats](api/spreadsheet_dateformat_config.md).
 
 ## Formats customization
 

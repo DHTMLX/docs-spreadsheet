@@ -43,10 +43,13 @@ var en = {
 
 	configuration: "Configuration",
 	underline: "Underline",
-	align: "Align",
+	halign: "Horizontal align",
+	valign: "Vertical align",
 	left: "Left",
 	right: "Right",
 	center: "Center",
+	top: "Top",
+	bottom: "Bottom",
 
 	help: "Help",
 
@@ -54,6 +57,8 @@ var en = {
 	number: "number",
 	currency: "currency",
 	percent: "percent",
+	text: "text",
+	date: "date",
 
 	downloadAs: "Download as...",
 	importAs: "Import as...",

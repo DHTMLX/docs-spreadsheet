@@ -33,8 +33,7 @@ and
   <script src="codebase/spreadsheet.js"></script>   
   
   <link href="codebase/spreadsheet.css" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" 
-  		rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
 	<script>
@@ -57,21 +56,20 @@ As parameters, the constructor function takes the HTML container to place Spread
 <!DOCTYPE html>
 <html>
 <head>
- <title>How to Start with DHTMLX Spreadsheet</title>
- <script src="codebase/spreadsheet.js"></script>   
+	<title>How to Start with DHTMLX Spreadsheet</title>
+	<script src="codebase/spreadsheet.js"></script>   
    
- <link href="codebase/spreadsheet.css" rel="stylesheet">  
- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" 
-  	rel="stylesheet">
+ 	<link href="codebase/spreadsheet.css" rel="stylesheet">  
+ 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
- <div id="spreadsheet_container"></div>
+ 	<div id="spreadsheet_container"></div>
 
- <script>
-  var mySSheet = new dhx.Spreadsheet("spreadsheet_container", {
-    //config options
-  });
- </script>
+ 	<script>
+  		const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    		//config options
+  		});
+ 	</script>
 </body>
 </html>
 ~~~
@@ -83,7 +81,7 @@ Next you can specify additional configuration options you want the Spreadsheet c
 There are several options you can use to adjust the look and feel of Spreadsheet to your needs, e.g.: **toolbarBlocks**, **rowsCount** and **colsCount**. [Check the details](configuration.md).
 
 ~~~js
-var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 	toolbarBlocks: ["columns", "rows", "clear"],
 	rowsCount: 10,
 	colsCount: 10
@@ -97,7 +95,7 @@ The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it 
 The last step is to populate Spreadsheet with data. DHTMLX Spreadsheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse()** method and pass an object with data to it as in the example below:
 
 ~~~js title="data.json"
-var data = [
+const data = [
 	{ "cell": "a1", "value": "Country" },
 	{ "cell": "b1", "value": "Product" },
 	{ "cell": "c1", "value": "Price" },
@@ -118,14 +116,14 @@ var data = [
 ]
 
 // initializing spreadsheet
-var spreadsheet = new dhx.Spreadsheet("cont", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     //config
 });
 // loading data into spreadsheet
 spreadsheet.parse(data);
 ~~~
 
-**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+**Related sample**: [Spreadsheet. Custom Cells Count](https://snippet.dhtmlx.com/vc3mstsw)
 
 ## What's next
 

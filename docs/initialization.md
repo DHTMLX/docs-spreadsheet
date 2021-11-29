@@ -61,19 +61,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 ### Configuration properties
 
-This is a list of [properties](api/api_overview.md/#spreadsheet-properties) that you can specify in the Spreadsheet configuration object:
-
-- **colsCount** - (*number*) sets the number of columns a spreadsheet will have on initialization
-- **editLine** - (*boolean*) hides/shows the editing bar
-- **exportModulePath** - (*string*) sets the path to the export module
-- **formats** - (*array*) defines the list of number formats
-- **importModulePath** - (*string*) sets the path to the import module
-- **leftSplit** - (*number*) sets the number of columns fixed to the left side of the spreadsheet
-- **menu** - (*boolean*) hides/shows the menu
-- **multiSheets** - (*boolean*) enables/disables the ability to work with multiple sheets in the spreadsheet
-- **readonly** - (*boolean*) enables/disables the readonly mode
-- **rowsCount** - (*number*) sets the number of rows a spreadsheet will have on initialization
-- **toolbarBlocks** - (*array*) specifies blocks of buttons that will be shown in the toolbar of spreadsheet
+See the full list of [properties](api/api_overview.md/#spreadsheet-properties) that you can specify in the Spreadsheet configuration object in the [Spreadsheet API overview](api/api_overview.md/#spreadsheet-properties) article.
 
 You can set configuration options during initialization as the second parameter of the constructor:
 
