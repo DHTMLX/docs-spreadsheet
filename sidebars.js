@@ -10,7 +10,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Whats new and migration",
+      label: "What's new and migration",
       collapsible: true,
       collapsed: true,
       items: [
