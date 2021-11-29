@@ -858,6 +858,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>NUMBERVALUE</b></td>
+			<td>=NUMBERVALUE (text, [decimal_separator], [group_separator])</td>
 			<td>Converts a number in text format to numeric value, using specified decimal and group separators.</td>
 		</tr>
         <tr>
