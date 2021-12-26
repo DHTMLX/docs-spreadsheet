@@ -1,14 +1,14 @@
 ---
-sidebar_label: Event Handling
-title: Event Handling
+sidebar_label: Event handling
+title: Event handling
 description: You can learn about event handling in the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Event Handling
+# Event handling
 
 <iframe src="https://snippet.dhtmlx.com/2vkjyvsi?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-## Attaching Event Listeners
+## Attaching event listeners
 
 You can attach event listeners with the [spreadsheet.events.on()](api/eventsbus_on_method.md) method:
 
@@ -18,7 +18,7 @@ spreadsheet.events.on("AfterColumnAdd", function(cells){
 });
 ~~~
 
-## Detaching Event Listeners
+## Detaching event listeners
 
 To detach events, use [spreadsheet.events.detach()](api/eventsbus_detach_method.md):
 
@@ -29,7 +29,7 @@ var addcolumn = spreadsheet.events.on("AfterColumnAdd", function(cells){
 spreadsheet.events.detach(addcolumn);
 ~~~
 
-## Calling Events
+## Calling events
 
 To call events, use [spreadsheet.events.fire()](api/eventsbus_fire_method.md):
 
