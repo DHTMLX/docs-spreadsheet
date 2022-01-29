@@ -1,30 +1,39 @@
 ---
 sidebar_label: clearSheet()
-title: clear method
+title: clearSheet method
 description: You can learn about the clearSheet method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # clearSheet()
 
+### Description
+
 @short: clears a sheet
 
-@signature: {`clearSheet: (id?: string) => void;`}
+### Usage
 
-@params:
-`id: string` - optional, the id of a sheet to be cleared. If not specified, the method clears the currently active sheet.
+~~~jsx
+clearSheet(id?: string): void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (optional) the id of a sheet to be cleared. If not specified, the method clears the currently active sheet.
+
+### Example
+
+~~~jsx {5,7}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 // clears the sheet by its id
 spreadsheet.clearSheet("u1636003130922");
 // clears the currently active sheet
 spreadsheet.clearSheet();
+~~~
 
-@descr:
+**Changelog:** Added in v4.2 
+
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
-@changelog: added in v4.2
-
-@descr:
-#### Related article
-
-[Clearing sheets](working_with_sheets.md/#clearing-sheets)
+**Related articles:** [Clearing sheets](working_with_sheets.md/#clearing-sheets)

@@ -6,21 +6,34 @@ description: You can learn about the setActiveSheet method in the documentation 
 
 # setActiveSheet()
 
+### Description
+
 @short: sets the active sheet by its id
 
-@signature: {`setActiveSheet: (id: string) => void;`}
+### Usage
 
-@params:
-`id: string` - the id of a sheet
+~~~jsx
+setActiveSheet(id: string): void;
+~~~
 
-@example:
+### Parameters
+
+- `id` - (mandatory) the id of a sheet
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// sets the active sheet by the specified id
 spreadsheet.setActiveSheet("u1636003130922");
+~~~
 
-@descr:
+**Changelog:** Added in v4.2 
+
 **Related sample:** [Spreadsheet. Set active sheet](https://snippet.dhtmlx.com/iowl449t)
 
-#### Related articles
+**Related articles:** [Setting active sheet](working_with_sheets.md/#setting-active-sheet)
 
-[Setting active sheet](working_with_sheets.md/#setting-active-sheet)
 
-@changelog: added in v4.2

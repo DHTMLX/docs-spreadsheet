@@ -1,24 +1,37 @@
 ---
 sidebar_label: getSheets()
-title: getsheets method
-description: You can learn about the getsheets method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: getSheets method
+description: You can learn about the getSheets method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getSheets()
 
+### Description
+
 @short: gets all sheets of the spreadsheet
 
-@signature: {`getSheets: () => ISheet[];`}
+### Usage
 
-@returns:
+~~~jsx
+getSheets(): array;
+~~~
+
+### Returns
+
 The array of sheets objects.
 
-@example:
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// returns  [{name: "sheet1", id: "u1614669331194"}, …]
 spreadsheet.getSheets();
-// ->  [{name: "sheet1", id: "u1614669331194"}, …]
+~~~
 
-@descr:
-
+:::info
 Each sheet object includes the **name** and **id** attributes of the sheet.
+:::
 
-@changelog: added in v4.1
+**Changelog:** Added in v4.1

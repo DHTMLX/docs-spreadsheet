@@ -1,27 +1,37 @@
 ---
 sidebar_label: setFormat()
-title: setformat method
+title: setFormat method
 description: You can learn about the setformat method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # setFormat()
 
+### Description
+
 @short: sets a specified format to the value of a cell
 
-@signature: {`setFormat: (cell: string, format: string | string[]) => void;`}
+### Usage
 
-@params:
+~~~jsx
+setFormat(cell: string, format: string | array): void;
+~~~
 
-- `cell: string` - the id(s) of a cell(s) or a range of cells
-- `format: string | array` - the name(s) of the number format to apply to cells value
+### Parameters
 
-@example:
+- `cell` -  (mandatory) the id(s) of a cell(s) or a range of cells
+- `format` - (mandatory) the name(s) of the number format to apply to cells value
 
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 // applies the currency format to the cell A1
 spreadsheet.setFormat("A1","currency");
+~~~
 
-@descr:
-
+:::info
 Starting with v4.1, the reference to a cell can be specified in the following format:
 
 ~~~js
@@ -31,7 +41,6 @@ spreadsheet.setFormat("sheet1!A2", "number");
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will set the format to the value of a cell of the active tab.
+:::
 
-**Related articles**
-
-[Number formatting](number_formatting.md)
+**Related articles:** [Number formatting](number_formatting.md)

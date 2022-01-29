@@ -1,35 +1,50 @@
 ---
 sidebar_label: getFormula()
-title: getformula method
-description: You can learn about the getformula method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: getFormula method
+description: You can learn about the getFormula method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getFormula()
 
+### Description
+
 @short: returns the formula of a cell
 
-@signature: {`getFormula: (cell: string) => string | string[];`}
+### Usage
 
-@params:
-`cell: string` - the id of a cell
+~~~jsx 
+getFormula(cell: string): string | array;
+~~~
 
-@returns:
+### Parameters
+
+- `cell` - (mandatory) the id of a cell
+
+### Returns
+
 The formula of the cell.
 
-@example:
-var formula = spreadsheet.getFormula("B2");
-// -> "ABS(C2)"
+### Example
 
-@descr:
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// returns "ABS(C2)"
+const formula = spreadsheet.getFormula("B2");
+~~~
 
+:::info
 The reference to a cell can be specified in the following format:
 
 ~~~js
-var formula = spreadsheet.getFormula("sheet1!B2"); // -> "ABS(C2)"
+// returns "ABS(C2)"
+const formula = spreadsheet.getFormula("sheet1!B2"); 
 ~~~
 
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will return the formula of the cell from the active tab.
+:::
 
-@changelog: added in v4.1
+**Changelog:** Added in v4.1

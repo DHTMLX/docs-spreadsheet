@@ -6,15 +6,23 @@ description: You can learn about the parse method in the documentation of the DH
 
 # parse()
 
+### Description
+
 @short: loads data into spreadsheet from a local data source
 
-@signature: {`parse: (data: any) => void;`}
+### Usage
 
-@params:
-`data: any` - the data to load
+~~~jsx
+parse(data: any): void;
+~~~
 
-@example:
+### Parameters
 
+- `data` - (mandatory)  the data to load
+
+### Example
+
+~~~jsx {28}
 const data = [
 	{ cell: "a1", value: "Country" },
 	{ cell: "b1", value: "Product" },
@@ -41,20 +49,19 @@ const styledData = {
 	}
 };
 
-var spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(styledData);
-
-@relatedsample:
+~~~
 
 **Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 
-@descr:
-
-### Details
-
+:::info
 Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. 
+:::
 
-{{note In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
+:::note 
+In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
+:::
 
 ~~~js
 const styledData = {
@@ -119,12 +126,8 @@ The data should be an *object* with the following attributes:
         - **css** - (*string*) optional, the name of the CSS class
         - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
 
+**Changelog:** The **rows** and **cols** properties of the sheet object have been added in v4.2
+
 **Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 
-@changelog:
-The **rows** and **cols** properties of the sheet object have been added in v4.2
-
-@descr:
-#### Related articles
-
-[Data loading and export](loading_data.md)
+**Related articles:** [Data loading and export](loading_data.md)

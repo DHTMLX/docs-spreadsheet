@@ -1,41 +1,57 @@
 ---
 sidebar_label: isLocked()
-title: islocked method
-description: You can learn about the islocked method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: isLocked method
+description: You can learn about the isLocked method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # isLocked()
 
+### Description
+
 @short: checks whether a cell(s) is(are) locked
 
-@signature: {`isLocked: (cell: string) => boolean;`}
+### Usage
 
-@params:
-`cell: string` - the id(s) of a cell(s) or a range of cells
+~~~jsx
+isLocked(cell: string): boolean;
+~~~
 
-@returns:
+### Parameters
+
+- `cell` - (mandatory) the id(s) of a cell(s) or a range of cells
+
+### Returns
+
 *True*, if the cell is locked, *false* if it's unlocked.
 
-@example:
+### Example
+
+~~~jsx {5,8,11}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 // checks whether a cell is locked
-var cellLocked = spreadsheet.isLocked("A1");
+const cellLocked = spreadsheet.isLocked("A1");
 
 // checks whether several cells are locked
-var rangeLocked = spreadsheet.isLocked("A1:C1");
+const rangeLocked = spreadsheet.isLocked("A1:C1");
 
 // checks whether scattered cells are locked
-var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
+const cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
+~~~
 
-@descr:
+:::info
+If several cells are checked at once, the method will return *true*, if there is at least one locked cell among the specified cells.
+:::
 
-1\. If several cells are checked at once, the method will return *true*, if there is at least one locked cell among the specified cells.
+:::info
+Starting with v4.1, the reference to a cell or a range of cells can be specified in the following format:
 
-2\. Starting with v4.1, the reference to a cell or a range of cells can be specified in the following format:
-
-~~~js
-var cellsLocked = spreadsheet.isLocked("sheet1!A2"); 
+~~~jsx
+const cellsLocked = spreadsheet.isLocked("sheet1!A2"); 
 ~~~
 
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will check the cell(s) of the active tab.
+:::

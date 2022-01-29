@@ -6,11 +6,22 @@ description: You can learn about the redo method in the documentation of the DHT
 
 # redo()
 
+### Description
+
 @short: applies the reverted action once again
 
-@signature: {`redo(): void;`}
+### Usage
 
-@example:
+~~~jsx
+redo(): void;
+~~~
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// applies the reverted action once again
 spreadsheet.redo();
-
-@descr:
+~~~

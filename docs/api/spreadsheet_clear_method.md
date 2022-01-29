@@ -6,19 +6,28 @@ description: You can learn about the clear method in the documentation of the DH
 
 # clear()
 
+### Description
+
 @short: clears a spreadsheet
 
-@signature: {`clear(): void;`}
+### Usage
 
-@example:
+~~~jsx
+clear(): void;
+~~~
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// clears a spreadsheet
 spreadsheet.clear();
+~~~
 
-@descr:
+**Changelog:** Added in v4.2
+
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
-@changelog: added in v4.2
-
-@descr:
-#### Related article
-
-[Clearing spreadsheet](working_with_ssheet.md/#clearing-spreadsheet)
+**Related article:** [Clearing spreadsheet](working_with_ssheet.md/#clearing-spreadsheet)
