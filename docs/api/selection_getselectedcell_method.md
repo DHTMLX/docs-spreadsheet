@@ -1,25 +1,34 @@
 ---
 sidebar_label: getSelectedCell() 
-title: getselectedcell selection method
-description: You can learn about the getselectedcell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: getSelectedCell selection method
+description: You can learn about the getSelectedCell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getSelectedCell()
 
+### Description
+
 @short: returns the id(s) of selected cell(s)
 
-@signature: {`getSelectedCell(): string;`}
+### Usage
 
-@returns:
+~~~jsx
+getSelectedCell(): string;
+~~~
+
+### Returns
+
 The id(s) or a range of selected cell(s).
 
-@example:
+### Example
+
+~~~jsx {6}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
+// gets the selected cells
+const selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
+~~~
 
-var selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
-
-@descr:
-
-**Related articles**
-
-[Work with Spreadsheet](working_with_ssheet.md#selecting-cells)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#selecting-cells)

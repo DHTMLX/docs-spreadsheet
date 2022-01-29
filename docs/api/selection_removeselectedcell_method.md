@@ -6,25 +6,36 @@ description: You can learn about the removeSelectedCell method of Selection in t
 
 # removeSelectedCell()
 
+### Description
+
 @short: removes selection from the specified cell(s)
 
-@signature: {`removeSelectedCell(cell: string);`}
+### Usage
 
-@params:
-`cell: string` - the id(s) or a range of selected cell(s)
+~~~jsx
+removeSelectedCell(cell: string): void;
+~~~
 
-@example:
+### Parameters
+
+- `cell` - (mandatory) the id(s) or a range of selected cell(s)
+
+### Example
+
+~~~jsx {5,8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 // selecting scattered cells
 spreadsheet.selection.setSelectedCell("A1:A9,C2,B4,D6");
+
 // removes selection from the specified cells
 spreadsheet.selection.removeSelectedCell("A3:A6,C2");
+~~~
 
-@descr:
+**Changelog:** Added in v4.2
 
 **Related sample:** [Spreadsheet. Remove selection](https://snippet.dhtmlx.com/u4j76cuh)
 
-**Related articles**
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#selecting-cells)
 
-[Work with Spreadsheet](working_with_ssheet.md#selecting-cells)
-
-@changelog: added in v4.2

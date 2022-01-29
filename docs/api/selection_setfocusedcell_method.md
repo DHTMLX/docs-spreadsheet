@@ -1,23 +1,32 @@
 ---
 sidebar_label: setFocusedCell() 
-title: setfocusedcell selection method
-description: You can learn about the setfocusedcell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: setFocusedCell selection method
+description: You can learn about the setFocusedCell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # setFocusedCell()
 
+### Description
+
 @short: sets focus on the specified cell
 
-@signature: {`setFocusedCell(cell: string);`}
+### Usage
 
-@params:
-`cell: string` - the id of a cell to set focus on
+~~~jsx
+setFocusedCell(cell: string): void;
+~~~
 
-@example:
+### Parameters
+
+`cell` - (mandatory) the id of a cell to set focus on
+
+### Example
+
+~~~jsx {4}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 spreadsheet.selection.setFocusedCell("D4");
+~~~
 
-@descr:
-
-**Related articles**
-
-[Work with Spreadsheet](working_with_ssheet.md#setting-focus-on-a-cell)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#setting-focus-on-a-cell)
