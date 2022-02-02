@@ -1,21 +1,36 @@
 ---
 sidebar_label: afterRowAdd
-title: afterrowadd event
-description: You can learn about the afterrowadd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterRowAdd event
+description: You can learn about the afterRowAdd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterRowAdd
 
+### Description
+
 @short: fires after a new row is added
 
-@signature: {`afterRowAdd: (cell: string) => void;`}
+### Usage
 
-@params:
-`cell: string` - the id of a cell
+~~~jsx
+afterRowAdd: (cell: string) => void;
+~~~
 
-@example:
-spreadsheet.events.on("afterRowAdd", function(cells){
-	console.log("A new row is added");
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (mandatory) the id of a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
-
-@descr:
+// subscribe on the "afterRowAdd" event
+spreadsheet.events.on("afterRowAdd", function(cell){
+	console.log("A new row is added");
+	console.log(cell);
+});
+~~~

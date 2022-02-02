@@ -1,22 +1,37 @@
 ---
 sidebar_label: afterEditStart
-title: aftereditstart event
-description: You can learn about the aftereditstart event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterEditStart event
+description: You can learn about the afterEditStart event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterEditStart
 
+### Description
+
 @short: fires after editing of a cell has started
 
-@signature: {`afterEditStart: (cell: string, value: string) => void;`}
+### Usage
 
-@params:
-- `cell: string` - the id of a cell
-- `value: string` - the value of a cell
+~~~jsx
+afterEditStart: (cell: string, value: string) => void;
+~~~
 
-@example:
-spreadsheet.events.on("afterEditStart", function(){
- 	console.log("Editing has started");
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (mandatory) the id of a cell
+- `value` - (mandatory) the value of a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
-
-@descr:
+// subscribe on the "afterEditStart" event
+spreadsheet.events.on("afterEditStart", function(cell, value){
+	console.log("Editing has started");
+    console.log(cell, value);
+});
+~~~

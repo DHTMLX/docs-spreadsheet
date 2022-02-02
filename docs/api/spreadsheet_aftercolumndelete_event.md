@@ -1,21 +1,36 @@
 ---
 sidebar_label: afterColumnDelete
-title: aftercolumndelete event
-description: You can learn about the aftercolumndelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterColumnDelete event
+description: You can learn about the afterColumnDelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterColumnDelete
 
+### Description
+
 @short: fires after a column is deleted
 
-@signature: {`afterColumnDelete: (cell: string) => void;`}
+### Usage
 
-@params:
-`cell: string` - the id of a cell
+~~~jsx
+afterColumnDelete: (cell: string) => void;
+~~~
 
-@example:
-spreadsheet.events.on("afterColumnDelete", function(cells){
-	console.log("A new column is added");
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (mandatory) the id of a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
-
-@descr:
+// subscribe on the "afterColumnDelete" event
+spreadsheet.events.on("afterColumnDelete", function(cell){
+	console.log("A column was deleted");
+    console.log(cell);
+});
+~~~

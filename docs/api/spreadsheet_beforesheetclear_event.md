@@ -6,22 +6,49 @@ description: You can learn about the beforeSheetClear event in the documentation
 
 # beforeSheetClear
 
+### Description
+
 @short: fires before a sheet of the spreadsheet is cleared
 
-@signature: {`beforeSheetClear: (sheet: ISheet) => void;`}
+### Usage
 
-@params:
-`sheet: object` - the object of a sheet
+~~~jsx
+beforeSheetClear: (sheet: object) => void | boolean;
+~~~
 
-@returns:
-Return `false` to prevent clearing a sheet; otherwise, `true`.
+### Parameters
 
-@example:
+The callback of the event takes the following parameters:
+
+- `sheet` - (mandatory) the object of a sheet
+
+### Returns
+
+***True*** to clear the active sheet, ***false*** to prevent the active sheet from being cleared.
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeSheetClear" event
 spreadsheet.events.on("beforeSheetClear", function(sheet){
     console.log("The " + sheet.name + " sheet will be cleared");
-    return false;
+    console.log(sheet);
+    return true;
 });
+~~~
 
-@descr:
+:::info
+The sheet object contains the following parameters:
 
-@changelog: added in v4.2
+- **name** - (*string*) the name of the currently active sheet
+- **id** - (*string*) the id of the sheet
+:::
+
+:::info
+The event is blockable, returning **false** will prevent clearing of the active sheet.
+:::
+
+**Changelog:** Added in v4.2

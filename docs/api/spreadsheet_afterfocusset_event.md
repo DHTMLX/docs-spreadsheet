@@ -1,21 +1,36 @@
 ---
 sidebar_label: afterFocusSet
-title: afterfocusset event
-description: You can learn about the afterfocusset event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterFocusSet event
+description: You can learn about the afterFocusSet event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterFocusSet
 
+### Description
+
 @short: fires after focus is set on a cell
 
-@signature: {`afterFocusSet: (cell: string) => void;`}
+### Usage
 
-@params:
-`cell: string` - the id of a cell
+~~~jsx
+afterFocusSet: (cell: string) => void;
+~~~
 
-@example:
-spreadsheet.events.on("afterFocusSet", function(cell){
- 	console.log("Focus is set on a cell "+spreadsheet.selection.getSelectedCell());
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (mandatory) the id of a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
-
-@descr:
+// subscribe on the "afterFocusSet" event
+spreadsheet.events.on("afterFocusSet", function(cell){
+ 	console.log("Focus is set on a cell " + spreadsheet.selection.getSelectedCell());
+    console.log(cell);
+});
+~~~

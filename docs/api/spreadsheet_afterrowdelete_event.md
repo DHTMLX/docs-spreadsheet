@@ -1,21 +1,36 @@
 ---
 sidebar_label: afterRowDelete
-title: afterrowdelete event
-description: You can learn about the afterrowdelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterRowDelete event
+description: You can learn about the afterRowDelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterRowDelete
 
+### Description
+
 @short: fires after a row is deleted
 
-@signature: {`afterRowDelete: (cell: string) => void;`}
+### Usage
 
-@params:
-`cell: string` - the id of a cell
+~~~jsx
+afterRowDelete: (cell: string) => void;
+~~~
 
-@example:
-spreadsheet.events.on("afterRowDelete", function(cells){
-	console.log("A row is deleted");
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (mandatory) the id of a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
-
-@descr:
+// subscribe on the "afterRowDelete" event
+spreadsheet.events.on("afterRowDelete", function(cell){
+	console.log("A row was deleted");
+	console.log(cell);
+});
+~~~

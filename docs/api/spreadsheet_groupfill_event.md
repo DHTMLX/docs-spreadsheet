@@ -1,22 +1,36 @@
 ---
 sidebar_label: groupFill
-title: groupfill event
-description: You can learn about the groupfill event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: groupFill event
+description: You can learn about the groupFill event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # groupFill
 
+### Description
+
 @short: fires on auto filling of cells
 
-@signature: {`groupFill: (focusedCell: string, selectedCell: string) => void;`}
+### Usage
 
-@params:
-- `focusedCell: string` - the id of a cell in focus
-- `selectedCell: string` - the ids of a selected cells
+~~~jsx
+groupFill: (focusedCell: string, selectedCell: string) => void;
+~~~
 
-@example:
-spreadsheet.events.on("groupFill", function (startCell, range) {
-    console.log(startCell, range);
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `focusedCell` - (mandatory) the id of a cell in focus
+- `selectedCell` - (mandatory) the ids of a selected cells
+
+### Example
+
+~~~jsx {5-7}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
-
-@descr:
+// subscribe on the "groupFill" event
+spreadsheet.events.on("groupFill", function (focusedCell, selectedCell) {
+    console.log(focusedCell, selectedCell);
+});
+~~~

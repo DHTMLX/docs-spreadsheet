@@ -1,22 +1,37 @@
 ---
 sidebar_label: afterEditEnd
-title: aftereditend event
-description: You can learn about the aftereditend event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterEditEnd event
+description: You can learn about the afterEditEnd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterEditEnd
 
+### Description
+
 @short: fires after editing of a cell is finished
 
-@signature: {`afterEditEnd: (cell: string, value: string) => void`}
+### Usage
 
-@params:
-- `cell: string` - the id of a cell
-- `value: string` - the value of a cell
+~~~jsx
+afterEditEnd: (cell: string, value: string) => void;
+~~~
 
-@example:
-spreadsheet.events.on("afterEditEnd", function(){
- 	console.log("Editing is finished");
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (mandatory) the id of a cell
+- `value` - (mandatory) the value of a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
-
-@descr:
+// subscribe on the "afterEditEnd" event
+spreadsheet.events.on("afterEditEnd", function(cell, value){
+ 	console.log("Editing is finished");
+    console.log(cell, value);
+});
+~~~

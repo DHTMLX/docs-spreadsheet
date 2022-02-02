@@ -1,34 +1,54 @@
 ---
 sidebar_label: beforeSheetChange
-title: beforesheetchange event
-description: You can learn about the beforesheetchange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeSheetChange event
+description: You can learn about the beforeSheetChange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeSheetChange
 
+### Description
+
 @short: fires before changing the currently active sheet
 
-@signature: {`beforeSheetChange: (sheet: ISheet) => void | boolean;`}
+### Usage
 
-@params:
-`sheet: object` - the object of the currently active sheet
+~~~jsx
+beforeSheetChange: (sheet: object) => void | boolean;
+~~~
 
-@returns:
-*True* to change the active sheet, *false* to prevent the active sheet from being changed.
+### Parameters
 
-@example:
+The callback of the event takes the following parameters:
+
+- `sheet` - (mandatory) the object of the currently active sheet
+
+### Returns
+
+***True*** to change the active sheet, ***false*** to prevent the active sheet from being changed.
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeSheetChange" event
 spreadsheet.events.on("beforeSheetChange", function(sheet) {
-    console.log("The active sheet will be changed" );
+    console.log("The active sheet will be changed");
+    console.log(sheet);
     return true;
 });
+~~~
 
-@descr:
-
+:::info
 The sheet object contains the following parameters:
 
 - **name** - (*string*) the name of the currently active sheet
 - **id** - (*string*) the id of the sheet
+:::
 
-The event is blockable, returning false will prevent changing of the active sheet.
+:::info
+The event is blockable, returning **false** will prevent changing of the active sheet.
+:::
 
-@changelog: added in v4.1
+**Changelog:** Added in v4.1

@@ -1,29 +1,41 @@
 ---
 sidebar_label: afterFormatChange
-title: afterformatchange event
-description: You can learn about the afterformatchange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterFormatChange event
+description: You can learn about the afterFormatChange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterFormatChange
 
+### Description
+
 @short: fires after the format of a cell is changed
 
-@signature: {`afterFormatChange: (cell: string, format: string) => void;`}
+### Usage
 
-@params:
-- `cell: string` - the id of a cell
-- `format: string` - a new format applied for a cell
+~~~jsx
+afterFormatChange: (cell: string, format: string) => void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (mandatory) the id of a cell
+- `format` - (mandatory) a new format applied for a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "afterFormatChange" event
 spreadsheet.events.on("afterFormatChange", function(cell, format){
  console.log("Format of cell "+spreadsheet.selection.getSelectedCell()+" has changed");
+ console.log(cell, format);
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
+**Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
 
-@descr:
-
-**Related articles**
-
-[Number formatting](number_formatting.md)
+**Related articles:** [Number formatting](number_formatting.md)

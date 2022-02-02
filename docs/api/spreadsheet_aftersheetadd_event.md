@@ -1,27 +1,45 @@
 ---
 sidebar_label: afterSheetAdd
-title: aftersheetadd event
-description: You can learn about the aftersheetadd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterSheetAdd event
+description: You can learn about the afterSheetAdd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterSheetAdd
 
+### Description
+
 @short: fires after a new sheet is added
 
-@signature: {`afterSheetAdd: (sheet: ISheet) => void;`}
+### Usage
 
-@params:
-`sheet: object` - the object of a new sheet
+~~~jsx
+afterSheetAdd: (sheet: object) => void;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `sheet` - (mandatory) the object of a new sheet
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "afterSheetAdd" event
 spreadsheet.events.on("afterSheetAdd", function(sheet) {
     console.log("A new sheet is added:", sheet.name);
+    console.log(sheet);
 });
+~~~
 
-@descr:
-The sheet object contains the following parameters:
+:::info
+The **sheet** object contains the following parameters:
 
 - **name** - (*string*) the name of the new sheet
 - **id** - (*string*) the id of the new sheet
+:::
 
-@changelog: added in v4.1
+**Changelog:** Added in v4.1
