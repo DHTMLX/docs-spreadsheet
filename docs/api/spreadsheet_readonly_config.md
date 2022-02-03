@@ -6,24 +6,37 @@ description: You can learn about the readonly config in the documentation of the
 
 # readonly
 
+### Description
+
 @short: enables/disables the readonly mode
 
-@signature: {`readonly?: boolean;`}
+### Usage
 
-@default: false
+~~~jsx
+readonly?: boolean
+~~~
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-	readonly: true
+### Parameters
+
+- `readonly` - (optional) enables/disables the readonly mode
+
+### Default config
+
+~~~jsx
+readonly: false
+~~~
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+  readonly: true,
+  // other config parameters
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
+**Related sample:** [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
 
-@descr:
-
-**Related articles**
-
-[Configuration](configuration.md#read-only-mode)
-
-[Customization](customization.md#custom-read-only-mode)
+**Related articles:**
+- [Configuration](configuration.md#read-only-mode)
+- [Customization](customization.md#custom-read-only-mode)

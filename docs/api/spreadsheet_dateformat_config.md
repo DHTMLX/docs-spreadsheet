@@ -6,19 +6,36 @@ description: You can learn about the dateFormat config in the documentation of t
 
 # dateFormat
 
+### Description
+
 @short: defines the format of dates in the spreadsheet
 
-@signature: {`dateFormat?: string;`}
+### Usage
 
-@default: "%d/%m/%Y"
+~~~jsx
+dateFormat?: string
+~~~
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-	dateFormat: "%D/%M/%Y"
+### Parameters
+
+- `dateFormat` - (optional) the format of dates in the spreadsheet
+
+### Default config
+
+~~~jsx
+dateFormat: "%d/%m/%Y"
+~~~
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+	dateFormat: "%D/%M/%Y",
+    // other config parameters
 });
+~~~
 
-@descr:
-
+:::info
 DHTMLX Spreadsheet uses the following characters for setting a date format:
 
 | Character | Definition                                        |
@@ -42,10 +59,8 @@ DHTMLX Spreadsheet uses the following characters for setting a date format:
 | **%a**    | am or pm                                          |
 | **%A**    | AM or PM                                          |
 | **%u**    | milliseconds                                      |
+:::
 
-@changelog: added in v4.2
+**Changelog:** Added in v4.2
 
-@descr:
-#### Related article
-
-[Date format](number_formatting.md/#date-format)
+**Related articles:** [Date format](number_formatting.md/#date-format)

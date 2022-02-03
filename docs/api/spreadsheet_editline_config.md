@@ -1,27 +1,40 @@
 ---
 sidebar_label: editLine
-title: editline config
-description: You can learn about the editline config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: editLine config
+description: You can learn about the editLine config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # editLine
 
+### Description
+
 @short: shows/hides the editing bar
 
-@signature: {`editLine?: boolean;`}
+### Usage
 
-@default: true
+~~~jsx
+editLine?: boolean
+~~~
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-	editLine: true
+### Parameters
+
+- `editLine` - (optional) shows/hides the editing bar
+
+### Default config
+
+~~~jsx
+editLine: true
+~~~
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+	editLine: true,
+    // other config parameters
 });
+~~~
 
-@descr:
+**Related sample:** [Spreadsheet. Disabled Line](https://snippet.dhtmlx.com/unem2jkh)
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Disabled Line](https://snippet.dhtmlx.com/unem2jkh)
-
-**Related articles**
-
-[Configuration](configuration.md#editing-bar)
+**Related articles:** [Configuration](configuration.md#editing-bar)

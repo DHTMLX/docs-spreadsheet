@@ -1,27 +1,41 @@
 ---
 sidebar_label: exportModulePath
-title: exportmodulepath config
-description: You can learn about the exportmodulepath config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: exportModulePath config
+description: You can learn about the exportModulePath config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # exportModulePath
 
+### Description
+
 @short: sets the path to the export module
 
-@signature: {`exportModulePath?: string;`}
+### Usage
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-    exportModulePath: "../libs/json2excel/1.0/worker.js"
+~~~jsx
+exportModulePath?: string
+~~~
+
+### Parameters
+
+- `exportModulePath` - (optional) the path to the export module
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+  exportModulePath: "../libs/json2excel/1.0/worker.js",
+  // other config parameters
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
+**Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
 
-@descr:
+:::note 
+DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.
+:::
 
-{{note DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.}}
-
+:::info
 To export files you need to:
 
 - install the **JSON2excel** library
@@ -30,7 +44,6 @@ To export files you need to:
   - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
 
 By default the link to CDN is used.
+:::
 
-**Related articles**
-
-[Data loading and export](loading_data.md#exporting-data)
+**Related articles:** [Data loading and export](loading_data.md#exporting-data)

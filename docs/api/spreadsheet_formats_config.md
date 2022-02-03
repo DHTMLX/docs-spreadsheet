@@ -6,37 +6,25 @@ description: You can learn about the formats config in the documentation of the 
 
 # formats
 
+### Description
+
 @short: defines the list of number formats  
 
-@signature: {`formats?: IFormats[];`}
+### Usage
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-    formats: [
-    	{
-    		name: "U.S. Dollar",
-    		id: "currency",
-    		mask: "$#,##0.00"
-    	},
-    	{
-    		name: "Euro",
-    		id: "euro",
-    		mask: "[$€]#.##0,00",
-    		example: "1000.50"
-    	},
-    	{
-    		name: "Swiss franc",
-    		id: "franc",
-    		mask: "[$CHF ]#.##0,00"
-    	}
-    ]
-});
+~~~jsx
+formats?: array
+~~~
 
-@descr:
+### Parameters
+
+- `formats` - (optional) an array of number formats
+
+### Default config
 
 The default number formats are the following:
 
-~~~js
+~~~jsx
 defaultFormats = [
 	{ name: "Common", id: "common", mask: "", example: "1500.31" },
 	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
@@ -54,12 +42,36 @@ Each number format is an object that includes a set of properties:
 - **name** - the name of a format displayed in the toolbar and menu drop-down lists
 - **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
 
-Read detailed information about number formatting in DHTMLX Spreadsheet in the article [Number formatting](number_formatting.md).
+**Related articles:** [Number formatting](number_formatting.md)
 
-**Related articles**
+### Example
 
-[Number formatting](number_formatting.md#formats-customization)
+~~~jsx {2-19}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    formats: [
+    	{
+    		name: "U.S. Dollar",
+    		id: "currency",
+    		mask: "$#,##0.00"
+    	},
+    	{
+    		name: "Euro",
+    		id: "euro",
+    		mask: "[$€]#.##0,00",
+    		example: "1000.50"
+    	},
+    	{
+    		name: "Swiss franc",
+    		id: "franc",
+    		mask: "[$CHF ]#.##0,00"
+    	}
+    ],
+	// other config parameters
+});
+~~~
 
-@changelog:
+**Changelog:**
 - The "Date" format has been added in v4.2.
 - The "Text" format has been added in v4.0.
+
+**Related articles:** [Formats customization](number_formatting.md#formats-customization)
