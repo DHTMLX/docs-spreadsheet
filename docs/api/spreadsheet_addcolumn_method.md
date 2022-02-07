@@ -8,7 +8,7 @@ description: You can learn about the addColumn method in the documentation of th
 
 ### Description
 
-@short: adds a new column into the spreadsheet
+@short: Adds a new column into the spreadsheet
 
 ### Usage
 
@@ -18,7 +18,7 @@ addColumn(cell: string): void;
 
 ### Parameters
 
-- `cell` - (mandatory) the id of the cell that contains the id of a column that should be added
+- `cell` - (required) the id of the cell that contains the id of a column that should be added
 
 ### Example
 

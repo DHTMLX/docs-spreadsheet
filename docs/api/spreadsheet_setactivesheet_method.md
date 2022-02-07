@@ -8,7 +8,7 @@ description: You can learn about the setActiveSheet method in the documentation 
 
 ### Description
 
-@short: sets the active sheet by its id
+@short: Sets the active sheet by its id
 
 ### Usage
 
@@ -18,7 +18,7 @@ setActiveSheet(id: string): void;
 
 ### Parameters
 
-- `id` - (mandatory) the id of a sheet
+- `id` - (required) the id of a sheet
 
 ### Example
 
@@ -30,10 +30,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 spreadsheet.setActiveSheet("u1636003130922");
 ~~~
 
-**Changelog:** Added in v4.2 
-
-**Related sample:** [Spreadsheet. Set active sheet](https://snippet.dhtmlx.com/iowl449t)
+**Change log:** Added in v4.2 
 
 **Related articles:** [Setting active sheet](working_with_sheets.md/#setting-active-sheet)
 
-
+**Related sample:** [Spreadsheet. Set active sheet](https://snippet.dhtmlx.com/iowl449t)

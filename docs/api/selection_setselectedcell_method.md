@@ -8,7 +8,7 @@ description: You can learn about the setSelectedCell selection method in the doc
 
 ### Description
 
-@short: selects the specified cell(s)
+@short: Selects the specified cell(s)
 
 ### Usage
 
@@ -18,7 +18,7 @@ setSelectedCell(cell: string): void;
 
 ### Parameters
 
-- `cell` - (mandatory) the id(s) or a range of selected cell(s)
+- `cell` - (required) the id(s) or a range of selected cell(s)
 
 ### Example
 

@@ -8,7 +8,7 @@ description: You can learn about the load method in the documentation of the DHT
 
 ### Description
 
-@short: loads data from an external file
+@short: Loads data from an external file
 
 ### Usage
 
@@ -18,12 +18,12 @@ load(url: string, type?: string): promise;
 
 ### Parameters
 
-- `url` - (mandatory) the URL of an external file
+- `url` - (required) the URL of an external file
 - `type` - (optional) optional, the type of data to load: "json" (default), "csv", "xlsx"
 
 ### Returns
 
-A promise of data loading.
+The method returns a promise of data loading
 
 ### Example
 

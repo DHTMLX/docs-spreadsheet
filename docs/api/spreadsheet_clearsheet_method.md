@@ -8,7 +8,7 @@ description: You can learn about the clearSheet method in the documentation of t
 
 ### Description
 
-@short: clears a sheet
+@short: Clears a sheet
 
 ### Usage
 
@@ -18,7 +18,7 @@ clearSheet(id?: string): void;
 
 ### Parameters
 
-- `id` - (optional) the id of a sheet to be cleared. If not specified, the method clears the currently active sheet.
+- `id` - (optional) the id of a sheet to be cleared. If not specified, the method clears the currently active sheet
 
 ### Example
 
@@ -34,6 +34,7 @@ spreadsheet.clearSheet();
 
 **Changelog:** Added in v4.2 
 
+**Related articles:** [Clearing sheets](working_with_sheets.md/#clearing-sheets)
+
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
-**Related articles:** [Clearing sheets](working_with_sheets.md/#clearing-sheets)

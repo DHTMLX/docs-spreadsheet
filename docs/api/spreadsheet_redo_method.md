@@ -8,7 +8,7 @@ description: You can learn about the redo method in the documentation of the DHT
 
 ### Description
 
-@short: applies the reverted action once again
+@short: Applies the reverted action once again
 
 ### Usage
 

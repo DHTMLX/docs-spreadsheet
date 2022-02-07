@@ -8,7 +8,7 @@ description: You can learn about the removeSelectedCell method of Selection in t
 
 ### Description
 
-@short: removes selection from the specified cell(s)
+@short: Removes selection from the specified cell(s)
 
 ### Usage
 
@@ -18,7 +18,7 @@ removeSelectedCell(cell: string): void;
 
 ### Parameters
 
-- `cell` - (mandatory) the id(s) or a range of selected cell(s)
+- `cell` - (required) the id(s) or a range of selected cell(s)
 
 ### Example
 
@@ -33,9 +33,8 @@ spreadsheet.selection.setSelectedCell("A1:A9,C2,B4,D6");
 spreadsheet.selection.removeSelectedCell("A3:A6,C2");
 ~~~
 
-**Changelog:** Added in v4.2
-
-**Related sample:** [Spreadsheet. Remove selection](https://snippet.dhtmlx.com/u4j76cuh)
+**Change log:** Added in v4.2
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md#selecting-cells)
 
+**Related sample:** [Spreadsheet. Remove selection](https://snippet.dhtmlx.com/u4j76cuh)

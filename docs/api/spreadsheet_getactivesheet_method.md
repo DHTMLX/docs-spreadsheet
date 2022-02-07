@@ -8,7 +8,7 @@ description: You can learn about the getactiveSheet method in the documentation 
 
 ### Description
 
-@short: returns the sheet that is currently active
+@short: Returns the sheet that is currently active
 
 ### Usage
 
@@ -18,7 +18,7 @@ getActiveSheet(): object;
 
 ### Returns
 
-The object with the name and id attributes of the active sheet.
+The method returns an object with the name and id attributes of the active sheet
 
 ### Example
 
@@ -30,4 +30,4 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 spreadsheet.getActiveSheet();
 ~~~
 
-**Changelog:** Added in v4.1
+**Change log:** Added in v4.1

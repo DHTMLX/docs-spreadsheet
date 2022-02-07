@@ -8,7 +8,7 @@ description: You can learn about the getSheets method in the documentation of th
 
 ### Description
 
-@short: gets all sheets of the spreadsheet
+@short: Gets all sheets of the spreadsheet
 
 ### Usage
 
@@ -18,7 +18,7 @@ getSheets(): array;
 
 ### Returns
 
-The array of sheets objects.
+The method returns an array of sheets objects
 
 ### Example
 
@@ -34,4 +34,4 @@ spreadsheet.getSheets();
 Each sheet object includes the **name** and **id** attributes of the sheet.
 :::
 
-**Changelog:** Added in v4.1
+**Change log:** Added in v4.1

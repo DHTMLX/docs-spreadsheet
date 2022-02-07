@@ -8,7 +8,7 @@ description: You can learn about the eachcell method in the documentation of the
 
 ### Description
 
-@short: iterates cells in the spreadsheet
+@short: Iterates cells in the spreadsheet
 
 ### Usage
 
@@ -21,7 +21,7 @@ eachCell(
 
 ### Parameters
 
-- `callback` - (mandatory) a callback function
+- `callback` - (required) a callback function
 - `range` - (optional) a range of cells to iterate
 
 ### Example
@@ -72,6 +72,6 @@ spreadsheet.menu.events.on("click", function (id) {
 If the range of cells is not specified, the method iterates the selected cells.
 :::
 
-**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/2mlv2qaz)
-
 **Related articles:** [Customization](customization.md#menu)
+
+**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/2mlv2qaz)

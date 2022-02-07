@@ -8,7 +8,7 @@ description: You can learn about the getFormat method in the documentation of th
 
 ### Description
 
-@short: returns the number format applied to the value of a cell
+@short: Returns the number format applied to the value of a cell
 
 ### Usage
 
@@ -18,11 +18,11 @@ getFormat(cell: string): string | array;
 
 ### Parameters
 
-`cell` - (mandatory) the id(s) of the cell(s) or a range of cells
+`cell` - (required) the id(s) of the cell(s) or a range of cells
 
 ### Returns
 
-The format(s) applied to the value of the cell(s).
+The method returns a format(s) applied to the value of the cell(s)
 
 ### Example
 

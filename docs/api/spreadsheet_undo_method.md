@@ -8,7 +8,7 @@ description: You can learn about the undo method in the documentation of the DHT
 
 ### Description
 
-@short: reverts the latest action
+@short: Reverts the latest action
 
 ### Usage
 

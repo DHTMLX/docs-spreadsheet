@@ -8,7 +8,7 @@ description: You can learn about the deleteColumn method in the documentation of
 
 ### Description
 
-@short: removes a column from the spreadsheet
+@short: Removes a column from the spreadsheet
 
 ### Usage
 
@@ -18,7 +18,7 @@ deleteColumn(cell: string): void;
 
 ### Parameters
 
-- `cell` - (mandatory) the id of a cell that contains the name of the column that should be deleted
+- `cell` - (required) the id of a cell that contains the name of the column that should be deleted
 
 ### Example
 

@@ -8,7 +8,7 @@ description: You can learn about the on events bus method in the documentation o
 
 ### Description
 
-@short: attaches a handler to an inner event of Spreadsheet
+@short: Attaches a handler to an inner event of Spreadsheet
 
 ### Usage
 
@@ -18,8 +18,8 @@ on(name: string, callback: function): void;
 
 ### Parameters
 
-- `name` - (mandatory) the event's name, case-insensitive
-- `callback` - (mandatory) the handler function
+- `name` - (required) the event's name, case-insensitive
+- `callback` - (required) the handler function
 
 ### Example
 
@@ -33,8 +33,6 @@ spreadsheet.events.on("StyleChange", function(id){
 });
 ~~~
 
-**Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
-
 :::info
 See the full list of the Spreadsheet events [here](api/api_overview.md/#spreadsheet-events).
 
@@ -42,3 +40,5 @@ You can attach several handlers to the same event and all of them will be execut
 :::
 
 **Related articles:** [Event Handling](handling_events.md)
+
+**Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)

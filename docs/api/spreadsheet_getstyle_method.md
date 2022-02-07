@@ -8,7 +8,7 @@ description: You can learn about the getStyle method in the documentation of the
 
 ### Description
 
-@short: returns styles applied to a cell(s)
+@short: Returns styles applied to a cell(s)
 
 ### Usage
 
@@ -18,11 +18,11 @@ getStyle(cell: string): any;
 
 ### Parameters
 
-- `cell` - (mandatory) the id(s) of a cell(s) or a range of cells
+- `cell` - (required) the id(s) of a cell(s) or a range of cells
 
 ### Returns
 
-Styles set for the cells.
+The method returns the styles set for the cells
 
 ### Example
 

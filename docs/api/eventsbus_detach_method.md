@@ -8,7 +8,7 @@ description: You can learn about the detach events bus method in the documentati
 
 ### Description
 
-@short: detaches a handler from an event (which was attached before by the on() method)
+@short: Detaches a handler from an event (which was attached before by the on() method)
 
 ### Usage
 
@@ -18,7 +18,7 @@ detach(name: string): void;
 
 ### Parameters
 
-- `name` - (mandatory) the name of event to detach
+- `name` - (required) the name of event to detach
 
 ### Example
 

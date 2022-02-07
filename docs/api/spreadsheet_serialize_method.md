@@ -8,7 +8,7 @@ description: You can learn about the serialize method in the documentation of th
 
 ### Description
 
-@short: serializes data of spreadsheet into a JSON object
+@short: Serializes data of spreadsheet into a JSON object
 
 ### Usage
 
@@ -18,7 +18,7 @@ serialize(): object;
 
 ### Returns
 
-A serialized JSON object.
+The method returns a serialized JSON object
 
 ### Example
 

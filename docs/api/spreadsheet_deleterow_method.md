@@ -8,7 +8,7 @@ description: You can learn about the deleteRow method in the documentation of th
 
 ### Description
 
-@short: removes a row from the spreadsheet
+@short: Removes a row from the spreadsheet
 
 ### Usage
 
@@ -18,7 +18,7 @@ deleteRow(cell: string): void;
 
 ### Parameters
 
-- `cell` - (mandatory) the id of a cell that contains the id of a row that should be deleted
+- `cell` - (required) the id of a cell that contains the id of a row that should be deleted
 
 ### Example
 

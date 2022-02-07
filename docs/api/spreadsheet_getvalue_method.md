@@ -8,7 +8,7 @@ description: You can learn about the getValue method in the documentation of the
 
 ### Description
 
-@short: returns the value(s) of a cell(s)
+@short: Returns the value(s) of a cell(s)
 
 ### Usage
 
@@ -18,11 +18,11 @@ getValue(cell: string): any | array;
 
 ### Parameters
 
-- `cell` - (mandatory) the id(s) of a cell(s) or a range of cells
+- `cell` - (required) the id(s) of a cell(s) or a range of cells
 
 ### Returns
 
-The values of cells.
+The method returns values of cells
 
 ### Example
 

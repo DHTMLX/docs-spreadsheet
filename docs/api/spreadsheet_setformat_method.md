@@ -8,7 +8,7 @@ description: You can learn about the setformat method in the documentation of th
 
 ### Description
 
-@short: sets a specified format to the value of a cell
+@short: Sets a specified format to the value of a cell
 
 ### Usage
 
@@ -18,8 +18,8 @@ setFormat(cell: string, format: string | array): void;
 
 ### Parameters
 
-- `cell` -  (mandatory) the id(s) of a cell(s) or a range of cells
-- `format` - (mandatory) the name(s) of the number format to apply to cells value
+- `cell` -  (required) the id(s) of a cell(s) or a range of cells
+- `format` - (required) the name(s) of the number format to apply to cells value
 
 ### Example
 

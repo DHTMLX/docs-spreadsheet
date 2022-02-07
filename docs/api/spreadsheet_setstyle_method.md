@@ -8,7 +8,7 @@ description: You can learn about the setStyle method in the documentation of the
 
 ### Description
 
-@short: sets style to a cell(s)
+@short: Sets style to a cell(s)
 
 ### Usage
 
@@ -18,8 +18,8 @@ setStyle(cell: string, styles: array | object): void;
 
 ### Parameters
 
-- `cell` -  (mandatory) the id(s) of a cell(s) or a range of cells
-- `style` - (mandatory) styles that should be applied to cells
+- `cell` -  (required) the id(s) of a cell(s) or a range of cells
+- `style` - (required) styles that should be applied to cells
 
 ### Example
 

@@ -8,7 +8,7 @@ description: You can learn about the fire events bus method in the documentation
 
 ### Description
 
-@short: triggers an inner event
+@short: Triggers an inner event
 
 ### Usage
 
@@ -18,12 +18,12 @@ fire(name: string, arguments: array): boolean;
 
 ### Parameters
 
-- `name` -  (mandatory) the event's name, case-insensitive
-- `arguments` - (mandatory) an array of the event-related data
+- `name` -  (required) the event's name, case-insensitive
+- `arguments` - (required) an array of the event-related data
 
 ### Returns
 
-*False*, if some of the event handlers return *false*. Otherwise, *true*.
+The method returns `false`, if some of the event handlers return `false`. Otherwise, `true`
 
 ### Example
 

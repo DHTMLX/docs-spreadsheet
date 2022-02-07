@@ -8,7 +8,7 @@ description: You can learn about the setValue method in the documentation of the
 
 ### Description
 
-@short: sets a value for a cell
+@short: Sets a value for a cell
 
 ### Usage
 
@@ -18,8 +18,8 @@ setValue(cell: string, value: string | number | array): void;
 
 ### Parameters
 
-- `cell` - (mandatory) the id(s) of a cell(s) or a range of cells
-- `value` - (mandatory) the value(s) to be set for cells
+- `cell` - (required) the id(s) of a cell(s) or a range of cells
+- `value` - (required) the value(s) to be set for cells
 
 ### Example
 

@@ -8,7 +8,7 @@ description: You can learn about the getFocusedCell selection method in the docu
 
 ### Description
 
-@short: returns the id of a focused cell
+@short: Returns the id of a focused cell
 
 ### Usage
 
@@ -18,7 +18,7 @@ getFocusedCell(): string;
 
 ### Returns
 
-The id of a focused cell.
+The method returns an id of a focused cell
 
 ### Example
 

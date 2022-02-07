@@ -8,7 +8,7 @@ description: You can learn about the unlock method in the documentation of the D
 
 ### Description
 
-@short: unlocks a locked cell(s)
+@short: Unlocks a locked cell(s)
 
 ### Usage
 
@@ -18,7 +18,7 @@ unlock(cell: string): void;
 
 ### Parameters
 
-- `cell` - (mandatory) the id(s) of a cell(s) or a range of cells
+- `cell` - (required) the id(s) of a cell(s) or a range of cells
 
 ### Example
 

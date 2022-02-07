@@ -8,7 +8,7 @@ description: You can learn about the endEdit method in the documentation of the 
 
 ### Description
 
-@short: finishes editing in the selected cell, closes editor and saves the entered value
+@short: Finishes editing in the selected cell, closes editor and saves the entered value
 
 ### Usage
 

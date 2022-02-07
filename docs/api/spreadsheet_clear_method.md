@@ -8,7 +8,7 @@ description: You can learn about the clear method in the documentation of the DH
 
 ### Description
 
-@short: clears a spreadsheet
+@short: Clears a spreadsheet
 
 ### Usage
 
@@ -26,8 +26,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 spreadsheet.clear();
 ~~~
 
-**Changelog:** Added in v4.2
+**Change log:** Added in v4.2
+
+**Related articles:** [Clearing spreadsheet](working_with_ssheet.md/#clearing-spreadsheet)
 
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
-
-**Related article:** [Clearing spreadsheet](working_with_ssheet.md/#clearing-spreadsheet)

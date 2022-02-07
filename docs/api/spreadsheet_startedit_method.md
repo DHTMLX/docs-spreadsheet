@@ -8,7 +8,7 @@ description: You can learn about the startEdit method in the documentation of th
 
 ### Description
 
-@short: starts editing in the selected cell
+@short: Starts editing in the selected cell
 
 ### Usage
 

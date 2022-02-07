@@ -8,7 +8,7 @@ description: You can learn about the parse method in the documentation of the DH
 
 ### Description
 
-@short: loads data into spreadsheet from a local data source
+@short: Loads data into spreadsheet from a local data source
 
 ### Usage
 
@@ -18,7 +18,23 @@ parse(data: any): void;
 
 ### Parameters
 
-- `data` - (mandatory)  the data to load
+- `data` - (required)  the data to load
+
+### Details
+
+The data *object* takes the following parameters:
+
+- **styles** - (*object*) an object with CSS classes applied to particular cells
+- **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
+    - **name** - (*string*) the sheet name
+    - **id** - (*string*) the sheet id
+    - **rows** - (*array*) optional, an array of height objects. If not specified, the rows will have a height of 32px.
+    - **cols** - (*array*) optional, an array of width objects. If not specified, the columns will have a width of 120px. 
+    - **data** - (*array*) an array of objects with data of the sheet. Each object has the following properties:
+        - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+        - **value** - (string,number) the value of a cell
+        - **css** - (*string*) optional, the name of the CSS class
+        - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
 
 ### Example
 
@@ -112,22 +128,9 @@ const styledData = {
 spreadsheet.parse(styledData);
 ~~~
 
-The data should be an *object* with the following attributes:
+**Change log:** The **rows** and **cols** properties of the sheet object have been added in v4.2
 
-- **styles** - (*object*) an object with CSS classes applied to particular cells
-- **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
-    - **name** - (*string*) the sheet name
-    - **id** - (*string*) the sheet id
-    - **rows** - (*array*) optional, an array of height objects. If not specified, the rows will have a height of 32px.
-    - **cols** - (*array*) optional, an array of width objects. If not specified, the columns will have a width of 120px. 
-    - **data** - (*array*) an array of objects with data of the sheet. Each object has the following properties:
-        - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
-        - **value** - (string,number) the value of a cell
-        - **css** - (*string*) optional, the name of the CSS class
-        - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
-
-**Changelog:** The **rows** and **cols** properties of the sheet object have been added in v4.2
+**Related articles:** [Data loading and export](loading_data.md)
 
 **Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 
-**Related articles:** [Data loading and export](loading_data.md)

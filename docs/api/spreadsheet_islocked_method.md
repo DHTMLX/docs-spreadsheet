@@ -8,7 +8,7 @@ description: You can learn about the isLocked method in the documentation of the
 
 ### Description
 
-@short: checks whether a cell(s) is(are) locked
+@short: Checks whether a cell(s) is(are) locked
 
 ### Usage
 
@@ -18,11 +18,11 @@ isLocked(cell: string): boolean;
 
 ### Parameters
 
-- `cell` - (mandatory) the id(s) of a cell(s) or a range of cells
+- `cell` - (required) the id(s) of a cell(s) or a range of cells
 
 ### Returns
 
-*True*, if the cell is locked, *false* if it's unlocked.
+The method returns `true`, if the cell is locked, and `false` if it's unlocked
 
 ### Example
 

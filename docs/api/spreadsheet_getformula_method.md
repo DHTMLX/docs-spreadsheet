@@ -8,7 +8,7 @@ description: You can learn about the getFormula method in the documentation of t
 
 ### Description
 
-@short: returns the formula of a cell
+@short: Returns the formula of a cell
 
 ### Usage
 
@@ -18,11 +18,11 @@ getFormula(cell: string): string | array;
 
 ### Parameters
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Returns
 
-The formula of the cell.
+The methos returns a formula of the cell
 
 ### Example
 
@@ -47,4 +47,4 @@ where *sheet1* is the name of the tab.
 In case the name of the tab isn't specified, the method will return the formula of the cell from the active tab.
 :::
 
-**Changelog:** Added in v4.1
+**Change log:** Added in v4.1

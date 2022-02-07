@@ -8,7 +8,7 @@ description: You can learn about the removeSheet method in the documentation of 
 
 ### Description
 
-@short: removes a sheet from the spreadsheet by its id
+@short: Removes a sheet from the spreadsheet by its id
 
 ### Usage
 
@@ -18,7 +18,7 @@ removeSheet(id: string): void;
 
 ### Parameters
 
-- `id` - (mandatory) the id of a sheet
+- `id` - (required) the id of a sheet
 
 ### Example
 
@@ -36,4 +36,4 @@ To apply this method, you need to enable the [multiSheets](api/spreadsheet_multi
 Also note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
 :::
 
-**Changelog:** Added in v4.1
+**Change log:** Added in v4.1

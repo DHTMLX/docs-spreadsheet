@@ -8,7 +8,7 @@ description: You can learn about the getSelectedCell selection method in the doc
 
 ### Description
 
-@short: returns the id(s) of selected cell(s)
+@short: Returns the id(s) of selected cell(s)
 
 ### Usage
 
@@ -18,7 +18,7 @@ getSelectedCell(): string;
 
 ### Returns
 
-The id(s) or a range of selected cell(s).
+The method returns an id(s) or a range of selected cell(s)
 
 ### Example
 

@@ -8,7 +8,7 @@ description: You can learn about the setFocusedCell selection method in the docu
 
 ### Description
 
-@short: sets focus on the specified cell
+@short: Sets focus on the specified cell
 
 ### Usage
 
@@ -18,7 +18,7 @@ setFocusedCell(cell: string): void;
 
 ### Parameters
 
-`cell` - (mandatory) the id of a cell to set focus on
+`cell` - (required) the id of a cell to set focus on
 
 ### Example
 

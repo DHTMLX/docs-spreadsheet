@@ -8,7 +8,7 @@ description: You can learn about the xlsx export method in the documentation of 
 
 ### Description
 
-@short: exports data from a spreadsheet into an Excel (.xlsx) file
+@short: Exports data from a spreadsheet into an Excel (.xlsx) file
 
 ### Usage
 
@@ -26,8 +26,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 spreadsheet.export.xlsx();
 ~~~
 
-**Related sample:** [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
-
 :::note 
 Please note that the component supports export to Excel files with the **.xlsx** extension only.
 :::
@@ -37,3 +35,5 @@ DHTMLX Spreadsheet uses the WebAssembly-based library [Json2Excel](https://githu
 :::
 
 **Related articles:** [Data loading and export](loading_data.md)
+
+**Related sample:** [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)

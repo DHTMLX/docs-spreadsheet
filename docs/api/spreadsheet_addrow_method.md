@@ -8,7 +8,7 @@ description: You can learn about the addRow method in the documentation of the D
 
 ### Description
 
-@short: adds a new row into the spreadsheet
+@short: Adds a new row into the spreadsheet
 
 ### Usage
 
@@ -18,7 +18,7 @@ addRow(cell: string): void;
 
 ### Parameters
 
-- `cell` - (mandatory ) the id of a cell that contains the id of a row that should be added
+- `cell` - (required) the id of a cell that contains the id of a row that should be added
 
 ### Example
 
