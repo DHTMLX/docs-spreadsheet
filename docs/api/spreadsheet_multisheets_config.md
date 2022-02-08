@@ -8,17 +8,13 @@ description: You can learn about the multiSheets config in the documentation of 
 
 ### Description
 
-@short: enables/disables an ability to work with multiple sheets in the spreadsheet
+@short: Optional. Enables/disables an ability to work with multiple sheets in the spreadsheet
 
 ### Usage
 
 ~~~jsx
-multiSheets?: boolean
+multiSheets?: boolean;
 ~~~
-
-### Parameters
-
-- `multiSheets` - (optional) enables/disables the ability to work with multiple sheets
 
 ### Default config
 
@@ -39,4 +35,4 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 Setting the property to ***false*** will hide the bottom tabbar with sheet tabs.
 :::
 
-**Changelog:** Added in v4.1
+**Change log:** Added in v4.1

@@ -8,17 +8,13 @@ description: You can learn about the importModulePath config in the documentatio
 
 ### Description
 
-@short: sets the path to the import module
+@short: Optional. Sets the path to the import module
 
 ### Usage
 
 ~~~jsx
-importModulePath?: string
+importModulePath?: string;
 ~~~
-
-### Parameters
-
-- `importModulePath` - (optional) the path to the import module
 
 ### Example
 
@@ -28,6 +24,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
   // other config parameters
 });
 ~~~
+
+**Related articles:** [Data loading and export](loading_data.md#loading-excel-file-xlsx)
 
 **Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
 
@@ -46,4 +44,4 @@ To import files you need to:
 By default the link to CDN is used.
 :::
 
-**Related articles:** [Data loading and export](loading_data.md#loading-excel-file-xlsx)
+

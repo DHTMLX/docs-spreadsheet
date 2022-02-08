@@ -8,17 +8,13 @@ description: You can learn about the menu config in the documentation of the DHT
 
 ### Description
 
-@short: shows/hides the menu
+@short: Optional. Shows/hides the menu
 
 ### Usage
 
 ~~~jsx
-menu?: boolean
+menu?: boolean;
 ~~~
-
-### Parameters
-
-- `menu` - (optional) shows/hides the menu
 
 ### Default config
 
@@ -35,6 +31,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Related sample:** [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)
-
 **Related articles:** [Configuration](configuration.md#menu)
+
+**Related sample:** [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)

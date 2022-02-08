@@ -8,17 +8,13 @@ description: You can learn about the formats config in the documentation of the 
 
 ### Description
 
-@short: defines the list of number formats  
+@short: Optional. Defines the list of number formats  
 
 ### Usage
 
 ~~~jsx
-formats?: array
+formats?: array;
 ~~~
-
-### Parameters
-
-- `formats` - (optional) an array of number formats
 
 ### Default config
 
@@ -70,7 +66,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Changelog:**
+**Change log:**
 - The "Date" format has been added in v4.2.
 - The "Text" format has been added in v4.0.
 

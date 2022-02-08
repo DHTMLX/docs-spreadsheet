@@ -8,17 +8,13 @@ description: You can learn about the exportModulePath config in the documentatio
 
 ### Description
 
-@short: sets the path to the export module
+@short: Optional. Sets the path to the export module
 
 ### Usage
 
 ~~~jsx
-exportModulePath?: string
+exportModulePath?: string;
 ~~~
-
-### Parameters
-
-- `exportModulePath` - (optional) the path to the export module
 
 ### Example
 
@@ -28,6 +24,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
   // other config parameters
 });
 ~~~
+
+**Related articles:** [Data loading and export](loading_data.md#exporting-data)
 
 **Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
 
@@ -45,5 +43,3 @@ To export files you need to:
 
 By default the link to CDN is used.
 :::
-
-**Related articles:** [Data loading and export](loading_data.md#exporting-data)

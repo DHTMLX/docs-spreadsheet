@@ -8,17 +8,13 @@ description: You can learn about the dateFormat config in the documentation of t
 
 ### Description
 
-@short: defines the format of dates in the spreadsheet
+@short: Optional. Defines the format of dates in the spreadsheet
 
 ### Usage
 
 ~~~jsx
-dateFormat?: string
+dateFormat?: string;
 ~~~
-
-### Parameters
-
-- `dateFormat` - (optional) the format of dates in the spreadsheet
 
 ### Default config
 
@@ -61,6 +57,6 @@ DHTMLX Spreadsheet uses the following characters for setting a date format:
 | **%u**    | milliseconds                                      |
 :::
 
-**Changelog:** Added in v4.2
+**Change log:** Added in v4.2
 
 **Related articles:** [Date format](number_formatting.md/#date-format)

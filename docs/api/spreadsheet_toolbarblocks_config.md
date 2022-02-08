@@ -8,17 +8,13 @@ description: You can learn about the toolbarBlocks config in the documentation o
 
 ### Description
 
-@short: specifies blocks of buttons that will be shown in the toolbar of spreadsheet
+@short: Optional. Specifies blocks of buttons that will be shown in the toolbar of spreadsheet
 
 ### Usage
 
 ~~~jsx
-toolbarBlocks?: array
+toolbarBlocks?: array;
 ~~~
-
-### Parameters
-
-- `toolbarBlocks` - (optional) an array with the blocks of buttons that will be shown in the toolbar
 
 ### Default config
 
@@ -47,6 +43,11 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
+**Related articles:**
+- [Configuration](configuration.md#toolbar)
+- [Customization](customization.md)
+
+
 **Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
 
 :::info
@@ -62,7 +63,3 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 ![Custom toolbar](../assets/custom_toolbar.png)
 
 Check how you can [customize the toolbar](customization.md/#toolbar).
-
-**Related articles:**
-- [Configuration](configuration.md#toolbar)
-- [Customization](customization.md)

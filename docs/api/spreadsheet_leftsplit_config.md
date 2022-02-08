@@ -8,17 +8,13 @@ description: You can learn about the leftSplit config in the documentation of th
 
 ### Description
 
-@short: sets the number of columns fixed to the left side of the spreadsheet
+@short: Optional. Sets the number of columns fixed to the left side of the spreadsheet
 
 ### Usage
 
 ~~~jsx
-leftSplit?: number
+leftSplit?: number;
 ~~~
-
-### Parameters
-
-- `leftSplit` - (optional) the number of columns fixed to the left side of the spreadsheet
 
 ### Example
 
@@ -29,8 +25,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Changelog:** Added in v4.0
-
-**Related sample:** [Spreadsheet. Frozen columns](https://snippet.dhtmlx.com/iazmc27w)
+**Change log:** Added in v4.0
 
 **Related articles:** [Configuration](configuration.md#frozen-columns)
+
+**Related sample:** [Spreadsheet. Frozen columns](https://snippet.dhtmlx.com/iazmc27w)

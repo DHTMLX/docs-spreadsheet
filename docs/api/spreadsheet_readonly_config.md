@@ -8,17 +8,13 @@ description: You can learn about the readonly config in the documentation of the
 
 ### Description
 
-@short: enables/disables the readonly mode
+@short: Optional. Enables/disables the readonly mode
 
 ### Usage
 
 ~~~jsx
-readonly?: boolean
+readonly?: boolean;
 ~~~
-
-### Parameters
-
-- `readonly` - (optional) enables/disables the readonly mode
 
 ### Default config
 
@@ -35,8 +31,10 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Related sample:** [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
-
 **Related articles:**
 - [Configuration](configuration.md#read-only-mode)
 - [Customization](customization.md#custom-read-only-mode)
+
+**Related sample:** [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
+
+

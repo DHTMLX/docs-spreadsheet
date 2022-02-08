@@ -8,17 +8,13 @@ description: You can learn about the editLine config in the documentation of the
 
 ### Description
 
-@short: shows/hides the editing bar
+@short: Optional. Shows/hides the editing bar
 
 ### Usage
 
 ~~~jsx
-editLine?: boolean
+editLine?: boolean;
 ~~~
-
-### Parameters
-
-- `editLine` - (optional) shows/hides the editing bar
 
 ### Default config
 
