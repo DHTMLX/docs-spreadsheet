@@ -8,7 +8,7 @@ description: You can learn about the beforeSheetAdd event in the documentation o
 
 ### Description
 
-@short: fires before a new sheet is added
+@short: Fires before a new sheet is added
 
 ### Usage
 
@@ -20,11 +20,11 @@ beforeSheetAdd: (name: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `name` - (mandatory) the name of the new sheet
+- `name` - (required) the name of the new sheet
 
 ### Returns
 
-***True*** to add a sheet, ***false*** to prevent adding of a sheet.
+Return `true` to add a sheet, `false` to prevent adding of a sheet
 
 ### Example
 
@@ -40,8 +40,6 @@ spreadsheet.events.on("beforeSheetAdd", function(name) {
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent adding of a sheet.
-:::
-
 **Changelog:** Added in v4.1
+
+**Related articles:** [Event handling](handling_events.md)

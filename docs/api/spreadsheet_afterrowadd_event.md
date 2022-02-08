@@ -8,7 +8,7 @@ description: You can learn about the afterRowAdd event in the documentation of t
 
 ### Description
 
-@short: fires after a new row is added
+@short: Fires after a new row is added
 
 ### Usage
 
@@ -20,7 +20,7 @@ afterRowAdd: (cell: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Example
 
@@ -34,3 +34,5 @@ spreadsheet.events.on("afterRowAdd", function(cell){
 	console.log(cell);
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)

@@ -8,7 +8,7 @@ description: You can learn about the afterStyleChange event in the documentation
 
 ### Description
 
-@short: fires after the style of a cell is changed
+@short: Fires after the style of a cell is changed
 
 ### Usage
 
@@ -20,8 +20,8 @@ afterStyleChange: (cell: string, style: object | array) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
-- `style` - (mandatory) styles set for a cell
+- `cell` - (required) the id of a cell
+- `style` - (required) styles set for a cell
 
 ### Example
 
@@ -35,3 +35,5 @@ spreadsheet.events.on("afterStyleChange", function(cell, style){
     console.log(cell, style));
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)

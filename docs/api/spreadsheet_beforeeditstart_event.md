@@ -8,7 +8,7 @@ description: You can learn about the beforeEditStart event in the documentation 
 
 ### Description
 
-@short: fires before editing of a cell has started
+@short: Fires before editing of a cell has started
 
 ### Usage
 
@@ -20,12 +20,12 @@ beforeEditStart: (cell: string, value: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
-- `value` - (mandatory) the value of a cell
+- `cell` - (required) the id of a cell
+- `value` - (required) the value of a cell
 
 ### Returns
 
-***True*** to edit a cell, ***false*** to prevent editing
+Return `true` to edit a cell, `false` to prevent editing
 
 ### Example
 
@@ -41,6 +41,4 @@ spreadsheet.events.on("beforeEditStart", function(cell, value){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent editing of a cell.
-:::
+**Related articles:** [Event handling](handling_events.md)

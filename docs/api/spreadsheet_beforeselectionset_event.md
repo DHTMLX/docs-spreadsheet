@@ -8,7 +8,7 @@ description: You can learn about the beforeSelectionSet event in the documentati
 
 ### Description
 
-@short: fires before cells are selected
+@short: Fires before cells are selected
 
 ### Usage
 
@@ -20,11 +20,11 @@ beforeSelectionSet: (cell: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id(s) of a cell(s)
+- `cell` - (required) the id(s) of a cell(s)
 
 ### Returns
 
-***True*** to select cells, ***false*** to prevent selection of cells.
+Return `true` to select cells, `false` to prevent selection of cells
 
 ### Example
 
@@ -40,6 +40,4 @@ spreadsheet.events.on("beforeSelectionSet", function(cell){
 });
 ~~~
 
-:::info
-The event is blockable, returning **false** will prevent selection of cells.
-:::
+**Related articles:** [Event handling](handling_events.md)

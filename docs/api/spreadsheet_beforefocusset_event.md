@@ -8,7 +8,7 @@ description: You can learn about the beforeFocusSet event in the documentation o
 
 ### Description
 
-@short: fires before focus is set on a cell
+@short: Fires before focus is set on a cell
 
 ### Usage
 
@@ -20,11 +20,11 @@ beforeFocusSet: (cell: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Returns
 
-***True*** to set focus on a cell, ***false*** to prevent setting focus.
+Return `true` to set focus on a cell, `false` to prevent setting focus
 
 ### Example
 
@@ -40,6 +40,4 @@ spreadsheet.events.on("beforeFocusSet", function(cell){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent setting focus on a cell.
-:::
+**Related articles:** [Event handling](handling_events.md)

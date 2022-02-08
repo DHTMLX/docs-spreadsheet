@@ -8,7 +8,7 @@ description: You can learn about the beforeSheetRemove event in the documentatio
 
 ### Description
 
-@short: fires before a sheet is removed
+@short: Fires before a sheet is removed
 
 ### Usage
 
@@ -20,11 +20,18 @@ beforeSheetRemove: (sheet: object) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of a sheet
+- `sheet` - (required) the object of a sheet
+
+:::info
+The **sheet** object contains the following parameters:
+
+- **name** - (*string*) the name of the sheet to be deleted
+- **id** - (*string*) the id of the sheet to be deleted
+:::
 
 ### Returns
 
-***True*** to remove the active sheet, ***false*** to prevent the active sheet from being removed.
+Return `true` to remove the active sheet, `false` to prevent the active sheet from being removed
 
 ### Example
 
@@ -40,15 +47,6 @@ spreadsheet.events.on("beforeSheetRemove", function(sheet) {
 });
 ~~~
 
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the name of the sheet to be deleted
-- **id** - (*string*) the id of the sheet to be deleted
-:::
-
-:::info
-The event is blockable, returning ***false*** will prevent removing of the specified sheet.
-:::
-
 **Changelog:** Added in v4.1
+
+**Related articles:** [Event handling](handling_events.md)

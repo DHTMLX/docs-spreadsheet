@@ -8,7 +8,7 @@ description: You can learn about the afterSelectionSet event in the documentatio
 
 ### Description
 
-@short: fires after cells are selected
+@short: Fires after cells are selected
 
 ### Usage
 
@@ -20,7 +20,7 @@ afterSelectionSet: (cell: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id(s) of a cell(s)
+- `cell` - (required) the id(s) of a cell(s)
 
 ### Example
 
@@ -35,3 +35,4 @@ spreadsheet.events.on("afterSelectionSet", function(cell){
 });
 ~~~
 
+**Related articles:** [Event handling](handling_events.md)

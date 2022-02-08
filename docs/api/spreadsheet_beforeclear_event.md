@@ -8,7 +8,7 @@ description: You can learn about the beforeClear event in the documentation of t
 
 ### Description
 
-@short: fires before a spreadsheet is cleared
+@short: Fires before a spreadsheet is cleared
 
 ### Usage
 
@@ -18,7 +18,7 @@ beforeClear: () => void | boolean;
 
 ### Returns
 
-Return ***false*** to prevent clearing a spreadsheet; otherwise, ***true***.
+Return `false` to prevent clearing a spreadsheet; otherwise, `true`.
 
 ### Example
 
@@ -34,3 +34,5 @@ spreadsheet.events.on("beforeClear", function(){
 ~~~
 
 **Changelog:** Added in v4.2
+
+**Related articles:** [Event handling](handling_events.md)

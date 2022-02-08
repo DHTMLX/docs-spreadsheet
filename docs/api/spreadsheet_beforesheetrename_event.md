@@ -8,7 +8,7 @@ description: You can learn about the beforeSheetRename event in the documentatio
 
 ### Description
 
-@short: fires before a sheet is renamed
+@short: Fires before a sheet is renamed
 
 ### Usage
 
@@ -20,12 +20,19 @@ beforeSheetRename: (sheet: object, value: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of a sheet
-- `value` - (mandatory) the new name of the sheet
+- `sheet` - (required) the object of a sheet
+- `value` - (required) the new name of the sheet
+
+:::info
+The **sheet** object contains the following parameters:
+
+- **name** - (*string*) the old name of the sheet
+- **id** - (*string*) the id of the sheet
+:::
 
 ### Returns
 
-***True*** to rename a sheet, ***false*** to prevent the sheet from being renamed.
+Return `true` to rename a sheet, `false` to prevent the sheet from being renamed
 
 ### Example
 
@@ -41,15 +48,6 @@ spreadsheet.events.on("beforeSheetRename", function(sheet, value) {
 });
 ~~~
 
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the old name of the sheet
-- **id** - (*string*) the id of the sheet
-:::
-
-:::info
-The event is blockable, returning ***false*** will prevent the sheet from being renamed.
-:::
-
 **Changelog:** Added in v4.1
+
+**Related articles:** [Event handling](handling_events.md)

@@ -8,7 +8,7 @@ description: You can learn about the afterSheetAdd event in the documentation of
 
 ### Description
 
-@short: fires after a new sheet is added
+@short: Fires after a new sheet is added
 
 ### Usage
 
@@ -20,7 +20,14 @@ afterSheetAdd: (sheet: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of a new sheet
+- `sheet` - (required) the object of a new sheet
+
+:::info
+The **sheet** object contains the following parameters:
+
+- **name** - (*string*) the name of the new sheet
+- **id** - (*string*) the id of the new sheet
+:::
 
 ### Example
 
@@ -35,11 +42,6 @@ spreadsheet.events.on("afterSheetAdd", function(sheet) {
 });
 ~~~
 
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the name of the new sheet
-- **id** - (*string*) the id of the new sheet
-:::
-
 **Changelog:** Added in v4.1
+
+**Related articles:** [Event handling](handling_events.md)

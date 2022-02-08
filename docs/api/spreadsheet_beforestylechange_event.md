@@ -8,7 +8,7 @@ description: You can learn about the beforeStyleChange event in the documentatio
 
 ### Description
 
-@short: fires before the style of cells is changed
+@short: Fires before the style of cells is changed
 
 ### Usage
 
@@ -23,12 +23,12 @@ beforeStyleChange: (
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id(s) of a cell(s)
-- `style` - (mandatory) styles set for a cell/cells
+- `cell` - (required) the id(s) of a cell(s)
+- `style` - (required) styles set for a cell/cells
 
 ### Returns
 
-***True*** to change the style of a cell, ***false*** to prevent changing of style.
+Return `true` to change the style of a cell, `false` to prevent changing of style
 
 ### Example
 
@@ -44,6 +44,4 @@ spreadsheet.events.on("beforeStyleChange", function(cell, style){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent changing of style.
-:::
+**Related articles:** [Event handling](handling_events.md)

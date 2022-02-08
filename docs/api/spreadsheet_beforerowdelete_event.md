@@ -8,7 +8,7 @@ description: You can learn about the beforeRowDelete event in the documentation 
 
 ### Description
 
-@short: fires before a row is deleted
+@short: Fires before a row is deleted
 
 ### Usage
 
@@ -20,11 +20,11 @@ beforeRowDelete: (cell: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Returns
 
-***True*** to delete a row, ***false*** to prevent deleting of a row.
+Return `true` to delete a row, `false` to prevent deleting of a row
 
 ### Example
 
@@ -40,6 +40,4 @@ spreadsheet.events.on("beforeRowDelete", function(cell){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent deleting of a row.
-:::
+**Related articles:** [Event handling](handling_events.md)

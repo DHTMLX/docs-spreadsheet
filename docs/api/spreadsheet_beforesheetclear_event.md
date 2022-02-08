@@ -8,7 +8,7 @@ description: You can learn about the beforeSheetClear event in the documentation
 
 ### Description
 
-@short: fires before a sheet of the spreadsheet is cleared
+@short: Fires before a sheet of the spreadsheet is cleared
 
 ### Usage
 
@@ -20,11 +20,18 @@ beforeSheetClear: (sheet: object) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of a sheet
+- `sheet` - (required) the object of a sheet
+
+:::info
+The sheet object contains the following parameters:
+
+- **name** - (*string*) the name of the currently active sheet
+- **id** - (*string*) the id of the sheet
+:::
 
 ### Returns
 
-***True*** to clear the active sheet, ***false*** to prevent the active sheet from being cleared.
+Return `true` to clear the active sheet, `false` to prevent the active sheet from being cleared
 
 ### Example
 
@@ -40,15 +47,6 @@ spreadsheet.events.on("beforeSheetClear", function(sheet){
 });
 ~~~
 
-:::info
-The sheet object contains the following parameters:
-
-- **name** - (*string*) the name of the currently active sheet
-- **id** - (*string*) the id of the sheet
-:::
-
-:::info
-The event is blockable, returning **false** will prevent clearing of the active sheet.
-:::
-
 **Changelog:** Added in v4.2
+
+**Related articles:** [Event handling](handling_events.md)

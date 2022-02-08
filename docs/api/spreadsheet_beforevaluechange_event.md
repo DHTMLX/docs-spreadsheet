@@ -8,7 +8,7 @@ description: You can learn about the beforeValueChange event in the documentatio
 
 ### Description
 
-@short: fires before the values of cells are changed
+@short: Fires before the values of cells are changed
 
 ### Usage
 
@@ -20,12 +20,12 @@ beforeValueChange: (cell: string, value: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` -  (mandatory) the id of a cell
-- `value` - (mandatory) the value of a cell
+- `cell` -  (required) the id of a cell
+- `value` - (required) the value of a cell
 
 ### Returns
 
-***True*** to change the value of a cell, ***false*** to prevent changing of value.
+Return `true` to change the value of a cell, `false` to prevent changing of value
 
 ### Example
 
@@ -41,6 +41,4 @@ spreadsheet.events.on("beforeValueChange", function(cell, value){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent changing of value(s).
-:::
+**Related articles:** [Event handling](handling_events.md)

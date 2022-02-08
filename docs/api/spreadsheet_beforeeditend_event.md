@@ -8,7 +8,7 @@ description: You can learn about the beforeEditEnd event in the documentation of
 
 ### Description
 
-@short: fires before editing of a cell is finished
+@short: Fires before editing of a cell is finished
 
 ### Usage
 
@@ -20,12 +20,12 @@ beforeEditEnd: (cell: string, value: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
-- `value` - (mandatory) the value of a cell
+- `cell` - (required) the id of a cell
+- `value` - (required) the value of a cell
 
 ### Returns
 
-***True*** to finish editing a cell, ***false*** to prevent closing of an editor.
+Return `true` to finish editing a cell, `false` to prevent closing of an editor
 
 ### Example
 
@@ -41,6 +41,4 @@ spreadsheet.events.on("beforeEditEnd", function(cell, value){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent closing of an editor.
-:::
+**Related articles:** [Event handling](handling_events.md)

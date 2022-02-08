@@ -8,7 +8,7 @@ description: You can learn about the afterEditStart event in the documentation o
 
 ### Description
 
-@short: fires after editing of a cell has started
+@short: Fires after editing of a cell has started
 
 ### Usage
 
@@ -20,8 +20,8 @@ afterEditStart: (cell: string, value: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
-- `value` - (mandatory) the value of a cell
+- `cell` - (required) the id of a cell
+- `value` - (required) the value of a cell
 
 ### Example
 
@@ -35,3 +35,5 @@ spreadsheet.events.on("afterEditStart", function(cell, value){
     console.log(cell, value);
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)

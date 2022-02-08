@@ -8,7 +8,7 @@ description: You can learn about the afterValueChange event in the documentation
 
 ### Description
 
-@short: fires after the value of a cell changes
+@short: Fires after the value of a cell changes
 
 ### Usage
 
@@ -20,8 +20,8 @@ afterValueChange: (cell: string, value: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
-- `value` - (mandatory) the value of a cell
+- `cell` - (required) the id of a cell
+- `value` - (required) the value of a cell
 
 ### Example
 
@@ -36,3 +36,4 @@ spreadsheet.events.on("afterValueChange", function(cell, value){
 });
 ~~~
 
+**Related articles:** [Event handling](handling_events.md)

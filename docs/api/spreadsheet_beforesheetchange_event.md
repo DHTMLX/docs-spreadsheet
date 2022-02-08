@@ -8,7 +8,7 @@ description: You can learn about the beforeSheetChange event in the documentatio
 
 ### Description
 
-@short: fires before changing the currently active sheet
+@short: Fires before changing the currently active sheet
 
 ### Usage
 
@@ -20,11 +20,18 @@ beforeSheetChange: (sheet: object) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of the currently active sheet
+- `sheet` - (required) the object of the currently active sheet
+
+:::info
+The sheet object contains the following parameters:
+
+- **name** - (*string*) the name of the currently active sheet
+- **id** - (*string*) the id of the sheet
+:::
 
 ### Returns
 
-***True*** to change the active sheet, ***false*** to prevent the active sheet from being changed.
+Return `true` to change the active sheet, `false` to prevent the active sheet from being changed
 
 ### Example
 
@@ -40,15 +47,6 @@ spreadsheet.events.on("beforeSheetChange", function(sheet) {
 });
 ~~~
 
-:::info
-The sheet object contains the following parameters:
-
-- **name** - (*string*) the name of the currently active sheet
-- **id** - (*string*) the id of the sheet
-:::
-
-:::info
-The event is blockable, returning **false** will prevent changing of the active sheet.
-:::
-
 **Changelog:** Added in v4.1
+
+**Related articles:** [Event handling](handling_events.md)

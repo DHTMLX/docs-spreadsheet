@@ -8,7 +8,7 @@ description: You can learn about the afterFocusSet event in the documentation of
 
 ### Description
 
-@short: fires after focus is set on a cell
+@short: Fires after focus is set on a cell
 
 ### Usage
 
@@ -20,7 +20,7 @@ afterFocusSet: (cell: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Example
 
@@ -34,3 +34,5 @@ spreadsheet.events.on("afterFocusSet", function(cell){
     console.log(cell);
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)

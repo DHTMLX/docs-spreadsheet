@@ -8,7 +8,7 @@ description: You can learn about the afterRowDelete event in the documentation o
 
 ### Description
 
-@short: fires after a row is deleted
+@short: Fires after a row is deleted
 
 ### Usage
 
@@ -20,7 +20,7 @@ afterRowDelete: (cell: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Example
 
@@ -34,3 +34,5 @@ spreadsheet.events.on("afterRowDelete", function(cell){
 	console.log(cell);
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)

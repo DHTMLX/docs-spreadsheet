@@ -8,7 +8,7 @@ description: You can learn about the afterFormatChange event in the documentatio
 
 ### Description
 
-@short: fires after the format of a cell is changed
+@short: Fires after the format of a cell is changed
 
 ### Usage
 
@@ -20,8 +20,8 @@ afterFormatChange: (cell: string, format: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
-- `format` - (mandatory) a new format applied for a cell
+- `cell` - (required) the id of a cell
+- `format` - (required) a new format applied for a cell
 
 ### Example
 
@@ -36,6 +36,8 @@ spreadsheet.events.on("afterFormatChange", function(cell, format){
 });
 ~~~
 
-**Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
+**Related articles:** 
+- [Number formatting](number_formatting.md)
+- [Event handling](handling_events.md)
 
-**Related articles:** [Number formatting](number_formatting.md)
+**Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)

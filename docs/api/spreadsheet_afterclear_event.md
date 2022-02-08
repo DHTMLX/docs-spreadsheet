@@ -8,7 +8,7 @@ description: You can learn about the afterClear event in the documentation of th
 
 ### Description
 
-@short: fires after a spreadsheet is cleared
+@short: Fires after a spreadsheet is cleared
 
 ### Usage
 
@@ -30,3 +30,5 @@ spreadsheet.events.on("afterClear", function(){
 ~~~
 
 **Changelog:** Added in v4.2
+
+**Related articles:** [Event handling](handling_events.md)

@@ -8,7 +8,7 @@ description: You can learn about the beforeColumnAdd event in the documentation 
 
 ### Description
 
-@short: fires before a new column is added
+@short: Fires before a new column is added
 
 ### Usage
 
@@ -20,11 +20,11 @@ beforeColumnAdd: (cell: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-`cell` - (mandatory) the id of a cell
+`cell` - (required) the id of a cell
 
 ### Returns
 
-***True*** to add a column, ***false*** to prevent adding of a column.
+Return `true` to add a column, `false` to prevent adding of a column
 
 ### Example
 
@@ -40,6 +40,4 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent adding of a column.
-:::
+**Related articles:** [Event handling](handling_events.md)

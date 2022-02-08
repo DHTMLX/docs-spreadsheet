@@ -8,7 +8,7 @@ description: You can learn about the afterSheetClear event in the documentation 
 
 ### Description
 
-@short: fires after a sheet of the spreadsheet is cleared
+@short: Fires after a sheet of the spreadsheet is cleared
 
 ### Usage
 
@@ -20,7 +20,7 @@ afterSheetClear: (sheet: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of a sheet
+- `sheet` - (required) the object of a sheet
 
 ### Example
 
@@ -36,3 +36,5 @@ spreadsheet.events.on("afterSheetClear", function(sheet){
 ~~~
 
 **Changelog:** Added in v4.2
+
+**Related articles:** [Event handling](handling_events.md)

@@ -8,7 +8,7 @@ description: You can learn about the beforeRowAdd event in the documentation of 
 
 ### Description
 
-@short: fires before a new row is added
+@short: Fires before a new row is added
 
 ### Usage
 
@@ -20,11 +20,11 @@ beforeRowAdd: (cell: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Returns
 
-***True*** to add a row, ***false*** to prevent adding of a row.
+Return `true` to add a row, `false` to prevent adding of a row
 
 ### Example
 
@@ -40,6 +40,4 @@ spreadsheet.events.on("beforeRowAdd", function(cell){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent adding of a row.
-:::
+**Related articles:** [Event handling](handling_events.md)

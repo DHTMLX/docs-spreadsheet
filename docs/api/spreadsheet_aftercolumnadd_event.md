@@ -8,7 +8,7 @@ description: You can learn about the afterColumnAdd event in the documentation o
 
 ### Description
 
-@short: fires after a new column is added
+@short: Fires after a new column is added
 
 ### Usage
 
@@ -20,7 +20,7 @@ afterColumnAdd: (cell: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Example
 
@@ -34,3 +34,5 @@ spreadsheet.events.on("afterColumnAdd", function(cell){
     console.log(cell);
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)

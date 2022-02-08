@@ -8,7 +8,7 @@ description: You can learn about the beforeColumnDelete event in the documentati
 
 ### Description
 
-@short: fires before a column is deleted
+@short: Fires before a column is deleted
 
 ### Usage
 
@@ -20,11 +20,11 @@ beforeColumnDelete: (cell: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Returns
 
-***True*** to delete a column, ***false*** to prevent deleting of a column.
+Return `true` to delete a column, `false` to prevent deleting of a column
 
 ### Example
 
@@ -40,6 +40,4 @@ spreadsheet.events.on("beforeColumnDelete", function(cell){
 });
 ~~~
 
-:::info
-The event is blockable, returning ***false*** will prevent deleting of a column.
-:::
+**Related articles:** [Event handling](handling_events.md)

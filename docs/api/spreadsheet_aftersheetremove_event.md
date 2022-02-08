@@ -8,7 +8,7 @@ description: You can learn about the afterSheetRemove event in the documentation
 
 ### Description
 
-@short: fires after a sheet is removed
+@short: Fires after a sheet is removed
 
 ### Usage
 
@@ -20,7 +20,14 @@ afterSheetRemove: (sheet: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of a sheet
+- `sheet` - (required) the object of a sheet
+
+:::info
+The **sheet** object contains the following parameters:
+
+- **name** - (*string*) the name of the sheet
+- **id** - (*string*) the id of the sheet
+:::
 
 ### Example
 
@@ -35,11 +42,6 @@ spreadsheet.events.on("afterSheetRemove", function(sheet) {
 });
 ~~~
 
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the name of the sheet
-- **id** - (*string*) the id of the sheet
-:::
-
 **Changelog:** Added in v4.1
+
+**Related articles:** [Event handling](handling_events.md)

@@ -8,7 +8,7 @@ description: You can learn about the beforeFormatChange event in the documentati
 
 ### Description
 
-@short: fires before the format of a cell is changed
+@short: Fires before the format of a cell is changed
 
 ### Usage
 
@@ -20,12 +20,12 @@ beforeFormatChange: (cell: string, format: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
-- `format` - (mandatory) a new format applied for a cell
+- `cell` - (required) the id of a cell
+- `format` - (required) a new format applied for a cell
 
 ### Returns
 
-***True*** to change the format, ***false*** to prevent changing of the format.
+Return `true` to change the format, `false` to prevent changing of the format
 
 ### Example
 
@@ -40,10 +40,10 @@ spreadsheet.events.on("beforeFormatChange", function(cell, format){
 });
 ~~~
 
+**Related articles:** 
+- [Number formatting](number_formatting.md)
+- [Event handling](handling_events.md)
+
 **Related sample**: [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
 
-:::info
-The event is blockable. Return ***false*** to cancel changing of the format.
-:::
 
-**Related articles:** [Number formatting](number_formatting.md)

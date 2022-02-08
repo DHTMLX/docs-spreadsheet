@@ -8,7 +8,7 @@ description: You can learn about the afterColumnDelete event in the documentatio
 
 ### Description
 
-@short: fires after a column is deleted
+@short: Fires after a column is deleted
 
 ### Usage
 
@@ -20,7 +20,7 @@ afterColumnDelete: (cell: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `cell` - (mandatory) the id of a cell
+- `cell` - (required) the id of a cell
 
 ### Example
 
@@ -34,3 +34,5 @@ spreadsheet.events.on("afterColumnDelete", function(cell){
     console.log(cell);
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)

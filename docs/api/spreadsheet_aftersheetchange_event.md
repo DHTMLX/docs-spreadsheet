@@ -8,7 +8,7 @@ description: You can learn about the afterSheetChange event in the documentation
 
 ### Description
 
-@short: fires after the currently active sheet is changed
+@short: Fires after the currently active sheet is changed
 
 ### Usage
 
@@ -20,7 +20,14 @@ afterSheetChange: (sheet: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (mandatory) the object of the newly active sheet
+- `sheet` - (required) the object of the newly active sheet
+
+:::info
+The **sheet** object contains the following parameters:
+
+- **name** - (*string*) the name of the newly active sheet
+- **id** - (*string*) the id of the newly active sheet
+:::
 
 ### Example
 
@@ -35,11 +42,6 @@ spreadsheet.events.on("afterSheetChange", function(sheet) {
 });
 ~~~
 
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the name of the newly active sheet
-- **id** - (*string*) the id of the newly active sheet
-:::
-
 **Changelog:** Added in v4.1
+
+**Related articles:** [Event handling](handling_events.md)

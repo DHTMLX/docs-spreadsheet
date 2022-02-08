@@ -8,7 +8,7 @@ description: You can learn about the groupFill event in the documentation of the
 
 ### Description
 
-@short: fires on auto filling of cells
+@short: Fires on auto filling of cells
 
 ### Usage
 
@@ -20,8 +20,8 @@ groupFill: (focusedCell: string, selectedCell: string) => void;
 
 The callback of the event takes the following parameters:
 
-- `focusedCell` - (mandatory) the id of a cell in focus
-- `selectedCell` - (mandatory) the ids of a selected cells
+- `focusedCell` - (required) the id of a cell in focus
+- `selectedCell` - (required) the ids of a selected cells
 
 ### Example
 
@@ -34,3 +34,5 @@ spreadsheet.events.on("groupFill", function (focusedCell, selectedCell) {
     console.log(focusedCell, selectedCell);
 });
 ~~~
+
+**Related articles:** [Event handling](handling_events.md)
