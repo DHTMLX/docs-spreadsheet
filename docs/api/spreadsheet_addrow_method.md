@@ -10,6 +10,10 @@ description: You can learn about the addRow method in the documentation of the D
 
 @short: Adds a new row into the spreadsheet
 
+:::info
+The method finds the specified cell, selects it, moves the row where the cell is located one cell below and adds an empty row instead.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -29,9 +33,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // adds an empty second row
 spreadsheet.addRow("G2");
 ~~~
-
-:::info
-The method finds the specified cell, selects it, moves the row where the cell is located one cell below and adds an empty row instead.
-:::
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

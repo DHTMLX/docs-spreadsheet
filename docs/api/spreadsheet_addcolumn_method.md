@@ -10,6 +10,10 @@ description: You can learn about the addColumn method in the documentation of th
 
 @short: Adds a new column into the spreadsheet
 
+:::info
+The method finds the specified cell, selects it, moves the column where the cell is located one cell left and adds an empty column instead.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -29,9 +33,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // adds an empty "G" column
 spreadsheet.addColumn("G1");
 ~~~
-
-:::info
-The method finds the specified cell, selects it, moves the column where the cell is located one cell left and adds an empty column instead.
-:::
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

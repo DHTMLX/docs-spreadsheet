@@ -10,6 +10,10 @@ description: You can learn about the deleteRow method in the documentation of th
 
 @short: Removes a row from the spreadsheet
 
+:::info
+The method finds the specified cell, selects it, removes the row where the cell is located and moves the row below to its position.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -29,9 +33,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // removes the second row
 spreadsheet.deleteRow("G2");
 ~~~
-
-:::info
-The method finds the specified cell, selects it, removes the row where the cell is located and moves the row below to its position.
-:::
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

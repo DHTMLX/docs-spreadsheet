@@ -10,6 +10,12 @@ description: You can learn about the removeSheet method in the documentation of 
 
 @short: Removes a sheet from the spreadsheet by its id
 
+:::info
+To apply this method, you need to enable the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option.
+
+Also note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -29,11 +35,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // removes a sheet from the spreadsheet by the specified id
 spreadsheet.removeSheet("u1614669331209");
 ~~~
-
-:::info
-To apply this method, you need to enable the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option.
-
-Also note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
-:::
 
 **Change log:** Added in v4.1

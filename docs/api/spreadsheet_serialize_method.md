@@ -20,16 +20,6 @@ serialize(): object;
 
 The method returns a serialized JSON object
 
-### Example
-
-~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
-
-const data = spreadsheet.serialize();
-~~~
-
 Serialized data presents an object with the following attributes:
 
 - **formats** - an array of objects with number formats
@@ -39,5 +29,15 @@ Serialized data presents an object with the following attributes:
   - **data** - an array of data objects
   - **rows** - an array of height objects
   - **cols** - an array of width objects
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+
+const data = spreadsheet.serialize();
+~~~
 
 **Related articles:** [Data loading and export](loading_data.md#saving-and-restoring-state)

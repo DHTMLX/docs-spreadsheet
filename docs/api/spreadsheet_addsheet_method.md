@@ -10,6 +10,10 @@ description: You can learn about the addSheet method in the documentation of the
 
 @short: Adds a new sheet into the spreadsheet
 
+:::info
+To apply this method, you need to enable the [multisheets](api/spreadsheet_multisheets_config.md) configuration option.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -33,9 +37,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // returns "u1614669331209"
 spreadsheet.addSheet("New Sheet");
 ~~~
-
-:::info
-To apply this method, you need to enable the [multisheets](api/spreadsheet_multisheets_config.md) configuration option.
-:::
 
 **Change log:** Added in v4.1

@@ -10,6 +10,10 @@ description: You can learn about the setStyle method in the documentation of the
 
 @short: Sets style to a cell(s)
 
+:::info
+The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -39,10 +43,6 @@ spreadsheet.setStyle("B6,A1:D1",{color:"blue"});
 // setting styles from an array for cells in a range alternately
 spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 ~~~
-
-:::info
-The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
-:::
 
 **Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 

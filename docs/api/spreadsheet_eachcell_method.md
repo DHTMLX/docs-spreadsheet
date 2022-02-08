@@ -10,6 +10,10 @@ description: You can learn about the eachcell method in the documentation of the
 
 @short: Iterates cells in the spreadsheet
 
+:::info
+If the range of cells is not specified, the method iterates the selected cells.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -67,10 +71,6 @@ spreadsheet.menu.events.on("click", function (id) {
 	}
 });
 ~~~
-
-:::info
-If the range of cells is not specified, the method iterates the selected cells.
-:::
 
 **Related articles:** [Customization](customization.md#menu)
 

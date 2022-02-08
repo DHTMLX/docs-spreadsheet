@@ -10,6 +10,10 @@ description: You can learn about the setValue method in the documentation of the
 
 @short: Sets a value for a cell
 
+:::info
+The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -39,10 +43,6 @@ spreadsheet.setValue("B6,A1:D1",5);
 // setting values from an array for cells in a range alternately
 spreadsheet.setValue("A1:D1",[1,2,3]);
 ~~~
-
-:::info
-The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
-:::
 
 **Related sample:** [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 

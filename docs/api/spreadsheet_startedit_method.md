@@ -10,6 +10,10 @@ description: You can learn about the startEdit method in the documentation of th
 
 @short: Starts editing in the selected cell
 
+:::info
+If the id of a cell isn't passed, editing will start in the currently selected cell.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -30,9 +34,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // starts editing the currently selected cell
 spreadsheet.startEdit();
 ~~~
-
-:::info
-If the id of a cell isn't passed, editing will start in the currently selected cell.
-:::
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md#editing-cell)

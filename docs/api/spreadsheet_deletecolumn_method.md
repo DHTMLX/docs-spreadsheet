@@ -10,6 +10,10 @@ description: You can learn about the deleteColumn method in the documentation of
 
 @short: Removes a column from the spreadsheet
 
+:::info
+The method finds the specified cell, selects it, removes the column where the cell is located and moves the column on the left to its position.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -29,9 +33,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // removes the "G" column
 spreadsheet.deleteColumn("G2");
 ~~~
-
-:::info
-The method finds the specified cell, selects it, removes the column where the cell is located and moves the column on the left to its position.
-:::
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

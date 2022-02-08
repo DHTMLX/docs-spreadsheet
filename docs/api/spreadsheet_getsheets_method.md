@@ -20,6 +20,10 @@ getSheets(): array;
 
 The method returns an array of sheets objects
 
+:::info
+Each sheet object includes the **name** and **id** attributes of the sheet.
+:::
+
 ### Example
 
 ~~~jsx {5}
@@ -29,9 +33,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 // returns  [{name: "sheet1", id: "u1614669331194"}, …]
 spreadsheet.getSheets();
 ~~~
-
-:::info
-Each sheet object includes the **name** and **id** attributes of the sheet.
-:::
 
 **Change log:** Added in v4.1
