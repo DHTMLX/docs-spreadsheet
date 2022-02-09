@@ -6,22 +6,31 @@ description: You can learn about the menu config in the documentation of the DHT
 
 # menu
 
-@short: shows/hides the menu
+### Description
 
-@signature: {`menu?: boolean;`}
+@short: Optional. Shows/hides the menu
 
-@default: true
+### Usage
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-	menu: false
+~~~jsx
+menu?: boolean;
+~~~
+
+### Default config
+
+~~~jsx
+menu: true
+~~~
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+  menu: false,
+  // other config parameters
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)
+**Related articles:** [Configuration](configuration.md#menu)
 
-@descr:
-
-**Related articles**
-
-[Configuration](configuration.md#menu)
+**Related sample:** [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)

@@ -1,26 +1,43 @@
 ---
 sidebar_label: beforeRowAdd
-title: beforerowadd event
-description: You can learn about the beforerowadd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeRowAdd event
+description: You can learn about the beforeRowAdd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeRowAdd
 
-@short: fires before a new row is added
+### Description
 
-@signature: {`beforeRowAdd: (cell: string) => void | boolean;`}
+@short: Fires before a new row is added
 
-@params:
-`cell: string` - the id of a cell
+### Usage
 
-@returns:
-*True* to add a row, *false* to prevent adding of a row.
+~~~jsx
+beforeRowAdd: (cell: string) => void | boolean;
+~~~
 
-@example:
-spreadsheet.events.on("beforeRowAdd", function(cells){
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (required) the id of a cell
+
+### Returns
+
+Return `true` to add a row, `false` to prevent adding of a row
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeRowAdd" event
+spreadsheet.events.on("beforeRowAdd", function(cell){
 	console.log("A new row will be added");
+    console.log(cell);
     return true;
 });
+~~~
 
-@descr:
-The event is blockable, returning false will prevent adding of a row.
+**Related articles:** [Event handling](handling_events.md)

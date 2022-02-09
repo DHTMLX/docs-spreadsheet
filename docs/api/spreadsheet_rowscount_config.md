@@ -1,25 +1,30 @@
 ---
 sidebar_label: rowsCount
-title: rowscount config
-description: You can learn about the rowscount config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: rowsCount config
+description: You can learn about the rowsCount config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # rowsCount
 
-@short: sets the number of rows a spreadsheet will have on initialization
+### Description
 
-@signature: {`rowsCount?: number;`}
+@short: Optional. Sets the number of rows a spreadsheet will have on initialization
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-	rowsCount: 10
+### Usage
+
+~~~jsx
+rowsCount?: number;
+~~~
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+  rowsCount: 10,
+  // other config parameters
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
+**Related articles:** [Configuration](configuration.md#number-of-rows-and-columns)
 
-@descr:
-
-**Related articles**
-
-[Configuration](configuration.md#number-of-rows-and-columns)
+**Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)

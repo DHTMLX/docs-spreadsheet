@@ -1,26 +1,37 @@
 ---
 sidebar_label: addRow()
-title: addrow method
-description: You can learn about the addrow method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: addRow method
+description: You can learn about the addRow method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # addRow()
 
-@short: adds a new row into the spreadsheet
+### Description
 
-@signature: {`addRow: (cell: string) => void;`}
+@short: Adds a new row into the spreadsheet
 
-@params:
-`cell: string` - the id of a cell that contains the id of a row that should be added
+:::info
+The method finds the specified cell, selects it, moves the row where the cell is located one cell below and adds an empty row instead.
+:::
 
-@example:
+### Usage
+
+~~~jsx
+addRow(cell: string): void;
+~~~
+
+### Parameters
+
+- `cell` - (required) the id of a cell that contains the id of a row that should be added
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 // adds an empty second row
 spreadsheet.addRow("G2");
+~~~
 
-@descr:
-
-The method finds the specified cell, selects it, moves the row where the cell is located one cell below and adds an empty row instead.
-
-**Related articles**
-
-[Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

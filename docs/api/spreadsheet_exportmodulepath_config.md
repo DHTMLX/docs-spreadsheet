@@ -1,26 +1,35 @@
 ---
 sidebar_label: exportModulePath
-title: exportmodulepath config
-description: You can learn about the exportmodulepath config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: exportModulePath config
+description: You can learn about the exportModulePath config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # exportModulePath
 
-@short: sets the path to the export module
+### Description
 
-@signature: {`exportModulePath?: string;`}
+@short: Optional. Sets the path to the export module
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-    exportModulePath: "../libs/json2excel/1.0/worker.js"
+### Usage
+
+~~~jsx
+exportModulePath?: string;
+~~~
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+  exportModulePath: "../libs/json2excel/1.0/worker.js",
+  // other config parameters
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
+### Details
 
-@descr:
-
-{{note DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.}}
+:::note 
+DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.
+:::
 
 To export files you need to:
 
@@ -31,6 +40,6 @@ To export files you need to:
 
 By default the link to CDN is used.
 
-**Related articles**
+**Related articles:** [Data loading and export](loading_data.md#exporting-data)
 
-[Data loading and export](loading_data.md#exporting-data)
+**Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)

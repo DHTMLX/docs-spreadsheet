@@ -6,11 +6,22 @@ description: You can learn about the undo method in the documentation of the DHT
 
 # undo()
 
-@short: reverts the latest action
+### Description
 
-@signature: {`undo(): void;`}
+@short: Reverts the latest action
 
-@example:
+### Usage
+
+~~~jsx
+undo(): void;
+~~~
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// performs one step back
 spreadsheet.undo();
-
-@descr:
+~~~

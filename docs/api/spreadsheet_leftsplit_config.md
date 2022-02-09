@@ -1,27 +1,32 @@
 ---
 sidebar_label: leftSplit
-title: leftsplit config
-description: You can learn about the leftsplit config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: leftSplit config
+description: You can learn about the leftSplit config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # leftSplit
 
-@short: sets the number of columns fixed to the left side of the spreadsheet
+### Description
 
-@signature: {`leftSplit?: number;`}
+@short: Optional. Sets the number of columns fixed to the left side of the spreadsheet
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
-    leftSplit:3
+### Usage
+
+~~~jsx
+leftSplit?: number;
+~~~
+
+### Example
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+  leftSplit:3,
+  // other config parameters
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Frozen columns](https://snippet.dhtmlx.com/iazmc27w)
+**Change log:** Added in v4.0
 
-@descr:
+**Related articles:** [Configuration](configuration.md#frozen-columns)
 
-**Related articles**
-
-[Configuration](configuration.md#frozen-columns)
-
-@changelog: added in v4.0
+**Related sample:** [Spreadsheet. Frozen columns](https://snippet.dhtmlx.com/iazmc27w)

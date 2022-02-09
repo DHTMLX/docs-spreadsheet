@@ -6,18 +6,35 @@ description: You can learn about the afterSheetClear event in the documentation 
 
 # afterSheetClear
 
-@short: fires after a sheet of the spreadsheet is cleared
+### Description
 
-@signature: {`afterSheetClear: (sheet: ISheet) => void;`}
+@short: Fires after a sheet of the spreadsheet is cleared
 
-@params:
-`sheet: object` - the object of a sheet
+### Usage
 
-@example:
+~~~jsx
+afterSheetClear: (sheet: object) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `sheet` - (required) an object with the name and id of a sheet
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "afterSheetClear" event
 spreadsheet.events.on("afterSheetClear", function(sheet){
     console.log("The " + sheet.name + " is cleared");
+    console.log(sheet);
 });
+~~~
 
-@descr:
+**Changelog:** Added in v4.2
 
-@changelog: added in v4.2
+**Related articles:** [Event handling](handling_events.md)
