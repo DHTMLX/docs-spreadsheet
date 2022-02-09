@@ -6,19 +6,31 @@ description: You can learn about the load method in the documentation of the DHT
 
 # load()
 
-@short: loads data from an external file
+### Description
 
-@signature: {`load: (url: string, type?: string) => Promise<any>;`}
+@short: Loads data from an external file
 
-@params:
+### Usage
 
-- `url: string` - the URL of an external file
-- `type: string` - optional, the type of data to load: "json" (default), "csv", "xlsx"
+~~~jsx
+load(url: string, type?: string): promise;
+~~~
 
-@returns:
-A promise of data loading.
+### Parameters
 
-@example:
+- `url` - (required) the URL of an external file
+- `type` - (optional) optional, the type of data to load: "json" (default), "csv", "xlsx"
+
+### Returns
+
+The method returns a promise of data loading
+
+### Example
+
+~~~jsx {5,8,11}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 // load data in the JSON format (default)
 spreadsheet.load("../common/data.json");
 
@@ -27,16 +39,16 @@ spreadsheet.load("../common/data.csv", "csv");
 
 // load data in the Excel format, (.xlsx only)
 spreadsheet.load("../common/data.xlsx", "xlsx");
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Load Data](https://snippet.dhtmlx.com/ih9zmc3e)
+**Related samples:**
+- [Spreadsheet. Load Data](https://snippet.dhtmlx.com/ih9zmc3e)
 
-**Related sample**: [Spreadsheet. CSV Load](https://snippet.dhtmlx.com/1f87y71v)
+- [Spreadsheet. CSV Load](https://snippet.dhtmlx.com/1f87y71v)
 
-**Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
+- [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
 
-@descr:
-
+:::info
 The component will make an AJAX call and expect the remote URL to provide valid data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
@@ -46,13 +58,14 @@ spreadsheet.load("../some/data.json").then(function(){
 	spreadsheet.selection.add(123);
 });
 ~~~
+:::
 
 ### Loading Excel data
 
-{{note Please note that the component supports import from Excel files with the **.xlsx** extension only. }}
+:::note
+Please note that the component supports import from Excel files with the **.xlsx** extension only.
+:::
 
 DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. [Check the details](loading_data.md#loading-excel-file-xlsx).
 
-**Related articles**
-
-[Data loading and export](loading_data.md)
+**Related articles:** [Data loading and export](loading_data.md)

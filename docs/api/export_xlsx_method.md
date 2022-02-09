@@ -6,22 +6,34 @@ description: You can learn about the xlsx export method in the documentation of 
 
 # xlsx()
 
-@short: exports data from a spreadsheet into an Excel (.xlsx) file
+### Description
 
-@signature: xlsx(): void;
+@short: Exports data from a spreadsheet into an Excel (.xlsx) file
 
-@example:
+### Usage
+
+~~~jsx
+xlsx(): void;
+~~~
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// exports data from a spreadsheet into an Excel
 spreadsheet.export.xlsx();
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
+:::note 
+Please note that the component supports export to Excel files with the **.xlsx** extension only.
+:::
 
-@descr:
-
-{{note Please note that the component supports export to Excel files with the **.xlsx** extension only. }}
-
+:::info
 DHTMLX Spreadsheet uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) for import of data from Excel. [Check the details](loading_data.md#exporting-data).
+:::
 
-**Related articles**
+**Related articles:** [Data loading and export](loading_data.md)
 
-[Data loading and export](loading_data.md)
+**Related sample:** [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)

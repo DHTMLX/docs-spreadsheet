@@ -1,27 +1,43 @@
 ---
 sidebar_label: beforeFocusSet
-title: beforefocusset event
-description: You can learn about the beforefocusset event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeFocusSet event
+description: You can learn about the beforeFocusSet event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeFocusSet
 
-@short: fires before focus is set on a cell
+### Description
 
-@signature: {`beforeFocusSet: (cell: string) => void | boolean;`}
+@short: Fires before focus is set on a cell
 
-@params:
-`cell: string` - the id of a cell
+### Usage
 
-@returns:
-*True* to set focus on a cell, *false* to prevent setting focus.
+~~~jsx
+beforeFocusSet: (cell: string) => void | boolean;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (required) the id of a cell
+
+### Returns
+
+Return `true` to set focus on a cell, `false` to prevent setting focus
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeFocusSet" event
 spreadsheet.events.on("beforeFocusSet", function(cell){
   console.log("Focus will be set on a cell "+spreadsheet.selection.getSelectedCell());
+  console.log(cell);
   return true;
 });
+~~~
 
-@descr:
-
-The event is blockable, returning false will prevent setting focus on a cell.
+**Related articles:** [Event handling](handling_events.md)

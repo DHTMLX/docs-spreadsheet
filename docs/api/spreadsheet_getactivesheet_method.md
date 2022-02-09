@@ -1,22 +1,33 @@
 ---
 sidebar_label: getActiveSheet()
-title: getactivesheet method
-description: You can learn about the getactivesheet method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: getactiveSheet method
+description: You can learn about the getactiveSheet method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getActiveSheet()
 
-@short: returns the sheet that is currently active
+### Description
 
-@signature: {`getActiveSheet: () => ISheet;`}
+@short: Returns the sheet that is currently active
 
-@returns:
-The object with the name and id attributes of the active sheet.
+### Usage
 
-@example:
+~~~jsx
+getActiveSheet(): object;
+~~~
+
+### Returns
+
+The method returns an object with the name and id attributes of the active sheet
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// returns {name: "sheet", id: "u1614675531904"}
 spreadsheet.getActiveSheet();
-// ->  {name: "sheet", id: "u1614675531904"}
+~~~
 
-@descr:
-
-@changelog: added in v4.1
+**Change log:** Added in v4.1

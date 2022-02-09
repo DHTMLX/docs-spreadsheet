@@ -1,36 +1,50 @@
 ---
 sidebar_label: getFormat()
-title: getformat method
-description: You can learn about the getformat method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: getFormat method
+description: You can learn about the getFormat method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getFormat()
 
-@short: returns the number format applied to the value of a cell
+### Description
 
-@signature: {`getFormat: (cell: string) => string | string[];`}
+@short: Returns the number format applied to the value of a cell
 
-@params:
-`cell: string` - the id(s) of a cell(s) or a range of cells
+### Usage
 
-@returns:
-The format(s) applied to the value of the cell(s).
+~~~jsx
+getFormat(cell: string): string | array;
+~~~
 
-@example:
-var format = spreadsheet.getFormat("A1");
-// ->"currency"
+### Parameters
 
-@descr:
+`cell` - (required) the id(s) of the cell(s) or a range of cells
+
+### Returns
+
+The method returns a format(s) applied to the value of the cell(s)
+
+### Example
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// returns "currency"
+const format = spreadsheet.getFormat("A1");
+~~~
+
+:::info
 Starting with v4.1, the reference to a cell can be specified in the following format:
 
 ~~~js
-var cellFormat = spreadsheet.getFormat("sheet1!A2"); //-> "number"
+// returns "number"
+const cellFormat = spreadsheet.getFormat("sheet1!A2"); 
 ~~~
 
 where *sheet1* is the name of the tab.
 
 In case the name of the tab isn't specified, the method will return the format applied to the value of a cell from the tab that is currently active.
+:::
 
-**Related articles**
-
-[Number formatting](number_formatting.md)
+**Related articles:** [Number formatting](number_formatting.md)

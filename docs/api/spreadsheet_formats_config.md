@@ -6,12 +6,45 @@ description: You can learn about the formats config in the documentation of the 
 
 # formats
 
-@short: defines the list of number formats  
+### Description
 
-@signature: {`formats?: IFormats[];`}
+@short: Optional. Defines the list of number formats  
 
-@example:
-var spreadsheet = new dhx.Spreadsheet(document.body, {
+### Usage
+
+~~~jsx
+formats?: array;
+~~~
+
+### Parameters
+
+The **formats** property is an array of number format objects, each of which includes a set of properties:
+
+- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
+- **mask** - a mask for a number format
+- **name** - the name of a format displayed in the toolbar and menu drop-down lists
+- **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
+
+### Default config
+
+The default number formats are the following:
+
+~~~jsx
+defaultFormats = [
+	{ name: "Common", id: "common", mask: "", example: "1500.31" },
+	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
+	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
+	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
+	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
+    { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
+];
+~~~
+
+
+### Example
+
+~~~jsx {2-19}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     formats: [
     	{
     		name: "U.S. Dollar",
@@ -29,37 +62,15 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
     		id: "franc",
     		mask: "[$CHF ]#.##0,00"
     	}
-    ]
+    ],
+	// other config parameters
 });
-
-@descr:
-
-The default number formats are the following:
-
-~~~js
-defaultFormats = [
-	{ name: "Common", id: "common", mask: "", example: "1500.31" },
-	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
-	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
-	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
-	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
-    { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
-];
 ~~~
 
-Each number format is an object that includes a set of properties:
+**Change log:**
+- The "Date" format has been added in v4.2
+- The "Text" format has been added in v4.0
 
-- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
-- **mask** - a mask for a number format
-- **name** - the name of a format displayed in the toolbar and menu drop-down lists
-- **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
-
-Read detailed information about number formatting in DHTMLX Spreadsheet in the article [Number formatting](number_formatting.md).
-
-**Related articles**
-
-[Number formatting](number_formatting.md#formats-customization)
-
-@changelog:
-- The "Date" format has been added in v4.2.
-- The "Text" format has been added in v4.0.
+**Related articles:** 
+- [Number formatting](number_formatting.md)
+- [Formats customization](number_formatting.md#formats-customization)

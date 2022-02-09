@@ -1,26 +1,43 @@
 ---
 sidebar_label: beforeRowDelete
-title: beforerowdelete event
-description: You can learn about the beforerowdelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeRowDelete event
+description: You can learn about the beforeRowDelete event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeRowDelete
 
-@short: fires before a row is deleted
+### Description
 
-@signature: {`beforeRowDelete: (cell: string) => void | boolean;`}
+@short: Fires before a row is deleted
 
-@params:
-`cell: string` - the id of a cell
+### Usage
 
-@returns:
-*True* to delete a row, *false* to prevent deleting of a row.
+~~~jsx
+beforeRowDelete: (cell: string) => void | boolean;
+~~~
 
-@example:
-spreadsheet.events.on("beforeRowDelete", function(cells){
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (required) the id of a cell
+
+### Returns
+
+Return `true` to delete a row, `false` to prevent deleting of a row
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeRowDelete" event
+spreadsheet.events.on("beforeRowDelete", function(cell){
 	console.log("A row will be deleted");
+    console.log(cell);
     return true;
 });
+~~~
 
-@descr:
-The event is blockable, returning false will prevent deleting of a row.
+**Related articles:** [Event handling](handling_events.md)

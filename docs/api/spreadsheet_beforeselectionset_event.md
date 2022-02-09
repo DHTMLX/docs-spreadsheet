@@ -1,27 +1,43 @@
 ---
 sidebar_label: beforeSelectionSet
-title: beforeselectionset event
-description: You can learn about the beforeselectionset event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeSelectionSet event
+description: You can learn about the beforeSelectionSet event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeSelectionSet
 
-@short: fires before cells are selected
+### Description
 
-@signature: {`beforeSelectionSet: (cell: string) => void | boolean;`}
+@short: Fires before cells are selected
 
-@params:
-`cell: string` - the id(s) of a cell(s)
+### Usage
 
-@returns:
-*True* to select cells, *false* to prevent selection of cells.
+~~~jsx
+beforeSelectionSet: (cell: string) => void | boolean;
+~~~
 
-@example:
-spreadsheet.events.on("beforeSelectionSet", function(cells){
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (required) the id(s) of a cell(s)
+
+### Returns
+
+Return `true` to select cells, `false` to prevent selection of cells
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeSelectionSet" event
+spreadsheet.events.on("beforeSelectionSet", function(cell){
  	console.log("Cells "+spreadsheet.selection.getSelectedCell()+" will be selected");
+    console.log(cell);
     return true;
 });
+~~~
 
-@descr:
-
-The event is blockable, returning false will prevent selection of cells.
+**Related articles:** [Event handling](handling_events.md)

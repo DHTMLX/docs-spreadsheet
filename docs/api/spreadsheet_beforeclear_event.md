@@ -6,19 +6,33 @@ description: You can learn about the beforeClear event in the documentation of t
 
 # beforeClear
 
-@short: fires before a spreadsheet is cleared
+### Description
 
-@signature: {`beforeClear: () => void | boolean;`}
+@short: Fires before a spreadsheet is cleared
 
-@returns:
+### Usage
+
+~~~jsx
+beforeClear: () => void | boolean;
+~~~
+
+### Returns
+
 Return `false` to prevent clearing a spreadsheet; otherwise, `true`.
 
-@example:
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeClear" event
 spreadsheet.events.on("beforeClear", function(){
 	console.log("A spreadsheet will be cleared");
     return false;
 });
+~~~
 
-@descr:
+**Changelog:** Added in v4.2
 
-@changelog: added in v4.2
+**Related articles:** [Event handling](handling_events.md)

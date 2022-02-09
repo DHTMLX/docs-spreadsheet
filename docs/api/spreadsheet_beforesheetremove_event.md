@@ -1,34 +1,45 @@
 ---
 sidebar_label: beforeSheetRemove
-title: beforesheetremove event
-description: You can learn about the beforesheetremove event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeSheetRemove event
+description: You can learn about the beforeSheetRemove event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeSheetRemove
 
-@short: fires before a sheet is removed
+### Description
 
-@signature: {`beforeSheetRemove: (sheet: ISheet) => void | boolean;`}
+@short: Fires before a sheet is removed
 
-@params:
-`sheet: object` - the object of a sheet
+### Usage
 
-@returns:
-*True* to remove a sheet, *false* to prevent removing of a sheet.
+~~~jsx
+beforeSheetRemove: (sheet: object) => void | boolean;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `sheet` - (required) an object  with the name and id of a sheet
+
+### Returns
+
+Return `true` to remove the active sheet, `false` to prevent the active sheet from being removed
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeSheetRemove" event
 spreadsheet.events.on("beforeSheetRemove", function(sheet) {
     console.log("The ", sheet.name, " sheet will be removed");
+    console.log(sheet);
     return true;
 });
+~~~
 
-@descr:
+**Changelog:** Added in v4.1
 
-The sheet object contains the following parameters:
-
-- **name** - (*string*) the name of the sheet to be deleted
-- **id** - (*string*) the id of the sheet to be deleted
-
-The event is blockable, returning false will prevent removing of a sheet.
-
-@changelog: added in v4.1
+**Related articles:** [Event handling](handling_events.md)

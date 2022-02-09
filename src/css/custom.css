@@ -29,7 +29,8 @@ html[data-theme=dark] {
 }
 
 .docusaurus-highlight-code-line {
-    background-color: rgb(210, 213, 214);
+    /* Color which works with light mode syntax highlighting theme */
+    background-color: rgb(225, 225, 225);
     display: block;
     margin: 0 calc(-1 * var(--ifm-pre-padding));
     padding: 0 var(--ifm-pre-padding);
@@ -131,7 +132,7 @@ table {
 
 @media (max-width: 996px) {
     .navbar__toggle {
-        display: none;
+        display: block;
     }
     .menu--responsive .menu__button {
         border-radius: 100px;
