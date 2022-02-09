@@ -20,14 +20,7 @@ afterSheetChange: (sheet: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (required) the object of the newly active sheet
-
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the name of the newly active sheet
-- **id** - (*string*) the id of the newly active sheet
-:::
+- `sheet` - (required) an object with the name and id of a newly active sheet
 
 ### Example
 

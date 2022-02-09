@@ -31,7 +31,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-:::info
+### List of characters
+
 DHTMLX Spreadsheet uses the following characters for setting a date format:
 
 | Character | Definition                                        |
@@ -55,7 +56,6 @@ DHTMLX Spreadsheet uses the following characters for setting a date format:
 | **%a**    | am or pm                                          |
 | **%A**    | AM or PM                                          |
 | **%u**    | milliseconds                                      |
-:::
 
 **Change log:** Added in v4.2
 

@@ -18,23 +18,7 @@ parse(data: any): void;
 
 ### Parameters
 
-- `data` - (required)  the data to load
-
-### Details
-
-The data *object* takes the following parameters:
-
-- **styles** - (*object*) an object with CSS classes applied to particular cells
-- **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
-    - **name** - (*string*) the sheet name
-    - **id** - (*string*) the sheet id
-    - **rows** - (*array*) optional, an array of height objects. If not specified, the rows will have a height of 32px.
-    - **cols** - (*array*) optional, an array of width objects. If not specified, the columns will have a width of 120px. 
-    - **data** - (*array*) an array of objects with data of the sheet. Each object has the following properties:
-        - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
-        - **value** - (string,number) the value of a cell
-        - **css** - (*string*) optional, the name of the CSS class
-        - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+- `data` - (required) the data to load
 
 ### Example
 
@@ -71,9 +55,9 @@ spreadsheet.parse(styledData);
 
 **Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 
-:::info
-Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. 
-:::
+### Details
+
+Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter.
 
 :::note 
 In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
@@ -127,6 +111,20 @@ const styledData = {
 
 spreadsheet.parse(styledData);
 ~~~
+
+The data *object* takes the following parameters:
+
+- **styles** - (*object*) an object with CSS classes applied to particular cells
+- **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
+    - **name** - (*string*) the sheet name
+    - **id** - (*string*) the sheet id
+    - **rows** - (*array*) optional, an array of height objects. If not specified, the rows will have a height of 32px.
+    - **cols** - (*array*) optional, an array of width objects. If not specified, the columns will have a width of 120px. 
+    - **data** - (*array*) an array of objects with data of the sheet. Each object has the following properties:
+        - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+        - **value** - (string,number) the value of a cell
+        - **css** - (*string*) optional, the name of the CSS class
+        - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
 
 **Change log:** The **rows** and **cols** properties of the sheet object have been added in v4.2
 

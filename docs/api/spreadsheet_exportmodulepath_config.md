@@ -25,15 +25,12 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Related articles:** [Data loading and export](loading_data.md#exporting-data)
-
-**Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
+### Details
 
 :::note 
 DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.
 :::
 
-:::info
 To export files you need to:
 
 - install the **JSON2excel** library
@@ -42,4 +39,7 @@ To export files you need to:
   - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
 
 By default the link to CDN is used.
-:::
+
+**Related articles:** [Data loading and export](loading_data.md#exporting-data)
+
+**Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)

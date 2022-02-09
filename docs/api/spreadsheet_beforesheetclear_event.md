@@ -20,14 +20,7 @@ beforeSheetClear: (sheet: object) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (required) the object of a sheet
-
-:::info
-The sheet object contains the following parameters:
-
-- **name** - (*string*) the name of the currently active sheet
-- **id** - (*string*) the id of the sheet
-:::
+- `sheet` - (required) an object  with the name and id of a sheet
 
 ### Returns
 

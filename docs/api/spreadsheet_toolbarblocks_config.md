@@ -43,16 +43,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Related articles:**
-- [Configuration](configuration.md#toolbar)
-- [Customization](customization.md)
+### Details
 
-
-**Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
-
-:::info
 You can specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example:
-:::
 
 ~~~js {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
@@ -63,3 +56,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 ![Custom toolbar](../assets/custom_toolbar.png)
 
 Check how you can [customize the toolbar](customization.md/#toolbar).
+
+**Related articles:**
+- [Configuration](configuration.md#toolbar)
+- [Customization](customization.md)
+
+**Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)

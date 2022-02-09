@@ -20,14 +20,7 @@ beforeSheetRemove: (sheet: object) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (required) the object of a sheet
-
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the name of the sheet to be deleted
-- **id** - (*string*) the id of the sheet to be deleted
-:::
+- `sheet` - (required) an object  with the name and id of a sheet
 
 ### Returns
 

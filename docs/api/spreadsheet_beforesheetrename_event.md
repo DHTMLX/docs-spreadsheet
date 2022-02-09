@@ -20,15 +20,8 @@ beforeSheetRename: (sheet: object, value: string) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (required) the object of a sheet
+- `sheet` - (required) an object with the old name of a sheet and its id
 - `value` - (required) the new name of the sheet
-
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the old name of the sheet
-- **id** - (*string*) the id of the sheet
-:::
 
 ### Returns
 

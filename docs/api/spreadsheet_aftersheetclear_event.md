@@ -20,7 +20,7 @@ afterSheetClear: (sheet: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (required) the object of a sheet
+- `sheet` - (required) an object with the name and id of a sheet
 
 ### Example
 

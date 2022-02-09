@@ -10,6 +10,10 @@ description: You can learn about the fire events bus method in the documentation
 
 @short: Triggers an inner event
 
+:::info
+Normally, events are called automatically and you don't need to use this method.
+:::
+
 ### Usage
 
 ~~~jsx
@@ -38,9 +42,5 @@ spreadsheet.events.on("CustomEvent", function(param1, param2){
 
 const res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
 ~~~
-
-:::info
-Normally, events are called automatically and you don't need to use this method.
-:::
 
 **Related articles:** [Event Handling](handling_events.md)

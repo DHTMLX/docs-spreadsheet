@@ -16,6 +16,15 @@ description: You can learn about the formats config in the documentation of the 
 formats?: array;
 ~~~
 
+### Parameters
+
+The **formats** property is an array of number format objects, each of which includes a set of properties:
+
+- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
+- **mask** - a mask for a number format
+- **name** - the name of a format displayed in the toolbar and menu drop-down lists
+- **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
+
 ### Default config
 
 The default number formats are the following:
@@ -31,14 +40,6 @@ defaultFormats = [
 ];
 ~~~
 
-Each number format is an object that includes a set of properties:
-
-- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
-- **mask** - a mask for a number format
-- **name** - the name of a format displayed in the toolbar and menu drop-down lists
-- **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
-
-**Related articles:** [Number formatting](number_formatting.md)
 
 ### Example
 
@@ -67,7 +68,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 ~~~
 
 **Change log:**
-- The "Date" format has been added in v4.2.
-- The "Text" format has been added in v4.0.
+- The "Date" format has been added in v4.2
+- The "Text" format has been added in v4.0
 
-**Related articles:** [Formats customization](number_formatting.md#formats-customization)
+**Related articles:** 
+- [Number formatting](number_formatting.md)
+- [Formats customization](number_formatting.md#formats-customization)

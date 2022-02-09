@@ -20,14 +20,7 @@ afterSheetRename: (sheet: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `sheet` - (required) the object of a sheet
-
-:::info
-The **sheet** object contains the following parameters:
-
-- **name** - (*string*) the new name of the sheet
-- **id** - (*string*) the id of the sheet
-:::
+- `sheet` - (required) an object with the name and id of a sheet
 
 ### Example
 

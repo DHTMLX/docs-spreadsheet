@@ -18,7 +18,7 @@ setFocusedCell(cell: string): void;
 
 ### Parameters
 
-`cell` - (required) the id of a cell to set focus on
+- `cell` - (required) the id of a cell to set focus on
 
 ### Example
 

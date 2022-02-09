@@ -25,15 +25,12 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Related articles:** [Data loading and export](loading_data.md#loading-excel-file-xlsx)
-
-**Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
+### Details
 
 :::note 
 DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2json](https://github.com/DHTMLX/excel2json) for import of data from Excel.
 :::
 
-:::info
 To import files you need to:
 
 - install the **Excel2json** library
@@ -42,6 +39,7 @@ To import files you need to:
   - by providing a link to the file from CDN: **"https://cdn.dhtmlx.com/libs/excel2json/1.0/worker.js"**
 
 By default the link to CDN is used.
-:::
 
+**Related articles:** [Data loading and export](loading_data.md#loading-excel-file-xlsx)
 
+**Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)
