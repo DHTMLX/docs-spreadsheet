@@ -18,7 +18,7 @@ The **Align** block:
 - the *Align center* button (id: "align-center")
 - the *Align right* button (id: "align-right")
 
-`From v7.2`:
+`From v4.2`:
 
 The **Horizontal align** sub-block of the **Align** block:
 
@@ -45,7 +45,7 @@ const locale = {
 }
 ~~~
 
-`From v7.2`:
+`From v4.2`:
 
 ~~~js
 const locale = {
