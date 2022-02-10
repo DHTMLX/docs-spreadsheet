@@ -1,10 +1,10 @@
 ---
-sidebar_label: Using Spreadsheet with TypeScript
-title: Using typescript
+sidebar_label: TypeScript support
+title: TypeScript support
 description: You can learn about using typescript with the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Using Spreadsheet with TypeScript
+# TypeScript support
 
 Starting from v4.0, the library of DHTMLX Spreadsheet provides the ability to use TypeScript definitions. The built-in support of Typescript works out of the box.
 
