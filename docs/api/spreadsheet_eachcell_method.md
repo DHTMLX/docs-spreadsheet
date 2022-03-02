@@ -6,19 +6,39 @@ description: You can learn about the eachcell method in the documentation of the
 
 # eachCell()
 
-@short: iterates cells in the spreadsheet
+### Description
 
-@signature: {`eachCell: (cb: (cellName: string, cellValue: any) => any, range?: string) => void;`}
+@short: Iterates cells in the spreadsheet
 
-@params:
-- `callback: function` - a callback function
-- `range: string` - a range of cells to iterate
+:::info
+If the range of cells is not specified, the method iterates the selected cells.
+:::
 
-@example:
+### Usage
+
+~~~jsx
+eachCell(
+	cb: (cellName: string, cellValue: any) => any, 
+	range?: string
+): void;
+~~~ 
+
+### Parameters
+
+- `callback` - (required) a callback function
+- `range` - (optional) a range of cells to iterate
+
+### Example
+
+~~~jsx {21-27}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+
 spreadsheet.menu.data.add({
 	id: "validate",
 	value: "Validate",
-	childs: [
+	items: [
 		{
 			id: "isNumber",
 			value: "Is number"
@@ -50,12 +70,8 @@ spreadsheet.menu.events.on("click", function (id) {
 			break;
 	}
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v?)
+**Related articles:** [Customization](customization.md#menu)
 
-@descr:
-
-**Related articles**
-
-[Customization](customization.md#menu)
+**Related sample**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/2mlv2qaz)

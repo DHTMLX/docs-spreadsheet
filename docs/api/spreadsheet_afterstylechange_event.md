@@ -1,22 +1,39 @@
 ---
 sidebar_label: afterStyleChange
-title: afterstylechange event
-description: You can learn about the afterstylechange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: afterStyleChange event
+description: You can learn about the afterStyleChange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # afterStyleChange
 
-@short: fires after the style of a cell is changed
+### Description
 
-@signature: {`afterStyleChange: (cell: string, style: string | string[] | IStylesList | IStylesList[]) => void;`}
+@short: Fires after the style of a cell is changed
 
-@params:
-- `cell: string` - the id of a cell
-- `style: object, array` - styles set for a cell
+### Usage
 
-@example:
-spreadsheet.events.on("afterStyleChange", function(cells,style){
- console.log("Style of cell "+spreadsheet.selection.getSelectedCell()+" is changed");
+~~~jsx
+afterStyleChange: (cell: string, style: object | array) => void;
+~~~
+
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `cell` - (required) the id of a cell
+- `style` - (required) styles set for a cell
+
+### Example
+
+~~~jsx {5-8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
+// subscribe on the "afterStyleChange" event
+spreadsheet.events.on("afterStyleChange", function(cell, style){
+    console.log("Style of cell "+spreadsheet.selection.getSelectedCell()+" is changed");
+    console.log(cell, style));
+});
+~~~
 
-@descr:
+**Related articles:** [Event handling](handling_events.md)

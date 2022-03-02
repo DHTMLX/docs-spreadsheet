@@ -1,27 +1,36 @@
 ---
 sidebar_label: getFocusedCell() 
-title: getfocusedcell selection method
-description: You can learn about the getfocusedcell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: getFocusedCell selection method
+description: You can learn about the getFocusedCell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # getFocusedCell()
 
-@short: returns the id of a focused cell
+### Description
 
-@signature: {`getFocusedCell(): string;`}
+@short: Returns the id of a focused cell
 
-@returns:
-The id of a focused cell.
+### Usage
 
-@example:
+~~~jsx
+getFocusedCell(): string;
+~~~
+
+### Returns
+
+The method returns an id of a focused cell
+
+### Example
+
+~~~jsx {5,8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
 // setting focus on a cell
 spreadsheet.selection.setFocusedCell("D4");
 
 // getting the focused cell
-var focused = spreadsheet.selection.getFocusedCell(); // ->"D4"
+const focused = spreadsheet.selection.getFocusedCell(); // ->"D4"
+~~~
 
-@descr:
-
-**Related articles**
-
-[Work with Spreadsheet](working_with_ssheet.md#setting-focus-on-a-cell)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#setting-focus-on-a-cell)

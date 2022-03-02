@@ -6,16 +6,24 @@ description: You can learn about the parse method in the documentation of the DH
 
 # parse()
 
-@short: loads data into spreadsheet from a local data source
+### Description
 
-@signature: {`parse: (data: any) => void;`}
+@short: Loads data into spreadsheet from a local data source
 
-@params:
-`data: any` - the data to load
+### Usage
 
-@example:
+~~~jsx
+parse(data: any): void;
+~~~
 
-var data = [
+### Parameters
+
+- `data` - (required) the data to load
+
+### Example
+
+~~~jsx {28}
+const data = [
 	{ cell: "a1", value: "Country" },
 	{ cell: "b1", value: "Product" },
 	{ cell: "c1", value: "Price" },
@@ -31,7 +39,7 @@ var data = [
     // more data
 ];
 
-var styledData = {
+const styledData = {
 	data: data,
 	styles: {
 		someclass: {
@@ -41,26 +49,22 @@ var styledData = {
 	}
 };
 
-var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(styledData);
-
-@relatedsample:
-**Related sample**: [Spreadsheet. Initialization](https://snippet.dhtmlx.com/ihtkdcoc)
+~~~
 
 **Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 
-@descr:
+### Details
 
-Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object* with the following attributes:
+Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter.
 
-- **styles** - (*object*) an object with CSS classes applied to particular cells
-- **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
-    - **name** - (*string*) the sheet name
-    - **id** - (*string*) the sheet id
-    - **data** - (*array*) an array with data of the sheet
+:::note 
+In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
+:::
 
 ~~~js
-var styledData = {
+const styledData = {
     styles: {
         someclass: {
             background: "#F2F2F2",
@@ -71,7 +75,17 @@ var styledData = {
         // create sheets with custom configurations (names and ids)
         { 
             name: "sheet 1", 
-            id: "sheet_1", 
+            id: "sheet_1",
+            rows: [
+                { height: 50 }, // the height of the first row
+                { height: 50 }, // the height of the second row
+                // the height of the other rows is 32
+            ],
+            cols: [
+                { width: 300 }, // the width of the first column
+                { width: 300 }, // the width of the second column
+                // the width of the other columns is 120
+            ],
             data: [
                 { cell: "a1", value: "Country" },
                 { cell: "b1", value: "Product" },
@@ -98,8 +112,23 @@ var styledData = {
 spreadsheet.parse(styledData);
 ~~~
 
-{{note In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
+The data *object* takes the following parameters:
 
-**Related articles**
+- **styles** - (*object*) an object with CSS classes applied to particular cells
+- **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
+    - **name** - (*string*) the sheet name
+    - **id** - (*string*) the sheet id
+    - **rows** - (*array*) optional, an array of height objects. If not specified, the rows will have a height of 32px.
+    - **cols** - (*array*) optional, an array of width objects. If not specified, the columns will have a width of 120px. 
+    - **data** - (*array*) an array of objects with data of the sheet. Each object has the following properties:
+        - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+        - **value** - (string,number) the value of a cell
+        - **css** - (*string*) optional, the name of the CSS class
+        - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
 
-[Data loading and export](loading_data.md)
+**Change log:** The **rows** and **cols** properties of the sheet object have been added in v4.2
+
+**Related articles:** [Data loading and export](loading_data.md)
+
+**Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
+

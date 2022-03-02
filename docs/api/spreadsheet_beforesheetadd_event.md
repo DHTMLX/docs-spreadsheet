@@ -1,29 +1,45 @@
 ---
 sidebar_label: beforeSheetAdd
-title: beforesheetadd event
-description: You can learn about the beforesheetadd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeSheetAdd event
+description: You can learn about the beforeSheetAdd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeSheetAdd
 
-@short: fires before a new sheet is added
+### Description
 
-@signature: {`beforeSheetAdd: (name: string) => void | boolean;`}
+@short: Fires before a new sheet is added
 
-@params:
-`name: string` - the name of the new sheet
+### Usage
 
-@returns:
-*True* to add a sheet, *false* to prevent adding of a sheet.
+~~~jsx
+beforeSheetAdd: (name: string) => void | boolean;
+~~~
 
-@example:
-spreadsheet.events.on("beforeSheetAdd", function() {
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `name` - (required) the name of the new sheet
+
+### Returns
+
+Return `true` to add a sheet, `false` to prevent adding of a sheet
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeSheetAdd" event
+spreadsheet.events.on("beforeSheetAdd", function(name) {
     console.log("A new sheet will be added");
+    console.log(name);
     return true;
 });
+~~~
 
-@descr:
+**Changelog:** Added in v4.1
 
-The event is blockable, returning false will prevent adding of a sheet.
-
-@changelog: added in v4.1
+**Related articles:** [Event handling](handling_events.md)

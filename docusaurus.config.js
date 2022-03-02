@@ -163,8 +163,9 @@ module.exports = {
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
-            apiKey: '6883f6ceab2d8835d76026c8dcded3e7',
-            indexName: 'spreadsheetalt',
+            appId: '2K8B21DY4C',
+            apiKey: '17912b97c00b5b6f67fae50ff3de853e',
+            indexName: 'spreadsheet',
 
             // Optional: see doc section bellow
             contextualSearch: true,
@@ -179,7 +180,7 @@ module.exports = {
             darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
-            title: 'Spreadsheet Documentation',
+            title: 'JavaScript Spreadsheet Documentation',
             logo: {
                 alt: 'DHTMLX Spreadsheet Documentation',
                 src: 'img/dhtmlx_logo.svg',
@@ -193,7 +194,7 @@ module.exports = {
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com',
+                    href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
                     position: 'right'
                 },
                 {
@@ -228,7 +229,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com',
+                            href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
                             position: 'right'
                         },
                     ],
@@ -271,11 +272,11 @@ module.exports = {
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/#licensing',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/#editions-licenses',
                         },
                     ],
                 },
-            ],       
+            ],
         },
     },
     presets: [

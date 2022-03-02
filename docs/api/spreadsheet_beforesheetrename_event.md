@@ -1,35 +1,46 @@
 ---
 sidebar_label: beforeSheetRename
-title: beforesheetrename event
-description: You can learn about the beforesheetrename event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: beforeSheetRename event
+description: You can learn about the beforeSheetRename event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # beforeSheetRename
 
-@short: fires before a sheet is renamed
+### Description
 
-@signature: {`beforeSheetRename: (sheet: ISheet, value: string) => void | boolean;`}
+@short: Fires before a sheet is renamed
 
-@params:
-- `sheet: object` - the object of a sheet
-- `value: string` - the new name of the sheet
+### Usage
 
-@returns:
-*True* to rename a sheet, *false* to prevent a sheet from being renamed.
+~~~jsx
+beforeSheetRename: (sheet: object, value: string) => void | boolean;
+~~~
 
-@example:
+### Parameters
+
+The callback of the event takes the following parameters:
+
+- `sheet` - (required) an object with the old name of a sheet and its id
+- `value` - (required) the new name of the sheet
+
+### Returns
+
+Return `true` to rename a sheet, `false` to prevent the sheet from being renamed
+
+### Example
+
+~~~jsx {5-9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+// subscribe on the "beforeSheetRename" event
 spreadsheet.events.on("beforeSheetRename", function(sheet, value) {
     console.log("The ", sheet.name, "sheet will be renamed to ", value);
+    console.log(sheet, value);
     return true;
 });
+~~~
 
-@descr:
+**Changelog:** Added in v4.1
 
-The sheet object contains the following parameters:
-
-- **name** - (*string*) the old name of the sheet
-- **id** - (*string*) the id of the sheet
-
-The event is blockable, returning false will prevent the sheet from being renamed.
-
-@changelog: added in v4.1
+**Related articles:** [Event handling](handling_events.md)

@@ -6,28 +6,41 @@ description: You can learn about the fire events bus method in the documentation
 
 # fire()
 
-@short: triggers an inner event
+### Description
 
-@signature: {`fire(name: string, arguments: any[]): boolean;`}
+@short: Triggers an inner event
 
-@params:
-- `name: string` - the event's name, case-insensitive
-- `arguments: array` - an array of the event-related data
+:::info
+Normally, events are called automatically and you don't need to use this method.
+:::
 
-@returns:
-*False*, if some of the event handlers return *false*. Otherwise, *true*.
+### Usage
 
-@example:
-spreadsheet.events.on("CustomEvent", function(param1, param2){
- 	return true;
+~~~jsx
+fire(name: string, arguments: array): boolean;
+~~~
+
+### Parameters
+
+- `name` -  (required) the event's name, case-insensitive
+- `arguments` - (required) an array of the event-related data
+
+### Returns
+
+The method returns `false`, if some of the event handlers return `false`. Otherwise, `true`
+
+### Example
+
+~~~jsx {9}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
 });
 
-var res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
+spreadsheet.events.on("CustomEvent", function(param1, param2){
+	return true;
+});
 
-@descr:
+const res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
+~~~
 
-Normally, events are called automatically and you don't need to use this method.
-
-**Related articles**
-
-[Event Handling](handling_events.md)
+**Related articles:** [Event Handling](handling_events.md)

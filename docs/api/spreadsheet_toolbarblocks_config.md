@@ -1,18 +1,30 @@
 ---
 sidebar_label: toolbarBlocks
-title: toolbarblocks config
-description: You can learn about the toolbarblocks config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: toolbarBlocks config
+description: You can learn about the toolbarBlocks config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # toolbarBlocks
 
-@short: specifies blocks of buttons that will be shown in the toolbar of spreadsheet
+### Description
 
-@signature: {`toolbarBlocks?: ToolbarBlocks[];`}
+@short: Optional. Specifies blocks of buttons that will be shown in the toolbar of spreadsheet
 
-@default: ["undo", "colors", "decoration", "align", "format", "help"]
+### Usage
 
-@example:
+~~~jsx
+toolbarBlocks?: array;
+~~~
+
+### Default config
+
+~~~jsx
+toolbarBlocks: ["undo", "colors", "decoration", "align", "format", "help"]
+~~~
+
+### Example
+
+~~~jsx {3-15}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // full toolbar
     toolbarBlocks: [
@@ -29,16 +41,14 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
         "file"
     ]
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
-
-@descr:
+### Details
 
 You can specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example:
 
-~~~js
-var spreadsheet = new dhx.Spreadsheet("cont", {
+~~~js {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 	toolbarBlocks: ["help","colors", "align", "decoration", "lock", "clear"]
 });
 ~~~
@@ -47,8 +57,8 @@ var spreadsheet = new dhx.Spreadsheet("cont", {
 
 Check how you can [customize the toolbar](customization.md/#toolbar).
 
-**Related articles**
+**Related articles:**
+- [Configuration](configuration.md#toolbar)
+- [Customization](customization.md)
 
-[Configuration](configuration.md#toolbar)
-
-[Customization](customization.md)
+**Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)

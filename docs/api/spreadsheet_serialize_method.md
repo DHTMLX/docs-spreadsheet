@@ -6,26 +6,38 @@ description: You can learn about the serialize method in the documentation of th
 
 # serialize()
 
-@short: serializes data of spreadsheet into a JSON object
+### Description
 
-@signature: {`serialize: () => any[] | IDataWithStyles;`}
+@short: Serializes data of spreadsheet into a JSON object
 
-@returns:
-A serialized JSON object.
+### Usage
 
-@example:
-var data = spreadsheet.serialize();
+~~~jsx
+serialize(): object;
+~~~
 
-@descr:
+### Returns
 
-Serialized data presents an object with:
+The method returns a serialized JSON object
 
-- the **formats** array - the array of the number format
-- the **styles** object - the object with the applied CSS classes
-- the **sheets** array - the array of sheets with name and data:
+Serialized data presents an object with the following attributes:
+
+- **formats** - an array of objects with number formats
+- **styles** - an object with the applied CSS classes
+- **sheets** - an array of sheet objects. Each object contains the following attributes:
   - **name** - the sheet name
-  - **data** - the array of objects with cells id, format and value
+  - **data** - an array of data objects
+  - **rows** - an array of height objects
+  - **cols** - an array of width objects
 
-**Related articles**
+### Example
 
-[Data loading and export](loading_data.md#saving-and-restoring-state)
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+
+const data = spreadsheet.serialize();
+~~~
+
+**Related articles:** [Data loading and export](loading_data.md#saving-and-restoring-state)

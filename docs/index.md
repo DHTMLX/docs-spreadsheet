@@ -11,7 +11,7 @@ DHTMLX Spreadsheet is a client-side JavaScript component that allows editing and
 
 {{note There is a [User Guide](guides.md/#user-guide) provided to make work with Spreadsheet easy for your end users.}}
 
-## Spreadsheet Structure
+## Spreadsheet structure
 
 ### Toolbar
 
@@ -56,7 +56,7 @@ By default the **Menu** section is hidden, but you can switch it on via the rela
 
 You can [modify the structure of the menu](customization.md#menu) by using custom controls, updating the controls' configuration and removing unnecessary controls.
 
-## What's Next
+## What's next
 
 Now you can get down to using DHTMLX Spreadsheet in your application. Follow the directions of the [How to Start](how_to_start.md) tutorial for guidance.
 

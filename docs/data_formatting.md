@@ -20,9 +20,15 @@ What you can do:
 
 ## Alignment
 
-You can use the corresponding toolbar controls to align data in a cell, as needed: along the left/right edges of a cell , or in its center.
+You can use the corresponding toolbar controls to align data in a cell horizontally or (and) vertically.
+
+Click the "Horizontal align" button to align data along the left/right edges of a cell, or in its center.
 
 ![Alignment](assets/alignment.png)
+
+Click the "Vertical align" button to align data at the top/center/bottom of a cell.
+
+![Vertical alignment](assets/vertical_alignment.png)
 
 ## Removing styles and values
 

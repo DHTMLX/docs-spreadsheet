@@ -6,28 +6,39 @@ description: You can learn about the on events bus method in the documentation o
 
 # on()
 
-@short: attaches a handler to an inner event of Spreadsheet
+### Description
 
-@signature: {`on(name: string, callback: Function): void;`}
+@short: Attaches a handler to an inner event of Spreadsheet
 
-@params:
-- `name: string` - the event's name, case-insensitive
-- `callback: function` - the handler function
+### Usage
 
-@example:
+~~~jsx
+on(name: string, callback: function): void;
+~~~
+
+### Parameters
+
+- `name` - (required) the event's name, case-insensitive
+- `callback` - (required) the handler function
+
+### Example
+
+~~~jsx {5-7}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+
 spreadsheet.events.on("StyleChange", function(id){
   console.log("The style of cell "+spreadsheet.selection.get()+" is changed");
 });
+~~~
 
-@relatedsample:
-**Related sample**: [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
-
-@descr:
-
-[See the list of Spreadsheet events](api/api_overview.md/#spreadsheet-events).
+:::info
+See the full list of the Spreadsheet events [here](api/api_overview.md/#spreadsheet-events).
 
 You can attach several handlers to the same event and all of them will be executed. If some of handlers return *false*, the related operations will be blocked. Event handlers are processed in the same order that they are attached.
+:::
 
-**Related articles**
+**Related articles:** [Event Handling](handling_events.md)
 
-[Event Handling](handling_events.md)
+**Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)

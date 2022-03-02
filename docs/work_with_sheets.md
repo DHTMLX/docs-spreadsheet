@@ -38,7 +38,7 @@ To rename a sheet, right-click the sheet tab, click *Rename*, and type the new n
 
 ![Rename sheet](assets/rename_sheet.gif)
 
-## Cross-references between Sheets
+## Cross-references between sheets
 
 You can easily consolidate data from multiple sheets into a single one by using cross-referencing. <br> For that, take the following steps:
 

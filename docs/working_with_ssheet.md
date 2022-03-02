@@ -243,8 +243,22 @@ spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 It is also possible to get the id(s) of the selected cell(s) via the [](api/selection_getselectedcell_method.md) method:
 
 ~~~js
-var selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
+const selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
 ~~~
+
+To remove selection from cell(s), pass its/their id(s) to the [](api/selection_removeselectedcell_method.md) method:
+
+~~~js
+// sets selection
+spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
+// removes selection
+spreadsheet.selection.removeSelectedCell("B7,D4,E5:E7");
+
+const selected = spreadsheet.selection.getSelectedCell();
+console.log(selected); // -> "B3,D6,E4,E8"
+~~~
+
+**Related sample:** [Spreadsheet. Remove selection](https://snippet.dhtmlx.com/u4j76cuh)
 
 ## Setting focus on a cell
 
@@ -263,3 +277,15 @@ spreadsheet.selection.setFocusedCell("D4");
 // getting the focused cell 
 var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
 ~~~
+
+## Clearing spreadsheet
+
+You can clear the whole spreadsheet at once via the [clear()](api/spreadsheet_clear_method.md) method:
+
+~~~js
+spreadsheet.clear();
+~~~
+
+**Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
+
+If you need to clear a specific sheet, use the [clearSheet()](api/spreadsheet_clearsheet_method.md) method.
