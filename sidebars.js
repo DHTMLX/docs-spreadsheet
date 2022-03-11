@@ -13,6 +13,14 @@ module.exports = {
       label: "What's new and migration",
       collapsible: true,
       collapsed: true,
+      link: {
+				type: 'generated-index',
+				title: "What's new and migration",
+				//description: '',
+				//slug: '/category/docusaurus-guides',
+				keywords: ['news'],
+				image: '/img/docusaurus.png',
+			},
       items: [
         "whats_new",
         "migration",
@@ -20,16 +28,24 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Spreadsheet API",
+      label: "API",
       collapsible: true,
       collapsed: true,
+      link: {
+				type: 'doc',
+				id: "api/api_overview"
+			},
       items: [
-        "api/api_overview",
+        //"api/api_overview",
         {
           type: "category",
           label: "Spreadsheet methods",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/overview/methods_overview"
+          },
           items: [
             "api/spreadsheet_addcolumn_method",
             "api/spreadsheet_addrow_method",
@@ -67,6 +83,10 @@ module.exports = {
           label: "Spreadsheet events",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/overview/events_overview"
+          },
           items: [
             "api/spreadsheet_afterclear_event",
             "api/spreadsheet_aftercolumnadd_event",
@@ -110,6 +130,10 @@ module.exports = {
           label: "Spreadsheet properties",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/overview/properties_overview"
+          },
           items: [
             "api/spreadsheet_colscount_config",
             "api/spreadsheet_dateformat_config",
@@ -130,6 +154,10 @@ module.exports = {
           label: "Selection methods",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/overview/selection_overview"
+          },
           items: [
             "api/selection_getfocusedcell_method",
             "api/selection_getselectedcell_method",
@@ -143,6 +171,10 @@ module.exports = {
           label: "Events Bus methods",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/overview/eventbus_overview"
+          },
           items: [
             "api/eventsbus_detach_method",
             "api/eventsbus_fire_method",
@@ -154,6 +186,10 @@ module.exports = {
           label: "Export methods",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'doc',
+            id: "api/overview/export_overview"
+          },
           items: [
             "api/export_xlsx_method",
           ],
@@ -165,13 +201,23 @@ module.exports = {
       label: "Guides",
       collapsible: true,
       collapsed: false,
+      link: {
+        type: 'doc',
+        id: "guides"
+      },
       items: [
-        "guides",
+        //"guides",
         {
           type: "category",
           label: "Developer guides",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'generated-index',
+            title: "Developer guides",
+            keywords: ['developer guides'],
+            image: '/img/docusaurus.png',
+          },
           items: [
             "initialization",
             "configuration",
@@ -186,7 +232,7 @@ module.exports = {
             "using_typescript",
             "angular_integration",
             "react_integration",
-            "vuejs_integration",
+            "vuejs_integration"
           ],
         },
         {
@@ -194,6 +240,12 @@ module.exports = {
           label: "User guide",
           collapsible: true,
           collapsed: true,
+          link: {
+            type: 'generated-index',
+            title: "User guides",
+            keywords: ['User guides'],
+            image: '/img/docusaurus.png'
+          },
           items: [
             "hotkeys",
             "work_with_cells",
@@ -201,7 +253,7 @@ module.exports = {
             "work_with_sheets",
             "data_formatting",
             "number_formatting_guide",
-            "excel_import_export",
+            "excel_import_export"
           ],
         },
       ],
