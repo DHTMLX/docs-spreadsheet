@@ -164,6 +164,102 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the accrued interest for a security that pays periodic interest.</td>
 		</tr>
 		<tr>
+			<td><b>BINOM.DIST</b></td>
+			<td>=BINOM.DIST(number_s, trials, probability_s, cumulative), <br><br> where:
+			<ul>
+				<li><i>number_s</i> - the number of successes in trials;</li>
+				<li><i>trials</i> - the number of independent trials;</li>
+				<li><i>probability_s</i> - the probability of success on each trial;</li>
+				<li><i>cumulative</i> - if TRUE, then BINOM.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.</li>
+			</ul></td>
+			<td>Returns the individual term binomial distribution probability.</td>
+		</tr>
+		<tr>
+			<td><b>BINOM.DIST.RANGE</b></td>
+			<td>=BINOM.DIST.RANGE(trials, probability_s, number_s, [number_s2]), <br><br> where:
+			<ul>
+				<li><i>trials</i> - the number of independent trials (must be ≥ 0);</li>
+				<li><i>probability_s</i> - the probability of success in each trial (must be ≥ 0 and ≤ 1);</li>
+				<li><i>number_s</i> - the number of successes in trials (must be ≥ 0 and ≤ <i>trials)</i>;</li>
+				<li><i>number_s2</i> - optional. If provided, returns the probability that the number of successful trials will fall between <i>number_s</i> and <i>number_s2</i> <br>([number_s2] must be ≥ <i>number_s</i> and ≤ <i>trials</i>).</li>
+			</ul></td>
+			<td>Returns the probability of a trial result using a binomial distribution.</td>
+		</tr>
+		<tr>
+			<td><b>BINOM.INV</b></td>
+			<td>=BINOM.INV(trials, probability_s, alpha), <br><br> where:
+			<ul>
+				<li><i>trials</i> - the number of Bernoulli trials;</li>
+				<li><i>probability_s</i> - the probability of success in each trial (must be ≥ 0 and ≤ 1);</li>
+				<li><i>alpha</i> - the criterion value (must be ≥ 0 and ≤ <i>1)</i>;</li>
+			</ul></td>
+			<td>Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.</td>
+		</tr>
+		<tr>
+			<td><b>BITLSHIFT</b></td>
+			<td>=BITLSHIFT(number, shift_amount), <br><br> where:
+			<ul>
+				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0);</li>
+				<li><i>shift_amount</i> - the amount of bits to shift, if negative shifts bits to the right instead;</li>
+			</ul></td>
+			<td>Returns a number shifted left by the specified number of bits.</td>
+		</tr>
+		<tr>
+			<td><b>BITOR</b></td>
+			<td>=BITOR(number1, number2), <br><br> where:
+			<ul>
+				<li><i>number1</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+				<li><i>number2</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+			</ul></td>
+			<td>Returns a decimal number representing the bitwise OR of two numbers.</td>
+		</tr>
+		<tr>
+			<td><b>BITRSHIFT</b></td>
+			<td>=BITRSHIFT(number, shift_amount), <br><br> where:
+			<ul>
+				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0);</li>
+				<li><i>shift_amount</i> - the amount of bits to shift, if negative shifts bits to the left instead;</li>
+			</ul></td>
+			<td>Returns a number shifted right by the specified number of bits.</td>
+		</tr>
+		<tr>
+			<td><b>BITXOR</b></td>
+			<td>=BITXOR(number1, number2), <br><br> where:
+			<ul>
+				<li><i>number1</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+				<li><i>number2</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+			</ul></td>
+			<td>Returns a decimal number representing the bitwise XOR of two numbers.</td>
+		</tr>
+		<tr>
+			<td><b>COMPLEX</b></td>
+			<td>=COMPLEX(real_num, i_num, [suffix]), <br><br> where:
+			<ul>
+				<li><i>real_num</i> - the real coefficient of the complex number;</li>
+				<li><i>i_num</i> - the imaginary coefficient of the complex number;</li>
+				<li><i>suffix</i> - optional ("i" by default) - the suffix for the imaginary component of the complex number; <br>(must be lowercase "i" or "j") .</li>
+			</ul></td>
+			<td>Converts real and imaginary coefficients into a complex number of the form x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>CORREL</b></td>
+			<td>=CORREL(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - a range of cell values;</li>
+				<li><i>array2</i> - a second range of cell values;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns the correlation coefficient of two cell ranges.</td>
+		</tr>
+		<tr>
+			<td><b>COVAR</b></td>
+			<td>=COVAR(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - The first cell range of integers;</li>
+				<li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns covariance, the average of the products of deviations for each data point pair in two data sets.</td>
+		</tr>
+		<tr>
 			<td><b>DB</b></td>
 			<td>=DB(cost, salvage, life, period, [month]), <br><br> where:
 			<ul>
@@ -188,6 +284,50 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Calculates the depreciation of an asset for a specified period using the double-declining balance method or another method you specify.</td>
 		</tr>
 		<tr>
+			<td><b>DEC2BIN</b></td>
+			<td>=DEC2BIN(number, [places]), <br><br> where:
+			<ul>
+				<li><i>number</i> - the decimal integer you want to convert (must be greater than -512 but less than 511);</li>
+				<li><i>places</i> - optional, the number of characters to use.</li>
+			</ul></td>
+			<td>Converts a decimal number to binary.</td>
+		</tr>
+		<tr>
+			<td><b>DEC2HEX</b></td>
+			<td>=DEC2HEX(number, [places]), <br><br> where:
+			<ul>
+				<li><i>number</i> - the decimal integer you want to convert (must be greater than -549755813888 but less than 549755813887);</li>
+				<li><i>places</i> - optional, the number of characters to use.</li>
+			</ul></td>
+			<td>Converts a decimal number to hexadecimal.</td>
+		</tr>
+		<tr>
+			<td><b>DEC2OCT</b></td>
+			<td>=DEC2OCT(number, [places]), <br><br> where:
+			<ul>
+				<li><i>number</i> - the decimal integer you want to convert (must be greater than -536870912 but less than 536870911);</li>
+				<li><i>places</i> - optional, the number of characters to use.</li>
+			</ul></td>
+			<td>Converts a decimal number to octal.</td>
+		</tr>
+		<tr>
+			<td><b>DELTA</b></td>
+			<td>=DELTA(number1, [number2]), <br><br> where:
+			<ul>
+				<li><i>number1</i> - the first number;</li>
+				<li><i>number2</i> - optional, the second number. If omitted, number2 is assumed to be zero.</li>
+			</ul></td>
+			<td>Tests two numbers for equality. Returns 1 if number1 = number2; returns 0 otherwise.</td>
+		</tr>
+		<tr>
+			<td><b>DEVSQ</b></td>
+			<td>=DEVSQ(number1, [number2], ...), <br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the sum of squared deviations;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
+			</ul></td>
+			<td>Returns the sum of squares of deviations of data points from their sample mean.</td>
+		</tr>
+		<tr>
 			<td><b>DOLLARDE</b></td>
 			<td>=DOLLARDE(fractional_dollar, fraction)</td>
 			<td>Converts a dollar price specified as an integer part and a fraction part into a dollar price displayed as a decimal number.</td>
@@ -201,6 +341,53 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>EFFECT</b></td>
 			<td>=EFFECT(nominal_rate, npery)<br><br> <i>nominal_rate</i> must be >= 0, <i>npery</i> must be > 1.</td>
 			<td>Returns the effective annual interest rate on the base of the nominal annual interest rate and the number of compounding periods per year you specify.<br> Works with numeric values. </td>
+		</tr>
+		<tr>
+			<td><b>ERF</b></td>
+			<td>=ERF(lower_limit, [upper_limit]), <br><br> where:
+			<ul>
+				<li><i>lower_limit</i> - the lower bound for integrating ERF;
+				</li>
+				<li><i>upper_limit</i> - the upper bound for integrating ERF. If omitted, ERF integrates between 0 and lower_limit.
+				</li>
+			</ul></td>
+			<td>Returns the error function integrated between lower_limit and upper_limit.</td>
+		</tr>
+		<tr>
+			<td><b>ERFC</b></td>
+			<td>=ERFC(x), <br><br> where:
+			<ul>
+				<li><i>x</i> - the lower bound for integrating ERFC
+				</li>
+			</ul></td>
+			<td>Returns the complementary ERF function integrated between x and infinity.</td>
+		</tr>
+		<tr>
+			<td><b>EXP</b></td>
+			<td>=EXP(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the power that e is raised to
+				</li>
+			</ul></td>
+			<td>Returns the result of the constant e (which equals 2.71828182845904) raised to the power of a number.</td>
+		</tr>
+		<tr>
+			<td><b>FISHER</b></td>
+			<td>=FISHER(x), <br><br> where:
+			<ul>
+				<li><i>x</i> - the value for which you want to calculate the transformation
+				</li>
+			</ul></td>
+			<td>Calculates the Fisher transformation for a supplied value.</td>
+		</tr>
+		<tr>
+			<td><b>FISHERINV</b></td>
+			<td>=FISHERINV(y), <br><br> where:
+			<ul>
+				<li><i>y</i> - the value for which you want to perform the inverse of the transformation
+				</li>
+			</ul></td>
+			<td>Calculates the inverse of the Fisher transformation and returns a value between -1 and +1.</td>
 		</tr>
 		<tr>
 			<td><b>FV</b></td>
@@ -222,6 +409,63 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>schedule</i> - an array of interest rates to apply. The values in the array can be numbers or blank cells; any other value produces the error value. Blank cells are taken as zeros.</li>
 			</ul></td>
 			<td>Returns the future value of an initial principal (=present value) after applying a series of compound interest rates.</td>
+		</tr>
+		<tr>
+			<td><b>GAMMA</b></td>
+			<td>=GAMMA(number)<br><br> 
+			If Number is a negative integer or 0, GAMMA returns the #Error value.</td>
+			<td>Returns the gamma function value.</td>
+		</tr>
+		<tr>
+			<td><b>GEOMEAN</b></td>
+			<td>=GEOMEAN(number1, [number2], ...)<br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the mean;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
+			</ul></td>
+			<td>Returns the geometric mean of an array or range of positive data.</td>
+		</tr>
+		<tr>
+			<td><b>GESTEP</b></td>
+			<td>=GESTEP(number, [step])<br><br> where:
+			<ul>
+				<li><i>number</i> - the value to test against step;</li>
+				<li><i>step</i> - optional, the threshold value. If you omit a value for step, GESTEP uses zero;</li>
+			</ul></td>
+			<td>Returns 1 if number ≥ step; returns 0 (zero) otherwise.</td>
+		</tr>
+		<tr>
+			<td><b>HARMEAN</b></td>
+			<td>=HARMEAN(number1, [number2], ...)<br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the mean;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
+			</ul></td>
+			<td>Returns the harmonic mean of a data set.</td>
+		</tr>
+		<tr>
+			<td><b>HEX2BIN</b></td>
+			<td>=HEX2BIN(number, [places])<br><br> where:
+			<ul>
+				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
+				<li><i>places</i> - optional, the number of characters that you want the returned binary number to have. If places is omitted, HEX2BIN uses the minimum number of characters necessary.</li>
+			</ul></td>
+			<td>Converts a hexadecimal number to binary.</td>
+		</tr>
+		<tr>
+			<td><b>HEX2DEC</b></td>
+			<td>=HEX2DEC(number)<br><br> where:
+			<ul>
+				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
+			</ul></td>
+			<td>Converts a hexadecimal number to decimal.</td>
+		</tr>
+		<tr>
+			<td><b>HEX2OCT</b></td>
+			<td>=HEX2OCT(number, [places])<br><br> where:
+			<ul>
+				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
+				<li><i>places</i> - optional, the number of characters that you want the returned binary number to have. If places is omitted, HEX2OCT uses the minimum number of characters necessary.</li>
+			</ul></td>
+			<td>Converts a hexadecimal number to octal.</td>
 		</tr>
 		<tr>
 			<td><b>IPMT</b></td>
@@ -278,7 +522,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>=NPV(rate,value1,[value2],...), <br><br> where:
 			<ul>
 				<li><i>rate</i> - the rate of discount over one year;</li>
-				<li><i>value1, value2</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
+				<li><i>value1, value2,...</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
 			</ul></td>
 			<td>Calculates the net present value of an investment by using a discount rate and a series of future payments (negative values) and income (positive values).</td>
 		</tr>
