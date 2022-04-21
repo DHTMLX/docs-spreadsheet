@@ -164,7 +164,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the accrued interest for a security that pays periodic interest.</td>
 		</tr>
 		<tr>
-			<td><b>BINOM.DIST</b></td>
+			<td><b>BINOM.DIST</b><br>added in v4.3</td>
 			<td>=BINOM.DIST(number_s, trials, probability_s, cumulative), <br><br> where:
 			<ul>
 				<li><i>number_s</i> - the number of successes in trials;</li>
@@ -175,7 +175,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the individual term binomial distribution probability.</td>
 		</tr>
 		<tr>
-			<td><b>BINOM.DIST.RANGE</b></td>
+			<td><b>BINOM.DIST.RANGE</b><br>added in v4.3</td>
 			<td>=BINOM.DIST.RANGE(trials, probability_s, number_s, [number_s2]), <br><br> where:
 			<ul>
 				<li><i>trials</i> - the number of independent trials (must be ≥ 0);</li>
@@ -186,7 +186,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the probability of a trial result using a binomial distribution.</td>
 		</tr>
 		<tr>
-			<td><b>BINOM.INV</b></td>
+			<td><b>BINOM.INV</b><br>added in v4.3</td>
 			<td>=BINOM.INV(trials, probability_s, alpha), <br><br> where:
 			<ul>
 				<li><i>trials</i> - the number of Bernoulli trials;</li>
@@ -196,7 +196,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.</td>
 		</tr>
 		<tr>
-			<td><b>BITLSHIFT</b></td>
+			<td><b>BITLSHIFT</b><br>added in v4.3</td>
 			<td>=BITLSHIFT(number, shift_amount), <br><br> where:
 			<ul>
 				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0);</li>
@@ -205,7 +205,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns a number shifted left by the specified number of bits.</td>
 		</tr>
 		<tr>
-			<td><b>BITOR</b></td>
+			<td><b>BITOR</b><br>added in v4.3</td>
 			<td>=BITOR(number1, number2), <br><br> where:
 			<ul>
 				<li><i>number1</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
@@ -214,7 +214,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns a decimal number representing the bitwise OR of two numbers.</td>
 		</tr>
 		<tr>
-			<td><b>BITRSHIFT</b></td>
+			<td><b>BITRSHIFT</b><br>added in v4.3</td>
 			<td>=BITRSHIFT(number, shift_amount), <br><br> where:
 			<ul>
 				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0);</li>
@@ -223,7 +223,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns a number shifted right by the specified number of bits.</td>
 		</tr>
 		<tr>
-			<td><b>BITXOR</b></td>
+			<td><b>BITXOR</b><br>added in v4.3</td>
 			<td>=BITXOR(number1, number2), <br><br> where:
 			<ul>
 				<li><i>number1</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
@@ -232,7 +232,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns a decimal number representing the bitwise XOR of two numbers.</td>
 		</tr>
 		<tr>
-			<td><b>COMPLEX</b></td>
+			<td><b>COMPLEX</b><br>added in v4.3</td>
 			<td>=COMPLEX(real_num, i_num, [suffix]), <br><br> where:
 			<ul>
 				<li><i>real_num</i> - the real coefficient of the complex number;</li>
@@ -242,7 +242,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Converts real and imaginary coefficients into a complex number of the form x + yi or x + yj.</td>
 		</tr>
 		<tr>
-			<td><b>CORREL</b></td>
+			<td><b>CORREL</b><br>added in v4.3</td>
 			<td>=CORREL(array1, array2), <br><br> where:
 			<ul>
 				<li><i>array1</i> - a range of cell values;</li>
@@ -251,7 +251,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the correlation coefficient of two cell ranges.</td>
 		</tr>
 		<tr>
-			<td><b>COVAR</b></td>
+			<td><b>COVAR</b><br>added in v4.3</td>
 			<td>=COVAR(array1, array2), <br><br> where:
 			<ul>
 				<li><i>array1</i> - The first cell range of integers;</li>
@@ -284,7 +284,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Calculates the depreciation of an asset for a specified period using the double-declining balance method or another method you specify.</td>
 		</tr>
 		<tr>
-			<td><b>DEC2BIN</b></td>
+			<td><b>DEC2BIN</b><br>added in v4.3</td>
 			<td>=DEC2BIN(number, [places]), <br><br> where:
 			<ul>
 				<li><i>number</i> - the decimal integer you want to convert (must be greater than -512 but less than 511);</li>
@@ -293,7 +293,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Converts a decimal number to binary.</td>
 		</tr>
 		<tr>
-			<td><b>DEC2HEX</b></td>
+			<td><b>DEC2HEX</b><br>added in v4.3</td>
 			<td>=DEC2HEX(number, [places]), <br><br> where:
 			<ul>
 				<li><i>number</i> - the decimal integer you want to convert (must be greater than -549755813888 but less than 549755813887);</li>
@@ -302,7 +302,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Converts a decimal number to hexadecimal.</td>
 		</tr>
 		<tr>
-			<td><b>DEC2OCT</b></td>
+			<td><b>DEC2OCT</b><br>added in v4.3</td>
 			<td>=DEC2OCT(number, [places]), <br><br> where:
 			<ul>
 				<li><i>number</i> - the decimal integer you want to convert (must be greater than -536870912 but less than 536870911);</li>
@@ -311,7 +311,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Converts a decimal number to octal.</td>
 		</tr>
 		<tr>
-			<td><b>DELTA</b></td>
+			<td><b>DELTA</b><br>added in v4.3</td>
 			<td>=DELTA(number1, [number2]), <br><br> where:
 			<ul>
 				<li><i>number1</i> - the first number;</li>
@@ -320,7 +320,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Tests two numbers for equality. Returns 1 if number1 = number2; returns 0 otherwise.</td>
 		</tr>
 		<tr>
-			<td><b>DEVSQ</b></td>
+			<td><b>DEVSQ</b><br>added in v4.3</td>
 			<td>=DEVSQ(number1, [number2], ...), <br><br> where:
 			<ul>
 				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the sum of squared deviations;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
@@ -343,7 +343,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the effective annual interest rate on the base of the nominal annual interest rate and the number of compounding periods per year you specify.<br> Works with numeric values. </td>
 		</tr>
 		<tr>
-			<td><b>ERF</b></td>
+			<td><b>ERF</b><br>added in v4.3</td>
 			<td>=ERF(lower_limit, [upper_limit]), <br><br> where:
 			<ul>
 				<li><i>lower_limit</i> - the lower bound for integrating ERF;
@@ -354,7 +354,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the error function integrated between lower_limit and upper_limit.</td>
 		</tr>
 		<tr>
-			<td><b>ERFC</b></td>
+			<td><b>ERFC</b><br>added in v4.3</td>
 			<td>=ERFC(x), <br><br> where:
 			<ul>
 				<li><i>x</i> - the lower bound for integrating ERFC
@@ -363,7 +363,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the complementary ERF function integrated between x and infinity.</td>
 		</tr>
 		<tr>
-			<td><b>EXP</b></td>
+			<td><b>EXP</b><br>added in v4.3</td>
 			<td>=EXP(number), <br><br> where:
 			<ul>
 				<li><i>number</i> - the power that e is raised to
@@ -372,7 +372,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the result of the constant e (which equals 2.71828182845904) raised to the power of a number.</td>
 		</tr>
 		<tr>
-			<td><b>FISHER</b></td>
+			<td><b>FISHER</b><br>added in v4.3</td>
 			<td>=FISHER(x), <br><br> where:
 			<ul>
 				<li><i>x</i> - the value for which you want to calculate the transformation
@@ -381,7 +381,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Calculates the Fisher transformation for a supplied value.</td>
 		</tr>
 		<tr>
-			<td><b>FISHERINV</b></td>
+			<td><b>FISHERINV</b><br>added in v4.3</td>
 			<td>=FISHERINV(y), <br><br> where:
 			<ul>
 				<li><i>y</i> - the value for which you want to perform the inverse of the transformation
@@ -411,13 +411,13 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the future value of an initial principal (=present value) after applying a series of compound interest rates.</td>
 		</tr>
 		<tr>
-			<td><b>GAMMA</b></td>
+			<td><b>GAMMA</b><br>added in v4.3</td>
 			<td>=GAMMA(number)<br><br> 
 			If Number is a negative integer or 0, GAMMA returns the #Error value.</td>
 			<td>Returns the gamma function value.</td>
 		</tr>
 		<tr>
-			<td><b>GEOMEAN</b></td>
+			<td><b>GEOMEAN</b><br>added in v4.3</td>
 			<td>=GEOMEAN(number1, [number2], ...)<br><br> where:
 			<ul>
 				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the mean;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
@@ -425,7 +425,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the geometric mean of an array or range of positive data.</td>
 		</tr>
 		<tr>
-			<td><b>GESTEP</b></td>
+			<td><b>GESTEP</b><br>added in v4.3</td>
 			<td>=GESTEP(number, [step])<br><br> where:
 			<ul>
 				<li><i>number</i> - the value to test against step;</li>
@@ -434,7 +434,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns 1 if number ≥ step; returns 0 (zero) otherwise.</td>
 		</tr>
 		<tr>
-			<td><b>HARMEAN</b></td>
+			<td><b>HARMEAN</b><br>added in v4.3</td>
 			<td>=HARMEAN(number1, [number2], ...)<br><br> where:
 			<ul>
 				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the mean;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
@@ -442,7 +442,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the harmonic mean of a data set.</td>
 		</tr>
 		<tr>
-			<td><b>HEX2BIN</b></td>
+			<td><b>HEX2BIN</b><br>added in v4.3</td>
 			<td>=HEX2BIN(number, [places])<br><br> where:
 			<ul>
 				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
@@ -451,7 +451,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Converts a hexadecimal number to binary.</td>
 		</tr>
 		<tr>
-			<td><b>HEX2DEC</b></td>
+			<td><b>HEX2DEC</b><br>added in v4.3</td>
 			<td>=HEX2DEC(number)<br><br> where:
 			<ul>
 				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
@@ -459,13 +459,192 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Converts a hexadecimal number to decimal.</td>
 		</tr>
 		<tr>
-			<td><b>HEX2OCT</b></td>
+			<td><b>HEX2OCT</b><br>added in v4.3</td>
 			<td>=HEX2OCT(number, [places])<br><br> where:
 			<ul>
 				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
 				<li><i>places</i> - optional, the number of characters that you want the returned binary number to have. If places is omitted, HEX2OCT uses the minimum number of characters necessary.</li>
 			</ul></td>
 			<td>Converts a hexadecimal number to octal.</td>
+		</tr>
+		<tr>
+			<td><b>IMABS</b><br>added in v4.3</td>
+			<td>=IMABS(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the absolute value of a complex number in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMAGINARY</b><br>added in v4.3</td>
+			<td>=IMAGINARY(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the imaginary coefficient of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCONJUGATE</b><br>added in v4.3</td>
+			<td>=IMCONJUGATE(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the complex conjugate of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCOS</b><br>added in v4.3</td>
+			<td>=IMCOS(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the cosine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCOSH</b><br>added in v4.3</td>
+			<td>=IMCOSH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic cosine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCOT</b><br>added in v4.3</td>
+			<td>=IMCOT(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the cotangent of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCSC</b><br>added in v4.3</td>
+			<td>=IMCSC(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the cosecant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCSCH</b><br>added in v4.3</td>
+			<td>=IMCSCH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic cosecant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMDIV</b><br>added in v4.3</td>
+			<td>=IMDIV(inumber1, inumber2)<br><br> where:
+			<ul>
+				<li><i>inumber1</i> - the complex numerator or dividend</li>
+				<li><i>inumber2</i> - the complex denominator or divisor</li>
+			</ul></td>
+			<td>Returns the quotient of two complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMEXP</b><br>added in v4.3</td>
+			<td>=IMEXP(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the exponential of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMLN</b><br>added in v4.3</td>
+			<td>=IMLN(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the natural logarithm of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMPOWER</b><br>added in v4.3</td>
+			<td>=IMPOWER(inumber, number)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+				<li><i>number</i> - the power to which you want to raise the complex number</li>
+			</ul></td>
+			<td>Returns a complex number in x + yi or x + yj text format raised to a power.</td>
+		</tr>
+		<tr>
+			<td><b>IMPRODUCT</b><br>added in v4.3</td>
+			<td>=IMPRODUCT(inumber1, [inumber2], ...)<br><br> where:
+			<ul>
+				<li><i>inumber1, inumber2,...</i> - from 1 to 255 complex numbers to multiply</li>
+			</ul></td>
+			<td>Returns the product of 1 to 255 complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMREAL</b><br>added in v4.3</td>
+			<td>=IMREAL(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the real coefficient of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSEC</b><br>added in v4.3</td>
+			<td>=IMSEC(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the secant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSECH</b><br>added in v4.3</td>
+			<td>=IMSECH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic secant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSIN</b><br>added in v4.3</td>
+			<td>=IMSIN(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the sine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSINH</b><br>added in v4.3</td>
+			<td>=IMSINH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic sine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSQRT</b><br>added in v4.3</td>
+			<td>=IMSQRT(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the square root of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSUB</b><br>added in v4.3</td>
+			<td>=IMSUB(inumber1, inumber2)<br><br> where:
+			<ul>
+				<li><i>inumber1</i> - a complex number from which to subtract inumber2;</li>
+				<li><i>inumber2</i> - the complex number to subtract from inumber1</li>
+			</ul></td>
+			<td>Returns the difference of two complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSUM</b><br>added in v4.3</td>
+			<td>=IMSUB(inumber1, [inumber2], ...)<br><br> where:
+			<ul>
+				<li><i>inumber1, inumber2,...</i> - from 1 to 255 complex numbers to add</li>
+			</ul></td>
+			<td>Returns the sum of two or more complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMTAN</b><br>added in v4.3</td>
+			<td>=IMTAN(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the tangent of a complex number given in the format x + yi or x + yj.</td>
 		</tr>
 		<tr>
 			<td><b>IPMT</b></td>
@@ -501,6 +680,23 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.</td>
 		</tr>
 		<tr>
+			<td><b>LARGE</b><br>added in v4.3</td>
+			<td>=LARGE(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or range of data for which you want to determine the k-th largest value;</li>
+				<li><i>k</i> - the position (from the largest) in the array or cell range of data to return.</li>
+			</ul></td>
+			<td>Returns the k-th largest value in an array.</td>
+		</tr>
+		<tr>
+			<td><b>MEDIAN</b><br>added in v4.3</td>
+			<td>=MEDIAN(number1, [number2], ...), <br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 numbers for which you want to calculate the median;</li>
+			</ul></td>
+			<td>Returns the median of the given numbers.</td>
+		</tr>
+		<tr>
 			<td><b>NOMINAL</b></td>
 			<td>=NOMINAL(effect_rate, npery), <br><br><i>effect_rate</i> must be >= 0, <i>npery</i> must be > 1. </td>
 			<td>Returns the nominal annual interest rate on the base of the effective rate and the number of compounding periods per year you specify.</td>
@@ -525,6 +721,32 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>value1, value2,...</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
 			</ul></td>
 			<td>Calculates the net present value of an investment by using a discount rate and a series of future payments (negative values) and income (positive values).</td>
+		</tr>
+		<tr>
+			<td><b>OCT2BIN</b><br>added in v4.3</td>
+			<td>=OCT2BIN(number, [places]), <br><br> where:
+			<ul>
+				<li><i>number</i> - the octal number you want to convert. It can't contain more than 10 characters;</li>
+				<li><i>places</i> - optional, the number of characters to use. If places is omitted, OCT2BIN uses the minimum number of characters necessary.</li>
+			</ul></td>
+			<td>Converts an octal number to binary.</td>
+		</tr>
+		<tr>
+			<td><b>OCT2DEC</b><br>added in v4.3</td>
+			<td>=OCT2DEC(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits)</li>
+			</ul></td>
+			<td>Converts an octal number to decimal.</td>
+		</tr>
+		<tr>
+			<td><b>OCT2HEX</b><br>added in v4.3</td>
+			<td>=OCT2HEX(number, [places]), <br><br> where:
+			<ul>
+				<li><i>number</i> - The octal number you want to convert. Number may not contain more than 10 octal characters (30 bits)</li>
+				<li><i>places</i> - the number of characters to use. If places is omitted, OCT2HEX uses the minimum number of characters necessary.</li>
+			</ul></td>
+			<td>Converts an octal number to hexadecimal.</td>
 		</tr>
 		<tr>
 			<td><b>PDURATION</b></td>
