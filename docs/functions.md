@@ -104,6 +104,11 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the current date.</td>
 		</tr>
 		<tr>
+			<td><b>TIMEVALUE</b><br>added in v4.3</td>
+			<td>=TIMEVALUE(time_text)</td>
+			<td>Returns the decimal number of the time represented by a text string</td>
+		</tr>
+		<tr>
 			<td><b>WEEKDAY</b></td>
 			<td>=WEEKDAY(date,[return_type])</td>
 			<td>Returns the day of the week for the specified date. <br>The <a href="https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a">return_type</a> argument is used to define which day of the week is considered the first day.</td>
@@ -743,7 +748,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>OCT2HEX</b><br>added in v4.3</td>
 			<td>=OCT2HEX(number, [places]), <br><br> where:
 			<ul>
-				<li><i>number</i> - The octal number you want to convert. Number may not contain more than 10 octal characters (30 bits)</li>
+				<li><i>number</i> - the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits)</li>
 				<li><i>places</i> - the number of characters to use. If places is omitted, OCT2HEX uses the minimum number of characters necessary.</li>
 			</ul></td>
 			<td>Converts an octal number to hexadecimal.</td>
@@ -757,6 +762,24 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>fv</i> - the desired future value of the investment.</li>
 			</ul><br> All arguments must be positive values.</td>
 			<td>Returns the number of periods required by an investment to reach a specified value.<br></td>
+		</tr>
+		<tr>
+			<td><b>PERCENTILE</b><br>added in v4.3</td>
+			<td>=PERCENTILE(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array of data values;</li>
+				<li><i>k</i> - the percentile value between 0 and 1, inclusive.</li>
+			</ul></td>
+			<td>Returns the k-th percentile of values in a range.</td>
+		</tr>
+		<tr>
+			<td><b>PERMUT</b><br>added in v4.3</td>
+			<td>=PERMUT(number, number_chosen), <br><br> where:
+			<ul>
+				<li><i>number</i> - the total number of items;</li>
+				<li><i>number_chosen</i> - the number of items in each combination.</li>
+			</ul></td>
+			<td>Returns the number of permutations for a given number of items.</td>
 		</tr>
 		<tr>
 			<td><b>PMT</b></td>
@@ -794,6 +817,83 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
 			</ul></td>
 			<td>Returns the present value of a loan or an investment, based on a constant interest rate.<br></td>
+		</tr>
+		<tr>
+			<td><b>QUARTILE</b><br>added in v4.3</td>
+			<td>=QUARTILE(array, quart), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or cell range of numeric values;</li>
+				<li><i>quart</i> - indicates which value to return (<a href="https://support.microsoft.com/en-us/office/quartile-function-93cf8f62-60cd-4fdb-8a92-8451041e1a2a">0-4</a>).</li>
+			</ul></td>
+			<td>Returns the quartile of a data set.</td>
+		</tr>
+		<tr>
+			<td><b>SIGN</b><br>added in v4.3</td>
+			<td>=SIGN(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - any real number</li>
+			</ul></td>
+			<td>Defines the sign of a number. Returns 1 if the number is positive, zero (0) if the number is 0, and -1 if the number is negative.</td>
+		</tr>
+		<tr>
+			<td><b>SMALL</b><br>added in v4.3</td>
+			<td>=SMALL(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array or range of numeric values;</li>
+				<li><i>k</i> - the position (from 1 - the smallest value) in the data set.</li>
+			</ul></td>
+			<td>Returns the k-th smallest value based on its position in the data set.</td>
+		</tr>
+		<tr>
+			<td><b>STEYX</b><br>added in v4.3</td>
+			<td>=STEYX(known_y's, known_x's), <br><br> where:
+			<ul>
+				<li><i>known_y's</i> - an array or range of dependent data points;</li>
+				<li><i>known_x's</i> - an array or range of independent data points.</li>
+			</ul><br>Text, logical values, or empty cells are ignored. Zero values are included.</td>
+			<td>Returns the standard error of the predicted y-value for each x in the regression.</td>
+		</tr>
+		<tr>
+			<td><b>SYD</b><br>added in v4.3</td>
+			<td>=SYD(cost, salvage, life, per), <br><br> where:
+			<ul>
+				<li><i>cost</i> - the initial cost of the asset;</li>
+				<li><i>salvage</i> - the asset value at the end of the depreciation;</li>
+				<li><i>life</i> - the number of periods over which the asset is depreciated;</li>
+				<li><i>per</i> - the period and must use the same units as life.</li>
+			</ul></td>
+			<td>Returns the sum-of-years' digits depreciation of an asset for a specified period.</td>
+		</tr>
+		<tr>
+			<td><b>TBILLPRICE</b><br>added in v4.3</td>
+			<td>=TBILLPRICE(settlement, maturity, discount), <br><br> where:
+			<ul>
+				<li><i>settlement</i> - the settlement date of the Treasury bill;</li>
+				<li><i>maturity</i> - the maturity date of the Treasury bill;</li>
+				<li><i>discount</i> - the Treasury bill's percentage discount rate.</li>
+			</ul></td>
+			<td>Returns the price per $100 face value for a Treasury bill.</td>
+		</tr>
+		<tr>
+			<td><b>TBILLYIELD</b><br>added in v4.3</td>
+			<td>=TBILLYIELD(settlement, maturity, pr), <br><br> where:
+			<ul>
+				<li><i>settlement</i> - the settlement date of the Treasury bill;</li>
+				<li><i>maturity</i> - the maturity date of the Treasury bill;</li>
+				<li><i>pr</i> - the Treasury bill's price per $100 face value.</li>
+			</ul></td>
+			<td>Returns the yield for a Treasury bill.</td>
+		</tr>
+		<tr>
+			<td><b>WEIBULL</b><br>added in v4.3</td>
+			<td>=WEIBULL(x, alpha, beta, cumulative), <br><br> where:
+			<ul>
+				<li><i>x</i> - the value at which the function must be calculated (must be ≥ 0);</li>
+				<li><i>alpha</i> - the alpha parameter to the distribution (must be > 0);</li>
+				<li><i>beta</i> - the beta parameter to the distribution (must be > 0);</li>
+				<li><i>cumulative</i> - the logical (true/false) argument which defines the type of distribution to be used. If True - Weibull cumulative distribution function, if False - Weibull probability density function </li>
+			</ul></td>
+			<td>Returns the Weibull distribution.</td>
 		</tr>
     </tbody>
 </table>
@@ -907,13 +1007,25 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>ATANH</b></td>
 			<td>Returns the inverse hyperbolic tangent of a number. Number must be between -1 and 1 (excluding -1 and 1). Works with real numbers.</td>
 		</tr>
+		<tr>
+			<td><b>AVEDEV</b><br>added in v4.3</td>
+			<td>Returns the average of the absolute deviations of data points from their mean.<br> Empty cells, logical values, text, or error values in the array or reference are ignored. Cells with the value 0 are included.</td>
+		</tr>
         <tr>
 			<td><b>AVERAGE</b></td>
-			<td>Calculates the average (arithmetic mean) of a group of numbers. <br>The function ignores logical values, empty cells and cells that contain text. <br>However, cells with the value zero are included.</td>
+			<td>Calculates the average (arithmetic mean) of a group of numbers. <br>Logical values, empty cells and cells that contain text in the array or reference are ignored <br>However, cells with the value zero are included.</td>
+		</tr>
+		<tr>
+			<td><b>AVERAGEA</b><br>added in v4.3</td>
+			<td>Calculates the average (arithmetic mean) of the values in the list of arguments. <br>Arguments can be the following: numbers; names, arrays, or references that contain numbers; text representations of numbers; or logical values, such as TRUE and FALSE, in a reference.<br>Empty cells and text values in the array or reference are ignored.</td>
 		</tr>
 		<tr>
 			<td><b>BASE</b></td>
 			<td>Converts a number into the supplied base (radix). <br>The number should be an integer and greater than or equal to 0 and less than 2^53.<br>The base radix is what we want to convert the number into. It must be an integer from 2 to 36, inclusive.</td>
+		</tr>
+		<tr>
+			<td><b>BITAND</b><br>added in v4.3</td>
+			<td>Returns a bitwise 'AND' of two numbers.<br>The number must be an integer and greater than or equal to 0 and less than (2^48)-1.</td>
 		</tr>
 		<tr>
 			<td><b>CEILING</b></td>
@@ -1146,7 +1258,7 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 		</tr>
 		<tr>
 			<td><b>STDEVA</b></td>
-			<td>Calculates standard deviation based on a sample. <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>Empty cells, logical values, text, or error values in the array or reference are ignored.</td>
+			<td>Calculates standard deviation based on a sample. <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>Empty cells and text values in the array or reference are ignored.</td>
 		</tr>
         <tr>
 			<td><b>STDEVP</b></td>
@@ -1155,6 +1267,10 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 		<tr>
 			<td><b>STDEVPA</b></td>
 			<td>Calculates standard deviation based on the entire population given as arguments, including text (evaluate as 0) and logical values (evaluate as 1 for TRUE, and as 0 for FALSE). <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>If an argument is an array or reference, only values in that array or reference are used. Empty cells and text values in the array or reference are ignored.<br> Error values cause errors.</td>
+		</tr>
+		<tr>
+			<td><b>STDEV.S</b><br>added in v4.3</td>
+			<td>Estimates standard deviation based on a sample (ignores logical values and text in the sample). <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>If an argument is an array or reference, only values in that array or reference are used. Empty cells, logical values, text, or error values in the array or reference are ignored.<br> Error values cause errors.</td>
 		</tr>
 		<tr>
 			<td><b>SUBTOTAL</b></td>
@@ -1212,6 +1328,10 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 			<td><b>VARPA</b></td>
 			<td>Returns the variance of a population based on an entire population, including text (evaluate as 0) and logical values (evaluate as 1 for TRUE, and as 0 for FALSE).<br>Empty cells and text values in the array or reference are ignored.</td>
 		</tr>
+		<tr>
+			<td><b>VAR.S</b><br>added in v4.3</td>
+			<td>Returns the variance based on a sample (ignores logical values and text in the sample).<br>Empty cells, logical values, text, or error values in the array or reference are ignored.</td>
+		</tr>
     </tbody>
 </table>
 <br>
@@ -1256,6 +1376,11 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>Function</b></td>
 			<td><b>Formula</b></td>
 			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>ARRAYTOTEXT</b></td>
+			<td>=CHAR(number)</td>
+			<td>Returns the character (from the character set used by your computer) specified by a number. Number must be between 1 and 255. </td>
 		</tr>
 		<tr>
 			<td><b>CHAR</b></td>
