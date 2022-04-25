@@ -955,6 +955,50 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
+### Lookup functions
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>Function</b></td>
+			<td><b>Formula</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>MATCH</b><br>added in v4.3</td>
+			<td>=MATCH(lookup_value, lookup_array, [match_type]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
+				<li><i>lookup_array</i> - the range of cells;</li>
+				<li><i>match_type</i> - optional (1 by default):<br>1- finds the largest value that is less than or equal to <i>lookup_value</i><br>0 - finds the value that is exactly equal to <i>lookup_value</i><br>-1 - finds the smallest value that is greater than or equal to <i>lookup_value</i></li>
+			</ul></td>
+			<td>Searches for a specified item in a range of cells, and then returns the relative position of that item in the range.</td>
+		</tr>
+		<tr>
+			<td><b>XMATCH</b><br>added in v4.3</td>
+			<td>=XMATCH(lookup_value, lookup_array, [match_mode], [search_mode]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
+				<li><i>lookup_array</i> - the range of cells;</li>
+				<li><i>match_mode</i> - optional, 0 - exact match (default), -1 - exact match or next smallest, 1 - exact match or next larger, 2 - wildcard match;</li>
+				<li><i>search_mode</i> - optional, 1 - search from first (default), -1 - search from last, 2 - binary search ascending, -2 - binary search descending.</li>
+			</ul></td>
+			<td>Performs a lookup and returns a position in vertical or horizontal ranges.</td>
+		</tr>
+		<tr>
+			<td><b>INDEX</b><br>added in v4.3</td>
+			<td>=INDEX(array, row_num, [column_num]), <br><br> where:
+			<ul>
+				<li><i>array</i> - a range of cells or an array constant;</li>
+				<li><i>row_num</i> - the row position in the reference or array;</li>
+				<li><i>column_num</i> - optional, the column position in the reference or array.</li>
+			</ul></td>
+			<td>Returns the value at a given location in a range or array.</td>
+		</tr>
+    </tbody>
+</table>
+<br>
+
 ### Math functions
 
 <table> 
@@ -1370,6 +1414,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ### String functions
 
+
 <table>
 	<tbody>
 		<tr>
@@ -1378,9 +1423,9 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>Description</b></td>
 		</tr>
 		<tr>
-			<td><b>ARRAYTOTEXT</b></td>
-			<td>=CHAR(number)</td>
-			<td>Returns the character (from the character set used by your computer) specified by a number. Number must be between 1 and 255. </td>
+			<td><b>ARRAYTOTEXT</b><br>added in v4.3</td>
+			<td>=ARRAYTOTEXT(array, [format])</td>
+			<td>Returns an array of text values from any specified range, based on the format you specify (0 - concise (default) or 1 - strict format) </td>
 		</tr>
 		<tr>
 			<td><b>CHAR</b></td>
@@ -1456,6 +1501,17 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>PROPER</b></td>
 			<td>=PROPER(text)</td>
 			<td>Sets the first character in each word to uppercase <br>and converts all other characters to lowercase.</td>
+		</tr>
+        <tr>
+			<td><b>REPLACE</b><br>added in v4.3</td>
+			<td>=REPLACE(old_text, start_num, num_chars, new_text), <br><br> where:
+			<ul>
+				<li><i>old_text</i> - the text in which you want to replace some characters;</li>
+				<li><i>start_num</i> - the position of the character in <i>old_text</i> that you want to replace with new_text;</li>
+				<li><i>num_chars</i> - the number of characters to be replaced in <i>old_text</i>;</li>
+				<li><i>new_text</i> - the text that will replace characters in <i>old_text</i>.</li>
+			</ul></td>
+			<td>Replaces part of a text string, based on the number of characters you specify, with a different text string.</td>
 		</tr>
 		<tr>
 			<td><b>REPT</b></td>
