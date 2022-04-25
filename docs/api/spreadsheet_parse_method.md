@@ -13,16 +13,96 @@ description: You can learn about the parse method in the documentation of the DH
 ### Usage
 
 ~~~jsx
-parse(data: any): void;
+parse([
+    {
+        cell: string,
+        value: string | number | Date,
+        css?: string,
+        format?: string,
+        editor?: {
+            type: string, // type: "select"
+            options: string | array
+        }
+    },
+    // more cell objects
+]): void;
+
+// or
+parse({
+    styles: object,
+    sheets: [
+        {
+            name: string,
+            id: string,
+            rows?: array,
+            cols?: array,
+            data: [
+                {
+                    cell: string,
+                    value: string | number,
+                    css: string,
+                    format?: string,
+                    editor?: {
+                        type: string, // type: "select"
+                        options: string | array
+                    }
+                },
+                // more cell objects
+            ]
+        },
+        // more sheet objects
+    ]      
+}): void;
 ~~~
 
 ### Parameters
 
-- `data` - (required) the data to load
+:::info Info 1
+Specify **data** as an **array** of objects if you need to create a data set for one sheet only
+:::
+
+For each object you can specify the following parameters:
+
+- `cell` - (mandatory) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+- `value` - (mandatory) the value of a cell
+- `css` - (optional) the name of the CSS class
+- `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+- `editor` - (optional) an object with configuration settings for the editor of a cell:
+    - `type` - (mandatory) the type of the cell editor: "select"
+    - `options` - (mandatory) either a range of cells ("A1:B8") or an array of string values
+
+<br>
+
+:::info Info 2
+*Starting from v4.1*, you can specify **data** as an **object** if you need to create a data set for several sheets at once 
+:::
+
+The **data** object takes the following parameters:
+
+- `styles` - (mandatory) an object with CSS classes applied to particular cells
+- `sheets` - (mandatory) an array of sheet objects. Each object has the following properties:
+    - `name` - (mandatory) the sheet name
+    - `id` - (mandatory) the sheet id
+    - `rows` - (optional) an array of height objects. If not specified, the rows will have a height of 32px.
+    - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px. 
+    - `data` - (mandatory) an array of objects with data of the sheet. Each object has the following properties:
+        - `cell` - (mandatory) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+        - `value` - (mandatory) the value of a cell
+        - `css` - (optional) the name of the CSS class
+        - `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+        - `editor` - (optional) an object with configuration settings for the editor of a cell:
+            - `type` - (mandatory) the type of the cell editor: "select"
+            - `options` - (mandatory) either a range of cells ("A1:B8") or an array of string values
+
+:::note 
+In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
+:::
 
 ### Example
 
-~~~jsx {28}
+Prepare a data set for one sheet only:
+
+~~~jsx {32}
 const data = [
 	{ cell: "a1", value: "Country" },
 	{ cell: "b1", value: "Product" },
@@ -34,8 +114,12 @@ const data = [
 	{ cell: "b2", value: "Banana" },
 	{ cell: "c2", value: 6.68, css: "someclass" },
 	{ cell: "d2", value: 430 },
-	{ cell: "e2", value: 2872.4 }
+	{ cell: "e2", value: 2872.4 },
     
+    // add drop-down lists to cells
+    { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey", "India", "USA", "Italy"]} },
+    { cell: "B9", value: "", editor: {type: "select", options: "B2:B8" } },
+
     // more data
 ];
 
@@ -55,15 +139,9 @@ spreadsheet.parse(styledData);
 
 **Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 
-### Details
+Or prepare a data set for several sheets at once:
 
-Starting from v4.1, you can load several sheets into the spreadsheet by preparing data with the desired number of sheets and their configuration and pass them to the [parse](api/spreadsheet_parse_method.md) method as a parameter.
-
-:::note 
-In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
-:::
-
-~~~js
+~~~js {46}
 const styledData = {
     styles: {
         someclass: {
@@ -112,21 +190,10 @@ const styledData = {
 spreadsheet.parse(styledData);
 ~~~
 
-The data *object* takes the following parameters:
+**Change log:**
 
-- **styles** - (*object*) an object with CSS classes applied to particular cells
-- **sheets** - (*array*) an array of sheet objects. Each object has the following properties:
-    - **name** - (*string*) the sheet name
-    - **id** - (*string*) the sheet id
-    - **rows** - (*array*) optional, an array of height objects. If not specified, the rows will have a height of 32px.
-    - **cols** - (*array*) optional, an array of width objects. If not specified, the columns will have a width of 120px. 
-    - **data** - (*array*) an array of objects with data of the sheet. Each object has the following properties:
-        - **cell** - (*string*) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
-        - **value** - (string,number) the value of a cell
-        - **css** - (*string*) optional, the name of the CSS class
-        - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
-
-**Change log:** The **rows** and **cols** properties of the sheet object have been added in v4.2
+- The **editor** property of the **data** array was added in v4.3
+- The **rows** and **cols** properties of the sheet object were added in v4.2
 
 **Related articles:** [Data loading and export](loading_data.md)
 
