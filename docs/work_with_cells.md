@@ -8,14 +8,70 @@ description: You can learn about the work with cells in the documentation of the
 
 ## Entering content in a cell
 
-- Click a desired cell on a sheet.
-- Type a text or a number(s), and press **Enter**.
+### Entering data manually
 
-### Entering the same data in several cells
+- Click a desired cell on a sheet.
+- Type a text, a number(s), a date, or time and press **Enter**.
+
+### Entering a formula
+
+- Click the cell where you want the formula results to appear.
+- Type the '=' sign.
+- Create a formula. For this, you can use:
+    - constant numbers and calculation operators, for example **=3-2*5+12**
+    - cell references and calculation operators, for example **=A1/A2**
+    - [built-in functions](../functions/), for example **=MAX(C46;D46)**
+- Press **Enter**.
+
+## Using drop-down lists in cells
+
+You may create a drop-down list in a cell(s) to allow users to select the necessary item from the list.
+
+### Creating a drop-down list by typing it manually
+
+- Select a cell or a range of cells where you want to create the list
+
+- Go to: *Data -> Data validation* in the menu
+
+- Choose the *List of items* criteria
+
+- Type the items you want to appear in the drop-down list
+
+- Press the **Save** button
+
+![Drop-down menu](assets/drop_down_menu.gif)
+
+### Creating a drop-down list by using a range
+
+- Type the items you want to appear in the drop-down list
+
+- Select a cell or a range of cells where you want to create the list
+
+- Go to: *Data -> Data validation* in the menu
+
+- Choose *List from a range* criteria
+
+- Select your list range
+
+- Press the **Save** button
+
+![Drop-down menu](assets/drop_down_menu2.gif)
+
+### Removing validation from a cell
+
+You can stop using a drop-down list in a cell. To do that:
+
+- Select the necessary cell or a range of cells from which you want to remove a drop-down list
+- Go to: *Data -> Data validation* in the menu
+- Select the *Remove validation* option
+
+![Remove validation](assets/remove_validation.png)
+
+## Entering the same data in several cells
 
 You can enter the same data into several cells by using the **Fill Handle** to automatically fill data in worksheet cells. See the details below.
 
-## Auto filling cells with content
+### Auto filling cells with content
 
 You can automatically fill cells with data.  This is how it works:
 
@@ -58,3 +114,5 @@ To lock/unlock a cell, go one of the ways described below:
 - Choose the Lock/Unlock cell option in the appeared context menu.
 
 ![Unlock](assets/unlock.png)
+
+
