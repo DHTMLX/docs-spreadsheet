@@ -49,7 +49,7 @@ You may create a drop-down list in a cell(s) to allow users to select the necess
 
 - Go to: *Data -> Data validation* in the menu
 
-- Choose *List from a range* criteria
+- Choose the *List from a range* criteria
 
 - Select your list range
 

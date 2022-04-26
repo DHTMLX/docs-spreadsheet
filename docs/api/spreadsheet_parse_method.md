@@ -63,13 +63,13 @@ Specify **data** as an **array** of objects if you need to create a data set for
 
 For each object you can specify the following parameters:
 
-- `cell` - (mandatory) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
-- `value` - (mandatory) the value of a cell
+- `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+- `value` - (required) the value of a cell
 - `css` - (optional) the name of the CSS class
 - `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
 - `editor` - (optional) an object with configuration settings for the editor of a cell:
-    - `type` - (mandatory) the type of the cell editor: "select"
-    - `options` - (mandatory) either a range of cells ("A1:B8") or an array of string values
+    - `type` - (required) the type of the cell editor: "select"
+    - `options` - (required) either a range of cells ("A1:B8") or an array of string values
 
 <br>
 
@@ -79,20 +79,20 @@ For each object you can specify the following parameters:
 
 The **data** object takes the following parameters:
 
-- `styles` - (mandatory) an object with CSS classes applied to particular cells
-- `sheets` - (mandatory) an array of sheet objects. Each object has the following properties:
-    - `name` - (mandatory) the sheet name
-    - `id` - (mandatory) the sheet id
+- `styles` - (required) an object with CSS classes applied to particular cells
+- `sheets` - (required) an array of sheet objects. Each object has the following properties:
+    - `name` - (required) the sheet name
+    - `id` - (required) the sheet id
     - `rows` - (optional) an array of height objects. If not specified, the rows will have a height of 32px.
     - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px. 
-    - `data` - (mandatory) an array of objects with data of the sheet. Each object has the following properties:
-        - `cell` - (mandatory) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
-        - `value` - (mandatory) the value of a cell
+    - `data` - (required) an array of objects with data of the sheet. Each object has the following properties:
+        - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+        - `value` - (required) the value of a cell
         - `css` - (optional) the name of the CSS class
         - `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
         - `editor` - (optional) an object with configuration settings for the editor of a cell:
-            - `type` - (mandatory) the type of the cell editor: "select"
-            - `options` - (mandatory) either a range of cells ("A1:B8") or an array of string values
+            - `type` - (required) the type of the cell editor: "select"
+            - `options` - (required) either a range of cells ("A1:B8") or an array of string values
 
 :::note 
 In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.

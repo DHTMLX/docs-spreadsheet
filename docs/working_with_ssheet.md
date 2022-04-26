@@ -225,6 +225,17 @@ To finish editing of a cell, use the [](api/spreadsheet_endedit_method.md) metho
 spreadsheet.endEdit();
 ~~~
 
+## Validating cells
+
+Starting with v4.3, you can apply data validation to cells via adding drop-down lists of options into the cells. To do that, use the [](api/spreadsheet_setvalidation_method.md) method:
+
+~~~js
+spreadsheet.setValidation("B10:B15", ["Apple", "Mango", "Avocado"]);
+~~~
+
+The drop-down list will limit the choice of the end user. It will show the *Invalid value* message when the user completes a cell with an unexpected value.
+
+
 ## Selecting cells
 
 Spreadsheet provides a handy way of setting selection for cells via the API of the *Selection* object.
