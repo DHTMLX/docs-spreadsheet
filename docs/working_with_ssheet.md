@@ -235,6 +235,10 @@ spreadsheet.setValidation("B10:B15", ["Apple", "Mango", "Avocado"]);
 
 The drop-down list will limit the choice of the end user. It will show the *Invalid value* message when the user completes a cell with an unexpected value.
 
+:::info
+The [](api/spreadsheet_setvalidation_method.md) method can also remove validation from the specified cells. [Check the details](../api/spreadsheet_setvalidation_method/#details).
+:::
+
 
 ## Selecting cells
 

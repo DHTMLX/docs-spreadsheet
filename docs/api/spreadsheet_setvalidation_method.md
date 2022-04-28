@@ -10,6 +10,8 @@ description: You can learn about the setValidation method in the documentation o
 
 @short: Sets validation for cells via adding drop-down lists into the cells
 
+The method can also remove data validation from a cell(s).
+
 ### Usage
 
 ~~~jsx
@@ -37,7 +39,21 @@ spreadsheet.parse(dataset);
 spreadsheet.setValidation("B10", ["Apple", "Mango", "Avocado"]);
 ~~~
 
+### Details
+
+If you need to remove validation from a cell(s), instead of the list of options, pass *null* / *0* / *false* / *undefined* as a second parameter to the method:
+
+~~~js
+spreadsheet.setValidation("B15");
+
+//or
+spreadsheet.setValidation("B15", null);
+
+//or
+spreadsheet.setValidation("B15", false);
+~~~
+
 **Change log:** Added in v4.3
 
-**Related articles:** [Setting active sheet](working_with_sheets.md/#setting-active-sheet)
+**Related articles:** [Validating cells](working_with_ssheet.md/#validating-cells)
 
