@@ -308,28 +308,25 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>DEC2BIN</b><br>added in v4.3</td>
-			<td>=DEC2BIN(number, [places]), <br><br> where:
+			<td>=DEC2BIN(number), <br><br> where:
 			<ul>
 				<li><i>number</i> - the decimal integer you want to convert (must be greater than -512 but less than 511);</li>
-				<li><i>places</i> - optional, the number of characters to use.</li>
 			</ul></td>
 			<td>Converts a decimal number to binary.</td>
 		</tr>
 		<tr>
 			<td><b>DEC2HEX</b><br>added in v4.3</td>
-			<td>=DEC2HEX(number, [places]), <br><br> where:
+			<td>=DEC2HEX(number), <br><br> where:
 			<ul>
 				<li><i>number</i> - the decimal integer you want to convert (must be greater than -549755813888 but less than 549755813887);</li>
-				<li><i>places</i> - optional, the number of characters to use.</li>
 			</ul></td>
 			<td>Converts a decimal number to hexadecimal.</td>
 		</tr>
 		<tr>
 			<td><b>DEC2OCT</b><br>added in v4.3</td>
-			<td>=DEC2OCT(number, [places]), <br><br> where:
+			<td>=DEC2OCT(number), <br><br> where:
 			<ul>
 				<li><i>number</i> - the decimal integer you want to convert (must be greater than -536870912 but less than 536870911);</li>
-				<li><i>places</i> - optional, the number of characters to use.</li>
 			</ul></td>
 			<td>Converts a decimal number to octal.</td>
 		</tr>
@@ -466,10 +463,9 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>HEX2BIN</b><br>added in v4.3</td>
-			<td>=HEX2BIN(number, [places])<br><br> where:
+			<td>=HEX2BIN(number)<br><br> where:
 			<ul>
 				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
-				<li><i>places</i> - optional, the number of characters that you want the returned binary number to have. If places is omitted, HEX2BIN uses the minimum number of characters necessary.</li>
 			</ul></td>
 			<td>Converts a hexadecimal number to binary.</td>
 		</tr>
@@ -483,10 +479,9 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>HEX2OCT</b><br>added in v4.3</td>
-			<td>=HEX2OCT(number, [places])<br><br> where:
+			<td>=HEX2OCT(number)<br><br> where:
 			<ul>
 				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
-				<li><i>places</i> - optional, the number of characters that you want the returned binary number to have. If places is omitted, HEX2OCT uses the minimum number of characters necessary.</li>
 			</ul></td>
 			<td>Converts a hexadecimal number to octal.</td>
 		</tr>
@@ -747,10 +742,9 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>OCT2BIN</b><br>added in v4.3</td>
-			<td>=OCT2BIN(number, [places]), <br><br> where:
+			<td>=OCT2BIN(number), <br><br> where:
 			<ul>
 				<li><i>number</i> - the octal number you want to convert. It can't contain more than 10 characters;</li>
-				<li><i>places</i> - optional, the number of characters to use. If places is omitted, OCT2BIN uses the minimum number of characters necessary.</li>
 			</ul></td>
 			<td>Converts an octal number to binary.</td>
 		</tr>
@@ -764,10 +758,9 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>OCT2HEX</b><br>added in v4.3</td>
-			<td>=OCT2HEX(number, [places]), <br><br> where:
+			<td>=OCT2HEX(number), <br><br> where:
 			<ul>
 				<li><i>number</i> - the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits)</li>
-				<li><i>places</i> - the number of characters to use. If places is omitted, OCT2HEX uses the minimum number of characters necessary.</li>
 			</ul></td>
 			<td>Converts an octal number to hexadecimal.</td>
 		</tr>
