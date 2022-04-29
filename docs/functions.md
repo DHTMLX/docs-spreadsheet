@@ -204,8 +204,8 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>BITLSHIFT</b><br>added in v4.3</td>
 			<td>=BITLSHIFT(number, shift_amount), <br><br> where:
 			<ul>
-				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0);</li>
-				<li><i>shift_amount</i> - the amount of bits to shift, if negative shifts bits to the right instead;</li>
+				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0)</li>
+				<li><i>shift_amount</i> - the amount of bits to shift, if negative, shifts bits to the right instead</li>
 			</ul></td>
 			<td>Returns a number shifted left by the specified number of bits.</td>
 		</tr>
@@ -263,6 +263,24 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
 			</ul></td>
 			<td>Returns covariance, the average of the products of deviations for each data point pair in two data sets.</td>
+		</tr>
+		<tr>
+			<td><b>COVARIANCE.P</b><br>added in v4.3</td>
+			<td>=COVARIANCE.P(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - The first cell range of integers;</li>
+				<li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns population covariance, the average of the products of deviations for each data point pair in two data sets.</td>
+		</tr>
+		<tr>
+			<td><b>COVARIANCE.S</b><br>added in v4.3</td>
+			<td>=COVARIANCE.S(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - The first cell range of integers;</li>
+				<li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns the sample covariance, the average of the products of deviations for each data point pair in two data sets.</td>
 		</tr>
 		<tr>
 			<td><b>DB</b></td>
@@ -773,6 +791,24 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the k-th percentile of values in a range.</td>
 		</tr>
 		<tr>
+			<td><b>PERCENTILE.EXC</b><br>added in v4.3</td>
+			<td>=PERCENTILE.EXC(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array of data values;</li>
+				<li><i>k</i> - the percentile value between 0 and 1, exclusive.</li>
+			</ul></td>
+			<td>Returns the k-th percentile of values in a range.</td>
+		</tr>
+		<tr>
+			<td><b>PERCENTILE.INC</b><br>added in v4.3</td>
+			<td>=PERCENTILE.INC(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array of data values;</li>
+				<li><i>k</i> - the percentile value between 0 and 1, inclusive.</li>
+			</ul></td>
+			<td>Returns the k-th percentile of values in a range.</td>
+		</tr>
+		<tr>
 			<td><b>PERMUT</b><br>added in v4.3</td>
 			<td>=PERMUT(number, number_chosen), <br><br> where:
 			<ul>
@@ -826,6 +862,24 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>quart</i> - indicates which value to return (<a href="https://support.microsoft.com/en-us/office/quartile-function-93cf8f62-60cd-4fdb-8a92-8451041e1a2a">0-4</a>).</li>
 			</ul></td>
 			<td>Returns the quartile of a data set.</td>
+		</tr>
+		<tr>
+			<td><b>QUARTILE.EXC</b><br>added in v4.3</td>
+			<td>=QUARTILE(array, quart), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or cell range of numeric values;</li>
+				<li><i>quart</i> - indicates which value to return (1-3).</li>
+			</ul></td>
+			<td>Returns the quartile of the data set, based on percentile values from 0..1, exclusive.</td>
+		</tr>
+		<tr>
+			<td><b>QUARTILE.INC</b><br>added in v4.3</td>
+			<td>=QUARTILE.INC(array, quart), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or cell range of numeric values;</li>
+				<li><i>quart</i> - indicates which value to return (0-4).</li>
+			</ul></td>
+			<td>Returns the quartile of a data set, based on percentile values from 0..1, inclusive.</td>
 		</tr>
 		<tr>
 			<td><b>SIGN</b><br>added in v4.3</td>
@@ -976,14 +1030,35 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>XMATCH</b><br>added in v4.3</td>
-			<td>=XMATCH(lookup_value, lookup_array, [match_mode], [search_mode]), <br><br> where:
+			<td>=XMATCH(lookup_value, lookup_array, [match_mode]), <br><br> where:
 			<ul>
 				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
 				<li><i>lookup_array</i> - the range of cells;</li>
-				<li><i>match_mode</i> - optional, 0 - exact match (default), -1 - exact match or next smallest, 1 - exact match or next larger, 2 - wildcard match;</li>
-				<li><i>search_mode</i> - optional, 1 - search from first (default), -1 - search from last, 2 - binary search ascending, -2 - binary search descending.</li>
+				<li><i>match_mode</i> - optional, 0 - exact match (default), -1 - exact match or next smallest, 1 - exact match or next larger</li>
 			</ul></td>
 			<td>Performs a lookup and returns a position in vertical or horizontal ranges.</td>
+		</tr>
+		<tr>
+			<td><b>LOOKUP</b><br>added in v4.3</td>
+			<td>=LOOKUP(lookup_value, lookup_vector, [result_vector]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for;</li>
+				<li><i>lookup_vector</i> - the one-row, or one-column range to search;</li>
+				<li><i>result_vector</i> - optional, the one-row, or one-column range of results.</li>
+			</ul></td>
+			<td>Looks up a value in a one-column or one-row range, and retrieves a value from the same position in another one-column or one-row range.</td>
+		</tr>
+		<tr>
+			<td><b>XLOOKUP</b><br>added in v4.3</td>
+			<td>=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for;</li>
+				<li><i>lookup_array</i> - the array or range to search;</li>
+				<li><i>return_array</i> - the array or range to return;</li>
+				<li><i>if_not_found</i> - optional, if a valid match is not found, returns the [if_not_found] text you supply;</li>
+				<li><i>match_mode</i> -  optional (0 by default):<br>0 - Exact match<br>-1 - Exact match. If not found, returns the next smaller item<br>1 - Exact match. If not found, returns the next larger item</li>
+			</ul></td>
+			<td>Searches a range or an array, and then returns the item corresponding to the first match it finds. If no match exists, then XLOOKUP can return the closest (approximate) match.</td>
 		</tr>
 		<tr>
 			<td><b>INDEX</b><br>added in v4.3</td>
@@ -994,6 +1069,18 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>column_num</i> - optional, the column position in the reference or array.</li>
 			</ul></td>
 			<td>Returns the value at a given location in a range or array.</td>
+		</tr>
+		<tr>
+			<td><b>VLOOKUP</b><br>added in v4.3</td>
+			<td>=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for;</li>
+				<li><i>lookup_array</i> - the array or range to search;</li>
+				<li><i>return_array</i> - the array or range to return;</li>
+				<li><i>if_not_found</i> - optional, if a valid match is not found, returns the [if_not_found] text you supply;</li>
+				<li><i>match_mode</i> -  optional (0 by default):<br>0 - Exact match<br>-1 - Exact match. If not found, returns the next smaller item<br>1 - Exact match. If not found, returns the next larger item</li>
+			</ul></td>
+			<td>Searches a range or an array, and then returns the item corresponding to the first match it finds. If no match exists, then XLOOKUP can return the closest (approximate) match.</td>
 		</tr>
     </tbody>
 </table>
