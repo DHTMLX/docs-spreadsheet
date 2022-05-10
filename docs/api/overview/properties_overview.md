@@ -19,4 +19,5 @@ description: You can have a Properties overview of the DHTMLX JavaScript Spreads
 | [](../spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](../spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](../spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](../spreadsheet_timeformat_config.md)       | @getshort(../spreadsheet_timeformat_config.md)       |
 | [](../spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |
