@@ -293,6 +293,21 @@ spreadsheet.selection.setFocusedCell("D4");
 var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
 ~~~
 
+## Sorting data
+
+From v4.3, you can sort data in the spreadsheet via the [sortCells()](api/spreadsheet_sortcells_method.md) method. Pass to the method two parameters:
+- `cell` - a range of cells by which you want the data in the spreadsheet to be sorted
+- `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+
+spreadsheet.sortCells("B2:B11", -1);
+~~~
+
+
 ## Clearing spreadsheet
 
 You can clear the whole spreadsheet at once via the [clear()](api/spreadsheet_clear_method.md) method:
