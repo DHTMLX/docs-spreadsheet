@@ -256,6 +256,7 @@ module.exports = {
             "work_with_sheets",
             "data_formatting",
             "number_formatting_guide",
+            "sorting_data",
             "excel_import_export"
           ],
         },
