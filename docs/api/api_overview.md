@@ -111,6 +111,7 @@ Parameters:
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
 | [](api/spreadsheet_timeformat_config.md)       | @getshort(api/spreadsheet_timeformat_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
+| [](api/spreadsheet_topsplit_config.md)         | @getshort(api/spreadsheet_topsplit_config.md)         |
 
 ## Selection methods
 

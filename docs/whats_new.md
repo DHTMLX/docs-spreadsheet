@@ -166,7 +166,7 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 - [Math functions](functions.md)
 - [TypeScript Support](using_typescript.md)
-- The ability [to freeze columns on the left side of the spreadsheet](configuration.md#frozen-columns) via the api/spreadsheet_leftsplit_config.md configuration property
+- The ability [to freeze columns on the left side of the spreadsheet](configuration.md#frozen-rows-and-columns) via the [leftSplit](api/spreadsheet_leftsplit_config.md) configuration property
 - [The Text format for displaying the content of a cell as text is added to default number formats](number_formatting.md#defaultnumberformats)
 - The ability to select multiple scattered ranges of cells by using ["Ctrl+Shift+Left Click"](hotkeys.md#selection) combination
 
