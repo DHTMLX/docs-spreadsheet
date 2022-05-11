@@ -225,6 +225,21 @@ To finish editing of a cell, use the [](api/spreadsheet_endedit_method.md) metho
 spreadsheet.endEdit();
 ~~~
 
+## Validating cells
+
+Starting with v4.3, you can apply data validation to cells via adding drop-down lists of options into the cells. To do that, use the [](api/spreadsheet_setvalidation_method.md) method:
+
+~~~js
+spreadsheet.setValidation("B10:B15", ["Apple", "Mango", "Avocado"]);
+~~~
+
+The drop-down list will limit the choice of the end user. It will show the *Invalid value* message when the user completes a cell with an unexpected value.
+
+:::info
+The [](api/spreadsheet_setvalidation_method.md) method can also remove validation from the specified cells. [Check the details](../api/spreadsheet_setvalidation_method/#details).
+:::
+
+
 ## Selecting cells
 
 Spreadsheet provides a handy way of setting selection for cells via the API of the *Selection* object.
@@ -277,6 +292,21 @@ spreadsheet.selection.setFocusedCell("D4");
 // getting the focused cell 
 var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
 ~~~
+
+## Sorting data
+
+From v4.3, you can sort data in the spreadsheet via the [sortCells()](api/spreadsheet_sortcells_method.md) method. Pass to the method two parameters:
+- `cell` - a range of cells by which you want the data in the spreadsheet to be sorted
+- `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+
+spreadsheet.sortCells("B2:B11", -1);
+~~~
+
 
 ## Clearing spreadsheet
 

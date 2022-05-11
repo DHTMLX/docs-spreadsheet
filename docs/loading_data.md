@@ -21,7 +21,11 @@ It can be a simple array with data objects each of which can have the following 
 
 - **cell** - (*string*) mandatory, the id of a cell that is formed as "id of the column + id of the row", e.g. A1
 - **value** - (*string,number*) mandatory, the value of a cell
+- **css** - (*string*) optional, the name of the CSS class
 - **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+- **editor** - (*object*) an object with configuration settings for the editor of a cell:
+    - **type** - (*string*) the type of the cell editor: "select"
+    - **options** - (*string | array*) either a range of cells ("A1:B8") or an array of string values
 
 {{note Use this way if you need to create a data set for one sheet only.}}
 
@@ -38,8 +42,12 @@ const data = [
 	{ cell: "c2", value: 6.68, format:"currency" },
 	{ cell: "d2", value: 430, format:"percent" },
     // "myFormat" is the id of a custom format
-	{ cell: "e2", value: 2872.4, format:"myFormat" }
+	{ cell: "e2", value: 2872.4, format:"myFormat" },
     
+    // add drop-down lists to cells
+    { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey", "India", "USA", "Italy"]} },
+    { cell: "B9", value: "", editor: {type: "select", options: "B2:B8" } },
+
     // more data
 ];
 ~~~
@@ -72,7 +80,7 @@ const data = {
 };
 ~~~
 
-Check the [details](api/spreadsheet_parse_method.md/#details).
+Check the [details](api/spreadsheet_parse_method.md).
 
 ### Setting styles for cells
 
