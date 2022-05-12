@@ -90,6 +90,7 @@ module.exports = {
             id: "api/overview/events_overview"
           },
           items: [
+            "api/spreadsheet_afteraction_event",
             "api/spreadsheet_afterclear_event",
             "api/spreadsheet_aftercolumnadd_event",
             "api/spreadsheet_aftercolumndelete_event",
@@ -107,6 +108,7 @@ module.exports = {
             "api/spreadsheet_aftersheetrename_event",
             "api/spreadsheet_afterstylechange_event",
             "api/spreadsheet_aftervaluechange_event",
+            "api/spreadsheet_beforeaction_event",
             "api/spreadsheet_beforeclear_event",
             "api/spreadsheet_beforecolumnadd_event",
             "api/spreadsheet_beforecolumndelete_event",
@@ -126,6 +128,10 @@ module.exports = {
             "api/spreadsheet_beforevaluechange_event",
             "api/spreadsheet_groupfill_event",
           ],
+        },
+        {
+          type: "doc",
+          id: "api/overview/actions_overview",
         },
         {
           type: "category",
