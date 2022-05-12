@@ -27,6 +27,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 **Change log:** Added in v4.0
 
-**Related articles:** [Configuration](configuration.md#frozen-columns)
+**Related articles:** [Configuration](configuration.md#frozen-rows-and-columns)
 
 **Related sample:** [Spreadsheet. Frozen columns](https://snippet.dhtmlx.com/iazmc27w)

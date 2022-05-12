@@ -156,6 +156,7 @@ module.exports = {
             "api/spreadsheet_rowscount_config",
             "api/spreadsheet_timeformat_config",
             "api/spreadsheet_toolbarblocks_config",
+            "api/spreadsheet_topsplit_config",
           ],
         },
         {
