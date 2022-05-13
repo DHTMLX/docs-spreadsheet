@@ -59,6 +59,7 @@ Parameters:
 
 | Name                                            | Description                                            |
 | :---------------------------------------------- | :----------------------------------------------------- |
+| [](api/spreadsheet_afteraction_event.md)        | @getshort(api/spreadsheet_afteraction_event.md)        |
 | [](api/spreadsheet_afterclear_event.md)         | @getshort(api/spreadsheet_afterclear_event.md)         |
 | [](api/spreadsheet_aftercolumnadd_event.md)     | @getshort(api/spreadsheet_aftercolumnadd_event.md)     |
 | [](api/spreadsheet_aftercolumndelete_event.md)  | @getshort(api/spreadsheet_aftercolumndelete_event.md)  |
@@ -76,6 +77,7 @@ Parameters:
 | [](api/spreadsheet_aftersheetrename_event.md)   | @getshort(api/spreadsheet_aftersheetrename_event.md)   |
 | [](api/spreadsheet_afterstylechange_event.md)   | @getshort(api/spreadsheet_afterstylechange_event.md)   |
 | [](api/spreadsheet_aftervaluechange_event.md)   | @getshort(api/spreadsheet_aftervaluechange_event.md)   |
+| [](api/spreadsheet_beforeaction_event.md)       | @getshort(api/spreadsheet_beforeaction_event.md)       |
 | [](api/spreadsheet_beforeclear_event.md)        | @getshort(api/spreadsheet_beforeclear_event.md)        |
 | [](api/spreadsheet_beforecolumnadd_event.md)    | @getshort(api/spreadsheet_beforecolumnadd_event.md)    |
 | [](api/spreadsheet_beforecolumndelete_event.md) | @getshort(api/spreadsheet_beforecolumndelete_event.md) |

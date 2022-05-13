@@ -6,11 +6,50 @@ description: You can have an Actions overview of the DHTMLX JavaScript Spreadshe
 
 # Actions overview
 
-From v4.3, you don't have to constantly add a set of paired **before-** and **after-** events to track and handle the actions which you execute when changing something in the spreadsheet. 
+:::info
+From v4.3, the Spreadsheet library introduces a new conception of interaction with Spreadsheet events.
+:::
 
-Now DHTMLX Spreadsheet includes a pair of the [beforeAction](api/spreadsheet_beforeaction_event.md)/[afterAction](api/spreadsheet_afteraction_event.md) events that are intended to make your code simple and concise. They will fire right before an action is executed and indicate which exactly action was performed.
+Now DHTMLX Spreadsheet includes a pair of the [beforeAction](api/spreadsheet_beforeaction_event.md)/[afterAction](api/spreadsheet_afteraction_event.md) events that are intended to make your code simple and concise. They will fire right before an action is executed and indicate which exactly action has been performed.
 
-The full list of available actions is given below.
+~~~js
+spreadsheet.events.on("beforeAction", (actionName, config) => {
+    if (actionName === "addColumn") {
+        console.log(actionName, config);
+        return false;
+    },
+    // more actions
+});
+
+spreadsheet.events.on("afterAction", (actionName, config) => {
+    if (actionName === "addColumn") {
+        console.log(actionName, config)
+    },
+    // more actions
+});
+~~~
+
+[The full list of the available actions is given below.](#list-of-actions)
+
+>It means, that you don't have to constantly add sets of paired [**before-** and **after-**](api/overview/events_overview.md) events anymore to track and handle the actions which you execute when changing something in the spreadsheet. 
+
+>But if needed you can use an **old approach** because all the existing events will continue work as before:
+~~~js
+spreadsheet.events.on("afterColumnAdd", function(cell){
+    console.log("A new column is added", cell);
+});
+~~~
+~~~js
+spreadsheet.events.on("beforeColumnAdd", function(cell){
+    console.log("A new column will be added", cell);
+    return true;
+});
+~~~
+
+
+
+
+## List of actions
 
 | Action             | Description                                                                                                                                                                                           |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,7 +68,9 @@ The full list of available actions is given below.
 | **resizeCol**        | The action is executed when you resize a column                                                                                                                                                       |
 | **resizeRow**        | The action is executed when you resize a row                                                                                                                                                          |
 | **setCellFormat**    | The action is executed when you change the format of a cell                                                                                                                                           |
-| **setCellValue**     | The action is executed when you change the value of a cell                                                                                                                                            |
+| **setCellValue**     | The action is executed when you change or remove the value of a cell                                                                                                                                            |
 | **setValidation**    | The action is executed when you set data validation for a cell                                                                                                                                        |
 | **sortCells**        | The action is executed when you sort data in spreadsheet                                                                                                                                              |
 | **setCellStyle**     | The action is executed when you change the style of a cell                                                                                                                                            |
+
+**Related sample:** [Spreadsheet. Actions](https://snippet.dhtmlx.com/efcuxlkt)

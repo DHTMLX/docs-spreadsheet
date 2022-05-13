@@ -20,7 +20,7 @@ beforeAction: (action: string, config: object) => void | boolean;
 
 The callback of the event takes the following parameters:
 
-- `action` - (required) the name of the action. Check the full list of available actions here
+- `action` - (required) the name of the action. Check the full list of available actions [here](api/overview/actions_overview.md#list-of-actions)
 - `config` - (required) an object with parameters of the action
 
 ### Returns
@@ -35,7 +35,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 spreadsheet.parse(dataset);
 
-spreadsheet.events.on("BeforeAction", (actionName, config) => {
+spreadsheet.events.on("beforeAction", (actionName, config) => {
     if (actionName === "sortCells") {
         console.log(actionName, config);
         return false;
@@ -43,4 +43,8 @@ spreadsheet.events.on("BeforeAction", (actionName, config) => {
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events.md) 
+**Changelog:** Added in v4.3
+
+**Related articles:** 
+- [Spreadsheet actions](api/overview/actions_overview.md) 
+- [Event handling](handling_events.md) 
