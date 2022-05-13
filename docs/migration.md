@@ -10,7 +10,7 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 Version 4.3 brings a new conception of tracking and handling the actions which are performed when you change something in the spreadsheet. 
 
-The new [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using these two events only. For instance: 
+The new [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using only these two events. For instance: 
 
 ~~~js
 spreadsheet.events.on("BeforeAction", (actionName, config) => {

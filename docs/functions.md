@@ -175,7 +175,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>number_s</i> - the number of successes in trials;</li>
 				<li><i>trials</i> - the number of independent trials;</li>
 				<li><i>probability_s</i> - the probability of success on each trial;</li>
-				<li><i>cumulative</i> - if TRUE, then BINOM.DIST returns the cumulative distribution function; if FALSE, it returns the probability mass function.</li>
+				<li><i>cumulative</i> - if TRUE, then BINOM.DIST returns the cumulative distribution function; if FALSE (use 0), it returns the probability mass function.</li>
 			</ul></td>
 			<td>Returns the individual term binomial distribution probability.</td>
 		</tr>
@@ -942,6 +942,17 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			</ul></td>
 			<td>Returns the Weibull distribution.</td>
 		</tr>
+		<tr>
+			<td><b>WEIBULL.DIST</b><br>added in v4.3</td>
+			<td>=WEIBULL(x, alpha, beta, cumulative), <br><br> where:
+			<ul>
+				<li><i>x</i> - the value at which the function must be calculated (must be ≥ 0);</li>
+				<li><i>alpha</i> - the alpha parameter to the distribution (must be > 0);</li>
+				<li><i>beta</i> - the beta parameter to the distribution (must be > 0);</li>
+				<li><i>cumulative</i> - the logical (true/false) argument which defines the type of distribution to be used. If True - Weibull cumulative distribution function, if False - Weibull probability density function </li>
+			</ul></td>
+			<td>Returns the Weibull distribution.</td>
+		</tr>
     </tbody>
 </table>
 
@@ -1065,15 +1076,25 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 		</tr>
 		<tr>
 			<td><b>VLOOKUP</b><br>added in v4.3</td>
-			<td>=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode]), <br><br> where:
+			<td>=VLOOKUP(lookup_value, table_array, column_index_num, [range_lookup]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for in the first column of a table;</li>
+				<li><i>table_array</i> - the table from which to retrieve a value;</li>
+				<li><i>column_index_num</i> - the column number in the table from which to retrieve a value;</li>
+				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
+			</ul></td>
+			<td>Looks up a value in a vertical table by matching on the first column</td>
+		</tr>
+		<tr>
+			<td><b>HLOOKUP</b><br>added in v4.3</td>
+			<td>=HLOOKUP(lookup_value, table_array, row_index, [range_lookup]), <br><br> where:
 			<ul>
 				<li><i>lookup_value</i> - the value to search for;</li>
-				<li><i>lookup_array</i> - the array or range to search;</li>
-				<li><i>return_array</i> - the array or range to return;</li>
-				<li><i>if_not_found</i> - optional, if a valid match is not found, returns the [if_not_found] text you supply;</li>
-				<li><i>match_mode</i> -  optional (0 by default):<br>0 - Exact match<br>-1 - Exact match. If not found, returns the next smaller item<br>1 - Exact match. If not found, returns the next larger item</li>
+				<li><i>table_array</i> - the table from which to retrieve a value;</li>
+				<li><i>column_index_num</i> - the row number in the table from which to retrieve a value;</li>
+				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
 			</ul></td>
-			<td>Searches a range or an array, and then returns the item corresponding to the first match it finds. If no match exists, then XLOOKUP can return the closest (approximate) match.</td>
+			<td>Looks up a value in a horizontal table</td>
 		</tr>
     </tbody>
 </table>
