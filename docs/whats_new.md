@@ -14,7 +14,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ### Breaking changes
 
-Version 4.3 doesn't bring any breaking changes but introduce a new way of handling actions performed in the spreadsheet. Check the details in the [Migration article](migration.md#42---43).
+Version 4.3 doesn't bring any breaking changes but introduces a new way of handling actions performed in the spreadsheet. Check the details in the [Migration article](migration.md#42---43).
 
 ### New functionality
 
