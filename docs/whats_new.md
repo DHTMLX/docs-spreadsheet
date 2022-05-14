@@ -6,6 +6,32 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 # What's new
 
+If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
+
+## Version 4.3
+
+<span class="rel_date_pivot">released on May 18, 2022</span>
+
+### Breaking changes
+
+Version 4.3 doesn't bring any breaking changes but introduce a new way of handling actions performed in the spreadsheet. Check the details in the [Migration article](migration.md#42---43).
+
+### New functionality
+
+- The ability to add a drop-down list of options into the cells via the [`setValidation()`](api/spreadsheet_setvalidation_method.md) method or via [UI](work_with_cells.md#using-drop-down-lists-in-cells)
+- The ability to fix rows on the top of the spreadsheet via the [`topSplit`](api/spreadsheet_topsplit_config.md) property
+- The ability to sort data via the [`sortCells()`](api/spreadsheet_sortcells_method.md) method or via [UI](sorting_data.md)
+- [The ability to split long text into multiple lines](data_formatting.md#wrap-text-in-a-cell) (*Text wrapping* button is added into the toolbar)
+- Significantly extended list of supported [Date, Financial, Math, String functions](functions.md#information-functions) (marked with *added in v4.3* label)
+- Support for [Lookup functions](functions.md#lookup-functions)
+- [Time format](number_formatting.md/#default-number-formats) is added
+- The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](api/spreadsheet_timeformat_config.md) property
+- The ability to enter time in a cell via a time picker
+- [Export to JSON](api/export_json_method.md)
+- [Import from JSON](api/spreadsheet_load_method.md#loading-json-files)
+- New events are added: [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md)
+- New [Actions system](api/overview/actions_overview.md)
+
 ## Version 4.2
 
 <span class="rel_date_pivot">released on November 29, 2021</span>

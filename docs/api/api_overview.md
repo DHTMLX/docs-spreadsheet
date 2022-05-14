@@ -137,4 +137,5 @@ Parameters:
 
 | Name                          | Description                          |
 | ----------------------------- | ------------------------------------ |
+| [](api/export_json_method.md) | @getshort(api/export_json_method.md) |
 | [](api/export_xlsx_method.md) | @getshort(api/export_xlsx_method.md) |
