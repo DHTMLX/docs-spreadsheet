@@ -201,6 +201,7 @@ module.exports = {
             id: "api/overview/export_overview"
           },
           items: [
+            "api/export_json_method",
             "api/export_xlsx_method",
           ],
         },

@@ -125,6 +125,11 @@ spreadsheet.load("../common/data.json");
 
 **Related sample**: [Spreadsheet. Load Data](https://snippet.dhtmlx.com/ih9zmc3e)
 
+
+:::info
+If you need to provide end users with the ability to import a JSON file into the spreadsheet via the File Explorer, read [Loading JSON files](api/spreadsheet_load_method.md#loading-json-files).
+:::
+
 ### Loading CSV data
 
 You can also load data in the CSV format. For this, you need to call the [](api/spreadsheet_load_method.md) method and pass the name of the format ("csv") as the second parameter:
@@ -223,6 +228,8 @@ spreadsheet2.parse(state);
 
 ## Exporting data
 
+### Export into Excel
+
 DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into an Excel file. There are corresponding controls in the Toolbar and Menu in the user interface:
 
 - Menu: File -> Download as..-> Microsoft Excel(.xlsx)
@@ -233,7 +240,7 @@ DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into a
 
 ![Export from Excel toolbar](assets/export_xlsx.png)
 
-### How to export data
+#### How to export data
 
 {{note Please note that the export feature won't work in the Internet Explorer browser.}}
 
@@ -263,3 +270,13 @@ spreadsheet.export.xlsx();
 {{note Please note that the component supports export to Excel files with the **.xlsx** extension only.}}
 
 Check the steps of [importing data from an Excel file into Spreadsheet](#loading-excel-file-xlsx).
+
+### Export into JSON
+
+From v4.3, the library also includes the ability to export data from a spreadsheet into a JSON file. Use the [json()](api/export_json_method.md) method of the Export object for this purpose:
+
+~~~js
+spreadsheet.export.json();
+~~~
+
+**Related sample**: [Spreadsheet. Export/import JSON](https://snippet.dhtmlx.com/e3xct53l)

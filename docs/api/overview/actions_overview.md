@@ -6,11 +6,9 @@ description: You can have an Actions overview of the DHTMLX JavaScript Spreadshe
 
 # Actions overview
 
-:::info
-From v4.3, the Spreadsheet library introduces a new conception of interaction with Spreadsheet events.
-:::
+This section is dedicated to a new conception of interaction with Spreadsheet events.
 
-Now DHTMLX Spreadsheet includes a pair of the [beforeAction](api/spreadsheet_beforeaction_event.md)/[afterAction](api/spreadsheet_afteraction_event.md) events that are intended to make your code simple and concise. They will fire right before an action is executed and indicate which exactly action has been performed.
+Starting from v4.3, DHTMLX Spreadsheet includes a pair of the [beforeAction](api/spreadsheet_beforeaction_event.md)/[afterAction](api/spreadsheet_afteraction_event.md) events that are intended to make your code simple and concise. They will fire right before an action is executed and indicate which exactly action has been performed.
 
 ~~~js
 spreadsheet.events.on("beforeAction", (actionName, config) => {

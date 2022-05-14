@@ -68,4 +68,35 @@ Please note that the component supports import from Excel files with the **.xlsx
 
 DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. [Check the details](loading_data.md#loading-excel-file-xlsx).
 
+### Loading JSON files
+
+It is possible to allow end users to load a JSON file into the spreadsheet via the File Explorer. To do that: 
+
+- Specify a button to open the File Explorer where ".json" files can be selected:
+
+~~~html
+<section class="dhx_sample-controls">
+    <button class="dhx_sample-btn dhx_sample-btn--flat" onclick="json()">Import json</button>
+</section>
+~~~
+
+
+- Call the **load()** method with two parameters: an empty string as an URL and the type of data to load ("json"):
+
+~~~js
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    menu: true,
+});
+
+spreadsheet.parse(dataset);
+
+function json() {
+    spreadsheet.load("", "json"); // loads data from a .json file
+}
+~~~
+
+Check the [example](https://snippet.dhtmlx.com/e3xct53l).
+
+**Changelog:** The ability to load a JSON file via the File Explorer was added in v4.3
+
 **Related articles:** [Data loading and export](loading_data.md)
