@@ -8,6 +8,10 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 ## 4.2 -> 4.3 
 
+:::info
+Version 4.3 is the last version which provides IE support
+:::
+
 Version 4.3 brings a new conception of tracking and handling the actions which are performed when you change something in the spreadsheet. 
 
 The new [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using only these two events. For instance: 

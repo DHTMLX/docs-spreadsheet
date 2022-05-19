@@ -296,7 +296,7 @@ var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
 ## Sorting data
 
 From v4.3, you can sort data in the spreadsheet via the [sortCells()](api/spreadsheet_sortcells_method.md) method. Pass to the method two parameters:
-- `cell` - a range of cells by which you want the data in the spreadsheet to be sorted
+- `cell` - the id(s) of a cell(s) or a range of cells by which you want the data in the spreadsheet to be sorted
 - `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
 
 ~~~jsx {5}
