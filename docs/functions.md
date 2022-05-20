@@ -1023,24 +1023,25 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>Description</b></td>
 		</tr>
 		<tr>
-			<td><b>MATCH</b><br>added in v4.3</td>
-			<td>=MATCH(lookup_value, lookup_array, [match_type]), <br><br> where:
+			<td><b>HLOOKUP</b><br>added in v4.3</td>
+			<td>=HLOOKUP(lookup_value, table_array, row_index, [range_lookup]), <br><br> where:
 			<ul>
-				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
-				<li><i>lookup_array</i> - the range of cells;</li>
-				<li><i>match_type</i> - optional (1 by default):<br>1- finds the largest value that is less than or equal to <i>lookup_value</i><br>0 - finds the value that is exactly equal to <i>lookup_value</i><br>-1 - finds the smallest value that is greater than or equal to <i>lookup_value</i></li>
+				<li><i>lookup_value</i> - the value to search for;</li>
+				<li><i>table_array</i> - the table from which to retrieve a value;</li>
+				<li><i>column_index_num</i> - the row number in the table from which to retrieve a value;</li>
+				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
 			</ul></td>
-			<td>Searches for a specified item in a range of cells, and then returns the relative position of that item in the range.</td>
+			<td>Looks up a value in a horizontal table</td>
 		</tr>
 		<tr>
-			<td><b>XMATCH</b><br>added in v4.3</td>
-			<td>=XMATCH(lookup_value, lookup_array, [match_mode]), <br><br> where:
+			<td><b>INDEX</b><br>added in v4.3</td>
+			<td>=INDEX(array, row_num, [column_num]), <br><br> where:
 			<ul>
-				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
-				<li><i>lookup_array</i> - the range of cells;</li>
-				<li><i>match_mode</i> - optional, 0 - exact match (default), -1 - exact match or next smallest, 1 - exact match or next larger</li>
+				<li><i>array</i> - a range of cells or an array constant;</li>
+				<li><i>row_num</i> - the row position in the reference or array;</li>
+				<li><i>column_num</i> - optional, the column position in the reference or array.</li>
 			</ul></td>
-			<td>Performs a lookup and returns a position in vertical or horizontal ranges.</td>
+			<td>Returns the value at a given location in a range or array.</td>
 		</tr>
 		<tr>
 			<td><b>LOOKUP</b><br>added in v4.3</td>
@@ -1051,6 +1052,27 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>result_vector</i> - optional, the one-row, or one-column range of results.</li>
 			</ul></td>
 			<td>Looks up a value in a one-column or one-row range, and retrieves a value from the same position in another one-column or one-row range.</td>
+		</tr>
+		<tr>
+			<td><b>MATCH</b><br>added in v4.3</td>
+			<td>=MATCH(lookup_value, lookup_array, [match_type]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
+				<li><i>lookup_array</i> - the range of cells;</li>
+				<li><i>match_type</i> - optional (1 by default):<br>1- finds the largest value that is less than or equal to <i>lookup_value</i><br>0 - finds the value that is exactly equal to <i>lookup_value</i><br>-1 - finds the smallest value that is greater than or equal to <i>lookup_value</i></li>
+			</ul></td>
+			<td>Searches for a specified item in a range of cells, and then returns the relative position of that item in the range.</td>
+		</tr>
+		<tr>
+			<td><b>VLOOKUP</b><br>added in v4.3</td>
+			<td>=VLOOKUP(lookup_value, table_array, column_index_num, [range_lookup]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for in the first column of a table;</li>
+				<li><i>table_array</i> - the table from which to retrieve a value;</li>
+				<li><i>column_index_num</i> - the column number in the table from which to retrieve a value;</li>
+				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
+			</ul></td>
+			<td>Looks up a value in a vertical table by matching on the first column</td>
 		</tr>
 		<tr>
 			<td><b>XLOOKUP</b><br>added in v4.3</td>
@@ -1065,36 +1087,14 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Searches a range or an array, and then returns the item corresponding to the first match it finds. If no match exists, then XLOOKUP can return the closest (approximate) match.</td>
 		</tr>
 		<tr>
-			<td><b>INDEX</b><br>added in v4.3</td>
-			<td>=INDEX(array, row_num, [column_num]), <br><br> where:
+			<td><b>XMATCH</b><br>added in v4.3</td>
+			<td>=XMATCH(lookup_value, lookup_array, [match_mode]), <br><br> where:
 			<ul>
-				<li><i>array</i> - a range of cells or an array constant;</li>
-				<li><i>row_num</i> - the row position in the reference or array;</li>
-				<li><i>column_num</i> - optional, the column position in the reference or array.</li>
+				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
+				<li><i>lookup_array</i> - the range of cells;</li>
+				<li><i>match_mode</i> - optional, 0 - exact match (default), -1 - exact match or next smallest, 1 - exact match or next larger</li>
 			</ul></td>
-			<td>Returns the value at a given location in a range or array.</td>
-		</tr>
-		<tr>
-			<td><b>VLOOKUP</b><br>added in v4.3</td>
-			<td>=VLOOKUP(lookup_value, table_array, column_index_num, [range_lookup]), <br><br> where:
-			<ul>
-				<li><i>lookup_value</i> - the value to search for in the first column of a table;</li>
-				<li><i>table_array</i> - the table from which to retrieve a value;</li>
-				<li><i>column_index_num</i> - the column number in the table from which to retrieve a value;</li>
-				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
-			</ul></td>
-			<td>Looks up a value in a vertical table by matching on the first column</td>
-		</tr>
-		<tr>
-			<td><b>HLOOKUP</b><br>added in v4.3</td>
-			<td>=HLOOKUP(lookup_value, table_array, row_index, [range_lookup]), <br><br> where:
-			<ul>
-				<li><i>lookup_value</i> - the value to search for;</li>
-				<li><i>table_array</i> - the table from which to retrieve a value;</li>
-				<li><i>column_index_num</i> - the row number in the table from which to retrieve a value;</li>
-				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
-			</ul></td>
-			<td>Looks up a value in a horizontal table</td>
+			<td>Performs a lookup and returns a position in vertical or horizontal ranges.</td>
 		</tr>
     </tbody>
 </table>
