@@ -39,7 +39,7 @@ You may create a drop-down list in a cell(s) to allow users to select the necess
 
 - Press the **Save** button
 
-![Drop-down menu](assets/drop_down_menu.gif)
+![Drop-down menu](assets/select_editor.gif)
 
 ### Creating a drop-down list by using a range
 
@@ -55,7 +55,7 @@ You may create a drop-down list in a cell(s) to allow users to select the necess
 
 - Press the **Save** button
 
-![Drop-down menu](assets/drop_down_menu2.gif)
+![Drop-down menu](assets/select_editor2.gif)
 
 ### Removing validation from a cell
 
