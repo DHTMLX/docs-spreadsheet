@@ -20,15 +20,57 @@ What you can do:
 
 ## Alignment
 
-You can use the corresponding toolbar controls to align data in a cell horizontally or (and) vertically.
+### Horizontal alignment
 
-Click the "Horizontal align" button to align data along the left/right edges of a cell, or in its center.
+To align data in a cell horizontally, take the following steps:
 
-![Alignment](assets/alignment.png)
+1\. Select a cell or cells to align
 
-Click the "Vertical align" button to align data at the top/center/bottom of a cell.
+2\. Choose one of the actions:
 
+- Click the "Horizontal align" button in the toolbar and pick *Left*, *Center*, or *Right*
+
+![Alignment](assets/align.png)
+
+- Or go to: *Format* -> *Horizontal align* -> Pick *Left*, *Center*, or *Right* in the menu
+
+![Horizontal alignment](assets/horizontal_alignment.png)
+
+### Vertical alignment
+
+To align data in a cell vertically, take the following steps:
+
+1\. Select a cell or cells to align
+
+2\. Choose one of the actions:
+
+- Click the "Vertical align" button in the toolbar and pick *Top*, *Center*, or *Bottom* 
+
+![Vertical alignment](assets/vertical_align.png)
+
+- Or go to: *Format* -> *Vertical align* -> Pick *Top*, *Center*, or *Bottom* in the menu
+ 
 ![Vertical alignment](assets/vertical_alignment.png)
+
+### Wrap text in a cell
+
+You can wrap text in cells in the following way:
+
+1\. Select a cell or cells that you want to format
+
+2\. Choose one of the actions:
+
+- Click the "Text wrapping" button in the toolbar and pick *Clip* or *Wrap*
+
+![Wrap text](assets/wrap.png)
+
+- Or go to: *Format* -> *Text wrapping* -> Pick *Clip* or *Wrap* in the menu
+
+![Wrap text](assets/text_wrapping.png)
+
+:::tip
+You may have to adjust the height of the row, so that all your text will become visible. When you change the width of the column, text wrapping adjusts automatically.
+:::
 
 ## Removing styles and values
 

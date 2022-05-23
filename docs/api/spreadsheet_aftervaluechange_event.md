@@ -6,6 +6,20 @@ description: You can learn about the afterValueChange event in the documentation
 
 # afterValueChange
 
+:::caution
+The **afterValueChange** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
+
+~~~js
+spreadsheet.events.on("afterAction", (actionName, config) => {
+    if (actionName === "setCellValue") {
+        console.log(actionName, config);
+    }
+});
+~~~
+
+For more details about the new concept, see **[Spreadsheet actions](api/overview/actions_overview.md)**. 
+:::
+
 ### Description
 
 @short: Fires after the value of a cell changes

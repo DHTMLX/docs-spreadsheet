@@ -6,6 +6,48 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 # Migration to newer versions
 
+## 4.2 -> 4.3 
+
+:::info
+Version 4.3 is the last version which provides IE support
+:::
+
+Version 4.3 brings a new conception of tracking and handling the actions which are performed when you change something in the spreadsheet. 
+
+The new [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using only these two events. For instance: 
+
+~~~js
+spreadsheet.events.on("BeforeAction", (actionName, config) => {
+    if (actionName === "sortCells") {
+        console.log(actionName, config);
+        return true;
+    }
+    if (actionName === "addColumn") {
+        console.log(actionName, config);
+        return false;
+    },
+    ...
+});
+
+spreadsheet.events.on("AfterAction", (actionName, config) => {
+    if (actionName === "sortCells") {
+        console.log(actionName, config)
+    }
+    if (actionName === "addColumn") {
+        console.log(actionName, config);
+    },
+    ...
+});
+~~~
+
+This way will reduce the size of your code because you won't need to add sets of paired [**before-** and **after-**](api/overview/events_overview.md) events for each separate action. 
+
+Still, the old approach continues working as before. For more details, check [Spreadsheet actions](api/overview/actions_overview.md).
+
+:::info
+At the moment, there is a set of events which must be used in an old way as they can't be replaced with any actions: *beforeEditEnd, afterEditEnd, beforeEditStart,  afterEditStart, beforeFocusSet, afterFocusSet, beforeSheetChange, afterSheetChange, groupFill*.
+:::
+
 ## 4.1 -> 4.2
 
 In v4.2, the [Align](customization.md/#default-controls) block of the Spreadsheet toolbar is divided into two sub-blocks: Horizontal align and Vertical align. Thus, the list of ids of the default controls of the Align block is changed and extended:

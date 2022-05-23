@@ -6,6 +6,21 @@ description: You can learn about the afterStyleChange event in the documentation
 
 # afterStyleChange
 
+:::caution
+The **afterStyleChange** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
+
+~~~js
+spreadsheet.events.on("afterAction", (actionName, config) => {
+    if (actionName === "setCellStyle") {
+        console.log(actionName, config);
+        return false;
+    }
+});
+~~~
+
+For more details about the new concept, see **[Spreadsheet actions](api/overview/actions_overview.md)**. 
+:::
+
 ### Description
 
 @short: Fires after the style of a cell is changed

@@ -36,6 +36,12 @@ defaultFormats = [
 	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
 	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
 	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
+	{ 
+		name: "Time",
+   		id: "time",
+   		mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
+   		example: "13:30:00"
+	},
     { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~
@@ -68,8 +74,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 ~~~
 
 **Change log:**
-- The "Date" format has been added in v4.2
-- The "Text" format has been added in v4.0
+- The "Time" format was added in v4.3
+- The "Date" format was added in v4.2
+- The "Text" format was added in v4.0
 
 **Related articles:** 
 - [Number formatting](number_formatting.md)

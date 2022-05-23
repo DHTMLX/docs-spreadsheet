@@ -29,6 +29,16 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 	dateFormat: "%D/%M/%Y",
     // other config parameters
 });
+
+spreadsheet.parse({
+	styles: {
+        // a set of styles
+	},
+    data: [
+		{cell: "B1", value: "03/10/2022", format: "date"},
+    	{cell: "B2", value: new Date(), format: "date"},
+   	]
+});
 ~~~
 
 ### List of characters
@@ -57,6 +67,8 @@ DHTMLX Spreadsheet uses the following characters for setting a date format:
 | **%A**    | AM or PM                                          |
 | **%u**    | milliseconds                                      |
 
-**Change log:** Added in v4.2
+**Change log:** 
+- From v4.3, it is possible to set the date as a *new Date()* object in the data set
+- Added in v4.2
 
 **Related articles:** [Date format](number_formatting.md/#date-format)

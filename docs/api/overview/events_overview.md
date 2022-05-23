@@ -6,8 +6,9 @@ description: You can have an Events overview of the DHTMLX JavaScript Spreadshee
 
 # Events overview
 
-| Name                                            | Description                                            |
-| :---------------------------------------------- | :----------------------------------------------------- |
+| Name                                           | Description                                           |
+| :--------------------------------------------- | :---------------------------------------------------- |
+| [](../spreadsheet_afteraction_event.md)        | @getshort(../spreadsheet_afteraction_event.md)        |
 | [](../spreadsheet_afterclear_event.md)         | @getshort(../spreadsheet_afterclear_event.md)         |
 | [](../spreadsheet_aftercolumnadd_event.md)     | @getshort(../spreadsheet_aftercolumnadd_event.md)     |
 | [](../spreadsheet_aftercolumndelete_event.md)  | @getshort(../spreadsheet_aftercolumndelete_event.md)  |
@@ -25,6 +26,7 @@ description: You can have an Events overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_aftersheetrename_event.md)   | @getshort(../spreadsheet_aftersheetrename_event.md)   |
 | [](../spreadsheet_afterstylechange_event.md)   | @getshort(../spreadsheet_afterstylechange_event.md)   |
 | [](../spreadsheet_aftervaluechange_event.md)   | @getshort(../spreadsheet_aftervaluechange_event.md)   |
+| [](../spreadsheet_beforeaction_event.md)       | @getshort(../spreadsheet_beforeaction_event.md)       |
 | [](../spreadsheet_beforeclear_event.md)        | @getshort(../spreadsheet_beforeclear_event.md)        |
 | [](../spreadsheet_beforecolumnadd_event.md)    | @getshort(../spreadsheet_beforecolumnadd_event.md)    |
 | [](../spreadsheet_beforecolumndelete_event.md) | @getshort(../spreadsheet_beforecolumndelete_event.md) |

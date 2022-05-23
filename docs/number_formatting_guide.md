@@ -30,7 +30,11 @@ There are several number formats you can apply to format numeric values of cells
 		</tr>
 		<tr>
 			<td><b>Date</b></td>
-			<td>numbers are displayed as dates</td>
+			<td>numbers are displayed as dates in the specified format</td>
+		</tr>
+		<tr>
+			<td><b>Time</b></td>
+			<td>numbers are displayed as times in either 12 or 24-hour format</td>
 		</tr>
         <tr>
 			<td><b>Text</b></td>

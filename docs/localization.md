@@ -59,6 +59,7 @@ var en = {
 	percent: "percent",
 	text: "text",
 	date: "date",
+	time: "time",
 
 	downloadAs: "Download as...",
 	importAs: "Import as...",

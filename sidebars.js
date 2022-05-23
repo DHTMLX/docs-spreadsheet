@@ -72,7 +72,9 @@ module.exports = {
             "api/spreadsheet_setactivesheet_method",
             "api/spreadsheet_setformat_method",
             "api/spreadsheet_setstyle_method",
+            "api/spreadsheet_setvalidation_method",
             "api/spreadsheet_setvalue_method",
+            "api/spreadsheet_sortcells_method",
             "api/spreadsheet_startedit_method",
             "api/spreadsheet_undo_method",
             "api/spreadsheet_unlock_method",
@@ -88,6 +90,7 @@ module.exports = {
             id: "api/overview/events_overview"
           },
           items: [
+            "api/spreadsheet_afteraction_event",
             "api/spreadsheet_afterclear_event",
             "api/spreadsheet_aftercolumnadd_event",
             "api/spreadsheet_aftercolumndelete_event",
@@ -105,6 +108,7 @@ module.exports = {
             "api/spreadsheet_aftersheetrename_event",
             "api/spreadsheet_afterstylechange_event",
             "api/spreadsheet_aftervaluechange_event",
+            "api/spreadsheet_beforeaction_event",
             "api/spreadsheet_beforeclear_event",
             "api/spreadsheet_beforecolumnadd_event",
             "api/spreadsheet_beforecolumndelete_event",
@@ -124,6 +128,10 @@ module.exports = {
             "api/spreadsheet_beforevaluechange_event",
             "api/spreadsheet_groupfill_event",
           ],
+        },
+        {
+          type: "doc",
+          id: "api/overview/actions_overview",
         },
         {
           type: "category",
@@ -146,7 +154,9 @@ module.exports = {
             "api/spreadsheet_multisheets_config",
             "api/spreadsheet_readonly_config",
             "api/spreadsheet_rowscount_config",
+            "api/spreadsheet_timeformat_config",
             "api/spreadsheet_toolbarblocks_config",
+            "api/spreadsheet_topsplit_config",
           ],
         },
         {
@@ -191,6 +201,7 @@ module.exports = {
             id: "api/overview/export_overview"
           },
           items: [
+            "api/export_json_method",
             "api/export_xlsx_method",
           ],
         },
@@ -253,6 +264,7 @@ module.exports = {
             "work_with_sheets",
             "data_formatting",
             "number_formatting_guide",
+            "sorting_data",
             "excel_import_export"
           ],
         },

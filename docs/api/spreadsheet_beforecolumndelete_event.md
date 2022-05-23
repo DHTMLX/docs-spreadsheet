@@ -6,6 +6,21 @@ description: You can learn about the beforeColumnDelete event in the documentati
 
 # beforeColumnDelete
 
+:::caution
+The **beforeColumnDelete** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
+
+~~~js
+spreadsheet.events.on("beforeAction", (actionName, config) => {
+    if (actionName === "deleteColumn") {
+        console.log(actionName, config);
+        return false;
+    }
+});
+~~~
+
+For more details about the new concept, see **[Spreadsheet actions](api/overview/actions_overview.md)**. 
+:::
+
 ### Description
 
 @short: Fires before a column is deleted

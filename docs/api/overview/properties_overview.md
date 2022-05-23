@@ -6,8 +6,8 @@ description: You can have a Properties overview of the DHTMLX JavaScript Spreads
 
 # Properties overview
 
-| Name                                           | Description                                           |
-| ---------------------------------------------- | ----------------------------------------------------- |
+| Name                                          | Description                                          |
+| --------------------------------------------- | ---------------------------------------------------- |
 | [](../spreadsheet_colscount_config.md)        | @getshort(../spreadsheet_colscount_config.md)        |
 | [](../spreadsheet_dateformat_config.md)       | @getshort(../spreadsheet_dateformat_config.md)       |
 | [](../spreadsheet_editline_config.md)         | @getshort(../spreadsheet_editline_config.md)         |
@@ -19,4 +19,6 @@ description: You can have a Properties overview of the DHTMLX JavaScript Spreads
 | [](../spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](../spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](../spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](../spreadsheet_timeformat_config.md)       | @getshort(../spreadsheet_timeformat_config.md)       |
 | [](../spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |
+| [](../spreadsheet_topsplit_config.md)         | @getshort(../spreadsheet_topsplit_config.md)         |

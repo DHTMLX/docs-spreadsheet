@@ -6,6 +6,20 @@ description: You can learn about the afterSheetAdd event in the documentation of
 
 # afterSheetAdd
 
+:::caution
+The **afterSheetAdd** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
+
+~~~js
+spreadsheet.events.on("afterAction", (actionName, config) => {
+    if (actionName === "addSheet") {
+        console.log(actionName, config);
+    }
+});
+~~~
+
+For more details about the new concept, see **[Spreadsheet actions](api/overview/actions_overview.md)**. 
+:::
+
 ### Description
 
 @short: Fires after a new sheet is added

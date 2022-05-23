@@ -6,8 +6,8 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 
 # Methods overview
 
-| Name                                         | Description                                         |
-| :------------------------------------------- | :-------------------------------------------------- |
+| Name                                        | Description                                        |
+| :------------------------------------------ | :------------------------------------------------- |
 | [](../spreadsheet_addcolumn_method.md)      | @getshort(../spreadsheet_addcolumn_method.md)      |
 | [](../spreadsheet_addrow_method.md)         | @getshort(../spreadsheet_addrow_method.md)         |
 | [](../spreadsheet_addsheet_method.md)       | @getshort(../spreadsheet_addsheet_method.md)       |
@@ -33,6 +33,7 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_setactivesheet_method.md) | @getshort(../spreadsheet_setactivesheet_method.md) |
 | [](../spreadsheet_setformat_method.md)      | @getshort(../spreadsheet_setformat_method.md)      |
 | [](../spreadsheet_setstyle_method.md)       | @getshort(../spreadsheet_setstyle_method.md)       |
+| [](../spreadsheet_setvalidation_method.md)  | @getshort(../spreadsheet_setvalidation_method.md)  |
 | [](../spreadsheet_setvalue_method.md)       | @getshort(../spreadsheet_setvalue_method.md)       |
 | [](../spreadsheet_startedit_method.md)      | @getshort(../spreadsheet_startedit_method.md)      |
 | [](../spreadsheet_undo_method.md)           | @getshort(../spreadsheet_undo_method.md)           |

@@ -49,6 +49,7 @@ Parameters:
 | [](api/spreadsheet_setactivesheet_method.md) | @getshort(api/spreadsheet_setactivesheet_method.md) |
 | [](api/spreadsheet_setformat_method.md)      | @getshort(api/spreadsheet_setformat_method.md)      |
 | [](api/spreadsheet_setstyle_method.md)       | @getshort(api/spreadsheet_setstyle_method.md)       |
+| [](api/spreadsheet_setvalidation_method.md)  | @getshort(api/spreadsheet_setvalidation_method.md)  |
 | [](api/spreadsheet_setvalue_method.md)       | @getshort(api/spreadsheet_setvalue_method.md)       |
 | [](api/spreadsheet_startedit_method.md)      | @getshort(api/spreadsheet_startedit_method.md)      |
 | [](api/spreadsheet_undo_method.md)           | @getshort(api/spreadsheet_undo_method.md)           |
@@ -58,6 +59,7 @@ Parameters:
 
 | Name                                            | Description                                            |
 | :---------------------------------------------- | :----------------------------------------------------- |
+| [](api/spreadsheet_afteraction_event.md)        | @getshort(api/spreadsheet_afteraction_event.md)        |
 | [](api/spreadsheet_afterclear_event.md)         | @getshort(api/spreadsheet_afterclear_event.md)         |
 | [](api/spreadsheet_aftercolumnadd_event.md)     | @getshort(api/spreadsheet_aftercolumnadd_event.md)     |
 | [](api/spreadsheet_aftercolumndelete_event.md)  | @getshort(api/spreadsheet_aftercolumndelete_event.md)  |
@@ -75,6 +77,7 @@ Parameters:
 | [](api/spreadsheet_aftersheetrename_event.md)   | @getshort(api/spreadsheet_aftersheetrename_event.md)   |
 | [](api/spreadsheet_afterstylechange_event.md)   | @getshort(api/spreadsheet_afterstylechange_event.md)   |
 | [](api/spreadsheet_aftervaluechange_event.md)   | @getshort(api/spreadsheet_aftervaluechange_event.md)   |
+| [](api/spreadsheet_beforeaction_event.md)       | @getshort(api/spreadsheet_beforeaction_event.md)       |
 | [](api/spreadsheet_beforeclear_event.md)        | @getshort(api/spreadsheet_beforeclear_event.md)        |
 | [](api/spreadsheet_beforecolumnadd_event.md)    | @getshort(api/spreadsheet_beforecolumnadd_event.md)    |
 | [](api/spreadsheet_beforecolumndelete_event.md) | @getshort(api/spreadsheet_beforecolumndelete_event.md) |
@@ -98,7 +101,7 @@ Parameters:
 | Name                                           | Description                                           |
 | ---------------------------------------------- | ----------------------------------------------------- |
 | [](api/spreadsheet_colscount_config.md)        | @getshort(api/spreadsheet_colscount_config.md)        |
-| [](api/spreadsheet_dateformat_config.md)        | @getshort(api/spreadsheet_dateformat_config.md)        |
+| [](api/spreadsheet_dateformat_config.md)       | @getshort(api/spreadsheet_dateformat_config.md)       |
 | [](api/spreadsheet_editline_config.md)         | @getshort(api/spreadsheet_editline_config.md)         |
 | [](api/spreadsheet_exportmodulepath_config.md) | @getshort(api/spreadsheet_exportmodulepath_config.md) |
 | [](api/spreadsheet_formats_config.md)          | @getshort(api/spreadsheet_formats_config.md)          |
@@ -108,7 +111,9 @@ Parameters:
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(api/spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(api/spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_timeformat_config.md)       | @getshort(api/spreadsheet_timeformat_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
+| [](api/spreadsheet_topsplit_config.md)         | @getshort(api/spreadsheet_topsplit_config.md)         |
 
 ## Selection methods
 
@@ -132,4 +137,5 @@ Parameters:
 
 | Name                          | Description                          |
 | ----------------------------- | ------------------------------------ |
+| [](api/export_json_method.md) | @getshort(api/export_json_method.md) |
 | [](api/export_xlsx_method.md) | @getshort(api/export_xlsx_method.md) |

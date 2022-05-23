@@ -104,6 +104,11 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the current date.</td>
 		</tr>
 		<tr>
+			<td><b>TIMEVALUE</b><br>added in v4.3</td>
+			<td>=TIMEVALUE(time_text)</td>
+			<td>Returns the decimal number of the time represented by a text string</td>
+		</tr>
+		<tr>
 			<td><b>WEEKDAY</b></td>
 			<td>=WEEKDAY(date,[return_type])</td>
 			<td>Returns the day of the week for the specified date. <br>The <a href="https://support.microsoft.com/en-us/office/weekday-function-60e44483-2ed1-439f-8bd0-e404c190949a">return_type</a> argument is used to define which day of the week is considered the first day.</td>
@@ -164,6 +169,120 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Returns the accrued interest for a security that pays periodic interest.</td>
 		</tr>
 		<tr>
+			<td><b>BINOM.DIST</b><br>added in v4.3</td>
+			<td>=BINOM.DIST(number_s, trials, probability_s, cumulative), <br><br> where:
+			<ul>
+				<li><i>number_s</i> - the number of successes in trials;</li>
+				<li><i>trials</i> - the number of independent trials;</li>
+				<li><i>probability_s</i> - the probability of success on each trial;</li>
+				<li><i>cumulative</i> - if TRUE, then BINOM.DIST returns the cumulative distribution function; if FALSE (use 0), it returns the probability mass function.</li>
+			</ul></td>
+			<td>Returns the individual term binomial distribution probability.</td>
+		</tr>
+		<tr>
+			<td><b>BINOM.DIST.RANGE</b><br>added in v4.3</td>
+			<td>=BINOM.DIST.RANGE(trials, probability_s, number_s, [number_s2]), <br><br> where:
+			<ul>
+				<li><i>trials</i> - the number of independent trials (must be ≥ 0);</li>
+				<li><i>probability_s</i> - the probability of success in each trial (must be ≥ 0 and ≤ 1);</li>
+				<li><i>number_s</i> - the number of successes in trials (must be ≥ 0 and ≤ <i>trials)</i>;</li>
+				<li><i>number_s2</i> - optional. If provided, returns the probability that the number of successful trials will fall between <i>number_s</i> and <i>number_s2</i> <br>([number_s2] must be ≥ <i>number_s</i> and ≤ <i>trials</i>).</li>
+			</ul></td>
+			<td>Returns the probability of a trial result using a binomial distribution.</td>
+		</tr>
+		<tr>
+			<td><b>BINOM.INV</b><br>added in v4.3</td>
+			<td>=BINOM.INV(trials, probability_s, alpha), <br><br> where:
+			<ul>
+				<li><i>trials</i> - the number of Bernoulli trials;</li>
+				<li><i>probability_s</i> - the probability of success in each trial (must be ≥ 0 and ≤ 1);</li>
+				<li><i>alpha</i> - the criterion value (must be ≥ 0 and ≤ <i>1)</i>;</li>
+			</ul></td>
+			<td>Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.</td>
+		</tr>
+		<tr>
+			<td><b>BITLSHIFT</b><br>added in v4.3</td>
+			<td>=BITLSHIFT(number, shift_amount), <br><br> where:
+			<ul>
+				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0)</li>
+				<li><i>shift_amount</i> - the amount of bits to shift, if negative, shifts bits to the right instead</li>
+			</ul></td>
+			<td>Returns a number shifted left by the specified number of bits.</td>
+		</tr>
+		<tr>
+			<td><b>BITOR</b><br>added in v4.3</td>
+			<td>=BITOR(number1, number2), <br><br> where:
+			<ul>
+				<li><i>number1</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+				<li><i>number2</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+			</ul></td>
+			<td>Returns a decimal number representing the bitwise OR of two numbers.</td>
+		</tr>
+		<tr>
+			<td><b>BITRSHIFT</b><br>added in v4.3</td>
+			<td>=BITRSHIFT(number, shift_amount), <br><br> where:
+			<ul>
+				<li><i>number</i> - the number to be shifted (must be an integer greater than or equal to 0);</li>
+				<li><i>shift_amount</i> - the amount of bits to shift, if negative shifts bits to the left instead;</li>
+			</ul></td>
+			<td>Returns a number shifted right by the specified number of bits.</td>
+		</tr>
+		<tr>
+			<td><b>BITXOR</b><br>added in v4.3</td>
+			<td>=BITXOR(number1, number2), <br><br> where:
+			<ul>
+				<li><i>number1</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+				<li><i>number2</i> - a decimal number (must be greater than or equal to 0 and no larger than 2^48 - 1);</li>
+			</ul></td>
+			<td>Returns a decimal number representing the bitwise XOR of two numbers.</td>
+		</tr>
+		<tr>
+			<td><b>COMPLEX</b><br>added in v4.3</td>
+			<td>=COMPLEX(real_num, i_num, [suffix]), <br><br> where:
+			<ul>
+				<li><i>real_num</i> - the real coefficient of the complex number;</li>
+				<li><i>i_num</i> - the imaginary coefficient of the complex number;</li>
+				<li><i>suffix</i> - optional ("i" by default) - the suffix for the imaginary component of the complex number; <br>(must be lowercase "i" or "j") .</li>
+			</ul></td>
+			<td>Converts real and imaginary coefficients into a complex number of the form x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>CORREL</b><br>added in v4.3</td>
+			<td>=CORREL(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - a range of cell values;</li>
+				<li><i>array2</i> - a second range of cell values;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns the correlation coefficient of two cell ranges.</td>
+		</tr>
+		<tr>
+			<td><b>COVAR</b><br>added in v4.3</td>
+			<td>=COVAR(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - The first cell range of integers;</li>
+				<li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns covariance, the average of the products of deviations for each data point pair in two data sets.</td>
+		</tr>
+		<tr>
+			<td><b>COVARIANCE.P</b><br>added in v4.3</td>
+			<td>=COVARIANCE.P(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - The first cell range of integers;</li>
+				<li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns population covariance, the average of the products of deviations for each data point pair in two data sets.</td>
+		</tr>
+		<tr>
+			<td><b>COVARIANCE.S</b><br>added in v4.3</td>
+			<td>=COVARIANCE.S(array1, array2), <br><br> where:
+			<ul>
+				<li><i>array1</i> - The first cell range of integers;</li>
+				<li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points.
+			</ul></td>
+			<td>Returns the sample covariance, the average of the products of deviations for each data point pair in two data sets.</td>
+		</tr>
+		<tr>
 			<td><b>DB</b></td>
 			<td>=DB(cost, salvage, life, period, [month]), <br><br> where:
 			<ul>
@@ -188,6 +307,47 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Calculates the depreciation of an asset for a specified period using the double-declining balance method or another method you specify.</td>
 		</tr>
 		<tr>
+			<td><b>DEC2BIN</b><br>added in v4.3</td>
+			<td>=DEC2BIN(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the decimal integer you want to convert (must be greater than -512 but less than 511);</li>
+			</ul></td>
+			<td>Converts a decimal number to binary.</td>
+		</tr>
+		<tr>
+			<td><b>DEC2HEX</b><br>added in v4.3</td>
+			<td>=DEC2HEX(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the decimal integer you want to convert (must be greater than -549755813888 but less than 549755813887);</li>
+			</ul></td>
+			<td>Converts a decimal number to hexadecimal.</td>
+		</tr>
+		<tr>
+			<td><b>DEC2OCT</b><br>added in v4.3</td>
+			<td>=DEC2OCT(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the decimal integer you want to convert (must be greater than -536870912 but less than 536870911);</li>
+			</ul></td>
+			<td>Converts a decimal number to octal.</td>
+		</tr>
+		<tr>
+			<td><b>DELTA</b><br>added in v4.3</td>
+			<td>=DELTA(number1, [number2]), <br><br> where:
+			<ul>
+				<li><i>number1</i> - the first number;</li>
+				<li><i>number2</i> - optional, the second number. If omitted, number2 is assumed to be zero.</li>
+			</ul></td>
+			<td>Tests two numbers for equality. Returns 1 if number1 = number2; returns 0 otherwise.</td>
+		</tr>
+		<tr>
+			<td><b>DEVSQ</b><br>added in v4.3</td>
+			<td>=DEVSQ(number1, [number2], ...), <br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the sum of squared deviations;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
+			</ul></td>
+			<td>Returns the sum of squares of deviations of data points from their sample mean.</td>
+		</tr>
+		<tr>
 			<td><b>DOLLARDE</b></td>
 			<td>=DOLLARDE(fractional_dollar, fraction)</td>
 			<td>Converts a dollar price specified as an integer part and a fraction part into a dollar price displayed as a decimal number.</td>
@@ -201,6 +361,53 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>EFFECT</b></td>
 			<td>=EFFECT(nominal_rate, npery)<br><br> <i>nominal_rate</i> must be >= 0, <i>npery</i> must be > 1.</td>
 			<td>Returns the effective annual interest rate on the base of the nominal annual interest rate and the number of compounding periods per year you specify.<br> Works with numeric values. </td>
+		</tr>
+		<tr>
+			<td><b>ERF</b><br>added in v4.3</td>
+			<td>=ERF(lower_limit, [upper_limit]), <br><br> where:
+			<ul>
+				<li><i>lower_limit</i> - the lower bound for integrating ERF;
+				</li>
+				<li><i>upper_limit</i> - the upper bound for integrating ERF. If omitted, ERF integrates between 0 and lower_limit.
+				</li>
+			</ul></td>
+			<td>Returns the error function integrated between lower_limit and upper_limit.</td>
+		</tr>
+		<tr>
+			<td><b>ERFC</b><br>added in v4.3</td>
+			<td>=ERFC(x), <br><br> where:
+			<ul>
+				<li><i>x</i> - the lower bound for integrating ERFC
+				</li>
+			</ul></td>
+			<td>Returns the complementary ERF function integrated between x and infinity.</td>
+		</tr>
+		<tr>
+			<td><b>EXP</b><br>added in v4.3</td>
+			<td>=EXP(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the power that e is raised to
+				</li>
+			</ul></td>
+			<td>Returns the result of the constant e (which equals 2.71828182845904) raised to the power of a number.</td>
+		</tr>
+		<tr>
+			<td><b>FISHER</b><br>added in v4.3</td>
+			<td>=FISHER(x), <br><br> where:
+			<ul>
+				<li><i>x</i> - the value for which you want to calculate the transformation
+				</li>
+			</ul></td>
+			<td>Calculates the Fisher transformation for a supplied value.</td>
+		</tr>
+		<tr>
+			<td><b>FISHERINV</b><br>added in v4.3</td>
+			<td>=FISHERINV(y), <br><br> where:
+			<ul>
+				<li><i>y</i> - the value for which you want to perform the inverse of the transformation
+				</li>
+			</ul></td>
+			<td>Calculates the inverse of the Fisher transformation and returns a value between -1 and +1.</td>
 		</tr>
 		<tr>
 			<td><b>FV</b></td>
@@ -222,6 +429,240 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>schedule</i> - an array of interest rates to apply. The values in the array can be numbers or blank cells; any other value produces the error value. Blank cells are taken as zeros.</li>
 			</ul></td>
 			<td>Returns the future value of an initial principal (=present value) after applying a series of compound interest rates.</td>
+		</tr>
+		<tr>
+			<td><b>GAMMA</b><br>added in v4.3</td>
+			<td>=GAMMA(number)<br><br> 
+			If Number is a negative integer or 0, GAMMA returns the #Error value.</td>
+			<td>Returns the gamma function value.</td>
+		</tr>
+		<tr>
+			<td><b>GEOMEAN</b><br>added in v4.3</td>
+			<td>=GEOMEAN(number1, [number2], ...)<br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the mean;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
+			</ul></td>
+			<td>Returns the geometric mean of an array or range of positive data.</td>
+		</tr>
+		<tr>
+			<td><b>GESTEP</b><br>added in v4.3</td>
+			<td>=GESTEP(number, [step])<br><br> where:
+			<ul>
+				<li><i>number</i> - the value to test against step;</li>
+				<li><i>step</i> - optional, the threshold value. If you omit a value for step, GESTEP uses zero;</li>
+			</ul></td>
+			<td>Returns 1 if number ≥ step; returns 0 (zero) otherwise.</td>
+		</tr>
+		<tr>
+			<td><b>HARMEAN</b><br>added in v4.3</td>
+			<td>=HARMEAN(number1, [number2], ...)<br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 arguments for which you want to calculate the mean;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included.
+			</ul></td>
+			<td>Returns the harmonic mean of a data set.</td>
+		</tr>
+		<tr>
+			<td><b>HEX2BIN</b><br>added in v4.3</td>
+			<td>=HEX2BIN(number)<br><br> where:
+			<ul>
+				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
+			</ul></td>
+			<td>Converts a hexadecimal number to binary.</td>
+		</tr>
+		<tr>
+			<td><b>HEX2DEC</b><br>added in v4.3</td>
+			<td>=HEX2DEC(number)<br><br> where:
+			<ul>
+				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
+			</ul></td>
+			<td>Converts a hexadecimal number to decimal.</td>
+		</tr>
+		<tr>
+			<td><b>HEX2OCT</b><br>added in v4.3</td>
+			<td>=HEX2OCT(number)<br><br> where:
+			<ul>
+				<li><i>number</i> - the hexadecimal number you want to convert. Number can't contain more than 10 characters;</li>
+			</ul></td>
+			<td>Converts a hexadecimal number to octal.</td>
+		</tr>
+		<tr>
+			<td><b>IMABS</b><br>added in v4.3</td>
+			<td>=IMABS(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the absolute value of a complex number in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMAGINARY</b><br>added in v4.3</td>
+			<td>=IMAGINARY(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the imaginary coefficient of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCONJUGATE</b><br>added in v4.3</td>
+			<td>=IMCONJUGATE(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the complex conjugate of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCOS</b><br>added in v4.3</td>
+			<td>=IMCOS(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the cosine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCOSH</b><br>added in v4.3</td>
+			<td>=IMCOSH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic cosine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCOT</b><br>added in v4.3</td>
+			<td>=IMCOT(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the cotangent of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCSC</b><br>added in v4.3</td>
+			<td>=IMCSC(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the cosecant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMCSCH</b><br>added in v4.3</td>
+			<td>=IMCSCH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic cosecant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMDIV</b><br>added in v4.3</td>
+			<td>=IMDIV(inumber1, inumber2)<br><br> where:
+			<ul>
+				<li><i>inumber1</i> - the complex numerator or dividend</li>
+				<li><i>inumber2</i> - the complex denominator or divisor</li>
+			</ul></td>
+			<td>Returns the quotient of two complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMEXP</b><br>added in v4.3</td>
+			<td>=IMEXP(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the exponential of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMLN</b><br>added in v4.3</td>
+			<td>=IMLN(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the natural logarithm of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMPOWER</b><br>added in v4.3</td>
+			<td>=IMPOWER(inumber, number)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+				<li><i>number</i> - the power to which you want to raise the complex number</li>
+			</ul></td>
+			<td>Returns a complex number in x + yi or x + yj text format raised to a power.</td>
+		</tr>
+		<tr>
+			<td><b>IMPRODUCT</b><br>added in v4.3</td>
+			<td>=IMPRODUCT(inumber1, [inumber2], ...)<br><br> where:
+			<ul>
+				<li><i>inumber1, inumber2,...</i> - from 1 to 255 complex numbers to multiply</li>
+			</ul></td>
+			<td>Returns the product of 1 to 255 complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMREAL</b><br>added in v4.3</td>
+			<td>=IMREAL(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the real coefficient of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSEC</b><br>added in v4.3</td>
+			<td>=IMSEC(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the secant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSECH</b><br>added in v4.3</td>
+			<td>=IMSECH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic secant of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSIN</b><br>added in v4.3</td>
+			<td>=IMSIN(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the sine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSINH</b><br>added in v4.3</td>
+			<td>=IMSINH(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the hyperbolic sine of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSQRT</b><br>added in v4.3</td>
+			<td>=IMSQRT(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the square root of a complex number given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSUB</b><br>added in v4.3</td>
+			<td>=IMSUB(inumber1, inumber2)<br><br> where:
+			<ul>
+				<li><i>inumber1</i> - a complex number from which to subtract inumber2;</li>
+				<li><i>inumber2</i> - the complex number to subtract from inumber1</li>
+			</ul></td>
+			<td>Returns the difference of two complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMSUM</b><br>added in v4.3</td>
+			<td>=IMSUB(inumber1, [inumber2], ...)<br><br> where:
+			<ul>
+				<li><i>inumber1, inumber2,...</i> - from 1 to 255 complex numbers to add</li>
+			</ul></td>
+			<td>Returns the sum of two or more complex numbers given in the format x + yi or x + yj.</td>
+		</tr>
+		<tr>
+			<td><b>IMTAN</b><br>added in v4.3</td>
+			<td>=IMTAN(inumber)<br><br> where:
+			<ul>
+				<li><i>inumber</i> - a complex number</li>
+			</ul></td>
+			<td>Returns the tangent of a complex number given in the format x + yi or x + yj.</td>
 		</tr>
 		<tr>
 			<td><b>IPMT</b></td>
@@ -257,6 +698,23 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>Calculates the interest paid (or received) for the specified period of a loan (or investment) with even principal payments.</td>
 		</tr>
 		<tr>
+			<td><b>LARGE</b><br>added in v4.3</td>
+			<td>=LARGE(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or range of data for which you want to determine the k-th largest value;</li>
+				<li><i>k</i> - the position (from the largest) in the array or cell range of data to return.</li>
+			</ul></td>
+			<td>Returns the k-th largest value in an array.</td>
+		</tr>
+		<tr>
+			<td><b>MEDIAN</b><br>added in v4.3</td>
+			<td>=MEDIAN(number1, [number2], ...), <br><br> where:
+			<ul>
+				<li><i>number1, number2,...</i> - from 1 to 255 numbers for which you want to calculate the median;</li>
+			</ul></td>
+			<td>Returns the median of the given numbers.</td>
+		</tr>
+		<tr>
 			<td><b>NOMINAL</b></td>
 			<td>=NOMINAL(effect_rate, npery), <br><br><i>effect_rate</i> must be >= 0, <i>npery</i> must be > 1. </td>
 			<td>Returns the nominal annual interest rate on the base of the effective rate and the number of compounding periods per year you specify.</td>
@@ -278,9 +736,33 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td>=NPV(rate,value1,[value2],...), <br><br> where:
 			<ul>
 				<li><i>rate</i> - the rate of discount over one year;</li>
-				<li><i>value1, value2</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
+				<li><i>value1, value2,...</i> - from 1 to 254 values representing cash flows (future payments and income).<br>Empty cells, logical values, text, or error values are ignored.</li>
 			</ul></td>
 			<td>Calculates the net present value of an investment by using a discount rate and a series of future payments (negative values) and income (positive values).</td>
+		</tr>
+		<tr>
+			<td><b>OCT2BIN</b><br>added in v4.3</td>
+			<td>=OCT2BIN(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the octal number you want to convert. It can't contain more than 10 characters;</li>
+			</ul></td>
+			<td>Converts an octal number to binary.</td>
+		</tr>
+		<tr>
+			<td><b>OCT2DEC</b><br>added in v4.3</td>
+			<td>=OCT2DEC(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits)</li>
+			</ul></td>
+			<td>Converts an octal number to decimal.</td>
+		</tr>
+		<tr>
+			<td><b>OCT2HEX</b><br>added in v4.3</td>
+			<td>=OCT2HEX(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - the octal number you want to convert. Number may not contain more than 10 octal characters (30 bits)</li>
+			</ul></td>
+			<td>Converts an octal number to hexadecimal.</td>
 		</tr>
 		<tr>
 			<td><b>PDURATION</b></td>
@@ -291,6 +773,42 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>fv</i> - the desired future value of the investment.</li>
 			</ul><br> All arguments must be positive values.</td>
 			<td>Returns the number of periods required by an investment to reach a specified value.<br></td>
+		</tr>
+		<tr>
+			<td><b>PERCENTILE</b><br>added in v4.3</td>
+			<td>=PERCENTILE(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array of data values;</li>
+				<li><i>k</i> - the percentile value between 0 and 1, inclusive.</li>
+			</ul></td>
+			<td>Returns the k-th percentile of values in a range.</td>
+		</tr>
+		<tr>
+			<td><b>PERCENTILE.EXC</b><br>added in v4.3</td>
+			<td>=PERCENTILE.EXC(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array of data values;</li>
+				<li><i>k</i> - the percentile value between 0 and 1, exclusive.</li>
+			</ul></td>
+			<td>Returns the k-th percentile of values in a range.</td>
+		</tr>
+		<tr>
+			<td><b>PERCENTILE.INC</b><br>added in v4.3</td>
+			<td>=PERCENTILE.INC(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array of data values;</li>
+				<li><i>k</i> - the percentile value between 0 and 1, inclusive.</li>
+			</ul></td>
+			<td>Returns the k-th percentile of values in a range.</td>
+		</tr>
+		<tr>
+			<td><b>PERMUT</b><br>added in v4.3</td>
+			<td>=PERMUT(number, number_chosen), <br><br> where:
+			<ul>
+				<li><i>number</i> - the total number of items;</li>
+				<li><i>number_chosen</i> - the number of items in each combination.</li>
+			</ul></td>
+			<td>Returns the number of permutations for a given number of items.</td>
 		</tr>
 		<tr>
 			<td><b>PMT</b></td>
@@ -328,6 +846,112 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 				<li><i>type</i> - optional, 0(default) - the payments are due at the end of the period, 1 - at the beginning of the period.</li>
 			</ul></td>
 			<td>Returns the present value of a loan or an investment, based on a constant interest rate.<br></td>
+		</tr>
+		<tr>
+			<td><b>QUARTILE</b><br>added in v4.3</td>
+			<td>=QUARTILE(array, quart), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or cell range of numeric values;</li>
+				<li><i>quart</i> - indicates which value to return (<a href="https://support.microsoft.com/en-us/office/quartile-function-93cf8f62-60cd-4fdb-8a92-8451041e1a2a">0-4</a>).</li>
+			</ul></td>
+			<td>Returns the quartile of a data set.</td>
+		</tr>
+		<tr>
+			<td><b>QUARTILE.EXC</b><br>added in v4.3</td>
+			<td>=QUARTILE(array, quart), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or cell range of numeric values;</li>
+				<li><i>quart</i> - indicates which value to return (1-3).</li>
+			</ul></td>
+			<td>Returns the quartile of the data set, based on percentile values from 0..1, exclusive.</td>
+		</tr>
+		<tr>
+			<td><b>QUARTILE.INC</b><br>added in v4.3</td>
+			<td>=QUARTILE.INC(array, quart), <br><br> where:
+			<ul>
+				<li><i>array</i> - the array or cell range of numeric values;</li>
+				<li><i>quart</i> - indicates which value to return (0-4).</li>
+			</ul></td>
+			<td>Returns the quartile of a data set, based on percentile values from 0..1, inclusive.</td>
+		</tr>
+		<tr>
+			<td><b>SIGN</b><br>added in v4.3</td>
+			<td>=SIGN(number), <br><br> where:
+			<ul>
+				<li><i>number</i> - any real number</li>
+			</ul></td>
+			<td>Defines the sign of a number. Returns 1 if the number is positive, zero (0) if the number is 0, and -1 if the number is negative.</td>
+		</tr>
+		<tr>
+			<td><b>SMALL</b><br>added in v4.3</td>
+			<td>=SMALL(array, k), <br><br> where:
+			<ul>
+				<li><i>array</i> - an array or range of numeric values;</li>
+				<li><i>k</i> - the position (from 1 - the smallest value) in the data set.</li>
+			</ul></td>
+			<td>Returns the k-th smallest value based on its position in the data set.</td>
+		</tr>
+		<tr>
+			<td><b>STEYX</b><br>added in v4.3</td>
+			<td>=STEYX(known_y's, known_x's), <br><br> where:
+			<ul>
+				<li><i>known_y's</i> - an array or range of dependent data points;</li>
+				<li><i>known_x's</i> - an array or range of independent data points.</li>
+			</ul><br>Text, logical values, or empty cells are ignored. Zero values are included.</td>
+			<td>Returns the standard error of the predicted y-value for each x in the regression.</td>
+		</tr>
+		<tr>
+			<td><b>SYD</b><br>added in v4.3</td>
+			<td>=SYD(cost, salvage, life, per), <br><br> where:
+			<ul>
+				<li><i>cost</i> - the initial cost of the asset;</li>
+				<li><i>salvage</i> - the asset value at the end of the depreciation;</li>
+				<li><i>life</i> - the number of periods over which the asset is depreciated;</li>
+				<li><i>per</i> - the period and must use the same units as life.</li>
+			</ul></td>
+			<td>Returns the sum-of-years' digits depreciation of an asset for a specified period.</td>
+		</tr>
+		<tr>
+			<td><b>TBILLPRICE</b><br>added in v4.3</td>
+			<td>=TBILLPRICE(settlement, maturity, discount), <br><br> where:
+			<ul>
+				<li><i>settlement</i> - the settlement date of the Treasury bill;</li>
+				<li><i>maturity</i> - the maturity date of the Treasury bill;</li>
+				<li><i>discount</i> - the Treasury bill's percentage discount rate.</li>
+			</ul></td>
+			<td>Returns the price per $100 face value for a Treasury bill.</td>
+		</tr>
+		<tr>
+			<td><b>TBILLYIELD</b><br>added in v4.3</td>
+			<td>=TBILLYIELD(settlement, maturity, pr), <br><br> where:
+			<ul>
+				<li><i>settlement</i> - the settlement date of the Treasury bill;</li>
+				<li><i>maturity</i> - the maturity date of the Treasury bill;</li>
+				<li><i>pr</i> - the Treasury bill's price per $100 face value.</li>
+			</ul></td>
+			<td>Returns the yield for a Treasury bill.</td>
+		</tr>
+		<tr>
+			<td><b>WEIBULL</b><br>added in v4.3</td>
+			<td>=WEIBULL(x, alpha, beta, cumulative), <br><br> where:
+			<ul>
+				<li><i>x</i> - the value at which the function must be calculated (must be ≥ 0);</li>
+				<li><i>alpha</i> - the alpha parameter to the distribution (must be > 0);</li>
+				<li><i>beta</i> - the beta parameter to the distribution (must be > 0);</li>
+				<li><i>cumulative</i> - the logical (true/false) argument which defines the type of distribution to be used. If True - Weibull cumulative distribution function, if False - Weibull probability density function </li>
+			</ul></td>
+			<td>Returns the Weibull distribution.</td>
+		</tr>
+		<tr>
+			<td><b>WEIBULL.DIST</b><br>added in v4.3</td>
+			<td>=WEIBULL(x, alpha, beta, cumulative), <br><br> where:
+			<ul>
+				<li><i>x</i> - the value at which the function must be calculated (must be ≥ 0);</li>
+				<li><i>alpha</i> - the alpha parameter to the distribution (must be > 0);</li>
+				<li><i>beta</i> - the beta parameter to the distribution (must be > 0);</li>
+				<li><i>cumulative</i> - the logical (true/false) argument which defines the type of distribution to be used. If True - Weibull cumulative distribution function, if False - Weibull probability density function </li>
+			</ul></td>
+			<td>Returns the Weibull distribution.</td>
 		</tr>
     </tbody>
 </table>
@@ -389,6 +1013,93 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
+### Lookup functions
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>Function</b></td>
+			<td><b>Formula</b></td>
+			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>HLOOKUP</b><br>added in v4.3</td>
+			<td>=HLOOKUP(lookup_value, table_array, row_index, [range_lookup]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for;</li>
+				<li><i>table_array</i> - the table from which to retrieve a value;</li>
+				<li><i>column_index_num</i> - the row number in the table from which to retrieve a value;</li>
+				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
+			</ul></td>
+			<td>Looks up a value in a horizontal table</td>
+		</tr>
+		<tr>
+			<td><b>INDEX</b><br>added in v4.3</td>
+			<td>=INDEX(array, row_num, [column_num]), <br><br> where:
+			<ul>
+				<li><i>array</i> - a range of cells or an array constant;</li>
+				<li><i>row_num</i> - the row position in the reference or array;</li>
+				<li><i>column_num</i> - optional, the column position in the reference or array.</li>
+			</ul></td>
+			<td>Returns the value at a given location in a range or array.</td>
+		</tr>
+		<tr>
+			<td><b>LOOKUP</b><br>added in v4.3</td>
+			<td>=LOOKUP(lookup_value, lookup_vector, [result_vector]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for;</li>
+				<li><i>lookup_vector</i> - the one-row, or one-column range to search;</li>
+				<li><i>result_vector</i> - optional, the one-row, or one-column range of results.</li>
+			</ul></td>
+			<td>Looks up a value in a one-column or one-row range, and retrieves a value from the same position in another one-column or one-row range.</td>
+		</tr>
+		<tr>
+			<td><b>MATCH</b><br>added in v4.3</td>
+			<td>=MATCH(lookup_value, lookup_array, [match_type]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
+				<li><i>lookup_array</i> - the range of cells;</li>
+				<li><i>match_type</i> - optional (1 by default):<br>1- finds the largest value that is less than or equal to <i>lookup_value</i><br>0 - finds the value that is exactly equal to <i>lookup_value</i><br>-1 - finds the smallest value that is greater than or equal to <i>lookup_value</i></li>
+			</ul></td>
+			<td>Searches for a specified item in a range of cells, and then returns the relative position of that item in the range.</td>
+		</tr>
+		<tr>
+			<td><b>VLOOKUP</b><br>added in v4.3</td>
+			<td>=VLOOKUP(lookup_value, table_array, column_index_num, [range_lookup]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for in the first column of a table;</li>
+				<li><i>table_array</i> - the table from which to retrieve a value;</li>
+				<li><i>column_index_num</i> - the column number in the table from which to retrieve a value;</li>
+				<li><i>range_lookup</i> -  optional (1 by default):<br>0 - exact match, 1 - approximate match</li>
+			</ul></td>
+			<td>Looks up a value in a vertical table by matching on the first column</td>
+		</tr>
+		<tr>
+			<td><b>XLOOKUP</b><br>added in v4.3</td>
+			<td>=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value to search for;</li>
+				<li><i>lookup_array</i> - the array or range to search;</li>
+				<li><i>return_array</i> - the array or range to return;</li>
+				<li><i>if_not_found</i> - optional, if a valid match is not found, returns the [if_not_found] text you supply;</li>
+				<li><i>match_mode</i> -  optional (0 by default):<br>0 - Exact match<br>-1 - Exact match. If not found, returns the next smaller item<br>1 - Exact match. If not found, returns the next larger item</li>
+			</ul></td>
+			<td>Searches a range or an array, and then returns the item corresponding to the first match it finds. If no match exists, then XLOOKUP can return the closest (approximate) match.</td>
+		</tr>
+		<tr>
+			<td><b>XMATCH</b><br>added in v4.3</td>
+			<td>=XMATCH(lookup_value, lookup_array, [match_mode]), <br><br> where:
+			<ul>
+				<li><i>lookup_value</i> - the value that you want to match in <i>lookup_array</i>;</li>
+				<li><i>lookup_array</i> - the range of cells;</li>
+				<li><i>match_mode</i> - optional, 0 - exact match (default), -1 - exact match or next smallest, 1 - exact match or next larger</li>
+			</ul></td>
+			<td>Performs a lookup and returns a position in vertical or horizontal ranges.</td>
+		</tr>
+    </tbody>
+</table>
+<br>
+
 ### Math functions
 
 <table> 
@@ -441,13 +1152,25 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>ATANH</b></td>
 			<td>Returns the inverse hyperbolic tangent of a number. Number must be between -1 and 1 (excluding -1 and 1). Works with real numbers.</td>
 		</tr>
+		<tr>
+			<td><b>AVEDEV</b><br>added in v4.3</td>
+			<td>Returns the average of the absolute deviations of data points from their mean.<br> Empty cells, logical values, text, or error values in the array or reference are ignored. Cells with the value 0 are included.</td>
+		</tr>
         <tr>
 			<td><b>AVERAGE</b></td>
-			<td>Calculates the average (arithmetic mean) of a group of numbers. <br>The function ignores logical values, empty cells and cells that contain text. <br>However, cells with the value zero are included.</td>
+			<td>Calculates the average (arithmetic mean) of a group of numbers. <br>Logical values, empty cells and cells that contain text in the array or reference are ignored <br>However, cells with the value zero are included.</td>
+		</tr>
+		<tr>
+			<td><b>AVERAGEA</b><br>added in v4.3</td>
+			<td>Calculates the average (arithmetic mean) of the values in the list of arguments. <br>Arguments can be the following: numbers; names, arrays, or references that contain numbers; text representations of numbers; or logical values, such as TRUE and FALSE, in a reference.<br>Empty cells and text values in the array or reference are ignored.</td>
 		</tr>
 		<tr>
 			<td><b>BASE</b></td>
 			<td>Converts a number into the supplied base (radix). <br>The number should be an integer and greater than or equal to 0 and less than 2^53.<br>The base radix is what we want to convert the number into. It must be an integer from 2 to 36, inclusive.</td>
+		</tr>
+		<tr>
+			<td><b>BITAND</b><br>added in v4.3</td>
+			<td>Returns a bitwise 'AND' of two numbers.<br>The number must be an integer and greater than or equal to 0 and less than (2^48)-1.</td>
 		</tr>
 		<tr>
 			<td><b>CEILING</b></td>
@@ -680,7 +1403,7 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 		</tr>
 		<tr>
 			<td><b>STDEVA</b></td>
-			<td>Calculates standard deviation based on a sample. <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>Empty cells, logical values, text, or error values in the array or reference are ignored.</td>
+			<td>Calculates standard deviation based on a sample. <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>Empty cells and text values in the array or reference are ignored.</td>
 		</tr>
         <tr>
 			<td><b>STDEVP</b></td>
@@ -689,6 +1412,10 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 		<tr>
 			<td><b>STDEVPA</b></td>
 			<td>Calculates standard deviation based on the entire population given as arguments, including text (evaluate as 0) and logical values (evaluate as 1 for TRUE, and as 0 for FALSE). <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>If an argument is an array or reference, only values in that array or reference are used. Empty cells and text values in the array or reference are ignored.<br> Error values cause errors.</td>
+		</tr>
+		<tr>
+			<td><b>STDEV.S</b><br>added in v4.3</td>
+			<td>Estimates standard deviation based on a sample (ignores logical values and text in the sample). <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>If an argument is an array or reference, only values in that array or reference are used. Empty cells, logical values, text, or error values in the array or reference are ignored.<br> Error values cause errors.</td>
 		</tr>
 		<tr>
 			<td><b>SUBTOTAL</b></td>
@@ -746,6 +1473,10 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 			<td><b>VARPA</b></td>
 			<td>Returns the variance of a population based on an entire population, including text (evaluate as 0) and logical values (evaluate as 1 for TRUE, and as 0 for FALSE).<br>Empty cells and text values in the array or reference are ignored.</td>
 		</tr>
+		<tr>
+			<td><b>VAR.S</b><br>added in v4.3</td>
+			<td>Returns the variance based on a sample (ignores logical values and text in the sample).<br>Empty cells, logical values, text, or error values in the array or reference are ignored.</td>
+		</tr>
     </tbody>
 </table>
 <br>
@@ -784,12 +1515,18 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ### String functions
 
+
 <table>
 	<tbody>
 		<tr>
 			<td><b>Function</b></td>
 			<td><b>Formula</b></td>
 			<td><b>Description</b></td>
+		</tr>
+		<tr>
+			<td><b>ARRAYTOTEXT</b><br>added in v4.3</td>
+			<td>=ARRAYTOTEXT(array, [format])</td>
+			<td>Returns an array of text values from any specified range, based on the format you specify (0 - concise (default) or 1 - strict format) </td>
 		</tr>
 		<tr>
 			<td><b>CHAR</b></td>
@@ -865,6 +1602,17 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 			<td><b>PROPER</b></td>
 			<td>=PROPER(text)</td>
 			<td>Sets the first character in each word to uppercase <br>and converts all other characters to lowercase.</td>
+		</tr>
+        <tr>
+			<td><b>REPLACE</b><br>added in v4.3</td>
+			<td>=REPLACE(old_text, start_num, num_chars, new_text), <br><br> where:
+			<ul>
+				<li><i>old_text</i> - the text in which you want to replace some characters;</li>
+				<li><i>start_num</i> - the position of the character in <i>old_text</i> that you want to replace with new_text;</li>
+				<li><i>num_chars</i> - the number of characters to be replaced in <i>old_text</i>;</li>
+				<li><i>new_text</i> - the text that will replace characters in <i>old_text</i>.</li>
+			</ul></td>
+			<td>Replaces part of a text string, based on the number of characters you specify, with a different text string.</td>
 		</tr>
 		<tr>
 			<td><b>REPT</b></td>
