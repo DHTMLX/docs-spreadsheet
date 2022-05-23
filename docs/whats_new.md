@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 4.3
 
-<span class="rel_date_pivot">released on May 18, 2022</span>
+<span class="rel_date_pivot">released on May 23, 2022</span>
 
 ### Breaking changes
 
@@ -31,6 +31,10 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 - [Import from JSON](api/spreadsheet_load_method.md#loading-json-files)
 - New events are added: [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md)
 - New [Actions system](api/overview/actions_overview.md)
+
+### Updates
+
+- The [`parse()`](api/spreadsheet_parse_method.md) method is updated. New **editor** attribute of a cell object is added
 
 ## Version 4.2
 
