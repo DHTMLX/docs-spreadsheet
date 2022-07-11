@@ -226,7 +226,7 @@ module.exports = {
                         },
                         {
                             label: 'Blog',
-                            href: 'https://dhtmlx.com/blog/',
+                            href: 'https://dhtmlx.com/blog/?s=spreadsheet',
                         },
                         {
                             label: 'Forum',
