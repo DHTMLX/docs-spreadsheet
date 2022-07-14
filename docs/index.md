@@ -42,7 +42,7 @@ You can switch the editing line off, if necessary via the corresponding [configu
 
 ### Context menu
 
-The **Context menu** section includes 4 items **Lock**, **Clear**, **Columns** and **Rows** with sub-items.
+The **Context menu** section includes 4 items **Lock**, **Clear**, **Columns**, **Rows**, and **Sort** with sub-items.
 
 ![Spreadsheet Context Menu](assets/overview_contextmenu.png)
 
