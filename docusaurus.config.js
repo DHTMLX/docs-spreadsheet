@@ -287,7 +287,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    //editUrl: 'https://github.com/DHTMLX/docs-spreadsheet/edit/master/',
+                    editUrl: 'https://github.com/DHTMLX/docs-spreadsheet/edit/master/',
                     routeBasePath: '/',
                 },
                 // blog: {
