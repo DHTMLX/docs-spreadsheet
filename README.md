@@ -29,7 +29,7 @@ $ yarn start
 
 [Download DHTMLX Spreadsheet](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml)
 
-[Live demos](https://snippet.dhtmlx.com/ihtkdcoc?mode=wide&text=#spreadsheet)
+[Live demos](https://snippet.dhtmlx.com/ihtkdcoc?mode=wide&tag=spreadsheet)
 
 [Blog](https://dhtmlx.com/blog/tag/spreadsheet/)
 

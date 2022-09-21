@@ -189,7 +189,7 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/ihtkdcoc?text=%23spreadsheet',
+                    href: 'https://snippet.dhtmlx.com/ihtkdcoc?tag=spreadsheet',
                     position: 'right',
                 },
                 {
@@ -221,7 +221,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/ihtkdcoc?text=%23spreadsheet',
+                            href: 'https://snippet.dhtmlx.com/ihtkdcoc?tag=spreadsheet',
                             position: 'right',
                         },
                         {
