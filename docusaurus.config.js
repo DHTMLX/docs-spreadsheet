@@ -194,7 +194,7 @@ module.exports = {
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
+                    href: 'https://forum.dhtmlx.com/c/spreadsheet/',
                     position: 'right'
                 },
                 {
@@ -230,7 +230,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
+                            href: 'https://forum.dhtmlx.com/c/spreadsheet/',
                             position: 'right'
                         },
                     ],

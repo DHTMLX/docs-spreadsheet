@@ -33,7 +33,7 @@ $ yarn start
 
 [Blog](https://dhtmlx.com/blog/tag/spreadsheet/)
 
-[Forum](https://forum.dhtmlx.com/c/widgets/spreadsheet)
+[Forum](https://forum.dhtmlx.com/c/spreadsheet/)
 
 ## Follow us
 
