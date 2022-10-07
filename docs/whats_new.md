@@ -8,6 +8,17 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0
+
+Released on
+
+### New functionality
+
+- Data search:
+    - [UI](data_search.md)
+    - [API](working_with_ssheet.md#searching-for-data)
+    - [Hotkeys](hotkeys.md#search)
+
 ## Version 4.3
 
 Released on May 23, 2022

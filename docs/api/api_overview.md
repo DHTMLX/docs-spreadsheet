@@ -46,6 +46,7 @@ Parameters:
 | [](api/spreadsheet_redo_method.md)           | @getshort(api/spreadsheet_redo_method.md)           |
 | [](api/spreadsheet_removesheet_method.md)    | @getshort(api/spreadsheet_removesheet_method.md)    |
 | [](api/spreadsheet_serialize_method.md)      | @getshort(api/spreadsheet_serialize_method.md)      |
+| [](api/spreadsheet_search_method.md)         | @getshort(api/spreadsheet_search_method.md)         |
 | [](api/spreadsheet_setactivesheet_method.md) | @getshort(api/spreadsheet_setactivesheet_method.md) |
 | [](api/spreadsheet_setformat_method.md)      | @getshort(api/spreadsheet_setformat_method.md)      |
 | [](api/spreadsheet_setstyle_method.md)       | @getshort(api/spreadsheet_setstyle_method.md)       |

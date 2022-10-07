@@ -307,6 +307,25 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 spreadsheet.sortCells("B2:B11", -1);
 ~~~
 
+## Searching for data
+
+You may find cells which contain specific records by passing the value which you need to search to the [search()](api/spreadsheet_search_method.md) method. 
+
+~~~js
+spreadsheet.search("min"); // -> ['D1']
+~~~
+
+At the same time, you may pass `true` as a value of the second parameter to open the search box and highlight the found cells in the spreadsheet:
+
+~~~js
+spreadsheet.search("min", true); 
+~~~
+
+By default, the spreadsheet will search the cells on the currently active sheet. To search for records on the other sheet, pass its ID as the third parameter of the method:
+
+~~~js
+spreadsheet.search("min", false, "u1665131737696");
+~~~
 
 ## Clearing spreadsheet
 

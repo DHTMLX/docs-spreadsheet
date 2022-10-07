@@ -17,7 +17,7 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 			<td>activates editor in a cell</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + Enter</b></td>
+			<td><b>Ctrl (Cmd) + Enter</b></td>
 			<td>stops cell’s editing, leaves selection on the cell</td>
 		</tr>
         <tr>
@@ -36,43 +36,43 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 <table> 
 	<tbody>
         <tr>
-			<td><b>Ctrl+C</b></td>
+			<td><b>Ctrl (Cmd) + C</b></td>
 			<td>copies the value of a cell</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+V</b></td>
+			<td><b>Ctrl (Cmd) + V</b></td>
 			<td>pastes the value into a cell, replacing any selected content</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+X</b></td>
+			<td><b>Ctrl (Cmd) + X</b></td>
 			<td>cuts the value of a cell</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+Z</b></td>
+			<td><b>Ctrl (Cmd) + Z</b></td>
 			<td>undoes the last action in a sheet</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+Y</b></td>
+			<td><b>Ctrl (Cmd) + Y</b></td>
 			<td>repeats the last action in a sheet</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+Shift+Z</b></td>
+			<td><b>Ctrl (Cmd) + Shift + Z</b></td>
 			<td>repeats the last action in a sheet</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+B</b></td>
+			<td><b>Ctrl (Cmd) + B</b></td>
 			<td>makes the value of a cell bold</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+I</b></td>
+			<td><b>Ctrl (Cmd) + I</b></td>
 			<td>makes the value of a cell italic</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+U</b></td>
+			<td><b>Ctrl (Cmd) + U</b></td>
 			<td>makes the value of a cell underlined</td>
 		</tr>
         <tr>
-			<td><b>Ctrl+A</b></td>
+			<td><b>Ctrl (Cmd) + A</b></td>
 			<td>selects all cells in a sheet</td>
 		</tr>
         <tr>
@@ -121,27 +121,27 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 			<td>moves selection to the last cell in the row</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + Left Arrow Key</b></td>
+			<td><b>Ctrl (Cmd) + Left Arrow Key</b></td>
 			<td>moves selection to the first cell in a row</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + Right Arrow Key</b></td>
+			<td><b>Ctrl (Cmd) + Right Arrow Key</b></td>
 			<td>moves selection to the last cell in a row</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + Up Arrow Key</b></td>
+			<td><b>Ctrl (Cmd) + Up Arrow Key</b></td>
 			<td>moves selection to the first cell in a column</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + Down Arrow Key</b></td>
+			<td><b>Ctrl (Cmd) + Down Arrow Key</b></td>
 			<td>moves selection to the last cell in a column</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + Home</b></td>
+			<td><b>Ctrl (Cmd) + Home</b></td>
 			<td>moves selection to the beginning of a sheet (top left-hand cell)</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + End</b></td>
+			<td><b>Ctrl (Cmd) + End</b></td>
 			<td>moves selection to the end of a sheet (bottom right-hand cell)</td>
 		</tr>
         <tr>
@@ -159,12 +159,31 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
     </tbody>
 </table>
 
+## Search
+
+<table>
+	<tbody>
+        <tr>
+			<td><b>Ctrl (Cmd) + F</b></td>
+			<td>opens a search box in the top right corner of the spreadsheet</td>
+		</tr>
+        <tr>
+			<td><b>Ctrl (Cmd) + G</b></td>
+			<td>moves selection to the next found match</td>
+		</tr>
+		<tr>
+			<td><b>Ctrl (Cmd) + Shift + G</b></td>
+			<td>moves selection to the previous found match</td>
+		</tr>
+    </tbody>
+</table>
+
 ## Selection
 
 <table>
 	<tbody>
         <tr>
-			<td><b>Ctrl + Left click</b></td>
+			<td><b>Ctrl (Cmd) + Left click</b></td>
 			<td>allows selecting multiple scattered cells</td>
 		</tr>
         <tr>
@@ -172,7 +191,7 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 			<td>allows selecting a range of cells, where the selected cell is the first cell<br> of the range and the clicked cell is the last cell of the range</td>
 		</tr>
         <tr>
-			<td><b>Ctrl + Shift + Left click</b></td>
+			<td><b>Ctrl (Cmd) + Shift + Left click</b></td>
 			<td>allows selecting multiple scattered ranges of cells</td>
 		</tr>
     </tbody>

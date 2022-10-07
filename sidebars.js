@@ -68,6 +68,7 @@ module.exports = {
             "api/spreadsheet_parse_method",
             "api/spreadsheet_redo_method",
             "api/spreadsheet_removesheet_method",
+            "api/spreadsheet_search_method",
             "api/spreadsheet_serialize_method",
             "api/spreadsheet_setactivesheet_method",
             "api/spreadsheet_setformat_method",
@@ -264,6 +265,7 @@ module.exports = {
             "work_with_sheets",
             "data_formatting",
             "number_formatting_guide",
+            "data_search",
             "sorting_data",
             "excel_import_export"
           ],

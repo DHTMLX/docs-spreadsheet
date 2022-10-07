@@ -29,6 +29,7 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_parse_method.md)          | @getshort(../spreadsheet_parse_method.md)          |
 | [](../spreadsheet_redo_method.md)           | @getshort(../spreadsheet_redo_method.md)           |
 | [](../spreadsheet_removesheet_method.md)    | @getshort(../spreadsheet_removesheet_method.md)    |
+| [](../spreadsheet_search_method.md)         | @getshort(../spreadsheet_search_method.md)         |
 | [](../spreadsheet_serialize_method.md)      | @getshort(../spreadsheet_serialize_method.md)      |
 | [](../spreadsheet_setactivesheet_method.md) | @getshort(../spreadsheet_setactivesheet_method.md) |
 | [](../spreadsheet_setformat_method.md)      | @getshort(../spreadsheet_setformat_method.md)      |
