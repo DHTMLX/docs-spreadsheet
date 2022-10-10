@@ -42,6 +42,7 @@ Parameters:
 | [](api/spreadsheet_islocked_method.md)       | @getshort(api/spreadsheet_islocked_method.md)       |
 | [](api/spreadsheet_load_method.md)           | @getshort(api/spreadsheet_load_method.md)           |
 | [](api/spreadsheet_lock_method.md)           | @getshort(api/spreadsheet_lock_method.md)           |
+| [](api/spreadsheet_mergecells_method.md)     | @getshort(api/spreadsheet_mergecells_method.md)     |
 | [](api/spreadsheet_parse_method.md)          | @getshort(api/spreadsheet_parse_method.md)          |
 | [](api/spreadsheet_redo_method.md)           | @getshort(api/spreadsheet_redo_method.md)           |
 | [](api/spreadsheet_removesheet_method.md)    | @getshort(api/spreadsheet_removesheet_method.md)    |

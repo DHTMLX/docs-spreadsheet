@@ -65,6 +65,7 @@ module.exports = {
             "api/spreadsheet_islocked_method", 
             "api/spreadsheet_load_method",
             "api/spreadsheet_lock_method",
+            "api/spreadsheet_mergecells_method",
             "api/spreadsheet_parse_method",
             "api/spreadsheet_redo_method",
             "api/spreadsheet_removesheet_method",

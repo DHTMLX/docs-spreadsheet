@@ -36,6 +36,10 @@ parse({
             id: string,
             rows?: array,
             cols?: array,
+            merged?: [
+                { "from": { "column": index, "row": index }, "to": { "column": index, "row": index }},
+                // more objects
+            ],
             data: [
                 {
                     cell: string,
@@ -84,7 +88,14 @@ The **data** object takes the following parameters:
     - `name` - (required) the sheet name
     - `id` - (required) the sheet id
     - `rows` - (optional) an array of height objects. If not specified, the rows will have a height of 32px.
-    - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px. 
+    - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px.
+    - `merged` - (optional) an array of objects where each object defines a range of cells which need to be merged. Each object must include the following properties:
+        - `from` - an object which defines the position of the first cell from a range:
+            - `column` - the index of the column
+            - `row` - the index of the row
+        - `to` - an object which defines the position of the last cell from a range:
+            - `column` - the index of the column
+            - `row` - the index of the row
     - `data` - (required) an array of objects with data of the sheet. Each object has the following properties:
         - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
         - `value` - (required) the value of a cell
