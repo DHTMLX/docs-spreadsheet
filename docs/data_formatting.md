@@ -91,3 +91,8 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 - Choose the **Clear** option and then select one of the options in the drop-down list:
 
 ![Clear option](assets/clear_option.png)
+
+## Merge and unmerge cells
+
+```todo
+```

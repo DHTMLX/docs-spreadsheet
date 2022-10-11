@@ -80,7 +80,7 @@ spreadsheet.setStyle("B6,A1:D1",{color:"blue"});
 spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 ~~~
 
-{{note The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.}}
+{{note The method allows setting the same style for the specified cells. In case you want to apply different styles to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.}}
 
 ### Get styles
 
@@ -107,6 +107,29 @@ For multiple cells the method returns an array of objects with styles applied to
 	{background: "#C8FAF6", border: "solid 1px yellow", color: "#81C784"},
 	{background: "#9575CD", border: "solid 1px yellow", color: "#079D8F"}
 ]
+~~~
+
+## Merging cells
+
+### Merge cells
+
+You can merge two or more cells into one by passing a range of cells you want to merge to the [mergeCells()](api/spreadsheet_mergecells_method.md) method:
+
+~~~js
+//merge cells A6, A7, and A8
+spreadsheet.mergeCells("A6:A8");
+
+//merge cells B2, C2, and D2
+spreadsheet.mergeCells("B2:D2");
+~~~
+
+### Unmerge cells
+
+You may also unmerge the cells via the [mergeCells()](api/spreadsheet_mergecells_method.md) method. In addition to the range of cells, pass `true` as a value of the second parameter which will define that the specified cells must be unmerged:
+
+~~~js
+//unmerge cells B2, C2, and D2
+spreadsheet.mergeCells("B2:D2", true);
 ~~~
 
 ## Setting cell value

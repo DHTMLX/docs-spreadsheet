@@ -12,7 +12,7 @@ description: You can learn about the parse method in the documentation of the DH
 
 ### Usage
 
-~~~jsx
+~~~js title="Load data into one sheet"
 parse([
     {
         cell: string,
@@ -26,8 +26,9 @@ parse([
     },
     // more cell objects
 ]): void;
+~~~
 
-// or
+~~~js title="Load data into several sheets"
 parse({
     styles: object,
     sheets: [
@@ -36,10 +37,6 @@ parse({
             id: string,
             rows?: array,
             cols?: array,
-            merged?: [
-                { "from": { "column": index, "row": index }, "to": { "column": index, "row": index }},
-                // more objects
-            ],
             data: [
                 {
                     cell: string,
@@ -52,6 +49,13 @@ parse({
                     }
                 },
                 // more cell objects
+            ],
+            merged?: [
+                { 
+                    from: { column: index, row: index }, 
+                    to: { column: index, row: index }
+                },
+                // more objects
             ]
         },
         // more sheet objects
@@ -61,7 +65,7 @@ parse({
 
 ### Parameters
 
-:::info Info 1
+:::info 1. Load data into one sheet
 Specify **data** as an **array** of objects if you need to create a data set for one sheet only
 :::
 
@@ -77,7 +81,7 @@ For each object you can specify the following parameters:
 
 <br>
 
-:::info Info 2
+:::info 2. Load data into several sheets
 *Starting from v4.1*, you can specify **data** as an **object** if you need to create a data set for several sheets at once 
 :::
 
@@ -105,27 +109,25 @@ The **data** object takes the following parameters:
             - `type` - (required) the type of the cell editor: "select"
             - `options` - (required) either a range of cells ("A1:B8") or an array of string values
 
-:::note 
-In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
+:::info
+In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
 :::
 
 ### Example
 
-Prepare a data set for one sheet only:
-
-~~~jsx {32}
+~~~jsx {32} title="Example 1. Load data into one sheet"
 const data = [
-	{ cell: "a1", value: "Country" },
-	{ cell: "b1", value: "Product" },
-	{ cell: "c1", value: "Price" },
-	{ cell: "d1", value: "Amount" },
-	{ cell: "e1", value: "Total Price" },
+	{ cell: "A1", value: "Country" },
+	{ cell: "B1", value: "Product" },
+	{ cell: "C1", value: "Price" },
+	{ cell: "D1", value: "Amount" },
+	{ cell: "E1", value: "Total Price" },
 
-	{ cell: "a2", value: "Ecuador" },
-	{ cell: "b2", value: "Banana" },
-	{ cell: "c2", value: 6.68, css: "someclass" },
-	{ cell: "d2", value: 430 },
-	{ cell: "e2", value: 2872.4 },
+	{ cell: "A2", value: "Ecuador" },
+	{ cell: "B2", value: "Banana" },
+	{ cell: "C2", value: 6.68, css: "someclass" },
+	{ cell: "D2", value: 430 },
+	{ cell: "E2", value: 2872.4 },
     
     // add drop-down lists to cells
     { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey", "India", "USA", "Italy"]} },
@@ -148,11 +150,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(styledData);
 ~~~
 
-**Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
-
-Or prepare a data set for several sheets at once:
-
-~~~js {46}
+~~~js {52} title="Example 2. Load data into several sheets"
 const styledData = {
     styles: {
         someclass: {
@@ -176,23 +174,29 @@ const styledData = {
                 // the width of the other columns is 120
             ],
             data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
-            ]
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" },
+            ],
+            merged: [
+                // merge cells A1 and B1
+				{ from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
+                // merge cells A2, A3, A4, and A5
+				{ from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
+			]
         }, 
         { 
             name: "sheet 2", 
             id: "sheet_2", 
             data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" },
             ]
         },
         // create a sheet with the default configuration
         { 
             data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" },
             ]
         } 
     ]
@@ -203,10 +207,14 @@ spreadsheet.parse(styledData);
 
 **Change log:**
 
+- The **merged** property of the **sheet** object was added in v5.0
 - The **editor** property of the **cell** object was added in v4.3
 - The **rows** and **cols** properties of the **sheet** object were added in v4.2
 
 **Related articles:** [Data loading and export](loading_data.md)
 
-**Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
+**Related samples**: 
+
+- [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
+- [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 

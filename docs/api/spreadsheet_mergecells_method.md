@@ -35,7 +35,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 //makes the cells merged
 spreadsheet.mergeCells("A2:A5");
 // makes the cells unmerged
-spreadsheet.mergeCells("A2:A3", true);
+spreadsheet.mergeCells("A2:A5", true);
 ~~~
 
 **Changelog:** Added in v5.0
