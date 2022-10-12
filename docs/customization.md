@@ -136,6 +136,7 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the **Text wrapping** sub-block
     - the *Clip* button (id: "multiline-clip")
     - the *Wrap* button (id: "multiline-wrap")
+  - the *Merge/Unmerge* button (id: "merge")
 - the **Format** block
   - the *Format* menuItem (id:"format")
 - the **Help** block
@@ -265,6 +266,7 @@ The [default menu](/#menu) has the following structure:
   - the *Text wrapping* menuItem (id: "multiline")
     - the *Clip* menuItem (id: "multiline-clip")
     - the *Wrap* menuItem (id: "multiline-wrap")
+  - the *Merge/Unmerge* menuItem (id: "merge")
   - the *Format* menuItem (id:"format")
 - the **Data** menuItem (id:"data")
   - the *Data validation* menuItem (id:"validation")
@@ -337,6 +339,7 @@ The [default context menu](/#context-menu) has the following structure:
 - the **Sort** menuItem (id:"sort")
   - the *Sort A to Z* menuItem (id:"asc-sort")
   - the *Sort Z to A* menuItem (id:"desc-sort")
+
 ### Adding controls
 
 In the example below a new menuItem is added into the context menu:

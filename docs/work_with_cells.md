@@ -1,10 +1,10 @@
 ---
-sidebar_label: Work with cells
-title: Work with Cells
+sidebar_label: Editing cells
+title: Editing cells
 description: You can learn about the work with cells in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Work with cells
+# Editing cells
 
 ## Entering content in a cell
 
@@ -22,6 +22,11 @@ description: You can learn about the work with cells in the documentation of the
     - cell references and calculation operators, for example **=A1/A2**
     - [built-in functions](../functions/), for example **=MAX(C46;D46)**
 - Press **Enter**.
+
+## Inserting a hyperlink into a cell
+
+```todo
+```
 
 ## Using drop-down lists in cells
 

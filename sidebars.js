@@ -261,13 +261,44 @@ module.exports = {
           },
           items: [
             "hotkeys",
-            "work_with_cells",
-            "work_with_rows_cols",
             "work_with_sheets",
-            "data_formatting",
-            "number_formatting_guide",
+            {
+              type: "category",
+              label: "Rows and columns",
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "Rows and columns",
+                keywords: ['Rows and columns'],
+                image: '/img/docusaurus.png'
+              },
+              items: [
+                "work_with_rows_cols",
+                "column_width"
+              ]
+            },
+            "work_with_cells",
+            {
+              type: "category",
+              label: "Cell formatting",
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "Cell formatting",
+                keywords: ['Cell formatting'],
+                image: '/img/docusaurus.png'
+              },
+              items: [
+                "data_formatting",
+                "number_formatting_guide",
+                "merge_cells"
+              ]
+            },
             "data_search",
             "sorting_data",
+            "filtering_data",
             "excel_import_export"
           ],
         },
