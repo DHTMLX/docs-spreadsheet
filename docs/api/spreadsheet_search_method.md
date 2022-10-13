@@ -44,3 +44,5 @@ spreadsheet.search("min", true); // -> ['D1']
 ~~~
 
 **Change log:** Added in v5.0
+
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#searching-for-data)

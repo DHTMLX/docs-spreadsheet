@@ -60,6 +60,15 @@ spreadsheet.deleteRow("A2");
 
 When a new row is added, neighboring rows are moved one cell down.
 
+## Autofit column width
+
+To change the column width so that it would automatically adjust to the longest content in the column, apply the [fitColumn()](api/spreadsheet_fitcolumn_method.md) method. The method takes one parameter - the id of the cell that contains the name of the necessary column.
+
+~~~js
+// adjusts the width of the "G" column
+spreadsheet.fitColumn("G2");
+~~~
+
 ## Styling cells
 
 ### Set styles

@@ -16,13 +16,18 @@ Released on
 
 - Data search:
     - [UI](data_search.md)
-    - [API](working_with_ssheet.md#searching-for-data)
     - [Hotkeys](hotkeys.md#search)
+    - [API](working_with_ssheet.md#searching-for-data)
+        - [search()](api/spreadsheet_search_method.md) method
 - [Merge/split cells](working_with_ssheet.md#merging-cells)
     - [UI](merge_cells.md)
     - API:
         - [mergeCells()](api/spreadsheet_mergecells_method.md) method
         - [sheets.merged](api/spreadsheet_parse_method.md) property of the data object
+- Autofit column width
+    - [UI](column_width.md)   
+    - API
+        - [fitColumn()](api/spreadsheet_fitcolumn_method.md) method
 
 ## Version 4.3
 
