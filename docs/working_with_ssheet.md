@@ -181,6 +181,24 @@ var values = spreadsheet.getValue("A1,B1,C1:C3");
 //-> ["Country", "Product", "Price", 6.68, 3.75]
 ~~~
 
+## Inserting a hyperlink
+
+To insert a hyperlink in a cell, use the [insertLink()](api/spreadsheet_insertlink_method.md) method. The method also allows adding a text that will be displayed with the hyperlink:
+
+~~~js
+// insert a link in "A2" cell
+spreadsheet.insertLink("A2", {
+    text:"DHX Spreadsheet", href: "https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/"
+});
+~~~
+
+If you need to remove the link from a cell, pass to the method only ID of the cell:
+
+~~~js
+// remove a link from "A2" cell
+spreadsheet.insertLink("A2");
+~~~
+
 ## Locking cells
 
 ### Lock cells

@@ -63,6 +63,7 @@ module.exports = {
             "api/spreadsheet_getsheets_method",
             "api/spreadsheet_getstyle_method",
             "api/spreadsheet_getvalue_method",
+            "api/spreadsheet_insertlink_method",
             "api/spreadsheet_islocked_method", 
             "api/spreadsheet_load_method",
             "api/spreadsheet_lock_method",

@@ -40,6 +40,7 @@ Parameters:
 | [](api/spreadsheet_getsheets_method.md)      | @getshort(api/spreadsheet_getsheets_method.md)      |
 | [](api/spreadsheet_getstyle_method.md)       | @getshort(api/spreadsheet_getstyle_method.md)       |
 | [](api/spreadsheet_getvalue_method.md)       | @getshort(api/spreadsheet_getvalue_method.md)       |
+| [](api/spreadsheet_insertlink_method.md)     | @getshort(api/spreadsheet_insertlink_method.md)     |
 | [](api/spreadsheet_islocked_method.md)       | @getshort(api/spreadsheet_islocked_method.md)       |
 | [](api/spreadsheet_load_method.md)           | @getshort(api/spreadsheet_load_method.md)           |
 | [](api/spreadsheet_lock_method.md)           | @getshort(api/spreadsheet_lock_method.md)           |

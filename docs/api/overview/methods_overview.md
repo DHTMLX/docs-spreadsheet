@@ -24,6 +24,7 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_getsheets_method.md)      | @getshort(../spreadsheet_getsheets_method.md)      |
 | [](../spreadsheet_getstyle_method.md)       | @getshort(../spreadsheet_getstyle_method.md)       |
 | [](../spreadsheet_getvalue_method.md)       | @getshort(../spreadsheet_getvalue_method.md)       |
+| [](../spreadsheet_insertlink_method.md)     | @getshort(../spreadsheet_insertlink_method.md)     |
 | [](../spreadsheet_islocked_method.md)       | @getshort(../spreadsheet_islocked_method.md)       |
 | [](../spreadsheet_load_method.md)           | @getshort(../spreadsheet_load_method.md)           |
 | [](../spreadsheet_lock_method.md)           | @getshort(../spreadsheet_lock_method.md)           |
