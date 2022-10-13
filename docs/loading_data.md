@@ -71,12 +71,16 @@ const data = {
 				// more data
             ]
         },
-		// more sheets 
+		// more sheet objects
     ]
 };
 ~~~
 
 Check the full lists of available properties for these two ways in the [API reference](api/spreadsheet_parse_method.md).
+
+:::tip
+The ability to load merged cells is available only if you prepare data in a sheet object. 
+:::
 
 ### Setting styles for cells
 

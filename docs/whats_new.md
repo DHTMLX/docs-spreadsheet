@@ -18,6 +18,11 @@ Released on
     - [UI](data_search.md)
     - [API](working_with_ssheet.md#searching-for-data)
     - [Hotkeys](hotkeys.md#search)
+- [Merge/split cells](working_with_ssheet.md#merging-cells)
+    - [UI](merge_cells.md)
+    - API:
+        - [mergeCells()](api/spreadsheet_mergecells_method.md) method
+        - [sheets.merged](api/spreadsheet_parse_method.md) property of the data object
 
 ## Version 4.3
 

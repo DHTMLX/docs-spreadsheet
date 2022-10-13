@@ -125,7 +125,7 @@ spreadsheet.mergeCells("B2:D2");
 
 ### Unmerge cells
 
-You may also unmerge the cells via the [mergeCells()](api/spreadsheet_mergecells_method.md) method. In addition to the range of cells, pass `true` as a value of the second parameter which will define that the specified cells must be unmerged:
+You may also split the merged cells via the [mergeCells()](api/spreadsheet_mergecells_method.md) method. In addition to the range of cells, pass `true` as a value of the second parameter which will define that the specified cells must be unmerged:
 
 ~~~js
 //unmerge cells B2, C2, and D2
