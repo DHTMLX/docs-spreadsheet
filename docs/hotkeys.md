@@ -71,6 +71,10 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 			<td><b>Ctrl (Cmd) + U</b></td>
 			<td>makes the value of a cell underlined</td>
 		</tr>
+		<tr>
+			<td><b>Ctrl (Cmd) + K</b></td>
+			<td>inserts a hyperlink in a cell</td>
+		</tr>
         <tr>
 			<td><b>Ctrl (Cmd) + A</b></td>
 			<td>selects all cells in a sheet</td>

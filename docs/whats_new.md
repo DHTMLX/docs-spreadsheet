@@ -32,6 +32,7 @@ Released on
         - fitColumn action
 - Inserting a hyperlink
     - [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
+    - `Ctrl (Cmd) + K` hotkey
     - API
         - [insertLink()](working_with_ssheet.md#inserting-a-hyperlink) method
         - insertLink action
