@@ -74,6 +74,7 @@ module.exports = {
             "api/spreadsheet_search_method",
             "api/spreadsheet_serialize_method",
             "api/spreadsheet_setactivesheet_method",
+            "api/spreadsheet_setfilter_method",
             "api/spreadsheet_setformat_method",
             "api/spreadsheet_setstyle_method",
             "api/spreadsheet_setvalidation_method",

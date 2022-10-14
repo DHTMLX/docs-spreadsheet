@@ -35,6 +35,7 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_search_method.md)         | @getshort(../spreadsheet_search_method.md)         |
 | [](../spreadsheet_serialize_method.md)      | @getshort(../spreadsheet_serialize_method.md)      |
 | [](../spreadsheet_setactivesheet_method.md) | @getshort(../spreadsheet_setactivesheet_method.md) |
+| [](../spreadsheet_setfilter_method.md)      | @getshort(../spreadsheet_setfilter_method.md)      |
 | [](../spreadsheet_setformat_method.md)      | @getshort(../spreadsheet_setformat_method.md)      |
 | [](../spreadsheet_setstyle_method.md)       | @getshort(../spreadsheet_setstyle_method.md)       |
 | [](../spreadsheet_setvalidation_method.md)  | @getshort(../spreadsheet_setvalidation_method.md)  |

@@ -51,6 +51,7 @@ Parameters:
 | [](api/spreadsheet_serialize_method.md)      | @getshort(api/spreadsheet_serialize_method.md)      |
 | [](api/spreadsheet_search_method.md)         | @getshort(api/spreadsheet_search_method.md)         |
 | [](api/spreadsheet_setactivesheet_method.md) | @getshort(api/spreadsheet_setactivesheet_method.md) |
+| [](api/spreadsheet_setfilter_method.md)      | @getshort(api/spreadsheet_setfilter_method.md)      |
 | [](api/spreadsheet_setformat_method.md)      | @getshort(api/spreadsheet_setformat_method.md)      |
 | [](api/spreadsheet_setstyle_method.md)       | @getshort(api/spreadsheet_setstyle_method.md)       |
 | [](api/spreadsheet_setvalidation_method.md)  | @getshort(api/spreadsheet_setvalidation_method.md)  |
