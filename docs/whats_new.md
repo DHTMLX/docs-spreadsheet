@@ -16,7 +16,6 @@ Released on
 
 - Data search:
     - [UI](data_search.md)
-    - [Hotkeys](hotkeys.md#search)
     - [API](working_with_ssheet.md#searching-for-data)
         - [search()](api/spreadsheet_search_method.md) method
 - [Merge/split cells](working_with_ssheet.md#merging-cells)
@@ -32,7 +31,6 @@ Released on
         - `fitColumn` action
 - Inserting a hyperlink
     - [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
-    - `Ctrl (Cmd) + K` hotkey
     - API
         - [insertLink()](working_with_ssheet.md#inserting-a-hyperlink) method
         - `insertLink` action
@@ -42,6 +40,27 @@ Released on
         - [setFilter()](api/spreadsheet_setfilter_method.md) method
         - [getFilter()](api/spreadsheet_getfilter_method.md) method
         - `filter` action
+
+
+- [Extended list of hotkey combinations](hotkeys.md):
+    - for data searching
+        - `Ctrl (Cmd) + F`
+        - `Ctrl (Cmd) + G`
+        - `Ctrl (Cmd) + Shift + G`
+    - for selecting the whole column/row
+        - `Ctrl (Cmd) + Space`
+        - `Shift + Space`
+    - for aligning the content of a cell left/right/center
+        - `Ctrl (Cmd) + Shift + L`
+        - `Ctrl (Cmd) + Shift + R`
+        - `Ctrl (Cmd) + Shift + E`
+    - for crossing out the content of a cell 
+        - `Alt + Shift + 5 (Cmd + Shift + X)`
+    - for adding new sheets and switching between them
+        - `Shift + F11`
+        - `Alt + Arrow Up/ Arrow Down`
+    - for inserting a hyperlink in a cell 
+        - `Ctrl (Cmd) + K`
 
 ## Version 4.3
 

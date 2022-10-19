@@ -31,7 +31,7 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
     </tbody>
 </table>
 
-## Work with cell content
+## Formatting cells
 
 <table> 
 	<tbody>
@@ -72,12 +72,24 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 			<td>makes the value of a cell underlined</td>
 		</tr>
 		<tr>
+			<td><b>Alt + Shift + 5 (Cmd + Shift + X)</b></td>
+			<td>makes the value of a cell crossed out</td>
+		</tr>
+		<tr>
+			<td><b>Ctrl (Cmd) + Shift + E</b></td>
+			<td>centers the value of a cell horizontally</td>
+		</tr>
+		<tr>
+			<td><b>Ctrl (Cmd) + Shift + R</b></td>
+			<td>aligns the value of a cell to the right</td>
+		</tr>
+		<tr>
+			<td><b>Ctrl (Cmd) + Shift + L</b></td>
+			<td>aligns the value of a cell to the left</td>
+		</tr>
+		<tr>
 			<td><b>Ctrl (Cmd) + K</b></td>
 			<td>inserts a hyperlink in a cell</td>
-		</tr>
-        <tr>
-			<td><b>Ctrl (Cmd) + A</b></td>
-			<td>selects all cells in a sheet</td>
 		</tr>
         <tr>
 			<td><b>Delete</b></td>
@@ -186,6 +198,10 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 
 <table>
 	<tbody>
+		<tr>
+			<td><b>Ctrl (Cmd) + A</b></td>
+			<td>selects all cells in a sheet</td>
+		</tr>
         <tr>
 			<td><b>Ctrl (Cmd) + Left click</b></td>
 			<td>allows selecting multiple scattered cells</td>
@@ -197,6 +213,29 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
         <tr>
 			<td><b>Ctrl (Cmd) + Shift + Left click</b></td>
 			<td>allows selecting multiple scattered ranges of cells</td>
+		</tr>
+		<tr>
+			<td><b>Ctrl (Cmd) + Space</b></td>
+			<td>selects the whole column</td>
+		</tr>
+		<tr>
+			<td><b>Shift + Space</b></td>
+			<td>selects the whole row</td>
+		</tr>
+    </tbody>
+</table>
+
+## Work with sheets
+
+<table>
+	<tbody>
+        <tr>
+			<td><b>Shift + F11</b></td>
+			<td>adds a new sheet into the spreadsheet</td>
+		</tr>
+        <tr>
+			<td><b>Alt + Arrow Up/ Arrow Down</b></td>
+			<td>switches to the next/previous sheet</td>
 		</tr>
     </tbody>
 </table>
