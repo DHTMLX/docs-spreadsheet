@@ -49,34 +49,35 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 
 ## List of actions
 
-| Action               | Description                                                                                                                                                                                           |
-| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **addColumn**        | The action is executed when adding a new column                                                                                                                                                      |
-| **addRow**           | The action is executed when adding a new row                                                                                                                                                         |
-| **addSheet**         | The action is executed when adding a new sheet                                                                                                                                                       |
-| **clear**            | The action is executed when clearing the spreadsheet via the <b>clear()</b> method                                                                                                                   |
-| **clearSheet**       | The action is executed when clearing a sheet via the <b>clearSheet()</b> method                                                                                                                      |
-| **deleteColumn**     | The action is executed when removing a column                                                                                                                                                       |
-| **deleteRow**        | The action is executed when removing a row                                                                                                                                                          |
-| **deleteSheet**      | The action is executed when removing a sheet                                                                                                                                                        |
-| **fitColumn**      | The action is executed when auto-fitting the width of the column                                                                                                                                                         |
+| Action               | Description                                                                                                                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **addColumn**        | The action is executed when adding a new column                                                                                                                                                         |
+| **addRow**           | The action is executed when adding a new row                                                                                                                                                            |
+| **addSheet**         | The action is executed when adding a new sheet                                                                                                                                                          |
+| **clear**            | The action is executed when clearing the spreadsheet via the <b>clear()</b> method                                                                                                                      |
+| **clearSheet**       | The action is executed when clearing a sheet via the <b>clearSheet()</b> method                                                                                                                         |
+| **deleteColumn**     | The action is executed when removing a column                                                                                                                                                           |
+| **deleteRow**        | The action is executed when removing a row                                                                                                                                                              |
+| **deleteSheet**      | The action is executed when removing a sheet                                                                                                                                                            |
+| **filter**           | The action is executed when filtering data in a sheet                                                                                                                                                   |
+| **fitColumn**        | The action is executed when auto-fitting the width of the column                                                                                                                                        |
 | **groupAction**      | The action is executed when selecting a range of cells and applying to them some actions (for instance, change the style or format of cells, lock/unlock the cells, clear cells' value or styles, etc.) |
-| **insertLink**      | The action is executed when inserting a hyperlink in a cell |
+| **insertLink**       | The action is executed when inserting a hyperlink in a cell                                                                                                                                             |
 | **lockCell**         | The action is executed when locking/unlocking a cell                                                                                                                                                    |
-| **merge**            | The action is executed when merging a range of cells                                                                                                                                                |
-| **removeCellStyles** | The action is executed when clearing styles of a cell                                                                                                                                                |
-| **renameSheet**      | The action is executed when renaming a sheet                                                                                                                                                        |
-| **resizeCol**        | The action is executed when resizing a column                                                                                                                                                       |
-| **resizeRow**        | The action is executed when resizing a row                                                                                                                                                          |
-| **setCellFormat**    | The action is executed when changing the format of a cell                                                                                                                                           |
-| **setCellValue**     | The action is executed when changing or removing the value of a cell                                                                                                                                  |
-| **setValidation**    | The action is executed when setting data validation for a cell                                                                                                                                        |
-| **sortCells**        | The action is executed when sorting data in spreadsheet                                                                                                                                              |
-| **setCellStyle**     | The action is executed when changing the style of a cell                                                                                                                                            |
-| **unmerge**          | The action is executed when splitting cells                                                                                                                                                         |
+| **merge**            | The action is executed when merging a range of cells                                                                                                                                                    |
+| **removeCellStyles** | The action is executed when clearing styles of a cell                                                                                                                                                   |
+| **renameSheet**      | The action is executed when renaming a sheet                                                                                                                                                            |
+| **resizeCol**        | The action is executed when resizing a column                                                                                                                                                           |
+| **resizeRow**        | The action is executed when resizing a row                                                                                                                                                              |
+| **setCellFormat**    | The action is executed when changing the format of a cell                                                                                                                                               |
+| **setCellValue**     | The action is executed when changing or removing the value of a cell                                                                                                                                    |
+| **setValidation**    | The action is executed when setting data validation for a cell                                                                                                                                          |
+| **sortCells**        | The action is executed when sorting data in spreadsheet                                                                                                                                                 |
+| **setCellStyle**     | The action is executed when changing the style of a cell                                                                                                                                                |
+| **unmerge**          | The action is executed when splitting cells                                                                                                                                                             |
 
 **Change log:**
 
-- The **merge**, **unmerge**, **fitColumn**, **insertLink** actions were added in v5.0
+- The **merge**, **unmerge**, **filter**, **fitColumn**, **insertLink** actions were added in v5.0
 
 **Related sample:** [Spreadsheet. Actions](https://snippet.dhtmlx.com/efcuxlkt)

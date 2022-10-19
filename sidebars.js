@@ -58,6 +58,7 @@ module.exports = {
             "api/spreadsheet_endedit_method",
             "api/spreadsheet_fitcolumn_method",
             "api/spreadsheet_getactivesheet_method",
+            "api/spreadsheet_getfilter_method",
             "api/spreadsheet_getformat_method",
             "api/spreadsheet_getformula_method",
             "api/spreadsheet_getsheets_method",

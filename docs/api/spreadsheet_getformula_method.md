@@ -22,7 +22,7 @@ getFormula(cell: string): string | array;
 
 ### Returns
 
-The methos returns a formula of the cell
+The method returns a formula of the cell
 
 ### Example
 

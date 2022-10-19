@@ -88,3 +88,5 @@ spreadsheet.setFilter("A2");
 | "inb"  | is not between        |
 
 **Change log:** Added in v5.0
+
+**Related article:** [Filtering data](working_with_ssheet.md#filtering-data)

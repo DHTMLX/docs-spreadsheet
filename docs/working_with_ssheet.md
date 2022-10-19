@@ -343,18 +343,48 @@ spreadsheet.selection.setFocusedCell("D4");
 var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
 ~~~
 
-## Sorting data
+## Filtering data
 
-From v4.3, you can sort data in the spreadsheet via the [sortCells()](api/spreadsheet_sortcells_method.md) method. Pass to the method two parameters:
-- `cell` - the id(s) of a cell(s) or a range of cells by which you want the data in the spreadsheet to be sorted
-- `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
+### Set filter
 
-~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+You can filter data in the spreadsheet and render only the records that meet the specified criteria. For that, you need to use the [setFilter()](api/spreadsheet_setfilter_method.md) method and specify the rules of filtering for the necessary column there. 
 
-spreadsheet.sortCells("B2:B11", -1);
+For example, you can filter data of the "A" column so that only the records which contain the "c" text will display:
+
+~~~js
+spreadsheet.setFilter("A2", [{ condition: { factor: "tc", value: "c" } }]);
+~~~
+
+:::tip
+The [**factor**](api/spreadsheet_setfilter_method.md#list-of-factors) attribute of the **condition** parameter defines a comparison expression for filtering.
+:::
+
+Or you can exclude the records from the sheet if the "A" column contains data points with the "Touch Projector" value:
+
+~~~js
+spreadsheet.setFilter("A2", [{ exclude: ["Touch Projector"] }]);
+~~~
+
+### Reset filter
+
+If you want to reset filtering, apply the [setFilter()](api/spreadsheet_setfilter_method.md) method without parameters or pass only the first parameter to the method:
+
+~~~js
+spreadsheet.setFilter("A2");
+~~~
+
+### Get filter
+
+To get the criteria by which data are currently filtered in a sheet, apply the [getFilter()](api/spreadsheet_getfilter_method.md) method. Pass the ID of the necessary sheet as a parameter to the method.
+
+~~~js
+const filter = spreadsheet.getFilter("Income");
+~~~
+
+You don't need to pass the sheet's ID if you want to get the filter criteria applied to the currently active sheet:
+
+~~~js
+const filter = spreadsheet.getFilter();
 ~~~
 
 ## Searching for data
@@ -374,7 +404,21 @@ spreadsheet.search("min", true);
 By default, the spreadsheet will search the cells on the currently active sheet. To search for records on the other sheet, pass its ID as the third parameter of the method:
 
 ~~~js
-spreadsheet.search("min", false, "u1665131737696");
+spreadsheet.search("min", false, "Income");
+~~~
+
+## Sorting data
+
+From v4.3, you can sort data in the spreadsheet via the [sortCells()](api/spreadsheet_sortcells_method.md) method. Pass to the method two parameters:
+- `cell` - the id(s) of a cell(s) or a range of cells by which you want the data in the spreadsheet to be sorted
+- `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
+
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    // config parameters
+});
+
+spreadsheet.sortCells("B2:B11", -1);
 ~~~
 
 ## Clearing spreadsheet

@@ -24,18 +24,24 @@ Released on
     - API:
         - [mergeCells()](api/spreadsheet_mergecells_method.md) method
         - [sheets.merged](api/spreadsheet_parse_method.md) property of the data object
-        - merge/unmerge actions
+        - `merge/unmerge` actions
 - Autofit column width
     - [UI](column_width.md)   
     - API
         - [fitColumn()](api/spreadsheet_fitcolumn_method.md) method
-        - fitColumn action
+        - `fitColumn` action
 - Inserting a hyperlink
     - [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
     - `Ctrl (Cmd) + K` hotkey
     - API
         - [insertLink()](working_with_ssheet.md#inserting-a-hyperlink) method
-        - insertLink action
+        - `insertLink` action
+- Filtering data
+    - [UI](filtering_data.md)
+    - [API](working_with_ssheet.md#filtering-data):
+        - [setFilter()](api/spreadsheet_setfilter_method.md) method
+        - [getFilter()](api/spreadsheet_getfilter_method.md) method
+        - `filter` action
 
 ## Version 4.3
 

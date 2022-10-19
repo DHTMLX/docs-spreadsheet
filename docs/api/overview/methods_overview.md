@@ -19,6 +19,7 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_endedit_method.md)        | @getshort(../spreadsheet_endedit_method.md)        |
 | [](../spreadsheet_fitcolumn_method.md)      | @getshort(../spreadsheet_fitcolumn_method.md)      |
 | [](../spreadsheet_getactivesheet_method.md) | @getshort(../spreadsheet_getactivesheet_method.md) |
+| [](../spreadsheet_getfilter_method.md)      | @getshort(../spreadsheet_getfilter_method.md)      |
 | [](../spreadsheet_getformat_method.md)      | @getshort(../spreadsheet_getformat_method.md)      |
 | [](../spreadsheet_getformula_method.md)     | @getshort(../spreadsheet_getformula_method.md)     |
 | [](../spreadsheet_getsheets_method.md)      | @getshort(../spreadsheet_getsheets_method.md)      |

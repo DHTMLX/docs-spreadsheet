@@ -35,6 +35,7 @@ Parameters:
 | [](api/spreadsheet_endedit_method.md)        | @getshort(api/spreadsheet_endedit_method.md)        |
 | [](api/spreadsheet_fitcolumn_method.md)      | @getshort(api/spreadsheet_fitcolumn_method.md)      |
 | [](api/spreadsheet_getactivesheet_method.md) | @getshort(api/spreadsheet_getactivesheet_method.md) |
+| [](api/spreadsheet_getfilter_method.md)      | @getshort(api/spreadsheet_getfilter_method.md)      |
 | [](api/spreadsheet_getformat_method.md)      | @getshort(api/spreadsheet_getformat_method.md)      |
 | [](api/spreadsheet_getformula_method.md)     | @getshort(api/spreadsheet_getformula_method.md)     |
 | [](api/spreadsheet_getsheets_method.md)      | @getshort(api/spreadsheet_getsheets_method.md)      |
