@@ -26,4 +26,4 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 spreadsheet.endEdit();
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#editing-cell)
+**Related articles:** [Work with Spreadsheet](editing_cells.md#editing-a-cell)

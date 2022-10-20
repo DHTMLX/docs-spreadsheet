@@ -238,23 +238,53 @@ module.exports = {
           items: [
             "initialization",
             "configuration",
-            "localization",
             "loading_data",
             "working_with_ssheet",
             "working_with_sheets",
+            {
+              type: "category",
+              label: "Work with cells",
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "Work with cells",
+                keywords: ['work with cells'],
+                image: '/img/docusaurus.png',
+              },
+              items: [
+                "editing_cells",
+                "styling_cells",
+                "merging_cells",
+              ]
+            },
             "number_formatting",
             "functions",
             "handling_events",
+            "localization",
             "customization",
-            "using_typescript",
-            "angular_integration",
-            "react_integration",
-            "vuejs_integration"
+            {
+              type: "category",
+              label: "Integrations",
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "Integrations",
+                keywords: ['integrations'],
+                image: '/img/docusaurus.png',
+              },
+              items: [
+                "angular_integration",
+                "react_integration",
+                "vuejs_integration"
+              ]},
+              "using_typescript",
           ],
         },
         {
           type: "category",
-          label: "User guide",
+          label: "User guides",
           collapsible: true,
           collapsed: true,
           link: {

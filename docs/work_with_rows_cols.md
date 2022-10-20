@@ -1,10 +1,10 @@
 ---
-sidebar_label: Add or remove columns, rows
-title: Add or remove columns, rows
+sidebar_label: Adding/removing columns, rows
+title: Adding/removing columns, rows
 description: You can learn about the add or remove rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Add or remove columns, rows
+# Adding/removing columns, rows
 
 DHTMLX Spreadsheet allows adding and removing columns and rows into a sheet via both toolbar buttons and options of the context menu.
 

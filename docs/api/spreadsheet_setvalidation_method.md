@@ -55,5 +55,5 @@ spreadsheet.setValidation("B15", false);
 
 **Change log:** Added in v4.3
 
-**Related articles:** [Validating cells](working_with_ssheet.md/#validating-cells)
+**Related articles:** [Validating cells](editing_cells.md#validating-cells)
 

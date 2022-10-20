@@ -18,7 +18,7 @@ Released on
     - [UI](data_search.md)
     - [API](working_with_ssheet.md#searching-for-data)
         - [search()](api/spreadsheet_search_method.md) method
-- [Merge/split cells](working_with_ssheet.md#merging-cells)
+- [Merge/split cells](merging_cells.md)
     - [UI](merge_cells.md)
     - API:
         - [mergeCells()](api/spreadsheet_mergecells_method.md) method
@@ -32,7 +32,7 @@ Released on
 - Inserting a hyperlink
     - [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
     - API
-        - [insertLink()](working_with_ssheet.md#inserting-a-hyperlink) method
+        - [insertLink()](editing_cells.md#inserting-a-hyperlink-into-a-cell) method
         - `insertLink` action
 - Filtering data
     - [UI](filtering_data.md)
