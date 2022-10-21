@@ -15,13 +15,13 @@ You can apply certain styling to a cell or a range of cells via the [](api/sprea
 
 ~~~js
 // setting style for one cell
-spreadsheet.setStyle("A1",{background:"red", border:"solid 1px yellow"});
+spreadsheet.setStyle("A1", {background: "red"});
 // setting the same style for a range of cells
-spreadsheet.setStyle("A1:D1",{color:"blue"});
+spreadsheet.setStyle("A1:D1", {color: "blue"});
 // setting the same style for different cells
-spreadsheet.setStyle("B6,A1:D1",{color:"blue"});
+spreadsheet.setStyle("B6,A1:D1", {color: "blue"});
 // setting styles from an array for cells in a range alternately
-spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
+spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
 ~~~
 
 {{note The method allows setting the same style for the specified cells. In case you want to apply different styles to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.}}

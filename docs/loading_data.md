@@ -84,7 +84,7 @@ The ability to load merged cells is available only if you prepare data in a shee
 
 ### Setting styles for cells
 
-You may need to define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells.
+You may need to define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells. 
 
 A CSS class is set for a cell via the **css** property.
 
@@ -111,6 +111,10 @@ const styledData = {
     ],
 }
 ~~~
+
+:::info
+[Check the list of properties which you can use for styling cells](api/spreadsheet_parse_method.md#list-of-properties) 
+:::
 
 ## External data loading
 
