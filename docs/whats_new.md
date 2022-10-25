@@ -18,21 +18,21 @@ Released on
     - [UI](data_search.md)
     - [API](working_with_ssheet.md#searching-for-data)
         - [search()](api/spreadsheet_search_method.md) method
-- [Merge/split cells](merging_cells.md)
+- [Merge/split cells](working_with_cells.md#merging-cells)
     - [UI](merge_cells.md)
     - API:
         - [mergeCells()](api/spreadsheet_mergecells_method.md) method
         - [sheets.merged](api/spreadsheet_parse_method.md) property of the data object
         - `merge/unmerge` actions
 - Autofit column width
-    - [UI](column_width.md)   
+    - [UI](work_with_rows_cols.md#autofit-column-width)   
     - API
         - [fitColumn()](api/spreadsheet_fitcolumn_method.md) method
         - `fitColumn` action
 - Inserting a hyperlink
     - [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
     - API
-        - [insertLink()](editing_cells.md#inserting-a-hyperlink-into-a-cell) method
+        - [insertLink()](working_with_cells.md#inserting-a-hyperlink-into-a-cell) method
         - `insertLink` action
 - Filtering data
     - [UI](filtering_data.md)

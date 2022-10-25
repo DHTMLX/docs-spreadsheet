@@ -241,23 +241,7 @@ module.exports = {
             "loading_data",
             "working_with_ssheet",
             "working_with_sheets",
-            {
-              type: "category",
-              label: "Work with cells",
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'generated-index',
-                title: "Work with cells",
-                keywords: ['work with cells'],
-                image: '/img/docusaurus.png',
-              },
-              items: [
-                "editing_cells",
-                "styling_cells",
-                "merging_cells",
-              ]
-            },
+            "working_with_cells",
             "number_formatting",
             "functions",
             "handling_events",
@@ -296,35 +280,20 @@ module.exports = {
           items: [
             "hotkeys",
             "work_with_sheets",
+            "work_with_rows_cols",
             {
               type: "category",
-              label: "Rows and columns",
+              label: "Work with cells",
               collapsible: true,
               collapsed: true,
               link: {
                 type: 'generated-index',
-                title: "Rows and columns",
-                keywords: ['Rows and columns'],
+                title: "Work with cells",
+                keywords: ['work with cells'],
                 image: '/img/docusaurus.png'
               },
               items: [
-                "work_with_rows_cols",
-                "column_width"
-              ]
-            },
-            "work_with_cells",
-            {
-              type: "category",
-              label: "Cell formatting",
-              collapsible: true,
-              collapsed: true,
-              link: {
-                type: 'generated-index',
-                title: "Cell formatting",
-                keywords: ['Cell formatting'],
-                image: '/img/docusaurus.png'
-              },
-              items: [
+                "work_with_cells",
                 "data_formatting",
                 "number_formatting_guide",
                 "merge_cells"

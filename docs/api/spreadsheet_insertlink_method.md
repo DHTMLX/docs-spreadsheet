@@ -51,4 +51,4 @@ spreadsheet.insertLink("A2");
 
 **Change log:** Added in v5.0
 
-**Related article:** [Work with Spreadsheet](editing_cells.md#inserting-a-hyperlink-into-a-cell)
+**Related article:** [Work with Spreadsheet](working_with_cells.md#inserting-a-hyperlink-into-a-cell)

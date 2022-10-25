@@ -1,10 +1,10 @@
 ---
-sidebar_label: Editing cells
-title: Editing cells
+sidebar_label: Work with cells
+title: Work with cells
 description: You can learn about working with cells in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Editing cells
+# Work with cells
 
 ## Setting cell value
 
@@ -76,6 +76,55 @@ If you need to remove the link from a cell, pass to the method only ID of the ce
 ~~~js
 // remove a link from "A2" cell
 spreadsheet.insertLink("A2");
+~~~
+
+## Styling cells
+
+### Set styles
+
+You can apply certain styling to a cell or a range of cells via the [](api/spreadsheet_setstyle_method.md) method. It takes two parameters:
+
+- **cells** - (*string*) the id(s) of a cell(s) or a range of cells
+- **style** - (*object/array*) styles that should be applied to cells
+
+~~~js
+// setting style for one cell
+spreadsheet.setStyle("A1", {background: "red"});
+// setting the same style for a range of cells
+spreadsheet.setStyle("A1:D1", {color: "blue"});
+// setting the same style for different cells
+spreadsheet.setStyle("B6,A1:D1", {color: "blue"});
+// setting styles from an array for cells in a range alternately
+spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
+~~~
+
+{{note The method allows setting the same style for the specified cells. In case you want to apply different styles to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.}}
+
+### Get styles
+
+To get the styles applied to a cell(s), use the [](api/spreadsheet_getstyle_method.md) method. Pass the *id(s) of a cell(s) or a range of cells* to it:
+
+~~~js
+// getting style of one cell
+var style = spreadsheet.getStyle("A1"); 
+// -> {background: "#8DE9E1", color: "#03A9F4"}
+ 
+// getting styles of a range of cells
+var rangeStyles = spreadsheet.getStyle("A1:D1"); // -> see details
+ 
+// getting styles of different cells
+var values = spreadsheet.getStyle("A1,B1,C1:C3");
+~~~
+
+For multiple cells the method returns an array of objects with styles applied to a cell:
+
+~~~js
+[
+	{background: "red", border: "solid 1px yellow", color: "blue"},
+	{background: "red", border: "solid 1px yellow", color: "blue"},
+	{background: "#C8FAF6", border: "solid 1px yellow", color: "#81C784"},
+	{background: "#9575CD", border: "solid 1px yellow", color: "#079D8F"}
+]
 ~~~
 
 ## Editing a cell
@@ -153,3 +202,83 @@ var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 ~~~
 
 The method will return *true* or *false* depending on the state of the cell. If several cells are checked at once, the method will return *true*, if there is at least one locked cell among the specified cells.
+
+## Merging cells
+
+### Merge cells
+
+You can merge two or more cells into one by passing a range of cells you want to merge to the [mergeCells()](api/spreadsheet_mergecells_method.md) method:
+
+~~~js
+//merge cells A6, A7, and A8
+spreadsheet.mergeCells("A6:A8");
+
+//merge cells B2, C2, and D2
+spreadsheet.mergeCells("B2:D2");
+~~~
+
+### Split cells
+
+You may also split the merged cells via the [mergeCells()](api/spreadsheet_mergecells_method.md) method. In addition to the range of cells, pass `true` as a value of the second parameter which will define that the specified cells must be unmerged:
+
+~~~js
+//unmerge cells B2, C2, and D2
+spreadsheet.mergeCells("B2:D2", true);
+~~~
+
+## Selecting cells
+
+### Select cells
+
+Spreadsheet provides a handy way of setting selection for cells via the API of the *Selection* object.
+
+You can select cell(s) by passing its/their id(s) to the [](api/selection_setselectedcell_method.md) method:
+
+~~~js
+// selecting a cell
+spreadsheet.selection.setSelectedCell("B5");
+// selecting a range of cells
+spreadsheet.selection.setSelectedCell("B1:B5");
+// selecting scattered cells
+spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
+~~~
+
+It is also possible to get the id(s) of the selected cell(s) via the [](api/selection_getselectedcell_method.md) method:
+
+~~~js
+const selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
+~~~
+
+### Unselect cells
+
+To remove selection from cell(s), pass its/their id(s) to the [](api/selection_removeselectedcell_method.md) method:
+
+~~~js
+// sets selection
+spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
+// removes selection
+spreadsheet.selection.removeSelectedCell("B7,D4,E5:E7");
+
+const selected = spreadsheet.selection.getSelectedCell();
+console.log(selected); // -> "B3,D6,E4,E8"
+~~~
+
+**Related sample:** [Spreadsheet. Remove selection](https://snippet.dhtmlx.com/u4j76cuh)
+
+## Setting focus on a cell
+
+The *Selection* object allows setting focus on a desired spreadsheet cell, as well as getting the id of the cell in focus. Use the corresponding methods for this purpose:
+
+- [](api/selection_setfocusedcell_method.md)
+
+~~~js
+// pass the id of the cell to set focus on
+spreadsheet.selection.setFocusedCell("D4");
+~~~
+
+- [](api/selection_getfocusedcell_method.md)
+
+~~~js
+// getting the focused cell 
+var focused = spreadsheet.selection.getFocusedCell(); // -> "D4"
+~~~

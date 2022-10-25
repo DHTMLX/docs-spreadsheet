@@ -1,10 +1,10 @@
 ---
-sidebar_label: Adding/removing columns, rows
-title: Adding/removing columns, rows
-description: You can learn about the add or remove rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+sidebar_label: Work with rows and columns
+title: Work with rows and columns
+description: You can learn about how to work with rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Adding/removing columns, rows
+# Work with rows and columns
 
 DHTMLX Spreadsheet allows adding and removing columns and rows into a sheet via both toolbar buttons and options of the context menu.
 
@@ -63,3 +63,8 @@ To remove a column, take the following steps:
 - or right-click the column and choose *Columns -> Remove column*
 
 ![Removing columns](assets/removing_cols.gif)
+
+## Autofit column width
+
+```todo
+```
