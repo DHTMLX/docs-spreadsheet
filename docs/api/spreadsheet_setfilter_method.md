@@ -23,25 +23,19 @@ setFilter(
             },
             exclude?: any[]
         },
-        // more objects
+        // more rule objects
     ]
 ): void;
 ~~~
 
 ### Parameters
 
-- `cell` - (optional) the id of a cell that contains the name of the necessary column (e.g., "A1", "sheet2!A1" )
+- `cell` - (optional) the id of a cell or a range of cells the value of which will be filtered (e.g., "A1", "A1:C10", "sheet2!A1" )
 - `rules` - (optional) an array of objects with rules for filtering. Each object can include the following parameters:
     - `condition` - (optional) an object with parameters for conditional filtering of a sheet:
         - `factor` - (required) a string value which defines a comparison expression for filtering. See the list of available values [below](#list-of-factors)
         - `value` - (required) the value(s) to be used for filtering by the specified factor
-    - `exclude` - (optional) an array of data points which should be excluded from the sheet after filtering
-
-```todo check
-:::tip
-Do not use the `condition` and `exclude` parameters together for text filtering.
-:::
-```
+    - `exclude` - (optional) an array of data points which must be excluded from the sheet
 
 :::note
 To reset filtering, call the method without parameters or pass only the `cell` parameter to the method.
@@ -49,19 +43,25 @@ To reset filtering, call the method without parameters or pass only the `cell` p
 
 ### Example
 
-~~~jsx {6,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+~~~jsx {5,8,11,14}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
 
-// filter data by "condition" parameter
-spreadsheet.setFilter("A2", [{ condition: { factor: "tc", value: "c" } }]);
+// filter data by condition specified for column A
+spreadsheet.setFilter("A2", [{condition: {factor: "te", value:"r" }}]);
 
-// filter data by "exclude" parameter
-spreadsheet.setFilter("A2", [{ exclude: ["Touch Projector"] }]);
+// filter data by criteria specified for column A of Date sheet
+spreadsheet.setFilter("Date!A1", [{condition: {factor: "db", value:"18/10/2022" }, exclude: ["25/06/2022"]}]);
+
+// filter data by condition specified for column C
+spreadsheet.setFilter("C1", [{}, {}, {condition: {factor: "inb", value: [5,8]}}]);
+
+// filter data by conditions specified for columns A and C
+spreadsheet.setFilter("A1:C10", [{condition: {factor: "tc", value: "e"}}, {}, {condition: {factor: "ib", value: [5,8]}}]);
+
 
 // reset filtering
-spreadsheet.setFilter("A2");
+spreadsheet.setFilter();
 ~~~
 
 ### List of factors

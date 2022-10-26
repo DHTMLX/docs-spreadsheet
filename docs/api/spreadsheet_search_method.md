@@ -17,7 +17,7 @@ The method can also open a search box in the top right corner of the spreadsheet
 ~~~js
 search( 
     text?: string,
-    showForm?: boolean, 
+    openSearch?: boolean, 
     sheetId?: string | number
 ): string[];
 ~~~
@@ -25,7 +25,7 @@ search(
 ### Parameters
 
 - `text` - (optional) the value to search
-- `showForm` - (optional) if `true`, opens a search box and highlights cells with the matched results; `false` by default
+- `openSearch` - (optional) if `true`, opens a search box and highlights cells with the matched results; `false` by default
 - `sheetId` - (optional) the ID of the sheet. By default, the method searches for cells on the currently active sheet
 
 ### Returns
@@ -40,7 +40,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 
 // return IDs of cells with the matched result, open a search field and highlight the cells
-spreadsheet.search("min", true); // -> ['D1']
+spreadsheet.search("feb", true, "Income"); // -> ['C1']
 ~~~
 
 **Change log:** Added in v5.0

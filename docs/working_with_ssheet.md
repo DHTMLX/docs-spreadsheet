@@ -73,23 +73,31 @@ spreadsheet.fitColumn("G2");
 
 ### Set filter
 
-You can filter data in the spreadsheet and render only the records that meet the specified criteria. For that, you need to use the [setFilter()](api/spreadsheet_setfilter_method.md) method and specify the rules of filtering for the necessary column there. 
+You can filter data in the spreadsheet and render only the records that meet the specified criteria. For that, you need to use the [setFilter()](api/spreadsheet_setfilter_method.md) method and specify the rules of filtering for the necessary column(s) there. 
 
-For example, you can filter data of the "A" column so that only the records which contain the "c" text will display:
-
-~~~js
-spreadsheet.setFilter("A2", [{ condition: { factor: "tc", value: "c" } }]);
-~~~
-
-:::tip
-The [**factor**](api/spreadsheet_setfilter_method.md#list-of-factors) attribute of the **condition** parameter defines a comparison expression for filtering.
-:::
-
-Or you can exclude the records from the sheet if the "A" column contains data points with the "Touch Projector" value:
+For example, you can specify criteria of filtering for a separate column:
 
 ~~~js
-spreadsheet.setFilter("A2", [{ exclude: ["Touch Projector"] }]);
+// filter data by criteria specified for column A
+spreadsheet.setFilter("A2", [{condition: { factor: "tc", value: "c" }, exclude: ["Touch Projector"]}]);
+
+// filter data by criteria specified for column C
+spreadsheet.setFilter("C1", [{}, {}, {condition: {factor: "inb", value: [5,8]}, exclude: [3.75]}]);
 ~~~
+
+In this case, a filter icon will be added for each column from the range of data.
+
+But you may also specify the filtering criteria for a range of cells as in:
+
+~~~js
+// filter data by criteria specified for column C
+spreadsheet.setFilter("C1:C9", [{condition: {factor: "inb", value: [5,8]}, exclude: [3.75]}]);
+
+// filter data by criteria specified for column A and C
+spreadsheet.setFilter("A1:C10", [{condition: {factor: "tc", value: "e"}}, {}, {condition: {factor: "ib", value: [5,8]}}]);
+~~~
+
+and a filter icon will be added only for columns withing the specified range.
 
 ### Reset filter
 

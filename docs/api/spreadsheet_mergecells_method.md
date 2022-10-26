@@ -8,7 +8,7 @@ description: You can learn about the mergeCells method in the documentation of t
 
 ### Description
 
-@short: merges a range of cells into one or makes merged cells unmerged
+@short: merges a range of cells into one or splits merged cells
 
 ### Usage
 
@@ -24,17 +24,18 @@ mergeCells(
 - `cell` - (required) a range of cells (for instance, "A1:A5")
 - `remove` - (optional) defines the action to be done over the cells:
     - `false` - to merge cells (by default)
-    - `true` - to unmerge cells
+    - `true` - to split cells
 
 ### Example
 
-~~~jsx {5,7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
-//makes the cells merged
+~~~jsx {5,8}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
+// merge cells A3, A4, and A5
 spreadsheet.mergeCells("A2:A5");
-// makes the cells unmerged
+
+// split cells A3, A4, and A5
 spreadsheet.mergeCells("A2:A5", true);
 ~~~
 
