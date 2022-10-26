@@ -28,9 +28,9 @@ startEdit(cell?: string, initialValue?: string): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // starts editing the currently selected cell
 spreadsheet.startEdit();
 ~~~

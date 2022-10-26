@@ -22,10 +22,12 @@ setSelectedCell(cell: string): void;
 
 ### Example
 
-~~~jsx {5,8,11}
+~~~jsx {7,10,13}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
+
 // selecting a cell
 spreadsheet.selection.setSelectedCell("B5");
 

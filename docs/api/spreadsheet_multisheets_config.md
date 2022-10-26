@@ -26,8 +26,8 @@ multiSheets: true
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-  multiSheets: false,
-  // other config parameters
+    multiSheets: false,
+    // other config parameters
 });
 ~~~
 

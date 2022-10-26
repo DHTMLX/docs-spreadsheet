@@ -25,10 +25,11 @@ sortCells(cell: string, dir: number): void;
 
 ### Example
 
-~~~jsx {6,9}
+~~~jsx {7,10}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     topSplit: 1
 });
+spreadsheet.parse(data);
 
 // sorts data on the first sheet
 spreadsheet.sortCells("B2:B11", -1);

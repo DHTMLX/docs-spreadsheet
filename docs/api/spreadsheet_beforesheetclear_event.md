@@ -44,9 +44,9 @@ Return `true` to clear the active sheet, `false` to prevent the active sheet fro
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeSheetClear" event
 spreadsheet.events.on("beforeSheetClear", function(sheet){
     console.log("The " + sheet.name + " sheet will be cleared");

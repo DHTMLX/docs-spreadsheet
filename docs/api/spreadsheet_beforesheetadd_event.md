@@ -44,9 +44,9 @@ Return `true` to add a sheet, `false` to prevent adding of a sheet
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeSheetAdd" event
 spreadsheet.events.on("beforeSheetAdd", function(name) {
     console.log("A new sheet will be added");

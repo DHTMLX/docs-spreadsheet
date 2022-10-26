@@ -23,9 +23,9 @@ clearSheet(id?: string): void;
 ### Example
 
 ~~~jsx {5,7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // clears the sheet by its id
 spreadsheet.clearSheet("u1636003130922");
 // clears the currently active sheet

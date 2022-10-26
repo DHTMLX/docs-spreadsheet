@@ -24,9 +24,9 @@ setFormat(cell: string, format: string | array): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // applies the currency format to the cell A1
 spreadsheet.setFormat("A1","currency");
 ~~~

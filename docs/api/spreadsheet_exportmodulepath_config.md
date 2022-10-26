@@ -20,8 +20,8 @@ exportModulePath?: string;
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-  exportModulePath: "../libs/json2excel/1.0/worker.js",
-  // other config parameters
+    exportModulePath: "../libs/json2excel/1.0/worker.js",
+    // other config parameters
 });
 ~~~
 

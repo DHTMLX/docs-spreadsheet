@@ -29,9 +29,9 @@ removeSheet(id: string): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // removes a sheet from the spreadsheet by the specified id
 spreadsheet.removeSheet("u1614669331209");
 ~~~

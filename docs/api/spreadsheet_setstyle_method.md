@@ -28,9 +28,9 @@ setStyle(cell: string, styles: array | object): void;
 ### Example
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // setting style for one cell
 spreadsheet.setStyle("A1", {background: "red"});
 

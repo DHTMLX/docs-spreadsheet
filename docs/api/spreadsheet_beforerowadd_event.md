@@ -44,9 +44,9 @@ Return `true` to add a row, `false` to prevent adding of a row
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeRowAdd" event
 spreadsheet.events.on("beforeRowAdd", function(cell){
 	console.log("A new row will be added");

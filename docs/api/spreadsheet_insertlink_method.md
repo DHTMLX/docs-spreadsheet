@@ -35,10 +35,9 @@ To remove a hyperlink but keep the text, call the method without the `link` para
 
 ### Example
 
-~~~jsx {6-8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+~~~jsx {5-7,10}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
 
 // insert a link in "A2" cell
 spreadsheet.insertLink("A2", {

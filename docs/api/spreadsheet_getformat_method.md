@@ -27,9 +27,9 @@ The method returns a format(s) applied to the value of the cell(s)
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // returns "currency"
 const format = spreadsheet.getFormat("A1");
 ~~~

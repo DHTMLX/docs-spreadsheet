@@ -34,10 +34,9 @@ The method returns an array with IDs of the found cells
 
 ### Example
 
-~~~jsx {6}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+~~~jsx {5}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
 
 // return IDs of cells with the matched result, open a search field and highlight the cells
 spreadsheet.search("feb", true, "Income"); // -> ['C1']

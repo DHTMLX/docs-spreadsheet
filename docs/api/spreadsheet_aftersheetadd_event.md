@@ -39,9 +39,9 @@ The callback of the event takes the following parameters:
 ### Example
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "afterSheetAdd" event
 spreadsheet.events.on("afterSheetAdd", function(sheet) {
     console.log("A new sheet is added:", sheet.name);

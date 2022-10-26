@@ -22,10 +22,12 @@ The method returns an id of a focused cell
 
 ### Example
 
-~~~jsx {5,8}
+~~~jsx {7,10}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
+
 // setting focus on a cell
 spreadsheet.selection.setFocusedCell("D4");
 

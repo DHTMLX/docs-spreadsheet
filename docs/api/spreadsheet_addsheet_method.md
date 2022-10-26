@@ -31,9 +31,9 @@ The method returns an id of the new sheet.
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // returns "u1614669331209"
 spreadsheet.addSheet("New Sheet");
 ~~~

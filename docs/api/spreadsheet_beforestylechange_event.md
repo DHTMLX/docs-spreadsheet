@@ -48,9 +48,9 @@ Return `true` to change the style of a cell, `false` to prevent changing of styl
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeStyleChange" event
 spreadsheet.events.on("beforeStyleChange", function(cell, style){
 	console.log("Style of cell "+spreadsheet.selection.getSelectedCell()+" will change");

@@ -23,10 +23,11 @@ on(name: string, callback: function): void;
 
 ### Example
 
-~~~jsx {5-7}
+~~~jsx {6-8}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
 
 spreadsheet.events.on("StyleChange", function(id){
   console.log("The style of cell "+spreadsheet.selection.get()+" is changed");

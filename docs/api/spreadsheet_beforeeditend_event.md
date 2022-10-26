@@ -30,9 +30,9 @@ Return `true` to finish editing a cell, `false` to prevent closing of an editor
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeEditEnd" event
 spreadsheet.events.on("beforeEditEnd", function(cell, value){
  	console.log("Editing has started");

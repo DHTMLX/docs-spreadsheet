@@ -29,9 +29,9 @@ Return `true` to select cells, `false` to prevent selection of cells
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeSelectionSet" event
 spreadsheet.events.on("beforeSelectionSet", function(cell){
  	console.log("Cells "+spreadsheet.selection.getSelectedCell()+" will be selected");

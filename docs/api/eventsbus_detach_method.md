@@ -22,10 +22,11 @@ detach(name: string): void;
 
 ### Example
 
-~~~jsx {9}
+~~~jsx {10}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
 
 spreadsheet.events.on("StyleChange", function(id){
   console.log("The style of cell "+spreadsheet.selection.get()+" is changed");

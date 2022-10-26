@@ -38,9 +38,9 @@ Return `false` to prevent clearing a spreadsheet; otherwise, `true`.
 ### Example
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeClear" event
 spreadsheet.events.on("beforeClear", function(){
 	console.log("A spreadsheet will be cleared");
