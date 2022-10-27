@@ -41,3 +41,4 @@ spreadsheet.mergeCells("A2:A5", true);
 
 **Changelog:** Added in v5.0
 
+**Related article:** [Work with cells](working_with_cells.md#merging-cells)

@@ -40,8 +40,9 @@ Released on
         - [setFilter()](api/spreadsheet_setfilter_method.md) method
         - [getFilter()](api/spreadsheet_getfilter_method.md) method
         - `filter` action
+- Strikethrough button in toolbar
 
-
+- [Extended list of locale options](localization.md#default-locale)
 - [Extended list of hotkey combinations](hotkeys.md):
     - for data searching
         - `Ctrl (Cmd) + F`
