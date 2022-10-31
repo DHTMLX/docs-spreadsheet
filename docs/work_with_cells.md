@@ -25,8 +25,39 @@ description: You can learn about the work with cells in the documentation of the
 
 ## Inserting a hyperlink into a cell
 
+To insert a hyperlink into a cell, do one of the following:
+
+1\. Use context menu
+
+- Right-click the cell, choose *Insert link*
+
 ```todo
+add img
 ```
+
+- In the appeared window, type the Text, the Link, and click *Save*
+
+2\. Use toolbar button
+
+- Select the cell, click the **Insert link** button in the toolbar
+
+```todo
+add img
+```
+
+- In the appeared window, type the Text, the Link, and click *Save*
+
+
+3\. Use menu
+
+- Select the cell, go to: *Insert -> Insert link* in the menu
+
+```todo
+add img
+```
+
+- In the appeared window, type the Text, the Link, and click *Save*.
+
 
 ## Using drop-down lists in cells
 

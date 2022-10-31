@@ -64,7 +64,13 @@ To remove a column, take the following steps:
 
 ![Removing columns](assets/removing_cols.gif)
 
-## Autofit column width
+## AutoFit column width
+
+To change the column width so that it would automatically fit the longest content in the column, take the following steps:
+
+1\. Left-click on a 3 dots icon of the column
+
+2\. Choose *Columns -> Fit to data*
 
 ```todo
 ```
