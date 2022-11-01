@@ -70,7 +70,8 @@ To change the column width so that it would automatically fit the longest conten
 
 1\. Left-click on a 3 dots icon of the column
 
+![](assets/column_context_menu.png)
+
 2\. Choose *Columns -> Fit to data*
 
-```todo
-```
+![](assets/column_autofit.png)

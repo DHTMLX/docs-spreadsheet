@@ -25,39 +25,56 @@ description: You can learn about the work with cells in the documentation of the
 
 ## Inserting a hyperlink into a cell
 
-To insert a hyperlink into a cell, do one of the following:
+### Adding a link
 
-1\. Use context menu
+To insert a hyperlink into a cell, you can use one of the ways described below.
+
+#### Using context menu
 
 - Right-click the cell, choose *Insert link*
 
-```todo
-add img
-```
+![](assets/link/via_context_menu.png)
 
 - In the appeared window, type the Text, the Link, and click *Save*
 
-2\. Use toolbar button
+![](assets/link/popup_window.png)
+
+#### Using toolbar button
 
 - Select the cell, click the **Insert link** button in the toolbar
 
-```todo
-add img
-```
+![](assets/link/via_toolbar.png)
 
 - In the appeared window, type the Text, the Link, and click *Save*
 
-
-3\. Use menu
+#### Using menu
 
 - Select the cell, go to: *Insert -> Insert link* in the menu
 
-```todo
-add img
-```
+![](assets/link/via_menu.png)
 
 - In the appeared window, type the Text, the Link, and click *Save*.
 
+### Copying a link
+
+- Select the cell that contains the link you want to copy
+- In the appeared popup, click the **Copy** icon
+
+![](assets/link/copy_link.png)
+
+### Editing a link
+
+- Select the cell that contains the link you want to edit
+- In the appeared popup, click the **Edit** icon
+
+![](assets/link/edit.png)
+
+### Removing a link
+
+- Select the cell that contains the link you want to remove
+- In the appeared popup, click the **Remove link** icon
+
+![](assets/link/remove_link.png)
 
 ## Using drop-down lists in cells
 

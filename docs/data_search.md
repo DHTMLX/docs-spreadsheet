@@ -11,6 +11,4 @@ To open a search bar, use one of two options:
 - Set focus on any cell and press **Ctrl (Cmd) + F**
 - Or go to: *Data* -> *Search*
 
-```todo
-add gif
-```
+![](assets/search_data.png)

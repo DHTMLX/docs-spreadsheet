@@ -8,19 +8,15 @@ description: You can learn about data filtering in the documentation of the DHTM
 
 You may filter data in the spreadsheet to show only the records that meet the criteria you specify.
 
-To activate the filtering functionality, you need to take either of two ways:
+To activate the filtering functionality, you can use either of two ways:
 
 - Set focus on a cell or select a range of cells and click the **Filter** button in the toolbar
 
-```todo
-add img
-```
+![](assets/filter_button.png)
 
 - Set focus on a cell or select a range of cells and go to: *Data -> Filter* in the menu
 
-```
-add img
-```
+![](assets/filter_menu.png)
 
 After that, a **filter** icon appears on the right side of the header of each column in the range. 
 
@@ -28,13 +24,11 @@ After that, a **filter** icon appears on the right side of the header of each co
 
 - Click the **filter** icon of the necessary column
 
-- Select one of the built-in comparison operators, for example, **Text contains**
+- Select one of the built-in comparison operators, for example, **Greater than**
 
-```todo
-add img
-```
+- Specify the filter criterion and click **Apply**
 
-- Click **Apply**
+![](assets/filter_by_condition.png)
 
 ### Clearing a filter
 

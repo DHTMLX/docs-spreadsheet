@@ -14,9 +14,7 @@ To merge cells, take the steps below:
 
 2\. Click the **Merge** button in the toolbar
 
-```todo
-add img
-```
+![](assets/merge_cells.png)
 
 or
 
@@ -24,9 +22,7 @@ or
 
 2\. Go to: *Format -> Merge* in the menu
 
-```todo
-add img
-```
+![](assets/merge_cells_via_menu.png)
 
 :::info
 The merged cell will display the content of the upper-left cell of the selected range.
@@ -34,15 +30,13 @@ The merged cell will display the content of the upper-left cell of the selected 
 
 ## Split cells
 
-To split a merged cell, do one of the following:
+To split a merged cell, take the steps below:
 
 1\. Select the merged cell
 
 2\. Click the **Unmerge** button in the toolbar
 
-```todo
-add img
-```
+![](assets/unmerge_cells.png)
 
 or
 
@@ -50,6 +44,4 @@ or
 
 2\. Go to: *Format -> Unmerge* in the menu
 
-```todo
-add img
-```
+![](assets/unmerge_cells_via_menu.png)
