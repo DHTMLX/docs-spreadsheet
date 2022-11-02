@@ -12,39 +12,44 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 Released on
 
+### Breaking changes
+
+The new release introduces some changes to the [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md) property. Check the [Migration article](migration.md#43---50) to keep in step with the latest version.
+
 ### New functionality
 
 - Data search:
-    - [UI](data_search.md)
-    - [API](working_with_ssheet.md#searching-for-data)
-        - [search()](api/spreadsheet_search_method.md) method
-- [Merge/split cells](working_with_cells.md#merging-cells)
-    - [UI](merge_cells.md)
-    - API:
-        - [mergeCells()](api/spreadsheet_mergecells_method.md) method
-        - [sheets.merged](api/spreadsheet_parse_method.md) property of the data object
-        - `merge/unmerge` actions
-- Autofit column width
-    - [UI](work_with_rows_cols.md#autofit-column-width)   
-    - API
-        - [fitColumn()](api/spreadsheet_fitcolumn_method.md) method
-        - `fitColumn` action
-- Inserting a hyperlink
-    - [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
-    - API
-        - [insertLink()](working_with_cells.md#inserting-a-hyperlink-into-a-cell) method
-        - `insertLink` action
+    - the ability to search for data via [UI](data_search.md)
+    - the ability to search for data via [API](working_with_ssheet.md#searching-for-data):
+        - new method: [`search()`](api/spreadsheet_search_method.md)
 - Filtering data
-    - [UI](filtering_data.md)
-    - [API](working_with_ssheet.md#filtering-data):
-        - [setFilter()](api/spreadsheet_setfilter_method.md) method
-        - [getFilter()](api/spreadsheet_getfilter_method.md) method
-        - `filter` action
-- Strikethrough button in toolbar
+    - the ability to filter data via [UI](filtering_data.md)
+    - the ability to filter data via [API](working_with_ssheet.md#filtering-data):
+        - new methods: [`setFilter()`](api/spreadsheet_setfilter_method.md) and [`getFilter()`](api/spreadsheet_getfilter_method.md)
+        - new action: [`filter`](api/overview/actions_overview.md#list-of-actions)
+- Merging/splitting cells:
+    - the ability to merge/split cells via [UI](merge_cells.md)
+    - the ability to merge/split cells via [API](working_with_cells.md#merging-cells):
+        - new method: [`mergeCells()`](api/spreadsheet_mergecells_method.md)
+        - new property of the sheet object: [`merged`](api/spreadsheet_parse_method.md)
+        - new actions: [`merge`](api/overview/actions_overview.md#list-of-actions) and [`unmerge`](api/overview/actions_overview.md#list-of-actions)
+- AutoFit column width:
+    - the ability to autofit column width via [UI](work_with_rows_cols.md#autofit-column-width)   
+    - the ability to autofit column width via [API](working_with_ssheet.md#autofit-column-width):
+        - new method: [`fitColumn()`](api/spreadsheet_fitcolumn_method.md)
+        - new action: [`fitColumn`](api/overview/actions_overview.md#list-of-actions)
+- Inserting a hyperlink:
+    - the ability to insert a hyperlink into a cell via [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
+    - the ability to insert a hyperlink into a cell via [API](working_with_cells.md#inserting-a-hyperlink-into-a-cell):
+        - new method: [`insertLink()`](api/spreadsheet_insertlink_method.md)
+        - new action: [`insertLink`](api/overview/actions_overview.md#list-of-actions)
+- [Strikethrough format of data](data_formatting.md#color-and-style)
+
+### Updates
 
 - [Extended list of locale options](localization.md#default-locale)
 - [Extended list of hotkey combinations](hotkeys.md):
-    - for data searching
+    - for data search
         - `Ctrl (Cmd) + F`
         - `Ctrl (Cmd) + G`
         - `Ctrl (Cmd) + Shift + G`
