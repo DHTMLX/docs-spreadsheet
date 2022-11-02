@@ -32,10 +32,9 @@ Serialized data presents an object with the following attributes:
 
 ### Example
 
-~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+~~~jsx {4}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
 
 const data = spreadsheet.serialize();
 ~~~

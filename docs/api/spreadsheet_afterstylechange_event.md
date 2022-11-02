@@ -41,13 +41,13 @@ The callback of the event takes the following parameters:
 ### Example
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "afterStyleChange" event
 spreadsheet.events.on("afterStyleChange", function(cell, style){
     console.log("Style of cell "+spreadsheet.selection.getSelectedCell()+" is changed");
-    console.log(cell, style));
+    console.log(cell, style);
 });
 ~~~
 

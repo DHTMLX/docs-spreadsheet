@@ -44,9 +44,9 @@ Return `true` to delete a column, `false` to prevent deleting of a column
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeColumnDelete" event
 spreadsheet.events.on("beforeColumnDelete", function(cell){
 	console.log("A column will be deleted");

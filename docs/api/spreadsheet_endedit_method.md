@@ -19,11 +19,11 @@ endEdit(): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // finishes editing in the selected cell
 spreadsheet.endEdit();
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#editing-cell)
+**Related articles:** [Work with Spreadsheet](working_with_cells.md#editing-a-cell)

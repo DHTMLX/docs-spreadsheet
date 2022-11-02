@@ -27,9 +27,9 @@ The method returns values of cells
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // returning the value of one cell
 const cellValue = spreadsheet.getValue("A2"); // "Ecuador"
 

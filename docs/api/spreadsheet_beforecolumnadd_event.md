@@ -44,9 +44,9 @@ Return `true` to add a column, `false` to prevent adding of a column
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeColumnAdd" event
 spreadsheet.events.on("beforeColumnAdd", function(cell){
 	console.log("A new column will be added");

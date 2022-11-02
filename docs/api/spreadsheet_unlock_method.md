@@ -23,9 +23,9 @@ unlock(cell: string): void;
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // unlocks a cell
 spreadsheet.unlock("A1");
 

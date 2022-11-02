@@ -6,6 +6,36 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 # Migration to newer versions
 
+## 4.3 -> 5.0
+
+In v5.0, the *"help"* option of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.
+
+~~~js title="Before v5.0" {8}
+// default configuration 
+toolbarBlocks: [
+    "undo", 
+    "colors", 
+    "decoration", 
+    "align", 
+    "format", 
+    "help"
+]
+~~~
+
+~~~js title="From v5.0" {8,9}
+// default configuration
+toolbarBlocks: [
+    "undo", 
+    "colors", 
+    "decoration", 
+    "align", 
+    "format", 
+    "actions",
+    "helpers"
+]
+~~~
+
+
 ## 4.2 -> 4.3 
 
 :::info

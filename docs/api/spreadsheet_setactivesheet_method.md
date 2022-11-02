@@ -23,9 +23,9 @@ setActiveSheet(id: string): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // sets the active sheet by the specified id
 spreadsheet.setActiveSheet("u1636003130922");
 ~~~

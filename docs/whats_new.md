@@ -8,6 +8,66 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0
+
+Released on
+
+### Breaking changes
+
+The new release introduces some changes to the [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md) property. Check the [Migration article](migration.md#43---50) to keep in step with the latest version.
+
+### New functionality
+
+- Data search:
+    - the ability to search for data via [UI](data_search.md)
+    - the ability to search for data via [API](working_with_ssheet.md#searching-for-data):
+        - new method: [`search()`](api/spreadsheet_search_method.md)
+- Filtering data
+    - the ability to filter data via [UI](filtering_data.md)
+    - the ability to filter data via [API](working_with_ssheet.md#filtering-data):
+        - new methods: [`setFilter()`](api/spreadsheet_setfilter_method.md) and [`getFilter()`](api/spreadsheet_getfilter_method.md)
+        - new action: [`filter`](api/overview/actions_overview.md#list-of-actions)
+- Merging/splitting cells:
+    - the ability to merge/split cells via [UI](merge_cells.md)
+    - the ability to merge/split cells via [API](working_with_cells.md#merging-cells):
+        - new method: [`mergeCells()`](api/spreadsheet_mergecells_method.md)
+        - new property of the sheet object: [`merged`](api/spreadsheet_parse_method.md)
+        - new actions: [`merge`](api/overview/actions_overview.md#list-of-actions) and [`unmerge`](api/overview/actions_overview.md#list-of-actions)
+- AutoFit column width:
+    - the ability to autofit column width via [UI](work_with_rows_cols.md#autofit-column-width)   
+    - the ability to autofit column width via [API](working_with_ssheet.md#autofit-column-width):
+        - new method: [`fitColumn()`](api/spreadsheet_fitcolumn_method.md)
+        - new action: [`fitColumn`](api/overview/actions_overview.md#list-of-actions)
+- Inserting a hyperlink:
+    - the ability to insert a hyperlink into a cell via [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
+    - the ability to insert a hyperlink into a cell via [API](working_with_cells.md#inserting-a-hyperlink-into-a-cell):
+        - new method: [`insertLink()`](api/spreadsheet_insertlink_method.md)
+        - new action: [`insertLink`](api/overview/actions_overview.md#list-of-actions)
+- [Strikethrough format of data](data_formatting.md#color-and-style)
+
+### Updates
+
+- [Extended list of locale options](localization.md#default-locale)
+- [Extended list of hotkey combinations](hotkeys.md):
+    - for data search
+        - `Ctrl (Cmd) + F`
+        - `Ctrl (Cmd) + G`
+        - `Ctrl (Cmd) + Shift + G`
+    - for selecting the whole column/row
+        - `Ctrl (Cmd) + Space`
+        - `Shift + Space`
+    - for aligning the content of a cell left/right/center
+        - `Ctrl (Cmd) + Shift + L`
+        - `Ctrl (Cmd) + Shift + R`
+        - `Ctrl (Cmd) + Shift + E`
+    - for crossing out the content of a cell 
+        - `Alt + Shift + 5 (Cmd + Shift + X)`
+    - for adding new sheets and switching between them
+        - `Shift + F11`
+        - `Alt + Arrow Up/ Arrow Down`
+    - for inserting a hyperlink in a cell 
+        - `Ctrl (Cmd) + K`
+
 ## Version 4.3
 
 Released on May 23, 2022

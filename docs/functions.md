@@ -1,10 +1,10 @@
 ---
-sidebar_label: Work with functions
-title: Functions
-description: You can learn about the functions of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+sidebar_label: Formulas and functions
+title: Formulas and functions
+description: You can learn about the formulas and functions of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Work with functions
+# Formulas and functions
 
 Starting from v4.0, the package of DHTMLX Spreadsheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
 

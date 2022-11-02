@@ -18,10 +18,12 @@ xlsx(): void;
 
 ### Example
 
-~~~jsx {5}
+~~~jsx {7}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
+
 // exports data from a spreadsheet into an Excel
 spreadsheet.export.xlsx();
 ~~~

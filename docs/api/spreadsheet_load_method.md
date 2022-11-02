@@ -28,9 +28,9 @@ The method returns a promise of data loading
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // load data in the JSON format (default)
 spreadsheet.load("../common/data.json");
 

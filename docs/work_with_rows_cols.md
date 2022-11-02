@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with rows and columns
-title: Work with Rows and Columns
-description: You can learn about the work with rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: Work with rows and columns
+description: You can learn about how to work with rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Work with rows and columns
@@ -63,3 +63,15 @@ To remove a column, take the following steps:
 - or right-click the column and choose *Columns -> Remove column*
 
 ![Removing columns](assets/removing_cols.gif)
+
+## AutoFit column width
+
+To change the column width so that it would automatically fit the longest content in the column, take the following steps:
+
+1\. Left-click on a 3 dots icon of the column
+
+![Column context menu](assets/column_context_menu.png)
+
+2\. Choose *Columns -> Fit to data*
+
+![Autofit column width](assets/column_autofit.png)

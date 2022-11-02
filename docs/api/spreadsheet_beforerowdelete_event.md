@@ -44,9 +44,9 @@ Return `true` to delete a row, `false` to prevent deleting of a row
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeRowDelete" event
 spreadsheet.events.on("beforeRowDelete", function(cell){
 	console.log("A row will be deleted");

@@ -22,10 +22,12 @@ setFocusedCell(cell: string): void;
 
 ### Example
 
-~~~jsx {4}
+~~~jsx {6}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
+
 spreadsheet.selection.setFocusedCell("D4");
 ~~~
 

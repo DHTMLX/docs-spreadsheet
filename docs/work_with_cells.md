@@ -1,10 +1,10 @@
 ---
-sidebar_label: Work with cells
-title: Work with Cells
+sidebar_label: Editing cells
+title: Editing cells
 description: You can learn about the work with cells in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Work with cells
+# Editing cells
 
 ## Entering content in a cell
 
@@ -22,6 +22,59 @@ description: You can learn about the work with cells in the documentation of the
     - cell references and calculation operators, for example **=A1/A2**
     - [built-in functions](../functions/), for example **=MAX(C46;D46)**
 - Press **Enter**.
+
+## Inserting a hyperlink into a cell
+
+### Adding a link
+
+To insert a hyperlink into a cell, you can use one of the ways described below.
+
+#### Using context menu
+
+- Right-click the cell, choose *Insert link*
+
+![Insert link via context menu](assets/link/via_context_menu.png)
+
+- In the appeared window, type the Text, the Link, and click *Save*
+
+![](assets/link/popup_window.png)
+
+#### Using toolbar button
+
+- Select the cell, click the **Insert link** button in the toolbar
+
+![Insert link via toolbar](assets/link/via_toolbar.png)
+
+- In the appeared window, type the Text, the Link, and click *Save*
+
+#### Using menu
+
+- Select the cell, go to: *Insert -> Insert link* in the menu
+
+![Insert link via menu](assets/link/via_menu.png)
+
+- In the appeared window, type the Text, the Link, and click *Save*.
+
+### Copying a link
+
+- Select the cell that contains the link you want to copy
+- In the appeared popup, click the **Copy** icon
+
+![Copy link](assets/link/copy_link.png)
+
+### Editing a link
+
+- Select the cell that contains the link you want to edit
+- In the appeared popup, click the **Edit** icon
+
+![Edit link](assets/link/edit.png)
+
+### Removing a link
+
+- Select the cell that contains the link you want to remove
+- In the appeared popup, click the **Remove link** icon
+
+![Remove link](assets/link/remove_link.png)
 
 ## Using drop-down lists in cells
 

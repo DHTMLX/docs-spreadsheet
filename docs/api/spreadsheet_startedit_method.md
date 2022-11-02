@@ -28,11 +28,11 @@ startEdit(cell?: string, initialValue?: string): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // starts editing the currently selected cell
 spreadsheet.startEdit();
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#editing-cell)
+**Related articles:** [Work with Spreadsheet](working_with_cells.md#editing-a-cell)

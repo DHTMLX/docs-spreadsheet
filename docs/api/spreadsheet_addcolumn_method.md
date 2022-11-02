@@ -27,9 +27,9 @@ addColumn(cell: string): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // adds an empty "G" column
 spreadsheet.addColumn("G1");
 ~~~

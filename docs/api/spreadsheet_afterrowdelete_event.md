@@ -39,9 +39,9 @@ The callback of the event takes the following parameters:
 ### Example
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "afterRowDelete" event
 spreadsheet.events.on("afterRowDelete", function(cell){
 	console.log("A row was deleted");

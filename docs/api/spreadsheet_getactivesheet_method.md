@@ -23,9 +23,9 @@ The method returns an object with the name and id attributes of the active sheet
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // returns {name: "sheet", id: "u1614675531904"}
 spreadsheet.getActiveSheet();
 ~~~

@@ -23,25 +23,25 @@ setStyle(cell: string, styles: array | object): void;
 ### Parameters
 
 - `cell` -  (required) the id(s) of a cell(s) or a range of cells
-- `style` - (required) styles that should be applied to cells
+- `style` - (required) styles that should be applied to cells. [Check the list of properties which you can use to style cells](api/spreadsheet_parse_method.md#list-of-properties) 
 
 ### Example
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // setting style for one cell
-spreadsheet.setStyle("A1",{background:"red", border:"solid 1px yellow"});
+spreadsheet.setStyle("A1", {background: "red"});
 
 // setting the same style for a range of cells
-spreadsheet.setStyle("A1:D1",{color:"blue"});
+spreadsheet.setStyle("A1:D1", {color: "blue"});
 
 // setting the same style for different cells
-spreadsheet.setStyle("B6,A1:D1",{color:"blue"});
+spreadsheet.setStyle("B6,A1:D1", {color:"blue"});
 
 // setting styles from an array for cells in a range alternately
-spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
+spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
 ~~~
 
 **Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
@@ -50,7 +50,7 @@ spreadsheet.setStyle("A1:D1",[{color:"blue"},{color:"red"}]);
 Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 
 ~~~js
-spreadsheet.setStyle("sheet1!A2", {background:"red", border:"solid 1px yellow"}); 
+spreadsheet.setStyle("sheet1!A2", {background: "red"}); 
 ~~~
 
 where *sheet1* is the name of the tab.

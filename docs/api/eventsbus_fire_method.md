@@ -31,10 +31,11 @@ The method returns `false`, if some of the event handlers return `false`. Otherw
 
 ### Example
 
-~~~jsx {9}
+~~~jsx {10}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
 
 spreadsheet.events.on("CustomEvent", function(param1, param2){
 	return true;
