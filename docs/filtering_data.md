@@ -34,30 +34,29 @@ After that, a **filter** icon appears on the right side of the header of each co
 
 To clear a filter, click the **filter** icon in the column header, select _By condition: **None**_, and then click **Apply**.
 
-```todo
-add img
-```
+![](assets/clear_filter_bycondition.png)
 
 ## Filtering by values
 
 - Click the **filter** icon of the necessary column
 
-- Click the **Unselect all** button and select the check boxes for the values you want to show
+- Click the **Unselect all** button
 
-```todo
-add img
-```
+![](assets/unselect_all_button.png)
 
-- Click **Apply**
+- Select the check boxes for the values you want to show and click **Apply**
 
 ### Clearing a filter
 
 To clear a filter, click the **filter** icon in the column header, click the **Select all** button, and then click **Apply**.
 
-```todo
-add img
-```
+![](assets/clear_filter_by_values.png)
 
 ## Removing filters
 
-To disable the filtering functionality, either click the **Filter** button in the toolbar or go to: *Data -> Filter* in the menu. The **filter** icons will disappear from the column headers and all hidden records will be displayed.
+To disable the filtering functionality, do one of the following:
+
+- click the **Filter** button in the toolbar 
+- or go to: *Data -> Filter* in the menu
+
+The **filter** icons will disappear from the column headers and all hidden records will be displayed.
