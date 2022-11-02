@@ -189,12 +189,12 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com/ihtkdcoc?text=%23spreadsheet',
+                    href: 'https://snippet.dhtmlx.com/ihtkdcoc?tag=spreadsheet',
                     position: 'right',
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
+                    href: 'https://forum.dhtmlx.com/c/spreadsheet/',
                     position: 'right'
                 },
                 {
@@ -221,16 +221,16 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com/ihtkdcoc?text=%23spreadsheet',
+                            href: 'https://snippet.dhtmlx.com/ihtkdcoc?tag=spreadsheet',
                             position: 'right',
                         },
                         {
                             label: 'Blog',
-                            href: 'https://dhtmlx.com/blog/',
+                            href: 'https://dhtmlx.com/blog/?s=spreadsheet',
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/widgets/spreadsheet',
+                            href: 'https://forum.dhtmlx.com/c/spreadsheet/',
                             position: 'right'
                         },
                     ],
@@ -287,7 +287,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    //editUrl: 'https://github.com/DHTMLX/docs-spreadsheet/edit/master/',
+                    editUrl: 'https://github.com/DHTMLX/docs-spreadsheet/edit/master/',
                     routeBasePath: '/',
                 },
                 // blog: {

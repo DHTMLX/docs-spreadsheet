@@ -10,7 +10,9 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 4.3
 
-<span class="rel_date_pivot">released on May 23, 2022</span>
+Released on May 23, 2022
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-4-3/)
 
 ### Breaking changes
 
@@ -38,7 +40,9 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.2
 
-<span class="rel_date_pivot">released on November 29, 2021</span>
+Released on November 29, 2021
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-4-2-with130-new-functions-boolean-operators-date-format-row-resizing-much/)
 
 ### New functionality
 
@@ -67,7 +71,9 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.1.3
 
-<span class="rel_date_pivot">released on August 31, 2021</span>
+Released on August 31, 2021
+
+[Review of release on the blog](https://dhtmlx.com/blog/maintenance-release-gantt-7-1-6-scheduler-5-3-12-suite-7-2-1/)
 
 ### Fixes
 
@@ -81,7 +87,9 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.1.2
 
-<span class="rel_date_pivot">released on June 3, 2021</span>
+Released on June 3, 2021
+
+[Review of release on the blog](https://dhtmlx.com/blog/maintenance-release-suite-7-1-9-spreadsheet-4-1-2/)
 
 ### Fixes
 
@@ -99,7 +107,9 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.1.1
 
-<span class="rel_date_pivot">released on April 14, 2021</span>
+Released on April 14, 2021
+
+[Review of release on the blog](https://dhtmlx.com/blog/maintenance-release-gantt-7-1-2-suite-7-1-5-spreadsheet-4-1-1/)
 
 ### Fixes
 
@@ -111,7 +121,9 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.1
 
-<span class="rel_date_pivot">released on March 24, 2021</span>
+Released on March 24, 2021
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-4-1-multiple-sheets/)
 
 ### New functionality
 
@@ -129,7 +141,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.0.5
 
-<span class="rel_date_pivot">released on February 3, 2021</span>
+Released on February 3, 2021
 
 ### Fixes
 
@@ -141,7 +153,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.0.4
 
-<span class="rel_date_pivot">released on January 12, 2021</span>
+Released on January 12, 2021
 
 ### Fixes
 
@@ -151,7 +163,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.0.3
 
-<span class="rel_date_pivot">released on December 28, 2020</span>
+Released on December 28, 2020
 
 ### Fixes
 
@@ -167,7 +179,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.0.2
 
-<span class="rel_date_pivot">released on December 21, 2020</span>
+Released on December 21, 2020
 
 ### Fixes
 
@@ -177,7 +189,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.0.1
 
-<span class="rel_date_pivot">released on December 2, 2020</span>
+Released on December 2, 2020
 
 ### Fixes
 
@@ -190,7 +202,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 4.0
 
-<span class="rel_date_pivot">released on October 19, 2020</span>
+Released on October 19, 2020
 
 ### New functionality
 
@@ -210,7 +222,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.1.4
 
-<span class="rel_date_pivot">released on September 19, 2019</span>
+Released on September 19, 2019
 
 ### Fixes
 
@@ -218,7 +230,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.1.3
 
-<span class="rel_date_pivot">released on September 19, 2019</span>
+Released on September 19, 2019
 
 ### Fixes
 
@@ -226,7 +238,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.1.2
 
-<span class="rel_date_pivot">released on March 25, 2019</span>
+Released on March 25, 2019
 
 ### Fixes
 
@@ -235,7 +247,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.1.1
 
-<span class="rel_date_pivot">released on March 25, 2019</span>
+Released on March 25, 2019
 
 ### Fixes
 
@@ -243,7 +255,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.1
 
-<span class="rel_date_pivot">released on March 21, 2019</span>
+Released on March 21, 2019
 
 ### New functionality
 
@@ -262,7 +274,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.0.3
 
-<span class="rel_date_pivot">released on December 13, 2018</span>
+Released on December 13, 2018
 
 ### Fixes
 
@@ -273,7 +285,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.0.2
 
-<span class="rel_date_pivot">released on December 6, 2018</span>
+Released on December 6, 2018
 
 ### Fixes
 
@@ -286,7 +298,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.0.1
 
-<span class="rel_date_pivot">released on November 8, 2018</span>
+Released on November 8, 2018
 
 ### Fixes
 
@@ -295,7 +307,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ## Version 3.0
 
-<span class="rel_date_pivot">released on October 25, 2018</span>
+Released on October 25, 2018
 
 ### Breaking change
 

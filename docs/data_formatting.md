@@ -69,7 +69,7 @@ You can wrap text in cells in the following way:
 ![Wrap text](assets/text_wrapping.png)
 
 :::tip
-You may have to adjust the height of the row, so that all your text will become visible. When you change the width of the column, text wrapping adjusts automatically.
+When you change the width of the column, text wrapping adjusts automatically.
 :::
 
 ## Removing styles and values

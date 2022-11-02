@@ -133,8 +133,11 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
     - the *Top* button (id: "valign-top")
     - the *Center* button (id: "valign-center")
     - the *Bottom* button (id: "valign-bottom")
-- the **Number format** block
-  - the *Number format* menuItem (id:"format")
+  - the **Text wrapping** sub-block
+    - the *Clip* button (id: "multiline-clip")
+    - the *Wrap* button (id: "multiline-wrap")
+- the **Format** block
+  - the *Format* menuItem (id:"format")
 - the **Help** block
   - the *Help* button (id:"help")
 
@@ -166,7 +169,7 @@ In the example below a new button is added into the toolbar:
 ~~~js
 spreadsheet.toolbar.data.add({
 	type: "button",
-	icon: "mdi mdi-delete",
+	icon: "dxi dxi-delete",
 	tooltip: "Remove all",
 	id: "remove-all"
 });
@@ -244,17 +247,30 @@ The [default menu](/#menu) has the following structure:
     - the *Add column* menuItem (id:"add-col")
     - the *Remove column* menuItem (id:"remove-col")
   - the *Rows* menuItem (id:"rows")
-    - the *Add rows* menuItem (id:"add-row")
-    - the *Remove rows* menuItem (id:"remove-row")
+    - the *Add row* menuItem (id:"add-row")
+    - the *Remove row* menuItem (id:"remove-row")
 - the **Format** menuItem (id:"configuration")
   - the *Bold* menuItem (id:"font-weight-bold")
   - the *Italic* menuItem (id:"font-style-italic")
   - the *Underline* menuItem (id:"text-decoration-underline")
-  - the *Align* menuItem (id:"align")
-    - the *Align left* menuItem (id:"align-left")
-    - the *Align center* menuItem (id:"align-center")
-    - the *Align right* menuItem (id:"align-right")
-  - the *Number format* menuItem (id:"format")
+  - the separator
+  - the *Horizontal align* menuItem (id: "halign")
+    - the *Left* menuItem (id: "halign-left")
+    - the *Center* menuItem (id: "halign-center")
+    - the *Right* menuItem (id: "halign-right")
+  - the *Vertical align* menuItem (id: "valign")
+    - the *Top* menuItem (id: "valign-top")
+    - the *Center* menuItem (id: "valign-center")
+    - the *Bottom* menuItem (id: "valign-bottom")
+  - the *Text wrapping* menuItem (id: "multiline")
+    - the *Clip* menuItem (id: "multiline-clip")
+    - the *Wrap* menuItem (id: "multiline-wrap")
+  - the *Format* menuItem (id:"format")
+- the **Data** menuItem (id:"data")
+  - the *Data validation* menuItem (id:"validation")
+  - the *Sort* menuItem (id:"sort")
+    - the *Sort A to Z* menuItem (id:"asc-sort")
+    - the *Sort Z to A* menuItem (id:"desc-sort")
 - the **Help** menuItem (id:"help")
 
 ### Adding controls
@@ -316,9 +332,11 @@ The [default context menu](/#context-menu) has the following structure:
   - the *Add column* menuItem (id:"add-col")
   - the *Remove column* menuItem (id:"remove-col")
 - the **Rows** menuItem (id:"rows")
-  - the *Add rows* menuItem (id:"add-row")
-  - the *Remove rows* menuItem (id:"remove-row")
-
+  - the *Add row* menuItem (id:"add-row")
+  - the *Remove row* menuItem (id:"remove-row")
+- the **Sort** menuItem (id:"sort")
+  - the *Sort A to Z* menuItem (id:"asc-sort")
+  - the *Sort Z to A* menuItem (id:"desc-sort")
 ### Adding controls
 
 In the example below a new menuItem is added into the context menu:

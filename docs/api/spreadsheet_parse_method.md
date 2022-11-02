@@ -192,8 +192,8 @@ spreadsheet.parse(styledData);
 
 **Change log:**
 
-- The **editor** property of the **data** array was added in v4.3
-- The **rows** and **cols** properties of the sheet object were added in v4.2
+- The **editor** property of the **cell** object was added in v4.3
+- The **rows** and **cols** properties of the **sheet** object were added in v4.2
 
 **Related articles:** [Data loading and export](loading_data.md)
 
