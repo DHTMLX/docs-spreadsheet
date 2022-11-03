@@ -9,9 +9,9 @@ description: You can have an API overview of the DHTMLX JavaScript Spreadsheet l
 ## Constructor
 
 ~~~js
-var spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
-	rowsCount:20,
-    colsCount:20
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+	rowsCount: 20,
+    colsCount: 20
 });
 ~~~
 
@@ -41,6 +41,7 @@ Parameters:
 | [](api/spreadsheet_getsheets_method.md)      | @getshort(api/spreadsheet_getsheets_method.md)      |
 | [](api/spreadsheet_getstyle_method.md)       | @getshort(api/spreadsheet_getstyle_method.md)       |
 | [](api/spreadsheet_getvalue_method.md)       | @getshort(api/spreadsheet_getvalue_method.md)       |
+| [](api/spreadsheet_hidesearch_method.md)     | @getshort(api/spreadsheet_hidesearch_method.md)     |
 | [](api/spreadsheet_insertlink_method.md)     | @getshort(api/spreadsheet_insertlink_method.md)     |
 | [](api/spreadsheet_islocked_method.md)       | @getshort(api/spreadsheet_islocked_method.md)       |
 | [](api/spreadsheet_load_method.md)           | @getshort(api/spreadsheet_load_method.md)           |
