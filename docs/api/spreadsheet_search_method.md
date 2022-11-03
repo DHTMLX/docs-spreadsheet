@@ -38,7 +38,7 @@ The method returns an array with IDs of the found cells
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(data);
 
-// return IDs of cells with the matched result, open a search field and highlight the cells
+// returns IDs of cells with the matched result, opens a search bar and highlights the found cells
 spreadsheet.search("feb", true, "Income"); // -> ['C1']
 ~~~
 

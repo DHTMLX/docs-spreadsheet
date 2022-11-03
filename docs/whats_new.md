@@ -21,7 +21,7 @@ The new release introduces some changes to the [`toolbarBlocks`](api/spreadsheet
 - Data search:
     - the ability to search for data via [UI](data_search.md)
     - the ability to search for data via [API](working_with_ssheet.md#searching-for-data):
-        - new method: [`search()`](api/spreadsheet_search_method.md)
+        - new methods: [`search()`](api/spreadsheet_search_method.md) and [`hideSearch()`](api/spreadsheet_hidesearch_method.md)
 - Filtering data
     - the ability to filter data via [UI](filtering_data.md)
     - the ability to filter data via [API](working_with_ssheet.md#filtering-data):
@@ -30,8 +30,8 @@ The new release introduces some changes to the [`toolbarBlocks`](api/spreadsheet
 - Merging/splitting cells:
     - the ability to merge/split cells via [UI](merge_cells.md)
     - the ability to merge/split cells via [API](working_with_cells.md#merging-cells):
+        - new property of the sheet object : [`merged`](api/spreadsheet_parse_method.md)
         - new method: [`mergeCells()`](api/spreadsheet_mergecells_method.md)
-        - new property of the sheet object: [`merged`](api/spreadsheet_parse_method.md)
         - new actions: [`merge`](api/overview/actions_overview.md#list-of-actions) and [`unmerge`](api/overview/actions_overview.md#list-of-actions)
 - AutoFit column width:
     - the ability to autofit column width via [UI](work_with_rows_cols.md#autofit-column-width)   
