@@ -17,7 +17,7 @@ There is a [User Guide](guides.md/#user-guide) provided to make work with Spread
 
 ### Toolbar
 
-The **Toolbar** section is rather flexible. It contains 6 default blocks of controls: "undo", "colors", "decoration", "align", "format", "help". You can [change the toolbar structure](configuration.md#toolbar) and add more blocks, or change the order of the blocks.
+The **Toolbar** section is rather flexible. It contains 6 default blocks of controls: "undo", "colors", "decoration", "align", "format", "actions", "helpers". You can [change the toolbar structure](configuration.md#toolbar) and add more blocks, or change the order of the blocks.
 
 ![Spreadsheet Toolbar](assets/overview_toolbar.png)
 
@@ -36,13 +36,13 @@ You can switch the editing line off, if necessary via the corresponding [configu
 
 ### Grid
 
-**Grid** represents a table with columns defined by letters and rows defined by numbers. Thus, a cell of the grid is defined by the column's letter and the row's number, e.g. B2.
+**Grid** represents a table with columns defined by letters and rows defined by numbers. Thus, a cell of the grid is defined by the column's letter and the row's number, e.g. C3.
 
 ![Spreadsheet Grid](assets/spreadsheet_init.png)
 
 ### Context menu
 
-The **Context menu** section includes 4 items **Lock**, **Clear**, **Columns**, **Rows**, and **Sort** with sub-items.
+The **Context menu** section includes 5 items **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link** with sub-items.
 
 ![Spreadsheet Context Menu](assets/overview_contextmenu.png)
 

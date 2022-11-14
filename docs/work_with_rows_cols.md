@@ -17,11 +17,14 @@ To add a new row, take the following steps:
 2\. Choose one of the two actions:
 
 - click the **Add row** button in the toolbar
+
+![Adding rows](assets/add_row_button.png)
+
 - or right-click the row and choose *Rows -> Add row*
 
-{{note Note that a new row will be added above the selected one.}}
+![Adding rows](assets/add_row_context_menu.png)
 
-![Adding rows](assets/adding_rows.gif)
+{{note Note that a new row will be added above the selected one.}}
 
 ## Removing rows
 
@@ -32,9 +35,12 @@ To remove a row, take the following steps:
 2\. Choose one of the two actions:
 
 - click the **Remove row** button in the toolbar
+
+![Removing rows](assets/remove_row_button.png)
+
 - or right-click the row and choose *Rows -> Remove row*
 
-![Removing rows](assets/removing_rows.gif)
+![Removing rows](assets/remove_row_context_menu.png)
 
 ## Adding columns
 
@@ -45,11 +51,16 @@ To add a new column, take the following steps:
 2\. Choose one of the two actions:
 
 - click the **Add column** button in the toolbar
+
+![Adding columns](assets/add_column_button.png)
+
 - or right-click the column and choose *Columns -> Add column*
+
+![Adding columns](assets/add_column_context_menu.png)
 
 {{note Note that a new column will be added to the left of the selected one.}}
 
-![Adding columns](assets/adding_cols.gif)
+
 
 ## Removing columns
 
@@ -60,9 +71,12 @@ To remove a column, take the following steps:
 2\. Choose one of the two actions:
 
 - click the Remove column button in the toolbar
+
+![Adding columns](assets/remove_column_button.png)
+
 - or right-click the column and choose *Columns -> Remove column*
 
-![Removing columns](assets/removing_cols.gif)
+![Adding columns](assets/remove_column_context_menu.png)
 
 ## AutoFit column width
 
