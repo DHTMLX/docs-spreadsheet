@@ -24,19 +24,19 @@ To remove a sheet from the spreadsheet, right-click the sheet tab and choose *De
 
 {{note Note, that a sheet can't be removed if it is the only sheet in the spreadsheet.}}
 
-![Remove sheet](assets/remove_sheet.gif)
+![Remove sheet](assets/remove_sheet.png)
 
 ## Changing the active sheet
 
 To change the currently active sheet, just click a different sheet tab with the mouse pointer.
 
-![Change active sheet](assets/change_active_sheet.gif)
+![Change active sheet](assets/change_active_sheet.png)
 
 ## Renaming a sheet
 
 To rename a sheet, right-click the sheet tab, click *Rename*, and type the new name.
 
-![Rename sheet](assets/rename_sheet.gif)
+![Rename sheet](assets/rename_sheet.png)
 
 ## Cross-references between sheets
 
@@ -48,4 +48,4 @@ You can easily consolidate data from multiple sheets into a single one by using 
 
 3\.  Finish typing the formula and press Enter
 
-![Using formulas](assets/using_formulas.gif)
+![Using formulas](assets/cross_reference.gif)
