@@ -80,7 +80,13 @@ To remove a column, take the following steps:
 
 ## AutoFit column width
 
-To change the column width so that it would automatically fit the longest content in the column, take the following steps:
+To change the column width so that it would automatically fit the longest content in the column, you can:
+
+- double-click the resize cursor of a column in the table header 
+
+![Autofit column width](assets/resize_cursor.png)
+
+- or take the following steps:
 
 1\. Left-click on a 3 dots icon of the column
 
