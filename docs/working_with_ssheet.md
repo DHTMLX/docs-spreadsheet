@@ -79,7 +79,7 @@ For example, you can specify criteria of filtering for a separate column:
 
 ~~~js
 // filter data by criteria specified for column A
-spreadsheet.setFilter("A2", [{condition: { factor: "tc", value: "c" }, exclude: ["Touch Projector"]}]);
+spreadsheet.setFilter("A2", [{condition: { factor: "tc", value: "e" }, exclude: ["Peru"]}]);
 
 // filter data by criteria specified for column C
 spreadsheet.setFilter("C1", [{}, {}, {condition: {factor: "inb", value: [5,8]}, exclude: [3.75]}]);
@@ -98,6 +98,8 @@ spreadsheet.setFilter("A1:C10", [{condition: {factor: "tc", value: "e"}}, {}, {c
 ~~~
 
 and a filter icon will be added only for columns withing the specified range.
+
+**Related sample:** [Spreadsheet. Filtering via API](https://snippet.dhtmlx.com/effrcsg6)
 
 ### Reset filter
 

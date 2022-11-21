@@ -12,6 +12,8 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 Released on November 21, 2022
 
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-0/)
+
 ### Breaking changes
 
 The new release introduces some changes to the [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md) property. Check the [Migration article](migration.md#43---50) to keep in step with the latest version.
