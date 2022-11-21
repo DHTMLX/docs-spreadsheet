@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 5.0
 
-Released on
+Released on November 21, 2022
 
 ### Breaking changes
 
