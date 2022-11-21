@@ -246,4 +246,4 @@ but in some cases they may not work in the way you expect (for example, when app
 
 - [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 - [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
-
+- [Spreadsheet. Initialization with merged cells](https://snippet.dhtmlx.com/0vtukep9)
