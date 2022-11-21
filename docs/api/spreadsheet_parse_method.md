@@ -12,7 +12,7 @@ description: You can learn about the parse method in the documentation of the DH
 
 ### Usage
 
-~~~jsx
+~~~js title="Load data into one sheet"
 parse([
     {
         cell: string,
@@ -26,20 +26,20 @@ parse([
     },
     // more cell objects
 ]): void;
+~~~
 
-// or
+~~~js title="Load data into several sheets"
 parse({
-    styles: object,
     sheets: [
         {
-            name: string,
-            id: string,
+            name?: string,
+            id?: string,
             rows?: array,
             cols?: array,
             data: [
                 {
                     cell: string,
-                    value: string | number,
+                    value: string | number | Date,
                     css: string,
                     format?: string,
                     editor?: {
@@ -48,6 +48,13 @@ parse({
                     }
                 },
                 // more cell objects
+            ],
+            merged?: [
+                { 
+                    from: { column: index, row: index }, 
+                    to: { column: index, row: index }
+                },
+                // more objects
             ]
         },
         // more sheet objects
@@ -57,11 +64,8 @@ parse({
 
 ### Parameters
 
-:::info Info 1
-Specify **data** as an **array** of objects if you need to create a data set for one sheet only
-:::
 
-For each object you can specify the following parameters:
+If you need to create a data set *for one sheet* only, specify data as an **array of cell objects**. For each **cell** object you can specify the following parameters:
 
 - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
 - `value` - (required) the value of a cell
@@ -73,19 +77,14 @@ For each object you can specify the following parameters:
 
 <br>
 
-:::info Info 2
-*Starting from v4.1*, you can specify **data** as an **object** if you need to create a data set for several sheets at once 
-:::
-
-The **data** object takes the following parameters:
-
-- `styles` - (required) an object with CSS classes applied to particular cells
-- `sheets` - (required) an array of sheet objects. Each object has the following properties:
-    - `name` - (required) the sheet name
-    - `id` - (required) the sheet id
+If you need to create a data set *for several sheets* at once, specify data as an **object** with the following parameter:
+ 
+- `sheets` - (required) an array of **sheet** objects. Each object has the following properties:
+    - `name` - (optional) the sheet name
+    - `id` - (optional) the sheet id
     - `rows` - (optional) an array of height objects. If not specified, the rows will have a height of 32px.
-    - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px. 
-    - `data` - (required) an array of objects with data of the sheet. Each object has the following properties:
+    - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px.
+    - `data` - (required) an array of **cell** objects. Each object has the following properties:
         - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
         - `value` - (required) the value of a cell
         - `css` - (optional) the name of the CSS class
@@ -93,28 +92,33 @@ The **data** object takes the following parameters:
         - `editor` - (optional) an object with configuration settings for the editor of a cell:
             - `type` - (required) the type of the cell editor: "select"
             - `options` - (required) either a range of cells ("A1:B8") or an array of string values
+    - `merged` - (optional) an array of objects where each object defines a range of cells which need to be merged. Each object must include the following properties:
+        - `from` - an object which defines the position of the first cell from a range:
+            - `column` - the index of the column
+            - `row` - the index of the row
+        - `to` - an object which defines the position of the last cell from a range:
+            - `column` - the index of the column
+            - `row` - the index of the row
 
-:::note 
-In case the [multisheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
+:::info
+In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
 :::
 
 ### Example
 
-Prepare a data set for one sheet only:
-
-~~~jsx {32}
+~~~jsx {22} title="Example 1. Load data into one sheet"
 const data = [
-	{ cell: "a1", value: "Country" },
-	{ cell: "b1", value: "Product" },
-	{ cell: "c1", value: "Price" },
-	{ cell: "d1", value: "Amount" },
-	{ cell: "e1", value: "Total Price" },
+	{ cell: "A1", value: "Country" },
+	{ cell: "B1", value: "Product" },
+	{ cell: "C1", value: "Price" },
+	{ cell: "D1", value: "Amount" },
+	{ cell: "E1", value: "Total Price" },
 
-	{ cell: "a2", value: "Ecuador" },
-	{ cell: "b2", value: "Banana" },
-	{ cell: "c2", value: 6.68, css: "someclass" },
-	{ cell: "d2", value: 430 },
-	{ cell: "e2", value: 2872.4 },
+	{ cell: "A2", value: "Ecuador" },
+	{ cell: "B2", value: "Banana" },
+	{ cell: "C2", value: 6.68, css: "someclass" },
+	{ cell: "D2", value: 430 },
+	{ cell: "E2", value: 2872.4 },
     
     // add drop-down lists to cells
     { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey", "India", "USA", "Italy"]} },
@@ -123,34 +127,13 @@ const data = [
     // more data
 ];
 
-const styledData = {
-	data: data,
-	styles: {
-		someclass: {
-			background: "#F2F2F2",
-			color: "#F57C00"
-		}
-	}
-};
-
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
-spreadsheet.parse(styledData);
+spreadsheet.parse(data);
 ~~~
 
-**Related sample**: [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
-
-Or prepare a data set for several sheets at once:
-
-~~~js {46}
-const styledData = {
-    styles: {
-        someclass: {
-            background: "#F2F2F2",
-            color: "#F57C00"
-        }
-    },
+~~~js {38} title="Example 2. Load data into several sheets"
+const data = {
     sheets : [
-        // create sheets with custom configurations (names and ids)
         { 
             name: "sheet 1", 
             id: "sheet_1",
@@ -165,37 +148,102 @@ const styledData = {
                 // the width of the other columns is 120
             ],
             data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
-            ]
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" },
+            ],
+            merged: [
+                // merge cells A1 and B1
+				{ from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
+                // merge cells A2, A3, A4, and A5
+				{ from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
+			]
         }, 
         { 
             name: "sheet 2", 
             id: "sheet_2", 
             data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" },
             ]
-        },
-        // create a sheet with the default configuration
-        { 
-            data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
-            ]
-        } 
+        }
     ]
 };
 
+spreadsheet.parse(data);
+~~~
+
+## Parsing styled data
+
+You may also add specific styles for cells while preparing a data set. For that, you need to define data as an object which will include two parameters:
+
+- `styles` - (required) an object with CSS classes to be applied to particular cells. [Check the details below](#list-of-styles)
+- `data` - (required) the data to load
+
+~~~js
+const styledData = {
+    styles: {
+        someclass: {
+            background: "#F2F2F2",
+            color: "#F57C00"
+        }
+    },
+    data: [
+        { cell: "a1", value: "Country" },
+        { cell: "b1", value: "Product" },
+        { cell: "c1", value: "Price" },
+        { cell: "d1", value: "Amount" },
+        { cell: "e1", value: "Total Price" },
+
+        { cell: "a2", value: "Ecuador" },
+        { cell: "b2", value: "Banana" },
+        { cell: "c2", value: 6.68, css: "someclass" },
+        { cell: "d2", value: 430, css: "someclass" },
+        { cell: "e2", value: 2872.4 }
+    ],
+};
+
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(styledData);
 ~~~
 
+:::info
+A CSS class is set for a cell via the **css** property.
+:::
+
+### List of properties
+
+The list of properties you can specify in the **style** object:
+
+- *background*
+- *color*
+- *textAlign*
+- *verticalAlign*
+- *textDecoration*
+- *fontWeight*
+- *fontStyle*
+
+:::note
+You may also use the following properties if needed:
+
+- *fontSize*
+- *font*
+- *fontFamily*
+- *textShadow*
+
+but in some cases they may not work in the way you expect (for example, when applying *position:absolute*, *display: box*, etc. )
+:::
+
 **Change log:**
 
+- The **merged** property of the **sheet** object was added in v5.0
 - The **editor** property of the **cell** object was added in v4.3
 - The **rows** and **cols** properties of the **sheet** object were added in v4.2
+- The ability to prepare data for several sheets was added in v4.1
 
 **Related articles:** [Data loading and export](loading_data.md)
 
-**Related sample**: [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
+**Related samples**: 
+
+- [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
+- [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 

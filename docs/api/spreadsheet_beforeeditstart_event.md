@@ -30,9 +30,9 @@ Return `true` to edit a cell, `false` to prevent editing
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeEditStart" event
 spreadsheet.events.on("beforeEditStart", function(cell, value){
  	console.log("Editing is about to start");

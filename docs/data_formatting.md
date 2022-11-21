@@ -17,6 +17,7 @@ What you can do:
 - change the color of a text and its background via color picker linked to the **Text color** button
 - change the color of text background via color picker linked to the **Background color** button
 - apply *Bold*, *Italic* and *Underline* styles to a text
+- apply *Strikethrough* formatting to a text
 
 ## Alignment
 

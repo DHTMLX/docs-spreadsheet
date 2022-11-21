@@ -33,9 +33,9 @@ afterClear: () => void;
 ### Example
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "afterClear" event
 spreadsheet.events.on("afterClear", function(){
 	console.log("A spreadsheet is cleared");

@@ -26,9 +26,9 @@ The callback of the event takes the following parameters:
 ### Example
 
 ~~~jsx {5-7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "groupFill" event
 spreadsheet.events.on("groupFill", function (focusedCell, selectedCell) {
     console.log(focusedCell, selectedCell);

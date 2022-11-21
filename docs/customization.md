@@ -124,6 +124,7 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the *Bold* button (id:"font-weight-bold")
   - the *Italic* button (id:"font-style-italic")
   - the *Underline* button (id:"text-decoration-underline")
+  - the *Strikethrough* button (id:"text-decoration-line-through")
 - the **Align** block
   - the **Horizontal align** sub-block
     - the *Left* button (id: "halign-left")
@@ -136,9 +137,13 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the **Text wrapping** sub-block
     - the *Clip* button (id: "multiline-clip")
     - the *Wrap* button (id: "multiline-wrap")
+  - the **Merge/Unmerge** button (id: "merge")
 - the **Format** block
   - the *Format* menuItem (id:"format")
-- the **Help** block
+- the **Actions** block
+  - the *Filter* button (id:"filter")
+- the **Helpers** block
+  - the *Link* button (id:"link")
   - the *Help* button (id:"help")
 
 It is also possible to add the blocks enumerated below:
@@ -249,10 +254,12 @@ The [default menu](/#menu) has the following structure:
   - the *Rows* menuItem (id:"rows")
     - the *Add row* menuItem (id:"add-row")
     - the *Remove row* menuItem (id:"remove-row")
+  - the *Insert link* menuItem (id:"link")
 - the **Format** menuItem (id:"configuration")
   - the *Bold* menuItem (id:"font-weight-bold")
   - the *Italic* menuItem (id:"font-style-italic")
   - the *Underline* menuItem (id:"text-decoration-underline")
+  - the *Strikethrough* menuItem (id:"text-decoration-line-through")
   - the separator
   - the *Horizontal align* menuItem (id: "halign")
     - the *Left* menuItem (id: "halign-left")
@@ -266,8 +273,11 @@ The [default menu](/#menu) has the following structure:
     - the *Clip* menuItem (id: "multiline-clip")
     - the *Wrap* menuItem (id: "multiline-wrap")
   - the *Format* menuItem (id:"format")
+  - the *Merge/Unmerge* menuItem (id: "merge")
 - the **Data** menuItem (id:"data")
   - the *Data validation* menuItem (id:"validation")
+  - the *Search* menuItem (id:"search")
+  - the *Filter* menuItem (id:"filter")
   - the *Sort* menuItem (id:"sort")
     - the *Sort A to Z* menuItem (id:"asc-sort")
     - the *Sort Z to A* menuItem (id:"desc-sort")
@@ -331,12 +341,15 @@ The [default context menu](/#context-menu) has the following structure:
 - the **Columns** menuItem (id:"columns")
   - the *Add column* menuItem (id:"add-col")
   - the *Remove column* menuItem (id:"remove-col")
+  - the *Fit to data* menuItem (id:"fit-col")
 - the **Rows** menuItem (id:"rows")
   - the *Add row* menuItem (id:"add-row")
   - the *Remove row* menuItem (id:"remove-row")
 - the **Sort** menuItem (id:"sort")
   - the *Sort A to Z* menuItem (id:"asc-sort")
   - the *Sort Z to A* menuItem (id:"desc-sort")
+- the **Insert link** menuItem (id:"link")
+
 ### Adding controls
 
 In the example below a new menuItem is added into the context menu:
@@ -368,7 +381,7 @@ spreadsheet.contextMenu.data.update("lock", { icon: "fa fa-key" });
 In the example below the Undo menuItem is removed from the context menu:
 
 ~~~js
-spreadsheet.contextMenu.data.remove("undo");
+spreadsheet.contextMenu.data.remove("lock");
 ~~~
 
 ## Custom read-only mode

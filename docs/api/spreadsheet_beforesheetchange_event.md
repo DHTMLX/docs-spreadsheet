@@ -29,9 +29,9 @@ Return `true` to change the active sheet, `false` to prevent the active sheet fr
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeSheetChange" event
 spreadsheet.events.on("beforeSheetChange", function(sheet) {
     console.log("The active sheet will be changed");

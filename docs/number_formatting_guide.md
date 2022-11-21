@@ -54,4 +54,4 @@ Follow the steps below to apply a particular number format to Spreadsheet data v
 
 - Select the format you want to apply among the suggested options:
 
-![](assets/number_format_options.png)
+![Number format](assets/number_format_options.png)

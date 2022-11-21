@@ -27,9 +27,9 @@ Each sheet object includes the **name** and **id** attributes of the sheet.
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // returns  [{name: "sheet1", id: "u1614669331194"}, …]
 spreadsheet.getSheets();
 ~~~

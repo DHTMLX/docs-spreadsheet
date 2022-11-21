@@ -45,9 +45,9 @@ Return `true` to change the value of a cell, `false` to prevent changing of valu
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeValueChange" event
 spreadsheet.events.on("beforeValueChange", function(cell, value){
     console.log("Value of cell "+ spreadsheet.selection.getSelectedCell()+" will change");

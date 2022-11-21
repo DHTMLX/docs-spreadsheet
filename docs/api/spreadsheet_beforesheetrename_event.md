@@ -45,9 +45,9 @@ Return `true` to rename a sheet, `false` to prevent the sheet from being renamed
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeSheetRename" event
 spreadsheet.events.on("beforeSheetRename", function(sheet, value) {
     console.log("The ", sheet.name, "sheet will be renamed to ", value);

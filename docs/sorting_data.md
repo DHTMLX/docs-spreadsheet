@@ -33,6 +33,9 @@ To sort spreadsheet data by a separate range, take the following steps:
 2\. Choose one of the two actions:
 
 - Right-click a cell in the selected range and choose *Sort* -> *Sort A to Z* or *Sort Z to A*
+
+![Sort column](assets/sort_range_menu.png)
+
 - Or go to: *Data* -> *Sort* -> *Sort A to Z* or *Sort Z to A* in the menu
 
-![Sort column](assets/sort_cols.gif)
+![Sort column](assets/sort_range.png)

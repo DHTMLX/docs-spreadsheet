@@ -22,10 +22,12 @@ The method returns an id(s) or a range of selected cell(s)
 
 ### Example
 
-~~~jsx {6}
+~~~jsx {8}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
+
 spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 // gets the selected cells
 const selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"

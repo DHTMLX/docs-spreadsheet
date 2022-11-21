@@ -19,7 +19,7 @@ toolbarBlocks?: array;
 ### Default config
 
 ~~~jsx
-toolbarBlocks: ["undo", "colors", "decoration", "align", "format", "help"]
+toolbarBlocks: ["undo", "colors", "decoration", "align", "format", "actions", "helpers"]
 ~~~
 
 ### Example
@@ -36,7 +36,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
         "clear",
         "rows",
         "columns",
-        "help",
+        "helpers",
         "format",
         "file"
     ]
@@ -49,13 +49,17 @@ You can specify your own structure of the toolbar by enumerating necessary eleme
 
 ~~~js {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	toolbarBlocks: ["help","colors", "align", "decoration", "lock", "clear"]
+	toolbarBlocks: ["helpers", "colors", "align", "decoration", "lock", "clear"]
 });
 ~~~
 
 ![Custom toolbar](../assets/custom_toolbar.png)
 
 Check how you can [customize the toolbar](customization.md/#toolbar).
+
+**Change log:**
+- The *"actions"* block was added in v5.0
+- The *"help"* block was renamed to *"helpers"* in v5.0
 
 **Related articles:**
 - [Configuration](configuration.md#toolbar)

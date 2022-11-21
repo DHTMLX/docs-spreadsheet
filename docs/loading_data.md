@@ -17,74 +17,74 @@ The component also supports [export of data into an Excel file](#exporting-data)
 
 DHTMLX Spreadsheet expects data in the JSON format. 
 
-It can be a simple array with data objects each of which can have the following properties:
+It can be a simple array with cell objects. Use this way if you need to create a data set for only one sheet.
 
-- **cell** - (*string*) mandatory, the id of a cell that is formed as "id of the column + id of the row", e.g. A1
-- **value** - (*string,number*) mandatory, the value of a cell
-- **css** - (*string*) optional, the name of the CSS class
-- **format** - (*string*) optional, the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
-- **editor** - (*object*) an object with configuration settings for the editor of a cell:
-    - **type** - (*string*) the type of the cell editor: "select"
-    - **options** - (*string | array*) either a range of cells ("A1:B8") or an array of string values
-
-{{note Use this way if you need to create a data set for one sheet only.}}
-
-~~~js
+~~~js title="Prepare data for one sheet"
 const data = [
-	{ cell: "a1", value: "Country" },
-	{ cell: "b1", value: "Product" },
-	{ cell: "c1", value: "Price" },
-	{ cell: "d1", value: "Amount" },
-	{ cell: "e1", value: "Total Price" },
+	{ cell: "A1", value: "Country" },
+	{ cell: "B1", value: "Product" },
+	{ cell: "C1", value: "Price" },
+	{ cell: "D1", value: "Amount" },
+	{ cell: "E1", value: "Total Price" },
 
-	{ cell: "a2", value: "Ecuador" },
-	{ cell: "b2", value: "Banana" },
-	{ cell: "c2", value: 6.68, format:"currency" },
-	{ cell: "d2", value: 430, format:"percent" },
+	{ cell: "A2", value: "Ecuador" },
+	{ cell: "B2", value: "Banana" },
+	{ cell: "C2", value: 6.68, format:"currency" },
+	{ cell: "D2", value: 430, format:"percent" },
     // "myFormat" is the id of a custom format
-	{ cell: "e2", value: 2872.4, format:"myFormat" },
+	{ cell: "E2", value: 2872.4, format:"myFormat" },
     
     // add drop-down lists to cells
     { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey", "India", "USA", "Italy"]} },
     { cell: "B9", value: "", editor: {type: "select", options: "B2:B8" } },
 
-    // more data
+    // more cell objects
 ];
 ~~~
 
-Or it can be an object which allows you to prepare a data set for several sheets at once. It can look like this:
+Or it can be an object with data to be loaded into several sheets at once. For example:
 
-~~~js
+~~~js title="Prepare data for several sheets"
 const data = {
-    sheets : [
+    sheets: [
         { 
             name: "sheet 1", 
             id: "sheet_1",
             data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" },
 				// more data
-            ]
+            ],
+            merged: [
+                // merge cells A1 and B1
+				{ from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
+                // merge cells A2, A3, A4, and A5
+				{ from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
+			]
         }, 
         { 
             name: "sheet 2", 
             id: "sheet_2", 
             data: [
-                { cell: "a1", value: "Country" },
-                { cell: "b1", value: "Product" },
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" },
 				// more data
             ]
         },
-		// more sheets 
+		// more sheet objects
     ]
 };
 ~~~
 
-Check the [details](api/spreadsheet_parse_method.md).
+Check the full lists of available properties for these two ways in the [API reference](api/spreadsheet_parse_method.md).
+
+:::tip
+The ability to load merged cells is available only if you prepare data in a sheet object. 
+:::
 
 ### Setting styles for cells
 
-You may need to define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells.
+You may need to define the cells styling in the data set. In this case the data should be an object with *separate properties* that describe data objects and CSS classes applied to particular cells. 
 
 A CSS class is set for a cell via the **css** property.
 
@@ -97,20 +97,24 @@ const styledData = {
 		}
 	},
     data: [
-        { cell: "a1", value: "Country" },
-        { cell: "b1", value: "Product" },
-        { cell: "c1", value: "Price" },
-        { cell: "d1", value: "Amount" },
-        { cell: "e1", value: "Total Price" },
+        { cell: "A1", value: "Country" },
+        { cell: "B1", value: "Product" },
+        { cell: "C1", value: "Price" },
+        { cell: "D1", value: "Amount" },
+        { cell: "E1", value: "Total Price" },
 
-        { cell: "a2", value: "Ecuador" },
-        { cell: "b2", value: "Banana" },
-        { cell: "c2", value: 6.68, css: "someclass" },
-        { cell: "d2", value: 430, css: "someclass" },
-        { cell: "e2", value: 2872.4 }
+        { cell: "A2", value: "Ecuador" },
+        { cell: "B2", value: "Banana" },
+        { cell: "C2", value: 6.68, css: "someclass" },
+        { cell: "D2", value: 430, css: "someclass" },
+        { cell: "E2", value: 2872.4 }
     ],
 }
 ~~~
+
+:::info
+[Check the list of properties which you can use for styling cells](api/spreadsheet_parse_method.md#list-of-properties) 
+:::
 
 ## External data loading
 

@@ -27,9 +27,9 @@ deleteColumn(cell: string): void;
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // removes the "G" column
 spreadsheet.deleteColumn("G2");
 ~~~

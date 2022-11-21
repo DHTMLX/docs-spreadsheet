@@ -10,13 +10,13 @@ You can adjust the desired settings of DHTMLX Spreadsheet to meet your needs. Th
 
 ## Toolbar
 
-The toolbar of the Spreadsheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo", "colors", "decoration", "align", "format", "help". You can add more blocks from the list: "lock", "clear", "rows", "columns", "file".
+The toolbar of the Spreadsheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo", "colors", "decoration", "align", "format", "actions", "helpers". You can add more blocks from the list: "lock", "clear", "rows", "columns", "file".
 
 <iframe src="https://snippet.dhtmlx.com/kpm017nx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
 The structure of toolbar can be adjusted via the [](api/spreadsheet_toolbarblocks_config.md) configuration option of the component, which is an array with strings presenting the names of controls.
 
-You can also specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example: "help","colors", "align", "decoration", "lock", "clear".
+You can also specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example: "helpers", "colors", "align", "decoration", "lock", "clear".
 
 Toolbar is [highly customizable](customization.md). You can add new controls, change the icons of controls and apply the desired icon pack.
 
@@ -62,7 +62,7 @@ You can also [customize the readonly behavior of Spreadsheet](customization.md#c
 
 ## Custom number formats for cells
 
-There are 5 default formats that can be applied to the values of cells: "Common", "Number", "Percent", "Currency", "Text".
+There are 7 default formats that can be applied to the values of cells: "Common", "Number", "Percent", "Currency", "Date", "Time", "Text".
 
 You can redefine configuration of default formats or specify your own number format via the [](api/spreadsheet_formats_config.md) config option. Check the details in the [Number Formatting](number_formatting.md) article.
 

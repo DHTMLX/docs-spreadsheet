@@ -27,9 +27,9 @@ The method returns the styles set for the cells
 ### Example
 
 ~~~jsx {5,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // getting style of one cell
 const style = spreadsheet.getStyle("A1");
 // -> {background: "#8DE9E1", color: "#03A9F4"}

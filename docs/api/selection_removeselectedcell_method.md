@@ -22,10 +22,12 @@ removeSelectedCell(cell: string): void;
 
 ### Example
 
-~~~jsx {5,8}
+~~~jsx {7,10}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
+spreadsheet.parse(data);
+
 // selecting scattered cells
 spreadsheet.selection.setSelectedCell("A1:A9,C2,B4,D6");
 

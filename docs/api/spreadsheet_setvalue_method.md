@@ -28,9 +28,9 @@ setValue(cell: string, value: string | number | array): void;
 ### Example
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // setting value for one cell
 spreadsheet.setValue("A1",5);
 

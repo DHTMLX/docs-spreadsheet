@@ -45,9 +45,9 @@ Return `true` to change the format, `false` to prevent changing of the format
 ### Example
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
-});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+spreadsheet.parse(data);
+
 // subscribe on the "beforeFormatChange" event
 spreadsheet.events.on("beforeFormatChange", function(cell, format){
     console.log("Format of cell "+spreadsheet.selection.getSelectedCell()+" will change");
