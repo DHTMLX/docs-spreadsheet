@@ -8,6 +8,22 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.1
+
+Released on January 19, 2023
+
+### Fixes
+
+- Fix the issue which caused values entered into the cell with the currency format to be saved as a string not as a number 
+- Fix the issue with clearing of selection of the previously searched cells
+- Fix the issue with display of data after parsing it into the spreadsheet
+- Fix the issue with redrawing of the grid after removing columns
+- Fix the issue with sorting of empty values
+- Fix the issue with validation of numeric values when using a drop-down list
+- Fix work of auto-filling of cells with alphanumeric values
+- Improved work with masks of number formats
+- Now all number values in cells will be aligned to the right by default
+
 ## Version 5.0
 
 Released on November 21, 2022
