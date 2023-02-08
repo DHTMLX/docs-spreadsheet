@@ -8,6 +8,19 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.2
+
+Released on February 9, 2023
+
+### Fixes
+
+- Fix the issue which caused alignment of a cell not to be saved after copying and pasting the value of the cell 
+- Fix the issue which caused the results of filtering to be changed after sorting of data
+- Fix the issue with display of the 12-hour format in the timepicker 
+- Fix the issue with removing of link styles after the cell was auto-filled
+- Now it is possible to add several [custom formats for dates](spreadsheet/number_formatting.md#formats-customization)
+- Now it is possible to remove columns and rows even if they belong to the [limited columns and rows](spreadsheet/configuration.md#number-of-rows-and-columns)
+
 ## Version 5.0.1
 
 Released on January 19, 2023
