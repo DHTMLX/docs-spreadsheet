@@ -105,7 +105,7 @@ All such modifications can be implemented via the [](api/spreadsheet_formats_con
 
 ### The structure of a mask
 
-A mask may contain a set of common syntax characters that include digit placeholders, separators, percent and currency signs:
+A mask may contain a set of common syntax characters that include digit placeholders, separators, percent and currency signs, valid characters:
 
 - **0** - a digit in the number. Used to display insignificant zeros, if a number has fewer digits than there are zeros in the format. For example, to display 2 as 2.0, use the format 0.0.
 - **#** - a digit in the number. Used to display only significant numbers (insignificant zeros will be ommitted, if a number has fewer digits than there are # symbols in the format).
@@ -113,6 +113,7 @@ A mask may contain a set of common syntax characters that include digit placehol
 {{note Note that all characters between [$ and ] will be interpreted as a currency sign.}}
 - **.(period)** - applies a decimal point to numbers.
 - **,(comma)** - applies a thousands separator to numbers.
+- **[characters for setting a date format](https://docs.dhtmlx.com/suite/calendar/api/calendar_dateformat_config/)** - used to create a mask for date and time. For example, to display 27.09.2023 as 27, Sep 2023 use the format "%d, %M %Y".
 
 ## Setting format
 
