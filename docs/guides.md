@@ -49,9 +49,8 @@ The User guides are provided to make work with Spreadsheet easy for your end use
 
 - [Hot keys list](hotkeys.md)
 - [Work with sheets](work_with_sheets.md)
-- [Rows and columns](category/rows-and-columns.md)
-- [Editing cells](work_with_cells.md)
-- [Cell formatting](category/cell-formatting.md)
+- [Work with rows and columns](work_with_rows_cols.md)
+- [Work with cells](work_with_cells.md)
 - [Searching for data](data_search.md)
 - [Sorting data](sorting_data.md)
 - [Filtering data](filtering_data.md)
