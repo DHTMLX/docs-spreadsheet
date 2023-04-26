@@ -8,6 +8,20 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.3
+
+Released on April 26, 2023
+
+### Fixes
+
+- Fix incorrect calculation of the last cell to merge
+- Fix issues with Excel import/export
+- Fix the issue which caused data to be swapped after applying of data validation
+- Fix the issue which interpreted text with the ":" symbol as a link
+- Fix the issue with loading multiline data. Now it is possible to set the `multiline: "wrap"` property in the [`styles`](api/spreadsheet_parse_method.md#parsing-styled-data) object
+- Fix the issue with merging of cells on Spreadsheet initialization when [`multiSheets`](api/spreadsheet_multisheets_config.md) is set to `false`
+- Fix the issue with resetting of scroll position after double-click on the resize cursor of a column in the table header
+
 ## Version 5.0.2
 
 Released on February 14, 2023
