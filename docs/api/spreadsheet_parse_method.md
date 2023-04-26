@@ -221,6 +221,7 @@ The list of properties you can specify in the **style** object:
 - *textDecoration*
 - *fontWeight*
 - *fontStyle*
+- *multiline: "wrap"* (from v5.0.3)
 
 :::note
 You may also use the following properties if needed:
