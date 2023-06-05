@@ -8,6 +8,17 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.4
+
+Released on June 5, 2023
+
+### Fixes
+
+- Fix errors during block selection or a context menu call in the read-only mode
+- Fix the issue with the Edit menu displaying in the read-only mode
+- Fix incorrect rounding of numbers
+- Fix the problem with replacing a formula with its result in the editing line after cells merging
+
 ## Version 5.0.3
 
 Released on April 26, 2023
