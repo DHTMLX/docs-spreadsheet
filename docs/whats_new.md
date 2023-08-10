@@ -8,6 +8,15 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.5 
+
+Released on August 10, 2023
+
+### Fixes
+
+- Fix the issue with the XSS vulnerability
+- Fix incorrect pasting of data containing cell spans
+
 ## Version 5.0.4
 
 Released on June 5, 2023
