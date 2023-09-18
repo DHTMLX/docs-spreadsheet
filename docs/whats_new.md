@@ -8,6 +8,17 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.6
+
+Released on September 18, 2023
+
+### Fixes
+
+- Fix the problem with rendering zeros
+- Fix the issue with applying color styles set as string values
+- Fix the issue with the XSS vulnerability
+- Fix the problem when changing a value in an inactive sheet modified the value in the active sheet instead
+
 ## Version 5.0.5 
 
 Released on August 10, 2023
