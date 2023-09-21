@@ -8,6 +8,15 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.7
+
+Released on September 21, 2023
+
+### Fixes
+
+- Fix the problem with exporting formulas to Excel
+- Fix the issue with restoring the cut content of a cell on clicking the Undo button
+
 ## Version 5.0.6
 
 Released on September 18, 2023
