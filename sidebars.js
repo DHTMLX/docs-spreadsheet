@@ -24,6 +24,7 @@ module.exports = {
       items: [
         "whats_new",
         "migration",
+        "deprecated_doc",
       ],
     },
     {
