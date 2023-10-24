@@ -8,6 +8,16 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.0.9
+
+Released on October 24, 2023
+
+### Fixes
+
+- Fix incorrect calling of the setStyle() method which triggered before/afterSelectionSet events
+- Fix incorrect content wrapping
+- Fix types issues
+
 ## Version 5.0.7
 
 Released on September 21, 2023
