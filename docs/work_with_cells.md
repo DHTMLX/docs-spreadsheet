@@ -23,6 +23,10 @@ description: You can learn about the work with cells in the documentation of the
     - [built-in functions](../functions/), for example **=MAX(C46;D46)**
 - Press **Enter**.
 
+:::note
+Lowercase letters in formulas are automatically converted to upper case. 
+:::
+
 ## Inserting a hyperlink into a cell
 
 ### Adding a link

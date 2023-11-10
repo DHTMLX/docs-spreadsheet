@@ -6,7 +6,11 @@ description: You can learn about the formulas and functions of the DHTMLX JavaSc
 
 # Formulas and functions
 
-Starting from v4.0, the package of DHTMLX Spreadsheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
+Starting from v4.0, the package of DHTMLX Spreadsheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets. 
+
+:::note
+Lowercase letters in formulas are automatically converted to upper case. 
+:::
 
 <iframe src="https://snippet.dhtmlx.com/wux2b35b?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
