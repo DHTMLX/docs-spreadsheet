@@ -8,6 +8,35 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.1
+
+Released on November X, 2023
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-1/)
+
+### New functionality
+
+- Ability to add a custom name for an exported .xlsx file
+- Add the ability to save the "locked" cell status in a data set 
+- New themes: Dark, Light High Contrast and Dark High Contrast
+
+### Updates
+
+- Auto closing of formulas 
+- Automatic [conversion of lowercase letters to upper case](spreadsheet/functions.md) in formulas 
+- Update examples on integration with different frameworks and move them to codesandbox, add an example on integration with Svelte 
+
+
+### Fixes
+
+- Fix replacement of spaces with the `&nbsp;` symbols in formulas in the Edit line
+- Fix incorrect work of Excel import with the date-like values
+- Fix incorrect editing of a block of cells
+- Fix the script error that appeared on calling `getExcelDate()` during filtering (check)
+- Fix converting a text value to a number while pasting a cell content (check)
+- Fix incorrect pasting of data from an Excel file with the modified column width
+
+
 ## Version 5.0.9
 
 Released on October 24, 2023
