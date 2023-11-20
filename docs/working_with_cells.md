@@ -156,7 +156,7 @@ spreadsheet.endEdit();
 
 ### Lock cells
 
-You can lock a cell or several cells programmatically to make them read-only for users. Use the [](api/spreadsheet_lock_method.md) method for this purpose. The method takes as a parameter the id of a cell(s) or a range of cells to lock.
+You can lock a cell or several cells programmatically to make them read-only for users. Use the [](api/spreadsheet_lock_method.md) method for this purpose. The method takes as a parameter the *id(s) of the cell(s)* or a *range of cells* to lock.
 
 ~~~js
 // locks a cell
@@ -173,7 +173,7 @@ spreadsheet.lock("A1,B5,B7,D4:D6");
 
 ### Unlock cells
 
-To unlock the locked cell(s), use the [](api/spreadsheet_unlock_method.md) method. Pass the id(s) of the cell(s) or a range that contains locked cells as a parameter:
+To unlock the locked cell(s), use the [](api/spreadsheet_unlock_method.md) method. Pass the *id(s) of the cell(s)* or a *range that contains locked cells* as a parameter:
 
 ~~~js
 // unlocks a cell
@@ -188,7 +188,7 @@ spreadsheet.unlock("A1,B5,B7,D4:D6");
 
 ### Check whether a cell is locked
 
-To check whether a cell or several cells are locked, use the [](api/spreadsheet_islocked_method.md) method and pass the *id of a cell(s)* or a *range of cells* to it:
+To check whether a cell or several cells are locked, use the [](api/spreadsheet_islocked_method.md) method and pass the *id(s) of the cell(s)* or a *range of cells* to it:
 
 ~~~js
 // checks whether a cell is locked

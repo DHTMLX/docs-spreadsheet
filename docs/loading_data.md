@@ -35,7 +35,7 @@ const data = [
 	{ cell: "E2", value: 2872.4, format:"myFormat" },
     
     // add drop-down lists to cells
-    { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey", "India", "USA", "Italy"]} },
+    { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey","India","USA","Italy"]} },
     { cell: "B9", value: "", editor: {type: "select", options: "B2:B8" } },
 
     // more cell objects
@@ -115,6 +115,28 @@ const styledData = {
 :::info
 [Check the list of properties which you can use for styling cells](api/spreadsheet_parse_method.md#list-of-properties) 
 :::
+
+### Setting the locked state for a cell
+
+If you want to specify locked cells in a data set, you can do it with the help of the **locked** property of a cell by setting it to *true*:
+
+~~~js
+const dataset = [
+    { cell: "a1", value: "Country", locked: true }, //locks a cell
+    { cell: "b1", value: "Product", locked: true },   
+
+    { cell: "a2", value: "Ecuador" },
+    { cell: "b2", value: "Banana" },
+
+    { cell: "a3", value: "Belarus" },
+    { cell: "b3", value: "Apple" },
+    // more cells
+];
+~~~
+
+Check the full list of available cell properties in the [API reference](api/spreadsheet_parse_method.md#parameters).
+
+**Related sample**: [Spreadsheet. Locked cells](https://snippet.dhtmlx.com/czeyiuf8)
 
 ## External data loading
 
