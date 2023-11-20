@@ -17,15 +17,14 @@ Released on November X, 2023
 ### New functionality
 
 - Ability to [provide a custom name for an exported .xlsx file](spreadsheet/loading_data.md/#how-to-set-a-custom-name-for-an-exported-file)
-- Add the ability to save the "locked" cell status in a data set 
+- Add the ability to [save the "locked" cell status in a data set](spreadsheet/loading_data.md#setting-the-locked-state-for-a-cell) 
 - New themes: Dark, Light High Contrast and Dark High Contrast
 
 ### Updates
 
-- Auto closing of formulas 
+- Renewed examples on integration with different frameworks including Svelte in codesandbox
 - Automatic [conversion of lowercase letters to upper case](spreadsheet/functions.md) in formulas 
-- Update examples on integration with different frameworks and move them to codesandbox, add an example on integration with Svelte 
-
+- Auto closing of formulas 
 
 ### Fixes
 
