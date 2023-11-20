@@ -273,6 +273,16 @@ spreadsheet.export.xlsx();
 
 {{note Please note that the component supports export to Excel files with the **.xlsx** extension only.}}
 
+#### How to set a custom name for an exported file
+
+By default, the name for an exported file is "data". You can provide your own name for an exported file. For this, you need to pass a custom name as a parameter of the [](api/export_xlsx_method.md) method, as in:
+
+~~~js
+spreadsheet.export.xlsx("MyData");
+~~~
+
+**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
+
 Check the steps of [importing data from an Excel file into Spreadsheet](#loading-excel-file-xlsx).
 
 ### Export into JSON

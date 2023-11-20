@@ -13,19 +13,26 @@ description: You can learn about the xlsx export method in the documentation of 
 ### Usage
 
 ~~~jsx
-xlsx(): void;
+xlsx(name:string): void;
 ~~~
+
+### Parameters
+
+- `name` - (optional) the name of an exported .xlsx file
 
 ### Example
 
-~~~jsx {7}
+~~~jsx {7,10}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config parameters
 });
 spreadsheet.parse(data);
 
-// exports data from a spreadsheet into an Excel
+// exports data from a spreadsheet into an Excel file
 spreadsheet.export.xlsx();
+
+// exports data from a spreadsheet into an Excel file with a custom name
+spreadsheet.export.xlsx("MyData");
 ~~~
 
 :::note 
