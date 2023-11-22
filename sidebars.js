@@ -251,6 +251,23 @@ module.exports = {
             "customization",
             {
               type: "category",
+              label: "Themes",
+              collapsible: true,
+              collapsed: true,
+              link: {
+                type: 'generated-index',
+                title: "Themes",
+                keywords: ['themes'],
+                image: '/img/docusaurus.png',
+              },
+              items: [
+                "themes/themes",
+                "themes/base_themes_configuration",
+                "themes/custom_theme",
+                "themes/setting_theme"
+            ]},
+            {
+              type: "category",
               label: "Integrations",
               collapsible: true,
               collapsed: true,
@@ -263,6 +280,7 @@ module.exports = {
               items: [
                 "angular_integration",
                 "react_integration",
+                "svelte_integration",
                 "vuejs_integration"
               ]},
               "using_typescript",
