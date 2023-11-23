@@ -18,7 +18,8 @@ Released on November X, 2023
 
 - Ability to [provide a custom name for an exported .xlsx file](spreadsheet/loading_data.md/#how-to-set-a-custom-name-for-an-exported-file)
 - Add the ability to [save the "locked" cell status in a data set](spreadsheet/loading_data.md#setting-the-locked-state-for-a-cell) 
-- New themes: Dark, Light High Contrast and Dark High Contrast
+- Support for new themes: Dark, Light High Contrast and Dark High Contrast
+- Extended support for number and date localization
 
 ### Updates
 
