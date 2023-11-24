@@ -158,6 +158,7 @@ module.exports = {
             "api/spreadsheet_formats_config",
             "api/spreadsheet_importmodulepath_config",
             "api/spreadsheet_leftsplit_config",
+            "api/spreadsheet_localization_config",
             "api/spreadsheet_menu_config",
             "api/spreadsheet_multisheets_config",
             "api/spreadsheet_readonly_config",

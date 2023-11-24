@@ -87,6 +87,8 @@ spreadsheet.parse({
 });
 ~~~
 
+## Number, date, time, currency localization
+
 ## Formats customization
 
 You are not limited by [default number formats](#default-number-formats) only. There are two options of formats customization available:

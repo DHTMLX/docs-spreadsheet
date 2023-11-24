@@ -114,6 +114,7 @@ Parameters:
 | [](api/spreadsheet_formats_config.md)          | @getshort(api/spreadsheet_formats_config.md)          |
 | [](api/spreadsheet_importmodulepath_config.md) | @getshort(api/spreadsheet_importmodulepath_config.md) |
 | [](api/spreadsheet_leftsplit_config.md)        | @getshort(api/spreadsheet_leftsplit_config.md)        |
+| [](api/spreadsheet_localization_config.md)     | @getshort(api/spreadsheet_localization_config.md)     |
 | [](api/spreadsheet_menu_config.md)             | @getshort(api/spreadsheet_menu_config.md)             |
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(api/spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(api/spreadsheet_readonly_config.md)         |
