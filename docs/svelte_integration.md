@@ -24,13 +24,7 @@ There are several ways of creating a project:
 npm create vite@latest
 ~~~
 
-and selecting the `svelte` option. Then you need to run:
-
-~~~
-npm run build
-~~~ 
-
-The above command will generate HTML, JS and CSS files inside the `dist` directory. Check the details in the [related article](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit).
+Check the details in the [related article](https://svelte.dev/docs/introduction#start-a-new-project-alternatives-to-sveltekit).
 
 Independent of the chosen way, next you should go to the app directory. Let's call our project **spreadsheet-svelte** and run:
 
@@ -54,9 +48,9 @@ npm install
 npm run dev
 ~~~ 
 
-After the above steps are complete, the app should run on http://localhost:5173.
+After the above steps are complete, the app should run on `http://localhost:5173`.
 
-[image]
+![Svelte app running](assets/integrations/svelte_app_run.png) 
 
 
 ## Adding Spreadsheet
@@ -71,7 +65,7 @@ We will install the Pro package from a local folder. There are step-by-step inst
 2. In the project directory call `npm install ./spreadsheet-local-package-path`, for example:
 
 ~~~
-npm install ./spreadsheet_5.0.9_enterprise
+npm install ./spreadsheet_5.1.0_enterprise
 ~~~
 
 Or you can install the **trial** version from npm as in:
@@ -111,16 +105,16 @@ Then we need to render our Spreadsheet in the node. To do that, use the `onMount
     spreadsheet = new Spreadsheet(node);
     return spreadsheet.destructor
   })
- $: spreadsheet?.parse(data);
+  $: spreadsheet?.parse(data);
 
 </script>
 
 <div bind:this={node}></div>
 ~~~
 	
-In the above example we return `spreadsheet.destructor` from `onMount()` to clear the component as it unmounted. We also add data into Spreadsheet in the `$: spreadsheet?.parse(data);` line.
+In the above example we've returned `spreadsheet.destructor` from `onMount()` to clear the component as it has unmounted. We've also added data into Spreadsheet in the `$: spreadsheet?.parse(data);` line. It will reload data on each applied change.
 
-Now the Spreadsheet component is ready. When the element(?) will be added to the page, it will initialize the Spreadsheet object with the given settings(?) and data. To find out more about the Spreadsheet configuration, visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md).
+Now the Spreadsheet component is ready. When the element will be added to the page, it will initialize the Spreadsheet object with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
 
 ### Adding Spreadsheet into the app
 
@@ -138,7 +132,7 @@ Now it's time to add the component into our app. Open **App.svelte** and add the
 
 Now when we start the app, we should see Spreadsheet loaded with data on a page.
 
-[image]
+![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
 
 ## Handling events
 
