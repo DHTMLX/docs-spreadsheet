@@ -36,6 +36,13 @@ Released on November X, 2023
 - Fix converting a text value to a number while pasting a cell content (check)
 - Fix incorrect pasting of data from an Excel file with the modified column width
 
+## Version 5.0.10
+
+Released on November 27, 2023
+
+### Fixes
+
+- Fix types issues
 
 ## Version 5.0.9
 
