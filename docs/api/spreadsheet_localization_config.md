@@ -8,25 +8,35 @@ description: You can learn about the localization config in the documentation of
 
 ### Description
 
-@short: Optional. Defines the format of numbers, dates, currency; specifies delimiters
+@short: Optional. Defines the format of numbers, dates, currency
 
 ### Usage
 
 ~~~jsx
-export interface ILocalization {
-	decimal?: "." | ",";  // separator between decimals
-	thousands?: "." | "," | " " | ""; // separator between thousands
-	currency?: string; // any currency sign
+const localization = {
+	decimal?: "." | ",";  
+	thousands?: "." | "," | " " | ""; 
+	currency?: string; 
 	dateFormat?: string;
 	timeFormat?: 12 | 24;
 }
 ~~~
 
+### Parameters
+
+The **localization** object may contain the following properties:
+
+- **decimal** - the symbol used as a decimal separator
+- **thousands** - the symbol used as a thousands separator
+- **currency** - the currency sign 
+- **dateFormat** - the format of displaying dates set as a string. The default format is **"%d/%m/%Y"**. Check the details at the [dateFormat](api/spreadsheet_dateformat_config.md) API page
+- **timeFormat** - the format of displaying time set as either *12* or *24*. The default format is **12**
+
 ### Default config
 
 ~~~jsx
-const localization = {
-	decimal: ".",
+const defaultLocales = {
+	decimal: ".", 
 	thousands: ",",
 	currency: "$",
 	dateFormat: "%d/%m/%Y",
@@ -42,8 +52,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
         decimal: ",", 
         thousands: " ", 
         currency: "¥",  
-        dateFormat: "%d/%m/%Y",
-	    timeFormat: 12
+        dateFormat: "%D/%M/%Y",
+	    timeFormat: 24
     }
 });
 
@@ -53,4 +63,4 @@ spreadsheet.parse(dataset);
 **Change log:** 
 - Added in v5.1
 
-**Related article:** 
+**Related article:** [Number, date, time, currency localization](spreadsheet/number_formatting.md#number-date-time-currency-localization)
