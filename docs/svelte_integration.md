@@ -74,8 +74,6 @@ Or you can install the **trial** version from npm as in:
 npm install @dhx/trial-spreadsheet
 ~~~
 	
-One more option is to login in our npm pro with your credentials.
-
 ### Component creation
 
 Then we should create a component, to add a Spreadsheet into the application. You can configure the component via the "config" object, see the [list of available properties](spreadsheet/api/overview/properties_overview.md).
@@ -118,7 +116,7 @@ Now the Spreadsheet component is ready. When the element will be added to the pa
 
 ### Adding Spreadsheet into the app
 
-Now it's time to add the component into our app. Open **App.svelte** and add the following code instead of the one that had been there before:
+Now it's time to add the component into our app. Open **App.svelte** and replace the code with the following one:
 
 ~~~svelte title="App.svelte"
 <script>
@@ -138,12 +136,12 @@ Now when we start the app, we should see Spreadsheet loaded with data on a page.
 
 When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
 
-Open **Spreadsheet.svelte** and complete the `onMount` method as in:
+Open **Spreadsheet.svelte** and complete the `onMount()` method as in:
 
 ~~~svelte title="Spreadsheet.svelte" 
 onMount(() => {
     spreadsheet = new Spreadsheet(container, {});
-    spreadsheet.events.on("ActionName", () => {do something})
+    spreadsheet.events.on("ActionName", () => {do something});
 });
 ~~~
 
