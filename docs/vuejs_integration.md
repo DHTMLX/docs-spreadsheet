@@ -102,14 +102,13 @@ export default {
 export default {
   mounted: function() {
     this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-  }
-},
+  },
 
-unmounted() {
+  unmounted() {
     this.spreadsheet.destructor();
     this.$refs.cont.innerHTML = "";
+  },
 }
-
 </script>
 ~~~
 
@@ -118,7 +117,7 @@ unmounted() {
 ~~~js title="Spreadsheet.vue"
 <script>
 export default {
-    mounted: function() {
+  mounted: function() {
     this.spreadsheet = new Spreadsheet(this.$refs.container, {});
     this.spreadsheet.parse(data);
   }
@@ -165,10 +164,10 @@ Open **Spreadsheet.vue** and complete the `mounted()` method as in:
 <script>
 export default {
     mounted: function() {
-    this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-    // especially this line
-    this.spreadsheet.events.on("ActionName", () => {do something});
-  }
+      this.spreadsheet = new Spreadsheet(this.$refs.container, {});
+      // especially this line
+      this.spreadsheet.events.on("ActionName", () => {do something});
+    }
 }
 </script>
 ~~~
