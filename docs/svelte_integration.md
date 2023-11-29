@@ -59,16 +59,22 @@ Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the
 
 ### Package installation
 
-We will install the Pro package from a local folder. There are step-by-step instructions:
+There are two options available: you can install the Pro package from a local folder or  install the **trial** version from `npm`.
+
+#### Installing the package from a local folder
+
+There are step-by-step instructions:
 
 1. Copy the Spreadsheet package into some local directory.
-2. In the project directory call `npm install ./spreadsheet-local-package-path`, for example:
+2. In the project directory run the following command replacing *spreadsheet-local-package-path* with the actual path, e.g.:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
 ~~~
 
-Or you can install the **trial** version from npm as in:
+#### Installing the trial version from npm
+
+You can install the **trial** version of Spreadsheet from npm as in:
 
 ~~~
 npm install @dhx/trial-spreadsheet
@@ -76,7 +82,7 @@ npm install @dhx/trial-spreadsheet
 	
 ### Component creation
 
-Then we should create a component, to add a Spreadsheet into the application. You can configure the component via the "config" object, see the [list of available properties](spreadsheet/api/overview/properties_overview.md).
+Now we should create a component, to add a Spreadsheet into the application. 
 
 To display Spreadsheet on the page, we need to set the container to render the component inside. Let's create a new file named **src/components/Spreadsheet.svelte** and add the following code into it:
 
@@ -116,14 +122,13 @@ Now the Spreadsheet component is ready. When the element will be added to the pa
 
 ### Adding Spreadsheet into the app
 
-Now it's time to add the component into our app. Open **App.svelte** and replace the code with the following one:
+Now it's time to add the component into our app. Open **App.svelte** and replace the default code with the following one:
 
 ~~~svelte title="App.svelte"
 <script>
   import Spreadsheet from "./Spreadsheet.svelte";
   import { getData } from "./data.js";
 </script>
-
 
 <Spreadsheet data={getData()} />
 ~~~
@@ -145,4 +150,4 @@ onMount(() => {
 });
 ~~~
 
-Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
+Replace `'ActionName'` with the actual event name you want to handle, and implement the corresponding code inside the callback function. Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.

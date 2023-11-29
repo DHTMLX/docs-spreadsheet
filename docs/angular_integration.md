@@ -6,221 +6,171 @@ description: You can learn about the Angular integration of the DHTMLX JavaScrip
 
 # Integration with Angular
 
-You can use DHTMLX Spreadsheet in an application created with the [Angular](https://angular.io/) framework. [Check the demo on Github](https://github.com/DHTMLX/angular-widgets).
+You can use DHTMLX Spreadsheet in an application created with the [Angular](https://angular.io/) framework. 
 
-{{note Please note that the implementation provided below is not the only way to use DHTMLX Spreadsheet in a Angular-based application. It gives you initial schema of the integration and implies further extension of the app functionality depending on your goals.}}
+:::tip 
+[Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34).
+:::
 
-## Including source files
+## Preparations
 
-To add Spreadsheet package into your Angular-based app you need to [download the component package](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and unpack it into a folder of your project.
+You will need [Angular CLI](https://angular.io/cli) and [Node.js](https://nodejs.org/en/) to create a project, so you should install them, if haven't done it before.
 
-Then include **spreadsheet.js** and **spreadsheet.css** files into a page.
+## Creating a project
 
-The source files are represented in two versions: the **full** version and the **minified** one. Make sure that you set correct relative paths to these files:
+Create a new Angular project called **my-angular-spreadsheet-app** using Angular CLI. Run the following command for this purpose:
 
-~~~ html title="index.html"
-// full version
-<script type="text/javascript" src="codebase/spreadsheet.js"></script>  
-<link rel="stylesheet" href="codebase/spreadsheet.css">
-
-// minified version
-<script type="text/javascript" src="codebase/spreadsheet.min.js"></script>  
-<link rel="stylesheet" href="codebase/spreadsheet.min.css">
+~~~
+ng new my-angular-spreadsheet-app
 ~~~
 
-## Initialization
+The above command will install all the necessary tools and dependencies, so you don't need any additional commands. After that, go to the app directory by running: 
 
-There are two possible scenarios of initializing Spreadsheet inside an Angular application. One consists in isolating Spreadsheet structure and data inside of the Angular component and another one suggests separating view and data parts with the possibility of interaction between them.
+~~~
+cd my-angular-spreadsheet-app
+~~~
 
-### Scenario 1. Isolating Spreadsheet in an Angular component
+To start the server run: 
 
-In this variant Spreadsheet configuration and data are held inside of the Angular component with no bonds with the external part of the application.
+~~~
+yarn start
+~~~
 
-#### Spreadsheet initialization
+after that the app should run on `http://localhost:4200`.
 
-- Create a *Spreadsheet.ts* file, where you will define a Component. Each component must have a template assigned, for Spreadsheet it will be a plain DIV tag with a named reference.
+![Angular app running](assets/integrations/angular_app_run.png) 
 
-~~~js title="Spreadsheet.ts"
+
+## Adding DHTMLX Spreadsheet
+
+Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the app by pressing **Ctrl+C** in the command line.
+
+### Package installation
+
+You can either copy the package locally or install the trial version from npm.
+
+#### Installing the package from a local folder
+
+Follow the instructions below:
+
+1. Copy the Spreadsheet package into some local directory
+2. Go to your project directory
+3. Run the following command, replacing *spreadsheet-local-package-path* with the actual path, e.g.:
+
+~~~
+npm install ./spreadsheet_5.1.0_enterprise
+~~~
+
+#### Installing the trial version from npm
+
+You can install the **trial** version of Spreadsheet from npm as in:
+
+~~~
+npm install @dhx/trial-spreadsheet
+~~~
+
+### Creating a Spreadsheet Component
+
+Now we should create a component, to add a Spreadsheet into the application. Let's create a new file and call it **spreadsheetcomponent.ts** and add the following code into it:
+
+~~~js title="spreadsheetcomponent.ts"
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
+import { Spreadsheet } from 'dhx-spreadsheet-package';
+
 @Component({
- 	template: `<div #widget class='widget-box-wide'></div>`
+  selector: 'app-spreadsheet',
+  template: '<div #spreadsheetContainer></div>',
 })
-~~~
+export class SpreadsheetComponent implements OnInit {
+  @ViewChild('spreadsheetContainer', { static: true }) spreadsheetContainer!: ElementRef;
 
-- Use the `new Spreadsheet` constructor to initialize Spreadsheet inside of the container that you've set above:
-
-~~~js title="Spreadsheet.ts"
-export class SpreadSheetComponent implements OnInit, OnDestroy {
-  	@ViewChild('widget') container: ElementRef;
-  	spreadsheet: Spreadsheet;
-
-  	ngOnInit() {
-    	this.spreadsheet = new Spreadsheet(this.container.nativeElement, {
-      		editLine: false
-    	});
-    }   
-}
-~~~
-
-#### Loading data and changing config
-
-- Next you can load data into the Spreadsheet and do some actions, e.g. change style of a cell:
-
-~~~js title="Spreadsheet.ts"
-export class SpreadSheetComponent implements OnInit, OnDestroy {
-	@ViewChild('widget') container: ElementRef;
-  	spreadsheet: Spreadsheet;
-
-  	ngOnInit() {
-    	this.spreadsheet = new Spreadsheet(this.container.nativeElement, {
-      		editLine: false
-    	});
-    	this.spreadsheet.parse([
-      		{ cell: "A1", value: 10 },
-      		{ cell: "B1", value: 20 }
-    	]);
-    	this.spreadsheet.setStyle("A1", { background: "#F4D679" });
-  	}
-}
-~~~
-
-### Scenario 2. Exposing Spreadsheet data and config
-
-This variant adds flexibility in the control over Spreadsheet data and configuration by allowing access to them from other parts of the application.
-
-#### Spreadsheet  initialization
-
-- The first step is the same. Create a file, let it be *Spreadsheet2.ts* this time, and add a container for the Spreadsheet:
-
-~~~js title="Spreadsheet2.ts"
-@Component({
- 	template: `<div #widget class='widget-box'></div>`
-})
-~~~
-
-- Then initialize Spreadsheet with the `new Spreadsheet` constructor and define the configuration properties of Spreadsheet in the object passed as a second parameter of the constructor:
-
-~~~js title="Spreadsheet2.ts"
-export class SpreadSheetComponent implements OnInit, OnDestroy {
-  	@ViewChild('widget') container: ElementRef;
-  	spreadsheet: Spreadsheet;
-
-  	ngOnInit() {
-      	this.spreadsheet = new Spreadsheet(this.container.nativeElement, {
-      		toolbar: this.toolbar,
-      		menu: this.menu,
-      		editLine: this.editLine,
-      		rowsCount: this.rowsCount,
-      		colsCount: this.colsCount,
-    	});
-    }   
-}
-~~~
-
-#### Working with configuration options
-
-- Set the list of used Spreadsheet configuration properties and their types before the initialization function:
-
-~~~js title="Spreadsheet2.ts"
-export class SpreadsheetComponent implements OnInit, OnDestroy {
-  @ViewChild('widget') container: ElementRef;
-  spreadsheet: Spreadsheet;
-
-  @Input() toolbar: string[];
-  @Input() menu: boolean;
-  @Input() editLine: boolean;
-  @Input() rowsCount: number;
-  @Input() colsCount: number;
-
+  private spreadsheet: Spreadsheet;
 
   ngOnInit() {
-    this.spreadsheet = new Spreadsheet(this.container.nativeElement, {
-      toolbar: this.toolbar,
-      menu: this.menu,
-      editLine: this.editLine,
-      rowsCount: this.rowsCount,
-      colsCount: this.colsCount,
-    });
+    this.spreadsheet = new Spreadsheet(this.spreadsheetContainer.nativeElement);
+  }
+
+  ngOnDestroy() {
+    this.spreadsheet?.destructor();
   }
 }
 ~~~
 
-The properties of Spreadsheet are exposed and available to work with outside the component. In the example below the "grid" mode of rendering a list of files is enabled:
+In the above code we've created a container to render the component inside. To render our Spreadsheet in the node, we've used the `ngOnInit()` method of Angular. The `ngOnDestroy()` method contains the `spreadsheet.destructor()` call that will clear the component when it is no longer needed.
 
-~~~js title="BasicSample.ts"
-@Component({
-	template: `
-    <div class='app-box'>
-	  app-spreadsheet [editLine]='false' class='wide-size'></app-spreadsheet>
-    </div>`
-}}
+### Loading data
+
+To add data into Spreadsheet we'll add the `spreadsheet.parse(getData());` line into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
+
+~~~js title="spreadsheetcomponent.ts"
+ngOnInit() {
+  let spreadsheet = new Spreadsheet(
+    this.spreadsheetContainer.nativeElement,
+    {},
+  );
+  spreadsheet.parse(getData());
+}
 ~~~
 
-#### Working with Spreadsheet API
+Now the Spreadsheet component is ready. When the element will be added to the page, it will initialize the Spreadsheet object with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
 
-This variant of using Spreadsheet in a Angular application allows working with its API moving all calls of methods and event handlers into a separate file.
+### Using Spreadsheet Component in App Component
 
-- Create a *DataSample.vue* file and add a link to the spreadsheet:
+Open **app.component.ts** and use *SpreadsheetComponent* instead of the default content in the following way:
 
-~~~js title="DataSample.ts"
+~~~js title="app.component.ts"
+import { Component } from "@angular/core";
+
 @Component({
-  template: `
-<div class='app-box'>
-  <app-spreadsheet #spreadsheet class='wide-size'></app-spreadsheet>
-</div>`
+  selector: "app-root",
+  template: `<spreadsheet />`,
 })
-~~~
-
-- Define some actions that will be implemented on initialization of the Spreadsheet. For example, attach the *afterValueChange* event that will fire after changing the value of a cell, and add the *setValue()* method
-that will set certain values in particular cells:
-
-~~~js title="DataSample.ts"
-export class SpreadsheetComponent implements AfterViewInit {
-  event: string;
-  @ViewChild('spreadsheet') spreadsheet;
-  constructor(private cd: ChangeDetectorRef) {
-  }
-  ngAfterViewInit() {
-    this.spreadsheet.spreadsheet.events.on("afterValueChange", (cell, value) => {
-      this.event = `Value in cell ${cell} changed to ${value}`;
-      this.cd.detectChanges();
-    });
-    this.spreadsheet.spreadsheet.setValue("A1", 10);
-  }
+export class AppComponent {
+  name = "";
 }
 ~~~
 
-- Describe the methods you want to use while working with the spreadsheet:
+Then open **app.module.ts** and insert the Spreadsheet component like this:
 
-~~~js title="DataSample.ts"
-export class SpreadsheetComponent implements AfterViewInit {
-  event: string;
-  @ViewChild('spreadsheet') spreadsheet;
-  constructor(private cd: ChangeDetectorRef) {
-  }
-  ngAfterViewInit() {
-    this.spreadsheet.spreadsheet.events.on("afterValueChange", (cell, value) => {
-      this.event = `Value in cell ${cell} changed to ${value}`;
-      this.cd.detectChanges();
-    });
-    this.spreadsheet.spreadsheet.setValue("A1", 10);
-  }
-  clearAll() {
-    this.spreadsheet.spreadsheet.parse([]);
-    this.event = "";
-  }
-  parseData() {
-    this.spreadsheet.spreadsheet.parse([
-      { cell: "A1", value: 1000 },
-      { cell: "B1", value: 5300 },
-      { cell: "C1", value: 2900 },
-    ]);
-  }
+~~~js title="app.module.ts"
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+
+import { AppComponent } from "./app.component";
+import { SpreadsheetComponent } from "./spreadsheet/spreadsheet.component";
+
+@NgModule({
+  declarations: [AppComponent, SpreadsheetComponent],
+  imports: [BrowserModule],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+~~~
+
+## Event Handling
+
+When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
+
+Open the **spreadsheet.component.ts** file and complete the `ngOnInit()`` method as in:
+
+~~~js {7-9} title="spreadsheetcomponent.ts"
+ngOnInit() {
+  let spreadsheet = new Spreadsheet(
+    this.spreadsheetContainer.nativeElement,
+    {},
+  );
+  spreadsheet.parse(getData());
+  spreadsheet.events.on('ActionName', () => {
+    // do something
+  });
 }
 ~~~
 
-- Bind related buttons to the Spreadsheet methods by subscribing them to the *click* event to make changes in the data:
+Replace `'ActionName'` with the actual event name you want to handle, and implement the corresponding code inside the callback function. Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
 
-~~~js title="DataSample.ts"
-<input type="button" (click)="parseData()" value="Parse data">
-<input type="button" (click)="clearAll()" value="Clear all">
-~~~
+Now you should have a basic setup for integrating DHTMLX Spreadsheet with Angular using Angular CLI. You can customize the code according to your specific requirements.
+
+
+
