@@ -6,7 +6,12 @@ description: You can learn about the custom theme of the DHTMLX JavaScript Sprea
 
 # Custom Theme
 
-If the base Spreadsheet themes don't fit your project, you can configure your own color theme. For this, you need to override the values of the internal CSS variables:
+If the base Spreadsheet themes don't fit your project, you can configure your own color theme. 
+Check the **custom light** and **custom dark** themes in the snippet below:
+
+<iframe src="https://snippet.dhtmlx.com/59nt1rcb?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
+To make a custom theme of your own, you need to override the values of the internal CSS variables as follows:
 
 ~~~html
 <style>
