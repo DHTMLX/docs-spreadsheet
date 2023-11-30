@@ -9,7 +9,7 @@ description: You can learn about the Angular integration of the DHTMLX JavaScrip
 You can use DHTMLX Spreadsheet in an application created with the [Angular](https://angular.io/) framework. 
 
 :::tip 
-[Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34).
+[Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-angular-7xnzr9).
 :::
 
 ## Preparations

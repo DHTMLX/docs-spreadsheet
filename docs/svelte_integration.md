@@ -6,7 +6,11 @@ description: You can learn about the Svelte integration of the DHTMLX JavaScript
 
 # Integration with Svelte
 
-You can use DHTMLX Spreadsheet in an application created with the [Svelte](https://svelte.dev/) framework. [Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34).
+You can use DHTMLX Spreadsheet in an application created with the [Svelte](https://svelte.dev/) framework. 
+
+:::tip 
+[Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34).
+:::
 
 ## Preparations
 
