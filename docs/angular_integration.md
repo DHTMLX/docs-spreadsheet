@@ -18,16 +18,16 @@ You will need [Angular CLI](https://angular.io/cli) and [Node.js](https://nodejs
 
 ## Creating a project
 
-Create a new Angular project called **my-angular-spreadsheet-app** using Angular CLI. Run the following command for this purpose:
+Create a new Angular project called **spreadsheet-angular** using Angular CLI. Run the following command for this purpose:
 
 ~~~
-ng new my-angular-spreadsheet-app
+ng new spreadsheet-angular
 ~~~
 
 The above command will install all the necessary tools and dependencies, so you don't need any additional commands. After that, go to the app directory by running: 
 
 ~~~
-cd my-angular-spreadsheet-app
+cd spreadsheet-angular
 ~~~
 
 To start the server run: 
@@ -47,7 +47,7 @@ Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the
 
 ### Package installation
 
-You can either copy the package locally or install the trial version from npm.
+You can either copy the package locally or install the trial version from **npm**.
 
 #### Installing the package from a local folder
 
@@ -66,14 +66,20 @@ npm install ./spreadsheet_5.1.0_enterprise
 You can install the **trial** version of Spreadsheet from npm as in:
 
 ~~~
-npm install @dhx/trial-spreadsheet
+npm config set @dhx:registry https://npm.dhtmlx.com
+npm i @dhx/trial-spreadsheet
 ~~~
 
 ### Creating a Spreadsheet Component
 
-Now we should create a component, to add a Spreadsheet into the application. Let's create a new file and call it **spreadsheetcomponent.ts** and add the following code into it:
+Now we should create a component, to add a Spreadsheet into the application. Let's create a new file and call it **spreadsheet.component.ts**. Then complete the steps below:
 
-~~~js title="spreadsheetcomponent.ts"
+- Provide the paths to import the Angular 
+
+
+Add the following code into the created file:
+
+~~~js title="spreadsheet.component.ts"
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 import { Spreadsheet } from 'dhx-spreadsheet-package';
@@ -88,7 +94,7 @@ export class SpreadsheetComponent implements OnInit {
   private spreadsheet: Spreadsheet;
 
   ngOnInit() {
-    this.spreadsheet = new Spreadsheet(this.spreadsheetContainer.nativeElement);
+    this.spreadsheet = new Spreadsheet(this.spreadsheetContainer.nativeElement,{});
   }
 
   ngOnDestroy() {
@@ -103,7 +109,7 @@ In the above code we've created a container to render the component inside. To r
 
 To add data into Spreadsheet we'll add the `spreadsheet.parse(getData());` line into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
 
-~~~js title="spreadsheetcomponent.ts"
+~~~js title="spreadsheet.component.ts"
 ngOnInit() {
   let spreadsheet = new Spreadsheet(
     this.spreadsheetContainer.nativeElement,

@@ -6,7 +6,11 @@ description: You can learn about the Vue.js integration of the DHTMLX JavaScript
 
 # Integration with Vue.js
 
-You can use DHTMLX Spreadsheet in an application created with the [Vue.js](https://vuejs.org/) framework. [Check the demo on CodeSandbox](https://codesandbox.io/p/sandbox/dhtmlx-spreadsheet-with-vue3-c75m2t).
+You can use DHTMLX Spreadsheet in an application created with the [Vue.js](https://vuejs.org/) framework. 
+
+:::tip 
+[Check the demo on CodeSandbox](https://codesandbox.io/p/sandbox/dhtmlx-spreadsheet-with-vue3-c75m2t).
+:::
 
 ## Preparations
 
@@ -14,15 +18,15 @@ You will need [Vite](https://vitejs.dev/) and [Node.js](https://nodejs.org/en/) 
 
 ## Creating a project
 
-There are several ways of creating a project: 
-
-- you can use **Vue.js with Vite**, by running: 
+To create a Vue project, you can use **Vue.js with Vite**, by running: 
 
 ~~~
 npm create vue@latest
 ~~~
 
 This command will install and execute `create-vue`, the official Vue project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+
+### Installation of dependencies
 
 Next you should go to the app directory. Let's call our project **spreadsheet-vue** and run:
 
@@ -50,32 +54,49 @@ You should now have your Vue project running on `http://localhost:5173`.
 
 ![Vue app running](assets/integrations/vue_app_run.png) 
 
-## Adding Spreadsheet
+## Creating Spreadsheet
 
-Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the app by pressing **Ctrl+C** in the command line.
+Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the app by pressing **Ctrl+C** in the command line. Then we can proceed with installing the Spreadsheet package.
 
-### Package installation
+### Step 1. Package installation
 
-We will install the Pro package from a local folder. There are step-by-step instructions:
+There are two options available: you can install the **Pro** package from a local folder or install the **trial** version using `npm` or `yarn`.
+
+#### Installing the package from a local folder
+
+The instructions are the following:
 
 1. Copy the Spreadsheet package into some local directory.
-2. In the project directory call `npm install ./spreadsheet-local-package-path`, for example:
+2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path, e.g.:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
+
+//or
+yarn add "./spreadsheet_5.1.0_enterprise"
 ~~~
 
-Or you can install the **trial** version from npm as in:
+#### Installing the trial version via a package manager
 
-~~~
-npm install @dhx/trial-spreadsheet
+You can install the **trial** version of Spreadsheet using **npm** or **yarn** commands:
+
+~~~js {2,3,6,7}
+// npm
+npm config set @dhx:registry https://npm.dhtmlx.com
+npm i @dhx/trial-spreadsheet
+
+//yarn
+yarn config set @dhx:registry https://npm.dhtmlx.com
+yarn add @dhx/trial-spreadsheet
 ~~~
 
-### Component creation
+To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml?_gl=1*18ffotg*_ga*MTA3MDMxMTAxNi4xNzAwNTcxNzU4*_ga_N87XPB4GSG*MTcwMTQzMjczMS4yOS4xLjE3MDE0MzI3OTUuNTYuMC4w&_ga=2.77564829.902258312.1701098802-1070311016.1700571758)!
+
+### Step 2. Component creation
 
 Then we should create a component, to add a Spreadsheet into the application. You can configure the component via the "config" object, see the [list of available properties](spreadsheet/api/overview/properties_overview.md). Here are the steps to display Spreadsheet on the page:
 
-- Set the container to render the component inside. Let's create a new file named **src/components/Spreadsheet.vue** and add a container for Spreadsheet inside the `template` tags. Define the name of the container in the **ref** attribute:
+- Set the container to render the component inside. Let's create a new file named **Spreadsheet.vue** in the **src/components/** directory and add a container for Spreadsheet inside the `template` tags. Define the name of the container in the **ref** attribute:
 
 ~~~js title="Spreadsheet.vue"
 <template>
@@ -106,7 +127,7 @@ export default {
 
   unmounted() {
     this.spreadsheet.destructor();
-    this.$refs.cont.innerHTML = "";
+    this.$refs.container.innerHTML = "";
   },
 }
 </script>
@@ -127,7 +148,28 @@ export default {
 
 Now the Spreadsheet component is ready. When the element will be added to the page, it will initialize the Spreadsheet object with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
 
-### Adding Spreadsheet into the app
+#### Handling events
+
+When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
+
+Open **Spreadsheet.vue** and complete the `mounted()` method as in:
+
+~~~js title="Spreadsheet.vue"
+// check the code !!
+<script>
+export default {
+    mounted: function() {
+      this.spreadsheet = new Spreadsheet(this.$refs.container, {});
+      // especially this line
+      this.spreadsheet.events.on("ActionName", () => {do something});
+    }
+}
+</script>
+~~~
+
+Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
+
+### Step 3. Adding Spreadsheet into the app
 
 Now it's time to add the component into our app. Open **App.vue** and replace the code with the following one:
 
@@ -153,23 +195,4 @@ Now when we start the app, we should see Spreadsheet loaded with data on a page.
 
 ![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
 
-## Handling events
 
-When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
-
-Open **Spreadsheet.vue** and complete the `mounted()` method as in:
-
-~~~js title="Spreadsheet.vue"
-// check the code !!
-<script>
-export default {
-    mounted: function() {
-      this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-      // especially this line
-      this.spreadsheet.events.on("ActionName", () => {do something});
-    }
-}
-</script>
-~~~
-
-Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.

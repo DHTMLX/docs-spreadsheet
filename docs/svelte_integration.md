@@ -64,7 +64,7 @@ Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the
 
 ### Step 1. Package installation
 
-There are two options available: you can install the **Pro** package from a local folder or  install the **trial** version using `npm` or `yarn`.
+There are two options available: you can install the **Pro** package from a local folder or install the **trial** version using `npm` or `yarn`.
 
 #### Installing the package from a local folder
 
