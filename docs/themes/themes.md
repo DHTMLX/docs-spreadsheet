@@ -6,14 +6,14 @@ description: You can learn about the themes of the DHTMLX JavaScript Spreadsheet
 
 # Built-in Themes
 
-DHTMLX SpreadSheet library provides 4 predefined themes:
+DHTMLX Spreadsheet library provides 4 predefined themes:
 
 - [light theme](#light-theme-default) ("light") - used by default
 - [dark theme](#dark-theme) ("dark")
 - [light high contrast theme](#light-high-contrast-theme) ("contrast-light")
 - [dark high contrast theme](#dark-high-contrast-theme) ("contrast-dark")
 
-The SpreadSheet themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. For more detail, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
+The Spreadsheet themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. For more detail, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
 
 You can try all themes in the example below:
 
@@ -358,9 +358,9 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 }
 ~~~
 
-## SpreadSheet Specific Styles
+## Spreadsheet Specific Styles
 
-The list of variables specific for the SpreadSheet component includes the following ones:
+The list of variables specific for the Spreadsheet component includes the following ones:
 
 - for the **default light** theme and the **light high contrast** skin:
 

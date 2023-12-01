@@ -6,7 +6,7 @@ description: You can learn about the setting of themes of the DHTMLX JavaScript 
 
 # Setting Themes
 
-To set the necessary theme, be it a built-in SpreadSheet theme or a custom one, use one of the ways described below:
+To set the necessary theme, be it a built-in Spreadsheet theme or a custom one, use one of the ways described below:
 
 ### Changing the "data" attribute 
 
