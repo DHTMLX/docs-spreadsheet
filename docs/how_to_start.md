@@ -43,6 +43,26 @@ and
 </html>
 ~~~
 
+:::info
+You can also import Spreadsheet into your project using `yarn` or `npm` commands. To get the trial version of Spreadsheet, run the following commands:
+
+~~~js {2,3,6,7}
+// npm
+npm config set @dhx:registry https://npm.dhtmlx.com
+npm i @dhx/trial-spreadsheet
+
+// yarn
+yarn config set @dhx:registry https://npm.dhtmlx.com
+yarn add @dhx/trial-spreadsheet
+~~~
+
+To get Spreadsheet under the proprietary license, refer to [**Support Center**](https://dhtmlx.com/docs/technical-support.shtml?_gl=1*18ffotg*_ga*MTA3MDMxMTAxNi4xNzAwNTcxNzU4*_ga_N87XPB4GSG*MTcwMTQzMjczMS4yOS4xLjE3MDE0MzI3OTUuNTYuMC4w&_ga=2.77564829.902258312.1701098802-1070311016.1700571758)!
+:::
+
+:::tip
+If you want to integrate JavaScript Spreadsheet into Svelte, React, Angular or Vue projects, refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX) for more information.
+:::
+
 ## Step 2. Creating Spreadsheet
 
 Now you are ready to add Spreadsheet to the page. First, let's create a DIV container and then place DHTMLX Spreadsheet into it. So, your steps will be:
