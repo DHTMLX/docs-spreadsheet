@@ -94,19 +94,46 @@ To get Spreadsheet under the proprietary license, refer to the [Support Center](
 
 ### Step 2. Component creation
 
-Then we should create a component, to add a Spreadsheet into the application. You can configure the component via the "config" object, see the [list of available properties](spreadsheet/api/overview/properties_overview.md). Here are the steps to display Spreadsheet on the page:
+Now we should create a Svelte component, to add a Spreadsheet into the application. Let's create a new file in the **src/components/** directory and name it **Spreadsheet.vue**. 
 
-- Set the container to render the component inside. Let's create a new file named **Spreadsheet.vue** in the **src/components/** directory and add a container for Spreadsheet inside the `template` tags. Define the name of the container in the **ref** attribute:
+#### Importing source files
 
-~~~js title="Spreadsheet.vue"
+Open the file and import Spreadsheet source files. Note that:
+
+- if you've [installed the Spreadsheet package from a local folder](#installing-the-package-from-a-local-folder), your import paths will look like this:
+
+~~~
+import { Spreadsheet } from 'dhx-spreadsheet-package';
+import from 'dhx-spreadsheet-package/codebase/spreadsheet.css';
+~~~
+
+- if you've chosen to [install the trial version](#installing-the-trial-version-via-a-package-manager), the import paths should be as in:
+
+~~~
+import { Spreadsheet } from '@dhx/trial-spreadsheet';
+import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
+~~~
+
+In this tutorial we will use the trial version of Spreadsheet.
+
+#### Setting the container and adding Spreadsheet
+
+To display Spreadsheet on the page, we need to set the container to render the component inside. Check the code below:
+
+~~~html {6-8} title="Spreadsheet.vue"
+<script>
+  import { Spreadsheet } from "@dhx/trial-spreadsheet";
+  import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css";
+</script>
+
 <template>
-	<div ref="container" class="widget-box"></div>
+	<div ref="container"></div>
 </template>
 ~~~
 
-- Define the JS part of the Vue component and use the `new Spreadsheet` constructor inside the `mounted()` method of Vue.js to initialize Spreadsheet inside of the container that you've set above:
+Then we need to render our Spreadsheet in the container. Use the `new Spreadsheet()` constructor inside the `mounted()` method of Vue.js to initialize Spreadsheet inside of the container that you've set above:
 
-~~~js title="Spreadsheet.vue"
+~~~html title="Spreadsheet.vue"
 <script>
 export default {
   mounted: function() {
@@ -116,9 +143,9 @@ export default {
 </script>
 ~~~
 
-- To clear the component as it has unmounted, use the `spreadsheet.destructor()` call inside the `unmounted()` method of Vue.js:
+To clear the component as it has unmounted, use the `spreadsheet.destructor()` call inside the `unmounted()` method of Vue.js:
 
-~~~js title="Spreadsheet.vue"
+~~~html title="Spreadsheet.vue"
 <script>
 export default {
   mounted: function() {
@@ -133,9 +160,84 @@ export default {
 </script>
 ~~~
 
-- Next you can load data into the Spreadsheet. Use the `spreadsheet.parse()` method for this purpose. It will reload data on each applied change:
+#### Loading data
 
-~~~js title="Spreadsheet.vue"
+Next you can load data into the Spreadsheet. For this, you need to provide a data set. Create the **data.js** file in the **src/** directory and add some data into it:
+
+~~~js title="data.js"
+export function getData() {
+  return {
+    sheets: [
+      {
+        name: "Boolean",
+        data: [
+          {
+            cell: "A1",
+            css: "header",
+            format: "common",
+            value: "Formula name",
+          },
+          {
+            cell: "B1",
+            css: "header",
+            format: "common",
+            value: "Formula example",
+          },
+          {
+            cell: "C1",
+            css: "header",
+            format: "common",
+            value: "Data for formula",
+          },
+          {
+            cell: "A3",
+            css: "highlighting",
+            format: "common",
+            value: "Equal to",
+          },
+          {
+            cell: "B3",
+            format: "common",
+            value: "=C3=D3",
+          },
+          {
+            cell: "C3",
+            format: "number",
+            value: 5,
+          },
+          {
+            cell: "A4",
+            css: "highlighting",
+            format: "common",
+            value: "Greater than",
+          },
+          {
+            cell: "B4",
+            format: "common",
+            value: "=C4>D4",
+          },
+          {
+            cell: "C4",
+            format: "number",
+            value: 7,
+          },
+          // more cells
+        ],
+        cols: [
+          {
+            width: 180,
+          },
+        ],
+        rows: [],
+      }
+    ]
+  }
+}
+~~~
+
+Then open the **Spreadsheet.vue** file and use the **spreadsheet.parse()** method to load data. It will reload data on each applied change:
+
+~~~html {5} title="Spreadsheet.vue"
 <script>
 export default {
   mounted: function() {
@@ -154,7 +256,7 @@ When a user makes some action in the Spreadsheet, it invokes an event. You can u
 
 Open **Spreadsheet.vue** and complete the `mounted()` method as in:
 
-~~~js title="Spreadsheet.vue"
+~~~html title="Spreadsheet.vue"
 // check the code !!
 <script>
 export default {
@@ -167,13 +269,13 @@ export default {
 </script>
 ~~~
 
-Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
+Replace `'ActionName'` with the actual event name you want to handle, and implement the corresponding code inside the callback function. Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
 
 ### Step 3. Adding Spreadsheet into the app
 
 Now it's time to add the component into our app. Open **App.vue** and replace the code with the following one:
 
-~~~js title="App.vue"
+~~~html title="App.vue"
 <script>
 import Spreadsheet from "./components/Spreadsheet.vue";
 import { getData } from "./data";
