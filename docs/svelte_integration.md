@@ -120,7 +120,7 @@ import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
 
 In this tutorial we will use the trial version of Spreadsheet.
 
-#### Setting the container
+#### Setting the container and adding Spreadsheet
 
 To display Spreadsheet on the page, we need to set the container to render the component inside. Check the code below:
 
