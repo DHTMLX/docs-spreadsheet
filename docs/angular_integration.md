@@ -34,23 +34,13 @@ After that, go to the app directory by running:
 cd my-angular-spreadsheet-app
 ~~~
 
-Then you need to install dependencies and run the app. For this, you need to make use of a package manager:
-
-- if you use [yarn](https://yarnpkg.com/), you need to call the following commands:
+Then, run the app with the following command:
 
 ~~~
-yarn install
-yarn dev
+yarn start
 ~~~
 
-- if you use [npm](https://www.npmjs.com/), you need to call the following commands:
-
-~~~
-npm install
-npm run dev
-~~~ 
-
-After the above steps are complete, the app should run on `http://localhost:4200`.
+After that the app should run on `http://localhost:4200`.
 
 ![Angular app running](assets/integrations/angular_app_run.png) 
 
@@ -92,7 +82,7 @@ To get Spreadsheet under the proprietary license, refer to the [Support Center](
   
 ### Step 2. Component creation
 
-Now we should create a component, to add a Spreadsheet into the application. Let's create a new file in the **src/app/spreadsheet/** and call it **spreadsheet.component.ts**. Then complete the steps below:
+Now we should create a component, to add a Spreadsheet into the application. Let's create  the **spreadsheet** folder in the **src/app/** directory, add a new file into it and call it **spreadsheet.component.ts**. Then complete the steps described below.
 
 #### Importing source files
 
@@ -119,9 +109,9 @@ In this tutorial we will use the trial version of Spreadsheet.
 To display Spreadsheet on the page, we need to set the container to render the component inside. Use the code below:
 
 ~~~js title="spreadsheet.component.ts"
-import { Component, ElementRef, ViewChild} from '@angular/core';
-import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
-import { Spreadsheet } from 'dhx-spreadsheet-package';
+import { Spreadsheet } from '@dhx/trial-spreadsheet';
+import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
+import { Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'spreadsheet',
@@ -136,15 +126,7 @@ export class SpreadsheetComponent implements OnInit {
 
 Then we need to render our Spreadsheet in the container. To do that, use the `ngOnInit()` method of Svelte:
 
-~~~js title="spreadsheet.component.ts"
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
-import { Spreadsheet } from 'dhx-spreadsheet-package';
-
-@Component({
-  selector: 'spreadsheet',
-  template: '<div #spreadsheetContainer></div>',
-})
+~~~js {6-8} title="spreadsheet.component.ts"
 export class SpreadsheetComponent implements OnInit {
   @ViewChild('spreadsheetContainer', { static: true }) spreadsheetContainer!: ElementRef;
 
@@ -164,84 +146,82 @@ In the above code we've also specified the `ngOnDestroy()` method that contains 
 
 #### Loading data
 
-To add data into the Spreadsheet, we need to provide a data set. Let's create the **data.js** file in the **src/app/spreadsheet/** directory and add some data into it:
+To add data into the Spreadsheet, we need to provide a data set. Let's create the **data.ts** file in the **src/app/spreadsheet/** directory and add some data into it:
 
-~~~js title="data.js"
-export function getData() {
+~~~js title="data.ts"
+export function getData(): any {
   return {
-    sheets: [
-      {
-        name: "Boolean",
-        data: [
-          {
-            cell: "A1",
-            css: "header",
-            format: "common",
-            value: "Formula name",
-          },
-          {
-            cell: "B1",
-            css: "header",
-            format: "common",
-            value: "Formula example",
-          },
-          {
-            cell: "C1",
-            css: "header",
-            format: "common",
-            value: "Data for formula",
-          },
-          {
-            cell: "A3",
-            css: "highlighting",
-            format: "common",
-            value: "Equal to",
-          },
-          {
-            cell: "B3",
-            format: "common",
-            value: "=C3=D3",
-          },
-          {
-            cell: "C3",
-            format: "number",
-            value: 5,
-          },
-          {
-            cell: "A4",
-            css: "highlighting",
-            format: "common",
-            value: "Greater than",
-          },
-          {
-            cell: "B4",
-            format: "common",
-            value: "=C4>D4",
-          },
-          {
-            cell: "C4",
-            format: "number",
-            value: 7,
-          },
-          // more cells
-        ],
-        cols: [
-          {
-            width: 180,
-          },
-        ],
-        rows: [],
-      }
-    ]
-  }
+    styles: {
+      bold: {
+          "font-weight": "bold",
+      },
+      right: {
+          "justify-content": "flex-end",
+          "text-align": "right",
+      },
+    },
+    data: [
+      { cell: "a1", value: "Country", css:"bold" },
+      { cell: "b1", value: "Product", css:"bold" },
+      { cell: "c1", value: "Price", css:"right bold" },
+      { cell: "d1", value: "Amount", css:"right bold" },
+      { cell: "e1", value: "Total Price", css:"right bold" },
+
+      { cell: "a2", value: "Ecuador" },
+      { cell: "b2", value: "Banana" },
+      { cell: "c2", value: 6.68, format: "currency" },
+      { cell: "d2", value: 430 },
+      { cell: "e2", value: 2872.4, format: "currency" },
+
+      { cell: "a3", value: "Belarus" },
+      { cell: "b3", value: "Apple" },
+      { cell: "c3", value: 3.75, format: "currency" },
+      { cell: "d3", value: 600 },
+      { cell: "e3", value: 2250, format: "currency" },
+
+      { cell: "a4", value: "Peru" },
+      { cell: "b4", value: "Grapes" },
+      { cell: "c4", value: 7.69, format: "currency" },
+      { cell: "d4", value: 740 },
+      { cell: "e4", value: 5690.6, format: "currency" },
+
+      { cell: "a5", value: "Egypt" },
+      { cell: "b5", value: "Orange" },
+      { cell: "c5", value: 5.86, format: "currency" },
+      { cell: "d5", value: 560 },
+      { cell: "e5", value: 3281.6, format: "currency" },
+
+      { cell: "a6", value: "South Africa" },
+      { cell: "b6", value: "Grapefruit" },
+      { cell: "c6", value: 8.58, format: "currency" },
+      { cell: "d6", value: 800 },
+      { cell: "e6", value: 6864, format: "currency" },
+
+      { cell: "a7", value: "Spain" },
+      { cell: "b7", value: "Lemon" },
+      { cell: "c7", value: 9.12, format: "currency" },
+      { cell: "d7", value: 650 },
+      { cell: "e7", value: 5928, format: "currency" },
+
+      { cell: "a8", value: "Iran" },
+      { cell: "b8", value: "Pomegranate" },
+      { cell: "c8", value: 9.67, format: "currency" },
+      { cell: "d8", value: 300 },
+      { cell: "e8", value: 2901, format: "currency" }
+    ],
+  };
 }
 ~~~
 
-Then open the **spreadsheet.component.ts** file and add the `spreadsheet.parse(getData());` line into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
+Then open the **spreadsheet.component.ts** file. Import the file with data and add the `spreadsheet.parse();` call into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
 
-~~~js {3} title="spreadsheet.component.ts"
+~~~js {1,8} title="spreadsheet.component.ts"
+// importing the data file
+import { getData } from './data';
+
 ngOnInit() {
   this.spreadsheet = new Spreadsheet(this.spreadsheetContainer.nativeElement,{});
+  // adding spreadsheet.parse() into `ngOnInit()` 
   this.spreadsheet.parse(getData());
 }
 ~~~
@@ -283,7 +263,7 @@ export class AppComponent {
 }
 ~~~
 
-Then create the **app.module.ts** file in the **src/app/** directory and insert the Spreadsheet component as provided below:
+Then create the **app.module.ts** file in the **src/app/** directory and insert the *SpreadsheetComponent* as provided below:
 
 ~~~js title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -300,11 +280,6 @@ import { SpreadsheetComponent } from "./spreadsheet/spreadsheet.component";
 })
 export class AppModule {}
 ~~~
-
-For our app to work properly, we need to *remove some unnecessary files* from the **src/app/** directory, they are:
-
-- app.component.config
-- app.component.html
 
 The last step is to open the **src/main.ts** file and replace the existing code with the following one:
 

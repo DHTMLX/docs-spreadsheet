@@ -8,27 +8,21 @@ description: You can learn about the localization config in the documentation of
 
 ### Description
 
-@short: Optional. Defines the format of numbers, dates, currency
+@short: Optional. Defines the format of numbers, dates, time and currency
 
 ### Usage
 
 ~~~jsx
-const localization = {
-	decimal?: "." | ",";  
-	thousands?: "." | "," | " " | ""; 
-	currency?: string; 
-	dateFormat?: string;
-	timeFormat?: 12 | 24;
-}
+localization?: object;
 ~~~
 
 ### Parameters
 
 The **localization** object may contain the following properties:
 
-- **decimal** - the symbol used as a decimal separator
-- **thousands** - the symbol used as a thousands separator
-- **currency** - the currency sign 
+- **decimal** - the symbol used as a decimal separator, **"."** by default. Possible values are `"." | ","`
+- **thousands** - the symbol used as a thousands separator, **","** by default. Possible values are `"." | "," | " " | ""`
+- **currency** - the currency sign, **"$"** by default
 - **dateFormat** - the format of displaying dates set as a string. The default format is **"%d/%m/%Y"**. Check the details at the [dateFormat](api/spreadsheet_dateformat_config.md) API page
 - **timeFormat** - the format of displaying time set as either *12* or *24*. The default format is **12**
 
