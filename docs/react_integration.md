@@ -162,70 +162,42 @@ To add data into the Spreadsheet, we need to provide a data set. Let's create th
 ~~~js title="data.js"
 export function getData() {
   return {
-    sheets: [
-      {
-        name: "Boolean",
-        data: [
-          {
-            cell: "A1",
-            css: "header",
-            format: "common",
-            value: "Formula name",
-          },
-          {
-            cell: "B1",
-            css: "header",
-            format: "common",
-            value: "Formula example",
-          },
-          {
-            cell: "C1",
-            css: "header",
-            format: "common",
-            value: "Data for formula",
-          },
-          {
-            cell: "A3",
-            css: "highlighting",
-            format: "common",
-            value: "Equal to",
-          },
-          {
-            cell: "B3",
-            format: "common",
-            value: "=C3=D3",
-          },
-          {
-            cell: "C3",
-            format: "number",
-            value: 5,
-          },
-          {
-            cell: "A4",
-            css: "highlighting",
-            format: "common",
-            value: "Greater than",
-          },
-          {
-            cell: "B4",
-            format: "common",
-            value: "=C4>D4",
-          },
-          {
-            cell: "C4",
-            format: "number",
-            value: 7,
-          },
-          // more cells
-        ],
-        cols: [
-          {
-            width: 180,
-          },
-        ],
-        rows: [],
-      }
-    ]
+    styles: {
+      bold: {
+          "font-weight": "bold",
+      },
+      right: {
+          "justify-content": "flex-end",
+          "text-align": "right",
+      },
+    },
+    data: [
+      { cell: "a1", value: "Country", css:"bold" },
+      { cell: "b1", value: "Product", css:"bold" },
+      { cell: "c1", value: "Price", css:"right bold" },
+      { cell: "d1", value: "Amount", css:"right bold" },
+      { cell: "e1", value: "Total Price", css:"right bold" },
+
+      { cell: "a2", value: "Ecuador" },
+      { cell: "b2", value: "Banana" },
+      { cell: "c2", value: 6.68, format: "currency" },
+      { cell: "d2", value: 430 },
+      { cell: "e2", value: 2872.4, format: "currency" },
+
+      { cell: "a3", value: "Belarus" },
+      { cell: "b3", value: "Apple" },
+      { cell: "c3", value: 3.75, format: "currency" },
+      { cell: "d3", value: 600 },
+      { cell: "e3", value: 2250, format: "currency" },
+
+      { cell: "a4", value: "Peru" },
+      { cell: "b4", value: "Grapes" },
+      { cell: "c4", value: 7.69, format: "currency" },
+      { cell: "d4", value: 740 },
+      { cell: "e4", value: 5690.6, format: "currency" },
+
+      // more cells with data
+    ],
   }
 }
 ~~~

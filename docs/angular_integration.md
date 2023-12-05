@@ -185,29 +185,7 @@ export function getData(): any {
       { cell: "d4", value: 740 },
       { cell: "e4", value: 5690.6, format: "currency" },
 
-      { cell: "a5", value: "Egypt" },
-      { cell: "b5", value: "Orange" },
-      { cell: "c5", value: 5.86, format: "currency" },
-      { cell: "d5", value: 560 },
-      { cell: "e5", value: 3281.6, format: "currency" },
-
-      { cell: "a6", value: "South Africa" },
-      { cell: "b6", value: "Grapefruit" },
-      { cell: "c6", value: 8.58, format: "currency" },
-      { cell: "d6", value: 800 },
-      { cell: "e6", value: 6864, format: "currency" },
-
-      { cell: "a7", value: "Spain" },
-      { cell: "b7", value: "Lemon" },
-      { cell: "c7", value: 9.12, format: "currency" },
-      { cell: "d7", value: 650 },
-      { cell: "e7", value: 5928, format: "currency" },
-
-      { cell: "a8", value: "Iran" },
-      { cell: "b8", value: "Pomegranate" },
-      { cell: "c8", value: 9.67, format: "currency" },
-      { cell: "d8", value: 300 },
-      { cell: "e8", value: 2901, format: "currency" }
+      // more cells with data
     ],
   };
 }
