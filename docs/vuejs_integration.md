@@ -143,9 +143,9 @@ export default {
 </script>
 ~~~
 
-To clear the component as it has unmounted, use the `spreadsheet.destructor()` call inside the `unmounted()` method of Vue.js:
+To clear the component as it has unmounted, use the `spreadsheet.destructor()` call and remove the container after that inside the `unmounted()` method of Vue.js, as follows:
 
-~~~html title="Spreadsheet.vue"
+~~~html {7-10} title="Spreadsheet.vue"
 <script>
 export default {
   mounted: function() {
@@ -256,13 +256,11 @@ When a user makes some action in the Spreadsheet, it invokes an event. You can u
 
 Open **Spreadsheet.vue** and complete the `mounted()` method as in:
 
-~~~html title="Spreadsheet.vue"
-// check the code !!
+~~~html {5} title="Spreadsheet.vue"
 <script>
 export default {
     mounted: function() {
       this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-      // especially this line
       this.spreadsheet.events.on("ActionName", () => {do something});
     }
 }
