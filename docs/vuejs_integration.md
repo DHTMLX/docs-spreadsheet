@@ -14,11 +14,11 @@ You can use DHTMLX Spreadsheet in an application created with the [Vue.js](https
 
 ## Preparations
 
-You will need [Vite](https://vitejs.dev/) and [Node.js](https://nodejs.org/en/) to create a project, so you should install them, if haven't done it before.
+You will need [Node.js](https://nodejs.org/en/) to create a project, so you should install it, if haven't done it before.
 
 ## Creating a project
 
-To create a Vue project, you can use **Vue.js with Vite**, by running: 
+To create a Vue project, run the following command: 
 
 ~~~
 npm create vue@latest
@@ -291,8 +291,12 @@ export default {
 </template>
 ~~~
 
-Now when we start the app, we should see Spreadsheet loaded with data on a page.
+After that, when we start the app, we should see Spreadsheet loaded with data on a page.
 
 ![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
+
+Now you should have a basic setup for integrating DHTMLX Spreadsheet with Vue.js. You can customize the code according to your specific requirements.
+
+
 
 

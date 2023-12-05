@@ -270,7 +270,7 @@ onMount(() => {
 });
 ~~~
 
-Replace `'ActionName'` with the actual event name you want to handle, and implement the corresponding code inside the callback function. Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
+Replace `'ActionName'` with the actual name of the event you want to handle, and implement the corresponding code inside the callback function. Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
 
 ### Step 3. Adding Spreadsheet into the app
 
@@ -285,8 +285,10 @@ Now it's time to add the component into our app. Open **App.svelte** and replace
 <Spreadsheet data={getData()} />
 ~~~
 
-Now when we start the app, we should see Spreadsheet loaded with data on a page.
+After that, when we start the app, we should see Spreadsheet loaded with data on a page.
 
 ![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
+
+Now you should have a basic setup for integrating DHTMLX Spreadsheet with Svelte. You can customize the code according to your specific requirements.
 
 

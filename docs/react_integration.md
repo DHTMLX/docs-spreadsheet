@@ -293,6 +293,8 @@ function App() {
 export default App;
 ~~~
 
-Now when we start the app, we should see Spreadsheet loaded with data on a page.
+After that, when we start the app, we should see Spreadsheet loaded with data on a page.
 
 ![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
+
+Now you should have a basic setup for integrating DHTMLX Spreadsheet with React. You can customize the code according to your specific requirements.
