@@ -92,7 +92,7 @@ To get Spreadsheet under the proprietary license, refer to the [Support Center](
 
 ### Step 2. Component creation
 
-Now we should create a React component, to add a Spreadsheet into the application. Let's create a new file in the **src/** directory and name it **Spreadsheet.jsx**.
+Now we should create a React component, to add a Spreadsheet into the application. Let's create a new file in the **src/** directory and name it **SpreadsheetComponent.jsx**.
 
 #### Importing source files
 
@@ -118,9 +118,9 @@ In this tutorial we will use the trial version of Spreadsheet.
 
 To display Spreadsheet on the page, we need to set the container to render the component inside. Check the code below:
 
-~~~jsx {3,7,9} title="Spreadsheet.jsx"
-import { Spreadsheet } from "dhx-spreadsheet-package";
-import "dhx-spreadsheet-package/codebase/spreadsheet.css";
+~~~jsx {3,7,9} title="SpreadsheetComponent.jsx"
+import { Spreadsheet } from '@dhx/trial-spreadsheet';
+import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
 import { useRef } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -135,7 +135,7 @@ export default SpreadsheetComponent;
 
 Then we need to add our Spreadsheet into the container. To do that, import the `useEffect()` method of React and use it to render the Spreadsheet instance and destruct when it is no longer needed:
 
-~~~jsx {1,6-12} title="Spreadsheet.jsx"
+~~~jsx {1,6-12} title="SpreadsheetComponent.jsx"
 import { useEffect, useRef } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -202,9 +202,9 @@ export function getData() {
 }
 ~~~
 
-Then open the **Spreadsheet.jsx** file, pass the name of the data file to the component constructor function and use the **parse()** method inside the `useEffect()` method of React to load data into spreadsheet as in:
+Then open the **SpreadsheetComponent.jsx** file, pass the name of the data file to the component constructor function and use the **parse()** method inside the `useEffect()` method of React to load data into spreadsheet as in:
 
-~~~jsx {1,11-15} title="Spreadsheet.jsx"
+~~~jsx {1,11-15} title="SpreadsheetComponent.jsx"
 const SpreadsheetComponent = ({ data }) => {
   const node = useRef(null);
   let spreadsheet = useRef(null);
@@ -233,9 +233,9 @@ Now the Spreadsheet component is ready. When the element will be added to the pa
 
 When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
 
-Open **Spreadsheet.jsx** and complete the `useEffect()` method as in:
+Open **SpreadsheetComponent.jsx** and complete the `useEffect()` method as in:
 
-~~~js {4} title="Spreadsheet.jsx" 
+~~~js {4} title="SpreadsheetComponent.jsx" 
 useEffect(() => {
     spreadsheet.current = new Spreadsheet(node.current, {});
     
