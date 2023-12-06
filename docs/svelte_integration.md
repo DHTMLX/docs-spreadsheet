@@ -6,23 +6,27 @@ description: You can learn about the Svelte integration of the DHTMLX JavaScript
 
 # Integration with Svelte
 
-You can use DHTMLX Spreadsheet in an application created with the [Svelte](https://svelte.dev/) framework. 
-
-:::tip 
-[Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34).
+:::tip
+You should be familiar with the basic concepts and patterns of **Svelte** to use this documentation. If you are not, please refer to the [**Svelte documentation**](https://svelte.dev/) for a getting-started tutorial.
 :::
 
-## Preparations
+DHTMLX Spreadsheet is compatible with **Svelte**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Svelte**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
 
-You will need [Vite](https://vitejs.dev/) and [Node.js](https://nodejs.org/en/) to create a project, so you should install them, if haven't done it before.
+<iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ## Creating a project
 
-There are several ways of creating a project: 
+:::info
+Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+:::
 
-- you can use the [SvelteKit](https://kit.svelte.dev/)
+There are several ways of creating a project:
 
-- you can also use **Svelte with Vite** (but without SvelteKit), if you don't want to use SvelteKit for some reason, by running: 
+- you can use the [**SvelteKit**](https://kit.svelte.dev/)
+
+or
+
+- you can also use **Svelte with Vite** (but without SvelteKit): 
 
 ~~~
 npm create vite@latest
@@ -40,19 +44,19 @@ cd spreadsheet-svelte
 
 Then you need to install dependencies and run the app. For this, you need to make use of a package manager:
 
-- if you use [yarn](https://yarnpkg.com/), you need to call the following commands:
+- if you use [**yarn**](https://yarnpkg.com/), you need to call the following commands:
 
 ~~~
 yarn install
 yarn dev
 ~~~
 
-- if you use [npm](https://www.npmjs.com/), you need to call the following commands:
+- if you use [**npm**](https://www.npmjs.com/), you need to call the following commands:
 
 ~~~
 npm install
 npm run dev
-~~~ 
+~~~
 
 After the above steps are complete, the app should run on `http://localhost:5173`.
 
@@ -75,8 +79,7 @@ The instructions are the following:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
-
-//or
+// or
 yarn add "./spreadsheet_5.1.0_enterprise"
 ~~~
 
@@ -89,16 +92,16 @@ You can install the **trial** version of Spreadsheet using **npm** or **yarn** c
 npm config set @dhx:registry https://npm.dhtmlx.com
 npm i @dhx/trial-spreadsheet
 
-//yarn
+// yarn
 yarn config set @dhx:registry https://npm.dhtmlx.com
 yarn add @dhx/trial-spreadsheet
 ~~~
 
-To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml?_gl=1*18ffotg*_ga*MTA3MDMxMTAxNi4xNzAwNTcxNzU4*_ga_N87XPB4GSG*MTcwMTQzMjczMS4yOS4xLjE3MDE0MzI3OTUuNTYuMC4w&_ga=2.77564829.902258312.1701098802-1070311016.1700571758)!
-	
+To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml)!
+
 ### Step 2. Component creation
 
-Now we should create a Svelte component, to add a Spreadsheet into the application. Let's create a new file in the **src/** directory and name it **Spreadsheet.svelte**.
+Now we should create a Svelte component, to add a Spreadsheet into the application. Let's create a new file in the ***src/*** directory and name it ***Spreadsheet.svelte***.
 
 #### Importing source files
 
@@ -153,10 +156,10 @@ Then we need to render our Spreadsheet in the container. To do that, use the `on
 
 <div bind:this={container}></div>
 ~~~
-	
+
 #### Loading data
 
-To add data into the Spreadsheet, we need to provide a data set. Let's create the **data.js** file in the **src/** directory and add some data into it:
+To add data into the Spreadsheet, we need to provide a data set. Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~js title="data.js"
 export function getData() {
@@ -201,7 +204,7 @@ export function getData() {
 }
 ~~~
 
-Then open the **Spreadsheet.svelte** file, specify the line for data export and use the **parse()** method to load data:
+Then open the ***Spreadsheet.svelte*** file, specify the line for data export and use the `parse()` method to load data:
 
 ~~~html {6,8,16} title="Spreadsheet.svelte"
 <script>
@@ -233,9 +236,9 @@ Now the Spreadsheet component is ready. When the element will be added to the pa
 
 When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
 
-Open **Spreadsheet.svelte** and complete the `onMount()` method as in:
+Open ***Spreadsheet.svelte*** and complete the `onMount()` method as in:
 
-~~~js title="Spreadsheet.svelte" 
+~~~js title="Spreadsheet.svelte"
 onMount(() => {
     spreadsheet = new Spreadsheet(container, {});
     spreadsheet.events.on("ActionName", () => {do something});
@@ -246,7 +249,7 @@ Replace `'ActionName'` with the actual name of the event you want to handle, and
 
 ### Step 3. Adding Spreadsheet into the app
 
-Now it's time to add the component into our app. Open **App.svelte** and replace the default code with the following one:
+Now it's time to add the component into our app. Open ***App.svelte*** and replace the default code with the following one:
 
 ~~~html title="App.svelte"
 <script>
@@ -262,5 +265,3 @@ After that, when we start the app, we should see Spreadsheet loaded with data on
 ![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
 
 Now you should have a basic setup for integrating DHTMLX Spreadsheet with Svelte. You can customize the code according to your specific requirements.
-
-
