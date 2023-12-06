@@ -115,7 +115,7 @@ spreadsheet.parse(dataset);
 
 Here is the result of configuring the **localization** object for Spreadsheet:
 
-<iframe src="https://snippet.dhtmlx.com/v55rjtrj?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+<iframe src="https://snippet.dhtmlx.com/xislsb3c?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
 ## Formats customization
 
