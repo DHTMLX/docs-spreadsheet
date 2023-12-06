@@ -157,13 +157,16 @@ const dataset = [
         cell: "b2", 
         value: "Banana", 
         link:{
-            text:"Health benefits of banana"
             href:"http://localhost:8080/"
         } 
     },
     // more cells
 ];
 ~~~
+
+:::note
+Note that you should not use the **value** property of the *cell* object and the **text** property of the *link* object at the same time, since they are mutually exclusive.
+:::
 
 ## External data loading
 

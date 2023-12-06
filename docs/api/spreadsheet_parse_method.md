@@ -24,7 +24,7 @@ parse([
             options: string | array
         },
         locked?: boolean,
-        link: {
+        link?: {
             text?: string,
             href: string
         }
@@ -52,7 +52,7 @@ parse({
                         options: string | array
                     },
                     locked?: boolean,
-                    link: {
+                    link?: {
                         text?: string,
                         href: string
                     }
@@ -74,7 +74,6 @@ parse({
 
 ### Parameters
 
-
 If you need to create a data set *for one sheet* only, specify data as an **array of cell objects**. For each **cell** object you can specify the following parameters:
 
 - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
@@ -88,7 +87,7 @@ If you need to create a data set *for one sheet* only, specify data as an **arra
 - `link` - (optional) an object with configuration settings for the link added into a cell:
     - `text` - (optional) the text of a link
     - `href` - (required) the URL that defines the link destination
-    
+
 <br>
 
 If you need to create a data set *for several sheets* at once, specify data as an **object** with the following parameter:
