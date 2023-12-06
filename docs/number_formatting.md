@@ -91,11 +91,11 @@ spreadsheet.parse({
 
 With Spreadsheet configuration options, you can localize time and date, specify the necessary currency sign and provide the desired decimal and thousands separators. All these settings are available in the [localization](spreadsheet/api/spreadsheet_localization_config.md) property. It is an object with the following properties:
 
-- **decimal** - the symbol used as a decimal separator, **"."** (a period) by default
-- **thousands** - the symbol used as a thousands separator, **","** (a comma) by default
-- **currency** - the currency sign, **"$"** by default 
-- **dateFormat** - the format of displaying dates set as a string, **"%d/%m/%Y"** by default. Check the details at the [dateFormat](api/spreadsheet_dateformat_config.md) API page
-- **timeFormat** - the format of displaying time set as either *12* or *24*, **12** by default
+- **decimal** - (optional) the symbol used as a decimal separator, **"."** (a period) by default<br>Possible values are `"." | ","`
+- **thousands** - (optional) the symbol used as a thousands separator, **","** (a comma) by default<br>Possible values are `"." | "," | " " | ""`
+- **currency** - (optional) the currency sign, **"$"** by default 
+- **dateFormat** - (optional) the format of displaying dates set as a string, **"%d/%m/%Y"** by default. Check the details at the [dateFormat](api/spreadsheet_dateformat_config.md) API page
+- **timeFormat** - (optional) the format of displaying time set as either *12* or *24*, **12** by default
 
 For example, you can change the default localization settings as shown below:
 

@@ -31,7 +31,6 @@ Released on December X, 2023
 ### Fixes
 
 - Fix the problem with applying Undo to the value set in a cell
-- Fix the issue with losing a link added into a cell after data reloading
 - Fix the limitation on the number of pasted rows
 - Fix replacement of spaces with the `&nbsp;` symbols in formulas in the Edit line
 - Fix incorrect work of Excel import with the date-like values
