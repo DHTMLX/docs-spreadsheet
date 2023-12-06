@@ -23,7 +23,11 @@ parse([
             type: string, // type: "select"
             options: string | array
         },
-        locked?: boolean
+        locked?: boolean,
+        link: {
+            text?: string,
+            href: string
+        }
     },
     // more cell objects
 ]): void;
@@ -47,7 +51,11 @@ parse({
                         type: string, // type: "select"
                         options: string | array
                     },
-                    locked?: boolean
+                    locked?: boolean,
+                    link: {
+                        text?: string,
+                        href: string
+                    }
                 },
                 // more cell objects
             ],
@@ -77,7 +85,10 @@ If you need to create a data set *for one sheet* only, specify data as an **arra
     - `type` - (required) the type of the cell editor: "select"
     - `options` - (required) either a range of cells ("A1:B8") or an array of string values
 - `locked` - (optional) defines whether a cell is locked, *false* by default
-
+- `link` - (optional) an object with configuration settings for the link added into a cell:
+    - `text` - (optional) the text of a link
+    - `href` - (required) the URL that defines the link destination
+    
 <br>
 
 If you need to create a data set *for several sheets* at once, specify data as an **object** with the following parameter:
@@ -96,6 +107,9 @@ If you need to create a data set *for several sheets* at once, specify data as a
             - `type` - (required) the type of the cell editor: "select"
             - `options` - (required) either a range of cells ("A1:B8") or an array of string values
         - `locked` - (optional) defines whether a cell is locked, *false* by default
+        - `link` - (optional) an object with configuration settings for the link added into a cell:
+            - `text` - (optional) the text of a link
+            - `href` - (required) the URL that defines the link destination
     - `merged` - (optional) an array of objects where each object defines a range of cells which need to be merged. Each object must include the following properties:
         - `from` - an object which defines the position of the first cell from a range:
             - `column` - the index of the column
@@ -240,7 +254,7 @@ but in some cases they may not work in the way you expect (for example, when app
 
 **Change log:**
 
-- The **locked** property of the **cell** object was added in v5.1
+- The **locked** and **link** properties of the **cell** object were added in v5.1
 - The **merged** property of the **sheet** object was added in v5.0
 - The **editor** property of the **cell** object was added in v4.3
 - The **rows** and **cols** properties of the **sheet** object were added in v4.2

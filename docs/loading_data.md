@@ -138,6 +138,33 @@ Check the full list of available cell properties in the [API reference](api/spre
 
 **Related sample**: [Spreadsheet. Locked cells](https://snippet.dhtmlx.com/czeyiuf8)
 
+### Adding a link into a cell
+
+There is a possibility to specify a link for a cell right in a data set. For this, you need to set the **link** property as an object and provide the necessary settings:
+
+- `text` - (optional) the text of a link
+- `href` - (required) the URL that defines the link destination
+
+Here's what it looks like in a data set:
+
+~~~js
+const dataset = [
+    { cell: "a1", value: "Country"}, //locks a cell
+    { cell: "b1", value: "Product"},   
+
+    { cell: "a2", value: "Ecuador"},
+    { 
+        cell: "b2", 
+        value: "Banana", 
+        link:{
+            text:"Health benefits of banana"
+            href:"http://localhost:8080/"
+        } 
+    },
+    // more cells
+];
+~~~
+
 ## External data loading
 
 ### Loading JSON data
