@@ -3,32 +3,33 @@ sidebar_label: Integration with Vue.js
 title: Vue.js Integration
 description: You can learn about the Vue.js integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
-
 # Integration with Vue.js
 
-You can use DHTMLX Spreadsheet in an application created with the [Vue.js](https://vuejs.org/) framework. 
-
-:::tip 
-[Check the demo on CodeSandbox](https://codesandbox.io/p/sandbox/dhtmlx-spreadsheet-with-vue3-c75m2t).
+:::tip
+You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) to use this documentation. If you are not, please refer to the [**Vue 3 documentation**](https://v3.vuejs.org/guide/introduction.html#getting-started) for a getting-started tutorial.
 :::
 
-## Preparations
+DHTMLX Spreadsheet is compatible with **Vue**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Vue**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
 
-You will need [Node.js](https://nodejs.org/en/) to create a project, so you should install it, if haven't done it before.
+<iframe src="https://codesandbox.io/p/sandbox/dhtmlx-spreadsheet-with-vue3-c75m2t" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ## Creating a project
 
-To create a Vue project, run the following command: 
+:::info
+Before you start to create a new project, install [Node.js](https://nodejs.org/en/).
+:::
+
+To create a **Vue** project, run the following command:
 
 ~~~
 npm create vue@latest
 ~~~
 
-This command will install and execute `create-vue`, the official Vue project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+This command will install and execute `create-vue`, the official **Vue** project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
 
 ### Installation of dependencies
 
-Next you should go to the app directory. Let's call our project **spreadsheet-vue** and run:
+Next you should go to the app directory. Let's name our project **spreadsheet-vue** and run:
 
 ~~~
 cd spreadsheet-vue
@@ -36,21 +37,21 @@ cd spreadsheet-vue
 
 After that you should install dependencies and start the dev server. For this, you need to make use of a package manager:
 
-- if you use [yarn](https://yarnpkg.com/), you need to call the following commands:
+- if you use [**yarn**](https://yarnpkg.com/), you need to call the following commands:
 
 ~~~
 yarn install
 yarn dev
 ~~~
 
-- if you use [npm](https://www.npmjs.com/), you need to call the following commands:
+- if you use [**npm**](https://www.npmjs.com/), you need to call the following commands:
 
 ~~~
 npm install
 npm run dev
 ~~~
 
-You should now have your Vue project running on `http://localhost:5173`.
+You should now have your **Vue** project running on `http://localhost:5173`.
 
 ![Vue app running](assets/integrations/vue_app_run.png) 
 
@@ -71,7 +72,6 @@ The instructions are the following:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
-
 //or
 yarn add "./spreadsheet_5.1.0_enterprise"
 ~~~
@@ -85,16 +85,16 @@ You can install the **trial** version of Spreadsheet using **npm** or **yarn** c
 npm config set @dhx:registry https://npm.dhtmlx.com
 npm i @dhx/trial-spreadsheet
 
-//yarn
+// yarn
 yarn config set @dhx:registry https://npm.dhtmlx.com
 yarn add @dhx/trial-spreadsheet
 ~~~
 
-To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml?_gl=1*18ffotg*_ga*MTA3MDMxMTAxNi4xNzAwNTcxNzU4*_ga_N87XPB4GSG*MTcwMTQzMjczMS4yOS4xLjE3MDE0MzI3OTUuNTYuMC4w&_ga=2.77564829.902258312.1701098802-1070311016.1700571758)!
+To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml)!
 
 ### Step 2. Component creation
 
-Now we should create a Svelte component, to add a Spreadsheet into the application. Let's create a new file in the **src/components/** directory and name it **Spreadsheet.vue**. 
+Now we should create a Svelte component, to add a Spreadsheet into the application. Let's create a new file in the ***src/components/*** directory and name it ***Spreadsheet.vue***. 
 
 #### Importing source files
 
@@ -143,7 +143,7 @@ export default {
 </script>
 ~~~
 
-To clear the component as it has unmounted, use the `spreadsheet.destructor()` call and remove the container after that inside the `unmounted()` method of Vue.js, as follows:
+To clear the component as it has unmounted, use the `spreadsheet.destructor()` call and remove the container after that inside the `unmounted()` method of ***Vue.js***, as follows:
 
 ~~~html {7-10} title="Spreadsheet.vue"
 <script>
@@ -162,7 +162,7 @@ export default {
 
 #### Loading data
 
-Next you can load data into the Spreadsheet. For this, you need to provide a data set. Create the **data.js** file in the **src/** directory and add some data into it:
+Next you can load data into the Spreadsheet. For this, you need to provide a data set. Create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~js title="data.js"
 export function getData() {
@@ -207,7 +207,7 @@ export function getData() {
 }
 ~~~
 
-Then open the **Spreadsheet.vue** file and use the **spreadsheet.parse()** method to load data. It will reload data on each applied change:
+Then open the ***Spreadsheet.vue*** file and use the `spreadsheet.parse()` method to load data. It will reload data on each applied change:
 
 ~~~html {5} title="Spreadsheet.vue"
 <script>
@@ -226,7 +226,7 @@ Now the Spreadsheet component is ready. When the element will be added to the pa
 
 When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
 
-Open **Spreadsheet.vue** and complete the `mounted()` method as in:
+Open ***Spreadsheet.vue*** and complete the `mounted()` method:
 
 ~~~html {5} title="Spreadsheet.vue"
 <script>
@@ -243,7 +243,7 @@ Replace `'ActionName'` with the actual event name you want to handle, and implem
 
 ### Step 3. Adding Spreadsheet into the app
 
-Now it's time to add the component into our app. Open **App.vue** and replace the code with the following one:
+Now it's time to add the component into our app. Open ***App.vue*** and replace the code with the following one:
 
 ~~~html title="App.vue"
 <script>
@@ -265,10 +265,6 @@ export default {
 
 After that, when we start the app, we should see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
+![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png)
 
 Now you should have a basic setup for integrating DHTMLX Spreadsheet with Vue.js. You can customize the code according to your specific requirements.
-
-
-
-

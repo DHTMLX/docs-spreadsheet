@@ -6,19 +6,21 @@ description: You can learn about the React integration of the DHTMLX JavaScript 
 
 # Integration with React
 
-You can use DHTMLX Spreadsheet in an application created with the [React](https://react.dev) framework. 
-
-:::tip 
-[Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-react-rhjh94).
+:::tip
+You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) to use this documentation. If you are not, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html) for a getting-started tutorial.
 :::
 
-## Preparations
+DHTMLX Spreadsheet is compatible with **React**. We have prepared code examples of how to use DHTMLX Spreadsheet with **React**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
 
-You will need [Vite](https://vitejs.dev/) and [Node.js](https://nodejs.org/en/) to create a project, so you should install them, if haven't done it before.
+<iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-react-rhjh94" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ## Creating a project
 
-To create a React project, you can use **React with Vite**, by running: 
+:::info
+Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+:::
+
+You can create a basic **React** project or use **React with Vite**:
 
 ~~~
 npx create-vite my-react-spreadsheet-app --template react
@@ -34,14 +36,14 @@ cd my-react-spreadsheet-app
 
 After that you should install dependencies and start the dev server. For this, you need to make use of a package manager:
 
-- if you use [yarn](https://yarnpkg.com/), you need to call the following commands:
+- if you use [**yarn**](https://yarnpkg.com/), you need to call the following commands:
 
 ~~~
 yarn install
 yarn dev
 ~~~
 
-- if you use [npm](https://www.npmjs.com/), you need to call the following commands:
+- if you use [**npm**](https://www.npmjs.com/), you need to call the following commands:
 
 ~~~
 npm install
@@ -69,8 +71,7 @@ The instructions are the following:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
-
-//or
+// or
 yarn add "./spreadsheet_5.1.0_enterprise"
 ~~~
 
@@ -88,11 +89,11 @@ yarn config set @dhx:registry https://npm.dhtmlx.com
 yarn add @dhx/trial-spreadsheet
 ~~~
 
-To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml?_gl=1*18ffotg*_ga*MTA3MDMxMTAxNi4xNzAwNTcxNzU4*_ga_N87XPB4GSG*MTcwMTQzMjczMS4yOS4xLjE3MDE0MzI3OTUuNTYuMC4w&_ga=2.77564829.902258312.1701098802-1070311016.1700571758)!
+To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml)!
 
 ### Step 2. Component creation
 
-Now we should create a React component, to add a Spreadsheet into the application. Let's create a new file in the **src/** directory and name it **SpreadsheetComponent.jsx**.
+Now we should create a React component, to add a Spreadsheet into the application. Let's create a new file in the ***src/*** directory and name it ***Spreadsheet.jsx***.
 
 #### Importing source files
 
@@ -157,7 +158,7 @@ export default SpreadsheetComponent;
 
 #### Loading data
 
-To add data into the Spreadsheet, we need to provide a data set. Let's create the **data.js** file in the **src/** directory and add some data into it:
+To add data into the Spreadsheet, we need to provide a data set. Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~js title="data.js"
 export function getData() {
@@ -202,7 +203,7 @@ export function getData() {
 }
 ~~~
 
-Then open the **SpreadsheetComponent.jsx** file, pass the name of the data file to the component constructor function and use the **parse()** method inside the `useEffect()` method of React to load data into spreadsheet as in:
+Then open the ***SpreadsheetComponent.jsx*** file, pass the name of the data file to the component constructor function and use the `parse()` method inside the `useEffect()` method of React to load data into spreadsheet:
 
 ~~~jsx {1,11-15} title="SpreadsheetComponent.jsx"
 const SpreadsheetComponent = ({ data }) => {
@@ -267,6 +268,6 @@ export default App;
 
 After that, when we start the app, we should see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
+![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png)
 
 Now you should have a basic setup for integrating DHTMLX Spreadsheet with React. You can customize the code according to your specific requirements.

@@ -6,19 +6,21 @@ description: You can learn about the Angular integration of the DHTMLX JavaScrip
 
 # Integration with Angular
 
-You can use DHTMLX Spreadsheet in an application created with the [Angular](https://angular.io/) framework. 
-
-:::tip 
-[Check the demo on CodeSandbox](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-angular-7xnzr9).
+:::tip
+You should be familiar with the basic concepts and patterns of **Angular** to use this documentation. If you are not, please refer to the [**Angular documentation**](https://angular.io/docs) for a getting-started tutorial.
 :::
 
-## Preparations
+DHTMLX Spreadsheet is compatible with **Angular**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Angular**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
 
-You will need [Angular CLI](https://angular.io/cli) and [Node.js](https://nodejs.org/en/) to create a project, so you should install them, if haven't done it before.
+<iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-angular-7xnzr9" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ## Creating a project
 
-Create a new Angular project called **my-angular-spreadsheet-app** using Angular CLI. Run the following command for this purpose:
+:::info
+Before you start to create a new project, install [**Angular CLI**](https://angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
+:::
+
+Create a new **my-angular-spreadsheet-app** project using Angular CLI. Run the following command for this purpose:
 
 ~~~
 ng new my-angular-spreadsheet-app
@@ -28,7 +30,7 @@ The above command will install all the necessary tools and dependencies, so you 
 
 ### Installation of dependencies
 
-After that, go to the app directory by running: 
+After that, go to the app directory: 
 
 ~~~
 cd my-angular-spreadsheet-app
@@ -40,7 +42,7 @@ Then, run the app with the following command:
 yarn start
 ~~~
 
-After that the app should run on `http://localhost:4200`.
+After that, the app should run on `http://localhost:4200`.
 
 ![Angular app running](assets/integrations/angular_app_run.png) 
 
@@ -59,7 +61,6 @@ There are two options available: you can install the **Pro** package from a loca
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
-
 //or
 yarn add "./spreadsheet_5.1.0_enterprise"
 ~~~
@@ -73,12 +74,12 @@ You can install the **trial** version of Spreadsheet using **npm** or **yarn** c
 npm config set @dhx:registry https://npm.dhtmlx.com
 npm i @dhx/trial-spreadsheet
 
-//yarn
+// yarn
 yarn config set @dhx:registry https://npm.dhtmlx.com
 yarn add @dhx/trial-spreadsheet
 ~~~
 
-To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml?_gl=1*18ffotg*_ga*MTA3MDMxMTAxNi4xNzAwNTcxNzU4*_ga_N87XPB4GSG*MTcwMTQzMjczMS4yOS4xLjE3MDE0MzI3OTUuNTYuMC4w&_ga=2.77564829.902258312.1701098802-1070311016.1700571758)!
+To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml)!
   
 ### Step 2. Component creation
 
@@ -191,7 +192,7 @@ export function getData(): any {
 }
 ~~~
 
-Then open the **spreadsheet.component.ts** file. Import the file with data and add the `spreadsheet.parse();` call into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
+Then open the ***spreadsheet.component.ts*** file. Import the file with data and add the `spreadsheet.parse();` call into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
 
 ~~~js {1,8} title="spreadsheet.component.ts"
 // importing the data file
@@ -227,7 +228,7 @@ Replace `'ActionName'` with the actual name of the event you want to handle, and
 
 ### Step 3. Adding Spreadsheet into the app
 
-Now it's time to add the component into our app. Open **src/app/app.component.ts** and use *SpreadsheetComponent* instead of the default content by inserting the code below:
+Now it's time to add the component into our app. Open ***src/app/app.component.ts*** and use *SpreadsheetComponent* instead of the default content by inserting the code below:
 
 ~~~js title="app.component.ts"
 import { Component } from "@angular/core";
@@ -241,7 +242,7 @@ export class AppComponent {
 }
 ~~~
 
-Then create the **app.module.ts** file in the **src/app/** directory and insert the *SpreadsheetComponent* as provided below:
+Then create the ***app.module.ts*** file in the ***src/app/*** directory and insert the *SpreadsheetComponent* as provided below:
 
 ~~~js title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -259,7 +260,7 @@ import { SpreadsheetComponent } from "./spreadsheet/spreadsheet.component";
 export class AppModule {}
 ~~~
 
-The last step is to open the **src/main.ts** file and replace the existing code with the following one:
+The last step is to open the ***src/main.ts*** file and replace the existing code with the following one:
 
 ~~~js title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
@@ -271,9 +272,6 @@ platformBrowserDynamic()
 
 After that, when we start the app, we should see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png) 
+![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png)
 
 Now you should have a basic setup for integrating DHTMLX Spreadsheet with Angular using Angular CLI. You can customize the code according to your specific requirements.
-
-
-
