@@ -9,9 +9,9 @@ description: You can learn about the Vue.js integration of the DHTMLX JavaScript
 You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) to use this documentation. If you are not, please refer to the [**Vue 3 documentation**](https://v3.vuejs.org/guide/introduction.html#getting-started) for a getting-started tutorial.
 :::
 
-DHTMLX Spreadsheet is compatible with **Vue**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Vue**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
+DHTMLX Spreadsheet is compatible with **Vue**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Vue**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/p/sandbox/dhtmlx-spreadsheet-with-vue3-c75m2t).
 
-<iframe src="https://codesandbox.io/p/sandbox/dhtmlx-spreadsheet-with-vue3-c75m2t" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+<iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-vue3-c75m2t?file=%2Fsrc%2Fcomponents%2FSpreadsheet.vue" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
 ## Creating a project
 
