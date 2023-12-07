@@ -10,31 +10,33 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 5.1
 
-Released on December 4, 2023
+Released on December X, 2023
 
 [Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-1/)
 
 ### New functionality
 
-- Ability to [provide a custom name for an exported .xlsx file](spreadsheet/loading_data.md/#how-to-set-a-custom-name-for-an-exported-file)
-- Add the ability to [save the "locked" cell status in a data set](spreadsheet/loading_data.md#setting-the-locked-state-for-a-cell) 
 - [Support for new themes](spreadsheet/themes.md): Dark, Light High Contrast and Dark High Contrast
 - Extended [support for number, date and time format localization](spreadsheet/number_formatting.md/#number-date-time-currency-localization)
+- [Integration with the Svelte framework](spreadsheet/svelte_integration.md)
+- Ability to [provide a custom name for an exported .xlsx file](spreadsheet/loading_data.md/#how-to-set-a-custom-name-for-an-exported-file)
+- Ability to [save the "locked" cell status](spreadsheet/loading_data.md#setting-the-locked-state-for-a-cell) and [specify a link for a cell](loading_data.md/#adding-a-link-into-a-cell) in a data set
 
 ### Updates
 
-- Renewed [integrations with Angular, React, Vue.js](spreadsheet/category/integrations.md)
-- [Integration with the Svelte framework](spreadsheet/svelte_integration.md)
+- Renewed [integrations with React, Angular and Vue.js](spreadsheet/category/integrations.md)
 - Automatic [conversion of lowercase letters to upper case](spreadsheet/functions.md) in formulas 
 - Auto closing of formulas 
 
 ### Fixes
 
+- Fix the problem with applying Undo to the value set in a cell
+- Fix the limitation on the number of pasted rows
 - Fix replacement of spaces with the `&nbsp;` symbols in formulas in the Edit line
 - Fix incorrect work of Excel import with the date-like values
 - Fix incorrect editing of a block of cells
-- Fix the script error that appeared on calling `getExcelDate()` during filtering (check)
-- Fix converting a text value to a number while pasting a cell content (check)
+- Fix the script error that appeared on calling `getExcelDate()` during filtering 
+- Fix converting a text value to a number while pasting a cell content
 - Fix incorrect pasting of data from an Excel file with the modified column width
 
 ## Version 5.0.10
