@@ -136,7 +136,7 @@ const dataset = [
 
 Check the full list of available cell properties in the [API reference](api/spreadsheet_parse_method.md#parameters).
 
-**Related sample**: [Spreadsheet. Locked cells](https://snippet.dhtmlx.com/czeyiuf8)
+**Related sample**: [Spreadsheet. Locked cells](https://snippet.dhtmlx.com/czeyiuf8?tag=spreadsheet)
 
 ### Adding a link into a cell
 
@@ -168,6 +168,8 @@ const dataset = [
 Note that you should not use the **value** property of the *cell* object and the **text** property of the *link* object at the same time, since they are mutually exclusive.
 :::
 
+**Related sample**: [Spreadsheet. Import and export to JSON](https://snippet.dhtmlx.com/e3xct53l?tag=spreadsheet)
+
 ## External data loading
 
 ### Loading JSON data
@@ -179,7 +181,7 @@ var spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.load("../common/data.json");
 ~~~
 
-**Related sample**: [Spreadsheet. Load Data](https://snippet.dhtmlx.com/ih9zmc3e)
+**Related sample**: [Spreadsheet. Load Data](https://snippet.dhtmlx.com/ih9zmc3e?tag=spreadsheet)
 
 
 :::info
@@ -195,7 +197,7 @@ var spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
-**Related sample**: [Spreadsheet. CSV Load](https://snippet.dhtmlx.com/1f87y71v)
+**Related sample**: [Spreadsheet. CSV Load](https://snippet.dhtmlx.com/1f87y71v?tag=spreadsheet)
 
 ### Loading Excel file (.xlsx)
 
@@ -237,7 +239,7 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 {{note Please note that the component supports import from Excel files with the **.xlsx** extension only.}}
 
-**Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
+**Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828?tag=spreadsheet)
 
 You can also [export data from a spreadsheet into an Excel file](#exporting-data), if needed.
 
@@ -321,7 +323,7 @@ Once you've adjusted the required sources, you can use the related [](api/export
 spreadsheet.export.xlsx();
 ~~~
 
-**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
+**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s?tag=spreadsheet)
 
 {{note Please note that the component supports export to Excel files with the **.xlsx** extension only.}}
 
@@ -333,7 +335,7 @@ By default, the name for an exported file is "data". You can provide your own na
 spreadsheet.export.xlsx("MyData");
 ~~~
 
-**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)
+**Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s?tag=spreadsheet)
 
 Check the steps of [importing data from an Excel file into Spreadsheet](#loading-excel-file-xlsx).
 

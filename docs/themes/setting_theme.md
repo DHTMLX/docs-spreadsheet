@@ -69,5 +69,5 @@ Below you'll find the examples of the **dhx.setTheme()** method usage:
 
 **Related samples:**
 
-- [Spreadsheet. Light, Dark, Light High Contrast, and Dark High Contrast themes (skins)](https://snippet.dhtmlx.com/t6rspqai)
-- [Spreadsheet. Custom themes (skins)](https://snippet.dhtmlx.com/59nt1rcb)
+- [Spreadsheet. Light, Dark, Light High Contrast, and Dark High Contrast themes (skins)](https://snippet.dhtmlx.com/t6rspqai?tag=spreadsheet)
+- [Spreadsheet. Custom themes (skins)](https://snippet.dhtmlx.com/59nt1rcb?tag=spreadsheet)
