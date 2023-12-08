@@ -10,7 +10,7 @@ description: You can learn about the Svelte integration of the DHTMLX JavaScript
 You should be familiar with the basic concepts and patterns of **Svelte** to use this documentation. If you are not, please refer to the [**Svelte documentation**](https://svelte.dev/) for a getting-started tutorial.
 :::
 
-DHTMLX Spreadsheet is compatible with **Svelte**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Svelte**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34).
+DHTMLX Spreadsheet is compatible with **Svelte**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Svelte**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
 
 <iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-svelte-wt5v34?file=%2Fsrc%2FSpreadsheet.svelte" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 

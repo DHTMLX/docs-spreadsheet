@@ -10,7 +10,7 @@ description: You can learn about the React integration of the DHTMLX JavaScript 
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) to use this documentation. If you are not, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html) for a getting-started tutorial.
 :::
 
-DHTMLX Spreadsheet is compatible with **React**. We have prepared code examples of how to use DHTMLX Spreadsheet with **React**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/p/sandbox/dhtmlx-spreadsheet-with-react-rhjh94).
+DHTMLX Spreadsheet is compatible with **React**. We have prepared code examples of how to use DHTMLX Spreadsheet with **React**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
 
 <iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-react-rhjh94?file=%2Fsrc%2FSpreadsheet.jsx" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
@@ -137,17 +137,17 @@ export default SpreadsheetComponent;
 Then we need to add our Spreadsheet into the container. To do that, import the `useEffect()` method of React and use it to render the Spreadsheet instance and destruct when it is no longer needed:
 
 ~~~jsx {1,6-12} title="SpreadsheetComponent.jsx"
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
 const SpreadsheetComponent = () => {
   const node = useRef(null);
-  let spreadsheet = useRef(null);
+  let [spreadsheet, setSpreadsheet] = useState(null);
 
   useEffect(() => {
-    spreadsheet.current = new Spreadsheet(node.current, {});
-    window.spreadsheet = spreadsheet.current;
-    return () => spreadsheet.current.destructor();
+    const spreadsheet = new Spreadsheet(node.current, {});
+    setSpreadsheet(spreadsheet);
+    return () => spreadsheet.destructor();
   }, []);
  
   return <div ref={node}></div>;
@@ -208,17 +208,17 @@ Then open the ***SpreadsheetComponent.jsx*** file, pass the name of the data fil
 ~~~jsx {1,11-15} title="SpreadsheetComponent.jsx"
 const SpreadsheetComponent = ({ data }) => {
   const node = useRef(null);
-  let spreadsheet = useRef(null);
+  let [spreadsheet, setSpreadsheet] = useState(null);
 
   useEffect(() => {
-    spreadsheet.current = new Spreadsheet(node.current, {});
-    window.spreadsheet = spreadsheet.current;
-    return () => spreadsheet.current.destructor();
+    const spreadsheet = new Spreadsheet(node.current, {});
+    setSpreadsheet(spreadsheet);
+    return () => spreadsheet.destructor();
   }, []);
 
   useEffect(() => {
-    if (data && spreadsheet.current) {
-      spreadsheet.current.parse(data);
+    if (data && spreadsheet) {
+      spreadsheet.parse(data);
     }
   }, [spreadsheet, data]);
  
@@ -226,7 +226,7 @@ const SpreadsheetComponent = ({ data }) => {
 };
 ~~~
 
-The `spreadsheet.current.parse(data);` line will provide data reloading on each applied change.
+The `spreadsheet.parse(data);` line will provide data reloading on each applied change.
 
 Now the Spreadsheet component is ready. When the element will be added to the page, it will initialize the Spreadsheet object with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
 
@@ -236,13 +236,15 @@ When a user makes some action in the Spreadsheet, it invokes an event. You can u
 
 Open **SpreadsheetComponent.jsx** and complete the `useEffect()` method as in:
 
-~~~js {4} title="SpreadsheetComponent.jsx" 
+~~~js {5} title="SpreadsheetComponent.jsx" 
 useEffect(() => {
-    spreadsheet.current = new Spreadsheet(node.current, {});
-    
-    spreadsheet.current.events.on("ActionName", () => {});
+    const spreadsheet = new Spreadsheet(node.current, {});
+    setSpreadsheet(spreadsheet);
 
-  }, [spreadsheet]);
+    spreadsheet.events.on("ActionName", () => {});
+    
+    return () => spreadsheet.destructor();
+  }, []);
 ~~~
 
 Replace `'ActionName'` with the actual event name you want to handle, and implement the corresponding code inside the callback function. Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
@@ -253,7 +255,6 @@ Now it's time to add the component into our app. Open **App.jsx** and replace th
 
 ~~~jsx title="App.jsx"
 import { useState } from "react";
-import "./App.css";
 import SpreadsheetComponent from "./SpreadsheetComponent";
 import { getData } from "./data";
 
