@@ -1,10 +1,10 @@
 ---
 sidebar_label: Setting themes
-title: Setting themes
-description: You can learn about the setting of themes of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+title: Setting Themes
+description: You can learn how to set a theme in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Setting Themes
+# Setting themes
 
 To set the necessary theme, be it a built-in Spreadsheet theme or a custom one, use one of the ways described below:
 
@@ -32,7 +32,7 @@ document.documentElement.setAttribute("data-dhx-theme", "dark");
 The **dhx.setTheme()** method takes the following parameters:
 
 - `theme: string` - (required) the name of the theme. It can be:
-    - the name of the Suite theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
+    - the name of the Spreadsheet theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
     - the name of a [custom theme](themes/custom_theme.md)
     - *"light"* - by default
 - `container: string | HTMLElement` - (optional) the container to which the theme must be applied. It can be:

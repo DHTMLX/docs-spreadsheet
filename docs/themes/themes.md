@@ -1,10 +1,10 @@
 ---
 sidebar_label: Built-in themes
 title: Built-in Themes
-description: You can learn about the themes of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: You can learn about the built-in themes of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
-# Built-in Themes
+# Built-in themes
 
 DHTMLX Spreadsheet library provides 4 predefined themes:
 
@@ -358,7 +358,7 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 }
 ~~~
 
-## Spreadsheet Specific Styles
+## Spreadsheet specific styles
 
 The list of variables specific for the Spreadsheet component includes the following ones:
 
