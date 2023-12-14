@@ -8,6 +8,20 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.1.1
+
+Released on December 14, 2023
+
+### Fixes
+
+- Fix the issue with the `fixColumn()` method ignoring the arrow icon of the select editor
+- Fix the problem with cell styles taking precedence over the range styles
+- Fix the issue with copying/pasting the content of cells with applied styles and the Undo functionality
+- Fix the problem with a link changing while being pasted into a different cell
+- Fix issues with copying/pasting of merged cells
+- Fix the issue with serialization of styles
+- Fix scrolling to the cell during the call of the `setSelectedCell()` or `setFocusedCell()` methods
+
 ## Version 5.1
 
 Released on December 7, 2023

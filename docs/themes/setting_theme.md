@@ -60,7 +60,7 @@ Below you'll find the examples of the **dhx.setTheme()** method usage:
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container");
+    new dhx.Spreadsheet("container-1");
     
     const container = document.getElementById("container-1");
     dhx.setTheme("dark", container); //apply the "dark" theme to the container specified via an HTMLElement
