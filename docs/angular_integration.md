@@ -194,7 +194,7 @@ export function getData(): any {
 
 Then open the ***spreadsheet.component.ts*** file. Import the file with data and add the `spreadsheet.parse();` call into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
 
-~~~js {1,8} title="spreadsheet.component.ts"
+~~~js {2,7} title="spreadsheet.component.ts"
 // importing the data file
 import { getData } from './data';
 
