@@ -125,7 +125,7 @@ export class SpreadsheetComponent implements OnInit {
 }
 ~~~
 
-Then we need to render our Spreadsheet in the container. To do that, use the `ngOnInit()` method of Svelte:
+Then we need to render our Spreadsheet in the container. To do that, use the `ngOnInit()` method of Angular:
 
 ~~~js {6-8} title="spreadsheet.component.ts"
 export class SpreadsheetComponent implements OnInit {

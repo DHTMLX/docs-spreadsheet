@@ -94,7 +94,7 @@ To get Spreadsheet under the proprietary license, refer to the [Support Center](
 
 ### Step 2. Component creation
 
-Now we should create a Svelte component, to add a Spreadsheet into the application. Let's create a new file in the ***src/components/*** directory and name it ***Spreadsheet.vue***. 
+Now we should create a Vue component, to add a Spreadsheet into the application. Let's create a new file in the ***src/components/*** directory and name it ***Spreadsheet.vue***. 
 
 #### Importing source files
 
