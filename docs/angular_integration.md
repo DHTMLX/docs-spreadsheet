@@ -93,7 +93,7 @@ Open the file and import Spreadsheet source files. Note that:
 
 ~~~
 import { Spreadsheet } from 'dhx-spreadsheet-package';
-import from 'dhx-spreadsheet-package/codebase/spreadsheet.css';
+import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 ~~~
 
 - if you've chosen to [install the trial version](#installing-the-trial-version-via-a-package-manager), the import paths should be as in:
