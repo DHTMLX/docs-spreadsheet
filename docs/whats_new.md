@@ -14,11 +14,10 @@ Released on January 16, 2024
 
 ### Fixes
 
-- Fix the issue with merging/unmerging cells. The merging/unmerging cells does not work until redraw
 - Fix the issue with copying and pasting cells. Copied and pasted cells with Date to Spreadsheet from Excel are displayed as strings
-- Fix the issue with pasting of spanned cells
-- Fix the issue with parsing data that mutates initial dataset
 - Fix the issue with numeric value in the "common" format that is formated as a number
+- Fix the issue with parsing data that mutates initial dataset
+- Fix the issue with pasting of spanned cells
 
 ## Version 5.1.1
 
