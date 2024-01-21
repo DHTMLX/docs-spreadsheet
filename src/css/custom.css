@@ -24,24 +24,28 @@
     --ifm-list-item-margin: 0.7rem;
 }
 
+/* deprecated from v3.1
 html[data-theme=dark] {
     --ifm-color-primary: #26adf7;
 }
 
 .docusaurus-highlight-code-line {
-    /* Color which works with light mode syntax highlighting theme */
+    Color which works with light mode syntax highlighting theme
     background-color: rgb(225, 225, 225);
     display: block;
     margin: 0 calc(-1 * var(--ifm-pre-padding));
     padding: 0 var(--ifm-pre-padding);
 }
+*/
 
 /* If you have a different syntax highlighting theme for dark mode. */
 
+/* deprecated from v3.1
 html[data-theme='dark'] .docusaurus-highlight-code-line {
     background-color: rgb(122, 124, 126);
-    /* Color which works with dark mode syntax highlighting theme */
+    Color which works with dark mode syntax highlighting theme 
 }
+*/
 
 /* typography */
 
@@ -144,8 +148,8 @@ table th:first-child {
 /* for Code Snippet iframe */
 
 .snippet_iframe {
- border: 1px solid var(--ifm-hr-border-color);
- margin-bottom: var(--ifm-leading);
+    border: 1px solid var(--ifm-hr-border-color);
+    margin-bottom: var(--ifm-leading);
 }
 
 /* end for Code Snippet iframe */
@@ -162,10 +166,24 @@ code {
 
 /* styles for block of code */
 
-.token-line.theme-code-block-highlighted-line{ /* added after updating to 2.0.0-beta.19 */
+/*
+.token-line.theme-code-block-highlighted-line{ added after updating to 2.0.0-beta.19 
     background-color: rgb(156 159 166 / 30%);
 }
+*/
 
+/* specify code box background */
+.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+    /*background-color: rgb(90, 86, 86);*/
+}
+    /* specify the comment text color */
+span.token.comment {
+    color: rgb(12, 121, 8) !important;
+} 
+    /* specify the comment background color */
+span.token-line.theme-code-block-highlighted-line {
+    background-color: rgba(225, 212, 212, 0.075);
+}
 /* end styles for block of code */
 
 /* list */
