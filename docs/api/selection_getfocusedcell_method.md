@@ -35,4 +35,4 @@ spreadsheet.selection.setFocusedCell("D4");
 const focused = spreadsheet.selection.getFocusedCell(); // ->"D4"
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#setting-focus-on-a-cell)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md)

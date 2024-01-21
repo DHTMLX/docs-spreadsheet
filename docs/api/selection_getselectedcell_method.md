@@ -33,4 +33,4 @@ spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 const selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#selecting-cells)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md)

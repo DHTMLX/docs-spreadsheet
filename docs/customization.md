@@ -10,7 +10,7 @@ You can customize the appearance, structure and functionality of toolbar, menu a
 
 ## Default and custom icons
 
-DHTMLX Spreadsheet uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons in any possible part of the spreadsheet: in Toolbar controls, Menu and Context menu items.
+DHTMLX Spreadsheet uses the [Material Design](https://materialdesignicons.com)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons in any possible part of the spreadsheet: in Toolbar controls, Menu and Context menu items.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) after the source files of DHTMLX Spreadsheet as follows:
 
@@ -56,7 +56,7 @@ e.g. change their icons.
 
 ### Adding controls
 
-To add a new control, apply the **spreadsheet.{name}.data.add()** method. It takes the parameters below:
+To add a new control, apply the `spreadsheet.{name}.data.add()` method. It takes the parameters below:
 
 - **config** - (*object*) an object with the control config
 - **index** - (*number*) the index of the position to place the control into
@@ -67,7 +67,7 @@ For a button:
 ~~~js
 // spreadsheet.menu.data.add / spreadsheet.contextMenu.data.add
 spreadsheet.toolbar.data.add({
-	type: "button", // "menuItem"
+    type: "button", // "menuItem"
     id: "button-id",
     tooltip: "Some tooltip",
     icon: "icon-name"
@@ -87,7 +87,7 @@ spreadsheet.toolbar.data.add({
 
 ### Updating controls
 
-You can change the icon of the control and its other config options via the **spreadsheet.{name}.data.update()** method. It takes two parameters:
+You can change the icon of the control and its other config options via the `spreadsheet.{name}.data.update()` method. It takes two parameters:
 
 - the id of the control
 - an object with new configuration of the control
@@ -101,7 +101,7 @@ spreadsheet.toolbar.data.update("add", {
 
 ### Deleting controls
 
-To remove a control, make use of the **spreadsheet.{name}.data.remove()** method. Pass the id of the control that should be removed to the method:
+To remove a control, make use of the `spreadsheet.{name}.data.remove()` method. Pass the id of the control that should be removed to the method:
 
 ~~~js
 // spreadsheet.menu.data.remove / spreadsheet.contextMenu.data.remove

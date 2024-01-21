@@ -14,7 +14,9 @@ To add a new sheet, take the following steps:
 
 2. Click the **Add sheet** button in the bottom toolbar
 
-{{note Note, that a new sheet will be added after the currently active sheet.}}
+:::note
+Note, that a new sheet will be added after the currently active sheet.
+:::
 
 ![Add sheet](assets/add_sheet.png)
 

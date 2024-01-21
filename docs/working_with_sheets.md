@@ -14,7 +14,7 @@ In this article we'll discuss the details on how to implement such operations as
 
 ## Loading multiple sheets
 
-To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [parse()](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object*. [Check the list of attributes the object can include](api/spreadsheet_parse_method.md/#details).
+To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [parse()](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object*. [Check the list of attributes the object can include](api/spreadsheet_parse_method.md).
 
 <iframe src="https://snippet.dhtmlx.com/6s3ng2hi?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 

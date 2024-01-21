@@ -9,8 +9,8 @@ description: You can have an overview of the JavaScript Spreadsheet library in t
 
 DHTMLX Spreadsheet is a client-side JavaScript component that allows editing and formatting data in spreadsheets online. It includes a configurable toolbar, handy menu and context menu, and adjustable grid, supports hot keys navigation, loads data both from external and local sources, provides the ability to localize interface into the desired language.
 
-:::tip 
-There is a [User Guide](guides.md/#user-guide) provided to make work with Spreadsheet easy for your end users
+:::tip
+There is a [User Guide](guides/#user-guides) provided to make work with Spreadsheet easy for your end users
 :::
 
 ## Spreadsheet structure
@@ -32,7 +32,7 @@ The **editing line** can be used for two purposes:
 
 ![Spreadsheet Editing Line](assets/overview_editline.png)
 
-You can switch the editing line off, if necessary via the corresponding [configuration option](configuration.md#editingbar).
+You can switch the editing line off, if necessary via the corresponding [configuration option](configuration.md#editing-bar).
 
 ### Grid
 
