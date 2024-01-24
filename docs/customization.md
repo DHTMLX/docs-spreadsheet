@@ -149,7 +149,7 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
 It is also possible to add the blocks enumerated below:
 
 - the **Lock** block
-	- the *Lock* button (id:"lock")
+    - the *Lock* button (id:"lock")
 - the **Clear** block
   - the *Clear group* menuItem (id:"clear-group")
     - the *Clear value* menuItem (id:"clear-value")
@@ -173,10 +173,10 @@ In the example below a new button is added into the toolbar:
 
 ~~~js
 spreadsheet.toolbar.data.add({
-	type: "button",
-	icon: "dxi dxi-delete",
-	tooltip: "Remove all",
-	id: "remove-all"
+    type: "button",
+    icon: "dxi dxi-delete",
+    tooltip: "Remove all",
+    id: "remove-all"
 });
 ~~~
 
@@ -188,8 +188,8 @@ In the example below a new menuItem option is added into the "clear-group" contr
 
 ~~~js
 spreadsheet.toolbar.data.add({
-	type: "menuItem",
-	id: "clear-value2", 
+    type: "menuItem",
+    id: "clear-value2", 
     value: "Clear value2"
 }, -1, "clear-group");
 ~~~
@@ -198,8 +198,8 @@ There is a simplified notation for adding a menuItem, in case the exact position
 
 ~~~js
 spreadsheet.toolbar.data.add({
-	type: "menuItem",
-	id: "clear-value2", 
+    type: "menuItem",
+    id: "clear-value2", 
     value: "Clear value2", 
     parent: "clear-group"   
 });
@@ -289,18 +289,18 @@ In the example below a new menuItem is added into the menu:
 
 ~~~js
 spreadsheet.menu.data.add({
-	id: "validate",
-	value: "Validate",
-	childs: [
-		{
-			id: "isNumber",
-			value: "Is number"
-		},
-		{
-			id: "isEven",
-			value: "Is even number"
-		}
-	]
+    id: "validate",
+    value: "Validate",
+    childs: [
+        {
+            id: "isNumber",
+            value: "Is number"
+        },
+        {
+            id: "isEven",
+            value: "Is even number"
+        }
+    ]
 });
 ~~~
 
@@ -356,9 +356,9 @@ In the example below a new menuItem is added into the context menu:
 
 ~~~js
 spreadsheet.contextMenu.data.add({
-	icon: "mdi mdi-eyedropper-variant",
-	value: "Paint format",
-	id: "paint-format"
+    icon: "mdi mdi-eyedropper-variant",
+    value: "Paint format",
+    id: "paint-format"
 });
 ~~~
 
@@ -396,15 +396,15 @@ Besides applying the [read-only mode](configuration.md#read-only-mode) to the wh
 var spreadsheet = new dhx.Spreadsheet("cont");
 
 spreadsheet.events.on("beforeEditStart", function(){
-	return false;
+    return false;
 });
 
 spreadsheet.events.on("beforeValueChange", function(){
-	return false;
+    return false;
 });
 
 spreadsheet.events.on("beforeStyleChange", function(){
-	return false;
+    return false;
 });
 
 spreadsheet.parse(data);

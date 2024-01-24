@@ -44,8 +44,8 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterRowAdd" event
 spreadsheet.events.on("afterRowAdd", function(cell){
-	console.log("A new row is added");
-	console.log(cell);
+    console.log("A new row is added");
+    console.log(cell);
 });
 ~~~
 

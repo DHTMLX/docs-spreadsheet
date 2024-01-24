@@ -155,42 +155,42 @@ This list of changes will help you to migrate from the [previous version 2.1](ht
 
 <table>
 <tr>
-	<td>calculate</td>
+    <td>calculate</td>
     <td>getCoords</td>
     <td>setBgColor</td>
 </tr>
 <tr>
-	<td>exists</td>
+    <td>exists</td>
     <td>getValidator</td>
     <td>setBold</td>
 </tr>
 <tr>
-	<td>getAlign</td>
+    <td>getAlign</td>
     <td>isBold</td>
     <td>setColor</td>
 </tr>
 <tr>
-	<td>getBgColor</td>
+    <td>getBgColor</td>
     <td>isIncorrect</td>
     <td>setItalic</td>
 </tr>
 <tr>
-	<td>getCalculatedValue</td>
+    <td>getCalculatedValue</td>
     <td>isItalic</td>
     <td>setLocked</td>
 </tr>
 <tr>
-	<td>getColIndex</td>
+    <td>getColIndex</td>
     <td>parseStyle</td>
     <td>setValidator</td>
 </tr>
 <tr>
-	<td>getColName</td>
+    <td>getColName</td>
     <td>serializeStyle</td>
     <td></td>
 </tr>
 <tr>
-	<td>getColor</td>
+    <td>getColor</td>
     <td>setAlign</td>
     <td></td>
 </tr>

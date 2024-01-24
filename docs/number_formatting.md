@@ -25,17 +25,17 @@ The default number formats are the following:
 
 ~~~js
 defaultFormats = [
-	{ name: "Common", id: "common", mask: "", example: "1500.31" },
-	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
-	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
-	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
-	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
-	{ 
-		name: "Time",
-   		id: "time",
-   		mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
-   		example: "13:30:00"
-	},
+    { name: "Common", id: "common", mask: "", example: "1500.31" },
+    { name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
+    { name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
+    { name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
+    { name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
+    { 
+        name: "Time",
+           id: "time",
+           mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
+           example: "13:30:00"
+    },
     { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~
@@ -50,17 +50,17 @@ You can define the format the dates to be displayed in the spreadsheet via the [
 
 ~~~js
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	dateFormat: "%D/%M/%Y",
+    dateFormat: "%D/%M/%Y",
 });
 
 spreadsheet.parse({
-	styles: {
+    styles: {
         // a set of styles
-	},
+    },
     data: [
-		{cell: "B1", value: "03/10/2022", format: "date"},
-    	{cell: "B2", value: new Date(), format: "date"},
-   	]
+        {cell: "B1", value: "03/10/2022", format: "date"},
+        {cell: "B2", value: new Date(), format: "date"},
+       ]
 });
 ~~~
 
@@ -72,18 +72,18 @@ To define the format in which the time should be shown in the spreadsheet cells,
 
 ~~~js
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	timeFormat: 24,
+    timeFormat: 24,
 });
 
 spreadsheet.parse({
-	styles: {
+    styles: {
         // a set of styles
-	},
+    },
     data: [
-    	{ cell: "A1", value: "18:30", format: "time" },
-    	{ cell: "A2", value: 44550.5625, format: "time" },
-    	{ cell: "A3", value: new Date(), format: "time" },
-   	]
+        { cell: "A1", value: "18:30", format: "time" },
+        { cell: "A2", value: 44550.5625, format: "time" },
+        { cell: "A3", value: new Date(), format: "time" },
+       ]
 });
 ~~~
 

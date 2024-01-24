@@ -44,7 +44,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterColumnDelete" event
 spreadsheet.events.on("afterColumnDelete", function(cell){
-	console.log("A column was deleted");
+    console.log("A column was deleted");
     console.log(cell);
 });
 ~~~

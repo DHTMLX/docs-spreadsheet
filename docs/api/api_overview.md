@@ -10,7 +10,7 @@ description: You can have an API overview of the DHTMLX JavaScript Spreadsheet l
 
 ~~~js
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
-	rowsCount: 20,
+    rowsCount: 20,
     colsCount: 20
 });
 ~~~

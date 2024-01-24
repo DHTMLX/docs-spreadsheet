@@ -38,7 +38,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 spreadsheet.parse(data);
 
 spreadsheet.events.on("CustomEvent", function(param1, param2){
-	return true;
+    return true;
 });
 
 const res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
