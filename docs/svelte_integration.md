@@ -140,12 +140,13 @@ To display Spreadsheet on the page, we need to set the container to render the c
 
 Then we need to render our Spreadsheet in the container. To do that, use the `onMount()` method of Svelte:
 
-~~~html {4,8-10} title="Spreadsheet.svelte"
+~~~html {4,9-11} title="Spreadsheet.svelte"
 <script>
-  import { Spreadsheet } from "dhx-spreadsheet-package";
-  import "dhx-spreadsheet-package/codebase/spreadsheet.css";
+  import { Spreadsheet } from "@dhx/trial-spreadsheet";
+  import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css";
   import { onMount } from "svelte";
 
+  let spreadsheet;
   let container;
 
   onMount(() => {
@@ -206,7 +207,7 @@ export function getData() {
 
 Then open the ***Spreadsheet.svelte*** file, specify the line for data export and use the `parse()` method to load data:
 
-~~~html {6,8,16} title="Spreadsheet.svelte"
+~~~html {6,16} title="Spreadsheet.svelte"
 <script>
     import { Spreadsheet } from "@dhx/trial-spreadsheet";
     import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css";
