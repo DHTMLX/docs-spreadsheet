@@ -31,7 +31,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterEditStart" event
 spreadsheet.events.on("afterEditStart", function(cell, value){
-	console.log("Editing has started");
+    console.log("Editing has started");
     console.log(cell, value);
 });
 ~~~

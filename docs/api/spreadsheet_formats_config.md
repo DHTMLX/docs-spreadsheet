@@ -31,17 +31,17 @@ The default number formats are the following:
 
 ~~~jsx
 defaultFormats = [
-	{ name: "Common", id: "common", mask: "", example: "1500.31" },
-	{ name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
-	{ name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
-	{ name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
-	{ name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
-	{ 
-		name: "Time",
-   		id: "time",
-   		mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
-   		example: "13:30:00"
-	},
+    { name: "Common", id: "common", mask: "", example: "1500.31" },
+    { name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
+    { name: "Percent", id: "percent", mask: "#,##0.00%", example: "1,500.31%" },
+    { name: "Currency", id: "currency", mask: "$#,##0.00", example: "$1,500.31" },
+    { name: "Date", id: "date", mask: "mm-dd-yy", example: "28/12/2021" },
+    { 
+        name: "Time",
+           id: "time",
+           mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
+           example: "13:30:00"
+    },
     { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~
@@ -52,24 +52,24 @@ defaultFormats = [
 ~~~jsx {2-19}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     formats: [
-    	{
-    		name: "U.S. Dollar",
-    		id: "currency",
-    		mask: "$#,##0.00"
-    	},
-    	{
-    		name: "Euro",
-    		id: "euro",
-    		mask: "[$€]#.##0,00",
-    		example: "1000.50"
-    	},
-    	{
-    		name: "Swiss franc",
-    		id: "franc",
-    		mask: "[$CHF ]#.##0,00"
-    	}
+        {
+            name: "U.S. Dollar",
+            id: "currency",
+            mask: "$#,##0.00"
+        },
+        {
+            name: "Euro",
+            id: "euro",
+            mask: "[$€]#.##0,00",
+            example: "1000.50"
+        },
+        {
+            name: "Swiss franc",
+            id: "franc",
+            mask: "[$CHF ]#.##0,00"
+        }
     ],
-	// other config parameters
+    // other config parameters
 });
 ~~~
 

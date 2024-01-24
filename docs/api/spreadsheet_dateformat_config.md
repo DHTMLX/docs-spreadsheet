@@ -26,18 +26,18 @@ dateFormat: "%d/%m/%Y"
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	dateFormat: "%D/%M/%Y",
+    dateFormat: "%D/%M/%Y",
     // other config parameters
 });
 
 spreadsheet.parse({
-	styles: {
+    styles: {
         // a set of styles
-	},
+    },
     data: [
-		{cell: "B1", value: "03/10/2022", format: "date"},
-    	{cell: "B2", value: new Date(), format: "date"},
-   	]
+        {cell: "B1", value: "03/10/2022", format: "date"},
+        {cell: "B2", value: new Date(), format: "date"},
+       ]
 });
 ~~~
 

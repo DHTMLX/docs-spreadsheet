@@ -26,7 +26,7 @@ editLine: true
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	editLine: true,
+    editLine: true,
     // other config parameters
 });
 ~~~

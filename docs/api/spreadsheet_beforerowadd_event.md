@@ -49,7 +49,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeRowAdd" event
 spreadsheet.events.on("beforeRowAdd", function(cell){
-	console.log("A new row will be added");
+    console.log("A new row will be added");
     console.log(cell);
     return true;
 });

@@ -21,18 +21,18 @@ It can be a simple array with cell objects. Use this way if you need to create a
 
 ~~~js title="Prepare data for one sheet"
 const data = [
-	{ cell: "A1", value: "Country" },
-	{ cell: "B1", value: "Product" },
-	{ cell: "C1", value: "Price" },
-	{ cell: "D1", value: "Amount" },
-	{ cell: "E1", value: "Total Price" },
+    { cell: "A1", value: "Country" },
+    { cell: "B1", value: "Product" },
+    { cell: "C1", value: "Price" },
+    { cell: "D1", value: "Amount" },
+    { cell: "E1", value: "Total Price" },
 
-	{ cell: "A2", value: "Ecuador" },
-	{ cell: "B2", value: "Banana" },
-	{ cell: "C2", value: 6.68, format:"currency" },
-	{ cell: "D2", value: 430, format:"percent" },
+    { cell: "A2", value: "Ecuador" },
+    { cell: "B2", value: "Banana" },
+    { cell: "C2", value: 6.68, format:"currency" },
+    { cell: "D2", value: 430, format:"percent" },
     // "myFormat" is the id of a custom format
-	{ cell: "E2", value: 2872.4, format:"myFormat" },
+    { cell: "E2", value: 2872.4, format:"myFormat" },
     
     // add drop-down lists to cells
     { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey","India","USA","Italy"]} },
@@ -53,14 +53,14 @@ const data = {
             data: [
                 { cell: "A1", value: "Country" },
                 { cell: "B1", value: "Product" },
-				// more data
+                // more data
             ],
             merged: [
                 // merge cells A1 and B1
-				{ from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
+                { from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
                 // merge cells A2, A3, A4, and A5
-				{ from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
-			]
+                { from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
+            ]
         }, 
         { 
             name: "sheet 2", 
@@ -68,10 +68,10 @@ const data = {
             data: [
                 { cell: "A1", value: "Country" },
                 { cell: "B1", value: "Product" },
-				// more data
+                // more data
             ]
         },
-		// more sheet objects
+        // more sheet objects
     ]
 };
 ~~~
@@ -90,12 +90,12 @@ A CSS class is set for a cell via the **css** property.
 
 ~~~js
 const styledData = {
-	styles: {
-		someclass: {
-			background: "#F2F2F2",
-			color: "#F57C00"
-		}
-	},
+    styles: {
+        someclass: {
+            background: "#F2F2F2",
+            color: "#F57C00"
+        }
+    },
     data: [
         { cell: "A1", value: "Country" },
         { cell: "B1", value: "Product" },

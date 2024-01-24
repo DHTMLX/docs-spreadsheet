@@ -30,11 +30,11 @@ The **localization** object may contain the following properties:
 
 ~~~jsx
 const defaultLocales = {
-	decimal: ".", 
-	thousands: ",",
-	currency: "$",
-	dateFormat: "%d/%m/%Y",
-	timeFormat: 12,
+    decimal: ".", 
+    thousands: ",",
+    currency: "$",
+    dateFormat: "%d/%m/%Y",
+    timeFormat: 12,
 };
 ~~~
 
@@ -47,7 +47,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
         thousands: " ", 
         currency: "¥",  
         dateFormat: "%D/%M/%Y",
-	    timeFormat: 24
+        timeFormat: 24
     }
 });
 

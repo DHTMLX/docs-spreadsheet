@@ -127,7 +127,7 @@ To display Spreadsheet on the page, we need to set the container to render the c
 </script>
 
 <template>
-	<div ref="container"></div>
+    <div ref="container"></div>
 </template>
 ~~~
 

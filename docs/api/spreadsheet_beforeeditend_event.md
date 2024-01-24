@@ -35,7 +35,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeEditEnd" event
 spreadsheet.events.on("beforeEditEnd", function(cell, value){
- 	console.log("Editing has started");
+     console.log("Editing has started");
     console.log(cell, value);
     return true;
 });

@@ -34,7 +34,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeSelectionSet" event
 spreadsheet.events.on("beforeSelectionSet", function(cell){
- 	console.log("Cells "+spreadsheet.selection.getSelectedCell()+" will be selected");
+     console.log("Cells "+spreadsheet.selection.getSelectedCell()+" will be selected");
     console.log(cell);
     return true;
 });

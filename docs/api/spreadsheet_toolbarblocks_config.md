@@ -49,7 +49,7 @@ You can specify your own structure of the toolbar by enumerating necessary eleme
 
 ~~~js {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	toolbarBlocks: ["helpers", "colors", "align", "decoration", "lock", "clear"]
+    toolbarBlocks: ["helpers", "colors", "align", "decoration", "lock", "clear"]
 });
 ~~~
 

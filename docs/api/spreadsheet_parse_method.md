@@ -125,17 +125,17 @@ In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration
 
 ~~~jsx {22} title="Example 1. Load data into one sheet"
 const data = [
-	{ cell: "A1", value: "Country" },
-	{ cell: "B1", value: "Product" },
-	{ cell: "C1", value: "Price" },
-	{ cell: "D1", value: "Amount" },
-	{ cell: "E1", value: "Total Price" },
+    { cell: "A1", value: "Country" },
+    { cell: "B1", value: "Product" },
+    { cell: "C1", value: "Price" },
+    { cell: "D1", value: "Amount" },
+    { cell: "E1", value: "Total Price" },
 
-	{ cell: "A2", value: "Ecuador" },
-	{ cell: "B2", value: "Banana" },
-	{ cell: "C2", value: 6.68, css: "someclass" },
-	{ cell: "D2", value: 430 },
-	{ cell: "E2", value: 2872.4 },
+    { cell: "A2", value: "Ecuador" },
+    { cell: "B2", value: "Banana" },
+    { cell: "C2", value: 6.68, css: "someclass" },
+    { cell: "D2", value: 430 },
+    { cell: "E2", value: 2872.4 },
     
     // add drop-down lists to cells
     { cell: "A9", value: "Turkey", editor: {type: "select", options: ["Turkey","India","USA","Italy"]} },
@@ -170,10 +170,10 @@ const data = {
             ],
             merged: [
                 // merge cells A1 and B1
-				{ from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
+                { from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
                 // merge cells A2, A3, A4, and A5
-				{ from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
-			]
+                { from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
+            ]
         }, 
         { 
             name: "sheet 2", 
