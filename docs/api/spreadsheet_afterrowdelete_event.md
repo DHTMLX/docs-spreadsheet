@@ -44,8 +44,8 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterRowDelete" event
 spreadsheet.events.on("afterRowDelete", function(cell){
-	console.log("A row was deleted");
-	console.log(cell);
+    console.log("A row was deleted");
+    console.log(cell);
 });
 ~~~
 

@@ -49,7 +49,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeRowDelete" event
 spreadsheet.events.on("beforeRowDelete", function(cell){
-	console.log("A row will be deleted");
+    console.log("A row will be deleted");
     console.log(cell);
     return true;
 });

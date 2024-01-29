@@ -38,7 +38,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterClear" event
 spreadsheet.events.on("afterClear", function(){
-	console.log("A spreadsheet is cleared");
+    console.log("A spreadsheet is cleared");
     return false;
 });
 ~~~

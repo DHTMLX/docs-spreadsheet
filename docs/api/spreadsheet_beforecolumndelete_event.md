@@ -49,7 +49,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeColumnDelete" event
 spreadsheet.events.on("beforeColumnDelete", function(cell){
-	console.log("A column will be deleted");
+    console.log("A column will be deleted");
     console.log(cell);
     return true;
 });

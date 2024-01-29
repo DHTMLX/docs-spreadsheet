@@ -120,10 +120,10 @@ For multiple cells the method returns an array of objects with styles applied to
 
 ~~~js
 [
-	{background: "red", border: "solid 1px yellow", color: "blue"},
-	{background: "red", border: "solid 1px yellow", color: "blue"},
-	{background: "#C8FAF6", border: "solid 1px yellow", color: "#81C784"},
-	{background: "#9575CD", border: "solid 1px yellow", color: "#079D8F"}
+    {background: "red", border: "solid 1px yellow", color: "blue"},
+    {background: "red", border: "solid 1px yellow", color: "blue"},
+    {background: "#C8FAF6", border: "solid 1px yellow", color: "#81C784"},
+    {background: "#9575CD", border: "solid 1px yellow", color: "#079D8F"}
 ]
 ~~~
 

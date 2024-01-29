@@ -44,7 +44,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterColumnAdd" event
 spreadsheet.events.on("afterColumnAdd", function(cell){
-	console.log("A new column is added");
+    console.log("A new column is added");
     console.log(cell);
 });
 ~~~

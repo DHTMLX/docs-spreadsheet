@@ -30,8 +30,8 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterSelectionSet" event
 spreadsheet.events.on("afterSelectionSet", function(cell){
- 	console.log("The cells " + spreadsheet.selection.getSelectedCell() + " are selected");
-	console.log(cell);
+     console.log("The cells " + spreadsheet.selection.getSelectedCell() + " are selected");
+    console.log(cell);
 });
 ~~~
 

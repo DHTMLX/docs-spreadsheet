@@ -29,8 +29,8 @@ For more details about the new concept, see **[Spreadsheet actions](api/overview
 
 ~~~jsx
 beforeStyleChange: (
-	cell: string, 
-	style: string | object | array 
+    cell: string, 
+    style: string | object | array 
 ) => void | boolean;
 ~~~
 
@@ -53,9 +53,9 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeStyleChange" event
 spreadsheet.events.on("beforeStyleChange", function(cell, style){
-	console.log("Style of cell "+spreadsheet.selection.getSelectedCell()+" will change");
-	console.log(cell, style);
-	return true;
+    console.log("Style of cell "+spreadsheet.selection.getSelectedCell()+" will change");
+    console.log(cell, style);
+    return true;
 });
 ~~~
 

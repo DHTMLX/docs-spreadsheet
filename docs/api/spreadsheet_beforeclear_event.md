@@ -43,7 +43,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeClear" event
 spreadsheet.events.on("beforeClear", function(){
-	console.log("A spreadsheet will be cleared");
+    console.log("A spreadsheet will be cleared");
     return false;
 });
 ~~~

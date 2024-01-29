@@ -26,19 +26,19 @@ timeFormat: 12
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	timeFormat: 24,
+    timeFormat: 24,
     // other config parameters
 });
 
 spreadsheet.parse({
-	styles: {
+    styles: {
         // a set of styles
-	},
+    },
     data: [
-    	{ cell: "A1", value: "18:30", format: "time" },
-    	{ cell: "A2", value: 44550.5625, format: "time" },
-    	{ cell: "A3", value: new Date(), format: "time" },
-   	]
+        { cell: "A1", value: "18:30", format: "time" },
+        { cell: "A2", value: 44550.5625, format: "time" },
+        { cell: "A3", value: new Date(), format: "time" },
+       ]
 });
 ~~~
 

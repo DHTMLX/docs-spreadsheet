@@ -36,7 +36,7 @@ and
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
-	<script>
+    <script>
     // your code will be here
     </script>
 </body>
@@ -76,20 +76,20 @@ As parameters, the constructor function takes the HTML container to place Spread
 <!DOCTYPE html>
 <html>
 <head>
-	<title>How to Start with DHTMLX Spreadsheet</title>
-	<script src="codebase/spreadsheet.js"></script>   
+    <title>How to Start with DHTMLX Spreadsheet</title>
+    <script src="codebase/spreadsheet.js"></script>   
    
- 	<link href="codebase/spreadsheet.css" rel="stylesheet">  
- 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+     <link href="codebase/spreadsheet.css" rel="stylesheet">  
+     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
- 	<div id="spreadsheet_container"></div>
+     <div id="spreadsheet_container"></div>
 
- 	<script>
-  		const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    		//config options
-  		});
- 	</script>
+     <script>
+          const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+            //config options
+          });
+     </script>
 </body>
 </html>
 ~~~
@@ -102,9 +102,9 @@ There are several options you can use to adjust the look and feel of Spreadsheet
 
 ~~~js
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-	toolbarBlocks: ["columns", "rows", "clear"],
-	rowsCount: 10,
-	colsCount: 10
+    toolbarBlocks: ["columns", "rows", "clear"],
+    rowsCount: 10,
+    colsCount: 10
 });
 ~~~
 
@@ -116,23 +116,23 @@ The last step is to populate Spreadsheet with data. DHTMLX Spreadsheet takes dat
 
 ~~~js title="data.json"
 const data = [
-	{ "cell": "a1", "value": "Country" },
-	{ "cell": "b1", "value": "Product" },
-	{ "cell": "c1", "value": "Price" },
-	{ "cell": "d1", "value": "Amount" },
-	{ "cell": "e1", "value": "Total Price" },
+    { "cell": "a1", "value": "Country" },
+    { "cell": "b1", "value": "Product" },
+    { "cell": "c1", "value": "Price" },
+    { "cell": "d1", "value": "Amount" },
+    { "cell": "e1", "value": "Total Price" },
 
-	{ "cell": "a2", "value": "Ecuador" },
-	{ "cell": "b2", "value": "Banana" },
-	{ "cell": "c2", "value": 6.68 },
-	{ "cell": "d2", "value": 430 },
-	{ "cell": "e2", "value": 2872.4 },
+    { "cell": "a2", "value": "Ecuador" },
+    { "cell": "b2", "value": "Banana" },
+    { "cell": "c2", "value": 6.68 },
+    { "cell": "d2", "value": 430 },
+    { "cell": "e2", "value": 2872.4 },
 
-	{ "cell": "a3", "value": "Belarus" },
-	{ "cell": "b3", "value": "Apple" },
-	{ "cell": "c3", "value": 3.75 },
-	{ "cell": "d3", "value": 600 },
-	{ "cell": "e3", "value": 2250 },
+    { "cell": "a3", "value": "Belarus" },
+    { "cell": "b3", "value": "Apple" },
+    { "cell": "c3", "value": 3.75 },
+    { "cell": "d3", "value": 600 },
+    { "cell": "e3", "value": 2250 },
 ]
 
 // initializing spreadsheet

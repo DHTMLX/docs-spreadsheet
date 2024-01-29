@@ -49,7 +49,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "beforeColumnAdd" event
 spreadsheet.events.on("beforeColumnAdd", function(cell){
-	console.log("A new column will be added");
+    console.log("A new column will be added");
     console.log(cell);
     return true;
 });

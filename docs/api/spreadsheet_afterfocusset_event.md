@@ -30,7 +30,7 @@ spreadsheet.parse(data);
 
 // subscribe on the "afterFocusSet" event
 spreadsheet.events.on("afterFocusSet", function(cell){
- 	console.log("Focus is set on a cell " + spreadsheet.selection.getSelectedCell());
+     console.log("Focus is set on a cell " + spreadsheet.selection.getSelectedCell());
     console.log(cell);
 });
 ~~~
