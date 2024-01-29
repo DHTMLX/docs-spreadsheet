@@ -8,6 +8,17 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.1.3
+
+Released on January 29, 2024
+
+### Fixes
+
+- Incorrect parsing of numeric values in the "common" format
+- Localization i18n issues when Spreadsheet is used together with Suite
+- Performance issues while loading a table with a great number of spans
+- Incorrect pasting of spanned cells
+
 ## Version 5.1.2
 
 Released on January 16, 2024
