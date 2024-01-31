@@ -8,6 +8,14 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.1.4 
+
+Released on January 31, 2024
+
+### Fixes
+
+- Incorrect pasting of spanned cells
+
 ## Version 5.1.3
 
 Released on January 29, 2024
