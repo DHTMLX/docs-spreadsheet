@@ -67,8 +67,8 @@ There are two options available: you can install the **Pro** package from a loca
 
 The instructions are the following:
 
-1. Copy the Spreadsheet package into some local directory.
-2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path, e.g.:
+1. Copy the Spreadsheet package into some local directory inside the project
+2. In the project directory run the command below (replace the path to the Spreadsheet package with the actual one):
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
@@ -102,19 +102,23 @@ Open the file and import Spreadsheet source files. Note that:
 
 - if you've [installed the Spreadsheet package from a local folder](#installing-the-package-from-a-local-folder), your import paths will look like this:
 
-~~~
+~~~html title="Spreadsheet.vue"
 import { Spreadsheet } from 'dhx-spreadsheet-package';
 import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 ~~~
 
+{{note 
+**In case you use *npm* with a local Spreadsheet package**, the way of importing Spreadsheet source files is different. [Check the details below](#using-npm-with-spreadsheet-package)
+}}
+
 - if you've chosen to [install the trial version](#installing-the-trial-version-via-a-package-manager), the import paths should be as in:
 
-~~~
+~~~html title="Spreadsheet.vue"
 import { Spreadsheet } from '@dhx/trial-spreadsheet';
 import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
 ~~~
 
-In this tutorial we will use the trial version of Spreadsheet.
+In this tutorial we will use the **trial** version of Spreadsheet.
 
 #### Setting the container and adding Spreadsheet
 
@@ -127,7 +131,7 @@ To display Spreadsheet on the page, we need to set the container to render the c
 </script>
 
 <template>
-    <div ref="container"></div>
+  <div ref="container" style="width: 100%; height: 80vh; "></div>
 </template>
 ~~~
 
@@ -141,7 +145,15 @@ export default {
   }
 };
 </script>
+
+<template>
+  <div ref="container" style="width: 100%; height: 80vh; "></div>
+</template>
 ~~~
+
+{{note 
+**In case you use *npm* with a local Spreadsheet package**, the way of Spreadsheet initialization differs a little bit. [Check the details below](#using-npm-with-spreadsheet-package)
+}}
 
 To clear the component as it has unmounted, use the `spreadsheet.destructor()` call and remove the container after that inside the `unmounted()` method of ***Vue.js***, as follows:
 
@@ -157,6 +169,35 @@ export default {
     this.$refs.container.innerHTML = "";
   },
 }
+</script>
+
+<template>
+  <div ref="container" style="width: 100%; height: 80vh; "></div>
+</template>
+~~~
+
+#### Using npm with Spreadsheet package
+
+If you use **npm with a Spreadsheet package**, the import of the source files and the initialization of Spreadsheet will differ from the common way:
+
+- include the Spreadsheet source files in the ***index.html*** file as follows:
+
+~~~html title="index.html"
+<script src="./spreadsheet_package/codebase/spreadsheet.js"></script>
+<link rel="stylesheet" href="./spreadsheet_package/codebase/spreadsheet.css">
+~~~
+
+Replace *spreadsheet_package* with the name of your local folder that contains Spreadsheet source files.
+
+- use the **dhx** prefix to initialize Spreadsheet, check the example below:
+
+~~~html {4} title="Spreadsheet.vue"
+<script>
+export default {
+    mounted: function() {
+      this.spreadsheet = new dhx.Spreadsheet(this.$refs.container, {});
+    }
+  };
 </script>
 ~~~
 
