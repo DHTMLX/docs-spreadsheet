@@ -66,8 +66,16 @@ There are two options available: you can install the **Pro** package from a loca
 
 The instructions are the following:
 
-1. Copy the Spreadsheet package into some local directory.
-2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path, e.g.:
+1. Copy the Spreadsheet package into some local directory inside the project
+2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path:
+
+~~~
+npm install ./spreadsheet-local-package-path
+//or
+yarn add "./spreadsheet-local-package-path"
+~~~
+
+For example:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
@@ -101,25 +109,31 @@ Open the file and import Spreadsheet source files. Note that:
 
 - if you've [installed the Spreadsheet package from a local folder](#installing-the-package-from-a-local-folder), your import paths will look like this:
 
-~~~
+~~~html title="Spreadsheet.jsx" 
 import { Spreadsheet } from 'dhx-spreadsheet-package';
 import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 ~~~
 
+Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **spreadsheet.min.css**.
+
+{{note 
+**In case you use *npm* with a local Spreadsheet package**, the way of importing Spreadsheet source files is different. [Check the details below](#using-npm-with-spreadsheet-package)
+}}
+
 - if you've chosen to [install the trial version](#installing-the-trial-version-via-a-package-manager), the import paths should be as in:
 
-~~~
+~~~html title="Spreadsheet.jsx" 
 import { Spreadsheet } from '@dhx/trial-spreadsheet';
 import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
 ~~~
 
-In this tutorial we will use the trial version of Spreadsheet.
+In this tutorial we will use the **trial** version of Spreadsheet.
 
 #### Setting the container and adding Spreadsheet
 
 To display Spreadsheet on the page, we need to set the container to render the component inside. Check the code below:
 
-~~~jsx {3,7,9} title="SpreadsheetComponent.jsx"
+~~~jsx {3,7,9-14} title="Spreadsheet.jsx"
 import { Spreadsheet } from '@dhx/trial-spreadsheet';
 import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
 import { useRef } from "react";
@@ -128,7 +142,12 @@ import { useRef } from "react";
 const SpreadsheetComponent = () => {
   const node = useRef(null);
 
-  return <div ref={node}></div>;
+  return ( 
+    <div 
+      ref={node} 
+      style={{width:"800px", height:"400px", margin:"50px"}} 
+    ></div> 
+  );
 };
 
 export default SpreadsheetComponent;
@@ -136,7 +155,7 @@ export default SpreadsheetComponent;
 
 Then we need to add our Spreadsheet into the container. To do that, import the `useEffect()` method of React and use it to render the Spreadsheet instance and destruct when it is no longer needed:
 
-~~~jsx {1,6-12} title="SpreadsheetComponent.jsx"
+~~~jsx {1,6-12} title="Spreadsheet.jsx"
 import { useEffect, useRef, useState } from "react";
 
 // eslint-disable-next-line react/prop-types
@@ -150,10 +169,40 @@ const SpreadsheetComponent = () => {
     return () => spreadsheet.destructor();
   }, []);
  
-  return <div ref={node}></div>;
+  return ( 
+    <div 
+      ref={node} 
+      style={{width:"800px", height:"400px", margin:"50px"}} 
+    ></div> 
+  );
 };
 
 export default SpreadsheetComponent;
+~~~
+
+{{note 
+**In case you use *npm* with a local Spreadsheet package**, the way of Spreadsheet initialization differs a little bit. [Check the details below](#using-npm-with-spreadsheet-package)
+}}
+
+#### Using npm with Spreadsheet package
+
+If you use **npm with a Spreadsheet package**, the import of the source files and the initialization of Spreadsheet will differ from the common way:
+
+- include the Spreadsheet source files in the ***index.html*** file as shown in the example below. Replace *spreadsheet_package* with the name of your local folder that contains Spreadsheet source files:
+
+~~~html title="index.html"
+<script src="./spreadsheet_package/codebase/spreadsheet.js"></script>
+<link rel="stylesheet" href="./spreadsheet_package/codebase/spreadsheet.css">
+~~~
+
+- use the **dhx** prefix to initialize Spreadsheet, check the example below:
+
+~~~js {2} title="Spreadsheet.jsx"
+useEffect(() => {
+    const spreadsheet = new dhx.Spreadsheet(node.current, {});
+    setSpreadsheet(spreadsheet);
+    return () => spreadsheet.destructor();
+}, []);
 ~~~
 
 #### Loading data
@@ -203,9 +252,9 @@ export function getData() {
 }
 ~~~
 
-Then open the ***SpreadsheetComponent.jsx*** file, pass the name of the data file to the component constructor function and use the `parse()` method inside the `useEffect()` method of React to load data into spreadsheet:
+Then open the ***Spreadsheet.jsx*** file, pass the name of the data file to the component constructor function and use the `parse()` method inside the `useEffect()` method of React to load data into spreadsheet:
 
-~~~jsx {1,11-15} title="SpreadsheetComponent.jsx"
+~~~jsx {1,11-15} title="Spreadsheet.jsx"
 const SpreadsheetComponent = ({ data }) => {
   const node = useRef(null);
   let [spreadsheet, setSpreadsheet] = useState(null);
@@ -234,9 +283,9 @@ Now the Spreadsheet component is ready. When the element will be added to the pa
 
 When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
 
-Open **SpreadsheetComponent.jsx** and complete the `useEffect()` method as in:
+Open **Spreadsheet.jsx** and complete the `useEffect()` method as in:
 
-~~~js {5} title="SpreadsheetComponent.jsx" 
+~~~js {5} title="Spreadsheet.jsx" 
 useEffect(() => {
     const spreadsheet = new Spreadsheet(node.current, {});
     setSpreadsheet(spreadsheet);

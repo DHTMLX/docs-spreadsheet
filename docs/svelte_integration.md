@@ -75,7 +75,15 @@ There are two options available: you can install the **Pro** package from a loca
 The instructions are the following:
 
 1. Copy the Spreadsheet package into some local directory inside the project
-2. In the project directory run the command below (replace the path to the Spreadsheet package with the actual one):
+2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path:
+
+~~~
+npm install ./spreadsheet-local-package-path
+//or
+yarn add "./spreadsheet-local-package-path"
+~~~
+
+For example:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
@@ -113,6 +121,8 @@ Open the file and import Spreadsheet source files. Note that:
 import { Spreadsheet } from 'dhx-spreadsheet-package';
 import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 ~~~
+
+Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **spreadsheet.min.css**.
 
 {{note 
 **In case you use *npm* with a local Spreadsheet package**, the way of importing Spreadsheet source files is different. [Check the details below](#using-npm-with-spreadsheet-package)
@@ -178,14 +188,12 @@ Then we need to render our Spreadsheet in the container. To do that, use the `on
 
 If you use **npm with a Spreadsheet package**, the import of the source files and the initialization of Spreadsheet will differ from the common way:
 
-- include the Spreadsheet source files in the ***index.html*** file as follows:
+- include the Spreadsheet source files in the ***index.html*** file as shown in the example below. Replace *spreadsheet_package* with the name of your local folder that contains Spreadsheet source files:
 
 ~~~html title="index.html"
 <script src="./spreadsheet_package/codebase/spreadsheet.js"></script>
 <link rel="stylesheet" href="./spreadsheet_package/codebase/spreadsheet.css">
 ~~~
-
-Replace *spreadsheet_package* with the name of your local folder that contains Spreadsheet source files.
 
 - use the **dhx** prefix to initialize Spreadsheet, check the example below:
 

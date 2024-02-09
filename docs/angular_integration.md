@@ -56,12 +56,20 @@ There are two options available: you can install the **Pro** package from a loca
 
 #### Installing the package from a local folder
 
-1. Copy the Spreadsheet package into some local directory.
-2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path, e.g.:
+1. Copy the Spreadsheet package into some local directory inside the project
+2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path:
+
+~~~
+npm install ./spreadsheet-local-package-path
+//or
+yarn add "./spreadsheet-local-package-path"
+~~~
+
+For example:
 
 ~~~
 npm install ./spreadsheet_5.1.0_enterprise
-//or
+// or
 yarn add "./spreadsheet_5.1.0_enterprise"
 ~~~
 
@@ -96,6 +104,8 @@ import { Spreadsheet } from 'dhx-spreadsheet-package';
 import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 ~~~
 
+Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **spreadsheet.min.css**.
+
 - if you've chosen to [install the trial version](#installing-the-trial-version-via-a-package-manager), the import paths should be as in:
 
 ~~~
@@ -103,7 +113,7 @@ import { Spreadsheet } from '@dhx/trial-spreadsheet';
 import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
 ~~~
 
-In this tutorial we will use the trial version of Spreadsheet.
+In this tutorial we will use the **trial** version of Spreadsheet.
 
 #### Setting the container and adding Spreadsheet
 
@@ -112,11 +122,11 @@ To display Spreadsheet on the page, we need to set the container to render the c
 ~~~js title="spreadsheet.component.ts"
 import { Spreadsheet } from '@dhx/trial-spreadsheet';
 import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
-import { Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, OnDestroy} from '@angular/core';
 
 @Component({
   selector: 'spreadsheet',
-  template: '<div #spreadsheetContainer></div>',
+  template: '<div style="height: 80vh" #spreadsheetContainer></div>',
 })
 export class SpreadsheetComponent implements OnInit {
   @ViewChild('spreadsheetContainer', { static: true }) spreadsheetContainer!: ElementRef;
@@ -128,7 +138,7 @@ export class SpreadsheetComponent implements OnInit {
 Then we need to render our Spreadsheet in the container. To do that, use the `ngOnInit()` method of Angular:
 
 ~~~js {6-8} title="spreadsheet.component.ts"
-export class SpreadsheetComponent implements OnInit {
+export class SpreadsheetComponent implements OnInit, OnDestroy {
   @ViewChild('spreadsheetContainer', { static: true }) spreadsheetContainer!: ElementRef;
 
   private spreadsheet!: Spreadsheet;
@@ -258,6 +268,22 @@ import { SpreadsheetComponent } from "./spreadsheet/spreadsheet.component";
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+~~~
+
+For correct rendering of fonts, open the ***angular.json*** file and complete the "assets" array in the following way (replace *spreadsheet_package* with the name of your local folder that contains Spreadsheet source files):
+
+~~~js {5-9} title="angular.json"
+...
+"assets": [
+  "src/favicon.ico",
+  "src/assets",
+  {
+    "input": "./spreadsheet_package/codebase/fonts",
+    "glob": "**/*",
+    "output": "assets"
+  }
+],
+...
 ~~~
 
 The last step is to open the ***src/main.ts*** file and replace the existing code with the following one:
