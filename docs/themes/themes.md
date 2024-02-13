@@ -100,14 +100,14 @@ The default **"light"** theme is configured on the base of the CSS variables whi
     --dhx-z-index-overlay-total: 10000000;
     /* end z-index */
 
-    /* only service color schema */
+    /* only service color scheme */
     --dhx-l-contrast-offset: 0%; /* lightness contrast theme offset */
     --dhx-l-h-offset: 10%; /* lightness hover offset */
     --dhx-s-d-offset: 30%; /* saturation disable offset */
     --dhx-l-d: 70%; /* lightness disable value */
     --dhx-a-l-h: .15; /* alpha light hover value */
     --dhx-a-l-a: .3; /* alpha light active value */
-    /* only service */
+    /* end only service color scheme */
 
     /* color scheme */
     --dhx-h-primary: 200;
@@ -413,3 +413,75 @@ The list of variables specific for the Spreadsheet component includes the follow
 
 }
 ~~~
+
+## Setting themes
+
+To set the necessary theme, be it a built-in Spreadsheet theme or a [custom](themes/custom_theme.md) one, use one of the ways described below:
+
+### Using the ***data-dhx-theme*** attribute 
+
+You can choose from the following variants:
+
+- set the ***data-dhx-theme*** attribute for the *chosen container*:
+
+~~~html title="index.html"
+<!-- component container -->
+<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet"></div>
+~~~
+
+- set the ***data-dhx-theme*** attribute for an *HTML element*, e.g. for *documentElement*:
+
+~~~js title="index.js"
+document.documentElement.setAttribute("data-dhx-theme", "dark");
+~~~
+
+### Using the ***dhx.setTheme()*** method
+
+The ***dhx.setTheme()*** method takes the following parameters:
+
+- ***theme: string*** - (required) the name of the theme. It can be:
+    - the name of the Spreadsheet theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
+    - the name of a [custom theme](themes/custom_theme.md)
+    - *"light"* - by default
+- ***container: string | HTMLElement*** - (optional) the container to which the theme must be applied. It can be:
+    - an HTMLElement
+    - a string value with the ID of the container or the ID of a Layout cell
+    - *document.documentElement* - by default
+
+Below you'll find the examples of the ***dhx.setTheme()*** method usage:
+
+- setting a theme either to the body or to the container 
+
+~~~html 
+<div id="container"></div>
+<div>Other content</div>
+
+<script>
+    new dhx.Spreadsheet("container");
+
+    dhx.setTheme("dark"); //applies the "dark" theme to the body 
+    //or
+    //applies the "dark" theme to the container with the "container" id
+    dhx.setTheme("dark", "container"); 
+</script>
+~~~
+
+- setting a theme to the container specified via an HTMLElement
+
+~~~html 
+<div id="container-1"></div>
+<div>Other content</div>
+
+<script>
+    new dhx.Spreadsheet("container-1");
+    
+    const container = document.getElementById("container-1");
+    //applies the "dark" theme to the container specified via an HTMLElement
+    dhx.setTheme("dark", container); 
+</script>
+~~~
+
+**Related samples:**
+
+- [Spreadsheet. Light, Dark, Light High Contrast, and Dark High Contrast themes (skins)](https://snippet.dhtmlx.com/t6rspqai?tag=spreadsheet)
+- [Spreadsheet. Custom themes (skins)](https://snippet.dhtmlx.com/59nt1rcb?tag=spreadsheet)

@@ -95,8 +95,6 @@ If you want to override some color values for a separate [Spreadsheet theme](spr
 
 <script>
     const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
-
-    spreadsheet.parse(dataset);
     
     dhx.setTheme("light");
 </script>

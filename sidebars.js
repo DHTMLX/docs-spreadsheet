@@ -264,8 +264,7 @@ module.exports = {
               items: [
                 "themes/themes",
                 "themes/base_themes_configuration",
-                "themes/custom_theme",
-                "themes/setting_theme"
+                "themes/custom_theme"
             ]},
             {
               type: "category",

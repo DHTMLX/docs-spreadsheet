@@ -83,8 +83,15 @@ To make a custom theme of your own, you need to override the values of the inter
         --dhx-spreadsheet-range-color-6: #d8ffa6;
         --dhx-spreadsheet-range-color-7: #e4e4e4;
         --dhx-spreadsheet-range-color-8: #ecb6ff;
+        /* end DHTMLX Spreadsheet service variables */
     }
 </style>
+
+<script>
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    
+    dhx.setTheme("custom-theme-dark");
+</script>
 ~~~
 
 **Related sample:** [Spreadsheet. Custom themes (skins)](https://snippet.dhtmlx.com/59nt1rcb?mode=wide)
