@@ -8,6 +8,19 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.1.5 
+
+Released on February 13, 2024
+
+### Fixes
+
+- Pasting a cell containing zeros creates an empty cell
+- Copying and then pasting an empty cell throws an error
+- Fix the `setValue()` functionality for the common format
+- Saving the id of a sheet during serialization and returning it by the `afterAction` event 
+- Fix cross-sheet formula usage via UI
+- Fix Ctrl+F search 
+
 ## Version 5.1.4 
 
 Released on January 31, 2024
