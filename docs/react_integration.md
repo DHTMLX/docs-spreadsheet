@@ -10,9 +10,9 @@ description: You can learn about the React integration of the DHTMLX JavaScript 
 You should be familiar with the basic concepts and patterns of [**React**](https://react.dev) to use this documentation. If you are not, please refer to the [**React documentation**](https://reactjs.org/docs/getting-started.html) for a getting-started tutorial.
 :::
 
-DHTMLX Spreadsheet is compatible with **React**. We have prepared code examples of how to use DHTMLX Spreadsheet with **React**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
+DHTMLX Spreadsheet is compatible with **React**. We have prepared code examples of how to use DHTMLX Spreadsheet with **React**. To check online samples, please refer to the corresponding [**Example on Replit**](https://replit.com/@dhtmlx/dhtmlx-spreadsheet-with-react).
 
-<iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-react-rhjh94?file=%2Fsrc%2FSpreadsheet.jsx" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+You can also [check the demo on GitHub](https://github.com/DHTMLX/react-spreadsheet-demo).
 
 ## Creating a project
 

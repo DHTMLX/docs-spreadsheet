@@ -10,9 +10,9 @@ description: You can learn about the Angular integration of the DHTMLX JavaScrip
 You should be familiar with the basic concepts and patterns of **Angular** to use this documentation. If you are not, please refer to the [**Angular documentation**](https://angular.io/docs) for a getting-started tutorial.
 :::
 
-DHTMLX Spreadsheet is compatible with **Angular**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Angular**. To check online samples, please refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX).
+DHTMLX Spreadsheet is compatible with **Angular**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Angular**. To check online samples, please refer to the corresponding [**Example on Replit**](https://replit.com/@dhtmlx/dhtmlx-spreadsheet-with-angular).
 
-<iframe src="https://codesandbox.io/p/devbox/dhtmlx-spreadsheet-with-angular-7xnzr9?file=%2Fsrc%2Fapp%2Fspreadsheet%2Fspreadsheet.component.ts" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+You can also [check the demo on GitHub](https://github.com/DHTMLX/angular-spreadsheet-demo).
 
 ## Creating a project
 
