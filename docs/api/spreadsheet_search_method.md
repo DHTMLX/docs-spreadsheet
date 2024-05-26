@@ -14,7 +14,7 @@ The method can also open a search box in the top right corner of the spreadsheet
 
 ### Usage
 
-~~~js
+~~~jsx
 search( 
     text?: string,
     openSearch?: boolean, 

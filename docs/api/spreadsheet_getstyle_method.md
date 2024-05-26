@@ -44,7 +44,7 @@ const values = spreadsheet.getStyle("A1,B1,C1:C3");
 :::info
 For multiple cells the method returns an array of objects with styles applied to a cell:
 
-~~~js
+~~~jsx
 [
     {background: "red", border: "solid 1px yellow", color: "blue"},
     {background: "red", border: "solid 1px yellow", color: "blue"},
@@ -57,7 +57,7 @@ For multiple cells the method returns an array of objects with styles applied to
 :::info
 Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 
-~~~js
+~~~jsx
 const style = spreadsheet.getStyle("sheet1!A2"); 
 //-> {justify-content: "flex-end", text-align: "right"}
 ~~~

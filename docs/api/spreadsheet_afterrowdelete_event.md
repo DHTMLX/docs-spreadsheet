@@ -9,7 +9,7 @@ description: You can learn about the afterRowDelete event in the documentation o
 :::caution
 The **afterRowDelete** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
 
-~~~js
+~~~jsx
 spreadsheet.events.on("afterAction", (actionName, config) => {
     if (actionName === "deleteRow") {
         console.log(actionName, config);

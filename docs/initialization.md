@@ -52,7 +52,7 @@ Initialize DHTMLX Spreadsheet with the `dhx.Spreadsheet` object constructor. The
 - the HTML container for Spreadsheet,
 - an object with configuration properties. [See the full list below](#configuration-properties).
 
-~~~js title="index.js"
+~~~jsx title="index.js"
 // creating DHTMLX Spreadsheet
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     // config options

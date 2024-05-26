@@ -49,7 +49,7 @@ spreadsheet.setValue("A1:D1",[1,2,3]);
 :::info
 Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 
-~~~js
+~~~jsx
 spreadsheet.setValue("sheet1!A1",5);
 ~~~
 

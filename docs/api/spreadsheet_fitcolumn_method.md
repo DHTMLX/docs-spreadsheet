@@ -13,7 +13,7 @@ description: You can learn about the fitColumn method in the documentation of th
 
 ### Usage
 
-~~~js
+~~~jsx
 fitColumn(cell: string): void;
 ~~~
 

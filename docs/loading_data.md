@@ -19,7 +19,7 @@ DHTMLX Spreadsheet expects data in the JSON format.
 
 It can be a simple array with cell objects. Use this way if you need to create a data set for only one sheet.
 
-~~~js title="Prepare data for one sheet"
+~~~jsx  title="Prepare data for one sheet"
 const data = [
     { cell: "A1", value: "Country" },
     { cell: "B1", value: "Product" },
@@ -44,7 +44,7 @@ const data = [
 
 Or it can be an object with data to be loaded into several sheets at once. For example:
 
-~~~js title="Prepare data for several sheets"
+~~~jsx title="Prepare data for several sheets"
 const data = {
     sheets: [
         { 
@@ -88,7 +88,7 @@ You may need to define the cells styling in the data set. In this case the data 
 
 A CSS class is set for a cell via the **css** property.
 
-~~~js
+~~~jsx
 const styledData = {
     styles: {
         someclass: {
@@ -120,7 +120,7 @@ const styledData = {
 
 If you want to specify locked cells in a data set, you can do it with the help of the **locked** property of a cell by setting it to *true*:
 
-~~~js
+~~~jsx
 const dataset = [
     { cell: "a1", value: "Country", locked: true }, //locks a cell
     { cell: "b1", value: "Product", locked: true },   
@@ -147,7 +147,7 @@ There is a possibility to specify a link for a cell right in a data set. For thi
 
 Here's what it looks like in a data set:
 
-~~~js
+~~~jsx
 const dataset = [
     { cell: "a1", value: "Country"}, //locks a cell
     { cell: "b1", value: "Product"},   
@@ -176,7 +176,7 @@ Note that you should not use the **value** property of the *cell* object and the
 
 By default, Spreadsheet expects data in JSON format. To load data from an external source, use the [](api/spreadsheet_load_method.md) method. It takes the URL of the file with data as a parameter:
 
-~~~js
+~~~jsx
 var spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.load("../common/data.json");
 ~~~
@@ -192,7 +192,7 @@ If you need to provide end users with the ability to import a JSON file into the
 
 You can also load data in the CSV format. For this, you need to call the [](api/spreadsheet_load_method.md) method and pass the name of the format ("csv") as the second parameter:
 
-~~~js
+~~~jsx
 var spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
@@ -222,7 +222,7 @@ DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://githu
   - by providing a local path to the file on your computer, like: `"../libs/excel2json/1.0/worker.js"`
   - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/excel2json/1.0/worker.js"`
 
-~~~js
+~~~jsx
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
     importModulePath: "../libs/excel2json/1.0/worker.js"
 });
@@ -232,7 +232,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 To load data from an Excel file, pass a string with the type of the extension ("xlsx") as the second parameter of the [](api/spreadsheet_load_method.md) method :
 
-~~~js
+~~~jsx
 // .xlsx only
 spreadsheet.load("../common/data.xlsx", "xlsx");
 ~~~
@@ -247,7 +247,7 @@ You can also [export data from a spreadsheet into an Excel file](#exporting-data
 
 The component will make an AJAX call and expect the remote URL to provide valid data. Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
+~~~jsx
 spreadsheet.load("/some/data").then(function(){
    // do something
 });
@@ -257,7 +257,7 @@ spreadsheet.load("/some/data").then(function(){
 
 To load data from a local source, make use of the [](api/spreadsheet_parse_method.md) method. Pass a [predefined data set](#preparing-data) as a parameter of this method:
 
-~~~js
+~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet");
 spreadsheet.parse(data);
 ~~~
@@ -270,14 +270,14 @@ For details on how to load multiple sheets into the spreadsheet, see the [Work w
 
 To save the current state of a spreadsheet, use the [](api/spreadsheet_serialize_method.md) method. It converts data into an array of JSON objects. Each JSON object contains the configuration of a cell.
 
-~~~js
+~~~jsx
 // saving state of the spreadsheet1
 var state = spreadsheet1.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different spreadsheet. For example:
 
-~~~js
+~~~jsx
 // creating a new spreadsheet
 var spreadsheet2 = new dhx.Spreadsheet(document.body);
 // parsing the state of the spreadsheet1 into spreadsheet2
@@ -309,7 +309,7 @@ The library uses the WebAssembly-based library [Json2Excel](https://github.com/d
   - by providing a local path to the file on your computer, like: `"../libs/json2excel/1.0/worker.js"`
   - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
 
-~~~js
+~~~jsx
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
     exportModulePath: "../libs/json2excel/1.0/worker.js"
 });
@@ -319,7 +319,7 @@ var spreadsheet = new dhx.Spreadsheet(document.body, {
 
 Once you've adjusted the required sources, you can use the related [](api/export_xlsx_method.md) API method of the Export object to export data of the component, as in:
 
-~~~js
+~~~jsx
 spreadsheet.export.xlsx();
 ~~~
 
@@ -331,7 +331,7 @@ spreadsheet.export.xlsx();
 
 By default, the name for an exported file is "data". You can provide your own name for an exported file. For this, you need to pass a custom name as a parameter of the [](api/export_xlsx_method.md) method, as in:
 
-~~~js
+~~~jsx
 spreadsheet.export.xlsx("MyData");
 ~~~
 
@@ -343,7 +343,7 @@ Check the steps of [importing data from an Excel file into Spreadsheet](#loading
 
 From v4.3, the library also includes the ability to export data from a spreadsheet into a JSON file. Use the [json()](api/export_json_method.md) method of the Export object for this purpose:
 
-~~~js
+~~~jsx
 spreadsheet.export.json();
 ~~~
 

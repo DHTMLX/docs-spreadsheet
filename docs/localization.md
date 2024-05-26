@@ -14,7 +14,7 @@ You can localize labels in the interface of DHTMLX Spreadsheet and present it in
 
 The English locale is used by default:
 
-~~~js
+~~~jsx
 const en = {
     // Toolbar
     undo: "Undo",

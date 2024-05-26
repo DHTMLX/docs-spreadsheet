@@ -12,7 +12,7 @@ description: You can learn about the setFilter method in the documentation of th
 
 ### Usage
 
-~~~js   
+~~~jsx   
 setFilter( 
     cell?: string,
     rules?:  [

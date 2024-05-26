@@ -12,7 +12,7 @@ description: You can learn about the parse method in the documentation of the DH
 
 ### Usage
 
-~~~js title="Load data into one sheet"
+~~~jsx title="Load data into one sheet"
 parse([
     {
         cell: string,
@@ -33,7 +33,7 @@ parse([
 ]): void;
 ~~~
 
-~~~js title="Load data into several sheets"
+~~~jsx title="Load data into several sheets"
 parse({
     sheets: [
         {
@@ -91,7 +91,7 @@ If you need to create a data set *for one sheet* only, specify data as an **arra
 <br>
 
 If you need to create a data set *for several sheets* at once, specify data as an **object** with the following parameter:
- 
+
 - `sheets` - (required) an array of **sheet** objects. Each object has the following properties:
     - `name` - (optional) the sheet name
     - `id` - (optional) the sheet id
@@ -148,7 +148,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(data);
 ~~~
 
-~~~js {38} title="Example 2. Load data into several sheets"
+~~~jsx {38} title="Example 2. Load data into several sheets"
 const data = {
     sheets : [
         { 
@@ -166,13 +166,13 @@ const data = {
             ],
             data: [
                 { cell: "A1", value: "Country" },
-                { cell: "B1", value: "Product" },
+                { cell: "B1", value: "Product" }
             ],
             merged: [
                 // merge cells A1 and B1
                 { from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
                 // merge cells A2, A3, A4, and A5
-                { from: { column: 0, row: 1 }, to: { column: 0, row: 4 } },
+                { from: { column: 0, row: 1 }, to: { column: 0, row: 4 } }
             ]
         }, 
         { 
@@ -193,10 +193,10 @@ spreadsheet.parse(data);
 
 You may also add specific styles for cells while preparing a data set. For that, you need to define data as an object which will include two parameters:
 
-- `styles` - (required) an object with CSS classes to be applied to particular cells. [Check the details below](#list-of-styles)
+- `styles` - (required) an object with CSS classes to be applied to particular cells. [Check the details below](#list-of-properties)
 - `data` - (required) the data to load
 
-~~~js
+~~~jsx
 const styledData = {
     styles: {
         someclass: {
@@ -261,7 +261,7 @@ but in some cases they may not work in the way you expect (for example, when app
 
 **Related articles:** [Data loading and export](loading_data.md)
 
-**Related samples**: 
+**Related samples**:
 
 - [Spreadsheet. Styled Data](https://snippet.dhtmlx.com/abnh7glb)
 - [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)

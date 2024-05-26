@@ -9,7 +9,7 @@ description: You can learn about the beforeRowDelete event in the documentation 
 :::caution
 The **beforeRowDelete** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
 
-~~~js
+~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
     if (actionName === "deleteRow") {
         console.log(actionName, config);

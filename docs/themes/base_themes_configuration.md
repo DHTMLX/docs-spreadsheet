@@ -56,7 +56,7 @@ For instance, you can override the primary colors for all Spreadsheet themes at 
 
 In addition, values of variables, which are calculated on the base of the primary color, will be recalculated accordingly. For example, the value of the focused color is calculated as follows:
 
-~~~js
+~~~jsx
 --dhx-color-focused: hsl(calc(var(--dhx-h-primary) + 10), var(--dhx-s-primary), var(--dhx-l-primary));
 ~~~
 

@@ -9,7 +9,7 @@ description: You can learn about the beforeClear event in the documentation of t
 :::caution
 The **beforeClear** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
 
-~~~js
+~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
     if (actionName === "clear") {
         console.log(actionName, config);

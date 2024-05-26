@@ -37,7 +37,7 @@ const format = spreadsheet.getFormat("A1");
 :::info
 Starting with v4.1, the reference to a cell can be specified in the following format:
 
-~~~js
+~~~jsx
 // returns "number"
 const cellFormat = spreadsheet.getFormat("sheet1!A2"); 
 ~~~

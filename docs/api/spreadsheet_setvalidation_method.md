@@ -43,7 +43,7 @@ spreadsheet.setValidation("B10", ["Apple", "Mango", "Avocado"]);
 
 If you need to remove validation from a cell(s), instead of the list of options, pass *null* / *0* / *false* / *undefined* as a second parameter to the method:
 
-~~~js
+~~~jsx
 spreadsheet.setValidation("B15");
 
 //or

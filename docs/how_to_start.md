@@ -29,11 +29,11 @@ and
 <!DOCTYPE html>
 <html>
 <head>
-  <title>How to Start with DHTMLX Spreadsheet</title>
-  <script src="codebase/spreadsheet.js"></script>   
-  
-  <link href="codebase/spreadsheet.css" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <title>How to Start with DHTMLX Spreadsheet</title>
+    <script src="codebase/spreadsheet.js"></script>   
+
+    <link href="codebase/spreadsheet.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
     <script>
@@ -46,7 +46,7 @@ and
 :::info
 You can also import Spreadsheet into your project using `yarn` or `npm` commands. To get the trial version of Spreadsheet, run the following commands:
 
-~~~js {2,3,6,7}
+~~~jsx {2,3,6,7}
 // npm
 npm config set @dhx:registry https://npm.dhtmlx.com
 npm i @dhx/trial-spreadsheet
@@ -79,17 +79,16 @@ As parameters, the constructor function takes the HTML container to place Spread
     <title>How to Start with DHTMLX Spreadsheet</title>
     <script src="codebase/spreadsheet.js"></script>   
    
-     <link href="codebase/spreadsheet.css" rel="stylesheet">  
-     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="codebase/spreadsheet.css" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 </head>
 <body>
-     <div id="spreadsheet_container"></div>
-
-     <script>
-          const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    <div id="spreadsheet_container"></div>
+    <script>
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
             //config options
-          });
-     </script>
+        });
+    </script>
 </body>
 </html>
 ~~~
@@ -100,7 +99,7 @@ Next you can specify additional configuration options you want the Spreadsheet c
 
 There are several options you can use to adjust the look and feel of Spreadsheet to your needs, e.g.: **toolbarBlocks**, **rowsCount** and **colsCount**. [Check the details](configuration.md).
 
-~~~js
+~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
@@ -114,7 +113,7 @@ The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it 
 
 The last step is to populate Spreadsheet with data. DHTMLX Spreadsheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse()** method and pass an object with data to it as in the example below:
 
-~~~js title="data.json"
+~~~jsx title="data.json"
 const data = [
     { "cell": "a1", "value": "Country" },
     { "cell": "b1", "value": "Product" },
@@ -132,7 +131,7 @@ const data = [
     { "cell": "b3", "value": "Apple" },
     { "cell": "c3", "value": 3.75 },
     { "cell": "d3", "value": 600 },
-    { "cell": "e3", "value": 2250 },
+    { "cell": "e3", "value": 2250 }
 ]
 
 // initializing spreadsheet

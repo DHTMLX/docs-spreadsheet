@@ -77,7 +77,7 @@ yarn add "./spreadsheet_5.1.0_enterprise"
 
 You can install the **trial** version of Spreadsheet using **npm** or **yarn** commands:
 
-~~~js {2,3,6,7}
+~~~jsx {2,3,6,7}
 // npm
 npm config set @dhx:registry https://npm.dhtmlx.com
 npm i @dhx/trial-spreadsheet
@@ -119,7 +119,7 @@ In this tutorial we will use the **trial** version of Spreadsheet.
 
 To display Spreadsheet on the page, we need to set the container to render the component inside. Use the code below:
 
-~~~js title="spreadsheet.component.ts"
+~~~jsx title="spreadsheet.component.ts"
 import { Spreadsheet } from '@dhx/trial-spreadsheet';
 import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
 import { Component, ElementRef, OnInit, ViewChild, OnDestroy} from '@angular/core';
@@ -137,7 +137,7 @@ export class SpreadsheetComponent implements OnInit {
 
 Then we need to render our Spreadsheet in the container. To do that, use the `ngOnInit()` method of Angular:
 
-~~~js {6-8} title="spreadsheet.component.ts"
+~~~jsx {6-8} title="spreadsheet.component.ts"
 export class SpreadsheetComponent implements OnInit, OnDestroy {
   @ViewChild('spreadsheetContainer', { static: true }) spreadsheetContainer!: ElementRef;
 
@@ -159,7 +159,7 @@ In the above code we've also specified the `ngOnDestroy()` method that contains 
 
 To add data into the Spreadsheet, we need to provide a data set. Let's create the **data.ts** file in the **src/app/spreadsheet/** directory and add some data into it:
 
-~~~js title="data.ts"
+~~~jsx title="data.ts"
 export function getData(): any {
   return {
     styles: {
@@ -204,7 +204,7 @@ export function getData(): any {
 
 Then open the ***spreadsheet.component.ts*** file. Import the file with data and add the `spreadsheet.parse();` call into the `ngOnInit()` method, as shown below. It will reload data on each applied change.
 
-~~~js {2,7} title="spreadsheet.component.ts"
+~~~jsx {2,7} title="spreadsheet.component.ts"
 // importing the data file
 import { getData } from './data';
 
@@ -223,7 +223,7 @@ When a user makes some action in the Spreadsheet, it invokes an event. You can u
 
 Open the **spreadsheet.component.ts** file and complete the `ngOnInit()` method as in:
 
-~~~js {5-7} title="spreadsheet.component.ts"
+~~~jsx {5-7} title="spreadsheet.component.ts"
 ngOnInit() {
   this.spreadsheet = new Spreadsheet(this.spreadsheetContainer.nativeElement,{});
 
@@ -240,7 +240,7 @@ Replace `'ActionName'` with the actual name of the event you want to handle, and
 
 Now it's time to add the component into our app. Open ***src/app/app.component.ts*** and use *SpreadsheetComponent* instead of the default content by inserting the code below:
 
-~~~js title="app.component.ts"
+~~~jsx title="app.component.ts"
 import { Component } from "@angular/core";
 
 @Component({
@@ -254,7 +254,7 @@ export class AppComponent {
 
 Then create the ***app.module.ts*** file in the ***src/app/*** directory and insert the *SpreadsheetComponent* as provided below:
 
-~~~js title="app.module.ts"
+~~~jsx title="app.module.ts"
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 
@@ -272,7 +272,7 @@ export class AppModule {}
 
 For correct rendering of fonts, open the ***angular.json*** file and complete the "assets" array in the following way (replace *spreadsheet_package* with the name of your local folder that contains Spreadsheet source files):
 
-~~~js {5-9} title="angular.json"
+~~~jsx {5-9} title="angular.json"
 ...
 "assets": [
   "src/favicon.ico",
@@ -288,7 +288,7 @@ For correct rendering of fonts, open the ***angular.json*** file and complete th
 
 The last step is to open the ***src/main.ts*** file and replace the existing code with the following one:
 
-~~~js title="main.ts"
+~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
 import { AppModule } from "./app/app.module";
 platformBrowserDynamic()

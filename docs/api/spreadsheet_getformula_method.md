@@ -37,7 +37,7 @@ const formula = spreadsheet.getFormula("B2");
 :::info
 The reference to a cell can be specified in the following format:
 
-~~~js
+~~~jsx
 // returns "ABS(C2)"
 const formula = spreadsheet.getFormula("sheet1!B2"); 
 ~~~
