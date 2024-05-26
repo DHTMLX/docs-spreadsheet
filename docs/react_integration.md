@@ -87,7 +87,7 @@ yarn add "./spreadsheet_5.1.0_enterprise"
 
 You can install the **trial** version of Spreadsheet using **npm** or **yarn** commands:
 
-~~~js {2,3,6,7}
+~~~jsx {2,3,6,7}
 // npm
 npm config set @dhx:registry https://npm.dhtmlx.com
 npm i @dhx/trial-spreadsheet
@@ -197,7 +197,7 @@ If you use **npm with a Spreadsheet package**, the import of the source files an
 
 - use the **dhx** prefix to initialize Spreadsheet, check the example below:
 
-~~~js {2} title="Spreadsheet.jsx"
+~~~jsx {2} title="Spreadsheet.jsx"
 useEffect(() => {
     const spreadsheet = new dhx.Spreadsheet(node.current, {});
     setSpreadsheet(spreadsheet);
@@ -209,7 +209,7 @@ useEffect(() => {
 
 To add data into the Spreadsheet, we need to provide a data set. Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~js title="data.js"
+~~~jsx title="data.js"
 export function getData() {
   return {
     styles: {
@@ -285,7 +285,7 @@ When a user makes some action in the Spreadsheet, it invokes an event. You can u
 
 Open **Spreadsheet.jsx** and complete the `useEffect()` method as in:
 
-~~~js {5} title="Spreadsheet.jsx" 
+~~~jsx {5} title="Spreadsheet.jsx" 
 useEffect(() => {
     const spreadsheet = new Spreadsheet(node.current, {});
     setSpreadsheet(spreadsheet);

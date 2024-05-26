@@ -44,7 +44,7 @@ const values = spreadsheet.getValue("A1,B1,C1:C3");
 :::info
 Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 
-~~~js
+~~~jsx
 const cellValue = spreadsheet.getValue("sheet1!A2"); //-> 25000
 ~~~
 

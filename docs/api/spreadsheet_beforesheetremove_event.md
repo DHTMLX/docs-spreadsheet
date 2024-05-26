@@ -9,7 +9,7 @@ description: You can learn about the beforeSheetRemove event in the documentatio
 :::caution
 The **beforeSheetRemove** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
 
-~~~js
+~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
     if (actionName === "deleteSheet") {
         console.log(actionName, config);

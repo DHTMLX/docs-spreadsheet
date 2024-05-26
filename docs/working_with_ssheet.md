@@ -12,13 +12,13 @@ While users interact with Spreadsheet via its intuitive interface, you can work 
 
 There is the [](api/spreadsheet_undo_method.md) API method that allows reverting the latest action:
 
-~~~js
+~~~jsx
 spreadsheet.undo();
 ~~~
 
 To reapply a reverted action once again use the [](api/spreadsheet_redo_method.md) method:
 
-~~~js
+~~~jsx
 spreadsheet.redo();
 ~~~
 
@@ -33,7 +33,7 @@ To add/delete a column, use the related API methods:
 
 Pass to the methods the id of the cell that contains the id of a column that should be added.
 
-~~~js
+~~~jsx
 // adds an empty "C" column 
 spreadsheet.addColumn("C1");
 // removes the "C" column
@@ -51,7 +51,7 @@ To add/delete a row, use the API methods below:
 
 Pass to the methods the id of the cell that contains the id of a row that should be added.
 
-~~~js
+~~~jsx
 // adds an empty second row
 spreadsheet.addRow("A2");
 // removes the second row
@@ -64,7 +64,7 @@ When a new row is added, neighboring rows are moved one cell down.
 
 To change the column width so that it would automatically adjust to the longest content in the column, apply the [fitColumn()](api/spreadsheet_fitcolumn_method.md) method. The method takes one parameter - the id of the cell that contains the name of the necessary column.
 
-~~~js
+~~~jsx
 // adjusts the width of the "G" column
 spreadsheet.fitColumn("G2");
 ~~~
@@ -77,7 +77,7 @@ You can filter data in the spreadsheet and render only the records that meet the
 
 For example, you can specify criteria of filtering for a separate column:
 
-~~~js
+~~~jsx
 // filter data by criteria specified for column A
 spreadsheet.setFilter("A2", [{condition: { factor: "tc", value: "e" }, exclude: ["Peru"]}]);
 
@@ -89,7 +89,7 @@ In this case, a filter icon will be added for each column from the range of data
 
 But you may also specify the filtering criteria for a range of cells as in:
 
-~~~js
+~~~jsx
 // filter data by criteria specified for column C
 spreadsheet.setFilter("C1:C9", [{condition: {factor: "inb", value: [5,8]}, exclude: [3.75]}]);
 
@@ -105,7 +105,7 @@ and a filter icon will be added only for columns withing the specified range.
 
 If you want to reset filtering, apply the [setFilter()](api/spreadsheet_setfilter_method.md) method without parameters or pass only the first parameter to the method:
 
-~~~js
+~~~jsx
 spreadsheet.setFilter("A2");
 ~~~
 
@@ -113,13 +113,13 @@ spreadsheet.setFilter("A2");
 
 To get the criteria by which data are currently filtered in a sheet, apply the [getFilter()](api/spreadsheet_getfilter_method.md) method. Pass the ID of the necessary sheet as a parameter to the method.
 
-~~~js
+~~~jsx
 const filter = spreadsheet.getFilter("Income");
 ~~~
 
 You don't need to pass the sheet's ID if you want to get the filter criteria applied to the currently active sheet:
 
-~~~js
+~~~jsx
 const filter = spreadsheet.getFilter();
 ~~~
 
@@ -127,19 +127,19 @@ const filter = spreadsheet.getFilter();
 
 You may get cells which contain specific records by passing the value which you need to search to the [search()](api/spreadsheet_search_method.md) method. 
 
-~~~js
+~~~jsx
 spreadsheet.search("min"); // -> ['D1']
 ~~~
 
 At the same time, you may pass `true` as a value of the second parameter. This will open the search bar and highlight the found cells in the spreadsheet:
 
-~~~js
+~~~jsx
 spreadsheet.search("min", true); 
 ~~~
 
 By default, the spreadsheet will search the cells on the currently active sheet. To search for records on the other sheet, pass its ID as the third parameter of the method:
 
-~~~js
+~~~jsx
 spreadsheet.search("min", false, "Income");
 ~~~
 
@@ -147,7 +147,7 @@ spreadsheet.search("min", false, "Income");
 
 To hide the search bar, use the [hideSearch()](api/spreadsheet_hidesearch_method.md) method:
 
-~~~js
+~~~jsx
 spreadsheet.hideSearch();
 ~~~
 
@@ -169,7 +169,7 @@ spreadsheet.sortCells("B2:B11", -1);
 
 You can clear the whole spreadsheet at once via the [clear()](api/spreadsheet_clear_method.md) method:
 
-~~~js
+~~~jsx
 spreadsheet.clear();
 ~~~
 

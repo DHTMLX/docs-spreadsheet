@@ -9,7 +9,7 @@ description: You can learn about the beforeSheetRename event in the documentatio
 :::caution
 The **beforeSheetRename** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
 
-~~~js
+~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
     if (actionName === "renameSheet") {
         console.log(actionName, config);

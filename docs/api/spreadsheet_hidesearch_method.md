@@ -12,7 +12,7 @@ description: You can learn about the hideSearch method in the documentation of t
 
 ### Usage
 
-~~~js
+~~~jsx
 hideSearch(): void;
 ~~~
 

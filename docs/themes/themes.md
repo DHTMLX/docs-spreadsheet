@@ -431,7 +431,7 @@ You can choose from the following variants:
 
 - set the ***data-dhx-theme*** attribute for an *HTML element*, e.g. for *documentElement*:
 
-~~~js title="index.js"
+~~~jsx title="index.js"
 document.documentElement.setAttribute("data-dhx-theme", "dark");
 ~~~
 

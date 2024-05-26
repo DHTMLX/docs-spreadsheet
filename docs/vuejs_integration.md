@@ -88,7 +88,7 @@ yarn add "./spreadsheet_5.1.0_enterprise"
 
 You can install the **trial** version of Spreadsheet using **npm** or **yarn** commands:
 
-~~~js {2,3,6,7}
+~~~jsx {2,3,6,7}
 // npm
 npm config set @dhx:registry https://npm.dhtmlx.com
 npm i @dhx/trial-spreadsheet
@@ -213,7 +213,7 @@ export default {
 
 Next you can load data into the Spreadsheet. For this, you need to provide a data set. Create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
-~~~js title="data.js"
+~~~jsx title="data.js"
 export function getData() {
   return {
     styles: {

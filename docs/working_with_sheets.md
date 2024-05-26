@@ -24,7 +24,7 @@ To load several sheets into the spreadsheet, you should prepare data with the de
 
 To add a new sheet into the spreadsheet, use the [addSheet()](api/spreadsheet_addsheet_method.md) method and pass the name of the new sheet as a parameter:
 
-~~~js
+~~~jsx
 spreadsheet.addSheet("New Sheet");
 // -> "u1614669331209"
 ~~~
@@ -35,7 +35,7 @@ The method returns the id of the created sheet.
 
 You can remove a sheet from the spreadsheet by its id via the [removeSheet()](api/spreadsheet_removesheet_method.md) method:
 
-~~~js
+~~~jsx
 spreadsheet.removeSheet("u1614669331209");
 ~~~
 
@@ -45,7 +45,7 @@ Note, that a sheet won't be deleted if the number of sheets in the spreadsheet i
 
 To change the active sheet dynamically after initialization of the spreadsheet, use the [setActiveSheet()](api/spreadsheet_setactivesheet_method.md) method. It takes the id of a sheet as a parameter:
 
-~~~js
+~~~jsx
 spreadsheet.setActiveSheet("u1636003130922");
 ~~~
 
@@ -55,7 +55,7 @@ spreadsheet.setActiveSheet("u1636003130922");
 
 It is possible to get the sheet that is currently active by applying the [getActiveSheet()](api/spreadsheet_getactivesheet_method.md) method:
 
-~~~js
+~~~jsx
 spreadsheet.getActiveSheet();
 // ->  {name: "sheet", id: "u1614675531904"}
 ~~~
@@ -66,7 +66,7 @@ The method returns an object with the name and id attributes of the currently ac
 
 The [getSheets()](api/spreadsheet_getsheets_method.md) method allows you to get all sheets of the spreadsheet. The method returns an array with a set of sheet objects:
 
-~~~js
+~~~jsx
 spreadsheet.getSheets();
 // ->  [{name: "sheet1", id: "u1614669331194"}, …]
 ~~~
@@ -75,7 +75,7 @@ spreadsheet.getSheets();
 
 There is the ability to clear the data of the specified sheet by its id via the [clearSheet()](api/spreadsheet_clearsheet_method.md) method:
 
-~~~js
+~~~jsx
 spreadsheet.clearSheet("income_id");
 ~~~
 
@@ -83,7 +83,7 @@ spreadsheet.clearSheet("income_id");
 
 To clear the currently active sheet, call the [clearSheet()](api/spreadsheet_clearsheet_method.md) method without the parameter:
 
-~~~js
+~~~jsx
 spreadsheet.clearSheet();
 ~~~
 

@@ -10,7 +10,7 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 In v5.0, the *"help"* option of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.
 
-~~~js title="Before v5.0" {8}
+~~~jsx title="Before v5.0" {8}
 // default configuration 
 toolbarBlocks: [
     "undo", 
@@ -22,7 +22,7 @@ toolbarBlocks: [
 ]
 ~~~
 
-~~~js title="From v5.0" {8,9}
+~~~jsx title="From v5.0" {8,9}
 // default configuration
 toolbarBlocks: [
     "undo", 
@@ -46,7 +46,7 @@ Version 4.3 brings a new conception of tracking and handling the actions which a
 
 The new [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using only these two events. For instance: 
 
-~~~js
+~~~jsx
 spreadsheet.events.on("BeforeAction", (actionName, config) => {
     if (actionName === "sortCells") {
         console.log(actionName, config);
@@ -110,7 +110,7 @@ Note, that the [locale options](localization.md/) for the **Align** block have b
 
 `Before v4.2`:
 
-~~~js
+~~~jsx
 const locale = {
     align: "Align",
     ...
@@ -119,7 +119,7 @@ const locale = {
 
 `From v4.2`:
 
-~~~js
+~~~jsx
 const locale = {
     halign: "Horizontal align",
     valign: "Vertical align",

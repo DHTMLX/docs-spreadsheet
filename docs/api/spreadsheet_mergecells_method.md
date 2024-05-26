@@ -12,7 +12,7 @@ description: You can learn about the mergeCells method in the documentation of t
 
 ### Usage
 
-~~~js
+~~~jsx
 mergeCells( 
     cell: string,
     remove?: boolean

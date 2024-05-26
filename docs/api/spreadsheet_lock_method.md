@@ -39,7 +39,7 @@ spreadsheet.lock("A1,B5,B7,D4:D6");
 :::info
 Starting with v4.1, the reference to a cell or a range of cells can be specified in the following format:
 
-~~~js
+~~~jsx
 spreadsheet.lock("sheet1!A2"); 
 ~~~
 

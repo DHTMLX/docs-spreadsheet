@@ -9,7 +9,7 @@ description: You can learn about the beforeFormatChange event in the documentati
 :::caution
 The **beforeFormatChange** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
 
-~~~js
+~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
     if (actionName === "setCellFormat") {
         console.log(actionName, config);

@@ -23,7 +23,7 @@ A number format is an object that includes a set of properties:
 
 The default number formats are the following:
 
-~~~js
+~~~jsx
 defaultFormats = [
     { name: "Common", id: "common", mask: "", example: "1500.31" },
     { name: "Number", id: "number", mask: "#,##0.00", example: "1,500.31" },
@@ -48,7 +48,7 @@ This is how a spreadsheet with data in various number formats looks like:
 
 You can define the format the dates to be displayed in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property. The default format is "%d/%m/%Y". 
 
-~~~js
+~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     dateFormat: "%D/%M/%Y",
 });
@@ -70,7 +70,7 @@ Check [the full list of available characters used to make formats](api/spreadshe
 
 To define the format in which the time should be shown in the spreadsheet cells, use the [timeFormat](api/spreadsheet_timeformat_config.md) property:
 
-~~~js
+~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     timeFormat: 24,
 });
@@ -99,7 +99,7 @@ With Spreadsheet configuration options, you can localize time and date, specify 
 
 For example, you can change the default localization settings as shown below:
 
-~~~js
+~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     localization: {
         decimal: ",", 
@@ -154,7 +154,7 @@ In order to apply the necessary format to a numeric value, make use of the [](ap
 
 For example:
 
-~~~js
+~~~jsx
 // applies the currency format to the cell A1
 spreadsheet.setFormat("A1","percent");
 ~~~
@@ -163,7 +163,7 @@ spreadsheet.setFormat("A1","percent");
 
 You can get the number format applied to the value of a cell with the help of the [](api/spreadsheet_getformat_method.md) method. The method takes the id of a cell as a parameter.
 
-~~~js
+~~~jsx
 var format = spreadsheet.getFormat("A1"); 
 // ->"percent"
 ~~~

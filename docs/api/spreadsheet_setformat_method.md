@@ -34,7 +34,7 @@ spreadsheet.setFormat("A1","currency");
 :::info
 Starting with v4.1, the reference to a cell can be specified in the following format:
 
-~~~js
+~~~jsx
 spreadsheet.setFormat("sheet1!A2", "number"); 
 ~~~
 

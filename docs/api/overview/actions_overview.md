@@ -10,7 +10,7 @@ This section is dedicated to a new conception of interaction with Spreadsheet ev
 
 Starting from v4.3, DHTMLX Spreadsheet includes a pair of the [beforeAction](api/spreadsheet_beforeaction_event.md)/[afterAction](api/spreadsheet_afteraction_event.md) events that are intended to make your code simple and concise. They will fire right before an action is executed and indicate which exactly action has been performed.
 
-~~~js
+~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
     if (actionName === "addColumn") {
         console.log(actionName, config);
@@ -32,12 +32,12 @@ spreadsheet.events.on("afterAction", (actionName, config) => {
 >It means, that you don't have to constantly add sets of paired [**before-** and **after-**](api/overview/events_overview.md) events anymore to track and handle the actions which you execute when changing something in the spreadsheet. 
 
 >But if needed you can use an **old approach** because all the existing events will continue work as before:
-~~~js
+~~~jsx
 spreadsheet.events.on("afterColumnAdd", function(cell){
     console.log("A new column is added", cell);
 });
 ~~~
-~~~js
+~~~jsx
 spreadsheet.events.on("beforeColumnAdd", function(cell){
     console.log("A new column will be added", cell);
     return true;

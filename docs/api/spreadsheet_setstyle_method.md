@@ -49,7 +49,7 @@ spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
 :::info
 Starting with v4.1, the reference to a cell or range of cells can be specified in the following format:
 
-~~~js
+~~~jsx
 spreadsheet.setStyle("sheet1!A2", {background: "red"}); 
 ~~~
 

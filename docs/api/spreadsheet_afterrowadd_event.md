@@ -9,7 +9,7 @@ description: You can learn about the afterRowAdd event in the documentation of t
 :::caution
 The **afterRowAdd** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
 
-~~~js
+~~~jsx
 spreadsheet.events.on("afterAction", (actionName, config) => {
     if (actionName === "addRow") {
         console.log(actionName, config);

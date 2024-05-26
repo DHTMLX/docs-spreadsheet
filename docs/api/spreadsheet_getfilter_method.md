@@ -12,7 +12,7 @@ description: You can learn about the getFilter method in the documentation of th
 
 ### Usage
 
-~~~js   
+~~~jsx   
 getFilter(id?: string): {cell, rules};
 ~~~
 

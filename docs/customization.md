@@ -64,7 +64,7 @@ To add a new control, apply the `spreadsheet.{name}.data.add()` method. It takes
 
 For a button:
 
-~~~js
+~~~jsx 
 // spreadsheet.menu.data.add / spreadsheet.contextMenu.data.add
 spreadsheet.toolbar.data.add({
     type: "button", // "menuItem"
@@ -76,7 +76,7 @@ spreadsheet.toolbar.data.add({
 
 For a menuItem:
 
-~~~js
+~~~jsx
 // spreadsheet.menu.data.add / spreadsheet.contextMenu.data.add
 spreadsheet.toolbar.data.add({
     type: "menuItem",
@@ -92,7 +92,7 @@ You can change the icon of the control and its other config options via the `spr
 - the id of the control
 - an object with new configuration of the control
 
-~~~js
+~~~jsx
 // spreadsheet.menu.data.update / spreadsheet.contextMenu.data.update
 spreadsheet.toolbar.data.update("add", { 
     icon: "icon_name" 
@@ -103,7 +103,7 @@ spreadsheet.toolbar.data.update("add", {
 
 To remove a control, make use of the `spreadsheet.{name}.data.remove()` method. Pass the id of the control that should be removed to the method:
 
-~~~js
+~~~jsx
 // spreadsheet.menu.data.remove / spreadsheet.contextMenu.data.remove
 spreadsheet.toolbar.data.remove("control-id");
 ~~~
@@ -171,7 +171,7 @@ It is also possible to add the blocks enumerated below:
 
 In the example below a new button is added into the toolbar:
 
-~~~js
+~~~jsx
 spreadsheet.toolbar.data.add({
     type: "button",
     icon: "dxi dxi-delete",
@@ -186,7 +186,7 @@ spreadsheet.toolbar.data.add({
 
 In the example below a new menuItem option is added into the "clear-group" control:
 
-~~~js
+~~~jsx
 spreadsheet.toolbar.data.add({
     type: "menuItem",
     id: "clear-value2", 
@@ -196,7 +196,7 @@ spreadsheet.toolbar.data.add({
 
 There is a simplified notation for adding a menuItem, in case the exact position of the new item is not required:
 
-~~~js
+~~~jsx
 spreadsheet.toolbar.data.add({
     type: "menuItem",
     id: "clear-value2", 
@@ -209,7 +209,7 @@ spreadsheet.toolbar.data.add({
 
 In the example below the default icons of the toolbar Undo/Redo buttons are changed to Font Awesome ones:
 
-~~~js
+~~~jsx
 spreadsheet.toolbar.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 ~~~
@@ -222,7 +222,7 @@ spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 
 In the example below the Undo button is removed from the toolbar:
 
-~~~js
+~~~jsx
 spreadsheet.toolbar.data.remove("undo");
 ~~~
 
@@ -287,7 +287,7 @@ The [default menu](/#menu) has the following structure:
 
 In the example below a new menuItem is added into the menu:
 
-~~~js
+~~~jsx
 spreadsheet.menu.data.add({
     id: "validate",
     value: "Validate",
@@ -312,7 +312,7 @@ spreadsheet.menu.data.add({
 
 In the example below the default icons of the Undo/Redo menuItems are changed to Font Awesome ones:
 
-~~~js
+~~~jsx
 spreadsheet.menu.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.menu.data.update("redo", { icon: "fa fa-redo" });
 ~~~
@@ -323,7 +323,7 @@ spreadsheet.menu.data.update("redo", { icon: "fa fa-redo" });
 
 In the example below the Undo menuItem is removed from the menu:
 
-~~~js
+~~~jsx
 spreadsheet.menu.data.remove("undo");
 ~~~
 
@@ -354,7 +354,7 @@ The [default context menu](/#context-menu) has the following structure:
 
 In the example below a new menuItem is added into the context menu:
 
-~~~js
+~~~jsx
 spreadsheet.contextMenu.data.add({
     icon: "mdi mdi-eyedropper-variant",
     value: "Paint format",
@@ -370,7 +370,7 @@ spreadsheet.contextMenu.data.add({
 
 In the example below the default icons of the Lock menuItem is changed to the Font Awesome one:
 
-~~~js
+~~~jsx
 spreadsheet.contextMenu.data.update("lock", { icon: "fa fa-key" });
 ~~~
 
@@ -380,7 +380,7 @@ spreadsheet.contextMenu.data.update("lock", { icon: "fa fa-key" });
 
 In the example below the Undo menuItem is removed from the context menu:
 
-~~~js
+~~~jsx
 spreadsheet.contextMenu.data.remove("lock");
 ~~~
 
@@ -392,7 +392,7 @@ Besides applying the [read-only mode](configuration.md#read-only-mode) to the wh
 - [](api/spreadsheet_beforestylechange_event.md)
 - [](api/spreadsheet_beforevaluechange_event.md)
 
-~~~js
+~~~jsx
 var spreadsheet = new dhx.Spreadsheet("cont");
 
 spreadsheet.events.on("beforeEditStart", function(){

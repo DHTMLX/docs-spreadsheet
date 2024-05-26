@@ -53,7 +53,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
+~~~jsx
 spreadsheet.load("../some/data.json").then(function(){
     spreadsheet.selection.add(123);
 });
@@ -83,7 +83,7 @@ It is possible to allow end users to load a JSON file into the spreadsheet via t
 
 - Call the **load()** method with two parameters: an empty string as an URL and the type of data to load ("json"):
 
-~~~js
+~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
     menu: true,
 });
