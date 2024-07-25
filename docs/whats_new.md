@@ -8,6 +8,18 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.1.6 
+
+Released on July 25, 2024
+
+- Inserted rows/columns are missed in the serialized data on loading it
+- An empty date cell displays the last picked date in the datepicker and the timepicker
+- An issue with number localization and an empty string value in a cell
+- Searching doesn't get focus while editing a cell
+- Using `ngIf/ngFor` for the Spreadsheet container causes a break in the component
+
+### Fixes
+
 ## Version 5.1.5 
 
 Released on February 13, 2024
