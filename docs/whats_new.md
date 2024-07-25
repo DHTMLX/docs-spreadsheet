@@ -12,13 +12,14 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 Released on July 25, 2024
 
+### Fixes
+
 - Inserted rows/columns are missed in the serialized data on loading it
 - An empty date cell displays the last picked date in the datepicker and the timepicker
 - An issue with number localization and an empty string value in a cell
 - Searching doesn't get focus while editing a cell
 - Using `ngIf/ngFor` for the Spreadsheet container causes a break in the component
 
-### Fixes
 
 ## Version 5.1.5 
 
