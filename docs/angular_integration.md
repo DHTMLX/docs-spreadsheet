@@ -52,42 +52,7 @@ Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the
 
 ### Step 1. Package installation
 
-There are two options available: you can install the **Pro** package from a local folder or install the **trial** version using `npm` or `yarn`.
-
-#### Installing the package from a local folder
-
-1. Copy the Spreadsheet package into some local directory inside the project
-2. In the project directory run the command below replacing *spreadsheet-local-package-path* with the actual path:
-
-~~~
-npm install ./spreadsheet-local-package-path
-//or
-yarn add "./spreadsheet-local-package-path"
-~~~
-
-For example:
-
-~~~
-npm install ./spreadsheet_5.1.0_enterprise
-// or
-yarn add "./spreadsheet_5.1.0_enterprise"
-~~~
-
-#### Installing the trial version via a package manager
-
-You can install the **trial** version of Spreadsheet using **npm** or **yarn** commands:
-
-~~~jsx {2,3,6,7}
-// npm
-npm config set @dhx:registry https://npm.dhtmlx.com
-npm i @dhx/trial-spreadsheet
-
-// yarn
-yarn config set @dhx:registry https://npm.dhtmlx.com
-yarn add @dhx/trial-spreadsheet
-~~~
-
-To get Spreadsheet under the proprietary license, refer to the [Support Center](https://dhtmlx.com/docs/technical-support.shtml)!
+Download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Spreadsheet is available 30 days only.
   
 ### Step 2. Component creation
 

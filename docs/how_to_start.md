@@ -18,14 +18,14 @@ Start from creating an HTML file and call it *index.html*. Then proceed to inclu
 
 There are two necessary files:
 
-- the JS file of DHTMLX Spreadsheet
-- the CSS file of DHTMLX Spreadsheet
+- the *JS* file of DHTMLX Spreadsheet
+- the *CSS* file of DHTMLX Spreadsheet
 
 and
 
 - the link to the Google Fonts source file for the correct rendering of fonts.
 
-~~~html title="index.html"
+~~~html {5-8} title="index.html"
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,24 +43,20 @@ and
 </html>
 ~~~
 
+### Installing Spreadsheet via npm and yarn
+
+You can import JavaScript Spreadsheet into your project using the `yarn` or `npm` package manager.
+
+#### Installing trial Spreadsheet via npm and yarn
+
 :::info
-You can also import Spreadsheet into your project using `yarn` or `npm` commands. To get the trial version of Spreadsheet, run the following commands:
-
-~~~jsx {2,3,6,7}
-// npm
-npm config set @dhx:registry https://npm.dhtmlx.com
-npm i @dhx/trial-spreadsheet
-
-// yarn
-yarn config set @dhx:registry https://npm.dhtmlx.com
-yarn add @dhx/trial-spreadsheet
-~~~
-
-To get Spreadsheet under the proprietary license, refer to [**Support Center**](https://dhtmlx.com/docs/technical-support.shtml?_gl=1*18ffotg*_ga*MTA3MDMxMTAxNi4xNzAwNTcxNzU4*_ga_N87XPB4GSG*MTcwMTQzMjczMS4yOS4xLjE3MDE0MzI3OTUuNTYuMC4w&_ga=2.77564829.902258312.1701098802-1070311016.1700571758)!
+If you want to use the trial version of Spreadsheet, download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Spreadsheet is available 30 days only.
 :::
 
-:::tip
-If you want to integrate JavaScript Spreadsheet into Svelte, React, Angular or Vue projects, refer to the corresponding [**Examples on CodeSandbox**](https://codesandbox.io/u/DHTMLX) for more information.
+#### Installing PRO Spreadsheet via npm and yarn
+
+:::info
+If you already have Spreadsheet under the proprietary license, send your **license number** to the *contact@dhtmlx.com* email to receive a login and a password for a private **npm** as well as a detailed guide on how to install Spreadsheet. Note that a private **npm** is available before the expiration of the proprietary Spreadsheet license.
 :::
 
 ## Step 2. Creating Spreadsheet
