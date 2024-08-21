@@ -53,6 +53,8 @@ Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the
 ### Step 1. Package installation
 
 Download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Spreadsheet is available 30 days only.
+
+Check the [How to Start](/spreadsheet/how_to_start/) guide to learn about the available installation ways. 
   
 ### Step 2. Component creation
 
@@ -62,7 +64,7 @@ Now we should create a component, to add a Spreadsheet into the application. Let
 
 Open the file and import Spreadsheet source files. Note that:
 
-- if you've [installed the Spreadsheet package from a local folder](#installing-the-package-from-a-local-folder), your import paths will look like this:
+- if you've installed the Spreadsheet package from a local folder, your import paths will look like this:
 
 ~~~
 import { Spreadsheet } from 'dhx-spreadsheet-package';
@@ -71,7 +73,7 @@ import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **spreadsheet.min.css**.
 
-- if you've chosen to [install the trial version](#installing-the-trial-version-via-a-package-manager), the import paths should be as in:
+- if you've chosen to install the trial version], the import paths should be as in:
 
 ~~~
 import { Spreadsheet } from '@dhx/trial-spreadsheet';

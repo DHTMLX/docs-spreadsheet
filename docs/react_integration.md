@@ -62,6 +62,8 @@ Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the
 
 Download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Spreadsheet is available 30 days only.
 
+Check the [How to Start](/spreadsheet/how_to_start/) guide to learn about the available installation ways. 
+
 ### Step 2. Component creation
 
 Now we should create a React component, to add a Spreadsheet into the application. Let's create a new file in the ***src/*** directory and name it ***Spreadsheet.jsx***.
@@ -70,7 +72,7 @@ Now we should create a React component, to add a Spreadsheet into the applicatio
 
 Open the file and import Spreadsheet source files. Note that:
 
-- if you've [installed the Spreadsheet package from a local folder](#installing-the-package-from-a-local-folder), your import paths will look like this:
+- if you've installed the Spreadsheet package from a local folder, your import paths will look like this:
 
 ~~~html title="Spreadsheet.jsx" 
 import { Spreadsheet } from 'dhx-spreadsheet-package';
@@ -83,7 +85,7 @@ Note that depending on the used package, the source files can be minified. In th
 **In case you use *npm* with a local Spreadsheet package**, the way of importing Spreadsheet source files is different. [Check the details below](#using-npm-with-spreadsheet-package)
 }}
 
-- if you've chosen to [install the trial version](#installing-the-trial-version-via-a-package-manager), the import paths should be as in:
+- if you've chosen to install the trial version, the import paths should be as in:
 
 ~~~html title="Spreadsheet.jsx" 
 import { Spreadsheet } from '@dhx/trial-spreadsheet';
