@@ -6,7 +6,7 @@ description: You can learn about the customization of the DHTMLX JavaScript Spre
 
 # Customization
 
-You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for Spreadsheet.
+You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for Spreadsheet. 
 
 ## Default and custom icons
 
