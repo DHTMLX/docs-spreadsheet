@@ -6,7 +6,7 @@ description: You can learn about the configuration of the DHTMLX JavaScript Spre
 
 # Configuration
 
-You can adjust the desired settings of DHTMLX Spreadsheet to meet your needs. The available configuration options allow you to limit the number of rows and columns, change the toolbar appearance and control the visibility of the menu and the editing bar. You can also initialize Spreadsheet in the readonly mode, if needed.
+You can adjust the desired settings of DHTMLX Spreadsheet to meet your needs. The available configuration options allow you to limit the number of rows and columns, change the toolbar appearance and control the visibility of the menu and the editing bar. You can also initialize Spreadsheet in the readonly mode, if needed. 
 
 ## Toolbar
 
