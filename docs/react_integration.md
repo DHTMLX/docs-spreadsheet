@@ -105,7 +105,27 @@ export default function DHTMLXSpreadsheet(props) {
         }
     });
 
-    return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
+    return <div ref={container} className="widget"></div>;
+}
+~~~
+
+#### Adding styles
+
+To display Spreadsheet correctly, you need to provide the corresponding styles. You can use the **index.css** file to specify important styles for Spreadsheet and its container:
+
+~~~css title="index.css"
+/* specify styles for initial page */
+html,
+body,
+#root {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* specify styles for the Spreadsheet container */
+.widget {
+    height: 100%;
 }
 ~~~
 
@@ -172,7 +192,7 @@ export default App;
 
 Go to the ***Spreadsheet.jsx*** file and apply the passed **props** to the Spreadsheet via the [`parse()`](/api/spreadsheet_parse_method/) method:
 
-~~~jsx {5,10} title="Spreadsheet.jsx"
+~~~jsx {5,11} title="Spreadsheet.jsx"
 import { useEffect, useRef } from "react";
 import { Spreadsheet } from "@dhx/trial-spreadsheet";
 import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css";
@@ -190,9 +210,8 @@ export default function SpreadsheetComponent(props) {
         }
     });
 
-    return <div ref={container} style={{ width: "100%", height: "100%" }}></div>;
+    return <div ref={container} className="widget"></div>;
 }
-
 ~~~
 
 The `parse(data)` method provides data reloading on each applied change.
@@ -218,7 +237,8 @@ useEffect(() => {
     return () => {
         spreadsheet.destructor();
     }
-  }, []);
+}, []);
+// ...
 ~~~
 
 ### Step 3. Adding Spreadsheet into the app
