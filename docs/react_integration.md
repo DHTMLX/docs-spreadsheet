@@ -60,7 +60,7 @@ Download the [**trial Spreadsheet package**](/how_to_start/#installing-spreadshe
 
 ### Step 2. Component creation
 
-Now you need to create a React component, to add an Spreadsheet into the application. Create a new file in the ***src/*** directory and name it ***Spreadsheet.jsx***.
+Now you need to create a React component, to add Spreadsheet into the application. Create a new file in the ***src/*** directory and name it ***Spreadsheet.jsx***.
 
 #### Import source files
 

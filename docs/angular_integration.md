@@ -89,7 +89,7 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation 
     encapsulation: ViewEncapsulation.None,
     selector: 'spreadsheet', // a template name used in the "app.component.ts" file as <spreadsheet/>
     styleUrls: ['./spreadsheet.component.css'], // include a css file
-    template: `<div #container class="widget"></div>`
+    template: `<div #container class = "widget"></div>`
 })
 
 export class SpreadsheetComponent implements OnInit, OnDestroy {
@@ -190,7 +190,7 @@ import { Component, ElementRef, OnInit, ViewChild, OnDestroy, ViewEncapsulation 
     encapsulation: ViewEncapsulation.None,
     selector: 'spreadsheet', 
     styleUrls: ['./spreadsheet.component.css'],
-    template: `<div #container class="widget"></div>`
+    template: `<div #container class = "widget"></div>`
 })
 
 export class SpreadsheetComponent implements OnInit, OnDestroy {
