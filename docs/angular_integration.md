@@ -120,15 +120,13 @@ To display Spreadsheet correctly, you need to provide the corresponding styles. 
 /* specify styles for initial page */
 html,
 body {
-    margin: 0;
-    padding: 0;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /* specify styles for the Spreadsheet container */
 .widget {
-    position: relative;
-    width: 100%;
     height: 100%;
 }
 ~~~
