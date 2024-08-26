@@ -223,13 +223,14 @@ When a user makes some action in the Spreadsheet, it invokes an event. You can u
 
 Open the **spreadsheet.component.ts** file and complete the `ngOnInit()` method as in:
 
-~~~jsx {5-7} title="spreadsheet.component.ts"
+~~~jsx {5-8} title="spreadsheet.component.ts"
 // ...
 ngOnInit() {
     this._spreadsheet = new Spreadsheet(this.spreadsheet_container.nativeElement,{});
 
-    spreadsheet.events.on("afterRowAdd", function(){
-        console.log("A new row is added");
+    spreadsheet.events.on("afterFocusSet", function(cell){
+        console.log("Focus is set on a cell " + spreadsheet.selection.getSelectedCell());
+        console.log(cell);
     });
 }
 
