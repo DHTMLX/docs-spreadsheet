@@ -111,7 +111,7 @@ export default function DHTMLXSpreadsheet(props) {
 
 #### Adding styles
 
-To display Spreadsheet correctly, you need to provide the corresponding styles. You can use the **index.css** file to specify important styles for Spreadsheet and its container:
+To display Spreadsheet correctly, you need to specify important styles for Spreadsheet and its container in the main css file of the project:
 
 ~~~css title="index.css"
 /* specify styles for initial page */
@@ -239,22 +239,6 @@ useEffect(() => {
     }
 }, []);
 // ...
-~~~
-
-### Step 3. Adding Spreadsheet into the app
-
-To add the component into the app, open the **App.js** file and replace the default code with the following one:
-
-~~~jsx title="App.js"
-import Spreadsheet from "./Spreadsheet";
-import { getData } from "./data";
-
-function App() {
-    let data = getData();
-    return <Spreadsheet data={data} />;
-}
-
-export default App;
 ~~~
 
 After that, you can start the app to see Spreadsheet loaded with data on a page.

@@ -120,13 +120,13 @@ export default {
 
 #### Adding styles
 
-To display Spreadsheet correctly, you need to provide the corresponding styles. You can use any **.css** file to specify important styles for Spreadsheet and its container:
+To display Spreadsheet correctly, you need to specify important styles for Spreadsheet and its container in the main css file of the project:
 
-~~~css title="index.css"
+~~~css title="main.css"
 /* specify styles for initial page */
 html,
 body,
-#root { /* make sure that you use the #root container */
+#app { /* make sure that you use the #app root container */
     height: 100%;
     padding: 0;
     margin: 0;
@@ -260,29 +260,6 @@ export default {
 </script>
 
 <!--...-->
-~~~
-
-### Step 3. Adding Spreadsheet into the app
-
-To add the component into the app, open the **App.vue** file and replace the default code with the following one:
-
-~~~html title="App.vue"
-<script>
-import Spreadsheet from "./components/Spreadsheet.vue";
-import { getData } from "./data";
-
-export default {
-    components: { Spreadsheet },
-    data() {
-        return { data: getData() };
-    }
-};
-</script>
-
-<template>
-    <Spreadsheet :data="data" />
-</template>
-
 ~~~
 
 After that, you can start the app to see Spreadsheet loaded with data on a page.
