@@ -222,8 +222,6 @@ Go to the ***Spreadsheet.svelte*** file and apply the passed **props** to the Sp
 <div bind:this={container} class="widget"></div>
 ~~~
 
-The `parse(data)` method provides data reloading on each applied change.
-
 Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
 
 #### Handling events
