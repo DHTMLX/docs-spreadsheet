@@ -257,7 +257,7 @@ export default {
 }   
 </script>
 
-<!--...-->
+//...
 ~~~
 
 After that, you can start the app to see Spreadsheet loaded with data on a page.

@@ -93,7 +93,7 @@ import { useEffect, useRef } from "react";
 import { Spreadsheet } from "@dhx/trial-spreadsheet";
 import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css"; // include Spreadsheet styles
 
-export default function DHTMLXSpreadsheet(props) {
+export default function SpreadsheetComponent(props) {
     let container = useRef(); // initialize container for Spreadsheet
 
     useEffect(() => {
