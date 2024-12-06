@@ -17,7 +17,7 @@ You can also [check the demo on GitHub](https://github.com/DHTMLX/react-spreadsh
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
 You can create a basic **React** project or use **React with Vite**:
