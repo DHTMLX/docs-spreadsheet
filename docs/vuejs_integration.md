@@ -6,7 +6,7 @@ description: You can learn about the Vue.js integration of the DHTMLX JavaScript
 # Integration with Vue.js
 
 :::tip
-You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) to use this documentation. If you are not, please refer to the [**Vue 3 documentation**](https://v3.vuejs.org/guide/introduction.html#getting-started) for a getting-started tutorial.
+You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) to use this documentation. If you are not, please refer to the [**Vue 3 documentation**](https://vuejs.org/guide/introduction.html#getting-started) for a getting-started tutorial.
 :::
 
 DHTMLX Spreadsheet is compatible with **Vue**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Vue**. To check online samples, please refer to the corresponding [**Example on Replit**](https://replit.com/@dhtmlx/dhtmlx-spreadsheet-with-vue3).
