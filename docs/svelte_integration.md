@@ -15,7 +15,7 @@ DHTMLX Spreadsheet is compatible with **Svelte**. We have prepared code examples
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Vite**](https://vitejs.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
+Before you start to create a new project, install [**Vite**](https://vite.dev/) (optional) and [**Node.js**](https://nodejs.org/en/).
 :::
 
 To create a **Svelte** JS project, run the following command:
