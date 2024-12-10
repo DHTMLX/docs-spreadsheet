@@ -8,6 +8,14 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.1.8 
+
+Released on December 10, 2024
+
+### Fixes
+
+- The issue with the local trial package during import to frameworks
+
 ## Version 5.1.7 
 
 Released on November 27, 2024
