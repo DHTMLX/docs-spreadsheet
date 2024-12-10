@@ -139,13 +139,12 @@ To add data into Spreadsheet, you need to provide a data set. You can create the
 export function getData(): any {
     return {
         styles: {
-            header: {
-                "font-weight": "bold",
-                "white-space": "nowrap"
+            bold: {
+                "font-weight": "bold"
             },
-            highlighting: {
-                color: "#0b72a5",
-                "white-space": "nowrap"
+            right: {
+                "justify-content": "flex-end",
+                "text-align": "right"
             }
         },
         data: [
@@ -175,7 +174,7 @@ export function getData(): any {
 
             // more cells with data
         ]
-    };
+    }
 }
 ~~~
 
