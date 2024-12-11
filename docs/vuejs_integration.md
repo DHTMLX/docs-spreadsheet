@@ -1,240 +1,238 @@
 ---
-sidebar_label: Integration with Vue.js
-title: Vue.js Integration
-description: You can learn about the Vue.js integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+sidebar_label: Integration with Vue
+title: Vue Integration
+description: You can learn about the Vue integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
-# Integration with Vue.js
+
+# Integration with Vue
 
 :::tip
-You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) to use this documentation. If you are not, please refer to the [**Vue 3 documentation**](https://vuejs.org/guide/introduction.html#getting-started) for a getting-started tutorial.
+You should be familiar with the basic concepts and patterns of [**Vue**](https://vuejs.org/) before reading this documentation. To refresh your knowledge, please refer to the [**Vue 3 documentation**](https://vuejs.org/guide/introduction.html#getting-started).
 :::
 
-DHTMLX Spreadsheet is compatible with **Vue**. We have prepared code examples of how to use DHTMLX Spreadsheet with **Vue**. To check online samples, please refer to the corresponding [**Example on Replit**](https://replit.com/@dhtmlx/dhtmlx-spreadsheet-with-vue3).
-
-You can also [check the demo on GitHub](https://github.com/DHTMLX/vue-spreadsheet-demo).
+DHTMLX Spreadsheet is compatible with **Vue**. We have prepared code examples on how to use DHTMLX Spreadsheet with **Vue 3**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/vue-spreadsheet-demo).
 
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [Node.js](https://nodejs.org/en/).
+Before you start to create a new project, install [**Node.js**](https://nodejs.org/en/).
 :::
 
 To create a **Vue** project, run the following command:
 
-~~~
+~~~json
 npm create vue@latest
 ~~~
 
-This command will install and execute `create-vue`, the official **Vue** project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+This command installs and executes `create-vue`, the official **Vue** project scaffolding tool. Check the details in the [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+
+Let's name the project as **my-vue-spreadsheet-app**.
 
 ### Installation of dependencies
 
-Next you should go to the app directory. Let's name our project **spreadsheet-vue** and run:
+Go to the app directory:
 
-~~~
-cd spreadsheet-vue
-~~~
-
-After that you should install dependencies and start the dev server. For this, you need to make use of a package manager:
-
-- if you use [**yarn**](https://yarnpkg.com/), you need to call the following commands:
-
-~~~
-yarn install
-yarn dev
+~~~json
+cd my-vue-spreadsheet-app
 ~~~
 
-- if you use [**npm**](https://www.npmjs.com/), you need to call the following commands:
+Install dependencies and start the dev server. For this, use a package manager:
 
+- if you use [**yarn**](https://yarnpkg.com/), run the following commands:
+
+~~~jsx
+yarn
+yarn start // or yarn dev
 ~~~
+
+- if you use [**npm**](https://www.npmjs.com/), run the following commands:
+
+~~~json
 npm install
 npm run dev
 ~~~
 
-You should now have your **Vue** project running on `http://localhost:5173`.
-
-![Vue app running](assets/integrations/vue_app_run.png) 
+The app should run on a localhost (for instance `http://localhost:3000`).
 
 ## Creating Spreadsheet
 
-Now we should get the DHTMLX Spreadsheet code. First of all, we need to stop the app by pressing **Ctrl+C** in the command line. Then we can proceed with installing the Spreadsheet package.
+Now you should get the DHTMLX Spreadsheet source code. First of all, stop the app and proceed with installing the Spreadsheet package.
 
 ### Step 1. Package installation
 
-Download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Spreadsheet is available 30 days only.
-
-Check the [How to Start](/spreadsheet/how_to_start/) guide to learn about the available installation ways. 
+Download the [**trial Spreadsheet package**](/how_to_start/#installing-spreadsheet-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Spreadsheet is available 30 days only.
 
 ### Step 2. Component creation
 
-Now we should create a Vue component, to add a Spreadsheet into the application. Let's create a new file in the ***src/components/*** directory and name it ***Spreadsheet.vue***. 
+Now you need to create a Vue component, to add Spreadsheet into the application. Create a new file in the ***src/components/*** directory and name it ***Spreadsheet.vue***.
 
-#### Importing source files
+#### Import source files
 
-Open the file and import Spreadsheet source files. Note that:
+Open the ***Spreadsheet.vue*** file and import Spreadsheet source files. Note that:
 
-- if you've installed the Spreadsheet package from a local folder, your import paths will look like this:
+- if you use PRO version and install the Spreadsheet package from a local folder, the import paths look like this:
 
 ~~~html title="Spreadsheet.vue"
+<script>
 import { Spreadsheet } from 'dhx-spreadsheet-package';
 import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
+</script>
 ~~~
 
 Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **spreadsheet.min.css**.
 
-{{note 
-**In case you use *npm* with a local Spreadsheet package**, the way of importing Spreadsheet source files is different. [Check the details below](#using-npm-with-spreadsheet-package)
-}}
-
-- if you've chosen to install the trial version, the import paths should be as in:
+- if you use the trial version of Spreadsheet, specify the following paths:
 
 ~~~html title="Spreadsheet.vue"
+<script>
 import { Spreadsheet } from '@dhx/trial-spreadsheet';
 import '@dhx/trial-spreadsheet/codebase/spreadsheet.min.css';
+</script>
 ~~~
 
-In this tutorial we will use the **trial** version of Spreadsheet.
+In this tutorial you can see how to configure the **trial** version of Spreadsheet.
 
 #### Setting the container and adding Spreadsheet
 
-To display Spreadsheet on the page, we need to set the container to render the component inside. Check the code below:
+To display Spreadsheet on the page, you need to create the container for Spreadsheet, and initialize this component using the corresponding constructor:
 
-~~~html {6-8} title="Spreadsheet.vue"
+~~~html {2,7-8,18} title="Spreadsheet.vue"
 <script>
-  import { Spreadsheet } from "@dhx/trial-spreadsheet";
-  import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css";
-</script>
+import { Spreadsheet } from "@dhx/trial-spreadsheet";
+import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css";
 
-<template>
-  <div ref="container" style="width: 100%; height: 80vh; "></div>
-</template>
-~~~
-
-Then we need to render our Spreadsheet in the container. Use the `new Spreadsheet()` constructor inside the `mounted()` method of Vue.js to initialize Spreadsheet inside of the container that you've set above:
-
-~~~html title="Spreadsheet.vue"
-<script>
 export default {
-  mounted: function() {
-    this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-  }
+    mounted() {
+        // initialize the Spreadsheet component
+        this.spreadsheet = new Spreadsheet(this.$refs.container, {});
+    },
+
+    unmounted() {
+        this.spreadsheet.destructor(); // destruct Spreadsheet
+    }
 };
 </script>
 
 <template>
-  <div ref="container" style="width: 100%; height: 80vh; "></div>
+    <div ref="container" class="widget"></div>
 </template>
 ~~~
 
-{{note 
-**In case you use *npm* with a local Spreadsheet package**, the way of Spreadsheet initialization differs a little bit. [Check the details below](#using-npm-with-spreadsheet-package)
-}}
+#### Adding styles
 
-To clear the component as it has unmounted, use the `spreadsheet.destructor()` call and remove the container after that inside the `unmounted()` method of ***Vue.js***, as follows:
+To display Spreadsheet correctly, you need to specify important styles for Spreadsheet and its container in the main css file of the project:
 
-~~~html {7-10} title="Spreadsheet.vue"
-<script>
-export default {
-  mounted: function() {
-    this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-  },
-
-  unmounted() {
-    this.spreadsheet.destructor();
-    this.$refs.container.innerHTML = "";
-  },
+~~~css title="main.css"
+/* specify styles for initial page */
+html,
+body,
+#app { /* make sure that you use the #app root container */
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
-</script>
 
-<template>
-  <div ref="container" style="width: 100%; height: 80vh; "></div>
-</template>
-~~~
-
-#### Using npm with Spreadsheet package
-
-If you use **npm with a Spreadsheet package**, the import of the source files and the initialization of Spreadsheet will differ from the common way:
-
-- include the Spreadsheet source files in the ***index.html*** file as shown in the example below. Replace *spreadsheet_package* with the name of your local folder that contains Spreadsheet source files:
-
-~~~html title="index.html"
-<script src="./spreadsheet_package/codebase/spreadsheet.js"></script>
-<link rel="stylesheet" href="./spreadsheet_package/codebase/spreadsheet.css">
-~~~
-
-- use the **dhx** prefix to initialize Spreadsheet, check the example below:
-
-~~~html {4} title="Spreadsheet.vue"
-<script>
-export default {
-    mounted: function() {
-      this.spreadsheet = new dhx.Spreadsheet(this.$refs.container, {});
-    }
-  };
-</script>
+/* specify styles for the Spreadsheet container */
+.widget {
+    height: 100%;
+}
 ~~~
 
 #### Loading data
 
-Next you can load data into the Spreadsheet. For this, you need to provide a data set. Create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To add data into the Spreadsheet, you need to provide a data set. You can create the ***data.js*** file in the ***src/*** directory and add some data into it:
 
 ~~~jsx title="data.js"
 export function getData() {
-  return {
-    styles: {
-      bold: {
-          "font-weight": "bold",
-      },
-      right: {
-          "justify-content": "flex-end",
-          "text-align": "right",
-      },
-    },
-    data: [
-      { cell: "a1", value: "Country", css:"bold" },
-      { cell: "b1", value: "Product", css:"bold" },
-      { cell: "c1", value: "Price", css:"right bold" },
-      { cell: "d1", value: "Amount", css:"right bold" },
-      { cell: "e1", value: "Total Price", css:"right bold" },
+    return {
+        styles: {
+            bold: {
+                "font-weight": "bold"
+            },
+            right: {
+                "justify-content": "flex-end",
+                "text-align": "right"
+            }
+        },
+        data: [
+            { cell: "a1", value: "Country", css:"bold" },
+            { cell: "b1", value: "Product", css:"bold" },
+            { cell: "c1", value: "Price", css:"right bold" },
+            { cell: "d1", value: "Amount", css:"right bold" },
+            { cell: "e1", value: "Total Price", css:"right bold" },
 
-      { cell: "a2", value: "Ecuador" },
-      { cell: "b2", value: "Banana" },
-      { cell: "c2", value: 6.68, format: "currency" },
-      { cell: "d2", value: 430 },
-      { cell: "e2", value: 2872.4, format: "currency" },
+            { cell: "a2", value: "Ecuador" },
+            { cell: "b2", value: "Banana" },
+            { cell: "c2", value: 6.68, format: "currency" },
+            { cell: "d2", value: 430 },
+            { cell: "e2", value: 2872.4, format: "currency" },
 
-      { cell: "a3", value: "Belarus" },
-      { cell: "b3", value: "Apple" },
-      { cell: "c3", value: 3.75, format: "currency" },
-      { cell: "d3", value: 600 },
-      { cell: "e3", value: 2250, format: "currency" },
+            { cell: "a3", value: "Belarus" },
+            { cell: "b3", value: "Apple" },
+            { cell: "c3", value: 3.75, format: "currency" },
+            { cell: "d3", value: 600 },
+            { cell: "e3", value: 2250, format: "currency" },
 
-      { cell: "a4", value: "Peru" },
-      { cell: "b4", value: "Grapes" },
-      { cell: "c4", value: 7.69, format: "currency" },
-      { cell: "d4", value: 740 },
-      { cell: "e4", value: 5690.6, format: "currency" },
+            { cell: "a4", value: "Peru" },
+            { cell: "b4", value: "Grapes" },
+            { cell: "c4", value: 7.69, format: "currency" },
+            { cell: "d4", value: 740 },
+            { cell: "e4", value: 5690.6, format: "currency" },
 
-      // more cells with data
-    ],
-  }
+            // more cells with data
+        ]
+    }
 }
 ~~~
 
-Then open the ***Spreadsheet.vue*** file and use the `spreadsheet.parse()` method to load data. It will reload data on each applied change:
+Then open the ***App.vue*** file, import data, and initialize it via the inner `data()` method. After this you can pass data into the new created `<Spreadsheet/>` component as **props**:
 
-~~~html {5} title="Spreadsheet.vue"
+~~~html {3,7-9,14} title="App.vue"
 <script>
+import Spreadsheet from "./components/Spreadsheet.vue";
+import { getData } from "./data";
+
 export default {
-  mounted: function() {
-    this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-    this.spreadsheet.parse(data);
-  }
-}
+    components: { Spreadsheet },
+    data() {
+        return { data: getData() };
+    }
+};
 </script>
+
+<template>
+    <Spreadsheet :data="data" />
+</template>
+
 ~~~
 
-Now the Spreadsheet component is ready. When the element will be added to the page, it will initialize the Spreadsheet object with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
+Go to the ***Spreadsheet.vue*** file and apply the passed **props** to the Spreadsheet via the [`parse()`](/api/spreadsheet_parse_method/) method:
+
+~~~html {6,10} title="Spreadsheet.vue"
+<script>
+import { Spreadsheet } from "@dhx/trial-spreadsheet";
+import "@dhx/trial-spreadsheet/codebase/spreadsheet.min.css";
+
+export default {
+    props: ["data"],
+
+    mounted() {
+        this.spreadsheet = new Spreadsheet(this.$refs.container, {});
+        this.spreadsheet.parse(this.data);
+    },
+
+    unmounted() {
+        this.spreadsheet.destructor();
+    }
+};
+</script>
+
+<template>
+    <div ref="container" class="widget"></div>
+</template>
+~~~
+
+Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
 
 #### Handling events
 
@@ -242,43 +240,28 @@ When a user makes some action in the Spreadsheet, it invokes an event. You can u
 
 Open ***Spreadsheet.vue*** and complete the `mounted()` method:
 
-~~~html {5} title="Spreadsheet.vue"
+~~~html {8-11} title="Spreadsheet.vue"
 <script>
+// ...
 export default {
+    // ...
     mounted: function() {
-      this.spreadsheet = new Spreadsheet(this.$refs.container, {});
-      this.spreadsheet.events.on("ActionName", () => {do something});
+        this.spreadsheet = new Spreadsheet(this.$refs.container, {});
+
+        this.spreadsheet.events.on("afterFocusSet", function(cell){
+            console.log("Focus is set on a cell");
+            console.log(cell);
+        });
     }
-}
-</script>
-~~~
-
-Replace `'ActionName'` with the actual event name you want to handle, and implement the corresponding code inside the callback function. Get more information about the work with events in the [Event Handling](spreadsheet/handling_events.md) article.
-
-### Step 3. Adding Spreadsheet into the app
-
-Now it's time to add the component into our app. Open ***App.vue*** and replace the code with the following one:
-
-~~~html title="App.vue"
-<script>
-import Spreadsheet from "./components/Spreadsheet.vue";
-import { getData } from "./data";
-
-export default {
-  components: { Spreadsheet },
-  data() {
-    return { data: getData() };
-  },
-};
+    //...
+}   
 </script>
 
-<template>
-  <Spreadsheet :data="data" />
-</template>
+//...
 ~~~
 
-After that, when we start the app, we should see Spreadsheet loaded with data on a page.
+After that, you can start the app to see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/svelte_spreadsheet_init.png)
+![Spreadsheet initialization](assets/integrations/trial_spreadsheet.png)
 
-Now you should have a basic setup for integrating DHTMLX Spreadsheet with Vue.js. You can customize the code according to your specific requirements.
+Now you know how to integrate DHTMLX Spreadsheet with Vue. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/vue-spreadsheet-demo).
