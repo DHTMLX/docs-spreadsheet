@@ -6,6 +6,40 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 # Migration to newer versions
 
+## 5.1 -> 5.2
+
+In v5.2 the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is modified in the following way:
+
+- the default set of toolbar options is extended by the new *"cell"* option. It includes the *Border* button and the *Merge* button (previously, it was in the *"align"* block) 
+- the *"actions"* toolbar block is extended with the *Insert link* button (previously, it was in the *"helpers"* block) 
+- the *"helpers"* toolbar block is renamed to *"help"* and isn't included in the default set of toolbar options
+
+~~~jsx title="Before v5.2" {9}
+// default configuration
+toolbarBlocks: [
+    "undo", 
+    "colors", 
+    "decoration", 
+    "align", 
+    "format", 
+    "actions",
+    "helpers"
+]
+~~~
+
+~~~jsx title="From v5.2" {7}
+// default configuration
+toolbarBlocks: [
+    "undo", 
+    "colors", 
+    "decoration", 
+    "align", 
+    "cell",
+    "format", 
+    "actions"
+]
+~~~
+
 ## 4.3 -> 5.0
 
 In v5.0, the *"help"* option of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.

@@ -17,7 +17,7 @@ There is a [User Guide](guides/#user-guides) provided to make work with Spreadsh
 
 ### Toolbar
 
-The **Toolbar** section is rather flexible. It contains 6 default blocks of controls: "undo", "colors", "decoration", "align", "format", "actions", "helpers". You can [change the toolbar structure](configuration.md#toolbar) and add more blocks, or change the order of the blocks.
+The **Toolbar** section is rather flexible. It contains several default blocks of controls: "undo", "colors", "decoration", "align", "cell", "format", "actions". You can [change the toolbar structure](configuration.md#toolbar) and add more blocks, or set your own order of the blocks.
 
 ![Spreadsheet Toolbar](assets/overview_toolbar.png)
 

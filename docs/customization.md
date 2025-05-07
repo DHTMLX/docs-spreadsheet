@@ -115,16 +115,16 @@ spreadsheet.toolbar.data.remove("control-id");
 The [default toolbar](/#toolbar) contains the following blocks of controls:
 
 - the **Undo** block
-  - the *Undo* button (id:"undo")
-  - the *Redo* button (id:"redo")
+  - the *Undo* button (id: "undo")
+  - the *Redo* button (id: "redo")
 - the **Colors** block
-  - the *Text color* button (id:"color")
-  - the *Background color* button (id:"background")
+  - the *Text color* button (id: "color")
+  - the *Background color* button (id: "background")
 - the **Decoration** block
-  - the *Bold* button (id:"font-weight-bold")
-  - the *Italic* button (id:"font-style-italic")
-  - the *Underline* button (id:"text-decoration-underline")
-  - the *Strikethrough* button (id:"text-decoration-line-through")
+  - the *Bold* button (id: "font-weight-bold")
+  - the *Italic* button (id: "font-style-italic")
+  - the *Underline* button (id: "text-decoration-underline")
+  - the *Strikethrough* button (id: "text-decoration-line-through")
 - the **Align** block
   - the **Horizontal align** sub-block
     - the *Left* button (id: "halign-left")
@@ -137,35 +137,37 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the **Text wrapping** sub-block
     - the *Clip* button (id: "multiline-clip")
     - the *Wrap* button (id: "multiline-wrap")
-  - the **Merge/Unmerge** button (id: "merge")
+- the **Cell** block
+  - the *Border* button (id: "border")
+  - the *Merge/Unmerge* button (id: "merge")
 - the **Format** block
-  - the *Format* menuItem (id:"format")
+  - the *Format* menuItem (id: "format")
 - the **Actions** block
-  - the *Filter* button (id:"filter")
-- the **Helpers** block
-  - the *Link* button (id:"link")
-  - the *Help* button (id:"help")
+  - the *Filter* button (id: "filter")
+  - the *Insert link* button (id: "link")
 
 It is also possible to add the blocks enumerated below:
 
 - the **Lock** block
-    - the *Lock* button (id:"lock")
+    - the *Lock* button (id: "lock")
 - the **Clear** block
-  - the *Clear group* menuItem (id:"clear-group")
-    - the *Clear value* menuItem (id:"clear-value")
-    - the *Clear styles* menuItem (id:"clear-styles")
-    - the *Clear all* menuItem (id:"clear-all")
+  - the *Clear group* menuItem (id: "clear-group")
+    - the *Clear value* menuItem (id: "clear-value")
+    - the *Clear styles* menuItem (id: "clear-styles")
+    - the *Clear all* menuItem (id: "clear-all")
 - the **Rows** block
-  - the *Add row* button (id:"add-row")
-  - the *Remove row* button (id:"remove-row")
+  - the *Add row* button (id: "add-row")
+  - the *Remove row* button (id: "remove-row")
 - the **Columns** block
-  - the *Add column* button (id:"add-col")
-  - the *Remove column* button (id:"remove-col")
+  - the *Add column* button (id: "add-col")
+  - the *Remove column* button (id: "remove-col")
 - the **File** block
-  - the *Export* menuItem (id:"export")
-    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
-  - the *Import* menuItem (id:"import")
-    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
+  - the *Export* menuItem (id: "export")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id: "export-xlsx")
+  - the *Import* menuItem (id: "import")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id: "import-xlsx")
+- the **Help** block
+  - the *Help* button (id: "help")
 
 ### Adding controls
 
