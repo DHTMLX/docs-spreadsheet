@@ -16,12 +16,19 @@ Released on May X, 2025
 
 ### New functionality
 
-- Ability to create a styled border for a group of cells
-- Ability to freeze columns and rows (both via the API and from the UI)
-- Ability to hide columns and rows (both via the API and from the UI)
-- A popup with descriptions for formulas is added
-    - a new locale: `formulas`
-- A new `afterDataLoaded` event is added to indicate that the file import is complete 
+- Editing cells:
+    - the ability to create a styled border for a group of cells via UI
+- Freezing/unfreezing columns/rows:
+    - the ability to freeze/unfreeze columns and rows via UI
+    - the ability to freeze/unfreeze columns and rows via API
+- Hiding/showing columns/rows:
+    - the ability to hide/show columns and rows via UI
+    - the ability to hide/show columns and rows via API
+- Working with formulas:
+    - a popup with descriptions for formulas is added
+    - a new locale: `formulas` is added
+- File import: 
+    - a new `afterDataLoaded` event is added  
 
 ### Fixes
 
