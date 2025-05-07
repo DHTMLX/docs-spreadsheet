@@ -8,6 +8,35 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2
+
+Released on May X, 2025
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-2/)
+
+### New functionality
+
+- Ability to create a styled border for a group of cells
+- Ability to freeze columns and rows (both via the API and from the UI)
+- Ability to hide columns and rows (both via the API and from the UI)
+- A popup with descriptions for formulas is added
+    - a new locale: `formulas`
+- A new `afterDataLoaded` event is added to indicate that the file import is complete 
+
+### Fixes
+
+- The issue with sorting
+- The issue with the filter shifting to a new column
+- The error that occurred on blocking a sheet adding with the "addSheet" action
+- The issue with filtering blank cells
+- The problem with editing a large spanned table
+- The error that occurred on undoing an action in a cell 
+- The error that occurred on entering/editing a cell with the IF formula
+- Th script error that occurred after cutting and pasting a link
+- The issue with changing the text alignment during export/import of an .xlsx file
+- The issue with Spreadsheet losing focus after some actions
+- Performance improvements
+
 ## Version 5.1.8 
 
 Released on December 10, 2024
