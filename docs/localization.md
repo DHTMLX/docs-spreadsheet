@@ -197,7 +197,7 @@ dhx.i18n.setLocale("spreadsheet", ru);
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 ~~~
 
-## Default formulas locale
+## Default locale for formulas
 
 The i18n locale for the Spreadsheet popup with formulas is contained in the `dhx.i18n.formulas` object. The default locale for formulas is the following:
 
@@ -227,13 +227,13 @@ const en = {
             "Optional. A number or cell reference that refers to numeric values."
         ]
     ],
-    // more formulas settings
+    // more formulas' descriptions
 };
 ~~~
 
 You can check the full default locale for formulas in the [HTML tab of the related snippet](https://snippet.dhtmlx.com/yn5hyyim).
 
-## Custom formulas locale
+## Custom locale for formulas
 
 To apply a custom locale for Spreadsheet formulas, you need to use the `dhx.i18n.setLocale()` method in the following way:
 
@@ -261,7 +261,7 @@ You should pass the following parameters to the method:
         </tr>
         <tr>
             <td>locale</td>
-            <td>(*required*) the locale object that contains formulas descriptions as <i>key:value</i> pairs, where:<ul><li>the <b>key</b> is the name of the formula</li><li>the <b>value</b> is an array of parameters the formula takes. Each parameter of the formula is an array of two elements, where:<ul><li>the first element is the name of the parameter</li><li>the second element is the description of the parameter</li></ul></li></ul></td>
+            <td>(*required*) the locale object that contains formulas' descriptions as <i>key:value</i> pairs, where:<ul><li>the <b>key</b> is the name of the function</li><li>the <b>value</b> is an array of parameters the function takes. Each parameter of the function is an array of two elements, where:<ul><li>the first element is the name of the parameter</li><li>the second element is the description of the parameter</li></ul></li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -274,7 +274,7 @@ const de = {
         ["Zahl1", "Erforderlich. Eine Zahl oder Zellreferenz, die sich auf numerische Werte bezieht."],
         ["Zahl2", "Optional. Eine Zahl oder Zellreferenz, die auf numerische Werte verweist."]
     ],
-    // other formulas settings
+    // other formulas' descriptions
 };
 
 dhx.i18n.setLocale("formulas", de);
