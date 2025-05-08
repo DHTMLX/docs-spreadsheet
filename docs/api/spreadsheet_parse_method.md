@@ -229,7 +229,7 @@ A CSS class is set for a cell via the **css** property.
 
 ### List of properties
 
-The list of properties you can specify in the **style** object:
+The list of properties you can specify in the **styles** object:
 
 - *background*
 - *color*
@@ -239,6 +239,7 @@ The list of properties you can specify in the **style** object:
 - *fontWeight*
 - *fontStyle*
 - *multiline: "wrap"* (from v5.0.3)
+- *border*, *border-right*, *border-left*, *border-top*, *border-bottom* (from v5.2)
 
 :::note
 You may also use the following properties if needed:

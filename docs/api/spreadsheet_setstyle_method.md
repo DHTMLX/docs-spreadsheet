@@ -23,7 +23,7 @@ setStyle(cell: string, styles: array | object): void;
 ### Parameters
 
 - `cell` -  (required) the id(s) of a cell(s) or a range of cells
-- `style` - (required) styles that should be applied to cells. [Check the list of properties which you can use to style cells](api/spreadsheet_parse_method.md#list-of-properties) 
+- `styles` - (required) styles that should be applied to cells. [Check the list of properties which you can use to style cells](api/spreadsheet_parse_method.md#list-of-properties) 
 
 ### Example
 
