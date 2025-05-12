@@ -33,19 +33,6 @@ When Spreadsheet is initialized, it has the initial configuration of grid which 
 
 <iframe src="https://snippet.dhtmlx.com/vc3mstsw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
-## Frozen rows and columns
-
-You may need to fix (or "freeze") some columns or rows, so that they will become static when you scroll the page, while the rest of columns/rows remain movable.
-
-- To fix columns to the left side of the spreadsheet, use the [leftSplit](api/spreadsheet_leftsplit_config.md) property (available from v4.0)
-- To fix rows on the top of the spreadsheet, use the [topSplit](api/spreadsheet_topsplit_config.md) property (available from v4.3)
-
-Check the example below:
-
-<iframe src="https://snippet.dhtmlx.com/iazmc27w?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
-
-
-
 ## Menu
 
 The menu of the Spreadsheet is hidden by default. You can switch it on/off via the corresponding configuration option [](api/spreadsheet_menu_config.md):

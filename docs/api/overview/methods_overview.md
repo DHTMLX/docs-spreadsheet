@@ -18,6 +18,8 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_eachcell_method.md)       | @getshort(../spreadsheet_eachcell_method.md)       |
 | [](../spreadsheet_endedit_method.md)        | @getshort(../spreadsheet_endedit_method.md)        |
 | [](../spreadsheet_fitcolumn_method.md)      | @getshort(../spreadsheet_fitcolumn_method.md)      |
+| [](../spreadsheet_freezecols_method.md)     | @getshort(../spreadsheet_freezecols_method.md)     |
+| [](../spreadsheet_freezerows_method.md)     | @getshort(../spreadsheet_freezerows_method.md)     |
 | [](../spreadsheet_getactivesheet_method.md) | @getshort(../spreadsheet_getactivesheet_method.md) |
 | [](../spreadsheet_getfilter_method.md)      | @getshort(../spreadsheet_getfilter_method.md)      |
 | [](../spreadsheet_getformat_method.md)      | @getshort(../spreadsheet_getformat_method.md)      |
@@ -44,4 +46,6 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_setvalue_method.md)       | @getshort(../spreadsheet_setvalue_method.md)       |
 | [](../spreadsheet_startedit_method.md)      | @getshort(../spreadsheet_startedit_method.md)      |
 | [](../spreadsheet_undo_method.md)           | @getshort(../spreadsheet_undo_method.md)           |
+| [](../spreadsheet_unfreezecols_method.md)   | @getshort(../spreadsheet_unfreezecols_method.md)   |
+| [](../spreadsheet_unfreezerows_method.md)   | @getshort(../spreadsheet_unfreezerows_method.md)   |
 | [](../spreadsheet_unlock_method.md)         | @getshort(../spreadsheet_unlock_method.md)         |

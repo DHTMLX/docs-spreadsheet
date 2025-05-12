@@ -69,6 +69,42 @@ To change the column width so that it would automatically adjust to the longest 
 spreadsheet.fitColumn("G2");
 ~~~
 
+## Freezing/unfreezing rows and columns
+
+You may need to fix (or "freeze") some columns or rows, so that they will become static when you scroll the page, while the rest of columns/rows remain movable.
+
+### Columns
+
+To freeze/unfreeze columns, use the related API methods:
+
+- [](api/spreadsheet_freezecols_method.md)
+- [](api/spreadsheet_unfreezecols_method.md)
+
+Pass to the methods the id of the cell to define the id of a column. If the cell id isn't passed, the currently selected cell will be used.
+
+~~~jsx 
+spreadsheet.freezeCols("B2"); // the columns up to the "B" column will be fixed
+spreadsheet.freezeCols("sheet2!B2"); // the columns up to the "B" column in "sheet2" will be fixed
+spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfrozen
+spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
+~~~ 
+
+### Rows
+
+To freeze/unfreeze rows, use the related API methods:
+
+- [](api/spreadsheet_freezerows_method.md)
+- [](api/spreadsheet_unfreezerows_method.md)
+
+Pass to the methods the id of the cell to define the id of a row. If the cell id isn't passed, the currently selected cell will be used.
+
+~~~jsx
+spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
+spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
+spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
+spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfrozen
+~~~
+
 ## Filtering data
 
 ### Set filter

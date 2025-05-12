@@ -74,10 +74,12 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **setValidation**    | The action is executed when setting data validation for a cell                                                                                                                                          |
 | **sortCells**        | The action is executed when sorting data in spreadsheet                                                                                                                                                 |
 | **setCellStyle**     | The action is executed when changing the style of a cell                                                                                                                                                |
+| **toggleFreeze**     | The action is executed when freezing/unfreezing columns/rows                                                                                                       |
 | **unmerge**          | The action is executed when splitting cells                                                                                                                                                             |
 
 **Change log:**
 
+- The **toggleFreeze** action was added in v5.2
 - The **merge**, **unmerge**, **filter**, **fitColumn**, **insertLink** actions were added in v5.0
 
 **Related sample:** [Spreadsheet. Actions](https://snippet.dhtmlx.com/efcuxlkt)
