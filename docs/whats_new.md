@@ -21,9 +21,13 @@ Released on May X, 2025
 - Freezing/unfreezing columns/rows:
     - the ability to freeze/unfreeze columns and rows via UI
     - the ability to freeze/unfreeze columns and rows via API
+        - new methods: `freezeCols()`, `unfreezeCols()`, `freezeRows()`, `unfreezeRows()`
+        - new action: `toggleFreeze` 
 - Hiding/showing columns/rows:
     - the ability to hide/show columns and rows via UI
     - the ability to hide/show columns and rows via API
+        - new methods: `hideCols()`, `showCols()`, `hideRows()`, `showRows()`
+        - new action: `toggleVisibility` 
 - Working with formulas:
     - a popup with descriptions for formulas is added
     - a new locale: `formulas` is added
