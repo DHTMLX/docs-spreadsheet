@@ -14,6 +14,14 @@ Released on May X, 2025
 
 [Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-2/)
 
+### Breaking changes
+
+The new release introduces some changes to the `toolbarBlocks` property and the freezing/unfreezing functionality for columns and rows. Check the Migration article to keep in step with the latest version.
+
+### Deprecated
+
+- The `leftSplit` and `topSplit` configuration properties are removed
+
 ### New functionality
 
 - Editing cells:
