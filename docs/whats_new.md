@@ -31,11 +31,13 @@ The new release introduces some changes to the `toolbarBlocks` property and the 
     - the ability to freeze/unfreeze columns and rows via API
         - new methods: `freezeCols()`, `unfreezeCols()`, `freezeRows()`, `unfreezeRows()`
         - new action: `toggleFreeze` 
+        - new `freeze` property for the *sheets* object of the `parse()` method
 - Hiding/showing columns/rows:
     - the ability to hide/show columns and rows via UI
     - the ability to hide/show columns and rows via API
         - new methods: `hideCols()`, `showCols()`, `hideRows()`, `showRows()`
         - new action: `toggleVisibility` 
+        - new `hidden` property for the *cols* and *rows* configs of the *sheets* object of the `parse()` method
 - Working with formulas:
     - a popup with descriptions for formulas is added
     - a new locale: `formulas` is added
