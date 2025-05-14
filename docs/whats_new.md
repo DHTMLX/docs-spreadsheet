@@ -16,7 +16,7 @@ Released on May X, 2025
 
 ### Breaking changes
 
-The new release introduces some changes to the `toolbarBlocks` property and the freezing/unfreezing functionality for columns and rows. Check the Migration article to keep in step with the latest version.
+The new release introduces some changes to the `toolbarBlocks` property and the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md/#51---52) to keep in step with the latest version.
 
 ### Deprecated
 
@@ -42,7 +42,7 @@ The new release introduces some changes to the `toolbarBlocks` property and the 
     - a popup with descriptions for formulas is added
     - a new locale: `formulas` is added
 - File import: 
-    - a new `afterDataLoaded` event is added  
+    - a new [`afterDataLoaded`](api/spreadsheet_afterdataloaded_event.md) event is added  
 
 ### Fixes
 
