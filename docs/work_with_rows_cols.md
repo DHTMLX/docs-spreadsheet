@@ -98,7 +98,9 @@ To change the column width so that it would automatically fit the longest conten
 
 ![Autofit column width](assets/column_autofit.png)
 
-## Freezing rows
+## Freezing/unfreezing rows and columns
+
+### Freezing rows
 
 To freeze rows up to a certain row, take the following steps:
 
@@ -107,22 +109,36 @@ To freeze rows up to a certain row, take the following steps:
 2\. Choose one of the following actions:
 
 - either click the **Rows** button in the toolbar and select the *Freeze up to row [id]* option
+
+![Freezing rows toolbar](assets/freeze_rows_toolbar.png)
+
 - or select the **Edit** menu option and choose *Freeze -> Freeze up to row [id]*
+
+![Freezing rows menu](assets/freeze_rows_menu.png)
+
 - or right-click a row/cell and choose *Rows -> Freeze up to row [id]*
 
+![Freezing rows context menu](assets/freeze_rows_context_menu.png)
 
+### Unfreezing rows
 
-## Unfreezing rows
+(*In the images below rows are frozen up to the "5" row*)
 
 To unfreeze rows, take one of the following steps:
 
 - either click the **Rows** button in the toolbar and select the *Unfreeze rows* option
+
+![Unfreezing rows toolbar](assets/unfreeze_rows_toolbar.png)
+
 - or select the **Edit** menu option and choose *Freeze -> Unfreeze rows*
-- or right-click a row/cell in the row and choose *Rows -> Unfreeze rows*
 
+![Unfreezing rows menu](assets/unfreeze_rows_menu.png)
 
+- or right-click any row/cell in the row and choose *Rows -> Unfreeze rows*
 
-## Freezing columns
+![Unfreezing rows context menu](assets/unfreeze_rows_context_menu.png)
+
+### Freezing columns
 
 To freeze columns up to a certain column, take the following steps:
 
@@ -132,21 +148,30 @@ To freeze columns up to a certain column, take the following steps:
 
 - either click the **Columns** button in the toolbar and select the *Freeze up to column [id]* option
 
+![Freezing columns toolbar](assets/freeze_columns_toolbar.png)
 
+- or select the **Edit** menu option and choose *Freeze -> Freeze up to column [id]*
 
-- or click the column, select the **Edit** menu option and choose *Freeze -> Freeze up to column [id]*
-
-
+![Freezing columns menu](assets/freeze_columns_menu.png)
 
 - or right-click a column/cell and choose *Columns -> Freeze up to column [id]*
 
+![Freezing columns context menu](assets/freeze_columns_context_menu.png)
 
+### Unfreezing columns
 
-## Unfreezing columns
+(*In the images below columns are frozen up to the "D" column*)
 
 To unfreeze columns, take one of the following steps:
 
 - either click the **Columns** button in the toolbar and select the *Unfreeze columns* option
-- or select the **Edit** menu option and choose *Freeze -> Unfreeze columns*
-- or right-click a column/cell and choose *Columns -> Unfreeze columns*
 
+![Unfreezing columns toolbar](assets/unfreeze_columns_toolbar.png)
+
+- or select the **Edit** menu option and choose *Freeze -> Unfreeze columns*
+
+![Unfreezing columns menu](assets/unfreeze_columns_menu.png)
+
+- or right-click any column/cell and choose *Columns -> Unfreeze columns*
+
+![Unfreezing columns context menu](assets/unfreeze_columns_context_menu.png)
