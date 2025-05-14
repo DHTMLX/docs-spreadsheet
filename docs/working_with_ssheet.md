@@ -69,6 +69,53 @@ To change the column width so that it would automatically adjust to the longest 
 spreadsheet.fitColumn("G2");
 ~~~
 
+## Hiding/showing rows and columns
+
+You can hide and show particular rows and columns via the corresponding API methods.
+
+### Columns
+
+To hide/show a column, use the following methods:
+
+- [](api/spreadsheet_hidecols_method.md)
+- [](api/spreadsheet_showcols_method.md)
+
+Pass to the methods the id of the cell to define the id of a column. If the cell id isn't passed, the currently selected cell will be used.
+
+~~~jsx
+// hiding columns
+spreadsheet.hideCols("B2"); // the "B" column will be hidden
+spreadsheet.hideCols("sheet2!B2"); // the "B" column in "sheet2" will be hidden
+spreadsheet.hideCols("B2:C2"); // the "B" and "C" columns will be hidden
+
+// showing columns
+spreadsheet.showCols("B2"); // the "B" column will become visible again
+spreadsheet.showCols("sheet2!B2"); // the "B" column in "sheet2" will become visible again
+spreadsheet.showCols("B2:C2"); // the "B" and "C" columns will become visible again
+~~~
+
+### Rows
+
+To hide/show a row, use the API methods below:
+
+- [](api/spreadsheet_hiderows_method.md)
+- [](api/spreadsheet_showrows_method.md)
+
+Pass to the methods the id of the cell to define the id of a row. If the cell id isn't passed, the currently selected cell will be used.
+
+~~~jsx
+// hiding rows
+spreadsheet.hideRows("B2"); // the "2" row will be hidden  
+spreadsheet.hideRows("sheet2!B2"); // the "2" row in "sheet2" will be hidden
+spreadsheet.hideRows("B2:C4"); // the rows from "2" to "4" will be hidden 
+
+// showing rows
+spreadsheet.showRows("B2"); // the "2" row will become visible again
+spreadsheet.showRows("sheet2!B2"); // the "2" row in "sheet2" will become visible again
+spreadsheet.showRows("B2:C2"); // the rows from "2" to "4" will become visible again
+~~~
+
+
 ## Filtering data
 
 ### Set filter

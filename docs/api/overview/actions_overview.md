@@ -74,6 +74,7 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **setValidation**    | The action is executed when setting data validation for a cell                                                                                                                                          |
 | **sortCells**        | The action is executed when sorting data in spreadsheet                                                                                                                                                 |
 | **setCellStyle**     | The action is executed when changing the style of a cell                                                                                                                                                |
+| **toggleVisibility** | The action is executed when hiding/showing a column or a row                                                                                                                                            |
 | **unmerge**          | The action is executed when splitting cells                                                                                                                                                             |
 
 **Change log:**

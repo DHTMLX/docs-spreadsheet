@@ -24,6 +24,8 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_getformula_method.md)     | @getshort(../spreadsheet_getformula_method.md)     |
 | [](../spreadsheet_getsheets_method.md)      | @getshort(../spreadsheet_getsheets_method.md)      |
 | [](../spreadsheet_getstyle_method.md)       | @getshort(../spreadsheet_getstyle_method.md)       |
+| [](../spreadsheet_hidecols_method.md)       | @getshort(../spreadsheet_hidecols_method.md)       |
+| [](../spreadsheet_hiderows_method.md)       | @getshort(../spreadsheet_hiderows_method.md)       |
 | [](../spreadsheet_hidesearch_method.md)     | @getshort(../spreadsheet_hidesearch_method.md)     |
 | [](../spreadsheet_getvalue_method.md)       | @getshort(../spreadsheet_getvalue_method.md)       |
 | [](../spreadsheet_insertlink_method.md)     | @getshort(../spreadsheet_insertlink_method.md)     |
@@ -42,6 +44,8 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_setstyle_method.md)       | @getshort(../spreadsheet_setstyle_method.md)       |
 | [](../spreadsheet_setvalidation_method.md)  | @getshort(../spreadsheet_setvalidation_method.md)  |
 | [](../spreadsheet_setvalue_method.md)       | @getshort(../spreadsheet_setvalue_method.md)       |
+| [](../spreadsheet_showcols_method.md)       | @getshort(../spreadsheet_showcols_method.md)       |
+| [](../spreadsheet_showrows_method.md)       | @getshort(../spreadsheet_showrows_method.md)       |
 | [](../spreadsheet_startedit_method.md)      | @getshort(../spreadsheet_startedit_method.md)      |
 | [](../spreadsheet_undo_method.md)           | @getshort(../spreadsheet_undo_method.md)           |
 | [](../spreadsheet_unlock_method.md)         | @getshort(../spreadsheet_unlock_method.md)         |
