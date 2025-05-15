@@ -102,6 +102,7 @@ module.exports = {
                         "api/spreadsheet_afterclear_event",
                         "api/spreadsheet_aftercolumnadd_event",
                         "api/spreadsheet_aftercolumndelete_event",
+                        "api/spreadsheet_afterdataloaded_event",
                         "api/spreadsheet_aftereditend_event",
                         "api/spreadsheet_aftereditstart_event",
                         "api/spreadsheet_afterfocusset_event",
