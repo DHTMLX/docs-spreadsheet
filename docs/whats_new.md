@@ -16,7 +16,7 @@ Released on May 20, 2025
 
 ### Breaking changes
 
-The new release introduces some changes to the `toolbarBlocks` property and the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md/#51---52) to keep in step with the latest version.
+The new release introduces some changes to the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md/#51---52) to keep in step with the latest version.
 
 ### Deprecated
 
