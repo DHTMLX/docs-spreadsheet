@@ -77,7 +77,11 @@ parse({
                     to: { column: index, row: index }
                 },
                 // more objects
-            ]
+            ],
+            freeze?: {
+               col?: number,
+               row?: number,
+            }
         },
         // more sheet objects
     ]      
@@ -132,6 +136,10 @@ If you need to create a data set *for several sheets* at once, specify data as a
         - `to` - an object which defines the position of the last cell from a range:
             - `column` - the index of the column
             - `row` - the index of the row
+    - `freeze` - (optional) an object that sets and adjusts fixed columns/rows for particular sheets. It may contain the following properties:
+        - `col` - (optional) specifies the number of fixed columns, for example, 2 
+        - `row` - (optional) specifies the number of fixed rows, for example, 2 
+        The default value of the parameter is `freeze: {col: 0, row: 0}`
 
 :::info
 In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.

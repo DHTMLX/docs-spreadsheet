@@ -75,10 +75,12 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **sortCells**        | The action is executed when sorting data in spreadsheet                                                                                                                                                 |
 | **setCellStyle**     | The action is executed when changing the style of a cell                                                                                                                                                |
 | **toggleVisibility** | The action is executed when hiding/showing a column or a row                                                                                                                                            |
+| **toggleFreeze**     | The action is executed when freezing/unfreezing columns/rows                                                                                                                                            |
 | **unmerge**          | The action is executed when splitting cells                                                                                                                                                             |
 
 **Change log:**
 
+- The **toggleFreeze** and **toggleVisibility** actions were added in v5.2
 - The **merge**, **unmerge**, **filter**, **fitColumn**, **insertLink** actions were added in v5.0
 
 **Related sample:** [Spreadsheet. Actions](https://snippet.dhtmlx.com/efcuxlkt)

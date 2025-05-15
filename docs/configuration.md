@@ -10,13 +10,19 @@ You can adjust the desired settings of DHTMLX Spreadsheet to meet your needs. Th
 
 ## Toolbar
 
-The toolbar of the Spreadsheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo", "colors", "decoration", "align", "format", "actions", "helpers". You can add more blocks from the list: "lock", "clear", "rows", "columns", "file".
+The toolbar of the Spreadsheet consists of several blocks of controls that can be changed according to your needs. By default, there are the following blocks of controls in the toolbar: "undo", "colors", "decoration", "align", "cell", "format", "actions". You can add more blocks from the list: "lock", "clear", "rows", "columns", "file", "help".
 
 <iframe src="https://snippet.dhtmlx.com/kpm017nx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
 The structure of toolbar can be adjusted via the [](api/spreadsheet_toolbarblocks_config.md) configuration option of the component, which is an array with strings presenting the names of controls.
 
-You can also specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example: "helpers", "colors", "align", "decoration", "lock", "clear".
+You can also specify your own structure of the toolbar by enumerating necessary elements in the **toolbarBlocks** array in the desired order, for example: "colors", "align", "cell", "decoration", "lock", "clear".
+
+~~~jsx
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    toolbarBlocks: ["colors", "align", "cell", "decoration", "lock", "clear"]
+});
+~~~
 
 Toolbar is [highly customizable](customization.md). You can add new controls, change the icons of controls and apply the desired icon pack.
 
@@ -32,19 +38,6 @@ the editing bar.
 When Spreadsheet is initialized, it has the initial configuration of grid which consists of 1000 columns and 25 rows. However, when this limit runs out, additional rows and columns are rendered automatically, so you don't need to add them. Nevertheless, you can specify the exact number of rows and columns in the grid, if you want to limit them. Use the [](api/spreadsheet_colscount_config.md) and [](api/spreadsheet_rowscount_config.md) options for this purpose.  
 
 <iframe src="https://snippet.dhtmlx.com/vc3mstsw?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
-
-## Frozen rows and columns
-
-You may need to fix (or "freeze") some columns or rows, so that they will become static when you scroll the page, while the rest of columns/rows remain movable.
-
-- To fix columns to the left side of the spreadsheet, use the [leftSplit](api/spreadsheet_leftsplit_config.md) property (available from v4.0)
-- To fix rows on the top of the spreadsheet, use the [topSplit](api/spreadsheet_topsplit_config.md) property (available from v4.3)
-
-Check the example below:
-
-<iframe src="https://snippet.dhtmlx.com/iazmc27w?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
-
-
 
 ## Menu
 
