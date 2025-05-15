@@ -8,7 +8,9 @@ description: You can learn about how to work with rows and columns in the docume
 
 DHTMLX Spreadsheet allows adding and removing columns and rows into a sheet via both toolbar buttons and options of the context menu.
 
-## Adding rows
+## Adding/removing rows and columns
+
+### Adding rows
 
 To add a new row, take the following steps:
 
@@ -28,7 +30,7 @@ To add a new row, take the following steps:
 Note that a new row will be added above the selected one.
 :::
 
-## Removing rows
+### Removing rows
 
 To remove a row, take the following steps:
 
@@ -44,7 +46,7 @@ To remove a row, take the following steps:
 
 ![Removing rows](assets/remove_row_context_menu.png)
 
-## Adding columns
+### Adding columns
 
 To add a new column, take the following steps:
 
@@ -64,7 +66,7 @@ To add a new column, take the following steps:
 Note that a new column will be added to the left of the selected one.
 :::
 
-## Removing columns
+### Removing columns
 
 To remove a column, take the following steps:
 
@@ -104,7 +106,7 @@ To change the column width so that it would automatically fit the longest conten
 
 To freeze rows up to a certain row, take the following steps:
 
-1\. Select a row (by clicking on its header) or a cell in the necessary row.
+1\. Select a column (by clicking on its header) or a cell in the necessary column.
 
 2\. Choose one of the following actions:
 
@@ -175,3 +177,51 @@ To unfreeze columns, take one of the following steps:
 - or right-click any column/cell and choose *Columns -> Unfreeze columns*
 
 ![Unfreezing columns context menu](assets/unfreeze_columns_context_menu.png)
+
+## Hiding/showing rows and columns
+
+### Hiding rows
+
+To hide a row, take the following steps:
+
+1\. Select a row (by clicking on its header) or a cell in the necessary row.
+
+2\. Choose one of the following actions:
+
+- either click the **Rows** button in the toolbar and select the *Hide row(s) [id]* option
+
+![Hiding rows toolbar](assets/hide_rows_toolbar.png)
+
+- or right-click a row/cell and choose *Rows -> Hide row(s) [id]*
+
+![Hiding rows context menu](assets/hide_row_context_menu.png)
+
+### Showing rows
+
+To show a hidden row/rows, click the "arrows" icon that appears in the rows header instead of the hidden row/rows. In the image below the rows 8 and 11 are hidden:
+
+![Showing rows](assets/show_rows.png)
+
+### Hiding columns
+
+To hide a column, take the following steps:
+
+1\. Select a column (by clicking on its header) or a cell in the necessary column.
+
+2\. Choose one of the following actions:
+
+- either click the **Columns** button in the toolbar and select the *Hide column(s) [id]* option
+
+![Hiding columns toolbar](assets/hide_columns_toolbar.png)
+
+- or right-click a column/cell and choose *Columns -> Hide column(s) [id]*
+
+![Hiding columns context menu](assets/hide_column_context_menu.png)
+
+### Showing columns
+
+To show a hidden column/columns, click the "arrows" icon that appears in the columns header instead of the hidden column/columns. In the image below the columns C and E are hidden:
+
+![Showing columns](assets/show_columns.png)
+
+

@@ -39,8 +39,20 @@ parse({
         {
             name?: string,
             id?: string,
-            rows?: array,
-            cols?: array,
+            cols?: [
+                {
+                    width?: number,
+                    hidden?: boolean,
+                },
+                // more column objects
+            ],
+            rows?: [
+                {
+                    height?: number,
+                    hidden?: boolean,
+                },
+                // more row objects
+            ],
             data: [
                 {
                     cell: string,
@@ -99,8 +111,12 @@ If you need to create a data set *for several sheets* at once, specify data as a
 - `sheets` - (required) an array of **sheet** objects. Each object has the following properties:
     - `name` - (optional) the sheet name
     - `id` - (optional) the sheet id
-    - `rows` - (optional) an array of height objects. If not specified, the rows will have a height of 32px.
-    - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px.
+    - `rows` - (optional) an array of objects with rows configurations. Each object may contain the following properties:
+        - `height` - (optional) the row height. If not specified, rows will have the height of 32px
+        - `hidden` - (optional) defines the visibility of a row
+    - `cols` - (optional) an array of objects with columns configurations. Each object may contain the following properties:
+        - `width` - (optional) the column width. If not specified, columns will have the width of 120px
+        - `hidden` - (optional) defines the visibility of a column
     - `data` - (required) an array of **cell** objects. Each object has the following properties:
         - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
         - `value` - (required) the value of a cell
@@ -163,14 +179,14 @@ const data = {
             name: "sheet 1", 
             id: "sheet_1",
             rows: [
-                { height: 50 }, // the height of the first row
-                { height: 50 }, // the height of the second row
-                // the height of the other rows is 32
+                { height: 50, hidden: true }, // config of the first row
+                { height: 50 }, // config of the second row
+                // the height of other rows is 32
             ],
             cols: [
-                { width: 300 }, // the width of the first column
-                { width: 300 }, // the width of the second column
-                // the width of the other columns is 120
+                { width: 300 }, // config of the first column
+                { width: 300, hidden: true }, // config of the second column
+                // the width of other columns is 120
             ],
             data: [
                 { cell: "A1", value: "Country" },
