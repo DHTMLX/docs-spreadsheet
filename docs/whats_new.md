@@ -14,14 +14,35 @@ Released on May X, 2025
 
 [Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-2/)
 
+### Breaking changes
+
+The new release introduces some changes to the `toolbarBlocks` property and the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md/#51---52) to keep in step with the latest version.
+
+### Deprecated
+
+- The `leftSplit` and `topSplit` configuration properties are removed
+
 ### New functionality
 
-- Ability to create a styled border for a group of cells
-- Ability to freeze columns and rows (both via the API and from the UI)
-- Ability to hide columns and rows (both via the API and from the UI)
-- A popup with descriptions for formulas is added
-    - a new locale: `formulas`
-- A new `afterDataLoaded` event is added to indicate that the file import is complete 
+- Editing cells:
+    - the ability to create a styled border for a group of cells via UI
+- Freezing/unfreezing columns/rows:
+    - the ability to freeze/unfreeze columns and rows via UI
+    - the ability to freeze/unfreeze columns and rows via API
+        - new methods: `freezeCols()`, `unfreezeCols()`, `freezeRows()`, `unfreezeRows()`
+        - new action: `toggleFreeze` 
+        - new `freeze` property for the *sheets* object of the `parse()` method
+- Hiding/showing columns/rows:
+    - the ability to hide/show columns and rows via UI
+    - the ability to hide/show columns and rows via API
+        - new methods: `hideCols()`, `showCols()`, `hideRows()`, `showRows()`
+        - new action: `toggleVisibility` 
+        - new `hidden` property for the *cols* and *rows* configs of the *sheets* object of the `parse()` method
+- Working with formulas:
+    - a popup with descriptions for formulas is added
+    - a new locale: `formulas` is added
+- File import: 
+    - a new [`afterDataLoaded`](api/spreadsheet_afterdataloaded_event.md) event is added  
 
 ### Fixes
 

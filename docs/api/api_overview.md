@@ -70,6 +70,7 @@ Parameters:
 | [](api/spreadsheet_afterclear_event.md)         | @getshort(api/spreadsheet_afterclear_event.md)         |
 | [](api/spreadsheet_aftercolumnadd_event.md)     | @getshort(api/spreadsheet_aftercolumnadd_event.md)     |
 | [](api/spreadsheet_aftercolumndelete_event.md)  | @getshort(api/spreadsheet_aftercolumndelete_event.md)  |
+| [](api/spreadsheet_afterdataloaded_event.md)    | @getshort(api/spreadsheet_afterdataloaded_event.md)    |
 | [](api/spreadsheet_aftereditend_event.md)       | @getshort(api/spreadsheet_aftereditend_event.md)       |
 | [](api/spreadsheet_aftereditstart_event.md)     | @getshort(api/spreadsheet_aftereditstart_event.md)     |
 | [](api/spreadsheet_afterfocusset_event.md)      | @getshort(api/spreadsheet_afterfocusset_event.md)      |

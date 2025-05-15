@@ -8,6 +8,8 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 ## 5.1 -> 5.2
 
+### toolbarBlocks
+
 In v5.2 the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is modified in the following way:
 
 - the default set of toolbar options is extended by the new *"cell"* option. It includes the *Border* button and the *Merge* button (previously, it was in the *"align"* block) 
@@ -38,6 +40,47 @@ toolbarBlocks: [
     "format", 
     "actions"
 ]
+~~~
+
+### Freezing/unfreezing functionality
+
+In v5.2 the way of freezing/unfreezing columns and rows has been modified:
+
+- the `leftSplit` and `topSplit` configuration properties that have been used for fixing columns and rows were deprecated
+- new API methods `freezeCols()`, `unfreezeCols()`, `freezeRows()`, `unfreezeRows()` and a new action `toggleFreeze` were introduced
+
+~~~jsx title="Before v5.0"
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    topSplit: 1, // the number of row to "freeze"
+    leftSplit: 1 // the number of columns to "freeze"
+});
+~~~
+
+~~~jsx title="From v5.0" 
+// for rows
+spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
+spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
+spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
+spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfrozen
+
+// for columns
+spreadsheet.freezeCols("B2"); // the columns up to the "B" column will be fixed
+spreadsheet.freezeCols("sheet2!B2"); // the columns up to the "B" column in "sheet2" will be fixed
+spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfrozen
+spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
+
+// using the `toggleFreeze` action with the beforeAction/afterAction events
+spreadsheet.events.on("afterAction", (actionName, config) => {
+    if (actionName === "toggleFreeze") {
+        console.log(actionName, config);
+    }
+});
+
+spreadsheet.events.on("beforeAction", (actionName, config) => {
+    if (actionName === "toggleFreeze") {
+        console.log(actionName, config);
+    }
+});
 ~~~
 
 ## 4.3 -> 5.0
