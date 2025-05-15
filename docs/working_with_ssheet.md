@@ -73,25 +73,6 @@ spreadsheet.fitColumn("G2");
 
 You may need to fix (or "freeze") some columns or rows, so that they will become static when you scroll the page, while the rest of columns/rows remain movable.
 
-### Rows
-
-To freeze/unfreeze rows, use the related API methods:
-
-- [](api/spreadsheet_freezerows_method.md)
-- [](api/spreadsheet_unfreezerows_method.md)
-
-Pass to the methods the id of the cell to define the id of a row. If the cell id isn't passed, the currently selected cell will be used.
-
-~~~jsx
-// freezing rows
-spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
-spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
-
-// unfreezing rows
-spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
-spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfrozen
-~~~
-
 ### Columns
 
 To freeze/unfreeze columns, use the related API methods:
@@ -111,30 +92,28 @@ spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfroz
 spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
 ~~~ 
 
+### Rows
+
+To freeze/unfreeze rows, use the related API methods:
+
+- [](api/spreadsheet_freezerows_method.md)
+- [](api/spreadsheet_unfreezerows_method.md)
+
+Pass to the methods the id of the cell to define the id of a row. If the cell id isn't passed, the currently selected cell will be used.
+
+~~~jsx
+// freezing rows
+spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
+spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
+
+// unfreezing rows
+spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
+spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfrozen
+~~~
+
 ## Hiding/showing rows and columns
 
 You can hide and show particular rows and columns via the corresponding API methods.
-
-### Rows
-
-To hide/show a row, use the API methods below:
-
-- [](api/spreadsheet_hiderows_method.md)
-- [](api/spreadsheet_showrows_method.md)
-
-Pass to the methods the id of the cell to define the id of a column. If the cell id isn't passed, the currently selected cell will be used.
-
-~~~jsx
-// hiding rows
-spreadsheet.hideRows("B2"); // the "2" row will be hidden  
-spreadsheet.hideRows("sheet2!B2"); // the "2" row in "sheet2" will be hidden
-spreadsheet.hideRows("B2:C4"); // the rows from "2" to "4" will be hidden 
-
-// showing rows
-spreadsheet.showRows("B2"); // the "2" row will become visible again
-spreadsheet.showRows("sheet2!B2"); // the "2" row in "sheet2" will become visible again
-spreadsheet.showRows("B2:C2"); // the rows from "2" to "4" will become visible again
-~~~
 
 ### Columns
 
@@ -155,6 +134,27 @@ spreadsheet.hideCols("B2:C2"); // the "B" and "C" columns will be hidden
 spreadsheet.showCols("B2"); // the "B" column will become visible again
 spreadsheet.showCols("sheet2!B2"); // the "B" column in "sheet2" will become visible again
 spreadsheet.showCols("B2:C2"); // the "B" and "C" columns will become visible again
+~~~
+
+### Rows
+
+To hide/show a row, use the API methods below:
+
+- [](api/spreadsheet_hiderows_method.md)
+- [](api/spreadsheet_showrows_method.md)
+
+Pass to the methods the id of the cell to define the id of a column. If the cell id isn't passed, the currently selected cell will be used.
+
+~~~jsx
+// hiding rows
+spreadsheet.hideRows("B2"); // the "2" row will be hidden  
+spreadsheet.hideRows("sheet2!B2"); // the "2" row in "sheet2" will be hidden
+spreadsheet.hideRows("B2:C4"); // the rows from "2" to "4" will be hidden 
+
+// showing rows
+spreadsheet.showRows("B2"); // the "2" row will become visible again
+spreadsheet.showRows("sheet2!B2"); // the "2" row in "sheet2" will become visible again
+spreadsheet.showRows("B2:C2"); // the rows from "2" to "4" will become visible again
 ~~~
 
 ## Filtering data

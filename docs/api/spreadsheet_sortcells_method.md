@@ -27,7 +27,7 @@ sortCells(cell: string, dir: number): void;
 
 ~~~jsx {7,10}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    topSplit: 1
+    // configuration parameters
 });
 spreadsheet.parse(data);
 
@@ -38,9 +38,6 @@ spreadsheet.sortCells("B2:B11", -1);
 spreadsheet.sortCells("Income!B2:B11, Report!B2:B11, Expenses!C2:C11", 1);
 ~~~
 
-:::info
-Use the [topSplit](api/spreadsheet_topsplit_config.md) property if you need to exclude the top rows from sorting.
-:::
 
 **Related sample:** [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 

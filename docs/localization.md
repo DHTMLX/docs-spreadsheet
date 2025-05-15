@@ -199,7 +199,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 
 ## Default locale for formulas
 
-The i18n locale for the Spreadsheet popup with formulas is contained in the `dhx.i18n.formulas` object. The default locale for formulas is the following:
+The i18n locale for the Spreadsheet popup with descriptions for formulas is contained in the `dhx.i18n.formulas` object. The default locale for formulas is the following:
 
 ~~~jsx
 const en = {

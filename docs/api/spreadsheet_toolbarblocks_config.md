@@ -24,7 +24,7 @@ toolbarBlocks: ["undo", "colors", "decoration", "align", "cell", "format", "acti
 
 ### Example
 
-~~~jsx {3-15}
+~~~jsx {3-17}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // full toolbar
     toolbarBlocks: [
@@ -58,8 +58,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 Check how you can [customize the toolbar](customization.md/#toolbar).
 
 **Change log:**
-- The *"actions"* block is added in v5.0 
-- The *"cell"* block is added in v5.2
+
+- The *"cell"* block was added in v5.2
+- The *"actions"* block was added in v5.0 
 
 **Related articles:**
 - [Configuration](configuration.md#toolbar)

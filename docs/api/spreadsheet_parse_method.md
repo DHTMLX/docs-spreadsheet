@@ -137,9 +137,8 @@ If you need to create a data set *for several sheets* at once, specify data as a
             - `column` - the index of the column
             - `row` - the index of the row
     - `freeze` - (optional) an object that sets and adjusts fixed columns/rows for particular sheets. It may contain the following properties:
-        - `col` - (optional) specifies the number of fixed columns, for example, 2 
-        - `row` - (optional) specifies the number of fixed rows, for example, 2 
-        The default value of the parameter is `freeze: {col: 0, row: 0}`
+        - `col` - (optional) specifies the number of fixed columns (e.g. 2), *0* by default
+        - `row` - (optional) specifies the number of fixed rows, (e.g. 2), *0* by default
 
 :::info
 In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
@@ -172,7 +171,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(data);
 ~~~
 
-~~~jsx {38} title="Example 2. Load data into several sheets"
+~~~jsx title="Example 2. Load data into several sheets"
 const data = {
     sheets : [
         { 
@@ -197,7 +196,11 @@ const data = {
                 { from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
                 // merge cells A2, A3, A4, and A5
                 { from: { column: 0, row: 1 }, to: { column: 0, row: 4 } }
-            ]
+            ],
+            freeze: {
+                col: 2,
+                row: 2
+            },
         }, 
         { 
             name: "sheet 2", 
@@ -278,10 +281,11 @@ but in some cases they may not work in the way you expect (for example, when app
 
 **Change log:**
 
+- The **freeze** property and the **hidden** parameter for the **rows** and **cols** properties of the **sheets** object were added in v5.2
 - The **locked** and **link** properties of the **cell** object were added in v5.1
-- The **merged** property of the **sheet** object was added in v5.0
+- The **merged** property of the **sheets** object was added in v5.0
 - The **editor** property of the **cell** object was added in v4.3
-- The **rows** and **cols** properties of the **sheet** object were added in v4.2
+- The **rows** and **cols** properties of the **sheets** object were added in v4.2
 - The ability to prepare data for several sheets was added in v4.1
 
 **Related articles:** [Data loading and export](loading_data.md)

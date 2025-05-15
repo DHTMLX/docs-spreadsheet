@@ -8,40 +8,6 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 ## 5.1 -> 5.2
 
-### toolbarBlocks
-
-In v5.2 the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is modified in the following way:
-
-- the default set of toolbar options is extended by the new *"cell"* option. It includes the *Border* button and the *Merge* button (previously, it was in the *"align"* block) 
-- the *"actions"* toolbar block is extended with the *Insert link* button (previously, it was in the *"helpers"* block) 
-- the *"helpers"* toolbar block is renamed to *"help"* and isn't included in the default set of toolbar options
-
-~~~jsx title="Before v5.2" {9}
-// default configuration
-toolbarBlocks: [
-    "undo", 
-    "colors", 
-    "decoration", 
-    "align", 
-    "format", 
-    "actions",
-    "helpers"
-]
-~~~
-
-~~~jsx title="From v5.2" {7}
-// default configuration
-toolbarBlocks: [
-    "undo", 
-    "colors", 
-    "decoration", 
-    "align", 
-    "cell",
-    "format", 
-    "actions"
-]
-~~~
-
 ### Freezing/unfreezing functionality
 
 In v5.2 the way of freezing/unfreezing columns and rows has been modified:
@@ -49,14 +15,14 @@ In v5.2 the way of freezing/unfreezing columns and rows has been modified:
 - the `leftSplit` and `topSplit` configuration properties that have been used for fixing columns and rows were deprecated
 - new API methods `freezeCols()`, `unfreezeCols()`, `freezeRows()`, `unfreezeRows()` and a new action `toggleFreeze` were introduced
 
-~~~jsx title="Before v5.0"
+~~~jsx title="Before v5.2"
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     topSplit: 1, // the number of row to "freeze"
     leftSplit: 1 // the number of columns to "freeze"
 });
 ~~~
 
-~~~jsx title="From v5.0" 
+~~~jsx title="From v5.2" 
 // for rows
 spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
 spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
