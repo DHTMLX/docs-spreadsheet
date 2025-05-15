@@ -92,3 +92,21 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 - Choose the **Clear** option and then select one of the options in the drop-down list:
 
 ![Clear option](assets/clear_option.png)
+
+## Styled borders for cells
+
+You can add a styled border(s) for a cell or a group of cells. 
+
+### Setting styled borders
+
+- Select the necessary cell or a group of cells to set a styled border(s) for
+- Click the **Border** button in the toolbar and choose the desired type of border, its color and style
+
+![Styled border](assets/styled_cell_border.png)
+
+### Removing styled borders 
+
+- Select the necessary cell or a group of cells from which you want to remove styled borders
+- Click the **Border** button in the toolbar and choose the *Clear borders* option
+
+![Clear border](assets/clear_cells_border.png)
