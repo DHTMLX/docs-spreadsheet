@@ -53,7 +53,7 @@ The new release introduces some changes to the freezing/unfreezing functionality
 - The problem with editing a large spanned table
 - The error that occurred on undoing an action in a cell 
 - The error that occurred on entering/editing a cell with the IF formula
-- Th script error that occurred after cutting and pasting a link
+- The script error that occurred after cutting and pasting a link
 - The issue with changing the text alignment during export/import of an .xlsx file
 - The issue with Spreadsheet losing focus after some actions
 - Performance improvements

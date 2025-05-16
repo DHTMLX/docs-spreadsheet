@@ -359,6 +359,7 @@ The [default context menu](/#context-menu) has the following structure:
   - the separator
   - the *Unfreeze columns* menuItem (id: "unfreeze-cols")
   - the *Freeze up to column [id]* menuItem (id: "freeze-cols")
+  - the *Show columns* menuItem (id: "show-cols")
   - the *Hide column(s) [id]* menuItem (id: "hide-cols")
 - the **Rows** menuItem (id: "rows")
   - the *Add row* menuItem (id: "add-row")
@@ -366,6 +367,7 @@ The [default context menu](/#context-menu) has the following structure:
   - the separator
   - the *Unfreeze rows* menuItem (id: "unfreeze-rows")
   - the *Freeze up to row [id]* menuItem (id: "freeze-rows")
+  - the *Show rows* menuItem (id: "show-rows")
   - the *Hide row(s) [id]* menuItem (id: "hide-rows")
 - the **Sort** menuItem (id: "sort")
   - the *Sort A to Z* menuItem (id: "asc-sort")

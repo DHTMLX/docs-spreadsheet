@@ -124,7 +124,7 @@ To freeze rows up to a certain row, take the following steps:
 
 ### Unfreezing rows
 
-(*In the images below rows are frozen up to the "5" row*)
+(*In the images below rows are frozen up to the row 5*)
 
 To unfreeze rows, take one of the following steps:
 
@@ -136,7 +136,7 @@ To unfreeze rows, take one of the following steps:
 
 ![Unfreezing rows menu](assets/unfreeze_rows_menu.png)
 
-- or right-click any row/cell in the row and choose *Rows -> Unfreeze rows*
+- or right-click any cell and choose *Rows -> Unfreeze rows*
 
 ![Unfreezing rows context menu](assets/unfreeze_rows_context_menu.png)
 
@@ -162,7 +162,7 @@ To freeze columns up to a certain column, take the following steps:
 
 ### Unfreezing columns
 
-(*In the images below columns are frozen up to the "D" column*)
+(*In the images below columns are frozen up to the column D*)
 
 To unfreeze columns, take one of the following steps:
 
@@ -174,7 +174,7 @@ To unfreeze columns, take one of the following steps:
 
 ![Unfreezing columns menu](assets/unfreeze_columns_menu.png)
 
-- or right-click any column/cell and choose *Columns -> Unfreeze columns*
+- or right-click any cell and choose *Columns -> Unfreeze columns*
 
 ![Unfreezing columns context menu](assets/unfreeze_columns_context_menu.png)
 
@@ -198,9 +198,19 @@ To hide a row, take the following steps:
 
 ### Showing rows
 
-To show a hidden row/rows, click the "arrows" icon that appears in the rows header instead of the hidden row/rows. In the image below the rows 8 and 11 are hidden:
+To show hidden rows, take one of the following steps:
+
+- either click the "arrows" icon that appears in the rows header instead of the hidden row/rows
+
+(*In the image below the rows 8 and 11 are hidden*)
 
 ![Showing rows](assets/show_rows.png)
+
+- or select rows or several cells so that the hidden rows were included into the selection, right-click to call the context menu and choose *Rows -> Show rows*
+
+(*In the image below the row 8 is hidden*)
+
+![Showing rows context menu](assets/show_rows_context_menu.png)
 
 ### Hiding columns
 
@@ -220,8 +230,18 @@ To hide a column, take the following steps:
 
 ### Showing columns
 
-To show a hidden column/columns, click the "arrows" icon that appears in the columns header instead of the hidden column/columns. In the image below the columns C and E are hidden:
+To show hidden columns, take one of the following steps:
+
+- either click the "arrows" icon that appears in the columns header instead of the hidden column/columns
+
+(*In the image below the columns C and E are hidden*)
 
 ![Showing columns](assets/show_columns.png)
+
+- or select columns or several cells so that the hidden columns were included into the selection, right-click to call the context menu and choose *Columns -> Show columns*
+
+(*In the image below the column C is hidden*)
+
+![Showing columns context menu](assets/show_columns_context_menu.png)
 
 
