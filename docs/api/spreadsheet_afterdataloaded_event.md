@@ -13,7 +13,7 @@ description: You can learn about the afterDataLoaded event in the documentation 
 ### Usage
 
 ~~~jsx
-afterColumnAdd: (cell: string) => void;
+afterDataLoaded: () => void;
 ~~~
 
 ### Example

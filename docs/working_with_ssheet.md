@@ -111,6 +111,34 @@ spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
 spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfrozen
 ~~~
 
+### Freezing rows/columns in the dataset
+
+You can also fix rows and columns for particular sheets in the dataset, while parsing data into Spreadsheet.
+For this, use the `freeze` property in the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method:
+
+~~~jsx {10-13}
+const data = {
+    sheets : [
+        { 
+            name: "sheet 1", 
+            id: "sheet_1",
+            data: [
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" }
+            ],
+            freeze: {
+                col: 2,
+                row: 2
+            },
+            // more sheet settings
+        }, 
+        // more sheets configuration objects
+    ]
+};
+
+spreadsheet.parse(data);
+~~~ 
+
 ## Hiding/showing rows and columns
 
 You can hide and show particular rows and columns via the corresponding API methods.
