@@ -24,12 +24,12 @@ hideCols(cell?: string): void;
 
 ~~~jsx 
 spreadsheet.hideCols("B2"); // the "B" column will be hidden
-spreadsheet.hideCols("sheet2!B2"); // the column "B" in "sheet2" will be hidden
+spreadsheet.hideCols("sheet2!B2"); // the "B" column in "sheet2" will be hidden
 spreadsheet.hideCols("B2:C2"); // the "B" and "C" columns will be hidden
 ~~~
 
 
-**Related article:** [Work with Spreadsheet](working_with_ssheet.md/#hidingshowing-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#hidingshowing-rows-and-columns)
 
 **Related API:** [`showCols()`](api/spreadsheet_showcols_method.md)
 

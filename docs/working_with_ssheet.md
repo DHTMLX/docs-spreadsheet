@@ -103,8 +103,8 @@ Pass to the methods the id of the cell to define the id of a row. If the cell id
 
 ~~~jsx
 // freezing rows
-spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
-spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
+spreadsheet.freezeRows("B2"); // the rows up to the "2" row will be fixed
+spreadsheet.freezeRows("sheet2!B2"); // the rows up to the "2" row in "sheet2" will be fixed
 
 // unfreezing rows
 spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
@@ -118,7 +118,7 @@ For this, use the `freeze` property in the *sheets* object of the [`parse()`](ap
 
 ~~~jsx {10-13}
 const data = {
-    sheets : [
+    sheets: [
         { 
             name: "sheet 1", 
             id: "sheet_1",
@@ -130,7 +130,7 @@ const data = {
                 col: 2,
                 row: 2
             },
-            // more sheet settings
+            // more "sheet_1" settings
         }, 
         // more sheets configuration objects
     ]
@@ -171,7 +171,7 @@ To hide/show a row, use the API methods below:
 - [](api/spreadsheet_hiderows_method.md)
 - [](api/spreadsheet_showrows_method.md)
 
-Pass to the methods the id of the cell to define the id of a column. If the cell id isn't passed, the currently selected cell will be used.
+Pass to the methods the id of the cell to define the id of a row. If the cell id isn't passed, the currently selected cell will be used.
 
 ~~~jsx
 // hiding rows

@@ -13,7 +13,7 @@ description: You can learn about the showCols method in the documentation of the
 ### Usage
 
 ~~~jsx
-showCols( cell?: string): void;
+showCols(cell?: string): void;
 ~~~
 
 ### Parameters
@@ -24,11 +24,11 @@ showCols( cell?: string): void;
 
 ~~~jsx
 spreadsheet.showCols("B2"); // the "B" column will become visible again
-spreadsheet.showCols("sheet2!B2"); // the column "B" in "sheet2" will become visible again
+spreadsheet.showCols("sheet2!B2"); // the "B" column in "sheet2" will become visible again
 spreadsheet.showCols("B2:C2"); // the "B" and "C" columns will become visible again
 ~~~
 
-**Related article:** [Work with Spreadsheet](working_with_ssheet.md/#hidingshowing-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#hidingshowing-rows-and-columns)
 
 **Related API:** [`hideCols()`](api/spreadsheet_hidecols_method.md)
 

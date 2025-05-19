@@ -100,7 +100,7 @@ You can add a styled border(s) for a cell or a group of cells.
 ### Setting styled borders
 
 - Select the necessary cell or a group of cells to set a styled border(s) for
-- Click the **Border** button in the toolbar and choose the desired type of border, its color and style
+- Click the **Border** button in the toolbar and choose the desired type of the border, its color and style
 
 ![Styled border](assets/styled_cell_border.png)
 

@@ -34,7 +34,7 @@ spreadsheet.events.on("afterDataLoaded", () => {
 
 **Change log:** Added in v5.2
 
-**Related article:** [Event handling](handling_events.md)
+**Related articles:** [Event handling](handling_events.md)
 
 **Related sample:** [Spreadsheet. Data loaded event](https://snippet.dhtmlx.com/vxr7amz6)
 

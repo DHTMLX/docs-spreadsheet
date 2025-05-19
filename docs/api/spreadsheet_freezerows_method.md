@@ -23,8 +23,8 @@ freezeRows(cell?: string): void;
 ### Example
 
 ~~~jsx 
-spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
-spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
+spreadsheet.freezeRows("B2"); // the rows up to the "2" row will be fixed
+spreadsheet.freezeRows("sheet2!B2"); // the rows up to the "2" row in "sheet2" will be fixed
 ~~~
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)

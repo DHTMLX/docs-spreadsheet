@@ -42,8 +42,8 @@ The new release introduces some changes to the freezing/unfreezing functionality
     - [popup with descriptions for formulas](functions.md/#popup-with-formula-description) is added
     - new locale: [`formulas`](localization.md/#default-locale-for-formulas) is added
 - File import: 
-    - new [`afterDataLoaded`](api/spreadsheet_afterdataloaded_event.md) event is added  
-
+    - new [`afterDataLoaded`](api/spreadsheet_afterdataloaded_event.md) event is added to indicate that data loading into Spreadsheet has been completed
+    
 ### Fixes
 
 - The issue with sorting

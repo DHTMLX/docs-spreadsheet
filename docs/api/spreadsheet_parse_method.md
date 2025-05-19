@@ -173,7 +173,7 @@ spreadsheet.parse(data);
 
 ~~~jsx title="Example 2. Load data into several sheets"
 const data = {
-    sheets : [
+    sheets: [
         { 
             name: "sheet 1", 
             id: "sheet_1",
