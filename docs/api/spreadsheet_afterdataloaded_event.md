@@ -8,7 +8,7 @@ description: You can learn about the afterDataLoaded event in the documentation 
 
 ### Description
 
-@short: Fires after data loading is complete
+@short: Fires after data loading has been completed
 
 ### Usage
 
