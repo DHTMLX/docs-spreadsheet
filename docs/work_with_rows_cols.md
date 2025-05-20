@@ -234,7 +234,7 @@ To hide a column, take the following steps:
 
 - or right-click a column or a cell in the column and choose *Columns -> Hide column(s) [id]*
 
-![Hiding columns context menu](assets/hide_column_context_menu.png)
+![Hiding columns context menu](assets/hide_columns_context_menu.png)
 
 ### Showing columns
 
