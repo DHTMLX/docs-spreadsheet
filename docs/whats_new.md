@@ -8,6 +8,56 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2
+
+Released on May 20, 2025
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-2/)
+
+### Breaking changes
+
+The new release introduces some changes to the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md/#51---52) to keep in step with the latest version.
+
+### Deprecated
+
+- The `leftSplit` and `topSplit` configuration properties are removed
+
+### New functionality
+
+- Editing cells:
+    - the ability to [create a styled border for a group of cells via UI](data_formatting.md/#styled-borders-for-cells)
+- Freezing/unfreezing columns/rows:
+    - the ability to freeze/unfreeze columns and rows via [UI](work_with_rows_cols.md/#freezingunfreezing-rows-and-columns)
+    - the ability to freeze/unfreeze columns and rows via [API](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)
+        - new methods: [`freezeCols()`](api/spreadsheet_freezecols_method.md), [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md), [`freezeRows()`](api/spreadsheet_freezerows_method.md), [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md)
+        - new action: [`toggleFreeze`](api/overview/actions_overview.md/#list-of-actions) 
+        - new `freeze` property for the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method
+- Hiding/showing columns/rows:
+    - the ability to hide/show columns and rows via [UI](work_with_rows_cols.md/#hidingshowing-rows-and-columns)
+    - the ability to hide/show columns and rows via [API](working_with_ssheet.md/#hidingshowing-rows-and-columns)
+        - new methods: [`hideCols()`](api/spreadsheet_hidecols_method.md), [`showCols()`](api/spreadsheet_showcols_method.md), [`hideRows()`](api/spreadsheet_hiderows_method.md), [`showRows()`](api/spreadsheet_showrows_method.md)
+        - new action: [`toggleVisibility`](api/overview/actions_overview.md/#list-of-actions) 
+        - new `hidden` property for the *cols* and *rows* configs of the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method
+- Working with formulas:
+    - [popup with descriptions for formulas](functions.md/#popup-with-formula-description) is added
+    - new locale: [`formulas`](localization.md/#default-locale-for-formulas) is added
+- File import: 
+    - new [`afterDataLoaded`](api/spreadsheet_afterdataloaded_event.md) event is added to indicate that data loading into Spreadsheet has been completed
+    
+### Fixes
+
+- The issue with sorting
+- The issue with the filter shifting to a new column
+- The error that occurred on blocking a sheet adding with the "addSheet" action
+- The issue with filtering blank cells
+- The problem with editing a large spanned table
+- The error that occurred on undoing an action in a cell 
+- The error that occurred on entering/editing a cell with the IF formula
+- The script error that occurred after cutting and pasting a link
+- The issue with changing the text alignment during export/import of an .xlsx file
+- The issue with Spreadsheet losing focus after some actions
+- Performance improvements
+
 ## Version 5.1.8 
 
 Released on December 10, 2024
@@ -303,7 +353,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 ### New functionality
 
 - The ability to add a drop-down list of options into the cells via the [`setValidation()`](api/spreadsheet_setvalidation_method.md) method or via [UI](work_with_cells.md#using-drop-down-lists-in-cells)
-- The ability to fix rows on the top of the spreadsheet via the [`topSplit`](api/spreadsheet_topsplit_config.md) property
+- The ability to fix rows on the top of the spreadsheet via the `topSplit` property
 - The ability to sort data via the [`sortCells()`](api/spreadsheet_sortcells_method.md) method or via [UI](sorting_data.md)
 - [The ability to split long text into multiple lines](data_formatting.md#wrap-text-in-a-cell) (*Text wrapping* button is added into the toolbar)
 - Significantly extended list of supported [Date, Financial, Math, String functions](functions.md#information-functions) (marked with *added in v4.3* label)
@@ -490,7 +540,7 @@ Released on October 19, 2020
 
 - [Math functions](functions.md)
 - [TypeScript Support](using_typescript.md)
-- The ability [to freeze columns on the left side of the spreadsheet](configuration.md#frozen-rows-and-columns) via the [leftSplit](api/spreadsheet_leftsplit_config.md) configuration property
+- The ability to freeze columns on the left side of the spreadsheet via the `leftSplit` configuration property
 - [The Text format for displaying the content of a cell as text is added to default number formats](number_formatting.md#default-number-formats)
 - The ability to select multiple scattered ranges of cells by using ["Ctrl+Shift+Left Click"](hotkeys.md#selection) combination
 

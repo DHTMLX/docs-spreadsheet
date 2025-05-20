@@ -39,8 +39,20 @@ parse({
         {
             name?: string,
             id?: string,
-            rows?: array,
-            cols?: array,
+            cols?: [
+                {
+                    width?: number,
+                    hidden?: boolean,
+                },
+                // more column objects
+            ],
+            rows?: [
+                {
+                    height?: number,
+                    hidden?: boolean,
+                },
+                // more row objects
+            ],
             data: [
                 {
                     cell: string,
@@ -65,7 +77,11 @@ parse({
                     to: { column: index, row: index }
                 },
                 // more objects
-            ]
+            ],
+            freeze?: {
+               col?: number,
+               row?: number,
+            }
         },
         // more sheet objects
     ]      
@@ -95,8 +111,12 @@ If you need to create a data set *for several sheets* at once, specify data as a
 - `sheets` - (required) an array of **sheet** objects. Each object has the following properties:
     - `name` - (optional) the sheet name
     - `id` - (optional) the sheet id
-    - `rows` - (optional) an array of height objects. If not specified, the rows will have a height of 32px.
-    - `cols` - (optional) an array of width objects. If not specified, the columns will have a width of 120px.
+    - `rows` - (optional) an array of objects with rows configurations. Each object may contain the following properties:
+        - `height` - (optional) the row height. If not specified, rows will have the height of 32px
+        - `hidden` - (optional) defines the visibility of a row
+    - `cols` - (optional) an array of objects with columns configurations. Each object may contain the following properties:
+        - `width` - (optional) the column width. If not specified, columns will have the width of 120px
+        - `hidden` - (optional) defines the visibility of a column
     - `data` - (required) an array of **cell** objects. Each object has the following properties:
         - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
         - `value` - (required) the value of a cell
@@ -116,6 +136,9 @@ If you need to create a data set *for several sheets* at once, specify data as a
         - `to` - an object which defines the position of the last cell from a range:
             - `column` - the index of the column
             - `row` - the index of the row
+    - `freeze` - (optional) an object that sets and adjusts fixed columns/rows for particular sheets. It may contain the following properties:
+        - `col` - (optional) specifies the number of fixed columns (e.g. 2), *0* by default
+        - `row` - (optional) specifies the number of fixed rows, (e.g. 2), *0* by default
 
 :::info
 In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
@@ -148,21 +171,21 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
 spreadsheet.parse(data);
 ~~~
 
-~~~jsx {38} title="Example 2. Load data into several sheets"
+~~~jsx title="Example 2. Load data into several sheets"
 const data = {
-    sheets : [
+    sheets: [
         { 
             name: "sheet 1", 
             id: "sheet_1",
             rows: [
-                { height: 50 }, // the height of the first row
-                { height: 50 }, // the height of the second row
-                // the height of the other rows is 32
+                { height: 50, hidden: true }, // config of the first row
+                { height: 50 }, // config of the second row
+                // the height of other rows is 32
             ],
             cols: [
-                { width: 300 }, // the width of the first column
-                { width: 300 }, // the width of the second column
-                // the width of the other columns is 120
+                { width: 300 }, // config of the first column
+                { width: 300, hidden: true }, // config of the second column
+                // the width of other columns is 120
             ],
             data: [
                 { cell: "A1", value: "Country" },
@@ -173,7 +196,11 @@ const data = {
                 { from: { column: 0, row: 0 }, to: { column: 1, row: 0 } },
                 // merge cells A2, A3, A4, and A5
                 { from: { column: 0, row: 1 }, to: { column: 0, row: 4 } }
-            ]
+            ],
+            freeze: {
+                col: 2,
+                row: 2
+            },
         }, 
         { 
             name: "sheet 2", 
@@ -229,7 +256,7 @@ A CSS class is set for a cell via the **css** property.
 
 ### List of properties
 
-The list of properties you can specify in the **style** object:
+The list of properties you can specify in the **styles** object:
 
 - *background*
 - *color*
@@ -239,6 +266,7 @@ The list of properties you can specify in the **style** object:
 - *fontWeight*
 - *fontStyle*
 - *multiline: "wrap"* (from v5.0.3)
+- *border*, *border-right*, *border-left*, *border-top*, *border-bottom* (from v5.2)
 
 :::note
 You may also use the following properties if needed:
@@ -253,10 +281,11 @@ but in some cases they may not work in the way you expect (for example, when app
 
 **Change log:**
 
+- The **freeze** property and the **hidden** parameter for the **rows** and **cols** properties of the **sheets** object were added in v5.2
 - The **locked** and **link** properties of the **cell** object were added in v5.1
-- The **merged** property of the **sheet** object was added in v5.0
+- The **merged** property of the **sheets** object was added in v5.0
 - The **editor** property of the **cell** object was added in v4.3
-- The **rows** and **cols** properties of the **sheet** object were added in v4.2
+- The **rows** and **cols** properties of the **sheets** object were added in v4.2
 - The ability to prepare data for several sheets was added in v4.1
 
 **Related articles:** [Data loading and export](loading_data.md)

@@ -12,6 +12,7 @@ description: You can have an Events overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_afterclear_event.md)         | @getshort(../spreadsheet_afterclear_event.md)         |
 | [](../spreadsheet_aftercolumnadd_event.md)     | @getshort(../spreadsheet_aftercolumnadd_event.md)     |
 | [](../spreadsheet_aftercolumndelete_event.md)  | @getshort(../spreadsheet_aftercolumndelete_event.md)  |
+| [](../spreadsheet_afterdataloaded_event.md)  	 | @getshort(../spreadsheet_afterdataloaded_event.md)    |
 | [](../spreadsheet_aftereditend_event.md)       | @getshort(../spreadsheet_aftereditend_event.md)       |
 | [](../spreadsheet_aftereditstart_event.md)     | @getshort(../spreadsheet_aftereditstart_event.md)     |
 | [](../spreadsheet_afterfocusset_event.md)      | @getshort(../spreadsheet_afterfocusset_event.md)      |

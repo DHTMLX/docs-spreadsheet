@@ -1311,9 +1311,19 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ## Getting cell formula
 
-Starting with v4.1, you can get the formula applied to a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method. The method takes the id of the cell as a parameter:
+Starting with v4.1, you can get the formula applied to a cell via the [`getFormula()`](api/spreadsheet_getformula_method.md) method. The method takes the id of the cell as a parameter:
 
-```js
+~~~js
 var formula = spreadsheet.getFormula("B2");
 // -> "ABS(C2)"
-```
+~~~
+
+## Popup with formula description
+
+When you enter a formula, a popup with description of the function and its parameters appears. 
+
+![Popup with formula description](assets/formula_popup.png)
+
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
+
+You can modify the default locale for the popup with formula parameters and add a custom locale. Check the details in the [Localization](localization.md/#default-locale-for-formulas) guide.

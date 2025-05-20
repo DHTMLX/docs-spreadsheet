@@ -26,7 +26,10 @@ spreadsheet.setValue("B6,A1:D1",5);
 spreadsheet.setValue("A1:D1",[1,2,3]);
 ~~~
 
-{{note Please note that the method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.}}
+:::note
+Please note that the method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [`parse()`](api/spreadsheet_parse_method.md) method.
+:::
+
 
 ### Get values
 
@@ -57,7 +60,7 @@ spreadsheet.setValidation("B10:B15", ["Apple", "Mango", "Avocado"]);
 The drop-down list will limit the choice of the end user. It will show the *Invalid value* message when the user completes a cell with an unexpected value.
 
 :::info
-The [](api/spreadsheet_setvalidation_method.md) method can also remove validation from the specified cells. [Check the details](../api/spreadsheet_setvalidation_method/#details).
+The [`setValidation()`](api/spreadsheet_setvalidation_method.md) method can also remove validation from the specified cells. [Check the details](../api/spreadsheet_setvalidation_method/#details).
 :::
 
 ## Inserting a hyperlink into a cell
@@ -85,7 +88,7 @@ spreadsheet.insertLink("A2");
 You can apply certain styling to a cell or a range of cells via the [](api/spreadsheet_setstyle_method.md) method. It takes two parameters:
 
 - **cells** - (*string*) the id(s) of a cell(s) or a range of cells
-- **style** - (*object/array*) styles that should be applied to cells
+- **styles** - (*object/array*) styles that should be applied to cells
 
 ~~~jsx
 // setting style for one cell
@@ -98,7 +101,9 @@ spreadsheet.setStyle("B6,A1:D1", {color: "blue"});
 spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
 ~~~
 
-{{note The method allows setting the same style for the specified cells. In case you want to apply different styles to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.}}
+:::note 
+The method allows setting the same style for the specified cells. In case you want to apply different styles to spreadsheet cells, you'd better use the [`parse()`](api/spreadsheet_parse_method.md) method.
+:::
 
 ### Get styles
 

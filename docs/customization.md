@@ -115,16 +115,16 @@ spreadsheet.toolbar.data.remove("control-id");
 The [default toolbar](/#toolbar) contains the following blocks of controls:
 
 - the **Undo** block
-  - the *Undo* button (id:"undo")
-  - the *Redo* button (id:"redo")
+  - the *Undo* button (id: "undo")
+  - the *Redo* button (id: "redo")
 - the **Colors** block
-  - the *Text color* button (id:"color")
-  - the *Background color* button (id:"background")
+  - the *Text color* button (id: "color")
+  - the *Background color* button (id: "background")
 - the **Decoration** block
-  - the *Bold* button (id:"font-weight-bold")
-  - the *Italic* button (id:"font-style-italic")
-  - the *Underline* button (id:"text-decoration-underline")
-  - the *Strikethrough* button (id:"text-decoration-line-through")
+  - the *Bold* button (id: "font-weight-bold")
+  - the *Italic* button (id: "font-style-italic")
+  - the *Underline* button (id: "text-decoration-underline")
+  - the *Strikethrough* button (id: "text-decoration-line-through")
 - the **Align** block
   - the **Horizontal align** sub-block
     - the *Left* button (id: "halign-left")
@@ -137,35 +137,43 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the **Text wrapping** sub-block
     - the *Clip* button (id: "multiline-clip")
     - the *Wrap* button (id: "multiline-wrap")
-  - the **Merge/Unmerge** button (id: "merge")
+- the **Cell** block
+  - the *Border* button (id: "border")
+  - the *Merge/Unmerge* button (id: "merge")
 - the **Format** block
-  - the *Format* menuItem (id:"format")
+  - the *Format* menuItem (id: "format")
 - the **Actions** block
-  - the *Filter* button (id:"filter")
-- the **Helpers** block
-  - the *Link* button (id:"link")
-  - the *Help* button (id:"help")
+  - the *Filter* button (id: "filter")
+  - the *Insert link* button (id: "link")
 
 It is also possible to add the blocks enumerated below:
 
 - the **Lock** block
-    - the *Lock* button (id:"lock")
+    - the *Lock* button (id: "lock")
 - the **Clear** block
-  - the *Clear group* menuItem (id:"clear-group")
-    - the *Clear value* menuItem (id:"clear-value")
-    - the *Clear styles* menuItem (id:"clear-styles")
-    - the *Clear all* menuItem (id:"clear-all")
+  - the *Clear group* menuItem (id: "clear-group")
+    - the *Clear value* menuItem (id: "clear-value")
+    - the *Clear styles* menuItem (id: "clear-styles")
+    - the *Clear all* menuItem (id: "clear-all")
 - the **Rows** block
-  - the *Add row* button (id:"add-row")
-  - the *Remove row* button (id:"remove-row")
+  - the *Add row* button (id: "add-row")
+  - the *Remove row* button (id: "remove-row")
+  - the *Unfreeze rows* button (id: "unfreeze-rows")
+  - the *Freeze up to row [id]* (id: "freeze-rows")
+  - the *Hide row(s) [id]* (id: "hide-rows")
 - the **Columns** block
-  - the *Add column* button (id:"add-col")
-  - the *Remove column* button (id:"remove-col")
+  - the *Add column* button (id: "add-col")
+  - the *Remove column* button (id: "remove-col")
+  - the *Unfreeze columns* button (id: "unfreeze-cols")
+  - the *Freeze up to column [id]* (id: "freeze-cols")
+  - the *Hide column(s) [id]* (id: "hide-cols")
 - the **File** block
-  - the *Export* menuItem (id:"export")
-    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
-  - the *Import* menuItem (id:"import")
-    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
+  - the *Export* menuItem (id: "export")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id: "export-xlsx")
+  - the *Import* menuItem (id: "import")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id: "import-xlsx")
+- the **Help** block
+  - the *Help* button (id: "help")
 
 ### Adding controls
 
@@ -232,34 +240,40 @@ spreadsheet.toolbar.data.remove("undo");
 
 The [default menu](/#menu) has the following structure:
 
-- the **File** menuItem (id:"edit")
-  - the *Export* menuItem (id:"download")
-    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"export-xlsx")
-  - the *Import* menuItem (id:"import")
-    - the *"Microsoft Excel(.xlsx)"* menuItem (id:"import-xlsx")
-- the **Edit** menuItem (id:"edit")
-  - the *Undo* menuItem (id:"undo")
-  - the *Redo* menuItem (id:"redo")
+- the **File** menuItem (id: "edit")
+  - the *Import as...* menuItem (id: "import")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id: "import-xlsx")
+  - the *Download as...* menuItem (id: "download")
+    - the *"Microsoft Excel(.xlsx)"* menuItem (id: "export-xlsx")
+- the **Edit** menuItem (id: "edit")
+  - the *Undo* menuItem (id: "undo")
+  - the *Redo* menuItem (id: "redo")
   - the separator
-  - the *Lock* menuItem (id:"lock")
+  - the *Freeze* menuItem (id: "freeze")
+    - the *Unfreeze columns* menuItem (id: "unfreeze-cols")
+    - the *Freeze up to column [id]* (id: "freeze-cols")
+    - the separator (id: "freeze-sep")
+    - the *Unfreeze rows* menuItem (id: "unfreeze-rows")
+    - the *Freeze up to row [id]* (id: "freeze-rows")
+  - the *Lock* menuItem (id: "lock")
   - the separator
-  - the *Clear* menuItem (id:"clear")
-    - the *Clear value* menuItem (id:"clear-value")
-    - the *Clear styles* menuItem (id:"clear-styles")
-    - the *Clear all* menuItem (id:"clear-all")
-- the **Insert** menuItem (id:"insert")
-  - the *Columns* menuItem (id:"columns")
-    - the *Add column* menuItem (id:"add-col")
-    - the *Remove column* menuItem (id:"remove-col")
-  - the *Rows* menuItem (id:"rows")
-    - the *Add row* menuItem (id:"add-row")
-    - the *Remove row* menuItem (id:"remove-row")
-  - the *Insert link* menuItem (id:"link")
-- the **Format** menuItem (id:"configuration")
-  - the *Bold* menuItem (id:"font-weight-bold")
-  - the *Italic* menuItem (id:"font-style-italic")
-  - the *Underline* menuItem (id:"text-decoration-underline")
-  - the *Strikethrough* menuItem (id:"text-decoration-line-through")
+  - the *Clear* menuItem (id: "clear")
+    - the *Clear value* menuItem (id: "clear-value")
+    - the *Clear styles* menuItem (id: "clear-styles")
+    - the *Clear all* menuItem (id: "clear-all")
+- the **Insert** menuItem (id: "insert")
+  - the *Columns* menuItem (id: "columns")
+    - the *Add column* menuItem (id: "add-col")
+    - the *Remove column* menuItem (id: "remove-col")
+  - the *Rows* menuItem (id: "rows")
+    - the *Add row* menuItem (id: "add-row")
+    - the *Remove row* menuItem (id: "remove-row")
+  - the *Insert link* menuItem (id: "link")
+- the **Format** menuItem (id: "configuration")
+  - the *Bold* menuItem (id: "font-weight-bold")
+  - the *Italic* menuItem (id: "font-style-italic")
+  - the *Underline* menuItem (id: "text-decoration-underline")
+  - the *Strikethrough* menuItem (id: "text-decoration-line-through")
   - the separator
   - the *Horizontal align* menuItem (id: "halign")
     - the *Left* menuItem (id: "halign-left")
@@ -272,16 +286,16 @@ The [default menu](/#menu) has the following structure:
   - the *Text wrapping* menuItem (id: "multiline")
     - the *Clip* menuItem (id: "multiline-clip")
     - the *Wrap* menuItem (id: "multiline-wrap")
-  - the *Format* menuItem (id:"format")
+  - the *Format* menuItem (id: "format")
   - the *Merge/Unmerge* menuItem (id: "merge")
-- the **Data** menuItem (id:"data")
-  - the *Data validation* menuItem (id:"validation")
-  - the *Search* menuItem (id:"search")
-  - the *Filter* menuItem (id:"filter")
-  - the *Sort* menuItem (id:"sort")
-    - the *Sort A to Z* menuItem (id:"asc-sort")
-    - the *Sort Z to A* menuItem (id:"desc-sort")
-- the **Help** menuItem (id:"help")
+- the **Data** menuItem (id: "data")
+  - the *Data validation* menuItem (id: "validation")
+  - the *Search* menuItem (id: "search")
+  - the *Filter* menuItem (id: "filter")
+  - the *Sort* menuItem (id: "sort")
+    - the *Sort A to Z* menuItem (id: "asc-sort")
+    - the *Sort Z to A* menuItem (id: "desc-sort")
+- the **Help** menuItem (id: "help")
 
 ### Adding controls
 
@@ -333,22 +347,32 @@ spreadsheet.menu.data.remove("undo");
 
 The [default context menu](/#context-menu) has the following structure:
 
-- the **Lock** menuItem (id:"lock")
-- the **Clear** menuItem (id:"clear")
-  - the *Clear value* menuItem (id:"clear-value")
-  - the *Clear styles* menuItem (id:"clear-styles")
-  - the *Clear all* menuItem (id:"clear-all")
-- the **Columns** menuItem (id:"columns")
-  - the *Add column* menuItem (id:"add-col")
-  - the *Remove column* menuItem (id:"remove-col")
-  - the *Fit to data* menuItem (id:"fit-col")
-- the **Rows** menuItem (id:"rows")
-  - the *Add row* menuItem (id:"add-row")
-  - the *Remove row* menuItem (id:"remove-row")
-- the **Sort** menuItem (id:"sort")
-  - the *Sort A to Z* menuItem (id:"asc-sort")
-  - the *Sort Z to A* menuItem (id:"desc-sort")
-- the **Insert link** menuItem (id:"link")
+- the **Lock** menuItem (id: "lock")
+- the **Clear** menuItem (id: "clear")
+  - the *Clear value* menuItem (id: "clear-value")
+  - the *Clear styles* menuItem (id: "clear-styles")
+  - the *Clear all* menuItem (id: "clear-all")
+- the **Columns** menuItem (id: "columns")
+  - the *Add column* menuItem (id: "add-col")
+  - the *Remove column* menuItem (id: "remove-col")
+  - the *Fit to data* menuItem (id: "fit-col")
+  - the separator
+  - the *Unfreeze columns* menuItem (id: "unfreeze-cols")
+  - the *Freeze up to column [id]* menuItem (id: "freeze-cols")
+  - the *Show columns* menuItem (id: "show-cols")
+  - the *Hide column(s) [id]* menuItem (id: "hide-cols")
+- the **Rows** menuItem (id: "rows")
+  - the *Add row* menuItem (id: "add-row")
+  - the *Remove row* menuItem (id: "remove-row")
+  - the separator
+  - the *Unfreeze rows* menuItem (id: "unfreeze-rows")
+  - the *Freeze up to row [id]* menuItem (id: "freeze-rows")
+  - the *Show rows* menuItem (id: "show-rows")
+  - the *Hide row(s) [id]* menuItem (id: "hide-rows")
+- the **Sort** menuItem (id: "sort")
+  - the *Sort A to Z* menuItem (id: "asc-sort")
+  - the *Sort Z to A* menuItem (id: "desc-sort")
+- the **Insert link** menuItem (id: "link")
 
 ### Adding controls
 

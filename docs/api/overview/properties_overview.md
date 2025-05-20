@@ -14,7 +14,6 @@ description: You can have a Properties overview of the DHTMLX JavaScript Spreads
 | [](../spreadsheet_exportmodulepath_config.md) | @getshort(../spreadsheet_exportmodulepath_config.md) |
 | [](../spreadsheet_formats_config.md)          | @getshort(../spreadsheet_formats_config.md)          |
 | [](../spreadsheet_importmodulepath_config.md) | @getshort(../spreadsheet_importmodulepath_config.md) |
-| [](../spreadsheet_leftsplit_config.md)        | @getshort(../spreadsheet_leftsplit_config.md)        |
 | [](../spreadsheet_localization_config.md)     | @getshort(../spreadsheet_localization_config.md)     |
 | [](../spreadsheet_menu_config.md)             | @getshort(../spreadsheet_menu_config.md)             |
 | [](../spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
@@ -22,4 +21,4 @@ description: You can have a Properties overview of the DHTMLX JavaScript Spreads
 | [](../spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
 | [](../spreadsheet_timeformat_config.md)       | @getshort(../spreadsheet_timeformat_config.md)       |
 | [](../spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |
-| [](../spreadsheet_topsplit_config.md)         | @getshort(../spreadsheet_topsplit_config.md)         |
+

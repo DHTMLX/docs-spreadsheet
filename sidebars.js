@@ -58,6 +58,8 @@ module.exports = {
                         "api/spreadsheet_eachcell_method",
                         "api/spreadsheet_endedit_method",
                         "api/spreadsheet_fitcolumn_method",
+                        "api/spreadsheet_freezecols_method",
+                        "api/spreadsheet_freezerows_method",
                         "api/spreadsheet_getactivesheet_method",
                         "api/spreadsheet_getfilter_method",
                         "api/spreadsheet_getformat_method",
@@ -65,6 +67,8 @@ module.exports = {
                         "api/spreadsheet_getsheets_method",
                         "api/spreadsheet_getstyle_method",
                         "api/spreadsheet_getvalue_method",
+                        "api/spreadsheet_hidecols_method",
+                        "api/spreadsheet_hiderows_method",
                         "api/spreadsheet_hidesearch_method",
                         "api/spreadsheet_insertlink_method",
                         "api/spreadsheet_islocked_method", 
@@ -82,9 +86,13 @@ module.exports = {
                         "api/spreadsheet_setstyle_method",
                         "api/spreadsheet_setvalidation_method",
                         "api/spreadsheet_setvalue_method",
+                        "api/spreadsheet_showcols_method",
+                        "api/spreadsheet_showrows_method",
                         "api/spreadsheet_sortcells_method",
                         "api/spreadsheet_startedit_method",
                         "api/spreadsheet_undo_method",
+                        "api/spreadsheet_unfreezecols_method",
+                        "api/spreadsheet_unfreezerows_method",
                         "api/spreadsheet_unlock_method"
                     ]
                 },
@@ -102,6 +110,7 @@ module.exports = {
                         "api/spreadsheet_afterclear_event",
                         "api/spreadsheet_aftercolumnadd_event",
                         "api/spreadsheet_aftercolumndelete_event",
+                        "api/spreadsheet_afterdataloaded_event",
                         "api/spreadsheet_aftereditend_event",
                         "api/spreadsheet_aftereditstart_event",
                         "api/spreadsheet_afterfocusset_event",
@@ -157,15 +166,13 @@ module.exports = {
                         "api/spreadsheet_exportmodulepath_config",
                         "api/spreadsheet_formats_config",
                         "api/spreadsheet_importmodulepath_config",
-                        "api/spreadsheet_leftsplit_config",
                         "api/spreadsheet_localization_config",
                         "api/spreadsheet_menu_config",
                         "api/spreadsheet_multisheets_config",
                         "api/spreadsheet_readonly_config",
                         "api/spreadsheet_rowscount_config",
                         "api/spreadsheet_timeformat_config",
-                        "api/spreadsheet_toolbarblocks_config",
-                        "api/spreadsheet_topsplit_config"
+                        "api/spreadsheet_toolbarblocks_config"
                     ]
                 },
                 {

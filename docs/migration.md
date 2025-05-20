@@ -6,6 +6,79 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 # Migration to newer versions
 
+## 5.1 -> 5.2
+
+### Freezing/unfreezing functionality
+
+In v5.2 the way of freezing/unfreezing columns and rows has been modified:
+
+- the `leftSplit` and `topSplit` configuration properties that have been used for fixing columns and rows are deprecated
+
+~~~jsx title="Before v5.2"
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    topSplit: 1, // the number of row to "freeze"
+    leftSplit: 1 // the number of columns to "freeze"
+});
+~~~
+
+- new API methods are introduced: [`freezeCols()`](api/spreadsheet_freezecols_method.md), [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md), [`freezeRows()`](api/spreadsheet_freezerows_method.md), [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md) 
+
+~~~jsx title="From v5.2" 
+// for rows
+spreadsheet.freezeRows("B2"); // the rows up to the second row will be fixed
+spreadsheet.freezeRows("sheet2!B2"); // the rows up to the second row in "sheet2" will be fixed
+spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
+spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfrozen
+
+// for columns
+spreadsheet.freezeCols("B2"); // the columns up to the "B" column will be fixed
+spreadsheet.freezeCols("sheet2!B2"); // the columns up to the "B" column in "sheet2" will be fixed
+spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfrozen
+spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
+~~~
+
+- new action is added: [`toggleFreeze`](api/overview/actions_overview.md/#list-of-actions) 
+
+~~~jsx title="From v5.2"
+// using the `toggleFreeze` action with the beforeAction/afterAction events
+spreadsheet.events.on("afterAction", (actionName, config) => {
+    if (actionName === "toggleFreeze") {
+        console.log(actionName, config);
+    }
+});
+
+spreadsheet.events.on("beforeAction", (actionName, config) => {
+    if (actionName === "toggleFreeze") {
+        console.log(actionName, config);
+    }
+});
+~~~
+
+- new `freeze` property for the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method is added. It allows fixing rows and columns for particular sheets in the dataset, while parsing data into Spreadsheet: 
+
+~~~jsx {10-13} title="From v5.2"
+const data = {
+    sheets: [
+        { 
+            name: "sheet 1", 
+            id: "sheet_1",
+            data: [
+                { cell: "A1", value: "Country" },
+                { cell: "B1", value: "Product" }
+            ],
+            freeze: {
+                col: 2,
+                row: 2
+            },
+            // more "sheet_1" settings
+        }, 
+        // more sheets configuration objects
+    ]
+};
+
+spreadsheet.parse(data);
+~~~
+
 ## 4.3 -> 5.0
 
 In v5.0, the *"help"* option of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.

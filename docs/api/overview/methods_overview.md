@@ -18,12 +18,16 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_eachcell_method.md)       | @getshort(../spreadsheet_eachcell_method.md)       |
 | [](../spreadsheet_endedit_method.md)        | @getshort(../spreadsheet_endedit_method.md)        |
 | [](../spreadsheet_fitcolumn_method.md)      | @getshort(../spreadsheet_fitcolumn_method.md)      |
+| [](../spreadsheet_freezecols_method.md)     | @getshort(../spreadsheet_freezecols_method.md)     |
+| [](../spreadsheet_freezerows_method.md)     | @getshort(../spreadsheet_freezerows_method.md)     |
 | [](../spreadsheet_getactivesheet_method.md) | @getshort(../spreadsheet_getactivesheet_method.md) |
 | [](../spreadsheet_getfilter_method.md)      | @getshort(../spreadsheet_getfilter_method.md)      |
 | [](../spreadsheet_getformat_method.md)      | @getshort(../spreadsheet_getformat_method.md)      |
 | [](../spreadsheet_getformula_method.md)     | @getshort(../spreadsheet_getformula_method.md)     |
 | [](../spreadsheet_getsheets_method.md)      | @getshort(../spreadsheet_getsheets_method.md)      |
 | [](../spreadsheet_getstyle_method.md)       | @getshort(../spreadsheet_getstyle_method.md)       |
+| [](../spreadsheet_hidecols_method.md)       | @getshort(../spreadsheet_hidecols_method.md)       |
+| [](../spreadsheet_hiderows_method.md)       | @getshort(../spreadsheet_hiderows_method.md)       |
 | [](../spreadsheet_hidesearch_method.md)     | @getshort(../spreadsheet_hidesearch_method.md)     |
 | [](../spreadsheet_getvalue_method.md)       | @getshort(../spreadsheet_getvalue_method.md)       |
 | [](../spreadsheet_insertlink_method.md)     | @getshort(../spreadsheet_insertlink_method.md)     |
@@ -42,6 +46,10 @@ description: You can have a Methods overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_setstyle_method.md)       | @getshort(../spreadsheet_setstyle_method.md)       |
 | [](../spreadsheet_setvalidation_method.md)  | @getshort(../spreadsheet_setvalidation_method.md)  |
 | [](../spreadsheet_setvalue_method.md)       | @getshort(../spreadsheet_setvalue_method.md)       |
+| [](../spreadsheet_showcols_method.md)       | @getshort(../spreadsheet_showcols_method.md)       |
+| [](../spreadsheet_showrows_method.md)       | @getshort(../spreadsheet_showrows_method.md)       |
 | [](../spreadsheet_startedit_method.md)      | @getshort(../spreadsheet_startedit_method.md)      |
 | [](../spreadsheet_undo_method.md)           | @getshort(../spreadsheet_undo_method.md)           |
+| [](../spreadsheet_unfreezecols_method.md)   | @getshort(../spreadsheet_unfreezecols_method.md)   |
+| [](../spreadsheet_unfreezerows_method.md)   | @getshort(../spreadsheet_unfreezerows_method.md)   |
 | [](../spreadsheet_unlock_method.md)         | @getshort(../spreadsheet_unlock_method.md)         |

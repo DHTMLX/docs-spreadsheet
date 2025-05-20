@@ -34,6 +34,8 @@ Parameters:
 | [](api/spreadsheet_eachcell_method.md)       | @getshort(api/spreadsheet_eachcell_method.md)       |
 | [](api/spreadsheet_endedit_method.md)        | @getshort(api/spreadsheet_endedit_method.md)        |
 | [](api/spreadsheet_fitcolumn_method.md)      | @getshort(api/spreadsheet_fitcolumn_method.md)      |
+| [](api/spreadsheet_freezecols_method.md)     | @getshort(api/spreadsheet_freezecols_method.md)     |
+| [](api/spreadsheet_freezerows_method.md)     | @getshort(api/spreadsheet_freezerows_method.md)     |
 | [](api/spreadsheet_getactivesheet_method.md) | @getshort(api/spreadsheet_getactivesheet_method.md) |
 | [](api/spreadsheet_getfilter_method.md)      | @getshort(api/spreadsheet_getfilter_method.md)      |
 | [](api/spreadsheet_getformat_method.md)      | @getshort(api/spreadsheet_getformat_method.md)      |
@@ -41,6 +43,8 @@ Parameters:
 | [](api/spreadsheet_getsheets_method.md)      | @getshort(api/spreadsheet_getsheets_method.md)      |
 | [](api/spreadsheet_getstyle_method.md)       | @getshort(api/spreadsheet_getstyle_method.md)       |
 | [](api/spreadsheet_getvalue_method.md)       | @getshort(api/spreadsheet_getvalue_method.md)       |
+| [](api/spreadsheet_hidecols_method.md)       | @getshort(api/spreadsheet_hidecols_method.md)       |
+| [](api/spreadsheet_hiderows_method.md)       | @getshort(api/spreadsheet_hiderows_method.md)       |
 | [](api/spreadsheet_hidesearch_method.md)     | @getshort(api/spreadsheet_hidesearch_method.md)     |
 | [](api/spreadsheet_insertlink_method.md)     | @getshort(api/spreadsheet_insertlink_method.md)     |
 | [](api/spreadsheet_islocked_method.md)       | @getshort(api/spreadsheet_islocked_method.md)       |
@@ -58,8 +62,12 @@ Parameters:
 | [](api/spreadsheet_setstyle_method.md)       | @getshort(api/spreadsheet_setstyle_method.md)       |
 | [](api/spreadsheet_setvalidation_method.md)  | @getshort(api/spreadsheet_setvalidation_method.md)  |
 | [](api/spreadsheet_setvalue_method.md)       | @getshort(api/spreadsheet_setvalue_method.md)       |
+| [](api/spreadsheet_showcols_method.md)       | @getshort(api/spreadsheet_showcols_method.md)       |
+| [](api/spreadsheet_showrows_method.md)       | @getshort(api/spreadsheet_showrows_method.md)       |
 | [](api/spreadsheet_startedit_method.md)      | @getshort(api/spreadsheet_startedit_method.md)      |
 | [](api/spreadsheet_undo_method.md)           | @getshort(api/spreadsheet_undo_method.md)           |
+| [](api/spreadsheet_unfreezecols_method.md)   | @getshort(api/spreadsheet_unfreezecols_method.md)   |
+| [](api/spreadsheet_unfreezerows_method.md)   | @getshort(api/spreadsheet_unfreezerows_method.md)   |
 | [](api/spreadsheet_unlock_method.md)         | @getshort(api/spreadsheet_unlock_method.md)         |
 
 ## Spreadsheet events
@@ -70,6 +78,7 @@ Parameters:
 | [](api/spreadsheet_afterclear_event.md)         | @getshort(api/spreadsheet_afterclear_event.md)         |
 | [](api/spreadsheet_aftercolumnadd_event.md)     | @getshort(api/spreadsheet_aftercolumnadd_event.md)     |
 | [](api/spreadsheet_aftercolumndelete_event.md)  | @getshort(api/spreadsheet_aftercolumndelete_event.md)  |
+| [](api/spreadsheet_afterdataloaded_event.md)    | @getshort(api/spreadsheet_afterdataloaded_event.md)    |
 | [](api/spreadsheet_aftereditend_event.md)       | @getshort(api/spreadsheet_aftereditend_event.md)       |
 | [](api/spreadsheet_aftereditstart_event.md)     | @getshort(api/spreadsheet_aftereditstart_event.md)     |
 | [](api/spreadsheet_afterfocusset_event.md)      | @getshort(api/spreadsheet_afterfocusset_event.md)      |
@@ -113,7 +122,6 @@ Parameters:
 | [](api/spreadsheet_exportmodulepath_config.md) | @getshort(api/spreadsheet_exportmodulepath_config.md) |
 | [](api/spreadsheet_formats_config.md)          | @getshort(api/spreadsheet_formats_config.md)          |
 | [](api/spreadsheet_importmodulepath_config.md) | @getshort(api/spreadsheet_importmodulepath_config.md) |
-| [](api/spreadsheet_leftsplit_config.md)        | @getshort(api/spreadsheet_leftsplit_config.md)        |
 | [](api/spreadsheet_localization_config.md)     | @getshort(api/spreadsheet_localization_config.md)     |
 | [](api/spreadsheet_menu_config.md)             | @getshort(api/spreadsheet_menu_config.md)             |
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(api/spreadsheet_multisheets_config.md)      |
@@ -121,7 +129,7 @@ Parameters:
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
 | [](api/spreadsheet_timeformat_config.md)       | @getshort(api/spreadsheet_timeformat_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
-| [](api/spreadsheet_topsplit_config.md)         | @getshort(api/spreadsheet_topsplit_config.md)         |
+
 
 ## Selection methods
 
