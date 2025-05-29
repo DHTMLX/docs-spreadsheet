@@ -43,17 +43,17 @@ and
 </html>
 ~~~
 
-### Installing Spreadsheet via npm and yarn
+### Installing Spreadsheet via npm or yarn
 
 You can import JavaScript Spreadsheet into your project using the `yarn` or `npm` package manager.
 
-#### Installing trial Spreadsheet via npm and yarn
+#### Installing trial Spreadsheet via npm or yarn
 
 :::info
 If you want to use the trial version of Spreadsheet, download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Spreadsheet is available 30 days only.
 :::
 
-#### Installing PRO Spreadsheet via npm and yarn
+#### Installing PRO Spreadsheet via npm or yarn
 
 :::info
 You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Spreadsheet license is active.
