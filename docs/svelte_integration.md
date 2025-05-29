@@ -58,7 +58,7 @@ Now you should get the DHTMLX Spreadsheet source code. First of all, stop the ap
 
 ### Step 1. Package installation
 
-Download the [**trial Spreadsheet package**](/how_to_start/#installing-spreadsheet-via-npm-and-yarn) and follow steps mentioned in the README file. Note that trial Spreadsheet is available 30 days only.
+Download the [**trial Spreadsheet package**](/how_to_start/#installing-spreadsheet-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Spreadsheet is available 30 days only.
 
 ### Step 2. Component creation
 
