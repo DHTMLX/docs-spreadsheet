@@ -8,6 +8,23 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.1 
+
+Released on June 27, 2025
+
+### Fixes
+
+- The copy/paste script error
+- The error that occurred on deleting a row with the two or more last rows selected in the sheet
+- The issue with warning displayed on the toolbar customization
+- The issue with missing localization for the datepicker
+- The issue with unnecessary displaying of the vertical scroll in the toolbar 
+- Math fixes for correct calculations in formulas
+
+### Updates
+
+- The possibility to remove several columns/rows in one operation via the context menu
+
 ## Version 5.2
 
 Released on May 20, 2025

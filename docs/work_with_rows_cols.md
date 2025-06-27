@@ -50,6 +50,10 @@ To remove a row, take the following steps:
 
 ![Removing rows context menu](assets/remove_row_context_menu.png)
 
+:::note
+To remove several rows at once: select the rows, right-click to call the context menu and choose *Rows -> Remove rows [ids]*.
+:::
+
 ### Adding columns
 
 To add a new column, take the following steps:
@@ -89,6 +93,10 @@ To remove a column, take the following steps:
 - or right-click the column or a cell in the column and choose *Columns -> Remove column*
 
 ![Adding columns context menu](assets/remove_column_context_menu.png)
+
+:::note
+To remove several columns at once: select the columns, right-click to call the context menu and choose *Columns -> Remove columns [ids]*.
+:::
 
 ## AutoFit column width
 
