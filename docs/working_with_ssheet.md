@@ -31,7 +31,7 @@ To add/delete a column, use the related API methods:
 - [](api/spreadsheet_addcolumn_method.md)
 - [](api/spreadsheet_deletecolumn_method.md)
 
-Pass to the methods the id of the cell that contains the id of a column that should be added.
+Pass to the methods the id of the cell that contains the id of a column that should be added/deleted.
 
 ~~~jsx
 // adds an empty "C" column 
@@ -42,6 +42,10 @@ spreadsheet.deleteColumn("C1");
 
 When a new column is added, neighboring columns are moved to the right.
 
+:::note
+You can delete several columns by providing a range of cells' ids as a parameter of the `deleteColumn()` method, e.g.: "A1:C3".
+::: 
+
 ### Rows
 
 To add/delete a row, use the API methods below:
@@ -49,7 +53,7 @@ To add/delete a row, use the API methods below:
 - [](api/spreadsheet_addrow_method.md)
 - [](api/spreadsheet_deleterow_method.md)
 
-Pass to the methods the id of the cell that contains the id of a row that should be added.
+Pass to the methods the id of the cell that contains the id of a row that should be added/deleted.
 
 ~~~jsx
 // adds an empty second row
@@ -59,6 +63,10 @@ spreadsheet.deleteRow("A2");
 ~~~
 
 When a new row is added, neighboring rows are moved one cell down.
+
+:::note
+You can delete several rows by providing a range of cells' ids as a parameter of the `deleteRow()` method, e.g.: "A1:C3".
+::: 
 
 ## Autofit column width
 

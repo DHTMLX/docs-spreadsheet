@@ -34,4 +34,8 @@ spreadsheet.parse(data);
 spreadsheet.deleteRow("G2");
 ~~~
 
+:::note
+You can delete several rows by providing a range of cells' ids as a parameter of the method, e.g.: "A1:C3".
+:::
+
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)
