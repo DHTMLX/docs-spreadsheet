@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 5.2.1 
 
-Released on June 27, 2025
+Released on June 30, 2025
 
 ### Fixes
 
