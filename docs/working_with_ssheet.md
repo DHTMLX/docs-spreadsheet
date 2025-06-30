@@ -42,13 +42,6 @@ spreadsheet.deleteColumn("C1");
 
 When a new column is added, neighboring columns are moved to the right.
 
-To delete several adjacent columns, pass the range of cells' ids that contain the ids of the columns that should be deleted. For example:
-
-~~~jsx
-// removes the "A" and "B" columns
-spreadsheet.deleteColumn("A1:B1");
-~~~   
-
 :::note
 You can delete several columns by providing a range of cells' ids as a parameter of the `deleteColumn()` method, e.g.: "A1:C3".
 ::: 
