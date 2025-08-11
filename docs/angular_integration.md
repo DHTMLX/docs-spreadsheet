@@ -7,7 +7,7 @@ description: You can learn about the Angular integration of the DHTMLX JavaScrip
 # Integration with Angular
 
 :::tip
-You should be familiar with the basic concepts and patterns of **Angular** to use this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.io/docs).
+You should be familiar with the basic concepts and patterns of **Angular** to use this documentation. To refresh your knowledge, please refer to the [**Angular documentation**](https://angular.dev/overview).
 :::
 
 DHTMLX Spreadsheet is compatible with **Angular**. We have prepared code examples on how to use DHTMLX Spreadsheet with **Angular**. For more information, refer to the corresponding [**Example on GitHub**](https://github.com/DHTMLX/angular-spreadsheet-demo).
@@ -15,7 +15,7 @@ DHTMLX Spreadsheet is compatible with **Angular**. We have prepared code example
 ## Creating a project
 
 :::info
-Before you start to create a new project, install [**Angular CLI**](https://angular.io/cli) and [**Node.js**](https://nodejs.org/en/).
+Before you start to create a new project, install [**Angular CLI**](https://angular.dev/tools/cli) and [**Node.js**](https://nodejs.org/en/).
 :::
 
 Create a new **my-angular-spreadsheet-app** project using Angular CLI. Run the following command for this purpose:
