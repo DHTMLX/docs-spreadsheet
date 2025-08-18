@@ -8,9 +8,30 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.2 
+
+Released on August 18, 2025
+
+### Updates
+
+- Enhanced `setValidation()` for the type-ahead filtering in the built-in drop-down editor
+- Added export/import support for hidden/frozen columns/rows, the data validation select box and Excel links in .xlsx files
+
+### Fixes
+
+- The problem with unmerging spanned cells in frozen columns/rows
+- The issue with applying built-in themes
+- The issue with Chinese input
+- The issue with Japanese input on MacOS: autocomplete confirm causes the editor closing
+- The problem with compiling the `spreadsheet.d.ts` file
+
 ## Version 5.2.1 
 
 Released on June 30, 2025
+
+### Updates
+
+- The possibility to remove several columns/rows in one operation via the context menu
 
 ### Fixes
 
@@ -20,10 +41,6 @@ Released on June 30, 2025
 - The issue with missing localization for the datepicker
 - The issue with unnecessary displaying of the vertical scroll in the toolbar 
 - Math fixes for correct calculations in formulas
-
-### Updates
-
-- The possibility to remove several columns/rows in one operation via the context menu
 
 ## Version 5.2
 
