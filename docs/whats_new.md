@@ -8,6 +8,15 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.3
+
+Released on September 10, 2025
+
+### Fixes
+
+- Incorrect alignment of numbers in cells when inserting arrays
+- Improved input in the Asian languages
+
 ## Version 5.2.2 
 
 Released on August 18, 2025
