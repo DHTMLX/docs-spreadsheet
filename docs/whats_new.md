@@ -8,6 +8,14 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.4 
+
+Released on September 24, 2025
+
+### Fixes
+
+- Added export/import support for multiline cells
+
 ## Version 5.2.3
 
 Released on September 10, 2025
