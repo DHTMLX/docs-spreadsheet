@@ -8,6 +8,14 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.5 
+
+Released on October 23, 2025
+
+### Fixes
+
+- The issue with the row height decreasing on applying the "Wrap" option to the content that fits the column width
+
 ## Version 5.2.4 
 
 Released on September 24, 2025
