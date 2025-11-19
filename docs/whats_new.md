@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 5.2.6
 
-Released on November 18, 2025
+Released on November 19, 2025
 
 ### Fixes
 
@@ -18,7 +18,6 @@ Released on November 18, 2025
 - Incorrect displaying of column/row labels in the column context menu while managing columns
 - The sheet structure breaking when freezing a range that contains merged cells
 - Improved keyboard navigation in sheets with spanned cells
-- Export to Excel fails when a sheet contains a cell with a data-validation list
 
 ## Version 5.2.5 
 
