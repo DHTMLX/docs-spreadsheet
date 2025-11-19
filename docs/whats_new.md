@@ -8,6 +8,17 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.6
+
+Released on November 19, 2025
+
+### Fixes
+
+- An extra DOM element appearing during the import of an .xlsx file that contains a cell with a wrapped text
+- Incorrect displaying of column/row labels in the column context menu while managing columns
+- The sheet structure breaking when freezing a range that contains merged cells
+- Improved keyboard navigation in sheets with spanned cells
+
 ## Version 5.2.5 
 
 Released on October 23, 2025
