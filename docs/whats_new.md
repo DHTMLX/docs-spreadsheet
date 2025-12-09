@@ -8,6 +8,16 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.7 
+
+Released on December 9, 2025
+
+### Fixes
+
+- Export to Excel failing when a sheet contains a cell with a data-validation list
+- The issue where a dropdown with a data-validation list stops working when the initial cell value is `%`
+- The problem with the `INDEX/MATCH` formula breaking after setting focus in the formula bar
+
 ## Version 5.2.6
 
 Released on November 19, 2025
