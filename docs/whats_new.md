@@ -8,6 +8,15 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.8 
+
+Released on December 15, 2025
+
+### Fixes
+
+- The problem with losing focus when selecting another cell during formula editing
+- The issues with keyboard navigation
+
 ## Version 5.2.7 
 
 Released on December 9, 2025
