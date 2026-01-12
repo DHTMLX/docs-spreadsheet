@@ -8,6 +8,16 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 5.2.9 
+
+Released on January 8, 2026
+
+### Fixes
+
+- Editor dropdown filtering now uses `startsWith` instead of `includes` when typing in an open editor
+- Excel cell borders are now preserved after export and import
+- Prevent font size overriding when pasting from external tables
+
 ## Version 5.2.8 
 
 Released on December 15, 2025
