@@ -44,4 +44,4 @@ spreadsheet.parse({
 
 **Change log:** Added in v4.3
 
-**Related articles:** [Time format](number_formatting.md/#time-format)
+**Related articles:** [Time format](/number_formatting/#time-format)

@@ -8,7 +8,7 @@ description: You can explore how to configure themes in the documentation of the
 
 ## Configuring all themes
 
-You may notice that CSS variables of the [default](themes.md/#light-theme-default) theme include variables of the color scheme:
+You may notice that CSS variables of the [default](/themes/#light-theme-default) theme include variables of the color scheme:
 
 ~~~css
 --dhx-h-primary: 200;

@@ -95,7 +95,7 @@ If you need to create a data set *for one sheet* only, specify data as an **arra
 - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
 - `value` - (required) the value of a cell
 - `css` - (optional) the name of the CSS class
-- `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+- `format` - (optional) the name of the [default number format](/number_formatting/#default-number-formats) or of a [custom format](/number_formatting/#formats-customization) that you've added to apply to the cell value
 - `editor` - (optional) an object with configuration settings for the editor of a cell:
     - `type` - (required) the type of the cell editor: "select"
     - `options` - (required) either a range of cells ("A1:B8") or an array of string values
@@ -121,7 +121,7 @@ If you need to create a data set *for several sheets* at once, specify data as a
         - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
         - `value` - (required) the value of a cell
         - `css` - (optional) the name of the CSS class
-        - `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+        - `format` - (optional) the name of the [default number format](number_formatting/#default-number-formats) or of a [custom format](/number_formatting/#formats-customization) that you've added to apply to the cell value
         - `editor` - (optional) an object with configuration settings for the editor of a cell:
             - `type` - (required) the type of the cell editor: "select"
             - `options` - (required) either a range of cells ("A1:B8") or an array of string values

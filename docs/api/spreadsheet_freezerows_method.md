@@ -27,7 +27,7 @@ spreadsheet.freezeRows("B2"); // the rows up to the "2" row will be fixed
 spreadsheet.freezeRows("sheet2!B2"); // the rows up to the "2" row in "sheet2" will be fixed
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](/working_with_ssheet/#freezingunfreezing-rows-and-columns)
 
 **Related API:** [`unfreezeRows()`](/api/spreadsheet_unfreezerows_method)
 

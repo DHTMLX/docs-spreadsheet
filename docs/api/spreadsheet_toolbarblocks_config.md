@@ -55,7 +55,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 ~~~
 
-Check how you can [customize the toolbar](customization.md/#toolbar).
+Check how you can [customize the toolbar](/customization/#toolbar).
 
 **Change log:**
 
@@ -63,7 +63,7 @@ Check how you can [customize the toolbar](customization.md/#toolbar).
 - The *"actions"* block was added in v5.0 
 
 **Related articles:**
-- [Configuration](configuration.md#toolbar)
+- [Configuration](/configuration/#toolbar)
 - [Customization](/customization)
 
 **Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)

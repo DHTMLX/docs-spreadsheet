@@ -115,7 +115,7 @@ Released on May 20, 2025
 
 ### Breaking changes
 
-The new release introduces some changes to the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md/#51---52) to keep in step with the latest version.
+The new release introduces some changes to the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](/migration/#51---52) to keep in step with the latest version.
 
 ### Deprecated
 
@@ -124,22 +124,22 @@ The new release introduces some changes to the freezing/unfreezing functionality
 ### New functionality
 
 - Editing cells:
-    - the ability to [create a styled border for a group of cells via UI](data_formatting.md/#styled-borders-for-cells)
+    - the ability to [create a styled border for a group of cells via UI](/data_formatting/#styled-borders-for-cells)
 - Freezing/unfreezing columns/rows:
-    - the ability to freeze/unfreeze columns and rows via [UI](work_with_rows_cols.md/#freezingunfreezing-rows-and-columns)
-    - the ability to freeze/unfreeze columns and rows via [API](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)
+    - the ability to freeze/unfreeze columns and rows via [UI](/work_with_rows_cols/#freezingunfreezing-rows-and-columns)
+    - the ability to freeze/unfreeze columns and rows via [API](/working_with_ssheet/#freezingunfreezing-rows-and-columns)
         - new methods: [`freezeCols()`](/api/spreadsheet_freezecols_method), [`unfreezeCols()`](/api/spreadsheet_unfreezecols_method), [`freezeRows()`](/api/spreadsheet_freezerows_method), [`unfreezeRows()`](/api/spreadsheet_unfreezerows_method)
-        - new action: [`toggleFreeze`](/api/overview/actions_overview.md/#list-of-actions) 
+        - new action: [`toggleFreeze`](/api/overview/actions_overview/#list-of-actions) 
         - new `freeze` property for the *sheets* object of the [`parse()`](/api/spreadsheet_parse_method) method
 - Hiding/showing columns/rows:
-    - the ability to hide/show columns and rows via [UI](work_with_rows_cols.md/#hidingshowing-rows-and-columns)
-    - the ability to hide/show columns and rows via [API](working_with_ssheet.md/#hidingshowing-rows-and-columns)
+    - the ability to hide/show columns and rows via [UI](/work_with_rows_cols/#hidingshowing-rows-and-columns)
+    - the ability to hide/show columns and rows via [API](/working_with_ssheet/#hidingshowing-rows-and-columns)
         - new methods: [`hideCols()`](/api/spreadsheet_hidecols_method), [`showCols()`](/api/spreadsheet_showcols_method), [`hideRows()`](/api/spreadsheet_hiderows_method), [`showRows()`](/api/spreadsheet_showrows_method)
         - new action: [`toggleVisibility`](/api/overview/actions_overview/#list-of-actions) 
         - new `hidden` property for the *cols* and *rows* configs of the *sheets* object of the [`parse()`](/api/spreadsheet_parse_method) method
 - Working with formulas:
-    - [popup with descriptions for formulas](functions.md/#popup-with-formula-description) is added
-    - new locale: [`formulas`](localization.md/#default-locale-for-formulas) is added
+    - [popup with descriptions for formulas](/functions/#popup-with-formula-description) is added
+    - new locale: [`formulas`](/localization/#default-locale-for-formulas) is added
 - File import: 
     - new [`afterDataLoaded`](/api/spreadsheet_afterdataloaded_event) event is added to indicate that data loading into Spreadsheet has been completed
     
@@ -254,10 +254,10 @@ Released on December 7, 2023
 ### New functionality
 
 - [Support for new themes](/themes): Dark, Light High Contrast and Dark High Contrast
-- Extended [support for number, date, time and currency format localization](spreadsheet/number_formatting.md/#number-date-time-currency-localization)
+- Extended [support for number, date, time and currency format localization](/number_formatting/#number-date-time-currency-localization)
 - [Integration with the Svelte framework](/svelte_integration)
 - Ability to [provide a custom name for an exported .xlsx file](/loading_data/#how-to-set-a-custom-name-for-an-exported-file)
-- Ability to [save the "locked" cell status](/loading_data#setting-the-locked-state-for-a-cell) and [specify a link for a cell](/loading_data/#adding-a-link-into-a-cell) in a data set
+- Ability to [save the "locked" cell status](/loading_data/#setting-the-locked-state-for-a-cell) and [specify a link for a cell](/loading_data/#adding-a-link-into-a-cell) in a data set
 
 ### Updates
 
@@ -457,7 +457,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 - [The ability to split long text into multiple lines](data_formatting.md#wrap-text-in-a-cell) (*Text wrapping* button is added into the toolbar)
 - Significantly extended list of supported [Date, Financial, Math, String functions](functions.md#information-functions) (marked with *added in v4.3* label)
 - Support for [Lookup functions](functions.md#lookup-functions)
-- [Time format](number_formatting.md/#default-number-formats) is added
+- [Time format](/number_formatting/#default-number-formats) is added
 - The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](/api/spreadsheet_timeformat_config) property
 - The ability to enter time in a cell via a time picker
 - [Export to JSON](/api/export_json_method)
@@ -477,10 +477,10 @@ Released on November 29, 2021
 
 ### New functionality
 
-- Support for [date](functions.md/#date-functions), [financial](functions.md/#financial-functions), [information](functions.md/#information-functions), [regex](functions.md/#regex-functions), and [other](functions.md/#other-functions) functions
-- Support for [boolean operators](functions.md/#boolean-operators)
+- Support for [date](/functions/#date-functions), [financial](/functions/#financial-functions), [information](/functions/#information-functions), [regex](/functions/#regex-functions), and [other](/functions/#other-functions) functions
+- Support for [boolean operators](/functions/#boolean-operators)
 - The ability to resize rows from UI
-- New [Vertical align](data_formatting.md/#alignment) button is added into the toolbar
+- New [Vertical align](/data_formatting/#alignment) button is added into the toolbar
 - The ability to set the active sheet via the [`setActiveSheet()`](/api/spreadsheet_setactivesheet_method) method
 - The ability to remove selection from the specified cells via the [`removeSelectedCell()`](/api/selection_removeselectedcell_method) method of the Selection object
 - The ability to clear a spreadsheet or its sheet via the [`clear()`](/api/spreadsheet_clear_method) or [`clearSheet()`](/api/spreadsheet_clearsheet_method) method correspondingly
@@ -492,7 +492,7 @@ Released on November 29, 2021
 
 - Extended list of [locale options](/localization)
 - Extended list of [math](/functions/#math-functions) and [string](/functions/#string-functions) functions
-- The Align block of the Spreadsheet toolbar is updated. Check the details in the [Migration article](migration.md/#41---42)
+- The Align block of the Spreadsheet toolbar is updated. Check the details in the [Migration article](/migration/#41---42)
 - The [`parse()`](/api/spreadsheet_parse_method) and [`serialize()`](/api/spreadsheet_serialize_method) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet.
 
 ### Fixes

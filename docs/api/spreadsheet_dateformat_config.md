@@ -71,4 +71,4 @@ DHTMLX Spreadsheet uses the following characters for setting a date format:
 - From v4.3, it is possible to set the date as a *new Date()* object in the data set
 - Added in v4.2
 
-**Related articles:** [Date format](number_formatting.md/#date-format)
+**Related articles:** [Date format](/number_formatting/#date-format)

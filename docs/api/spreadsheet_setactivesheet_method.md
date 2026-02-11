@@ -32,6 +32,6 @@ spreadsheet.setActiveSheet("u1636003130922");
 
 **Change log:** Added in v4.2 
 
-**Related articles:** [Setting active sheet](working_with_sheets.md/#setting-active-sheet)
+**Related articles:** [Setting active sheet](/working_with_sheets/#setting-active-sheet)
 
 **Related sample:** [Spreadsheet. Set active sheet](https://snippet.dhtmlx.com/iowl449t)

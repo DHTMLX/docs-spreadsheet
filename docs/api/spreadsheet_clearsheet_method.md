@@ -34,7 +34,7 @@ spreadsheet.clearSheet();
 
 **Changelog:** Added in v4.2 
 
-**Related articles:** [Clearing sheets](working_with_sheets.md/#clearing-sheets)
+**Related articles:** [Clearing sheets](/working_with_sheets/#clearing-sheets)
 
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 

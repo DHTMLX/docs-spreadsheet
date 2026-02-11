@@ -153,7 +153,7 @@ At the moment, there is a set of events which must be used in an old way as they
 
 ## 4.1 -> 4.2
 
-In v4.2, the [Align](customization.md/#default-controls) block of the Spreadsheet toolbar is divided into two sub-blocks: Horizontal align and Vertical align. Thus, the list of ids of the default controls of the Align block is changed and extended:
+In v4.2, the [Align](/customization/#default-controls) block of the Spreadsheet toolbar is divided into two sub-blocks: Horizontal align and Vertical align. Thus, the list of ids of the default controls of the Align block is changed and extended:
 
 `Before v4.2`:
 
