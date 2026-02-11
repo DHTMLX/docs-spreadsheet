@@ -17,11 +17,11 @@ There is a [User Guide](guides/#user-guides) provided to make work with Spreadsh
 
 ### Toolbar
 
-The **Toolbar** section is rather flexible. It contains several default blocks of controls: "undo", "colors", "decoration", "align", "cell", "format", "actions". You can [change the toolbar structure](configuration.md#toolbar) and add more blocks, or set your own order of the blocks.
+The **Toolbar** section is rather flexible. It contains several default blocks of controls: "undo", "colors", "decoration", "align", "cell", "format", "actions". You can [change the toolbar structure](/configuration/#toolbar) and add more blocks, or set your own order of the blocks.
 
 ![Spreadsheet Toolbar](assets/overview_toolbar.png)
 
-It is also possible to [customize the toolbar](customization.md#toolbar) by adding your own controls and updating the controls' configuration.  
+It is also possible to [customize the toolbar](/customization/#toolbar) by adding your own controls and updating the controls' configuration.  
 
 ### Editing line
 
@@ -32,7 +32,7 @@ The **editing line** can be used for two purposes:
 
 ![Spreadsheet Editing Line](assets/overview_editline.png)
 
-You can switch the editing line off, if necessary via the corresponding [configuration option](configuration.md#editing-bar).
+You can switch the editing line off, if necessary via the corresponding [configuration option](/configuration/#editing-bar).
 
 ### Grid
 
@@ -46,17 +46,17 @@ The **Context menu** section includes 5 items **Lock**, **Clear**, **Columns**, 
 
 ![Spreadsheet Context Menu](assets/overview_contextmenu.png)
 
-The [structure of Context menu is customizable](customization.md#context-menu) as well. You can add custom controls, update the controls' configuration and remove unnecessary controls.
+The [structure of Context menu is customizable](/customization/#context-menu) as well. You can add custom controls, update the controls' configuration and remove unnecessary controls.
 
 ### Menu
 
 The **Menu** section contains several blocks that combine most frequently used options from the Toolbar and Context Menu to provide quick and handy access to them.
 
-By default the **Menu** section is hidden, but you can switch it on via the related [configuration option](configuration.md#menu).
+By default the **Menu** section is hidden, but you can switch it on via the related [configuration option](/configuration/#menu).
 
 ![Spreadsheet Menu](assets/overview_menu.png)
 
-You can [modify the structure of the menu](customization.md#menu) by using custom controls, updating the controls' configuration and removing unnecessary controls.
+You can [modify the structure of the menu](/customization/#menu) by using custom controls, updating the controls' configuration and removing unnecessary controls.
 
 ## What's next
 

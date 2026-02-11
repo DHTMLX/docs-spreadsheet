@@ -38,6 +38,6 @@ spreadsheet.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-The list of events is available in the [API section](/api/api_overview.md#spreadsheet-events).
+The list of events is available in the [API section](/api/api_overview/#spreadsheet-events).
 
 {{note The names of events are case-insensitive.}}

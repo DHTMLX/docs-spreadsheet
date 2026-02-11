@@ -14,7 +14,7 @@ This clear and comprehensive tutorial will guide your through the steps you need
 
 ## Step 1. Including source files
 
-Start from creating an HTML file and call it *index.html*. Then proceed to include Spreadsheet source files into the created file. [The detailed description of the DHTMLX Spreadsheet package is given here](initialization.md#including-source-files).
+Start from creating an HTML file and call it *index.html*. Then proceed to include Spreadsheet source files into the created file. [The detailed description of the DHTMLX Spreadsheet package is given here](/initialization/#including-source-files).
 
 There are two necessary files:
 

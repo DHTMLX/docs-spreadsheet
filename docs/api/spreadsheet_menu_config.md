@@ -31,6 +31,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Related articles:** [Configuration](configuration.md#menu)
+**Related articles:** [Configuration](/configuration/#menu)
 
 **Related sample:** [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)

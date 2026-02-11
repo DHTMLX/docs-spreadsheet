@@ -57,4 +57,4 @@ spreadsheet.parse(dataset);
 **Change log:** 
 - Added in v5.1
 
-**Related article:** [Number, date, time, currency localization](spreadsheet/number_formatting.md#number-date-time-currency-localization)
+**Related article:** [Number, date, time, currency localization](/number_formatting/#number-date-time-currency-localization)

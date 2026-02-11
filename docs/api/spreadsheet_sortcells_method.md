@@ -41,4 +41,4 @@ spreadsheet.sortCells("Income!B2:B11, Report!B2:B11, Expenses!C2:C11", 1);
 
 **Related sample:** [Spreadsheet. Initialization with multiple sheets](https://snippet.dhtmlx.com/ihtkdcoc)
 
-**Related articles:** [Sorting data](working_with_ssheet.md#sorting-data)
+**Related articles:** [Sorting data](/working_with_ssheet/#sorting-data)

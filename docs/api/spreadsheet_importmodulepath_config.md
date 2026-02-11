@@ -40,6 +40,6 @@ To import files you need to:
 
 By default the link to CDN is used.
 
-**Related articles:** [Data loading and export](loading_data.md#loading-excel-file-xlsx)
+**Related articles:** [Data loading and export](/loading_data/#loading-excel-file-xlsx)
 
 **Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)

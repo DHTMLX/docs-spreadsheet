@@ -185,7 +185,7 @@ spreadsheet.load("../common/data.json");
 
 
 :::info
-If you need to provide end users with the ability to import a JSON file into the spreadsheet via the File Explorer, read [Loading JSON files](/api/spreadsheet_load_method.md#loading-json-files).
+If you need to provide end users with the ability to import a JSON file into the spreadsheet via the File Explorer, read [Loading JSON files](/api/spreadsheet_load_method/#loading-json-files).
 :::
 
 ### Loading CSV data
@@ -264,7 +264,7 @@ spreadsheet.parse(data);
 
 **Related sample**: [Spreadsheet. Custom Cells Count](https://snippet.dhtmlx.com/vc3mstsw)
 
-For details on how to load multiple sheets into the spreadsheet, see the [Work with Sheets](working_with_sheets.md#loading-multiple-sheets) article.
+For details on how to load multiple sheets into the spreadsheet, see the [Work with Sheets](/working_with_sheets/#loading-multiple-sheets) article.
 
 ## Saving and restoring state
 

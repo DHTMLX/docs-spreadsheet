@@ -32,8 +32,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 ~~~
 
 **Related articles:**
-- [Configuration](configuration.md#read-only-mode)
-- [Customization](customization.md#custom-read-only-mode)
+- [Configuration](/configuration/#read-only-mode)
+- [Customization](/customization/#custom-read-only-mode)
 
 **Related sample:** [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
 

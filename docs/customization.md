@@ -410,7 +410,7 @@ spreadsheet.contextMenu.data.remove("lock");
 
 ## Custom read-only mode
 
-Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
+Besides applying the [read-only mode](/configuration/#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
 - [](/api/spreadsheet_beforeeditstart_event)
 - [](/api/spreadsheet_beforestylechange_event)

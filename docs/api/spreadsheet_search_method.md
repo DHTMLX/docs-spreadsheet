@@ -44,4 +44,4 @@ spreadsheet.search("feb", true, "Income"); // -> ['C1']
 
 **Change log:** Added in v5.0
 
-**Related article:** [Work with Spreadsheet](working_with_ssheet.md#searching-for-data)
+**Related article:** [Work with Spreadsheet](/working_with_ssheet/#searching-for-data)

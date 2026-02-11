@@ -49,7 +49,7 @@ The menu of the Spreadsheet is hidden by default. You can switch it on/off via t
 
 It is also possible to enable the read-only mode to prevent editing of Spreadsheet cells via the [](/api/spreadsheet_readonly_config) configuration option.
 
-You can also [customize the readonly behavior of Spreadsheet](customization.md#custom-read-only-mode).
+You can also [customize the readonly behavior of Spreadsheet](/customization/#custom-read-only-mode).
 
 <iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 

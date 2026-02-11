@@ -358,8 +358,8 @@ Released on February 14, 2023
 - Fix the issue which caused the results of filtering to be changed after sorting of data
 - Fix the issue with display of the 12-hour format in the timepicker 
 - Fix the issue with removing of link styles after the cell was auto-filled
-- Now it is possible to add several [custom formats for dates](spreadsheet/number_formatting.md#formats-customization)
-- Now it is possible to remove columns and rows even if they belong to the [limited columns and rows](spreadsheet/configuration.md#number-of-rows-and-columns)
+- Now it is possible to add several [custom formats for dates](/number_formatting/#formats-customization)
+- Now it is possible to remove columns and rows even if they belong to the [limited columns and rows](/configuration/#number-of-rows-and-columns)
 
 ## Version 5.0.1
 
@@ -391,34 +391,34 @@ The new release introduces some changes to the [`toolbarBlocks`](/api/spreadshee
 
 - Data search:
     - the ability to search for data via [UI](/data_search)
-    - the ability to search for data via [API](working_with_ssheet.md#searching-for-data):
+    - the ability to search for data via [API](/working_with_ssheet/#searching-for-data):
         - new methods: [`search()`](/api/spreadsheet_search_method) and [`hideSearch()`](/api/spreadsheet_hidesearch_method)
 - Filtering data
     - the ability to filter data via [UI](/filtering_data)
     - the ability to filter data via [API](/working_with_ssheet#filtering-data):
         - new methods: [`setFilter()`](/api/spreadsheet_setfilter_method) and [`getFilter()`](/api/spreadsheet_getfilter_method)
-        - new action: [`filter`](/api/overview/actions_overview.md#list-of-actions)
+        - new action: [`filter`](/api/overview/actions_overview/#list-of-actions)
 - Merging/splitting cells:
     - the ability to merge/split cells via [UI](/merge_cells)
-    - the ability to merge/split cells via [API](working_with_cells.md#merging-cells):
+    - the ability to merge/split cells via [API](/working_with_cells/#merging-cells):
         - new property of the sheet object : [`merged`](/api/spreadsheet_parse_method)
         - new method: [`mergeCells()`](/api/spreadsheet_mergecells_method)
         - new actions: [`merge`](/api/overview/actions_overview#list-of-actions) and [`unmerge`](/api/overview/actions_overview#list-of-actions)
 - AutoFit column width:
-    - the ability to autofit column width via [UI](work_with_rows_cols.md#autofit-column-width)   
-    - the ability to autofit column width via [API](working_with_ssheet.md#autofit-column-width):
+    - the ability to autofit column width via [UI](/work_with_rows_cols/#autofit-column-width)   
+    - the ability to autofit column width via [API](/working_with_ssheet/#autofit-column-width):
         - new method: [`fitColumn()`](/api/spreadsheet_fitcolumn_method)
-        - new action: [`fitColumn`](/api/overview/actions_overview#list-of-actions)
+        - new action: [`fitColumn`](/api/overview/actions_overview/#list-of-actions)
 - Inserting a hyperlink:
-    - the ability to insert a hyperlink into a cell via [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
-    - the ability to insert a hyperlink into a cell via [API](working_with_cells.md#inserting-a-hyperlink-into-a-cell):
+    - the ability to insert a hyperlink into a cell via [UI](/work_with_cells/#inserting-a-hyperlink-into-a-cell)
+    - the ability to insert a hyperlink into a cell via [API](/working_with_cells/#inserting-a-hyperlink-into-a-cell):
         - new method: [`insertLink()`](/api/spreadsheet_insertlink_method)
         - new action: [`insertLink`](/api/overview/actions_overview#list-of-actions)
 - [Strikethrough format of data](/data_formatting#color-and-style)
 
 ### Updates
 
-- [Extended list of locale options](localization.md#default-locale)
+- [Extended list of locale options](/localization/#default-locale)
 - [Extended list of hotkey combinations](/hotkeys):
     - for data search
         - `Ctrl (Cmd) + F`
@@ -447,21 +447,21 @@ Released on May 23, 2022
 
 ### Breaking changes
 
-Version 4.3 doesn't bring any breaking changes but introduces a new way of handling actions performed in the spreadsheet. Check the details in the [Migration article](migration.md#42---43).
+Version 4.3 doesn't bring any breaking changes but introduces a new way of handling actions performed in the spreadsheet. Check the details in the [Migration article](/migration/#42---43).
 
 ### New functionality
 
 - The ability to add a drop-down list of options into the cells via the [`setValidation()`](/api/spreadsheet_setvalidation_method) method or via [UI](/work_with_cells#using-drop-down-lists-in-cells)
 - The ability to fix rows on the top of the spreadsheet via the `topSplit` property
 - The ability to sort data via the [`sortCells()`](/api/spreadsheet_sortcells_method) method or via [UI](/sorting_data)
-- [The ability to split long text into multiple lines](data_formatting.md#wrap-text-in-a-cell) (*Text wrapping* button is added into the toolbar)
-- Significantly extended list of supported [Date, Financial, Math, String functions](functions.md#information-functions) (marked with *added in v4.3* label)
-- Support for [Lookup functions](functions.md#lookup-functions)
+- [The ability to split long text into multiple lines](/data_formatting/#wrap-text-in-a-cell) (*Text wrapping* button is added into the toolbar)
+- Significantly extended list of supported [Date, Financial, Math, String functions](functions/#information-functions) (marked with *added in v4.3* label)
+- Support for [Lookup functions](/functions/#lookup-functions)
 - [Time format](/number_formatting/#default-number-formats) is added
 - The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](/api/spreadsheet_timeformat_config) property
 - The ability to enter time in a cell via a time picker
 - [Export to JSON](/api/export_json_method)
-- [Import from JSON](/api/spreadsheet_load_method.md#loading-json-files)
+- [Import from JSON](/api/spreadsheet_load_method/#loading-json-files)
 - New events are added: [beforeAction](/api/spreadsheet_beforeaction_event) and [afterAction](/api/spreadsheet_afteraction_event)
 - New [Actions system](/api/overview/actions_overview)
 
@@ -560,8 +560,8 @@ Released on March 24, 2021
 
 - New [multiSheets](/api/spreadsheet_multisheets_config) configuration option is added
 - The ability to [work with multiple sheets](/work_with_sheets) in the spreadsheet
-- The ability to use [cross-references in multiple sheets](work_with_sheets.md#cross-references-between-sheets)
-- The ability to [load several sheets](working_with_sheets.md#loading-multiple-sheets) into the spreadsheet at once
+- The ability to use [cross-references in multiple sheets](/work_with_sheets/#cross-references-between-sheets)
+- The ability to [load several sheets](/working_with_sheets/#loading-multiple-sheets) into the spreadsheet at once
 - New methods for working with [multiple sheets](/working_with_sheets) are added: [addSheet()](/api/spreadsheet_addsheet_method), [removeSheet()](/api/spreadsheet_removesheet_method), [getActiveSheet()](/api/spreadsheet_getactivesheet_method), [getSheets()](/api/spreadsheet_getsheets_method)
 - New events are added: [BeforeSheetAdd](/api/spreadsheet_beforesheetadd_event), [AfterSheetAdd](/api/spreadsheet_aftersheetadd_event), [BeforeSheetChange](/api/spreadsheet_beforesheetchange_event), [AfterSheetChange](/api/spreadsheet_aftersheetchange_event), [BeforeSheetRemove](/api/spreadsheet_beforesheetremove_event), [AfterSheetRemove](/api/spreadsheet_aftersheetremove_event), [BeforeSheetRename](/api/spreadsheet_beforesheetrename_event), [AfterSheetRename](/api/spreadsheet_aftersheetrename_event)
 - The ability to get the formula of a cell via the [getFormula()](/api/spreadsheet_getformula_method) method
@@ -640,8 +640,8 @@ Released on October 19, 2020
 - [Math functions](/functions)
 - [TypeScript Support](/using_typescript)
 - The ability to freeze columns on the left side of the spreadsheet via the `leftSplit` configuration property
-- [The Text format for displaying the content of a cell as text is added to default number formats](number_formatting.md#default-number-formats)
-- The ability to select multiple scattered ranges of cells by using ["Ctrl+Shift+Left Click"](hotkeys.md#selection) combination
+- [The Text format for displaying the content of a cell as text is added to default number formats](/number_formatting/#default-number-formats)
+- The ability to select multiple scattered ranges of cells by using ["Ctrl+Shift+Left Click"](/hotkeys/#selection) combination
 
 ### Fixes
 
@@ -690,10 +690,10 @@ Released on March 21, 2019
 
 ### New functionality
 
-- [Import from Excel](loading_data.md#loading-excel-file-xlsx)
-- [Export to Excel](loading_data.md#exporting-data)
+- [Import from Excel](/loading_data/#loading-excel-file-xlsx)
+- [Export to Excel](/loading_data/#exporting-data)
 - [Number formatting](/number_formatting)
-- [Auto filling of cells](/work_with_cells#auto-filling-cells-with-content)
+- [Auto filling of cells](/work_with_cells/#auto-filling-cells-with-content)
 
 ### Updates
 

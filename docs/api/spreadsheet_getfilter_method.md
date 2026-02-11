@@ -39,4 +39,4 @@ const filter = spreadsheet.getFilter(); // -> {cell:"A1:A8", rules: [{…}, {…
 
 **Change log:** Added in v5.0
 
-**Related article:** [Filtering data](working_with_ssheet.md#filtering-data)
+**Related article:** [Filtering data](/working_with_ssheet/#filtering-data)
