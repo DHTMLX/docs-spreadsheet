@@ -35,4 +35,4 @@ spreadsheet.events.on("afterFocusSet", function(cell){
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events.md)
+**Related articles:** [Event handling](/handling_events)

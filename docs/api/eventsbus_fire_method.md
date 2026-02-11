@@ -44,4 +44,4 @@ spreadsheet.events.on("CustomEvent", function(param1, param2){
 const res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
 ~~~
 
-**Related articles:** [Event Handling](handling_events.md)
+**Related articles:** [Event Handling](/handling_events)

@@ -37,6 +37,6 @@ spreadsheet.selection.removeSelectedCell("A3:A6,C2");
 
 **Change log:** Added in v4.2
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md)
+**Related articles:** [Work with Spreadsheet](/working_with_ssheet)
 
 **Related sample:** [Spreadsheet. Remove selection](https://snippet.dhtmlx.com/u4j76cuh)

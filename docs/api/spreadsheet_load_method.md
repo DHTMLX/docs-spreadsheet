@@ -99,4 +99,4 @@ Check the [example](https://snippet.dhtmlx.com/e3xct53l).
 
 **Changelog:** The ability to load a JSON file via the File Explorer was added in v4.3
 
-**Related articles:** [Data loading and export](loading_data.md)
+**Related articles:** [Data loading and export](/loading_data)

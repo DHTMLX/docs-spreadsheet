@@ -61,7 +61,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 ### Configuration properties
 
-See the full list of [properties](api/api_overview.md/#spreadsheet-properties) that you can specify in the Spreadsheet configuration object in the [Spreadsheet API overview](api/api_overview.md/#spreadsheet-properties) article.
+See the full list of [properties](/api/api_overview/#spreadsheet-properties) that you can specify in the Spreadsheet configuration object in the [Spreadsheet API overview](/api/api_overview/#spreadsheet-properties) article.
 
 You can set configuration options during initialization as the second parameter of the constructor:
 

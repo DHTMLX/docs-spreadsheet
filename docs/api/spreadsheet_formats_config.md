@@ -20,7 +20,7 @@ formats?: array;
 
 The **formats** property is an array of number format objects, each of which includes a set of properties:
 
-- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
+- **id** - the id of a format that is used to set format to a cell via the [](/api/spreadsheet_setformat_method) method
 - **mask** - a mask for a number format
 - **name** - the name of a format displayed in the toolbar and menu drop-down lists
 - **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
@@ -79,5 +79,5 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 - The "Text" format was added in v4.0
 
 **Related articles:** 
-- [Number formatting](number_formatting.md)
-- [Formats customization](number_formatting.md#formats-customization)
+- [Number formatting](/number_formatting)
+- [Formats customization](/number_formatting#formats-customization)

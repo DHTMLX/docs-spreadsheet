@@ -11,7 +11,7 @@ description: You can learn about the setValue method in the documentation of the
 @short: Sets a value for a cell
 
 :::info
-The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
+The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](/api/spreadsheet_parse_method) method.
 :::
 
 ### Usage

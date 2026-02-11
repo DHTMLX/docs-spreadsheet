@@ -18,7 +18,7 @@ spreadsheet.events.on("beforeAction", (actionName, config) => {
 });
 ~~~
 
-For more details about the new concept, see **[Spreadsheet actions](api/overview/actions_overview.md)**. 
+For more details about the new concept, see **[Spreadsheet actions](/api/overview/actions_overview)**. 
 :::
 
 ### Description
@@ -56,8 +56,8 @@ spreadsheet.events.on("beforeFormatChange", function(cell, format){
 ~~~
 
 **Related articles:** 
-- [Number formatting](number_formatting.md)
-- [Event handling](handling_events.md)
+- [Number formatting](/number_formatting)
+- [Event handling](/handling_events)
 
 **Related sample**: [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)
 

@@ -18,40 +18,40 @@ DHTMLX Spreadsheet provides a range of great features to build a perfect applica
 
 Discusses the main stages of installing and creating Spreadsheet on a page, adjusting its configuration and setting labels in the needed language.
 
-- [Initialization](initialization.md)
-- [Configuration](configuration.md)
-- [Localization](localization.md)
+- [Initialization](/initialization)
+- [Configuration](/configuration)
+- [Localization](/localization)
 
 ### Exploring Spreadsheet features
 
 Shows the ways of loading data into Spreadsheet, handling events and using main functionality. It also dwells on the ways of customizing the main parts of Spreadsheet.
 
-- [Data loading and export](loading_data.md)
-- [Work with Spreadsheet](working_with_ssheet.md)
-- [Work with sheets](working_with_sheets.md)
-- [Work with cells](category/work-with-cells.md)
-- [Number formatting](number_formatting.md)
-- [Formulas and functions](functions.md)
-- [Event handling](handling_events.md)
-- [Customization](customization.md)
+- [Data loading and export](/loading_data)
+- [Work with Spreadsheet](/working_with_ssheet)
+- [Work with sheets](/working_with_sheets)
+- [Work with cells](/category/work-with-cells)
+- [Number formatting](/number_formatting)
+- [Formulas and functions](/functions)
+- [Event handling](/handling_events)
+- [Customization](/customization)
 
 ### Integrations with other frameworks
 
 Describes how to add DHTMLX Spreadsheet into apps based on other JavaScript frameworks.
 
-- [Integration with Angular](angular_integration.md)
-- [Integration with React](react_integration.md)
-- [Integration with Vue.js](vuejs_integration.md)
+- [Integration with Angular](/angular_integration)
+- [Integration with React](/react_integration)
+- [Integration with Vue.js](/vuejs_integration)
 
 ## User guides
 
 The User guides are provided to make work with Spreadsheet easy for your end users.
 
-- [Hot keys list](hotkeys.md)
-- [Work with sheets](work_with_sheets.md)
-- [Work with rows and columns](work_with_rows_cols.md)
-- [Work with cells](work_with_cells.md)
-- [Searching for data](data_search.md)
-- [Sorting data](sorting_data.md)
-- [Filtering data](filtering_data.md)
-- [Excel import/export](excel_import_export.md)
+- [Hot keys list](/hotkeys)
+- [Work with sheets](/work_with_sheets)
+- [Work with rows and columns](/work_with_rows_cols)
+- [Work with cells](/work_with_cells)
+- [Searching for data](/data_search)
+- [Sorting data](/sorting_data)
+- [Filtering data](/filtering_data)
+- [Excel import/export](/excel_import_export)

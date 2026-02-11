@@ -21,7 +21,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 ~~~
 
-- new API methods are introduced: [`freezeCols()`](api/spreadsheet_freezecols_method.md), [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md), [`freezeRows()`](api/spreadsheet_freezerows_method.md), [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md) 
+- new API methods are introduced: [`freezeCols()`](/api/spreadsheet_freezecols_method), [`unfreezeCols()`](/api/spreadsheet_unfreezecols_method), [`freezeRows()`](/api/spreadsheet_freezerows_method), [`unfreezeRows()`](/api/spreadsheet_unfreezerows_method) 
 
 ~~~jsx title="From v5.2" 
 // for rows
@@ -37,7 +37,7 @@ spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfroz
 spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
 ~~~
 
-- new action is added: [`toggleFreeze`](api/overview/actions_overview.md/#list-of-actions) 
+- new action is added: [`toggleFreeze`](/api/overview/actions_overview/#list-of-actions) 
 
 ~~~jsx title="From v5.2"
 // using the `toggleFreeze` action with the beforeAction/afterAction events
@@ -54,7 +54,7 @@ spreadsheet.events.on("beforeAction", (actionName, config) => {
 });
 ~~~
 
-- new `freeze` property for the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method is added. It allows fixing rows and columns for particular sheets in the dataset, while parsing data into Spreadsheet: 
+- new `freeze` property for the *sheets* object of the [`parse()`](/api/spreadsheet_parse_method) method is added. It allows fixing rows and columns for particular sheets in the dataset, while parsing data into Spreadsheet: 
 
 ~~~jsx {10-13} title="From v5.2"
 const data = {
@@ -81,7 +81,7 @@ spreadsheet.parse(data);
 
 ## 4.3 -> 5.0
 
-In v5.0, the *"help"* option of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.
+In v5.0, the *"help"* option of the [toolbarBlocks](/api/spreadsheet_toolbarblocks_config) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.
 
 ~~~jsx title="Before v5.0" {8}
 // default configuration 
@@ -117,7 +117,7 @@ Version 4.3 is the last version which provides IE support
 
 Version 4.3 brings a new conception of tracking and handling the actions which are performed when you change something in the spreadsheet. 
 
-The new [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using only these two events. For instance: 
+The new [beforeAction](/api/spreadsheet_beforeaction_event) and [afterAction](/api/spreadsheet_afteraction_event) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using only these two events. For instance: 
 
 ~~~jsx
 spreadsheet.events.on("BeforeAction", (actionName, config) => {
@@ -143,9 +143,9 @@ spreadsheet.events.on("AfterAction", (actionName, config) => {
 });
 ~~~
 
-This way will reduce the size of your code because you won't need to add sets of paired [**before-** and **after-**](api/overview/events_overview.md) events for each separate action. 
+This way will reduce the size of your code because you won't need to add sets of paired [**before-** and **after-**](/api/overview/events_overview) events for each separate action. 
 
-Still, the old approach continues working as before. For more details, check [Spreadsheet actions](api/overview/actions_overview.md).
+Still, the old approach continues working as before. For more details, check [Spreadsheet actions](/api/overview/actions_overview).
 
 :::info
 At the moment, there is a set of events which must be used in an old way as they can't be replaced with any actions: *beforeEditEnd, afterEditEnd, beforeEditStart,  afterEditStart, beforeFocusSet, afterFocusSet, beforeSheetChange, afterSheetChange, groupFill*.
@@ -204,16 +204,16 @@ const locale = {
 
 This list of changes will help you to migrate from the [previous version 2.1](https://docs.dhtmlx.com/spreadsheet__index.html) where DHTMLX Spreadsheet was PHP-based to the totally renewed version 3.0 in which the component is totally built on JavaScript. Check the list below to explore all the changes.
 
-{{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](api/api_overview.md).}}
+{{note The [API of version 2.1](https://docs.dhtmlx.com/spreadsheet__reference.html) is still available, but it is incompatible with the [API of version 3.0](/api/api_overview).}}
 
 ### Changed API
 
-- getStyle -> [spreadsheet.getStyle](api/spreadsheet_getstyle_method.md) - returns styles applied to a cell(s)
-- getValue -> [spreadsheet.getValue](api/spreadsheet_getvalue_method.md) - returns an object with the value(s) of a cell(s)
-- setStyle -> [spreadsheet.setStyle](api/spreadsheet_setstyle_method.md) - sets style for a cell or a range of cells
-- setValue -> [spreadsheet.setValue](api/spreadsheet_setvalue_method.md) - sets value for a cell or a range of cells
-- lock -> [spreadsheet.lock](api/spreadsheet_lock_method.md) - locks a cell or a range of cells
-- unlock -> [spreadsheet.unlock](api/spreadsheet_unlock_method.md) - unlocks a locked cell or a range of cells
+- getStyle -> [spreadsheet.getStyle](/api/spreadsheet_getstyle_method) - returns styles applied to a cell(s)
+- getValue -> [spreadsheet.getValue](/api/spreadsheet_getvalue_method) - returns an object with the value(s) of a cell(s)
+- setStyle -> [spreadsheet.setStyle](/api/spreadsheet_setstyle_method) - sets style for a cell or a range of cells
+- setValue -> [spreadsheet.setValue](/api/spreadsheet_setvalue_method) - sets value for a cell or a range of cells
+- lock -> [spreadsheet.lock](/api/spreadsheet_lock_method) - locks a cell or a range of cells
+- unlock -> [spreadsheet.unlock](/api/spreadsheet_unlock_method) - unlocks a locked cell or a range of cells
 
 ### Removed API
 

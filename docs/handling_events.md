@@ -10,7 +10,7 @@ description: You can learn about event handling in the DHTMLX JavaScript Spreads
 
 ## Attaching event listeners
 
-You can attach event listeners with the [spreadsheet.events.on()](api/eventsbus_on_method.md) method:
+You can attach event listeners with the [spreadsheet.events.on()](/api/eventsbus_on_method) method:
 
 ~~~jsx
 spreadsheet.events.on("AfterColumnAdd", function(cells){
@@ -20,7 +20,7 @@ spreadsheet.events.on("AfterColumnAdd", function(cells){
 
 ## Detaching event listeners
 
-To detach events, use [spreadsheet.events.detach()](api/eventsbus_detach_method.md):
+To detach events, use [spreadsheet.events.detach()](/api/eventsbus_detach_method):
 
 ~~~jsx
 var addcolumn = spreadsheet.events.on("AfterColumnAdd", function(cells){
@@ -31,13 +31,13 @@ spreadsheet.events.detach(addcolumn);
 
 ## Calling events
 
-To call events, use [spreadsheet.events.fire()](api/eventsbus_fire_method.md):
+To call events, use [spreadsheet.events.fire()](/api/eventsbus_fire_method):
 
 ~~~jsx
 spreadsheet.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-The list of events is available in the [API section](api/api_overview.md#spreadsheet-events).
+The list of events is available in the [API section](/api/api_overview.md#spreadsheet-events).
 
 {{note The names of events are case-insensitive.}}

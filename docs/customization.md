@@ -412,9 +412,9 @@ spreadsheet.contextMenu.data.remove("lock");
 
 Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
-- [](api/spreadsheet_beforeeditstart_event.md)
-- [](api/spreadsheet_beforestylechange_event.md)
-- [](api/spreadsheet_beforevaluechange_event.md)
+- [](/api/spreadsheet_beforeeditstart_event)
+- [](/api/spreadsheet_beforestylechange_event)
+- [](/api/spreadsheet_beforevaluechange_event)
 
 ~~~jsx
 var spreadsheet = new dhx.Spreadsheet("cont");

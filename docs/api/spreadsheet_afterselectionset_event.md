@@ -35,4 +35,4 @@ spreadsheet.events.on("afterSelectionSet", function(cell){
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events.md)
+**Related articles:** [Event handling](/handling_events)

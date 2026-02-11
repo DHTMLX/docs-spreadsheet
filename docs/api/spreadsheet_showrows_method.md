@@ -30,7 +30,7 @@ spreadsheet.showRows("B2:C2"); // the rows from "2" to "4" will become visible a
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#hidingshowing-rows-and-columns)
 
-**Related API:** [`hideRows()`](api/spreadsheet_hiderows_method.md)
+**Related API:** [`hideRows()`](/api/spreadsheet_hiderows_method)
 
 **Related sample:** [Spreadsheet. Hiding columns and rows via API](https://snippet.dhtmlx.com/zere1ote)
 

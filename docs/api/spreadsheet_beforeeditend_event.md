@@ -41,4 +41,4 @@ spreadsheet.events.on("beforeEditEnd", function(cell, value){
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events.md)
+**Related articles:** [Event handling](/handling_events)

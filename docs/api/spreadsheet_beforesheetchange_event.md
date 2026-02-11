@@ -42,4 +42,4 @@ spreadsheet.events.on("beforeSheetChange", function(sheet) {
 
 **Changelog:** Added in v4.1
 
-**Related articles:** [Event handling](handling_events.md)
+**Related articles:** [Event handling](/handling_events)

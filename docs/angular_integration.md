@@ -210,7 +210,7 @@ export class SpreadsheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/events_overview.md) to check the full list of available properties.
+Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](/api/overview/events_overview) to check the full list of available properties.
 
 #### Handling events
 

@@ -31,7 +31,7 @@ spreadsheet.hideCols("B2:C2"); // the "B" and "C" columns will be hidden
 
 **Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#hidingshowing-rows-and-columns)
 
-**Related API:** [`showCols()`](api/spreadsheet_showcols_method.md)
+**Related API:** [`showCols()`](/api/spreadsheet_showcols_method)
 
 **Related sample:** [Spreadsheet. Hiding columns and rows via API](https://snippet.dhtmlx.com/zere1ote)
 

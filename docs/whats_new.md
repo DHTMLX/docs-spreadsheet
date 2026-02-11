@@ -6,7 +6,7 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 # What's new
 
-If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
+If you are updating Spreadsheet from an older version, check [Migration to Newer Version](/migration) for details.
 
 ## Version 5.2.9 
 
@@ -128,20 +128,20 @@ The new release introduces some changes to the freezing/unfreezing functionality
 - Freezing/unfreezing columns/rows:
     - the ability to freeze/unfreeze columns and rows via [UI](work_with_rows_cols.md/#freezingunfreezing-rows-and-columns)
     - the ability to freeze/unfreeze columns and rows via [API](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)
-        - new methods: [`freezeCols()`](api/spreadsheet_freezecols_method.md), [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md), [`freezeRows()`](api/spreadsheet_freezerows_method.md), [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md)
-        - new action: [`toggleFreeze`](api/overview/actions_overview.md/#list-of-actions) 
-        - new `freeze` property for the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method
+        - new methods: [`freezeCols()`](/api/spreadsheet_freezecols_method), [`unfreezeCols()`](/api/spreadsheet_unfreezecols_method), [`freezeRows()`](/api/spreadsheet_freezerows_method), [`unfreezeRows()`](/api/spreadsheet_unfreezerows_method)
+        - new action: [`toggleFreeze`](/api/overview/actions_overview.md/#list-of-actions) 
+        - new `freeze` property for the *sheets* object of the [`parse()`](/api/spreadsheet_parse_method) method
 - Hiding/showing columns/rows:
     - the ability to hide/show columns and rows via [UI](work_with_rows_cols.md/#hidingshowing-rows-and-columns)
     - the ability to hide/show columns and rows via [API](working_with_ssheet.md/#hidingshowing-rows-and-columns)
-        - new methods: [`hideCols()`](api/spreadsheet_hidecols_method.md), [`showCols()`](api/spreadsheet_showcols_method.md), [`hideRows()`](api/spreadsheet_hiderows_method.md), [`showRows()`](api/spreadsheet_showrows_method.md)
-        - new action: [`toggleVisibility`](api/overview/actions_overview.md/#list-of-actions) 
-        - new `hidden` property for the *cols* and *rows* configs of the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method
+        - new methods: [`hideCols()`](/api/spreadsheet_hidecols_method), [`showCols()`](/api/spreadsheet_showcols_method), [`hideRows()`](/api/spreadsheet_hiderows_method), [`showRows()`](/api/spreadsheet_showrows_method)
+        - new action: [`toggleVisibility`](/api/overview/actions_overview/#list-of-actions) 
+        - new `hidden` property for the *cols* and *rows* configs of the *sheets* object of the [`parse()`](/api/spreadsheet_parse_method) method
 - Working with formulas:
     - [popup with descriptions for formulas](functions.md/#popup-with-formula-description) is added
     - new locale: [`formulas`](localization.md/#default-locale-for-formulas) is added
 - File import: 
-    - new [`afterDataLoaded`](api/spreadsheet_afterdataloaded_event.md) event is added to indicate that data loading into Spreadsheet has been completed
+    - new [`afterDataLoaded`](/api/spreadsheet_afterdataloaded_event) event is added to indicate that data loading into Spreadsheet has been completed
     
 ### Fixes
 
@@ -253,16 +253,16 @@ Released on December 7, 2023
 
 ### New functionality
 
-- [Support for new themes](spreadsheet/themes.md): Dark, Light High Contrast and Dark High Contrast
+- [Support for new themes](/themes): Dark, Light High Contrast and Dark High Contrast
 - Extended [support for number, date, time and currency format localization](spreadsheet/number_formatting.md/#number-date-time-currency-localization)
-- [Integration with the Svelte framework](spreadsheet/svelte_integration.md)
-- Ability to [provide a custom name for an exported .xlsx file](spreadsheet/loading_data.md/#how-to-set-a-custom-name-for-an-exported-file)
-- Ability to [save the "locked" cell status](spreadsheet/loading_data.md#setting-the-locked-state-for-a-cell) and [specify a link for a cell](loading_data.md/#adding-a-link-into-a-cell) in a data set
+- [Integration with the Svelte framework](/svelte_integration)
+- Ability to [provide a custom name for an exported .xlsx file](/loading_data/#how-to-set-a-custom-name-for-an-exported-file)
+- Ability to [save the "locked" cell status](/loading_data#setting-the-locked-state-for-a-cell) and [specify a link for a cell](/loading_data/#adding-a-link-into-a-cell) in a data set
 
 ### Updates
 
-- Renewed [integrations with React, Angular and Vue.js](spreadsheet/category/integrations.md)
-- Automatic [conversion of lowercase letters to upper case](spreadsheet/functions.md) in formulas 
+- Renewed [integrations with React, Angular and Vue.js](/category/integrations)
+- Automatic [conversion of lowercase letters to upper case](/functions) in formulas 
 - Auto closing of formulas 
 
 ### Fixes
@@ -344,8 +344,8 @@ Released on April 26, 2023
 - Fix issues with Excel import/export
 - Fix the issue which caused data to be swapped after applying of data validation
 - Fix the issue which interpreted text with the ":" symbol as a link
-- Fix the issue with loading multiline data. Now it is possible to set the `multiline: "wrap"` property in the [`styles`](api/spreadsheet_parse_method.md#parsing-styled-data) object
-- Fix the issue with merging of cells on Spreadsheet initialization when [`multiSheets`](api/spreadsheet_multisheets_config.md) is set to `false`
+- Fix the issue with loading multiline data. Now it is possible to set the `multiline: "wrap"` property in the [`styles`](/api/spreadsheet_parse_method#parsing-styled-data) object
+- Fix the issue with merging of cells on Spreadsheet initialization when [`multiSheets`](/api/spreadsheet_multisheets_config) is set to `false`
 - Fix the issue with resetting of scroll position after double-click on the resize cursor of a column in the table header
 
 ## Version 5.0.2
@@ -385,41 +385,41 @@ Released on November 21, 2022
 
 ### Breaking changes
 
-The new release introduces some changes to the [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md) property. Check the [Migration article](migration.md#43---50) to keep in step with the latest version.
+The new release introduces some changes to the [`toolbarBlocks`](/api/spreadsheet_toolbarblocks_config) property. Check the [Migration article](/migration#43---50) to keep in step with the latest version.
 
 ### New functionality
 
 - Data search:
-    - the ability to search for data via [UI](data_search.md)
+    - the ability to search for data via [UI](/data_search)
     - the ability to search for data via [API](working_with_ssheet.md#searching-for-data):
-        - new methods: [`search()`](api/spreadsheet_search_method.md) and [`hideSearch()`](api/spreadsheet_hidesearch_method.md)
+        - new methods: [`search()`](/api/spreadsheet_search_method) and [`hideSearch()`](/api/spreadsheet_hidesearch_method)
 - Filtering data
-    - the ability to filter data via [UI](filtering_data.md)
-    - the ability to filter data via [API](working_with_ssheet.md#filtering-data):
-        - new methods: [`setFilter()`](api/spreadsheet_setfilter_method.md) and [`getFilter()`](api/spreadsheet_getfilter_method.md)
-        - new action: [`filter`](api/overview/actions_overview.md#list-of-actions)
+    - the ability to filter data via [UI](/filtering_data)
+    - the ability to filter data via [API](/working_with_ssheet#filtering-data):
+        - new methods: [`setFilter()`](/api/spreadsheet_setfilter_method) and [`getFilter()`](/api/spreadsheet_getfilter_method)
+        - new action: [`filter`](/api/overview/actions_overview.md#list-of-actions)
 - Merging/splitting cells:
-    - the ability to merge/split cells via [UI](merge_cells.md)
+    - the ability to merge/split cells via [UI](/merge_cells)
     - the ability to merge/split cells via [API](working_with_cells.md#merging-cells):
-        - new property of the sheet object : [`merged`](api/spreadsheet_parse_method.md)
-        - new method: [`mergeCells()`](api/spreadsheet_mergecells_method.md)
-        - new actions: [`merge`](api/overview/actions_overview.md#list-of-actions) and [`unmerge`](api/overview/actions_overview.md#list-of-actions)
+        - new property of the sheet object : [`merged`](/api/spreadsheet_parse_method)
+        - new method: [`mergeCells()`](/api/spreadsheet_mergecells_method)
+        - new actions: [`merge`](/api/overview/actions_overview#list-of-actions) and [`unmerge`](/api/overview/actions_overview#list-of-actions)
 - AutoFit column width:
     - the ability to autofit column width via [UI](work_with_rows_cols.md#autofit-column-width)   
     - the ability to autofit column width via [API](working_with_ssheet.md#autofit-column-width):
-        - new method: [`fitColumn()`](api/spreadsheet_fitcolumn_method.md)
-        - new action: [`fitColumn`](api/overview/actions_overview.md#list-of-actions)
+        - new method: [`fitColumn()`](/api/spreadsheet_fitcolumn_method)
+        - new action: [`fitColumn`](/api/overview/actions_overview#list-of-actions)
 - Inserting a hyperlink:
     - the ability to insert a hyperlink into a cell via [UI](work_with_cells.md#inserting-a-hyperlink-into-a-cell)
     - the ability to insert a hyperlink into a cell via [API](working_with_cells.md#inserting-a-hyperlink-into-a-cell):
-        - new method: [`insertLink()`](api/spreadsheet_insertlink_method.md)
-        - new action: [`insertLink`](api/overview/actions_overview.md#list-of-actions)
-- [Strikethrough format of data](data_formatting.md#color-and-style)
+        - new method: [`insertLink()`](/api/spreadsheet_insertlink_method)
+        - new action: [`insertLink`](/api/overview/actions_overview#list-of-actions)
+- [Strikethrough format of data](/data_formatting#color-and-style)
 
 ### Updates
 
 - [Extended list of locale options](localization.md#default-locale)
-- [Extended list of hotkey combinations](hotkeys.md):
+- [Extended list of hotkey combinations](/hotkeys):
     - for data search
         - `Ctrl (Cmd) + F`
         - `Ctrl (Cmd) + G`
@@ -451,23 +451,23 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 
 ### New functionality
 
-- The ability to add a drop-down list of options into the cells via the [`setValidation()`](api/spreadsheet_setvalidation_method.md) method or via [UI](work_with_cells.md#using-drop-down-lists-in-cells)
+- The ability to add a drop-down list of options into the cells via the [`setValidation()`](/api/spreadsheet_setvalidation_method) method or via [UI](/work_with_cells#using-drop-down-lists-in-cells)
 - The ability to fix rows on the top of the spreadsheet via the `topSplit` property
-- The ability to sort data via the [`sortCells()`](api/spreadsheet_sortcells_method.md) method or via [UI](sorting_data.md)
+- The ability to sort data via the [`sortCells()`](/api/spreadsheet_sortcells_method) method or via [UI](/sorting_data)
 - [The ability to split long text into multiple lines](data_formatting.md#wrap-text-in-a-cell) (*Text wrapping* button is added into the toolbar)
 - Significantly extended list of supported [Date, Financial, Math, String functions](functions.md#information-functions) (marked with *added in v4.3* label)
 - Support for [Lookup functions](functions.md#lookup-functions)
 - [Time format](number_formatting.md/#default-number-formats) is added
-- The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](api/spreadsheet_timeformat_config.md) property
+- The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](/api/spreadsheet_timeformat_config) property
 - The ability to enter time in a cell via a time picker
-- [Export to JSON](api/export_json_method.md)
-- [Import from JSON](api/spreadsheet_load_method.md#loading-json-files)
-- New events are added: [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md)
-- New [Actions system](api/overview/actions_overview.md)
+- [Export to JSON](/api/export_json_method)
+- [Import from JSON](/api/spreadsheet_load_method.md#loading-json-files)
+- New events are added: [beforeAction](/api/spreadsheet_beforeaction_event) and [afterAction](/api/spreadsheet_afteraction_event)
+- New [Actions system](/api/overview/actions_overview)
 
 ### Updates
 
-- The [`parse()`](api/spreadsheet_parse_method.md) method is updated. New **editor** attribute of a cell object is added
+- The [`parse()`](/api/spreadsheet_parse_method) method is updated. New **editor** attribute of a cell object is added
 
 ## Version 4.2
 
@@ -481,24 +481,24 @@ Released on November 29, 2021
 - Support for [boolean operators](functions.md/#boolean-operators)
 - The ability to resize rows from UI
 - New [Vertical align](data_formatting.md/#alignment) button is added into the toolbar
-- The ability to set the active sheet via the [`setActiveSheet()`](api/spreadsheet_setactivesheet_method.md) method
-- The ability to remove selection from the specified cells via the [`removeSelectedCell()`](api/selection_removeselectedcell_method.md) method of the Selection object
-- The ability to clear a spreadsheet or its sheet via the [`clear()`](api/spreadsheet_clear_method.md) or [`clearSheet()`](api/spreadsheet_clearsheet_method.md) method correspondingly
-- New events are added: [`beforeClear`](api/spreadsheet_beforeclear_event.md), [`afterClear`](api/spreadsheet_afterclear_event.md), [`beforeSheetClear`](api/spreadsheet_beforesheetclear_event.md), [`afterSheetClear`](api/spreadsheet_aftersheetclear_event.md)
-- The ability to define the format of dates in the spreadsheet via the [`dateFormat`](api/spreadsheet_dateformat_config.md) property
-- [Date format is added to default number formats](number_formatting.md/#default-number-formats)
+- The ability to set the active sheet via the [`setActiveSheet()`](/api/spreadsheet_setactivesheet_method) method
+- The ability to remove selection from the specified cells via the [`removeSelectedCell()`](/api/selection_removeselectedcell_method) method of the Selection object
+- The ability to clear a spreadsheet or its sheet via the [`clear()`](/api/spreadsheet_clear_method) or [`clearSheet()`](/api/spreadsheet_clearsheet_method) method correspondingly
+- New events are added: [`beforeClear`](/api/spreadsheet_beforeclear_event), [`afterClear`](/api/spreadsheet_afterclear_event), [`beforeSheetClear`](/api/spreadsheet_beforesheetclear_event), [`afterSheetClear`](/api/spreadsheet_aftersheetclear_event)
+- The ability to define the format of dates in the spreadsheet via the [`dateFormat`](/api/spreadsheet_dateformat_config) property
+- [Date format is added to default number formats](/number_formatting/#default-number-formats)
 
 ### Updates
 
-- Extended list of [locale options](localization.md)
-- Extended list of [math](functions.md/#math-functions) and [string](functions.md/#string-functions) functions
+- Extended list of [locale options](/localization)
+- Extended list of [math](/functions/#math-functions) and [string](/functions/#string-functions) functions
 - The Align block of the Spreadsheet toolbar is updated. Check the details in the [Migration article](migration.md/#41---42)
-- The [`parse()`](api/spreadsheet_parse_method.md) and [`serialize()`](api/spreadsheet_serialize_method.md) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet.
+- The [`parse()`](/api/spreadsheet_parse_method) and [`serialize()`](/api/spreadsheet_serialize_method) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet.
 
 ### Fixes
 
 - Issue with the CTRL-X shortcut key
-- Issue which caused the script error to appear when editing a cell in the spreadsheet with hidden [editing bar](api/spreadsheet_editline_config.md/)
+- Issue which caused the script error to appear when editing a cell in the spreadsheet with hidden [editing bar](/api/spreadsheet_editline_config)
 
 ## Version 4.1.3
 
@@ -558,17 +558,17 @@ Released on March 24, 2021
 
 ### New functionality
 
-- New [multiSheets](api/spreadsheet_multisheets_config.md) configuration option is added
-- The ability to [work with multiple sheets](work_with_sheets.md) in the spreadsheet
+- New [multiSheets](/api/spreadsheet_multisheets_config) configuration option is added
+- The ability to [work with multiple sheets](/work_with_sheets) in the spreadsheet
 - The ability to use [cross-references in multiple sheets](work_with_sheets.md#cross-references-between-sheets)
 - The ability to [load several sheets](working_with_sheets.md#loading-multiple-sheets) into the spreadsheet at once
-- New methods for working with [multiple sheets](working_with_sheets.md) are added: [addSheet()](api/spreadsheet_addsheet_method.md), [removeSheet()](api/spreadsheet_removesheet_method.md), [getActiveSheet()](api/spreadsheet_getactivesheet_method.md), [getSheets()](api/spreadsheet_getsheets_method.md)
-- New events are added: [BeforeSheetAdd](api/spreadsheet_beforesheetadd_event.md), [AfterSheetAdd](api/spreadsheet_aftersheetadd_event.md), [BeforeSheetChange](api/spreadsheet_beforesheetchange_event.md), [AfterSheetChange](api/spreadsheet_aftersheetchange_event.md), [BeforeSheetRemove](api/spreadsheet_beforesheetremove_event.md), [AfterSheetRemove](api/spreadsheet_aftersheetremove_event.md), [BeforeSheetRename](api/spreadsheet_beforesheetrename_event.md), [AfterSheetRename](api/spreadsheet_aftersheetrename_event.md)
-- The ability to get the formula of a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method
+- New methods for working with [multiple sheets](/working_with_sheets) are added: [addSheet()](/api/spreadsheet_addsheet_method), [removeSheet()](/api/spreadsheet_removesheet_method), [getActiveSheet()](/api/spreadsheet_getactivesheet_method), [getSheets()](/api/spreadsheet_getsheets_method)
+- New events are added: [BeforeSheetAdd](/api/spreadsheet_beforesheetadd_event), [AfterSheetAdd](/api/spreadsheet_aftersheetadd_event), [BeforeSheetChange](/api/spreadsheet_beforesheetchange_event), [AfterSheetChange](/api/spreadsheet_aftersheetchange_event), [BeforeSheetRemove](/api/spreadsheet_beforesheetremove_event), [AfterSheetRemove](/api/spreadsheet_aftersheetremove_event), [BeforeSheetRename](/api/spreadsheet_beforesheetrename_event), [AfterSheetRename](/api/spreadsheet_aftersheetrename_event)
+- The ability to get the formula of a cell via the [getFormula()](/api/spreadsheet_getformula_method) method
 
 ### Updates
 
-- The format of the "cell" parameter of the [getValue()](api/spreadsheet_getvalue_method.md), [setValue()](api/spreadsheet_setvalue_method.md), [getStyle()](api/spreadsheet_getstyle_method.md), [setStyle()](api/spreadsheet_setstyle_method.md), [getFormat()](api/spreadsheet_getformat_method.md), [setFormat()](api/spreadsheet_setformat_method.md), [isLocked()](api/spreadsheet_islocked_method.md), [lock()](api/spreadsheet_lock_method.md), [unlock()](api/spreadsheet_unlock_method.md) methods is updated. Now the reference to a cell, or a range of cells can contain the name of the tab.
+- The format of the "cell" parameter of the [getValue()](/api/spreadsheet_getvalue_method), [setValue()](/api/spreadsheet_setvalue_method), [getStyle()](/api/spreadsheet_getstyle_method), [setStyle()](/api/spreadsheet_setstyle_method), [getFormat()](/api/spreadsheet_getformat_method), [setFormat()](/api/spreadsheet_setformat_method), [isLocked()](/api/spreadsheet_islocked_method), [lock()](/api/spreadsheet_lock_method), [unlock()](/api/spreadsheet_unlock_method) methods is updated. Now the reference to a cell, or a range of cells can contain the name of the tab.
 
 ## Version 4.0.5
 
@@ -601,7 +601,7 @@ Released on December 28, 2020
 - Fix the issue with setting the format for the value of a cell within a data set 
 - Fix the error that occurred when attaching the spreadsheet to the layout
 - Fix the issue which caused the formula set for a cell not being edited after the result was calculated
-- Fix the incorrect work of the [setFocusedCell()](api/selection_setfocusedcell_method.md) method
+- Fix the incorrect work of the [setFocusedCell()](/api/selection_setfocusedcell_method) method
 - Fix the incorrect behavior of focus when working with formulas
 - Fix the issue with selecting a range of cells using the "ctrl" key
 - Fix the issue with adding a range of cells via "ctrl+click" to a cell with a formula
@@ -626,7 +626,7 @@ Released on December 2, 2020
 
 - The incorrect displaying of the tooltips when hovering over the Undo/Redo buttons in the toolbar
 - The issue which happened when removing the last column of the spreadsheet after importing the data bigger than the size of the spreadsheet
-- The issue with the [setSelectedCell()](api/selection_setselectedcell_method.md) method which caused the formula of the selected cell not to be shown in the formula bar
+- The issue with the [setSelectedCell()](/api/selection_setselectedcell_method) method which caused the formula of the selected cell not to be shown in the formula bar
 - The incorrect generation of the typescript definitions
 - The visual issue with the alignment of the cell content
 - The issue with serializing of empty cells or cells with zero value
@@ -637,8 +637,8 @@ Released on October 19, 2020
 
 ### New functionality
 
-- [Math functions](functions.md)
-- [TypeScript Support](using_typescript.md)
+- [Math functions](/functions)
+- [TypeScript Support](/using_typescript)
 - The ability to freeze columns on the left side of the spreadsheet via the `leftSplit` configuration property
 - [The Text format for displaying the content of a cell as text is added to default number formats](number_formatting.md#default-number-formats)
 - The ability to select multiple scattered ranges of cells by using ["Ctrl+Shift+Left Click"](hotkeys.md#selection) combination
@@ -648,8 +648,8 @@ Released on October 19, 2020
 - Fix the incorrect work of the colorpicker when applying the background color to the range of cells
 - Fix the incorrect parsing of numbers when importing Excel files
 - Fix the issue which caused all data copied from a Google or Excel table to be inserted into one cell of the spreadsheet
-- Fix the incorrect work of the [editLine:false](api/spreadsheet_editline_config.md) property that caused the edit operation to finish with an error in the console
-- Fix the issue with the [AfterValueChange](api/spreadsheet_aftervaluechange_event.md) event which caused the event to be called twice
+- Fix the incorrect work of the [editLine:false](/api/spreadsheet_editline_config) property that caused the edit operation to finish with an error in the console
+- Fix the issue with the [AfterValueChange](/api/spreadsheet_aftervaluechange_event) event which caused the event to be called twice
 
 ## Version 3.1.4
 
@@ -692,12 +692,12 @@ Released on March 21, 2019
 
 - [Import from Excel](loading_data.md#loading-excel-file-xlsx)
 - [Export to Excel](loading_data.md#exporting-data)
-- [Number formatting](number_formatting.md)
-- [Auto filling of cells](work_with_cells.md#auto-filling-cells-with-content)
+- [Number formatting](/number_formatting)
+- [Auto filling of cells](/work_with_cells#auto-filling-cells-with-content)
 
 ### Updates
 
-- [Hotkeys behavior in a range of cells](hotkeys.md)
+- [Hotkeys behavior in a range of cells](/hotkeys)
 
 ### Fixes
 
@@ -746,12 +746,12 @@ Released on October 25, 2018
 
 In comparison to the previous PHP-based version, DHTMLX Spreadsheet of version 3.0 is a completely client-side JavaScript component.
 
-Check the [Migration](migration.md) article to get information about the usage of new API. If you feel like keep using the previous version for a while, [the documentation for DHTMLX Spreadsheet v2.1](https://docs.dhtmlx.com/spreadsheet__index.html) is still available.
+Check the [Migration](/migration) article to get information about the usage of new API. If you feel like keep using the previous version for a while, [the documentation for DHTMLX Spreadsheet v2.1](https://docs.dhtmlx.com/spreadsheet__index.html) is still available.
 
 ### New functionality
 
 The API of Spreadsheet has been changed and became more handy to work with. One more significant update is the total redesign of the component which gave a modern look to the interface of Spreadsheet. Together with the fresh appearance the usability of DHTMLX Spreadsheet is greatly enhanced.
 
-- [](index.md)
-- [Fully customizable structure and adjustable look and feel](customization.md)
-- [Completely refreshed API](api/api_overview.md)
+- [](/index)
+- [Fully customizable structure and adjustable look and feel](/customization)
+- [Completely refreshed API](/api/api_overview)

@@ -18,7 +18,7 @@ spreadsheet.events.on("beforeAction", (actionName, config) => {
 });
 ~~~
 
-For more details about the new concept, see **[Spreadsheet actions](api/overview/actions_overview.md)**. 
+For more details about the new concept, see **[Spreadsheet actions](/api/overview/actions_overview)**. 
 :::
 
 ### Description
@@ -57,4 +57,4 @@ spreadsheet.events.on("beforeSheetClear", function(sheet){
 
 **Changelog:** Added in v4.2
 
-**Related articles:** [Event handling](handling_events.md)
+**Related articles:** [Event handling](/handling_events)

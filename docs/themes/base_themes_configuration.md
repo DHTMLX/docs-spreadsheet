@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Configuring a separate theme
 
-If you want to override some color values for a separate [Spreadsheet theme](spreadsheet/themes.md), you need to do this in the **'data-dhx-theme'** attribute:
+If you want to override some color values for a separate [Spreadsheet theme](/themes), you need to do this in the **'data-dhx-theme'** attribute:
 
 ~~~html {1-27,39}
 <style>

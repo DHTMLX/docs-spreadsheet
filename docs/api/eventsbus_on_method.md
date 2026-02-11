@@ -35,11 +35,11 @@ spreadsheet.events.on("StyleChange", function(id){
 ~~~
 
 :::info
-See the full list of the Spreadsheet events [here](api/api_overview.md/#spreadsheet-events).
+See the full list of the Spreadsheet events [here](/api/api_overview/#spreadsheet-events).
 
 You can attach several handlers to the same event and all of them will be executed. If some of handlers return *false*, the related operations will be blocked. Event handlers are processed in the same order that they are attached.
 :::
 
-**Related articles:** [Event Handling](handling_events.md)
+**Related articles:** [Event Handling](/handling_events)
 
 **Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)

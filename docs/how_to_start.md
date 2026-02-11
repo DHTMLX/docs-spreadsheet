@@ -93,7 +93,7 @@ As parameters, the constructor function takes the HTML container to place Spread
 
 Next you can specify additional configuration options you want the Spreadsheet component to have when initialized besides the default ones.
 
-There are several options you can use to adjust the look and feel of Spreadsheet to your needs, e.g.: **toolbarBlocks**, **rowsCount** and **colsCount**. [Check the details](configuration.md).
+There are several options you can use to adjust the look and feel of Spreadsheet to your needs, e.g.: **toolbarBlocks**, **rowsCount** and **colsCount**. [Check the details](/configuration).
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
@@ -103,7 +103,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it at any time. [Read the related guide](configuration.md) to go into the basics of configuring Spreadsheet.
+The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it at any time. [Read the related guide](/configuration) to go into the basics of configuring Spreadsheet.
 
 ## Step 4. Loading data into Spreadsheet
 
@@ -144,6 +144,6 @@ spreadsheet.parse(data);
 
 That's all. Just four simple steps and you have a handy tool for work with data in the tabular form. Now you can start working with your data or keep exploring the inner world of DHTMLX Spreadsheet.
 
-- [](index.md)
-- [](guides.md)
-- [](api/api_overview.md)
+- [](/index)
+- [](/guides)
+- [](/api/api_overview)

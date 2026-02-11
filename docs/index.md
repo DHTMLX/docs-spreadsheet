@@ -60,9 +60,9 @@ You can [modify the structure of the menu](customization.md#menu) by using custo
 
 ## What's next
 
-Now you can get down to using DHTMLX Spreadsheet in your application. Follow the directions of the [How to Start](how_to_start.md) tutorial for guidance.
+Now you can get down to using DHTMLX Spreadsheet in your application. Follow the directions of the [How to Start](/how_to_start) tutorial for guidance.
 
 To dive deeper into the specificity of DHTMLX Spreadsheet, go into more profound manuals:
 
-- [API overview](api/api_overview.md)
-- [Guides](guides.md)
+- [API overview](/api/api_overview)
+- [Guides](/guides)

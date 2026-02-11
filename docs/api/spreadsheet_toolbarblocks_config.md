@@ -64,6 +64,6 @@ Check how you can [customize the toolbar](customization.md/#toolbar).
 
 **Related articles:**
 - [Configuration](configuration.md#toolbar)
-- [Customization](customization.md)
+- [Customization](/customization)
 
 **Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
