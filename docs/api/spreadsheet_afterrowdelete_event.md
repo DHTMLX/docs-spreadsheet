@@ -17,7 +17,7 @@ spreadsheet.events.on("afterAction", (actionName, config) => {
 });
 ~~~
 
-For more details about the new concept, see **[Spreadsheet actions](/api/overview/actions_overview)**. 
+For more details about the new concept, see **[Spreadsheet actions](/api/overview/actions_overview/)**. 
 :::
 
 ### Description
@@ -49,4 +49,4 @@ spreadsheet.events.on("afterRowDelete", function(cell){
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events)
+**Related articles:** [Event handling](/handling_events)

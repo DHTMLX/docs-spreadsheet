@@ -29,7 +29,7 @@ Shows the ways of loading data into Spreadsheet, handling events and using main 
 - [Data loading and export](/loading_data)
 - [Work with Spreadsheet](/working_with_ssheet)
 - [Work with sheets](/working_with_sheets)
-- [Work with cells](/category/work-with-cells)
+- [Work with cells](../category/work-with-cells)
 - [Number formatting](/number_formatting)
 - [Formulas and functions](/functions)
 - [Event handling](/handling_events)

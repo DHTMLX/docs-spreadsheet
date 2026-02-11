@@ -1311,9 +1311,9 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ## Getting cell formula
 
-Starting with v4.1, you can get the formula applied to a cell via the [`getFormula()`](/api/spreadsheet_getformula_method) method. The method takes the id of the cell as a parameter:
+Starting with v4.1, you can get the formula applied to a cell via the [`getFormula()`](../api/spreadsheet_getformula_method) method. The method takes the id of the cell as a parameter:
 
-~~~js
+~~~jsx
 var formula = spreadsheet.getFormula("B2");
 // -> "ABS(C2)"
 ~~~

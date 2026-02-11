@@ -8,7 +8,7 @@ description: You can have an Actions overview of the DHTMLX JavaScript Spreadshe
 
 This section is dedicated to a new conception of interaction with Spreadsheet events.
 
-Starting from v4.3, DHTMLX Spreadsheet includes a pair of the [beforeAction](/api/spreadsheet_beforeaction_event)/[afterAction](/api/spreadsheet_afteraction_event) events that are intended to make your code simple and concise. They will fire right before an action is executed and indicate which exactly action has been performed.
+Starting from v4.3, DHTMLX Spreadsheet includes a pair of the [`beforeAction`](/api/spreadsheet_beforeaction_event/)/[`afterAction`](/api/spreadsheet_afteraction_event/) events that are intended to make your code simple and concise. They will fire right before an action is executed and indicate which exactly action has been performed.
 
 ~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
@@ -29,7 +29,7 @@ spreadsheet.events.on("afterAction", (actionName, config) => {
 
 [The full list of the available actions is given below.](#list-of-actions)
 
->It means, that you don't have to constantly add sets of paired [**before-** and **after-**](/api/overview/events_overview) events anymore to track and handle the actions which you execute when changing something in the spreadsheet. 
+>It means, that you don't have to constantly add sets of paired [**before-** and **after-**](/api/overview/events_overview/) events anymore to track and handle the actions which you execute when changing something in the spreadsheet. 
 
 >But if needed you can use an **old approach** because all the existing events will continue work as before:
 ~~~jsx

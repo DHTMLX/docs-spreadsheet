@@ -112,7 +112,7 @@ spreadsheet.toolbar.data.remove("control-id");
 
 ### Default controls
 
-The [default toolbar](/#toolbar) contains the following blocks of controls:
+The [default toolbar](#toolbar) contains the following blocks of controls:
 
 - the **Undo** block
   - the *Undo* button (id: "undo")
@@ -238,7 +238,7 @@ spreadsheet.toolbar.data.remove("undo");
 
 ### Default controls
 
-The [default menu](/#menu) has the following structure:
+The [default menu](#menu) has the following structure:
 
 - the **File** menuItem (id: "edit")
   - the *Import as...* menuItem (id: "import")
@@ -345,7 +345,7 @@ spreadsheet.menu.data.remove("undo");
 
 ### Default controls
 
-The [default context menu](/#context-menu) has the following structure:
+The [default context menu](#context-menu) has the following structure:
 
 - the **Lock** menuItem (id: "lock")
 - the **Clear** menuItem (id: "clear")
@@ -412,9 +412,9 @@ spreadsheet.contextMenu.data.remove("lock");
 
 Besides applying the [read-only mode](/configuration/#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
-- [](/api/spreadsheet_beforeeditstart_event)
-- [](/api/spreadsheet_beforestylechange_event)
-- [](/api/spreadsheet_beforevaluechange_event)
+- [](../api/spreadsheet_beforeeditstart_event)
+- [](../api/spreadsheet_beforestylechange_event)
+- [](../api/spreadsheet_beforevaluechange_event)
 
 ~~~jsx
 var spreadsheet = new dhx.Spreadsheet("cont");

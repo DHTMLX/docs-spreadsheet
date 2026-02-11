@@ -18,7 +18,7 @@ spreadsheet.events.on("beforeAction", (actionName, config) => {
 });
 ~~~
 
-For more details about the new concept, see **[Spreadsheet actions](/api/overview/actions_overview)**. 
+For more details about the new concept, see **[Spreadsheet actions](/api/overview/actions_overview/)**. 
 :::
 
 ### Description

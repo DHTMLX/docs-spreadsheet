@@ -11,7 +11,7 @@ description: You can learn about the removeSheet method in the documentation of 
 @short: Removes a sheet from the spreadsheet by its id
 
 :::info
-To apply this method, you need to enable the [multiSheets](/api/spreadsheet_multisheets_config) configuration option.
+To apply this method, you need to enable the [multiSheets](../api/spreadsheet_multisheets_config) configuration option.
 
 Also note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
 :::

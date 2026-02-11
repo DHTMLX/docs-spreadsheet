@@ -416,7 +416,7 @@ The list of variables specific for the Spreadsheet component includes the follow
 
 ## Setting themes
 
-To set the necessary theme, be it a built-in Spreadsheet theme or a [custom](/themes/custom_theme) one, use one of the ways described below:
+To set the necessary theme, be it a built-in Spreadsheet theme or a [custom](../themes/custom_theme) one, use one of the ways described below:
 
 ### Using the ***data-dhx-theme*** attribute 
 
@@ -441,7 +441,7 @@ The ***dhx.setTheme()*** method takes the following parameters:
 
 - ***theme: string*** - (required) the name of the theme. It can be:
     - the name of the Spreadsheet theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
-    - the name of a [custom theme](/themes/custom_theme)
+    - the name of a [custom theme](../themes/custom_theme)
     - *"light"* - by default
 - ***container: string | HTMLElement*** - (optional) the container to which the theme must be applied. It can be:
     - an HTMLElement

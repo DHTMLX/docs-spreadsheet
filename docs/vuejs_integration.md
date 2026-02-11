@@ -206,7 +206,7 @@ export default {
 
 ~~~
 
-Go to the ***Spreadsheet.vue*** file and apply the passed **props** to the Spreadsheet via the [`parse()`](/api/spreadsheet_parse_method/) method:
+Go to the ***Spreadsheet.vue*** file and apply the passed **props** to the Spreadsheet via the [`parse()`](../api/spreadsheet_parse_method/) method:
 
 ~~~html {6,10} title="Spreadsheet.vue"
 <script>
@@ -232,11 +232,11 @@ export default {
 </template>
 ~~~
 
-Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](/api/overview/properties_overview) to check the full list of available properties.
+Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](../api/overview/properties_overview) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/api/overview/events_overview).
+When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](../api/overview/events_overview).
 
 Open ***Spreadsheet.vue*** and complete the `mounted()` method:
 
