@@ -41,7 +41,7 @@ To insert a hyperlink into a cell, you can use one of the ways described below.
 
 - In the appeared window, type the Text, the Link, and click *Save*
 
-![](/assets/link/popup_window.png)
+![Edit text of the link](/assets/link/popup_window.png)
 
 #### Using toolbar button
 
@@ -138,7 +138,7 @@ You can automatically fill cells with data.  This is how it works:
 
 - copying the value
 
-​For example, to make a series 4,4,4,4..., type 4 in the first cell only.
+For example, to make a series 4, 4, 4, 4, ... , type 4 in the first cell only.
 
 - following the pattern
     - to make a series 1, 2, 3, 4, 5, ... , type 1 and 2 into the first two cells.
