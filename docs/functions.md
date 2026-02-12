@@ -1322,7 +1322,7 @@ var formula = spreadsheet.getFormula("B2");
 
 When you enter a formula, a popup with description of the function and its parameters appears. 
 
-![Popup with formula description](assets/formula_popup.png)
+![Popup with formula description](/assets/formula_popup.png)
 
 Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 

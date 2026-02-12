@@ -254,6 +254,6 @@ onDestroy(() => {
 
 After that, when we start the app, we should see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/trial_spreadsheet.png)
+![Spreadsheet initialization](/assets/integrations/trial_spreadsheet.png)
 
 Now you should have a basic setup for integrating DHTMLX Spreadsheet with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-spreadsheet-demo).

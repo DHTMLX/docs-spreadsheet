@@ -12,11 +12,11 @@ To activate the filtering functionality, you can use either of two ways:
 
 - Set focus on a cell or select a range of cells and click the **Filter** button in the toolbar
 
-![Filter via toolbar](assets/filter_button.png)
+![Filter via toolbar](/assets/filter_button.png)
 
 - Set focus on a cell or select a range of cells and go to: *Data -> Filter* in the menu
 
-![Filter via menu](assets/filter_menu.png)
+![Filter via menu](/assets/filter_menu.png)
 
 After that, a **filter** icon appears on the right side of the header of each column in the range. 
 
@@ -28,13 +28,13 @@ After that, a **filter** icon appears on the right side of the header of each co
 
 - Specify the filter criterion and click **Apply**
 
-![Filter by condition](assets/filter_by_condition.png)
+![Filter by condition](/assets/filter_by_condition.png)
 
 ### Clearing a filter
 
 To clear a filter, click the **filter** icon in the column header, select _By condition: **None**_, and then click **Apply**.
 
-![Clear filter](assets/clear_filter_bycondition.png)
+![Clear filter](/assets/clear_filter_bycondition.png)
 
 ## Filtering by values
 
@@ -42,7 +42,7 @@ To clear a filter, click the **filter** icon in the column header, select _By co
 
 - Click the **Unselect all** button
 
-![Filter by values](assets/unselect_all_button.png)
+![Filter by values](/assets/unselect_all_button.png)
 
 - Select the check boxes for the values you want to show and click **Apply**
 
@@ -50,7 +50,7 @@ To clear a filter, click the **filter** icon in the column header, select _By co
 
 To clear a filter, click the **filter** icon in the column header, click the **Select all** button, and then click **Apply**.
 
-![Clear filter](assets/clear_filter_by_values.png)
+![Clear filter](/assets/clear_filter_by_values.png)
 
 ## Removing filters
 

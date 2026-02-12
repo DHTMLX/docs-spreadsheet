@@ -37,17 +37,17 @@ To insert a hyperlink into a cell, you can use one of the ways described below.
 
 - Right-click the cell, choose *Insert link*
 
-![Insert link via context menu](assets/link/via_context_menu.png)
+![Insert link via context menu](/assets/link/via_context_menu.png)
 
 - In the appeared window, type the Text, the Link, and click *Save*
 
-![](assets/link/popup_window.png)
+![](/assets/link/popup_window.png)
 
 #### Using toolbar button
 
 - Select the cell, click the **Insert link** button in the toolbar
 
-![Insert link via toolbar](assets/link/via_toolbar.png)
+![Insert link via toolbar](/assets/link/via_toolbar.png)
 
 - In the appeared window, type the Text, the Link, and click *Save*
 
@@ -55,7 +55,7 @@ To insert a hyperlink into a cell, you can use one of the ways described below.
 
 - Select the cell, go to: *Insert -> Insert link* in the menu
 
-![Insert link via menu](assets/link/via_menu.png)
+![Insert link via menu](/assets/link/via_menu.png)
 
 - In the appeared window, type the Text, the Link, and click *Save*.
 
@@ -64,21 +64,21 @@ To insert a hyperlink into a cell, you can use one of the ways described below.
 - Select the cell that contains the link you want to copy
 - In the appeared popup, click the **Copy** icon
 
-![Copy link](assets/link/copy_link.png)
+![Copy link](/assets/link/copy_link.png)
 
 ### Editing a link
 
 - Select the cell that contains the link you want to edit
 - In the appeared popup, click the **Edit** icon
 
-![Edit link](assets/link/edit.png)
+![Edit link](/assets/link/edit.png)
 
 ### Removing a link
 
 - Select the cell that contains the link you want to remove
 - In the appeared popup, click the **Remove link** icon
 
-![Remove link](assets/link/remove_link.png)
+![Remove link](/assets/link/remove_link.png)
 
 ## Using drop-down lists in cells
 
@@ -96,7 +96,7 @@ You may create a drop-down list in a cell(s) to allow users to select the necess
 
 - Press the **Save** button
 
-![Drop-down menu](assets/data_validation.gif)
+![Drop-down menu](/assets/data_validation.gif)
 
 ### Creating a drop-down list by using a range
 
@@ -112,7 +112,7 @@ You may create a drop-down list in a cell(s) to allow users to select the necess
 
 - Press the **Save** button
 
-![Drop-down menu](assets/data_validation_range.gif)
+![Drop-down menu](/assets/data_validation_range.gif)
 
 ### Removing validation from a cell
 
@@ -122,7 +122,7 @@ You can stop using a drop-down list in a cell. To do that:
 - Go to: *Data -> Data validation* in the menu
 - Select the *Remove validation* option
 
-![Remove validation](assets/remove_validation.png)
+![Remove validation](/assets/remove_validation.png)
 
 ## Entering the same data in several cells
 
@@ -148,13 +148,13 @@ You can automatically fill cells with data.  This is how it works:
 
 3\. Drag the **Fill Handle**
 
-![Autofill](assets/autofill.gif)
+![Autofill](/assets/autofill.gif)
 
 ## Locking cells
 
 You can lock cells to protect them from changing their values. When you lock a cell, it gets a gray "key" in the top right corner. Locked cells remain unresponsive to any attempts of editing them.
 
-![Locked cells](assets/lockedcells.png)
+![Locked cells](/assets/lockedcells.png)
 
 To lock/unlock a cell, go one of the ways described below:
 
@@ -163,13 +163,13 @@ To lock/unlock a cell, go one of the ways described below:
 - Select the cells you want to lock/unlock (they do not have to be adjacent).
 - Click the **Lock cell** button in the toolbar.
 
-![Lock](assets/lock.png)
+![Lock](/assets/lock.png)
 
 ### Lock cells via the context menu
 
 - Right-click a cell/a range of cells you want to lock/unlock.
 - Choose the Lock/Unlock cell option in the appeared context menu.
 
-![Unlock](assets/unlock.png)
+![Unlock](/assets/unlock.png)
 
 

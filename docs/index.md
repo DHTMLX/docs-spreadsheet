@@ -19,7 +19,7 @@ There is a [User Guide](guides/#user-guides) provided to make work with Spreadsh
 
 The **Toolbar** section is rather flexible. It contains several default blocks of controls: "undo", "colors", "decoration", "align", "cell", "format", "actions". You can [change the toolbar structure](/configuration/#toolbar) and add more blocks, or set your own order of the blocks.
 
-![Spreadsheet Toolbar](assets/overview_toolbar.png)
+![Spreadsheet Toolbar](/assets/overview_toolbar.png)
 
 It is also possible to [customize the toolbar](/customization/#toolbar) by adding your own controls and updating the controls' configuration.  
 
@@ -30,7 +30,7 @@ The **editing line** can be used for two purposes:
 - to edit the content of the selected cell
 - to control changes made in the currently edited cell
 
-![Spreadsheet Editing Line](assets/overview_editline.png)
+![Spreadsheet Editing Line](/assets/overview_editline.png)
 
 You can switch the editing line off, if necessary via the corresponding [configuration option](/configuration/#editing-bar).
 
@@ -38,13 +38,13 @@ You can switch the editing line off, if necessary via the corresponding [configu
 
 **Grid** represents a table with columns defined by letters and rows defined by numbers. Thus, a cell of the grid is defined by the column's letter and the row's number, e.g. C3.
 
-![Spreadsheet Grid](assets/spreadsheet_init.png)
+![Spreadsheet Grid](/assets/spreadsheet_init.png)
 
 ### Context menu
 
 The **Context menu** section includes 5 items **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link** with sub-items.
 
-![Spreadsheet Context Menu](assets/overview_contextmenu.png)
+![Spreadsheet Context Menu](/assets/overview_contextmenu.png)
 
 The [structure of Context menu is customizable](/customization/#context-menu) as well. You can add custom controls, update the controls' configuration and remove unnecessary controls.
 
@@ -54,7 +54,7 @@ The **Menu** section contains several blocks that combine most frequently used o
 
 By default the **Menu** section is hidden, but you can switch it on via the related [configuration option](/configuration/#menu).
 
-![Spreadsheet Menu](assets/overview_menu.png)
+![Spreadsheet Menu](/assets/overview_menu.png)
 
 You can [modify the structure of the menu](/customization/#menu) by using custom controls, updating the controls' configuration and removing unnecessary controls.
 

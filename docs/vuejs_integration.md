@@ -262,6 +262,6 @@ export default {
 
 After that, you can start the app to see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/trial_spreadsheet.png)
+![Spreadsheet initialization](/assets/integrations/trial_spreadsheet.png)
 
 Now you know how to integrate DHTMLX Spreadsheet with Vue. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/vue-spreadsheet-demo).

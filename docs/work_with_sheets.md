@@ -18,7 +18,7 @@ To add a new sheet, take the following steps:
 Note, that a new sheet will be added after the currently active sheet.
 :::
 
-![Add sheet](assets/add_sheet.png)
+![Add sheet](/assets/add_sheet.png)
 
 ## Removing a sheet
 
@@ -26,19 +26,19 @@ To remove a sheet from the spreadsheet, right-click the sheet tab and choose *De
 
 {{note Note, that a sheet can't be removed if it is the only sheet in the spreadsheet.}}
 
-![Remove sheet](assets/remove_sheet.png)
+![Remove sheet](/assets/remove_sheet.png)
 
 ## Changing the active sheet
 
 To change the currently active sheet, just click a different sheet tab with the mouse pointer.
 
-![Change active sheet](assets/change_active_sheet.png)
+![Change active sheet](/assets/change_active_sheet.png)
 
 ## Renaming a sheet
 
 To rename a sheet, right-click the sheet tab, click *Rename*, and type the new name.
 
-![Rename sheet](assets/rename_sheet.png)
+![Rename sheet](/assets/rename_sheet.png)
 
 ## Cross-references between sheets
 
@@ -50,4 +50,4 @@ You can easily consolidate data from multiple sheets into a single one by using 
 
 3\.  Finish typing the formula and press Enter
 
-![Using formulas](assets/cross_reference.gif)
+![Using formulas](/assets/cross_reference.gif)
