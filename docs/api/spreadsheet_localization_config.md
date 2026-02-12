@@ -23,7 +23,7 @@ The **localization** object may contain the following properties:
 - **decimal** - (optional) the symbol used as a decimal separator, **"."** by default.<br>Possible values are `"." | ","`
 - **thousands** - (optional) the symbol used as a thousands separator, **","** by default.<br>Possible values are `"." | "," | " " | ""`
 - **currency** - (optional) the currency sign, **"$"** by default
-- **dateFormat** - (optional) the format of displaying dates set as a string. The default format is **"%d/%m/%Y"**. Check the details at the [`dateFormat`](/api/spreadsheet_dateformat_config) API page
+- **dateFormat** - (optional) the format of displaying dates set as a string. The default format is **"%d/%m/%Y"**. Check the details at the [`dateFormat`](../../api/spreadsheet_dateformat_config) API page
 - **timeFormat** - (optional) the format of displaying time set as either *12* or *24*. The default format is **12**
 
 ### Default config

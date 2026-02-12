@@ -29,7 +29,7 @@ spreadsheet.freezeRows("sheet2!B2"); // the rows up to the "2" row in "sheet2" w
 
 **Related articles:** [Work with Spreadsheet](/working_with_ssheet/#freezingunfreezing-rows-and-columns)
 
-**Related API:** [`unfreezeRows()`](/api/spreadsheet_unfreezerows_method/)
+**Related API:** [`unfreezeRows()`](../../api/spreadsheet_unfreezerows_method/)
 
 **Related sample:** [Spreadsheet. Freezing columns and rows via API](https://snippet.dhtmlx.com/a12xd1mn)
 

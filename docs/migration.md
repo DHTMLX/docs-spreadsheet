@@ -37,7 +37,7 @@ spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfroz
 spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
 ~~~
 
-- new action is added: [`toggleFreeze`](../api/overview/actions_overview//#list-of-actions) 
+- new action is added: [`toggleFreeze`](../api/overview/actions_overview/#list-of-actions) 
 
 ~~~jsx title="From v5.2"
 // using the `toggleFreeze` action with the beforeAction/afterAction events

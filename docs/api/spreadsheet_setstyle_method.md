@@ -11,7 +11,7 @@ description: You can learn about the setStyle method in the documentation of the
 @short: Sets style to a cell(s)
 
 :::info
-The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [](../api/spreadsheet_parse_method) method.
+The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [`parse()`](../../api/spreadsheet_parse_method/) method.
 :::
 
 ### Usage
@@ -23,7 +23,7 @@ setStyle(cell: string, styles: array | object): void;
 ### Parameters
 
 - `cell` -  (required) the id(s) of a cell(s) or a range of cells
-- `styles` - (required) styles that should be applied to cells. [Check the list of properties which you can use to style cells](/api/spreadsheet_parse_method/#list-of-properties) 
+- `styles` - (required) styles that should be applied to cells. [Check the list of properties which you can use to style cells](../../api/spreadsheet_parse_method/#list-of-properties) 
 
 ### Example
 

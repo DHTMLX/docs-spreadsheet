@@ -141,7 +141,7 @@ If you need to create a data set *for several sheets* at once, specify data as a
         - `row` - (optional) specifies the number of fixed rows, (e.g. 2), *0* by default
 
 :::info
-In case the [`multisheets`](/api/spreadsheet_multisheets_config) configuration option is set to *false*, only one sheet will be created.
+In case the [`multisheets`](../../api/spreadsheet_multisheets_config) configuration option is set to *false*, only one sheet will be created.
 :::
 
 ### Example

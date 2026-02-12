@@ -64,5 +64,5 @@ Now you can get down to using DHTMLX Spreadsheet in your application. Follow the
 
 To dive deeper into the specificity of DHTMLX Spreadsheet, go into more profound manuals:
 
-- [API overview](../api/api_overview)
+- [API overview](api/api_overview)
 - [Guides](/guides)

@@ -178,7 +178,7 @@ export function getData(): any {
 }
 ~~~
 
-Then open the ***spreadsheet.component.ts*** file. Import the file with data and apply it using the [`parse()`](/api/spreadsheet_parse_method/) method within the `ngOnInit()` method, as shown below.
+Then open the ***spreadsheet.component.ts*** file. Import the file with data and apply it using the [`parse()`](../api/spreadsheet_parse_method/) method within the `ngOnInit()` method, as shown below.
 
 ~~~jsx {2,18,21} title="spreadsheet.component.ts"
 import { Spreadsheet } from "@dhx/trial-spreadsheet";

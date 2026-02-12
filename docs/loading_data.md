@@ -113,7 +113,7 @@ const styledData = {
 ~~~
 
 :::info
-[Check the list of properties which you can use for styling cells](../api/spreadsheet_parse_method.#list-of-properties) 
+[Check the list of properties which you can use for styling cells](../api/spreadsheet_parse_method/#list-of-properties) 
 :::
 
 ### Setting the locked state for a cell
@@ -134,7 +134,7 @@ const dataset = [
 ];
 ~~~
 
-Check the full list of available cell properties in the [API reference](../api/spreadsheet_parse_method#parameters).
+Check the full list of available cell properties in the [API reference](../api/spreadsheet_parse_method/#parameters).
 
 **Related sample**: [Spreadsheet. Locked cells](https://snippet.dhtmlx.com/czeyiuf8?tag=spreadsheet)
 

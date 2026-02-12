@@ -253,7 +253,7 @@ Released on December 7, 2023
 
 ### New functionality
 
-- [Support for new themes](/themes/): Dark, Light High Contrast and Dark High Contrast
+- [Support for new themes](/themes): Dark, Light High Contrast and Dark High Contrast
 - Extended [support for number, date, time and currency format localization](/number_formatting/#number-date-time-currency-localization)
 - [Integration with the Svelte framework](/svelte_integration)
 - Ability to [provide a custom name for an exported .xlsx file](/loading_data/#how-to-set-a-custom-name-for-an-exported-file)
@@ -752,6 +752,6 @@ Check the [Migration](/migration) article to get information about the usage of 
 
 The API of Spreadsheet has been changed and became more handy to work with. One more significant update is the total redesign of the component which gave a modern look to the interface of Spreadsheet. Together with the fresh appearance the usability of DHTMLX Spreadsheet is greatly enhanced.
 
-- [DHTMLX Spreadsheet overview](/index)
+- [DHTMLX Spreadsheet overview](../)
 - [Fully customizable structure and adjustable look and feel](/customization)
 - [Completely refreshed API](../api/api_overview)

@@ -20,7 +20,7 @@ afterAction: (action: string, config: object) => void;
 
 The callback of the event takes the following parameters:
 
-- `action` - (required) the name of the action. Check the full list of available actions [here](/api/overview/actions_overview/#list-of-actions)
+- `action` - (required) the name of the action. Check the full list of available actions [here](../../api/overview/actions_overview/#list-of-actions)
 - `config` - (required) an object with parameters of the action
 
 ### Example
@@ -41,5 +41,5 @@ spreadsheet.events.on("afterAction", (actionName, config) => {
 **Changelog:** Added in v4.3
 
 **Related articles:** 
-- [Spreadsheet actions](/api/overview/actions_overview/)
+- [Spreadsheet actions](../../api/overview/actions_overview/)
 - [Event handling](/handling_events) 

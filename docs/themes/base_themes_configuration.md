@@ -8,7 +8,7 @@ description: You can explore how to configure themes in the documentation of the
 
 ## Configuring all themes
 
-You may notice that CSS variables of the [default](/themes/#light-theme-default) theme include variables of the color scheme:
+You may notice that CSS variables of the [default](../#light-theme-default) theme include variables of the color scheme:
 
 ~~~css
 --dhx-h-primary: 200;
@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Configuring a separate theme
 
-If you want to override some color values for a separate [Spreadsheet theme](/themes), you need to do this in the **'data-dhx-theme'** attribute:
+If you want to override some color values for a separate [Spreadsheet theme](../), you need to do this in the **'data-dhx-theme'** attribute:
 
 ~~~html {1-27,39}
 <style>
