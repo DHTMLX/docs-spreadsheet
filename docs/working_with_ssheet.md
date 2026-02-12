@@ -10,13 +10,13 @@ While users interact with Spreadsheet via its intuitive interface, you can work 
 
 ## Undo/redo actions
 
-There is the [](../api/spreadsheet_undo_method) API method that allows reverting the latest action:
+There is the [undo()](../api/spreadsheet_undo_method) API method that allows reverting the latest action:
 
 ~~~jsx
 spreadsheet.undo();
 ~~~
 
-To reapply a reverted action once again use the [](../api/spreadsheet_redo_method) method:
+To reapply a reverted action once again use the [redo()](../api/spreadsheet_redo_method) method:
 
 ~~~jsx
 spreadsheet.redo();
@@ -28,8 +28,8 @@ spreadsheet.redo();
 
 To add/delete a column, use the related API methods:
 
-- [](../api/spreadsheet_addcolumn_method)
-- [](../api/spreadsheet_deletecolumn_method)
+- [addColumn()](../api/spreadsheet_addcolumn_method)
+- [deleteColumn()](../api/spreadsheet_deletecolumn_method)
 
 Pass to the methods the id of the cell that contains the id of a column that should be added/deleted.
 
@@ -50,8 +50,8 @@ You can delete several columns by providing a range of cells' ids as a parameter
 
 To add/delete a row, use the API methods below:
 
-- [](../api/spreadsheet_addrow_method)
-- [](../api/spreadsheet_deleterow_method)
+- [addRow()](../api/spreadsheet_addrow_method)
+- [deleteRow()](../api/spreadsheet_deleterow_method)
 
 Pass to the methods the id of the cell that contains the id of a row that should be added/deleted.
 
@@ -85,8 +85,8 @@ You may need to fix (or "freeze") some columns or rows, so that they will become
 
 To freeze/unfreeze columns, use the related API methods:
 
-- [](../api/spreadsheet_freezecols_method)
-- [](../api/spreadsheet_unfreezecols_method)
+- [freezeCols()](../api/spreadsheet_freezecols_method)
+- [unfreezeCols()](../api/spreadsheet_unfreezecols_method)
 
 Pass to the methods the id of the cell to define the id of a column. If the cell id isn't passed, the currently selected cell will be used.
 
@@ -104,8 +104,8 @@ spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfr
 
 To freeze/unfreeze rows, use the related API methods:
 
-- [](../api/spreadsheet_freezerows_method)
-- [](../api/spreadsheet_unfreezerows_method)
+- [freezeRows()](../api/spreadsheet_freezerows_method)
+- [unfreezeRows()](../api/spreadsheet_unfreezerows_method)
 
 Pass to the methods the id of the cell to define the id of a row. If the cell id isn't passed, the currently selected cell will be used.
 
@@ -155,8 +155,8 @@ You can hide and show particular rows and columns via the corresponding API meth
 
 To hide/show a column, use the following methods:
 
-- [](../api/spreadsheet_hidecols_method)
-- [](../api/spreadsheet_showcols_method)
+- [hideCols()](../api/spreadsheet_hidecols_method)
+- [showCols()](../api/spreadsheet_showcols_method)
 
 Pass to the methods the id of the cell to define the id of a column. If the cell id isn't passed, the currently selected cell will be used.
 
@@ -176,8 +176,8 @@ spreadsheet.showCols("B2:C2"); // the "B" and "C" columns will become visible ag
 
 To hide/show a row, use the API methods below:
 
-- [](../api/spreadsheet_hiderows_method)
-- [](../api/spreadsheet_showrows_method)
+- [hideRows()](../api/spreadsheet_hiderows_method)
+- [showRows()](../api/spreadsheet_showrows_method)
 
 Pass to the methods the id of the cell to define the id of a row. If the cell id isn't passed, the currently selected cell will be used.
 
