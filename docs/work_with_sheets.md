@@ -42,7 +42,7 @@ To rename a sheet, right-click the sheet tab, click *Rename*, and type the new n
 
 ## Cross-references between sheets
 
-You can easily consolidate data from multiple sheets into a single one by using cross-referencing. <br> For that, take the following steps:
+You can easily consolidate data from multiple sheets into a single one by using cross-referencing. <br/> For that, take the following steps:
 
 1\.  Type an equal sign (=) into a cell
 

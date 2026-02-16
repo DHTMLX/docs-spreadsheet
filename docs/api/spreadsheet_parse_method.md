@@ -104,7 +104,7 @@ If you need to create a data set *for one sheet* only, specify data as an **arra
     - `text` - (optional) the text of a link
     - `href` - (required) the URL that defines the link destination
 
-<br>
+<br/>
 
 If you need to create a data set *for several sheets* at once, specify data as an **object** with the following parameter:
 
