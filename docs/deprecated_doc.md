@@ -6,11 +6,11 @@ description: You can learn about deprecated documentation 2.1 of the DHTMLX Java
 
 # Deprecated documentation 2.1
 
-:::note
-The [**API of version 2.1**](https://docs.dhtmlx.com/spreadsheet__reference.html) described in the deprecated documentation is still available, but it is incompatible with the [**API starting from version 3.0**](api/api_overview.md).
+:::info
+The **API of version 2.1** is still available, but it is incompatible with the [**API starting from version 3.0**](api/api_overview.md). If you require the documentation for version 2.1, please [contact us](https://dhtmlx.com/docs/contact.shtml), and we will send it to you.
 :::
 
-This list of changes will help you to migrate from the [version 2.1](https://docs.dhtmlx.com/spreadsheet__index.html) where DHTMLX Spreadsheet was PHP-based, to the totally renewed version 3.0, in which the component is totally built on JavaScript. Check the list below to explore all the changes.
+This list of changes will help you to migrate from the version 2.1 where DHTMLX Spreadsheet was PHP-based, to the totally renewed version 3.0, in which the component is totally built on JavaScript. Check the list below to explore all the changes.
 
 ## Changed API
 
