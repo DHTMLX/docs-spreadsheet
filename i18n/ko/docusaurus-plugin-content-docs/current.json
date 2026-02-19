@@ -1,0 +1,86 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "What's new and migration",
+    "description": "The label for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "What's new and migration",
+    "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Spreadsheet methods": {
+    "message": "Spreadsheet methods",
+    "description": "The label for category 'Spreadsheet methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Spreadsheet events": {
+    "message": "Spreadsheet events",
+    "description": "The label for category 'Spreadsheet events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Spreadsheet properties": {
+    "message": "Spreadsheet properties",
+    "description": "The label for category 'Spreadsheet properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Selection methods": {
+    "message": "Selection methods",
+    "description": "The label for category 'Selection methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Events Bus methods": {
+    "message": "Events Bus methods",
+    "description": "The label for category 'Events Bus methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Export methods": {
+    "message": "Export methods",
+    "description": "The label for category 'Export methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Guides",
+    "description": "The label for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Developer guides": {
+    "message": "Developer guides",
+    "description": "The label for category 'Developer guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Developer guides.link.generated-index.title": {
+    "message": "Developer guides",
+    "description": "The generated-index page title for category 'Developer guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Themes": {
+    "message": "Themes",
+    "description": "The label for category 'Themes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Themes.link.generated-index.title": {
+    "message": "Themes",
+    "description": "The generated-index page title for category 'Themes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integrations": {
+    "message": "Integrations",
+    "description": "The label for category 'Integrations' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Integrations.link.generated-index.title": {
+    "message": "Integrations",
+    "description": "The generated-index page title for category 'Integrations' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.User guides": {
+    "message": "User guides",
+    "description": "The label for category 'User guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.User guides.link.generated-index.title": {
+    "message": "User guides",
+    "description": "The generated-index page title for category 'User guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Work with cells": {
+    "message": "Work with cells",
+    "description": "The label for category 'Work with cells' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Work with cells.link.generated-index.title": {
+    "message": "Work with cells",
+    "description": "The generated-index page title for category 'Work with cells' in sidebar 'docs'"
+  }
+}

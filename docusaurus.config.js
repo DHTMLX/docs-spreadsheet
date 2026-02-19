@@ -130,6 +130,16 @@ module.exports = {
     tagline: 'DHTMLX JavaScript Spreadsheet Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/spreadsheet/',
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'de', 'ru', 'zh', 'ko'],
+        localeConfigs: {
+            zh: {
+                htmlLang: 'zh-CN',
+                label: '中文'
+            },
+        }
+    },
     onBrokenLinks: 'warn',
     // onBrokenMarkdownLinks: 'warn', // deprecated in v3.9.1
     onBrokenAnchors: 'warn',
@@ -188,7 +198,11 @@ module.exports = {
                     label: 'Download',
                     href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml',
                     position: 'right'
-                }
+                },
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
+                },
             ]
         },
         footer: {
