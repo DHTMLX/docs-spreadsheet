@@ -8,7 +8,7 @@ description: You can learn about the fitColumn method in the documentation of th
 
 ### Description
 
-@short: adjusts the width of the column to match the longest value in the column
+@short: Adjusts the width of the column to match the longest value in the column
 
 
 ### Usage

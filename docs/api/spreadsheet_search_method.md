@@ -8,7 +8,7 @@ description: You can learn about the search method in the documentation of the D
 
 ### Description
 
-@short: searches for cells by the specified parameters
+@short: Searches for cells by the specified parameters
 
 The method can also open a search box in the top right corner of the spreadsheet and highlight the matched results
 

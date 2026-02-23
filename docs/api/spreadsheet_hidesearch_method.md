@@ -8,7 +8,7 @@ description: You can learn about the hideSearch method in the documentation of t
 
 ### Description
 
-@short: hides the search bar
+@short: Hides the search bar
 
 ### Usage
 

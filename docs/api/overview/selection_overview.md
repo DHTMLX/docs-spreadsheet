@@ -8,8 +8,9 @@ description: You can have a Selection methods overview of the DHTMLX JavaScript 
 
 | Name                                           | Description                                           |
 | :--------------------------------------------- | :---------------------------------------------------- |
-| [](../selection_getfocusedcell_method.md)     | @getshort(../selection_getfocusedcell_method.md)     |
-| [](../selection_getselectedcell_method.md)    | @getshort(../selection_getselectedcell_method.md)    |
-| [](../selection_removeselectedcell_method.md) | @getshort(../selection_removeselectedcell_method.md) |
-| [](../selection_setfocusedcell_method.md)     | @getshort(../selection_setfocusedcell_method.md)     |
-| [](../selection_setselectedcell_method.md)    | @getshort(../selection_setselectedcell_method.md)    |
+| [getFocusedCell()](/api/selection_getfocusedcell_method/)     | @getshort(../selection_getfocusedcell_method.md)     |
+| [getSelectedCell()](/api/selection_getselectedcell_method/)    | @getshort(../selection_getselectedcell_method.md)    |
+| [removeSelectedCell()](/api/selection_removeselectedcell_method/) | @getshort(../selection_removeselectedcell_method.md) |
+| [setFocusedCell()](/api/selection_setfocusedcell_method/)     | @getshort(../selection_setfocusedcell_method.md)     |
+| [setSelectedCell()](/api/selection_setselectedcell_method/) | @getshort(../selection_setselectedcell_method.md)    |
+
