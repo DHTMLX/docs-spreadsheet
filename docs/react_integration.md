@@ -190,7 +190,7 @@ function App() {
 export default App;
 ~~~
 
-Go to the ***Spreadsheet.jsx*** file and apply the passed **props** to the Spreadsheet via the [`parse()`](/api/spreadsheet_parse_method/) method:
+Go to the ***Spreadsheet.jsx*** file and apply the passed **props** to the Spreadsheet via the [`parse()`](../api/spreadsheet_parse_method/) method:
 
 ~~~jsx {5,11} title="Spreadsheet.jsx"
 import { useEffect, useRef } from "react";
@@ -214,11 +214,11 @@ export default function SpreadsheetComponent(props) {
 }
 ~~~
 
-Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/properties_overview.md) to check the full list of available properties.
+Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](../api/overview/properties_overview) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](spreadsheet/api/overview/events_overview.md).
+When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](../api/overview/events_overview).
 
 Open ***Spreadsheet.jsx*** and complete the `useEffect()` method in the following way:
 
@@ -241,6 +241,6 @@ useEffect(() => {
 
 After that, you can start the app to see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/trial_spreadsheet.png)
+![Spreadsheet initialization](/assets/integrations/trial_spreadsheet.png)
 
 Now you know how to integrate DHTMLX Spreadsheet with React. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/react-spreadsheet-demo).

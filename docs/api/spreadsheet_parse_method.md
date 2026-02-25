@@ -95,7 +95,7 @@ If you need to create a data set *for one sheet* only, specify data as an **arra
 - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
 - `value` - (required) the value of a cell
 - `css` - (optional) the name of the CSS class
-- `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+- `format` - (optional) the name of the [default number format](/number_formatting/#default-number-formats) or of a [custom format](/number_formatting/#formats-customization) that you've added to apply to the cell value
 - `editor` - (optional) an object with configuration settings for the editor of a cell:
     - `type` - (required) the type of the cell editor: "select"
     - `options` - (required) either a range of cells ("A1:B8") or an array of string values
@@ -104,7 +104,7 @@ If you need to create a data set *for one sheet* only, specify data as an **arra
     - `text` - (optional) the text of a link
     - `href` - (required) the URL that defines the link destination
 
-<br>
+<br/>
 
 If you need to create a data set *for several sheets* at once, specify data as an **object** with the following parameter:
 
@@ -121,7 +121,7 @@ If you need to create a data set *for several sheets* at once, specify data as a
         - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
         - `value` - (required) the value of a cell
         - `css` - (optional) the name of the CSS class
-        - `format` - (optional) the name of the [default number format](number_formatting.md/#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
+        - `format` - (optional) the name of the [default number format](/number_formatting/#default-number-formats) or of a [custom format](/number_formatting/#formats-customization) that you've added to apply to the cell value
         - `editor` - (optional) an object with configuration settings for the editor of a cell:
             - `type` - (required) the type of the cell editor: "select"
             - `options` - (required) either a range of cells ("A1:B8") or an array of string values
@@ -141,7 +141,7 @@ If you need to create a data set *for several sheets* at once, specify data as a
         - `row` - (optional) specifies the number of fixed rows, (e.g. 2), *0* by default
 
 :::info
-In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
+In case the [`multisheets`](../../api/spreadsheet_multisheets_config) configuration option is set to *false*, only one sheet will be created.
 :::
 
 ### Example
@@ -288,7 +288,7 @@ but in some cases they may not work in the way you expect (for example, when app
 - The **rows** and **cols** properties of the **sheets** object were added in v4.2
 - The ability to prepare data for several sheets was added in v4.1
 
-**Related articles:** [Data loading and export](loading_data.md)
+**Related articles:** [Data loading and export](/loading_data)
 
 **Related samples**:
 

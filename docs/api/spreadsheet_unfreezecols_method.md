@@ -27,9 +27,9 @@ spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfroz
 spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](/working_with_ssheet/#freezingunfreezing-rows-and-columns)
 
-**Related API:** [`freezeCols()`](api/spreadsheet_freezecols_method.md/)
+**Related API:** [`freezeCols()`](../../api/spreadsheet_freezecols_method/)
 
 **Related sample:** [Spreadsheet. Freezing columns and rows via API](https://snippet.dhtmlx.com/a12xd1mn)
 

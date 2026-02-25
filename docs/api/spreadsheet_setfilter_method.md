@@ -89,6 +89,6 @@ spreadsheet.setFilter();
 
 **Change log:** Added in v5.0
 
-**Related article:** [Filtering data](working_with_ssheet.md#filtering-data)
+**Related article:** [Filtering data](/working_with_ssheet/#filtering-data)
 
 **Related sample:** [Spreadsheet. Filtering via API](https://snippet.dhtmlx.com/effrcsg6)

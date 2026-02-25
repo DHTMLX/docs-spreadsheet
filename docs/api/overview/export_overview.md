@@ -8,5 +8,5 @@ description: You can have an Export methods overview of the DHTMLX JavaScript Sp
 
 | Name                          | Description                          |
 | ----------------------------- | ------------------------------------ |
-| [](../export_json_method.md) | @getshort(../export_json_method.md) |
-| [](../export_xlsx_method.md) | @getshort(../export_xlsx_method.md) |
+| [json()](/api/export_json_method/) | @getshort(../export_json_method.md) |
+| [xlsx()](/api/export_xlsx_method/) | @getshort(../export_xlsx_method.md) |

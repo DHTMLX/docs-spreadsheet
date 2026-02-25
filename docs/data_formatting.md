@@ -10,7 +10,7 @@ description: You can learn about data formatting in the documentation of the DHT
 
 The toolbar of DHTMLX Spreadsheet contains several sections with buttons for modifying the style of data in a cell.
 
-![Color](assets/color.png)
+![Color](/assets/color.png)
 
 What you can do:
 
@@ -31,11 +31,11 @@ To align data in a cell horizontally, take the following steps:
 
 - Click the "Horizontal align" button in the toolbar and pick *Left*, *Center*, or *Right*
 
-![Alignment](assets/align.png)
+![Alignment](/assets/align.png)
 
 - Or go to: *Format* -> *Horizontal align* -> Pick *Left*, *Center*, or *Right* in the menu
 
-![Horizontal alignment](assets/horizontal_alignment.png)
+![Horizontal alignment](/assets/horizontal_alignment.png)
 
 ### Vertical alignment
 
@@ -47,11 +47,11 @@ To align data in a cell vertically, take the following steps:
 
 - Click the "Vertical align" button in the toolbar and pick *Top*, *Center*, or *Bottom* 
 
-![Vertical alignment](assets/vertical_align.png)
+![Vertical alignment](/assets/vertical_align.png)
 
 - Or go to: *Format* -> *Vertical align* -> Pick *Top*, *Center*, or *Bottom* in the menu
  
-![Vertical alignment](assets/vertical_alignment.png)
+![Vertical alignment](/assets/vertical_alignment.png)
 
 ### Wrap text in a cell
 
@@ -63,11 +63,11 @@ You can wrap text in cells in the following way:
 
 - Click the "Text wrapping" button in the toolbar and pick *Clip* or *Wrap*
 
-![Wrap text](assets/wrap.png)
+![Wrap text](/assets/wrap.png)
 
 - Or go to: *Format* -> *Text wrapping* -> Pick *Clip* or *Wrap* in the menu
 
-![Wrap text](assets/text_wrapping.png)
+![Wrap text](/assets/text_wrapping.png)
 
 :::tip
 When you change the width of the column, text wrapping adjusts automatically.
@@ -83,7 +83,7 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 - Use the **Clear** button in the toolbar.
 - Choose the desired option in the drop-down list:
 
-![Clear button](assets/clear_button.png)
+![Clear button](/assets/clear_button.png)
 
 2\. via the context menu of a cell:
 
@@ -91,7 +91,7 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 - Right-click the selection to call the context menu.
 - Choose the **Clear** option and then select one of the options in the drop-down list:
 
-![Clear option](assets/clear_option.png)
+![Clear option](/assets/clear_option.png)
 
 ## Styled borders for cells
 
@@ -102,11 +102,11 @@ You can add a styled border(s) for a cell or a group of cells.
 - Select the necessary cell or a group of cells to set a styled border(s) for
 - Click the **Border** button in the toolbar and choose the desired type of the border, its color and style
 
-![Styled border](assets/styled_cell_border.png)
+![Styled border](/assets/styled_cell_border.png)
 
 ### Removing styled borders 
 
 - Select the necessary cell or a group of cells from which you want to remove styled borders
 - Click the **Border** button in the toolbar and choose the *Clear borders* option
 
-![Clear border](assets/clear_cells_border.png)
+![Clear border](/assets/clear_cells_border.png)

@@ -8,7 +8,7 @@ description: You can learn about the search method in the documentation of the D
 
 ### Description
 
-@short: searches for cells by the specified parameters
+@short: Searches for cells by the specified parameters
 
 The method can also open a search box in the top right corner of the spreadsheet and highlight the matched results
 
@@ -44,4 +44,4 @@ spreadsheet.search("feb", true, "Income"); // -> ['C1']
 
 **Change log:** Added in v5.0
 
-**Related article:** [Work with Spreadsheet](working_with_ssheet.md#searching-for-data)
+**Related article:** [Work with Spreadsheet](/working_with_ssheet/#searching-for-data)

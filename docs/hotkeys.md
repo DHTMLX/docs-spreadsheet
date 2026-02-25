@@ -208,7 +208,7 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
         </tr>
         <tr>
             <td><b>Left Shift + Left click</b></td>
-            <td>allows selecting a range of cells, where the selected cell is the first cell<br> of the range and the clicked cell is the last cell of the range</td>
+            <td>allows selecting a range of cells, where the selected cell is the first cell<br/> of the range and the clicked cell is the last cell of the range</td>
         </tr>
         <tr>
             <td><b>Ctrl (Cmd) + Shift + Left click</b></td>

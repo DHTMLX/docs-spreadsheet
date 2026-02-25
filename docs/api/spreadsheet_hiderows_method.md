@@ -28,9 +28,9 @@ spreadsheet.hideRows("sheet2!B2"); // the "2" row in "sheet2" will be hidden
 spreadsheet.hideRows("B2:C4"); // the rows from "2" to "4" will be hidden 
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#hidingshowing-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](/working_with_ssheet/#hidingshowing-rows-and-columns)
 
-**Related API:** [`showRows()`](api/spreadsheet_showrows_method.md)
+**Related API:** [`showRows()`](../../api/spreadsheet_showrows_method)
 
 **Related sample:** [Spreadsheet. Hiding columns and rows via API](https://snippet.dhtmlx.com/zere1ote)
 

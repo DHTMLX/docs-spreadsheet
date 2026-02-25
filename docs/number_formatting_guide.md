@@ -50,8 +50,8 @@ Follow the steps below to apply a particular number format to Spreadsheet data v
 - Select a cell or several cells that you want to format.
 - Click the **Number format** button:
 
-![Number format button](assets/number_format_button.png)
+![Number format button](/assets/number_format_button.png)
 
 - Select the format you want to apply among the suggested options:
 
-![Number format](assets/number_format_options.png)
+![Number format](/assets/number_format_options.png)

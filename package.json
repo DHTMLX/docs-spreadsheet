@@ -10,7 +10,9 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "generate": "cd plugins && node generate.js",
-    "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
+    "normalizeLink": "cd plugins && node samplesLinksNormalize.js",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.2",
