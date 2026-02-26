@@ -109,4 +109,4 @@ You can add a styled border(s) for a cell or a group of cells.
 - Select the necessary cell or a group of cells from which you want to remove styled borders
 - Click the **Border** button in the toolbar and choose the *Clear borders* option
 
-![Clear border](assets/clear_cells_border.png)
+![Clear border](assets/clear_cells_border.png) 
