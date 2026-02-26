@@ -54,3 +54,4 @@ This list of changes will help you to migrate from the version 2.1 where DHTMLX 
 - `setItalic()`
 - `setLocked()`
 - `setValidator()`
+
