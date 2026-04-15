@@ -225,6 +225,41 @@ module.exports = {
         },
         {
             type: "category",
+            label: "React",
+            collapsible: true,
+            collapsed: true,
+            link: {
+                type: 'doc',
+                id: "react/index"
+            },
+            items: [
+                "react/overview",
+                "react/installation",
+                "react/quick-start",
+                "react/props",
+                "react/events",
+                "react/types",
+                "react/themes",
+                "react/localization",
+                {
+                    type: "category",
+                    label: "Data & State Management",
+                    collapsible: true,
+                    collapsed: true,
+                    link: {
+                        type: 'doc',
+                        id: "react/state/index"
+                    },
+                    items: [
+                        "react/state/state-management-basics",
+                        "react/state/redux-toolkit"
+                    ]
+                },
+                "react/nextjs"
+            ]
+        },
+        {
+            type: "category",
             label: "Guides",
             collapsible: true,
             collapsed: false,

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(md|js\\)$\")",
+      "Bash(ls /mnt/c/development/work/docs-spreadsheet/docs/*.md)"
+    ]
+  }
+}
