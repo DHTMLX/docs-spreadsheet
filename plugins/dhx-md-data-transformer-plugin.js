@@ -17,7 +17,7 @@ module.exports = (context, options) => {
         module: {
           rules: [
             {
-              include: [path.resolve(siteDir, 'docs')],
+              include: [path.resolve(siteDir, 'docs'), path.resolve(siteDir, 'i18n')],
               test: /(\.mdx?)$/,
               use: [
                 {

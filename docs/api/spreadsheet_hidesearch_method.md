@@ -8,7 +8,7 @@ description: You can learn about the hideSearch method in the documentation of t
 
 ### Description
 
-@short: hides the search bar
+@short: Hides the search bar
 
 ### Usage
 
@@ -31,4 +31,4 @@ spreadsheet.hideSearch();
 
 **Change log:** Added in v5.0
 
-**Related article:** [Work with Spreadsheet](working_with_ssheet.md#searching-for-data)
+**Related article:** [Work with Spreadsheet](/working_with_ssheet/#searching-for-data)

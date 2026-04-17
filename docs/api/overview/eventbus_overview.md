@@ -8,7 +8,7 @@ description: You can have an Event Bus methods overview of the DHTMLX JavaScript
 
 | Name                               | Description                               |
 | ---------------------------------- | ----------------------------------------- |
-| [](../eventsbus_detach_method.md) | @getshort(../eventsbus_detach_method.md) |
-| [](../eventsbus_fire_method.md)   | @getshort(../eventsbus_fire_method.md)   |
-| [](../eventsbus_on_method.md)     | @getshort(../eventsbus_on_method.md)     |
+| [detach()](/api/eventsbus_detach_method/) | @getshort(../eventsbus_detach_method.md) |
+| [fire()](/api/eventsbus_fire_method/)   | @getshort(../eventsbus_fire_method.md)   |
+| [on()](/api/eventsbus_on_method/)     | @getshort(../eventsbus_on_method.md)     |
 

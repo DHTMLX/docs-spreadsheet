@@ -8,7 +8,7 @@ description: You can learn about the mergeCells method in the documentation of t
 
 ### Description
 
-@short: merges a range of cells into one or splits merged cells
+@short: Merges a range of cells into one or splits merged cells
 
 ### Usage
 
@@ -41,4 +41,4 @@ spreadsheet.mergeCells("A2:A5", true);
 
 **Changelog:** Added in v5.0
 
-**Related article:** [Work with cells](working_with_cells.md#merging-cells)
+**Related article:** [Work with cells](/working_with_cells/#merging-cells)

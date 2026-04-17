@@ -112,7 +112,7 @@ spreadsheet.toolbar.data.remove("control-id");
 
 ### Default controls
 
-The [default toolbar](/#toolbar) contains the following blocks of controls:
+The [default toolbar](#toolbar) contains the following blocks of controls:
 
 - the **Undo** block
   - the *Undo* button (id: "undo")
@@ -188,7 +188,7 @@ spreadsheet.toolbar.data.add({
 });
 ~~~
 
-![Custom Toolbar Button](assets/custom_toolbar_button.png)
+![Custom Toolbar Button](/assets/custom_toolbar_button.png)
 
 **Related sample**: [Spreadsheet. Toolbar Buttons](https://snippet.dhtmlx.com/qopk6lta)
 
@@ -222,7 +222,7 @@ spreadsheet.toolbar.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 ~~~
 
-![Custom Toolbar Icons](assets/custom_toolbar_icons.png)
+![Custom Toolbar Icons](/assets/custom_toolbar_icons.png)
 
 **Related sample**: [Spreadsheet. Toolbar Icons](https://snippet.dhtmlx.com/mvnx43o0)
 
@@ -238,7 +238,7 @@ spreadsheet.toolbar.data.remove("undo");
 
 ### Default controls
 
-The [default menu](/#menu) has the following structure:
+The [default menu](#menu) has the following structure:
 
 - the **File** menuItem (id: "edit")
   - the *Import as...* menuItem (id: "import")
@@ -318,7 +318,7 @@ spreadsheet.menu.data.add({
 });
 ~~~
 
-![Custom Menu Item](assets/custom_menuitem.png)
+![Custom Menu Item](/assets/custom_menuitem.png)
 
 **Related sample**: [Spreadsheet. Menu data](https://snippet.dhtmlx.com/2mlv2qaz)
 
@@ -331,7 +331,7 @@ spreadsheet.menu.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.menu.data.update("redo", { icon: "fa fa-redo" });
 ~~~
 
-![Custom Menu Icons](assets/custom_menu_icons.png)
+![Custom Menu Icons](/assets/custom_menu_icons.png)
 
 ### Deleting controls
 
@@ -345,7 +345,7 @@ spreadsheet.menu.data.remove("undo");
 
 ### Default controls
 
-The [default context menu](/#context-menu) has the following structure:
+The [default context menu](#context-menu) has the following structure:
 
 - the **Lock** menuItem (id: "lock")
 - the **Clear** menuItem (id: "clear")
@@ -386,7 +386,7 @@ spreadsheet.contextMenu.data.add({
 });
 ~~~
 
-![Custom Context Menu Item](assets/custom_context_menuitem.png)
+![Custom Context Menu Item](/assets/custom_context_menuitem.png)
 
 **Related sample**: [Spreadsheet. Context Menu](https://snippet.dhtmlx.com/atl9gd4h)
 
@@ -398,7 +398,7 @@ In the example below the default icons of the Lock menuItem is changed to the Fo
 spreadsheet.contextMenu.data.update("lock", { icon: "fa fa-key" });
 ~~~
 
-![Custom Context Menu Icon](assets/custom_context_icon.png)
+![Custom Context Menu Icon](/assets/custom_context_icon.png)
 
 ### Deleting controls
 
@@ -410,11 +410,11 @@ spreadsheet.contextMenu.data.remove("lock");
 
 ## Custom read-only mode
 
-Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
+Besides applying the [read-only mode](/configuration/#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
-- [](api/spreadsheet_beforeeditstart_event.md)
-- [](api/spreadsheet_beforestylechange_event.md)
-- [](api/spreadsheet_beforevaluechange_event.md)
+- [beforeEditStart](../api/spreadsheet_beforeeditstart_event)
+- [beforeStyleChange](../api/spreadsheet_beforestylechange_event)
+- [beforeValueChange](../api/spreadsheet_beforevaluechange_event)
 
 ~~~jsx
 var spreadsheet = new dhx.Spreadsheet("cont");

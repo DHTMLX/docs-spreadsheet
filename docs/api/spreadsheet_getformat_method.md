@@ -47,4 +47,4 @@ where *sheet1* is the name of the tab.
 In case the name of the tab isn't specified, the method will return the format applied to the value of a cell from the tab that is currently active.
 :::
 
-**Related articles:** [Number formatting](number_formatting.md)
+**Related articles:** [Number formatting](/number_formatting)

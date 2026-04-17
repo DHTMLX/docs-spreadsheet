@@ -27,9 +27,9 @@ spreadsheet.freezeCols("B2"); // the columns up to the "B" column will be fixed
 spreadsheet.freezeCols("sheet2!B2"); // the columns up to the "B" column in "sheet2" will be fixed
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](/working_with_ssheet/#freezingunfreezing-rows-and-columns)
 
-**Related API:** [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md/)
+**Related API:** [`unfreezeCols()`](../../api/spreadsheet_unfreezecols_method)
 
 **Related sample:** [Spreadsheet. Freezing columns and rows via API](https://snippet.dhtmlx.com/a12xd1mn)
 

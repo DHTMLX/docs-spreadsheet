@@ -178,7 +178,7 @@ export function getData(): any {
 }
 ~~~
 
-Then open the ***spreadsheet.component.ts*** file. Import the file with data and apply it using the [`parse()`](/api/spreadsheet_parse_method/) method within the `ngOnInit()` method, as shown below.
+Then open the ***spreadsheet.component.ts*** file. Import the file with data and apply it using the [`parse()`](../api/spreadsheet_parse_method/) method within the `ngOnInit()` method, as shown below.
 
 ~~~jsx {2,18,21} title="spreadsheet.component.ts"
 import { Spreadsheet } from "@dhx/trial-spreadsheet";
@@ -210,11 +210,11 @@ export class SpreadsheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](spreadsheet/api/overview/events_overview.md) to check the full list of available properties.
+Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](../api/overview/events_overview) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](/spreadsheet/api/overview/events_overview/).
+When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](../api/overview/events_overview/).
 
 Open the **spreadsheet.component.ts** file and complete the `ngOnInit()` method as in:
 
@@ -279,6 +279,6 @@ platformBrowserDynamic()
 
 After that, you can start the app to see Spreadsheet loaded with data on a page.
 
-![Spreadsheet initialization](assets/integrations/trial_spreadsheet.png)
+![Spreadsheet initialization](/assets/integrations/trial_spreadsheet.png)
 
 Now you know how to integrate DHTMLX Spreadsheet with Angular. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/angular-spreadsheet-demo).

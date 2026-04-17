@@ -34,4 +34,4 @@ spreadsheet.parse(data);
 spreadsheet.addColumn("G1");
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)
+**Related articles:** [Work with Spreadsheet](/working_with_ssheet/#addingremoving-rows-and-columns)

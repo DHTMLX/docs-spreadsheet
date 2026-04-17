@@ -40,6 +40,6 @@ To export files you need to:
 
 By default the link to CDN is used.
 
-**Related articles:** [Data loading and export](loading_data.md#exporting-data)
+**Related articles:** [Data loading and export](/loading_data/#exporting-data)
 
 **Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)

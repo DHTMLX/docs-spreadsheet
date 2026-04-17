@@ -8,7 +8,7 @@ description: You can learn about the insertLink method in the documentation of t
 
 ### Description
 
-@short: inserts/removes a hyperlink in a cell
+@short: Inserts/removes a hyperlink in a cell
 
 ### Usage
 
@@ -50,4 +50,4 @@ spreadsheet.insertLink("A2");
 
 **Change log:** Added in v5.0
 
-**Related article:** [Work with Spreadsheet](working_with_cells.md#inserting-a-hyperlink-into-a-cell)
+**Related article:** [Work with Spreadsheet](/working_with_cells/#inserting-a-hyperlink-into-a-cell)

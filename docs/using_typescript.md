@@ -10,7 +10,7 @@ Starting from v4.0, the library of DHTMLX Spreadsheet provides the ability to us
 
 {{note You can try out the functionality directly in our <a href="https://snippet.dhtmlx.com/ihtkdcoc"  target="_blank">Snippet Tool</a>.}}
 
-![Using TypeScript](assets/typescript.png)
+![Using TypeScript](/assets/typescript.png)
 
 ## Advantages of using TypeScript
 
