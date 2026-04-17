@@ -1,5 +1,5 @@
 ---
-sidebar_label: Redux Toolkit
+sidebar_label: Redux toolkit
 title: React Spreadsheet with Redux Toolkit
 description: "Step-by-step integration of DHTMLX React Spreadsheet with Redux Toolkit."
 ---
@@ -8,14 +8,10 @@ description: "Step-by-step integration of DHTMLX React Spreadsheet with Redux To
 
 This tutorial shows how to manage spreadsheet data in a Redux Toolkit store.
 
-:::tip Using a commercial license?
-Replace `@dhtmlx/trial-react-spreadsheet` with `@dhx/react-spreadsheet` and configure the private registry. See [Installation](../installation.md).
-:::
-
 ## Prerequisites
 
 - Familiarity with React, TypeScript, and [Redux Toolkit](https://redux-toolkit.js.org/) basics
-- Completed the [State Management Basics](./state-management-basics.md) guide
+- Completed the [State Management Basics](/react/state/state-management-basics) guide
 
 ## Setup
 
@@ -122,7 +118,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 import { useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { ReactSpreadsheet, type SpreadsheetRef } from "@dhtmlx/trial-react-spreadsheet";
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 import type { RootState } from "./store";
 import { setSheets } from "./store/spreadsheetSlice";
 
@@ -176,6 +172,6 @@ const getCellValue = (cell: string) => {
 
 ## Related
 
-- [Props Reference](../props.md) — all component props
-- [Events Reference](../events.md) — event callback props
-- [State Management Basics](./state-management-basics.md) — core patterns
+- [Props Reference](/react/props/) — all component props
+- [Events Reference](/react/events/) — event callback props
+- [State Management Basics](/react/state/state-management-basics/) — core patterns

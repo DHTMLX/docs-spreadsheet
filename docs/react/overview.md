@@ -46,7 +46,7 @@ The React wrapper provides access to the full feature set of DHTMLX Spreadsheet:
 ~~~tsx
 import { useState } from "react";
 import { ReactSpreadsheet, type SheetData } from "@dhtmlx/trial-react-spreadsheet";
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 
 function App() {
     const [sheets] = useState<SheetData[]>([
@@ -70,27 +70,23 @@ function App() {
 }
 ~~~
 
-:::tip Using a commercial license?
-Replace `@dhtmlx/trial-react-spreadsheet` with `@dhx/react-spreadsheet` and configure the private registry. See [Installation](./installation.md).
-:::
-
 ## Import paths
 
 **Evaluation** (public npm, free 30-day evaluation):
 
 ~~~tsx
 import { ReactSpreadsheet } from "@dhtmlx/trial-react-spreadsheet";
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 ~~~
 
 **Commercial** (private npm, requires license):
 
 ~~~tsx
 import { ReactSpreadsheet } from "@dhx/react-spreadsheet";
-import "@dhx/react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhx/react-spreadsheet/spreadsheet.react.css";
 ~~~
 
-See [Installation](./installation.md) for registry configuration and all available package variants.
+See [Installation](/react/installation/) for registry configuration and all available package variants.
 
 ## Prop Update Behavior
 
@@ -196,6 +192,6 @@ The `instance` property is `null` before the widget initializes and after unmoun
 
 | Document | Contents |
 |----------|----------|
-| [Props Reference](./props.md) | All component props with types, defaults, and examples |
-| [Events Reference](./events.md) | Event callback props grouped by category |
-| [Types Reference](./types.md) | TypeScript interfaces, enums, and type aliases |
+| [Props Reference](/react/props/) | All component props with types, defaults, and examples |
+| [Events Reference](/react/events/) | Event callback props grouped by category |
+| [Types Reference](/react/types/) | TypeScript interfaces, enums, and type aliases |

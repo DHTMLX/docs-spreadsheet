@@ -1,5 +1,5 @@
 ---
-sidebar_label: Quick Start
+sidebar_label: Quick start
 title: Quick Start with React Spreadsheet
 description: "Step-by-step guide to rendering your first DHTMLX React Spreadsheet component."
 ---
@@ -7,10 +7,6 @@ description: "Step-by-step guide to rendering your first DHTMLX React Spreadshee
 # Quick Start with React Spreadsheet
 
 This tutorial walks you through creating a React application with DHTMLX Spreadsheet from scratch.
-
-:::tip Using a commercial license?
-Replace `@dhtmlx/trial-react-spreadsheet` with `@dhx/react-spreadsheet` and configure the private registry. See [Installation](./installation.md).
-:::
 
 ## Create a new project
 
@@ -25,7 +21,7 @@ cd my-spreadsheet-app
 npm install @dhtmlx/trial-react-spreadsheet
 ~~~
 
-For other package variants, see [Installation](./installation.md).
+For other package variants, see [Installation](/react/installation/).
 
 ## Create demo data
 
@@ -63,7 +59,7 @@ Replace the contents of `src/App.tsx`:
 ~~~tsx title="src/App.tsx"
 import { useState } from "react";
 import { ReactSpreadsheet, type SheetData } from "@dhtmlx/trial-react-spreadsheet";
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 import { sheets as initialSheets, styles } from "./data";
 
 function App() {
@@ -103,9 +99,9 @@ Open the URL shown in your terminal (typically `http://localhost:5173`) to see t
 
 ## Next steps
 
-- [Props Reference](./props.md) — configure the spreadsheet behavior
-- [Events Reference](./events.md) — respond to user actions
-- [Types Reference](./types.md) — TypeScript interfaces and enums
-- [Data & State Management](./state/index.md) — manage spreadsheet data in application state
+- [Props Reference](/react/props/) — configure the spreadsheet behavior
+- [Events Reference](/react/events/) — respond to user actions
+- [Types Reference](/react/types/) — TypeScript interfaces and enums
+- [Data & State Management](/react/state/index/) — manage spreadsheet data in application state
 
 You can also explore the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-demo) for a complete working example.

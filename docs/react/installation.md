@@ -64,13 +64,13 @@ npm install @dhx/react-spreadsheet
 Import the stylesheet in your application entry point or component:
 
 ~~~tsx
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 ~~~
 
 For the commercial version:
 
 ~~~tsx
-import "@dhx/react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhx/react-spreadsheet/spreadsheet.react.css";
 ~~~
 
 ## TypeScript

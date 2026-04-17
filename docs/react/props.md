@@ -8,10 +8,6 @@ description: "Complete reference of all ReactSpreadsheet component props with ty
 
 All props are optional. The component renders an empty spreadsheet with default settings when no props are provided.
 
-:::tip Using a commercial license?
-Replace `@dhtmlx/trial-react-spreadsheet` with `@dhx/react-spreadsheet` and configure the private registry. See [Installation](./installation.md).
-:::
-
 ## Init-Only Props
 
 Changing any of these props causes the widget to be destroyed and recreated. Spreadsheet data is preserved, but undo/redo history and UI state (selection, scroll position) are reset.
@@ -26,7 +22,7 @@ Changing any of these props causes the widget to be destroyed and recreated. Spr
 | `localization` | `ISpreadsheetConfig["localization"]` | Number/date formatting locale (decimal separator, currency symbol, etc.). Separate from `spreadsheetLocale`. See JS API: [`localization`](/api/spreadsheet_localization_config/). |
 | `importModulePath` | `string` | Path to the XLSX import module. See JS API: [`importModulePath`](/api/spreadsheet_importmodulepath_config/). |
 | `exportModulePath` | `string` | Path to the XLSX export module. See JS API: [`exportModulePath`](/api/spreadsheet_exportmodulepath_config/). |
-| `spreadsheetLocale` | [`SpreadsheetLocale`](./types.md#spreadsheetlocale) | UI translations and localized formula names. Separate from `localization`. |
+| `spreadsheetLocale` | [`SpreadsheetLocale`](/react/types/#spreadsheetlocale) | UI translations and localized formula names. Separate from `localization`. |
 
 :::warning
 Changing any init-only prop triggers a full destroy/recreate cycle. Undo/redo history, selection, and scroll position will be reset.
@@ -46,7 +42,7 @@ These props are applied immediately without destroying the widget. No data loss 
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `sheets` | [`SheetData[]`](./types.md#sheetdata) | The single source of truth for all spreadsheet data. Each entry represents a sheet with its cells, structure, and metadata. Changes are applied incrementally. |
+| `sheets` | [`SheetData[]`](/react/types#sheetdata) | The single source of truth for all spreadsheet data. Each entry represents a sheet with its cells, structure, and metadata. Changes are applied incrementally. |
 | `styles` | `Record<string, Record<string, string>>` | Shared CSS style definitions referenced by `CellData.css`. Keys are class names, values are CSS property maps. See [Styles example](#styles-example). |
 | `activeSheet` | `Id` | Id of the active (visible) sheet. Changing this switches the displayed sheet tab. |
 
@@ -58,7 +54,7 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `search` | [`SearchConfig`](./types.md#searchconfig) | Controlled search state. Pass a `SearchConfig` object to trigger/update search. Pass `undefined` to dismiss the search bar. |
+| `search` | [`SearchConfig`](/react/types#searchconfig) | Controlled search state. Pass a `SearchConfig` object to trigger/update search. Pass `undefined` to dismiss the search bar. |
 
 ## Data Loading Props
 
@@ -71,7 +67,7 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `theme` | [`SpreadsheetTheme`](./types.md#spreadsheettheme) | Color theme. Built-in values: `"light"`, `"dark"`, `"contrast-light"`, `"contrast-dark"`. Also accepts custom theme name strings. See [Themes](./themes.md). |
+| `theme` | [`SpreadsheetTheme`](/react/types#spreadsheettheme) | Color theme. Built-in values: `"light"`, `"dark"`, `"contrast-light"`, `"contrast-dark"`. Also accepts custom theme name strings. See [Themes](/react/themes/). |
 
 ## Container Props
 
@@ -100,7 +96,10 @@ const [sheets, setSheets] = useState<SheetData[]>([
         },
         rows: { 0: { height: 40 } },
         cols: { 0: { width: 150 }, 1: { width: 120 } },
-        merged: [{ from: { row: 0, column: 0 }, to: { row: 0, column: 1 } }],
+        merged: [{
+            from: { row: 0, column: 0 },
+            to: { row: 0, column: 1 }
+        }],
         freeze: { row: 1 },
     },
 ]);
@@ -152,8 +151,8 @@ To disable sheet tabs:
 ~~~tsx
 <ReactSpreadsheet
     sheets={sheets}
-    importModulePath="/assets/excel2json.wasm"
-    exportModulePath="/assets/json2excel.wasm"
+    importModulePath="../libs/excel2json/1.0/worker.js"
+    exportModulePath="../libs/json2excel/1.0/worker.js"
 />
 ~~~
 

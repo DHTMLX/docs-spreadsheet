@@ -6,10 +6,6 @@ description: "Core patterns for managing spreadsheet data in React: controlled p
 
 # Data Binding & State Management Basics
 
-:::tip Using a commercial license?
-Replace `@dhtmlx/trial-react-spreadsheet` with `@dhx/react-spreadsheet` and configure the private registry. See [Installation](../installation.md).
-:::
-
 ## The declarative model
 
 React Spreadsheet follows a declarative approach: you store sheet data in React state, pass it as props, and the wrapper automatically diffs your data against the current widget state — applying only the changes.
@@ -17,7 +13,7 @@ React Spreadsheet follows a declarative approach: you store sheet data in React 
 ~~~tsx
 import { useState } from "react";
 import { ReactSpreadsheet, type SheetData } from "@dhtmlx/trial-react-spreadsheet";
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 
 function App() {
     const [sheets, setSheets] = useState<SheetData[]>([
@@ -88,7 +84,7 @@ function App() {
 
 ## The ref escape hatch
 
-For operations that don't map to declarative props, use the [`SpreadsheetRef`](../types.md#spreadsheetref) to access the underlying widget instance:
+For operations that don't map to declarative props, use the [`SpreadsheetRef`](/react/types#spreadsheetref) to access the underlying widget instance:
 
 - **Serialize data:** `ref.current?.instance?.serialize()`
 - **Undo/redo:** `ref.current?.instance?.undo()` / `ref.current?.instance?.redo()`

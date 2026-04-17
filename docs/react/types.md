@@ -6,7 +6,7 @@ description: "TypeScript interfaces, enums, and type aliases exported from @dhx/
 
 # Types Reference
 
-All types are exported from `@dhx/react-spreadsheet`.
+All types are exported from `@dhx/react-spreadsheet` | `@dhtmlx/trial-react-spreadsheet`.
 
 ~~~tsx
 import type { SheetData, CellData, SpreadsheetRef /* ... */ } from "@dhtmlx/trial-react-spreadsheet";

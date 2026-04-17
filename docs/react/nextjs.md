@@ -6,10 +6,6 @@ description: "How to use DHTMLX React Spreadsheet in a Next.js application with 
 
 # React Spreadsheet in Next.js
 
-:::tip Using a commercial license?
-Replace `@dhtmlx/trial-react-spreadsheet` with `@dhx/react-spreadsheet` and configure the private registry. See [Installation](./installation.md).
-:::
-
 ## Overview
 
 DHTMLX Spreadsheet is a client-side widget that requires access to the browser DOM. In Next.js with the App Router, server components are the default — so the spreadsheet must be wrapped in a client component using the `"use client"` directive.
@@ -37,7 +33,7 @@ Create a new file for the spreadsheet component with the `"use client"` directiv
 
 import { useState } from "react";
 import { ReactSpreadsheet, type SheetData } from "@dhtmlx/trial-react-spreadsheet";
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 
 const initialSheets: SheetData[] = [
     {
@@ -72,7 +68,7 @@ export default function SpreadsheetView() {
 Import the CSS file directly in the client component (as shown above) or in your root layout:
 
 ~~~tsx title="src/app/layout.tsx"
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 ~~~
 
 ## Container sizing

@@ -19,7 +19,7 @@ These props are independent — you can use either or both.
 
 ## UI localization (spreadsheetLocale)
 
-The `spreadsheetLocale` prop accepts a [`SpreadsheetLocale`](./types.md#spreadsheetlocale) object with two properties:
+The `spreadsheetLocale` prop accepts a [`SpreadsheetLocale`](/react/types#spreadsheetlocale) object with two properties:
 
 - `locale` — a `Record<string, string>` of UI string overrides
 - `formulas` — a `Record<string, [string, string?][]>` of localized formula names grouped by category
@@ -35,9 +35,9 @@ const locale: SpreadsheetLocale = {
         // ... more UI strings
     },
     formulas: {
-        "Math": [
-            ["SUMME", "Returns the sum of values"],
-            ["MITTELWERT", "Returns the average of values"],
+        "MATCH": [
+            ["Suchwert", "Erforderlich. Der Wert, der im Sucharray abgeglichen werden soll."],
+            ["Sucharray", "Erforderlich. Ein Zellbereich oder ein Array-Bezug."],
         ],
         // ... more formula categories
     },
@@ -72,4 +72,4 @@ The `localization` prop controls how numbers and dates are displayed — decimal
 ## Related
 
 - [Localization](/localization/) — DHTMLX Spreadsheet localization guide
-- [SpreadsheetLocale type](./types.md#spreadsheetlocale) — TypeScript interface reference
+- [SpreadsheetLocale type](/react/types/#spreadsheetlocale) — TypeScript interface reference

@@ -243,7 +243,7 @@ module.exports = {
                 "react/localization",
                 {
                     type: "category",
-                    label: "Data & State Management",
+                    label: "Data & state management",
                     collapsible: true,
                     collapsed: true,
                     link: {

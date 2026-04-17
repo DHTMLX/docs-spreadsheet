@@ -6,13 +6,9 @@ description: "Apply built-in or custom themes to DHTMLX React Spreadsheet."
 
 # React Spreadsheet Themes
 
-:::tip Using a commercial license?
-Replace `@dhtmlx/trial-react-spreadsheet` with `@dhx/react-spreadsheet` and configure the private registry. See [Installation](./installation.md).
-:::
-
 ## Built-in themes
 
-The [`SpreadsheetTheme`](./types.md#spreadsheettheme) type defines four built-in themes:
+The [`SpreadsheetTheme`](/react/types#spreadsheettheme) type defines four built-in themes:
 
 - `"light"` (default)
 - `"dark"`
@@ -36,7 +32,7 @@ Use React state to switch themes dynamically:
 ~~~tsx
 import { useState } from "react";
 import { ReactSpreadsheet, type SheetData, type SpreadsheetTheme } from "@dhtmlx/trial-react-spreadsheet";
-import "@dhtmlx/trial-react-spreadsheet/dist/spreadsheet.react.css";
+import "@dhtmlx/trial-react-spreadsheet/spreadsheet.react.css";
 
 function App() {
     const [sheets] = useState<SheetData[]>([/* ... */]);
@@ -90,6 +86,6 @@ import "./custom-theme.css";
 
 ## Related
 
-- [Themes](/themes/themes/) — built-in theme overview for DHTMLX Spreadsheet
+- [Themes](/themes/) — built-in theme overview for DHTMLX Spreadsheet
 - [Base themes configuration](/themes/base_themes_configuration/) — configuring base themes
 - [Custom theme](/themes/custom_theme/) — creating custom themes

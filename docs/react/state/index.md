@@ -10,12 +10,12 @@ This section covers patterns for managing spreadsheet data in sync with your app
 
 ## Start here
 
-- [State Management Basics](./state-management-basics.md) — core patterns: controlled props, event callbacks, the ref escape hatch, and performance tips
+- [State Management Basics](/react/state/state-management-basics/) — core patterns: controlled props, event callbacks, the ref escape hatch, and performance tips
 
 ## State library guides
 
-- [Redux Toolkit](./redux-toolkit.md) — step-by-step integration with Redux Toolkit
+- [Redux Toolkit](/react/state/redux-toolkit/) — step-by-step integration with Redux Toolkit
 
 ## Key concept
 
-The `sheets` prop is the **single source of truth** for all spreadsheet data. Pass an array of [`SheetData`](../types.md#sheetdata) objects, and the wrapper diffs your data against the current widget state, applying only the changes. Use immutable updates (spread operators, functional `setState` updaters) so React can detect changes efficiently.
+The `sheets` prop is the **single source of truth** for all spreadsheet data. Pass an array of [`SheetData`](/react/types#sheetdata) objects, and the wrapper diffs your data against the current widget state, applying only the changes. Use immutable updates (spread operators, functional `setState` updaters) so React can detect changes efficiently.
