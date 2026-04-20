@@ -6,10 +6,6 @@ description: You can study developer and user guides in the documentation of the
 
 # Guides
 
-:::info
-This documentation is dedicated to the renewed DHTMLX Spreadsheet of version **3.0 and upper**. To get information about the previous version **2.1**, [follow the related documentation](https://docs.dhtmlx.com/spreadsheet__index.html).
-:::
-
 DHTMLX Spreadsheet provides a range of great features to build a perfect application that include: support for import/export of data in different formats, handy work with content and style of data, adaptable structure of a spreadsheet, readonly mode, wide possibilities for look and feel customization, integration with famous frameworks, etc.
 
 ## Developer guides
