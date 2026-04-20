@@ -4,7 +4,7 @@ title: React Spreadsheet Localization
 description: "Localize UI labels, formula names, and number/date formatting in React Spreadsheet."
 ---
 
-# React Spreadsheet Localization
+# React Spreadsheet localization
 
 React Spreadsheet provides two separate localization mechanisms for different aspects of the UI.
 

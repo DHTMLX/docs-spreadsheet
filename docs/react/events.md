@@ -4,7 +4,7 @@ title: Events Reference
 description: "Event callback props for ReactSpreadsheet: actions, selection, editing, sheets, and derived state."
 ---
 
-# Events Reference
+# Events reference
 
 All event callbacks are optional props. "Before" callbacks can return `false` to cancel the operation.
 
@@ -12,7 +12,7 @@ All event callbacks are optional props. "Before" callbacks can return `false` to
 The React wrapper uses `onCamelCase` prop names (e.g. `onAfterAction`) while the JS Spreadsheet API uses `camelCase` event names on the event bus (e.g. `afterAction`). See the [JS API Events Reference](/api/overview/events_overview/) for the imperative API.
 :::
 
-## Action Events
+## Action events
 
 Fired for any user action (cell edits, formatting, structural changes, etc.).
 
@@ -45,7 +45,7 @@ import { Actions } from "@dhtmlx/trial-react-spreadsheet";
 />
 ~~~
 
-## Selection Events
+## Selection events
 
 Fired when the cell selection or focus changes.
 
@@ -71,7 +71,7 @@ const [selectedCell, setSelectedCell] = useState<string>("");
 <p>Current cell: {selectedCell}</p>
 ~~~
 
-## Edit Events
+## Edit events
 
 Fired when cell editing begins or ends.
 
@@ -95,7 +95,7 @@ Fired when cell editing begins or ends.
 />
 ~~~
 
-## Sheet Events
+## Sheet events
 
 Fired when the active sheet tab changes.
 
@@ -115,7 +115,7 @@ Fired when the active sheet tab changes.
 />
 ~~~
 
-## Data Events
+## Data events
 
 | Prop | Description |
 |------|-------------|
@@ -132,7 +132,7 @@ const [loading, setLoading] = useState(true);
 />
 ~~~
 
-## Input Events
+## Input events
 
 Fired during user input in cells or the formula bar.
 
@@ -142,7 +142,7 @@ Fired during user input in cells or the formula bar.
 | `onEditLineInput` | Fires on input in the formula/edit line. Handler: `(value: string) => void`. |
 | `onCellInput` | Fires on input in a cell during editing. Handler: `(cell: string, value: string) => void`. |
 
-## Derived State Callbacks
+## Derived state callbacks
 
 These callbacks notify about computed state changes rather than direct user actions.
 

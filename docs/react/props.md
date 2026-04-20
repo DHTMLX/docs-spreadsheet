@@ -4,11 +4,11 @@ title: Props Reference
 description: "Complete reference of all ReactSpreadsheet component props with types and examples."
 ---
 
-# Props Reference
+# Props reference
 
 All props are optional. The component renders an empty spreadsheet with default settings when no props are provided.
 
-## Init-Only Props
+## Init-only props
 
 Changing any of these props causes the widget to be destroyed and recreated. Spreadsheet data is preserved, but undo/redo history and UI state (selection, scroll position) are reset.
 
@@ -28,7 +28,7 @@ Changing any of these props causes the widget to be destroyed and recreated. Spr
 Changing any init-only prop triggers a full destroy/recreate cycle. Undo/redo history, selection, and scroll position will be reset.
 :::
 
-## Runtime Props
+## Runtime props
 
 These props are applied immediately without destroying the widget. No data loss or UI state reset.
 
@@ -38,7 +38,7 @@ These props are applied immediately without destroying the widget. No data loss 
 | `colsCount` | `number` | Number of columns in the grid. See JS API: [`colsCount`](/api/spreadsheet_colscount_config/). |
 | `readonly` | `boolean` | Enable read-only mode. See JS API: [`readonly`](/api/spreadsheet_readonly_config/). |
 
-## Data Props
+## Data props
 
 | Prop | Type | Description |
 |------|------|-------------|
@@ -50,13 +50,13 @@ These props are applied immediately without destroying the widget. No data loss 
 Changing `styles` triggers a full data reload. Spreadsheet data is preserved, but undo/redo history and UI state (selection, scroll position) are reset.
 :::
 
-## Search Props
+## Search props
 
 | Prop | Type | Description |
 |------|------|-------------|
 | `search` | [`SearchConfig`](/react/types#searchconfig) | Controlled search state. Pass a `SearchConfig` object to trigger/update search. Pass `undefined` to dismiss the search bar. |
 
-## Data Loading Props
+## Data loading props
 
 | Prop | Type | Description |
 |------|------|-------------|
@@ -69,7 +69,7 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 |------|------|-------------|
 | `theme` | [`SpreadsheetTheme`](/react/types#spreadsheettheme) | Color theme. Built-in values: `"light"`, `"dark"`, `"contrast-light"`, `"contrast-dark"`. Also accepts custom theme name strings. See [Themes](/react/themes/). |
 
-## Container Props
+## Container props
 
 | Prop | Type | Description |
 |------|------|-------------|
@@ -80,7 +80,7 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 
 ## Examples
 
-### Sheets with Cell Data
+### Sheets with cell data
 
 ~~~tsx
 const [sheets, setSheets] = useState<SheetData[]>([
@@ -107,7 +107,7 @@ const [sheets, setSheets] = useState<SheetData[]>([
 <ReactSpreadsheet sheets={sheets} activeSheet="sheet1" />
 ~~~
 
-### Styles Example
+### Styles example
 
 ~~~tsx
 const styles = {
@@ -125,7 +125,7 @@ const styles = {
 <ReactSpreadsheet sheets={sheets} styles={styles} />
 ~~~
 
-### Toolbar Customization
+### Toolbar customization
 
 ~~~tsx
 <ReactSpreadsheet
@@ -134,7 +134,7 @@ const styles = {
 />
 ~~~
 
-### Multi-Sheet Mode
+### Multi-sheet mode
 
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} multiSheets={true} />
@@ -146,7 +146,7 @@ To disable sheet tabs:
 <ReactSpreadsheet sheets={sheets} multiSheets={false} />
 ~~~
 
-### Excel Import/Export
+### Excel import/export
 
 ~~~tsx
 <ReactSpreadsheet
@@ -156,7 +156,7 @@ To disable sheet tabs:
 />
 ~~~
 
-### European Number Formatting
+### European number formatting
 
 ~~~tsx
 <ReactSpreadsheet
@@ -169,7 +169,7 @@ To disable sheet tabs:
 />
 ~~~
 
-### Controlled Search
+### Controlled search
 
 ~~~tsx
 const [search, setSearch] = useState<SearchConfig | undefined>();
@@ -186,7 +186,7 @@ const [results, setResults] = useState<string[]>([]);
 />
 ~~~
 
-### Theme Switching
+### Theme switching
 
 ~~~tsx
 const [theme, setTheme] = useState<SpreadsheetTheme>("light");
@@ -201,19 +201,19 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 <ReactSpreadsheet sheets={sheets} theme={theme} />
 ~~~
 
-### Read-Only Mode
+### Read-only mode
 
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} readonly={true} />
 ~~~
 
-### Loading Data from URL
+### Loading data from URL
 
 ~~~tsx
 <ReactSpreadsheet loadUrl="/api/spreadsheet-data" loadFormat="json" />
 ~~~
 
-### Locked Cells
+### Locked cells
 
 ~~~tsx
 const sheets: SheetData[] = [
@@ -230,7 +230,7 @@ const sheets: SheetData[] = [
 <ReactSpreadsheet sheets={sheets} />
 ~~~
 
-### Cell Validation
+### Cell validation
 
 ~~~tsx
 const sheets: SheetData[] = [

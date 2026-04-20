@@ -261,7 +261,7 @@ Released on December 7, 2023
 
 ### Updates
 
-- Renewed [integrations with React, Angular and Vue.js](spreadsheet/category/integrations.md)
+- Renewed [integrations with React, Angular and Vue.js](/integrations/)
 - Automatic [conversion of lowercase letters to upper case](spreadsheet/functions.md) in formulas 
 - Auto closing of formulas 
 

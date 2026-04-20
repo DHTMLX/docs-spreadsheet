@@ -4,7 +4,7 @@ title: React Spreadsheet Overview
 description: "Overview of the official React wrapper: declarative data model, props, theming, events, and ref access."
 ---
 
-# React Spreadsheet Overview
+# React Spreadsheet overview
 
 `ReactSpreadsheet` is a declarative React wrapper for the DHTMLX Spreadsheet widget. It provides a component-based API where props describe the spreadsheet state, and the wrapper handles synchronization with the underlying widget.
 
@@ -36,12 +36,12 @@ The React wrapper provides access to the full feature set of DHTMLX Spreadsheet:
 - **Ref is an escape hatch.** For operations that don't map to declarative props (export, programmatic selection, undo/redo), access the underlying widget instance via ref.
 - **All widget events are exposed as typed `onXxx` callback props.** "Before" callbacks can return `false` to cancel the operation.
 
-## Version Requirements
+## Version requirements
 
 - React 18+
 - ESM-only package
 
-## Quick Start
+## Quick start
 
 ~~~tsx
 import { useState } from "react";
@@ -88,7 +88,7 @@ import "@dhx/react-spreadsheet/spreadsheet.react.css";
 
 See [Installation](/react/installation/) for registry configuration and all available package variants.
 
-## Prop Update Behavior
+## Prop update behavior
 
 Props are categorized by how the component handles changes:
 
@@ -158,7 +158,7 @@ const sheets: SheetData[] = [
 <ReactSpreadsheet sheets={sheets} readonly={true} />
 ~~~
 
-## Imperative Access via Ref
+## Imperative access via ref
 
 ~~~tsx
 import { useRef } from "react";

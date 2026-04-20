@@ -4,7 +4,7 @@ title: Data Binding & State Management Basics
 description: "Core patterns for managing spreadsheet data in React: controlled props, event callbacks, and the ref escape hatch."
 ---
 
-# Data Binding & State Management Basics
+# Data binding & state management basics
 
 ## The declarative model
 

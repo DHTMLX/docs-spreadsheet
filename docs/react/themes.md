@@ -4,7 +4,7 @@ title: React Spreadsheet Themes
 description: "Apply built-in or custom themes to DHTMLX React Spreadsheet."
 ---
 
-# React Spreadsheet Themes
+# React Spreadsheet themes
 
 ## Built-in themes
 

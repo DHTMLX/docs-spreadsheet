@@ -4,7 +4,7 @@ title: "Data & State Management"
 description: "Patterns for managing DHTMLX Spreadsheet data in React state or with state management libraries."
 ---
 
-# Data & State Management
+# Data & state management
 
 This section covers patterns for managing spreadsheet data in sync with your application state — from basic React `useState` to state management libraries.
 

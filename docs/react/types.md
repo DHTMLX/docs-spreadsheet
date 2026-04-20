@@ -4,7 +4,7 @@ title: Types Reference
 description: "TypeScript interfaces, enums, and type aliases exported from @dhx/react-spreadsheet."
 ---
 
-# Types Reference
+# Types reference
 
 All types are exported from `@dhx/react-spreadsheet` | `@dhtmlx/trial-react-spreadsheet`.
 
@@ -190,7 +190,7 @@ ref.current?.instance?.undo();
 ref.current?.instance?.redo();
 ~~~
 
-## Actions Enum
+## Actions enum
 
 Known spreadsheet action identifiers. Used in `onBeforeAction` / `onAfterAction` for type-safe action matching. The `| string` union on handler params allows forward-compatibility with future actions.
 
@@ -225,7 +225,7 @@ Known spreadsheet action identifiers. Used in `onBeforeAction` / `onAfterAction`
 | `toggleFreeze` | Toggle freeze panes. |
 | `toggleVisibility` | Toggle row/column visibility. |
 
-## Handler Type Aliases
+## Handler type aliases
 
 | Type | Signature | Used by |
 |------|-----------|---------|
@@ -249,7 +249,7 @@ type SpreadsheetConfigProps = Omit<
 
 Base type for component props. Exposes all `ISpreadsheetConfig` constructor options as flat props.
 
-## Re-exported Upstream Types
+## Re-exported upstream types
 
 These types are re-exported from `@dhx/ts-spreadsheet` for convenience:
 

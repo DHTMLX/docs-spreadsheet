@@ -40,7 +40,7 @@ Shows the ways of loading data into Spreadsheet, handling events and using main 
 Describes how to add DHTMLX Spreadsheet into apps based on other JavaScript frameworks.
 
 - [Integration with Angular](angular_integration.md)
-- [Integration with React](react_integration.md)
+- [React Spreadsheet](/react/)
 - [Integration with Vue.js](vuejs_integration.md)
 
 ## User guides
