@@ -273,24 +273,6 @@ module.exports = {
                                 "themes/custom_theme"
                             ]
                         },
-                        {
-                            type: "category",
-                            label: "Integrations",
-                            collapsible: true,
-                            collapsed: true,
-                            link: {
-                                type: 'generated-index',
-                                title: "Integrations",
-                                keywords: ['integrations'],
-                                image: '/img/docusaurus.png'
-                            },
-                            items: [
-                                "angular_integration",
-                                "react_integration",
-                                "svelte_integration",
-                                "vuejs_integration"
-                            ]
-                        },
                         "using_typescript"
                     ]
                 },
@@ -333,6 +315,58 @@ module.exports = {
                         "excel_import_export"
                     ]
                 }
+            ]
+        },
+        {
+            type: "category",
+            label: "Frameworks & integrations",
+            collapsible: true,
+            collapsed: true,
+            link: {
+                type: 'generated-index',
+                title: "Frameworks & integrations",
+                slug: '/integrations',
+                image: '/img/docusaurus.png'
+            },
+            items: [
+                {
+                    type: "category",
+                    label: "React Spreadsheet",
+                    collapsible: true,
+                    collapsed: true,
+                    link: {
+                        type: 'doc',
+                        id: "react/index"
+                    },
+                    items: [
+                        "react/overview",
+                        "react/installation",
+                        "react/quick-start",
+                        "react/props",
+                        "react/events",
+                        "react/types",
+                        "react/themes",
+                        "react/localization",
+                        {
+                            type: "category",
+                            label: "Data & state management",
+                            collapsible: true,
+                            collapsed: true,
+                            link: {
+                                type: 'doc',
+                                id: "react/state/index"
+                            },
+                            items: [
+                                "react/state/state-management-basics",
+                                "react/state/redux-toolkit"
+                            ]
+                        },
+                        "react/nextjs"
+                    ]
+                },
+                "angular_integration",
+                "svelte_integration",
+                "vuejs_integration"
             ]
         }
     ]
