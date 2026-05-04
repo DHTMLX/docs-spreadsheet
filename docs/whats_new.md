@@ -746,7 +746,7 @@ Released on October 25, 2018
 
 In comparison to the previous PHP-based version, DHTMLX Spreadsheet of version 3.0 is a completely client-side JavaScript component.
 
-Check the [Migration](migration.md) article to get information about the usage of new API. If you feel like keep using the previous version for a while, [the documentation for DHTMLX Spreadsheet v2.1](https://docs.dhtmlx.com/spreadsheet__index.html) is still available.
+Check the [Migration](migration.md#21---30) article to get information about the usage of new API.
 
 ### New functionality
 
