@@ -176,6 +176,25 @@ module.exports = {
                 },
                 {
                     type: "category",
+                    label: "Sheet Manager API",
+                    collapsible: true,
+                    collapsed: true,
+                    link: {
+                        type: 'doc',
+                        id: "api/overview/sheetmanager_overview"
+                    },
+                    items: [
+                        "api/sheetmanager_add_method",
+                        "api/sheetmanager_clear_method",
+                        "api/sheetmanager_get_method",
+                        "api/sheetmanager_getactive_method",
+                        "api/sheetmanager_getall_method",
+                        "api/sheetmanager_remove_method",
+                        "api/sheetmanager_setactive_method"
+                    ]
+                },
+                {
+                    type: "category",
                     label: "Selection methods",
                     collapsible: true,
                     collapsed: true,

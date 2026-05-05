@@ -299,4 +299,4 @@ spreadsheet.clear();
 
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
-If you need to clear a specific sheet, use the [clearSheet()](api/spreadsheet_clearsheet_method.md) method.
+If you need to clear a specific sheet, use the [sheets.clear()](api/sheetmanager_clear_method.md) method.

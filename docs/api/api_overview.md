@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: API Overview
-description: You can have an API overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: You can check an API overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # API overview
@@ -130,6 +130,18 @@ Parameters:
 | [](api/spreadsheet_timeformat_config.md)       | @getshort(api/spreadsheet_timeformat_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
 
+
+## Sheet Manager methods
+
+| Name                                      | Description                                      |
+| :---------------------------------------- | :----------------------------------------------- |
+| [](api/sheetmanager_add_method.md)       | @getshort(api/sheetmanager_add_method.md)       |
+| [](api/sheetmanager_clear_method.md)     | @getshort(api/sheetmanager_clear_method.md)     |
+| [](api/sheetmanager_get_method.md)       | @getshort(api/sheetmanager_get_method.md)       |
+| [](api/sheetmanager_getactive_method.md) | @getshort(api/sheetmanager_getactive_method.md) |
+| [](api/sheetmanager_getall_method.md)    | @getshort(api/sheetmanager_getall_method.md)    |
+| [](api/sheetmanager_remove_method.md)    | @getshort(api/sheetmanager_remove_method.md)    |
+| [](api/sheetmanager_setactive_method.md) | @getshort(api/sheetmanager_setactive_method.md) |
 
 ## Selection methods
 

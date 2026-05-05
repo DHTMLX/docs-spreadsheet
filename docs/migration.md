@@ -6,6 +6,74 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 # Migration to newer versions
 
+## 5.2 -> 6.0
+
+### Deprecated properties 
+
+The following properties of the `ISpreadsheetConfig` instance are deprecated. Use the recommended ways described below instead.
+
+<div className="deprecated-props-table">
+
+| Property | Type | Recommended usage | Description |
+| ---------- | ------ | ----------------------- | ------------------------------------------ |
+| `leftSplit` | number | `data.sheets[].freeze.col` | Set frozen columns inside the data object: `data = { sheets: [{ name: "Sheet 1", freeze: { col: "A", row: 1 } }] }` |
+| `topSplit` | number | `data.sheets[].freeze.row` | Set frozen rows inside the data object: `data = { sheets: [{ name: "Sheet 1", freeze: { col: "A", row: 1 } }] }` |
+| `dateFormat` | string | `localization.dateFormat` | Use the **localization** config property: `{ localization: { dateFormat: "%d/%m/%Y" } }` |
+| `timeFormat` | number | `localization.timeFormat` | Use the **localization** config property: `{ localization: { timeFormat: 12 } }` |
+
+</div>
+
+
+### Deprecated methods 
+
+The following methods of the `ISpreadsheet` instance are deprecated. Use the new Sheet Manager (`sheets`) module instead.
+
+<div className="deprecated-methods-table">
+
+| Deprecated method | Signature | New usage | New signature |
+| --- | --- | --- | --- |
+| `clearSheet(id?)` | `(id?: string) => void` | `sheets.clear(id?)` | `(id?: Id) => void` |
+| `removeSheet(id)` | `(id: string) => void` | `sheets.remove(id)` | `(id: Id) => void` |
+| `addSheet(name?)` | `(name?: string) => string` | `sheets.add(name?)` | `(name?: string) => Id` |
+| `getSheets()` | `() => ISheet[]` | `sheets.getAll()` | `() => ISheet[]` |
+| `getActiveSheet()` | `() => ISheet` | `sheets.getActive()` | `() => ISheet` |
+| `setActiveSheet(id)` | `(id: Id) => void` | `sheets.setActive(id)` | `(id: Id) => void` |
+
+</div>
+
+### Deprecated events  
+
+The following events (`SpreadsheetEvents`) are deprecated. Use the generic `beforeAction` / `afterAction` events pair instead.
+
+<div className="deprecated-events-table">
+
+| Deprecated event | Callback signature | New usage |
+| --- | --- | --- |
+| `beforeValueChange` | `(cell: string, value: string) => void \| boolean` | `beforeAction` with action `"setCellValue"` |
+| `afterValueChange` | `(cell: string, value: string) => void` | `afterAction` with action `"setCellValue"` |
+| `beforeStyleChange` | `(cell: string, style: ...) => void \| boolean` | `beforeAction` with action `"setCellStyle"` |
+| `afterStyleChange` | `(cell: string, style: ...) => void` | `afterAction` with action `"setCellStyle"` |
+| `beforeFormatChange` | `(cell: string, format: string) => void \| boolean` | `beforeAction` with action `"setCellFormat"` |
+| `afterFormatChange` | `(cell: string, format: string) => void` | `afterAction` with action `"setCellFormat"` |
+| `beforeRowAdd` | `(cell: string) => void \| boolean` | `beforeAction` with action `"addRow"` |
+| `afterRowAdd` | `(cell: string) => void` | `afterAction` with action `"addRow"` |
+| `beforeRowDelete` | `(cell: string) => void \| boolean` | `beforeAction` with action `"deleteRow"` |
+| `afterRowDelete` | `(cell: string) => void` | `afterAction` with action `"deleteRow"` |
+| `beforeColumnAdd` | `(cell: string) => void \| boolean` | `beforeAction` with action `"addColumn"` |
+| `afterColumnAdd` | `(cell: string) => void` | `afterAction` with action `"addColumn"` |
+| `beforeColumnDelete` | `(cell: string) => void \| boolean` | `beforeAction` with action `"deleteColumn"` |
+| `afterColumnDelete` | `(cell: string) => void` | `afterAction` with action `"deleteColumn"` |
+| `beforeSheetAdd` | `(name: string) => void \| boolean` | `beforeAction` with action `"addSheet"` |
+| `afterSheetAdd` | `(sheet: ISheet) => void` | `afterAction` with action `"addSheet"` |
+| `beforeSheetRemove` | `(sheet: ISheet) => void \| boolean` | `beforeAction` with action `"deleteSheet"` |
+| `afterSheetRemove` | `(sheet: ISheet) => void` | `afterAction` with action `"deleteSheet"` |
+| `beforeSheetRename` | `(sheet: ISheet, value: string) => void \| boolean` | `beforeAction` with action `"renameSheet"` |
+| `afterSheetRename` | `(sheet: ISheet) => void` | `afterAction` with action `"renameSheet"` |
+| `beforeSheetClear` | `(sheet: ISheet) => void \| boolean` | `beforeAction` with action `"clearSheet"` |
+| `afterSheetClear` | `() => void` | `afterAction` with action `"clearSheet"` |
+
+</div>
+
 ## 5.1 -> 5.2
 
 ### Freezing/unfreezing functionality

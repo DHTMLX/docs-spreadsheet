@@ -33,7 +33,7 @@ defaultFormats = [
     { 
         name: "Time",
            id: "time",
-           mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
+           mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the localization.timeFormat config
            example: "13:30:00"
     },
     { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
@@ -46,11 +46,13 @@ This is how a spreadsheet with data in various number formats looks like:
 
 ## Date format
 
-You can define the format the dates to be displayed in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property. The default format is "%d/%m/%Y". 
+You can define the format for dates displayed in the spreadsheet via the `dateFormat` option of the [localization](api/spreadsheet_localization_config.md) property. The default format is "%d/%m/%Y".
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    dateFormat: "%D/%M/%Y",
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    localization: {
+        dateFormat: "%D/%M/%Y",
+    }
 });
 
 spreadsheet.parse({
@@ -60,19 +62,21 @@ spreadsheet.parse({
     data: [
         {cell: "B1", value: "03/10/2022", format: "date"},
         {cell: "B2", value: new Date(), format: "date"},
-       ]
+    ]
 });
 ~~~
 
-Check [the full list of available characters used to make formats](api/spreadsheet_dateformat_config.md).
+Check [the full list of available characters used to make formats](api/spreadsheet_localization_config.md).
 
 ## Time format
 
-To define the format in which the time should be shown in the spreadsheet cells, use the [timeFormat](api/spreadsheet_timeformat_config.md) property:
+To define the format in which the time should be shown in the spreadsheet cells, use the `timeFormat` option of the [localization](api/spreadsheet_localization_config.md) property:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    timeFormat: 24,
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    localization: {
+        timeFormat: 24,
+    }
 });
 
 spreadsheet.parse({
@@ -83,7 +87,7 @@ spreadsheet.parse({
         { cell: "A1", value: "18:30", format: "time" },
         { cell: "A2", value: 44550.5625, format: "time" },
         { cell: "A3", value: new Date(), format: "time" },
-       ]
+    ]
 });
 ~~~
 
@@ -94,7 +98,7 @@ With Spreadsheet configuration options, you can localize time and date, specify 
 - **decimal** - (optional) the symbol used as a decimal separator, **"."** (a period) by default<br>Possible values are `"." | ","`
 - **thousands** - (optional) the symbol used as a thousands separator, **","** (a comma) by default<br>Possible values are `"." | "," | " " | ""`
 - **currency** - (optional) the currency sign, **"$"** by default 
-- **dateFormat** - (optional) the format of displaying dates set as a string, **"%d/%m/%Y"** by default. Check the details at the [dateFormat](api/spreadsheet_dateformat_config.md) API page
+- **dateFormat** - (optional) the format of displaying dates set as a string, **"%d/%m/%Y"** by default. Check the details at the [localization](api/spreadsheet_localization_config.md) API page
 - **timeFormat** - (optional) the format of displaying time set as either *12* or *24*, **12** by default
 
 For example, you can change the default localization settings as shown below:
@@ -172,5 +176,5 @@ var format = spreadsheet.getFormat("A1");
 
 There is a pair of events you can use to control the process of cell's format changing. They are:
 
-- [](api/spreadsheet_beforeformatchange_event.md) - fires before the format of a cell is changed
-- [](api/spreadsheet_afterformatchange_event.md) - fires after the format of a cell is changed
+- [](api/spreadsheet_beforeaction_event.md) - fires before the `setCellFormat` action is executed
+- [](api/spreadsheet_afteraction_event.md) - fires after the `setCellFormat` action is executed
