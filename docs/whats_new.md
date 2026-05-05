@@ -8,6 +8,44 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0
+
+Released on May, 2026
+
+[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-6-0/)
+
+### Breaking changes
+
+The new release introduces significant changes in the Spreadsheet API: there is a set of deprecated methods, properties and events. Check the [Migration guide](migration.md/#52---60) to keep in step with the latest version.
+
+### New functionality
+
+- The `ISheetManager` module is introduced. It is a centralized API for managing sheets in Spreadsheet. It is accessible via the `spreadsheet.sheets` property and replaces all the deprecated sheet-related methods on the root `ISpreadsheet` instance.
+    - new methods: `sheets.add`, `sheets.remove`, `sheets.getAll`, `sheets.getActive`, `sheets.setActive`, `sheets.clear`, `sheets.get`
+- React Spreadsheet wrapper is introduced
+- The ability to specify a custom (user-defined) formula
+- The ability to display numbers in the scientific (exponential) notation
+
+
+### Updates
+
+- The ability to adjust the font size of cell content:
+    - a built-in toolbar control 
+    - the ability to provide custom font size in the toolbar control
+- `COUNTIF` and `SUMIF` functions are added into the formulas engine
+- The `awaitRedraw()` helper is added for Spreadsheet to detect the rendering process and perform the desired code after the component finishes its rendering 
+
+### Fixes
+
+- Losing focus after switching the active sheet via API
+- Returning an array of changed cells in the transpose mode
+- Recalculating dependent formulas after paste
+- Overwriting locked cells with formulas during paste operations
+- The issue with running mathematical formulas in a locked cell
+- Sheet name escape cases: looks like cell ref, starts with a number, contains special characters
+- Dynamic array and zero id (the first cell of the first sheet)
+
+
 ## Version 5.2.9 
 
 Released on January 8, 2026
