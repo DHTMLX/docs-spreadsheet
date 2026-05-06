@@ -117,11 +117,6 @@ table th:first-child {
     width: 25%;
 }
 
-.deprecated-props-table table th:nth-child(1) { width: 12%; }
-.deprecated-props-table table th:nth-child(2) { width: 8%; }
-.deprecated-props-table table th:nth-child(3) { width: 20%; }
-.deprecated-props-table table th:nth-child(4) { width: 60%; }
-
 .deprecated-methods-table table th:nth-child(1) { width: 22%; }
 .deprecated-methods-table table th:nth-child(2) { width: 28%; }
 .deprecated-methods-table table th:nth-child(3) { width: 22%; }

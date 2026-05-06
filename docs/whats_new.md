@@ -497,7 +497,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 - Significantly extended list of supported [Date, Financial, Math, String functions](functions.md#information-functions) (marked with *added in v4.3* label)
 - Support for [Lookup functions](functions.md#lookup-functions)
 - [Time format](number_formatting.md/#default-number-formats) is added
-- The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](api/spreadsheet_timeformat_config.md) property
+- The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](api/spreadsheet_localization_config.md) property
 - The ability to enter time in a cell via a time picker
 - [Export to JSON](api/export_json_method.md)
 - [Import from JSON](api/spreadsheet_load_method.md#loading-json-files)
@@ -524,7 +524,7 @@ Released on November 29, 2021
 - The ability to remove selection from the specified cells via the [`removeSelectedCell()`](api/selection_removeselectedcell_method.md) method of the Selection object
 - The ability to clear a spreadsheet or its sheet via the [`clear()`](api/spreadsheet_clear_method.md) or `clearSheet()` method correspondingly
 - New events are added: [`beforeClear`](api/spreadsheet_beforeclear_event.md), [`afterClear`](api/spreadsheet_afterclear_event.md), [`beforeSheetClear`](api/spreadsheet_beforesheetclear_event.md), [`afterSheetClear`](api/spreadsheet_aftersheetclear_event.md)
-- The ability to define the format of dates in the spreadsheet via the [`dateFormat`](api/spreadsheet_dateformat_config.md) property
+- The ability to define the format of dates in the spreadsheet via the [`dateFormat`](api/spreadsheet_localization_config.md) property
 - [Date format is added to default number formats](number_formatting.md/#default-number-formats)
 
 ### Updates

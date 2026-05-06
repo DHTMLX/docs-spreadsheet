@@ -10,23 +10,16 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 ### Deprecated properties 
 
-The following properties of the `ISpreadsheetConfig` instance are deprecated. Use the recommended ways described below instead.
+The following properties of `ISpreadsheetConfig` are deprecated:
 
-<div className="deprecated-props-table">
-
-| Property | Type | Recommended usage | Description |
-| ---------- | ------ | ----------------------- | ------------------------------------------ |
-| `leftSplit` | number | `data.sheets[].freeze.col` | Set frozen columns inside the data object: `data = { sheets: [{ name: "Sheet 1", freeze: { col: "A", row: 1 } }] }` |
-| `topSplit` | number | `data.sheets[].freeze.row` | Set frozen rows inside the data object: `data = { sheets: [{ name: "Sheet 1", freeze: { col: "A", row: 1 } }] }` |
-| `dateFormat` | string | `localization.dateFormat` | Use the **localization** config property: `{ localization: { dateFormat: "%d/%m/%Y" } }` |
-| `timeFormat` | number | `localization.timeFormat` | Use the **localization** config property: `{ localization: { timeFormat: 12 } }` |
-
-</div>
-
+- `dateFormat` configuration property. Set it in the **localization** configuration object as:
+    - `{ localization: { dateFormat: "%d/%m/%Y" } }` 
+- `timeFormat` configuration property. Set it in the **localization** configuration object as: 
+    - `{ localization: { timeFormat: 12 } }` 
 
 ### Deprecated methods 
 
-The following methods of the `ISpreadsheet` instance are deprecated. Use the new Sheet Manager (`sheets`) module instead.
+The following methods of the `ISpreadsheet` instance are deprecated. Use the new `sheets` module (Sheet Manager) instead.
 
 <div className="deprecated-methods-table">
 
@@ -43,7 +36,7 @@ The following methods of the `ISpreadsheet` instance are deprecated. Use the new
 
 ### Deprecated events  
 
-The following events (`SpreadsheetEvents`) are deprecated. Use the generic `beforeAction` / `afterAction` events pair instead.
+The following events are deprecated. Use the generic `beforeAction` / `afterAction` events pair instead.
 
 <div className="deprecated-events-table">
 
@@ -80,7 +73,7 @@ The following events (`SpreadsheetEvents`) are deprecated. Use the generic `befo
 
 In v5.2 the way of freezing/unfreezing columns and rows has been modified:
 
-- the `leftSplit` and `topSplit` configuration properties that have been used for fixing columns and rows are deprecated
+- the `leftSplit` and `topSplit` configuration properties that have been used for fixing columns and rows are deprecated and removed
 
 ~~~jsx title="Before v5.2"
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {

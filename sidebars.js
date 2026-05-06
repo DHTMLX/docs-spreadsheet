@@ -154,7 +154,6 @@ module.exports = {
                     },
                     items: [
                         "api/spreadsheet_colscount_config",
-                        "api/spreadsheet_dateformat_config",
                         "api/spreadsheet_editline_config",
                         "api/spreadsheet_exportmodulepath_config",
                         "api/spreadsheet_formats_config",
@@ -164,7 +163,6 @@ module.exports = {
                         "api/spreadsheet_multisheets_config",
                         "api/spreadsheet_readonly_config",
                         "api/spreadsheet_rowscount_config",
-                        "api/spreadsheet_timeformat_config",
                         "api/spreadsheet_toolbarblocks_config"
                     ]
                 },

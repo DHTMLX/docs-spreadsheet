@@ -111,7 +111,6 @@ Parameters:
 | Name                                           | Description                                           |
 | ---------------------------------------------- | ----------------------------------------------------- |
 | [](api/spreadsheet_colscount_config.md)        | @getshort(api/spreadsheet_colscount_config.md)        |
-| [](api/spreadsheet_dateformat_config.md)       | @getshort(api/spreadsheet_dateformat_config.md)       |
 | [](api/spreadsheet_editline_config.md)         | @getshort(api/spreadsheet_editline_config.md)         |
 | [](api/spreadsheet_exportmodulepath_config.md) | @getshort(api/spreadsheet_exportmodulepath_config.md) |
 | [](api/spreadsheet_formats_config.md)          | @getshort(api/spreadsheet_formats_config.md)          |
@@ -121,7 +120,6 @@ Parameters:
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(api/spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(api/spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
-| [](api/spreadsheet_timeformat_config.md)       | @getshort(api/spreadsheet_timeformat_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
 
 
