@@ -19,3 +19,9 @@ Why do you need to use DHTMLX Spreadsheet with TypeScript?
 The main benefit of TypeScript is that it allows you to significantly increase the efficiency of the development process.
 
 The way of building an application becomes more robust as checking the types together with autocompletion allow you to avoid potential mistakes. Besides, TypeScript provides you with information about types of data you should use while working with the API of the DHTMLX Spreadsheet library.
+
+## JSDoc hints
+
+DHTMLX Spreadsheet type definitions include JSDoc annotations for the entire API. This means that when you work with the library in your IDE, you can read method descriptions, check parameter types, and view code examples without leaving your editor. Just hover over any method or property to see the inline documentation.
+
+![JSDoc hints in IDE](assets/jsdoc_hints.png)

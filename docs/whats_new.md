@@ -34,6 +34,7 @@ The new release introduces significant changes in the Spreadsheet API: there is 
     - the ability to provide custom font size in the toolbar control
 - `COUNTIF` and `SUMIF` functions are added into the formulas engine
 - The `awaitRedraw()` helper is added for Spreadsheet to detect the rendering process and perform the desired code after the component finishes its rendering 
+- JSDoc annotations are added to the type definitions, providing inline API descriptions, parameter types, and code examples directly in the IDE
 
 ### Fixes
 
