@@ -520,9 +520,9 @@ Released on November 29, 2021
 - Support for [boolean operators](functions.md/#boolean-operators)
 - The ability to resize rows from UI
 - New [Vertical align](data_formatting.md/#alignment) button is added into the toolbar
-- The ability to set the active sheet via the [`setActiveSheet()`](api/spreadsheet_setactivesheet_method.md) method
+- The ability to set the active sheet via the `setActiveSheet()` method
 - The ability to remove selection from the specified cells via the [`removeSelectedCell()`](api/selection_removeselectedcell_method.md) method of the Selection object
-- The ability to clear a spreadsheet or its sheet via the [`clear()`](api/spreadsheet_clear_method.md) or [`clearSheet()`](api/spreadsheet_clearsheet_method.md) method correspondingly
+- The ability to clear a spreadsheet or its sheet via the [`clear()`](api/spreadsheet_clear_method.md) or `clearSheet()` method correspondingly
 - New events are added: [`beforeClear`](api/spreadsheet_beforeclear_event.md), [`afterClear`](api/spreadsheet_afterclear_event.md), [`beforeSheetClear`](api/spreadsheet_beforesheetclear_event.md), [`afterSheetClear`](api/spreadsheet_aftersheetclear_event.md)
 - The ability to define the format of dates in the spreadsheet via the [`dateFormat`](api/spreadsheet_dateformat_config.md) property
 - [Date format is added to default number formats](number_formatting.md/#default-number-formats)
@@ -601,7 +601,7 @@ Released on March 24, 2021
 - The ability to [work with multiple sheets](work_with_sheets.md) in the spreadsheet
 - The ability to use [cross-references in multiple sheets](work_with_sheets.md#cross-references-between-sheets)
 - The ability to [load several sheets](working_with_sheets.md#loading-multiple-sheets) into the spreadsheet at once
-- New methods for working with [multiple sheets](working_with_sheets.md) are added: [addSheet()](api/spreadsheet_addsheet_method.md), [removeSheet()](api/spreadsheet_removesheet_method.md), [getActiveSheet()](api/spreadsheet_getactivesheet_method.md), [getSheets()](api/spreadsheet_getsheets_method.md)
+- New methods for working with [multiple sheets](working_with_sheets.md) are added: `addSheet()`, `removeSheet()`, `getActiveSheet()`, `getSheets()`
 - New events are added: [BeforeSheetAdd](api/spreadsheet_beforesheetadd_event.md), [AfterSheetAdd](api/spreadsheet_aftersheetadd_event.md), [BeforeSheetChange](api/spreadsheet_beforesheetchange_event.md), [AfterSheetChange](api/spreadsheet_aftersheetchange_event.md), [BeforeSheetRemove](api/spreadsheet_beforesheetremove_event.md), [AfterSheetRemove](api/spreadsheet_aftersheetremove_event.md), [BeforeSheetRename](api/spreadsheet_beforesheetrename_event.md), [AfterSheetRename](api/spreadsheet_aftersheetrename_event.md)
 - The ability to get the formula of a cell via the [getFormula()](api/spreadsheet_getformula_method.md) method
 

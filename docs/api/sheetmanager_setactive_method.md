@@ -20,7 +20,7 @@ setActive: (id: Id) => void;
 
 ### Parameters
 
-- `id` - (*string | number*) the unique identifier of the sheet to activate.
+- `id` - (*string | number*) required, the unique identifier of the sheet to activate.
 
 ### Example
 

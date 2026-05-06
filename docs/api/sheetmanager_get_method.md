@@ -8,7 +8,7 @@ description: You can learn about the get method of the Sheet Manager in the docu
 
 ### Description
 
-@short: Returns a single sheet object by its identifier.
+@short: Returns a single sheet object by its identifier
 
 ### Usage
 
@@ -18,7 +18,7 @@ get: (id: Id) => ISheet;
 
 ### Parameters
 
-- `id` - (*string | number*) the unique identifier of the sheet to retrieve.
+- `id` - (*string | number*) required, the unique identifier of the sheet to retrieve.
 
 ### Returns
 

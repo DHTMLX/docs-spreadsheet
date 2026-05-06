@@ -20,7 +20,7 @@ clear: (id?: Id) => void;
 
 ### Parameters
 
-- `id` - (*string | number*) the unique identifier of the sheet to clear. If omitted, the currently active sheet is cleared.
+- `id` - (*string | number*) optional, the unique identifier of the sheet to clear. If omitted, the currently active sheet is cleared.
 
 ### Example
 

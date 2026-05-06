@@ -10,7 +10,9 @@ description: You can learn about the getAll method of the Sheet Manager in the d
 
 @short: Returns an array of all sheet objects currently present in the spreadsheet
 
+:::info
 Each sheet object contains the sheet's id and name.
+:::
 
 ### Usage
 
@@ -20,7 +22,7 @@ getAll: () => ISheet[];
 
 ### Returns
 
-- `ISheet[]` - (`array`) an array of sheet objects.
+- `ISheet[]` - (*array*) an array of sheet objects.
 
 ### Example
 

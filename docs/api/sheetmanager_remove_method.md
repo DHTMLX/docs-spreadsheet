@@ -12,15 +12,21 @@ description: You can learn about the remove method of the Sheet Manager in the d
 
 If the removed sheet was active, the spreadsheet will automatically switch to another available sheet.
 
+:::info
+To apply this method, you need to enable the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option.
+
+Also note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
+:::
+
 ### Usage
 
 ~~~jsx
-sheets.remove(id: Id): void;
+remove: (id: Id) => void;
 ~~~
 
 ### Parameters
 
-- `id` - (*string | number*) the unique identifier of the sheet to remove.
+- `id` - (*string | number*) required, the unique identifier of the sheet to remove.
 
 ### Example
 
