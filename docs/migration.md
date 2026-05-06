@@ -10,33 +10,35 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 ### Deprecated properties 
 
-The following properties of `ISpreadsheetConfig` are deprecated:
+The following properties of `ISpreadsheetConfig` are deprecated and removed. Check the current usage below: 
 
-- `dateFormat` configuration property. Set it in the **localization** configuration object as:
+- `dateFormat` configuration property. Set it in the [**localization**](api/spreadsheet_localization_config.md) configuration object as:
     - `{ localization: { dateFormat: "%d/%m/%Y" } }` 
-- `timeFormat` configuration property. Set it in the **localization** configuration object as: 
+- `timeFormat` configuration property. Set it in the [**localization**](api/spreadsheet_localization_config.md) configuration object as: 
     - `{ localization: { timeFormat: 12 } }` 
 
 ### Deprecated methods 
 
-The following methods of the `ISpreadsheet` instance are deprecated. Use the new `sheets` module (Sheet Manager) instead.
+The following methods of the `ISpreadsheet` instance are deprecated and removed. 
+
+Use the new [`sheets` module (Sheet Manager) API](/api/overview/sheetmanager_overview/) instead:
 
 <div className="deprecated-methods-table">
 
 | Deprecated method | Signature | New usage | New signature |
 | --- | --- | --- | --- |
-| `clearSheet(id?)` | `(id?: string) => void` | `sheets.clear(id?)` | `(id?: Id) => void` |
-| `removeSheet(id)` | `(id: string) => void` | `sheets.remove(id)` | `(id: Id) => void` |
-| `addSheet(name?)` | `(name?: string) => string` | `sheets.add(name?)` | `(name?: string) => Id` |
-| `getSheets()` | `() => ISheet[]` | `sheets.getAll()` | `() => ISheet[]` |
-| `getActiveSheet()` | `() => ISheet` | `sheets.getActive()` | `() => ISheet` |
-| `setActiveSheet(id)` | `(id: Id) => void` | `sheets.setActive(id)` | `(id: Id) => void` |
+| `clearSheet(id?)` | `(id?: string) => void` | [`sheets.clear(id?)`](api/sheetmanager_clear_method.md) | `(id?: Id) => void` |
+| `removeSheet(id)` | `(id: string) => void` | [`sheets.remove(id)`](api/sheetmanager_remove_method.md) | `(id: Id) => void` |
+| `addSheet(name?)` | `(name?: string) => string` | [`sheets.add(name?)`](api/sheetmanager_add_method.md) | `(name?: string) => Id` |
+| `getSheets()` | `() => ISheet[]` | [`sheets.getAll()`](api/sheetmanager_getall_method.md) | `() => ISheet[]` |
+| `getActiveSheet()` | `() => ISheet` | [`sheets.getActive()`](api/sheetmanager_getactive_method.md) | `() => ISheet` |
+| `setActiveSheet(id)` | `(id: Id) => void` | [`sheets.setActive(id)`](api/sheetmanager_setactive_method.md) | `(id: Id) => void` |
 
 </div>
 
 ### Deprecated events  
 
-The following events are deprecated. Use the generic `beforeAction` / `afterAction` events pair instead.
+The following events are deprecated and removed. Use the generic [`beforeAction`](api/spreadsheet_beforeaction_event.md) / [`afterAction`](api/spreadsheet_afteraction_event.md) events pair instead.
 
 <div className="deprecated-events-table">
 
