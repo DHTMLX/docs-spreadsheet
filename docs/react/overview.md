@@ -1,6 +1,6 @@
 ---
 sidebar_label: Overview
-title: React Spreadsheet Overview
+title: React Spreadsheet overview
 description: "Overview of the official React wrapper: declarative data model, props, theming, events, and ref access."
 ---
 
@@ -9,7 +9,7 @@ description: "Overview of the official React wrapper: declarative data model, pr
 `ReactSpreadsheet` is a declarative React wrapper for the DHTMLX Spreadsheet widget. It provides a component-based API where props describe the spreadsheet state, and the wrapper handles synchronization with the underlying widget.
 
 :::note
-The React Spreadsheet wrapper is available with the DHTMLX Spreadsheet **Commercial** license. For evaluation, use the free 30-day evaluation package.
+The React Spreadsheet wrapper is available with the DHTMLX Spreadsheet **Commercial** license. For evaluation, use the free 30-day evaluation package. See [Installation](/react/installation/) for setup instructions.
 :::
 
 ## Spreadsheet features
@@ -32,7 +32,7 @@ The React wrapper provides access to the full feature set of DHTMLX Spreadsheet:
 ## Wrapper design principles
 
 - **Props describe state, not actions.** There are no "trigger" props. Pass data, and the component updates the widget accordingly.
-- **`sheets` is the single source of truth** for all spreadsheet data — cells, merged ranges, frozen panes, filters, sorting.
+- **`sheets` is the single source of truth** for all spreadsheet data: cells, merged ranges, frozen panes, filters, sorting.
 - **Ref is an escape hatch.** For operations that don't map to declarative props (export, programmatic selection, undo/redo), access the underlying widget instance via ref.
 - **All widget events are exposed as typed `onXxx` callback props.** "Before" callbacks can return `false` to cancel the operation.
 
@@ -96,7 +96,7 @@ Props are categorized by how the component handles changes:
 |----------|-------|----------------------|
 | **Init-only** | `menu`, `editLine`, `toolbarBlocks`, `multiSheets`, `formats`, `localization`, `importModulePath`, `exportModulePath`, `spreadsheetLocale` | The widget is destroyed and recreated. Spreadsheet data is preserved, but undo/redo history and UI state (selection, scroll position) are reset. |
 | **Runtime** | `readonly`, `rowsCount`, `colsCount` | Applied immediately without data loss or UI state reset. |
-| **Data** | `sheets`, `activeSheet` | Applied incrementally — only changed cells, ranges, or settings are updated. |
+| **Data** | `sheets`, `activeSheet` | Applied incrementally; only changed cells, ranges, or settings are updated. |
 | **Re-parse** | `styles` | Style changes require a full data reload. Spreadsheet data is preserved, but undo/redo history and UI state are reset. |
 | **State** | `search`, `theme`, `loadUrl` | Applied via dedicated widget APIs with no side effects. |
 | **Container** | `className`, `style` | Standard React DOM props on the wrapper `<div>`. |
@@ -188,10 +188,10 @@ function App() {
 
 The `instance` property is `null` before the widget initializes and after unmount.
 
-## Documentation
+## API reference
 
 | Document | Contents |
 |----------|----------|
-| [Props Reference](/react/props/) | All component props with types, defaults, and examples |
-| [Events Reference](/react/events/) | Event callback props grouped by category |
-| [Types Reference](/react/types/) | TypeScript interfaces, enums, and type aliases |
+| [Props reference](/react/props/) | All component props with types, defaults, and examples |
+| [Events reference](/react/events/) | Event callback props grouped by category |
+| [Types reference](/react/types/) | TypeScript interfaces, enums, and type aliases |

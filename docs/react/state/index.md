@@ -1,20 +1,20 @@
 ---
 sidebar_label: "Data & State"
-title: "Data & State Management"
+title: "Data & state management"
 description: "Patterns for managing DHTMLX Spreadsheet data in React state or with state management libraries."
 ---
 
 # Data & state management
 
-This section covers patterns for managing spreadsheet data in sync with your application state — from basic React `useState` to state management libraries.
+This section covers patterns for managing spreadsheet data in sync with your application state: from basic React `useState` to state management libraries.
 
 ## Start here
 
-- [State Management Basics](/react/state/state-management-basics/) — core patterns: controlled props, event callbacks, the ref escape hatch, and performance tips
+- [State management basics](/react/state/state-management-basics/) - core patterns: controlled props, event callbacks, the ref escape hatch, and performance tips
 
 ## State library guides
 
-- [Redux Toolkit](/react/state/redux-toolkit/) — step-by-step integration with Redux Toolkit
+- [Redux Toolkit](/react/state/redux-toolkit/) - step-by-step integration with Redux Toolkit
 
 ## Key concept
 

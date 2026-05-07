@@ -1,12 +1,12 @@
 ---
 sidebar_label: Types
-title: Types Reference
+title: Types reference
 description: "TypeScript interfaces, enums, and type aliases exported from @dhx/react-spreadsheet."
 ---
 
 # Types reference
 
-All types are exported from `@dhx/react-spreadsheet` | `@dhtmlx/trial-react-spreadsheet`.
+All types are exported from `@dhx/react-spreadsheet` or `@dhtmlx/trial-react-spreadsheet`.
 
 ~~~tsx
 import type { SheetData, CellData, SpreadsheetRef /* ... */ } from "@dhtmlx/trial-react-spreadsheet";
@@ -14,7 +14,7 @@ import type { SheetData, CellData, SpreadsheetRef /* ... */ } from "@dhtmlx/tria
 
 ## CellData
 
-A single cell's declarative state. All properties are optional — omitted properties retain their current value during updates.
+A single cell's declarative state. All properties are optional; omitted properties retain their current value during updates.
 
 | Property | Type | Description |
 |----------|------|-------------|
@@ -150,7 +150,7 @@ Built-in color themes. Also accepts custom theme name strings.
 
 ## IExecuteConfig
 
-Action execution configuration passed to `onBeforeAction` / `onAfterAction`. Shape varies by action type.
+Action execution configuration passed to [`onBeforeAction`](/react/events/#action-events) / [`onAfterAction`](/react/events/#action-events). Shape varies by action type.
 
 | Property | Type | Description |
 |----------|------|-------------|
@@ -192,7 +192,7 @@ ref.current?.instance?.redo();
 
 ## Actions enum
 
-Known spreadsheet action identifiers. Used in `onBeforeAction` / `onAfterAction` for type-safe action matching. The `| string` union on handler params allows forward-compatibility with future actions.
+Known spreadsheet action identifiers. Used in [`onBeforeAction`](/react/events/#action-events) / [`onAfterAction`](/react/events/#action-events) for type-safe action matching. The `| string` union on handler params allows forward-compatibility with future actions.
 
 | Value | Description |
 |-------|-------------|
@@ -227,6 +227,8 @@ Known spreadsheet action identifiers. Used in `onBeforeAction` / `onAfterAction`
 
 ## Handler type aliases
 
+<div className="overflow-table">
+
 | Type | Signature | Used by |
 |------|-----------|---------|
 | `BeforeActionHandler` | `(action: Actions \| string, config: IExecuteConfig) => boolean \| void` | `onBeforeAction` |
@@ -237,6 +239,8 @@ Known spreadsheet action identifiers. Used in `onBeforeAction` / `onAfterAction`
 | `AfterEditHandler` | `(cell: string, value: string) => void` | `onAfterEditStart`, `onAfterEditEnd` |
 | `BeforeSheetHandler` | `(sheet: ISheet) => boolean \| void` | `onBeforeSheetChange` |
 | `AfterSheetHandler` | `(sheet: ISheet) => void` | `onAfterSheetChange` |
+
+</div>
 
 ## SpreadsheetConfigProps
 

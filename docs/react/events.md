@@ -1,6 +1,6 @@
 ---
 sidebar_label: Events
-title: Events Reference
+title: Events reference
 description: "Event callback props for ReactSpreadsheet: actions, selection, editing, sheets, and derived state."
 ---
 
@@ -21,7 +21,7 @@ Fired for any user action (cell edits, formatting, structural changes, etc.).
 | `onBeforeAction` | Yes | Fires before any user action executes. Return `false` to cancel. Handler: [`BeforeActionHandler`](/react/types#handler-type-aliases). JS API: [`beforeAction`](/api/spreadsheet_beforeaction_event/). |
 | `onAfterAction` | No | Fires after any user action completes. Handler: [`AfterActionHandler`](/react/types#handler-type-aliases). JS API: [`afterAction`](/api/spreadsheet_afteraction_event/). |
 
-**Example — Block row deletion:**
+**Example: Block row deletion**
 
 ~~~tsx
 import { Actions } from "@dhtmlx/trial-react-spreadsheet";
@@ -34,7 +34,7 @@ import { Actions } from "@dhtmlx/trial-react-spreadsheet";
 />
 ~~~
 
-**Example — Log all user actions:**
+**Example: Log all user actions**
 
 ~~~tsx
 <ReactSpreadsheet
@@ -58,7 +58,7 @@ Fired when the cell selection or focus changes.
 | `onBeforeFocusSet` | Yes | Fires before the focused cell changes. Handler: [`BeforeCellHandler`](/react/types#handler-type-aliases). JS API: [`beforeFocusSet`](/api/spreadsheet_beforefocusset_event/). |
 | `onAfterFocusSet` | No | Fires after the focused cell changes. Handler: [`AfterCellHandler`](/react/types#handler-type-aliases). JS API: [`afterFocusSet`](/api/spreadsheet_afterfocusset_event/). |
 
-**Example — Track selected cell:**
+**Example: Track selected cell**
 
 ~~~tsx
 const [selectedCell, setSelectedCell] = useState<string>("");
@@ -82,7 +82,7 @@ Fired when cell editing begins or ends.
 | `onBeforeEditEnd` | Yes | Fires before cell editing ends. Return `false` to cancel and keep editing. Handler: [`BeforeEditHandler`](/react/types#handler-type-aliases). JS API: [`beforeEditEnd`](/api/spreadsheet_beforeeditend_event/). |
 | `onAfterEditEnd` | No | Fires after cell editing ends and the value is committed. Handler: [`AfterEditHandler`](/react/types#handler-type-aliases). JS API: [`afterEditEnd`](/api/spreadsheet_aftereditend_event/). |
 
-**Example — Validate before committing:**
+**Example: Validate before committing**
 
 ~~~tsx
 <ReactSpreadsheet
@@ -104,7 +104,7 @@ Fired when the active sheet tab changes.
 | `onBeforeSheetChange` | Yes | Fires before the active sheet changes. Handler: [`BeforeSheetHandler`](/react/types#handler-type-aliases). JS API: [`beforeSheetChange`](/api/spreadsheet_beforesheetchange_event/). |
 | `onAfterSheetChange` | No | Fires after the active sheet changes. Handler: [`AfterSheetHandler`](/react/types#handler-type-aliases). JS API: [`afterSheetChange`](/api/spreadsheet_aftersheetchange_event/). |
 
-**Example — Track active sheet:**
+**Example: Track active sheet**
 
 ~~~tsx
 <ReactSpreadsheet
@@ -117,11 +117,13 @@ Fired when the active sheet tab changes.
 
 ## Data events
 
+Fired when spreadsheet data is loaded.
+
 | Prop | Description |
 |------|-------------|
 | `onAfterDataLoaded` | Fires after data loading completes (via `sheets` or `loadUrl`). JS API: [`afterDataLoaded`](/api/spreadsheet_afterdataloaded_event/). |
 
-**Example — Show loading state:**
+**Example: Show loading state**
 
 ~~~tsx
 const [loading, setLoading] = useState(true);
@@ -152,7 +154,7 @@ These callbacks notify about computed state changes rather than direct user acti
 | `onSearchResults` | Notifies with matching cell references when the `search` prop is active. Handler: `(cells: string[]) => void`. |
 | `onFilterChange` | Notifies when the user changes filters via the UI. Handler: `(filter: SheetFilter) => void`. |
 
-**Example — Undo/redo buttons:**
+**Example: Undo/redo buttons**
 
 ~~~tsx
 import { useRef, useState } from "react";
@@ -186,7 +188,7 @@ function App() {
 }
 ~~~
 
-**Example — Controlled search with results:**
+**Example: Controlled search with results**
 
 ~~~tsx
 const [search, setSearch] = useState<SearchConfig | undefined>();
@@ -205,7 +207,7 @@ const [results, setResults] = useState<string[]>([]);
 />
 ~~~
 
-**Example — Sync filter state:**
+**Example: Sync filter state**
 
 ~~~tsx
 const [activeFilter, setActiveFilter] = useState<SheetFilter | null>(null);

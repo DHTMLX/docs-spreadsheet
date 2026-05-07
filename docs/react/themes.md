@@ -1,6 +1,6 @@
 ---
 sidebar_label: Themes
-title: React Spreadsheet Themes
+title: React Spreadsheet themes
 description: "Apply built-in or custom themes to DHTMLX React Spreadsheet."
 ---
 
@@ -84,8 +84,8 @@ import "./custom-theme.css";
 <ReactSpreadsheet sheets={sheets} theme="corporate" />
 ~~~
 
-## Related
+## Related guides
 
-- [Themes](/themes/) — built-in theme overview for DHTMLX Spreadsheet
-- [Base themes configuration](/themes/base_themes_configuration/) — configuring base themes
-- [Custom theme](/themes/custom_theme/) — creating custom themes
+- [Themes](/themes/) - built-in theme overview for DHTMLX Spreadsheet
+- [Base themes configuration](/themes/base_themes_configuration/) - configuring base themes
+- [Custom theme](/themes/custom_theme/) - creating custom themes

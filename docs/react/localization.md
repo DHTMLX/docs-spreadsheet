@@ -1,6 +1,6 @@
 ---
 sidebar_label: Localization
-title: React Spreadsheet Localization
+title: React Spreadsheet localization
 description: "Localize UI labels, formula names, and number/date formatting in React Spreadsheet."
 ---
 
@@ -15,14 +15,14 @@ React Spreadsheet provides two separate localization mechanisms for different as
 | UI localization | `spreadsheetLocale` | Menu labels, toolbar tooltips, dialog text, and localized formula names |
 | Number/date formatting | `localization` | Decimal separator, currency symbol, date/time display format |
 
-These props are independent — you can use either or both.
+These props are independent: you can use either or both.
 
 ## UI localization (spreadsheetLocale)
 
 The `spreadsheetLocale` prop accepts a [`SpreadsheetLocale`](/react/types#spreadsheetlocale) object with two properties:
 
-- `locale` — a `Record<string, string>` of UI string overrides
-- `formulas` — a `Record<string, [string, string?][]>` of localized formula names grouped by category
+- `locale` - a `Record<string, string>` of UI string overrides
+- `formulas` - a `Record<string, [string, string?][]>` of localized formula names grouped by category
 
 ~~~tsx
 const locale: SpreadsheetLocale = {
@@ -52,7 +52,7 @@ const locale: SpreadsheetLocale = {
 
 ## Number/date formatting (localization)
 
-The `localization` prop controls how numbers and dates are displayed — decimal separators, currency symbols, date patterns, etc. It uses the same format as the DHTMLX Spreadsheet [`localization`](/api/spreadsheet_localization_config/) configuration property.
+The `localization` prop controls how numbers and dates are displayed: decimal separators, currency symbols, date patterns, etc. It uses the same format as the DHTMLX Spreadsheet [`localization`](/api/spreadsheet_localization_config/) configuration property.
 
 ~~~tsx
 <ReactSpreadsheet
@@ -69,7 +69,7 @@ The `localization` prop controls how numbers and dates are displayed — decimal
 `localization` is also an init-only prop. Changes trigger a full destroy/recreate cycle.
 :::
 
-## Related
+## Related guides
 
-- [Localization](/localization/) — DHTMLX Spreadsheet localization guide
-- [SpreadsheetLocale type](/react/types/#spreadsheetlocale) — TypeScript interface reference
+- [Localization](/localization/) - DHTMLX Spreadsheet localization guide
+- [SpreadsheetLocale type](/react/types/#spreadsheetlocale) - TypeScript interface reference

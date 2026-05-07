@@ -1,6 +1,6 @@
 ---
 sidebar_label: Basics
-title: Data Binding & State Management Basics
+title: Data binding & state management basics
 description: "Core patterns for managing spreadsheet data in React: controlled props, event callbacks, and the ref escape hatch."
 ---
 
@@ -8,7 +8,7 @@ description: "Core patterns for managing spreadsheet data in React: controlled p
 
 ## The declarative model
 
-React Spreadsheet follows a declarative approach: you store sheet data in React state, pass it as props, and the wrapper automatically diffs your data against the current widget state — applying only the changes.
+React Spreadsheet follows a declarative approach: you store sheet data in React state, pass it as props, and the wrapper automatically diffs your data against the current widget state, applying only the changes.
 
 ~~~tsx
 import { useState } from "react";
@@ -168,5 +168,5 @@ const filteredSheets = useMemo(
 <ReactSpreadsheet sheets={filteredSheets} />
 ~~~
 
-- Avoid recreating the `styles` object on every render — define it outside the component or wrap it in `useMemo`.
+- Avoid recreating the `styles` object on every render. Define it outside the component or wrap it in `useMemo`.
 - Use the functional `setState` updater to avoid stale closure issues in event callbacks.

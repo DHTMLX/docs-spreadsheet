@@ -1,6 +1,6 @@
 ---
 sidebar_label: Props
-title: Props Reference
+title: Props reference
 description: "Complete reference of all ReactSpreadsheet component props with types and examples."
 ---
 
@@ -11,6 +11,8 @@ All props are optional. The component renders an empty spreadsheet with default 
 ## Init-only props
 
 Changing any of these props causes the widget to be destroyed and recreated. Spreadsheet data is preserved, but undo/redo history and UI state (selection, scroll position) are reset.
+
+<div className="overflow-table">
 
 | Prop | Type | Description |
 |------|------|-------------|
@@ -23,6 +25,8 @@ Changing any of these props causes the widget to be destroyed and recreated. Spr
 | `importModulePath` | `string` | Path to the XLSX import module. See JS API: [`importModulePath`](/api/spreadsheet_importmodulepath_config/). |
 | `exportModulePath` | `string` | Path to the XLSX export module. See JS API: [`exportModulePath`](/api/spreadsheet_exportmodulepath_config/). |
 | `spreadsheetLocale` | [`SpreadsheetLocale`](/react/types/#spreadsheetlocale) | UI translations and localized formula names. Separate from `localization`. |
+
+</div>
 
 :::warning
 Changing any init-only prop triggers a full destroy/recreate cycle. Undo/redo history, selection, and scroll position will be reset.
@@ -63,7 +67,7 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 | `loadUrl` | `string` | URL to load spreadsheet data from. If both `loadUrl` and `sheets` are provided, `sheets` takes precedence. |
 | `loadFormat` | `FileFormat` | File format hint for `loadUrl`. Default: `"json"`. |
 
-## Theme
+## Theme prop
 
 | Prop | Type | Description |
 |------|------|-------------|
@@ -92,7 +96,7 @@ const [sheets, setSheets] = useState<SheetData[]>([
             B1: { value: "Amount", css: "header", format: "currency" },
             A2: { value: "Rent" },
             B2: { value: 2000, format: "currency" },
-            A3: { value: "=SUM(B2:B2)" },
+            A3: { value: "=SUM(B2:B3)" },
         },
         rows: { 0: { height: 40 } },
         cols: { 0: { width: 150 }, 1: { width: 120 } },

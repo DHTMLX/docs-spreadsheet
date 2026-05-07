@@ -1,6 +1,6 @@
 ---
 sidebar_label: Quick start
-title: Quick Start with React Spreadsheet
+title: Quick start with React Spreadsheet
 description: "Step-by-step guide to rendering your first DHTMLX React Spreadsheet component."
 ---
 
@@ -99,9 +99,9 @@ Open the URL shown in your terminal (typically `http://localhost:5173`) to see t
 
 ## Next steps
 
-- [Props Reference](/react/props/) — configure the spreadsheet behavior
-- [Events Reference](/react/events/) — respond to user actions
-- [Types Reference](/react/types/) — TypeScript interfaces and enums
-- [Data & State Management](/react/state/) — manage spreadsheet data in application state
+- [Props reference](/react/props/) - configure the spreadsheet behavior
+- [Events reference](/react/events/) - respond to user actions
+- [Types reference](/react/types/) - TypeScript interfaces and enums
+- [Data & state management](/react/state/) - manage spreadsheet data in application state
 
 You can also explore the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-demo) for a complete working example.

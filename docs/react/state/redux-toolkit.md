@@ -11,7 +11,7 @@ This tutorial shows how to manage spreadsheet data in a Redux Toolkit store.
 ## Prerequisites
 
 - Familiarity with React, TypeScript, and [Redux Toolkit](https://redux-toolkit.js.org/) basics
-- Completed the [State Management Basics](/react/state/state-management-basics) guide
+- Completed the [State management basics](/react/state/state-management-basics/) guide
 
 ## Setup
 
@@ -170,8 +170,8 @@ const getCellValue = (cell: string) => {
 };
 ~~~
 
-## Related
+## Related guides and API
 
-- [Props Reference](/react/props/) — all component props
-- [Events Reference](/react/events/) — event callback props
-- [State Management Basics](/react/state/state-management-basics/) — core patterns
+- [Props reference](/react/props/) - all component props
+- [Events reference](/react/events/) - event callback props
+- [State management basics](/react/state/state-management-basics/) - core patterns

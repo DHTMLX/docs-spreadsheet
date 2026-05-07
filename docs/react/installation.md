@@ -13,7 +13,7 @@ description: "How to install the evaluation or commercial version of DHTMLX Reac
 
 ## Evaluation version (public npm)
 
-The evaluation package is available on the public npm registry — no configuration required. It includes a free 30-day evaluation.
+The evaluation package is available on the public npm registry with no additional configuration required. It includes a free 30-day evaluation.
 
 ~~~bash
 npm install @dhtmlx/trial-react-spreadsheet
@@ -27,7 +27,7 @@ yarn add @dhtmlx/trial-react-spreadsheet
 
 ## Evaluation version (private npm)
 
-The evaluation version on the DHTMLX private registry. Configure your project first:
+The evaluation version is on the DHTMLX private registry. Configure your project first:
 
 ~~~bash
 npm config set @dhx:registry https://npm.dhtmlx.com
@@ -76,3 +76,7 @@ import "@dhx/react-spreadsheet/spreadsheet.react.css";
 ## TypeScript
 
 TypeScript type definitions are bundled with the package. No additional `@types/` package is needed.
+
+## Next steps
+
+- [Quick start](/react/quick-start/) - build your first spreadsheet app step by step
