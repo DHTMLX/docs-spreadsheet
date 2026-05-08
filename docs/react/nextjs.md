@@ -96,7 +96,7 @@ export default function Home() {
 }
 ~~~
 
-## Next steps
+## Related API and guides
 
 - [Props reference](/react/props/) - all component props with types and defaults
 - [Events reference](/react/events/) - respond to user actions

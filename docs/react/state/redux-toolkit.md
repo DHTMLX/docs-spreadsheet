@@ -170,7 +170,7 @@ const getCellValue = (cell: string) => {
 };
 ~~~
 
-## Related guides and API
+## Related API and guides
 
 - [Props reference](/react/props/) - all component props
 - [Events reference](/react/events/) - event callback props

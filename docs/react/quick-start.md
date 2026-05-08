@@ -97,7 +97,7 @@ npm run dev
 
 Open the URL shown in your terminal (typically `http://localhost:5173`) to see the spreadsheet.
 
-## Next steps
+## Related API and guides
 
 - [Props reference](/react/props/) - configure the spreadsheet behavior
 - [Events reference](/react/events/) - respond to user actions

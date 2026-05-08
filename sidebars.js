@@ -343,9 +343,17 @@ module.exports = {
                         "react/overview",
                         "react/installation",
                         "react/quick-start",
-                        "react/props",
-                        "react/events",
-                        "react/types",
+                        {
+                            type: "category",
+                            label: "API reference",
+                            collapsible: true,
+                            collapsed: false,
+                            items: [
+                                "react/props",
+                                "react/events",
+                                "react/types",
+                            ]
+                        },
                         "react/themes",
                         "react/localization",
                         {

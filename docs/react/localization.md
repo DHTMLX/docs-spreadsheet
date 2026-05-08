@@ -69,7 +69,7 @@ The `localization` prop controls how numbers and dates are displayed: decimal se
 `localization` is also an init-only prop. Changes trigger a full destroy/recreate cycle.
 :::
 
-## Related guides
+## Related API and guides
 
 - [Localization](/localization/) - DHTMLX Spreadsheet localization guide
 - [SpreadsheetLocale type](/react/types/#spreadsheetlocale) - TypeScript interface reference
