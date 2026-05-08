@@ -117,6 +117,8 @@ table th:first-child {
     width: 25%;
 }
 
+.overflow-table { overflow-x: auto; }
+
 /* end styles for tables */
 
 
