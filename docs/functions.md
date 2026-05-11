@@ -1351,4 +1351,4 @@ spreadsheet.parse([
 The handler function must be synchronous. Using `Promise` or `fetch` inside the function is not allowed.
 :::
 
-<iframe src="https://snippet.dhtmlx.com/wvxdlahp?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
+**Related sample:** [Spreadsheet. Custom formula](https://snippet.dhtmlx.com/wvxdlahp)

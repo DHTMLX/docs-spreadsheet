@@ -29,19 +29,23 @@ The `handler` callback function must be synchronous. Using `Promise` or `fetch` 
 
 ### Example
 
-~~~jsx {5-8}
+~~~jsx {4-6}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
-spreadsheet.parse(data);
 
-// adds a custom formula that doubles a value
+// Adds a custom formula that doubles a value
 spreadsheet.addFormula("DOUBLE", (value) => {
     return value * 2;
 });
+
 // Now use in cells: =DOUBLE(A1)
+spreadsheet.parse([
+    { cell: "A1", value: 4, format: "number" },
+    { cell: "B1", value: "=DOUBLE(A1)", format: "number" }
+]);
 ~~~
 
 **Change log:** Added in v6.0
 
 **Related sample:** [Spreadsheet. Custom formula](https://snippet.dhtmlx.com/wvxdlahp)
 
-**Related articles:** [Formulas and functions](functions.md)
+**Related articles:** [Formulas and functions](/functions/#custom-formulas)
