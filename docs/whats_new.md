@@ -32,7 +32,7 @@ The new release introduces significant changes in the Spreadsheet API: there is 
 - The ability to adjust the font size of cell content:
     - a built-in toolbar control 
     - the ability to provide custom font size in the toolbar control
-- `COUNTIF` and `SUMIF` functions are added into the formulas engine
+- New conditional aggregate functions are added into the formulas engine: `COUNTIF`, `COUNTIFS`, `SUMIF`, `SUMIFS`, `AVERAGEIF`, `AVERAGEIFS`, `MAXIFS`, `MINIFS`
 - The `awaitRedraw()` helper is added for Spreadsheet to detect the rendering process and perform the desired code after the component finishes its rendering 
 
 ### Fixes
