@@ -1335,7 +1335,9 @@ Starting with v6.0, you can register custom formula functions via the [`addFormu
 The method takes two parameters: the formula name and a synchronous handler function that receives the resolved cell values as arguments and returns the result:
 
 ~~~js
-spreadsheet.addFormula("DOUBLE", (arg) => arg * 2);
+spreadsheet.addFormula("DOUBLE", (value) => {
+    return value * 2;
+});
 ~~~
 
 After that, the formula can be used in cells just like any built-in function:
