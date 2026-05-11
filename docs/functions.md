@@ -832,6 +832,10 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
             <td>Returns the number of empty cells from a specified range. <br>Cells with zero values are not counted.</td>
         </tr>
         <tr>
+            <td><b>COUNTIF</b><br>added in v6.0</td>
+            <td>Counts the number of cells within a range that meet the given condition. <br>Takes two arguments: the range of cells to evaluate and the criterion that defines which cells to count.</td>
+        </tr>
+        <tr>
             <td><b>DECIMAL</b></td>
             <td>Converts a text representation of a number in a given base (radix) into a decimal number.<br>The base radix must be an integer from 2 to 36, inclusive.</td>
         </tr>
@@ -1035,6 +1039,10 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
         <tr>
             <td><b>SUM</b></td>
             <td>Returns the sum of supplied values. <br>Empty cells, logical values like TRUE, or text are ignored.</td>
+        </tr>
+        <tr>
+            <td><b>SUMIF</b><br>added in v6.0</td>
+            <td>Adds the cells in a range that meet a specified condition. <br>Takes two required arguments (the range to evaluate and the criterion) and one optional argument (the range of cells to sum, if different from the evaluated range).</td>
         </tr>
         <tr>
             <td><b>SUMPRODUCT</b></td>
