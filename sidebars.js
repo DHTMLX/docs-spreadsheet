@@ -273,7 +273,8 @@ module.exports = {
                                 "themes/custom_theme"
                             ]
                         },
-                        "using_typescript"
+                        "using_typescript",
+                        "awaitredraw"
                     ]
                 },
                 {
