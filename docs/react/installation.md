@@ -1,10 +1,12 @@
 ---
 sidebar_label: Installation
-title: Installing React Spreadsheet
+title: React Spreadsheet installation
 description: "How to install the evaluation or commercial version of DHTMLX React Spreadsheet via npm."
 ---
 
-# Installing React Spreadsheet
+# React Spreadsheet installation
+
+React Spreadsheet is distributed as an npm package in three variants: a public evaluation build, a private evaluation build, and the commercial release. This page covers how to install each variant, import the required CSS stylesheet, and set up TypeScript support.
 
 :::info Prerequisites
 - [Node.js](https://nodejs.org/en/) (LTS version recommended)
