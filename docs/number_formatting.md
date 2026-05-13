@@ -36,7 +36,8 @@ defaultFormats = [
            mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
            example: "13:30:00"
     },
-    { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
+    { name: "Text", id: "text", mask: "@", example: "'1500.31'" },
+    { name: "Scientific", id: "scientific", mask: "0.00E+00", example: "1.50E+03" }
 ];
 ~~~
 
@@ -117,6 +118,26 @@ Here is the result of configuring the **localization** object for Spreadsheet:
 
 <iframe src="https://snippet.dhtmlx.com/xislsb3c?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
+## Scientific number format
+
+Scientific (exponential) notation is available as a default format and is useful for representing very large or very small numbers concisely. The built-in `"scientific"` format uses the mask `0.00E+00`, which displays, for example, 1500.31 as `1.50E+03`.
+
+To apply it to a cell, use the [`setFormat()`](api/spreadsheet_setformat_method.md) method:
+
+~~~jsx
+spreadsheet.setFormat("A1", "scientific");
+~~~
+
+You can also define a custom scientific format with a different mask via the [`formats`](api/spreadsheet_formats_config.md) configuration option. For example, `0.###E+0` produces a more compact output:
+
+~~~jsx
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    formats: [
+        { id: "scientific_compact", mask: "0.###E+0", name: "Scientific (compact)", example: "1.5E+3" }
+    ]
+});
+~~~
+
 ## Formats customization
 
 You are not limited by [default number formats](#default-number-formats) only. There are two options of formats customization available:
@@ -144,6 +165,7 @@ A mask may contain a set of common syntax characters that include digit placehol
 - **.(period)** - applies a decimal point to numbers.
 - **,(comma)** - applies a thousands separator to numbers.
 - **[characters for setting a date format](https://docs.dhtmlx.com/suite/calendar/api/calendar_dateformat_config/)** - used to create a mask for date and time. For example, to display 27.09.2023 as 27, Sep 2023 use the format "%d, %M %Y".
+- **E+ / E-** - formats numbers in scientific (exponential) notation. The digits after `E` define the minimum number of exponent digits. `E+` always shows the exponent sign; `E-` shows it only for negative exponents. For example, the mask `0.00E+00` displays 1500.31 as `1.50E+03`.
 
 ## Setting format
 
