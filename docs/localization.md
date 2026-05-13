@@ -233,7 +233,7 @@ const en = {
 };
 ~~~
 
-You can check the full default locale for formulas in the [HTML tab of the related snippet](https://snippet.dhtmlx.com/yn5hyyim).
+You can check the full default locale for formulas on the [Default locale for formulas](formulas_locale.md) page.
 
 ## Custom locale for formulas
 
