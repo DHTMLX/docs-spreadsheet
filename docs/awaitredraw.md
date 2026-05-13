@@ -16,11 +16,7 @@ dhx.awaitRedraw().then(() => {
 });
 ~~~
 
-## Usage examples
-
-### Read a cell value after data loads
-
-Use `awaitRedraw` to make sure the cell value is available before reading it:
+For example, use `awaitRedraw` inside `afterDataLoaded` to make sure the cell value is available before reading it:
 
 ~~~js
 spreadsheet.events.on("afterDataLoaded", () => {
@@ -31,15 +27,3 @@ spreadsheet.events.on("afterDataLoaded", () => {
 });
 ~~~
 
-### Set focus after a sheet switch
-
-Calling `setFocusedCell` right after a sheet switch has no visible effect because the new sheet hasn't finished rendering yet. Use `awaitRedraw` to set focus once it has:
-
-~~~js
-spreadsheet.events.on("afterSheetChange", (sheet) => {
-    dhx.awaitRedraw().then(() => {
-        console.log(sheet.name);
-        spreadsheet.selection.setFocusedCell("A1");
-    });
-});
-~~~
