@@ -6,13 +6,76 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 # Migration to newer versions
 
+## 5.2 -> 6.0
+
+### Deprecated properties 
+
+The following properties of `ISpreadsheetConfig` are deprecated and removed. Check the current usage below: 
+
+- `dateFormat` configuration property. Set it in the [**localization**](api/spreadsheet_localization_config.md) configuration object as:
+    - `{ localization: { dateFormat: "%d/%m/%Y" } }` 
+- `timeFormat` configuration property. Set it in the [**localization**](api/spreadsheet_localization_config.md) configuration object as: 
+    - `{ localization: { timeFormat: 12 } }` 
+
+### Deprecated methods 
+
+The following methods of the `ISpreadsheet` instance are deprecated and removed. 
+
+Use the new [`sheets` module (Sheet Manager) API](/api/overview/sheetmanager_overview/) instead:
+
+<div className="overflow-table">
+
+| Deprecated method | Signature | New usage | New signature |
+| --- | --- | --- | --- |
+| `clearSheet(id?)` | `(id?: string) => void` | [`sheets.clear(id?)`](api/sheetmanager_clear_method.md) | `(id?: Id) => void` |
+| `removeSheet(id)` | `(id: string) => void` | [`sheets.remove(id)`](api/sheetmanager_remove_method.md) | `(id: Id) => void` |
+| `addSheet(name?)` | `(name?: string) => string` | [`sheets.add(name?)`](api/sheetmanager_add_method.md) | `(name?: string) => Id` |
+| `getSheets()` | `() => ISheet[]` | [`sheets.getAll()`](api/sheetmanager_getall_method.md) | `() => ISheet[]` |
+| `getActiveSheet()` | `() => ISheet` | [`sheets.getActive()`](api/sheetmanager_getactive_method.md) | `() => ISheet` |
+| `setActiveSheet(id)` | `(id: Id) => void` | [`sheets.setActive(id)`](api/sheetmanager_setactive_method.md) | `(id: Id) => void` |
+
+</div>
+
+### Deprecated events  
+
+The following events are deprecated and removed. Use the generic [`beforeAction`](api/spreadsheet_beforeaction_event.md) / [`afterAction`](api/spreadsheet_afteraction_event.md) events pair instead.
+
+<div className="deprecated-events-table">
+
+| Deprecated event | Callback signature | New usage |
+| --- | --- | --- |
+| `beforeValueChange` | `(cell: string, value: string) => void \| boolean` | `beforeAction` with action `"setCellValue"` |
+| `afterValueChange` | `(cell: string, value: string) => void` | `afterAction` with action `"setCellValue"` |
+| `beforeStyleChange` | `(cell: string, style: ...) => void \| boolean` | `beforeAction` with action `"setCellStyle"` |
+| `afterStyleChange` | `(cell: string, style: ...) => void` | `afterAction` with action `"setCellStyle"` |
+| `beforeFormatChange` | `(cell: string, format: string) => void \| boolean` | `beforeAction` with action `"setCellFormat"` |
+| `afterFormatChange` | `(cell: string, format: string) => void` | `afterAction` with action `"setCellFormat"` |
+| `beforeRowAdd` | `(cell: string) => void \| boolean` | `beforeAction` with action `"addRow"` |
+| `afterRowAdd` | `(cell: string) => void` | `afterAction` with action `"addRow"` |
+| `beforeRowDelete` | `(cell: string) => void \| boolean` | `beforeAction` with action `"deleteRow"` |
+| `afterRowDelete` | `(cell: string) => void` | `afterAction` with action `"deleteRow"` |
+| `beforeColumnAdd` | `(cell: string) => void \| boolean` | `beforeAction` with action `"addColumn"` |
+| `afterColumnAdd` | `(cell: string) => void` | `afterAction` with action `"addColumn"` |
+| `beforeColumnDelete` | `(cell: string) => void \| boolean` | `beforeAction` with action `"deleteColumn"` |
+| `afterColumnDelete` | `(cell: string) => void` | `afterAction` with action `"deleteColumn"` |
+| `beforeSheetAdd` | `(name: string) => void \| boolean` | `beforeAction` with action `"addSheet"` |
+| `afterSheetAdd` | `(sheet: ISheet) => void` | `afterAction` with action `"addSheet"` |
+| `beforeSheetRemove` | `(sheet: ISheet) => void \| boolean` | `beforeAction` with action `"deleteSheet"` |
+| `afterSheetRemove` | `(sheet: ISheet) => void` | `afterAction` with action `"deleteSheet"` |
+| `beforeSheetRename` | `(sheet: ISheet, value: string) => void \| boolean` | `beforeAction` with action `"renameSheet"` |
+| `afterSheetRename` | `(sheet: ISheet) => void` | `afterAction` with action `"renameSheet"` |
+| `beforeSheetClear` | `(sheet: ISheet) => void \| boolean` | `beforeAction` with action `"clearSheet"` |
+| `afterSheetClear` | `() => void` | `afterAction` with action `"clearSheet"` |
+
+</div>
+
 ## 5.1 -> 5.2
 
 ### Freezing/unfreezing functionality
 
 In v5.2 the way of freezing/unfreezing columns and rows has been modified:
 
-- the `leftSplit` and `topSplit` configuration properties that have been used for fixing columns and rows are deprecated
+- the `leftSplit` and `topSplit` configuration properties that have been used for fixing columns and rows are deprecated and removed
 
 ~~~jsx title="Before v5.2"
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {

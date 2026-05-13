@@ -12,9 +12,11 @@ In this article we'll discuss the details on how to implement such operations as
 
 {{note To learn how to interact with multiple sheets via the user interface, check our [User Guide](work_with_sheets.md). }}
 
+Starting from v6.0, sheet management is handled by the **Sheet Manager** module, accessible via the `spreadsheet.sheets` property. The dedicated [Sheet Manager API](api/overview/sheetmanager_overview.md) replaces the sheet-related methods that were previously available directly on the `ISpreadsheet` instance.
+
 ## Loading multiple sheets
 
-To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [parse()](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object*. [Check the list of attributes the object can include](api/spreadsheet_parse_method.md).
+To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [`parse()`](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object*. [Check the list of attributes the object can include](api/spreadsheet_parse_method.md).
 
 <iframe src="https://snippet.dhtmlx.com/6s3ng2hi?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
@@ -22,69 +24,126 @@ To load several sheets into the spreadsheet, you should prepare data with the de
 
 ## Adding a new sheet
 
-To add a new sheet into the spreadsheet, use the [addSheet()](api/spreadsheet_addsheet_method.md) method and pass the name of the new sheet as a parameter:
+To add a new sheet into the spreadsheet, use the [`sheets.add()`](api/sheetmanager_add_method.md) method and pass the name of the new sheet as a parameter:
 
 ~~~jsx
-spreadsheet.addSheet("New Sheet");
-// -> "u1614669331209"
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    multiSheets: true
+});
+spreadsheet.parse(data);
+
+// Add a sheet with a custom name
+const newSheetId = spreadsheet.sheets.add("Q4 Report");
+console.log(newSheetId); // e.g. "sheet_2"
+
+// Add a sheet with an auto-generated name
+const anotherId = spreadsheet.sheets.add();
 ~~~
 
 The method returns the id of the created sheet.
 
 ## Removing a sheet
 
-You can remove a sheet from the spreadsheet by its id via the [removeSheet()](api/spreadsheet_removesheet_method.md) method:
+You can remove a sheet from the spreadsheet by its id via the [`sheets.remove()`](api/sheetmanager_remove_method.md) method:
 
 ~~~jsx
-spreadsheet.removeSheet("u1614669331209");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    multiSheets: true
+});
+spreadsheet.parse(data);
+
+// Remove a sheet by its id
+spreadsheet.sheets.remove("sheet_2");
 ~~~
 
-Note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
+Note, that a sheet won't be removed if the number of sheets in the spreadsheet is less than 2.
 
 ## Setting active sheet
 
-To change the active sheet dynamically after initialization of the spreadsheet, use the [setActiveSheet()](api/spreadsheet_setactivesheet_method.md) method. It takes the id of a sheet as a parameter:
+To change the active sheet dynamically after initialization of the spreadsheet, use the [`sheets.setActive()`](api/sheetmanager_setactive_method.md) method. It takes the id of a sheet as a parameter:
 
 ~~~jsx
-spreadsheet.setActiveSheet("u1636003130922");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    multiSheets: true
+});
+spreadsheet.parse(data);
+
+// Switch to the second sheet
+spreadsheet.sheets.setActive("sheet_2");
+
+// Verify the switch
+const active = spreadsheet.sheets.getActive();
+console.log(active.name); // "Sheet 2"
 ~~~
 
 **Related sample:** [Spreadsheet. Set active sheet](https://snippet.dhtmlx.com/iowl449t)
 
 ## Getting active sheet
 
-It is possible to get the sheet that is currently active by applying the [getActiveSheet()](api/spreadsheet_getactivesheet_method.md) method:
+It is possible to get the sheet that is currently active by applying the [`sheets.getActive()`](api/sheetmanager_getactive_method.md) method:
 
 ~~~jsx
-spreadsheet.getActiveSheet();
-// ->  {name: "sheet", id: "u1614675531904"}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    multiSheets: true
+});
+spreadsheet.parse(data);
+
+const active = spreadsheet.sheets.getActive();
+console.log(active.name); // "Sheet 1"
+console.log(active.id);   // "sheet_1"
 ~~~
 
 The method returns an object with the name and id attributes of the currently active sheet.
 
-## Getting sheets
+## Getting all sheets
 
-The [getSheets()](api/spreadsheet_getsheets_method.md) method allows you to get all sheets of the spreadsheet. The method returns an array with a set of sheet objects:
+The [`sheets.getAll()`](api/sheetmanager_getall_method.md) method allows you to get all sheets of the spreadsheet. The method returns an array with a set of sheet objects:
 
 ~~~jsx
-spreadsheet.getSheets();
-// ->  [{name: "sheet1", id: "u1614669331194"}, …]
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    multiSheets: true
+});
+spreadsheet.parse(data);
+
+const allSheets = spreadsheet.sheets.getAll();
+console.log(allSheets);
+// [
+//   { id: "sheet_1", name: "Sheet 1" },
+//   { id: "sheet_2", name: "Sheet 2" }
+// ]
+~~~
+
+## Getting a sheet by id
+
+To retrieve a single sheet object by its id, use the [`sheets.get()`](api/sheetmanager_get_method.md) method:
+
+~~~jsx
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    multiSheets: true
+});
+spreadsheet.parse(data);
+
+const sheet = spreadsheet.sheets.get("sheet_1");
+console.log(sheet.name); // "Sheet 1"
 ~~~
 
 ## Clearing sheets
 
-There is the ability to clear the data of the specified sheet by its id via the [clearSheet()](api/spreadsheet_clearsheet_method.md) method:
+There is the ability to clear the data of the specified sheet by its id via the [`sheets.clear()`](api/sheetmanager_clear_method.md) method:
 
 ~~~jsx
-spreadsheet.clearSheet("income_id");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    multiSheets: true
+});
+spreadsheet.parse(data);
+
+// Clear a specific sheet by id
+spreadsheet.sheets.clear("sheet_1");
+
+// Clear the currently active sheet
+spreadsheet.sheets.clear();
 ~~~
 
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
-To clear the currently active sheet, call the [clearSheet()](api/spreadsheet_clearsheet_method.md) method without the parameter:
-
-~~~jsx
-spreadsheet.clearSheet();
-~~~
-
-If you need to clear the whole spreadsheet at once, use the [clear()](api/spreadsheet_clear_method.md) method.
+If you need to clear the whole spreadsheet at once, use the [`clear()`](api/spreadsheet_clear_method.md) method.

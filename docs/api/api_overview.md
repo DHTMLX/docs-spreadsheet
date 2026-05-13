@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: API Overview
-description: You can have an API overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: You can check an API overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # API overview
@@ -26,9 +26,7 @@ Parameters:
 | :------------------------------------------- | :-------------------------------------------------- |
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(api/spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(api/spreadsheet_addrow_method.md)         |
-| [](api/spreadsheet_addsheet_method.md)       | @getshort(api/spreadsheet_addsheet_method.md)       |
 | [](api/spreadsheet_clear_method.md)          | @getshort(api/spreadsheet_clear_method.md)          |
-| [](api/spreadsheet_clearsheet_method.md)     | @getshort(api/spreadsheet_clearsheet_method.md)     |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(api/spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(api/spreadsheet_deleterow_method.md)      |
 | [](api/spreadsheet_eachcell_method.md)       | @getshort(api/spreadsheet_eachcell_method.md)       |
@@ -36,11 +34,9 @@ Parameters:
 | [](api/spreadsheet_fitcolumn_method.md)      | @getshort(api/spreadsheet_fitcolumn_method.md)      |
 | [](api/spreadsheet_freezecols_method.md)     | @getshort(api/spreadsheet_freezecols_method.md)     |
 | [](api/spreadsheet_freezerows_method.md)     | @getshort(api/spreadsheet_freezerows_method.md)     |
-| [](api/spreadsheet_getactivesheet_method.md) | @getshort(api/spreadsheet_getactivesheet_method.md) |
 | [](api/spreadsheet_getfilter_method.md)      | @getshort(api/spreadsheet_getfilter_method.md)      |
 | [](api/spreadsheet_getformat_method.md)      | @getshort(api/spreadsheet_getformat_method.md)      |
 | [](api/spreadsheet_getformula_method.md)     | @getshort(api/spreadsheet_getformula_method.md)     |
-| [](api/spreadsheet_getsheets_method.md)      | @getshort(api/spreadsheet_getsheets_method.md)      |
 | [](api/spreadsheet_getstyle_method.md)       | @getshort(api/spreadsheet_getstyle_method.md)       |
 | [](api/spreadsheet_getvalue_method.md)       | @getshort(api/spreadsheet_getvalue_method.md)       |
 | [](api/spreadsheet_hidecols_method.md)       | @getshort(api/spreadsheet_hidecols_method.md)       |
@@ -53,10 +49,8 @@ Parameters:
 | [](api/spreadsheet_mergecells_method.md)     | @getshort(api/spreadsheet_mergecells_method.md)     |
 | [](api/spreadsheet_parse_method.md)          | @getshort(api/spreadsheet_parse_method.md)          |
 | [](api/spreadsheet_redo_method.md)           | @getshort(api/spreadsheet_redo_method.md)           |
-| [](api/spreadsheet_removesheet_method.md)    | @getshort(api/spreadsheet_removesheet_method.md)    |
 | [](api/spreadsheet_serialize_method.md)      | @getshort(api/spreadsheet_serialize_method.md)      |
 | [](api/spreadsheet_search_method.md)         | @getshort(api/spreadsheet_search_method.md)         |
-| [](api/spreadsheet_setactivesheet_method.md) | @getshort(api/spreadsheet_setactivesheet_method.md) |
 | [](api/spreadsheet_setfilter_method.md)      | @getshort(api/spreadsheet_setfilter_method.md)      |
 | [](api/spreadsheet_setformat_method.md)      | @getshort(api/spreadsheet_setformat_method.md)      |
 | [](api/spreadsheet_setstyle_method.md)       | @getshort(api/spreadsheet_setstyle_method.md)       |
@@ -76,48 +70,25 @@ Parameters:
 | :---------------------------------------------- | :----------------------------------------------------- |
 | [](api/spreadsheet_afteraction_event.md)        | @getshort(api/spreadsheet_afteraction_event.md)        |
 | [](api/spreadsheet_afterclear_event.md)         | @getshort(api/spreadsheet_afterclear_event.md)         |
-| [](api/spreadsheet_aftercolumnadd_event.md)     | @getshort(api/spreadsheet_aftercolumnadd_event.md)     |
-| [](api/spreadsheet_aftercolumndelete_event.md)  | @getshort(api/spreadsheet_aftercolumndelete_event.md)  |
 | [](api/spreadsheet_afterdataloaded_event.md)    | @getshort(api/spreadsheet_afterdataloaded_event.md)    |
 | [](api/spreadsheet_aftereditend_event.md)       | @getshort(api/spreadsheet_aftereditend_event.md)       |
 | [](api/spreadsheet_aftereditstart_event.md)     | @getshort(api/spreadsheet_aftereditstart_event.md)     |
 | [](api/spreadsheet_afterfocusset_event.md)      | @getshort(api/spreadsheet_afterfocusset_event.md)      |
-| [](api/spreadsheet_afterformatchange_event.md)  | @getshort(api/spreadsheet_afterformatchange_event.md)  |
-| [](api/spreadsheet_afterrowadd_event.md)        | @getshort(api/spreadsheet_afterrowadd_event.md)        |
-| [](api/spreadsheet_afterrowdelete_event.md)     | @getshort(api/spreadsheet_afterrowdelete_event.md)     |
 | [](api/spreadsheet_afterselectionset_event.md)  | @getshort(api/spreadsheet_afterselectionset_event.md)  |
-| [](api/spreadsheet_aftersheetadd_event.md)      | @getshort(api/spreadsheet_aftersheetadd_event.md)      |
 | [](api/spreadsheet_aftersheetchange_event.md)   | @getshort(api/spreadsheet_aftersheetchange_event.md)   |
-| [](api/spreadsheet_aftersheetclear_event.md)    | @getshort(api/spreadsheet_aftersheetclear_event.md)    |
-| [](api/spreadsheet_aftersheetremove_event.md)   | @getshort(api/spreadsheet_aftersheetremove_event.md)   |
-| [](api/spreadsheet_aftersheetrename_event.md)   | @getshort(api/spreadsheet_aftersheetrename_event.md)   |
-| [](api/spreadsheet_afterstylechange_event.md)   | @getshort(api/spreadsheet_afterstylechange_event.md)   |
-| [](api/spreadsheet_aftervaluechange_event.md)   | @getshort(api/spreadsheet_aftervaluechange_event.md)   |
 | [](api/spreadsheet_beforeaction_event.md)       | @getshort(api/spreadsheet_beforeaction_event.md)       |
 | [](api/spreadsheet_beforeclear_event.md)        | @getshort(api/spreadsheet_beforeclear_event.md)        |
-| [](api/spreadsheet_beforecolumnadd_event.md)    | @getshort(api/spreadsheet_beforecolumnadd_event.md)    |
-| [](api/spreadsheet_beforecolumndelete_event.md) | @getshort(api/spreadsheet_beforecolumndelete_event.md) |
 | [](api/spreadsheet_beforeeditend_event.md)      | @getshort(api/spreadsheet_beforeeditend_event.md)      |
 | [](api/spreadsheet_beforeeditstart_event.md)    | @getshort(api/spreadsheet_beforeeditstart_event.md)    |
 | [](api/spreadsheet_beforefocusset_event.md)     | @getshort(api/spreadsheet_beforefocusset_event.md)     |
-| [](api/spreadsheet_beforeformatchange_event.md) | @getshort(api/spreadsheet_beforeformatchange_event.md) |
-| [](api/spreadsheet_beforerowadd_event.md)       | @getshort(api/spreadsheet_beforerowadd_event.md)       |
-| [](api/spreadsheet_beforerowdelete_event.md)    | @getshort(api/spreadsheet_beforerowdelete_event.md)    |
 | [](api/spreadsheet_beforeselectionset_event.md) | @getshort(api/spreadsheet_beforeselectionset_event.md) |
-| [](api/spreadsheet_beforesheetadd_event.md)     | @getshort(api/spreadsheet_beforesheetadd_event.md)     |
 | [](api/spreadsheet_beforesheetchange_event.md)  | @getshort(api/spreadsheet_beforesheetchange_event.md)  |
-| [](api/spreadsheet_beforesheetclear_event.md)   | @getshort(api/spreadsheet_beforesheetclear_event.md)   |
-| [](api/spreadsheet_beforesheetremove_event.md)  | @getshort(api/spreadsheet_beforesheetremove_event.md)  |
-| [](api/spreadsheet_beforesheetrename_event.md)  | @getshort(api/spreadsheet_beforesheetrename_event.md)  |
-| [](api/spreadsheet_beforestylechange_event.md)  | @getshort(api/spreadsheet_beforestylechange_event.md)  |
-| [](api/spreadsheet_beforevaluechange_event.md)  | @getshort(api/spreadsheet_beforevaluechange_event.md)  |
 
 ## Spreadsheet properties
 
 | Name                                           | Description                                           |
 | ---------------------------------------------- | ----------------------------------------------------- |
 | [](api/spreadsheet_colscount_config.md)        | @getshort(api/spreadsheet_colscount_config.md)        |
-| [](api/spreadsheet_dateformat_config.md)       | @getshort(api/spreadsheet_dateformat_config.md)       |
 | [](api/spreadsheet_editline_config.md)         | @getshort(api/spreadsheet_editline_config.md)         |
 | [](api/spreadsheet_exportmodulepath_config.md) | @getshort(api/spreadsheet_exportmodulepath_config.md) |
 | [](api/spreadsheet_formats_config.md)          | @getshort(api/spreadsheet_formats_config.md)          |
@@ -127,9 +98,20 @@ Parameters:
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(api/spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(api/spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
-| [](api/spreadsheet_timeformat_config.md)       | @getshort(api/spreadsheet_timeformat_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
 
+
+## Sheet Manager methods
+
+| Name                                      | Description                                      |
+| :---------------------------------------- | :----------------------------------------------- |
+| [](api/sheetmanager_add_method.md)       | @getshort(api/sheetmanager_add_method.md)       |
+| [](api/sheetmanager_clear_method.md)     | @getshort(api/sheetmanager_clear_method.md)     |
+| [](api/sheetmanager_get_method.md)       | @getshort(api/sheetmanager_get_method.md)       |
+| [](api/sheetmanager_getactive_method.md) | @getshort(api/sheetmanager_getactive_method.md) |
+| [](api/sheetmanager_getall_method.md)    | @getshort(api/sheetmanager_getall_method.md)    |
+| [](api/sheetmanager_remove_method.md)    | @getshort(api/sheetmanager_remove_method.md)    |
+| [](api/sheetmanager_setactive_method.md) | @getshort(api/sheetmanager_setactive_method.md) |
 
 ## Selection methods
 
