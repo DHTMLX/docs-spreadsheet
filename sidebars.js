@@ -48,6 +48,7 @@ module.exports = {
                     },
                     items: [
                         "api/spreadsheet_addcolumn_method",
+                        "api/spreadsheet_addformula_method",
                         "api/spreadsheet_addrow_method",
                         "api/spreadsheet_clear_method",
                         "api/spreadsheet_deletecolumn_method",

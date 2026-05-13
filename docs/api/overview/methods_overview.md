@@ -9,6 +9,7 @@ description: You can check a Methods overview of the DHTMLX JavaScript Spreadshe
 | Name                                        | Description                                        |
 | :------------------------------------------ | :------------------------------------------------- |
 | [](../spreadsheet_addcolumn_method.md)      | @getshort(../spreadsheet_addcolumn_method.md)      |
+| [](../spreadsheet_addformula_method.md)     | @getshort(../spreadsheet_addformula_method.md)     |
 | [](../spreadsheet_addrow_method.md)         | @getshort(../spreadsheet_addrow_method.md)         |
 | [](../spreadsheet_clear_method.md)          | @getshort(../spreadsheet_clear_method.md)          |
 | [](../spreadsheet_deletecolumn_method.md)   | @getshort(../spreadsheet_deletecolumn_method.md)   |

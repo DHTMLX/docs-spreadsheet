@@ -1359,3 +1359,30 @@ When you enter a formula, a popup with description of the function and its param
 Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 You can modify the default locale for the popup with formula parameters and add a custom locale. Check the details in the [Localization](localization.md/#default-locale-for-formulas) guide.
+
+## Custom formulas
+
+Starting with v6.0, you can register custom formula functions via the [`addFormula()`](api/spreadsheet_addformula_method.md) method. Once registered, the formula is available in any cell by its uppercase name.
+
+The method takes two parameters: the formula name and a synchronous handler function that receives the resolved cell values as arguments and returns the result:
+
+~~~js
+spreadsheet.addFormula("DOUBLE", (value) => {
+    return value * 2;
+});
+~~~
+
+After that, the formula can be used in cells just like any built-in function:
+
+~~~js
+spreadsheet.parse([
+    { cell: "A1", value: 4, format: "number" },
+    { cell: "B1", value: "=DOUBLE(A1)", format: "number" }
+]);
+~~~
+
+:::note
+The handler function must be synchronous. Using `Promise` or `fetch` inside the function is not allowed.
+:::
+
+**Related sample:** [Spreadsheet. Custom formula](https://snippet.dhtmlx.com/wvxdlahp)

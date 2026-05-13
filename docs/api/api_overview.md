@@ -25,6 +25,7 @@ Parameters:
 | Name                                         | Description                                         |
 | :------------------------------------------- | :-------------------------------------------------- |
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(api/spreadsheet_addcolumn_method.md)      |
+| [](api/spreadsheet_addformula_method.md)     | @getshort(api/spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(api/spreadsheet_addrow_method.md)         |
 | [](api/spreadsheet_clear_method.md)          | @getshort(api/spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(api/spreadsheet_deletecolumn_method.md)   |
