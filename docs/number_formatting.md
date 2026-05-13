@@ -10,13 +10,15 @@ DHTMLX Spreadsheet supports number formatting that you can apply for numeric val
 
 ![Number format](assets/number_format_options.png)
 
-{{note There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.}}
+:::note
+There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.
+:::
 
 ## Default number formats
 
 A number format is an object that includes a set of properties:
 
-- **id** - the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
+- **id** - the id of a format that is used to set format to a cell via the [`setFormat()`](api/spreadsheet_setformat_method.md) method
 - **mask** - a mask for a number format. Check the list of characters available in a mask [below](#the-structure-of-a-mask)
 - **name** - the name of a format displayed in the toolbar and menu drop-down lists
 - **example** - an example that shows how a formatted number looks like. The number 2702.31 is used as a default value for format examples
@@ -33,10 +35,11 @@ defaultFormats = [
     { 
         name: "Time",
            id: "time",
-           mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
+           mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the localization.timeFormat config
            example: "13:30:00"
     },
-    { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
+    { name: "Text", id: "text", mask: "@", example: "'1500.31'" },
+    { name: "Scientific", id: "scientific", mask: "0.00E+00", example: "1.50E+03" }
 ];
 ~~~
 
@@ -46,11 +49,13 @@ This is how a spreadsheet with data in various number formats looks like:
 
 ## Date format
 
-You can define the format the dates to be displayed in the spreadsheet via the [dateFormat](api/spreadsheet_dateformat_config.md) property. The default format is "%d/%m/%Y". 
+You can define the format for dates displayed in the spreadsheet via the `dateFormat` option of the [`localization`](api/spreadsheet_localization_config.md) property. The default format is "%d/%m/%Y".
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    dateFormat: "%D/%M/%Y",
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    localization: {
+        dateFormat: "%D/%M/%Y",
+    }
 });
 
 spreadsheet.parse({
@@ -60,19 +65,21 @@ spreadsheet.parse({
     data: [
         {cell: "B1", value: "03/10/2022", format: "date"},
         {cell: "B2", value: new Date(), format: "date"},
-       ]
+    ]
 });
 ~~~
 
-Check [the full list of available characters used to make formats](api/spreadsheet_dateformat_config.md).
+Check [the full list of available characters used to make formats](/api/spreadsheet_localization_config/#characters-for-setting-date-format).
 
 ## Time format
 
-To define the format in which the time should be shown in the spreadsheet cells, use the [timeFormat](api/spreadsheet_timeformat_config.md) property:
+To define the format in which the time should be shown in the spreadsheet cells, use the `timeFormat` option of the [`localization`](api/spreadsheet_localization_config.md) property:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    timeFormat: 24,
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    localization: {
+        timeFormat: 24,
+    }
 });
 
 spreadsheet.parse({
@@ -83,18 +90,18 @@ spreadsheet.parse({
         { cell: "A1", value: "18:30", format: "time" },
         { cell: "A2", value: 44550.5625, format: "time" },
         { cell: "A3", value: new Date(), format: "time" },
-       ]
+    ]
 });
 ~~~
 
 ## Number, date, time, currency localization
 
-With Spreadsheet configuration options, you can localize time and date, specify the necessary currency sign and provide the desired decimal and thousands separators. All these settings are available in the [localization](spreadsheet/api/spreadsheet_localization_config.md) property. It is an object with the following properties:
+With Spreadsheet configuration options, you can localize time and date, specify the necessary currency sign and provide the desired decimal and thousands separators. All these settings are available in the [`localization`](spreadsheet/api/spreadsheet_localization_config.md) property. It is an object with the following properties:
 
 - **decimal** - (optional) the symbol used as a decimal separator, **"."** (a period) by default<br>Possible values are `"." | ","`
 - **thousands** - (optional) the symbol used as a thousands separator, **","** (a comma) by default<br>Possible values are `"." | "," | " " | ""`
 - **currency** - (optional) the currency sign, **"$"** by default 
-- **dateFormat** - (optional) the format of displaying dates set as a string, **"%d/%m/%Y"** by default. Check the details at the [dateFormat](api/spreadsheet_dateformat_config.md) API page
+- **dateFormat** - (optional) the format of displaying dates set as a string, **"%d/%m/%Y"** by default. Check the details at the [`localization`](api/spreadsheet_localization_config.md) API page
 - **timeFormat** - (optional) the format of displaying time set as either *12* or *24*, **12** by default
 
 For example, you can change the default localization settings as shown below:
@@ -117,6 +124,26 @@ Here is the result of configuring the **localization** object for Spreadsheet:
 
 <iframe src="https://snippet.dhtmlx.com/xislsb3c?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
+## Scientific number format
+
+Scientific (exponential) notation is available as a default format and is useful for representing very large or very small numbers concisely. The built-in `"scientific"` format uses the mask `0.00E+00`, which displays, for example, 1500.31 as `1.50E+03`.
+
+To apply it to a cell, use the [`setFormat()`](api/spreadsheet_setformat_method.md) method:
+
+~~~jsx
+spreadsheet.setFormat("A1", "scientific");
+~~~
+
+You can also define a custom scientific format with a different mask via the [`formats`](api/spreadsheet_formats_config.md) configuration option. For example, `0.###E+0` produces a more compact output:
+
+~~~jsx
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    formats: [
+        { id: "scientific_compact", mask: "0.###E+0", name: "Scientific (compact)", example: "1.5E+3" }
+    ]
+});
+~~~
+
 ## Formats customization
 
 You are not limited by [default number formats](#default-number-formats) only. There are two options of formats customization available:
@@ -126,9 +153,9 @@ You are not limited by [default number formats](#default-number-formats) only. T
 
 <iframe src="https://snippet.dhtmlx.com/4c0c0zm7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-All such modifications can be implemented via the [](api/spreadsheet_formats_config.md) configuration option. It represents an array of format objects each of which contains a set of properties:
+All such modifications can be implemented via the [`formats`](api/spreadsheet_formats_config.md) configuration option. It represents an array of format objects each of which contains a set of properties:
 
-- **id** - (*string*) mandatory, the id of a format that is used to set format to a cell via the [](api/spreadsheet_setformat_method.md) method
+- **id** - (*string*) mandatory, the id of a format that is used to set format to a cell via the [`setFormat()`](api/spreadsheet_setformat_method.md) method
 - **mask** - (*string*) mandatory, a mask for a number format. Check the list of characters available in a mask [below](#the-structure-of-a-mask)
 - **name** - (*string*) optional, the name of a format that will be displayed in the toolbar and menu drop-down lists
 - **example** - (*string*) optional, an example that shows how a formatted number will look like
@@ -144,10 +171,11 @@ A mask may contain a set of common syntax characters that include digit placehol
 - **.(period)** - applies a decimal point to numbers.
 - **,(comma)** - applies a thousands separator to numbers.
 - **[characters for setting a date format](https://docs.dhtmlx.com/suite/calendar/api/calendar_dateformat_config/)** - used to create a mask for date and time. For example, to display 27.09.2023 as 27, Sep 2023 use the format "%d, %M %Y".
+- **E+ / E-** - formats numbers in scientific (exponential) notation. The digits after `E` define the minimum number of exponent digits. `E+` always shows the exponent sign; `E-` shows it only for negative exponents. For example, the mask `0.00E+00` displays 1500.31 as `1.50E+03`.
 
 ## Setting format
 
-In order to apply the necessary format to a numeric value, make use of the [](api/spreadsheet_setformat_method.md) method. It takes two parameters:
+In order to apply the necessary format to a numeric value, make use of the [`setFormat()`](api/spreadsheet_setformat_method.md) method. It takes two parameters:
 
 - **cell** - (*string*) the id of a cell the value of which should be formatted
 - **format** - (*string*) the name of the [default number format](#default-number-formats) to apply to the cell value
@@ -161,7 +189,7 @@ spreadsheet.setFormat("A1","percent");
 
 ## Getting format
 
-You can get the number format applied to the value of a cell with the help of the [](api/spreadsheet_getformat_method.md) method. The method takes the id of a cell as a parameter.
+You can get the number format applied to the value of a cell with the help of the [`getFormat()`](api/spreadsheet_getformat_method.md) method. The method takes the id of a cell as a parameter.
 
 ~~~jsx
 var format = spreadsheet.getFormat("A1"); 
@@ -172,5 +200,5 @@ var format = spreadsheet.getFormat("A1");
 
 There is a pair of events you can use to control the process of cell's format changing. They are:
 
-- [](api/spreadsheet_beforeformatchange_event.md) - fires before the format of a cell is changed
-- [](api/spreadsheet_afterformatchange_event.md) - fires after the format of a cell is changed
+- [`beforeAction`](api/spreadsheet_beforeaction_event.md) - fires before the `setCellFormat` action is executed
+- [`afterAction`](api/spreadsheet_afteraction_event.md) - fires after the `setCellFormat` action is executed

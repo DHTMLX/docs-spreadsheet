@@ -1,7 +1,7 @@
 ---
 sidebar_label: Spreadsheet actions
 title: Actions Overview
-description: You can have an Actions overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: You can check an Actions overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Actions overview
@@ -55,7 +55,7 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **addRow**           | The action is executed when adding a new row                                                                                                                                                            |
 | **addSheet**         | The action is executed when adding a new sheet                                                                                                                                                          |
 | **clear**            | The action is executed when clearing the spreadsheet via the <b>clear()</b> method                                                                                                                      |
-| **clearSheet**       | The action is executed when clearing a sheet via the <b>clearSheet()</b> method                                                                                                                         |
+| **clearSheet**       | The action is executed when clearing a sheet via the <b>sheets.clear()</b> method                                                                                                                       |
 | **deleteColumn**     | The action is executed when removing a column                                                                                                                                                           |
 | **deleteRow**        | The action is executed when removing a row                                                                                                                                                              |
 | **deleteSheet**      | The action is executed when removing a sheet                                                                                                                                                            |

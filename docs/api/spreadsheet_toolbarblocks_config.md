@@ -19,7 +19,7 @@ toolbarBlocks?: array;
 ### Default config
 
 ~~~jsx
-toolbarBlocks: ["undo", "colors", "decoration", "align", "cell", "format", "actions"]
+toolbarBlocks: ["undo", "colors", "font", "decoration", "align", "cell", "format", "actions"]
 ~~~
 
 ### Example
@@ -30,6 +30,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: [
         "undo",
         "colors",
+        "font",
         "decoration",
         "align",
         "cell",
@@ -59,6 +60,7 @@ Check how you can [customize the toolbar](customization.md/#toolbar).
 
 **Change log:**
 
+- The *"font"* block was added in v6.0
 - The *"cell"* block was added in v5.2
 - The *"actions"* block was added in v5.0 
 
