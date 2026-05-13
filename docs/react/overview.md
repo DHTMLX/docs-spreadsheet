@@ -17,7 +17,7 @@ The React Spreadsheet wrapper is available with the DHTMLX Spreadsheet **Commerc
 The React wrapper provides access to the full feature set of DHTMLX Spreadsheet:
 
 - Multi-sheet spreadsheets with sheet tabs (add, remove, rename)
-- Cell values, formulas (85+ built-in functions), and number formatting
+- Cell values, formulas (90+ built-in functions), and number formatting
 - Cell styling, merged cells, frozen panes, data validation
 - Sorting, filtering, and search
 - Row/column operations (add, delete, hide/show, resize, auto-fit)
