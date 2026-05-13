@@ -117,7 +117,7 @@ table th:first-child {
     width: 25%;
 }
 
-.deprecated-methods-table { overflow-x: auto; }
+.overflow-table { overflow-x: auto; }
 
 .deprecated-events-table table th:nth-child(1) { width: 20%; }
 .deprecated-events-table table th:nth-child(2) { width: 45%; }

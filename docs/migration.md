@@ -23,7 +23,7 @@ The following methods of the `ISpreadsheet` instance are deprecated and removed.
 
 Use the new [`sheets` module (Sheet Manager) API](/api/overview/sheetmanager_overview/) instead:
 
-<div className="deprecated-methods-table">
+<div className="overflow-table">
 
 | Deprecated method | Signature | New usage | New signature |
 | --- | --- | --- | --- |

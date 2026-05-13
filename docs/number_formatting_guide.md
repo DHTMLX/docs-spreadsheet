@@ -40,6 +40,10 @@ There are several number formats you can apply to format numeric values of cells
             <td><b>Text</b></td>
             <td>numbers are displayed as text and exactly as you type them</td>
         </tr>
+        <tr>
+            <td><b>Scientific</b></td>
+            <td>numbers are displayed in exponential notation (for example, <b>1.50E+03</b> for 1500.31); useful for very large or very small numbers</td>
+        </tr>
     </tbody>
 </table>
 

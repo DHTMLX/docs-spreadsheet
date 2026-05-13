@@ -21,6 +21,7 @@ yarn-error.log*
 
 # Code
 .vscode
+.claude
 
 # Idea
 .idea

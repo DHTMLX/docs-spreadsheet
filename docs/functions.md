@@ -776,6 +776,14 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
             <td>Calculates the average (arithmetic mean) of the values in the list of arguments. <br>Arguments can be the following: numbers; names, arrays, or references that contain numbers; text representations of numbers; or logical values, such as TRUE and FALSE, in a reference.<br>Empty cells and text values in the array or reference are ignored.</td>
         </tr>
         <tr>
+            <td><b>AVERAGEIF</b><br>added in v6.0</td>
+            <td>Returns the average (arithmetic mean) of all cells in a range that meet a given condition. <br>Takes two required arguments (the range to evaluate and the criterion) and one optional argument (the range of cells to average, if different from the evaluated range).</td>
+        </tr>
+        <tr>
+            <td><b>AVERAGEIFS</b><br>added in v6.0</td>
+            <td>Returns the average (arithmetic mean) of all cells that meet multiple conditions. <br>Takes a required average range followed by one or more pairs of condition range and criterion arguments.</td>
+        </tr>
+        <tr>
             <td><b>BASE</b></td>
             <td>Converts a number into the supplied base (radix). <br>The number should be an integer and greater than or equal to 0 and less than 2^53.<br>The base radix is what we want to convert the number into. It must be an integer from 2 to 36, inclusive.</td>
         </tr>
@@ -830,6 +838,14 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
         <tr>
             <td><b>COUNTBLANK</b></td>
             <td>Returns the number of empty cells from a specified range. <br>Cells with zero values are not counted.</td>
+        </tr>
+        <tr>
+            <td><b>COUNTIF</b><br>added in v6.0</td>
+            <td>Counts the number of cells within a range that meet the given condition. <br>Takes two arguments: the range of cells to evaluate and the criterion that defines which cells to count.</td>
+        </tr>
+        <tr>
+            <td><b>COUNTIFS</b><br>added in v6.0</td>
+            <td>Counts the number of cells that meet multiple conditions. <br>Takes one or more pairs of range and criterion arguments; only cells that satisfy all conditions are counted.</td>
         </tr>
         <tr>
             <td><b>DECIMAL</b></td>
@@ -904,8 +920,16 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
             <td>Returns the largest value in a set of values. <br>The function ignores empty cells, the logical values TRUE and FALSE, and text values. If the arguments contain no numbers, MAX returns 0 (zero).</td>
         </tr>
         <tr>
+            <td><b>MAXIFS</b><br>added in v6.0</td>
+            <td>Returns the maximum value among cells specified by a given set of conditions. <br>Takes a required max range followed by one or more pairs of condition range and criterion arguments.</td>
+        </tr>
+        <tr>
             <td><b>MIN</b></td>
             <td>Returns the smallest number in a set of values. <br>Empty cells, logical values, or text in the array or reference are ignored. If the arguments contain no numbers, MIN returns 0 (zero).</td>
+        </tr>
+        <tr>
+            <td><b>MINIFS</b><br>added in v6.0</td>
+            <td>Returns the minimum value among cells specified by a given set of conditions. <br>Takes a required min range followed by one or more pairs of condition range and criterion arguments.</td>
         </tr>
         <tr>
             <td><b>MINUS</b></td>
@@ -1035,6 +1059,14 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
         <tr>
             <td><b>SUM</b></td>
             <td>Returns the sum of supplied values. <br>Empty cells, logical values like TRUE, or text are ignored.</td>
+        </tr>
+        <tr>
+            <td><b>SUMIF</b><br>added in v6.0</td>
+            <td>Adds the cells in a range that meet a specified condition. <br>Takes two required arguments (the range to evaluate and the criterion) and one optional argument (the range of cells to sum, if different from the evaluated range).</td>
+        </tr>
+        <tr>
+            <td><b>SUMIFS</b><br>added in v6.0</td>
+            <td>Adds the cells in a range that meet multiple conditions. <br>Takes a required sum range followed by one or more pairs of condition range and criterion arguments; only cells that satisfy all conditions are included in the sum.</td>
         </tr>
         <tr>
             <td><b>SUMPRODUCT</b></td>
