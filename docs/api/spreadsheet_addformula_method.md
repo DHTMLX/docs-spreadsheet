@@ -15,13 +15,17 @@ Once registered, the formula is available in any cell by its uppercase name (e.g
 ### Usage
 
 ~~~jsx
-addFormula(name: string, handler: (...args: any[]) => any): void;
+type cellValue = string | number | boolean
+type mathArgument = cellValue | cellValue[];
+type mathFunction = (...x: mathArgument[]) => cellValue;
+
+addFormula: (name: string, handler: mathFunction) => void;
 ~~~
 
 ### Parameters
 
 - `name` - (*string*) required, the formula name (case-insensitive, stored as uppercase)
-- `handler` - (*(...args: any[]) => any*) required, the function that computes the formula result. Receives the resolved cell values as arguments
+- `handler` - (*mathFunction*) required, a callback function that processes the input arguments (strings, numbers, booleans, or arrays of these) and returns a single value
 
 :::note
 The `handler` callback function must be synchronous. Using `Promise` or `fetch` inside the function is not allowed.
@@ -32,12 +36,12 @@ The `handler` callback function must be synchronous. Using `Promise` or `fetch` 
 ~~~jsx {4-6}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 
-// Adds a custom formula that doubles a value
+// adds a custom formula that doubles a value
 spreadsheet.addFormula("DOUBLE", (value) => {
     return value * 2;
 });
 
-// Now use in cells: =DOUBLE(A1)
+// now use in cells: =DOUBLE(A1)
 spreadsheet.parse([
     { cell: "A1", value: 4, format: "number" },
     { cell: "B1", value: "=DOUBLE(A1)", format: "number" }
