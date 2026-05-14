@@ -6,6 +6,8 @@ description: "Apply built-in or custom themes to DHTMLX React Spreadsheet."
 
 # React Spreadsheet themes
 
+React Spreadsheet ships with four built-in themes and supports custom themes through CSS variables. Use the `theme` prop to select a built-in theme or apply one you have defined yourself.
+
 ## Built-in themes
 
 The [`SpreadsheetTheme`](/react/types#spreadsheettheme) type defines four built-in themes:
@@ -19,7 +21,7 @@ You can also pass a custom theme name as a string.
 
 ## Applying a theme
 
-Pass the `theme` prop to `ReactSpreadsheet`:
+Pass the `theme` prop to `ReactSpreadsheet` with the name of the theme you want to use:
 
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} theme="dark" />

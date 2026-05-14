@@ -25,6 +25,8 @@ npm install @dhtmlx/trial-react-spreadsheet @reduxjs/toolkit react-redux
 
 ## Create the slice
 
+Define the spreadsheet state shape, initial data, and reducers in a Redux Toolkit slice.
+
 ~~~ts title="src/store/spreadsheetSlice.ts"
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
 import type { SheetData } from "@dhtmlx/trial-react-spreadsheet";
@@ -79,6 +81,8 @@ export default spreadsheetSlice.reducer;
 
 ## Configure the store
 
+Register the slice in the Redux store and export the typed `RootState` and `AppDispatch` helpers.
+
 ~~~ts title="src/store/index.ts"
 import { configureStore } from "@reduxjs/toolkit";
 import spreadsheetReducer from "./spreadsheetSlice";
@@ -113,6 +117,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
 ~~~
 
 ## Create the component
+
+Connect `ReactSpreadsheet` to the Redux store using `useSelector` for reading state and `useDispatch` to sync changes back after each user action.
 
 ~~~tsx title="src/App.tsx"
 import { useRef } from "react";

@@ -227,6 +227,8 @@ Known spreadsheet action identifiers. Used in [`onBeforeAction`](/react/events/#
 
 ## Handler type aliases
 
+Convenience aliases for the function signatures used by event callback props. Import them to annotate your handler functions explicitly.
+
 <div className="overflow-table">
 
 | Type | Signature | Used by |
