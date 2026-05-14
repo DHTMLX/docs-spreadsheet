@@ -43,6 +43,8 @@ The React wrapper provides access to the full feature set of DHTMLX Spreadsheet:
 
 ## Quick start
 
+A minimal working example showing how to render a spreadsheet with one sheet and formatted cells.
+
 ~~~tsx
 import { useState } from "react";
 import { ReactSpreadsheet, type SheetData } from "@dhtmlx/trial-react-spreadsheet";
@@ -105,6 +107,8 @@ Props are categorized by how the component handles changes:
 
 ### Multi-sheet with formulas
 
+Two sheets with cell values and a `SUM` formula, rendered with sheet tabs enabled.
+
 ~~~tsx
 const [sheets] = useState<SheetData[]>([
     {
@@ -132,6 +136,8 @@ const [sheets] = useState<SheetData[]>([
 
 ### Custom toolbar
 
+Pass an array of block identifiers to `toolbarBlocks` to show only the toolbar sections you need.
+
 ~~~tsx
 <ReactSpreadsheet
     sheets={sheets}
@@ -140,6 +146,8 @@ const [sheets] = useState<SheetData[]>([
 ~~~
 
 ### Read-only with locked cells
+
+Set `readonly={true}` to disable all editing at the widget level. Adding `locked: true` on cells protects them individually when the spreadsheet is not in read-only mode.
 
 ~~~tsx
 const sheets: SheetData[] = [
@@ -159,6 +167,8 @@ const sheets: SheetData[] = [
 ~~~
 
 ## Imperative access via ref
+
+Use a `SpreadsheetRef` to access the underlying widget instance for operations that don't map to declarative props, such as serializing data, triggering undo/redo, or setting the selection programmatically.
 
 ~~~tsx
 import { useRef } from "react";
