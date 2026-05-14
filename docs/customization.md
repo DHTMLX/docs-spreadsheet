@@ -120,6 +120,8 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
 - the **Colors** block
   - the *Text color* button (id: "color")
   - the *Background color* button (id: "background")
+- the **Font** block
+  - the *Font size* combobox (id: "font-size")
 - the **Decoration** block
   - the *Bold* button (id: "font-weight-bold")
   - the *Italic* button (id: "font-style-italic")
@@ -232,6 +234,27 @@ In the example below the Undo button is removed from the toolbar:
 
 ~~~jsx
 spreadsheet.toolbar.data.remove("undo");
+~~~
+
+### Custom font size
+
+You can redefine the list of available font sizes in the **Font** toolbar block by removing the existing items from the `"font-size"` combobox and adding your own:
+
+~~~jsx
+const FONT_SIZES = [8, 10, 12, 14, 16, 20];
+
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    // configuration options
+});
+
+spreadsheet.toolbar.data.removeAll("font-size");
+spreadsheet.toolbar.data.add(
+    FONT_SIZES.map(size => ({ value: size, id: `font-size-${size}` })),
+    -1,
+    "font-size"
+);
+
+spreadsheet.parse(dataset);
 ~~~
 
 ## Menu
@@ -413,22 +436,19 @@ spreadsheet.contextMenu.data.remove("lock");
 Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
 
 - [](api/spreadsheet_beforeeditstart_event.md)
-- [](api/spreadsheet_beforestylechange_event.md)
-- [](api/spreadsheet_beforevaluechange_event.md)
+- [](api/spreadsheet_beforeaction_event.md)
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("cont");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 
 spreadsheet.events.on("beforeEditStart", function(){
     return false;
 });
 
-spreadsheet.events.on("beforeValueChange", function(){
-    return false;
-});
-
-spreadsheet.events.on("beforeStyleChange", function(){
-    return false;
+spreadsheet.events.on("beforeAction", function(actionName){
+    if (actionName === "setCellValue" || actionName === "setCellStyle") {
+        return false;
+    }
 });
 
 spreadsheet.parse(data);

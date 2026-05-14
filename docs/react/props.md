@@ -44,6 +44,8 @@ These props are applied immediately without destroying the widget. No data loss 
 
 ## Data props
 
+The `sheets` prop is the single source of truth for all spreadsheet content. Changes are applied incrementally: only modified cells, ranges, or settings are updated in the widget.
+
 | Prop | Type | Description |
 |------|------|-------------|
 | `sheets` | [`SheetData[]`](/react/types#sheetdata) | The single source of truth for all spreadsheet data. Each entry represents a sheet with its cells, structure, and metadata. Changes are applied incrementally. |
@@ -56,11 +58,15 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 
 ## Search props
 
+Controls the search bar state from outside the component. Use it together with `onSearchResults` to build a custom search UI.
+
 | Prop | Type | Description |
 |------|------|-------------|
 | `search` | [`SearchConfig`](/react/types#searchconfig) | Controlled search state. Pass a `SearchConfig` object to trigger/update search. Pass `undefined` to dismiss the search bar. |
 
 ## Data loading props
+
+Load spreadsheet data from a remote URL instead of supplying it through the `sheets` prop.
 
 | Prop | Type | Description |
 |------|------|-------------|
@@ -69,11 +75,15 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 
 ## Theme prop
 
+Controls the visual theme applied to the spreadsheet. Since `theme` is a runtime prop, the widget updates immediately when the value changes.
+
 | Prop | Type | Description |
 |------|------|-------------|
 | `theme` | [`SpreadsheetTheme`](/react/types#spreadsheettheme) | Color theme. Built-in values: `"light"`, `"dark"`, `"contrast-light"`, `"contrast-dark"`. Also accepts custom theme name strings. See [Themes](/react/themes/). |
 
 ## Container props
+
+Standard React DOM props applied to the wrapper `<div>` that contains the spreadsheet. Use them to control sizing and layout.
 
 | Prop | Type | Description |
 |------|------|-------------|
@@ -85,6 +95,8 @@ Changing `styles` triggers a full data reload. Spreadsheet data is preserved, bu
 ## Examples
 
 ### Sheets with cell data
+
+A full `SheetData` example with cells, row and column sizing, merged ranges, and a frozen header row.
 
 ~~~tsx
 const [sheets, setSheets] = useState<SheetData[]>([
@@ -113,6 +125,8 @@ const [sheets, setSheets] = useState<SheetData[]>([
 
 ### Styles example
 
+Define named styles as CSS property maps in the `styles` prop, then reference them by name via `CellData.css`.
+
 ~~~tsx
 const styles = {
     header: {
@@ -140,11 +154,11 @@ const styles = {
 
 ### Multi-sheet mode
 
+Enable sheet tabs with `multiSheets={true}`. Pass `false` to hide the tab bar entirely.
+
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} multiSheets={true} />
 ~~~
-
-To disable sheet tabs:
 
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} multiSheets={false} />
@@ -174,6 +188,8 @@ To disable sheet tabs:
 ~~~
 
 ### Controlled search
+
+Pass a `SearchConfig` object to open the search bar programmatically. Use `onSearchResults` to receive the matching cell references.
 
 ~~~tsx
 const [search, setSearch] = useState<SearchConfig | undefined>();
@@ -219,6 +235,8 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 
 ### Locked cells
 
+Mark individual cells as non-editable with `locked: true`. Unlike `readonly`, this protects specific cells while leaving the rest of the sheet editable.
+
 ~~~tsx
 const sheets: SheetData[] = [
     {
@@ -235,6 +253,8 @@ const sheets: SheetData[] = [
 ~~~
 
 ### Cell validation
+
+Pass an array of strings to `CellData.validation` to restrict the cell to a dropdown of allowed values.
 
 ~~~tsx
 const sheets: SheetData[] = [

@@ -6,8 +6,6 @@ description: "How to use DHTMLX React Spreadsheet in a Next.js application with 
 
 # React Spreadsheet in Next.js
 
-## Overview
-
 DHTMLX Spreadsheet is a client-side widget that requires access to the browser DOM. In Next.js with the App Router, server components are the default, so the spreadsheet must be wrapped in a client component using the `"use client"` directive.
 
 :::note

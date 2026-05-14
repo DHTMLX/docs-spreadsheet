@@ -1,7 +1,7 @@
 ---
 sidebar_label: Properties overview
 title: Properties Overview
-description: You can have a Properties overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: You can check a Properties overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
 ---
 
 # Properties overview
@@ -9,7 +9,6 @@ description: You can have a Properties overview of the DHTMLX JavaScript Spreads
 | Name                                          | Description                                          |
 | --------------------------------------------- | ---------------------------------------------------- |
 | [](../spreadsheet_colscount_config.md)        | @getshort(../spreadsheet_colscount_config.md)        |
-| [](../spreadsheet_dateformat_config.md)       | @getshort(../spreadsheet_dateformat_config.md)       |
 | [](../spreadsheet_editline_config.md)         | @getshort(../spreadsheet_editline_config.md)         |
 | [](../spreadsheet_exportmodulepath_config.md) | @getshort(../spreadsheet_exportmodulepath_config.md) |
 | [](../spreadsheet_formats_config.md)          | @getshort(../spreadsheet_formats_config.md)          |
@@ -19,6 +18,5 @@ description: You can have a Properties overview of the DHTMLX JavaScript Spreads
 | [](../spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](../spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](../spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
-| [](../spreadsheet_timeformat_config.md)       | @getshort(../spreadsheet_timeformat_config.md)       |
 | [](../spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |
 
