@@ -12,7 +12,7 @@ description: You can learn about the get method of the Sheet Manager in the docu
 
 ### Usage
 
-~~~jsx
+~~~ts
 get: (id: Id) => ISheet;
 ~~~
 

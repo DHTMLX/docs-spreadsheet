@@ -14,7 +14,7 @@ The spreadsheet UI will re-render to display the target sheet's contents.
 
 ### Usage
 
-~~~jsx
+~~~ts
 setActive: (id: Id) => void;
 ~~~
 

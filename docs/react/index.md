@@ -13,7 +13,9 @@ The official declarative React wrapper for DHTMLX Spreadsheet. Build spreadsheet
 - [Installation](/react/installation/) - install the evaluation or commercial package
 - [Quick start](/react/quick-start/) - build your first spreadsheet app step by step
 
-You can also explore the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-demo) for a complete working example.
+:::info
+You can also explore the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-examples) for a complete working example.
+:::
 
 ## API reference
 

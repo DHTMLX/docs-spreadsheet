@@ -20,32 +20,30 @@ The new release introduces significant changes in the Spreadsheet API: there is 
 
 ### New functionality
 
-- The `ISheetManager` module is introduced. It is a centralized API for managing sheets in Spreadsheet. It is accessible via the `spreadsheet.sheets` property and replaces all the deprecated sheet-related methods on the root `ISpreadsheet` instance.
-    - new methods: `sheets.add`, `sheets.remove`, `sheets.getAll`, `sheets.getActive`, `sheets.setActive`, `sheets.clear`, `sheets.get`
-- React Spreadsheet wrapper is introduced
-- The ability to specify a custom (user-defined) formula
-- The ability to display numbers in the scientific (exponential) notation
-
+- [React Spreadsheet wrapper](/react/) is introduced. Check related examples in the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-examples)
+- The [`ISheetManager`](/api/overview/sheetmanager_overview/) module is introduced. It is a centralized API for managing sheets in Spreadsheet. It is accessible via the `spreadsheet.sheets` property and replaces all the [deprecated sheet-related methods](/migration/#deprecated-methods) on the root `ISpreadsheet` instance.
+    - new methods: [`sheets.add()`](/api/sheetmanager_add_method/), [`sheets.remove()`](/api/sheetmanager_remove_method/), [`sheets.getAll()`](/api/sheetmanager_getall_method/), [`sheets.getActive()`](/api/sheetmanager_getactive_method/), [`sheets.setActive()`](/api/sheetmanager_setactive_method/), [`sheets.clear()`](/api/sheetmanager_clear_method/), [`sheets.get()`](/api/sheetmanager_get_method/)
+- The ability to specify a [custom (user-defined) formula](/functions/#custom-formulas) via the new [`addFormula()`](/api/spreadsheet_addformula_method/) method
+- The ability to display numbers in the [scientific (exponential) notation](/number_formatting/#scientific-number-format)
 
 ### Updates
 
-- The ability to adjust the font size of cell content:
-    - a built-in toolbar control 
-    - the ability to provide custom font size in the toolbar control
-- New conditional aggregate functions are added into the formulas engine: `COUNTIF`, `COUNTIFS`, `SUMIF`, `SUMIFS`, `AVERAGEIF`, `AVERAGEIFS`, `MAXIFS`, `MINIFS`
-- The `awaitRedraw()` helper is added for Spreadsheet to detect the rendering process and perform the desired code after the component finishes its rendering 
-- JSDoc annotations are added to the type definitions, providing inline API descriptions, parameter types, and code examples directly in the IDE
+- The ability to adjust the font size of cell content: 
+    - setting a default font size option via a [built-in toolbar control](/customization/#default-controls)  
+    - setting a [custom font size](/customization/#custom-font-size) for the toolbar control
+- New conditional aggregate functions are added into the [formulas engine](/functions/#math-functions): `COUNTIF`, `COUNTIFS`, `SUMIF`, `SUMIFS`, `AVERAGEIF`, `AVERAGEIFS`, `MAXIFS`, `MINIFS`
+- The [`awaitRedraw()`](/awaitredraw/) helper is added for Spreadsheet to detect the rendering process and run the desired code after the component finishes rendering
+- [JSDoc annotations](/using_typescript/#jsdoc-hints) are added to the type definitions, providing inline API descriptions, parameter types, and code examples directly in the IDE
 
 ### Fixes
 
-- Losing focus after switching the active sheet via API
+- Losing focus after switching the active sheet via the API
 - Returning an array of changed cells in the transpose mode
 - Recalculating dependent formulas after paste
 - Overwriting locked cells with formulas during paste operations
 - The issue with running mathematical formulas in a locked cell
-- Sheet name escape cases: looks like cell ref, starts with a number, contains special characters
-- Dynamic array and zero id (the first cell of the first sheet)
-
+- Sheet name escaping for names that resemble cell references, start with a number, or contain special characters
+- The issue with dynamic arrays when the cell id is zero (the first cell of the first sheet)
 
 ## Version 5.2.9 
 

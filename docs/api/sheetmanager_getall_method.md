@@ -16,7 +16,7 @@ Each sheet object contains the sheet's id and name.
 
 ### Usage
 
-~~~jsx
+~~~ts
 getAll: () => ISheet[];
 ~~~
 

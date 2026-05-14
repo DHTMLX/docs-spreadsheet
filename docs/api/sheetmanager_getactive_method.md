@@ -12,7 +12,7 @@ description: You can learn about the getActive method of the Sheet Manager in th
 
 ### Usage
 
-~~~jsx
+~~~ts
 getActive: () => ISheet;
 ~~~
 

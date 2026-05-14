@@ -20,7 +20,7 @@ Also note, that a sheet won't be deleted if the number of sheets in the spreadsh
 
 ### Usage
 
-~~~jsx
+~~~ts
 remove: (id: Id) => void;
 ~~~
 

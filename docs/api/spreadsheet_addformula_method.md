@@ -14,7 +14,7 @@ Once registered, the formula is available in any cell by its uppercase name (e.g
 
 ### Usage
 
-~~~jsx
+~~~ts
 type cellValue = string | number | boolean
 type mathArgument = cellValue | cellValue[];
 type mathFunction = (...x: mathArgument[]) => cellValue;
@@ -25,7 +25,7 @@ addFormula: (name: string, handler: mathFunction) => void;
 ### Parameters
 
 - `name` - (*string*) required, the formula name (case-insensitive, stored as uppercase)
-- `handler` - (*mathFunction*) required, a callback function that processes the input arguments (strings, numbers, booleans, or arrays of these) and returns a single value
+- `handler` - (*function*) required, a callback function that processes the input arguments (strings, numbers, booleans, or arrays of these) and returns a single value
 
 :::note
 The `handler` callback function must be synchronous. Using `Promise` or `fetch` inside the function is not allowed.

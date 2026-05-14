@@ -14,7 +14,7 @@ If no id is provided, the currently active sheet is cleared.
 
 ### Usage
 
-~~~jsx
+~~~ts
 clear: (id?: Id) => void;
 ~~~
 

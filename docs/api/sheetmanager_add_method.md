@@ -18,7 +18,7 @@ To apply this method, you need to enable the [multiSheets](api/spreadsheet_multi
 
 ### Usage
 
-~~~jsx
+~~~ts
 add: (name?: string) => Id;
 ~~~
 
