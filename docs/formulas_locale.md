@@ -1,6 +1,6 @@
-﻿---
+---
 sidebar_label: Default locale for formulas
-title: Default locale for Formulas
+title: Default locale for formulas
 description: The complete default English locale for the DHTMLX Spreadsheet formula popup, containing parameter names and descriptions for all built-in formulas.
 ---
 
@@ -2147,10 +2147,8 @@ const en = {
     ],
     "JOIN": [
         [
-            "Text1, text2, ..."
-        ],
-        [
-            "Text you want to combine"
+            "Text1, text2, ...",
+            "Text values you want to combine."
         ]
     ],
     "ARRAYTOTEXT": [
@@ -2951,3 +2949,5 @@ const en = {
     ]
 };
 ~~~
+
+**Related sample**: [Spreadsheet. Localization](https://snippet.dhtmlx.com/yn5hyyim?mode=wide)

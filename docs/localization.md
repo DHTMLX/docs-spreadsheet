@@ -233,7 +233,9 @@ const en = {
 };
 ~~~
 
-You can check the full default locale for formulas on the [Default locale for formulas](formulas_locale.md) page.
+[Check the full default locale for formulas](/formulas_locale/).
+
+**Related sample**: [Spreadsheet. Localization](https://snippet.dhtmlx.com/yn5hyyim?mode=wide)
 
 ## Custom locale for formulas
 
