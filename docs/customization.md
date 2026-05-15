@@ -192,7 +192,7 @@ spreadsheet.toolbar.data.add({
 
 ![Custom Toolbar Button](assets/custom_toolbar_button.png)
 
-**Related sample**: [Spreadsheet. Toolbar Buttons](https://snippet.dhtmlx.com/qopk6lta)
+**Related sample**: [Spreadsheet. Custom toolbar button](https://snippet.dhtmlx.com/qopk6lta)
 
 In the example below a new menuItem option is added into the "clear-group" control:
 
@@ -226,7 +226,7 @@ spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 
 ![Custom Toolbar Icons](assets/custom_toolbar_icons.png)
 
-**Related sample**: [Spreadsheet. Toolbar Icons](https://snippet.dhtmlx.com/mvnx43o0)
+**Related sample**: [Spreadsheet. Custom toolbar icons](https://snippet.dhtmlx.com/mvnx43o0)
 
 ### Deleting controls
 
@@ -256,6 +256,8 @@ spreadsheet.toolbar.data.add(
 
 spreadsheet.parse(dataset);
 ~~~
+
+**Related sample:** [Spreadsheet. Custom font size](https://snippet.dhtmlx.com/tffbf11g)
 
 ## Menu
 
@@ -411,7 +413,7 @@ spreadsheet.contextMenu.data.add({
 
 ![Custom Context Menu Item](assets/custom_context_menuitem.png)
 
-**Related sample**: [Spreadsheet. Context Menu](https://snippet.dhtmlx.com/atl9gd4h)
+**Related sample**: [Spreadsheet. Context menu](https://snippet.dhtmlx.com/atl9gd4h)
 
 ### Updating controls
 
@@ -454,4 +456,4 @@ spreadsheet.events.on("beforeAction", function(actionName){
 spreadsheet.parse(data);
 ~~~
 
-**Related sample**: [Spreadsheet. Custom Readonly](https://snippet.dhtmlx.com/8xcursbe)
+**Related sample**: [Spreadsheet. Custom readonly](https://snippet.dhtmlx.com/8xcursbe)
