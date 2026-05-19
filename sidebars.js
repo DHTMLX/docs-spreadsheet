@@ -244,7 +244,19 @@ module.exports = {
                         "number_formatting",
                         "functions",
                         "handling_events",
-                        "localization",
+                        {
+                            type: "category",
+                            label: "Localization",
+                            collapsible: true,
+                            collapsed: true,
+                            link: {
+                                type: 'doc',
+                                id: "localization"
+                            },
+                            items: [
+                                "formulas_locale"
+                            ]
+                        },
                         "customization",
                         {
                             type: "category",
