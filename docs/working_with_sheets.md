@@ -12,7 +12,7 @@ In this article we'll discuss the details on how to implement such operations as
 
 {{note To learn how to interact with multiple sheets via the user interface, check our [User Guide](work_with_sheets.md). }}
 
-Starting from v6.0, sheet management is handled by the **Sheet Manager** module, accessible via the `spreadsheet.sheets` property. The dedicated [Sheet Manager API](api/overview/sheetmanager_overview.md) replaces the sheet-related methods that were previously available directly on the `ISpreadsheet` instance.
+Starting from v6.0, sheet management is handled by the **Sheet Manager** module, accessible via the `spreadsheet.sheets` property. The dedicated [Sheet Manager API](api/overview/sheetmanager_overview.md) replaces the sheet-related methods that were previously available directly on the Spreadsheet instance.
 
 ## Loading multiple sheets
 

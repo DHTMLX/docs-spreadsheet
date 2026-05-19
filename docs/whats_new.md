@@ -16,12 +16,12 @@ Released on May, 2026
 
 ### Breaking changes
 
-The new release introduces significant changes in the Spreadsheet API: there is a set of deprecated methods, properties and events. Check the [Migration guide](migration.md/#52---60) to keep in step with the latest version.
+The new release introduces significant changes in the Spreadsheet API: there is a set of deprecated methods, properties and events. Check the [Migration guide](/migration/#52---60) to keep in step with the latest version.
 
 ### New functionality
 
 - [React Spreadsheet wrapper](/react/) is introduced. Check related examples in the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-examples)
-- The [`SheetManager`](/api/overview/sheetmanager_overview/) module is introduced. It is a centralized API for managing sheets in Spreadsheet. It is accessible via the `spreadsheet.sheets` property and replaces all the [deprecated sheet-related methods](/migration/#deprecated-methods) on the root `ISpreadsheet` instance.
+- The [`SheetManager`](/api/overview/sheetmanager_overview/) module is introduced. It is a centralized API for managing sheets in Spreadsheet. It is accessible via the `spreadsheet.sheets` property and replaces all the [deprecated sheet-related methods](/migration/#deprecated-methods) on the root Spreadsheet instance.
     - new methods: [`sheets.add()`](/api/sheetmanager_add_method/), [`sheets.remove()`](/api/sheetmanager_remove_method/), [`sheets.getAll()`](/api/sheetmanager_getall_method/), [`sheets.getActive()`](/api/sheetmanager_getactive_method/), [`sheets.setActive()`](/api/sheetmanager_setactive_method/), [`sheets.clear()`](/api/sheetmanager_clear_method/), [`sheets.get()`](/api/sheetmanager_get_method/)
 - The ability to specify a [custom (user-defined) formula](/functions/#custom-formulas) via the new [`addFormula()`](/api/spreadsheet_addformula_method/) method
 - The ability to display numbers in the [scientific (exponential) notation](/number_formatting/#scientific-number-format)

@@ -104,4 +104,4 @@ Open the URL shown in your terminal (typically `http://localhost:5173`) to see t
 - [Types reference](/react/types/) - TypeScript interfaces and enums
 - [Data & state management](/react/state/) - manage spreadsheet data in application state
 
-You can also explore the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-demo) for a complete working example.
+You can also explore the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-examples) for a complete working example.
