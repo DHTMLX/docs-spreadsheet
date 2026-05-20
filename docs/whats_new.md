@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 6.0
 
-Released on May, 2026
+Released on May 20, 2026
 
 [Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-6-0/)
 

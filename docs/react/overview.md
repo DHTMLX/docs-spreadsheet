@@ -9,7 +9,7 @@ description: "Overview of the official React wrapper: declarative data model, pr
 `ReactSpreadsheet` is a declarative React wrapper for the DHTMLX Spreadsheet widget. It provides a component-based API where props describe the spreadsheet state, and the wrapper handles synchronization with the underlying widget.
 
 :::note
-The React Spreadsheet wrapper is available with the DHTMLX Spreadsheet **Commercial** license. For evaluation, use the free 30-day evaluation package. See [Installation](/react/installation/) for setup instructions.
+The React Spreadsheet wrapper is available under DHTMLX Spreadsheet **Commercial**, **Enterprise** and **Ultimate** licenses. For evaluation, use the free 30-day evaluation package. See [Installation](/react/installation/) for setup instructions.
 :::
 
 ## Spreadsheet features
