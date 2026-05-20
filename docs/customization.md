@@ -257,7 +257,7 @@ spreadsheet.toolbar.data.add(
 spreadsheet.parse(dataset);
 ~~~
 
-**Related sample:** [Spreadsheet. Custom font size](https://snippet.dhtmlx.com/tffbf11g)
+**Related sample:** [Spreadsheet. Set custom font size](https://snippet.dhtmlx.com/tffbf11g)
 
 ## Menu
 

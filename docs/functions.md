@@ -1385,4 +1385,4 @@ spreadsheet.parse([
 The handler function must be synchronous. Using `Promise` or `fetch` inside the function is not allowed.
 :::
 
-**Related sample:** [Spreadsheet. Custom formula](https://snippet.dhtmlx.com/wvxdlahp)
+**Related sample:** [Spreadsheet. Add custom formula](https://snippet.dhtmlx.com/wvxdlahp)

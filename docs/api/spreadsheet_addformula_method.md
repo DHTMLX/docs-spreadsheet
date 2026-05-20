@@ -50,6 +50,6 @@ spreadsheet.parse([
 
 **Change log:** Added in v6.0
 
-**Related sample:** [Spreadsheet. Custom formula](https://snippet.dhtmlx.com/wvxdlahp)
+**Related sample:** [Spreadsheet. Add custom formula](https://snippet.dhtmlx.com/wvxdlahp)
 
 **Related articles:** [Formulas and functions](/functions/#custom-formulas)
