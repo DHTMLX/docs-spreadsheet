@@ -48,10 +48,9 @@ module.exports = {
                     },
                     items: [
                         "api/spreadsheet_addcolumn_method",
+                        "api/spreadsheet_addformula_method",
                         "api/spreadsheet_addrow_method",
-                        "api/spreadsheet_addsheet_method",
                         "api/spreadsheet_clear_method",
-                        "api/spreadsheet_clearsheet_method",
                         "api/spreadsheet_deletecolumn_method",
                         "api/spreadsheet_deleterow_method",
                         "api/spreadsheet_eachcell_method",
@@ -59,27 +58,23 @@ module.exports = {
                         "api/spreadsheet_fitcolumn_method",
                         "api/spreadsheet_freezecols_method",
                         "api/spreadsheet_freezerows_method",
-                        "api/spreadsheet_getactivesheet_method",
                         "api/spreadsheet_getfilter_method",
                         "api/spreadsheet_getformat_method",
                         "api/spreadsheet_getformula_method",
-                        "api/spreadsheet_getsheets_method",
                         "api/spreadsheet_getstyle_method",
                         "api/spreadsheet_getvalue_method",
                         "api/spreadsheet_hidecols_method",
                         "api/spreadsheet_hiderows_method",
                         "api/spreadsheet_hidesearch_method",
                         "api/spreadsheet_insertlink_method",
-                        "api/spreadsheet_islocked_method", 
+                        "api/spreadsheet_islocked_method",
                         "api/spreadsheet_load_method",
                         "api/spreadsheet_lock_method",
                         "api/spreadsheet_mergecells_method",
                         "api/spreadsheet_parse_method",
                         "api/spreadsheet_redo_method",
-                        "api/spreadsheet_removesheet_method",
                         "api/spreadsheet_search_method",
                         "api/spreadsheet_serialize_method",
-                        "api/spreadsheet_setactivesheet_method",
                         "api/spreadsheet_setfilter_method",
                         "api/spreadsheet_setformat_method",
                         "api/spreadsheet_setstyle_method",
@@ -107,41 +102,19 @@ module.exports = {
                     items: [
                         "api/spreadsheet_afteraction_event",
                         "api/spreadsheet_afterclear_event",
-                        "api/spreadsheet_aftercolumnadd_event",
-                        "api/spreadsheet_aftercolumndelete_event",
                         "api/spreadsheet_afterdataloaded_event",
                         "api/spreadsheet_aftereditend_event",
                         "api/spreadsheet_aftereditstart_event",
                         "api/spreadsheet_afterfocusset_event",
-                        "api/spreadsheet_afterformatchange_event",
-                        "api/spreadsheet_afterrowadd_event",
-                        "api/spreadsheet_afterrowdelete_event",
                         "api/spreadsheet_afterselectionset_event",
-                        "api/spreadsheet_aftersheetadd_event",
                         "api/spreadsheet_aftersheetchange_event",
-                        "api/spreadsheet_aftersheetclear_event",
-                        "api/spreadsheet_aftersheetremove_event",
-                        "api/spreadsheet_aftersheetrename_event",
-                        "api/spreadsheet_afterstylechange_event",
-                        "api/spreadsheet_aftervaluechange_event",
                         "api/spreadsheet_beforeaction_event",
                         "api/spreadsheet_beforeclear_event",
-                        "api/spreadsheet_beforecolumnadd_event",
-                        "api/spreadsheet_beforecolumndelete_event",
                         "api/spreadsheet_beforeeditend_event",
                         "api/spreadsheet_beforeeditstart_event",
                         "api/spreadsheet_beforefocusset_event",
-                        "api/spreadsheet_beforeformatchange_event",
-                        "api/spreadsheet_beforerowadd_event",
-                        "api/spreadsheet_beforerowdelete_event",
                         "api/spreadsheet_beforeselectionset_event",
-                        "api/spreadsheet_beforesheetadd_event",
                         "api/spreadsheet_beforesheetchange_event",
-                        "api/spreadsheet_beforesheetclear_event",
-                        "api/spreadsheet_beforesheetremove_event",
-                        "api/spreadsheet_beforesheetrename_event",
-                        "api/spreadsheet_beforestylechange_event",
-                        "api/spreadsheet_beforevaluechange_event",
                         "api/spreadsheet_groupfill_event"
                     ]
                 },
@@ -160,7 +133,6 @@ module.exports = {
                     },
                     items: [
                         "api/spreadsheet_colscount_config",
-                        "api/spreadsheet_dateformat_config",
                         "api/spreadsheet_editline_config",
                         "api/spreadsheet_exportmodulepath_config",
                         "api/spreadsheet_formats_config",
@@ -170,8 +142,26 @@ module.exports = {
                         "api/spreadsheet_multisheets_config",
                         "api/spreadsheet_readonly_config",
                         "api/spreadsheet_rowscount_config",
-                        "api/spreadsheet_timeformat_config",
                         "api/spreadsheet_toolbarblocks_config"
+                    ]
+                },
+                {
+                    type: "category",
+                    label: "Sheet Manager API",
+                    collapsible: true,
+                    collapsed: true,
+                    link: {
+                        type: 'doc',
+                        id: "api/overview/sheetmanager_overview"
+                    },
+                    items: [
+                        "api/sheetmanager_add_method",
+                        "api/sheetmanager_clear_method",
+                        "api/sheetmanager_get_method",
+                        "api/sheetmanager_getactive_method",
+                        "api/sheetmanager_getall_method",
+                        "api/sheetmanager_remove_method",
+                        "api/sheetmanager_setactive_method"
                     ]
                 },
                 {
@@ -254,7 +244,19 @@ module.exports = {
                         "number_formatting",
                         "functions",
                         "handling_events",
-                        "localization",
+                        {
+                            type: "category",
+                            label: "Localization",
+                            collapsible: true,
+                            collapsed: true,
+                            link: {
+                                type: 'doc',
+                                id: "localization"
+                            },
+                            items: [
+                                "formulas_locale"
+                            ]
+                        },
                         "customization",
                         {
                             type: "category",
@@ -273,25 +275,8 @@ module.exports = {
                                 "themes/custom_theme"
                             ]
                         },
-                        {
-                            type: "category",
-                            label: "Integrations",
-                            collapsible: true,
-                            collapsed: true,
-                            link: {
-                                type: 'generated-index',
-                                title: "Integrations",
-                                keywords: ['integrations'],
-                                image: '/img/docusaurus.png'
-                            },
-                            items: [
-                                "angular_integration",
-                                "react_integration",
-                                "svelte_integration",
-                                "vuejs_integration"
-                            ]
-                        },
-                        "using_typescript"
+                        "using_typescript",
+                        "awaitredraw"
                     ]
                 },
                 {
@@ -333,6 +318,66 @@ module.exports = {
                         "excel_import_export"
                     ]
                 }
+            ]
+        },
+        {
+            type: "category",
+            label: "Frameworks & integrations",
+            collapsible: true,
+            collapsed: true,
+            link: {
+                type: 'generated-index',
+                title: "Frameworks & integrations",
+                slug: '/integrations',
+                image: '/img/docusaurus.png'
+            },
+            items: [
+                {
+                    type: "category",
+                    label: "React Spreadsheet",
+                    collapsible: true,
+                    collapsed: true,
+                    link: {
+                        type: 'doc',
+                        id: "react/index"
+                    },
+                    items: [
+                        "react/overview",
+                        "react/installation",
+                        "react/quick-start",
+                        {
+                            type: "category",
+                            label: "API reference",
+                            collapsible: true,
+                            collapsed: false,
+                            items: [
+                                "react/props",
+                                "react/events",
+                                "react/types",
+                            ]
+                        },
+                        "react/themes",
+                        "react/localization",
+                        {
+                            type: "category",
+                            label: "Data & state management",
+                            collapsible: true,
+                            collapsed: true,
+                            link: {
+                                type: 'doc',
+                                id: "react/state/index"
+                            },
+                            items: [
+                                "react/state/state-management-basics",
+                                "react/state/redux-toolkit"
+                            ]
+                        },
+                        "react/nextjs"
+                    ]
+                },
+                "angular_integration",
+                "svelte_integration",
+                "vuejs_integration"
             ]
         }
     ]

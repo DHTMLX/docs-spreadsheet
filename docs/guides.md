@@ -31,13 +31,12 @@ Shows the ways of loading data into Spreadsheet, handling events and using main 
 - [Event handling](handling_events.md)
 - [Customization](customization.md)
 
-### Integrations with other frameworks
+### Frameworks & integrations
 
-Describes how to add DHTMLX Spreadsheet into apps based on other JavaScript frameworks.
-
-- [Integration with Angular](angular_integration.md)
-- [Integration with React](react_integration.md)
-- [Integration with Vue.js](vuejs_integration.md)
+- [React Spreadsheet](/react/) - official React component with props, events, and TypeScript support
+- [Integration with Angular](angular_integration.md) - GitHub demo of using Spreadsheet in an Angular app
+- [Integration with Svelte](svelte_integration.md) - GitHub demo of using Spreadsheet in a Svelte app
+- [Integration with Vue.js](vuejs_integration.md) - GitHub demo of using Spreadsheet in a Vue app
 
 ## User guides
 
