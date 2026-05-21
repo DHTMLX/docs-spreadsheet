@@ -206,28 +206,13 @@ The i18n locale for the Spreadsheet popup with descriptions for formulas is cont
 ~~~jsx
 const en = {
     SUM: [
-        [
-            "Number1",
-            "Required. The first value to sum."
-        ],
-        [
-            "Number2",
-            "Optional. The second value to sum."
-        ],
-        [
-            "Number3",
-            "Optional. The third value to sum."
-        ]
+        ["Number1", "Required. The first value to sum."],
+        ["Number2", "Optional. The second value to sum."],
+        ["Number3", "Optional. The third value to sum."]
     ],
     AVERAGE: [
-        [
-            "Number1",
-            "Required. A number or cell reference that refers to numeric values."
-        ],
-        [
-            "Number2",
-            "Optional. A number or cell reference that refers to numeric values."
-        ]
+        ["Number1", "Required. A number or cell reference that refers to numeric values."],
+        ["Number2", "Optional. A number or cell reference that refers to numeric values."]
     ],
     // more formulas' descriptions
 };
