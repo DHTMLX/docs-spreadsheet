@@ -1126,6 +1126,98 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
 
 Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
+### Array functions
+
+The following array functions were added in v6.0.
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>Function</b></td>
+            <td><b>Formula</b></td>
+            <td><b>Description</b></td>
+        </tr>
+        <tr>
+            <td><b>CHOOSECOLS</b></td>
+            <td>=CHOOSECOLS(array, col_num1, [col_num2], ...)</td>
+            <td>Returns specified columns from an array or range.</td>
+        </tr>
+        <tr>
+            <td><b>CHOOSEROWS</b></td>
+            <td>=CHOOSEROWS(array, row_num1, [row_num2], ...)</td>
+            <td>Returns specified rows from an array or range.</td>
+        </tr>
+        <tr>
+            <td><b>DROP</b></td>
+            <td>=DROP(array, [rows], [columns])</td>
+            <td>Removes a specified number of rows or columns from the start or end of an array.</td>
+        </tr>
+        <tr>
+            <td><b>EXPAND</b></td>
+            <td>=EXPAND(array, [rows], [columns], [pad_with])</td>
+            <td>Expands or pads an array to specified row and column dimensions.</td>
+        </tr>
+        <tr>
+            <td><b>RANDARRAY</b></td>
+            <td>=RANDARRAY([rows], [columns], [min], [max], [integer])</td>
+            <td>Returns an array of random numbers between 0 and 1 by default. You can specify the number of rows and columns to fill, minimum and maximum values, and whether to return whole numbers or decimal values.</td>
+        </tr>
+        <tr>
+            <td><b>SEQUENCE</b></td>
+            <td>=SEQUENCE(rows, [columns], [start], [step])</td>
+            <td>Generates a list of sequential numbers in an array, such as 1, 2, 3, 4.</td>
+        </tr>
+        <tr>
+            <td><b>SORT</b></td>
+            <td>=SORT(array, [sort_index], [sort_order], [by_col])</td>
+            <td>Sorts the contents of a range or array. By default, sorts by the first column in ascending order.</td>
+        </tr>
+        <tr>
+            <td><b>SORTBY</b></td>
+            <td>=SORTBY(array, by_array, [sort_order], ...)</td>
+            <td>Sorts the contents of a range or array based on the values in a corresponding range or array.</td>
+        </tr>
+        <tr>
+            <td><b>TAKE</b></td>
+            <td>=TAKE(array, [rows], [columns])</td>
+            <td>Returns a specified number of contiguous rows or columns from the start or end of an array.</td>
+        </tr>
+        <tr>
+            <td><b>TEXTSPLIT</b></td>
+            <td>=TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with])</td>
+            <td>Splits a text string into rows and columns using the specified delimiters.</td>
+        </tr>
+        <tr>
+            <td><b>TOCOL</b></td>
+            <td>=TOCOL(array, [ignore], [scan_by_column])</td>
+            <td>Converts an array or range into a single column.</td>
+        </tr>
+        <tr>
+            <td><b>TOROW</b></td>
+            <td>=TOROW(array, [ignore], [scan_by_column])</td>
+            <td>Converts an array or range into a single row.</td>
+        </tr>
+        <tr>
+            <td><b>UNIQUE</b></td>
+            <td>=UNIQUE(array, [by_col], [exactly_once])</td>
+            <td>Returns a list of unique values from a range or array.</td>
+        </tr>
+        <tr>
+            <td><b>WRAPCOLS</b></td>
+            <td>=WRAPCOLS(vector, wrap_count, [pad_with])</td>
+            <td>Wraps a row or column vector into a 2D array by columns after a specified number of values.</td>
+        </tr>
+        <tr>
+            <td><b>WRAPROWS</b></td>
+            <td>=WRAPROWS(vector, wrap_count, [pad_with])</td>
+            <td>Wraps a row or column vector into a 2D array by rows after a specified number of values.</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
+
 ### Regex functions
 
 <table>
