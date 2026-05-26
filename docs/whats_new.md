@@ -12,7 +12,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 Released on May 20, 2026
 
-[Review of release on the blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-6-0/)
+[Review of release on the blog](https://dhtmlx.com/blog/meet-dhtmlx-spreadsheet-6-0/)
 
 ### Breaking changes
 
