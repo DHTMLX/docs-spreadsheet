@@ -32,6 +32,7 @@ The new release introduces significant changes in the Spreadsheet API: there is 
     - setting a default font size option via a [built-in toolbar control](/customization/#default-controls)  
     - setting a [custom font size](/customization/#custom-font-size) for the toolbar control
 - New conditional aggregate functions are added into the [formulas engine](/functions/#math-functions): `COUNTIF`, `COUNTIFS`, `SUMIF`, `SUMIFS`, `AVERAGEIF`, `AVERAGEIFS`, `MAXIFS`, `MINIFS`
+- New dynamic array functions are added into the [formulas engine](/functions/#array-functions): `CHOOSECOLS`, `CHOOSEROWS`, `DROP`, `EXPAND`, `RANDARRAY`, `SEQUENCE`, `SORT`, `SORTBY`, `TAKE`, `TEXTSPLIT`, `TOCOL`, `TOROW`, `UNIQUE`, `WRAPCOLS`, `WRAPROWS`
 - The [`awaitRedraw()`](/awaitredraw/) helper is added for Spreadsheet to detect the rendering process and run the desired code after the component finishes rendering
 - [JSDoc annotations](/using_typescript/#jsdoc-hints) are added to the type definitions, providing inline API descriptions, parameter types, and code examples directly in the IDE
 
