@@ -779,7 +779,7 @@ const en = {
     ],
     "SUMSQ": [
         ["Number1", "Required. The first argument containing numeric values."],
-        ["Number2", "Optional. The first argument containing numeric values."]
+        ["Number2", "Optional. The second argument containing numeric values."]
     ],
     "SUMX2MY2": [
         ["Array_x", "Required. The first range or array containing numeric values."],
@@ -1092,13 +1092,13 @@ const en = {
     ],
     "TOROW": [
         ["Array", "Required. The array to transform."],
-        ["Ignore", "Required. Control to ignore blanks and errors."],
-        ["Scan_by_column", "Required. Scan array by column. TRUE = by column, FALSE = by row (default)."]
+        ["Ignore", "Optional. Control to ignore blanks and errors."],
+        ["Scan_by_column", "Optional. Scan array by column. TRUE = by column, FALSE = by row (default)."]
     ],
     "TOCOL": [
         ["Array", "Required. The array to transform."],
-        ["Ignore", "Required. Setting to ignore blanks and errors."],
-        ["Scan_by_column", "Required. Scan array by column. TRUE = by column, FALSE = by row (default)."]
+        ["Ignore", "Optional. Setting to ignore blanks and errors."],
+        ["Scan_by_column", "Optional. Scan array by column. TRUE = by column, FALSE = by row (default)."]
     ],
     "TEXTSPLIT": [
         ["Text", "Required. The text string to split."],
@@ -1121,12 +1121,12 @@ const en = {
     "TAKE": [
         ["Array", "Required. The source array or range."],
         ["Rows", "Optional. Number of rows to return as an integer."],
-        ["Col", "Optional. Number of columns to return as an integer."]
+        ["Columns", "Optional. Number of columns to return as an integer."]
     ],
     "DROP": [
         ["Array", "Required. The source array or range."],
         ["Rows", "Optional. Number of rows to drop."],
-        ["Col", "Optional. Number of columns to drop."]
+        ["Columns", "Optional. Number of columns to drop."]
     ],
     "SEQUENCE": [
         ["Rows", "Required. Number of rows to return."],
