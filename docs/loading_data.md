@@ -306,12 +306,14 @@ The library uses the WebAssembly-based library [Json2Excel](https://github.com/d
 
 - install the **JSON2Excel** library
 - specify the [](api/spreadsheet_exportmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file in one of the two ways:
-  - by providing a local path to the file on your computer, like: `"../libs/json2excel/1.0/worker.js"`
-  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
+  - by providing a local path to the file on your computer, like: `"../libs/json2excel/x.x/worker.js"`
+  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/x.x/worker.js"`
+
+Replace `x.x` with the actual version number (check the [GitHub repository](https://github.com/dhtmlx/json2excel)).
 
 ~~~jsx
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
-    exportModulePath: "../libs/json2excel/1.0/worker.js"
+    exportModulePath: "../libs/json2excel/x.x/worker.js"
 });
 ~~~
 

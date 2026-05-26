@@ -20,7 +20,7 @@ exportModulePath?: string;
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    exportModulePath: "../libs/json2excel/1.0/worker.js",
+    exportModulePath: "../libs/json2excel/x.x/worker.js",
     // other config parameters
 });
 ~~~
@@ -35,8 +35,10 @@ To export files you need to:
 
 - install the **JSON2excel** library
 - set the path to the **worker.js** file via the **exportModulePath** option in one of the two ways:
-  - by providing a local path to the file on your computer, like: `"../libs/json2excel/1.0/worker.js"`
-  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
+  - by providing a local path to the file on your computer, like: `"../libs/json2excel/x.x/worker.js"`
+  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/x.x/worker.js"`
+
+Replace `x.x` with the actual version number (check the [GitHub repository](https://github.com/dhtmlx/json2excel)).
 
 By default the link to CDN is used.
 
