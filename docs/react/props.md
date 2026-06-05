@@ -169,12 +169,12 @@ Enable sheet tabs with `multiSheets={true}`. Pass `false` to hide the tab bar en
 ~~~tsx
 <ReactSpreadsheet
     sheets={sheets}
-    importModulePath="../libs/excel2json/x.x/worker.js"
-    exportModulePath="../libs/json2excel/x.x/worker.js"
+    importModulePath="../libs/excel2json/next/worker.js"   // latest version; use x.x instead of next for a specific version
+    exportModulePath="../libs/json2excel/next/worker.js"   // latest version; use x.x instead of next for a specific version
 />
 ~~~
 
-Replace `x.x` with the actual version numbers (check the [Excel2Json](https://github.com/dhtmlx/excel2json) and [Json2Excel](https://github.com/dhtmlx/json2excel) GitHub repositories).
+To use a specific version, replace `next` with the version number (check the [Excel2Json](https://github.com/dhtmlx/excel2json) and [Json2Excel](https://github.com/dhtmlx/json2excel) GitHub repositories).
 
 ### European number formatting
 

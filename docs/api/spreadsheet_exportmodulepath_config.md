@@ -20,7 +20,7 @@ exportModulePath?: string;
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    exportModulePath: "../libs/json2excel/x.x/worker.js",
+    exportModulePath: "../libs/json2excel/next/worker.js", // latest version; use x.x instead of next for a specific version
     // other config parameters
 });
 ~~~
@@ -35,12 +35,14 @@ To export files you need to:
 
 - install the **JSON2excel** library
 - set the path to the **worker.js** file via the **exportModulePath** option in one of the two ways:
-  - by providing a local path to the file on your computer, like: `"../libs/json2excel/x.x/worker.js"`
-  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/x.x/worker.js"`
+  - by providing a local path to the file on your computer:
+    - use `"../libs/json2excel/next/worker.js"` for the latest version
+    - use `"../libs/json2excel/x.x/worker.js"` for a specific version (replace `x.x` with the actual version from the [GitHub repository](https://github.com/dhtmlx/json2excel))
+  - by providing a link to the file from CDN:
+    - use `"https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx"` for the latest version
+    - use `"https://cdn.dhtmlx.com/libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the actual version from the [GitHub repository](https://github.com/dhtmlx/json2excel))
 
-Replace `x.x` with the actual version number (check the [GitHub repository](https://github.com/dhtmlx/json2excel)).
-
-By default the link to CDN is used.
+By default, `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx` is used.
 
 **Related articles:** [Data loading and export](loading_data.md#exporting-data)
 
