@@ -205,7 +205,7 @@ How do I load JSON data into DHTMLX Spreadsheet using the load() or parse() meth
 **Working with cells and ranges**
 
 ~~~
-How do I add custom cell validation in DHTMLX Spreadsheet? Use the docs.
+How do I add data validation with a drop-down list to cells in DHTMLX Spreadsheet? Use the docs.
 ~~~
 ~~~
 How do I use setStyle() to apply background color and text formatting to a range of cells in DHTMLX Spreadsheet?
