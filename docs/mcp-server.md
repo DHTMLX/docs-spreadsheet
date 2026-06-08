@@ -26,12 +26,12 @@ The MCP server indexes the full DHTMLX Spreadsheet documentation. Common scenari
 
 - Looking up the current API for spreadsheet [methods](/api/overview/methods_overview/), [events](/api/overview/events_overview/), and [properties](/api/overview/properties_overview/), including signatures and return types.
 - Generating ready-to-run Spreadsheet [initialization](/initialization/) and [configuration](/configuration/) code based on a description of what you need.
-- Exploring [number formats](/number_formatting/) (common, number, currency, date, time, and others) and understanding how to define custom format masks.
+- Exploring [number formats](/number_formatting/) (common, number, percent, currency, date, time, and others) and understanding how to define custom format masks.
 - Working with [formulas and functions](/functions/): finding supported functions, understanding formula syntax, and using the calculation API.
 - Configuring [columns and rows](/work_with_rows_cols/), including setting widths, hiding, and freezing.
 - Applying cell and range [formatting](/data_formatting/) and styles, including text color, alignment, borders, and background colors.
 - Handling [Spreadsheet events](/handling_events/) to respond to value changes, cell selection, editor actions, and sheet-level interactions.
-- Exploring [multi-sheet support](/working_with_sheets/), [data loading and export](/excel_import_export/) (JSON and Excel), and integration with frameworks such as [React](/react/), [Vue](/vuejs_integration/), [Angular](/angular_integration/), and [Svelte](/svelte_integration/).
+- Exploring [multi-sheet support](/working_with_sheets/), [data loading and export](/loading_data/) (JSON and Excel), and integration with frameworks such as [React](/react/), [Vue](/vuejs_integration/), [Angular](/angular_integration/), and [Svelte](/svelte_integration/).
 
 ## How DHTMLX MCP server works
 
@@ -61,7 +61,7 @@ To register the server from the command line, run:
 claude mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
 ~~~
 
-For manual setup, add the following to your `mcp.json`:
+For manual setup, add the following configuration to your `mcp.json`:
 
 ~~~jsx
 {
@@ -80,7 +80,7 @@ For manual setup, add the following to your `mcp.json`:
 The [official documentation](https://cursor.com/en-US/docs/mcp) covers all MCP configuration options for Cursor.
 :::
 
-Steps to add the server:
+To add the server:
 
 1. Open Settings (`Cmd+Shift+J` on Mac, `Ctrl+Shift+J` on Windows/Linux)
 2. Go to **Tools & MCP**
@@ -226,7 +226,7 @@ How do I set a dropdown list cell type for a column in DHTMLX Spreadsheet?
 **Columns, rows, and sheets**
 
 ~~~
-How do I lock specific rows and columns in DHTMLX Spreadsheet?
+How do I freeze specific rows and columns in DHTMLX Spreadsheet?
 ~~~
 ~~~
 How do I add and switch between sheets in DHTMLX Spreadsheet programmatically?
