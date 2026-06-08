@@ -169,8 +169,8 @@ Enable sheet tabs with `multiSheets={true}`. Pass `false` to hide the tab bar en
 ~~~tsx
 <ReactSpreadsheet
     sheets={sheets}
-    importModulePath="../libs/excel2json/next/worker.js"   // latest version; use x.x instead of next for a specific version
-    exportModulePath="../libs/json2excel/next/worker.js"   // latest version; use x.x instead of next for a specific version
+    importModulePath="../libs/excel2json/next/worker.js"   
+    exportModulePath="../libs/json2excel/next/worker.js"   
 />
 ~~~
 

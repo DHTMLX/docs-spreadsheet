@@ -20,7 +20,7 @@ exportModulePath?: string;
 
 ~~~jsx {2}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    exportModulePath: "../libs/json2excel/next/worker.js", // latest version; use x.x instead of next for a specific version
+    exportModulePath: "../libs/json2excel/x.x/worker.js?vx", // a local path to the `worker.js` file of the export module
     // other config parameters
 });
 ~~~
@@ -31,18 +31,12 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.
 :::
 
-To export files you need to:
+To export files you need to set the path to the **worker.js** file of the [Json2Excel](https://github.com/dhtmlx/json2excel) library (where export will be processed)  via the **exportModulePath** option. By default, `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx` is used.
+- if you use the public export server, you don't need to specify the link to it, since it is used by default
+- if you use your own export server, you need to:
+  - install the [**Json2Excel**](https://github.com/dhtmlx/json2excel) library
+  - use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the version deployed on your server)
 
-- install the **JSON2excel** library
-- set the path to the **worker.js** file via the **exportModulePath** option in one of the two ways:
-  - by providing a local path to the file on your computer:
-    - use `"../libs/json2excel/next/worker.js"` for the latest version
-    - use `"../libs/json2excel/x.x/worker.js"` for a specific version (replace `x.x` with the actual version from the [GitHub repository](https://github.com/dhtmlx/json2excel))
-  - by providing a link to the file from CDN:
-    - use `"https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx"` for the latest version
-    - use `"https://cdn.dhtmlx.com/libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the actual version from the [GitHub repository](https://github.com/dhtmlx/json2excel))
-
-By default, `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx` is used.
 
 **Related articles:** [Data loading and export](loading_data.md#exporting-data)
 
