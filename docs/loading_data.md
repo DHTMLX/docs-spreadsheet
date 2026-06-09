@@ -300,18 +300,21 @@ DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into a
 
 #### How to export data
 
-{{note Please note that the export feature won't work in the Internet Explorer browser.}}
+:::note 
+Please note that the export feature won't work in the Internet Explorer browser.
+:::
 
-The library uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the functionality of export to Excel. Thus, to have the possibility of exporting files you need to:
+The library uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the functionality of export to Excel. Export is processed at the **worker.js** file of the **Json2Excel** library (the default link is `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx`). You can use either the public export server or a local export server. Thus, to have the possibility of exporting files you need to:
 
-- install the **JSON2Excel** library
-- specify the [](api/spreadsheet_exportmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file in one of the two ways:
-  - by providing a local path to the file on your computer, like: `"../libs/json2excel/1.0/worker.js"`
-  - by providing a link to the file from CDN: `"https://cdn.dhtmlx.com/libs/json2excel/1.0/worker.js"`
+- specify the [](api/spreadsheet_exportmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file:
+    - if you use the public export server, you don't need to specify the link to it, since it is used by default
+    - if you use your own export server, you need to:
+        - install the [**Json2Excel**](https://github.com/dhtmlx/json2excel) library
+        - use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the version deployed on your server)
 
 ~~~jsx
 var spreadsheet = new dhx.Spreadsheet(document.body, {          
-    exportModulePath: "../libs/json2excel/1.0/worker.js"
+    exportModulePath: "../libs/json2excel/x.x/worker.js?vx" // the path to the export module, if a local export server is used
 });
 ~~~
 
@@ -325,7 +328,9 @@ spreadsheet.export.xlsx();
 
 **Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s?tag=spreadsheet)
 
-{{note Please note that the component supports export to Excel files with the **.xlsx** extension only.}}
+:::note 
+Please note that the component supports export to Excel files with the `.xlsx` extension only.
+:::
 
 #### How to set a custom name for an exported file
 
