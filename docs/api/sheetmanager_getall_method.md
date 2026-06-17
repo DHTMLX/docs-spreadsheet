@@ -35,8 +35,8 @@ spreadsheet.parse(data);
 const allSheets = spreadsheet.sheets.getAll();
 console.log(allSheets);
 // [
-//   { id: "sheet_1", name: "Sheet 1" },
-//   { id: "sheet_2", name: "Sheet 2" }
+//   { id: "...", name: "sheet1" }, // id is a unique auto-generated value
+//   { id: "...", name: "sheet2" }
 // ]
 ~~~
 

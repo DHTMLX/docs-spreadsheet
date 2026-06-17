@@ -23,3 +23,4 @@ description: You can have an Events overview of the DHTMLX JavaScript Spreadshee
 | [](../spreadsheet_beforefocusset_event.md)     | @getshort(../spreadsheet_beforefocusset_event.md)     |
 | [](../spreadsheet_beforeselectionset_event.md) | @getshort(../spreadsheet_beforeselectionset_event.md) |
 | [](../spreadsheet_beforesheetchange_event.md)  | @getshort(../spreadsheet_beforesheetchange_event.md)  |
+| [](../spreadsheet_groupfill_event.md)          | @getshort(../spreadsheet_groupfill_event.md)          |

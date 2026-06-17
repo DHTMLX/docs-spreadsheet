@@ -29,8 +29,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 const active = spreadsheet.sheets.getActive();
-console.log(active.name); // "Sheet 1"
-console.log(active.id);   // "sheet_1"
+console.log(active.name); // "sheet1"
+console.log(active.id);   // a unique auto-generated id of the active sheet
 ~~~
 
 **Change log:** Added in v6.0

@@ -31,11 +31,12 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 // Switch to the second sheet
-spreadsheet.sheets.setActive("sheet_2");
+const sheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.setActive(sheets[1].id);
 
 // Verify the switch
 const active = spreadsheet.sheets.getActive();
-console.log(active.name); // "Sheet 2"
+console.log(active.name); // "sheet2"
 ~~~
 
 **Change log:** Added in v6.0

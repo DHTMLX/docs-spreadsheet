@@ -19,7 +19,7 @@ menu?: boolean;
 ### Default config
 
 ~~~jsx
-menu: true
+menu: false
 ~~~
 
 ### Example

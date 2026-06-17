@@ -13,8 +13,12 @@ description: You can learn about the endEdit method in the documentation of the 
 ### Usage
 
 ~~~jsx
-endEdit(): void;
+endEdit(withoutSave?: boolean): void;
 ~~~
+
+### Parameters
+
+- `withoutSave` - (optional) pass `true` to discard the entered value instead of saving it; `false` by default
 
 ### Example
 

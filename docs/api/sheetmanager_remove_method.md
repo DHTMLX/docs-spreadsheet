@@ -36,8 +36,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 spreadsheet.parse(data);
 
-// Remove a sheet by its id
-spreadsheet.sheets.remove("sheet_2");
+// Remove the second sheet by its id
+const sheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.remove(sheets[1].id);
 ~~~
 
 **Change log:** Added in v6.0
