@@ -49,7 +49,7 @@ The **menuItem** object has the properties below:
 - **icon** - the name of an icon from the used icon font
 - **hotkey** - the name of the hot key for a menu item
 - **value** - the value of a menu item
-- **childs** - an array of children controls (note that all the children should have the type **menuItem**)
+- **items** - an array of children controls (note that all the children should have the type **menuItem**)
 
 The data collection API of the **toolbar**, **menu** and **context menu** allows you to manipulate the controls, namely to add custom controls, remove the controls you don't need, or update the controls,
 e.g. change their icons.
@@ -162,12 +162,14 @@ It is also possible to add the blocks enumerated below:
   - the *Remove row* button (id: "remove-row")
   - the *Unfreeze rows* button (id: "unfreeze-rows")
   - the *Freeze up to row [id]* (id: "freeze-rows")
+  - the *Show rows* button (id: "show-rows")
   - the *Hide row(s) [id]* (id: "hide-rows")
 - the **Columns** block
   - the *Add column* button (id: "add-col")
   - the *Remove column* button (id: "remove-col")
   - the *Unfreeze columns* button (id: "unfreeze-cols")
   - the *Freeze up to column [id]* (id: "freeze-cols")
+  - the *Show columns* button (id: "show-cols")
   - the *Hide column(s) [id]* (id: "hide-cols")
 - the **File** block
   - the *Export* menuItem (id: "export")
@@ -265,7 +267,7 @@ spreadsheet.parse(dataset);
 
 The [default menu](/#menu) has the following structure:
 
-- the **File** menuItem (id: "edit")
+- the **File** menuItem (id: "file")
   - the *Import as...* menuItem (id: "import")
     - the *"Microsoft Excel(.xlsx)"* menuItem (id: "import-xlsx")
   - the *Download as...* menuItem (id: "download")
@@ -330,7 +332,7 @@ In the example below a new menuItem is added into the menu:
 spreadsheet.menu.data.add({
     id: "validate",
     value: "Validate",
-    childs: [
+    items: [
         {
             id: "isNumber",
             value: "Is number"

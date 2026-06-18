@@ -42,6 +42,7 @@ defaultFormats = [
            mask: hh:mm:ss am/pm || hh:mm:ss, // depending on the timeFormat config
            example: "13:30:00"
     },
+    { name: "Scientific", id: "scientific", mask: "0.00E+00", example: "1.50E+03" },
     { name: "Text", id: "text", mask: "@", example: "'1500.31'" }
 ];
 ~~~

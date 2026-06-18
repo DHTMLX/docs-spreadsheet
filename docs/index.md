@@ -17,7 +17,7 @@ There is a [User Guide](guides/#user-guides) provided to make work with Spreadsh
 
 ### Toolbar
 
-The **Toolbar** section is rather flexible. It contains several default blocks of controls: "undo", "colors", "decoration", "align", "cell", "format", "actions". You can [change the toolbar structure](configuration.md#toolbar) and add more blocks, or set your own order of the blocks.
+The **Toolbar** section is rather flexible. It contains several default blocks of controls: "undo", "colors", "font", "decoration", "align", "cell", "format", "actions". You can [change the toolbar structure](configuration.md#toolbar) and add more blocks, or set your own order of the blocks.
 
 ![Spreadsheet Toolbar](assets/overview_toolbar.png)
 
@@ -42,7 +42,7 @@ You can switch the editing line off, if necessary via the corresponding [configu
 
 ### Context menu
 
-The **Context menu** section includes 5 items **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link** with sub-items.
+The **Context menu** section includes 6 items **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link** with sub-items.
 
 ![Spreadsheet Context Menu](assets/overview_contextmenu.png)
 

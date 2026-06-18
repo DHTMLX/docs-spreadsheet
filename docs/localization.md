@@ -23,6 +23,8 @@ const en = {
     textColor: "Text color",
     backgroundColor: "Background color",
 
+    fontSize: "Font size",
+
     bold: "Bold",
     italic: "Italic",
     underline: "Underline",
@@ -82,6 +84,7 @@ const en = {
     text: "Text",
     date: "Date",
     time: "Time",
+    scientific: "Scientific",
 
     filter: "Filter",
 

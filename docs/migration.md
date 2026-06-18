@@ -144,7 +144,7 @@ spreadsheet.parse(data);
 
 ## 4.3 -> 5.0
 
-In v5.0, the *"help"* option of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.
+In v5.0, the default set of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) options is extended by the new *"actions"* option.
 
 ~~~jsx title="Before v5.0" {8}
 // default configuration 
@@ -167,7 +167,7 @@ toolbarBlocks: [
     "align", 
     "format", 
     "actions",
-    "helpers"
+    "help"
 ]
 ~~~
 

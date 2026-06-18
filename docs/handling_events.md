@@ -23,10 +23,11 @@ spreadsheet.events.on("AfterColumnAdd", function(cells){
 To detach events, use [spreadsheet.events.detach()](api/eventsbus_detach_method.md):
 
 ~~~jsx
-var addcolumn = spreadsheet.events.on("AfterColumnAdd", function(cells){
+spreadsheet.events.on("AfterColumnAdd", function(cells){
     console.log("A new column is added");
 });
-spreadsheet.events.detach(addcolumn);
+// pass the name of the event to detach its handlers
+spreadsheet.events.detach("AfterColumnAdd");
 ~~~
 
 ## Calling events
