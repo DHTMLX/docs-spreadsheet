@@ -16,6 +16,12 @@ description: You can learn about the rowsCount config in the documentation of th
 rowsCount?: number;
 ~~~
 
+### Default config
+
+~~~jsx
+rowsCount: 1000
+~~~
+
 ### Example
 
 ~~~jsx {2}

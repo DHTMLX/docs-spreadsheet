@@ -34,9 +34,9 @@ spreadsheet.parse(data);
 
 // Add a sheet with a custom name
 const newSheetId = spreadsheet.sheets.add("Q4 Report");
-console.log(newSheetId); // e.g. "sheet_2"
+console.log(newSheetId); // a generated unique id of the new sheet
 
-// Add a sheet with an auto-generated name
+// Add a sheet with an auto-generated name (e.g. "sheet2")
 const anotherId = spreadsheet.sheets.add();
 ~~~
 
@@ -52,8 +52,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 spreadsheet.parse(data);
 
-// Remove a sheet by its id
-spreadsheet.sheets.remove("sheet_2");
+// Remove the second sheet by its id
+const allSheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.remove(allSheets[1].id);
 ~~~
 
 Note, that a sheet won't be removed if the number of sheets in the spreadsheet is less than 2.
@@ -69,11 +70,12 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 // Switch to the second sheet
-spreadsheet.sheets.setActive("sheet_2");
+const allSheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.setActive(allSheets[1].id);
 
 // Verify the switch
 const active = spreadsheet.sheets.getActive();
-console.log(active.name); // "Sheet 2"
+console.log(active.name); // "sheet2"
 ~~~
 
 **Related sample:** [Spreadsheet. Set active sheet](https://snippet.dhtmlx.com/iowl449t)
@@ -89,8 +91,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 const active = spreadsheet.sheets.getActive();
-console.log(active.name); // "Sheet 1"
-console.log(active.id);   // "sheet_1"
+console.log(active.name); // "sheet1"
+console.log(active.id);   // a unique auto-generated id of the active sheet
 ~~~
 
 The method returns an object with the name and id attributes of the currently active sheet.
@@ -108,8 +110,8 @@ spreadsheet.parse(data);
 const allSheets = spreadsheet.sheets.getAll();
 console.log(allSheets);
 // [
-//   { id: "sheet_1", name: "Sheet 1" },
-//   { id: "sheet_2", name: "Sheet 2" }
+//   { id: "...", name: "sheet1" }, // id is a unique auto-generated value
+//   { id: "...", name: "sheet2" }
 // ]
 ~~~
 
@@ -123,8 +125,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 spreadsheet.parse(data);
 
-const sheet = spreadsheet.sheets.get("sheet_1");
-console.log(sheet.name); // "Sheet 1"
+const allSheets = spreadsheet.sheets.getAll();
+const sheet = spreadsheet.sheets.get(allSheets[0].id);
+console.log(sheet.name); // "sheet1"
 ~~~
 
 ## Clearing sheets

@@ -223,8 +223,8 @@ Open the **spreadsheet.component.ts** file and complete the `ngOnInit()` method 
 ngOnInit() {
     this._spreadsheet = new Spreadsheet(this.spreadsheet_container.nativeElement,{});
 
-    spreadsheet.events.on("afterFocusSet", function(cell){
-        console.log("Focus is set on a cell " + spreadsheet.selection.getSelectedCell());
+    this._spreadsheet.events.on("afterFocusSet", (cell) => {
+        console.log("Focus is set on a cell " + this._spreadsheet.selection.getSelectedCell());
         console.log(cell);
     });
 }

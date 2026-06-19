@@ -28,11 +28,13 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 spreadsheet.parse(data);
 
-spreadsheet.events.on("StyleChange", function(id){
-  console.log("The style of cell "+spreadsheet.selection.get()+" is changed");
+spreadsheet.events.on("afterAction", function(action, config){
+  if (action === "setCellStyle") {
+    console.log("The style of cell "+spreadsheet.selection.getSelectedCell()+" is changed");
+  }
 });
 
-spreadsheet.events.detach("StyleChange");
+spreadsheet.events.detach("afterAction");
 ~~~
 
 :::info
@@ -42,10 +44,10 @@ By default **detach()** removes all event handlers from the target event. You ca
 ~~~jsx
 const marker = "any"; // you can use any string|object value
 
-spreadsheet.events.on("StyleChange", handler1);
-spreadsheet.events.on("StyleChange", handler2, marker);
+spreadsheet.events.on("afterAction", handler1);
+spreadsheet.events.on("afterAction", handler2, marker);
 // the next command will delete only handler2
-spreadsheet.events.detach("StyleChange", marker);
+spreadsheet.events.detach("afterAction", marker);
 ~~~
 
 **Related articles:** [Event Handling](handling_events.md)

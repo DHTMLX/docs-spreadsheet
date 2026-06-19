@@ -55,7 +55,7 @@ You can also [customize the readonly behavior of Spreadsheet](customization.md#c
 
 ## Custom number formats for cells
 
-There are 7 default formats that can be applied to the values of cells: "Common", "Number", "Percent", "Currency", "Date", "Time", "Text".
+There are 8 default formats that can be applied to the values of cells: "Common", "Number", "Percent", "Currency", "Date", "Time", "Scientific", "Text".
 
 You can redefine configuration of default formats or specify your own number format via the [`formats`](api/spreadsheet_formats_config.md) config option. Check the details in the [Number Formatting](number_formatting.md) article.
 

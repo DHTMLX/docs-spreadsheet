@@ -32,8 +32,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 spreadsheet.parse(data);
 
-const sheet = spreadsheet.sheets.get("sheet_1");
-console.log(sheet.name); // "Sheet 1"
+const allSheets = spreadsheet.sheets.getAll();
+const sheet = spreadsheet.sheets.get(allSheets[0].id);
+console.log(sheet.name); // "sheet1"
 ~~~
 
 **Change log:** Added in v6.0

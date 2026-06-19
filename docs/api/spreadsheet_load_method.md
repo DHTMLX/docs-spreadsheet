@@ -55,7 +55,7 @@ Data loading is asynchronous, so you need to wrap any after-loading code into a 
 
 ~~~jsx
 spreadsheet.load("../some/data.json").then(function(){
-    spreadsheet.selection.add(123);
+    spreadsheet.selection.setSelectedCell("A1");
 });
 ~~~
 :::

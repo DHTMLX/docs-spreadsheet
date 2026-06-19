@@ -35,6 +35,7 @@ Parameters:
 | [](api/spreadsheet_fitcolumn_method.md)      | @getshort(api/spreadsheet_fitcolumn_method.md)      |
 | [](api/spreadsheet_freezecols_method.md)     | @getshort(api/spreadsheet_freezecols_method.md)     |
 | [](api/spreadsheet_freezerows_method.md)     | @getshort(api/spreadsheet_freezerows_method.md)     |
+| [](api/spreadsheet_getcellindex_method.md)   | @getshort(api/spreadsheet_getcellindex_method.md)   |
 | [](api/spreadsheet_getfilter_method.md)      | @getshort(api/spreadsheet_getfilter_method.md)      |
 | [](api/spreadsheet_getformat_method.md)      | @getshort(api/spreadsheet_getformat_method.md)      |
 | [](api/spreadsheet_getformula_method.md)     | @getshort(api/spreadsheet_getformula_method.md)     |
@@ -59,6 +60,7 @@ Parameters:
 | [](api/spreadsheet_setvalue_method.md)       | @getshort(api/spreadsheet_setvalue_method.md)       |
 | [](api/spreadsheet_showcols_method.md)       | @getshort(api/spreadsheet_showcols_method.md)       |
 | [](api/spreadsheet_showrows_method.md)       | @getshort(api/spreadsheet_showrows_method.md)       |
+| [](api/spreadsheet_sortcells_method.md)      | @getshort(api/spreadsheet_sortcells_method.md)      |
 | [](api/spreadsheet_startedit_method.md)      | @getshort(api/spreadsheet_startedit_method.md)      |
 | [](api/spreadsheet_undo_method.md)           | @getshort(api/spreadsheet_undo_method.md)           |
 | [](api/spreadsheet_unfreezecols_method.md)   | @getshort(api/spreadsheet_unfreezecols_method.md)   |
@@ -84,6 +86,7 @@ Parameters:
 | [](api/spreadsheet_beforefocusset_event.md)     | @getshort(api/spreadsheet_beforefocusset_event.md)     |
 | [](api/spreadsheet_beforeselectionset_event.md) | @getshort(api/spreadsheet_beforeselectionset_event.md) |
 | [](api/spreadsheet_beforesheetchange_event.md)  | @getshort(api/spreadsheet_beforesheetchange_event.md)  |
+| [](api/spreadsheet_groupfill_event.md)          | @getshort(api/spreadsheet_groupfill_event.md)          |
 
 ## Spreadsheet properties
 
@@ -101,6 +104,11 @@ Parameters:
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
 
+## Spreadsheet properties (read-only)
+
+| Name                                        | Description                                        |
+| ------------------------------------------- | -------------------------------------------------- |
+| [](api/spreadsheet_activesheetname.md)      | @getshort(api/spreadsheet_activesheetname.md)      |
 
 ## Sheet Manager methods
 

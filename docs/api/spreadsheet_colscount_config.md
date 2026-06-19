@@ -16,6 +16,12 @@ description: You can learn about the colsCount config in the documentation of th
 colsCount?: number;
 ~~~
 
+### Default config
+
+~~~jsx
+colsCount: 26
+~~~
+
 ### Example
 
 ~~~jsx {2}

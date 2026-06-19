@@ -19,6 +19,7 @@ description: You can check a Methods overview of the DHTMLX JavaScript Spreadshe
 | [](../spreadsheet_fitcolumn_method.md)      | @getshort(../spreadsheet_fitcolumn_method.md)      |
 | [](../spreadsheet_freezecols_method.md)     | @getshort(../spreadsheet_freezecols_method.md)     |
 | [](../spreadsheet_freezerows_method.md)     | @getshort(../spreadsheet_freezerows_method.md)     |
+| [](../spreadsheet_getcellindex_method.md)   | @getshort(../spreadsheet_getcellindex_method.md)   |
 | [](../spreadsheet_getfilter_method.md)      | @getshort(../spreadsheet_getfilter_method.md)      |
 | [](../spreadsheet_getformat_method.md)      | @getshort(../spreadsheet_getformat_method.md)      |
 | [](../spreadsheet_getformula_method.md)     | @getshort(../spreadsheet_getformula_method.md)     |
@@ -43,6 +44,7 @@ description: You can check a Methods overview of the DHTMLX JavaScript Spreadshe
 | [](../spreadsheet_setvalue_method.md)       | @getshort(../spreadsheet_setvalue_method.md)       |
 | [](../spreadsheet_showcols_method.md)       | @getshort(../spreadsheet_showcols_method.md)       |
 | [](../spreadsheet_showrows_method.md)       | @getshort(../spreadsheet_showrows_method.md)       |
+| [](../spreadsheet_sortcells_method.md)      | @getshort(../spreadsheet_sortcells_method.md)      |
 | [](../spreadsheet_startedit_method.md)      | @getshort(../spreadsheet_startedit_method.md)      |
 | [](../spreadsheet_undo_method.md)           | @getshort(../spreadsheet_undo_method.md)           |
 | [](../spreadsheet_unfreezecols_method.md)   | @getshort(../spreadsheet_unfreezecols_method.md)   |

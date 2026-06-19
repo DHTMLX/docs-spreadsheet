@@ -10,7 +10,7 @@ description: You can learn about the add method of the Sheet Manager in the docu
 
 @short: Adds a new empty sheet to the spreadsheet and returns the unique identifier of the newly created sheet
 
-If no name is provided, a default name will be generated automatically (e.g. "Sheet 2", "Sheet 3", etc.).
+If no name is provided, a default name will be generated automatically (e.g. "sheet2", "sheet3", etc.).
 
 :::info
 To apply this method, you need to enable the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option.
@@ -40,7 +40,7 @@ spreadsheet.parse(data);
 
 // Add a sheet with a custom name
 const newSheetId = spreadsheet.sheets.add("Q4 Report");
-console.log(newSheetId); // e.g. "sheet_2"
+console.log(newSheetId); // a generated unique id of the new sheet
 
 // Add a sheet with an auto-generated name
 const anotherSheetId = spreadsheet.sheets.add();

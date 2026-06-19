@@ -29,8 +29,10 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 spreadsheet.parse(data);
 
-spreadsheet.events.on("StyleChange", function(id){
-  console.log("The style of cell "+spreadsheet.selection.get()+" is changed");
+spreadsheet.events.on("afterAction", function(action, config){
+  if (action === "setCellStyle") {
+    console.log("The style of cell "+spreadsheet.selection.getSelectedCell()+" is changed");
+  }
 });
 ~~~
 

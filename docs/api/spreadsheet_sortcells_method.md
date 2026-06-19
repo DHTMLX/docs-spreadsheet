@@ -13,13 +13,13 @@ description: You can learn about the sortCells method in the documentation of th
 ### Usage
 
 ~~~jsx
-sortCells(cell: string, dir: number): void;
+sortCells(cell: string, dir?: number): void;
 ~~~
 
 ### Parameters
 
 - `cell` -  (required) the id(s) of a cell(s) or a range of cells by which you want the data in the spreadsheet to be sorted
-- `dir` - (required) the direction of sorting: 
+- `dir` - (optional) the direction of sorting, `1` by default: 
     - 1 - ascending order
     - -1 - descending order
 

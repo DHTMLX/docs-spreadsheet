@@ -304,7 +304,7 @@ DHTMLX Spreadsheet provides the ability to export data from a spreadsheet into a
 Please note that the export feature won't work in the Internet Explorer browser.
 :::
 
-The library uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the functionality of export to Excel. Export is processed at the **worker.js** file of the **Json2Excel** library (the default link is `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx`). You can use either the public export server or a local export server. Thus, to have the possibility of exporting files you need to:
+The library uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to enable the functionality of export to Excel. Export is processed at the **worker.js** file of the **Json2Excel** library (the default link is `https://cdn.dhtmlx.com/libs/json2excel/1.5/worker.js?vx`). You can use either the public export server or a local export server. Thus, to have the possibility of exporting files you need to:
 
 - specify the [](api/spreadsheet_exportmodulepath_config.md) option in the Spreadsheet configuration and set the path to the **worker.js** file:
     - if you use the public export server, you don't need to specify the link to it, since it is used by default

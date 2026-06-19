@@ -83,9 +83,19 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
             <td>Returns the date for the last day of the month, n months before or after the specified start date.</td>
         </tr>
         <tr>
+            <td><b>HOUR</b></td>
+            <td>=HOUR(date)</td>
+            <td>Returns the hour of a time value, as a number from 0 (12:00 AM) to 23 (11:00 PM).</td>
+        </tr>
+        <tr>
             <td><b>ISOWEEKNUM</b></td>
             <td>=ISOWEEKNUM(date)</td>
             <td>Returns the number of the ISO week number of the year for the specified date.</td>
+        </tr>
+        <tr>
+            <td><b>MINUTE</b></td>
+            <td>=MINUTE(date)</td>
+            <td>Returns the minutes of a time value, as a number from 0 to 59.</td>
         </tr>
         <tr>
             <td><b>MONTH</b></td>
@@ -98,14 +108,24 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
             <td>Returns the number of whole working days between two dates. Working days exclude weekends and any dates specified in <i>holidays</i>.</td>
         </tr>
         <tr>
-            <td><b>NETWORKDAYSINTL</b></td>
-            <td>=NETWORKDAYSINTL(start_date, end_date, [weekend], [holidays])</td>
+            <td><b>NETWORKDAYS.INTL</b></td>
+            <td>=NETWORKDAYS.INTL(start_date, end_date, [weekend], [holidays])</td>
             <td>Returns the number of whole working days between two dates. <br>The optional <a href="https://support.microsoft.com/en-us/office/networkdays-intl-function-a9b26239-4f20-46a1-9ab8-4e925bfd5e28">weekend</a> parameter is used to specify which days of the week are considered weekends. <br><i>Weekend days</i> and <i>holidays</i> are not considered as workdays.</td>
         </tr>
         <tr>
             <td><b>NOW</b></td>
             <td>=NOW()</td>
             <td>Returns the current date.</td>
+        </tr>
+        <tr>
+            <td><b>SECOND</b></td>
+            <td>=SECOND(date)</td>
+            <td>Returns the seconds of a time value, as a number from 0 to 59.</td>
+        </tr>
+        <tr>
+            <td><b>TIME</b></td>
+            <td>=TIME(hour, minute, second)</td>
+            <td>Combines separate hour, minute, and second values and returns a time.</td>
         </tr>
         <tr>
             <td><b>TIMEVALUE</b><br>added in v4.3</td>
@@ -128,8 +148,8 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
             <td>Returns the date of the nearest working day n days in the future or past.<br>Working days exclude weekends and any dates specified in <i>holidays</i>.</td>
         </tr>
         <tr>
-            <td><b>WORKDAYINTL</b></td>
-            <td>=WORKDAYINTL(start_date, days, [weekend], [holidays])</td>
+            <td><b>WORKDAY.INTL</b></td>
+            <td>=WORKDAY.INTL(start_date, days, [weekend], [holidays])</td>
             <td>Returns the date of the nearest working day n days in the future or past. <br>The optional <a href="https://support.microsoft.com/en-us/office/workday-intl-function-a378391c-9ba7-4678-8a39-39611a9bf81d">weekend</a> parameter is used to specify which days of the week are considered weekends. <br><i>Weekend days</i> and <i>holidays</i> are not considered as workdays.</td>
         </tr>
         <tr>
@@ -1053,6 +1073,10 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
             <td>Estimates standard deviation based on a sample (ignores logical values and text in the sample). <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>If an argument is an array or reference, only values in that array or reference are used. Empty cells, logical values, text, or error values in the array or reference are ignored.<br> Error values cause errors.</td>
         </tr>
         <tr>
+            <td><b>STDEV.P</b></td>
+            <td>Calculates standard deviation based on the entire population given as arguments (ignores logical values and text). <br>The standard deviation is a measure of how widely values are dispersed from the average value (the mean).<br>If an argument is an array or reference, only values in that array or reference are used. Empty cells, logical values, text, or error values in the array or reference are ignored.</td>
+        </tr>
+        <tr>
             <td><b>SUBTOTAL</b></td>
             <td>Returns a subtotal in a list or database.</td>
         </tr>
@@ -1119,6 +1143,10 @@ Only numbers in the array or reference are multiplied. Empty cells, logical valu
         <tr>
             <td><b>VAR.S</b><br>added in v4.3</td>
             <td>Returns the variance based on a sample (ignores logical values and text in the sample).<br>Empty cells, logical values, text, or error values in the array or reference are ignored.</td>
+        </tr>
+        <tr>
+            <td><b>VAR.P</b></td>
+            <td>Calculates the variance based on the entire population (ignores logical values and text in the population).<br>Empty cells, logical values, text, or error values in the array or reference are ignored.</td>
         </tr>
     </tbody>
 </table>
