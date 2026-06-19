@@ -31,8 +31,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 // Switch to the second sheet
-const sheets = spreadsheet.sheets.getAll();
-spreadsheet.sheets.setActive(sheets[1].id);
+const allSheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.setActive(allSheets[1].id);
 
 // Verify the switch
 const active = spreadsheet.sheets.getActive();

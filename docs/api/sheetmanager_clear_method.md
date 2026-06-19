@@ -31,8 +31,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 // Clear a specific sheet by id
-const sheets = spreadsheet.sheets.getAll();
-spreadsheet.sheets.clear(sheets[0].id);
+const allSheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.clear(allSheets[0].id);
 
 // Clear the currently active sheet
 spreadsheet.sheets.clear();

@@ -53,8 +53,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 // Remove the second sheet by its id
-const sheets = spreadsheet.sheets.getAll();
-spreadsheet.sheets.remove(sheets[1].id);
+const allSheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.remove(allSheets[1].id);
 ~~~
 
 Note, that a sheet won't be removed if the number of sheets in the spreadsheet is less than 2.
@@ -70,8 +70,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 
 // Switch to the second sheet
-const sheets = spreadsheet.sheets.getAll();
-spreadsheet.sheets.setActive(sheets[1].id);
+const allSheets = spreadsheet.sheets.getAll();
+spreadsheet.sheets.setActive(allSheets[1].id);
 
 // Verify the switch
 const active = spreadsheet.sheets.getActive();
@@ -125,8 +125,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 spreadsheet.parse(data);
 
-const sheets = spreadsheet.sheets.getAll();
-const sheet = spreadsheet.sheets.get(sheets[0].id);
+const allSheets = spreadsheet.sheets.getAll();
+const sheet = spreadsheet.sheets.get(allSheets[0].id);
 console.log(sheet.name); // "sheet1"
 ~~~
 
