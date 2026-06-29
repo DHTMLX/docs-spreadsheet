@@ -84,7 +84,7 @@ function App() {
 
 ## The ref escape hatch
 
-For operations that don't map to declarative props, use the [`SpreadsheetRef`](/react/types#spreadsheetref) to access the underlying widget instance:
+For operations that don't map to declarative props, use the [`SpreadsheetRef`](react/types.md#spreadsheetref) to access the underlying widget instance:
 
 - **Serialize data:** `ref.current?.instance?.serialize()`
 - **Undo/redo:** `ref.current?.instance?.undo()` / `ref.current?.instance?.redo()`

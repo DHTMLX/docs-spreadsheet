@@ -16,25 +16,25 @@ Released on May 20, 2026
 
 ### Breaking changes
 
-The new release introduces significant changes in the Spreadsheet API: there is a set of deprecated methods, properties and events. Check the [Migration guide](/migration/#52---60) to keep in step with the latest version.
+The new release introduces significant changes in the Spreadsheet API: there is a set of deprecated methods, properties and events. Check the [Migration guide](migration.md#52---60) to keep in step with the latest version.
 
 ### New functionality
 
-- [React Spreadsheet wrapper](/react/) is introduced. Check related examples in the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-examples)
-- The [`SheetManager`](/api/overview/sheetmanager_overview/) module is introduced. It is a centralized API for managing sheets in Spreadsheet. It is accessible via the `spreadsheet.sheets` property and replaces all the [deprecated sheet-related methods](/migration/#deprecated-methods) on the root Spreadsheet instance.
-    - new methods: [`sheets.add()`](/api/sheetmanager_add_method/), [`sheets.remove()`](/api/sheetmanager_remove_method/), [`sheets.getAll()`](/api/sheetmanager_getall_method/), [`sheets.getActive()`](/api/sheetmanager_getactive_method/), [`sheets.setActive()`](/api/sheetmanager_setactive_method/), [`sheets.clear()`](/api/sheetmanager_clear_method/), [`sheets.get()`](/api/sheetmanager_get_method/)
-- The ability to specify a [custom (user-defined) formula](/functions/#custom-formulas) via the new [`addFormula()`](/api/spreadsheet_addformula_method/) method
-- The ability to display numbers in the [scientific (exponential) notation](/number_formatting/#scientific-number-format)
+- [React Spreadsheet wrapper](react.md) is introduced. Check related examples in the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-examples)
+- The [`SheetManager`](api/overview/sheetmanager_overview.md) module is introduced. It is a centralized API for managing sheets in Spreadsheet. It is accessible via the `spreadsheet.sheets` property and replaces all the [deprecated sheet-related methods](migration.md#deprecated-methods) on the root Spreadsheet instance.
+    - new methods: [`sheets.add()`](api/sheetmanager_add_method.md), [`sheets.remove()`](api/sheetmanager_remove_method.md), [`sheets.getAll()`](api/sheetmanager_getall_method.md), [`sheets.getActive()`](api/sheetmanager_getactive_method.md), [`sheets.setActive()`](api/sheetmanager_setactive_method.md), [`sheets.clear()`](api/sheetmanager_clear_method.md), [`sheets.get()`](api/sheetmanager_get_method.md)
+- The ability to specify a [custom (user-defined) formula](functions.md#custom-formulas) via the new [`addFormula()`](api/spreadsheet_addformula_method.md) method
+- The ability to display numbers in the [scientific (exponential) notation](number_formatting.md#scientific-number-format)
 
 ### Updates
 
 - The ability to adjust the font size of cell content: 
-    - setting a default font size option via a [built-in toolbar control](/customization/#default-controls)  
-    - setting a [custom font size](/customization/#custom-font-size) for the toolbar control
-- New conditional aggregate functions are added into the [formulas engine](/functions/#math-functions): `COUNTIF`, `COUNTIFS`, `SUMIF`, `SUMIFS`, `AVERAGEIF`, `AVERAGEIFS`, `MAXIFS`, `MINIFS`
-- New dynamic array functions are added into the [formulas engine](/functions/#array-functions): `CHOOSECOLS`, `CHOOSEROWS`, `DROP`, `EXPAND`, `RANDARRAY`, `SEQUENCE`, `SORT`, `SORTBY`, `TAKE`, `TEXTSPLIT`, `TOCOL`, `TOROW`, `UNIQUE`, `WRAPCOLS`, `WRAPROWS`
-- The [`awaitRedraw()`](/awaitredraw/) helper is added for Spreadsheet to detect the rendering process and run the desired code after the component finishes rendering
-- [JSDoc annotations](/using_typescript/#jsdoc-hints) are added to the type definitions, providing inline API descriptions, parameter types, and code examples directly in the IDE
+    - setting a default font size option via a [built-in toolbar control](customization.md#default-controls)  
+    - setting a [custom font size](customization.md#custom-font-size) for the toolbar control
+- New conditional aggregate functions are added into the [formulas engine](functions.md#math-functions): `COUNTIF`, `COUNTIFS`, `SUMIF`, `SUMIFS`, `AVERAGEIF`, `AVERAGEIFS`, `MAXIFS`, `MINIFS`
+- New dynamic array functions are added into the [formulas engine](functions.md#array-functions): `CHOOSECOLS`, `CHOOSEROWS`, `DROP`, `EXPAND`, `RANDARRAY`, `SEQUENCE`, `SORT`, `SORTBY`, `TAKE`, `TEXTSPLIT`, `TOCOL`, `TOROW`, `UNIQUE`, `WRAPCOLS`, `WRAPROWS`
+- The [`awaitRedraw()`](awaitredraw.md) helper is added for Spreadsheet to detect the rendering process and run the desired code after the component finishes rendering
+- [JSDoc annotations](using_typescript.md#jsdoc-hints) are added to the type definitions, providing inline API descriptions, parameter types, and code examples directly in the IDE
 
 ### Fixes
 
@@ -153,7 +153,7 @@ Released on May 20, 2025
 
 ### Breaking changes
 
-The new release introduces some changes to the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md/#51---52) to keep in step with the latest version.
+The new release introduces some changes to the freezing/unfreezing functionality for columns and rows. Check the [Migration guide](migration.md#51---52) to keep in step with the latest version.
 
 ### Deprecated
 
@@ -162,22 +162,22 @@ The new release introduces some changes to the freezing/unfreezing functionality
 ### New functionality
 
 - Editing cells:
-    - the ability to [create a styled border for a group of cells via UI](data_formatting.md/#styled-borders-for-cells)
+    - the ability to [create a styled border for a group of cells via UI](data_formatting.md#styled-borders-for-cells)
 - Freezing/unfreezing columns/rows:
-    - the ability to freeze/unfreeze columns and rows via [UI](work_with_rows_cols.md/#freezingunfreezing-rows-and-columns)
-    - the ability to freeze/unfreeze columns and rows via [API](working_with_ssheet.md/#freezingunfreezing-rows-and-columns)
+    - the ability to freeze/unfreeze columns and rows via [UI](work_with_rows_cols.md#freezingunfreezing-rows-and-columns)
+    - the ability to freeze/unfreeze columns and rows via [API](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
         - new methods: [`freezeCols()`](api/spreadsheet_freezecols_method.md), [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md), [`freezeRows()`](api/spreadsheet_freezerows_method.md), [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md)
-        - new action: [`toggleFreeze`](api/overview/actions_overview.md/#list-of-actions) 
+        - new action: [`toggleFreeze`](api/overview/actions_overview.md#list-of-actions) 
         - new `freeze` property for the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method
 - Hiding/showing columns/rows:
-    - the ability to hide/show columns and rows via [UI](work_with_rows_cols.md/#hidingshowing-rows-and-columns)
-    - the ability to hide/show columns and rows via [API](working_with_ssheet.md/#hidingshowing-rows-and-columns)
+    - the ability to hide/show columns and rows via [UI](work_with_rows_cols.md#hidingshowing-rows-and-columns)
+    - the ability to hide/show columns and rows via [API](working_with_ssheet.md#hidingshowing-rows-and-columns)
         - new methods: [`hideCols()`](api/spreadsheet_hidecols_method.md), [`showCols()`](api/spreadsheet_showcols_method.md), [`hideRows()`](api/spreadsheet_hiderows_method.md), [`showRows()`](api/spreadsheet_showrows_method.md)
-        - new action: [`toggleVisibility`](api/overview/actions_overview.md/#list-of-actions) 
+        - new action: [`toggleVisibility`](api/overview/actions_overview.md#list-of-actions) 
         - new `hidden` property for the *cols* and *rows* configs of the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method
 - Working with formulas:
-    - [popup with descriptions for formulas](functions.md/#popup-with-formula-description) is added
-    - new locale: [`formulas`](localization.md/#default-locale-for-formulas) is added
+    - [popup with descriptions for formulas](functions.md#popup-with-formula-description) is added
+    - new locale: [`formulas`](localization.md#default-locale-for-formulas) is added
 - File import: 
     - new [`afterDataLoaded`](api/spreadsheet_afterdataloaded_event.md) event is added to indicate that data loading into Spreadsheet has been completed
     
@@ -291,16 +291,16 @@ Released on December 7, 2023
 
 ### New functionality
 
-- [Support for new themes](spreadsheet/themes.md): Dark, Light High Contrast and Dark High Contrast
-- Extended [support for number, date, time and currency format localization](spreadsheet/number_formatting.md/#number-date-time-currency-localization)
-- [Integration with the Svelte framework](spreadsheet/svelte_integration.md)
-- Ability to [provide a custom name for an exported .xlsx file](spreadsheet/loading_data.md/#how-to-set-a-custom-name-for-an-exported-file)
-- Ability to [save the "locked" cell status](spreadsheet/loading_data.md#setting-the-locked-state-for-a-cell) and [specify a link for a cell](loading_data.md/#adding-a-link-into-a-cell) in a data set
+- [Support for new themes](/themes/): Dark, Light High Contrast and Dark High Contrast
+- Extended [support for number, date, time and currency format localization](number_formatting.md#number-date-time-currency-localization)
+- [Integration with the Svelte framework](svelte_integration.md)
+- Ability to [provide a custom name for an exported .xlsx file](loading_data.md#how-to-set-a-custom-name-for-an-exported-file)
+- Ability to [save the "locked" cell status](loading_data.md#setting-the-locked-state-for-a-cell) and [specify a link for a cell](loading_data.md#adding-a-link-into-a-cell) in a data set
 
 ### Updates
 
 - Renewed [integrations with React, Angular and Vue.js](/integrations/)
-- Automatic [conversion of lowercase letters to upper case](spreadsheet/functions.md) in formulas 
+- Automatic [conversion of lowercase letters to upper case](functions.md) in formulas 
 - Auto closing of formulas 
 
 ### Fixes
@@ -396,8 +396,8 @@ Released on February 14, 2023
 - Fix the issue which caused the results of filtering to be changed after sorting of data
 - Fix the issue with display of the 12-hour format in the timepicker 
 - Fix the issue with removing of link styles after the cell was auto-filled
-- Now it is possible to add several [custom formats for dates](spreadsheet/number_formatting.md#formats-customization)
-- Now it is possible to remove columns and rows even if they belong to the [limited columns and rows](spreadsheet/configuration.md#number-of-rows-and-columns)
+- Now it is possible to add several [custom formats for dates](number_formatting.md#formats-customization)
+- Now it is possible to remove columns and rows even if they belong to the [limited columns and rows](configuration.md#number-of-rows-and-columns)
 
 ## Version 5.0.1
 
@@ -495,7 +495,7 @@ Version 4.3 doesn't bring any breaking changes but introduces a new way of handl
 - [The ability to split long text into multiple lines](data_formatting.md#wrap-text-in-a-cell) (*Text wrapping* button is added into the toolbar)
 - Significantly extended list of supported [Date, Financial, Math, String functions](functions.md#information-functions) (marked with *added in v4.3* label)
 - Support for [Lookup functions](functions.md#lookup-functions)
-- [Time format](number_formatting.md/#default-number-formats) is added
+- [Time format](number_formatting.md#default-number-formats) is added
 - The ability to define the format of times in the spreadsheet cells via the [`timeFormat`](api/spreadsheet_localization_config.md) property
 - The ability to enter time in a cell via a time picker
 - [Export to JSON](api/export_json_method.md)
@@ -515,28 +515,28 @@ Released on November 29, 2021
 
 ### New functionality
 
-- Support for [date](functions.md/#date-functions), [financial](functions.md/#financial-functions), [information](functions.md/#information-functions), [regex](functions.md/#regex-functions), and [other](functions.md/#other-functions) functions
-- Support for [boolean operators](functions.md/#boolean-operators)
+- Support for [date](functions.md#date-functions), [financial](functions.md#financial-functions), [information](functions.md#information-functions), [regex](functions.md#regex-functions), and [other](functions.md#other-functions) functions
+- Support for [boolean operators](functions.md#boolean-operators)
 - The ability to resize rows from UI
-- New [Vertical align](data_formatting.md/#alignment) button is added into the toolbar
+- New [Vertical align](data_formatting.md#alignment) button is added into the toolbar
 - The ability to set the active sheet via the `setActiveSheet()` method
 - The ability to remove selection from the specified cells via the [`removeSelectedCell()`](api/selection_removeselectedcell_method.md) method of the Selection object
 - The ability to clear a spreadsheet or its sheet via the [`clear()`](api/spreadsheet_clear_method.md) or `clearSheet()` method correspondingly
 - New events are added: [`beforeClear`](api/spreadsheet_beforeclear_event.md), [`afterClear`](api/spreadsheet_afterclear_event.md), `beforeSheetClear`, `afterSheetClear`
 - The ability to define the format of dates in the spreadsheet via the [`dateFormat`](api/spreadsheet_localization_config.md) property
-- [Date format is added to default number formats](number_formatting.md/#default-number-formats)
+- [Date format is added to default number formats](number_formatting.md#default-number-formats)
 
 ### Updates
 
 - Extended list of [locale options](localization.md)
-- Extended list of [math](functions.md/#math-functions) and [string](functions.md/#string-functions) functions
-- The Align block of the Spreadsheet toolbar is updated. Check the details in the [Migration article](migration.md/#41---42)
+- Extended list of [math](functions.md#math-functions) and [string](functions.md#string-functions) functions
+- The Align block of the Spreadsheet toolbar is updated. Check the details in the [Migration article](migration.md#41---42)
 - The [`parse()`](api/spreadsheet_parse_method.md) and [`serialize()`](api/spreadsheet_serialize_method.md) methods are updated. New **rows** and **cols** attributes of the sheet object allows saving the state of the row height and column width for each sheet.
 
 ### Fixes
 
 - Issue with the CTRL-X shortcut key
-- Issue which caused the script error to appear when editing a cell in the spreadsheet with hidden [editing bar](api/spreadsheet_editline_config.md/)
+- Issue which caused the script error to appear when editing a cell in the spreadsheet with hidden [editing bar](api/spreadsheet_editline_config.md)
 
 ## Version 4.1.3
 
@@ -790,6 +790,6 @@ Check the [Migration](migration.md#21---30) article to get information about the
 
 The API of Spreadsheet has been changed and became more handy to work with. One more significant update is the total redesign of the component which gave a modern look to the interface of Spreadsheet. Together with the fresh appearance the usability of DHTMLX Spreadsheet is greatly enhanced.
 
-- [](index.md)
+- [Spreadsheet overview](/)
 - [Fully customizable structure and adjustable look and feel](customization.md)
 - [Completely refreshed API](api/api_overview.md)

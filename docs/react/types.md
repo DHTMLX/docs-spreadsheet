@@ -150,7 +150,7 @@ Built-in color themes. Also accepts custom theme name strings.
 
 ## IExecuteConfig
 
-Action execution configuration passed to [`onBeforeAction`](/react/events/#action-events) / [`onAfterAction`](/react/events/#action-events). Shape varies by action type.
+Action execution configuration passed to [`onBeforeAction`](react/events.md#action-events) / [`onAfterAction`](react/events.md#action-events). Shape varies by action type.
 
 | Property | Type | Description |
 |----------|------|-------------|
@@ -192,7 +192,7 @@ ref.current?.instance?.redo();
 
 ## Actions enum
 
-Known spreadsheet action identifiers. Used in [`onBeforeAction`](/react/events/#action-events) / [`onAfterAction`](/react/events/#action-events) for type-safe action matching. The `| string` union on handler params allows forward-compatibility with future actions.
+Known spreadsheet action identifiers. Used in [`onBeforeAction`](react/events.md#action-events) / [`onAfterAction`](react/events.md#action-events) for type-safe action matching. The `| string` union on handler params allows forward-compatibility with future actions.
 
 | Value | Description |
 |-------|-------------|

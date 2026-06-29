@@ -96,6 +96,6 @@ export default function Home() {
 
 ## Related API and guides
 
-- [Props reference](/react/props/) - all component props with types and defaults
-- [Events reference](/react/events/) - respond to user actions
-- [State management basics](/react/state/state-management-basics/) - managing spreadsheet data in React state
+- [Props reference](react/props.md) - all component props with types and defaults
+- [Events reference](react/events.md) - respond to user actions
+- [State management basics](react/state/state-management-basics.md) - managing spreadsheet data in React state

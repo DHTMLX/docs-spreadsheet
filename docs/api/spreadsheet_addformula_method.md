@@ -52,4 +52,4 @@ spreadsheet.parse([
 
 **Related sample:** [Spreadsheet. Add custom formula](https://snippet.dhtmlx.com/wvxdlahp)
 
-**Related articles:** [Formulas and functions](/functions/#custom-formulas)
+**Related articles:** [Formulas and functions](functions.md#custom-formulas)
