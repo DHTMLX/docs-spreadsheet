@@ -56,7 +56,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 });
 ~~~
 
-Check how you can [customize the toolbar](customization.md/#toolbar).
+Check how you can [customize the toolbar](customization.md#toolbar).
 
 **Change log:**
 

@@ -142,6 +142,6 @@ spreadsheet.parse(data);
 
 That's all. Just four simple steps and you have a handy tool for work with data in the tabular form. Now you can start working with your data or keep exploring the inner world of DHTMLX Spreadsheet.
 
-- [](index.md)
+- [Spreadsheet overview](/)
 - [](guides.md)
 - [](api/api_overview.md)

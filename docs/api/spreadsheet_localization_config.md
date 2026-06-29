@@ -83,4 +83,4 @@ DHTMLX Spreadsheet uses the following characters for setting a date format:
 **Change log:** 
 - Added in v5.1
 
-**Related article:** [Number, date, time, currency localization](spreadsheet/number_formatting.md#number-date-time-currency-localization)
+**Related article:** [Number, date, time, currency localization](number_formatting.md#number-date-time-currency-localization)

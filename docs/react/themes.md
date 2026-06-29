@@ -10,7 +10,7 @@ React Spreadsheet ships with four built-in themes and supports custom themes thr
 
 ## Built-in themes
 
-The [`SpreadsheetTheme`](/react/types#spreadsheettheme) type defines four built-in themes:
+The [`SpreadsheetTheme`](react/types.md#spreadsheettheme) type defines four built-in themes:
 
 - `"light"` (default)
 - `"dark"`
@@ -89,5 +89,5 @@ import "./custom-theme.css";
 ## Related guides
 
 - [Themes](/themes/) - built-in theme overview for DHTMLX Spreadsheet
-- [Base themes configuration](/themes/base_themes_configuration/) - configuring base themes
-- [Custom theme](/themes/custom_theme/) - creating custom themes
+- [Base themes configuration](themes/base_themes_configuration.md) - configuring base themes
+- [Custom theme](themes/custom_theme.md) - creating custom themes

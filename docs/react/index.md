@@ -10,8 +10,8 @@ The official declarative React wrapper for DHTMLX Spreadsheet. Build spreadsheet
 
 ## Get started
 
-- [Installation](/react/installation/) - install the evaluation or commercial package
-- [Quick start](/react/quick-start/) - build your first spreadsheet app step by step
+- [Installation](react/installation.md) - install the evaluation or commercial package
+- [Quick start](react/quick-start.md) - build your first spreadsheet app step by step
 - [Online examples](https://dhtmlx.com/react/demos/spreadsheet/) - check live demos of React Spreadsheet features
 
 :::info
@@ -20,26 +20,26 @@ You can also explore the [GitHub demo repository](https://github.com/DHTMLX/reac
 
 ## API reference
 
-- [Props reference](/react/props/) - all component props with types and defaults
-- [Events reference](/react/events/) - event callback props grouped by category
-- [Types reference](/react/types/) - TypeScript interfaces, enums, and type aliases
+- [Props reference](react/props.md) - all component props with types and defaults
+- [Events reference](react/events.md) - event callback props grouped by category
+- [Types reference](react/types.md) - TypeScript interfaces, enums, and type aliases
 
 ## Data model
 
-The [`sheets`](/react/props#data-props) prop is the single source of truth for all spreadsheet data. Each sheet is a [`SheetData`](/react/types#sheetdata) object containing cells, row/column configuration, merged ranges, frozen panes, filters, and sorting.
+The [`sheets`](react/props.md#data-props) prop is the single source of truth for all spreadsheet data. Each sheet is a [`SheetData`](react/types.md#sheetdata) object containing cells, row/column configuration, merged ranges, frozen panes, filters, and sorting.
 
 ## State management
 
 Learn how to keep spreadsheet data in sync with your application state:
 
-- [State management basics](/react/state/state-management-basics/) - controlled props, event callbacks, the ref escape hatch
-- [Redux toolkit](/react/state/redux-toolkit/) - step-by-step integration guide
+- [State management basics](react/state/state-management-basics.md) - controlled props, event callbacks, the ref escape hatch
+- [Redux toolkit](react/state/redux-toolkit.md) - step-by-step integration guide
 
 ## Framework integrations
 
-- [Next.js](/react/nextjs/) - using React Spreadsheet with Next.js App Router
+- [Next.js](react/nextjs.md) - using React Spreadsheet with Next.js App Router
 
 ## Theming and localization
 
-- [Themes](/react/themes/) - built-in themes and custom CSS overrides
-- [Localization](/react/localization/) - UI translations and number/date formatting
+- [Themes](react/themes.md) - built-in themes and custom CSS overrides
+- [Localization](react/localization.md) - UI translations and number/date formatting

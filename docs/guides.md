@@ -33,7 +33,7 @@ Shows the ways of loading data into Spreadsheet, handling events and using main 
 
 ### Frameworks & integrations
 
-- [React Spreadsheet](/react/) - official React component with props, events, and TypeScript support
+- [React Spreadsheet](react.md) - official React component with props, events, and TypeScript support
 - [Integration with Angular](angular_integration.md) - GitHub demo of using Spreadsheet in an Angular app
 - [Integration with Svelte](svelte_integration.md) - GitHub demo of using Spreadsheet in a Svelte app
 - [Integration with Vue.js](vuejs_integration.md) - GitHub demo of using Spreadsheet in a Vue app

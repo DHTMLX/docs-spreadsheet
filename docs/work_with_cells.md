@@ -20,7 +20,7 @@ description: You can learn about the work with cells in the documentation of the
 - Create a formula. For this, you can use:
     - constant numbers and calculation operators, for example **=3-2*5+12**
     - cell references and calculation operators, for example **=A1/A2**
-    - [built-in functions](../functions/), for example **=MAX(C46;D46)**
+    - [built-in functions](functions.md), for example **=MAX(C46;D46)**
 - Press **Enter**.
 
 :::note

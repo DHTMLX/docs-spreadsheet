@@ -218,7 +218,7 @@ const en = {
 };
 ~~~
 
-[Check the full default locale for formulas](/formulas_locale/).
+[Check the full default locale for formulas](formulas_locale.md).
 
 **Related sample**: [Spreadsheet. Localization](https://snippet.dhtmlx.com/yn5hyyim?mode=wide)
 

@@ -8,10 +8,10 @@ description: You can check a Sheet Manager API overview of the DHTMLX JavaScript
 
 | Name                                      | Description                                      |
 | :---------------------------------------- | :----------------------------------------------- |
-| [](../sheetmanager_add_method.md)       | @getshort(../sheetmanager_add_method.md)       |
-| [](../sheetmanager_clear_method.md)     | @getshort(../sheetmanager_clear_method.md)     |
-| [](../sheetmanager_get_method.md)       | @getshort(../sheetmanager_get_method.md)       |
-| [](../sheetmanager_getactive_method.md) | @getshort(../sheetmanager_getactive_method.md) |
-| [](../sheetmanager_getall_method.md)    | @getshort(../sheetmanager_getall_method.md)    |
-| [](../sheetmanager_remove_method.md)    | @getshort(../sheetmanager_remove_method.md)    |
-| [](../sheetmanager_setactive_method.md) | @getshort(../sheetmanager_setactive_method.md) |
+| [](api/sheetmanager_add_method.md)       | @getshort(../sheetmanager_add_method.md)       |
+| [](api/sheetmanager_clear_method.md)     | @getshort(../sheetmanager_clear_method.md)     |
+| [](api/sheetmanager_get_method.md)       | @getshort(../sheetmanager_get_method.md)       |
+| [](api/sheetmanager_getactive_method.md) | @getshort(../sheetmanager_getactive_method.md) |
+| [](api/sheetmanager_getall_method.md)    | @getshort(../sheetmanager_getall_method.md)    |
+| [](api/sheetmanager_remove_method.md)    | @getshort(../sheetmanager_remove_method.md)    |
+| [](api/sheetmanager_setactive_method.md) | @getshort(../sheetmanager_setactive_method.md) |

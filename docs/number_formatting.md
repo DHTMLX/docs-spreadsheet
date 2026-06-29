@@ -69,7 +69,7 @@ spreadsheet.parse({
 });
 ~~~
 
-Check [the full list of available characters used to make formats](/api/spreadsheet_localization_config/#characters-for-setting-date-format).
+Check [the full list of available characters used to make formats](api/spreadsheet_localization_config.md#characters-for-setting-date-format).
 
 ## Time format
 
@@ -96,7 +96,7 @@ spreadsheet.parse({
 
 ## Number, date, time, currency localization
 
-With Spreadsheet configuration options, you can localize time and date, specify the necessary currency sign and provide the desired decimal and thousands separators. All these settings are available in the [`localization`](spreadsheet/api/spreadsheet_localization_config.md) property. It is an object with the following properties:
+With Spreadsheet configuration options, you can localize time and date, specify the necessary currency sign and provide the desired decimal and thousands separators. All these settings are available in the [`localization`](api/spreadsheet_localization_config.md) property. It is an object with the following properties:
 
 - **decimal** - (optional) the symbol used as a decimal separator, **"."** (a period) by default<br>Possible values are `"." | ","`
 - **thousands** - (optional) the symbol used as a thousands separator, **","** (a comma) by default<br>Possible values are `"." | "," | " " | ""`
