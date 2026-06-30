@@ -8,7 +8,7 @@ description: You can study the developer guide about number formatting in the do
 
 DHTMLX Spreadsheet supports number formatting that you can apply for numeric values in cells.
 
-![Number format](assets/number_format_options.png)
+![DHTMLX Spreadsheet Number format dropdown with Common, Number, Currency, Percent, Date, Time, and Text options](/img/number_format_options.png)
 
 :::note
 There is a [User Guide](number_formatting_guide.md) provided to make work with Spreadsheet easy for your end users.

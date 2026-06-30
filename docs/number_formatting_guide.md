@@ -54,8 +54,8 @@ Follow the steps below to apply a particular number format to Spreadsheet data v
 - Select a cell or several cells that you want to format.
 - Click the **Number format** button:
 
-![Number format button](assets/number_format_button.png)
+![DHTMLX Spreadsheet toolbar with the Number format button for applying numeric formatting](/img/number_format_button.png)
 
 - Select the format you want to apply among the suggested options:
 
-![Number format](assets/number_format_options.png)
+![DHTMLX Spreadsheet Number format dropdown with Common, Number, Currency, Percent, Date, Time, and Text options](/img/number_format_options.png)
