@@ -11,4 +11,4 @@ To open a search bar, use one of two options:
 - Set focus on any cell and press **Ctrl (Cmd) + F**
 - Or go to: *Data* -> *Search*
 
-![Data search](assets/search_data.png)
+![DHTMLX Spreadsheet search bar with a text input for finding data](/img/search_data.png)

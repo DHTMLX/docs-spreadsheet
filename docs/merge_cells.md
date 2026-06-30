@@ -14,7 +14,7 @@ To merge cells, take the steps below:
 
 2\. Click the **Merge** button in the toolbar
 
-![Merge cells via toolbar](assets/merge_cells.png)
+![DHTMLX Spreadsheet toolbar with the Merge button for merging a range of cells](/img/merge_cells.png)
 
 or
 
@@ -22,7 +22,7 @@ or
 
 2\. Go to: *Format -> Merge* in the menu
 
-![Merge cells via menu](assets/merge_cells_via_menu.png)
+![DHTMLX Spreadsheet Format menu with the Merge option for cell merging](/img/merge_cells_via_menu.png)
 
 :::info
 The merged cell will display the content of the upper-left cell of the selected range.
@@ -36,7 +36,7 @@ To split a merged cell, take the steps below:
 
 2\. Click the **Unmerge** button in the toolbar
 
-![Split cells via toolbar](assets/unmerge_cells.png)
+![DHTMLX Spreadsheet toolbar with the Unmerge button for splitting merged cells](/img/unmerge_cells.png)
 
 or
 
@@ -44,4 +44,4 @@ or
 
 2\. Go to: *Format -> Unmerge* in the menu
 
-![Split cells via menu](assets/unmerge_cells_via_menu.png)
+![DHTMLX Spreadsheet Format menu with the Unmerge option for splitting merged cells](/img/unmerge_cells_via_menu.png)

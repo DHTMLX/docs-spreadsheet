@@ -190,7 +190,7 @@ spreadsheet.toolbar.data.add({
 });
 ~~~
 
-![Custom Toolbar Button](assets/custom_toolbar_button.png)
+![DHTMLX Spreadsheet toolbar with a custom Remove all button added through customization](/img/custom_toolbar_button.png)
 
 **Related sample**: [Spreadsheet. Custom toolbar button](https://snippet.dhtmlx.com/qopk6lta)
 
@@ -224,7 +224,7 @@ spreadsheet.toolbar.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 ~~~
 
-![Custom Toolbar Icons](assets/custom_toolbar_icons.png)
+![DHTMLX Spreadsheet toolbar with custom Undo and Redo icons from Font Awesome](/img/custom_toolbar_icons.png)
 
 **Related sample**: [Spreadsheet. Custom toolbar icons](https://snippet.dhtmlx.com/mvnx43o0)
 
@@ -343,7 +343,7 @@ spreadsheet.menu.data.add({
 });
 ~~~
 
-![Custom Menu Item](assets/custom_menuitem.png)
+![DHTMLX Spreadsheet menu with a custom Validate option for checking numbers](/img/custom_menuitem.png)
 
 **Related sample**: [Spreadsheet. Menu data](https://snippet.dhtmlx.com/2mlv2qaz)
 
@@ -356,7 +356,7 @@ spreadsheet.menu.data.update("undo", { icon: "fa fa-undo" });
 spreadsheet.menu.data.update("redo", { icon: "fa fa-redo" });
 ~~~
 
-![Custom Menu Icons](assets/custom_menu_icons.png)
+![DHTMLX Spreadsheet menu with custom Undo and Redo icons from Font Awesome](/img/custom_menu_icons.png)
 
 ### Deleting controls
 
@@ -411,7 +411,7 @@ spreadsheet.contextMenu.data.add({
 });
 ~~~
 
-![Custom Context Menu Item](assets/custom_context_menuitem.png)
+![DHTMLX Spreadsheet context menu with a custom Paint format option](/img/custom_context_menuitem.png)
 
 **Related sample**: [Spreadsheet. Context menu](https://snippet.dhtmlx.com/atl9gd4h)
 
@@ -423,7 +423,7 @@ In the example below the default icons of the Lock menuItem is changed to the Fo
 spreadsheet.contextMenu.data.update("lock", { icon: "fa fa-key" });
 ~~~
 
-![Custom Context Menu Icon](assets/custom_context_icon.png)
+![DHTMLX Spreadsheet context menu with a custom Lock icon from Font Awesome](/img/custom_context_icon.png)
 
 ### Deleting controls
 

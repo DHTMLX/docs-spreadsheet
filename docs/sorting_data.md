@@ -14,7 +14,7 @@ To sort spreadsheet data by a column, take the following steps:
 
 2\. Choose *Sort* -> *Sort A to Z* or *Sort Z to A*
 
-![Sort column](assets/sort_col.png)
+![DHTMLX Spreadsheet column header context menu with Sort A to Z and Sort Z to A options](/img/sort_col.png)
 
 or
 
@@ -22,7 +22,7 @@ or
 
 2\. Go to: *Data* -> *Sort* -> *Sort A to Z* or *Sort Z to A* in the menu
 
-![Sort column](assets/sort_col_menu.png)
+![DHTMLX Spreadsheet Data menu with the Sort submenu showing Sort A to Z and Sort Z to A](/img/sort_col_menu.png)
 
 ## Sorting data by a range
 
@@ -34,8 +34,8 @@ To sort spreadsheet data by a separate range, take the following steps:
 
 - Right-click a cell in the selected range and choose *Sort* -> *Sort A to Z* or *Sort Z to A*
 
-![Sort column](assets/sort_range_menu.png)
+![DHTMLX Spreadsheet context menu on a selected range with the Sort submenu](/img/sort_range_menu.png)
 
 - Or go to: *Data* -> *Sort* -> *Sort A to Z* or *Sort Z to A* in the menu
 
-![Sort column](assets/sort_range.png)
+![DHTMLX Spreadsheet Data menu with the Sort submenu for sorting a selected cell range](/img/sort_range.png)
