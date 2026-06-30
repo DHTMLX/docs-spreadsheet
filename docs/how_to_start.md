@@ -8,7 +8,7 @@ description: You can learn how to start with the DHTMLX JavaScript Spreadsheet l
 
 This clear and comprehensive tutorial will guide your through the steps you need to complete in order to get a full-functional DHTMLX Spreadsheet on a page. The component will be especially effective for managing large amounts of data when you need to save the results of calculations and reproduce them.
 
-![Spreadsheet init](assets/how_to_start.png)
+![DHTMLX Spreadsheet initialized with a sample data table in a browser window](/img/how_to_start.png)
 
 ## Step 1. Including source files
 
@@ -142,6 +142,6 @@ spreadsheet.parse(data);
 
 That's all. Just four simple steps and you have a handy tool for work with data in the tabular form. Now you can start working with your data or keep exploring the inner world of DHTMLX Spreadsheet.
 
-- [](index.md)
+- [Spreadsheet overview](/)
 - [](guides.md)
 - [](api/api_overview.md)

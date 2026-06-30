@@ -9,7 +9,7 @@ description: "Overview of the official React wrapper: declarative data model, pr
 `ReactSpreadsheet` is a declarative React wrapper for the DHTMLX Spreadsheet widget. It provides a component-based API where props describe the spreadsheet state, and the wrapper handles synchronization with the underlying widget.
 
 :::note
-The React Spreadsheet wrapper is available under DHTMLX Spreadsheet **Commercial**, **Enterprise** and **Ultimate** licenses. For evaluation, use the free 30-day evaluation package. See [Installation](/react/installation/) for setup instructions.
+The React Spreadsheet wrapper is available under DHTMLX Spreadsheet **Commercial**, **Enterprise** and **Ultimate** licenses. For evaluation, use the free 30-day evaluation package. See [Installation](react/installation.md) for setup instructions.
 :::
 
 ## Spreadsheet features
@@ -88,7 +88,7 @@ import { ReactSpreadsheet } from "@dhx/react-spreadsheet";
 import "@dhx/react-spreadsheet/spreadsheet.react.css";
 ~~~
 
-See [Installation](/react/installation/) for registry configuration and all available package variants.
+See [Installation](react/installation.md) for registry configuration and all available package variants.
 
 ## Prop update behavior
 
@@ -202,6 +202,6 @@ The `instance` property is `null` before the widget initializes and after unmoun
 
 | Document | Contents |
 |----------|----------|
-| [Props reference](/react/props/) | All component props with types, defaults, and examples |
-| [Events reference](/react/events/) | Event callback props grouped by category |
-| [Types reference](/react/types/) | TypeScript interfaces, enums, and type aliases |
+| [Props reference](react/props.md) | All component props with types, defaults, and examples |
+| [Events reference](react/events.md) | Event callback props grouped by category |
+| [Types reference](react/types.md) | TypeScript interfaces, enums, and type aliases |

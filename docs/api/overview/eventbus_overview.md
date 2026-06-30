@@ -8,7 +8,7 @@ description: You can check an Event Bus methods overview of the DHTMLX JavaScrip
 
 | Name                               | Description                               |
 | ---------------------------------- | ----------------------------------------- |
-| [](../eventsbus_detach_method.md) | @getshort(../eventsbus_detach_method.md) |
-| [](../eventsbus_fire_method.md)   | @getshort(../eventsbus_fire_method.md)   |
-| [](../eventsbus_on_method.md)     | @getshort(../eventsbus_on_method.md)     |
+| [](api/eventsbus_detach_method.md) | @getshort(../eventsbus_detach_method.md) |
+| [](api/eventsbus_fire_method.md)   | @getshort(../eventsbus_fire_method.md)   |
+| [](api/eventsbus_on_method.md)     | @getshort(../eventsbus_on_method.md)     |
 

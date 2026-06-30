@@ -19,7 +19,7 @@ These props are independent: you can use either or both.
 
 ## UI localization (spreadsheetLocale)
 
-The `spreadsheetLocale` prop accepts a [`SpreadsheetLocale`](/react/types#spreadsheetlocale) object with two properties:
+The `spreadsheetLocale` prop accepts a [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) object with two properties:
 
 - `locale` - a `Record<string, string>` of UI string overrides
 - `formulas` - a `Record<string, [string, string?][]>` of localized formula names grouped by category
@@ -52,7 +52,7 @@ const locale: SpreadsheetLocale = {
 
 ## Number/date formatting (localization)
 
-The `localization` prop controls how numbers and dates are displayed: decimal separators, currency symbols, date patterns, etc. It uses the same format as the DHTMLX Spreadsheet [`localization`](/api/spreadsheet_localization_config/) configuration property.
+The `localization` prop controls how numbers and dates are displayed: decimal separators, currency symbols, date patterns, etc. It uses the same format as the DHTMLX Spreadsheet [`localization`](api/spreadsheet_localization_config.md) configuration property.
 
 ~~~tsx
 <ReactSpreadsheet
@@ -71,5 +71,5 @@ The `localization` prop controls how numbers and dates are displayed: decimal se
 
 ## Related API and guides
 
-- [Localization](/localization/) - DHTMLX Spreadsheet localization guide
-- [SpreadsheetLocale type](/react/types/#spreadsheetlocale) - TypeScript interface reference
+- [Localization](localization.md) - DHTMLX Spreadsheet localization guide
+- [SpreadsheetLocale type](react/types.md#spreadsheetlocale) - TypeScript interface reference

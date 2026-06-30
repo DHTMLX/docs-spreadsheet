@@ -91,8 +91,16 @@ const readFile = (workingDir, filePath) => {
 const onEmptyLinkMatch = (data, { key, fullMatch, dir }) => {
     const filePath = fullMatch.substring(fullMatch.indexOf('(') + 1, fullMatch.length - 1);
     if (filePath.indexOf('.md') !== -1 || filePath.indexOf('.mdx') !== -1 || filePath.indexOf('.') === -1) {
-        const data = readFile(dir, filePath);
-        return data ? `[${/.*sidebar_label: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
+        // Links are written root-relative (e.g. api/spreadsheet_addrow_method.md), so resolve
+        // the target from the docs root rather than the page's own directory.
+        const fileContent = readFile(path.join(__dirname, 'docs'), filePath);
+        if (!fileContent) return fullMatch;
+        const labelMatch = /sidebar_label: (.+)/.exec(fileContent);
+        if (!labelMatch) return fullMatch;
+        // Emit a root-absolute href without the .md/.mdx extension, matching how the
+        // build-time loader rewrites ordinary links (Docusaurus prepends baseUrl itself).
+        const href = '/' + filePath.replace(/^\.?\/+/, '').replace(/\.(md|mdx)(?=$|#)/, '');
+        return `[${labelMatch[1].trim()}](${href})`;
     }
     return fullMatch;
 };
@@ -275,7 +283,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/DHTMLX/docs-spreadsheet/edit/master/',
+                    //editUrl: 'https://github.com/DHTMLX/docs-spreadsheet/edit/master/',
                     routeBasePath: '/'
                 },
                 theme: {

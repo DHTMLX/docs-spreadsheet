@@ -16,15 +16,15 @@ Changing any of these props causes the widget to be destroyed and recreated. Spr
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `menu` | `boolean` | Show the context menu. See JS API: [`menu`](/api/spreadsheet_menu_config/). |
-| `editLine` | `boolean` | Show the formula/edit line above the grid. See JS API: [`editLine`](/api/spreadsheet_editline_config/). |
-| `toolbarBlocks` | `ToolbarBlocks[]` | Toolbar blocks to display. See JS API: [`toolbarBlocks`](/api/spreadsheet_toolbarblocks_config/). |
-| `multiSheets` | `boolean` | Enable multiple sheet tabs. See JS API: [`multisheets`](/api/spreadsheet_multisheets_config/). |
-| `formats` | `IFormats[]` | Custom number format definitions. See JS API: [`formats`](/api/spreadsheet_formats_config/). |
-| `localization` | `ISpreadsheetConfig["localization"]` | Number/date formatting locale (decimal separator, currency symbol, etc.). Separate from `spreadsheetLocale`. See JS API: [`localization`](/api/spreadsheet_localization_config/). |
-| `importModulePath` | `string` | Path to the XLSX import module. See JS API: [`importModulePath`](/api/spreadsheet_importmodulepath_config/). |
-| `exportModulePath` | `string` | Path to the XLSX export module. See JS API: [`exportModulePath`](/api/spreadsheet_exportmodulepath_config/). |
-| `spreadsheetLocale` | [`SpreadsheetLocale`](/react/types/#spreadsheetlocale) | UI translations and localized formula names. Separate from `localization`. |
+| `menu` | `boolean` | Show the context menu. See JS API: [`menu`](api/spreadsheet_menu_config.md). |
+| `editLine` | `boolean` | Show the formula/edit line above the grid. See JS API: [`editLine`](api/spreadsheet_editline_config.md). |
+| `toolbarBlocks` | `ToolbarBlocks[]` | Toolbar blocks to display. See JS API: [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md). |
+| `multiSheets` | `boolean` | Enable multiple sheet tabs. See JS API: [`multisheets`](api/spreadsheet_multisheets_config.md). |
+| `formats` | `IFormats[]` | Custom number format definitions. See JS API: [`formats`](api/spreadsheet_formats_config.md). |
+| `localization` | `ISpreadsheetConfig["localization"]` | Number/date formatting locale (decimal separator, currency symbol, etc.). Separate from `spreadsheetLocale`. See JS API: [`localization`](api/spreadsheet_localization_config.md). |
+| `importModulePath` | `string` | Path to the XLSX import module. See JS API: [`importModulePath`](api/spreadsheet_importmodulepath_config.md). |
+| `exportModulePath` | `string` | Path to the XLSX export module. See JS API: [`exportModulePath`](api/spreadsheet_exportmodulepath_config.md). |
+| `spreadsheetLocale` | [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) | UI translations and localized formula names. Separate from `localization`. |
 
 </div>
 
@@ -38,9 +38,9 @@ These props are applied immediately without destroying the widget. No data loss 
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `rowsCount` | `number` | Number of rows in the grid. See JS API: [`rowsCount`](/api/spreadsheet_rowscount_config/). |
-| `colsCount` | `number` | Number of columns in the grid. See JS API: [`colsCount`](/api/spreadsheet_colscount_config/). |
-| `readonly` | `boolean` | Enable read-only mode. See JS API: [`readonly`](/api/spreadsheet_readonly_config/). |
+| `rowsCount` | `number` | Number of rows in the grid. See JS API: [`rowsCount`](api/spreadsheet_rowscount_config.md). |
+| `colsCount` | `number` | Number of columns in the grid. See JS API: [`colsCount`](api/spreadsheet_colscount_config.md). |
+| `readonly` | `boolean` | Enable read-only mode. See JS API: [`readonly`](api/spreadsheet_readonly_config.md). |
 
 ## Data props
 
@@ -48,7 +48,7 @@ The `sheets` prop is the single source of truth for all spreadsheet content. Cha
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `sheets` | [`SheetData[]`](/react/types#sheetdata) | The single source of truth for all spreadsheet data. Each entry represents a sheet with its cells, structure, and metadata. Changes are applied incrementally. |
+| `sheets` | [`SheetData[]`](react/types.md#sheetdata) | The single source of truth for all spreadsheet data. Each entry represents a sheet with its cells, structure, and metadata. Changes are applied incrementally. |
 | `styles` | `Record<string, Record<string, string>>` | Shared CSS style definitions referenced by `CellData.css`. Keys are class names, values are CSS property maps. See [Styles example](#styles-example). |
 | `activeSheet` | `Id` | Id of the active (visible) sheet. Changing this switches the displayed sheet tab. |
 
@@ -62,7 +62,7 @@ Controls the search bar state from outside the component. Use it together with `
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `search` | [`SearchConfig`](/react/types#searchconfig) | Controlled search state. Pass a `SearchConfig` object to trigger/update search. Pass `undefined` to dismiss the search bar. |
+| `search` | [`SearchConfig`](react/types.md#searchconfig) | Controlled search state. Pass a `SearchConfig` object to trigger/update search. Pass `undefined` to dismiss the search bar. |
 
 ## Data loading props
 
@@ -79,7 +79,7 @@ Controls the visual theme applied to the spreadsheet. Since `theme` is a runtime
 
 | Prop | Type | Description |
 |------|------|-------------|
-| `theme` | [`SpreadsheetTheme`](/react/types#spreadsheettheme) | Color theme. Built-in values: `"light"`, `"dark"`, `"contrast-light"`, `"contrast-dark"`. Also accepts custom theme name strings. See [Themes](/react/themes/). |
+| `theme` | [`SpreadsheetTheme`](react/types.md#spreadsheettheme) | Color theme. Built-in values: `"light"`, `"dark"`, `"contrast-light"`, `"contrast-dark"`. Also accepts custom theme name strings. See [Themes](react/themes.md). |
 
 ## Container props
 

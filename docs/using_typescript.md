@@ -10,7 +10,7 @@ Starting from v4.0, the library of DHTMLX Spreadsheet provides the ability to us
 
 {{note You can try out the functionality directly in our <a href="https://snippet.dhtmlx.com/ihtkdcoc"  target="_blank">Snippet Tool</a>.}}
 
-![Using TypeScript](assets/typescript.png)
+![DHTMLX Spreadsheet TypeScript support with type checking and autocomplete in an IDE](/img/typescript.png)
 
 ## Advantages of using TypeScript
 
@@ -24,4 +24,4 @@ The way of building an application becomes more robust as checking the types tog
 
 DHTMLX Spreadsheet type definitions include JSDoc annotations for the entire API. This means that when you work with the library in your IDE, you can read method descriptions, check parameter types, and view code examples without leaving your editor. Just hover over any method or property to see the inline documentation.
 
-![JSDoc hints in IDE](assets/jsdoc_hints.png)
+![DHTMLX Spreadsheet JSDoc hints showing inline method documentation in an IDE](/img/jsdoc_hints.png)

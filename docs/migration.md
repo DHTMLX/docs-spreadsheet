@@ -21,7 +21,7 @@ The following properties of `ISpreadsheetConfig` are deprecated and removed. Che
 
 The following methods of the `ISpreadsheet` instance are deprecated and removed. 
 
-Use the new [`sheets` module (Sheet Manager) API](/api/overview/sheetmanager_overview/) instead:
+Use the new [`sheets` module (Sheet Manager) API](api/overview/sheetmanager_overview.md) instead:
 
 <div className="overflow-table">
 
@@ -100,7 +100,7 @@ spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfroz
 spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
 ~~~
 
-- new action is added: [`toggleFreeze`](api/overview/actions_overview.md/#list-of-actions) 
+- new action is added: [`toggleFreeze`](api/overview/actions_overview.md#list-of-actions) 
 
 ~~~jsx title="From v5.2"
 // using the `toggleFreeze` action with the beforeAction/afterAction events
@@ -216,7 +216,7 @@ At the moment, there is a set of events which must be used in an old way as they
 
 ## 4.1 -> 4.2
 
-In v4.2, the [Align](customization.md/#default-controls) block of the Spreadsheet toolbar is divided into two sub-blocks: Horizontal align and Vertical align. Thus, the list of ids of the default controls of the Align block is changed and extended:
+In v4.2, the [Align](customization.md#default-controls) block of the Spreadsheet toolbar is divided into two sub-blocks: Horizontal align and Vertical align. Thus, the list of ids of the default controls of the Align block is changed and extended:
 
 `Before v4.2`:
 
@@ -242,7 +242,7 @@ The **Vertical align** sub-block of the **Align** block:
 
 ### Localization
 
-Note, that the [locale options](localization.md/) for the **Align** block have been also updated:
+Note, that the [locale options](localization.md) for the **Align** block have been also updated:
 
 `Before v4.2`:
 
