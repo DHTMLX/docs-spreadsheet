@@ -8,7 +8,7 @@ description: You can explore the AwaitRedraw helper in the documentation of the 
 
 Some API methods of DHTMLX Spreadsheet take effect only after the component is rendered on the page. In some cases this can take a moment, so you need to wait until the browser completes rendering before running the next piece of code.
 
-For such cases, you can use the **dhx.awaitRedraw** helper. It tracks the rendering cycle and runs your code as soon as Spreadsheet completes its rendering.
+For such cases, you can use the `dhx.awaitRedraw` helper. It tracks the rendering cycle and runs your code as soon as Spreadsheet completes its rendering.
 
 ~~~js
 dhx.awaitRedraw().then(() => {

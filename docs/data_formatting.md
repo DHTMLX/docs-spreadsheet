@@ -14,8 +14,8 @@ The toolbar of DHTMLX Spreadsheet contains several sections with buttons for mod
 
 What you can do:
 
-- change the color of a text and its background via color picker linked to the **Text color** button
-- change the color of text background via color picker linked to the **Background color** button
+- change **text color** with the color picker of the **Text color** button
+- change **background color** with the color picker of the **Background color** button
 - apply *Bold*, *Italic* and *Underline* styles to a text
 - apply *Strikethrough* formatting to a text
 
@@ -75,7 +75,7 @@ When you change the width of the column, text wrapping adjusts automatically.
 
 ## Removing styles and values
 
-To clear styles applied to data in a cell, or values entered into cells, or remove both data and formatting, you can choose one of the two ways:
+You can clear cell values, cell styles, or both. Choose one of two ways:
 
 1\. via the toolbar button:
 
@@ -95,16 +95,16 @@ To clear styles applied to data in a cell, or values entered into cells, or remo
 
 ## Styled borders for cells
 
-You can add a styled border(s) for a cell or a group of cells. 
+You can add styled borders for a cell or a group of cells.
 
 ### Setting styled borders
 
-- Select the necessary cell or a group of cells to set a styled border(s) for
+- Select the necessary cell or a group of cells to set styled borders for
 - Click the **Border** button in the toolbar and choose the desired type of the border, its color and style
 
 ![DHTMLX Spreadsheet Border toolbar button with border type, color, and style options](/img/styled_cell_border.png)
 
-### Removing styled borders 
+### Removing styled borders
 
 - Select the necessary cell or a group of cells from which you want to remove styled borders
 - Click the **Border** button in the toolbar and choose the *Clear borders* option
