@@ -8,6 +8,15 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.2
+
+Released on July 1, 2026
+
+### Fixes
+
+- Cell borders were lost after a "Copy from Excel → Paste to Spreadsheet → Export/Import" cycle
+- Data pasted below the last row was not displayed because the grid did not add new rows to fit it
+
 ## Version 6.0
 
 Released on May 20, 2026
