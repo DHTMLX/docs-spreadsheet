@@ -6,7 +6,7 @@ description: "Install, configure, and use DHTMLX Spreadsheet in React with the o
 
 # React Spreadsheet
 
-The official declarative React wrapper for DHTMLX Spreadsheet. Build spreadsheet UIs with a component-based API: pass data as props, respond to changes via event callbacks, and access the underlying widget through a ref when needed.
+The official declarative React wrapper for DHTMLX Spreadsheet. Build spreadsheet UIs with a component-based API: pass data as props, respond to changes through event callbacks, and access the underlying widget through a ref when needed.
 
 ## Get started
 
