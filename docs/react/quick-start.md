@@ -102,6 +102,6 @@ Open the URL shown in your terminal (typically `http://localhost:5173`) to see t
 - [Props reference](react/props.md) - configure the spreadsheet behavior
 - [Events reference](react/events.md) - respond to user actions
 - [Types reference](react/types.md) - TypeScript interfaces and enums
-- [Data & state management](react/state.md) - manage spreadsheet data in application state
+- [Data & state management](react/state/index.md) - manage spreadsheet data in application state
 
 You can also explore the [GitHub demo repository](https://github.com/DHTMLX/react-spreadsheet-examples) for a complete working example.

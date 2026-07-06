@@ -20,7 +20,7 @@ A single cell's declarative state. All properties are optional; omitted properti
 |----------|------|-------------|
 | `value` | `string \| number` | Cell value: text, number, or formula string (prefixed with `=`). |
 | `css` | `string` | CSS class name(s) referencing keys in the top-level `styles` map. |
-| `format` | `string` | Number format mask or alias (e.g. `"currency"`, `"#,##0.00"`). |
+| `format` | `string` | Number format mask or alias (for example, `"currency"` or `"#,##0.00"`). |
 | `locked` | `boolean` | Whether the cell is locked (protected from editing). |
 | `validation` | `string \| string[]` | Data validation dropdown options. |
 
@@ -76,7 +76,7 @@ Filter configuration for a column within a sheet.
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `cell` | `string` | Cell reference identifying the filtered column (e.g. `"A1"`). |
+| `cell` | `string` | Cell reference identifying the filtered column (for example, `"A1"`). |
 | `rules` | `IFilterRules[]` | Filter rules to apply. Empty array clears the filter. |
 
 ## SheetSort
@@ -85,7 +85,7 @@ Sort configuration for a column within a sheet.
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `cell` | `string` | Cell reference or range for the sort operation (e.g. `"B1"` or `"A1:E8"`). Use a range to sort multiple columns together while maintaining row integrity. |
+| `cell` | `string` | Cell reference or range for the sort operation (for example, `"B1"` or `"A1:E8"`). Use a range to sort multiple columns together while maintaining row integrity. |
 | `dir` | `1 \| -1` | Sort direction: `1` = ascending, `-1` = descending. |
 
 ## SheetData
@@ -96,7 +96,7 @@ Complete declarative state for a single spreadsheet sheet.
 |----------|------|:--------:|-------------|
 | `id` | `Id` | Yes | Unique sheet identifier. Must be stable across renders. |
 | `name` | `string` | Yes | Display name shown on the sheet tab. |
-| `cells` | `Record<string, CellData>` | Yes | Cell data keyed by cell reference (e.g. `"A1"`, `"B2"`). Only cells with non-default data need entries. |
+| `cells` | `Record<string, CellData>` | Yes | Cell data keyed by cell reference (for example, `"A1"` or `"B2"`). Only cells with non-default data need entries. |
 | `rows` | `Record<number, RowConfig>` | No | Row configuration keyed by 0-indexed row number. |
 | `cols` | `Record<number, ColConfig>` | No | Column configuration keyed by 0-indexed column number. |
 | `merged` | `MergedRange[]` | No | Merged cell ranges. |
@@ -161,7 +161,7 @@ Action execution configuration passed to [`onBeforeAction`](react/events.md#acti
 | `prev` | `unknown` | Previous value. |
 | `action` | `Actions \| string` | Action identifier. |
 | `groupAction` | `Actions \| string` | Parent group action identifier. |
-| `cell` | `string` | Cell reference (e.g. `"A1"`). |
+| `cell` | `string` | Cell reference (for example, `"A1"`). |
 | `pageId` | `Id` | Target sheet id. |
 | `pageName` | `string` | Target sheet name. |
 | `[key: string]` | `unknown` | Additional action-specific properties. |
@@ -270,7 +270,7 @@ These types are re-exported from `@dhx/ts-spreadsheet` for convenience:
 | `IStylesList` | Style definitions map. |
 | `IDataWithStyles` | Data structure with embedded styles (used by `serialize()`/`parse()`). |
 | `ICellInfo` | Cell information returned by widget methods. |
-| `FileFormat` | File format for data loading (e.g. `"json"`, `"xlsx"`). |
-| `ToolbarBlocks` | Toolbar block identifiers (e.g. `"default"`, `"undo"`, `"font"`). |
+| `FileFormat` | File format for data loading (for example, `"json"` or `"xlsx"`). |
+| `ToolbarBlocks` | Toolbar block identifiers (for example, `"default"`, `"undo"`, or `"font"`). |
 | `FilterConditions` | Enum of available filter condition types. |
 | `Id` | Generic identifier type (`string \| number`). |

@@ -21,7 +21,7 @@ Changing any of these props causes the widget to be destroyed and recreated. Spr
 | `toolbarBlocks` | `ToolbarBlocks[]` | Toolbar blocks to display. See JS API: [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md). |
 | `multiSheets` | `boolean` | Enable multiple sheet tabs. See JS API: [`multisheets`](api/spreadsheet_multisheets_config.md). |
 | `formats` | `IFormats[]` | Custom number format definitions. See JS API: [`formats`](api/spreadsheet_formats_config.md). |
-| `localization` | `ISpreadsheetConfig["localization"]` | Number/date formatting locale (decimal separator, currency symbol, etc.). Separate from `spreadsheetLocale`. See JS API: [`localization`](api/spreadsheet_localization_config.md). |
+| `localization` | `ISpreadsheetConfig["localization"]` | Number/date formatting locale, such as decimal separator and currency symbol. Separate from `spreadsheetLocale`. See JS API: [`localization`](api/spreadsheet_localization_config.md). |
 | `importModulePath` | `string` | Path to the XLSX import module. See JS API: [`importModulePath`](api/spreadsheet_importmodulepath_config.md). |
 | `exportModulePath` | `string` | Path to the XLSX export module. See JS API: [`exportModulePath`](api/spreadsheet_exportmodulepath_config.md). |
 | `spreadsheetLocale` | [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) | UI translations and localized formula names. Separate from `localization`. |
