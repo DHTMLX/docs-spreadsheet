@@ -34,7 +34,7 @@ Go to the app directory:
 cd my-svelte-spreadsheet-app
 ~~~
 
-Then you need to install dependencies and run the app. For this, you need to make use of a package manager:
+Then install dependencies and run the app. To do this, use a package manager:
 
 - if you use [**yarn**](https://yarnpkg.com/), you need to call the following commands:
 
@@ -50,25 +50,25 @@ npm install
 npm run dev
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app should run on localhost (for instance `http://localhost:3000`).
 
 ## Creating Spreadsheet
 
-Now you should get the DHTMLX Spreadsheet source code. First of all, stop the app and proceed with installing the Spreadsheet package.
+Now you should get the DHTMLX Spreadsheet source code. First, stop the app and install the Spreadsheet package.
 
 ### Step 1. Package installation
 
-Download the [**trial Spreadsheet package**](how_to_start.md#installing-spreadsheet-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Spreadsheet is available 30 days only.
+Download the [**trial Spreadsheet package**](how_to_start.md#installing-spreadsheet-via-npm-or-yarn) and follow the steps in the README file. Note that trial Spreadsheet is available for 30 days only.
 
 ### Step 2. Component creation
 
-Now you need to create a Svelte component, to add Spreadsheet into the application. Let's create a new file in the ***src/*** directory and name it ***Spreadsheet.svelte***.
+Now you need to create a Svelte component to add Spreadsheet into the application. Create a new file in the *src/* directory and name it *Spreadsheet.svelte*.
 
 #### Importing source files
 
-Open the ***Spreadsheet.svelte*** file and import Spreadsheet source files. Note that:
+Open the *Spreadsheet.svelte* file and import Spreadsheet source files. Note that:
 
-- if you use PRO version and install the Spreadsheet package from a local folder, the import paths look like this:
+- if you use the PRO version and install the Spreadsheet package from a local folder, the import paths look like this:
 
 ~~~html title="Spreadsheet.svelte"
 <script>
@@ -77,7 +77,7 @@ import 'dhx-spreadsheet-package/codebase/spreadsheet.css';
 </script>
 ~~~
 
-Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as **spreadsheet.min.css**.
+Note that depending on the used package, the source files can be minified. In this case make sure that you are importing the CSS file as *spreadsheet.min.css*.
 
 - if you use the trial version of Spreadsheet, specify the following paths:
 
@@ -138,7 +138,7 @@ body,
 
 #### Loading data
 
-To add data into the Spreadsheet, we need to provide a data set. Let's create the ***data.js*** file in the ***src/*** directory and add some data into it:
+To add data into Spreadsheet, you need to provide a data set. Create the *data.js* file in the *src/* directory and add some data into it:
 
 ~~~jsx title="data.js"
 export function getData() {
@@ -183,7 +183,7 @@ export function getData() {
 }
 ~~~
 
-Then open the ***App.svelte*** file, import data, and pass it into the new created `<Spreadsheet/>` components as **props**:
+Then open the *App.svelte* file, import data, and pass it into the newly created `<Spreadsheet/>` component as **props**:
 
 ~~~html {3,5,8} title="App.svelte"
 <script>
@@ -196,7 +196,7 @@ Then open the ***App.svelte*** file, import data, and pass it into the new creat
 <Spreadsheet data={data} />
 ~~~
 
-Go to the ***Spreadsheet.svelte*** file and apply the passed **props** to the Spreadsheet via the [`parse()`](api/spreadsheet_parse_method.md) method:
+Go to the *Spreadsheet.svelte* file and apply the passed **props** to Spreadsheet with the [`parse()`](api/spreadsheet_parse_method.md) method:
 
 ~~~html {6,13} title="Spreadsheet.svelte"
 <script>
@@ -222,13 +222,13 @@ Go to the ***Spreadsheet.svelte*** file and apply the passed **props** to the Sp
 <div bind:this={container} class="widget"></div>
 ~~~
 
-Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](api/overview/properties_overview.md) to check the full list of available properties.
+Now the Spreadsheet component is ready to use. When the element is added to the page, it initializes Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](api/overview/properties_overview.md) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+When a user performs an action in Spreadsheet, the widget invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
 
-Open ***Spreadsheet.svelte*** and complete the `onMount()` method in the following way:
+Open *Spreadsheet.svelte* and complete the `onMount()` method in the following way:
 
 ~~~html {8-11} title="Spreadsheet.svelte"
 <script>
@@ -252,8 +252,8 @@ onDestroy(() => {
 // ...
 ~~~
 
-After that, when we start the app, we should see Spreadsheet loaded with data on a page.
+After that, when you start the app, you should see Spreadsheet loaded with data on the page.
 
 ![DHTMLX Spreadsheet initialized with sample data in a Svelte application](/img/integrations/trial_spreadsheet.png)
 
-Now you should have a basic setup for integrating DHTMLX Spreadsheet with Svelte. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/svelte-spreadsheet-demo).
+Now you should have a basic setup for integrating DHTMLX Spreadsheet with Svelte. You can customize the code according to your specific requirements. You can find the final example on [**GitHub**](https://github.com/DHTMLX/svelte-spreadsheet-demo).
