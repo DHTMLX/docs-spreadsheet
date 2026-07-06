@@ -15,7 +15,7 @@ To add a new sheet, take the following steps:
 2. Click the **Add sheet** button in the bottom toolbar
 
 :::note
-Note, that a new sheet will be added after the currently active sheet.
+Note that a new sheet is added after the currently active sheet.
 :::
 
 ![DHTMLX Spreadsheet bottom toolbar with the Add sheet button and sheet tabs](/img/add_sheet.png)
@@ -24,13 +24,13 @@ Note, that a new sheet will be added after the currently active sheet.
 
 To remove a sheet from the spreadsheet, right-click the sheet tab and choose *Delete*.
 
-{{note Note, that a sheet can't be removed if it is the only sheet in the spreadsheet.}}
+{{note Note that a sheet can't be removed if it is the only sheet in the spreadsheet.}}
 
 ![DHTMLX Spreadsheet sheet tab context menu with the Delete option highlighted](/img/remove_sheet.png)
 
 ## Changing the active sheet
 
-To change the currently active sheet, just click a different sheet tab with the mouse pointer.
+To change the currently active sheet, click a different sheet tab.
 
 ![DHTMLX Spreadsheet sheet tabs at the bottom with the active sheet highlighted](/img/change_active_sheet.png)
 
@@ -42,7 +42,7 @@ To rename a sheet, right-click the sheet tab, click *Rename*, and type the new n
 
 ## Cross-references between sheets
 
-You can easily consolidate data from multiple sheets into a single one by using cross-referencing. <br> For that, take the following steps:
+You can consolidate data from multiple sheets into one by using cross-referencing. <br> For that, take the following steps:
 
 1\.  Type an equal sign (=) into a cell
 
