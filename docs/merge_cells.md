@@ -25,7 +25,7 @@ or
 ![DHTMLX Spreadsheet Format menu with the Merge option for cell merging](/img/merge_cells_via_menu.png)
 
 :::info
-The merged cell will display the content of the upper-left cell of the selected range.
+The merged cell displays the content of the upper-left cell of the selected range.
 :::
 
 ## Split cells

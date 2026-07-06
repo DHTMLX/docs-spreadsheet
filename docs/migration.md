@@ -12,9 +12,9 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 The following properties of `ISpreadsheetConfig` are deprecated and removed. Check the current usage below: 
 
-- `dateFormat` configuration property. Set it in the [**localization**](api/spreadsheet_localization_config.md) configuration object as:
+- `dateFormat` configuration property. Set it in the [`localization`](api/spreadsheet_localization_config.md) configuration object as:
     - `{ localization: { dateFormat: "%d/%m/%Y" } }` 
-- `timeFormat` configuration property. Set it in the [**localization**](api/spreadsheet_localization_config.md) configuration object as: 
+- `timeFormat` configuration property. Set it in the [`localization`](api/spreadsheet_localization_config.md) configuration object as: 
     - `{ localization: { timeFormat: 12 } }` 
 
 ### Deprecated methods 
@@ -144,7 +144,7 @@ spreadsheet.parse(data);
 
 ## 4.3 -> 5.0
 
-In v5.0, the *"help"* option of the [toolbarBlocks](api/spreadsheet_toolbarblocks_config.md) property is renamed to *"helpers"*. Besides, the default set of options is extended by the new *"actions"* option.
+In v5.0, the `"help"` option of the [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md) property is renamed to `"helpers"`. In addition, the default set of options now includes the new `"actions"` option.
 
 ~~~jsx title="Before v5.0" {8}
 // default configuration 
@@ -178,9 +178,9 @@ toolbarBlocks: [
 Version 4.3 is the last version which provides IE support
 :::
 
-Version 4.3 brings a new conception of tracking and handling the actions which are performed when you change something in the spreadsheet. 
+Version 4.3 introduces a new approach to tracking and handling the actions performed when you change something in the spreadsheet. 
 
-The new [beforeAction](api/spreadsheet_beforeaction_event.md) and [afterAction](api/spreadsheet_afteraction_event.md) events will fire right before / after an action is executed and indicate which action has been performed. Thus, the new approach allows you to add the necessary logic for several actions at once via using only these two events. For instance: 
+The new [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) events fire right before/after an action is executed and indicate which action was performed. This approach lets you add the necessary logic for several actions at once using only these two events. For instance: 
 
 ~~~jsx
 spreadsheet.events.on("BeforeAction", (actionName, config) => {
@@ -206,7 +206,7 @@ spreadsheet.events.on("AfterAction", (actionName, config) => {
 });
 ~~~
 
-This way will reduce the size of your code because you won't need to add sets of paired [**before-** and **after-**](api/overview/events_overview.md) events for each separate action. 
+This approach reduces the size of your code because you won't need to add sets of paired [**before-** and **after-**](api/overview/events_overview.md) events for each separate action. 
 
 Still, the old approach continues working as before. For more details, check [Spreadsheet actions](api/overview/actions_overview.md).
 
@@ -265,7 +265,7 @@ const locale = {
 
 ## 2.1 -> 3.0
 
-This list of changes will help you to migrate from the previous version 2.1 where DHTMLX Spreadsheet was PHP-based to the totally renewed version 3.0 in which the component is totally built on JavaScript. Check the list below to explore all the changes.
+This list of changes helps you migrate from version 2.1, where DHTMLX Spreadsheet was PHP-based, to the fully rebuilt version 3.0, which is built entirely in JavaScript. Check the list below to explore all the changes.
 
 :::info
 The **API of version 2.1** is still available, but it is incompatible with the [**API starting from version 3.0**](api/api_overview.md). If you require the documentation for version 2.1, please [contact us](https://dhtmlx.com/docs/contact.shtml), and we will send it to you.

@@ -6,7 +6,7 @@ description: You can learn about the localization of the DHTMLX JavaScript Sprea
 
 # Localization
 
-You can localize labels in the interface of DHTMLX Spreadsheet and present it in any necessary language. You just need to provide localized strings for labels and apply your locale to the component.
+You can localize the labels in the DHTMLX Spreadsheet interface and present the interface in any language. To do this, provide localized strings for the labels and apply your locale to the component.
 
 <iframe src="https://snippet.dhtmlx.com/yn5hyyim?mode=mobile" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
@@ -182,9 +182,9 @@ const en = {
 
 ## Custom locale
 
-To apply a different locale you need to:
+To apply a different locale, you need to:
 
-- provide translations for all text labels in Spreadsheet, e.g. for the Russian locale:
+- provide translations for all text labels in Spreadsheet, for example, for the Russian locale:
 
 ~~~jsx
 const ru = {
@@ -201,7 +201,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 
 ## Default locale for formulas
 
-The i18n locale for the Spreadsheet popup with descriptions for formulas is contained in the `dhx.i18n.formulas` object. The default locale for formulas is the following:
+The `dhx.i18n.formulas` object contains the i18n locale for the Spreadsheet formula popup. The default locale for formulas is the following:
 
 ~~~jsx
 const en = {
