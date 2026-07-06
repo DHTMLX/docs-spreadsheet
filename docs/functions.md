@@ -6,7 +6,7 @@ description: You can learn about the formulas and functions of the DHTMLX JavaSc
 
 # Formulas and functions
 
-Starting from v4.0, the package of DHTMLX Spreadsheet includes a set of predefined formulas that can be used for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
+Starting from v4.0, the package of DHTMLX Spreadsheet includes a set of predefined formulas for different types of calculations of strings and numbers. The formulas are compatible with Excel and Google Sheets.
 
 :::note
 Lowercase letters in formulas are automatically converted to upper case.
@@ -20,7 +20,7 @@ Here's a list of all the available functions with detailed descriptions.
 
 ### Boolean operators
 
-You can compare two values via using logical expressions that in any given case will only return either TRUE or FALSE.
+You can compare two values with logical expressions that return either TRUE or FALSE.
 
 | Operator | Example       | Description                                                                                              |
 | :------- | :------------ | :------------------------------------------------------------------------------------------------------- |
@@ -1435,7 +1435,7 @@ Check the example in our [snippet tool](https://snippet.dhtmlx.com/wux2b35b).
 
 ## Getting cell formula
 
-Starting with v4.1, you can get the formula applied to a cell via the [`getFormula()`](api/spreadsheet_getformula_method.md) method. The method takes the id of the cell as a parameter:
+Starting with v4.1, you can retrieve the formula applied to a cell with the [`getFormula()`](api/spreadsheet_getformula_method.md) method. The method takes the id of the cell as a parameter:
 
 ~~~js
 var formula = spreadsheet.getFormula("B2");
@@ -1444,7 +1444,7 @@ var formula = spreadsheet.getFormula("B2");
 
 ## Popup with formula description
 
-When you enter a formula, a popup with description of the function and its parameters appears. 
+When you enter a formula, a popup with a description of the function and its parameters appears. 
 
 ![DHTMLX Spreadsheet formula popup showing a function description and parameters while typing](/img/formula_popup.png)
 
@@ -1454,7 +1454,7 @@ You can modify the default locale for the popup with formula parameters and add 
 
 ## Custom formulas
 
-Starting with v6.0, you can register custom formula functions via the [`addFormula()`](api/spreadsheet_addformula_method.md) method. Once registered, the formula is available in any cell by its uppercase name.
+Starting with v6.0, you can register custom formula functions with the [`addFormula()`](api/spreadsheet_addformula_method.md) method. Once registered, the formula is available in any cell by its uppercase name.
 
 The method takes two parameters: the formula name and a synchronous handler function that receives the resolved cell values as arguments and returns the result:
 
@@ -1464,7 +1464,7 @@ spreadsheet.addFormula("DOUBLE", (value) => {
 });
 ~~~
 
-After that, the formula can be used in cells just like any built-in function:
+After that, you can use the formula in cells just like any built-in function:
 
 ~~~js
 spreadsheet.parse([
