@@ -27,7 +27,7 @@ fire(name: string, arguments: array): boolean;
 
 ### Returns
 
-The method returns `false`, if some of the event handlers return `false`. Otherwise, `true`
+The method returns `false` if some of the event handlers return `false`. Otherwise, `true`
 
 ### Example
 

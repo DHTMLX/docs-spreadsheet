@@ -8,7 +8,7 @@ description: You can learn about the detach events bus method in the documentati
 
 ### Description
 
-@short: Detaches a handler from an event (which was attached before by the on() method)
+@short: Detaches a handler from an event (previously attached with the `on()` method)
 
 ### Usage
 
@@ -18,7 +18,7 @@ detach(name: string): void;
 
 ### Parameters
 
-- `name` - (required) the name of event to detach
+- `name` - (required) the name of the event to detach
 
 ### Example
 
@@ -36,7 +36,7 @@ spreadsheet.events.detach("StyleChange");
 ~~~
 
 :::info
-By default **detach()** removes all event handlers from the target event. You can detach particular event handlers by using the context marker.
+By default, `detach()` removes all event handlers from the target event. You can detach particular event handlers using a context marker.
 :::
 
 ~~~jsx

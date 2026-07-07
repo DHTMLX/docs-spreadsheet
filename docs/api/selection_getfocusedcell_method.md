@@ -18,7 +18,7 @@ getFocusedCell(): string;
 
 ### Returns
 
-The method returns an id of a focused cell
+The method returns the id of the focused cell
 
 ### Example
 

@@ -18,7 +18,7 @@ getActive: () => ISheet;
 
 ### Returns
 
-- `ISheet` - (*object*) the currently active sheet object with the `id` and `name` properties.
+- `ISheet` - (`object`) the currently active sheet object with the `id` and `name` properties.
 
 ### Example
 
