@@ -8,7 +8,7 @@ description: You can learn about the afterEditStart event in the documentation o
 
 ### Description
 
-@short: Fires after editing of a cell has started
+@short: Fires after editing of a cell starts
 
 ### Usage
 

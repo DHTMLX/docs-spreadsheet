@@ -10,7 +10,7 @@ description: You can learn about the addFormula method in the documentation of t
 
 @short: Registers a custom formula function that can be used in cell formulas
 
-Once registered, the formula is available in any cell by its uppercase name (e.g. =MYFUNC(A1, B2)).
+Once registered, the formula is available in any cell by its uppercase name (for example, `=MYFUNC(A1, B2)`).
 
 ### Usage
 
@@ -24,8 +24,8 @@ addFormula: (name: string, handler: mathFunction) => void;
 
 ### Parameters
 
-- `name` - (*string*) required, the formula name (case-insensitive, stored as uppercase)
-- `handler` - (*function*) required, a callback function that processes the input arguments (strings, numbers, booleans, or arrays of these) and returns a single value
+- `name` - (`string`) required, the formula name (case-insensitive, stored as uppercase)
+- `handler` - (`function`) required, a callback function that processes the input arguments (strings, numbers, booleans, or arrays of these) and returns a single value
 
 :::note
 The `handler` callback function must be synchronous. Using `Promise` or `fetch` inside the function is not allowed.
