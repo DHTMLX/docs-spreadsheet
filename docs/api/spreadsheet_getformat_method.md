@@ -22,7 +22,7 @@ getFormat(cell: string): string | array;
 
 ### Returns
 
-The method returns a format(s) applied to the value of the cell(s)
+The method returns the format(s) applied to the value of the cell(s)
 
 ### Example
 
@@ -42,9 +42,9 @@ Starting with v4.1, the reference to a cell can be specified in the following fo
 const cellFormat = spreadsheet.getFormat("sheet1!A2"); 
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will return the format applied to the value of a cell from the tab that is currently active.
+If the name of the tab isn't specified, the method returns the format applied to the value of a cell from the currently active tab.
 :::
 
 **Related articles:** [Number formatting](number_formatting.md)

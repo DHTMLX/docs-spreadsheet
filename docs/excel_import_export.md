@@ -8,7 +8,7 @@ description: You can learn about the excel import and export in the documentatio
 
 ## Import from Excel
 
-You can load data from an Excel file into Spreadsheet. There is quite a simple way to do this:
+You can load data from an Excel file into Spreadsheet. To do this:
 
 1\.  Click the **Import** button in the toolbar and select *Microsoft Excel (.xlsx)*
 
@@ -20,11 +20,11 @@ Go to: *File -> Import As... -> Microsoft Excel (.xlsx)* in the menu
 
 ![DHTMLX Spreadsheet File menu with the Import As option for Microsoft Excel XLSX files](/img/file_import.png)
 
-2\. Select an Excel file on your computer and its content will be imported into an opened sheet.
+2\. Select an Excel file on your computer, and its content is imported into the open sheet.
 
 ## Export to Excel
 
-The data you've entered into Spreadsheet can be exported to an Excel file. Complete the steps below:
+You can export the data you've entered into Spreadsheet to an Excel file. Complete the steps below:
 
 1\. Click the **Export** button in the toolbar:
 
@@ -36,4 +36,4 @@ Go to: *File -> Download As... -> Microsoft Excel (.xlsx)* in the menu
 
 ![DHTMLX Spreadsheet File menu with the Download As option for Microsoft Excel XLSX export](/img/file_export.png)
 
-2\. Check the directory with downloaded files on your computer to find a downloaded Excel file with data from Spreadsheet.
+2\. Check your downloads directory to find the Excel file with data from Spreadsheet.

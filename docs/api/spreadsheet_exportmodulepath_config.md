@@ -28,10 +28,10 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 ### Details
 
 :::note 
-DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) for export of data into Excel.
+DHTMLX Spreadsheet uses the WebAssembly-based library [JSON2Excel](https://github.com/dhtmlx/json2excel) to export data to Excel.
 :::
 
-To export files you need to set the path to the **worker.js** file of the [Json2Excel](https://github.com/dhtmlx/json2excel) library (where export will be processed)  via the **exportModulePath** option. By default, `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx` is used.
+To export files, you need to set the path to the *worker.js* file of the [Json2Excel](https://github.com/dhtmlx/json2excel) library (where the export is processed) with the `exportModulePath` option. By default, `https://cdn.dhtmlx.com/libs/json2excel/next/worker.js?vx` is used.
 - if you use the public export server, you don't need to specify the link to it, since it is used by default
 - if you use your own export server, you need to:
   - install the [**Json2Excel**](https://github.com/dhtmlx/json2excel) library

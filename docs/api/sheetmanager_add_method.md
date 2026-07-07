@@ -10,10 +10,10 @@ description: You can learn about the add method of the Sheet Manager in the docu
 
 @short: Adds a new empty sheet to the spreadsheet and returns the unique identifier of the newly created sheet
 
-If no name is provided, a default name will be generated automatically (e.g. "Sheet 2", "Sheet 3", etc.).
+If no name is provided, a default name is generated automatically (for example, "Sheet 2" or "Sheet 3").
 
 :::info
-To apply this method, you need to enable the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option.
+To apply this method, you need to enable the [`multiSheets`](api/spreadsheet_multisheets_config.md) configuration option.
 :::
 
 ### Usage
@@ -24,11 +24,11 @@ add: (name?: string) => Id;
 
 ### Parameters
 
-- `name` - (*string*) optional, the displayed name for the new sheet tab. If omitted, a default name is assigned.
+- `name` - (`string`) optional, the displayed name for the new sheet tab. If omitted, a default name is assigned.
 
 ### Returns
 
-- `Id` - (*string | number*) the unique identifier of the newly created sheet.
+- `Id` - (`string | number`) the unique identifier of the newly created sheet.
 
 ### Example
 

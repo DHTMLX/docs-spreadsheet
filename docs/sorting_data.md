@@ -30,7 +30,7 @@ To sort spreadsheet data by a separate range, take the following steps:
 
 1\. Select a range of cells in the column you want to sort the data by
 
-2\. Choose one of the two actions:
+2\. Choose one of two actions:
 
 - Right-click a cell in the selected range and choose *Sort* -> *Sort A to Z* or *Sort Z to A*
 

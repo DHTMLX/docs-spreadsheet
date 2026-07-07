@@ -18,7 +18,7 @@ getSelectedCell(): string;
 
 ### Returns
 
-The method returns an id(s) or a range of selected cell(s)
+The method returns the id(s) or a range of selected cell(s)
 
 ### Example
 

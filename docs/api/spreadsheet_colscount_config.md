@@ -8,7 +8,7 @@ description: You can learn about the colsCount config in the documentation of th
 
 ### Description
 
-@short: Optional. Sets the number of columns a spreadsheet will have on initialization
+@short: Optional. Sets the number of columns in a spreadsheet on initialization
 
 ### Usage
 

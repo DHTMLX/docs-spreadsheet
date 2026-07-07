@@ -92,14 +92,14 @@ parse({
 
 If you need to create a data set *for one sheet* only, specify data as an **array of cell objects**. For each **cell** object you can specify the following parameters:
 
-- `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+- `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", for example, A1
 - `value` - (required) the value of a cell
 - `css` - (optional) the name of the CSS class
 - `format` - (optional) the name of the [default number format](number_formatting.md#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
 - `editor` - (optional) an object with configuration settings for the editor of a cell:
     - `type` - (required) the type of the cell editor: "select"
     - `options` - (required) either a range of cells ("A1:B8") or an array of string values
-- `locked` - (optional) defines whether a cell is locked, *false* by default
+- `locked` - (optional) defines whether a cell is locked, `false` by default
 - `link` - (optional) an object with configuration settings for the link added into a cell:
     - `text` - (optional) the text of a link
     - `href` - (required) the URL that defines the link destination
@@ -112,20 +112,20 @@ If you need to create a data set *for several sheets* at once, specify data as a
     - `name` - (optional) the sheet name
     - `id` - (optional) the sheet id
     - `rows` - (optional) an array of objects with rows configurations. Each object may contain the following properties:
-        - `height` - (optional) the row height. If not specified, rows will have the height of 32px
+        - `height` - (optional) the row height. If not specified, rows have a height of 32px
         - `hidden` - (optional) defines the visibility of a row
     - `cols` - (optional) an array of objects with columns configurations. Each object may contain the following properties:
-        - `width` - (optional) the column width. If not specified, columns will have the width of 120px
+        - `width` - (optional) the column width. If not specified, columns have a width of 120px
         - `hidden` - (optional) defines the visibility of a column
     - `data` - (required) an array of **cell** objects. Each object has the following properties:
-        - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", e.g. A1
+        - `cell` - (required) the id of a cell that is formed as "id of the column + id of the row", for example, A1
         - `value` - (required) the value of a cell
         - `css` - (optional) the name of the CSS class
         - `format` - (optional) the name of the [default number format](number_formatting.md#default-number-formats) or of a [custom format](number_formatting.md#formats-customization) that you've added to apply to the cell value
         - `editor` - (optional) an object with configuration settings for the editor of a cell:
             - `type` - (required) the type of the cell editor: "select"
             - `options` - (required) either a range of cells ("A1:B8") or an array of string values
-        - `locked` - (optional) defines whether a cell is locked, *false* by default
+        - `locked` - (optional) defines whether a cell is locked, `false` by default
         - `link` - (optional) an object with configuration settings for the link added into a cell:
             - `text` - (optional) the text of a link
             - `href` - (required) the URL that defines the link destination
@@ -137,11 +137,11 @@ If you need to create a data set *for several sheets* at once, specify data as a
             - `column` - the index of the column
             - `row` - the index of the row
     - `freeze` - (optional) an object that sets and adjusts fixed columns/rows for particular sheets. It may contain the following properties:
-        - `col` - (optional) specifies the number of fixed columns (e.g. 2), *0* by default
-        - `row` - (optional) specifies the number of fixed rows, (e.g. 2), *0* by default
+        - `col` - (optional) specifies the number of fixed columns (for example, 2), `0` by default
+        - `row` - (optional) specifies the number of fixed rows (for example, 2), `0` by default
 
 :::info
-In case the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.
+If the [`multisheets`](api/spreadsheet_multisheets_config.md) configuration option is set to `false`, only one sheet is created.
 :::
 
 ### Example
@@ -218,7 +218,7 @@ spreadsheet.parse(data);
 
 ## Parsing styled data
 
-You may also add specific styles for cells while preparing a data set. For that, you need to define data as an object which will include two parameters:
+You can also add specific styles for cells while preparing a data set. To do this, define data as an object with two parameters:
 
 - `styles` - (required) an object with CSS classes to be applied to particular cells. [Check the details below](#list-of-properties)
 - `data` - (required) the data to load
@@ -251,41 +251,41 @@ spreadsheet.parse(styledData);
 ~~~
 
 :::info
-A CSS class is set for a cell via the **css** property.
+Set a CSS class for a cell with the `css` property.
 :::
 
 ### List of properties
 
-The list of properties you can specify in the **styles** object:
+The list of properties you can specify in the `styles` object:
 
-- *background*
-- *color*
-- *textAlign*
-- *verticalAlign*
-- *textDecoration*
-- *fontWeight*
-- *fontStyle*
-- *multiline: "wrap"* (from v5.0.3)
-- *border*, *border-right*, *border-left*, *border-top*, *border-bottom* (from v5.2)
+- `background`
+- `color`
+- `textAlign`
+- `verticalAlign`
+- `textDecoration`
+- `fontWeight`
+- `fontStyle`
+- `multiline: "wrap"` (from v5.0.3)
+- `border`, `border-right`, `border-left`, `border-top`, `border-bottom` (from v5.2)
 
 :::note
 You may also use the following properties if needed:
 
-- *fontSize*
-- *font*
-- *fontFamily*
-- *textShadow*
+- `fontSize`
+- `font`
+- `fontFamily`
+- `textShadow`
 
-but in some cases they may not work in the way you expect (for example, when applying *position:absolute*, *display: box*, etc. )
+but in some cases they may not work as you expect (for example, when applying `position: absolute` or `display: box`)
 :::
 
 **Change log:**
 
-- The **freeze** property and the **hidden** parameter for the **rows** and **cols** properties of the **sheets** object were added in v5.2
-- The **locked** and **link** properties of the **cell** object were added in v5.1
-- The **merged** property of the **sheets** object was added in v5.0
-- The **editor** property of the **cell** object was added in v4.3
-- The **rows** and **cols** properties of the **sheets** object were added in v4.2
+- The `freeze` property and the `hidden` parameter for the `rows` and `cols` properties of the `sheets` object were added in v5.2
+- The `locked` and `link` properties of the `cell` object were added in v5.1
+- The `merged` property of the `sheets` object was added in v5.0
+- The `editor` property of the `cell` object was added in v4.3
+- The `rows` and `cols` properties of the `sheets` object were added in v4.2
 - The ability to prepare data for several sheets was added in v4.1
 
 **Related articles:** [Data loading and export](loading_data.md)

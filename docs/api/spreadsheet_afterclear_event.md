@@ -7,7 +7,7 @@ description: You can learn about the afterClear event in the documentation of th
 # afterClear
 
 :::caution
-The **afterClear** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
+The `afterClear` event was deprecated in v4.3. It still works, but you should apply the new approach:
 
 ~~~jsx
 spreadsheet.events.on("afterAction", (actionName, config) => {

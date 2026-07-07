@@ -6,7 +6,7 @@ description: You can learn about the initialization of the DHTMLX JavaScript Spr
 
 # Initialization
 
-This guide will give you detailed instructions on how to create DHTMLX Spreadsheet on a page to enrich your application with features of a mighty worksheet. Follow the steps below to get a ready-to-use component:
+This guide describes how to create DHTMLX Spreadsheet on a page and add a full-featured worksheet to your application. Follow the steps below to get a ready-to-use component:
 
 1. [Include the DHTMLX Spreadsheet source files on a page](#including-source-files).
 2. [Create a container for DHTMLX Spreadsheet](#creating-container).
@@ -32,10 +32,10 @@ Make sure that you set correct relative paths to these files:
 
 The structure of the Spreadsheet pack is the following:
 
-- **sources** - the source code files of the library; they are easy-to-read and are mostly intended for debugging;
-- **codebase** - the obfuscated code files of the library; they are much smaller and intended for use in production. **Include these files in your apps when they are ready**;
-- **samples** - the code samples;
-- **docs** - the full documentation of the component.
+- *sources* - the source code files of the library; they are easy-to-read and are mostly intended for debugging;
+- *codebase* - the obfuscated code files of the library; they are much smaller and intended for use in production. **Include these files in your apps when they are ready**;
+- *samples* - the code samples;
+- *docs* - the full documentation of the component.
 
 ## Creating container
 
@@ -61,7 +61,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 ### Configuration properties
 
-See the full list of [properties](api/api_overview.md#spreadsheet-properties) that you can specify in the Spreadsheet configuration object in the [Spreadsheet API overview](api/api_overview.md#spreadsheet-properties) article.
+See the full list of [properties](api/api_overview.md#spreadsheet-properties) that you can specify in the Spreadsheet configuration object.
 
 You can set configuration options during initialization as the second parameter of the constructor:
 

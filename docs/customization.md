@@ -6,7 +6,7 @@ description: You can learn about the customization of the DHTMLX JavaScript Spre
 
 # Customization
 
-You can customize the appearance, structure and functionality of toolbar, menu and context menu and define custom read-only behavior for Spreadsheet. 
+You can customize the appearance, structure and functionality of the toolbar, menu, and context menu and define custom read-only behavior for Spreadsheet. 
 
 ## Default and custom icons
 
@@ -23,44 +23,43 @@ For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack 
   crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the object with the control parameters for toolbar, menu or context menu. See details below.
+Then you can use the name of the icon as the value of the `icon` property in the object with the control parameters for toolbar, menu or context menu. See details below.
 
 ## Controls types and operations
 
 ### Types
 
-There are the following types of controls you can add: *button*, *menuItem*, *separator* and *spacer*.
+You can add the following types of controls: `button`, `menuItem`, `separator`, and `spacer`.
 
-The **button** object has the following properties:
+The `button` object has the following properties:
 
-- **type** - the type of a button, set it to "button"
-- **id** - the id of a button
-- **icon** - the name of an icon from the used icon font
-- **hotkey** - the name of the hot key for a button
-- **value** - the value of a button
-- **tooltip** - the tooltip of a button
-- **twoState** -  the flag that defines whether a button can be used in two states
-- **active** - the state of a button: *true* - active, *false* - inactive
+- `type` - the type of a button, set it to "button"
+- `id` - the id of a button
+- `icon` - the name of an icon from the used icon font
+- `hotkey` - the name of the hot key for a button
+- `value` - the value of a button
+- `tooltip` - the tooltip of a button
+- `twoState` - the flag that defines whether a button can be used in two states
+- `active` - the state of a button: `true` - active, `false` - inactive
 
-The **menuItem** object has the properties below:
+The `menuItem` object has the properties below:
 
-- **type** - the type of a menu item, set it to "menuItem"
-- **id** - the id of a menu item
-- **icon** - the name of an icon from the used icon font
-- **hotkey** - the name of the hot key for a menu item
-- **value** - the value of a menu item
-- **childs** - an array of children controls (note that all the children should have the type **menuItem**)
+- `type` - the type of a menu item, set it to "menuItem"
+- `id` - the id of a menu item
+- `icon` - the name of an icon from the used icon font
+- `hotkey` - the name of the hot key for a menu item
+- `value` - the value of a menu item
+- `childs` - an array of children controls (note that all the children should have the type `menuItem`)
 
-The data collection API of the **toolbar**, **menu** and **context menu** allows you to manipulate the controls, namely to add custom controls, remove the controls you don't need, or update the controls,
-e.g. change their icons.
+The data collection API of the **toolbar**, **menu**, and **context menu** lets you manage controls: add custom ones, remove those you don't need, or update them — for example, change their icons.
 
 ### Adding controls
 
 To add a new control, apply the `spreadsheet.{name}.data.add()` method. It takes the parameters below:
 
-- **config** - (*object*) an object with the control config
-- **index** - (*number*) the index of the position to place the control into
-- **parent** - (*string*) the id of a parent control (for the *menuItem* type)
+- `config` - (`object`) an object with the control config
+- `index` - (`number`) the index of the position to place the control into
+- `parent` - (`string`) the id of a parent control (for the `menuItem` type)
 
 For a button:
 
@@ -435,7 +434,7 @@ spreadsheet.contextMenu.data.remove("lock");
 
 ## Custom read-only mode
 
-Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole Spreadsheet, you can block certain operations via the events the name of which starts with **before**, e.g.:
+Besides applying the [read-only mode](configuration.md#read-only-mode) to the whole Spreadsheet, you can block specific operations with the events whose names start with `before`, for example:
 
 - [](api/spreadsheet_beforeeditstart_event.md)
 - [](api/spreadsheet_beforeaction_event.md)

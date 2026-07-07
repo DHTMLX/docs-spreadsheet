@@ -6,9 +6,9 @@ description: You can learn about data filtering in the documentation of the DHTM
 
 # Filtering data
 
-You may filter data in the spreadsheet to show only the records that meet the criteria you specify.
+You can filter data in the spreadsheet to show only the records that meet the criteria you specify.
 
-To activate the filtering functionality, you can use either of two ways:
+To activate filtering, use one of two ways:
 
 - Set focus on a cell or select a range of cells and click the **Filter** button in the toolbar
 
@@ -18,7 +18,7 @@ To activate the filtering functionality, you can use either of two ways:
 
 ![DHTMLX Spreadsheet Data menu with the Filter option for activating column filters](/img/filter_menu.png)
 
-After that, a **filter** icon appears on the right side of the header of each column in the range. 
+After that, a **filter** icon appears on the right of each column header in the range. 
 
 ## Filtering by condition
 
@@ -54,9 +54,9 @@ To clear a filter, click the **filter** icon in the column header, click the **S
 
 ## Removing filters
 
-To disable the filtering functionality, do one of the following:
+To disable filtering, do one of the following:
 
 - click the **Filter** button in the toolbar 
 - or go to: *Data -> Filter* in the menu
 
-The **filter** icons will disappear from the column headers and all hidden records will be displayed.
+The **filter** icons disappear from the column headers, and all hidden records reappear.

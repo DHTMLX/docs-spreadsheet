@@ -43,7 +43,7 @@ Starting with v4.1, the reference to a cell or a range of cells can be specified
 spreadsheet.unlock("sheet1!A2"); 
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will unlock the cell(s) of the active tab.
+If the name of the tab isn't specified, the method unlocks the cell(s) of the active tab.
 :::

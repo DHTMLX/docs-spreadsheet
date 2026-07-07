@@ -8,7 +8,7 @@ description: You can learn about the beforeEditStart event in the documentation 
 
 ### Description
 
-@short: Fires before editing of a cell has started
+@short: Fires before editing of a cell starts
 
 ### Usage
 

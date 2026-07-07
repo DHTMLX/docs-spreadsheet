@@ -10,7 +10,7 @@ description: You can learn about the setActive method of the Sheet Manager in th
 
 @short: Switches the active (visible) sheet to the one specified by its identifier
 
-The spreadsheet UI will re-render to display the target sheet's contents.
+The spreadsheet UI re-renders to display the target sheet's contents.
 
 ### Usage
 
@@ -20,7 +20,7 @@ setActive: (id: Id) => void;
 
 ### Parameters
 
-- `id` - (*string | number*) required, the unique identifier of the sheet to activate.
+- `id` - (`string | number`) required, the unique identifier of the sheet to activate.
 
 ### Example
 

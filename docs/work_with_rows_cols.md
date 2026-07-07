@@ -6,7 +6,7 @@ description: You can learn about how to work with rows and columns in the docume
 
 # Work with rows and columns
 
-DHTMLX Spreadsheet allows adding/removing columns and rows, automatically fitting the column width to the content, freezing/unfreezing columns and rows, as well as hiding/showing columns and rows via toolbar buttons, menu options and the options of the context menu of a cell.
+DHTMLX Spreadsheet lets you add and remove columns and rows, automatically fit the column width to the content, freeze and unfreeze columns and rows, and hide and show columns and rows using toolbar buttons, menu options, and cell context menu options.
 
 ## Adding/removing rows and columns
 

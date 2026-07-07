@@ -8,7 +8,7 @@ description: You can explore how to configure themes in the documentation of the
 
 ## Configuring all themes
 
-You may notice that CSS variables of the [default](/themes/#light-theme-default) theme include variables of the color scheme:
+The CSS variables of the [default](/themes/#light-theme-default) theme include color-scheme variables:
 
 ~~~css
 --dhx-h-primary: 200;
@@ -41,7 +41,7 @@ Color values are specified in the [HSL](https://developer.mozilla.org/en-US/docs
 - *lightness* is a percentage value; 100% is white, 0% is black, and 50% is "normal".
 :::
 
-Due to the use of these CSS variables, color scheme is calculated automatically. It means, that if you change some value for the variable from the color scheme in the root, values for the *"contrast-light"*, *"dark"*, and *"contrast-dark"* themes will be recalculated automatically in real time. 
+Because of these CSS variables, the color scheme is calculated automatically. This means that if you change a color-scheme value in the root, the values for the `"contrast-light"`, `"dark"`, and `"contrast-dark"` themes are recalculated automatically in real time. 
 
 For instance, you can override the primary colors for all Spreadsheet themes at once in the following way:
 
@@ -54,7 +54,7 @@ For instance, you can override the primary colors for all Spreadsheet themes at 
 </style>
 ~~~
 
-In addition, values of variables, which are calculated on the base of the primary color, will be recalculated accordingly. For example, the value of the focused color is calculated as follows:
+In addition, the values of variables calculated from the primary color are recalculated accordingly. For example, the value of the focused color is calculated as follows:
 
 ~~~jsx
 --dhx-color-focused: hsl(calc(var(--dhx-h-primary) + 10), var(--dhx-s-primary), var(--dhx-l-primary));
@@ -62,7 +62,7 @@ In addition, values of variables, which are calculated on the base of the primar
 
 ## Configuring a separate theme
 
-If you want to override some color values for a separate [Spreadsheet theme](/themes/), you need to do this in the **'data-dhx-theme'** attribute:
+If you want to override some color values for a separate [Spreadsheet theme](/themes/), override them in the `data-dhx-theme` attribute:
 
 ~~~html {1-27,39}
 <style>

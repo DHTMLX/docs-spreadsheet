@@ -8,7 +8,7 @@ description: You can study the user guide about number formatting in the documen
 
 ## Supported number formats
 
-There are several number formats you can apply to format numeric values of cells:
+You can apply several number formats to cell values:
 
 <table>
     <tbody>

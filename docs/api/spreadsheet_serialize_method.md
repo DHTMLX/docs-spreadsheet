@@ -8,7 +8,7 @@ description: You can learn about the serialize method in the documentation of th
 
 ### Description
 
-@short: Serializes data of spreadsheet into a JSON object
+@short: Serializes the spreadsheet data into a JSON object
 
 ### Usage
 
@@ -20,15 +20,15 @@ serialize(): object;
 
 The method returns a serialized JSON object
 
-Serialized data presents an object with the following attributes:
+The serialized data is an object with the following attributes:
 
-- **formats** - an array of objects with number formats
-- **styles** - an object with the applied CSS classes
-- **sheets** - an array of sheet objects. Each object contains the following attributes:
-  - **name** - the sheet name
-  - **data** - an array of data objects
-  - **rows** - an array of height objects
-  - **cols** - an array of width objects
+- `formats` - an array of objects with number formats
+- `styles` - an object with the applied CSS classes
+- `sheets` - an array of sheet objects. Each object contains the following attributes:
+  - `name` - the sheet name
+  - `data` - an array of data objects
+  - `rows` - an array of height objects
+  - `cols` - an array of width objects
 
 ### Example
 

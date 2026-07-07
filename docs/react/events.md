@@ -9,12 +9,12 @@ description: "Event callback props for ReactSpreadsheet: actions, selection, edi
 All event callbacks are optional props. "Before" callbacks can return `false` to cancel the operation.
 
 :::note
-The React wrapper uses `onCamelCase` prop names (e.g. `onAfterAction`) while the JS Spreadsheet API uses `camelCase` event names on the event bus (e.g. `afterAction`). See the [JS API Events Reference](api/overview/events_overview.md) for the imperative API.
+The React wrapper uses `onCamelCase` prop names (for example, `onAfterAction`) while the JS Spreadsheet API uses `camelCase` event names on the event bus (for example, `afterAction`). See the [JS API Events Reference](api/overview/events_overview.md) for the imperative API.
 :::
 
 ## Action events
 
-Fired for any user action (cell edits, formatting, structural changes, etc.).
+Fired for any user action, such as cell edits, formatting, or structural changes.
 
 | Prop | Cancellable | Description |
 |------|:-----------:|-------------|

@@ -18,14 +18,14 @@ DHTMLX Spreadsheet is compatible with **Angular**. We have prepared code example
 Before you start to create a new project, install [**Angular CLI**](https://angular.dev/tools/cli) and [**Node.js**](https://nodejs.org/en/).
 :::
 
-Create a new **my-angular-spreadsheet-app** project using Angular CLI. Run the following command for this purpose:
+Create a new *my-angular-spreadsheet-app* project using Angular CLI. Run the following command:
 
 ~~~json
 ng new my-angular-spreadsheet-app
 ~~~
 
 :::note
-If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating new Angular app!
+If you want to follow this guide, disable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering) when creating a new Angular app.
 :::
 
 The command above installs all the necessary tools, so you don't need to run any additional commands.
@@ -45,25 +45,25 @@ yarn
 yarn start
 ~~~
 
-The app should run on a localhost (for instance `http://localhost:3000`).
+The app should run on localhost (for instance `http://localhost:3000`).
 
 ## Creating Spreadsheet
 
-Now you should get the DHTMLX Spreadsheet source code. First of all, stop the app and proceed with installing the Spreadsheet package.
+Now you should get the DHTMLX Spreadsheet source code. First, stop the app and install the Spreadsheet package.
 
 ### Step 1. Package installation
 
-Download the [**trial Spreadsheet package**](how_to_start.md#installing-spreadsheet-via-npm-or-yarn) and follow steps mentioned in the README file. Note that trial Spreadsheet is available 30 days only.
+Download the [**trial Spreadsheet package**](how_to_start.md#installing-spreadsheet-via-npm-or-yarn) and follow the steps in the README file. Note that trial Spreadsheet is available for 30 days only.
   
 ### Step 2. Component creation
 
-Now you need to create an Angular component, to add Spreadsheet into the application. Create  the **spreadsheet** folder in the **src/app/** directory, add a new file into it and name it **spreadsheet.component.ts**. Then complete the steps described below.
+Now you need to create an Angular component to add Spreadsheet into the application. Create the *spreadsheet* folder in the *src/app/* directory, add a new file into it and name it *spreadsheet.component.ts*. Then complete the steps described below.
 
 #### Importing source files
 
 Open the file and import Spreadsheet source files. Note that:
 
-- if you use PRO version and install the Spreadsheet package from a local folder, the imported path looks like this:
+- if you use the PRO version and install the Spreadsheet package from a local folder, the imported path looks like this:
 
 ~~~jsx
 import { Spreadsheet } from 'dhx-spreadsheet-package';
@@ -111,7 +111,7 @@ export class SpreadsheetComponent implements OnInit, OnDestroy {
 
 #### Adding styles
 
-To display Spreadsheet correctly, you need to provide the corresponding styles. For this purpose, you can create the **spreadsheet.component.css** file in the **src/app/spreadsheet/** directory and specify important styles for Spreadsheet and its container:
+To display Spreadsheet correctly, you need to provide the corresponding styles. For this purpose, you can create the *spreadsheet.component.css* file in the *src/app/spreadsheet/* directory and specify important styles for Spreadsheet and its container:
 
 ~~~css title="spreadsheet.component.css"
 /* import Spreadsheet styles */
@@ -133,7 +133,7 @@ body {
 
 #### Loading data
 
-To add data into Spreadsheet, you need to provide a data set. You can create the **data.ts** file in the **src/app/spreadsheet/** directory and add some data into it:
+To add data into Spreadsheet, you need to provide a data set. You can create the *data.ts* file in the *src/app/spreadsheet/* directory and add some data into it:
 
 ~~~jsx title="data.ts"
 export function getData(): any {
@@ -178,7 +178,7 @@ export function getData(): any {
 }
 ~~~
 
-Then open the ***spreadsheet.component.ts*** file. Import the file with data and apply it using the [`parse()`](api/spreadsheet_parse_method.md) method within the `ngOnInit()` method, as shown below.
+Then open the *spreadsheet.component.ts* file. Import the file with data and apply it using the [`parse()`](api/spreadsheet_parse_method.md) method within the `ngOnInit()` method, as shown below.
 
 ~~~jsx {2,18,21} title="spreadsheet.component.ts"
 import { Spreadsheet } from "@dhx/trial-spreadsheet";
@@ -210,13 +210,13 @@ export class SpreadsheetComponent implements OnInit, OnDestroy {
 }
 ~~~
 
-Now the Spreadsheet component is ready to use. When the element will be added to the page, it will initialize the Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](api/overview/events_overview.md) to check the full list of available properties.
+Now the Spreadsheet component is ready to use. When the element is added to the page, it initializes Spreadsheet with data. You can provide necessary configuration settings as well. Visit our [Spreadsheet API docs](api/overview/events_overview.md) to check the full list of available properties.
 
 #### Handling events
 
-When a user makes some action in the Spreadsheet, it invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
+When a user performs an action in Spreadsheet, the widget invokes an event. You can use these events to detect the action and run the desired code for it. See the [full list of events](api/overview/events_overview.md).
 
-Open the **spreadsheet.component.ts** file and complete the `ngOnInit()` method as in:
+Open the *spreadsheet.component.ts* file and complete the `ngOnInit()` method as in:
 
 ~~~jsx {5-8} title="spreadsheet.component.ts"
 // ...
@@ -236,7 +236,7 @@ ngOnDestroy() {
 
 ### Step 3. Adding Spreadsheet into the app
 
-To add the ***SpreadsheetComponent*** component into the app, open the ***src/app/app.component.ts*** file and replace the default code with the following one:
+To add the `SpreadsheetComponent` component into the app, open the *src/app/app.component.ts* file and replace the default code with the following one:
 
 ~~~jsx {5} title="app.component.ts"
 import { Component } from "@angular/core";
@@ -250,7 +250,7 @@ export class AppComponent {
 }
 ~~~
 
-Then create the ***app.module.ts*** file in the ***src/app/*** directory and specify the *SpreadsheetComponent* as shown below:
+Then create the *app.module.ts* file in the *src/app/* directory and specify the `SpreadsheetComponent` as shown below:
 
 ~~~jsx {4-5,8} title="app.module.ts"
 import { NgModule } from "@angular/core";
@@ -267,7 +267,7 @@ import { SpreadsheetComponent } from "./spreadsheet/spreadsheet.component";
 export class AppModule {}
 ~~~
 
-The last step is to open the ***src/main.ts*** file and replace the existing code with the following one:
+The last step is to open the *src/main.ts* file and replace the existing code with the following one:
 
 ~~~jsx title="main.ts"
 import { platformBrowserDynamic } from "@angular/platform-browser-dynamic";
@@ -281,4 +281,4 @@ After that, you can start the app to see Spreadsheet loaded with data on a page.
 
 ![DHTMLX Spreadsheet initialized with sample data in an Angular application](/img/integrations/trial_spreadsheet.png)
 
-Now you know how to integrate DHTMLX Spreadsheet with Angular. You can customize the code according to your specific requirements. The final example you can find on [**GitHub**](https://github.com/DHTMLX/angular-spreadsheet-demo).
+Now you know how to integrate DHTMLX Spreadsheet with Angular. You can customize the code according to your specific requirements. You can find the final example on [**GitHub**](https://github.com/DHTMLX/angular-spreadsheet-demo).

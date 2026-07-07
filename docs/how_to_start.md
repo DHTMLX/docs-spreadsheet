@@ -6,13 +6,13 @@ description: You can learn how to start with the DHTMLX JavaScript Spreadsheet l
 
 # How to start
 
-This clear and comprehensive tutorial will guide your through the steps you need to complete in order to get a full-functional DHTMLX Spreadsheet on a page. The component will be especially effective for managing large amounts of data when you need to save the results of calculations and reproduce them.
+This tutorial guides you through the steps to get a fully functional DHTMLX Spreadsheet on a page. The component is especially effective for managing large amounts of data when you need to save the results of calculations and reproduce them.
 
 ![DHTMLX Spreadsheet initialized with a sample data table in a browser window](/img/how_to_start.png)
 
 ## Step 1. Including source files
 
-Start from creating an HTML file and call it *index.html*. Then proceed to include Spreadsheet source files into the created file. [The detailed description of the DHTMLX Spreadsheet package is given here](initialization.md#including-source-files).
+Start by creating an HTML file named *index.html*. Then include Spreadsheet source files in it. [The detailed description of the DHTMLX Spreadsheet package is given here](initialization.md#including-source-files).
 
 There are two necessary files:
 
@@ -48,20 +48,20 @@ You can import JavaScript Spreadsheet into your project using the `yarn` or `npm
 #### Installing trial Spreadsheet via npm or yarn
 
 :::info
-If you want to use the trial version of Spreadsheet, download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps mentioned in the *README* file. Note that the trial Spreadsheet is available 30 days only.
+If you want to use the trial version of Spreadsheet, download the [**trial Spreadsheet package**](https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml) and follow the steps in the *README* file. Note that the trial Spreadsheet is available for 30 days only.
 :::
 
 #### Installing PRO Spreadsheet via npm or yarn
 
 :::info
-You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Please note that access to the private **npm** is available only while your proprietary Spreadsheet license is active.
+You can access the DHTMLX private **npm** directly in the [Client's Area](https://dhtmlx.com/clients/) by generating your login and password for **npm**. A detailed installation guide is also available there. Note that access to the private **npm** is available only while your proprietary Spreadsheet license is active.
 :::
 
 ## Step 2. Creating Spreadsheet
 
-Now you are ready to add Spreadsheet to the page. First, let's create a DIV container and then place DHTMLX Spreadsheet into it. So, your steps will be:
+Now you are ready to add Spreadsheet to the page. First, create a DIV container and place DHTMLX Spreadsheet into it. Your steps are:
 
-- to specify a DIV container in the **index.html** file
+- to specify a DIV container in the *index.html* file
 - to initialize DHTMLX Spreadsheet using the `dhx.Spreadsheet` constructor
 
 As parameters, the constructor function takes the HTML container to place Spreadsheet into and the Spreadsheet configuration object.
@@ -91,7 +91,7 @@ As parameters, the constructor function takes the HTML container to place Spread
 
 Next you can specify additional configuration options you want the Spreadsheet component to have when initialized besides the default ones.
 
-There are several options you can use to adjust the look and feel of Spreadsheet to your needs, e.g.: **toolbarBlocks**, **rowsCount** and **colsCount**. [Check the details](configuration.md).
+You can adjust the look and feel of Spreadsheet with several options, for example: `toolbarBlocks`, `rowsCount`, and `colsCount`. [Check the details](configuration.md).
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
@@ -105,7 +105,7 @@ The configuration of DHTMLX Spreadsheet is quite flexible, so you can change it 
 
 ## Step 4. Loading data into Spreadsheet
 
-The last step is to populate Spreadsheet with data. DHTMLX Spreadsheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the **parse()** method and pass an object with data to it as in the example below:
+The last step is to populate Spreadsheet with data. DHTMLX Spreadsheet takes data in JSON format. Besides data you can pass necessary styles in a dataset. While loading inline data, you need to use the `parse()` method and pass an object with data to it as in the example below:
 
 ~~~jsx title="data.json"
 const data = [
@@ -140,7 +140,7 @@ spreadsheet.parse(data);
 
 ## What's next
 
-That's all. Just four simple steps and you have a handy tool for work with data in the tabular form. Now you can start working with your data or keep exploring the inner world of DHTMLX Spreadsheet.
+That's all. In four steps you get a handy tool for working with tabular data. Now you can start working with your data or keep exploring DHTMLX Spreadsheet.
 
 - [Spreadsheet overview](/)
 - [](guides.md)
