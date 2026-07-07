@@ -22,7 +22,7 @@ getValue(cell: string): any | array;
 
 ### Returns
 
-The method returns values of cells
+The method returns the values of the cells
 
 ### Example
 
@@ -48,7 +48,7 @@ Starting with v4.1, the reference to a cell or range of cells can be specified i
 const cellValue = spreadsheet.getValue("sheet1!A2"); //-> 25000
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will return the value(s) of the cell(s) from the active tab.
+If the name of the tab isn't specified, the method returns the value(s) of the cell(s) from the active tab.
 :::

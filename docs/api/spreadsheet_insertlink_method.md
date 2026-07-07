@@ -8,7 +8,7 @@ description: You can learn about the insertLink method in the documentation of t
 
 ### Description
 
-@short: inserts/removes a hyperlink in a cell
+@short: Inserts/removes a hyperlink in a cell
 
 ### Usage
 

@@ -21,7 +21,7 @@ groupFill: (focusedCell: string, selectedCell: string) => void;
 The callback of the event takes the following parameters:
 
 - `focusedCell` - (required) the id of a cell in focus
-- `selectedCell` - (required) the ids of a selected cells
+- `selectedCell` - (required) the ids of the selected cells
 
 ### Example
 

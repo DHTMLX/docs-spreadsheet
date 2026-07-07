@@ -18,13 +18,13 @@ localization?: object;
 
 ### Parameters
 
-The **localization** object may contain the following properties:
+The `localization` object may contain the following properties:
 
-- **decimal** - (optional) the symbol used as a decimal separator, **"."** by default.<br>Possible values are `"." | ","`
-- **thousands** - (optional) the symbol used as a thousands separator, **","** by default.<br>Possible values are `"." | "," | " " | ""`
-- **currency** - (optional) the currency sign, **"$"** by default
-- **dateFormat** - (optional) the format of displaying dates set as a string. The default format is **"%d/%m/%Y"**. Check details [below](#characters-for-setting-date-format)
-- **timeFormat** - (optional) the format of displaying time set as either *12* or *24*. The default format is **12**
+- `decimal` - (optional) the symbol used as a decimal separator, `"."` by default.<br>Possible values are `"." | ","`
+- `thousands` - (optional) the symbol used as a thousands separator, `","` by default.<br>Possible values are `"." | "," | " " | ""`
+- `currency` - (optional) the currency sign, `"$"` by default
+- `dateFormat` - (optional) the format of displaying dates set as a string. The default format is `"%d/%m/%Y"`. Check details [below](#characters-for-setting-date-format)
+- `timeFormat` - (optional) the format of displaying time set as either `12` or `24`. The default format is `12`
 
 ### Default config
 
