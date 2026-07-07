@@ -30,12 +30,12 @@ setFilter(
 
 ### Parameters
 
-- `cell` - (optional) the id of a cell (or a range of cells) that contains the id of a column the values of which will be filtered (e.g., "A1", "A1:C10", "sheet2!A1" )
+- `cell` - (optional) the id of a cell (or a range of cells) that contains the id of a column whose values are filtered (for example, "A1", "A1:C10", or "sheet2!A1")
 - `rules` - (optional) an array of objects with rules for filtering. Each object can include the following parameters:
     - `condition` - (optional) an object with parameters for conditional filtering of a sheet:
-        - `factor` - (required) a string value which defines a comparison expression for filtering. See the list of available values [below](#list-of-factors)
+        - `factor` - (required) a string value that defines a comparison expression for filtering. See the list of available values [below](#list-of-factors)
         - `value` - (required) the value(s) to be used for filtering by the specified factor
-    - `exclude` - (optional) an array of data points which must be excluded from the sheet
+    - `exclude` - (optional) an array of data points that must be excluded from the sheet
 
 :::note
 To reset filtering, call the method without parameters or pass only the `cell` parameter to the method.

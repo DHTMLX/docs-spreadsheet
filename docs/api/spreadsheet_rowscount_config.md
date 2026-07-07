@@ -8,7 +8,7 @@ description: You can learn about the rowsCount config in the documentation of th
 
 ### Description
 
-@short: Optional. Sets the number of rows a spreadsheet will have on initialization
+@short: Optional. Sets the number of rows in a spreadsheet on initialization
 
 ### Usage
 

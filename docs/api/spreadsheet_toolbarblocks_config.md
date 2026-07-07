@@ -8,7 +8,7 @@ description: You can learn about the toolbarBlocks config in the documentation o
 
 ### Description
 
-@short: Optional. Specifies blocks of buttons that will be shown in the toolbar of spreadsheet
+@short: Optional. Specifies blocks of buttons shown in the spreadsheet toolbar
 
 ### Usage
 
@@ -60,9 +60,9 @@ Check how you can [customize the toolbar](customization.md#toolbar).
 
 **Change log:**
 
-- The *"font"* block was added in v6.0
-- The *"cell"* block was added in v5.2
-- The *"actions"* block was added in v5.0 
+- The `"font"` block was added in v6.0
+- The `"cell"` block was added in v5.2
+- The `"actions"` block was added in v5.0 
 
 **Related articles:**
 - [Configuration](configuration.md#toolbar)
