@@ -6,14 +6,14 @@ description: You can learn about the built-in themes of the DHTMLX JavaScript Sp
 
 # Built-in themes
 
-DHTMLX Spreadsheet library provides 4 predefined themes:
+The DHTMLX Spreadsheet library provides 4 predefined themes:
 
 - [light theme](#light-theme-default) ("light") - used by default
 - [dark theme](#dark-theme) ("dark")
 - [light high contrast theme](#light-high-contrast-theme) ("contrast-light")
 - [dark high contrast theme](#dark-high-contrast-theme) ("contrast-dark")
 
-The Spreadsheet themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. For more detail, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
+The Spreadsheet themes are developed in accordance with international standards. The high contrast themes help users with vision impairment. For more details, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
 
 You can try all themes in the example below:
 
@@ -23,7 +23,7 @@ You can try all themes in the example below:
 
 ![DHTMLX Spreadsheet default light theme with a white background and dark text](/img/themes/default_theme.png)
 
-The default **"light"** theme is configured on the base of the CSS variables which are listed below:
+The default `"light"` theme is configured using the CSS variables listed below:
 
 ~~~css
 :root, [data-dhx-theme] {
@@ -198,7 +198,7 @@ The default **"light"** theme is configured on the base of the CSS variables whi
 
 ![DHTMLX Spreadsheet light high contrast theme with larger fonts and stronger borders for accessibility](/img/themes/light_high_contrast_theme.png)
 
-The **"contrast-light"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
+The `"contrast-light"` theme is configured using both the [root CSS variables](#light-theme-default) and the variables listed below:
 
 ~~~css
 [data-dhx-theme='contrast-light'] {
@@ -243,7 +243,7 @@ The **"contrast-light"** theme is configured both on the base of the [root CSS v
 
 ![DHTMLX Spreadsheet dark theme with a dark background and light text for low-light use](/img/themes/dark_theme.png)
 
-The **"dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
+The `"dark"` theme is configured using both the [root CSS variables](#light-theme-default) and the variables listed below:
 
 ~~~css
 [data-dhx-theme='dark'] {
@@ -300,7 +300,7 @@ The **"dark"** theme is configured both on the base of the [root CSS variables](
 
 ![DHTMLX Spreadsheet dark high contrast theme with enhanced text contrast for accessibility](/img/themes/dark_contrast.png)
 
-The **"contrast-dark"** theme is configured both on the base of the [root CSS variables](#light-theme-default) and the variables which are listed below:
+The `"contrast-dark"` theme is configured using both the [root CSS variables](#light-theme-default) and the variables listed below:
 
 ~~~css
 [data-dhx-theme='contrast-dark'] {
@@ -360,7 +360,7 @@ The **"contrast-dark"** theme is configured both on the base of the [root CSS va
 
 ## Spreadsheet specific styles
 
-The list of variables specific for the Spreadsheet component includes the following ones:
+The list of variables specific to the Spreadsheet component includes the following:
 
 - for the **default light** theme and the **light high contrast** skin:
 
@@ -418,37 +418,37 @@ The list of variables specific for the Spreadsheet component includes the follow
 
 To set the necessary theme, be it a built-in Spreadsheet theme or a [custom](themes/custom_theme.md) one, use one of the ways described below:
 
-### Using the ***data-dhx-theme*** attribute 
+### Using the `data-dhx-theme` attribute
 
 You can choose from the following variants:
 
-- set the ***data-dhx-theme*** attribute for the *chosen container*:
+- set the `data-dhx-theme` attribute for the chosen container:
 
 ~~~html title="index.html"
 <!-- component container -->
 <div data-dhx-theme="dark" style="height: 100%" id="spreadsheet"></div>
 ~~~
 
-- set the ***data-dhx-theme*** attribute for an *HTML element*, e.g. for *documentElement*:
+- set the `data-dhx-theme` attribute for an HTML element, for example, for `documentElement`:
 
 ~~~jsx title="index.js"
 document.documentElement.setAttribute("data-dhx-theme", "dark");
 ~~~
 
-### Using the ***dhx.setTheme()*** method
+### Using the `dhx.setTheme()` method
 
-The ***dhx.setTheme()*** method takes the following parameters:
+The `dhx.setTheme()` method takes the following parameters:
 
-- ***theme: string*** - (required) the name of the theme. It can be:
-    - the name of the Spreadsheet theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
+- `theme: string` - (required) the name of the theme. It can be:
+    - the name of the Spreadsheet theme: `"light" | "contrast-light" | "dark" | "contrast-dark"`
     - the name of a [custom theme](themes/custom_theme.md)
-    - *"light"* - by default
-- ***container: string | HTMLElement*** - (optional) the container to which the theme must be applied. It can be:
+    - `"light"` - by default
+- `container: string | HTMLElement` - (optional) the container to which the theme must be applied. It can be:
     - an HTMLElement
     - a string value with the ID of the container or the ID of a Layout cell
-    - *document.documentElement* - by default
+    - `document.documentElement` - by default
 
-Below you'll find the examples of the ***dhx.setTheme()*** method usage:
+The examples below show how to use the `dhx.setTheme()` method:
 
 - setting a theme either to the body or to the container 
 
