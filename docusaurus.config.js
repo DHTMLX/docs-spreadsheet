@@ -48,7 +48,7 @@ const onAtNotationMatch = (data, { key }) => {
 
 const onAtNotationFunctionMatch = (data, { key, fullMatch, dir }) => {
     if (data.indexOf('.md') !== -1 || data.indexOf('.mdx') !== -1 || data.indexOf('.') === -1) {
-        const result = readFile(dir, data);
+        const result = readFileFromPath(dir, data);
         return result ? /@short: (.*)/g.exec(result)[1] : fullMatch;
     }
     return fullMatch;
@@ -88,12 +88,45 @@ const readFile = (workingDir, filePath) => {
     return fs.readFileSync(path.normalize(finalPath), 'utf8');
 };
 
+// Returns the locale content root (i18n/<locale>/.../current) for a file living under a
+// translated docs tree, or null for files under docs/. Used so cross-links in a translated
+// page can resolve the target's sidebar_label from the localized copy first.
+const getLocaleContentRoot = (dir) => {
+    const normalizedDir = dir.replace(/\\/g, '/');
+    const currentIndex = normalizedDir.indexOf('/current/');
+    if (currentIndex !== -1 && normalizedDir.includes('/i18n/')) {
+        return normalizedDir.substring(0, currentIndex + '/current'.length);
+    }
+    return null;
+};
+
+// Reads a referenced file, supporting both page-relative (../foo.md) and docs-root-relative
+// (api/foo.md) links. For a translated page the localized copy is tried first, then it falls
+// back to docs/ (English) when no translation exists yet.
+const readFileFromPath = (dir, filePath) => {
+    const result = readFile(dir, filePath);
+    if (result) return result;
+
+    if (!filePath.startsWith('.')) {
+        const localeRoot = getLocaleContentRoot(dir);
+        if (localeRoot) {
+            const localeResult = readFile(localeRoot, filePath);
+            if (localeResult) return localeResult;
+        }
+        const docsDir = path.join(__dirname, 'docs').replace(/\\/g, '/');
+        return readFile(docsDir, filePath);
+    }
+
+    return false;
+};
+
 const onEmptyLinkMatch = (data, { key, fullMatch, dir }) => {
     const filePath = fullMatch.substring(fullMatch.indexOf('(') + 1, fullMatch.length - 1);
     if (filePath.indexOf('.md') !== -1 || filePath.indexOf('.mdx') !== -1 || filePath.indexOf('.') === -1) {
-        // Links are written root-relative (e.g. api/spreadsheet_addrow_method.md), so resolve
-        // the target from the docs root rather than the page's own directory.
-        const fileContent = readFile(path.join(__dirname, 'docs'), filePath);
+        // Links are written root-relative (e.g. api/spreadsheet_addrow_method.md). Resolve the
+        // target's sidebar_label from the localized copy first (for translated pages), falling
+        // back to the docs root (English) when the target is not yet translated.
+        const fileContent = readFileFromPath(dir, filePath);
         if (!fileContent) return fullMatch;
         const labelMatch = /sidebar_label: (.+)/.exec(fileContent);
         if (!labelMatch) return fullMatch;
@@ -134,6 +167,17 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'ru', 'de', 'zh', 'ko'],
+        localeConfigs: {
+            en: { label: 'English', htmlLang: 'en-US' },
+            ru: { label: 'Русский', htmlLang: 'ru' },
+            de: { label: 'Deutsch', htmlLang: 'de' },
+            zh: { label: '简体中文', htmlLang: 'zh-CN' },
+            ko: { label: '한국어', htmlLang: 'ko' },
+        },
+    },
     title: 'DHTMLX JavaScript Spreadsheet Docs',
     tagline: 'DHTMLX JavaScript Spreadsheet Docs',
     url: 'https://docs.dhtmlx.com',
@@ -205,7 +249,12 @@ module.exports = {
                     href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml',
                     position: 'right'
                 }
-            ]
+            ,
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
+        ]
         },
         footer: {
             style: 'dark',
