@@ -24,11 +24,11 @@ add: (name?: string) => Id;
 
 ### Parameter {#parameters}
 
-- `name` - (`string`) optional, der angezeigte Name für den neuen Tabellenblatt-Tab. Wird er weggelassen, wird ein Standardname vergeben.
+- `name` - (*string*) optional, der angezeigte Name für den neuen Tabellenblatt-Tab. Wird er weggelassen, wird ein Standardname vergeben.
 
 ### Rückgabewert {#returns}
 
-- `Id` - (`string | number`) der eindeutige Bezeichner des neu erstellten Tabellenblatts.
+- `Id` - (*string | number*) der eindeutige Bezeichner des neu erstellten Tabellenblatts.
 
 ### Beispiel {#example}
 

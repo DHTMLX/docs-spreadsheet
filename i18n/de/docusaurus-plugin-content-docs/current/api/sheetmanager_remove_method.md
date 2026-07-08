@@ -26,7 +26,7 @@ remove: (id: Id) => void;
 
 ### Parameter {#parameters}
 
-- `id` - (`string | number`) erforderlich, der eindeutige Bezeichner des zu entfernenden Sheets.
+- `id` - (*string | number*) erforderlich, der eindeutige Bezeichner des zu entfernenden Sheets.
 
 ### Beispiel {#example}
 

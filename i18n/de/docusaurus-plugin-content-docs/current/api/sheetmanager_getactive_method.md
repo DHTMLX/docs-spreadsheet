@@ -18,7 +18,7 @@ getActive: () => ISheet;
 
 ### Rückgabewert {#returns}
 
-- `ISheet` - (`object`) das aktuell aktive Sheet-Objekt mit den Eigenschaften `id` und `name`.
+- `ISheet` - (*object*) das aktuell aktive Sheet-Objekt mit den Eigenschaften `id` und `name`.
 
 ### Beispiel {#example}
 

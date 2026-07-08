@@ -57,9 +57,9 @@ DHTMLX Spreadsheet는 기본적으로 [Material Design](https://pictogrammers.co
 
 새 컨트롤을 추가하려면 `spreadsheet.{name}.data.add()` 메서드를 사용합니다. 다음 파라미터를 받습니다:
 
-- `config` - (`object`) 컨트롤 구성이 담긴 객체
-- `index` - (`number`) 컨트롤을 배치할 위치의 인덱스
-- `parent` - (`string`) 부모 컨트롤의 id (`menuItem` 유형에 해당)
+- `config` - (*object*) 컨트롤 구성이 담긴 객체
+- `index` - (*number*) 컨트롤을 배치할 위치의 인덱스
+- `parent` - (*string*) 부모 컨트롤의 id (`menuItem` 유형에 해당)
 
 버튼의 경우:
 

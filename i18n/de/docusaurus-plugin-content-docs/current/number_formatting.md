@@ -155,10 +155,10 @@ Sie sind nicht auf die [Standard-Zahlenformate](#default-number-formats) beschr�
 
 Alle diese Änderungen können Sie mit der Konfigurationsoption [`formats`](api/spreadsheet_formats_config.md) vornehmen. Es handelt sich um ein Array von Format-Objekten, von denen jedes eine Reihe von Eigenschaften enthält:
 
-- `id` - (`string`) obligatorisch, die ID eines Formats, das verwendet wird, um ein Format für eine Zelle mit der [`setFormat()`](api/spreadsheet_setformat_method.md)-Methode festzulegen
-- `mask` - (`string`) obligatorisch, eine Maske für ein Zahlenformat. Sehen Sie sich die Liste der in einer Maske verfügbaren Zeichen [unten](#the-structure-of-a-mask) an
-- `name` - (`string`) optional, der Name eines Formats, der in den Dropdown-Listen der Symbolleiste und des Menüs angezeigt wird
-- `example` - (`string`) optional, ein Beispiel, das zeigt, wie eine formatierte Zahl aussieht
+- `id` - (*string*) obligatorisch, die ID eines Formats, das verwendet wird, um ein Format für eine Zelle mit der [`setFormat()`](api/spreadsheet_setformat_method.md)-Methode festzulegen
+- `mask` - (*string*) obligatorisch, eine Maske für ein Zahlenformat. Sehen Sie sich die Liste der in einer Maske verfügbaren Zeichen [unten](#the-structure-of-a-mask) an
+- `name` - (*string*) optional, der Name eines Formats, der in den Dropdown-Listen der Symbolleiste und des Menüs angezeigt wird
+- `example` - (*string*) optional, ein Beispiel, das zeigt, wie eine formatierte Zahl aussieht
 
 ### Die Struktur einer Maske {#the-structure-of-a-mask}
 
@@ -177,8 +177,8 @@ Eine Maske kann eine Reihe allgemeiner Syntaxzeichen enthalten, darunter Ziffern
 
 Um das gewünschte Format auf einen numerischen Wert anzuwenden, verwenden Sie die Methode [`setFormat()`](api/spreadsheet_setformat_method.md). Sie akzeptiert zwei Parameter:
 
-- `cell` - (`string`) die ID der Zelle, deren Wert formatiert werden soll
-- `format` - (`string`) der Name des [Standard-Zahlenformats](#default-number-formats), das auf den Zellwert angewendet werden soll
+- `cell` - (*string*) die ID der Zelle, deren Wert formatiert werden soll
+- `format` - (*string*) der Name des [Standard-Zahlenformats](#default-number-formats), das auf den Zellwert angewendet werden soll
 
 Zum Beispiel:
 

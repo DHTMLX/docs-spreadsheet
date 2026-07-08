@@ -26,7 +26,7 @@ remove: (id: Id) => void;
 
 ### Parameters
 
-- `id` - (`string | number`) required, the unique identifier of the sheet to remove.
+- `id` - (*string | number*) required, the unique identifier of the sheet to remove.
 
 ### Example
 

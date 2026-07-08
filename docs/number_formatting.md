@@ -155,10 +155,10 @@ You are not limited to the [default number formats](#default-number-formats). Yo
 
 You can make all these modifications with the [`formats`](api/spreadsheet_formats_config.md) configuration option. It is an array of format objects, each of which contains a set of properties:
 
-- `id` - (`string`) mandatory, the id of a format used to set a format for a cell with the [`setFormat()`](api/spreadsheet_setformat_method.md) method
-- `mask` - (`string`) mandatory, a mask for a number format. Check the list of characters available in a mask [below](#the-structure-of-a-mask)
-- `name` - (`string`) optional, the name of a format displayed in the toolbar and menu drop-down lists
-- `example` - (`string`) optional, an example that shows what a formatted number looks like
+- `id` - (*string*) mandatory, the id of a format used to set a format for a cell with the [`setFormat()`](api/spreadsheet_setformat_method.md) method
+- `mask` - (*string*) mandatory, a mask for a number format. Check the list of characters available in a mask [below](#the-structure-of-a-mask)
+- `name` - (*string*) optional, the name of a format displayed in the toolbar and menu drop-down lists
+- `example` - (*string*) optional, an example that shows what a formatted number looks like
 
 ### The structure of a mask
 
@@ -177,8 +177,8 @@ A mask may contain a set of common syntax characters that include digit placehol
 
 To apply the necessary format to a numeric value, use the [`setFormat()`](api/spreadsheet_setformat_method.md) method. It takes two parameters:
 
-- `cell` - (`string`) the id of the cell whose value should be formatted
-- `format` - (`string`) the name of the [default number format](#default-number-formats) to apply to the cell value
+- `cell` - (*string*) the id of the cell whose value should be formatted
+- `format` - (*string*) the name of the [default number format](#default-number-formats) to apply to the cell value
 
 For example:
 

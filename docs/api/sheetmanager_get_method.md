@@ -18,11 +18,11 @@ get: (id: Id) => ISheet;
 
 ### Parameters
 
-- `id` - (`string | number`) required, the unique identifier of the sheet to retrieve.
+- `id` - (*string | number*) required, the unique identifier of the sheet to retrieve.
 
 ### Returns
 
-- `ISheet` - (`object`) the sheet object matching the given id.
+- `ISheet` - (*object*) the sheet object matching the given id.
 
 ### Example
 

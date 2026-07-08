@@ -18,7 +18,7 @@ getActive: () => ISheet;
 
 ### 반환값 {#returns}
 
-- `ISheet` - (`object`) `id`와 `name` 속성을 포함한 현재 활성 시트 객체입니다.
+- `ISheet` - (*object*) `id`와 `name` 속성을 포함한 현재 활성 시트 객체입니다.
 
 ### 예제 {#example}
 

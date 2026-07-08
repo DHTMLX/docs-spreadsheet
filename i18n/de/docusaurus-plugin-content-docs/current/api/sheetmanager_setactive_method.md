@@ -20,7 +20,7 @@ setActive: (id: Id) => void;
 
 ### Parameter {#parameters}
 
-- `id` - (`string | number`) erforderlich, der eindeutige Bezeichner des zu aktivierenden Sheets.
+- `id` - (*string | number*) erforderlich, der eindeutige Bezeichner des zu aktivierenden Sheets.
 
 ### Beispiel {#example}
 

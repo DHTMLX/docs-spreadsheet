@@ -12,8 +12,8 @@ description: You can learn about working with cells in the documentation of the 
 
 To set a value for a cell via the API, use the [](api/spreadsheet_setvalue_method.md) method. Pass the following parameters to it:
 
-- `cells` - (`string`) the id(s) of a cell(s) or a range of cells
-- `value` - (`string/number/array`) the value to set for a cell/cells
+- `cells` - (*string*) the id(s) of a cell(s) or a range of cells
+- `value` - (*string/number/array*) the value to set for a cell/cells
 
 ~~~jsx
 // setting value for one cell
@@ -87,8 +87,8 @@ spreadsheet.insertLink("A2");
 
 You can apply styles to a cell or a range of cells with the [](api/spreadsheet_setstyle_method.md) method. It takes two parameters:
 
-- `cells` - (`string`) the id(s) of a cell(s) or a range of cells
-- `styles` - (`object/array`) styles to apply to cells
+- `cells` - (*string*) the id(s) of a cell(s) or a range of cells
+- `styles` - (*object/array*) styles to apply to cells
 
 ~~~jsx
 // setting style for one cell
@@ -144,8 +144,8 @@ spreadsheet.startEdit();
 
 The method may take two optional parameters:
 
-- `cell` - (`string`) optional, the id of a cell
-- `value` - (`string`) optional, the cell value
+- `cell` - (*string*) optional, the id of a cell
+- `value` - (*string*) optional, the cell value
 
 If the id of a cell isn't passed, the input is added to the currently selected cell.
 

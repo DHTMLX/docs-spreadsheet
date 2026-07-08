@@ -22,7 +22,7 @@ getAll: () => ISheet[];
 
 ### Rückgabewert {#returns}
 
-- `ISheet[]` - (`array`) ein Array von Sheet-Objekten.
+- `ISheet[]` - (*array*) ein Array von Sheet-Objekten.
 
 ### Beispiel {#example}
 

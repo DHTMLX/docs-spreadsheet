@@ -12,8 +12,8 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解单
 
 要通过 API 为单元格设置值，请使用 [](api/spreadsheet_setvalue_method.md) 方法。向该方法传入以下参数：
 
-- `cells` - (`string`) 单元格或单元格区域的 id
-- `value` - (`string/number/array`) 要为单元格设置的值
+- `cells` - (*string*) 单元格或单元格区域的 id
+- `value` - (*string/number/array*) 要为单元格设置的值
 
 ~~~jsx
 // setting value for one cell
@@ -87,8 +87,8 @@ spreadsheet.insertLink("A2");
 
 您可以使用 [](api/spreadsheet_setstyle_method.md) 方法为单元格或单元格区域应用样式。该方法接受两个参数：
 
-- `cells` - (`string`) 单元格或单元格区域的 id
-- `styles` - (`object/array`) 要应用于单元格的样式
+- `cells` - (*string*) 单元格或单元格区域的 id
+- `styles` - (*object/array*) 要应用于单元格的样式
 
 ~~~jsx
 // setting style for one cell
@@ -144,8 +144,8 @@ spreadsheet.startEdit();
 
 该方法可接受两个可选参数：
 
-- `cell` - (`string`) 可选，单元格的 id
-- `value` - (`string`) 可选，单元格值
+- `cell` - (*string*) 可选，单元格的 id
+- `value` - (*string*) 可选，单元格值
 
 如果未传入单元格 id，输入框将添加到当前选中的单元格。
 

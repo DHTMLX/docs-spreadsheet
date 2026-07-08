@@ -18,11 +18,11 @@ get: (id: Id) => ISheet;
 
 ### 参数 {#parameters}
 
-- `id` - (`string | number`) 必填，要获取的工作表的唯一标识符。
+- `id` - (*string | number*) 必填，要获取的工作表的唯一标识符。
 
 ### 返回值 {#returns}
 
-- `ISheet` - (`object`) 与给定 id 匹配的工作表对象。
+- `ISheet` - (*object*) 与给定 id 匹配的工作表对象。
 
 ### 示例 {#example}
 

@@ -24,11 +24,11 @@ add: (name?: string) => Id;
 
 ### 매개변수 {#parameters}
 
-- `name` - (`string`) 선택 사항, 새 시트 탭에 표시될 이름. 생략하면 기본 이름이 할당됩니다.
+- `name` - (*string*) 선택 사항, 새 시트 탭에 표시될 이름. 생략하면 기본 이름이 할당됩니다.
 
 ### 반환값 {#returns}
 
-- `Id` - (`string | number`) 새로 생성된 시트의 고유 식별자.
+- `Id` - (*string | number*) 새로 생성된 시트의 고유 식별자.
 
 ### 예제 {#example}
 

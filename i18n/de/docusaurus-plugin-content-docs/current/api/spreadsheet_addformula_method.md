@@ -24,8 +24,8 @@ addFormula: (name: string, handler: mathFunction) => void;
 
 ### Parameter {#parameters}
 
-- `name` - (`string`) erforderlich, der Name der Formel (Groß-/Kleinschreibung wird ignoriert, wird als Großbuchstaben gespeichert)
-- `handler` - (`function`) erforderlich, eine Callback-Funktion, die die Eingabeargumente (Strings, Zahlen, Booleans oder Arrays davon) verarbeitet und einen einzelnen Wert zurückgibt
+- `name` - (*string*) erforderlich, der Name der Formel (Groß-/Kleinschreibung wird ignoriert, wird als Großbuchstaben gespeichert)
+- `handler` - (*function*) erforderlich, eine Callback-Funktion, die die Eingabeargumente (Strings, Zahlen, Booleans oder Arrays davon) verarbeitet und einen einzelnen Wert zurückgibt
 
 :::note
 Die `handler`-Callback-Funktion muss synchron sein. Die Verwendung von `Promise` oder `fetch` innerhalb der Funktion ist nicht zulässig.

@@ -20,7 +20,7 @@ setActive: (id: Id) => void;
 
 ### 参数 {#parameters}
 
-- `id` - (`string | number`) 必填，要激活的工作表的唯一标识符。
+- `id` - (*string | number*) 必填，要激活的工作表的唯一标识符。
 
 ### 示例 {#example}
 

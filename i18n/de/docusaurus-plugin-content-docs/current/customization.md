@@ -57,9 +57,9 @@ Die Datensammlungs-API der **Toolbar**, des **Menüs** und des **Kontextmenüs**
 
 Um ein neues Control hinzuzufügen, verwenden Sie die Methode `spreadsheet.{name}.data.add()`. Diese akzeptiert folgende Parameter:
 
-- `config` - (`object`) ein Objekt mit der Control-Konfiguration
-- `index` - (`number`) der Index der Position, an der das Control eingefügt werden soll
-- `parent` - (`string`) die ID eines übergeordneten Controls (für den Typ `menuItem`)
+- `config` - (*object*) ein Objekt mit der Control-Konfiguration
+- `index` - (*number*) der Index der Position, an der das Control eingefügt werden soll
+- `parent` - (*string*) die ID eines übergeordneten Controls (für den Typ `menuItem`)
 
 Für einen Button:
 

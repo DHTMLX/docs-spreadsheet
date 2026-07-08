@@ -20,7 +20,7 @@ clear: (id?: Id) => void;
 
 ### Parameter {#parameters}
 
-- `id` - (`string | number`) optional, der eindeutige Bezeichner des zu leerenden Sheets. Wird der Parameter weggelassen, wird das aktuell aktive Sheet geleert.
+- `id` - (*string | number*) optional, der eindeutige Bezeichner des zu leerenden Sheets. Wird der Parameter weggelassen, wird das aktuell aktive Sheet geleert.
 
 ### Beispiel {#example}
 

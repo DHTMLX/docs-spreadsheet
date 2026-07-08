@@ -12,8 +12,8 @@ description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek e
 
 Um einen Wert für eine Zelle über die API zu setzen, verwenden Sie die Methode [](api/spreadsheet_setvalue_method.md). Übergeben Sie ihr die folgenden Parameter:
 
-- `cells` - (`string`) die ID(s) einer Zelle/mehrerer Zellen oder eines Zellbereichs
-- `value` - (`string/number/array`) der Wert, der für eine Zelle/mehrere Zellen gesetzt werden soll
+- `cells` - (*string*) die ID(s) einer Zelle/mehrerer Zellen oder eines Zellbereichs
+- `value` - (*string/number/array*) der Wert, der für eine Zelle/mehrere Zellen gesetzt werden soll
 
 ~~~jsx
 // Wert für eine Zelle setzen
@@ -87,8 +87,8 @@ spreadsheet.insertLink("A2");
 
 Sie können Stile auf eine Zelle oder einen Zellbereich mit der Methode [](api/spreadsheet_setstyle_method.md) anwenden. Sie nimmt zwei Parameter entgegen:
 
-- `cells` - (`string`) die ID(s) einer Zelle/mehrerer Zellen oder eines Zellbereichs
-- `styles` - (`object/array`) Stile, die auf Zellen angewendet werden sollen
+- `cells` - (*string*) die ID(s) einer Zelle/mehrerer Zellen oder eines Zellbereichs
+- `styles` - (*object/array*) Stile, die auf Zellen angewendet werden sollen
 
 ~~~jsx
 // Stil für eine Zelle setzen
@@ -144,8 +144,8 @@ spreadsheet.startEdit();
 
 Die Methode kann zwei optionale Parameter entgegennehmen:
 
-- `cell` - (`string`) optional, die ID einer Zelle
-- `value` - (`string`) optional, der Zellwert
+- `cell` - (*string*) optional, die ID einer Zelle
+- `value` - (*string*) optional, der Zellwert
 
 Wenn die ID einer Zelle nicht übergeben wird, wird das Eingabefeld in die aktuell ausgewählte Zelle eingefügt.
 

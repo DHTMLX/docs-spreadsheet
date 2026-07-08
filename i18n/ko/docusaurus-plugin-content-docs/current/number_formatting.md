@@ -155,10 +155,10 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 
 이러한 모든 수정은 [`formats`](api/spreadsheet_formats_config.md) 구성 옵션으로 할 수 있습니다. 서식 객체 배열이며, 각 객체는 다음 속성 세트를 포함합니다:
 
-- `id` - (`string`) 필수, [`setFormat()`](api/spreadsheet_setformat_method.md) 메서드로 셀에 서식을 설정할 때 사용하는 서식의 id
-- `mask` - (`string`) 필수, 숫자 서식의 마스크. [아래](#the-structure-of-a-mask)에서 마스크에 사용할 수 있는 문자 목록을 확인하세요
-- `name` - (`string`) 선택, 툴바 및 메뉴 드롭다운 목록에 표시되는 서식의 이름
-- `example` - (`string`) 선택, 서식이 적용된 숫자가 어떻게 보이는지 보여주는 예제
+- `id` - (*string*) 필수, [`setFormat()`](api/spreadsheet_setformat_method.md) 메서드로 셀에 서식을 설정할 때 사용하는 서식의 id
+- `mask` - (*string*) 필수, 숫자 서식의 마스크. [아래](#the-structure-of-a-mask)에서 마스크에 사용할 수 있는 문자 목록을 확인하세요
+- `name` - (*string*) 선택, 툴바 및 메뉴 드롭다운 목록에 표시되는 서식의 이름
+- `example` - (*string*) 선택, 서식이 적용된 숫자가 어떻게 보이는지 보여주는 예제
 
 ### 마스크의 구조 {#the-structure-of-a-mask}
 
@@ -177,8 +177,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 
 숫자 값에 필요한 서식을 적용하려면 [`setFormat()`](api/spreadsheet_setformat_method.md) 메서드를 사용하세요. 두 개의 매개변수를 받습니다:
 
-- `cell` - (`string`) 값의 서식을 지정할 셀의 id
-- `format` - (`string`) 셀 값에 적용할 [기본 숫자 서식](#default-number-formats)의 이름
+- `cell` - (*string*) 값의 서식을 지정할 셀의 id
+- `format` - (*string*) 셀 값에 적용할 [기본 숫자 서식](#default-number-formats)의 이름
 
 예를 들어:
 

@@ -18,7 +18,7 @@ getActive: () => ISheet;
 
 ### 返回值 {#returns}
 
-- `ISheet` - (`object`) 当前活动的工作表对象，包含 `id` 和 `name` 属性。
+- `ISheet` - (*object*) 当前活动的工作表对象，包含 `id` 和 `name` 属性。
 
 ### 示例 {#example}
 

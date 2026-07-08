@@ -24,11 +24,11 @@ add: (name?: string) => Id;
 
 ### Parameters
 
-- `name` - (`string`) optional, the displayed name for the new sheet tab. If omitted, a default name is assigned.
+- `name` - (*string*) optional, the displayed name for the new sheet tab. If omitted, a default name is assigned.
 
 ### Returns
 
-- `Id` - (`string | number`) the unique identifier of the newly created sheet.
+- `Id` - (*string | number*) the unique identifier of the newly created sheet.
 
 ### Example
 

@@ -57,9 +57,9 @@ The data collection API of the **toolbar**, **menu**, and **context menu** lets 
 
 To add a new control, apply the `spreadsheet.{name}.data.add()` method. It takes the parameters below:
 
-- `config` - (`object`) an object with the control config
-- `index` - (`number`) the index of the position to place the control into
-- `parent` - (`string`) the id of a parent control (for the `menuItem` type)
+- `config` - (*object*) an object with the control config
+- `index` - (*number*) the index of the position to place the control into
+- `parent` - (*string*) the id of a parent control (for the `menuItem` type)
 
 For a button:
 

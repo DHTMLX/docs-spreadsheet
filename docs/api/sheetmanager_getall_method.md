@@ -22,7 +22,7 @@ getAll: () => ISheet[];
 
 ### Returns
 
-- `ISheet[]` - (`array`) an array of sheet objects.
+- `ISheet[]` - (*array*) an array of sheet objects.
 
 ### Example
 

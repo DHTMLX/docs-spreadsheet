@@ -273,4 +273,4 @@ type SpreadsheetConfigProps = Omit<
 | `FileFormat` | 데이터 로딩을 위한 파일 형식(예: `"json"` 또는 `"xlsx"`). |
 | `ToolbarBlocks` | 툴바 블록 식별자(예: `"default"`, `"undo"`, 또는 `"font"`). |
 | `FilterConditions` | 사용 가능한 필터 조건 타입 열거형. |
-| `Id` | 일반 식별자 타입(`string \| number`). |
+| `Id` | 일반 식별자 타입(*string \| number*). |

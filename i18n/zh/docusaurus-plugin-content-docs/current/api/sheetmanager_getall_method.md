@@ -22,7 +22,7 @@ getAll: () => ISheet[];
 
 ### 返回值 {#returns}
 
-- `ISheet[]` - (`array`) 工作表对象数组。
+- `ISheet[]` - (*array*) 工作表对象数组。
 
 ### 示例 {#example}
 

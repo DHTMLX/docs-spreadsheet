@@ -273,4 +273,4 @@ Diese Typen werden der Einfachheit halber aus `@dhx/ts-spreadsheet` erneut expor
 | `FileFormat` | Dateiformat fur das Laden von Daten (z. B. `"json"` oder `"xlsx"`). |
 | `ToolbarBlocks` | Bezeichner fur Toolbar-Blocke (z. B. `"default"`, `"undo"` oder `"font"`). |
 | `FilterConditions` | Enum der verfugbaren Filterbedingungstypen. |
-| `Id` | Generischer Bezeichnertyp (`string \| number`). |
+| `Id` | Generischer Bezeichnertyp (*string \| number*). |

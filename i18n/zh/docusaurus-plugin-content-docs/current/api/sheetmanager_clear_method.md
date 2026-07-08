@@ -20,7 +20,7 @@ clear: (id?: Id) => void;
 
 ### 参数 {#parameters}
 
-- `id` - (`string | number`) 可选，要清除的工作表的唯一标识符。如果省略，则清除当前活动的工作表。
+- `id` - (*string | number*) 可选，要清除的工作表的唯一标识符。如果省略，则清除当前活动的工作表。
 
 ### 示例 {#example}
 

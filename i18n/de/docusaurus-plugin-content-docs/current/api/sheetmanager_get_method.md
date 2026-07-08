@@ -18,11 +18,11 @@ get: (id: Id) => ISheet;
 
 ### Parameter {#parameters}
 
-- `id` - (`string | number`) erforderlich, der eindeutige Bezeichner des abzurufenden Sheets.
+- `id` - (*string | number*) erforderlich, der eindeutige Bezeichner des abzurufenden Sheets.
 
 ### Rückgabewert {#returns}
 
-- `ISheet` - (`object`) das Sheet-Objekt, das zur angegebenen ID passt.
+- `ISheet` - (*object*) das Sheet-Objekt, das zur angegebenen ID passt.
 
 ### Beispiel {#example}
 

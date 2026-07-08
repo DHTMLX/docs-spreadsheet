@@ -57,9 +57,9 @@ DHTMLX Spreadsheet 默认使用基于 [Material Design](https://pictogrammers.co
 
 要添加新控件，请使用 `spreadsheet.{name}.data.add()` 方法。该方法接受以下参数：
 
-- `config` - (`object`) 包含控件配置的对象
-- `index` - (`number`) 控件的插入位置索引
-- `parent` - (`string`) 父控件的 id（用于 `menuItem` 类型）
+- `config` - (*object*) 包含控件配置的对象
+- `index` - (*number*) 控件的插入位置索引
+- `parent` - (*string*) 父控件的 id（用于 `menuItem` 类型）
 
 对于 button：
 

@@ -18,11 +18,11 @@ get: (id: Id) => ISheet;
 
 ### 매개변수 {#parameters}
 
-- `id` - (`string | number`) 필수, 가져올 시트의 고유 식별자입니다.
+- `id` - (*string | number*) 필수, 가져올 시트의 고유 식별자입니다.
 
 ### 반환값 {#returns}
 
-- `ISheet` - (`object`) 지정한 id와 일치하는 시트 객체입니다.
+- `ISheet` - (*object*) 지정한 id와 일치하는 시트 객체입니다.
 
 ### 예제 {#example}
 

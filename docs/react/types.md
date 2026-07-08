@@ -273,4 +273,4 @@ These types are re-exported from `@dhx/ts-spreadsheet` for convenience:
 | `FileFormat` | File format for data loading (for example, `"json"` or `"xlsx"`). |
 | `ToolbarBlocks` | Toolbar block identifiers (for example, `"default"`, `"undo"`, or `"font"`). |
 | `FilterConditions` | Enum of available filter condition types. |
-| `Id` | Generic identifier type (`string \| number`). |
+| `Id` | Generic identifier type (*string \| number*). |

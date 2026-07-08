@@ -24,8 +24,8 @@ addFormula: (name: string, handler: mathFunction) => void;
 
 ### 参数 {#parameters}
 
-- `name` - (`string`) 必填，公式名称（不区分大小写，内部以大写形式存储）
-- `handler` - (`function`) 必填，处理输入参数（字符串、数字、布尔值或这些类型的数组）并返回单个值的 callback 函数
+- `name` - (*string*) 必填，公式名称（不区分大小写，内部以大写形式存储）
+- `handler` - (*function*) 必填，处理输入参数（字符串、数字、布尔值或这些类型的数组）并返回单个值的 callback 函数
 
 :::note
 `handler` callback 函数必须是同步的。不允许在函数内部使用 `Promise` 或 `fetch`。

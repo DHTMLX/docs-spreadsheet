@@ -22,7 +22,7 @@ getAll: () => ISheet[];
 
 ### 반환값 {#returns}
 
-- `ISheet[]` - (`array`) 시트 객체의 배열입니다.
+- `ISheet[]` - (*array*) 시트 객체의 배열입니다.
 
 ### 예제 {#example}
 

@@ -20,7 +20,7 @@ clear: (id?: Id) => void;
 
 ### 매개변수 {#parameters}
 
-- `id` - (`string | number`) 선택사항, 지울 시트의 고유 식별자입니다. 생략하면 현재 활성 시트가 지워집니다.
+- `id` - (*string | number*) 선택사항, 지울 시트의 고유 식별자입니다. 생략하면 현재 활성 시트가 지워집니다.
 
 ### 예제 {#example}
 

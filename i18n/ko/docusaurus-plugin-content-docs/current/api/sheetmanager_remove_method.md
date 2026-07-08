@@ -26,7 +26,7 @@ remove: (id: Id) => void;
 
 ### 매개변수 {#parameters}
 
-- `id` - (`string | number`) 필수, 제거할 시트의 고유 식별자입니다.
+- `id` - (*string | number*) 필수, 제거할 시트의 고유 식별자입니다.
 
 ### 예제 {#example}
 

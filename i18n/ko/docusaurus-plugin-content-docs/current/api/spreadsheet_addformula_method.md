@@ -24,8 +24,8 @@ addFormula: (name: string, handler: mathFunction) => void;
 
 ### 매개변수 {#parameters}
 
-- `name` - (`string`) 필수, 수식 이름(대소문자 구분 없이 대문자로 저장됩니다)
-- `handler` - (`function`) 필수, 입력 인수(문자열, 숫자, 불리언 또는 이들의 배열)를 처리하고 단일 값을 반환하는 callback 함수
+- `name` - (*string*) 필수, 수식 이름(대소문자 구분 없이 대문자로 저장됩니다)
+- `handler` - (*function*) 필수, 입력 인수(문자열, 숫자, 불리언 또는 이들의 배열)를 처리하고 단일 값을 반환하는 callback 함수
 
 :::note
 `handler` callback 함수는 동기 함수여야 합니다. 함수 내부에서 `Promise` 또는 `fetch`를 사용하는 것은 허용되지 않습니다.
