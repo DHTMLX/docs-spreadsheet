@@ -139,23 +139,23 @@
     "description": "The label alongside a tag list"
   },
   "theme.admonition.caution": {
-    "message": "предупреждение",
+    "message": "Осторожно",
     "description": "The default label used for the Caution admonition (:::caution)"
   },
   "theme.admonition.danger": {
-    "message": "осторожно",
+    "message": "Опасно",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
-    "message": "к сведению",
+    "message": "К сведению",
     "description": "The default label used for the Info admonition (:::info)"
   },
   "theme.admonition.note": {
-    "message": "примечание",
+    "message": "Примечание",
     "description": "The default label used for the Note admonition (:::note)"
   },
   "theme.admonition.tip": {
-    "message": "подсказка",
+    "message": "Подсказка",
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.warning": {
