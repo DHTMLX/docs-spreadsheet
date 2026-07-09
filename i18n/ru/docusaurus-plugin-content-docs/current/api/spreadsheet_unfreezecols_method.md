@@ -1,7 +1,7 @@
 ---
 sidebar_label: unfreezeCols() 
 title: метод unfreezeCols
-description: Вы можете узнать о методе unfreezeCols в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Вы можете узнать о методе unfreezeCols в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # unfreezeCols()
@@ -31,7 +31,7 @@ spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfr
 
 **Похожее API:** [`freezeCols()`](api/spreadsheet_freezecols_method.md)
 
-**Связанный пример:** [Spreadsheet. Заморозка столбцов и строк через АПИ](https://snippet.dhtmlx.com/a12xd1mn)
+**Связанный пример:** [Spreadsheet. Заморозка столбцов и строк через API](https://snippet.dhtmlx.com/a12xd1mn)
 
 **Журнал изменений:** 
 Добавлено в v5.2

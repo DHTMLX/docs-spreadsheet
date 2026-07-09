@@ -9,7 +9,7 @@ description: "ReactSpreadsheet의 이벤트 콜백 props: 액션, 선택, 편집
 모든 이벤트 콜백은 선택적 props입니다. "Before" 콜백은 `false`를 반환하여 작업을 취소할 수 있습니다.
 
 :::note
-React 래퍼는 `onCamelCase` 형식의 prop 이름을 사용합니다(예: `onAfterAction`). 반면 JS Spreadsheet API는 이벤트 버스에서 `camelCase` 이벤트 이름을 사용합니다(예: `afterAction`). 명령형 API에 대해서는 [JS API Events 레퍼런스](api/overview/events_overview.md)를 참조하십시오.
+React 래퍼는 `onCamelCase` 형식의 prop 이름을 사용합니다(예: `onAfterAction`). 반면 JS Spreadsheet API는 event bus에서 `camelCase` 이벤트 이름을 사용합니다(예: `afterAction`). 명령형 API에 대해서는 [JS API Events 레퍼런스](api/overview/events_overview.md)를 참조하십시오.
 :::
 
 ## 액션 이벤트 {#action-events}

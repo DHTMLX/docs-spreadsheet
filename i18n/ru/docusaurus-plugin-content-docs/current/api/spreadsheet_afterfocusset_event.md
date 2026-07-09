@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterFocusSet
 title: Событие afterFocusSet
-description: Вы можете узнать о событии afterFocusSet в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Вы можете узнать о событии afterFocusSet в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # afterFocusSet

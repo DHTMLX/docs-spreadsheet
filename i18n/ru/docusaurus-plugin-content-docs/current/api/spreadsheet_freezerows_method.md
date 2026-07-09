@@ -1,7 +1,7 @@
 ---
 sidebar_label: freezeRows() 
 title: Метод freezeRows
-description: Вы можете узнать о методе freezeRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Вы можете узнать о методе freezeRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # freezeRows()
@@ -31,7 +31,7 @@ spreadsheet.freezeRows("sheet2!B2"); // строки до строки "2" в "s
 
 **Похожее API:** [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md)
 
-**Связанный пример:** [Spreadsheet. Фиксация столбцов и строк через АПИ](https://snippet.dhtmlx.com/a12xd1mn)
+**Связанный пример:** [Spreadsheet. Фиксация столбцов и строк через API](https://snippet.dhtmlx.com/a12xd1mn)
 
 **Журнал изменений:** 
 Добавлено в v5.2

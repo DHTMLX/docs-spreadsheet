@@ -1,7 +1,7 @@
 ---
 sidebar_label: detach()
-title: Метод detach шины событий
-description: Вы можете узнать о методе detach шины событий в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+title: Метод detach
+description: Вы можете узнать о Event Bus методе detach в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # detach()

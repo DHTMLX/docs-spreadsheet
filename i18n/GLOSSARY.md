@@ -72,3 +72,36 @@ words distinct between types (no `caution`/`warning` duplicates).
 | `:::warning` | `Предупреждение` | `Warnung` | `경고` | `警告` |
 | `:::caution` | `Осторожно` | `Vorsicht` | `주의` | `注意` |
 | `:::danger` | `Опасно` | `Gefahr` | `위험` | `危险` |
+
+## 5. Do not translate
+
+Keep these terms in English across all locales (verified: identical counts in ru/de/ko/zh).
+
+**Product & modules:**
+- `Spreadsheet` — the widget/product name. *The generic concept* "spreadsheet" may be localized
+  (e.g. zh `电子表格`), but the product name stays `Spreadsheet`.
+- `DHTMLX`, `dhx` (the `dhx.*` code namespace)
+- `Sheet Manager`, `Event Bus`
+
+**Frameworks & libraries:**
+- `React`, `Vue`, `Svelte`, `Angular`
+- `Node.js`, `Vite`
+- `Redux`, `Redux Toolkit`
+
+**Languages & tooling:**
+- `JavaScript`, `TypeScript`
+- `npm`, `yarn`, `CLI`
+
+**Data formats:**
+- `Excel`, `XLSX`, `CSV`, `JSON`
+
+**Services:**
+- `GitHub`, `CDN`
+
+**Other:**
+- `API`
+- Code identifiers (method / config / event names, `dhx.*`) inside backticks are never translated.
+
+> Not in this list — these UI concepts **are** localized (keep English only for a literal UI label):
+> `Toolbar` (→ ru "панель инструментов"), `Menu` (→ "меню"), `Fill Handle` (→ "маркер заполнения"),
+> `context menu`.

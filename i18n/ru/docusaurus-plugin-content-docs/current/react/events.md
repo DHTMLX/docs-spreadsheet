@@ -9,7 +9,7 @@ description: "Пропсы-колбэки событий для ReactSpreadsheet
 Все колбэки событий являются необязательными пропсами. Колбэки «Before» могут вернуть `false` для отмены операции.
 
 :::note
-React-обёртка использует имена пропсов в формате `onCamelCase` (например, `onAfterAction`), тогда как JS API Spreadsheet использует имена событий в формате `camelCase` на шине событий (например, `afterAction`). Смотрите [Справочник событий JS API](api/overview/events_overview.md) для императивного АПИ.
+React-обёртка использует имена пропсов в формате `onCamelCase` (например, `onAfterAction`), тогда как JS API Spreadsheet использует имена событий в формате `camelCase` на event bus (например, `afterAction`). Смотрите [Справочник событий JS API](api/overview/events_overview.md) для императивного API.
 :::
 
 ## События действий {#action-events}

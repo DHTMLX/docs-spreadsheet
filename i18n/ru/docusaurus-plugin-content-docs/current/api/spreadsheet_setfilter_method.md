@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFilter()
 title: Метод setFilter
-description: Вы можете узнать о методе setFilter в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Вы можете узнать о методе setFilter в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # setFilter()
@@ -91,4 +91,4 @@ spreadsheet.setFilter();
 
 **Полезная статья:** [Фильтрация данных](working_with_ssheet.md#filtering-data)
 
-**Связанный пример:** [Spreadsheet. Фильтрация через АПИ](https://snippet.dhtmlx.com/effrcsg6)
+**Связанный пример:** [Spreadsheet. Фильтрация через API](https://snippet.dhtmlx.com/effrcsg6)

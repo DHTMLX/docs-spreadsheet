@@ -1,7 +1,7 @@
 ---
 sidebar_label: showRows()
 title: Метод showRows
-description: Вы можете узнать о методе showRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник АПИ, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Вы можете узнать о методе showRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # showRows()
@@ -32,6 +32,6 @@ spreadsheet.showRows("B2:C2"); // the rows from "2" to "4" will become visible a
 
 **Похожее API:** [`hideRows()`](api/spreadsheet_hiderows_method.md)
 
-**Связанный пример:** [Spreadsheet. Скрытие столбцов и строк через АПИ](https://snippet.dhtmlx.com/zere1ote)
+**Связанный пример:** [Spreadsheet. Скрытие столбцов и строк через API](https://snippet.dhtmlx.com/zere1ote)
 
 **Журнал изменений:** Добавлено в v5.2

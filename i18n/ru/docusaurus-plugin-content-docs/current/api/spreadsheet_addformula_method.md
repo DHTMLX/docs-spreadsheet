@@ -1,7 +1,7 @@
 ---
 sidebar_label: addFormula()
 title: метод addFormula
-description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о методе addFormula. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о методе addFormula. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # addFormula()

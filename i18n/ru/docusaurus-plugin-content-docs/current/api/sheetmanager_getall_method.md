@@ -1,7 +1,7 @@
 ---
 sidebar_label: getAll()
 title: метод getAll
-description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о методе getAll менеджера листов. Просматривайте руководства разработчика и справочник АПИ, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о методе getAll Sheet Manager. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
 # getAll()

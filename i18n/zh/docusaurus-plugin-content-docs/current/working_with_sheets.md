@@ -12,7 +12,7 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解工
 
 {{note 要了解如何通过用户界面与多个工作表交互，请查阅我们的[用户指南](work_with_sheets.md)。}}
 
-从 v6.0 开始，**工作表管理器**模块通过 `spreadsheet.sheets` 属性处理工作表管理。专用的[工作表管理器 API](api/overview/sheetmanager_overview.md) 替代了之前直接在 Spreadsheet 实例上可用的工作表相关方法。
+从 v6.0 开始，**Sheet Manager** 模块通过 `spreadsheet.sheets` 属性处理工作表管理。专用的 [Sheet Manager API](api/overview/sheetmanager_overview.md) 替代了之前直接在 Spreadsheet 实例上可用的工作表相关方法。
 
 ## 加载多个工作表 {#loading-multiple-sheets}
 

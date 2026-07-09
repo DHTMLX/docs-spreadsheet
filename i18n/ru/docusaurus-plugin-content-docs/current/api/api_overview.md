@@ -124,7 +124,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 | [](api/selection_setfocusedcell_method.md)     | @getshort(api/selection_setfocusedcell_method.md)     |
 | [](api/selection_setselectedcell_method.md)    | @getshort(api/selection_setselectedcell_method.md)    |
 
-## Методы шины событий {#events-bus-methods}
+## Методы Event Bus {#events-bus-methods}
 
 | Название                           | Описание                                  |
 | ---------------------------------- | ----------------------------------------- |

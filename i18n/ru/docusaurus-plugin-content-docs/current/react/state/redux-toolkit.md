@@ -168,7 +168,7 @@ export default App;
 ~~~tsx
 const handleExport = () => {
     const data = ref.current?.instance?.serialize();
-    // Отправка в АПИ, скачивание и т.д.
+    // Отправка в API, скачивание и т.д.
 };
 
 const getCellValue = (cell: string) => {

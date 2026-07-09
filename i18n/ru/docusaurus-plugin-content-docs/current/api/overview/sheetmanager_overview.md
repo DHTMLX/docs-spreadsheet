@@ -1,10 +1,10 @@
 ---
-sidebar_label: Обзор АПИ Sheet Manager
-title: Обзор АПИ Sheet Manager
-description: Вы можете ознакомиться с обзором АПИ Sheet Manager библиотеки DHTMLX JavaScript Spreadsheet в документации. Изучите руководства разработчика и справочник по АПИ, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+sidebar_label: Обзор API Sheet Manager
+title: Обзор API Sheet Manager
+description: Вы можете ознакомиться с обзором API Sheet Manager библиотеки DHTMLX JavaScript Spreadsheet в документации. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
 ---
 
-# Обзор АПИ Sheet Manager {#sheet-manager-api-overview}
+# Обзор API Sheet Manager {#sheet-manager-api-overview}
 
 | Название                                  | Описание                                         |
 | :---------------------------------------- | :----------------------------------------------- |
