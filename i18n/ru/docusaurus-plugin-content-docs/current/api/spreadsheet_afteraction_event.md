@@ -38,8 +38,8 @@ spreadsheet.events.on("afterAction", (actionName, config) => {
 });
 ~~~
 
-**Журнал изменений:** Добавлен в v4.3
+**Журнал изменений:** Добавлено в v4.3
 
-**Связанные статьи:** 
+**Полезные статьи:** 
 - [Действия таблицы](api/overview/actions_overview.md)
 - [Обработка событий](handling_events.md)

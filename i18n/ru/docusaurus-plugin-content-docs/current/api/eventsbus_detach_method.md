@@ -48,4 +48,4 @@ spreadsheet.events.on("StyleChange", handler2, marker);
 spreadsheet.events.detach("StyleChange", marker);
 ~~~
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

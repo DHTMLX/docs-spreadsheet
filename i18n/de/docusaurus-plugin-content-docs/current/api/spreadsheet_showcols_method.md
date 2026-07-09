@@ -28,10 +28,10 @@ spreadsheet.showCols("sheet2!B2"); // die Spalte "B" in "sheet2" wird wieder ein
 spreadsheet.showCols("B2:C2"); // die Spalten "B" und "C" werden wieder eingeblendet
 ~~~
 
-**Related articles:** [Mit dem Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Verwandter Artikel:** [Mit dem Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
-**Related API:** [`hideCols()`](api/spreadsheet_hidecols_method.md)
+**Verwandte API:** [`hideCols()`](api/spreadsheet_hidecols_method.md)
 
-**Related sample:** [Spreadsheet. Spalten und Zeilen über API ausblenden](https://snippet.dhtmlx.com/zere1ote)
+**Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen über API ausblenden](https://snippet.dhtmlx.com/zere1ote)
 
-**Change log:** Hinzugefügt in v5.2
+**Changelog:** Hinzugefügt in v5.2

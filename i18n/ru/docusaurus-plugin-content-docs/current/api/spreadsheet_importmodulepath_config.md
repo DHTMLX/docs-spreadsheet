@@ -40,6 +40,6 @@ DHTMLX Spreadsheet использует библиотеку [Excel2json](https:
 
 По умолчанию используется ссылка на CDN.
 
-**Связанные статьи:** [Загрузка данных и экспорт](loading_data.md#loading-excel-file-xlsx)
+**Полезная статья:** [Загрузка данных и экспорт](loading_data.md#loading-excel-file-xlsx)
 
 **Связанный пример:** [Spreadsheet. Пользовательский путь для импорта и экспорта](https://snippet.dhtmlx.com/wykwzfhm)

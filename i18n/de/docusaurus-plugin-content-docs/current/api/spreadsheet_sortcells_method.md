@@ -39,6 +39,6 @@ spreadsheet.sortCells("Income!B2:B11, Report!B2:B11, Expenses!C2:C11", 1);
 ~~~
 
 
-**Related sample:** [Spreadsheet. Initialisierung mit mehreren Tabellenblättern](https://snippet.dhtmlx.com/ihtkdcoc)
+**Verwandtes Beispiel:** [Spreadsheet. Initialisierung mit mehreren Tabellenblättern](https://snippet.dhtmlx.com/ihtkdcoc)
 
-**Related articles:** [Daten sortieren](working_with_ssheet.md#sorting-data)
+**Verwandter Artikel:** [Daten sortieren](working_with_ssheet.md#sorting-data)

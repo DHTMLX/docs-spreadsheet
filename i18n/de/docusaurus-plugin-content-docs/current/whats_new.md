@@ -23,7 +23,7 @@ Veröffentlicht am 20. Mai 2026
 
 [Versionsüberblick im Blog](https://dhtmlx.com/blog/meet-dhtmlx-spreadsheet-6-0/)
 
-### Grundlegende Änderungen {#breaking-changes}
+### Breaking Changes {#breaking-changes}
 
 Die neue Version führt wesentliche Änderungen in der Spreadsheet-API ein: Es gibt eine Reihe veralteter Methoden, Eigenschaften und Events. Lesen Sie den [Migrationsleitfaden](migration.md#52---60), um mit der neuesten Version Schritt zu halten.
 
@@ -160,7 +160,7 @@ Veröffentlicht am 20. Mai 2025
 
 [Versionsüberblick im Blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-2/)
 
-### Grundlegende Änderungen {#breaking-changes-52}
+### Breaking Changes {#breaking-changes-52}
 
 Die neue Version führt einige Änderungen an der Einfrieren-/Auftauen-Funktionalität für Spalten und Zeilen ein. Lesen Sie den [Migrationsleitfaden](migration.md#51---52), um mit der neuesten Version Schritt zu halten.
 
@@ -430,7 +430,7 @@ Veröffentlicht am 21. November 2022
 
 [Versionsüberblick im Blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-0/)
 
-### Grundlegende Änderungen {#breaking-changes-50}
+### Breaking Changes {#breaking-changes-50}
 
 Die neue Version führt einige Änderungen an der [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md)-Eigenschaft ein. Lesen Sie den [Migrationsartikel](migration.md#43---50), um mit der neuesten Version Schritt zu halten.
 
@@ -492,7 +492,7 @@ Veröffentlicht am 23. Mai 2022
 
 [Versionsüberblick im Blog](https://dhtmlx.com/blog/dhtmlx-spreadsheet-4-3/)
 
-### Grundlegende Änderungen {#breaking-changes-43}
+### Breaking Changes {#breaking-changes-43}
 
 Version 4.3 bringt keine grundlegenden Änderungen, führt aber eine neue Methode zur Verarbeitung von in der Tabellenkalkulation durchgeführten Aktionen ein. Lesen Sie die Details im [Migrationsartikel](migration.md#42---43).
 
@@ -787,7 +787,7 @@ Veröffentlicht am 8. November 2018
 
 Veröffentlicht am 25. Oktober 2018
 
-### Grundlegende Änderung {#breaking-change}
+### Breaking Change {#breaking-change}
 
 {{note Die API der Version 3.0 ist nicht kompatibel mit API v2.1.}}
 

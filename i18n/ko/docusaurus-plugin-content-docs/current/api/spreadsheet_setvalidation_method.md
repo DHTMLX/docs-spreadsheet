@@ -53,6 +53,6 @@ spreadsheet.setValidation("B15", null);
 spreadsheet.setValidation("B15", false);
 ~~~
 
-**변경 이력:** v4.3에서 추가됨
+**변경 로그:** v4.3에서 추가됨
 
 **관련 문서:** [셀 유효성 검사](working_with_cells.md#validating-cells)

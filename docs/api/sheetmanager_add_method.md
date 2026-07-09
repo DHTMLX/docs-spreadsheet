@@ -48,4 +48,4 @@ const anotherSheetId = spreadsheet.sheets.add();
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

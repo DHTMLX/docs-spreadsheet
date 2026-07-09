@@ -25,6 +25,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Verwandte Artikel:** [Konfiguration](configuration.md#number-of-rows-and-columns)
+**Verwandter Artikel:** [Konfiguration](configuration.md#number-of-rows-and-columns)
 
 **Verwandtes Beispiel:** [Spreadsheet. Vollständige Symbolleiste](https://snippet.dhtmlx.com/kpm017nx)

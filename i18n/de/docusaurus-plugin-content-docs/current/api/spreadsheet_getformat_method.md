@@ -47,4 +47,4 @@ wobei `sheet1` der Name des Reiters ist.
 Wenn der Name des Reiters nicht angegeben ist, gibt die Methode das Format zurück, das auf den Wert einer Zelle im aktuell aktiven Reiter angewendet wird.
 :::
 
-**Verwandte Artikel:** [Zahlenformatierung](number_formatting.md)
+**Verwandter Artikel:** [Zahlenformatierung](number_formatting.md)

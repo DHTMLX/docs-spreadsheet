@@ -26,8 +26,8 @@ spreadsheet.parse(data);
 spreadsheet.clear();
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v4.2
+**Changelog:** Hinzugefügt in v4.2
 
-**Verwandte Artikel:** [Tabellenkalkulation leeren](working_with_ssheet.md#clearing-spreadsheet)
+**Verwandter Artikel:** [Tabellenkalkulation leeren](working_with_ssheet.md#clearing-spreadsheet)
 
 **Verwandtes Beispiel:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)

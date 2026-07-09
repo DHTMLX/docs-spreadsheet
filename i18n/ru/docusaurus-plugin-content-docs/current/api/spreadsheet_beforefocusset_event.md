@@ -22,7 +22,7 @@ beforeFocusSet: (cell: string) => void | boolean;
 
 - `cell` - (обязательный) идентификатор ячейки
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Верните `true`, чтобы установить фокус на ячейку, `false` — чтобы запретить установку фокуса
 
@@ -40,4 +40,4 @@ spreadsheet.events.on("beforeFocusSet", function(cell){
 });
 ~~~
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

@@ -198,7 +198,7 @@ function App() {
 
 `instance` 속성은 위젯이 초기화되기 전과 언마운트 후에는 `null`입니다.
 
-## API 레퍼런스 {#api-reference}
+## API 참조 {#api-reference}
 
 | 문서 | 내용 |
 |----------|----------|

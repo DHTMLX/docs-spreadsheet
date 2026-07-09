@@ -48,7 +48,7 @@ spreadsheet.parse([
 ]);
 ~~~
 
-**更新日志：** 在 v6.0 中添加
+**更新日志：** 在 v6.0 中新增
 
 **相关示例：** [Spreadsheet. 添加自定义公式](https://snippet.dhtmlx.com/wvxdlahp)
 

@@ -10,7 +10,7 @@ description: Вы можете узнать об интеграции DHTMLX Jav
 Перед чтением этой документации вы должны быть знакомы с основными концепциями и паттернами **Svelte**. Для освежения знаний обратитесь к [**документации Svelte**](https://svelte.dev/).
 :::
 
-DHTMLX Spreadsheet совместим со **Svelte**. Мы подготовили примеры кода использования DHTMLX Spreadsheet со **Svelte**. Подробнее см. соответствующий [**пример на GitHub**](https://github.com/DHTMLX/svelte-spreadsheet-demo).
+DHTMLX Spreadsheet совместим со **Svelte**. Мы подготовили примеры кода использования DHTMLX Spreadsheet со **Svelte**. Подробнее см. соответствующий [**Пример на GitHub**](https://github.com/DHTMLX/svelte-spreadsheet-demo).
 
 ## Создание проекта {#creating-a-project}
 

@@ -53,6 +53,6 @@ spreadsheet.setValidation("B15", null);
 spreadsheet.setValidation("B15", false);
 ~~~
 
-**变更日志：** 在 v4.3 中添加
+**更新日志：** 在 v4.3 中新增
 
 **相关文章：** [验证单元格](working_with_cells.md#validating-cells)

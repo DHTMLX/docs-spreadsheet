@@ -481,7 +481,7 @@ document.documentElement.setAttribute("data-dhx-theme", "dark");
 </script>
 ~~~
 
-**관련 샘플:**
+**관련 예제:**
 
 - [Spreadsheet. 라이트, 다크, 라이트 고대비, 다크 고대비 테마 (스킨)](https://snippet.dhtmlx.com/t6rspqai?tag=spreadsheet)
 - [Spreadsheet. 커스텀 테마 (스킨)](https://snippet.dhtmlx.com/59nt1rcb?tag=spreadsheet)

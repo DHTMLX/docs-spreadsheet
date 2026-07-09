@@ -97,7 +97,7 @@ npm run dev
 
 在终端中打开显示的 URL（通常为 `http://localhost:5173`）即可查看电子表格。
 
-## 相关 API 与指南 {#related-api-and-guides}
+## 相关 API 和指南 {#related-api-and-guides}
 
 - [Props 参考](react/props.md) - 配置电子表格行为
 - [Events 参考](react/events.md) - 响应用户操作

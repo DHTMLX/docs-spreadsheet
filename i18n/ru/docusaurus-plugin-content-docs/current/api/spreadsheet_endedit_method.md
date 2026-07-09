@@ -26,4 +26,4 @@ spreadsheet.parse(data);
 spreadsheet.endEdit();
 ~~~
 
-**Связанные статьи:** [Работа с таблицей](working_with_cells.md#editing-a-cell)
+**Полезная статья:** [Работа с таблицей](working_with_cells.md#editing-a-cell)

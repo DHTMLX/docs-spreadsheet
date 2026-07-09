@@ -40,4 +40,4 @@ spreadsheet.events.on("beforeFocusSet", function(cell){
 });
 ~~~
 
-**Verwandte Artikel:** [Event-Handling](handling_events.md)
+**Verwandter Artikel:** [Event-Handling](handling_events.md)

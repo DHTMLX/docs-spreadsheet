@@ -26,8 +26,8 @@ spreadsheet.parse(data);
 spreadsheet.clear();
 ~~~
 
-**Change log:** Добавлено в v4.2
+**Журнал изменений:** Добавлено в v4.2
 
-**Связанные статьи:** [Очистка таблицы](working_with_ssheet.md#clearing-spreadsheet)
+**Полезная статья:** [Очистка таблицы](working_with_ssheet.md#clearing-spreadsheet)
 
 **Связанный пример:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)

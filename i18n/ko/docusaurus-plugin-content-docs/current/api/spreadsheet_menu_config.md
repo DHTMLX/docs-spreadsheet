@@ -33,4 +33,4 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 **관련 문서:** [구성](configuration.md#menu)
 
-**관련 예제:** [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)
+**관련 샘플:** [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)

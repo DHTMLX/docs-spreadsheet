@@ -38,6 +38,6 @@ Um Dateien zu exportieren, müssen Sie den Pfad zur *worker.js*-Datei der [Json2
   - `"../libs/json2excel/x.x/worker.js?vx"` für eine bestimmte Version verwenden (ersetzen Sie `x.x` durch die auf Ihrem Server bereitgestellte Version)
 
 
-**Verwandte Artikel:** [Daten laden und exportieren](loading_data.md#exporting-data)
+**Verwandter Artikel:** [Daten laden und exportieren](loading_data.md#exporting-data)
 
 **Verwandtes Beispiel:** [Spreadsheet. Benutzerdefinierter Import-/Export-Pfad](https://snippet.dhtmlx.com/wykwzfhm)

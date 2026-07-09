@@ -50,4 +50,4 @@ spreadsheet.insertLink("A2");
 
 **Журнал изменений:** Добавлено в v5.0
 
-**Связанная статья:** [Работа с таблицей](working_with_cells.md#inserting-a-hyperlink-into-a-cell)
+**Полезная статья:** [Работа с таблицей](working_with_cells.md#inserting-a-hyperlink-into-a-cell)

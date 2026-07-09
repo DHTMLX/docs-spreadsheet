@@ -220,7 +220,7 @@ const en = {
 
 [Посмотреть полную локаль формул по умолчанию](formulas_locale.md).
 
-**Related sample**: [Spreadsheet. Localization](https://snippet.dhtmlx.com/yn5hyyim?mode=wide)
+**Связанный пример**: [Spreadsheet. Localization](https://snippet.dhtmlx.com/yn5hyyim?mode=wide)
 
 ## Пользовательская локаль для формул {#custom-locale-for-formulas}
 

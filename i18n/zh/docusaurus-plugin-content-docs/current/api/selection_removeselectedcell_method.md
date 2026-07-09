@@ -35,7 +35,7 @@ spreadsheet.selection.setSelectedCell("A1:A9,C2,B4,D6");
 spreadsheet.selection.removeSelectedCell("A3:A6,C2");
 ~~~
 
-**变更日志：** 在 v4.2 中新增
+**更新日志：** 在 v4.2 中新增
 
 **相关文章：** [使用 Spreadsheet](working_with_ssheet.md)
 

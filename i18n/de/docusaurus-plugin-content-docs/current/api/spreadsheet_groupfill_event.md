@@ -35,4 +35,4 @@ spreadsheet.events.on("groupFill", function (focusedCell, selectedCell) {
 });
 ~~~
 
-**Verwandte Artikel:** [Event-Handling](handling_events.md)
+**Verwandter Artikel:** [Event-Handling](handling_events.md)

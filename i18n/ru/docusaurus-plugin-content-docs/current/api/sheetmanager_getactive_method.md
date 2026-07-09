@@ -16,7 +16,7 @@ description: В документации DHTMLX JavaScript Spreadsheet вы мо
 getActive: () => ISheet;
 ~~~
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 - `ISheet` - (*object*) объект текущего активного листа со свойствами `id` и `name`.
 
@@ -33,6 +33,6 @@ console.log(active.name); // "Sheet 1"
 console.log(active.id);   // "sheet_1"
 ~~~
 
-**Журнал изменений:** Добавлен в v6.0
+**Журнал изменений:** Добавлено в v6.0
 
-**Связанные статьи:** [Работа с листами](working_with_sheets.md)
+**Полезная статья:** [Работа с листами](working_with_sheets.md)

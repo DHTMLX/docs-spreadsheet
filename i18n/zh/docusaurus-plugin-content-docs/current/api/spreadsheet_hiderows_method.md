@@ -34,4 +34,4 @@ spreadsheet.hideRows("B2:C4"); // 第 "2" 行到第 "4" 行将被隐藏
 
 **相关示例：** [Spreadsheet. 通过 API 隐藏列和行](https://snippet.dhtmlx.com/zere1ote)
 
-**变更日志：** 在 v5.2 中新增
+**更新日志：** 在 v5.2 中新增

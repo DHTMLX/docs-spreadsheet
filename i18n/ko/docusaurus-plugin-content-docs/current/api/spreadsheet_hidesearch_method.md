@@ -29,6 +29,6 @@ spreadsheet.search("min", true);
 spreadsheet.hideSearch(); 
 ~~~
 
-**변경 이력:** v5.0에서 추가됨
+**변경 로그:** v5.0에서 추가됨
 
 **관련 문서:** [Spreadsheet 다루기](working_with_ssheet.md#searching-for-data)

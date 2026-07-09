@@ -69,7 +69,7 @@ const locale: SpreadsheetLocale = {
 `localization` 同样是仅初始化 prop。修改该值会触发完整的销毁/重建周期。
 :::
 
-## 相关 API 与指南 {#related-api-and-guides}
+## 相关 API 和指南 {#related-api-and-guides}
 
 - [本地化](localization.md) - DHTMLX Spreadsheet 本地化指南
 - [SpreadsheetLocale 类型](react/types.md#spreadsheetlocale) - TypeScript 接口参考

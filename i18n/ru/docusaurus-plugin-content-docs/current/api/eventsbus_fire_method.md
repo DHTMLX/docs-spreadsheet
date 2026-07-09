@@ -25,7 +25,7 @@ fire(name: string, arguments: array): boolean;
 - `name` - (обязательный) имя события, без учёта регистра
 - `arguments` - (обязательный) массив данных, связанных с событием
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Метод возвращает `false`, если хотя бы один из обработчиков события вернул `false`. В противном случае возвращает `true`
 
@@ -44,4 +44,4 @@ spreadsheet.events.on("CustomEvent", function(param1, param2){
 const res = spreadsheet.events.fire("CustomEvent", [12, "abc"]);
 ~~~
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

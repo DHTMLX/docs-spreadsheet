@@ -36,6 +36,6 @@ const sheet = spreadsheet.sheets.get("sheet_1");
 console.log(sheet.name); // "Sheet 1"
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v6.0
+**Changelog:** Hinzugefügt in v6.0
 
-**Verwandte Artikel:** [Mit Sheets arbeiten](working_with_sheets.md)
+**Verwandter Artikel:** [Mit Sheets arbeiten](working_with_sheets.md)

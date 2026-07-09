@@ -38,6 +38,6 @@ DHTMLX Spreadsheet использует библиотеку на основе W
   - использовать `"../libs/json2excel/x.x/worker.js?vx"` для конкретной версии (замените `x.x` на версию, развёрнутую на вашем сервере)
 
 
-**Связанные статьи:** [Загрузка и экспорт данных](loading_data.md#exporting-data)
+**Полезная статья:** [Загрузка и экспорт данных](loading_data.md#exporting-data)
 
 **Связанный пример:** [Spreadsheet. Пользовательский путь импорта и экспорта](https://snippet.dhtmlx.com/wykwzfhm)

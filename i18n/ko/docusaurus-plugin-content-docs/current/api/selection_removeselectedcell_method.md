@@ -35,7 +35,7 @@ spreadsheet.selection.setSelectedCell("A1:A9,C2,B4,D6");
 spreadsheet.selection.removeSelectedCell("A3:A6,C2");
 ~~~
 
-**변경 이력:** v4.2에서 추가됨
+**변경 로그:** v4.2에서 추가됨
 
 **관련 문서:** [Spreadsheet 작업하기](working_with_ssheet.md)
 

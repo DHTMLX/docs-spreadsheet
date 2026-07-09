@@ -80,7 +80,7 @@ DHTMLX Spreadsheet는 날짜 형식 설정에 다음 문자를 사용합니다:
 | **%A**    | AM 또는 PM                                          |
 | **%u**    | 밀리초                                      |
 
-**변경 이력:** 
+**변경 로그:** 
 - v5.1에서 추가됨
 
 **관련 문서:** [숫자, 날짜, 시간, 통화 현지화](number_formatting.md#number-date-time-currency-localization)

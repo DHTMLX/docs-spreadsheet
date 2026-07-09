@@ -46,6 +46,6 @@ console.log(newSheetId); // 예: "sheet_2"
 const anotherSheetId = spreadsheet.sheets.add();
 ~~~
 
-**변경 이력:** v6.0에서 추가됨
+**변경 로그:** v6.0에서 추가됨
 
 **관련 문서:** [시트 작업하기](working_with_sheets.md)

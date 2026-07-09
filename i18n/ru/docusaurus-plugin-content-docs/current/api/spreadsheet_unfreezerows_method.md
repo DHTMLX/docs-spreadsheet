@@ -27,9 +27,9 @@ spreadsheet.unfreezeRows(); // fixed rows in the current sheet will be unfrozen
 spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfrozen
 ~~~
 
-**Связанные статьи:** [Работа с таблицей](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Полезная статья:** [Работа с таблицей](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
-**Связанный АПИ:** [`freezeRows()`](api/spreadsheet_freezerows_method.md)
+**Похожее API:** [`freezeRows()`](api/spreadsheet_freezerows_method.md)
 
 **Связанный пример:** [Spreadsheet. Заморозка столбцов и строк через АПИ](https://snippet.dhtmlx.com/a12xd1mn)
 

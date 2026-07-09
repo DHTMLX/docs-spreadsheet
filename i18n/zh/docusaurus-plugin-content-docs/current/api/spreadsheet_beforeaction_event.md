@@ -43,7 +43,7 @@ spreadsheet.events.on("beforeAction", (actionName, config) => {
 });
 ~~~
 
-**变更日志：** 在 v4.3 中新增
+**更新日志：** 在 v4.3 中新增
 
 **相关文章：**
 - [Spreadsheet 操作](api/overview/actions_overview.md)

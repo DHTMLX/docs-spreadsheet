@@ -53,6 +53,6 @@ spreadsheet.setValidation("B15", null);
 spreadsheet.setValidation("B15", false);
 ~~~
 
-**Change log:** Hinzugefügt in v4.3
+**Changelog:** Hinzugefügt in v4.3
 
-**Related articles:** [Zellen validieren](working_with_cells.md#validating-cells)
+**Verwandter Artikel:** [Zellen validieren](working_with_cells.md#validating-cells)

@@ -31,7 +31,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Связанные статьи:**
+**Полезные статьи:**
 - [Конфигурация](configuration.md#read-only-mode)
 - [Кастомизация](customization.md#custom-read-only-mode)
 

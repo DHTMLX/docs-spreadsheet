@@ -50,4 +50,4 @@ spreadsheet.events.on("beforeClear", function(){
 
 **Changelog:** Added in v4.2
 
-**Related articles:** [Event handling](handling_events.md)
+**Related article:** [Event handling](handling_events.md)

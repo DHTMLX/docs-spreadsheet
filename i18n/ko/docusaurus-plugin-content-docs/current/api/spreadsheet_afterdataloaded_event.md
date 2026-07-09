@@ -36,4 +36,4 @@ spreadsheet.events.on("afterDataLoaded", () => {
 
 **관련 문서:** [이벤트 처리](handling_events.md)
 
-**관련 예제:** [Spreadsheet. 데이터 로드 이벤트](https://snippet.dhtmlx.com/vxr7amz6)
+**관련 샘플:** [Spreadsheet. 데이터 로드 이벤트](https://snippet.dhtmlx.com/vxr7amz6)

@@ -38,4 +38,4 @@ spreadsheet.deleteColumn("G2");
 Sie können mehrere Spalten löschen, indem Sie einen Zellenbereich als Parameter der Methode angeben, zum Beispiel: "A1:C3".
 :::
 
-**Verwandte Artikel:** [Arbeiten mit der Tabellenkalkulation](working_with_ssheet.md#addingremoving-rows-and-columns)
+**Verwandter Artikel:** [Arbeiten mit der Tabellenkalkulation](working_with_ssheet.md#addingremoving-rows-and-columns)

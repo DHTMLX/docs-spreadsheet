@@ -31,4 +31,4 @@ spreadsheet.parse(data);
 spreadsheet.selection.setFocusedCell("D4");
 ~~~
 
-**Verwandte Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md)
+**Verwandter Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md)

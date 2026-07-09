@@ -176,7 +176,7 @@ const getCellValue = (cell: string) => {
 };
 ~~~
 
-## 相关 API 与指南 {#related-api-and-guides}
+## 相关 API 和指南 {#related-api-and-guides}
 
 - [Props 参考](react/props.md) - 所有组件 props
 - [Events 参考](react/events.md) - 事件 callback props

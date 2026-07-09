@@ -31,6 +31,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Связанные статьи:** [Конфигурация](configuration.md#editing-bar)
+**Полезная статья:** [Конфигурация](configuration.md#editing-bar)
 
 **Связанный пример:** [Spreadsheet. Disabled Line](https://snippet.dhtmlx.com/unem2jkh)

@@ -58,14 +58,14 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 
 Erfahren Sie, wie Sie die [Symbolleiste anpassen](customization.md#toolbar) können.
 
-**Change log:**
+**Changelog:**
 
 - Der Block `"font"` wurde in v6.0 hinzugefügt
 - Der Block `"cell"` wurde in v5.2 hinzugefügt
 - Der Block `"actions"` wurde in v5.0 hinzugefügt
 
-**Related articles:**
+**Verwandte Artikel:**
 - [Konfiguration](configuration.md#toolbar)
 - [Anpassung](customization.md)
 
-**Related sample:** [Spreadsheet. Vollständige Symbolleiste](https://snippet.dhtmlx.com/kpm017nx)
+**Verwandtes Beispiel:** [Spreadsheet. Vollständige Symbolleiste](https://snippet.dhtmlx.com/kpm017nx)

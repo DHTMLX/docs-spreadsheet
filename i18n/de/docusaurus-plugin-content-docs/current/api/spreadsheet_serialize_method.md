@@ -39,4 +39,4 @@ spreadsheet.parse(data);
 const data = spreadsheet.serialize();
 ~~~
 
-**Verwandte Artikel:** [Datenladen und -export](loading_data.md#saving-and-restoring-state)
+**Verwandter Artikel:** [Datenladen und -export](loading_data.md#saving-and-restoring-state)

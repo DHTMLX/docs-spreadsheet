@@ -27,4 +27,4 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 **관련 문서:** [구성](configuration.md#number-of-rows-and-columns)
 
-**관련 예제:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)
+**관련 샘플:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)

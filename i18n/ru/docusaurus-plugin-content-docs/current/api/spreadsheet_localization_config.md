@@ -83,4 +83,4 @@ DHTMLX Spreadsheet использует следующие символы для
 **Журнал изменений:** 
 - Добавлено в v5.1
 
-**Связанная статья:** [Локализация чисел, дат, времени и валюты](number_formatting.md#number-date-time-currency-localization)
+**Полезная статья:** [Локализация чисел, дат, времени и валюты](number_formatting.md#number-date-time-currency-localization)

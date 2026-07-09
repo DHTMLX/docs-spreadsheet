@@ -73,7 +73,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Änderungsprotokoll:**
+**Changelog:**
 - Das Format "Time" wurde in v4.3 hinzugefügt
 - Das Format "Date" wurde in v4.2 hinzugefügt
 - Das Format "Text" wurde in v4.0 hinzugefügt

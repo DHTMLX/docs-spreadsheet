@@ -32,8 +32,8 @@ spreadsheet.events.on("afterDataLoaded", () => {
 });
 ~~~
 
-**Change log:** Hinzugefügt in v5.2
+**Changelog:** Hinzugefügt in v5.2
 
-**Verwandte Artikel:** [Event-Handling](handling_events.md)
+**Verwandter Artikel:** [Event-Handling](handling_events.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Event für geladene Daten](https://snippet.dhtmlx.com/vxr7amz6)

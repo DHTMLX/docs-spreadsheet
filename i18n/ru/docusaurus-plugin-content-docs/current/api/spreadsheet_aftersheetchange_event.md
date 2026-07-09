@@ -35,6 +35,6 @@ spreadsheet.events.on("afterSheetChange", function(sheet) {
 });
 ~~~
 
-**Список изменений:** Добавлено в v4.1
+**Журнал изменений:** Добавлено в v4.1
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

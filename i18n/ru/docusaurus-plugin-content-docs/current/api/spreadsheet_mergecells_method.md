@@ -39,6 +39,6 @@ spreadsheet.mergeCells("A2:A5");
 spreadsheet.mergeCells("A2:A5", true);
 ~~~
 
-**Журнал изменений:** Добавлен в v5.0
+**Журнал изменений:** Добавлено в v5.0
 
-**Связанная статья:** [Работа с ячейками](working_with_cells.md#merging-cells)
+**Полезная статья:** [Работа с ячейками](working_with_cells.md#merging-cells)

@@ -38,4 +38,4 @@ spreadsheet.selection.setSelectedCell("B1:B5");
 spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 ~~~
 
-**Связанные статьи:** [Работа со Spreadsheet](working_with_ssheet.md)
+**Полезная статья:** [Работа со Spreadsheet](working_with_ssheet.md)

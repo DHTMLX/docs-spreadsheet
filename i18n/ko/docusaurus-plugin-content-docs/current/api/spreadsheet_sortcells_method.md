@@ -39,6 +39,6 @@ spreadsheet.sortCells("Income!B2:B11, Report!B2:B11, Expenses!C2:C11", 1);
 ~~~
 
 
-**관련 예제:** [Spreadsheet. 여러 시트로 초기화](https://snippet.dhtmlx.com/ihtkdcoc)
+**관련 샘플:** [Spreadsheet. 여러 시트로 초기화](https://snippet.dhtmlx.com/ihtkdcoc)
 
 **관련 문서:** [데이터 정렬](working_with_ssheet.md#sorting-data)

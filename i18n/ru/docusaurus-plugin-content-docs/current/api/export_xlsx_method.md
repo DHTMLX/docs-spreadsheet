@@ -43,6 +43,6 @@ spreadsheet.export.xlsx("MyData");
 DHTMLX Spreadsheet использует библиотеку на основе WebAssembly [Json2Excel](https://github.com/dhtmlx/json2excel) для экспорта данных в Excel. [Подробнее](loading_data.md#exporting-data).
 :::
 
-**Связанные статьи:** [Загрузка и экспорт данных](loading_data.md)
+**Полезная статья:** [Загрузка и экспорт данных](loading_data.md)
 
 **Связанный пример:** [Spreadsheet. Экспорт Xlsx](https://snippet.dhtmlx.com/btyo3j8s)

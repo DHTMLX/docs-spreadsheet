@@ -40,6 +40,6 @@ Die vollständige Liste der Spreadsheet-Events finden Sie [hier](api/api_overvie
 Sie können einem Event mehrere Handler hinzufügen, und alle werden ausgeführt. Wenn einige Handler `false` zurückgeben, werden die zugehörigen Operationen blockiert. Event-Handler werden in der Reihenfolge verarbeitet, in der sie hinzugefügt wurden.
 :::
 
-**Verwandte Artikel:** [Event-Handling](handling_events.md)
+**Verwandter Artikel:** [Event-Handling](handling_events.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)

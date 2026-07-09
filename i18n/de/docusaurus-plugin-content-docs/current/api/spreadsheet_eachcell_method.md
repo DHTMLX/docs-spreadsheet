@@ -72,6 +72,6 @@ spreadsheet.menu.events.on("click", function (id) {
 });
 ~~~
 
-**Verwandte Artikel:** [Anpassung](customization.md#menu)
+**Verwandter Artikel:** [Anpassung](customization.md#menu)
 
 **Verwandtes Beispiel**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/2mlv2qaz)

@@ -48,6 +48,6 @@ spreadsheet.insertLink("A2", {
 spreadsheet.insertLink("A2");
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v5.0
+**Changelog:** Hinzugefügt in v5.0
 
 **Verwandter Artikel:** [Mit Spreadsheet arbeiten](working_with_cells.md#inserting-a-hyperlink-into-a-cell)

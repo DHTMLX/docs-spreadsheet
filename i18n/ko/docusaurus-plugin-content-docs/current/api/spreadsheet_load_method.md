@@ -97,6 +97,6 @@ function json() {
 
 [예제](https://snippet.dhtmlx.com/e3xct53l)를 확인하세요.
 
-**변경 이력:** 파일 탐색기를 통한 JSON 파일 로드 기능이 v4.3에서 추가됨
+**변경 로그:** 파일 탐색기를 통한 JSON 파일 로드 기능이 v4.3에서 추가됨
 
 **관련 문서:** [데이터 로딩 및 내보내기](loading_data.md)

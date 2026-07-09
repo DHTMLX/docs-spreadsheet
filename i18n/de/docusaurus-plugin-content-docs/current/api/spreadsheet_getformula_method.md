@@ -47,4 +47,4 @@ wobei `sheet1` der Name des Reiters ist.
 Wenn der Name des Reiters nicht angegeben ist, gibt die Methode die Formel der Zelle aus dem aktiven Reiter zurück.
 :::
 
-**Änderungsprotokoll:** In v4.1 hinzugefügt
+**Changelog:** In v4.1 hinzugefügt

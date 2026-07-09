@@ -87,8 +87,8 @@ spreadsheet.setFilter();
 | "ib"   | 사이                  |
 | "inb"  | 사이가 아님           |
 
-**변경 이력:** v5.0에서 추가됨
+**변경 로그:** v5.0에서 추가됨
 
 **관련 문서:** [데이터 필터링](working_with_ssheet.md#filtering-data)
 
-**관련 예제:** [Spreadsheet. API를 통한 필터링](https://snippet.dhtmlx.com/effrcsg6)
+**관련 샘플:** [Spreadsheet. API를 통한 필터링](https://snippet.dhtmlx.com/effrcsg6)

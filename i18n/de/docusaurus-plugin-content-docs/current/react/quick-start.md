@@ -97,7 +97,7 @@ npm run dev
 
 Offnen Sie die in Ihrem Terminal angezeigte URL (in der Regel `http://localhost:5173`), um die Tabellenkalkulation anzuzeigen.
 
-## Verwandte API-Referenzen und Anleitungen {#related-api-and-guides}
+## Verwandte API und Anleitungen {#related-api-and-guides}
 
 - [Props-Referenz](react/props.md) - Konfigurieren Sie das Verhalten der Tabellenkalkulation
 - [Events-Referenz](react/events.md) - Reagieren Sie auf Benutzeraktionen

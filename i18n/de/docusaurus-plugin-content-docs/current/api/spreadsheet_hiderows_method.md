@@ -28,10 +28,10 @@ spreadsheet.hideRows("sheet2!B2"); // the "2" row in "sheet2" will be hidden
 spreadsheet.hideRows("B2:C4"); // the rows from "2" to "4" will be hidden 
 ~~~
 
-**Verwandte Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Verwandter Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
 **Verwandte API:** [`showRows()`](api/spreadsheet_showrows_method.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen per API ausblenden](https://snippet.dhtmlx.com/zere1ote)
 
-**Änderungsprotokoll:** Hinzugefügt in v5.2
+**Changelog:** Hinzugefügt in v5.2

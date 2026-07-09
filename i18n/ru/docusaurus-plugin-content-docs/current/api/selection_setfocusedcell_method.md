@@ -31,4 +31,4 @@ spreadsheet.parse(data);
 spreadsheet.selection.setFocusedCell("D4");
 ~~~
 
-**Связанные статьи:** [Работа со Spreadsheet](working_with_ssheet.md)
+**Полезная статья:** [Работа со Spreadsheet](working_with_ssheet.md)

@@ -31,6 +31,6 @@ spreadsheet.parse(data);
 spreadsheet.fitColumn("G2");
 ~~~
 
-**Änderungsprotokoll:** In v5.0 hinzugefügt
+**Changelog:** In v5.0 hinzugefügt
 
-**Verwandte Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md#autofit-column-width)
+**Verwandter Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md#autofit-column-width)

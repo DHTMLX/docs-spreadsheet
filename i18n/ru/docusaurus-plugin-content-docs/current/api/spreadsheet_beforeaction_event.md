@@ -43,8 +43,8 @@ spreadsheet.events.on("beforeAction", (actionName, config) => {
 });
 ~~~
 
-**Список изменений:** Добавлено в v4.3
+**Журнал изменений:** Добавлено в v4.3
 
-**Связанные статьи:** 
+**Полезные статьи:** 
 - [Действия Spreadsheet](api/overview/actions_overview.md) 
 - [Обработка событий](handling_events.md) 

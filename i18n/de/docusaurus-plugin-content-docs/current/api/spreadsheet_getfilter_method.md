@@ -37,6 +37,6 @@ spreadsheet.parse(data);
 const filter = spreadsheet.getFilter(); // -> {cell:"A1:A8", rules: [{…}, {…}, {…}, {…}, {…}]}
 ~~~
 
-**Änderungsprotokoll:** In v5.0 hinzugefügt
+**Changelog:** In v5.0 hinzugefügt
 
 **Verwandter Artikel:** [Daten filtern](working_with_ssheet.md#filtering-data)

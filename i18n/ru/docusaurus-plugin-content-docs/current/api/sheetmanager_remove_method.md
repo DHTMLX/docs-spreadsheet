@@ -40,6 +40,6 @@ spreadsheet.parse(data);
 spreadsheet.sheets.remove("sheet_2");
 ~~~
 
-**Журнал изменений:** Добавлен в v6.0
+**Журнал изменений:** Добавлено в v6.0
 
-**Связанные статьи:** [Работа с листами](working_with_sheets.md)
+**Полезная статья:** [Работа с листами](working_with_sheets.md)

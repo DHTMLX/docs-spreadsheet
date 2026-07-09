@@ -25,6 +25,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Связанные статьи:** [Конфигурация](configuration.md#number-of-rows-and-columns)
+**Полезная статья:** [Конфигурация](configuration.md#number-of-rows-and-columns)
 
 **Связанный пример:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)

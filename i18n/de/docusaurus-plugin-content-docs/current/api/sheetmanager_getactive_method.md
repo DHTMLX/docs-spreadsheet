@@ -33,6 +33,6 @@ console.log(active.name); // "Sheet 1"
 console.log(active.id);   // "sheet_1"
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v6.0
+**Changelog:** Hinzugefügt in v6.0
 
-**Verwandte Artikel:** [Mit Sheets arbeiten](working_with_sheets.md)
+**Verwandter Artikel:** [Mit Sheets arbeiten](working_with_sheets.md)

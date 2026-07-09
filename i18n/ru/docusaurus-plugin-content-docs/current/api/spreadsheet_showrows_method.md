@@ -28,9 +28,9 @@ spreadsheet.showRows("sheet2!B2"); // the "2" row in "sheet2" will become visibl
 spreadsheet.showRows("B2:C2"); // the rows from "2" to "4" will become visible again
 ~~~
 
-**Связанные статьи:** [Работа с таблицей](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Полезная статья:** [Работа с таблицей](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
-**Связанный АПИ:** [`hideRows()`](api/spreadsheet_hiderows_method.md)
+**Похожее API:** [`hideRows()`](api/spreadsheet_hiderows_method.md)
 
 **Связанный пример:** [Spreadsheet. Скрытие столбцов и строк через АПИ](https://snippet.dhtmlx.com/zere1ote)
 

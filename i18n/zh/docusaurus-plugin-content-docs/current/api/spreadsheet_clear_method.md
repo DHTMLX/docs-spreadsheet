@@ -26,7 +26,7 @@ spreadsheet.parse(data);
 spreadsheet.clear();
 ~~~
 
-**变更日志：** 在 v4.2 中新增
+**更新日志：** 在 v4.2 中新增
 
 **相关文章：** [清空电子表格](working_with_ssheet.md#clearing-spreadsheet)
 

@@ -27,11 +27,11 @@ spreadsheet.unfreezeRows(); // Fixierte Zeilen im aktuellen Tabellenblatt werden
 spreadsheet.unfreezeRows("sheet2!A1"); // Fixierte Zeilen in "sheet2" werden aufgetaut
 ~~~
 
-**Verwandte Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Verwandter Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
 **Verwandte API:** [`freezeRows()`](api/spreadsheet_freezerows_method.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen per API einfrieren](https://snippet.dhtmlx.com/a12xd1mn)
 
-**Änderungsprotokoll:** 
+**Changelog:** 
 Hinzugefügt in v5.2

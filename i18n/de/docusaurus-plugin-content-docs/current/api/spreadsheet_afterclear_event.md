@@ -45,4 +45,4 @@ spreadsheet.events.on("afterClear", function(){
 
 **Changelog:** Hinzugefügt in v4.2
 
-**Verwandte Artikel:** [Event-Handling](handling_events.md)
+**Verwandter Artikel:** [Event-Handling](handling_events.md)

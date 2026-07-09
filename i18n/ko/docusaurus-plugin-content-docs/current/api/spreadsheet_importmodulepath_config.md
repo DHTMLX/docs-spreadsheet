@@ -42,4 +42,4 @@ DHTMLX Spreadsheet는 WebAssembly 기반 라이브러리 [Excel2json](https://gi
 
 **관련 문서:** [데이터 로딩 및 내보내기](loading_data.md#loading-excel-file-xlsx)
 
-**관련 예제:** [Spreadsheet. 사용자 정의 Import Export 경로](https://snippet.dhtmlx.com/wykwzfhm)
+**관련 샘플:** [Spreadsheet. 사용자 정의 Import Export 경로](https://snippet.dhtmlx.com/wykwzfhm)

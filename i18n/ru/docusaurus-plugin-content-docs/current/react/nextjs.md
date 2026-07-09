@@ -94,7 +94,7 @@ export default function Home() {
 }
 ~~~
 
-## Связанные АПИ и руководства {#related-api-and-guides}
+## Связанные API и гайды {#related-api-and-guides}
 
 - [Справочник пропсов](react/props.md) - все пропсы компонента с типами и значениями по умолчанию
 - [Справочник событий](react/events.md) - реагирование на действия пользователя

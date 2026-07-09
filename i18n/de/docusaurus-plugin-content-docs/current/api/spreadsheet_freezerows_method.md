@@ -27,11 +27,11 @@ spreadsheet.freezeRows("B2"); // the rows up to the "2" row will be fixed
 spreadsheet.freezeRows("sheet2!B2"); // the rows up to the "2" row in "sheet2" will be fixed
 ~~~
 
-**Verwandte Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Verwandter Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
 **Verwandte API:** [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen per API einfrieren](https://snippet.dhtmlx.com/a12xd1mn)
 
-**Änderungsprotokoll:** 
+**Changelog:** 
 In v5.2 hinzugefügt

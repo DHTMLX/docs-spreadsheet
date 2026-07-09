@@ -80,7 +80,7 @@ DHTMLX Spreadsheet 使用以下字符来设置日期格式：
 | **%A**    | AM 或 PM                                          |
 | **%u**    | 毫秒                                      |
 
-**变更日志：** 
+**更新日志：** 
 - 在 v5.1 中新增
 
 **相关文章：** [数字、日期、时间、货币本地化](number_formatting.md#number-date-time-currency-localization)

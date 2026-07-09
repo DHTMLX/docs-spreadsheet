@@ -44,7 +44,7 @@ spreadsheet.setValue("B6,A1:D1",5);
 spreadsheet.setValue("A1:D1",[1,2,3]);
 ~~~
 
-**Related sample:** [Spreadsheet. Initialisierung mit mehreren Tabellenblättern](https://snippet.dhtmlx.com/ihtkdcoc)
+**Verwandtes Beispiel:** [Spreadsheet. Initialisierung mit mehreren Tabellenblättern](https://snippet.dhtmlx.com/ihtkdcoc)
 
 :::info
 Ab v4.1 kann der Verweis auf eine Zelle oder einen Zellbereich im folgenden Format angegeben werden:

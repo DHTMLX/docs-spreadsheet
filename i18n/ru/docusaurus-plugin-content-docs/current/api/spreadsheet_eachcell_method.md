@@ -72,6 +72,6 @@ spreadsheet.menu.events.on("click", function (id) {
 });
 ~~~
 
-**Связанные статьи:** [Кастомизация](customization.md#menu)
+**Полезная статья:** [Кастомизация](customization.md#menu)
 
 **Связанный пример**: [Spreadsheet. Menu](https://snippet.dhtmlx.com/2mlv2qaz)

@@ -27,7 +27,7 @@ description: В документации вы можете узнать, что 
 
 В новом релизе внесены значительные изменения в API Spreadsheet: ряд методов, свойств и событий объявлен устаревшим. Ознакомьтесь с [Руководством по миграции](migration.md#52---60), чтобы оставаться в актуальной версии.
 
-### Новые возможности {#new-functionality}
+### Новый функционал {#new-functionality}
 
 - Представлена [обёртка React Spreadsheet](react.md). Примеры можно найти в [репозитории демо на GitHub](https://github.com/DHTMLX/react-spreadsheet-examples)
 - Представлен модуль [`SheetManager`](api/overview/sheetmanager_overview.md) — централизованный API для управления листами в Spreadsheet. Доступен через свойство `spreadsheet.sheets` и заменяет все [устаревшие методы работы с листами](migration.md#deprecated-methods) на корневом экземпляре Spreadsheet.
@@ -168,7 +168,7 @@ description: В документации вы можете узнать, что 
 
 - Свойства конфигурации `leftSplit` и `topSplit` удалены
 
-### Новые возможности {#new-functionality-1}
+### Новый функционал {#new-functionality-1}
 
 - Редактирование ячеек:
     - возможность [создавать стилизованную границу для группы ячеек через интерфейс](data_formatting.md#styled-borders-for-cells)
@@ -297,7 +297,7 @@ description: В документации вы можете узнать, что 
 
 [Обзор релиза в блоге](https://dhtmlx.com/blog/dhtmlx-spreadsheet-5-1/)
 
-### Новые возможности {#new-functionality-2}
+### Новый функционал {#new-functionality-2}
 
 - [Поддержка новых тем](/themes/): Dark, Light High Contrast и Dark High Contrast
 - Расширенная [поддержка локализации форматов чисел, дат, времени и валют](number_formatting.md#number-date-time-currency-localization)
@@ -433,7 +433,7 @@ description: В документации вы можете узнать, что 
 
 В новом релизе внесены изменения в свойство [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md). Ознакомьтесь со [статьёй о миграции](migration.md#43---50), чтобы оставаться в актуальной версии.
 
-### Новые возможности {#new-functionality-3}
+### Новый функционал {#new-functionality-3}
 
 - Поиск данных:
     - возможность искать данные через [интерфейс](data_search.md)
@@ -495,7 +495,7 @@ description: В документации вы можете узнать, что 
 
 Версия 4.3 не вносит критических изменений, но представляет новый способ обработки действий в таблице. Подробности см. в [статье о миграции](migration.md#42---43).
 
-### Новые возможности {#new-functionality-4}
+### Новый функционал {#new-functionality-4}
 
 - Возможность добавлять в ячейки выпадающий список вариантов через метод [`setValidation()`](api/spreadsheet_setvalidation_method.md) или через [интерфейс](work_with_cells.md#using-drop-down-lists-in-cells)
 - Возможность закреплять строки в верхней части таблицы через свойство `topSplit`
@@ -521,7 +521,7 @@ description: В документации вы можете узнать, что 
 
 [Обзор релиза в блоге](https://dhtmlx.com/blog/dhtmlx-spreadsheet-4-2-with130-new-functions-boolean-operators-date-format-row-resizing-much/)
 
-### Новые возможности {#new-functionality-5}
+### Новый функционал {#new-functionality-5}
 
 - Поддержка функций для работы с [датами](functions.md#date-functions), [финансовых](functions.md#financial-functions), [информационных](functions.md#information-functions), [регулярных выражений](functions.md#regex-functions) и [других](functions.md#other-functions)
 - Поддержка [логических операторов](functions.md#boolean-operators)
@@ -602,7 +602,7 @@ description: В документации вы можете узнать, что 
 
 [Обзор релиза в блоге](https://dhtmlx.com/blog/dhtmlx-spreadsheet-4-1-multiple-sheets/)
 
-### Новые возможности {#new-functionality-6}
+### Новый функционал {#new-functionality-6}
 
 - Добавлена новая опция конфигурации [multiSheets](api/spreadsheet_multisheets_config.md)
 - Возможность [работать с несколькими листами](work_with_sheets.md) в таблице
@@ -681,7 +681,7 @@ description: В документации вы можете узнать, что 
 
 Выпущена 19 октября 2020 года
 
-### Новые возможности {#new-functionality-7}
+### Новый функционал {#new-functionality-7}
 
 - [Математические функции](functions.md)
 - [Поддержка TypeScript](using_typescript.md)
@@ -734,7 +734,7 @@ description: В документации вы можете узнать, что 
 
 Выпущена 21 марта 2019 года
 
-### Новые возможности {#new-functionality-8}
+### Новый функционал {#new-functionality-8}
 
 - [Импорт из Excel](loading_data.md#loading-excel-file-xlsx)
 - [Экспорт в Excel](loading_data.md#exporting-data)
@@ -794,7 +794,7 @@ description: В документации вы можете узнать, что 
 
 Ознакомьтесь со [статьёй о миграции](migration.md#21---30), чтобы получить информацию об использовании нового API.
 
-### Новые возможности {#new-functionality-9}
+### Новый функционал {#new-functionality-9}
 
 API Spreadsheet был переработан и стал более удобным. Ещё одним значительным обновлением является полный редизайн компонента, придавший современный вид интерфейсу Spreadsheet. Вместе со свежим внешним видом значительно улучшена удобство использования DHTMLX Spreadsheet.
 

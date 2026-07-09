@@ -46,6 +46,6 @@ console.log(newSheetId); // z. B. "sheet_2"
 const anotherSheetId = spreadsheet.sheets.add();
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v6.0
+**Changelog:** Hinzugefügt in v6.0
 
-**Verwandte Artikel:** [Mit Tabellenblättern arbeiten](working_with_sheets.md)
+**Verwandter Artikel:** [Mit Tabellenblättern arbeiten](working_with_sheets.md)

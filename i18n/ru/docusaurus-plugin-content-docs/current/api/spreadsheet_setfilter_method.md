@@ -89,6 +89,6 @@ spreadsheet.setFilter();
 
 **Журнал изменений:** Добавлено в v5.0
 
-**Связанная статья:** [Фильтрация данных](working_with_ssheet.md#filtering-data)
+**Полезная статья:** [Фильтрация данных](working_with_ssheet.md#filtering-data)
 
 **Связанный пример:** [Spreadsheet. Фильтрация через АПИ](https://snippet.dhtmlx.com/effrcsg6)

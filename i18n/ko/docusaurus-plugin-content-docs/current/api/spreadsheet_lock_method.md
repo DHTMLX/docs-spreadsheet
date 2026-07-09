@@ -48,4 +48,4 @@ spreadsheet.lock("sheet1!A2");
 탭 이름을 지정하지 않으면 현재 활성 탭의 셀을 잠급니다.
 :::
 
-**관련 예제**: [Spreadsheet. Locked Cells](https://snippet.dhtmlx.com/czeyiuf8)
+**관련 샘플**: [Spreadsheet. Locked Cells](https://snippet.dhtmlx.com/czeyiuf8)

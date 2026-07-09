@@ -23,7 +23,7 @@ beforeEditStart: (cell: string, value: string) => void | boolean;
 - `cell` - (обязательный) идентификатор ячейки
 - `value` - (обязательный) значение ячейки
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Верните `true`, чтобы разрешить редактирование ячейки, `false` — чтобы запретить
 
@@ -41,4 +41,4 @@ spreadsheet.events.on("beforeEditStart", function(cell, value){
 });
 ~~~
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

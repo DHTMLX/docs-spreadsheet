@@ -191,7 +191,7 @@ spreadsheet.toolbar.data.add({
 
 ![커스터마이징을 통해 사용자 정의 모두 제거 버튼이 추가된 DHTMLX Spreadsheet 툴바](/img/custom_toolbar_button.png)
 
-**관련 예제**: [Spreadsheet. 사용자 정의 툴바 버튼](https://snippet.dhtmlx.com/qopk6lta)
+**관련 샘플**: [Spreadsheet. 사용자 정의 툴바 버튼](https://snippet.dhtmlx.com/qopk6lta)
 
 아래 예제에서는 "clear-group" 컨트롤에 새 menuItem 옵션을 추가합니다:
 
@@ -225,7 +225,7 @@ spreadsheet.toolbar.data.update("redo", { icon: "fa fa-redo" });
 
 ![Font Awesome의 사용자 정의 실행 취소 및 다시 실행 아이콘이 적용된 DHTMLX Spreadsheet 툴바](/img/custom_toolbar_icons.png)
 
-**관련 예제**: [Spreadsheet. 사용자 정의 툴바 아이콘](https://snippet.dhtmlx.com/mvnx43o0)
+**관련 샘플**: [Spreadsheet. 사용자 정의 툴바 아이콘](https://snippet.dhtmlx.com/mvnx43o0)
 
 ### 컨트롤 삭제 {#deleting-controls-1}
 
@@ -256,7 +256,7 @@ spreadsheet.toolbar.data.add(
 spreadsheet.parse(dataset);
 ~~~
 
-**관련 예제:** [Spreadsheet. 사용자 정의 글꼴 크기 설정](https://snippet.dhtmlx.com/tffbf11g)
+**관련 샘플:** [Spreadsheet. 사용자 정의 글꼴 크기 설정](https://snippet.dhtmlx.com/tffbf11g)
 
 ## 메뉴 {#menu}
 
@@ -344,7 +344,7 @@ spreadsheet.menu.data.add({
 
 ![숫자 확인을 위한 사용자 정의 유효성 검사 옵션이 추가된 DHTMLX Spreadsheet 메뉴](/img/custom_menuitem.png)
 
-**관련 예제**: [Spreadsheet. 메뉴 데이터](https://snippet.dhtmlx.com/2mlv2qaz)
+**관련 샘플**: [Spreadsheet. 메뉴 데이터](https://snippet.dhtmlx.com/2mlv2qaz)
 
 ### 컨트롤 업데이트 {#updating-controls-2}
 
@@ -412,7 +412,7 @@ spreadsheet.contextMenu.data.add({
 
 ![사용자 정의 페인트 형식 옵션이 추가된 DHTMLX Spreadsheet 컨텍스트 메뉴](/img/custom_context_menuitem.png)
 
-**관련 예제**: [Spreadsheet. 컨텍스트 메뉴](https://snippet.dhtmlx.com/atl9gd4h)
+**관련 샘플**: [Spreadsheet. 컨텍스트 메뉴](https://snippet.dhtmlx.com/atl9gd4h)
 
 ### 컨트롤 업데이트 {#updating-controls-3}
 
@@ -455,4 +455,4 @@ spreadsheet.events.on("beforeAction", function(actionName){
 spreadsheet.parse(data);
 ~~~
 
-**관련 예제**: [Spreadsheet. 사용자 정의 읽기 전용](https://snippet.dhtmlx.com/8xcursbe)
+**관련 샘플**: [Spreadsheet. 사용자 정의 읽기 전용](https://snippet.dhtmlx.com/8xcursbe)

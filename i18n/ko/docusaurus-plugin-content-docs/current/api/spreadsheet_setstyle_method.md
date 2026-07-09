@@ -44,7 +44,7 @@ spreadsheet.setStyle("B6,A1:D1", {color:"blue"});
 spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
 ~~~
 
-**관련 예제**: [Spreadsheet. 스타일이 적용된 데이터](https://snippet.dhtmlx.com/abnh7glb)
+**관련 샘플**: [Spreadsheet. 스타일이 적용된 데이터](https://snippet.dhtmlx.com/abnh7glb)
 
 :::info
 v4.1부터 셀 또는 셀 범위 참조를 다음 형식으로 지정할 수 있습니다:

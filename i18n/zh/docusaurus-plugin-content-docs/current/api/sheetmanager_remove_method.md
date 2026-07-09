@@ -40,6 +40,6 @@ spreadsheet.parse(data);
 spreadsheet.sheets.remove("sheet_2");
 ~~~
 
-**更新日志：** 在 v6.0 中添加
+**更新日志：** 在 v6.0 中新增
 
 **相关文章：** [使用工作表](working_with_sheets.md)

@@ -28,9 +28,9 @@ spreadsheet.showCols("sheet2!B2"); // the "B" column in "sheet2" will become vis
 spreadsheet.showCols("B2:C2"); // the "B" and "C" columns will become visible again
 ~~~
 
-**Связанные статьи:** [Работа с таблицей](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Полезная статья:** [Работа с таблицей](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
-**Связанный АПИ:** [`hideCols()`](api/spreadsheet_hidecols_method.md)
+**Похожее API:** [`hideCols()`](api/spreadsheet_hidecols_method.md)
 
 **Связанный пример:** [Spreadsheet. Скрытие столбцов и строк через АПИ](https://snippet.dhtmlx.com/zere1ote)
 

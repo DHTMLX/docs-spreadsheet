@@ -27,11 +27,11 @@ spreadsheet.freezeCols("B2"); // столбцы до столбца "B" буду
 spreadsheet.freezeCols("sheet2!B2"); // столбцы до столбца "B" в "sheet2" будут зафиксированы
 ~~~
 
-**Связанные статьи:** [Работа с таблицей](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Полезная статья:** [Работа с таблицей](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
-**Связанный АПИ:** [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md)
+**Похожее API:** [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md)
 
 **Связанный пример:** [Spreadsheet. Фиксация столбцов и строк через АПИ](https://snippet.dhtmlx.com/a12xd1mn)
 
 **Журнал изменений:** 
-Добавлен в v5.2
+Добавлено в v5.2

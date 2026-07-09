@@ -34,4 +34,4 @@ spreadsheet.showRows("B2:C2"); // 第 "2" 行到第 "4" 行将重新变为可见
 
 **相关示例：** [Spreadsheet. Hiding columns and rows via API](https://snippet.dhtmlx.com/zere1ote)
 
-**变更日志：** 在 v5.2 中添加
+**更新日志：** 在 v5.2 中新增

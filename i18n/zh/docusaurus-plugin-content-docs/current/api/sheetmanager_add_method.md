@@ -46,6 +46,6 @@ console.log(newSheetId); // 例如 "sheet_2"
 const anotherSheetId = spreadsheet.sheets.add();
 ~~~
 
-**变更日志：** 在 v6.0 中新增
+**更新日志：** 在 v6.0 中新增
 
 **相关文章：** [使用工作表](working_with_sheets.md)

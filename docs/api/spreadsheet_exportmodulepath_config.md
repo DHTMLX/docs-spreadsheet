@@ -38,6 +38,6 @@ To export files, you need to set the path to the *worker.js* file of the [Json2E
   - use `"../libs/json2excel/x.x/worker.js?vx"` for a specific version (replace `x.x` with the version deployed on your server)
 
 
-**Related articles:** [Data loading and export](loading_data.md#exporting-data)
+**Related article:** [Data loading and export](loading_data.md#exporting-data)
 
 **Related sample:** [Spreadsheet. Custom Import Export Path](https://snippet.dhtmlx.com/wykwzfhm)

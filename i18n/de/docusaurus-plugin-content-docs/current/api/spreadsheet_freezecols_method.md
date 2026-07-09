@@ -27,11 +27,11 @@ spreadsheet.freezeCols("B2"); // the columns up to the "B" column will be fixed
 spreadsheet.freezeCols("sheet2!B2"); // the columns up to the "B" column in "sheet2" will be fixed
 ~~~
 
-**Verwandte Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Verwandter Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
 **Verwandte API:** [`unfreezeCols()`](api/spreadsheet_unfreezecols_method.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen per API einfrieren](https://snippet.dhtmlx.com/a12xd1mn)
 
-**Änderungsprotokoll:** 
+**Changelog:** 
 In v5.2 hinzugefügt

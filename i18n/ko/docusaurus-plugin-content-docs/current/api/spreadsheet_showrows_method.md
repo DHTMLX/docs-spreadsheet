@@ -32,6 +32,6 @@ spreadsheet.showRows("B2:C2"); // "2"부터 "4"까지의 행이 다시 표시됩
 
 **관련 API:** [`hideRows()`](api/spreadsheet_hiderows_method.md)
 
-**관련 예제:** [Spreadsheet. API를 통한 열 및 행 숨기기](https://snippet.dhtmlx.com/zere1ote)
+**관련 샘플:** [Spreadsheet. API를 통한 열 및 행 숨기기](https://snippet.dhtmlx.com/zere1ote)
 
-**변경 이력:** v5.2에서 추가됨
+**변경 로그:** v5.2에서 추가됨

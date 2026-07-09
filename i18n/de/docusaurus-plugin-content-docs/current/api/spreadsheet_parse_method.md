@@ -279,7 +279,7 @@ Bei Bedarf können Sie auch die folgenden Eigenschaften verwenden:
 In manchen Fällen funktionieren diese jedoch möglicherweise nicht wie erwartet (z. B. bei der Verwendung von `position: absolute` oder `display: box`).
 :::
 
-**Change log:**
+**Changelog:**
 
 - Die Eigenschaft `freeze` sowie der Parameter `hidden` für die Eigenschaften `rows` und `cols` des `sheets`-Objekts wurden in v5.2 hinzugefügt
 - Die Eigenschaften `locked` und `link` des `cell`-Objekts wurden in v5.1 hinzugefügt
@@ -288,7 +288,7 @@ In manchen Fällen funktionieren diese jedoch möglicherweise nicht wie erwartet
 - Die Eigenschaften `rows` und `cols` des `sheets`-Objekts wurden in v4.2 hinzugefügt
 - Die Möglichkeit, Daten für mehrere Tabellenblätter vorzubereiten, wurde in v4.1 hinzugefügt
 
-**Verwandte Artikel:** [Datenladen und -export](loading_data.md)
+**Verwandter Artikel:** [Datenladen und -export](loading_data.md)
 
 **Verwandte Beispiele**:
 

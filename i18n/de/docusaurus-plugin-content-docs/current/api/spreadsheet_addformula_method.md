@@ -48,8 +48,8 @@ spreadsheet.parse([
 ]);
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v6.0
+**Changelog:** Hinzugefügt in v6.0
 
 **Verwandtes Beispiel:** [Spreadsheet. Benutzerdefinierte Formel hinzufügen](https://snippet.dhtmlx.com/wvxdlahp)
 
-**Verwandte Artikel:** [Formeln und Funktionen](functions.md#custom-formulas)
+**Verwandter Artikel:** [Formeln und Funktionen](functions.md#custom-formulas)

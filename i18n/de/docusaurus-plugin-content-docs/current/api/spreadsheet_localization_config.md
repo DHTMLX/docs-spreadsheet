@@ -80,7 +80,7 @@ DHTMLX Spreadsheet verwendet folgende Zeichen zur Festlegung eines Datumsformats
 | **%A**  | AM oder PM                                              |
 | **%u**  | Millisekunden                                           |
 
-**Änderungsprotokoll:** 
+**Changelog:** 
 - Hinzugefügt in v5.1
 
 **Verwandter Artikel:** [Lokalisierung von Zahlen, Datum, Uhrzeit und Währung](number_formatting.md#number-date-time-currency-localization)

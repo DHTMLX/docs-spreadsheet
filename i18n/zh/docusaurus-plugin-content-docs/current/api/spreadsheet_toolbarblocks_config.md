@@ -58,7 +58,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 
 查看如何[自定义工具栏](customization.md#toolbar)。
 
-**变更日志：**
+**更新日志：**
 
 - `"font"` 分组在 v6.0 中添加
 - `"cell"` 分组在 v5.2 中添加

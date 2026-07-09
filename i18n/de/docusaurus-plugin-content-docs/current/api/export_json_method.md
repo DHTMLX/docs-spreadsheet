@@ -30,6 +30,6 @@ spreadsheet.export.json();
 
 **Changelog:** In v4.3 hinzugefügt
 
-**Verwandte Artikel:** [Datenladen und -export](loading_data.md)
+**Verwandter Artikel:** [Datenladen und -export](loading_data.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Export/Import JSON](https://snippet.dhtmlx.com/e3xct53l)

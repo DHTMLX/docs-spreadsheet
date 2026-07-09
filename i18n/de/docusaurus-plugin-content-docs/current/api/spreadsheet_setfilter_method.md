@@ -87,8 +87,8 @@ spreadsheet.setFilter();
 | "ib"   | liegt zwischen                |
 | "inb"  | liegt nicht zwischen          |
 
-**Change log:** Hinzugefügt in v5.0
+**Changelog:** Hinzugefügt in v5.0
 
-**Related article:** [Daten filtern](working_with_ssheet.md#filtering-data)
+**Verwandter Artikel:** [Daten filtern](working_with_ssheet.md#filtering-data)
 
-**Related sample:** [Spreadsheet. Filterung über API](https://snippet.dhtmlx.com/effrcsg6)
+**Verwandtes Beispiel:** [Spreadsheet. Filterung über API](https://snippet.dhtmlx.com/effrcsg6)

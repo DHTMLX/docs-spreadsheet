@@ -35,8 +35,8 @@ spreadsheet.selection.setSelectedCell("A1:A9,C2,B4,D6");
 spreadsheet.selection.removeSelectedCell("A3:A6,C2");
 ~~~
 
-**История изменений:** Добавлено в v4.2
+**Журнал изменений:** Добавлено в v4.2
 
-**Связанные статьи:** [Работа со Spreadsheet](working_with_ssheet.md)
+**Полезная статья:** [Работа со Spreadsheet](working_with_ssheet.md)
 
 **Связанный пример:** [Spreadsheet. Снятие выделения](https://snippet.dhtmlx.com/u4j76cuh)

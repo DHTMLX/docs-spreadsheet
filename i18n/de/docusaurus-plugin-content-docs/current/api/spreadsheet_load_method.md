@@ -97,6 +97,6 @@ function json() {
 
 Sehen Sie das [Beispiel](https://snippet.dhtmlx.com/e3xct53l).
 
-**Änderungsprotokoll:** Die Möglichkeit, eine JSON-Datei über den Datei-Explorer zu laden, wurde in v4.3 hinzugefügt
+**Changelog:** Die Möglichkeit, eine JSON-Datei über den Datei-Explorer zu laden, wurde in v4.3 hinzugefügt
 
-**Verwandte Artikel:** [Datenladen und -export](loading_data.md)
+**Verwandter Artikel:** [Datenladen und -export](loading_data.md)

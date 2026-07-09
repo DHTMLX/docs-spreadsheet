@@ -35,4 +35,4 @@ spreadsheet.events.on("groupFill", function (focusedCell, selectedCell) {
 });
 ~~~
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

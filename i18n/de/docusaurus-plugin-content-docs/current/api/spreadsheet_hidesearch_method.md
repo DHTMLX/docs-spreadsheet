@@ -29,6 +29,6 @@ spreadsheet.search("min", true);
 spreadsheet.hideSearch(); 
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v5.0
+**Changelog:** Hinzugefügt in v5.0
 
 **Verwandter Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#searching-for-data)

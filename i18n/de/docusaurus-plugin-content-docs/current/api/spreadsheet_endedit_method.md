@@ -26,4 +26,4 @@ spreadsheet.parse(data);
 spreadsheet.endEdit();
 ~~~
 
-**Verwandte Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_cells.md#editing-a-cell)
+**Verwandter Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_cells.md#editing-a-cell)

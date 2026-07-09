@@ -36,4 +36,4 @@ spreadsheet.events.on("afterEditStart", function(cell, value){
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events.md)
+**Related article:** [Event handling](handling_events.md)

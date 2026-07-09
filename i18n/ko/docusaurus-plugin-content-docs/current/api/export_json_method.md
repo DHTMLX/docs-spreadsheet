@@ -28,7 +28,7 @@ spreadsheet.parse(data);
 spreadsheet.export.json();
 ~~~
 
-**변경 로그:** v4.3에서 추가되었습니다
+**변경 로그:** v4.3에서 추가됨
 
 **관련 문서:** [데이터 로드 및 내보내기](loading_data.md)
 

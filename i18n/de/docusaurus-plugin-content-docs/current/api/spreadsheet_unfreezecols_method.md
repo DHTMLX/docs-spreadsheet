@@ -27,11 +27,11 @@ spreadsheet.unfreezeCols(); // Fixierte Spalten im aktuellen Tabellenblatt werde
 spreadsheet.unfreezeCols("sheet2!A1"); // Fixierte Spalten in "sheet2" werden aufgetaut
 ~~~
 
-**Verwandte Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Verwandter Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
 **Verwandte API:** [`freezeCols()`](api/spreadsheet_freezecols_method.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen per API einfrieren](https://snippet.dhtmlx.com/a12xd1mn)
 
-**Änderungsprotokoll:** 
+**Changelog:** 
 Hinzugefügt in v5.2

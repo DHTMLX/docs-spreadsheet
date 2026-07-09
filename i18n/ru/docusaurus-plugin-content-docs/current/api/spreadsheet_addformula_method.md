@@ -48,8 +48,8 @@ spreadsheet.parse([
 ]);
 ~~~
 
-**Журнал изменений:** Добавлен в v6.0
+**Журнал изменений:** Добавлено в v6.0
 
 **Связанный пример:** [Spreadsheet. Добавление пользовательской формулы](https://snippet.dhtmlx.com/wvxdlahp)
 
-**Связанные статьи:** [Формулы и функции](functions.md#custom-formulas)
+**Полезная статья:** [Формулы и функции](functions.md#custom-formulas)

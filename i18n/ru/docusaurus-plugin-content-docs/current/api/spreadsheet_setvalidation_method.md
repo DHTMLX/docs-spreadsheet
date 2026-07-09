@@ -55,4 +55,4 @@ spreadsheet.setValidation("B15", false);
 
 **Журнал изменений:** Добавлено в v4.3
 
-**Связанные статьи:** [Валидация ячеек](working_with_cells.md#validating-cells)
+**Полезная статья:** [Валидация ячеек](working_with_cells.md#validating-cells)

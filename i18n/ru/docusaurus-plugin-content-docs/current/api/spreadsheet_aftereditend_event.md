@@ -36,4 +36,4 @@ spreadsheet.events.on("afterEditEnd", function(cell, value){
 });
 ~~~
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

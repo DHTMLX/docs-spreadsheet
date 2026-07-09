@@ -35,8 +35,8 @@ spreadsheet.selection.setSelectedCell("A1:A9,C2,B4,D6");
 spreadsheet.selection.removeSelectedCell("A3:A6,C2");
 ~~~
 
-**Änderungsprotokoll:** Hinzugefügt in v4.2
+**Changelog:** Hinzugefügt in v4.2
 
-**Verwandte Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md)
+**Verwandter Artikel:** [Mit der Tabellenkalkulation arbeiten](working_with_ssheet.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Auswahl aufheben](https://snippet.dhtmlx.com/u4j76cuh)

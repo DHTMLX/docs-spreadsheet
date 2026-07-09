@@ -69,7 +69,7 @@ const locale: SpreadsheetLocale = {
 `localization` также является пропсом только для инициализации. Изменения запускают полный цикл уничтожения/пересоздания.
 :::
 
-## Связанные АПИ и руководства {#related-api-and-guides}
+## Связанные API и гайды {#related-api-and-guides}
 
 - [Локализация](localization.md) - руководство по локализации DHTMLX Spreadsheet
 - [Тип SpreadsheetLocale](react/types.md#spreadsheetlocale) - справочник TypeScript-интерфейса

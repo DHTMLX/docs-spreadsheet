@@ -48,6 +48,6 @@ spreadsheet.insertLink("A2", {
 spreadsheet.insertLink("A2");
 ~~~
 
-**变更日志：** 在 v5.0 中新增
+**更新日志：** 在 v5.0 中新增
 
 **相关文章：** [使用 Spreadsheet](working_with_cells.md#inserting-a-hyperlink-into-a-cell)

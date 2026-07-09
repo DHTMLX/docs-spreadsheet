@@ -87,7 +87,7 @@ spreadsheet.setFilter();
 | "ib"   | 介于之间              |
 | "inb"  | 不介于之间            |
 
-**变更日志：** 在 v5.0 中添加
+**更新日志：** 在 v5.0 中新增
 
 **相关文章：** [筛选数据](working_with_ssheet.md#filtering-data)
 

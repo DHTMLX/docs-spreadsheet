@@ -41,4 +41,4 @@ spreadsheet.sortCells("Income!B2:B11, Report!B2:B11, Expenses!C2:C11", 1);
 
 **Связанный пример:** [Spreadsheet. Инициализация с несколькими листами](https://snippet.dhtmlx.com/ihtkdcoc)
 
-**Связанные статьи:** [Сортировка данных](working_with_ssheet.md#sorting-data)
+**Полезная статья:** [Сортировка данных](working_with_ssheet.md#sorting-data)

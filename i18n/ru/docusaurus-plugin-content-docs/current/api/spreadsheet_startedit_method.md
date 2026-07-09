@@ -35,4 +35,4 @@ spreadsheet.parse(data);
 spreadsheet.startEdit();
 ~~~
 
-**Связанные статьи:** [Работа с таблицей](working_with_cells.md#editing-a-cell)
+**Полезная статья:** [Работа с таблицей](working_with_cells.md#editing-a-cell)

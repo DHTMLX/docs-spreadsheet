@@ -97,6 +97,6 @@ function json() {
 
 查看[示例](https://snippet.dhtmlx.com/e3xct53l)。
 
-**变更日志：** 通过文件浏览器加载 JSON 文件的功能已在 v4.3 中新增
+**更新日志：** 通过文件浏览器加载 JSON 文件的功能已在 v4.3 中新增
 
 **相关文章：** [数据加载与导出](loading_data.md)

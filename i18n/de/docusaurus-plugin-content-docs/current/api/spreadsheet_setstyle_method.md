@@ -44,7 +44,7 @@ spreadsheet.setStyle("B6,A1:D1", {color:"blue"});
 spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
 ~~~
 
-**Related sample**: [Spreadsheet. Gestaltete Daten](https://snippet.dhtmlx.com/abnh7glb)
+**Verwandtes Beispiel**: [Spreadsheet. Gestaltete Daten](https://snippet.dhtmlx.com/abnh7glb)
 
 :::info
 Ab v4.1 kann der Verweis auf eine Zelle oder einen Zellbereich im folgenden Format angegeben werden:

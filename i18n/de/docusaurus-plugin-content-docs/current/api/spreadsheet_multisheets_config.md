@@ -35,4 +35,4 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 Wenn die Eigenschaft auf `false` gesetzt wird, wird die untere Tableitenleiste mit den Tabellenblatt-Tabs ausgeblendet.
 :::
 
-**Change log:** In v4.1 hinzugefügt
+**Changelog:** In v4.1 hinzugefügt

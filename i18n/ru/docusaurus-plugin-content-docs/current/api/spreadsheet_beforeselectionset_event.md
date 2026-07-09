@@ -22,7 +22,7 @@ beforeSelectionSet: (cell: string) => void | boolean;
 
 - `cell` - (обязательный) идентификатор(ы) ячейки(ек)
 
-### Возвращает {#returns}
+### Возвращаемое значение {#returns}
 
 Верните `true`, чтобы разрешить выделение ячеек, `false` — чтобы запретить выделение
 
@@ -40,4 +40,4 @@ spreadsheet.events.on("beforeSelectionSet", function(cell){
 });
 ~~~
 
-**Связанные статьи:** [Обработка событий](handling_events.md)
+**Полезная статья:** [Обработка событий](handling_events.md)

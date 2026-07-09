@@ -34,4 +34,4 @@ spreadsheet.showCols("B2:C2"); // "B" 列和 "C" 列将重新变为可见
 
 **相关示例：** [Spreadsheet. Hiding columns and rows via API](https://snippet.dhtmlx.com/zere1ote)
 
-**变更日志：** 在 v5.2 中添加
+**更新日志：** 在 v5.2 中新增

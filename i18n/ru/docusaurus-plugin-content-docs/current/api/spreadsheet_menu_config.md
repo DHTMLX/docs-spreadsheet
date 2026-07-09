@@ -31,6 +31,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Связанные статьи:** [Конфигурация](configuration.md#menu)
+**Полезная статья:** [Конфигурация](configuration.md#menu)
 
 **Связанный пример:** [Spreadsheet. Menu](https://snippet.dhtmlx.com/uulux27v)

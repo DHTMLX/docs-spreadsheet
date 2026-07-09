@@ -58,7 +58,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 
 [툴바 커스터마이즈](customization.md#toolbar) 방법을 확인하세요.
 
-**변경 이력:**
+**변경 로그:**
 
 - `"font"` 블록이 v6.0에서 추가됨
 - `"cell"` 블록이 v5.2에서 추가됨
@@ -68,4 +68,4 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 - [구성](configuration.md#toolbar)
 - [커스터마이즈](customization.md)
 
-**관련 예제:** [Spreadsheet. 전체 툴바](https://snippet.dhtmlx.com/kpm017nx)
+**관련 샘플:** [Spreadsheet. 전체 툴바](https://snippet.dhtmlx.com/kpm017nx)

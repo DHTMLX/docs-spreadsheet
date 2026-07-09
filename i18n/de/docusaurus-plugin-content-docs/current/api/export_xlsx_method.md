@@ -43,6 +43,6 @@ Beachten Sie, dass die Komponente den Export in Excel-Dateien ausschließlich mi
 DHTMLX Spreadsheet verwendet die WebAssembly-basierte Bibliothek [Json2Excel](https://github.com/dhtmlx/json2excel) für den Export von Daten nach Excel. [Weitere Details](loading_data.md#exporting-data).
 :::
 
-**Verwandte Artikel:** [Datenladen und -export](loading_data.md)
+**Verwandter Artikel:** [Datenladen und -export](loading_data.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)

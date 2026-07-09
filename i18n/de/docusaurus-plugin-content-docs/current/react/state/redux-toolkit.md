@@ -176,7 +176,7 @@ const getCellValue = (cell: string) => {
 };
 ~~~
 
-## Verwandte API-Referenzen und Anleitungen {#related-api-and-guides}
+## Verwandte API und Anleitungen {#related-api-and-guides}
 
 - [Props-Referenz](react/props.md) - alle Komponenten-Props
 - [Events-Referenz](react/events.md) - Event-Callback-Props

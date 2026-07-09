@@ -28,10 +28,10 @@ spreadsheet.showRows("sheet2!B2"); // die Zeile "2" in "sheet2" wird wieder eing
 spreadsheet.showRows("B2:C2"); // die Zeilen von "2" bis "4" werden wieder eingeblendet
 ~~~
 
-**Related articles:** [Mit dem Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Verwandter Artikel:** [Mit dem Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
-**Related API:** [`hideRows()`](api/spreadsheet_hiderows_method.md)
+**Verwandte API:** [`hideRows()`](api/spreadsheet_hiderows_method.md)
 
-**Related sample:** [Spreadsheet. Spalten und Zeilen über API ausblenden](https://snippet.dhtmlx.com/zere1ote)
+**Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen über API ausblenden](https://snippet.dhtmlx.com/zere1ote)
 
-**Change log:** Hinzugefügt in v5.2
+**Changelog:** Hinzugefügt in v5.2

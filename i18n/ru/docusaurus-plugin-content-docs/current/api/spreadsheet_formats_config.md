@@ -78,6 +78,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 - Формат "Date" добавлен в v4.2
 - Формат "Text" добавлен в v4.0
 
-**Связанные статьи:** 
+**Полезные статьи:** 
 - [Числовое форматирование](number_formatting.md)
 - [Настройка форматов](number_formatting.md#formats-customization)

@@ -64,7 +64,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 - Блок `"cell"` добавлен в v5.2
 - Блок `"actions"` добавлен в v5.0
 
-**Связанные статьи:**
+**Полезные статьи:**
 - [Конфигурация](configuration.md#toolbar)
 - [Кастомизация](customization.md)
 

@@ -44,7 +44,7 @@ spreadsheet.setValue("B6,A1:D1",5);
 spreadsheet.setValue("A1:D1",[1,2,3]);
 ~~~
 
-**관련 예제:** [Spreadsheet. 여러 시트로 초기화](https://snippet.dhtmlx.com/ihtkdcoc)
+**관련 샘플:** [Spreadsheet. 여러 시트로 초기화](https://snippet.dhtmlx.com/ihtkdcoc)
 
 :::info
 v4.1부터 셀 또는 셀 범위 참조를 다음 형식으로 지정할 수 있습니다:

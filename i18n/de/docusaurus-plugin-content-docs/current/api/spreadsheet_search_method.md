@@ -42,6 +42,6 @@ spreadsheet.parse(data);
 spreadsheet.search("feb", true, "Income"); // -> ['C1']
 ~~~
 
-**Change log:** In v5.0 hinzugefügt
+**Changelog:** In v5.0 hinzugefügt
 
 **Verwandter Artikel:** [Mit der Tabelle arbeiten](working_with_ssheet.md#searching-for-data)

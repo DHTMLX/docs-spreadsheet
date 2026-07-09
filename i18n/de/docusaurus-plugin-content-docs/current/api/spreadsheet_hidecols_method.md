@@ -29,10 +29,10 @@ spreadsheet.hideCols("B2:C2"); // the "B" and "C" columns will be hidden
 ~~~
 
 
-**Verwandte Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Verwandter Artikel:** [Mit Spreadsheet arbeiten](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
 **Verwandte API:** [`showCols()`](api/spreadsheet_showcols_method.md)
 
 **Verwandtes Beispiel:** [Spreadsheet. Spalten und Zeilen per API ausblenden](https://snippet.dhtmlx.com/zere1ote)
 
-**Änderungsprotokoll:** Hinzugefügt in v5.2
+**Changelog:** Hinzugefügt in v5.2

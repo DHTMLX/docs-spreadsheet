@@ -288,7 +288,7 @@ but in some cases they may not work as you expect (for example, when applying `p
 - The `rows` and `cols` properties of the `sheets` object were added in v4.2
 - The ability to prepare data for several sheets was added in v4.1
 
-**Related articles:** [Data loading and export](loading_data.md)
+**Related article:** [Data loading and export](loading_data.md)
 
 **Related samples**:
 

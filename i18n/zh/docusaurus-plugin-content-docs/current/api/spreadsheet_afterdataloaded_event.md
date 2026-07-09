@@ -32,7 +32,7 @@ spreadsheet.events.on("afterDataLoaded", () => {
 });
 ~~~
 
-**变更日志：** 在 v5.2 中新增
+**更新日志：** 在 v5.2 中新增
 
 **相关文章：** [事件处理](handling_events.md)
 

@@ -42,4 +42,4 @@ spreadsheet.sheets.remove("sheet_2");
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

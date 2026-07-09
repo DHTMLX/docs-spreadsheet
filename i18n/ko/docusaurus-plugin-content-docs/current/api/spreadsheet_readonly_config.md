@@ -35,6 +35,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 - [구성](configuration.md#read-only-mode)
 - [커스터마이징](customization.md#custom-read-only-mode)
 
-**관련 예제:** [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
+**관련 샘플:** [Spreadsheet. Readonly](https://snippet.dhtmlx.com/2w959gx2)
 
 

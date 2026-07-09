@@ -40,6 +40,6 @@ Um Dateien zu importieren, müssen Sie:
 
 Standardmäßig wird der CDN-Link verwendet.
 
-**Verwandte Artikel:** [Datenladen und -export](loading_data.md#loading-excel-file-xlsx)
+**Verwandter Artikel:** [Datenladen und -export](loading_data.md#loading-excel-file-xlsx)
 
 **Verwandtes Beispiel:** [Spreadsheet. Benutzerdefinierter Import-/Exportpfad](https://snippet.dhtmlx.com/wykwzfhm)
