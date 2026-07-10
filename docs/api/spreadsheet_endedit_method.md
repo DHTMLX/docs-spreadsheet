@@ -26,4 +26,4 @@ spreadsheet.parse(data);
 spreadsheet.endEdit();
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_cells.md#editing-a-cell)
+**Related article:** [Work with Spreadsheet](working_with_cells.md#editing-a-cell)

@@ -33,4 +33,4 @@ spreadsheet.fitColumn("G2");
 
 **Change log:** Added in v5.0
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#autofit-column-width)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#autofit-column-width)

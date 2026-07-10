@@ -43,6 +43,6 @@ Note that the component supports export to Excel files with the `.xlsx` extensio
 DHTMLX Spreadsheet uses the WebAssembly-based library [Json2Excel](https://github.com/dhtmlx/json2excel) to export data to Excel. [Check the details](loading_data.md#exporting-data).
 :::
 
-**Related articles:** [Data loading and export](loading_data.md)
+**Related article:** [Data loading and export](loading_data.md)
 
 **Related sample:** [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s)

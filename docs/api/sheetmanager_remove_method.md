@@ -26,7 +26,7 @@ remove: (id: Id) => void;
 
 ### Parameters
 
-- `id` - (`string | number`) required, the unique identifier of the sheet to remove.
+- `id` - (*string | number*) required, the unique identifier of the sheet to remove.
 
 ### Example
 
@@ -42,4 +42,4 @@ spreadsheet.sheets.remove("sheet_2");
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

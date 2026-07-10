@@ -22,7 +22,7 @@ getAll: () => ISheet[];
 
 ### Returns
 
-- `ISheet[]` - (`array`) an array of sheet objects.
+- `ISheet[]` - (*array*) an array of sheet objects.
 
 ### Example
 
@@ -42,4 +42,4 @@ console.log(allSheets);
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

@@ -18,11 +18,11 @@ get: (id: Id) => ISheet;
 
 ### Parameters
 
-- `id` - (`string | number`) required, the unique identifier of the sheet to retrieve.
+- `id` - (*string | number*) required, the unique identifier of the sheet to retrieve.
 
 ### Returns
 
-- `ISheet` - (`object`) the sheet object matching the given id.
+- `ISheet` - (*object*) the sheet object matching the given id.
 
 ### Example
 
@@ -38,4 +38,4 @@ console.log(sheet.name); // "Sheet 1"
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

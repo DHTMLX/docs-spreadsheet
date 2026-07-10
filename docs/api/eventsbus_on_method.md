@@ -40,6 +40,6 @@ See the full list of the Spreadsheet events [here](api/api_overview.md#spreadshe
 You can attach several handlers to the same event and all of them are executed. If some handlers return `false`, the related operations are blocked. Event handlers are processed in the same order that they are attached.
 :::
 
-**Related articles:** [Event Handling](handling_events.md)
+**Related article:** [Event Handling](handling_events.md)
 
 **Related sample:** [Spreadsheet. Events](https://snippet.dhtmlx.com/2vkjyvsi)

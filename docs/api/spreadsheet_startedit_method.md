@@ -35,4 +35,4 @@ spreadsheet.parse(data);
 spreadsheet.startEdit();
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_cells.md#editing-a-cell)
+**Related article:** [Work with Spreadsheet](working_with_cells.md#editing-a-cell)

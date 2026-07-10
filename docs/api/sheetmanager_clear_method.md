@@ -20,7 +20,7 @@ clear: (id?: Id) => void;
 
 ### Parameters
 
-- `id` - (`string | number`) optional, the unique identifier of the sheet to clear. If omitted, the currently active sheet is cleared.
+- `id` - (*string | number*) optional, the unique identifier of the sheet to clear. If omitted, the currently active sheet is cleared.
 
 ### Example
 
@@ -39,4 +39,4 @@ spreadsheet.sheets.clear();
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

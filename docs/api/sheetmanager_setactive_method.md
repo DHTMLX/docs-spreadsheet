@@ -20,7 +20,7 @@ setActive: (id: Id) => void;
 
 ### Parameters
 
-- `id` - (`string | number`) required, the unique identifier of the sheet to activate.
+- `id` - (*string | number*) required, the unique identifier of the sheet to activate.
 
 ### Example
 
@@ -40,4 +40,4 @@ console.log(active.name); // "Sheet 2"
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)
