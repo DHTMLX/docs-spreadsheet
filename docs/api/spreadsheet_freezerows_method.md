@@ -18,7 +18,7 @@ freezeRows(cell?: string): void;
 
 ### Parameters
 
-- `cell` - (optional) the id of the cell used to define the id of a row. If the cell id isn't passed, the currently selected cell will be used 
+- `cell` - (optional) the id of the cell used to define the id of a row. If the cell id isn't passed, the currently selected cell is used 
 
 ### Example
 
@@ -27,7 +27,7 @@ spreadsheet.freezeRows("B2"); // the rows up to the "2" row will be fixed
 spreadsheet.freezeRows("sheet2!B2"); // the rows up to the "2" row in "sheet2" will be fixed
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
 **Related API:** [`unfreezeRows()`](api/spreadsheet_unfreezerows_method.md)
 

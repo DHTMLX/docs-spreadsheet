@@ -1,0 +1,106 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.What's new and migration": {
+    "message": "Neuigkeiten und Migration",
+    "description": "The label for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.What's new and migration.link.generated-index.title": {
+    "message": "Neuigkeiten und Migration",
+    "description": "The generated-index page title for category 'What's new and migration' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Spreadsheet methods": {
+    "message": "Spreadsheet-Methoden",
+    "description": "The label for category 'Spreadsheet methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Spreadsheet events": {
+    "message": "Spreadsheet-Events",
+    "description": "The label for category 'Spreadsheet events' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Spreadsheet properties": {
+    "message": "Spreadsheet-Eigenschaften",
+    "description": "The label for category 'Spreadsheet properties' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Sheet Manager API": {
+    "message": "Sheet Manager API",
+    "description": "The label for category 'Sheet Manager API' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Selection methods": {
+    "message": "Selection-Methoden",
+    "description": "The label for category 'Selection methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Events Bus methods": {
+    "message": "Event-Bus-Methoden",
+    "description": "The label for category 'Events Bus methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Export methods": {
+    "message": "Export-Methoden",
+    "description": "The label for category 'Export methods' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Guides": {
+    "message": "Anleitungen",
+    "description": "The label for category 'Guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Developer guides": {
+    "message": "Entwickleranleitungen",
+    "description": "The label for category 'Developer guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Developer guides.link.generated-index.title": {
+    "message": "Entwickleranleitungen",
+    "description": "The generated-index page title for category 'Developer guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Localization": {
+    "message": "Lokalisierung",
+    "description": "The label for category 'Localization' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Themes": {
+    "message": "Themes",
+    "description": "The label for category 'Themes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Themes.link.generated-index.title": {
+    "message": "Themes",
+    "description": "The generated-index page title for category 'Themes' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.User guides": {
+    "message": "Benutzeranleitungen",
+    "description": "The label for category 'User guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.User guides.link.generated-index.title": {
+    "message": "Benutzeranleitungen",
+    "description": "The generated-index page title for category 'User guides' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Work with cells": {
+    "message": "Arbeit mit Zellen",
+    "description": "The label for category 'Work with cells' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Work with cells.link.generated-index.title": {
+    "message": "Arbeit mit Zellen",
+    "description": "The generated-index page title for category 'Work with cells' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Frameworks & integrations": {
+    "message": "Frameworks und Integrationen",
+    "description": "The label for category 'Frameworks & integrations' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Frameworks & integrations.link.generated-index.title": {
+    "message": "Frameworks und Integrationen",
+    "description": "The generated-index page title for category 'Frameworks & integrations' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.React Spreadsheet": {
+    "message": "React Spreadsheet",
+    "description": "The label for category 'React Spreadsheet' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.API reference": {
+    "message": "API-Referenz",
+    "description": "The label for category 'API reference' in sidebar 'docs'"
+  },
+  "sidebar.docs.category.Data & state management": {
+    "message": "Daten- und State-Management",
+    "description": "The label for category 'Data & state management' in sidebar 'docs'"
+  }
+}

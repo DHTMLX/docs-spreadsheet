@@ -10,7 +10,7 @@ description: You can learn about the setActive method of the Sheet Manager in th
 
 @short: Switches the active (visible) sheet to the one specified by its identifier
 
-The spreadsheet UI will re-render to display the target sheet's contents.
+The spreadsheet UI re-renders to display the target sheet's contents.
 
 ### Usage
 
@@ -40,4 +40,4 @@ console.log(active.name); // "Sheet 2"
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

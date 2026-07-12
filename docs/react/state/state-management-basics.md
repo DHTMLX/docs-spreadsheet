@@ -103,7 +103,7 @@ const handleExport = () => {
 ~~~
 
 :::warning
-Avoid mixing imperative writes (e.g. `instance.setValue()`) with the declarative `sheets` prop. The wrapper may overwrite imperative changes on the next render cycle. Use the ref only for **reading** data and for operations like undo/redo, selection, and export.
+Avoid mixing imperative writes (for example, `instance.setValue()`) with the declarative `sheets` prop. The wrapper may overwrite imperative changes on the next render cycle. Use the ref only for **reading** data and for operations like undo/redo, selection, and export.
 :::
 
 ## Controlled search
@@ -129,7 +129,7 @@ const [results, setResults] = useState<string[]>([]);
 
 ## Undo / redo
 
-Use `onStateChange` to track undo/redo availability, and call `undo()`/`redo()` via ref:
+Use `onStateChange` to track undo/redo availability, and call `undo()`/`redo()` through the ref:
 
 ~~~tsx
 const ref = useRef<SpreadsheetRef>(null);

@@ -18,7 +18,7 @@ getFocusedCell(): string;
 
 ### Returns
 
-The method returns an id of a focused cell
+The method returns the id of the focused cell
 
 ### Example
 
@@ -35,4 +35,4 @@ spreadsheet.selection.setFocusedCell("D4");
 const focused = spreadsheet.selection.getFocusedCell(); // ->"D4"
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md)

@@ -35,7 +35,7 @@ spreadsheet.deleteColumn("G2");
 ~~~
 
 :::note
-You can delete several columns by providing a range of cells' ids as a parameter of the method, e.g.: "A1:C3".
+You can delete several columns by providing a range of cells' ids as a parameter of the method, for example: "A1:C3".
 :::
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#addingremoving-rows-and-columns)

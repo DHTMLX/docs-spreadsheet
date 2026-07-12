@@ -28,6 +28,6 @@ spreadsheet.clear();
 
 **Change log:** Added in v4.2
 
-**Related articles:** [Clearing spreadsheet](working_with_ssheet.md#clearing-spreadsheet)
+**Related article:** [Clearing spreadsheet](working_with_ssheet.md#clearing-spreadsheet)
 
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)

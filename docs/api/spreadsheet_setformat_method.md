@@ -19,7 +19,7 @@ setFormat(cell: string, format: string | array): void;
 ### Parameters
 
 - `cell` -  (required) the id(s) of a cell(s) or a range of cells
-- `format` - (required) the name(s) of the number format to apply to cells value
+- `format` - (required) the name(s) of the number format to apply to the cell value
 
 ### Example
 
@@ -38,9 +38,9 @@ Starting with v4.1, the reference to a cell can be specified in the following fo
 spreadsheet.setFormat("sheet1!A2", "number"); 
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will set the format to the value of a cell of the active tab.
+If the name of the tab isn't specified, the method sets the format to the value of a cell of the active tab.
 :::
 
-**Related articles:** [Number formatting](number_formatting.md)
+**Related article:** [Number formatting](number_formatting.md)

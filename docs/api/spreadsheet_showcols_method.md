@@ -18,7 +18,7 @@ showCols(cell?: string): void;
 
 ### Parameters
 
-- `cell` - (optional) the id of the cell used to define the id of a column. If the cell id isn't passed, the currently selected cell will be used 
+- `cell` - (optional) the id of the cell used to define the id of a column. If the cell id isn't passed, the currently selected cell is used 
 
 ### Example
 
@@ -28,7 +28,7 @@ spreadsheet.showCols("sheet2!B2"); // the "B" column in "sheet2" will become vis
 spreadsheet.showCols("B2:C2"); // the "B" and "C" columns will become visible again
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
 **Related API:** [`hideCols()`](api/spreadsheet_hidecols_method.md)
 

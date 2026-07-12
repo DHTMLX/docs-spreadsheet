@@ -18,7 +18,7 @@ unfreezeCols(cell?: string): void;
 
 ### Parameters
 
-- `cell` - (optional) the id of the cell used to define the id of a column. If the cell id isn't passed, the currently selected cell will be used 
+- `cell` - (optional) the id of the cell used to define the id of a column. If the cell id isn't passed, the currently selected cell is used 
 
 ### Example
 
@@ -27,7 +27,7 @@ spreadsheet.unfreezeCols(); // fixed columns in the current sheet will be unfroz
 spreadsheet.unfreezeCols("sheet2!A1"); // fixed columns in "sheet2" will be unfrozen
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#freezingunfreezing-rows-and-columns)
 
 **Related API:** [`freezeCols()`](api/spreadsheet_freezecols_method.md)
 

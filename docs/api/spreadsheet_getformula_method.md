@@ -22,7 +22,7 @@ getFormula(cell: string): string | array;
 
 ### Returns
 
-The method returns a formula of the cell
+The method returns the formula of the cell
 
 ### Example
 
@@ -42,9 +42,9 @@ The reference to a cell can be specified in the following format:
 const formula = spreadsheet.getFormula("sheet1!B2"); 
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will return the formula of the cell from the active tab.
+If the name of the tab isn't specified, the method returns the formula of the cell from the active tab.
 :::
 
 **Change log:** Added in v4.1

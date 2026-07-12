@@ -32,7 +32,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 ~~~
 
 :::info
-Setting the property to ***false*** will hide the bottom tabbar with sheet tabs.
+Setting the property to `false` hides the bottom tabbar with sheet tabs.
 :::
 
 **Change log:** Added in v4.1

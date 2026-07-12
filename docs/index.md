@@ -7,10 +7,10 @@ description: You can have an overview of the JavaScript Spreadsheet library in t
 
 # DHTMLX Spreadsheet overview
 
-DHTMLX Spreadsheet is a client-side JavaScript component that allows editing and formatting data in spreadsheets online. It includes a configurable toolbar, handy menu and context menu, and adjustable grid, supports hot keys navigation, loads data both from external and local sources, provides the ability to localize interface into the desired language.
+DHTMLX Spreadsheet is a client-side JavaScript component for editing and formatting spreadsheet data online. It includes a configurable toolbar, handy menu and context menu, and an adjustable grid, supports hotkey navigation, loads data from external and local sources, and can localize the interface into the desired language.
 
 :::tip
-There is a [User Guide](guides.md#user-guides) provided to make work with Spreadsheet easy for your end users
+The [User Guide](guides.md#user-guides) makes working with Spreadsheet easy for your users.
 :::
 
 ## Spreadsheet structure
@@ -21,28 +21,28 @@ The **Toolbar** section is rather flexible. It contains several default blocks o
 
 ![DHTMLX Spreadsheet toolbar with undo, color, decoration, align, cell, format, and action controls](/img/overview_toolbar.png)
 
-It is also possible to [customize the toolbar](customization.md#toolbar) by adding your own controls and updating the controls' configuration.  
+You can also [customize the toolbar](customization.md#toolbar) by adding your own controls and updating the controls' configuration.  
 
 ### Editing line
 
-The **editing line** can be used for two purposes:
+The **editing line** serves two purposes:
 
 - to edit the content of the selected cell
 - to control changes made in the currently edited cell
 
 ![DHTMLX Spreadsheet editing line for editing cell content and tracking changes](/img/overview_editline.png)
 
-You can switch the editing line off, if necessary via the corresponding [configuration option](configuration.md#editing-bar).
+If necessary, you can switch the editing line off via the corresponding [configuration option](configuration.md#editing-bar).
 
 ### Grid
 
-**Grid** represents a table with columns defined by letters and rows defined by numbers. Thus, a cell of the grid is defined by the column's letter and the row's number, e.g. C3.
+The **Grid** is a table with columns defined by letters and rows defined by numbers. Thus, a cell of the grid is defined by the column's letter and the row's number, for example, C3.
 
 ![DHTMLX Spreadsheet grid with columns labeled by letters and numbered rows](/img/spreadsheet_init.png)
 
 ### Context menu
 
-The **Context menu** section includes 5 items **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link** with sub-items.
+The **Context menu** section includes 6 items — **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link** — with sub-items.
 
 ![DHTMLX Spreadsheet context menu with Lock, Clear, Columns, Rows, Sort, and Insert link options](/img/overview_contextmenu.png)
 
@@ -50,7 +50,7 @@ The [structure of Context menu is customizable](customization.md#context-menu) a
 
 ### Menu
 
-The **Menu** section contains several blocks that combine most frequently used options from the Toolbar and Context Menu to provide quick and handy access to them.
+The **Menu** section contains several blocks that combine the most frequently used options from the Toolbar and Context menu for quick access.
 
 By default the **Menu** section is hidden, but you can switch it on via the related [configuration option](configuration.md#menu).
 
@@ -62,7 +62,7 @@ You can [modify the structure of the menu](customization.md#menu) by using custo
 
 Now you can get down to using DHTMLX Spreadsheet in your application. Follow the directions of the [How to Start](how_to_start.md) tutorial for guidance.
 
-To dive deeper into the specificity of DHTMLX Spreadsheet, go into more profound manuals:
+To learn more about DHTMLX Spreadsheet, see these guides:
 
 - [API overview](api/api_overview.md)
 - [Guides](guides.md)

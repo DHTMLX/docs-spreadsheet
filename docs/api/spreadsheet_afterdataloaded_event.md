@@ -8,7 +8,7 @@ description: You can learn about the afterDataLoaded event in the documentation 
 
 ### Description
 
-@short: Fires after data loading has been completed
+@short: Fires after data loading completes
 
 ### Usage
 
@@ -34,7 +34,7 @@ spreadsheet.events.on("afterDataLoaded", () => {
 
 **Change log:** Added in v5.2
 
-**Related articles:** [Event handling](handling_events.md)
+**Related article:** [Event handling](handling_events.md)
 
 **Related sample:** [Spreadsheet. Data loaded event](https://snippet.dhtmlx.com/vxr7amz6)
 

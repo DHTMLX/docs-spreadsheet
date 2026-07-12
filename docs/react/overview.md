@@ -21,7 +21,7 @@ The React wrapper provides access to the full feature set of DHTMLX Spreadsheet:
 - Cell styling, merged cells, frozen panes, data validation
 - Sorting, filtering, and search
 - Row/column operations (add, delete, hide/show, resize, auto-fit)
-- Excel (XLSX) import and export via WebAssembly modules
+- Excel (XLSX) import and export through WebAssembly modules
 - Customizable toolbar and context menu
 - Cell locking and read-only mode
 - 4 built-in themes (light, dark, contrast-light, contrast-dark) with CSS variable customization

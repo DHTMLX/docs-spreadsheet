@@ -10,10 +10,10 @@ description: You can learn about working with cells in the documentation of the 
 
 ### Set values
 
-To set value for a cell(s) via the API, make use of the [](api/spreadsheet_setvalue_method.md) method. Pass the following parameters to it:
+To set a value for a cell via the API, use the [](api/spreadsheet_setvalue_method.md) method. Pass the following parameters to it:
 
-- **cells** - (*string*) the id(s) of a cell(s) or a range of cells
-- **value** - (*string/number/array*) the value to be set for a cell/cells
+- `cells` - (*string*) the id(s) of a cell(s) or a range of cells
+- `value` - (*string/number/array*) the value to set for a cell/cells
 
 ~~~jsx
 // setting value for one cell
@@ -27,15 +27,15 @@ spreadsheet.setValue("A1:D1",[1,2,3]);
 ~~~
 
 :::note
-Please note that the method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [`parse()`](api/spreadsheet_parse_method.md) method.
+Note that the method sets the same (repeated) value(s) for the specified cells. If you want to add different values to spreadsheet cells, use the [`parse()`](api/spreadsheet_parse_method.md) method.
 :::
 
 
 ### Get values
 
-It is also possible to return the value(s) set in a cell(s) by passing the *id(s) of the necessary cell(s) or a range of cells* to the [](api/spreadsheet_getvalue_method.md) method.
+You can also return the value(s) set in a cell(s) by passing the *id(s) of the necessary cell(s) or a range of cells* to the [](api/spreadsheet_getvalue_method.md) method.
 
-The method will return the value(s) as a string,number or array:
+The method returns the value(s) as a string, number, or array:
 
 ~~~jsx
 // returning the value of one cell
@@ -51,13 +51,13 @@ var values = spreadsheet.getValue("A1,B1,C1:C3");
 
 ## Validating cells
 
-Starting with v4.3, you can apply data validation to cells via adding drop-down lists of options into the cells. To do that, use the [](api/spreadsheet_setvalidation_method.md) method:
+Starting with v4.3, you can apply data validation to cells by adding drop-down lists of options. To do that, use the [](api/spreadsheet_setvalidation_method.md) method:
 
 ~~~jsx
 spreadsheet.setValidation("B10:B15", ["Apple", "Mango", "Avocado"]);
 ~~~
 
-The drop-down list will limit the choice of the end user. It will show the *Invalid value* message when the user completes a cell with an unexpected value.
+The drop-down list limits the user's choice. It shows the *Invalid value* message when the user enters an unexpected value in a cell.
 
 :::info
 The [`setValidation()`](api/spreadsheet_setvalidation_method.md) method can also remove validation from the specified cells. [Check the details](api/spreadsheet_setvalidation_method.md#details).
@@ -65,7 +65,7 @@ The [`setValidation()`](api/spreadsheet_setvalidation_method.md) method can also
 
 ## Inserting a hyperlink into a cell
 
-To insert a hyperlink in a cell, use the [insertLink()](api/spreadsheet_insertlink_method.md) method. The method also allows adding a text that will be displayed with the hyperlink:
+To insert a hyperlink in a cell, use the [`insertLink()`](api/spreadsheet_insertlink_method.md) method. The method can also add text displayed with the hyperlink:
 
 ~~~jsx
 // insert a link in "A2" cell
@@ -74,7 +74,7 @@ spreadsheet.insertLink("A2", {
 });
 ~~~
 
-If you need to remove the link from a cell, pass to the method only ID of the cell:
+If you need to remove the link from a cell, pass only the cell ID to the method:
 
 ~~~jsx
 // remove a link from "A2" cell
@@ -85,10 +85,10 @@ spreadsheet.insertLink("A2");
 
 ### Set styles
 
-You can apply certain styling to a cell or a range of cells via the [](api/spreadsheet_setstyle_method.md) method. It takes two parameters:
+You can apply styles to a cell or a range of cells with the [](api/spreadsheet_setstyle_method.md) method. It takes two parameters:
 
-- **cells** - (*string*) the id(s) of a cell(s) or a range of cells
-- **styles** - (*object/array*) styles that should be applied to cells
+- `cells` - (*string*) the id(s) of a cell(s) or a range of cells
+- `styles` - (*object/array*) styles to apply to cells
 
 ~~~jsx
 // setting style for one cell
@@ -102,7 +102,7 @@ spreadsheet.setStyle("A1:D1", [{color: "blue"}, {color: "red"}]);
 ~~~
 
 :::note 
-The method allows setting the same style for the specified cells. In case you want to apply different styles to spreadsheet cells, you'd better use the [`parse()`](api/spreadsheet_parse_method.md) method.
+The method sets the same style for the specified cells. If you want to apply different styles to spreadsheet cells, use the [`parse()`](api/spreadsheet_parse_method.md) method.
 :::
 
 ### Get styles
@@ -144,14 +144,14 @@ spreadsheet.startEdit();
 
 The method may take two optional parameters:
 
-- **cell** - (*string*) optional, the id of a cell
-- **value** - (*string*) optional, the cell value
+- `cell` - (*string*) optional, the id of a cell
+- `value` - (*string*) optional, the cell value
 
-If the id of a cell isn't passed, input will be added into the currently selected cell.
+If the id of a cell isn't passed, the input is added to the currently selected cell.
 
 ### Disable cell editor
 
-To finish editing of a cell, use the [](api/spreadsheet_endedit_method.md) method that will close the editor while saving the entered value.
+To finish editing a cell, use the [](api/spreadsheet_endedit_method.md) method, which closes the editor and saves the entered value.
 
 ~~~jsx
 spreadsheet.endEdit();
@@ -206,13 +206,13 @@ var rangeLocked = spreadsheet.isLocked("A1:C1");
 var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 ~~~
 
-The method will return *true* or *false* depending on the state of the cell. If several cells are checked at once, the method will return *true*, if there is at least one locked cell among the specified cells.
+The method returns `true` or `false` depending on the state of the cell. If several cells are checked at once, the method returns `true` if there is at least one locked cell among the specified cells.
 
 ## Merging cells
 
 ### Merge cells
 
-You can merge two or more cells into one by passing a range of cells you want to merge to the [mergeCells()](api/spreadsheet_mergecells_method.md) method:
+You can merge two or more cells into one by passing a range of cells you want to merge to the [`mergeCells()`](api/spreadsheet_mergecells_method.md) method:
 
 ~~~jsx
 //merge cells A6, A7, and A8
@@ -224,7 +224,7 @@ spreadsheet.mergeCells("B2:D2");
 
 ### Split cells
 
-You may also split the merged cells via the [mergeCells()](api/spreadsheet_mergecells_method.md) method. In addition to the range of cells, pass `true` as a value of the second parameter which will define that the specified cells must be unmerged:
+You can also split the merged cells with the [`mergeCells()`](api/spreadsheet_mergecells_method.md) method. In addition to the range of cells, pass `true` as the second parameter to unmerge the specified cells:
 
 ~~~jsx
 //unmerge cells B2, C2, and D2
@@ -235,7 +235,7 @@ spreadsheet.mergeCells("B2:D2", true);
 
 ### Select cells
 
-Spreadsheet provides a handy way of setting selection for cells via the API of the *Selection* object.
+Spreadsheet lets you set cell selection with the API of the `Selection` object.
 
 You can select cell(s) by passing its/their id(s) to the [](api/selection_setselectedcell_method.md) method:
 
@@ -272,7 +272,7 @@ console.log(selected); // -> "B3,D6,E4,E8"
 
 ## Setting focus on a cell
 
-The *Selection* object allows setting focus on a desired spreadsheet cell, as well as getting the id of the cell in focus. Use the corresponding methods for this purpose:
+The `Selection` object lets you set focus on a spreadsheet cell and get the id of the focused cell. Use the corresponding methods for this purpose:
 
 - [](api/selection_setfocusedcell_method.md)
 

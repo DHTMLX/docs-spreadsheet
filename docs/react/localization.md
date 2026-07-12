@@ -6,7 +6,7 @@ description: "Localize UI labels, formula names, and number/date formatting in R
 
 # React Spreadsheet localization
 
-React Spreadsheet provides two separate localization mechanisms for different aspects of the UI.
+React Spreadsheet has two separate localization mechanisms for different aspects of the UI.
 
 ## Two localization mechanisms
 
@@ -52,7 +52,7 @@ const locale: SpreadsheetLocale = {
 
 ## Number/date formatting (localization)
 
-The `localization` prop controls how numbers and dates are displayed: decimal separators, currency symbols, date patterns, etc. It uses the same format as the DHTMLX Spreadsheet [`localization`](api/spreadsheet_localization_config.md) configuration property.
+The `localization` prop controls how numbers and dates are displayed: decimal separators, currency symbols, and date patterns. It uses the same format as the DHTMLX Spreadsheet [`localization`](api/spreadsheet_localization_config.md) configuration property.
 
 ~~~tsx
 <ReactSpreadsheet

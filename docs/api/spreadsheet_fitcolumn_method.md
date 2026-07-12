@@ -8,7 +8,7 @@ description: You can learn about the fitColumn method in the documentation of th
 
 ### Description
 
-@short: adjusts the width of the column to match the longest value in the column
+@short: Adjusts the width of the column to match its longest value
 
 
 ### Usage
@@ -33,4 +33,4 @@ spreadsheet.fitColumn("G2");
 
 **Change log:** Added in v5.0
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#autofit-column-width)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#autofit-column-width)

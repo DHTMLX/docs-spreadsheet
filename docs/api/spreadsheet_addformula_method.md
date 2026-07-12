@@ -10,7 +10,7 @@ description: You can learn about the addFormula method in the documentation of t
 
 @short: Registers a custom formula function that can be used in cell formulas
 
-Once registered, the formula is available in any cell by its uppercase name (e.g. =MYFUNC(A1, B2)).
+Once registered, the formula is available in any cell by its uppercase name (for example, `=MYFUNC(A1, B2)`).
 
 ### Usage
 
@@ -52,4 +52,4 @@ spreadsheet.parse([
 
 **Related sample:** [Spreadsheet. Add custom formula](https://snippet.dhtmlx.com/wvxdlahp)
 
-**Related articles:** [Formulas and functions](functions.md#custom-formulas)
+**Related article:** [Formulas and functions](functions.md#custom-formulas)

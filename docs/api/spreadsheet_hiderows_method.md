@@ -18,7 +18,7 @@ hideRows(cell?: string): void;
 
 ### Parameters
 
-- `cell` - (optional) the id of the cell used to define the id of a row. If the cell id isn't passed, the currently selected cell will be used 
+- `cell` - (optional) the id of the cell used to define the id of a row. If the cell id isn't passed, the currently selected cell is used 
 
 ### Example
 
@@ -28,7 +28,7 @@ spreadsheet.hideRows("sheet2!B2"); // the "2" row in "sheet2" will be hidden
 spreadsheet.hideRows("B2:C4"); // the rows from "2" to "4" will be hidden 
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md#hidingshowing-rows-and-columns)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md#hidingshowing-rows-and-columns)
 
 **Related API:** [`showRows()`](api/spreadsheet_showrows_method.md)
 

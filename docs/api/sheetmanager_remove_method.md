@@ -10,12 +10,12 @@ description: You can learn about the remove method of the Sheet Manager in the d
 
 @short: Removes a sheet from the spreadsheet by its identifier
 
-If the removed sheet was active, the spreadsheet will automatically switch to another available sheet.
+If the removed sheet was active, the spreadsheet automatically switches to another available sheet.
 
 :::info
-To apply this method, you need to enable the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option.
+To apply this method, you need to enable the [`multiSheets`](api/spreadsheet_multisheets_config.md) configuration option.
 
-Also note, that a sheet won't be deleted if the number of sheets in the spreadsheet is less than 2.
+Also note that a sheet is not deleted if the spreadsheet has fewer than 2 sheets.
 :::
 
 ### Usage
@@ -42,4 +42,4 @@ spreadsheet.sheets.remove("sheet_2");
 
 **Change log:** Added in v6.0
 
-**Related articles:** [Working with sheets](working_with_sheets.md)
+**Related article:** [Working with sheets](working_with_sheets.md)

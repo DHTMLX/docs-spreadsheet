@@ -49,7 +49,7 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 - [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828)
 
 :::info
-The component will make an AJAX call and expect the remote URL to provide valid data.
+The component makes an AJAX call and expects the remote URL to provide valid data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
@@ -63,14 +63,14 @@ spreadsheet.load("../some/data.json").then(function(){
 ### Loading Excel data
 
 :::note
-Please note that the component supports import from Excel files with the **.xlsx** extension only.
+Note that the component supports import from Excel files with the `.xlsx` extension only.
 :::
 
-DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) for import of data from Excel. [Check the details](loading_data.md#loading-excel-file-xlsx).
+DHTMLX Spreadsheet uses the WebAssembly-based library [Excel2Json](https://github.com/dhtmlx/excel2json) to import data from Excel. [Check the details](loading_data.md#loading-excel-file-xlsx).
 
 ### Loading JSON files
 
-It is possible to allow end users to load a JSON file into the spreadsheet via the File Explorer. To do that: 
+You can let users load a JSON file into the spreadsheet through the File Explorer. To do that: 
 
 - Specify a button to open the File Explorer where ".json" files can be selected:
 
@@ -81,7 +81,7 @@ It is possible to allow end users to load a JSON file into the spreadsheet via t
 ~~~
 
 
-- Call the **load()** method with two parameters: an empty string as an URL and the type of data to load ("json"):
+- Call the `load()` method with two parameters: an empty string as a URL and the type of data to load ("json"):
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
@@ -99,4 +99,4 @@ Check the [example](https://snippet.dhtmlx.com/e3xct53l).
 
 **Changelog:** The ability to load a JSON file via the File Explorer was added in v4.3
 
-**Related articles:** [Data loading and export](loading_data.md)
+**Related article:** [Data loading and export](loading_data.md)
