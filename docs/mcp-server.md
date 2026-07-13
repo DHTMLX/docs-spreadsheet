@@ -6,9 +6,9 @@ description: Connect AI coding assistants to live DHTMLX Spreadsheet documentati
 
 # Using DHTMLX MCP server with DHTMLX Spreadsheet
 
-Building spreadsheet applications requires precise handling of formulas, cell formatting, data loading, and sheet management. When an AI tool generates DHTMLX Spreadsheet code from outdated training data, the result is incorrect formula syntax, missing API methods, and configuration options that no longer match the current library.
+[DHTMLX Spreadsheet](/) applications depend on getting [formulas](/functions/), [cell formatting](/data_formatting/), [data loading](/loading_data/), and [sheet management](/working_with_sheets/) exactly right. AI coding assistants trained on older data often get this wrong, producing invalid formula syntax, calling API methods that no longer exist, or applying configuration options that have since changed.
 
-The DHTMLX MCP server solves this by giving AI tools direct access to the live Spreadsheet documentation. Whether you are working with [number formats](/number_formatting/), the [Sheet Manager API](/api/overview/sheetmanager_overview/), [data loading](/loading_data/), or any other part of the library, the assistant retrieves the current reference before generating a response.
+That's where the DHTMLX MCP server comes in: it gives AI tools direct access to the live Spreadsheet documentation. It covers everything from [number formats](/number_formatting/) and the [Sheet Manager API](/api/overview/sheetmanager_overview/) to [data loading](/loading_data/) and beyond, so the assistant can pull the current reference material before it writes any code.
 
 #### MCP endpoint
 
@@ -97,39 +97,15 @@ To add the server:
 }
 ~~~
 
-### Gemini CLI
+### Google Antigravity
+
+#### Antigravity 2.0
 
 :::info
-See the [official documentation](https://geminicli.com/docs/tools/mcp-server/) for a complete guide to using MCP servers with the Gemini CLI.
+Refer to the [official documentation](https://antigravity.google/docs/mcp) for full details on MCP server integration in Antigravity.
 :::
 
-To add the server through the CLI:
-
-~~~jsx
-gemini mcp add --transport http dhtmlx-mcp https://docs.dhtmlx.com/mcp
-~~~
-
-For manual configuration, open `~/.gemini/settings.json` and add:
-
-~~~jsx
-{
-  "mcpServers": {
-    "dhtmlx-mcp": {
-      "url": "https://docs.dhtmlx.com/mcp"
-    }
-  }
-}
-~~~
-
-Restart Gemini CLI after saving the file.
-
-### Antigravity (Google)
-
-:::info
-The [official documentation](https://antigravity.google/docs/mcp) explains how to connect MCP servers in Antigravity.
-:::
-
-To add the server:
+These are the steps to complete for connecting DHTMLX MCP server with Google Antigravity:
 
 1. Open the command palette
 2. Type "mcp add"
@@ -143,6 +119,31 @@ dhtmlx-mcp
 ~~~jsx
 https://docs.dhtmlx.com/mcp
 ~~~
+
+#### Antigravity CLI
+
+:::info
+Check the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) to learn about migration from Gemini CLI to Antigravity CLI.
+:::
+
+To connect the DHTMLX MCP server to Antigravity CLI, create `mcp_config.json` in one of these locations:
+
+- Global: `~/.gemini/config/mcp_config.json`
+- Workspace: `.agents/mcp_config.json`
+
+Add the following configuration:
+
+~~~jsx
+{
+  "mcpServers": {
+    "dhtmlx-mcp": {
+      "serverUrl": "https://docs.dhtmlx.com/mcp"
+    }
+  }
+}
+~~~
+
+Then run `agy` in the terminal.
 
 ### ChatGPT
 
