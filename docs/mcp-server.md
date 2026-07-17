@@ -1,14 +1,14 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: Using DHTMLX MCP server with DHTMLX Spreadsheet
-description: Connect AI coding assistants to live DHTMLX Spreadsheet documentation via the DHTMLX MCP server. Setup guides for Claude Code, Cursor, Gemini CLI, and ChatGPT.
+title: Give AI assistants live DHTMLX Spreadsheet docs via MCP
+description: Live DHTMLX Spreadsheet documentation reaches AI assistants through the MCP server, spanning formulas, cell formatting, data loading, and sheet management.
 ---
 
-# Using DHTMLX MCP server with DHTMLX Spreadsheet
+# DHTMLX Spreadsheet meets the MCP server: live docs for AI
 
 [DHTMLX Spreadsheet](/) applications depend on getting [formulas](/functions/), [cell formatting](/data_formatting/), [data loading](/loading_data/), and [sheet management](/working_with_sheets/) exactly right. AI coding assistants trained on older data often get this wrong, producing invalid formula syntax, calling API methods that no longer exist, or applying configuration options that have since changed.
 
-That's where the DHTMLX MCP server comes in: it gives AI tools direct access to the live Spreadsheet documentation. It covers everything from [number formats](/number_formatting/) and the [Sheet Manager API](/api/overview/sheetmanager_overview/) to [data loading](/loading_data/) and beyond, so the assistant can pull the current reference material before it writes any code.
+The DHTMLX MCP server fixes this by putting the live Spreadsheet reference one query away, wherever the assistant is working. Point it at [number formats](/number_formatting/), the [Sheet Manager API](/api/overview/sheetmanager_overview/), or [data loading](/loading_data/), and it checks the current documentation before generating a single line of code.
 
 #### MCP endpoint
 
@@ -20,9 +20,9 @@ https://docs.dhtmlx.com/mcp
 The DHTMLX MCP server covers all major DHTMLX products, not only DHTMLX Spreadsheet. The same endpoint and configuration instructions work regardless of which DHTMLX component you are building with.
 :::
 
-## Where MCP server helps with Spreadsheet
+## MCP server coverage for Spreadsheet
 
-The MCP server indexes the full DHTMLX Spreadsheet documentation. Common scenarios include:
+Every page of the DHTMLX Spreadsheet documentation is searchable through the MCP server. Typical use cases:
 
 - Looking up the current API for spreadsheet [methods](/api/overview/methods_overview/), [events](/api/overview/events_overview/), and [properties](/api/overview/properties_overview/), including signatures and return types.
 - Generating ready-to-run Spreadsheet [initialization](/initialization/) and [configuration](/configuration/) code based on a description of what you need.
@@ -33,15 +33,15 @@ The MCP server indexes the full DHTMLX Spreadsheet documentation. Common scenari
 - Handling [Spreadsheet events](/handling_events/) to respond to value changes, cell selection, editor actions, and sheet-level interactions.
 - Exploring [multi-sheet support](/working_with_sheets/), [data loading and export](/loading_data/) (JSON and Excel), and integration with frameworks such as [React](/react/), [Vue](/vuejs_integration/), [Angular](/angular_integration/), and [Svelte](/svelte_integration/).
 
-## How DHTMLX MCP server works
+## What happens when the assistant queries the MCP server
 
-The DHTMLX MCP server combines Retrieval-Augmented Generation (RAG) with the Model Context Protocol (MCP) so that AI assistants can query documentation on demand rather than relying solely on training data.
+Two technologies power this: a Retrieval-Augmented Generation (RAG) index and the Model Context Protocol (MCP), which together let an assistant fetch live Spreadsheet reference material mid-conversation rather than relying on what it memorized in training. The server exposes this through two workflows, Search and Inference. Search hands back the matching reference pages as context, leaving the assistant to write the answer; Inference reads those pages itself and returns the finished answer, so the assistant only has to pass it on.
 
-For example, when you ask *"How do I define a custom number format mask for currency values in DHTMLX Spreadsheet?"*, the assistant sends the prompt via the MCP endpoint. The server matches it against the number formatting documentation, retrieves the relevant reference pages, and returns them as context. The assistant then generates code based on the current API rather than a training snapshot.
+For example, when you ask *"How do I define a custom number format mask for currency values in DHTMLX Spreadsheet?"*, the assistant sends the prompt via the MCP endpoint. The Search workflow matches it against the number formatting documentation, retrieves the relevant reference pages, and returns them as context; the assistant then generates code based on the current API rather than a training snapshot. Inference can also take that same kind of query and skip straight to an answer: it reads the reference pages itself and hands the assistant a finished response instead of raw material to work from.
 
-## Connect the MCP server to your AI tool
+## Wiring the MCP server into your AI tool
 
-Most AI development tools let you add MCP endpoints through a CLI command or a JSON configuration file. In either case, you register the server URL.
+Spreadsheet projects tend to live inside whichever AI-assisted editor a team already uses, so the server needs to reach that same tool. Most AI development tools let you add MCP endpoints through a CLI command or a JSON configuration file, and in either case the underlying step is registering the server URL.
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -148,7 +148,7 @@ Then run `agy` in the terminal.
 ### ChatGPT
 
 :::info
-The [official documentation](https://developers.openai.com/api/docs/guides/tools-connectors-mcp) covers MCP connector setup for ChatGPT.
+The [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt) covers MCP connector setup for ChatGPT.
 :::
 
 Steps to configure the connector:
@@ -171,7 +171,7 @@ https://docs.dhtmlx.com/mcp
 
 After you create the connector, ChatGPT pulls documentation from the MCP server during conversations.
 
-:::warning
+:::info
 For intensive coding workflows, other MCP-aware tools may be a better fit.
 :::
 
@@ -179,7 +179,7 @@ For intensive coding workflows, other MCP-aware tools may be a better fit.
 
 Many modern AI coding tools expose MCP support under labels such as "Model Context Protocol", "Context Sources", or similar. Add `https://docs.dhtmlx.com/mcp` as a custom source in the relevant settings panel.
 
-## Privacy and data handling
+## Data privacy notes
 
 The MCP server runs as a hosted service. It does not run locally, does not read files from your environment, and does not store personal user information.
 
@@ -187,9 +187,9 @@ Queries may be logged for debugging and service improvement purposes.
 
 Organizations that require stricter privacy controls can request a commercial deployment option with query logging disabled. For inquiries, contact `info@dhtmlx.com`.
 
-## Example prompts for Spreadsheet with AI
+## Sample prompts for building spreadsheets with AI
 
-Once you connect the MCP server, phrase your prompts around a concrete goal so the assistant knows which part of the Spreadsheet API to retrieve. The prompts below are organized by task type. Copy and adapt them as needed.
+The more specific the goal in your prompt, the more precisely the assistant can target the right part of the Spreadsheet API. Prompts below are grouped by task category, ready to copy and adjust to your data.
 
 **Loading and exporting data**
 
@@ -236,7 +236,7 @@ How do I add and switch between sheets in DHTMLX Spreadsheet programmatically?
 How do I handle the afterEditEnd event and get the updated cell value?
 ~~~
 
-## Tips for effective Spreadsheet prompts
+## Prompting tips for Spreadsheet work
 
 - **Name the target object.** Distinguish between the spreadsheet instance, a specific sheet, a cell, and a range. For example: "on the spreadsheet instance" vs. "for a specific cell range" vs. "on sheet 2". A narrower target helps the server retrieve the right reference pages.
 - **Include the cell type or data format.** Prompts like "a date number format" or "a number format with two decimal places" retrieve more precise documentation than a generic "a cell". Mention the type whenever you configure columns or apply formats.
