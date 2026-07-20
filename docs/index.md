@@ -66,3 +66,4 @@ To learn more about DHTMLX Spreadsheet, see these guides:
 
 - [API overview](api/api_overview.md)
 - [Guides](guides.md)
+- [MCP server](mcp-server.md) for AI coding assistants

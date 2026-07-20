@@ -145,3 +145,4 @@ That's all. In four steps you get a handy tool for working with tabular data. No
 - [Spreadsheet overview](/)
 - [](guides.md)
 - [](api/api_overview.md)
+- [](mcp-server.md)

@@ -276,7 +276,8 @@ module.exports = {
                             ]
                         },
                         "using_typescript",
-                        "awaitredraw"
+                        "awaitredraw",
+                        "mcp-server"
                     ]
                 },
                 {
