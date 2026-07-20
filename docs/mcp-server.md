@@ -1,10 +1,10 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: DHTMLX Spreadsheet MCP server for AI assistants
+title: DHTMLX Spreadsheet MCP server, always current for AI
 description: Live DHTMLX Spreadsheet documentation reaches AI assistants through the MCP server, spanning formulas, cell formatting, data loading, and sheet management.
 ---
 
-# DHTMLX Spreadsheet MCP server: live docs for AI assistants
+# DHTMLX Spreadsheet MCP server: no more stale formula syntax
 
 [DHTMLX Spreadsheet](/) applications depend on getting [formulas](/functions/), [cell formatting](/data_formatting/), [data loading](/loading_data/), and [sheet management](/working_with_sheets/) exactly right. AI coding assistants trained on older data often get this wrong, producing invalid formula syntax, calling API methods that no longer exist, or applying configuration options that have since changed.
 
