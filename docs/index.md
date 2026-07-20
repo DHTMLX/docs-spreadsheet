@@ -66,3 +66,4 @@ To dive deeper into the specificity of DHTMLX Spreadsheet, go into more profound
 
 - [API overview](api/api_overview.md)
 - [Guides](guides.md)
+- [MCP server](mcp-server.md) for AI coding assistants

@@ -145,3 +145,4 @@ That's all. Just four simple steps and you have a handy tool for work with data 
 - [](index.md)
 - [](guides.md)
 - [](api/api_overview.md)
+- [](mcp-server.md)
