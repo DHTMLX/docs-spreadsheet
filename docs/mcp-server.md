@@ -41,7 +41,7 @@ For example, when you ask *"How do I define a custom number format mask for curr
 
 ## Wiring the MCP server into your AI tool
 
-Spreadsheet projects tend to live inside whichever AI-assisted editor a team already uses, so the server needs to reach that same tool. Most AI development tools let you add MCP endpoints through a CLI command or a JSON configuration file, and in either case the underlying step is registering the server URL.
+Registering the MCP server is a one-time step per tool, though the motion changes: a typed CLI command here, a pasted JSON snippet there. After that, every Spreadsheet project opened in that tool can reach the live documentation.
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -52,7 +52,7 @@ Below are setup instructions for commonly used tools.
 ### Claude Code
 
 :::info
-The [official documentation](https://code.claude.com/docs/en/mcp) covers all options for connecting Claude Code with MCP servers.
+Claude Code documents every MCP connection option in its [official documentation](https://code.claude.com/docs/en/mcp).
 :::
 
 To register the server from the command line, run:
@@ -77,7 +77,7 @@ For manual setup, add the following configuration to your `mcp.json`:
 ### Cursor
 
 :::info
-The [official documentation](https://cursor.com/en-US/docs/mcp) covers all MCP configuration options for Cursor.
+Cursor documents its MCP setup in full in the [official documentation](https://cursor.com/en-US/docs/mcp).
 :::
 
 To add the server:
@@ -102,7 +102,7 @@ To add the server:
 #### Antigravity 2.0
 
 :::info
-Refer to the [official documentation](https://antigravity.google/docs/mcp) for full details on MCP server integration in Antigravity.
+See the [official documentation](https://antigravity.google/docs/mcp) for everything on MCP server integration in Antigravity.
 :::
 
 These are the steps to complete for connecting DHTMLX MCP server with Google Antigravity:
@@ -123,7 +123,7 @@ https://docs.dhtmlx.com/mcp
 #### Antigravity CLI
 
 :::info
-Check the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) to learn about migration from Gemini CLI to Antigravity CLI.
+See the [related guide](https://antigravity.google/docs/gcli-migration#mcp-config-formatting-changes) if you're migrating from Gemini CLI to Antigravity CLI.
 :::
 
 To connect the DHTMLX MCP server to Antigravity CLI, create `mcp_config.json` in one of these locations:
@@ -148,7 +148,7 @@ Then run `agy` in the terminal.
 ### ChatGPT
 
 :::info
-The [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt) covers MCP connector setup for ChatGPT.
+For the complete MCP connector setup in ChatGPT, see the [official documentation](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt).
 :::
 
 Steps to configure the connector:
@@ -177,7 +177,7 @@ For intensive coding workflows, other MCP-aware tools may be a better fit.
 
 ### Other tools
 
-Many modern AI coding tools expose MCP support under labels such as "Model Context Protocol", "Context Sources", or similar. Add `https://docs.dhtmlx.com/mcp` as a custom source in the relevant settings panel.
+Look for "Model Context Protocol" or "Context Sources" in the settings of any other AI coding tool, and add `https://docs.dhtmlx.com/mcp` there as a custom source.
 
 ## Data privacy notes
 
