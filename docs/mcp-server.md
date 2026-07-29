@@ -47,7 +47,7 @@ Registering the MCP server is a one-time step per tool, though the motion change
 https://docs.dhtmlx.com/mcp
 ~~~
 
-Below are setup instructions for commonly used tools.
+Popular tools each get their own setup steps below.
 
 ### Claude Code
 
