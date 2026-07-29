@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "Документация JavaScript Spreadsheet",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Документация DHTMLX Spreadsheet",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Examples": {
+    "message": "Примеры",
+    "description": "Navbar item with label Examples"
+  },
+  "item.label.Forum": {
+    "message": "Форум",
+    "description": "Navbar item with label Forum"
+  },
+  "item.label.Support": {
+    "message": "Поддержка",
+    "description": "Navbar item with label Support"
+  },
+  "item.label.Download": {
+    "message": "Скачать",
+    "description": "Navbar item with label Download"
+  }
+}

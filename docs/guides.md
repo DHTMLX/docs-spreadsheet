@@ -6,7 +6,7 @@ description: You can study developer and user guides in the documentation of the
 
 # Guides
 
-DHTMLX Spreadsheet provides a range of great features to build a perfect application that include: support for import/export of data in different formats, handy work with content and style of data, adaptable structure of a spreadsheet, readonly mode, wide possibilities for look and feel customization, integration with famous frameworks, etc.
+DHTMLX Spreadsheet includes a wide range of features: import and export of data in different formats, convenient work with cell content and styles, an adaptable spreadsheet structure, a read-only mode, extensive look-and-feel customization, and integration with popular frameworks.
 
 ## Developer guides
 
@@ -20,7 +20,7 @@ Discusses the main stages of installing and creating Spreadsheet on a page, adju
 
 ### Exploring Spreadsheet features
 
-Shows the ways of loading data into Spreadsheet, handling events and using main functionality. It also dwells on the ways of customizing the main parts of Spreadsheet.
+Shows how to load data into Spreadsheet, handle events, and use the main functionality. It also covers customizing the main parts of Spreadsheet.
 
 - [Data loading and export](loading_data.md)
 - [Work with Spreadsheet](working_with_ssheet.md)
@@ -33,7 +33,7 @@ Shows the ways of loading data into Spreadsheet, handling events and using main 
 
 ### Frameworks & integrations
 
-- [React Spreadsheet](/react/) - official React component with props, events, and TypeScript support
+- [React Spreadsheet](react.md) - official React component with props, events, and TypeScript support
 - [Integration with Angular](angular_integration.md) - GitHub demo of using Spreadsheet in an Angular app
 - [Integration with Svelte](svelte_integration.md) - GitHub demo of using Spreadsheet in a Svelte app
 - [Integration with Vue.js](vuejs_integration.md) - GitHub demo of using Spreadsheet in a Vue app
@@ -44,7 +44,7 @@ Shows the ways of loading data into Spreadsheet, handling events and using main 
 
 ## User guides
 
-The User guides are provided to make work with Spreadsheet easy for your end users.
+The user guides make working with Spreadsheet easy for your users.
 
 - [Hot keys list](hotkeys.md)
 - [Work with sheets](work_with_sheets.md)

@@ -8,7 +8,7 @@ description: You can learn about the beforeEditStart event in the documentation 
 
 ### Description
 
-@short: Fires before editing of a cell has started
+@short: Fires before editing of a cell starts
 
 ### Usage
 
@@ -41,4 +41,4 @@ spreadsheet.events.on("beforeEditStart", function(cell, value){
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events.md)
+**Related article:** [Event handling](handling_events.md)

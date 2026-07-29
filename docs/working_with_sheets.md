@@ -6,21 +6,21 @@ description: You can learn about working with sheets in the documentation of the
 
 # Work with sheets
 
-Starting from v4.1, the library allows working with [multiple sheets](api/spreadsheet_multisheets_config.md) in the spreadsheet.
+Starting from v4.1, you can work with [multiple sheets](api/spreadsheet_multisheets_config.md) in the spreadsheet.
 
-In this article we'll discuss the details on how to implement such operations as adding a new sheet into the spreadsheet, removing the unnecessary sheet, getting all sheets, or getting the currently active sheet via using API methods. Besides, we'll explain how to load multiple sheets into the spreadsheet at once.
+This article describes how to add a new sheet, remove an unnecessary sheet, get all sheets, and get the currently active sheet using API methods. It also explains how to load multiple sheets into the spreadsheet at once.
 
 {{note To learn how to interact with multiple sheets via the user interface, check our [User Guide](work_with_sheets.md). }}
 
-Starting from v6.0, sheet management is handled by the **Sheet Manager** module, accessible via the `spreadsheet.sheets` property. The dedicated [Sheet Manager API](api/overview/sheetmanager_overview.md) replaces the sheet-related methods that were previously available directly on the Spreadsheet instance.
+Starting from v6.0, the **Sheet Manager** module handles sheet management through the `spreadsheet.sheets` property. The dedicated [Sheet Manager API](api/overview/sheetmanager_overview.md) replaces the sheet-related methods that were previously available directly on the Spreadsheet instance.
 
 ## Loading multiple sheets
 
-To load several sheets into the spreadsheet, you should prepare data with the desired number of sheets and their configuration and pass them to the [`parse()`](api/spreadsheet_parse_method.md) method as a parameter. The data should be an *object*. [Check the list of attributes the object can include](api/spreadsheet_parse_method.md).
+To load several sheets into the spreadsheet, prepare data with the desired number of sheets and their configuration, and pass it to the [`parse()`](api/spreadsheet_parse_method.md) method as a parameter. The data should be an `object`. [Check the list of attributes the object can include](api/spreadsheet_parse_method.md).
 
 <iframe src="https://snippet.dhtmlx.com/6s3ng2hi?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
-{{note In case the [multiSheets](api/spreadsheet_multisheets_config.md) configuration option is set to *false*, only one sheet will be created.}}
+{{note If the [`multiSheets`](api/spreadsheet_multisheets_config.md) configuration option is set to `false`, only one sheet is created.}}
 
 ## Adding a new sheet
 
@@ -56,7 +56,7 @@ spreadsheet.parse(data);
 spreadsheet.sheets.remove("sheet_2");
 ~~~
 
-Note, that a sheet won't be removed if the number of sheets in the spreadsheet is less than 2.
+Note that a sheet is not removed if the spreadsheet has fewer than 2 sheets.
 
 ## Setting active sheet
 
@@ -80,7 +80,7 @@ console.log(active.name); // "Sheet 2"
 
 ## Getting active sheet
 
-It is possible to get the sheet that is currently active by applying the [`sheets.getActive()`](api/sheetmanager_getactive_method.md) method:
+You can get the currently active sheet by applying the [`sheets.getActive()`](api/sheetmanager_getactive_method.md) method:
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
@@ -97,7 +97,7 @@ The method returns an object with the name and id attributes of the currently ac
 
 ## Getting all sheets
 
-The [`sheets.getAll()`](api/sheetmanager_getall_method.md) method allows you to get all sheets of the spreadsheet. The method returns an array with a set of sheet objects:
+The [`sheets.getAll()`](api/sheetmanager_getall_method.md) method returns all sheets of the spreadsheet as an array of sheet objects:
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
@@ -129,7 +129,7 @@ console.log(sheet.name); // "Sheet 1"
 
 ## Clearing sheets
 
-There is the ability to clear the data of the specified sheet by its id via the [`sheets.clear()`](api/sheetmanager_clear_method.md) method:
+You can clear the data of the specified sheet by its id with the [`sheets.clear()`](api/sheetmanager_clear_method.md) method:
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {

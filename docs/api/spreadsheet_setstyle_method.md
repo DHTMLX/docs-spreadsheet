@@ -11,7 +11,7 @@ description: You can learn about the setStyle method in the documentation of the
 @short: Sets style to a cell(s)
 
 :::info
-The method allows setting the same style for the specified cells. In case you want to apply different cells to spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
+The method sets the same style for the specified cells. If you want to apply different styles to spreadsheet cells, use the [](api/spreadsheet_parse_method.md) method.
 :::
 
 ### Usage
@@ -23,7 +23,7 @@ setStyle(cell: string, styles: array | object): void;
 ### Parameters
 
 - `cell` -  (required) the id(s) of a cell(s) or a range of cells
-- `styles` - (required) styles that should be applied to cells. [Check the list of properties which you can use to style cells](api/spreadsheet_parse_method.md#list-of-properties) 
+- `styles` - (required) the styles to apply to cells. [Check the list of properties that you can use to style cells](api/spreadsheet_parse_method.md#list-of-properties) 
 
 ### Example
 
@@ -53,7 +53,7 @@ Starting with v4.1, the reference to a cell or range of cells can be specified i
 spreadsheet.setStyle("sheet1!A2", {background: "red"}); 
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will apply the style to the cell(s) of the active tab.
+If the name of the tab isn't specified, the method applies the style to the cell(s) of the active tab.
 :::

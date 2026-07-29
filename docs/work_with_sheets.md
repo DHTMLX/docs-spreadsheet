@@ -15,34 +15,34 @@ To add a new sheet, take the following steps:
 2. Click the **Add sheet** button in the bottom toolbar
 
 :::note
-Note, that a new sheet will be added after the currently active sheet.
+Note that a new sheet is added after the currently active sheet.
 :::
 
-![Add sheet](assets/add_sheet.png)
+![DHTMLX Spreadsheet bottom toolbar with the Add sheet button and sheet tabs](/img/add_sheet.png)
 
 ## Removing a sheet
 
 To remove a sheet from the spreadsheet, right-click the sheet tab and choose *Delete*.
 
-{{note Note, that a sheet can't be removed if it is the only sheet in the spreadsheet.}}
+{{note Note that a sheet can't be removed if it is the only sheet in the spreadsheet.}}
 
-![Remove sheet](assets/remove_sheet.png)
+![DHTMLX Spreadsheet sheet tab context menu with the Delete option highlighted](/img/remove_sheet.png)
 
 ## Changing the active sheet
 
-To change the currently active sheet, just click a different sheet tab with the mouse pointer.
+To change the currently active sheet, click a different sheet tab.
 
-![Change active sheet](assets/change_active_sheet.png)
+![DHTMLX Spreadsheet sheet tabs at the bottom with the active sheet highlighted](/img/change_active_sheet.png)
 
 ## Renaming a sheet
 
 To rename a sheet, right-click the sheet tab, click *Rename*, and type the new name.
 
-![Rename sheet](assets/rename_sheet.png)
+![DHTMLX Spreadsheet sheet tab context menu with the Rename option and a name input](/img/rename_sheet.png)
 
 ## Cross-references between sheets
 
-You can easily consolidate data from multiple sheets into a single one by using cross-referencing. <br> For that, take the following steps:
+You can consolidate data from multiple sheets into one by using cross-referencing. <br> For that, take the following steps:
 
 1\.  Type an equal sign (=) into a cell
 
@@ -50,4 +50,4 @@ You can easily consolidate data from multiple sheets into a single one by using 
 
 3\.  Finish typing the formula and press Enter
 
-![Using formulas](assets/cross_reference.gif)
+![DHTMLX Spreadsheet cross-reference formula built across multiple sheet tabs](/img/cross_reference.gif)

@@ -30,6 +30,6 @@ spreadsheet.export.json();
 
 **Changelog:** Added in v4.3
 
-**Related articles:** [Data loading and export](loading_data.md)
+**Related article:** [Data loading and export](loading_data.md)
 
 **Related sample:** [Spreadsheet. Export/import JSON](https://snippet.dhtmlx.com/e3xct53l)

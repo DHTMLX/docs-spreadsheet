@@ -81,4 +81,4 @@ TypeScript type definitions are bundled with the package. No additional `@types/
 
 ## Next steps
 
-- [Quick start](/react/quick-start/) - build your first spreadsheet app step by step
+- [Quick start](react/quick-start.md) - build your first spreadsheet app step by step

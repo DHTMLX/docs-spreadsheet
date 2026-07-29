@@ -6,7 +6,7 @@ description: "How to use DHTMLX React Spreadsheet in a Next.js application with 
 
 # React Spreadsheet in Next.js
 
-DHTMLX Spreadsheet is a client-side widget that requires access to the browser DOM. In Next.js with the App Router, server components are the default, so the spreadsheet must be wrapped in a client component using the `"use client"` directive.
+DHTMLX Spreadsheet is a client-side widget that requires access to the browser DOM. In Next.js with the App Router, server components are the default, so you must wrap the spreadsheet in a client component using the `"use client"` directive.
 
 :::note
 The React Spreadsheet wrapper's JS output already includes a `"use client"` banner, but you still need the directive in your own component file that imports it.
@@ -96,6 +96,6 @@ export default function Home() {
 
 ## Related API and guides
 
-- [Props reference](/react/props/) - all component props with types and defaults
-- [Events reference](/react/events/) - respond to user actions
-- [State management basics](/react/state/state-management-basics/) - managing spreadsheet data in React state
+- [Props reference](react/props.md) - all component props with types and defaults
+- [Events reference](react/events.md) - respond to user actions
+- [State management basics](react/state/state-management-basics.md) - managing spreadsheet data in React state

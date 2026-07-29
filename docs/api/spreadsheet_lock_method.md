@@ -43,9 +43,9 @@ Starting with v4.1, the reference to a cell or a range of cells can be specified
 spreadsheet.lock("sheet1!A2"); 
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will lock the cell(s) of the active tab.
+If the name of the tab isn't specified, the method locks the cell(s) of the active tab.
 :::
 
 **Related sample**: [Spreadsheet. Locked Cells](https://snippet.dhtmlx.com/czeyiuf8)

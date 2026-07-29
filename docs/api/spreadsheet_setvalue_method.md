@@ -11,7 +11,7 @@ description: You can learn about the setValue method in the documentation of the
 @short: Sets a value for a cell
 
 :::info
-The method allows setting the same/repeated value(s) for the specified cells. In case you want to add different values into spreadsheet cells, you'd better use the [](api/spreadsheet_parse_method.md) method.
+The method sets the same (repeated) value(s) for the specified cells. If you want to add different values to spreadsheet cells, use the [](api/spreadsheet_parse_method.md) method.
 :::
 
 ### Usage
@@ -23,7 +23,7 @@ setValue(cell: string, value: string | number | array): void;
 ### Parameters
 
 - `cell` - (required) the id(s) of a cell(s) or a range of cells
-- `value` - (required) the value(s) to be set for cells
+- `value` - (required) the value(s) to set for cells
 
 ### Example
 
@@ -53,7 +53,7 @@ Starting with v4.1, the reference to a cell or range of cells can be specified i
 spreadsheet.setValue("sheet1!A1",5);
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will set the value(s) for the cell(s) of the active tab.
+If the name of the tab isn't specified, the method sets the value(s) for the cell(s) of the active tab.
 :::

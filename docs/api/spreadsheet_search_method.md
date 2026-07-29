@@ -8,7 +8,7 @@ description: You can learn about the search method in the documentation of the D
 
 ### Description
 
-@short: searches for cells by the specified parameters
+@short: Searches for cells by the specified parameters
 
 The method can also open a search box in the top right corner of the spreadsheet and highlight the matched results
 
@@ -24,7 +24,7 @@ search(
 
 ### Parameters
 
-- `text` - (optional) the value to search
+- `text` - (optional) the value to search for
 - `openSearch` - (optional) if `true`, opens a search box and highlights cells with the matched results; `false` by default
 - `sheetId` - (optional) the ID of the sheet. By default, the method searches for cells on the currently active sheet
 

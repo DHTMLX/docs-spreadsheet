@@ -42,7 +42,7 @@ const values = spreadsheet.getStyle("A1,B1,C1:C3");
 ~~~
 
 :::info
-For multiple cells the method returns an array of objects with styles applied to a cell:
+For multiple cells, the method returns an array of objects with the styles applied to each cell:
 
 ~~~jsx
 [
@@ -62,7 +62,7 @@ const style = spreadsheet.getStyle("sheet1!A2");
 //-> {justify-content: "flex-end", text-align: "right"}
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will return the style(s) of the cell(s) from the active tab.
+If the name of the tab isn't specified, the method returns the style(s) of the cell(s) from the active tab.
 :::

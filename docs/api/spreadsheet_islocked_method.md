@@ -22,7 +22,7 @@ isLocked(cell: string): boolean;
 
 ### Returns
 
-The method returns `true`, if the cell is locked, and `false` if it's unlocked
+The method returns `true` if the cell is locked and `false` if it's unlocked
 
 ### Example
 
@@ -41,7 +41,7 @@ const cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 ~~~
 
 :::info
-If several cells are checked at once, the method will return *true*, if there is at least one locked cell among the specified cells.
+If several cells are checked at once, the method returns `true` if there is at least one locked cell among the specified cells.
 :::
 
 :::info
@@ -51,7 +51,7 @@ Starting with v4.1, the reference to a cell or a range of cells can be specified
 const cellsLocked = spreadsheet.isLocked("sheet1!A2"); 
 ~~~
 
-where *sheet1* is the name of the tab.
+where `sheet1` is the name of the tab.
 
-In case the name of the tab isn't specified, the method will check the cell(s) of the active tab.
+If the name of the tab isn't specified, the method checks the cell(s) of the active tab.
 :::

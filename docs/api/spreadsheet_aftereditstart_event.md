@@ -8,7 +8,7 @@ description: You can learn about the afterEditStart event in the documentation o
 
 ### Description
 
-@short: Fires after editing of a cell has started
+@short: Fires after editing of a cell starts
 
 ### Usage
 
@@ -36,4 +36,4 @@ spreadsheet.events.on("afterEditStart", function(cell, value){
 });
 ~~~
 
-**Related articles:** [Event handling](handling_events.md)
+**Related article:** [Event handling](handling_events.md)

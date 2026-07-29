@@ -1,0 +1,62 @@
+{
+  "link.title.Development center": {
+    "message": "开发中心",
+    "description": "The title of the footer links column with title=Development center in the footer"
+  },
+  "link.title.Community": {
+    "message": "社区",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.Company": {
+    "message": "公司",
+    "description": "The title of the footer links column with title=Company in the footer"
+  },
+  "link.item.label.Download Spreadsheet": {
+    "message": "下载 Spreadsheet",
+    "description": "The label of footer link with label=Download Spreadsheet linking to https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml"
+  },
+  "link.item.label.Examples": {
+    "message": "示例",
+    "description": "The label of footer link with label=Examples linking to https://snippet.dhtmlx.com/ihtkdcoc?tag=spreadsheet"
+  },
+  "link.item.label.Blog": {
+    "message": "博客",
+    "description": "The label of footer link with label=Blog linking to https://dhtmlx.com/blog/?s=spreadsheet"
+  },
+  "link.item.label.Forum": {
+    "message": "论坛",
+    "description": "The label of footer link with label=Forum linking to https://forum.dhtmlx.com/c/spreadsheet/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/DHTMLX"
+  },
+  "link.item.label.Youtube": {
+    "message": "Youtube",
+    "description": "The label of footer link with label=Youtube linking to https://www.youtube.com/user/dhtmlx"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/dhtmlx"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/dhtmlx"
+  },
+  "link.item.label.Linkedin": {
+    "message": "Linkedin",
+    "description": "The label of footer link with label=Linkedin linking to https://www.linkedin.com/groups/3345009/"
+  },
+  "link.item.label.About us": {
+    "message": "关于我们",
+    "description": "The label of footer link with label=About us linking to https://dhtmlx.com/docs/company.shtml"
+  },
+  "link.item.label.Contact us": {
+    "message": "联系我们",
+    "description": "The label of footer link with label=Contact us linking to https://dhtmlx.com/docs/contact.shtml"
+  },
+  "link.item.label.Licensing": {
+    "message": "许可",
+    "description": "The label of footer link with label=Licensing linking to https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/#editions-licenses"
+  }
+}

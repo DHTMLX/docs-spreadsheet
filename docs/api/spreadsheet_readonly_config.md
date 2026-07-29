@@ -8,7 +8,7 @@ description: You can learn about the readonly config in the documentation of the
 
 ### Description
 
-@short: Optional. Enables/disables the readonly mode
+@short: Optional. Enables/disables the read-only mode
 
 ### Usage
 

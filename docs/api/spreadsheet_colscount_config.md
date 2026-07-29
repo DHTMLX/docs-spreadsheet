@@ -8,7 +8,7 @@ description: You can learn about the colsCount config in the documentation of th
 
 ### Description
 
-@short: Optional. Sets the number of columns a spreadsheet will have on initialization
+@short: Optional. Sets the number of columns in a spreadsheet on initialization
 
 ### Usage
 
@@ -25,6 +25,6 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-**Related articles:** [Configuration](configuration.md#number-of-rows-and-columns)
+**Related article:** [Configuration](configuration.md#number-of-rows-and-columns)
 
 **Related sample:** [Spreadsheet. Full Toolbar](https://snippet.dhtmlx.com/kpm017nx)

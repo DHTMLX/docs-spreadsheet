@@ -18,7 +18,7 @@ getSelectedCell(): string;
 
 ### Returns
 
-The method returns an id(s) or a range of selected cell(s)
+The method returns the id(s) or a range of selected cell(s)
 
 ### Example
 
@@ -33,4 +33,4 @@ spreadsheet.selection.setSelectedCell("B7,B3,D4,D6,E4:E8");
 const selected = spreadsheet.selection.getSelectedCell(); // -> "B7,B3,D4,D6,E4:E8"
 ~~~
 
-**Related articles:** [Work with Spreadsheet](working_with_ssheet.md)
+**Related article:** [Work with Spreadsheet](working_with_ssheet.md)

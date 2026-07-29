@@ -6,17 +6,17 @@ description: You can learn about working with spreadsheet in the documentation o
 
 # Work with Spreadsheet
 
-While users interact with Spreadsheet via its intuitive interface, you can work with the component using [simple API](api/api_overview.md).
+While users interact with Spreadsheet through its interface, you can work with the component using its [simple API](api/api_overview.md).
 
 ## Undo/redo actions
 
-There is the [](api/spreadsheet_undo_method.md) API method that allows reverting the latest action:
+The [](api/spreadsheet_undo_method.md) API method reverts the latest action:
 
 ~~~jsx
 spreadsheet.undo();
 ~~~
 
-To reapply a reverted action once again use the [](api/spreadsheet_redo_method.md) method:
+To reapply a reverted action, use the [](api/spreadsheet_redo_method.md) method:
 
 ~~~jsx
 spreadsheet.redo();
@@ -43,7 +43,7 @@ spreadsheet.deleteColumn("C1");
 When a new column is added, neighboring columns are moved to the right.
 
 :::note
-You can delete several columns by providing a range of cells' ids as a parameter of the `deleteColumn()` method, e.g.: "A1:C3".
+You can delete several columns by providing a range of cells' ids as a parameter of the `deleteColumn()` method, for example: "A1:C3".
 ::: 
 
 ### Rows
@@ -65,12 +65,12 @@ spreadsheet.deleteRow("A2");
 When a new row is added, neighboring rows are moved one cell down.
 
 :::note
-You can delete several rows by providing a range of cells' ids as a parameter of the `deleteRow()` method, e.g.: "A1:C3".
+You can delete several rows by providing a range of cells' ids as a parameter of the `deleteRow()` method, for example: "A1:C3".
 ::: 
 
 ## Autofit column width
 
-To change the column width so that it would automatically adjust to the longest content in the column, apply the [fitColumn()](api/spreadsheet_fitcolumn_method.md) method. The method takes one parameter - the id of the cell that contains the name of the necessary column.
+To change the column width so that it automatically adjusts to the longest content in the column, apply the [`fitColumn()`](api/spreadsheet_fitcolumn_method.md) method. The method takes one parameter — the id of the cell that contains the name of the necessary column.
 
 ~~~jsx
 // adjusts the width of the "G" column
@@ -79,7 +79,7 @@ spreadsheet.fitColumn("G2");
 
 ## Freezing/unfreezing rows and columns
 
-You may need to fix (or "freeze") some columns or rows, so that they will become static when you scroll the page, while the rest of columns/rows remain movable.
+You may need to fix (or "freeze") some columns or rows so that they become static when you scroll the page, while the rest of the columns and rows remain movable.
 
 ### Columns
 
@@ -122,7 +122,7 @@ spreadsheet.unfreezeRows("sheet2!A1"); // fixed rows in "sheet2" will be unfroze
 ### Freezing rows/columns in the dataset
 
 You can also fix rows and columns for particular sheets in the dataset, while parsing data into Spreadsheet.
-For this, use the `freeze` property in the *sheets* object of the [`parse()`](api/spreadsheet_parse_method.md) method:
+To do this, use the `freeze` property in the `sheets` object of the [`parse()`](api/spreadsheet_parse_method.md) method:
 
 ~~~jsx {10-13}
 const data = {
@@ -197,7 +197,7 @@ spreadsheet.showRows("B2:C2"); // the rows from "2" to "4" will become visible a
 
 ### Set filter
 
-You can filter data in the spreadsheet and render only the records that meet the specified criteria. For that, you need to use the [setFilter()](api/spreadsheet_setfilter_method.md) method and specify the rules of filtering for the necessary column(s) there. 
+You can filter data in the spreadsheet and render only the records that meet the specified criteria. To do this, use the [`setFilter()`](api/spreadsheet_setfilter_method.md) method and specify the filtering rules for the necessary column(s).
 
 For example, you can specify criteria of filtering for a separate column:
 
@@ -209,9 +209,9 @@ spreadsheet.setFilter("A2", [{condition: { factor: "tc", value: "e" }, exclude: 
 spreadsheet.setFilter("C1", [{}, {}, {condition: {factor: "inb", value: [5,8]}, exclude: [3.75]}]);
 ~~~
 
-In this case, a filter icon will be added for each column from the range of data.
+In this case, a filter icon appears for each column in the range of data.
 
-But you may also specify the filtering criteria for a range of cells as in:
+You can also specify the filtering criteria for a range of cells, as in:
 
 ~~~jsx
 // filter data by criteria specified for column C
@@ -221,13 +221,13 @@ spreadsheet.setFilter("C1:C9", [{condition: {factor: "inb", value: [5,8]}, exclu
 spreadsheet.setFilter("A1:C10", [{condition: {factor: "tc", value: "e"}}, {}, {condition: {factor: "ib", value: [5,8]}}]);
 ~~~
 
-and a filter icon will be added only for columns withing the specified range.
+and a filter icon appears only for columns within the specified range.
 
 **Related sample:** [Spreadsheet. Filtering via API](https://snippet.dhtmlx.com/effrcsg6)
 
 ### Reset filter
 
-If you want to reset filtering, apply the [setFilter()](api/spreadsheet_setfilter_method.md) method without parameters or pass only the first parameter to the method:
+If you want to reset filtering, apply the [`setFilter()`](api/spreadsheet_setfilter_method.md) method without parameters or pass only the first parameter to the method:
 
 ~~~jsx
 spreadsheet.setFilter("A2");
@@ -235,7 +235,7 @@ spreadsheet.setFilter("A2");
 
 ### Get filter
 
-To get the criteria by which data are currently filtered in a sheet, apply the [getFilter()](api/spreadsheet_getfilter_method.md) method. Pass the ID of the necessary sheet as a parameter to the method.
+To get the criteria by which data are currently filtered in a sheet, apply the [`getFilter()`](api/spreadsheet_getfilter_method.md) method. Pass the ID of the necessary sheet as a parameter to the method.
 
 ~~~jsx
 const filter = spreadsheet.getFilter("Income");
@@ -249,19 +249,19 @@ const filter = spreadsheet.getFilter();
 
 ## Searching for data
 
-You may get cells which contain specific records by passing the value which you need to search to the [search()](api/spreadsheet_search_method.md) method. 
+You can get cells that contain specific records by passing the value you need to search for to the [`search()`](api/spreadsheet_search_method.md) method.
 
 ~~~jsx
 spreadsheet.search("min"); // -> ['D1']
 ~~~
 
-At the same time, you may pass `true` as a value of the second parameter. This will open the search bar and highlight the found cells in the spreadsheet:
+You can also pass `true` as the second parameter to open the search bar and highlight the found cells in the spreadsheet:
 
 ~~~jsx
 spreadsheet.search("min", true); 
 ~~~
 
-By default, the spreadsheet will search the cells on the currently active sheet. To search for records on the other sheet, pass its ID as the third parameter of the method:
+By default, the spreadsheet searches the cells on the currently active sheet. To search for records on another sheet, pass its ID as the third parameter of the method:
 
 ~~~jsx
 spreadsheet.search("min", false, "Income");
@@ -269,7 +269,7 @@ spreadsheet.search("min", false, "Income");
 
 ### Close search bar
 
-To hide the search bar, use the [hideSearch()](api/spreadsheet_hidesearch_method.md) method:
+To hide the search bar, use the [`hideSearch()`](api/spreadsheet_hidesearch_method.md) method:
 
 ~~~jsx
 spreadsheet.hideSearch();
@@ -277,7 +277,7 @@ spreadsheet.hideSearch();
 
 ## Sorting data
 
-From v4.3, you can sort data in the spreadsheet via the [sortCells()](api/spreadsheet_sortcells_method.md) method. Pass to the method two parameters:
+From v4.3, you can sort data in the spreadsheet with the [`sortCells()`](api/spreadsheet_sortcells_method.md) method. Pass two parameters to the method:
 - `cell` - the id(s) of a cell(s) or a range of cells by which you want the data in the spreadsheet to be sorted
 - `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
 
@@ -291,7 +291,7 @@ spreadsheet.sortCells("B2:B11", -1);
 
 ## Clearing spreadsheet
 
-You can clear the whole spreadsheet at once via the [clear()](api/spreadsheet_clear_method.md) method:
+You can clear the whole spreadsheet at once with the [`clear()`](api/spreadsheet_clear_method.md) method:
 
 ~~~jsx
 spreadsheet.clear();
@@ -299,4 +299,4 @@ spreadsheet.clear();
 
 **Related sample:** [Spreadsheet. Clear](https://snippet.dhtmlx.com/szmtjn72)
 
-If you need to clear a specific sheet, use the [sheets.clear()](api/sheetmanager_clear_method.md) method.
+If you need to clear a specific sheet, use the [`sheets.clear()`](api/sheetmanager_clear_method.md) method.

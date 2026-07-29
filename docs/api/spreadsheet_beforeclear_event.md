@@ -7,7 +7,7 @@ description: You can learn about the beforeClear event in the documentation of t
 # beforeClear
 
 :::caution
-The **beforeClear** event has been deprecated in v4.3. The event will continue work, but you'd better apply a new approach:
+The `beforeClear` event was deprecated in v4.3. It still works, but you should apply the new approach:
 
 ~~~jsx
 spreadsheet.events.on("beforeAction", (actionName, config) => {
@@ -50,4 +50,4 @@ spreadsheet.events.on("beforeClear", function(){
 
 **Changelog:** Added in v4.2
 
-**Related articles:** [Event handling](handling_events.md)
+**Related article:** [Event handling](handling_events.md)
