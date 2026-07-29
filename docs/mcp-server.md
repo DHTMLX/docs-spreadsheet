@@ -200,7 +200,7 @@ I want to load data into DHTMLX Spreadsheet from a JSON file. How do I do that?
 How do I export a DHTMLX Spreadsheet to an Excel file? What method should I call?
 ~~~
 ~~~
-How do I load JSON data into DHTMLX Spreadsheet using the load() or parse() methods?
+What's the difference between DHTMLX Spreadsheet's load() and parse() methods for JSON data?
 ~~~
 
 **Working with cells and ranges**
