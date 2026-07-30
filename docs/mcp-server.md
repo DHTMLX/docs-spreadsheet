@@ -6,7 +6,7 @@ description: Live DHTMLX Spreadsheet documentation reaches AI assistants through
 
 # DHTMLX Spreadsheet MCP server: no more stale formula syntax
 
-[DHTMLX Spreadsheet](/) applications depend on getting [formulas](/functions/), [cell formatting](/data_formatting/), [data loading](/loading_data/), and [sheet management](/working_with_sheets/) exactly right. AI coding assistants trained on older data often get this wrong, producing invalid formula syntax, calling API methods that no longer exist, or applying configuration options that have since changed.
+[DHTMLX Spreadsheet](/) applications depend on getting [formulas](/functions/), [cell formatting](/data_formatting/), [data loading](/loading_data/), and [sheet management](/working_with_sheets/) exactly right. None of that comes from memorized training data: it takes current formula syntax, the API methods Spreadsheet ships today, and configuration options that haven't changed since.
 
 The DHTMLX MCP server fixes this by putting the live Spreadsheet reference one query away, wherever the assistant is working. Point it at [number formats](/number_formatting/), the [Sheet Manager API](/api/overview/sheetmanager_overview/), or [data loading](/loading_data/), and it checks the current documentation before generating a single line of code.
 
