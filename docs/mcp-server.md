@@ -41,11 +41,13 @@ For example, when you ask *"How do I define a custom number format mask for curr
 
 ## Wiring the MCP server into your AI tool
 
-Registering the MCP server is a one-time step per tool, though the motion changes: a typed CLI command here, a pasted JSON snippet there. After that, every Spreadsheet project opened in that tool can reach the live documentation.
+Registering the MCP server is a one-time step per tool, though the motion changes: a typed CLI command here, a pasted JSON snippet there. Either way, point your tool at this URL:
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
 ~~~
+
+After that, every Spreadsheet project opened in that tool can reach the live documentation.
 
 Popular tools each get their own setup steps below.
 
