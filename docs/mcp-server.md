@@ -1,16 +1,16 @@
 ---
 sidebar_label: DHTMLX MCP server
-title: DHTMLX Spreadsheet MCP server, always current for AI
+title: DHTMLX Spreadsheet MCP server for formulas and formatting
 description: Live DHTMLX Spreadsheet documentation reaches AI assistants through the MCP server, spanning formulas, cell formatting, data loading, and sheet management.
 ---
 
-# DHTMLX Spreadsheet MCP server: no more stale formula syntax
+# DHTMLX Spreadsheet MCP server: formulas, formatting, and sheet APIs
 
 [DHTMLX Spreadsheet](/) applications depend on getting [formulas](/functions/), [cell formatting](/data_formatting/), [data loading](/loading_data/), and [sheet management](/working_with_sheets/) exactly right. None of that comes from memorized training data: it takes current formula syntax, the API methods Spreadsheet ships today, and configuration options that haven't changed since.
 
 The DHTMLX MCP server fixes this by putting the live Spreadsheet reference one query away, wherever the assistant is working. Point it at [number formats](/number_formatting/), the [Sheet Manager API](/api/overview/sheetmanager_overview/), or [data loading](/loading_data/), and it checks the current documentation before generating a single line of code.
 
-**MCP endpoint**
+### MCP endpoint
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
@@ -35,9 +35,16 @@ Every page of the DHTMLX Spreadsheet documentation is searchable through the MCP
 
 ## What happens when the assistant queries the MCP server
 
-Not every question needs the same treatment, so the assistant picks between two workflows depending on what's being asked: it can request raw reference pages and write the answer itself (that's *Search*), or ask the server to read those pages and hand back a finished answer instead (that's *Inference*). Either way, the underlying lookup runs on a Retrieval-Augmented Generation (RAG) index built from the Spreadsheet documentation, served through the Model Context Protocol (MCP).
+Every query to the DHTMLX MCP server passes through a Retrieval-Augmented Generation (RAG) pipeline built on the Model Context Protocol (MCP). Depending on what's being asked, the server hands it to one of two workflows: *Search*, which surfaces matching reference pages for the assistant to build from, or *Inference*, which reads those pages and answers on its own. Take the prompt *"How do I define a custom number format mask for currency values in DHTMLX Spreadsheet?"* as an example:
 
-For example, when you ask *"How do I define a custom number format mask for currency values in DHTMLX Spreadsheet?"*, the assistant sends the prompt via the MCP endpoint. The *Search* workflow matches it against the number formatting documentation, retrieves the relevant reference pages, and returns them as context; the assistant then writes the code against the API as it exists today, not as a training snapshot remembers it. *Inference* can also take that same kind of query and skip straight to an answer: it reads the reference pages itself and hands the assistant a finished response instead of raw material to work from.
+1. The assistant submits the query over MCP.
+2. The server locates the number formatting documentation that matches it.
+3. Because the request calls for generated code, *Search* handles it (a narrower factual question would go to *Inference* instead).
+4. *Search* retrieves the matching pages from a vector index of the current Spreadsheet documentation.
+5. Those pages come back to the assistant as context.
+6. The assistant builds the format mask from that context instead of recalling it from memory.
+
+The result: Spreadsheet code generation stays anchored to today's formula and formatting API, not a snapshot from training.
 
 ## Wiring the MCP server into your AI tool
 
