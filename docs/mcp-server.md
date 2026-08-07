@@ -39,7 +39,7 @@ Every query to the DHTMLX MCP server passes through a Retrieval-Augmented Genera
 
 Take the prompt *"How do I set up DHTMLX Spreadsheet so it pulls live stock prices from my company's market data feed and formats them as currency?"* as an example:
 
-1. Which part needs documentation? How to apply a currency number format mask to a range of cells.
+1. The part that needs documentation: how to apply a currency number format mask to a range of cells.
 2. The server locates the number formatting documentation that matches it.
 3. Because the request calls for generated code, *Search* handles it (a narrower factual question would go to *Inference* instead).
 4. *Search* retrieves the matching pages from a vector index of the current Spreadsheet documentation.
