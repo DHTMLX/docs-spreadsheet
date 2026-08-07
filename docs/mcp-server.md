@@ -35,16 +35,18 @@ Every page of the DHTMLX Spreadsheet documentation is searchable through the MCP
 
 ## What happens when the assistant queries the MCP server
 
-Every query to the DHTMLX MCP server passes through a Retrieval-Augmented Generation (RAG) pipeline built on the Model Context Protocol (MCP). Depending on what's being asked, the server hands it to one of two workflows: *Search*, which surfaces matching reference pages for the assistant to build from, or *Inference*, which reads those pages and answers on its own. Take the prompt *"How do I define a custom number format mask for currency values in DHTMLX Spreadsheet?"* as an example:
+Every query to the DHTMLX MCP server passes through a Retrieval-Augmented Generation (RAG) pipeline built on the Model Context Protocol (MCP). Depending on what's being asked, the server hands it to one of two workflows: *Search*, which surfaces matching reference pages for the assistant to build from, or *Inference*, which reads those pages and answers on its own. Ahead of that, the assistant sorts out which piece of the request needs a documentation lookup and covers the rest on its own.
 
-1. The assistant submits the query over MCP.
+Take the prompt *"How do I set up DHTMLX Spreadsheet so it pulls live stock prices from my company's market data feed and formats them as currency?"* as an example:
+
+1. Which part needs documentation? How to apply a currency number format mask to a range of cells.
 2. The server locates the number formatting documentation that matches it.
 3. Because the request calls for generated code, *Search* handles it (a narrower factual question would go to *Inference* instead).
 4. *Search* retrieves the matching pages from a vector index of the current Spreadsheet documentation.
 5. Those pages come back to the assistant as context.
-6. The assistant builds the format mask from that context instead of recalling it from memory.
+6. The assistant applies the format mask using that context, then writes the market-data fetch logic from its own knowledge instead of guessing at the Spreadsheet API.
 
-The result: Spreadsheet code generation stays anchored to today's formula and formatting API, not a snapshot from training.
+The result: Spreadsheet code generation stays anchored to today's formula and formatting API.
 
 ## Wiring the MCP server into your AI tool
 
