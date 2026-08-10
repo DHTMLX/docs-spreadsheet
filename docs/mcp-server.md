@@ -33,7 +33,7 @@ Every page of the DHTMLX Spreadsheet documentation is searchable through the MCP
 - Handling [Spreadsheet events](/handling_events/) to respond to value changes, cell selection, editor actions, and sheet-level interactions.
 - Exploring [multi-sheet support](/working_with_sheets/), [data loading and export](/loading_data/) (JSON and Excel), and integration with frameworks such as [React](/react/), [Vue](/vuejs_integration/), [Angular](/angular_integration/), and [Svelte](/svelte_integration/).
 
-## What happens when the assistant queries the MCP server
+## How the assistant queries the MCP server
 
 Every query to the DHTMLX MCP server passes through a Retrieval-Augmented Generation (RAG) pipeline built on the Model Context Protocol (MCP). Depending on what's being asked, the server hands it to one of two workflows: *Search*, which surfaces matching reference pages for the assistant to build from, or *Inference*, which reads those pages and answers on its own. Ahead of that, the assistant sorts out which piece of the request needs a documentation lookup and covers the rest on its own.
 
@@ -41,7 +41,7 @@ Take the prompt *"How do I set up DHTMLX Spreadsheet so it pulls live stock pric
 
 1. The part that needs documentation: how to apply a currency number format mask to a range of cells.
 2. The server locates the number formatting documentation that matches it.
-3. Because the request calls for generated code, *Search* handles it (a narrower factual question would go to *Inference* instead).
+3. Since the request calls for generated code, *Search* handles it (a narrower factual question would go to *Inference* instead).
 4. *Search* retrieves the matching pages from a vector index of the current Spreadsheet documentation.
 5. Those pages come back to the assistant as context.
 6. The assistant applies the format mask using that context, then writes the market-data fetch logic from its own knowledge instead of guessing at the Spreadsheet API.
@@ -198,7 +198,7 @@ Queries may be logged for debugging and service improvement purposes.
 
 Organizations that require stricter privacy controls can request a commercial deployment option with query logging disabled. For inquiries, contact `info@dhtmlx.com`.
 
-## Sample prompts for building spreadsheets with AI
+## Sample prompts for building spreadsheets
 
 The more specific the goal in your prompt, the more precisely the assistant can target the right part of the Spreadsheet API. Prompts below are grouped by task category, ready to copy and adjust to your data.
 
