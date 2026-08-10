@@ -8,7 +8,7 @@ description: Live DHTMLX Spreadsheet documentation reaches AI assistants through
 
 [DHTMLX Spreadsheet](/) applications depend on getting [formulas](/functions/), [cell formatting](/data_formatting/), [data loading](/loading_data/), and [sheet management](/working_with_sheets/) exactly right. None of that comes from memorized training data: it takes current formula syntax, the API methods Spreadsheet ships today, and configuration options that haven't changed since.
 
-The DHTMLX MCP server fixes this by putting the live Spreadsheet reference one query away, wherever the assistant is working. Point it at [number formats](/number_formatting/), the [Sheet Manager API](/api/overview/sheetmanager_overview/), or [data loading](/loading_data/), and it checks the current documentation before generating a single line of code.
+The DHTMLX MCP server addresses this by giving the assistant direct access to the live Spreadsheet reference wherever it's working. Point it at [number formats](/number_formatting/), the [Sheet Manager API](/api/overview/sheetmanager_overview/), or [data loading](/loading_data/), and it checks the current documentation before generating a single line of code.
 
 ### MCP endpoint
 
@@ -50,7 +50,7 @@ The result: Spreadsheet code generation stays anchored to today's formula and fo
 
 ## Wiring the MCP server into your AI tool
 
-Registering the MCP server is a one-time step per tool, though the motion changes: a typed CLI command here, a pasted JSON snippet there. Either way, point your tool at this URL:
+Registering the MCP server is a one-time step per tool, using either a CLI command or a JSON configuration snippet depending on the tool. Either way, point your tool at this URL:
 
 ~~~jsx
 https://docs.dhtmlx.com/mcp
