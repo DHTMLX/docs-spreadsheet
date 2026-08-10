@@ -38,6 +38,10 @@ Shows how to load data into Spreadsheet, handle events, and use the main functio
 - [Integration with Svelte](svelte_integration.md) - GitHub demo of using Spreadsheet in a Svelte app
 - [Integration with Vue.js](vuejs_integration.md) - GitHub demo of using Spreadsheet in a Vue app
 
+### AI-assisted development
+
+- [DHTMLX MCP server](mcp-server.md) - connect AI coding assistants to live Spreadsheet documentation
+
 ## User guides
 
 The user guides make working with Spreadsheet easy for your users.
