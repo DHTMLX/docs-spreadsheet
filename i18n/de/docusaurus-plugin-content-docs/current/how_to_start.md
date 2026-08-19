@@ -145,3 +145,4 @@ Das war alles. In vier Schritten erhalten Sie ein praktisches Werkzeug für die 
 - [Spreadsheet-Übersicht](/)
 - [](guides.md)
 - [](api/api_overview.md)
+- [](mcp-server.md)

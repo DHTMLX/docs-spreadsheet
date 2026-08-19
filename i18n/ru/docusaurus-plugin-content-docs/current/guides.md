@@ -38,6 +38,10 @@ DHTMLX Spreadsheet включает широкий набор возможнос
 - [Интеграция со Svelte](svelte_integration.md) — демо на GitHub с использованием Spreadsheet в приложении Svelte
 - [Интеграция с Vue.js](vuejs_integration.md) — демо на GitHub с использованием Spreadsheet в приложении Vue
 
+### Разработка с помощью ИИ {#ai-assisted-development}
+
+- [DHTMLX MCP server](mcp-server.md) — подключение ИИ-ассистентов для написания кода к актуальной документации Spreadsheet
+
 ## Руководства для пользователей {#user-guides}
 
 Руководства для пользователей упрощают работу со Spreadsheet.

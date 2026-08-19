@@ -66,3 +66,4 @@ DHTMLX Spreadsheet — клиентский JavaScript-компонент для
 
 - [Обзор API](api/api_overview.md)
 - [Руководства](guides.md)
+- [MCP-сервер](mcp-server.md) для ИИ-ассистентов программирования

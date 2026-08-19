@@ -145,3 +145,4 @@ spreadsheet.parse(data);
 - [Spreadsheet 개요](/)
 - [](guides.md)
 - [](api/api_overview.md)
+- [](mcp-server.md)

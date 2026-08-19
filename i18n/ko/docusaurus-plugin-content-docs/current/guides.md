@@ -38,6 +38,10 @@ Spreadsheet에 데이터를 로드하고, 이벤트를 처리하며, 주요 기�
 - [Svelte와의 통합](svelte_integration.md) - Svelte 앱에서 Spreadsheet를 사용하는 GitHub 데모
 - [Vue.js와의 통합](vuejs_integration.md) - Vue 앱에서 Spreadsheet를 사용하는 GitHub 데모
 
+### AI 지원 개발 {#ai-assisted-development}
+
+- [DHTMLX MCP 서버](mcp-server.md) - AI 코딩 어시스턴트를 실시간 Spreadsheet 문서에 연결
+
 ## 사용자 가이드 {#user-guides}
 
 사용자 가이드를 통해 사용자가 Spreadsheet를 쉽게 사용할 수 있습니다.
