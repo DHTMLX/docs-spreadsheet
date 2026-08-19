@@ -66,3 +66,4 @@ DHTMLX Spreadsheet 是一款用于在线编辑和格式化电子表格数据的�
 
 - [API 概览](api/api_overview.md)
 - [指南](guides.md)
+- [MCP 服务器](mcp-server.md)，适用于 AI 编程助手

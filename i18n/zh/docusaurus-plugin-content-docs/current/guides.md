@@ -38,6 +38,10 @@ DHTMLX Spreadsheet 提供了丰富的功能：支持多种格式的数据导入�
 - [与 Svelte 集成](svelte_integration.md) - 在 Svelte 应用中使用 Spreadsheet 的 GitHub 示例
 - [与 Vue.js 集成](vuejs_integration.md) - 在 Vue 应用中使用 Spreadsheet 的 GitHub 示例
 
+### AI 辅助开发 {#ai-assisted-development}
+
+- [DHTMLX MCP 服务器](mcp-server.md) - 将 AI 编程助手连接到实时 Spreadsheet 文档
+
 ## 用户指南 {#user-guides}
 
 用户指南帮助您的用户轻松使用 Spreadsheet。

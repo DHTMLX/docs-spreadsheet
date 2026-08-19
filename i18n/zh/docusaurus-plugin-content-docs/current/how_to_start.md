@@ -145,3 +145,4 @@ spreadsheet.parse(data);
 - [Spreadsheet 概览](/)
 - [](guides.md)
 - [](api/api_overview.md)
+- [](mcp-server.md)
