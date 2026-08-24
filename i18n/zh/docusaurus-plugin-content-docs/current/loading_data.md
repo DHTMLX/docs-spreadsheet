@@ -136,6 +136,8 @@ const dataset = [
 
 请在 [API 参考](api/spreadsheet_parse_method.md#parameters)中查阅可用单元格属性的完整列表。
 
+锁定状态是电子表格数据的一部分。即使被锁定的单元格为空，它也会包含在 [](api/spreadsheet_serialize_method.md) 方法返回的对象中，并且在数据[导出为 Excel 文件](#export-into-excel)以及[重新导入](#loading-excel-file-xlsx)时都会保留。
+
 **相关示例**：[Spreadsheet. 锁定单元格](https://snippet.dhtmlx.com/czeyiuf8?tag=spreadsheet)
 
 ### 在单元格中添加链接 {#adding-a-link-into-a-cell}
@@ -239,6 +241,8 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 {{note 请注意，该组件仅支持从 `.xlsx` 扩展名的 Excel 文件导入。}}
 
+除单元格值外，导入还会恢复单元格样式、数字格式、合并单元格、链接、数据验证列表（作为下拉编辑器）以及[单元格的锁定状态](#setting-the-locked-state-for-a-cell)。
+
 **相关示例**：[Spreadsheet. 导入 Xlsx](https://snippet.dhtmlx.com/cqlpy828?tag=spreadsheet)
 
 如有需要，您也可以[将电子表格中的数据导出为 Excel 文件](#exporting-data)。
@@ -268,7 +272,7 @@ spreadsheet.parse(data);
 
 ## 保存与恢复状态 {#saving-and-restoring-state}
 
-要保存电子表格的当前状态，请使用 [](api/spreadsheet_serialize_method.md) 方法。该方法将数据转换为 JSON 对象数组，每个 JSON 对象包含一个单元格的配置。
+要保存电子表格的当前状态，请使用 [](api/spreadsheet_serialize_method.md) 方法。该方法将电子表格转换为包含 `sheets`、`styles` 和 `formats` 属性的 JSON 对象。除单元格值外，保存的状态还包括已应用的样式和数字格式、合并单元格、固定的列和行、锁定的单元格，以及列和行的自定义尺寸与可见性。
 
 ~~~jsx
 // saving state of the spreadsheet1
@@ -327,6 +331,8 @@ spreadsheet.export.xlsx();
 ~~~
 
 **相关示例**：[Spreadsheet. 导出 Xlsx](https://snippet.dhtmlx.com/btyo3j8s?tag=spreadsheet)
+
+除单元格值外，导出的文件还会保留应用于单元格的样式、数字格式、合并单元格、固定的列和行、添加到单元格中的链接、下拉编辑器（作为 Excel 数据验证）以及[单元格的锁定状态](#setting-the-locked-state-for-a-cell)。将该文件[重新导入 Spreadsheet](#loading-excel-file-xlsx) 时，这些内容都会被恢复。
 
 :::note 
 请注意，该组件仅支持导出为 `.xlsx` 扩展名的 Excel 文件。

@@ -136,6 +136,8 @@ const dataset = [
 
 Die vollständige Liste der verfügbaren Zell-Eigenschaften finden Sie in der [API-Referenz](api/spreadsheet_parse_method.md#parameters).
 
+Der gesperrte Zustand ist Teil der Spreadsheet-Daten. Er wird in das von der Methode [](api/spreadsheet_serialize_method.md) zurückgegebene Objekt aufgenommen, auch wenn eine gesperrte Zelle leer ist, und er bleibt beim [Export der Daten in eine Excel-Datei](#export-into-excel) und beim [Reimport](#loading-excel-file-xlsx) erhalten.
+
 **Verwandtes Beispiel**: [Spreadsheet. Gesperrte Zellen](https://snippet.dhtmlx.com/czeyiuf8?tag=spreadsheet)
 
 ### Einen Link in eine Zelle einfügen {#adding-a-link-into-a-cell}
@@ -239,6 +241,8 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 {{note Beachten Sie, dass die Komponente nur den Import aus Excel-Dateien mit der Erweiterung `.xlsx` unterstützt.}}
 
+Neben den Zellwerten stellt der Import die Zellstile, die Zahlenformate, die verbundenen Zellen, die Links, die Datenüberprüfungslisten (als Dropdown-Editoren) und den [gesperrten Zustand der Zellen](#setting-the-locked-state-for-a-cell) wieder her.
+
 **Verwandtes Beispiel**: [Spreadsheet. Xlsx importieren](https://snippet.dhtmlx.com/cqlpy828?tag=spreadsheet)
 
 Sie können bei Bedarf auch [Daten aus einem Spreadsheet in eine Excel-Datei exportieren](#exporting-data).
@@ -268,7 +272,7 @@ Einzelheiten zum Laden mehrerer Tabellenblätter in das Spreadsheet finden Sie i
 
 ## Zustand speichern und wiederherstellen {#saving-and-restoring-state}
 
-Um den aktuellen Zustand eines Spreadsheets zu speichern, verwenden Sie die Methode [](api/spreadsheet_serialize_method.md). Sie konvertiert Daten in ein Array von JSON-Objekten. Jedes JSON-Objekt enthält die Konfiguration einer Zelle.
+Um den aktuellen Zustand eines Spreadsheets zu speichern, verwenden Sie die Methode [](api/spreadsheet_serialize_method.md). Sie konvertiert das Spreadsheet in ein JSON-Objekt mit den Attributen `sheets`, `styles` und `formats`. Neben den Zellwerten enthält der gespeicherte Zustand die angewendeten Stile und Zahlenformate, die verbundenen Zellen, die fixierten Spalten und Zeilen, die gesperrten Zellen sowie die benutzerdefinierten Größen und die Sichtbarkeit von Spalten und Zeilen.
 
 ~~~jsx
 // Zustand von spreadsheet1 speichern
@@ -327,6 +331,8 @@ spreadsheet.export.xlsx();
 ~~~
 
 **Verwandtes Beispiel**: [Spreadsheet. Xlsx exportieren](https://snippet.dhtmlx.com/btyo3j8s?tag=spreadsheet)
+
+Neben den Zellwerten behält eine exportierte Datei die auf Zellen angewendeten Stile, die Zahlenformate, die verbundenen Zellen, die fixierten Spalten und Zeilen, die in Zellen eingefügten Links, die Dropdown-Editoren (als Excel-Datenüberprüfung) und den [gesperrten Zustand der Zellen](#setting-the-locked-state-for-a-cell) bei. All dies wird wiederhergestellt, wenn die Datei [zurück in Spreadsheet importiert wird](#loading-excel-file-xlsx).
 
 :::note 
 Bitte beachten Sie, dass die Komponente nur den Export in Excel-Dateien mit der Erweiterung `.xlsx` unterstützt.

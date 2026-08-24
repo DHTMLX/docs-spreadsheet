@@ -39,6 +39,8 @@ spreadsheet.export.xlsx("MyData");
 컴포넌트는 `.xlsx` 확장자를 가진 Excel 파일로의 내보내기만 지원합니다.
 :::
 
+내보낸 파일은 셀 값 외에도 셀 스타일, 숫자 형식, 병합된 셀, 고정된 열과 행, 링크, 드롭다운 에디터, 셀의 잠금 상태를 유지합니다. 이 모든 것은 [파일을 다시 Spreadsheet로 가져올 때](loading_data.md#loading-excel-file-xlsx) 복원됩니다.
+
 :::info
 DHTMLX Spreadsheet는 WebAssembly 기반 라이브러리 [Json2Excel](https://github.com/dhtmlx/json2excel)을 사용하여 Excel로 데이터를 내보냅니다. [자세한 내용을 확인하세요](loading_data.md#exporting-data).
 :::

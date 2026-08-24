@@ -49,3 +49,5 @@ spreadsheet.lock("sheet1!A2");
 :::
 
 **관련 샘플**: [Spreadsheet. Locked Cells](https://snippet.dhtmlx.com/czeyiuf8)
+
+**관련 문서:** [셀 잠금](working_with_cells.md#locking-cells)
