@@ -49,3 +49,5 @@ Wenn der Name des Tabs nicht angegeben wird, sperrt die Methode die Zelle(n) des
 :::
 
 **Verwandtes Beispiel**: [Spreadsheet. Gesperrte Zellen](https://snippet.dhtmlx.com/czeyiuf8)
+
+**Verwandter Artikel:** [Zellen sperren](working_with_cells.md#locking-cells)

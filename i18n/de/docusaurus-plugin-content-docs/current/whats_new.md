@@ -8,6 +8,17 @@ description: Sie erfahren in der Dokumentation, was neu in der DHTMLX JavaScript
 
 Wenn Sie Spreadsheet von einer älteren Version aktualisieren, lesen Sie die [Migration auf eine neuere Version](migration.md) für Details.
 
+## Version 6.0.3 {#version-603}
+
+Veröffentlicht am 24. August 2026
+
+### Fehlerbehebungen {#fixes-603}
+
+- Benutzerdefinierte Spalten- und Zeilengrößen gingen bei der Methode `serialize()` verloren, wenn die Zellen leer waren
+- "Springendes" Scrollen in Chrome, wenn eine ausgewählte Zelle wieder in den sichtbaren Bereich gelangte
+- Einige Formeln verschwanden nach dem Importieren von Daten aus einer Excel-Datei
+- Der Zustand "gesperrt" von Zellen ging beim Excel-Export und -Import verloren
+
 ## Version 6.0.2 {#version-602}
 
 Veröffentlicht am 1. Juli 2026

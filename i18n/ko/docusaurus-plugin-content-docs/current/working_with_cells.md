@@ -208,6 +208,15 @@ var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 
 이 메서드는 셀 상태에 따라 `true` 또는 `false`를 반환합니다. 여러 셀을 한 번에 확인하는 경우 지정된 셀 중 잠긴 셀이 하나 이상 있으면 `true`를 반환합니다.
 
+### 잠금 상태 저장 {#saving-the-locked-state}
+
+셀의 잠금 상태는 스프레드시트 데이터의 일부이므로 저장하고 복원해도 유지됩니다:
+
+- [](api/spreadsheet_serialize_method.md) 메서드는 잠긴 셀에 값이 없더라도 직렬화된 셀 객체에 `locked` 속성을 포함합니다
+- [Excel 파일로 내보내기](loading_data.md#export-into-excel)는 잠금 상태를 유지하며, [해당 파일을 가져오면](loading_data.md#loading-excel-file-xlsx) 잠금 상태가 복원됩니다
+
+셀의 `locked` 속성을 사용하여 데이터 세트에서 직접 잠금 상태를 지정할 수도 있습니다. [자세한 내용을 확인하세요](loading_data.md#setting-the-locked-state-for-a-cell).
+
 ## 셀 병합 {#merging-cells}
 
 ### 셀 병합 {#merge-cells}

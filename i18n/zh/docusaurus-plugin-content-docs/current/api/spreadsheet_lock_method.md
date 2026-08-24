@@ -49,3 +49,5 @@ spreadsheet.lock("sheet1!A2");
 :::
 
 **相关示例**：[Spreadsheet. 锁定单元格](https://snippet.dhtmlx.com/czeyiuf8)
+
+**相关文章：** [锁定单元格](working_with_cells.md#locking-cells)

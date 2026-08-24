@@ -39,6 +39,8 @@ spreadsheet.export.xlsx("MyData");
 Beachten Sie, dass die Komponente den Export in Excel-Dateien ausschließlich mit der Erweiterung `.xlsx` unterstützt.
 :::
 
+Neben den Zellwerten behält eine exportierte Datei die Zellstile, die Zahlenformate, die verbundenen Zellen, die fixierten Spalten und Zeilen, die Links, die Dropdown-Editoren und den gesperrten Zustand der Zellen bei. All dies wird beim [Reimport der Datei in Spreadsheet](loading_data.md#loading-excel-file-xlsx) wiederhergestellt.
+
 :::info
 DHTMLX Spreadsheet verwendet die WebAssembly-basierte Bibliothek [Json2Excel](https://github.com/dhtmlx/json2excel) für den Export von Daten nach Excel. [Weitere Details](loading_data.md#exporting-data).
 :::

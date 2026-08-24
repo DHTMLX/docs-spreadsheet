@@ -136,6 +136,8 @@ const dataset = [
 
 Check the full list of available cell properties in the [API reference](api/spreadsheet_parse_method.md#parameters).
 
+The locked state is a part of the spreadsheet data. It is included into the object returned by the [](api/spreadsheet_serialize_method.md) method, even if a locked cell is empty, and it is kept when data is [exported into an Excel file](#export-into-excel) and [imported back](#loading-excel-file-xlsx).
+
 **Related sample**: [Spreadsheet. Locked cells](https://snippet.dhtmlx.com/czeyiuf8?tag=spreadsheet)
 
 ### Adding a link into a cell
@@ -239,6 +241,8 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 {{note Note that the component supports import from Excel files with the `.xlsx` extension only.}}
 
+Along with cell values, import restores the cell styles, the number formats, the merged cells, the links, the data validation lists (as drop-down editors), and the [locked state of cells](#setting-the-locked-state-for-a-cell).
+
 **Related sample**: [Spreadsheet. Import Xlsx](https://snippet.dhtmlx.com/cqlpy828?tag=spreadsheet)
 
 You can also [export data from a spreadsheet into an Excel file](#exporting-data), if needed.
@@ -268,7 +272,7 @@ For details on how to load multiple sheets into the spreadsheet, see the [Work w
 
 ## Saving and restoring state
 
-To save the current state of a spreadsheet, use the [](api/spreadsheet_serialize_method.md) method. It converts data into an array of JSON objects. Each JSON object contains the configuration of a cell.
+To save the current state of a spreadsheet, use the [](api/spreadsheet_serialize_method.md) method. It converts the spreadsheet into a JSON object with the `sheets`, `styles`, and `formats` attributes. Besides cell values, the saved state includes the applied styles and number formats, the merged cells, the frozen columns and rows, the locked cells, and the custom sizes and visibility of columns and rows.
 
 ~~~jsx
 // saving state of the spreadsheet1
@@ -327,6 +331,8 @@ spreadsheet.export.xlsx();
 ~~~
 
 **Related sample**: [Spreadsheet. Export Xlsx](https://snippet.dhtmlx.com/btyo3j8s?tag=spreadsheet)
+
+Besides cell values, an exported file keeps the styles applied to cells, the number formats, the merged cells, the frozen columns and rows, the links added into cells, the drop-down editors (as Excel data validation), and the [locked state of cells](#setting-the-locked-state-for-a-cell). All of them are restored when the file is [imported back into Spreadsheet](#loading-excel-file-xlsx).
 
 :::note 
 Please note that the component supports export to Excel files with the `.xlsx` extension only.

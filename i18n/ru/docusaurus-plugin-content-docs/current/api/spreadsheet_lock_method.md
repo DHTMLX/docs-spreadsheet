@@ -49,3 +49,5 @@ spreadsheet.lock("sheet1!A2");
 :::
 
 **Связанный пример**: [Spreadsheet. Locked Cells](https://snippet.dhtmlx.com/czeyiuf8)
+
+**Полезная статья:** [Блокировка ячеек](working_with_cells.md#locking-cells)

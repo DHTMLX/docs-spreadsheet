@@ -49,3 +49,5 @@ If the name of the tab isn't specified, the method locks the cell(s) of the acti
 :::
 
 **Related sample**: [Spreadsheet. Locked Cells](https://snippet.dhtmlx.com/czeyiuf8)
+
+**Related article:** [Locking cells](working_with_cells.md#locking-cells)
