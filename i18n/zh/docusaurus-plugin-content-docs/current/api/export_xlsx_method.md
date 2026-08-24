@@ -39,6 +39,8 @@ spreadsheet.export.xlsx("MyData");
 请注意，该组件仅支持导出扩展名为 `.xlsx` 的 Excel 文件。
 :::
 
+除单元格值外，导出的文件还会保留单元格样式、数字格式、合并单元格、固定的列和行、链接、下拉编辑器以及单元格的锁定状态。[将该文件重新导入 Spreadsheet](loading_data.md#loading-excel-file-xlsx) 时，这些内容都会被恢复。
+
 :::info
 DHTMLX Spreadsheet 使用基于 WebAssembly 的库 [Json2Excel](https://github.com/dhtmlx/json2excel) 将数据导出为 Excel。[查看详情](loading_data.md#exporting-data)。
 :::

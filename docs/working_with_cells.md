@@ -208,6 +208,15 @@ var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 
 The method returns `true` or `false` depending on the state of the cell. If several cells are checked at once, the method returns `true` if there is at least one locked cell among the specified cells.
 
+### Saving the locked state
+
+The locked state of cells is a part of the spreadsheet data, so it survives saving and restoring:
+
+- the [](api/spreadsheet_serialize_method.md) method includes the `locked` property into the serialized cell objects, even if a locked cell has no value
+- [export into an Excel file](loading_data.md#export-into-excel) keeps the locked state, and [import of such a file](loading_data.md#loading-excel-file-xlsx) restores it
+
+You can also set the locked state right in a data set via the `locked` property of a cell. [Check the details](loading_data.md#setting-the-locked-state-for-a-cell).
+
 ## Merging cells
 
 ### Merge cells

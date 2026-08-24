@@ -208,6 +208,15 @@ var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 
 Die Methode gibt `true` oder `false` zurück, abhängig vom Zustand der Zelle. Wenn mehrere Zellen gleichzeitig geprüft werden, gibt die Methode `true` zurück, wenn mindestens eine gesperrte Zelle unter den angegebenen Zellen vorhanden ist.
 
+### Speichern des gesperrten Zustands {#saving-the-locked-state}
+
+Der gesperrte Zustand der Zellen ist Teil der Spreadsheet-Daten und bleibt daher beim Speichern und Wiederherstellen erhalten:
+
+- die Methode [](api/spreadsheet_serialize_method.md) nimmt die Eigenschaft `locked` in die serialisierten Zellobjekte auf, auch wenn eine gesperrte Zelle keinen Wert hat
+- der [Export in eine Excel-Datei](loading_data.md#export-into-excel) behält den gesperrten Zustand bei, und der [Import einer solchen Datei](loading_data.md#loading-excel-file-xlsx) stellt ihn wieder her
+
+Sie können den gesperrten Zustand auch direkt im Datensatz über die Eigenschaft `locked` einer Zelle festlegen. [Weitere Details](loading_data.md#setting-the-locked-state-for-a-cell).
+
 ## Zellen zusammenführen {#merging-cells}
 
 ### Zellen zusammenführen {#merge-cells}

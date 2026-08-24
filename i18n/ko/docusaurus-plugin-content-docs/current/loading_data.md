@@ -136,6 +136,8 @@ const dataset = [
 
 사용 가능한 셀 속성의 전체 목록은 [API 레퍼런스](api/spreadsheet_parse_method.md#parameters)에서 확인하십시오.
 
+잠금 상태는 스프레드시트 데이터의 일부입니다. 잠긴 셀이 비어 있더라도 [](api/spreadsheet_serialize_method.md) 메서드가 반환하는 객체에 포함되며, 데이터를 [Excel 파일로 내보내고](#export-into-excel) [다시 가져올 때](#loading-excel-file-xlsx)도 유지됩니다.
+
 **관련 샘플**: [Spreadsheet. 잠긴 셀](https://snippet.dhtmlx.com/czeyiuf8?tag=spreadsheet)
 
 ### 셀에 링크 추가하기 {#adding-a-link-into-a-cell}
@@ -239,6 +241,8 @@ spreadsheet.load("../common/data.xlsx", "xlsx");
 
 {{note 컴포넌트는 `.xlsx` 확장자를 가진 Excel 파일에서만 가져오기를 지원합니다.}}
 
+가져오기는 셀 값과 함께 셀 스타일, 숫자 형식, 병합된 셀, 링크, 데이터 유효성 검사 목록(드롭다운 에디터로), 그리고 [셀의 잠금 상태](#setting-the-locked-state-for-a-cell)를 복원합니다.
+
 **관련 샘플**: [Spreadsheet. Xlsx 가져오기](https://snippet.dhtmlx.com/cqlpy828?tag=spreadsheet)
 
 필요한 경우 [스프레드시트 데이터를 Excel 파일로 내보낼](#exporting-data) 수도 있습니다.
@@ -268,7 +272,7 @@ spreadsheet.parse(data);
 
 ## 상태 저장 및 복원 {#saving-and-restoring-state}
 
-스프레드시트의 현재 상태를 저장하려면 [](api/spreadsheet_serialize_method.md) 메서드를 사용하십시오. 이 메서드는 데이터를 JSON 객체 배열로 변환합니다. 각 JSON 객체에는 셀의 구성이 포함됩니다.
+스프레드시트의 현재 상태를 저장하려면 [](api/spreadsheet_serialize_method.md) 메서드를 사용하십시오. 이 메서드는 스프레드시트를 `sheets`, `styles`, `formats` 속성을 가진 JSON 객체로 변환합니다. 저장된 상태에는 셀 값 외에도 적용된 스타일과 숫자 형식, 병합된 셀, 고정된 열과 행, 잠긴 셀, 그리고 열과 행의 사용자 지정 크기 및 표시 여부가 포함됩니다.
 
 ~~~jsx
 // saving state of the spreadsheet1
@@ -327,6 +331,8 @@ spreadsheet.export.xlsx();
 ~~~
 
 **관련 샘플**: [Spreadsheet. Xlsx 내보내기](https://snippet.dhtmlx.com/btyo3j8s?tag=spreadsheet)
+
+내보낸 파일은 셀 값 외에도 셀에 적용된 스타일, 숫자 형식, 병합된 셀, 고정된 열과 행, 셀에 추가된 링크, 드롭다운 에디터(Excel 데이터 유효성 검사로), 그리고 [셀의 잠금 상태](#setting-the-locked-state-for-a-cell)를 유지합니다. 해당 파일을 [다시 Spreadsheet로 가져오면](#loading-excel-file-xlsx) 이 모든 것이 복원됩니다.
 
 :::note 
 컴포넌트는 `.xlsx` 확장자를 가진 Excel 파일로만 내보내기를 지원합니다.

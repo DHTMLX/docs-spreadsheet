@@ -208,6 +208,15 @@ var cellsLocked = spreadsheet.isLocked("A1,B5,B7,D4:D6");
 
 该方法根据单元格的状态返回 `true` 或 `false`。如果同时检查多个单元格，只要其中至少有一个锁定单元格，方法即返回 `true`。
 
+### 保存锁定状态 {#saving-the-locked-state}
+
+单元格的锁定状态是电子表格数据的一部分，因此在保存和恢复时都会保留：
+
+- [](api/spreadsheet_serialize_method.md) 方法会将 `locked` 属性包含在序列化后的单元格对象中，即使被锁定的单元格没有值
+- [导出为 Excel 文件](loading_data.md#export-into-excel)会保留锁定状态，[导入该文件](loading_data.md#loading-excel-file-xlsx)会将其恢复
+
+您也可以通过单元格的 `locked` 属性直接在数据集中设置锁定状态。[查看详情](loading_data.md#setting-the-locked-state-for-a-cell)。
+
 ## 合并单元格 {#merging-cells}
 
 ### 合并单元格 {#merge-cells}
