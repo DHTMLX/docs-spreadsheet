@@ -8,6 +8,17 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.3
+
+Released on August 24, 2026
+
+### Fixes
+
+- Custom column and row sizes were lost by the `serialize()` method if the cells were empty
+- Scroll "jumping" in Chrome when a selected cell re-entered the viewport
+- Some formulas disappeared after importing data from an Excel file
+- The "locked" state of cells was lost during Excel export and import
+
 ## Version 6.0.2
 
 Released on July 1, 2026

@@ -8,6 +8,17 @@ description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最
 
 如果您正在从旧版本升级 Spreadsheet，请查阅[迁移到新版本](migration.md)了解详细信息。
 
+## 版本 6.0.3 {#version-603}
+
+发布于 2026 年 8 月 24 日
+
+### 修复 {#fixes-603}
+
+- 单元格为空时 `serialize()` 方法丢失自定义列宽和行高的问题
+- 选中的单元格重新进入可视区域时 Chrome 中滚动"跳动"的问题
+- 从 Excel 文件导入数据后部分公式丢失的问题
+- Excel 导出和导入过程中单元格"锁定"状态丢失的问题
+
 ## 版本 6.0.2 {#version-602}
 
 发布于 2026 年 7 月 1 日
