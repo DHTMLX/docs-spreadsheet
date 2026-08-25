@@ -33,14 +33,14 @@ DHTMLX Spreadsheet включает широкий набор возможнос
 
 ### Фреймворки и интеграции {#frameworks--integrations}
 
-- [React Spreadsheet](react.md) — официальный React-компонент с поддержкой пропсов, событий и TypeScript
-- [Интеграция с Angular](angular_integration.md) — демо на GitHub с использованием Spreadsheet в приложении Angular
-- [Интеграция со Svelte](svelte_integration.md) — демо на GitHub с использованием Spreadsheet в приложении Svelte
-- [Интеграция с Vue.js](vuejs_integration.md) — демо на GitHub с использованием Spreadsheet в приложении Vue
+- [React Spreadsheet](react.md) - официальный React-компонент с поддержкой пропсов, событий и TypeScript
+- [Интеграция с Angular](angular_integration.md) - демо на GitHub с использованием Spreadsheet в приложении Angular
+- [Интеграция со Svelte](svelte_integration.md) - демо на GitHub с использованием Spreadsheet в приложении Svelte
+- [Интеграция с Vue.js](vuejs_integration.md) - демо на GitHub с использованием Spreadsheet в приложении Vue
 
 ### Разработка с помощью ИИ {#ai-assisted-development}
 
-- [DHTMLX MCP server](mcp-server.md) — подключение ИИ-ассистентов для написания кода к актуальной документации Spreadsheet
+- [DHTMLX MCP server](mcp-server.md) - подключение ИИ-ассистентов для написания кода к актуальной документации Spreadsheet
 
 ## Руководства для пользователей {#user-guides}
 

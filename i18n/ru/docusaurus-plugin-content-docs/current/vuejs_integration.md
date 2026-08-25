@@ -24,7 +24,7 @@ DHTMLX Spreadsheet совместим с **Vue**. Мы подготовили п
 npm create vue@latest
 ~~~
 
-Эта команда устанавливает и запускает `create-vue` — официальный инструмент для создания проектов на **Vue**. Подробнее см. [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
+Эта команда устанавливает и запускает `create-vue`, официальный инструмент для создания проектов на **Vue**. Подробнее см. [Vue.js Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application).
 
 Назовём проект **my-vue-spreadsheet-app**.
 

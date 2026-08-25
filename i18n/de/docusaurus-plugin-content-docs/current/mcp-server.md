@@ -1,7 +1,7 @@
 ---
 sidebar_label: DHTMLX MCP-Server
 title: DHTMLX Spreadsheet MCP-Server für Formeln und Formatierung
-description: Die aktuelle DHTMLX Spreadsheet-Dokumentation erreicht KI-Assistenten über den MCP-Server – von Formeln über Zellformatierung bis hin zu Datenladen und Blattverwaltung.
+description: Die aktuelle DHTMLX Spreadsheet-Dokumentation erreicht KI-Assistenten über den MCP-Server und umfasst Formeln, Zellformatierung, Datenladen und Blattverwaltung.
 ---
 
 # DHTMLX Spreadsheet MCP-Server: Formeln, Formatierung und Blatt-APIs {#dhtmlx-spreadsheet-mcp-server-formulas-formatting-and-sheet-apis}

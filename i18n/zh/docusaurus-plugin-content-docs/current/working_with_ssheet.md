@@ -70,7 +70,7 @@ spreadsheet.deleteRow("A2");
 
 ## 列宽自动适应 {#autofit-column-width}
 
-要更改列宽，使其自动调整以适应列中最长的内容，请使用 [`fitColumn()`](api/spreadsheet_fitcolumn_method.md) 方法。该方法接受一个参数——包含所需列名称的单元格 id。
+要更改列宽，使其自动调整以适应列中最长的内容，请使用 [`fitColumn()`](api/spreadsheet_fitcolumn_method.md) 方法。该方法接受一个参数：包含所需列名称的单元格 id。
 
 ~~~jsx
 // adjusts the width of the "G" column

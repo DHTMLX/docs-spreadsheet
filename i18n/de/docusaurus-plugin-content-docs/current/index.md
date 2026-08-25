@@ -42,7 +42,7 @@ Das **Grid** ist eine Tabelle, deren Spalten durch Buchstaben und deren Zeilen d
 
 ### Kontextmenü {#context-menu}
 
-Der Abschnitt **Kontextmenü** enthält 6 Einträge — **Lock**, **Clear**, **Columns**, **Rows**, **Sort** und **Insert link** — mit Untereinträgen.
+Der Abschnitt **Kontextmenü** enthält 6 Einträge mit Untereinträgen: **Lock**, **Clear**, **Columns**, **Rows**, **Sort** und **Insert link**.
 
 ![DHTMLX Spreadsheet context menu with Lock, Clear, Columns, Rows, Sort, and Insert link options](/img/overview_contextmenu.png)
 
