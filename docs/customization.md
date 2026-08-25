@@ -51,7 +51,7 @@ The `menuItem` object has the properties below:
 - `value` - the value of a menu item
 - `childs` - an array of children controls (note that all the children should have the type `menuItem`)
 
-The data collection API of the **toolbar**, **menu**, and **context menu** lets you manage controls: add custom ones, remove those you don't need, or update them — for example, change their icons.
+The data collection API of the **toolbar**, **menu**, and **context menu** lets you manage controls: add custom ones, remove those you don't need, or update them, for example, change their icons.
 
 ### Adding controls
 

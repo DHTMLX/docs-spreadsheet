@@ -10,11 +10,11 @@ description: "Паттерны управления данными DHTMLX Spread
 
 ## С чего начать {#start-here}
 
-- [Основы управления состоянием](react/state/state-management-basics.md) — ключевые паттерны: управляемые пропсы, колбэки событий, escape-люк через ref и советы по производительности
+- [Основы управления состоянием](react/state/state-management-basics.md) - ключевые паттерны: управляемые пропсы, колбэки событий, escape-люк через ref и советы по производительности
 
 ## Руководства по библиотекам состояния {#state-library-guides}
 
-- [Redux Toolkit](react/state/redux-toolkit.md) — пошаговая интеграция с Redux Toolkit
+- [Redux Toolkit](react/state/redux-toolkit.md) - пошаговая интеграция с Redux Toolkit
 
 ## Ключевая концепция {#key-concept}
 

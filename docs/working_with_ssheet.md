@@ -70,7 +70,7 @@ You can delete several rows by providing a range of cells' ids as a parameter of
 
 ## Autofit column width
 
-To change the column width so that it automatically adjusts to the longest content in the column, apply the [`fitColumn()`](api/spreadsheet_fitcolumn_method.md) method. The method takes one parameter — the id of the cell that contains the name of the necessary column.
+To change the column width so that it automatically adjusts to the longest content in the column, apply the [`fitColumn()`](api/spreadsheet_fitcolumn_method.md) method. The method takes one parameter, the id of the cell that contains the name of the necessary column.
 
 ~~~jsx
 // adjusts the width of the "G" column

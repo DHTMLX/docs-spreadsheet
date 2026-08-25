@@ -42,7 +42,7 @@ The **Grid** is a table with columns defined by letters and rows defined by numb
 
 ### Context menu
 
-The **Context menu** section includes 6 items — **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link** — with sub-items.
+The **Context menu** section includes 6 items with sub-items: **Lock**, **Clear**, **Columns**, **Rows**, **Sort**, and **Insert link**.
 
 ![DHTMLX Spreadsheet context menu with Lock, Clear, Columns, Rows, Sort, and Insert link options](/img/overview_contextmenu.png)
 

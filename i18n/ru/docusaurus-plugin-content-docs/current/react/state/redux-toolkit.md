@@ -178,6 +178,6 @@ const getCellValue = (cell: string) => {
 
 ## Связанные API и гайды {#related-api-and-guides}
 
-- [Справочник пропсов](react/props.md) — все пропсы компонента
-- [Справочник событий](react/events.md) — пропсы-колбэки событий
-- [Основы управления состоянием](react/state/state-management-basics.md) — ключевые паттерны
+- [Справочник пропсов](react/props.md) - все пропсы компонента
+- [Справочник событий](react/events.md) - пропсы-колбэки событий
+- [Основы управления состоянием](react/state/state-management-basics.md) - ключевые паттерны

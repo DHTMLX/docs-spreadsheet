@@ -8,7 +8,7 @@ description: Вы можете узнать о встроенных темах �
 
 Библиотека DHTMLX Spreadsheet предоставляет 4 предустановленные темы:
 
-- [светлая тема](#light-theme-default) ("light") — используется по умолчанию
+- [светлая тема](#light-theme-default) ("light") - используется по умолчанию
 - [тёмная тема](#dark-theme) ("dark")
 - [светлая высококонтрастная тема](#light-high-contrast-theme) ("contrast-light")
 - [тёмная высококонтрастная тема](#dark-high-contrast-theme) ("contrast-dark")
@@ -416,7 +416,7 @@ description: Вы можете узнать о встроенных темах �
 
 ## Установка тем {#setting-themes}
 
-Чтобы установить нужную тему — встроенную тему Spreadsheet или [пользовательскую](themes/custom_theme.md) — используйте один из описанных ниже способов:
+Чтобы установить нужную тему, будь то встроенная тема Spreadsheet или [пользовательская](themes/custom_theme.md), используйте один из описанных ниже способов:
 
 ### Использование атрибута `data-dhx-theme` {#using-the-data-dhx-theme-attribute}
 
@@ -439,14 +439,14 @@ document.documentElement.setAttribute("data-dhx-theme", "dark");
 
 Метод `dhx.setTheme()` принимает следующие параметры:
 
-- `theme: string` — (обязательный) имя темы. Может быть:
+- `theme: string` - (обязательный) имя темы. Может быть:
     - именем темы Spreadsheet: `"light" | "contrast-light" | "dark" | "contrast-dark"`
     - именем [пользовательской темы](themes/custom_theme.md)
-    - `"light"` — по умолчанию
-- `container: string | HTMLElement` — (необязательный) контейнер, к которому должна быть применена тема. Может быть:
+    - `"light"` - по умолчанию
+- `container: string | HTMLElement` - (необязательный) контейнер, к которому должна быть применена тема. Может быть:
     - HTMLElement
     - строковым значением с ID контейнера или ID ячейки Layout
-    - `document.documentElement` — по умолчанию
+    - `document.documentElement` - по умолчанию
 
 Примеры ниже показывают, как использовать метод `dhx.setTheme()`:
 
