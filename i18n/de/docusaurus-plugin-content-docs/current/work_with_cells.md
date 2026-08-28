@@ -96,7 +96,7 @@ Sie können in einer Zelle eine Dropdown-Liste erstellen, damit Benutzer das gew
 
 - Klicken Sie auf die Schaltfläche **Speichern**
 
-![DHTMLX Spreadsheet-Dialog „Datenvalidierung" – Erstellen einer Dropdown-Liste aus einer Elementliste](/img/data_validation.gif)
+![DHTMLX Spreadsheet-Dialog „Datenvalidierung": Erstellen einer Dropdown-Liste aus einer Elementliste](/img/data_validation.gif)
 
 ### Eine Dropdown-Liste aus einem Bereich erstellen {#creating-a-drop-down-list-by-using-a-range}
 
@@ -112,7 +112,7 @@ Sie können in einer Zelle eine Dropdown-Liste erstellen, damit Benutzer das gew
 
 - Klicken Sie auf die Schaltfläche **Speichern**
 
-![DHTMLX Spreadsheet-Dialog „Datenvalidierung" – Erstellen einer Dropdown-Liste aus einem Zellbereich](/img/data_validation_range.gif)
+![DHTMLX Spreadsheet-Dialog „Datenvalidierung": Erstellen einer Dropdown-Liste aus einem Zellbereich](/img/data_validation_range.gif)
 
 ### Validierung aus einer Zelle entfernen {#removing-validation-from-a-cell}
 
@@ -148,13 +148,13 @@ Sie können Zellen automatisch mit Daten füllen. So funktioniert es:
 
 3\. Ziehen Sie den **Ausfüllpunkt**
 
-![DHTMLX Spreadsheet-Autofill – Ausfüllpunkt ziehen, um Zelldaten zu replizieren](/img/autofill.gif)
+![DHTMLX Spreadsheet-Autofill: Ausfüllpunkt ziehen, um Zelldaten zu replizieren](/img/autofill.gif)
 
 ## Zellen sperren {#locking-cells}
 
 Sie können Zellen sperren, um ihre Werte vor Änderungen zu schützen. Wenn Sie eine Zelle sperren, wird in der oberen rechten Ecke ein graues "Schlüssel"-Symbol angezeigt. Gesperrte Zellen reagieren nicht auf Bearbeitungsversuche.
 
-![DHTMLX Spreadsheet – gesperrte Zellen, markiert mit einem grauen Schlüssel-Symbol in der oberen rechten Ecke](/img/lockedcells.png)
+![DHTMLX Spreadsheet: gesperrte Zellen, markiert mit einem grauen Schlüssel-Symbol in der oberen rechten Ecke](/img/lockedcells.png)
 
 Um eine Zelle zu sperren oder zu entsperren, verwenden Sie eine der unten beschriebenen Methoden:
 

@@ -20,7 +20,7 @@ description: Вы можете узнать об импорте и экспор�
 
 ![DHTMLX Spreadsheet File menu with the Import As option for Microsoft Excel XLSX files](/img/file_import.png)
 
-2\. Выберите файл Excel на вашем компьютере — его содержимое будет импортировано в открытый лист.
+2\. Выберите файл Excel на вашем компьютере, и его содержимое будет импортировано в открытый лист.
 
 ## Экспорт в Excel {#export-to-excel}
 
@@ -36,4 +36,4 @@ description: Вы можете узнать об импорте и экспор�
 
 ![DHTMLX Spreadsheet File menu with the Download As option for Microsoft Excel XLSX export](/img/file_export.png)
 
-2\. Проверьте папку загрузок — там будет находиться файл Excel с данными из Spreadsheet.
+2\. Проверьте папку загрузок: там будет файл Excel с данными из Spreadsheet.

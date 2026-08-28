@@ -88,6 +88,6 @@ import "./custom-theme.css";
 
 ## Связанные руководства {#related-guides}
 
-- [Темы](/themes/) — обзор встроенных тем DHTMLX Spreadsheet
-- [Настройка базовых тем](themes/base_themes_configuration.md) — настройка базовых тем
-- [Пользовательская тема](themes/custom_theme.md) — создание пользовательских тем
+- [Темы](/themes/) - обзор встроенных тем DHTMLX Spreadsheet
+- [Настройка базовых тем](themes/base_themes_configuration.md) - настройка базовых тем
+- [Пользовательская тема](themes/custom_theme.md) - создание пользовательских тем

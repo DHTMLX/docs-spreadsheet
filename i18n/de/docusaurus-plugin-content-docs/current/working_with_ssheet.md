@@ -70,7 +70,7 @@ Sie können mehrere Zeilen löschen, indem Sie einen Bereich von Zellen-IDs als 
 
 ## Spaltenbreite automatisch anpassen {#autofit-column-width}
 
-Um die Spaltenbreite so zu ändern, dass sie sich automatisch an den längsten Inhalt der Spalte anpasst, verwenden Sie die Methode [`fitColumn()`](api/spreadsheet_fitcolumn_method.md). Die Methode nimmt einen Parameter entgegen — die ID der Zelle, die den Namen der gewünschten Spalte enthält.
+Um die Spaltenbreite so zu ändern, dass sie sich automatisch an den längsten Inhalt der Spalte anpasst, verwenden Sie die Methode [`fitColumn()`](api/spreadsheet_fitcolumn_method.md). Die Methode nimmt einen Parameter entgegen: die ID der Zelle, die den Namen der gewünschten Spalte enthält.
 
 ~~~jsx
 // passt die Breite der Spalte "G" an

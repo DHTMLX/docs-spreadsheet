@@ -41,7 +41,7 @@ description: В документации вы можете узнать, что 
 ### Новый функционал {#new-functionality}
 
 - Представлена [обёртка React Spreadsheet](react.md). Примеры можно найти в [репозитории демо на GitHub](https://github.com/DHTMLX/react-spreadsheet-examples)
-- Представлен модуль [`SheetManager`](api/overview/sheetmanager_overview.md) — централизованный API для управления листами в Spreadsheet. Доступен через свойство `spreadsheet.sheets` и заменяет все [устаревшие методы работы с листами](migration.md#deprecated-methods) на корневом экземпляре Spreadsheet.
+- Представлен модуль [`SheetManager`](api/overview/sheetmanager_overview.md), централизованный API для управления листами в Spreadsheet. Доступен через свойство `spreadsheet.sheets` и заменяет все [устаревшие методы работы с листами](migration.md#deprecated-methods) на корневом экземпляре Spreadsheet.
     - новые методы: [`sheets.add()`](api/sheetmanager_add_method.md), [`sheets.remove()`](api/sheetmanager_remove_method.md), [`sheets.getAll()`](api/sheetmanager_getall_method.md), [`sheets.getActive()`](api/sheetmanager_getactive_method.md), [`sheets.setActive()`](api/sheetmanager_setactive_method.md), [`sheets.clear()`](api/sheetmanager_clear_method.md), [`sheets.get()`](api/sheetmanager_get_method.md)
 - Возможность указать [пользовательскую формулу](functions.md#custom-formulas) через новый метод [`addFormula()`](api/spreadsheet_addformula_method.md)
 - Возможность отображать числа в [научной (экспоненциальной) нотации](number_formatting.md#scientific-number-format)
@@ -53,7 +53,7 @@ description: В документации вы можете узнать, что 
     - установка [пользовательского размера шрифта](customization.md#custom-font-size) для элемента управления панели инструментов
 - В [движок формул](functions.md#math-functions) добавлены новые условные агрегатные функции: `COUNTIF`, `COUNTIFS`, `SUMIF`, `SUMIFS`, `AVERAGEIF`, `AVERAGEIFS`, `MAXIFS`, `MINIFS`
 - В [движок формул](functions.md#array-functions) добавлены новые функции динамических массивов: `CHOOSECOLS`, `CHOOSEROWS`, `DROP`, `EXPAND`, `RANDARRAY`, `SEQUENCE`, `SORT`, `SORTBY`, `TAKE`, `TEXTSPLIT`, `TOCOL`, `TOROW`, `UNIQUE`, `WRAPCOLS`, `WRAPROWS`
-- Добавлен хелпер [`awaitRedraw()`](awaitredraw.md) для Spreadsheet — позволяет определить момент отрисовки и выполнить нужный код после завершения рендеринга компонента
+- Добавлен хелпер [`awaitRedraw()`](awaitredraw.md) для Spreadsheet, который позволяет определить момент отрисовки и выполнить нужный код после завершения рендеринга компонента
 - В определения типов добавлены [аннотации JSDoc](using_typescript.md#jsdoc-hints), обеспечивающие встроенные описания API, типы параметров и примеры кода непосредственно в IDE
 
 ### Исправления {#fixes-1}

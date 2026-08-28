@@ -14,7 +14,7 @@ description: Вы можете узнать о конфигурации библ
 
 <iframe src="https://snippet.dhtmlx.com/kpm017nx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
-Структура панели инструментов настраивается через параметр конфигурации компонента [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md) — массив строк с названиями элементов управления.
+Структура панели инструментов настраивается через параметр конфигурации компонента [`toolbarBlocks`](api/spreadsheet_toolbarblocks_config.md), который представляет собой массив строк с названиями элементов управления.
 
 Вы также можете задать собственную структуру панели инструментов, перечислив необходимые элементы в массиве `toolbarBlocks` в нужном порядке, например: `"colors"`, `"align"`, `"cell"`, `"decoration"`, `"lock"`, `"clear"`.
 

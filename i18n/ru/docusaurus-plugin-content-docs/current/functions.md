@@ -24,12 +24,12 @@ description: В документации вы можете узнать о фо�
 
 | Operator | Example       | Description                                                                                              |
 | :------- | :------------ | :------------------------------------------------------------------------------------------------------- |
-| =        | =A1=B1        | Возвращает TRUE, если значение в ячейке A1 равно значению в ячейке B1; иначе — FALSE.                   |
-| &lt;&gt; | =A1&lt;&gt;B1 | Возвращает TRUE, если значение в ячейке A1 не равно значению в ячейке B1; иначе — FALSE.                |
-| &gt;     | =A1&gt;B1     | Возвращает TRUE, если значение в ячейке A1 больше значения в ячейке B1; иначе — FALSE.                  |
-| &lt;     | =A1&lt;B1     | Возвращает TRUE, если значение в ячейке A1 меньше значения в ячейке B1; иначе — FALSE.                  |
-| &gt;=    | =A1&gt;=B1    | Возвращает TRUE, если значение в ячейке A1 больше или равно значению в ячейке B1; иначе — FALSE.        |
-| &lt;=    | =A1&lt;=B1    | Возвращает TRUE, если значение в ячейке A1 меньше или равно значению в ячейке B1; иначе — FALSE.        |
+| =        | =A1=B1        | Возвращает TRUE, если значение в ячейке A1 равно значению в ячейке B1; иначе возвращает FALSE.                   |
+| &lt;&gt; | =A1&lt;&gt;B1 | Возвращает TRUE, если значение в ячейке A1 не равно значению в ячейке B1; иначе возвращает FALSE.                |
+| &gt;     | =A1&gt;B1     | Возвращает TRUE, если значение в ячейке A1 больше значения в ячейке B1; иначе возвращает FALSE.                  |
+| &lt;     | =A1&lt;B1     | Возвращает TRUE, если значение в ячейке A1 меньше значения в ячейке B1; иначе возвращает FALSE.                  |
+| &gt;=    | =A1&gt;=B1    | Возвращает TRUE, если значение в ячейке A1 больше или равно значению в ячейке B1; иначе возвращает FALSE.        |
+| &lt;=    | =A1&lt;=B1    | Возвращает TRUE, если значение в ячейке A1 меньше или равно значению в ячейке B1; иначе возвращает FALSE.        |
 
 Посмотрите пример в нашем [инструменте для сниппетов](https://snippet.dhtmlx.com/wux2b35b).
 
@@ -209,17 +209,17 @@ description: В документации вы можете узнать о фо�
         <tr>
             <td><b>COVAR</b><br>added in v4.3</td>
             <td>=COVAR(array1, array2), <br><br> where: <ul> <li><i>array1</i> - The first cell range of integers;</li> <li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points. </ul></td>
-            <td>Возвращает ковариацию — среднее произведений отклонений для каждой пары точек данных в двух наборах данных.</td>
+            <td>Возвращает ковариацию, среднее произведений отклонений для каждой пары точек данных в двух наборах данных.</td>
         </tr>
         <tr>
             <td><b>COVARIANCE.P</b><br>added in v4.3</td>
             <td>=COVARIANCE.P(array1, array2), <br><br> where: <ul> <li><i>array1</i> - The first cell range of integers;</li> <li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points. </ul></td>
-            <td>Возвращает генеральную ковариацию — среднее произведений отклонений для каждой пары точек данных в двух наборах данных.</td>
+            <td>Возвращает генеральную ковариацию, среднее произведений отклонений для каждой пары точек данных в двух наборах данных.</td>
         </tr>
         <tr>
             <td><b>COVARIANCE.S</b><br>added in v4.3</td>
             <td>=COVARIANCE.S(array1, array2), <br><br> where: <ul> <li><i>array1</i> - The first cell range of integers;</li> <li><i>array2</i> - The second cell range of integers;</li><br>Text, logical values, or empty cells are ignored. Cells with zero values are included. The arrays must have equal number of data points. </ul></td>
-            <td>Возвращает выборочную ковариацию — среднее произведений отклонений для каждой пары точек данных в двух наборах данных.</td>
+            <td>Возвращает выборочную ковариацию, среднее произведений отклонений для каждой пары точек данных в двух наборах данных.</td>
         </tr>
         <tr>
             <td><b>DB</b></td>
@@ -1446,7 +1446,7 @@ var formula = spreadsheet.getFormula("B2");
 
 Проверьте пример в нашем [инструменте для сниппетов](https://snippet.dhtmlx.com/wux2b35b).
 
-Вы можете изменить локаль по умолчанию для всплывающего окна с параметрами формулы и добавить пользовательскую локаль. Подробнее — в руководстве по [Локализации](localization.md#default-locale-for-formulas).
+Вы можете изменить локаль по умолчанию для всплывающего окна с параметрами формулы и добавить пользовательскую локаль. Подробнее читайте в руководстве по [Локализации](localization.md#default-locale-for-formulas).
 
 ## Пользовательские формулы {#custom-formulas}
 
