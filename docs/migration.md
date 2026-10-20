@@ -6,69 +6,6 @@ description: You can learn about migration in the documentation of the DHTMLX Ja
 
 # Migration to newer versions
 
-## 6.0.3 -> 6.0.4
-
-Version 6.0.4 changes the result of several existing keys and API calls. No documented method, property, event or configuration option is removed or renamed.
-
-### Arrow keys stop at the edges of the sheet
-
-In 6.0.3, an arrow key pressed on the first or last visible row or column moved the active cell to the opposite edge of the sheet. Since 6.0.4, the active cell stays at the edge. If a range is selected, an arrow key at the edge collapses the range to the active cell.
-
-### deleteRow() and deleteColumn() delete the whole merged cell
-
-In 6.0.3, [`deleteRow()`](api/spreadsheet_deleterow_method.md) and [`deleteColumn()`](api/spreadsheet_deletecolumn_method.md) deleted only the row or column of the passed cell, even if the cell was inside a merged cell. Since 6.0.4, they delete every row or column that the merged cell spans:
-
-~~~jsx
-spreadsheet.mergeCells("B2:B4");
-
-spreadsheet.deleteRow("B3");
-// 6.0.3: row 3 is deleted
-// 6.0.4: rows 2, 3 and 4 are deleted
-~~~
-
-The [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) handlers of the `deleteRow` and `deleteColumn` actions still receive the cell that was passed to the method, not the range that is deleted. The context menu shows the full range in the command name.
-
-### Read-only mode keeps navigation and selection
-
-In 6.0.3, a Spreadsheet with [`readonly: true`](api/spreadsheet_readonly_config.md) had no keyboard navigation, no mouse selection and no active cell. Since 6.0.4:
-
-- the A1 cell is active after loading, and the cells can be navigated with the keyboard and selected with the mouse; the selection events fire on these actions;
-- the cells can be copied and searched;
-- editing keys, typing and paste are refused and announced to screen readers as "The sheet is read-only";
-- the fill handle is hidden, and a double-click on a column border does not change the column width.
-
-To keep the 6.0.3 behaviour, turn the selection off with the new `selection` option:
-
-~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    readonly: true,
-    selection: false,
-});
-~~~
-
-The selection can also be turned off and on at runtime with `spreadsheet.selection.disable()` and `spreadsheet.selection.enable()`.
-
-### The keyboard focus follows the active cell
-
-Since 6.0.4, [`selection.setFocusedCell()`](api/selection_setfocusedcell_method.md) and any other change of the active cell (keyboard, undo, a sheet switch) move the keyboard focus to the cell after the redraw, if the focus is on the page body or inside the Spreadsheet. The focus is not moved when it is:
-
-- in an element outside the Spreadsheet;
-- on the toolbar, the menu or the sheet tabs reached with the keyboard;
-- in an open cell editor.
-
-~~~jsx
-// the focus is on the page body, for example right after the page is loaded
-spreadsheet.selection.setFocusedCell("D4");
-// 6.0.3: the focus stays on the page body
-// 6.0.4: the focus moves to the D4 cell
-~~~
-
-### Cell shortcuts do not act while the toolbar, the menu or the sheet tabs have focus
-
-In 6.0.3, the arrow keys and typing acted on the cells while the toolbar had focus. Since 6.0.4, the toolbar, the menu and the sheet tabs use the arrow keys, `Home`, `End`, `Enter` and `Space` for their own controls, and the cell shortcuts (navigation, typing, `Delete`, `Enter`, `F2` and the like) work only while the focus is in the cells or in the formula bar.
-
-The formatting, undo, search and link shortcuts (`Ctrl (Cmd) + B`, `Ctrl (Cmd) + Z`, `Ctrl (Cmd) + F`, `Ctrl (Cmd) + K` and the like) still work while the focus is on the toolbar.
-
 ## 5.2 -> 6.0
 
 ### Deprecated properties 

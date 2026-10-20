@@ -12,54 +12,23 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 Released on <TBD>
 
-### Behaviour changes
-
-Some existing keys and API calls give a different result. No documented method, property, event or configuration option is removed or renamed. Check the [Migration guide](migration.md#603---604) for details.
-
-- The arrow keys stop at the first and last visible row and column instead of moving the active cell to the opposite edge of the sheet. At the edge, an arrow key collapses a selected range to the active cell
-- The [`deleteRow()`](api/spreadsheet_deleterow_method.md) and [`deleteColumn()`](api/spreadsheet_deletecolumn_method.md) methods called for a cell inside a merged cell delete every row or column of the merge. The `beforeAction` / `afterAction` handlers still receive the original cell
-- A Spreadsheet with [`readonly: true`](api/spreadsheet_readonly_config.md) can be navigated with the keyboard, selected with the mouse, copied and searched, so the selection events fire on user actions. Edits are refused and announced to screen readers. To keep the 6.0.3 behaviour, set `selection: false`
-- The [`selection.setFocusedCell()`](api/selection_setfocusedcell_method.md) method and any other change of the active cell move the keyboard focus to the cell when the focus is on the page body or inside the Spreadsheet. The focus stays on the toolbar, the menu or the sheet tabs reached with the keyboard, and in an open cell editor
-- Cell shortcuts (the arrow keys, typing, `Delete`, `Enter` and the like) don't act on the cells while the toolbar, the menu or the sheet tabs have focus. The formatting, undo, search and link shortcuts still work on the toolbar
-
 ### New functionality
 
-- The ability to turn the selection off and on:
-    - new configuration property: `selection`
-    - new methods of the selection module: `selection.enable()`, `selection.disable()`, `selection.isDisabled()`
-- The `announce()` method sends a status message to screen readers through a live region
-- New commands of the [context menu](customization.md#context-menu):
-    - *Column width* and *Row height* set an exact size of the selected columns or rows in pixels, with undo
-    - *Open filter* opens the filter of the active cell from the keyboard
+- Accessibility support that targets WCAG 2.2 AA, Section 508 and EN 301 549: keyboard operation of every part of the Spreadsheet, screen reader support and a visible focus in every theme. Check the [Accessibility](accessibility.md) guide and the [Accessibility Conformance Report](accessibility_conformance_report.md)
+- The ability to turn the selection of cells off and on:
+    - new configuration property: [`selection`](api/spreadsheet_selection_config.md)
+    - new methods of the selection module: [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md), [`isDisabled()`](api/selection_isdisabled_method.md)
+- The [`announce()`](api/spreadsheet_announce_method.md) method sends a status message to screen readers
+- New commands of the [context menu](customization.md#context-menu): *Column width*, *Row height* and *Open filter*
 
 ### Updates
 
-- Keyboard navigation:
-    - The keyboard focus is on the active cell itself, and `Tab` enters the sheet on it. `Tab` on the last cell and `Tab + Shift` on the first cell move the focus out of the Spreadsheet
-    - `Ctrl + F6` and `Ctrl + Shift + F6` move the focus between the menu, the toolbar, the sheet and the sheet tabs
-    - `Ctrl + Alt + Page Down` / `Ctrl + Alt + Page Up` switch to the next / previous sheet, in addition to `Alt + Arrow Up/ Arrow Down`
-    - The toolbar, the menu bar and the sheet tabs are single tab stops navigated with the arrow keys, `Home` and `End`. Menus, context menus and the toolbar popups take the focus and return it when closed
-    - The color palette of the toolbar is a single tab stop browsed with the arrow keys, `Home` and `End`
-    - `Ctrl + Shift + 9` and `Ctrl + Shift + 0` reveal the hidden rows and columns of the selection
-    - `Alt + Enter` opens the link of the active cell
-    - `Esc` closes a toolbar tooltip, and a tooltip stays open while hovered
-    - The close button of the formula help panel works from the keyboard
-    - The keyboard focus indicator is visible on the cells, the cell editor, the formula bar and the toolbar buttons, and has a 3:1 contrast in the dark themes
-- Screen reader support:
-    - The active cell is announced with its address before its value, and a selected range with its extent, for example "B2 to D7, 18 cells"
-    - Read-only, locked and merged cells, row numbers as row headers and the active sheet tab are reported
-    - Formula errors and invalid list values are described in the cell, and new errors caused by an edit are announced
-    - Refused edits, search results, and the start and end of import and export are announced
-    - The grid, the toolbars, the menus, the dialogs, the search bar, the cell editors, the formula bar and the color buttons have accessible names, and the formatting buttons report whether they are on
-    - The editor of a list-validated cell is presented as a combobox, and a link in a cell is rendered as a real link
-- Localization:
-    - The new interface and screen reader strings are added to the [`spreadsheet` locale](localization.md#default-locale)
-    - The `grid`, `toolbar`, `window`, `message` and `colorpicker` locales used inside the Spreadsheet can be translated through `dhx.i18n.setLocale()`
-- The formula reference colors have a contrast of at least 4.5:1 in the light and contrast-light themes
-- React Spreadsheet:
-    - The new `selection` prop turns the selection off and on without recreating the Spreadsheet
-    - The [`readonly`](react/props.md#init-only-props) prop is init-only: changing it recreates the Spreadsheet. The data is kept, the undo/redo history and the UI state are reset
-    - The bundled types include `selection.enable()`, `selection.disable()`, `selection.isDisabled()` and `announce()`, and the `ISelection` type is exported
+- Keyboard navigation: the focus stays on the active cell, `Ctrl + F6` moves it between the menu, the toolbar, the sheet and the sheet tabs, and new shortcuts are added. Check the [Hot keys list](hotkeys.md)
+- The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search. To turn the selection off, use the `selection: false` option
+- Removing a row or a column through a merged cell removes all the rows or columns of the merged cell
+- New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)
+- The [`--dhx-spreadsheet-focus-color`](themes/themes.md#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
+- React Spreadsheet: the [`selection`](react/props.md#runtime-props) prop, the [`ISelection`](react/types.md#re-exported-upstream-types) type, and [`readonly`](react/props.md#init-only-props) as an init-only prop
 
 ### Fixes
 
