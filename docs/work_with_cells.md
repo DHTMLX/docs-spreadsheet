@@ -145,10 +145,19 @@ You can automatically fill cells with data. This is how it works:
     - to make a series 1 ,3, 5, 7, 9, ... , type 1 and 3 into the first two cells.
     - to make a series 2 ,4, 6, 8, 10, ... , type 2 and 4 into the first two cells.
     - besides numbers, you can also use letters in a pattern, for example, to make a series like 1, a, 2, b, 3, a, 4, b, ..., type 1, a, 2, b into the first four cells.
+    - to continue a number at the end of a text, type the first values, for example, to make a series item1, item2, item3, ..., type item1 and item2 into the first two cells.
+    - to make a series of dates, type a date into the first cell: each next cell gets the next day.
+- repeating the text
+
+For example, to make a series North, South, North, South, ..., type North and South into the first two cells. Numbers in the cells with the *Text* format are repeated in the same way.
 
 3\. Drag the **Fill Handle**
 
 ![DHTMLX Spreadsheet autofill dragging the fill handle to replicate cell data](/img/autofill.gif)
+
+## Copying cells to and from Excel
+
+Cells copied with **Ctrl (Cmd) + C** keep their values and styles, including the font size, when you paste them into Microsoft Excel or into another place of the Spreadsheet. Cells copied in Microsoft Excel keep the font size when you paste them into the Spreadsheet with **Ctrl (Cmd) + V**.
 
 ## Locking cells
 

@@ -55,7 +55,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-In the read-only mode, the toolbar, the menu and the formula bar are hidden. Users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers as "The sheet is read-only". The fill handle is hidden, and the custom `hotkeys` from the configuration are not registered. Check the details in the [`readonly`](api/spreadsheet_readonly_config.md#details) article.
+In the read-only mode, the toolbar, the menu and the formula bar are hidden. Users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers as "The sheet is read-only". The fill handle is hidden. Check the details in the [`readonly`](api/spreadsheet_readonly_config.md#details) article.
 
 To turn off the keyboard navigation and the selection in the read-only mode, set the [`selection`](api/spreadsheet_selection_config.md) option to `false`:
 

@@ -37,8 +37,6 @@ In 6.0.3, a Spreadsheet with [`readonly: true`](api/spreadsheet_readonly_config.
 - editing keys, typing and paste are refused and announced to screen readers as "The sheet is read-only";
 - the fill handle is hidden, and a double-click on a column border does not change the column width.
 
-Custom `hotkeys` from the configuration are still not registered in read-only mode.
-
 To keep the 6.0.3 behaviour, turn the selection off with the new `selection` option:
 
 ~~~jsx
@@ -69,7 +67,7 @@ spreadsheet.selection.setFocusedCell("D4");
 
 In 6.0.3, the arrow keys and typing acted on the cells while the toolbar had focus. Since 6.0.4, the toolbar, the menu and the sheet tabs use the arrow keys, `Home`, `End`, `Enter` and `Space` for their own controls, and the cell shortcuts (navigation, typing, `Delete`, `Enter`, `F2` and the like) work only while the focus is in the cells or in the formula bar.
 
-The formatting, undo, search and link shortcuts (`Ctrl (Cmd) + B`, `Ctrl (Cmd) + Z`, `Ctrl (Cmd) + F`, `Ctrl (Cmd) + K` and the like) still work while the focus is on the toolbar. Custom `hotkeys` from the configuration are not filtered by the focus position.
+The formatting, undo, search and link shortcuts (`Ctrl (Cmd) + B`, `Ctrl (Cmd) + Z`, `Ctrl (Cmd) + F`, `Ctrl (Cmd) + K` and the like) still work while the focus is on the toolbar.
 
 ## 5.2 -> 6.0
 

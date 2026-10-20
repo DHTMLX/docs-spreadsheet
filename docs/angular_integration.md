@@ -234,6 +234,10 @@ ngOnDestroy() {
 }
 ~~~
 
+:::info
+The `destructor()` method removes the event handlers attached with `spreadsheet.events.on()`. When a new Spreadsheet instance is created, for example, when the component is created again, attach the handlers to the new instance.
+:::
+
 ### Step 3. Adding Spreadsheet into the app
 
 To add the `SpreadsheetComponent` component into the app, open the *src/app/app.component.ts* file and replace the default code with the following one:
