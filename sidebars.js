@@ -28,6 +28,19 @@ module.exports = {
         },
         {
             type: "category",
+            label: "Accessibility",
+            collapsible: true,
+            collapsed: true,
+            link: {
+                type: 'doc',
+                id: "accessibility"
+            },
+            items: [
+                "accessibility_conformance_report"
+            ]
+        },
+        {
+            type: "category",
             label: "API",
             collapsible: true,
             collapsed: true,
@@ -50,6 +63,7 @@ module.exports = {
                         "api/spreadsheet_addcolumn_method",
                         "api/spreadsheet_addformula_method",
                         "api/spreadsheet_addrow_method",
+                        "api/spreadsheet_announce_method",
                         "api/spreadsheet_clear_method",
                         "api/spreadsheet_deletecolumn_method",
                         "api/spreadsheet_deleterow_method",
@@ -142,6 +156,7 @@ module.exports = {
                         "api/spreadsheet_multisheets_config",
                         "api/spreadsheet_readonly_config",
                         "api/spreadsheet_rowscount_config",
+                        "api/spreadsheet_selection_config",
                         "api/spreadsheet_toolbarblocks_config"
                     ]
                 },
@@ -174,8 +189,11 @@ module.exports = {
                         id: "api/overview/selection_overview"
                     },
                     items: [
+                        "api/selection_disable_method",
+                        "api/selection_enable_method",
                         "api/selection_getfocusedcell_method",
                         "api/selection_getselectedcell_method",
+                        "api/selection_isdisabled_method",
                         "api/selection_removeselectedcell_method",
                         "api/selection_setfocusedcell_method",
                         "api/selection_setselectedcell_method"

@@ -260,6 +260,10 @@ export default {
 //...
 ~~~
 
+:::info
+The `destructor()` method removes the event handlers attached with `spreadsheet.events.on()`. When a new Spreadsheet instance is created, for example, when the component is created again, attach the handlers to the new instance.
+:::
+
 After that, you can start the app to see Spreadsheet loaded with data on a page.
 
 ![DHTMLX Spreadsheet initialized with sample data in a Vue 3 application](/img/integrations/trial_spreadsheet.png)

@@ -8,6 +8,49 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.4
+
+Released on <TBD>
+
+### New functionality
+
+- Accessibility support that targets WCAG 2.2 AA, Section 508 and EN 301 549: keyboard operation of every part of the Spreadsheet, screen reader support and a visible focus in every theme. Check the [Accessibility](accessibility.md) guide and the [Accessibility Conformance Report](accessibility_conformance_report.md)
+- The ability to turn the selection of cells off and on:
+    - new configuration property: [`selection`](api/spreadsheet_selection_config.md)
+    - new methods of the selection module: [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md), [`isDisabled()`](api/selection_isdisabled_method.md)
+- The [`announce()`](api/spreadsheet_announce_method.md) method sends a status message to screen readers
+- New commands of the [context menu](customization.md#context-menu): *Column width*, *Row height* and *Open filter*
+
+### Updates
+
+- Keyboard navigation: the focus stays on the active cell, `Ctrl + F6` moves it between the menu, the toolbar, the sheet and the sheet tabs, and new shortcuts are added. Check the [Hot keys list](hotkeys.md)
+- The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search. To turn the selection off, use the `selection: false` option
+- Removing a row or a column through a merged cell removes all the rows or columns of the merged cell
+- New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)
+- The [`--dhx-spreadsheet-focus-color`](themes/themes.md#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
+- React Spreadsheet: the [`selection`](react/props.md#runtime-props) prop, the [`ISelection`](react/types.md#re-exported-upstream-types) type, and [`readonly`](react/props.md#init-only-props) as an init-only prop
+
+### Fixes
+
+- A merged cell was dropped instead of shifted when a row or column before it was deleted
+- Deleting a row or column through a merged cell removed only one line of the merge
+- Rows were not deleted when they covered the whole filtered range
+- The frozen area didn't shrink when frozen rows or columns were deleted
+- Autofill threw an error when the dragged cells held no plain number
+- The page froze on `Home`, `End` and `Ctrl (Cmd) + Arrow` keys when the first or last row or column was hidden
+- The font size was lost when cells were copied to Excel or pasted from Excel or within the Spreadsheet
+- The invalid-value tooltip appeared away from the invalid cell
+- `Esc` and `Tab` didn't work in the list editor after the arrow keys were used
+- The search highlighted the second match first and didn't refresh the results after an edit or a sheet switch
+- A script error occurred on import or export in a browser without WebAssembly
+- Document listeners and inner widgets were left behind after `destructor()`
+- The keyboard focus was lost after the search bar closed
+- A closed context menu reopened
+- The active cell was scrolled one cell short of the viewport edge during keyboard navigation
+- React Spreadsheet: the event callbacks and `onStateChange` didn't fire after the Spreadsheet was recreated by an init-only prop change
+- React Spreadsheet: the event handlers of the wrapper were not removed on unmount
+- React Spreadsheet: the data from `loadUrl` was loaded twice on mount and again over the kept data after the Spreadsheet was recreated
+
 ## Version 6.0.3
 
 Released on August 24, 2026

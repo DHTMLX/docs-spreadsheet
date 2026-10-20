@@ -31,6 +31,8 @@ Then you can use the name of the icon as the value of the `icon` property in the
 
 You can add the following types of controls: `button`, `menuItem`, `separator`, and `spacer`.
 
+The *Text color* and *Background color* controls of the [default toolbar](#default-controls), and the *Border color* control in the *Border* popup, are of the `navItem` type. They show the current color in their value and open a color popup.
+
 The `button` object has the following properties:
 
 - `type` - the type of a button, set it to "button"
@@ -117,8 +119,8 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the *Undo* button (id: "undo")
   - the *Redo* button (id: "redo")
 - the **Colors** block
-  - the *Text color* button (id: "color")
-  - the *Background color* button (id: "background")
+  - the *Text color* navItem (id: "color")
+  - the *Background color* navItem (id: "background")
 - the **Font** block
   - the *Font size* combobox (id: "font-size")
 - the **Decoration** block
@@ -380,6 +382,7 @@ The [default context menu](/#context-menu) has the following structure:
   - the *Add column* menuItem (id: "add-col")
   - the *Remove column* menuItem (id: "remove-col")
   - the *Fit to data* menuItem (id: "fit-col")
+  - the *Column width* menuItem (id: "col-width")
   - the separator
   - the *Unfreeze columns* menuItem (id: "unfreeze-cols")
   - the *Freeze up to column [id]* menuItem (id: "freeze-cols")
@@ -388,6 +391,7 @@ The [default context menu](/#context-menu) has the following structure:
 - the **Rows** menuItem (id: "rows")
   - the *Add row* menuItem (id: "add-row")
   - the *Remove row* menuItem (id: "remove-row")
+  - the *Row height* menuItem (id: "row-height")
   - the separator
   - the *Unfreeze rows* menuItem (id: "unfreeze-rows")
   - the *Freeze up to row [id]* menuItem (id: "freeze-rows")
@@ -396,6 +400,7 @@ The [default context menu](/#context-menu) has the following structure:
 - the **Sort** menuItem (id: "sort")
   - the *Sort A to Z* menuItem (id: "asc-sort")
   - the *Sort Z to A* menuItem (id: "desc-sort")
+- the **Open filter** menuItem (id: "open-filter"), shown when the active cell holds the filter icon
 - the **Insert link** menuItem (id: "link")
 
 ### Adding controls

@@ -377,14 +377,15 @@ The list of variables specific to the Spreadsheet component includes the followi
     --dhx-spreadsheet-range-background-8: #ecb6ff;
 
     --dhx-spreadsheet-range-color-1: #00815a;
-    --dhx-spreadsheet-range-color-2: #bfc000;
-    --dhx-spreadsheet-range-color-3: #c55933;
-    --dhx-spreadsheet-range-color-4: #0cc1d6;
-    --dhx-spreadsheet-range-color-5: #0080a3;
-    --dhx-spreadsheet-range-color-6: #529a0a;
+    --dhx-spreadsheet-range-color-2: #8b7300;
+    --dhx-spreadsheet-range-color-3: #a34729;
+    --dhx-spreadsheet-range-color-4: #007a8c;
+    --dhx-spreadsheet-range-color-5: #135db1;
+    --dhx-spreadsheet-range-color-6: #2f6500;
     --dhx-spreadsheet-range-color-7: #6d767b;
-    --dhx-spreadsheet-range-color-8: #ba38e7;
+    --dhx-spreadsheet-range-color-8: #b82fe5;
 
+    --dhx-spreadsheet-focus-color: var(--dhx-color-primary);
 }
 ~~~
 
@@ -411,6 +412,17 @@ The list of variables specific to the Spreadsheet component includes the followi
     --dhx-spreadsheet-range-color-7: #e4e4e4;
     --dhx-spreadsheet-range-color-8: #ecb6ff;
 
+    --dhx-spreadsheet-focus-color: hsl(var(--dhx-h-primary), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 12% - var(--dhx-l-contrast-offset)));
+}
+~~~
+
+The `--dhx-spreadsheet-range-color-*` and `--dhx-spreadsheet-range-background-*` variables set the colors that mark the cell references of a formula while it is edited. In the light themes, the `--dhx-spreadsheet-range-color-*` colors have a contrast of at least 4.5:1.
+
+The `--dhx-spreadsheet-focus-color` variable sets the color of the keyboard focus outline of the formula bar and of the toolbar, menu and sheet tab controls. In the dark themes, the color is lighter than the primary color, so that the outline keeps a contrast of at least 3:1. You can redefine the variable in a [custom theme](themes/custom_theme.md):
+
+~~~css
+[data-dhx-theme='custom-theme-dark'] {
+    --dhx-spreadsheet-focus-color: #7fc8ff;
 }
 ~~~
 
