@@ -6,7 +6,9 @@ description: You can learn about accessibility in the documentation of the DHTML
 
 # Accessibility in DHTMLX Spreadsheet
 
-DHTMLX Spreadsheet can be used with the keyboard alone, with a screen reader, with screen magnification and in high-contrast themes. WAI-ARIA roles and states are part of the rendered markup, the keyboard focus stays on the active cell, and the toolbar, the menu bar and the sheet tabs are reached with one key press each. Changes that have no element of their own, such as a refused edit or a search result, are announced through a live region.
+This guide is for developers who embed DHTMLX Spreadsheet in an application that has to meet accessibility requirements. Use it to check the component against your checklist and to configure it for keyboard, screen reader and high-contrast users.
+
+The Spreadsheet renders WAI-ARIA roles and states as part of its markup. The keyboard focus stays on the active cell, and the toolbar, the menu bar and the sheet tabs are one tab stop each. Changes that have no element of their own, such as a refused edit or a search result, go to a live region that screen readers read aloud.
 
 :::info Target conformance
 DHTMLX Spreadsheet is designed to meet **WCAG 2.2 Level AA**, **Section 508** of the U.S. Rehabilitation Act, and **EN 301 549** (the technical baseline of the European Accessibility Act).
@@ -29,8 +31,6 @@ Conformance is reported criterion by criterion for DHTMLX Spreadsheet 6.0.4. The
 | Customization | The public [`announce()`](api/spreadsheet_announce_method.md) method for your own messages, and translatable `aria_*` locale strings for every built-in name and announcement |
 | Standards | WCAG 2.2 AA, Section 508, EN 301 549 |
 
-Use this page to check the component against your accessibility checklist and to configure the Spreadsheet for an accessible deployment.
-
 ## Covered areas
 
 This guide covers the Spreadsheet widget:
@@ -47,7 +47,7 @@ The accessibility of the final page also depends on the host application. See [H
 
 ## WAI-ARIA support
 
-WAI-ARIA roles and attributes are added to the markup automatically and can't be turned off. Each part of the widget is exposed with its own role and name, and the names come from the [locale](#localization).
+The Spreadsheet adds WAI-ARIA roles and attributes to its markup automatically, and you can't turn them off. Each part of the widget has its own role and name, and the names come from the [locale](#localization).
 
 ### Spreadsheet container
 
@@ -66,7 +66,7 @@ The root element of the Spreadsheet has no landmark role, so you can place it in
 
 ### Cell surface
 
-The following attributes describe the cells as a whole. They are set on the `.dhx_grid-content` element:
+The following attributes describe the cells as a whole. The `.dhx_grid-content` element carries them:
 
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
@@ -89,6 +89,7 @@ The following table lists the roles and the position and state attributes of the
 | Cell | `aria-selected` | `"true"` on the active cell and on every cell of the selected ranges |
 | Cell | `aria-readonly` | `"true"` in the read-only mode and on [locked cells](work_with_cells.md#locking-cells) |
 | Cell | `tabindex` | `"0"` on the active cell and `"-1"` on the other cells, so the cells are one tab stop |
+| Active cell | DOM focus | The keyboard focus is on the active cell itself, not on a separate input |
 | Merged cell | `aria-colspan` / `aria-rowspan` | The number of columns / rows the merged cell spans. The cells it covers are hidden with `aria-hidden="true"` |
 | Link in a cell | `<a href>` with `target="_blank"` and `rel="noopener noreferrer"` | A link with the `http`, `https`, `mailto`, `ftp` or `tel` scheme |
 
@@ -112,16 +113,7 @@ A cell also contains visually hidden text, which screen readers read together wi
 | Row number | `role="rowheader"` | The header of the row |
 | Column menu icon, icons of hidden rows and columns | `aria-hidden="true"` | Decorative. The commands are in the context menu |
 
-The headers are not tab stops. A click on a column letter, a row number or the corner selects the lines and returns the focus to the active cell.
-
-### Selection
-
-| Part | Exposed through |
-| ---- | --------------- |
-| Active cell | The DOM focus, `tabindex="0"` and `aria-selected="true"` |
-| Selected range | `aria-selected="true"` on every cell of the range, and an announcement of its extent, for example, "B2 to D7, 18 cells" |
-| Several ranges | `aria-selected="true"` on the cells of each range. The announcement lists the ranges separated by commas |
-| Selection, copy and search highlights, the fill handle | Drawn in a layer hidden with `aria-hidden="true"` |
+The headers are not tab stops. A click on a column letter, a row number or the corner selects the rows or columns and returns the focus to the active cell.
 
 ### Formula bar and editors
 
@@ -160,17 +152,17 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
-| Column width and Row height dialogs | `role="dialog"`, `aria-modal="true"`, `aria-label` | Named by the dialog title. The input is labelled "Width in pixels" / "Height in pixels" |
+| Column width and Row height dialogs | `role="dialog"`, `aria-modal="true"`, `aria-label` | Named by the dialog title. The input is labeled "Width in pixels" / "Height in pixels" |
 | Search bar, Insert link, Data validation | `role="dialog"` + `aria-label` | Named by the dialog title. The search bar buttons are named "Previous match", "Next match" and "Close search" |
 | Alerts | `role="alertdialog"`, `aria-modal="true"`, `aria-labelledby`, `aria-describedby` | Named by the alert header and described by its text |
 
 ### Hidden and decorative elements
 
-The lock, filter and column menu icons, the icons of hidden rows and columns, the select-all icon, the selection layer with the fill handle, the colored copy of the formula in the formula bar, and the cells covered by a merged cell are hidden from assistive technology with `aria-hidden="true"`. Layout wrappers have `role="presentation"`. The focus sentinels before and after the grid only pass the focus to the active cell.
+The Spreadsheet hides decorative parts from assistive technology with `aria-hidden="true"`: the lock, filter and column menu icons, the icons of hidden rows and columns, the select-all icon, the layer that draws the selection, copy and search highlights and the fill handle, the colored copy of the formula in the formula bar, and the cells covered by a merged cell. Layout wrappers have `role="presentation"`. The focus sentinels before and after the grid only pass the focus to the active cell.
 
 ## Selection and editing model
 
-The DOM focus is on the active cell itself, so a screen reader reads the cell, not a separate input. When the active cell moves, the screen reader reads the address of the new cell first, then its value and its hidden descriptions. When a range is selected with <kbd>Shift</kbd> + arrow keys or with the mouse, the extent of the range is announced once the selection stops changing.
+The DOM focus is on the active cell itself, so a screen reader reads the cell, not a separate input. When the active cell moves, the screen reader reads the address of the new cell first, then its value and its hidden descriptions. When the user selects a range with <kbd>Shift</kbd> + arrow keys or with the mouse, the screen reader announces the extent of the range once the selection stops changing.
 
 | Situation | What the screen reader gets |
 | --------- | --------------------------- |
@@ -183,9 +175,7 @@ The DOM focus is on the active cell itself, so a screen reader reads the cell, n
 | An edit of a locked cell is refused | "The cell is locked" |
 | An editing key is pressed in the read-only mode | "The sheet is read-only" |
 
-The editor is opened with <kbd>Enter</kbd>, <kbd>F2</kbd> or by typing, and closed with <kbd>Enter</kbd> (save and move down), <kbd>Tab</kbd> (save and move right) or <kbd>Esc</kbd> (cancel).
-
-In the [read-only mode](api/spreadsheet_readonly_config.md), the cells can be navigated, selected, copied and searched. To turn the selection off completely, use the [`selection`](api/spreadsheet_selection_config.md) option.
+<kbd>Enter</kbd>, <kbd>F2</kbd> or typing opens the editor. <kbd>Enter</kbd> saves the value and moves down, <kbd>Tab</kbd> saves it and moves right, and <kbd>Esc</kbd> cancels the edit.
 
 ## Keyboard navigation
 
@@ -237,12 +227,12 @@ The keyboard works as soon as the Spreadsheet is on the page; no configuration i
 | <kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>Enter</kbd> | Move through the list of values of a cell and choose a value |
 
 :::note
-The commands that are performed by dragging have keyboard alternatives. The column width and the row height are set with the *Column width* and *Row height* commands of the context menu. A filter is opened with the *Open filter* command. Hidden rows and columns are shown with <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> / <kbd>0</kbd> or with the *Show rows* / *Show columns* commands.
+Pointer-only actions have keyboard alternatives. The *Column width* and *Row height* commands of the context menu set an exact size without dragging, and the *Open filter* command opens a filter without a click on its icon.
 :::
 
 ## Assistive technology
 
-DHTMLX Spreadsheet is tested with the following assistive technologies:
+The DHTMLX team tests the Spreadsheet with the following screen readers:
 
 | Screen reader | Browser | Platform |
 | ------------- | ------- | -------- |
@@ -250,7 +240,7 @@ DHTMLX Spreadsheet is tested with the following assistive technologies:
 | JAWS | Chrome | Windows |
 | VoiceOver | Safari | macOS |
 
-The state of the Spreadsheet travels on the element it belongs to:
+Screen readers get each state from the element it belongs to:
 
 | State | Exposed through | Read on |
 | ----- | --------------- | ------- |
@@ -268,7 +258,7 @@ The state of the Spreadsheet travels on the element it belongs to:
 
 ### Themes
 
-The Spreadsheet has four built-in themes: `light` (default), `dark`, `contrast-light` and `contrast-dark`. The `contrast-light` and `contrast-dark` themes meet the WCAG AA contrast of text. Switch a theme with the `dhx.setTheme()` method or with the `data-dhx-theme` attribute:
+The Spreadsheet has four built-in themes: `light` (default), `dark`, `contrast-light` and `contrast-dark`. The `contrast-light` and `contrast-dark` themes meet the WCAG AA contrast requirements for text. Switch a theme with the `dhx.setTheme()` method or with the `data-dhx-theme` attribute:
 
 ~~~jsx
 dhx.setTheme("contrast-light"); // or "contrast-dark"
@@ -342,7 +332,7 @@ The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the 
 
 ### Accessible default setup
 
-The Spreadsheet is accessible by default. For WCAG AA contrast of text, select a contrast theme:
+The Spreadsheet needs no configuration for the keyboard and the WAI-ARIA output. To meet the WCAG AA contrast requirements for text, select a contrast theme. See [Built-in themes](themes/themes.md) for the other ways to set a theme:
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
@@ -355,7 +345,7 @@ dhx.setTheme("contrast-light"); // or "contrast-dark"
 
 ### Read-only setup
 
-A read-only Spreadsheet can still be navigated and read with a screen reader:
+Use the [`readonly`](api/spreadsheet_readonly_config.md) option to show data that users can read and copy but not change. Keyboard and screen reader users can still move through the cells:
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
@@ -364,27 +354,47 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 spreadsheet.parse(data);
 ~~~
 
-To show the data without an active cell and without selection, add `selection: false`. In this case, the grid is one tab stop that the keyboard passes through.
+To show the data without an active cell and without selection, add [`selection: false`](api/spreadsheet_selection_config.md). The grid then becomes one tab stop that the keyboard passes through.
 
 ### Translated accessibility strings
 
+Screen readers read the accessibility strings from three locales: `spreadsheet` holds the names, cell descriptions and announcements, `colorpicker` holds the color names, and `message` holds the names of the alert buttons. Set all three before you create the Spreadsheet. See [Localizing built-in widgets](localization.md#localizing-built-in-widgets) for the keys:
+
 ~~~jsx
-dhx.i18n.setLocale("spreadsheet", deSpreadsheet); // includes the aria_* keys
-dhx.i18n.setLocale("colorpicker", deColorpicker); // the color names
-dhx.i18n.setLocale("message", deMessage);         // the alert buttons
+const deSpreadsheet = {
+    // other keys of the locale
+    aria_grid: "Tabelle",
+    aria_readonlySheet: "Das Blatt ist schreibgeschützt"
+};
+const deColorpicker = {
+    aria_palette: "Farbpalette",
+    aria_colorRed: "rot"
+};
+const deMessage = {
+    aria_alert: "Meldung",
+    aria_confirm: "Bestätigen"
+};
+
+dhx.i18n.setLocale("spreadsheet", deSpreadsheet);
+dhx.i18n.setLocale("colorpicker", deColorpicker);
+dhx.i18n.setLocale("message", deMessage);
 
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 ~~~
 
 ### Announcing a custom command
 
+When your own command changes the data, tell screen reader users about the result with the [`announce()`](api/spreadsheet_announce_method.md) method. The example adds a [menu](customization.md#menu) command that clears the active sheet:
+
 ~~~jsx
-spreadsheet.menu.data.add({ id: "save", value: "Save" });
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
+
+spreadsheet.menu.data.add({ id: "clear-sheet", value: "Clear sheet" });
 
 spreadsheet.menu.events.on("click", function (id) {
-    if (id === "save") {
-        saveToServer(spreadsheet.serialize());
-        spreadsheet.announce("The spreadsheet is saved");
+    if (id === "clear-sheet") {
+        spreadsheet.sheets.clear();
+        spreadsheet.announce("The sheet is cleared");
     }
 });
 ~~~
@@ -401,7 +411,7 @@ A few requirements live at the page level, not inside the component. Make sure t
 
 ## Testing and methodology
 
-Accessibility of DHTMLX Spreadsheet 6.0.4 is validated against the component source and in the browser:
+The DHTMLX team validates the accessibility of Spreadsheet 6.0.4 against the component source and in the browser:
 
 1. **Automated testing** with [axe-core](https://github.com/dequelabs/axe-core) in the `light`, `dark`, `contrast-light` and `contrast-dark` themes, with the search bar, the list editor, the dialogs and an alert open.
 2. **Manual review** of the source: the roles, states and names of each part, the keyboard handlers and the focus regions, and the theme tokens with their contrast ratios.

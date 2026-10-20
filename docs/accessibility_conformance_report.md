@@ -6,7 +6,7 @@ description: You can learn about the accessibility conformance report in the doc
 
 # Accessibility Conformance Report
 
-This report documents how DHTMLX Spreadsheet conforms to the major accessibility standards. It follows the **VPAT® 2.5 (International Edition)** structure, so you can map it directly against your own procurement or compliance checklist. For a task-oriented overview of the accessibility features and how to configure them, see the [Accessibility](accessibility.md) guide.
+This report documents how DHTMLX Spreadsheet conforms to the major accessibility standards. It follows the **VPAT® 2.5 (International Edition)** structure. For a task-oriented overview of the accessibility features and how to configure them, see the [Accessibility](accessibility.md) guide.
 
 **Name of Product/Version:** <TBD>
 
@@ -18,12 +18,17 @@ This report documents how DHTMLX Spreadsheet conforms to the major accessibility
 
 ## Notes
 
-- This report evaluates DHTMLX Spreadsheet in its **recommended accessibility configuration**: the default configuration, with the WAI-ARIA output and the keyboard navigation that are always on, and an AA-conformant color scheme selected through `dhx.setTheme("contrast-light")` / `dhx.setTheme("contrast-dark")` or the equivalent `data-dhx-theme` attribute. Where a conformance level depends on this configuration, the Remarks say so. See the [Accessibility](accessibility.md) guide for setup instructions.
+- This report evaluates DHTMLX Spreadsheet in its **recommended accessibility configuration**: the default configuration, where the WAI-ARIA output and the keyboard navigation are always on, with the `contrast-light` or `contrast-dark` theme set through `dhx.setTheme()` or the `data-dhx-theme` attribute. The Remarks state where a conformance level depends on this configuration. See the [Accessibility](accessibility.md) guide for the setup.
 - DHTMLX Spreadsheet is **web content** rendered by a host application. Page-level responsibilities (the page title, `<html lang>`, skip/bypass mechanisms, and site-wide navigation) belong to the host application and are reported as *Not Applicable* with an explanation.
 - In the WCAG tables, only the **Web** response is populated. The *Electronic Docs*, *Software*, *Closed*, and *Authoring Tool* rows are *Not Applicable*: the product is not standalone (non-web) software, closed functionality, an authoring tool, or a piece of electronic documentation.
 - Colors that an author applies to cells through cell styles are part of the document data and are not evaluated as part of the product.
 
-**Evaluation Methods Used:** Testing was performed using a combination of automated testing (axe-core in the `light`, `dark`, `contrast-light` and `contrast-dark` themes, with the search bar, the list editor, the dialogs and an alert open), manual code review of the component source and stylesheets (the roles and ARIA attributes emitted per part of the widget, the keyboard handlers and focus regions, the accessible names and their locale keys, and the theme color tokens, with contrast ratios computed from those tokens for the four themes), assistive-technology testing (manual passes with **NVDA + Firefox** and **JAWS + Chrome** on Windows and **VoiceOver + Safari** on macOS; versions: <TBD>), and browser overrides (200% / 400% zoom, reflow at 320 CSS px, and WCAG text-spacing overrides).
+**Evaluation Methods Used:**
+
+- Automated testing: axe-core in the `light`, `dark`, `contrast-light` and `contrast-dark` themes, with the search bar, the list editor, the dialogs and an alert open.
+- Manual code review of the component source and stylesheets: the roles and ARIA attributes of each part of the widget, the keyboard handlers and focus regions, the accessible names and their locale keys, and the theme color tokens, with contrast ratios computed for the four themes.
+- Assistive-technology testing: manual passes with **NVDA + Firefox** and **JAWS + Chrome** on Windows and **VoiceOver + Safari** on macOS. Versions: <TBD>.
+- Browser overrides: 200% / 400% zoom, reflow at 320 CSS px, and WCAG text-spacing overrides.
 
 ## Applicable standards / guidelines
 
@@ -62,9 +67,9 @@ theme" is a configuration dependency, not a defect. Criterion 4.1.1 Parsing is r
 | **1.3.1** Info and Relationships | Supports | The cells are a `grid` named "Spreadsheet" with `row`, `columnheader`, `rowheader` and `gridcell` roles. Position is exposed with `aria-rowindex`/`aria-colindex` against `aria-rowcount`/`aria-colcount`; the extent of a merged cell with `aria-colspan`/`aria-rowspan`; editability with `aria-readonly`; selection with `aria-selected` and `aria-multiselectable`. The toolbar, the menu bar and the sheet tabs are `toolbar` and `menubar` elements with names; exclusive formatting options are `menuitemradio` with `aria-checked`. |
 | **1.3.2** Meaningful Sequence | Supports | DOM and reading order follow the visual order: the menu bar, the toolbar, the formula bar, the cells and the sheet tabs. The cells carry their position in the sheet through `aria-rowindex`/`aria-colindex`, so the sequence is preserved when rows and columns are scrolled out of the DOM. |
 | **1.3.3** Sensory Characteristics | Supports | No instruction or label relies solely on shape, size, or spatial location; interactive elements carry text or an ARIA name. |
-| **1.4.1** Use of Color | Supports | Color is never the only signal. The active cell, the selected range, search matches, the copied range and invalid cells each have a border, a fill, a marker or a shape, together with `aria-selected` or text in the cell. Rows hidden by a filter leave a gap in the row numbers. The color buttons show the color itself and carry its name in the accessible name. |
+| **1.4.1** Use of Color | Supports | Each state shown by color also has a border, a fill, a marker or text: the active cell, the selected range, search matches, the copied range and invalid cells, together with `aria-selected` or text in the cell. Rows hidden by a filter leave a gap in the row numbers. The color buttons carry the color name in their accessible name. |
 | **1.4.2** Audio Control | Not Applicable | The product produces no auto-playing audio. |
-| **2.1.1** Keyboard | Supports | Every command on the cells has a key: the arrow keys, `Home`/`End`, `Ctrl`+arrows and `Tab` move the active cell, `Shift` combinations extend the selection, `Enter`/`F2` and typing open the editor, `Esc` cancels, `Ctrl`+`Shift`+`9`/`0` show hidden rows and columns, `Alt`+`Enter` opens a link, and `Shift`+`F10` or the Menu key opens the context menu. `Ctrl`+`F6` moves the focus between the menu, the toolbar, the sheet and the sheet tabs; the bars are navigated with the arrow keys, `Home` and `End`, and their dropdowns and popups open and close from the keyboard. The column width, the row height and the column filter have context menu commands. In the list editor the arrow keys move through the options, `Enter` writes the highlighted one and `Esc` cancels the edit. |
+| **2.1.1** Keyboard | Supports | Every command on the cells has a key, listed in the [Hot keys list](hotkeys.md); `Shift`+`F10` or the Menu key opens the context menu. `Ctrl`+`F6` moves the focus between the menu, the toolbar, the sheet and the sheet tabs. The bars, their dropdowns and popups, and the list editor work with the arrow keys, `Home`, `End`, `Enter` and `Esc`. The column width, the row height and the column filter have context menu commands. |
 | **2.1.2** No Keyboard Trap | Supports | `Tab` on the last cell and `Shift`+`Tab` on the first cell of the sheet move the focus out of the Spreadsheet, and `Ctrl`+`F6` moves it between the parts at any time. In the list editor `Tab` ends the edit and `Esc` cancels it, also after the arrow keys were used. `Esc` and `Tab` close the toolbar popups and return the focus to their buttons. |
 | **2.1.4** Character Key Shortcuts | Supports | Every shortcut uses a modifier key (`Ctrl`, `Alt`, `Shift`) or a non-character key (`F2`, `F6`, `F10`, `F11`, `Enter`, `Esc`, `Delete`, arrows). Typing a character on a cell enters it into the cell, which is the purpose of the cell, and doesn't run a command. |
 | **2.2.1** Timing Adjustable | Not Applicable | The product sets no time limits. |
@@ -85,7 +90,7 @@ theme" is a configuration dependency, not a defect. Criterion 4.1.1 Parsing is r
 | **3.3.1** Error Identification | Supports | Formula errors and invalid list values are described in the cell content, for example "Reference error. Check the cell references" and "Invalid value. Choose a value from the list". New errors caused by an edit are announced through the live region, and the editor of an invalid value has `aria-invalid="true"`. |
 | **3.3.2** Labels or Instructions | Supports | The cell editor is named "Cell editor, B7" and the formula bar "Formula bar, B7", with the address of the edited cell. The dialog fields are labelled, for example "Width in pixels", and the search bar buttons are named "Previous match", "Next match" and "Close search". |
 | **3.3.7** Redundant Entry (2.2 only) | Supports | The product contains no multi-step process that asks for information already entered. |
-| **4.1.2** Name, Role, Value | Supports | Every structural and interactive part exposes a role, its states and an accessible name: the cells (`grid`, `row`, `gridcell`, `columnheader`, `rowheader`, `aria-selected`, `aria-readonly`), the toolbars and the menu bar (`toolbar`, `menubar`, named from the locale), the formatting buttons (`aria-pressed`), the exclusive formats (`menuitemradio` with `aria-checked`), and the sheet tabs (the active tab is `aria-pressed="true"`). Alerts are `role="alertdialog"` with `aria-modal="true"` and a name. The list editor is a `combobox` that controls a `listbox`, with `aria-expanded` and `aria-activedescendant` on the highlighted option. |
+| **4.1.2** Name, Role, Value | Supports | Each part exposes a role, its states and a name from the locale: the cells (`grid`, `row`, `gridcell`, `columnheader`, `rowheader`, `aria-selected`, `aria-readonly`), the toolbars and the menu bar (`toolbar`, `menubar`), the formatting buttons and the sheet tabs (`aria-pressed`), and the exclusive formats (`menuitemradio`, `aria-checked`). Alerts are `alertdialog` with `aria-modal="true"`. The list editor is a `combobox` that controls a `listbox`, with `aria-expanded` and `aria-activedescendant`. |
 
 ### Table 2: Success Criteria, Level AA
 
@@ -131,7 +136,7 @@ is Not Applicable, because DHTMLX Spreadsheet is a software component with no ha
 | 302.4 Without Hearing | Supports | No information is conveyed by sound. |
 | 302.5 With Limited Hearing | Supports | No information is conveyed by sound. |
 | 302.6 Without Speech | Supports | No speech input is required to operate the product. |
-| 302.7 With Limited Manipulation | Supports | Fully keyboard-operable; no path-based gesture is required, and every drag operation has a keyboard or command alternative. See WCAG 2.1.1, 2.5.1, 2.5.7, 2.5.8. |
+| 302.7 With Limited Manipulation | Supports | Every function works from the keyboard; no path-based gesture is required, and every drag operation has a keyboard or command alternative. See WCAG 2.1.1, 2.5.1, 2.5.7, 2.5.8. |
 | 302.8 With Limited Reach and Strength | Supports | Operable by keyboard; no physical reach, force or timing requirements. |
 | 302.9 With Limited Language, Cognitive, and Learning Abilities | Supports | Commands have the same names in the toolbar, the menus and the context menu, formula errors are described with a way to correct them, and every change can be reverted with undo. See WCAG 3.2.4, 3.3.3, 3.3.4. |
 
