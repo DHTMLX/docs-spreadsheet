@@ -28,6 +28,19 @@ module.exports = {
         },
         {
             type: "category",
+            label: "Accessibility",
+            collapsible: true,
+            collapsed: true,
+            link: {
+                type: 'doc',
+                id: "accessibility"
+            },
+            items: [
+                "accessibility_conformance_report"
+            ]
+        },
+        {
+            type: "category",
             label: "API",
             collapsible: true,
             collapsed: true,
