@@ -25,6 +25,7 @@ Changing any of these props causes the widget to be destroyed and recreated. Spr
 | `importModulePath` | `string` | Path to the XLSX import module. See JS API: [`importModulePath`](api/spreadsheet_importmodulepath_config.md). |
 | `exportModulePath` | `string` | Path to the XLSX export module. See JS API: [`exportModulePath`](api/spreadsheet_exportmodulepath_config.md). |
 | `spreadsheetLocale` | [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) | UI translations and localized formula names. Separate from `localization`. |
+| `readonly` | `boolean` | Enable read-only mode. Users can navigate, select, copy and search the cells, and edits are refused. See JS API: [`readonly`](api/spreadsheet_readonly_config.md). |
 
 </div>
 
@@ -40,7 +41,7 @@ These props are applied immediately without destroying the widget. No data loss 
 |------|------|-------------|
 | `rowsCount` | `number` | Number of rows in the grid. See JS API: [`rowsCount`](api/spreadsheet_rowscount_config.md). |
 | `colsCount` | `number` | Number of columns in the grid. See JS API: [`colsCount`](api/spreadsheet_colscount_config.md). |
-| `readonly` | `boolean` | Enable read-only mode. See JS API: [`readonly`](api/spreadsheet_readonly_config.md). |
+| `selection` | `boolean` | Turn the selection of cells on and off. Default: `true`. With `false`, the spreadsheet has no active cell, and the cells can't be selected or edited from the UI. See JS API: [`selection`](api/spreadsheet_selection_config.md). |
 
 ## Data props
 
@@ -225,8 +226,16 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 
 ### Read-only mode
 
+In read-only mode, users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers. Since `readonly` is an init-only prop, changing it recreates the widget.
+
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} readonly={true} />
+~~~
+
+To turn off the keyboard navigation and the selection as well, add `selection={false}`. The `selection` prop is applied at runtime, so it can be switched without recreating the widget:
+
+~~~tsx
+<ReactSpreadsheet sheets={sheets} readonly={true} selection={false} />
 ~~~
 
 ### Loading data from URL
