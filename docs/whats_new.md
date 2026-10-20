@@ -20,7 +20,7 @@ Some existing keys and API calls give a different result. No documented method, 
 - The [`deleteRow()`](api/spreadsheet_deleterow_method.md) and [`deleteColumn()`](api/spreadsheet_deletecolumn_method.md) methods called for a cell inside a merged cell delete every row or column of the merge. The `beforeAction` / `afterAction` handlers still receive the original cell
 - A Spreadsheet with [`readonly: true`](api/spreadsheet_readonly_config.md) can be navigated with the keyboard, selected with the mouse, copied and searched, so the selection events fire on user actions. Edits are refused and announced to screen readers. Custom `hotkeys` are still not registered in read-only mode. To keep the 6.0.3 behaviour, set `selection: false`
 - The [`selection.setFocusedCell()`](api/selection_setfocusedcell_method.md) method and any other change of the active cell move the keyboard focus to the cell when the focus is on the page body or inside the Spreadsheet. The focus stays on the toolbar, the menu or the sheet tabs reached with the keyboard, and in an open cell editor
-- Cell shortcuts (the arrow keys, typing, `Delete`, `Enter` and the like) don't act on the cells while the toolbar, the menu or the sheet tabs have focus. The formatting, clipboard, undo, search and link shortcuts still work there
+- Cell shortcuts (the arrow keys, typing, `Delete`, `Enter` and the like) don't act on the cells while the toolbar, the menu or the sheet tabs have focus. The formatting, undo, search and link shortcuts still work on the toolbar
 
 ### New functionality
 

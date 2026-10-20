@@ -69,7 +69,7 @@ spreadsheet.selection.setFocusedCell("D4");
 
 In 6.0.3, the arrow keys and typing acted on the cells while the toolbar had focus. Since 6.0.4, the toolbar, the menu and the sheet tabs use the arrow keys, `Home`, `End`, `Enter` and `Space` for their own controls, and the cell shortcuts (navigation, typing, `Delete`, `Enter`, `F2` and the like) work only while the focus is in the cells or in the formula bar.
 
-The formatting, clipboard, undo, search and link shortcuts (`Ctrl (Cmd) + B`, `Ctrl (Cmd) + C`, `Ctrl (Cmd) + Z`, `Ctrl (Cmd) + F`, `Ctrl (Cmd) + K` and the like) still work from the toolbar and the menu. Custom `hotkeys` from the configuration are not filtered by the focus position.
+The formatting, undo, search and link shortcuts (`Ctrl (Cmd) + B`, `Ctrl (Cmd) + Z`, `Ctrl (Cmd) + F`, `Ctrl (Cmd) + K` and the like) still work while the focus is on the toolbar. Custom `hotkeys` from the configuration are not filtered by the focus position.
 
 ## 5.2 -> 6.0
 
