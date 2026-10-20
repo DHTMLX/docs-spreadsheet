@@ -31,6 +31,37 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
+### Details
+
+In the read-only mode, the toolbar, the menu and the formula bar are hidden, and the context menu and the column menu icon are not available. The sheet tabs stay, without the button that adds a sheet.
+
+Users can still read and copy the data:
+
+- the A1 cell is active after the data is loaded
+- the cells can be navigated with the keyboard and selected with the mouse, and the selection events fire on these actions
+- the cells can be copied with `Ctrl (Cmd) + C` and searched with `Ctrl (Cmd) + F`
+- the sheets can be switched in the sheet tabs and with the keyboard
+
+Changes of the data are refused:
+
+- the editing keys, typing, cut and paste don't change the cells, and screen readers announce "The sheet is read-only"
+- the fill handle is hidden
+- the columns and rows can't be resized by dragging their borders, and a double-click on a column border doesn't fit the column width to the data
+
+The custom `hotkeys` from the Spreadsheet configuration are not registered in the read-only mode.
+
+To turn off the keyboard navigation and the selection as well, set the `selection` option to `false`. In this case, the Spreadsheet has no active cell, and the cells can't be selected by the mouse, the keyboard or the API:
+
+~~~jsx {3}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+  readonly: true,
+  selection: false,
+  // other config parameters
+});
+~~~
+
+**Change log:** The keyboard navigation, the selection, copying and search in the read-only mode were added in v6.0.4
+
 **Related articles:**
 - [Configuration](configuration.md#read-only-mode)
 - [Customization](customization.md#custom-read-only-mode)

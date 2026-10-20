@@ -54,6 +54,10 @@ To remove a row, take the following steps:
 To remove several rows at once: select the rows, right-click to call the context menu and choose *Rows -> Remove rows [ids]*.
 :::
 
+:::info
+If the selected cell is inside a merged cell, all the rows of the merged cell are removed. Check the [Merging cells](merge_cells.md#removing-rows-and-columns-of-merged-cells) article for details.
+:::
+
 ### Adding columns
 
 To add a new column, take the following steps:
@@ -96,6 +100,10 @@ To remove a column, take the following steps:
 
 :::note
 To remove several columns at once: select the columns, right-click to call the context menu and choose *Columns -> Remove columns [ids]*.
+:::
+
+:::info
+If the selected cell is inside a merged cell, all the columns of the merged cell are removed. Check the [Merging cells](merge_cells.md#removing-rows-and-columns-of-merged-cells) article for details.
 :::
 
 ## AutoFit column width

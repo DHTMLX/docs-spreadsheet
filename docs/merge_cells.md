@@ -45,3 +45,11 @@ or
 2\. Go to: *Format -> Unmerge* in the menu
 
 ![DHTMLX Spreadsheet Format menu with the Unmerge option for splitting merged cells](/img/unmerge_cells_via_menu.png)
+
+## Removing rows and columns of merged cells
+
+When you remove a row or a column through a merged cell, every row or column that the merged cell spans is removed. It works this way when a cell or a range of cells is selected and the row or column is removed via the toolbar, the menu, the context menu or the [`deleteRow()`](api/spreadsheet_deleterow_method.md) / [`deleteColumn()`](api/spreadsheet_deletecolumn_method.md) methods. The context menu shows the full range in the command name, for example, *Remove rows 2-4*.
+
+When whole rows or columns are selected by clicking their headers, only the selected rows or columns are removed. A merged cell that spans them becomes smaller, and a merged cell left with a single cell becomes an ordinary cell.
+
+Merged cells located below or on the right of the removed rows or columns move together with them.
