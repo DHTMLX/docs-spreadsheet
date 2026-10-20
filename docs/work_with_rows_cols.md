@@ -295,7 +295,3 @@ To show hidden columns, take one of the following steps:
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Show columns](/img/show_columns_context_menu.png)
 
 - or select columns or several cells so that the hidden columns were included into the selection, and press `Ctrl (Cmd) + Shift + 0`. If the selection includes no hidden columns, screen readers announce "No hidden columns in the selection"
-
-:::note
-Windows can reserve the `Ctrl + Shift + 0` combination for switching the input language. In this case, use the context menu.
-:::

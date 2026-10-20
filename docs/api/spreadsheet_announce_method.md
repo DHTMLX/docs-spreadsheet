@@ -52,7 +52,7 @@ The method puts the message into a live region with `role="status"` and `aria-li
 
 The Spreadsheet uses the same live region for its own announcements, such as the refused edits, the search results and the progress of import and export. A message that repeats the current one is announced again.
 
-Call the method after the Spreadsheet is rendered on the page. Before that, the message is not announced. The method also works in the [read-only mode](api/spreadsheet_readonly_config.md) and while the [selection](api/spreadsheet_selection_config.md) is turned off.
+The method works in the [read-only mode](api/spreadsheet_readonly_config.md) and while the [selection](api/spreadsheet_selection_config.md) is turned off.
 
 **Change log:** Added in v6.0.4
 
