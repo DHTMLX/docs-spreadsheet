@@ -8,6 +8,80 @@ description: You can learn what's new in the DHTMLX JavaScript Spreadsheet libra
 
 If you are updating Spreadsheet from an older version, check [Migration to Newer Version](migration.md) for details.
 
+## Version 6.0.4
+
+Released on <TBD>
+
+### Behaviour changes
+
+Some existing keys and API calls give a different result. No documented method, property, event or configuration option is removed or renamed. Check the [Migration guide](migration.md#603---604) for details.
+
+- The arrow keys stop at the first and last visible row and column instead of moving the active cell to the opposite edge of the sheet. At the edge, an arrow key collapses a selected range to the active cell
+- The [`deleteRow()`](api/spreadsheet_deleterow_method.md) and [`deleteColumn()`](api/spreadsheet_deletecolumn_method.md) methods called for a cell inside a merged cell delete every row or column of the merge. The `beforeAction` / `afterAction` handlers still receive the original cell
+- A Spreadsheet with [`readonly: true`](api/spreadsheet_readonly_config.md) can be navigated with the keyboard, selected with the mouse, copied and searched, so the selection events fire on user actions. Edits are refused and announced to screen readers. Custom `hotkeys` are still not registered in read-only mode. To keep the 6.0.3 behaviour, set `selection: false`
+- The [`selection.setFocusedCell()`](api/selection_setfocusedcell_method.md) method and any other change of the active cell move the keyboard focus to the cell when the focus is on the page body or inside the Spreadsheet. The focus stays on the toolbar, the menu or the sheet tabs reached with the keyboard, and in an open cell editor
+- Cell shortcuts (the arrow keys, typing, `Delete`, `Enter` and the like) don't act on the cells while the toolbar, the menu or the sheet tabs have focus. The formatting, clipboard, undo, search and link shortcuts still work there
+
+### New functionality
+
+- The ability to turn the selection off and on:
+    - new configuration property: `selection`
+    - new methods of the selection module: `selection.enable()`, `selection.disable()`, `selection.isDisabled()`
+- The `announce()` method sends a status message to screen readers through a live region
+- New commands of the [context menu](customization.md#context-menu):
+    - *Column width* and *Row height* set an exact size of the selected columns or rows in pixels, with undo
+    - *Open filter* opens the filter of the active cell from the keyboard
+
+### Updates
+
+- Keyboard navigation:
+    - The keyboard focus is on the active cell itself, and `Tab` enters the sheet on it. `Tab` on the last cell and `Tab + Shift` on the first cell move the focus out of the Spreadsheet
+    - `Ctrl + F6` and `Ctrl + Shift + F6` move the focus between the menu, the toolbar, the sheet and the sheet tabs
+    - `Ctrl + Alt + Page Down` / `Ctrl + Alt + Page Up` switch to the next / previous sheet, in addition to `Alt + Arrow Up/ Arrow Down`
+    - The toolbar, the menu bar and the sheet tabs are single tab stops navigated with the arrow keys, `Home` and `End`. Menus, context menus and the toolbar popups take the focus and return it when closed
+    - The color palette of the toolbar is a single tab stop browsed with the arrow keys, `Home` and `End`
+    - `Ctrl + Shift + 9` and `Ctrl + Shift + 0` reveal the hidden rows and columns of the selection
+    - `Alt + Enter` opens the link of the active cell
+    - `Esc` closes a toolbar tooltip, and a tooltip stays open while hovered
+    - The close button of the formula help panel works from the keyboard
+    - The keyboard focus indicator is visible on the cells, the cell editor, the formula bar and the toolbar buttons, and has a 3:1 contrast in the dark themes
+- Screen reader support:
+    - The active cell is announced with its address before its value, and a selected range with its extent, for example "B2 to D7, 18 cells"
+    - Read-only, locked and merged cells, row numbers as row headers and the active sheet tab are reported
+    - Formula errors and invalid list values are described in the cell, and new errors caused by an edit are announced
+    - Refused edits, search results, and the start and end of import and export are announced
+    - The grid, the toolbars, the menus, the dialogs, the search bar, the cell editors, the formula bar and the color buttons have accessible names, and the formatting buttons report whether they are on
+    - The editor of a list-validated cell is presented as a combobox, and a link in a cell is rendered as a real link
+- Localization:
+    - The new interface and screen reader strings are added to the [`spreadsheet` locale](localization.md#default-locale)
+    - The `grid`, `toolbar`, `window`, `message` and `colorpicker` locales used inside the Spreadsheet can be translated through `dhx.i18n.setLocale()`
+- The formula reference colors have a contrast of at least 4.5:1 in the light and contrast-light themes
+- React Spreadsheet:
+    - The new `selection` prop turns the selection off and on without recreating the Spreadsheet
+    - The [`readonly`](react/props.md#init-only-props) prop is init-only: changing it recreates the Spreadsheet. The data is kept, the undo/redo history and the UI state are reset
+    - The bundled types include `selection.enable()`, `selection.disable()`, `selection.isDisabled()` and `announce()`, and the `ISelection` type is exported
+
+### Fixes
+
+- A merged cell was dropped instead of shifted when a row or column before it was deleted
+- Deleting a row or column through a merged cell removed only one line of the merge
+- Rows were not deleted when they covered the whole filtered range
+- The frozen area didn't shrink when frozen rows or columns were deleted
+- Autofill threw an error when the dragged cells held no plain number
+- The page froze on `Home`, `End` and `Ctrl (Cmd) + Arrow` keys when the first or last row or column was hidden
+- The font size was lost when cells were copied to Excel or pasted from Excel or within the Spreadsheet
+- The invalid-value tooltip appeared away from the invalid cell
+- `Esc` and `Tab` didn't work in the list editor after the arrow keys were used
+- The search highlighted the second match first and didn't refresh the results after an edit or a sheet switch
+- A script error occurred on import or export in a browser without WebAssembly
+- Document listeners and inner widgets were left behind after `destructor()`
+- The keyboard focus was lost after the search bar closed
+- A closed context menu reopened
+- The active cell was scrolled one cell short of the viewport edge during keyboard navigation
+- React Spreadsheet: the event callbacks and `onStateChange` didn't fire after the Spreadsheet was recreated by an init-only prop change
+- React Spreadsheet: the event handlers of the wrapper were not removed on unmount
+- React Spreadsheet: the data from `loadUrl` was loaded twice on mount and again over the kept data after the Spreadsheet was recreated
+
 ## Version 6.0.3
 
 Released on August 24, 2026
