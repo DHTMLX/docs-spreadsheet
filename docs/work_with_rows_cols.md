@@ -124,6 +124,22 @@ To change the column width so that it would automatically fit the longest conten
 
 ![DHTMLX Spreadsheet Columns submenu with the Fit to data option for autofit column width](/img/column_autofit.png)
 
+## Setting column width and row height
+
+To set an exact width of columns, take the following steps:
+
+1\. Select a column or a cell in the column. To change several columns, select a range of cells that spans them.
+
+2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Columns -> Column width*. The same command is available in the menu of the 3 dots icon of the column.
+
+3\. In the *Column width* dialog, enter the width in pixels and click **Apply** or press `Enter`.
+
+To set an exact height of rows, choose *Rows -> Row height* in the context menu and enter the height in the *Row height* dialog.
+
+The dialog shows the current size of the first selected column or row and applies the new size to every column or row of the selected range. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller value is replaced with the minimum. The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
+
+The new size can be undone with `Ctrl (Cmd) + Z`. The command runs the `resizeCol` or `resizeRow` [action](api/overview/actions_overview.md). The `config` object that the [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) events receive contains the range of the columns or rows in `cell` and the new size in `val`. Unlike a resize by dragging, the `config` object has no `mouseEvent` property.
+
 ## Freezing/unfreezing rows and columns
 
 ### Freezing rows
@@ -220,6 +236,10 @@ To hide a row, take the following steps:
 
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Hide rows](/img/hide_row_context_menu.png)
 
+:::info
+If the active cell is in a row that becomes hidden, the active cell moves to the first visible row below it. If there are no visible rows below, it moves to the last visible row above.
+:::
+
 ### Showing rows
 
 To show hidden rows, take one of the following steps:
@@ -235,6 +255,8 @@ To show hidden rows, take one of the following steps:
 (*In the image below the row 8 is hidden*)
 
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Show rows](/img/show_rows_context_menu.png)
+
+- or select rows or several cells so that the hidden rows were included into the selection, and press `Ctrl (Cmd) + Shift + 9`. For example, select rows 2-4 to show the hidden row 3. If the selection includes no hidden rows, screen readers announce "No hidden rows in the selection"
 
 ### Hiding columns
 
@@ -252,6 +274,10 @@ To hide a column, take the following steps:
 
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Hide columns](/img/hide_columns_context_menu.png)
 
+:::info
+If the active cell is in a column that becomes hidden, the active cell moves to the first visible column on the right of it. If there are no visible columns on the right, it moves to the last visible column on the left.
+:::
+
 ### Showing columns
 
 To show hidden columns, take one of the following steps:
@@ -268,4 +294,8 @@ To show hidden columns, take one of the following steps:
 
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Show columns](/img/show_columns_context_menu.png)
 
+- or select columns or several cells so that the hidden columns were included into the selection, and press `Ctrl (Cmd) + Shift + 0`. If the selection includes no hidden columns, screen readers announce "No hidden columns in the selection"
 
+:::note
+Windows can reserve the `Ctrl + Shift + 0` combination for switching the input language. In this case, use the context menu.
+:::

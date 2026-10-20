@@ -11,6 +11,7 @@ description: You can check a Methods overview of the DHTMLX JavaScript Spreadshe
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(../spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addformula_method.md)     | @getshort(../spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(../spreadsheet_addrow_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(../spreadsheet_announce_method.md)         |
 | [](api/spreadsheet_clear_method.md)          | @getshort(../spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(../spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(../spreadsheet_deleterow_method.md)      |

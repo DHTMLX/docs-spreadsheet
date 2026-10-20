@@ -57,7 +57,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 
 In the read-only mode, the toolbar, the menu and the formula bar are hidden. Users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers as "The sheet is read-only". The fill handle is hidden, and the custom `hotkeys` from the configuration are not registered. Check the details in the [`readonly`](api/spreadsheet_readonly_config.md#details) article.
 
-To turn off the keyboard navigation and the selection in the read-only mode, set the `selection` option to `false`:
+To turn off the keyboard navigation and the selection in the read-only mode, set the [`selection`](api/spreadsheet_selection_config.md) option to `false`:
 
 ~~~jsx {3}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
@@ -69,6 +69,20 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 You can also [customize the read-only behavior of Spreadsheet](customization.md#custom-read-only-mode).
 
 <iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+## Selection of cells
+
+By default, users can select cells with the mouse and the keyboard, and the Spreadsheet has an active cell. To turn the selection off, set the [`selection`](api/spreadsheet_selection_config.md) configuration option to `false`:
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    selection: false,
+});
+~~~
+
+In this case, the Spreadsheet has no active cell, the cells can't be selected or edited from the interface, and the context menu is not available.
+
+To turn the selection off and on at runtime, use the [`selection.disable()`](api/selection_disable_method.md) and [`selection.enable()`](api/selection_enable_method.md) methods. The [`selection.isDisabled()`](api/selection_isdisabled_method.md) method checks whether the selection is turned off.
 
 ## Custom number formats for cells
 

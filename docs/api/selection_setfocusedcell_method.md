@@ -41,7 +41,7 @@ The method makes the specified cell active and, after the redraw, moves the keyb
 
 If the keyboard focus is on the page body, for example, right after the page is loaded, the method moves it to the cell.
 
-The method does nothing while the selection is turned off with the `selection: false` configuration option or the `selection.disable()` method.
+The method does nothing while the selection is turned off with the [`selection: false`](api/spreadsheet_selection_config.md) configuration option or the [`selection.disable()`](api/selection_disable_method.md) method.
 
 **Change log:** Moving the keyboard focus to the cell was added in v6.0.4
 

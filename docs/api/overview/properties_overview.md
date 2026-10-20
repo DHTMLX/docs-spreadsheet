@@ -18,5 +18,6 @@ description: You can check a Properties overview of the DHTMLX JavaScript Spread
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |
 

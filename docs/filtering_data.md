@@ -20,6 +20,18 @@ To activate filtering, use one of two ways:
 
 After that, a **filter** icon appears on the right of each column header in the range. 
 
+## Opening a filter with the keyboard
+
+To open the filter of a column without the mouse:
+
+- Move the active cell to the column header cell with the **filter** icon
+
+- Press `Shift + F10` or the Menu key to call the context menu and choose *Open filter*
+
+The *Open filter* command appears in the context menu only for the cells with the **filter** icon. You can also choose it after right-clicking such a cell.
+
+The filter popup takes the focus, and `Tab` moves between its controls. `Esc` closes the popup and returns the focus to the cell. If a dropdown list or a date picker is open in the popup, `Esc` closes it first.
+
 ## Filtering by condition
 
 - Click the **filter** icon of the necessary column

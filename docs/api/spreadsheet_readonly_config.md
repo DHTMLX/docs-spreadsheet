@@ -50,7 +50,7 @@ Changes of the data are refused:
 
 The custom `hotkeys` from the Spreadsheet configuration are not registered in the read-only mode.
 
-To turn off the keyboard navigation and the selection as well, set the `selection` option to `false`. In this case, the Spreadsheet has no active cell, and the cells can't be selected by the mouse, the keyboard or the API:
+To turn off the keyboard navigation and the selection as well, set the [`selection`](api/spreadsheet_selection_config.md) option to `false`. In this case, the Spreadsheet has no active cell, and the cells can't be selected by the mouse, the keyboard or the API:
 
 ~~~jsx {3}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
