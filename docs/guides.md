@@ -6,7 +6,7 @@ description: You can study developer and user guides in the documentation of the
 
 # Guides
 
-DHTMLX Spreadsheet includes a wide range of features: import and export of data in different formats, convenient work with cell content and styles, an adaptable spreadsheet structure, a read-only mode, extensive look-and-feel customization, and integration with popular frameworks.
+DHTMLX Spreadsheet includes a wide range of features: import and export of data in different formats, convenient work with cell content and styles, an adaptable spreadsheet structure, a read-only mode, extensive look-and-feel customization, keyboard and screen-reader accessibility, and integration with popular frameworks.
 
 ## Developer guides
 
@@ -37,6 +37,11 @@ Shows how to load data into Spreadsheet, handle events, and use the main functio
 - [Integration with Angular](angular_integration.md) - GitHub demo of using Spreadsheet in an Angular app
 - [Integration with Svelte](svelte_integration.md) - GitHub demo of using Spreadsheet in a Svelte app
 - [Integration with Vue.js](vuejs_integration.md) - GitHub demo of using Spreadsheet in a Vue app
+
+### Accessibility
+
+- [Accessibility](accessibility.md) - WAI-ARIA support, keyboard navigation, screen-reader announcements, and high-contrast themes
+- [Conformance report (VPAT)](accessibility_conformance_report.md) - conformance with WCAG 2.2 AA, Section 508, and EN 301 549
 
 ### AI-assisted development
 

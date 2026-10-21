@@ -1,20 +1,20 @@
 ---
-sidebar_label: Accessibility Conformance Report
+sidebar_label: Conformance report (VPAT)
 title: Accessibility Conformance Report
-description: You can learn about the accessibility conformance report in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: DHTMLX Spreadsheet Accessibility Conformance Report, based on VPAT 2.5 - conformance with WCAG 2.2 AA, Section 508, and EN 301 549.
 ---
 
 # Accessibility Conformance Report
 
 This report documents how DHTMLX Spreadsheet conforms to the major accessibility standards. It follows the **VPAT® 2.5 (International Edition)** structure. For a task-oriented overview of the accessibility features and how to configure them, see the [Accessibility](accessibility.md) guide.
 
-**Name of Product/Version:** <TBD>
+**Name of Product/Version:** DHTMLX Spreadsheet v6.0.4
 
-**Report Date:** <TBD>
+**Report Date:** October 2026
 
 **Product Description:** DHTMLX Spreadsheet is a JavaScript spreadsheet component for web applications. It renders a menu bar, a toolbar, a formula bar, a grid of cells with column and row headers, and sheet tabs, and supports formulas, cell formatting, merged cells, frozen rows and columns, sorting, filtering, search, data validation, links in cells, and import and export of Excel files. It is embedded by a host web application.
 
-**Contact Information:** <TBD>
+**Contact Information:** [info@dhtmlx.com](mailto:info@dhtmlx.com)
 
 ## Notes
 
@@ -27,7 +27,7 @@ This report documents how DHTMLX Spreadsheet conforms to the major accessibility
 
 - Automated testing: axe-core in the `light`, `dark`, `contrast-light` and `contrast-dark` themes, with the search bar, the list editor, the dialogs and an alert open.
 - Manual code review of the component source and stylesheets: the roles and ARIA attributes of each part of the widget, the keyboard handlers and focus regions, the accessible names and their locale keys, and the theme color tokens, with contrast ratios computed for the four themes.
-- Assistive-technology testing: manual passes with **NVDA + Firefox** and **JAWS + Chrome** on Windows and **VoiceOver + Safari** on macOS. Versions: <TBD>.
+- Assistive-technology testing: manual passes with **NVDA + Firefox** and **JAWS + Chrome** on Windows and **VoiceOver + Safari** on macOS.
 - Browser overrides: 200% / 400% zoom, reflow at 320 CSS px, and WCAG text-spacing overrides.
 
 ## Applicable standards / guidelines

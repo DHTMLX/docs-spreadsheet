@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 6.0.4
 
-Released on <TBD>
+Released on October , 2026
 
 ### New functionality
 
@@ -27,7 +27,7 @@ Released on <TBD>
 - The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search. To turn the selection off, use the `selection: false` option
 - Removing a row or a column through a merged cell removes all the rows or columns of the merged cell
 - New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)
-- The [`--dhx-spreadsheet-focus-color`](themes/themes.md#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
+- The [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
 - React Spreadsheet: the [`selection`](react/props.md#runtime-props) prop, the [`ISelection`](react/types.md#re-exported-upstream-types) type, and [`readonly`](react/props.md#init-only-props) as an init-only prop
 
 ### Fixes

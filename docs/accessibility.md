@@ -1,7 +1,7 @@
 ---
 sidebar_label: Accessibility
 title: Accessibility
-description: You can learn about accessibility in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Make DHTMLX Spreadsheet accessible to keyboard and screen-reader users. Learn about the WAI-ARIA support, keyboard navigation, screen-reader announcements and high-contrast themes that target WCAG 2.2 AA.
 ---
 
 # Accessibility in DHTMLX Spreadsheet
@@ -264,7 +264,7 @@ The Spreadsheet has four built-in themes: `light` (default), `dark`, `contrast-l
 dhx.setTheme("contrast-light"); // or "contrast-dark"
 ~~~
 
-See the [Built-in themes](themes/themes.md) article for the details.
+See the [Built-in themes](/themes/) article for the details.
 
 In the light themes, the colors that mark the cell references of a formula have a contrast of at least 4.5:1.
 
@@ -332,7 +332,7 @@ The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the 
 
 ### Accessible default setup
 
-The Spreadsheet needs no configuration for the keyboard and the WAI-ARIA output. To meet the WCAG AA contrast requirements for text, select a contrast theme. See [Built-in themes](themes/themes.md) for the other ways to set a theme:
+The Spreadsheet needs no configuration for the keyboard and the WAI-ARIA output. To meet the WCAG AA contrast requirements for text, select a contrast theme. See [Built-in themes](/themes/) for the other ways to set a theme:
 
 ~~~jsx
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
@@ -426,7 +426,7 @@ The DHTMLX team validates the accessibility of Spreadsheet 6.0.4 against the com
 - [`selection`](api/spreadsheet_selection_config.md)
 - [`announce()`](api/spreadsheet_announce_method.md)
 - [Localization](localization.md)
-- [Built-in themes](themes/themes.md)
+- [Built-in themes](/themes/)
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [WAI-ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/)
 - [WAI-ARIA Authoring Practices: Grid pattern](https://www.w3.org/WAI/ARIA/apg/patterns/grid/)
