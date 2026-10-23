@@ -1,7 +1,7 @@
 ---
 sidebar_label: Configuration
 title: Configuration
-description: You can learn about the configuration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Configure DHTMLX Spreadsheet. Set up the toolbar, the editing bar, the menu, the number of rows and columns, the read-only mode, the selection of cells and number formats.
 ---
 
 # Configuration

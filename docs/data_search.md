@@ -1,7 +1,7 @@
 ---
 sidebar_label: Searching for data
 title: Searching for data
-description: You can learn about data search in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Search for data in DHTMLX Spreadsheet with the search bar. Open it with Ctrl (Cmd) + F or the Data menu, move between the matches and close it with Esc.
 ---
 
 # Searching for data

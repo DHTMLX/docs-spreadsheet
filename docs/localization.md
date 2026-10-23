@@ -1,7 +1,7 @@
 ---
 sidebar_label: Localization
 title: Localization
-description: You can learn about the localization of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Localize DHTMLX Spreadsheet. Check the default locale, create a custom one, translate the built-in widgets and the formula popup, and apply a locale.
 ---
 
 # Localization
@@ -281,7 +281,7 @@ const en = {
 
 The keys that start with `aria_` are not shown in the interface. Screen readers read them as the names of the controls, as the descriptions of the active cell, and as the messages of the live region that the [`announce()`](api/spreadsheet_announce_method.md) method also uses. The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the values when the string is read. Keep them in the translated strings.
 
-The `defaultSheetName` key sets the prefix of the names of new sheets: with the value `"Blatt"`, new sheets are named "Blatt1", "Blatt2" and so on.
+The `defaultSheetName` key sets the prefix of the default sheet names. The Spreadsheet adds a number to it, so the default value `"sheet"` gives the names "sheet1", "sheet2" and so on. For example, with `"Tabelle"`, the prefix that Microsoft Excel uses in German, the sheets are named "Tabelle1", "Tabelle2" and so on.
 
 ## Custom locale
 

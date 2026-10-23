@@ -1,7 +1,7 @@
 ---
 sidebar_label: Editing cells
 title: Editing cells
-description: You can learn about the work with cells in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Edit cells in DHTMLX Spreadsheet. Enter content, insert hyperlinks, use drop-down lists, fill several cells, copy cells to and from Excel and lock cells.
 ---
 
 # Editing cells
@@ -138,7 +138,7 @@ You can automatically fill cells with data. This is how it works:
 
 - copying the value
 
-​For example, to make a series 4,4,4,4..., type 4 in the first cell only.
+For example, to make a series 4,4,4,4..., type 4 in the first cell only.
 
 - following the pattern
     - to make a series 1, 2, 3, 4, 5, ... , type 1 and 2 into the first two cells.

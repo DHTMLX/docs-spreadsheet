@@ -1,7 +1,7 @@
 ---
 sidebar_label: Built-in themes
 title: Built-in Themes
-description: You can learn about the built-in themes of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Built-in themes of DHTMLX Spreadsheet, light and dark with their high contrast variants. Learn the Spreadsheet-specific CSS variables and how to set a theme.
 ---
 
 # Built-in themes

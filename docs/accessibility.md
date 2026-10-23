@@ -90,14 +90,14 @@ The following table lists the roles and the position and state attributes of the
 | Cell | `aria-readonly` | `"true"` in the read-only mode and on [locked cells](work_with_cells.md#locking-cells) |
 | Cell | `tabindex` | `"0"` on the active cell and `"-1"` on the other cells, so the cells are one tab stop |
 | Active cell | DOM focus | The keyboard focus is on the active cell itself, not on a separate input |
-| Merged cell | `aria-colspan` / `aria-rowspan` | The number of columns / rows the merged cell spans. The cells it covers are hidden with `aria-hidden="true"` |
+| Merged cell | `aria-colspan` / `aria-rowspan` | The number of columns or rows that the merged cell spans. The cells it covers are hidden with `aria-hidden="true"` |
 | Link in a cell | `<a href>` with `target="_blank"` and `rel="noopener noreferrer"` | A link with the `http`, `https`, `mailto`, `ftp` or `tel` scheme |
 
 A cell also contains visually hidden text, which screen readers read together with the value:
 
 | Hidden text | When |
 | ----------- | ---- |
-| The cell address, for example, "B7" | First, on the active cell and on the cells of a selected range |
+| The cell address, for example, "B7" | On the active cell and on every cell of a selected range. Screen readers read the address before the value |
 | "link" | On a selected cell with a link. <kbd>Alt</kbd> + <kbd>Enter</kbd> opens the link |
 | "locked" | On a selected locked cell |
 | A description of the formula error, for example, "Reference error. Check the cell references" | On a cell with a formula error |
@@ -130,14 +130,14 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
 | Toolbar | `role="toolbar"` + `aria-label` | "Formatting"; the toolbars of the Border popup, the search bar and the link popup are named "Borders", "Search" and "Link" |
-| Toolbar button | `aria-label` | The button value, or its tooltip for an icon button, for example, "Bold (ctrl+b)". Icons are `aria-hidden` |
+| Toolbar button | `aria-label` | The value of the button. An icon button is named by its tooltip, for example, "Bold (ctrl+b)". The icons are hidden with `aria-hidden="true"` |
 | Bold, Italic, Underline, Strikethrough, Lock, Filter | `aria-pressed` | Whether the formatting or the filter is on |
 | Button that opens a dropdown | `aria-haspopup="menu"`, `aria-expanded` | The dropdown is a `menu` named after its button |
 | Alignment, text wrapping, number formats | `role="menuitemradio"` + `aria-checked` | One option of an exclusive set |
 | Text color, Background color, Border color | `aria-label` | The name of the control and of the current color, for example, "Text color: dark gray" |
-| Color palette | `role="grid"` of `gridcell` elements | Named "Color palette"; each color is named by its color name and is `aria-selected` when chosen |
+| Color palette | `role="grid"` of `gridcell` elements | The grid is named "Color palette". Each color cell is named after its color, and the chosen one has `aria-selected="true"` |
 | Border style list | `role="listbox"` of `option` elements | The options are named "Thin line", "Medium line", "Thick line", "Dashed line", "Dotted line", "Double line" |
-| Menu bar | `role="menubar"` + `aria-label` | "Main". Its items open `menu` popups; the formatting items are `menuitemcheckbox`, the alignment and format items are `menuitemradio` |
+| Menu bar | `role="menubar"` + `aria-label` | "Main". Its items open popups with `role="menu"`. In the popups, the formatting items have `role="menuitemcheckbox"`, and the alignment and number format items have `role="menuitemradio"` |
 | Context menus | `role="menu"` + `aria-label` | "Cell" for the cells and "Sheet" for the sheet tabs |
 
 ### Sheet tabs
@@ -145,7 +145,7 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
 | Sheet tab bar | `role="toolbar"` + `aria-label` | "Sheets" |
-| Sheet tab | `button` + `aria-pressed` | Named by the sheet name; `aria-pressed="true"` on the active sheet |
+| Sheet tab | `button` + `aria-pressed` | The tab is named after its sheet. The tab of the active sheet has `aria-pressed="true"` |
 | Add sheet button | `aria-label` | "Add sheet" |
 
 ### Dialogs
@@ -158,7 +158,7 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 
 ### Hidden and decorative elements
 
-The Spreadsheet hides decorative parts from assistive technology with `aria-hidden="true"`: the lock, filter and column menu icons, the icons of hidden rows and columns, the select-all icon, the layer that draws the selection, copy and search highlights and the fill handle, the colored copy of the formula in the formula bar, and the cells covered by a merged cell. Layout wrappers have `role="presentation"`. The focus sentinels before and after the grid only pass the focus to the active cell.
+The Spreadsheet hides decorative parts from assistive technology with `aria-hidden="true"`. These are the lock, filter and column menu icons, the icons of hidden rows and columns, and the select-all icon. The layer that draws the selection, the copy and search highlights and the fill handle is hidden as well. So are the colored copy of the formula in the formula bar and the cells covered by a merged cell. Layout wrappers have `role="presentation"`. The focus sentinels before and after the grid only pass the focus to the active cell.
 
 ## Selection and editing model
 
@@ -187,23 +187,23 @@ The keyboard works as soon as the Spreadsheet is on the page; no configuration i
 | ---- | ------ |
 | Arrow keys | Move the active cell. The active cell stops at the first and last visible row and column |
 | <kbd>Shift</kbd> + arrow keys | Extend the selected range |
-| <kbd>Home</kbd> / <kbd>End</kbd> | Move to the first / last visible cell of the row |
+| <kbd>Home</kbd> / <kbd>End</kbd> | Move to the first or the last visible cell of the row |
 | <kbd>Ctrl</kbd> + arrow keys, <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd> | Move to the edge of the sheet |
-| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move right / left within the row. From the last / first cell of the sheet, move the focus out of the Spreadsheet |
+| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move right or left within the row. From the last or the first cell of the sheet, move the focus out of the Spreadsheet |
 | <kbd>Enter</kbd>, <kbd>F2</kbd> | Open the editor |
 | <kbd>Esc</kbd> | Close the editor without saving |
-| <kbd>Ctrl</kbd> + <kbd>Space</kbd> / <kbd>Shift</kbd> + <kbd>Space</kbd> | Select the column / the row |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> / <kbd>0</kbd> | Show the hidden rows / columns inside the selected range |
+| <kbd>Ctrl</kbd> + <kbd>Space</kbd> / <kbd>Shift</kbd> + <kbd>Space</kbd> | Select the column or the row |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> / <kbd>0</kbd> | Show the hidden rows or columns inside the selected range |
 | <kbd>Alt</kbd> + <kbd>Enter</kbd> | Open the link of the active cell |
 | <kbd>Shift</kbd> + <kbd>F10</kbd> or the Menu key | Open the context menu with the commands for the cell, or for the column after <kbd>Ctrl</kbd> + <kbd>Space</kbd> |
-| <kbd>Alt</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Page Down</kbd> / <kbd>Page Up</kbd> | Switch to the next / previous sheet |
+| <kbd>Alt</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Page Down</kbd> / <kbd>Page Up</kbd> | Switch to the next or the previous sheet |
 
 ### Moving between the parts
 
 | Keys | Action |
 | ---- | ------ |
-| <kbd>Ctrl</kbd> + <kbd>F6</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> | Move the focus to the next / previous part: the menu, the toolbar, the sheet, the sheet tabs. An open edit is saved first |
-| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move the focus to the next / previous part in the page tab order. Each bar is one tab stop, and the focus lands on the control used last |
+| <kbd>Ctrl</kbd> + <kbd>F6</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> | Move the focus to the next or the previous part: the menu, the toolbar, the sheet, the sheet tabs. An open edit is saved first |
+| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move the focus to the next or the previous part in the page tab order. Each bar is one tab stop, and the focus lands on the control used last |
 
 ### Toolbar, menu bar and sheet tabs
 
@@ -213,7 +213,7 @@ The keyboard works as soon as the Spreadsheet is on the page; no configuration i
 | <kbd>Enter</kbd> / <kbd>Space</kbd> | Press the control: run the command, open the dropdown or switch to the sheet |
 | <kbd>↓</kbd> | Open the dropdown and move the focus to its first item |
 | <kbd>↑</kbd> / <kbd>↓</kbd> | Move between the items of an open dropdown or menu |
-| <kbd>→</kbd> / <kbd>←</kbd> | Open / close a submenu |
+| <kbd>→</kbd> / <kbd>←</kbd> | Open or close a submenu |
 | <kbd>Esc</kbd> | Close the dropdown or the menu and return the focus to its control |
 
 ### Popups and dialogs

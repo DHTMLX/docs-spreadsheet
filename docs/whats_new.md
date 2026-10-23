@@ -19,13 +19,14 @@ Released on October , 2026
     - new configuration property: [`selection`](api/spreadsheet_selection_config.md)
     - new methods of the selection module: [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md), [`isDisabled()`](api/selection_isdisabled_method.md)
 - The [`announce()`](api/spreadsheet_announce_method.md) method sends a status message to screen readers
-- New commands of the [context menu](customization.md#context-menu): *Column width*, *Row height* and *Open filter*
+- New commands of the [context menu](customization.md#context-menu): [*Column width*, *Row height*](work_with_rows_cols.md#setting-column-width-and-row-height) and [*Open filter*](filtering_data.md#opening-a-filter-with-the-keyboard)
 
 ### Updates
 
 - Keyboard navigation: the focus stays on the active cell, `Ctrl + F6` moves it between the menu, the toolbar, the sheet and the sheet tabs, and new shortcuts are added. Check the [Hot keys list](hotkeys.md)
+- The [`setFocusedCell()`](api/selection_setfocusedcell_method.md) method moves the keyboard focus to the cell
 - The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search. To turn the selection off, use the `selection: false` option
-- Removing a row or a column through a merged cell removes all the rows or columns of the merged cell
+- [Removing a row or a column through a merged cell](merge_cells.md#removing-rows-and-columns-of-merged-cells) removes all the rows or columns of the merged cell
 - New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)
 - The [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
 - React Spreadsheet: the [`selection`](react/props.md#runtime-props) prop, the [`ISelection`](react/types.md#re-exported-upstream-types) type, and [`readonly`](react/props.md#init-only-props) as an init-only prop
@@ -34,6 +35,7 @@ Released on October , 2026
 
 - A merged cell was dropped instead of shifted when a row or column before it was deleted
 - Deleting a row or column through a merged cell removed only one line of the merge
+- The context menu labels for removing rows and columns didn't show all the rows or columns of a merged cell that would be removed
 - Rows were not deleted when they covered the whole filtered range
 - The frozen area didn't shrink when frozen rows or columns were deleted
 - Autofill threw an error when the dragged cells held no plain number

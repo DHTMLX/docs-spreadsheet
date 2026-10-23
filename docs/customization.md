@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: Customization
-description: You can learn about the customization of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Customize DHTMLX Spreadsheet. Change icons, and add, update and delete controls of the toolbar, the menu and the context menu, or build a custom read-only mode.
 ---
 
 # Customization

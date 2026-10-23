@@ -1,7 +1,7 @@
 ---
 sidebar_label: Guides overview
 title: Developer and User Guides
-description: You can study developer and user guides in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Developer and user guides of DHTMLX Spreadsheet, from initialization, configuration and data loading to editing cells, formatting and work with sheets.
 ---
 
 # Guides

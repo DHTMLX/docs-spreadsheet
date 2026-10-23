@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFocusedCell() 
 title: setFocusedCell selection method
-description: You can learn about the setFocusedCell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Make a cell active and move the keyboard focus to it in DHTMLX Spreadsheet with the selection.setFocusedCell() method.
 ---
 
 # setFocusedCell()
@@ -13,12 +13,13 @@ description: You can learn about the setFocusedCell selection method in the docu
 ### Usage
 
 ~~~jsx
-setFocusedCell(cell: string): void;
+setFocusedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### Parameters
 
 - `cell` - (required) the id of a cell to set focus on
+- `scroll` - (optional) whether to scroll the Spreadsheet to the cell, `true` by default
 
 ### Example
 
@@ -40,6 +41,8 @@ The method makes the specified cell active and, after the redraw, moves the keyb
 - in an open cell editor
 
 If the keyboard focus is on the page body, for example, right after the page is loaded, the method moves it to the cell.
+
+If the [`beforeFocusSet`](api/spreadsheet_beforefocusset_event.md) event handler returns `false`, the active cell isn't changed and the keyboard focus isn't moved.
 
 The method does nothing while the selection is turned off with the [`selection: false`](api/spreadsheet_selection_config.md) configuration option or the [`selection.disable()`](api/selection_disable_method.md) method.
 

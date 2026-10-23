@@ -1,7 +1,7 @@
 ---
 sidebar_label: deleteRow()
 title: deleteRow method
-description: You can learn about the deleteRow method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Remove a row or a range of rows from DHTMLX Spreadsheet with the deleteRow() method, including all the rows of a merged cell.
 ---
 
 # deleteRow()
@@ -37,7 +37,7 @@ spreadsheet.deleteRow("G2");
 ~~~
 
 :::note
-You can delete several rows by providing a range of cells' ids as a parameter of the method, for example: "A1:C3". If the range touches a merged cell, the rows of the whole merged cell are deleted.
+You can delete several rows by providing a range of cells' ids as a parameter of the method, for example: "A1:C3". If the range touches a merged cell, the rows of the whole merged cell are deleted. A range that covers whole rows, for example, "A2:Z3" in a sheet with columns A to Z, is deleted as is.
 :::
 
 ### Details
@@ -51,7 +51,7 @@ spreadsheet.mergeCells("B2:B4");
 spreadsheet.deleteRow("B3");
 ~~~
 
-Merged cells below the deleted rows move up together with their rows. If the deleted rows are frozen, the frozen area shrinks by the number of the deleted frozen rows.
+When whole rows are deleted, a merged cell that spans them becomes smaller. Merged cells below the deleted rows move up together with their rows. If the deleted rows are frozen, the frozen area shrinks by the number of the deleted frozen rows.
 
 The [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) events of the `"deleteRow"` action receive the cell that is passed to the method, not the range of the deleted rows.
 

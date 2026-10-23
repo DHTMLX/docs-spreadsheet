@@ -18,7 +18,7 @@ getFocusedCell(): string;
 
 ### Returns
 
-The method returns the id of the focused cell
+The method returns the id of the focused cell, or `undefined` if there is no focused cell, for example, while the selection is turned off with the [`selection: false`](api/spreadsheet_selection_config.md) configuration option or the [`selection.disable()`](api/selection_disable_method.md) method
 
 ### Example
 

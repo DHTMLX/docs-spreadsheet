@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration with Vue
 title: Vue Integration
-description: You can learn about the Vue integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Use DHTMLX Spreadsheet in a Vue application. Create a project, add Spreadsheet as a Vue component, load data and handle events.
 ---
 
 # Integration with Vue

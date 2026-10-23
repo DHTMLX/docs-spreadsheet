@@ -1,7 +1,7 @@
 ---
 sidebar_label: Filtering data
 title: Filtering data
-description: You can learn about data filtering in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Filter data in DHTMLX Spreadsheet by condition or by values, open a filter with the keyboard, and clear or remove filters.
 ---
 
 # Filtering data

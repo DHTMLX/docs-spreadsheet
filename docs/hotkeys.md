@@ -1,7 +1,7 @@
 ---
 sidebar_label: Hot keys list
 title: Hotkeys
-description: You can learn about the hotkeys in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Keyboard shortcuts of DHTMLX Spreadsheet for editing, formatting, navigation, selection, search, work with sheets, rows and columns, popups and dialogs.
 ---
 
 # Hot keys list
@@ -9,7 +9,7 @@ description: You can learn about the hotkeys in the documentation of the DHTMLX 
 Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet.
 
 :::note
-The shortcuts for cells work while the focus is in the cells or in the formula bar. The formatting, undo, search and link shortcuts also work while the focus is on the toolbar. On the toolbar, the menu bar and the sheet tabs, the arrow keys, **Home**, **End**, **Enter** and **Space** control the bar itself, as described in the [Moving the focus](#moving-the-focus) section.
+The shortcuts for cells work while the focus is in the cells or in the formula bar. The formatting, undo, search and link shortcuts also work while the focus is on the toolbar. When the focus is on the toolbar, the menu bar or the sheet tabs, the arrow keys, **Home**, **End**, **Enter** and **Space** work within that bar (see [Moving the focus](#moving-the-focus)).
 
 In the [read-only mode](api/spreadsheet_readonly_config.md), the shortcuts for navigation, selection, copying and search work, and the editing shortcuts are refused.
 :::
@@ -24,7 +24,7 @@ In the [read-only mode](api/spreadsheet_readonly_config.md), the shortcuts for n
         </tr>
         <tr>
             <td><b>Ctrl (Cmd) + Enter</b></td>
-            <td>stops cell’s editing, leaves selection on the cell</td>
+            <td>stops cell's editing, leaves selection on the cell</td>
         </tr>
         <tr>
             <td><b>F2</b></td>

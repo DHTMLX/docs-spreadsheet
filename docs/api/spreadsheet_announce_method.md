@@ -1,14 +1,14 @@
 ---
 sidebar_label: announce()
 title: announce method
-description: You can learn about the announce method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Send a status message to screen reader users of DHTMLX Spreadsheet with the announce() method, for example, to report the result of a custom toolbar or menu command.
 ---
 
 # announce()
 
 ### Description
 
-@short: Sends a status message to screen readers
+@short: Announces a message to screen reader users
 
 ### Usage
 
@@ -48,12 +48,19 @@ spreadsheet.menu.events.on("click", function (id) {
 
 ### Details
 
-The method puts the message into a live region with `role="status"` and `aria-live="polite"`, which is placed next to the grid and hidden visually. A screen reader reads the message after it finishes the current speech, and the keyboard focus stays where it is.
+Use the method to tell screen reader users about the result of an action that has no visible element of its own, such as a custom toolbar or menu command.
 
-The Spreadsheet uses the same live region for its own announcements, such as the refused edits, the search results and the progress of import and export. A message that repeats the current one is announced again.
+The message goes to a visually hidden live region placed right after the grid element (`role="status"`, `aria-live="polite"`, `aria-atomic="true"`). The screen reader reads it after finishing its current speech, and the keyboard focus doesn't move.
 
-The method works in the [read-only mode](api/spreadsheet_readonly_config.md) and while the [selection](api/spreadsheet_selection_config.md) is turned off.
+The Spreadsheet announces its own messages through the same region: the selected range, new formula errors and invalid values, refused edits, search results, the start and end of import and export, and new column widths and row heights (see the [list of status announcements](accessibility.md#status-announcements)). The region holds one message at a time, so a later message, your own or a built-in one, replaces the previous one.
+
+If you pass the text that is currently in the region, the screen reader reads it again.
+
+The method also works in the [read-only mode](api/spreadsheet_readonly_config.md) and while the [selection](api/spreadsheet_selection_config.md) is turned off. It does nothing before the Spreadsheet is attached to the page and after the `destructor()` method is called.
 
 **Change log:** Added in v6.0.4
 
-**Related article:** [Customization](customization.md#menu)
+**Related articles:**
+- [Status announcements](accessibility.md#status-announcements)
+- [Announcing a custom command](accessibility.md#announcing-a-custom-command)
+- [Customizing the menu](customization.md#menu)

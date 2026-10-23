@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration with Angular
 title: Angular Integration
-description: You can learn about the Angular integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Use DHTMLX Spreadsheet in an Angular application. Create a project, add Spreadsheet as an Angular component, load data and handle events.
 ---
 
 # Integration with Angular
