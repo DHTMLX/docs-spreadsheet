@@ -55,7 +55,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 });
 ~~~
 
-In the read-only mode, the toolbar, the menu and the formula bar are hidden. Users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers as "The sheet is read-only". The fill handle is hidden. Check the details in the [`readonly`](api/spreadsheet_readonly_config.md#details) article.
+In the read-only mode, the toolbar, the menu and the formula bar are hidden. Users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers as "The sheet is read-only". The fill handle is hidden. Check the details in the [`readonly`](api/spreadsheet_readonly_config.md#details) article. To learn how keyboard and screen reader users work with a read-only Spreadsheet, check the [Read-only setup](accessibility.md#read-only-setup) section of the Accessibility guide.
 
 To turn off the keyboard navigation and the selection in the read-only mode, set the [`selection`](api/spreadsheet_selection_config.md) option to `false`:
 
@@ -83,6 +83,8 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 In this case, the Spreadsheet has no active cell, the cells can't be selected or edited from the interface, and the context menu is not available.
 
 To turn the selection off and on at runtime, use the [`selection.disable()`](api/selection_disable_method.md) and [`selection.enable()`](api/selection_enable_method.md) methods. The [`selection.isDisabled()`](api/selection_isdisabled_method.md) method checks whether the selection is turned off.
+
+Without the selection, the grid becomes one tab stop that the keyboard passes through. Check the [Read-only setup](accessibility.md#read-only-setup) section of the Accessibility guide.
 
 ## Custom number formats for cells
 

@@ -48,4 +48,6 @@ The method does nothing while the selection is turned off with the [`selection: 
 
 **Change log:** Moving the keyboard focus to the cell was added in v6.0.4
 
-**Related article:** [Work with Spreadsheet](working_with_ssheet.md)
+**Related articles:**
+- [Work with Spreadsheet](working_with_ssheet.md)
+- [Accessibility: keyboard navigation](accessibility.md#keyboard-navigation)

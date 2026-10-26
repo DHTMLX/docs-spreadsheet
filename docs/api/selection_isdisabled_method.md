@@ -38,3 +38,4 @@ const disabled = spreadsheet.selection.isDisabled(); // -> true
 - [`selection`](api/spreadsheet_selection_config.md)
 - [`enable()`](api/selection_enable_method.md)
 - [`disable()`](api/selection_disable_method.md)
+- [Accessibility: read-only setup](accessibility.md#read-only-setup)

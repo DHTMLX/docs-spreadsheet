@@ -41,6 +41,7 @@ Shows how to load data into Spreadsheet, handle events, and use the main functio
 ### Accessibility
 
 - [Accessibility](accessibility.md) - WAI-ARIA support, keyboard navigation, screen-reader announcements, and high-contrast themes
+- [Setting up an accessible Spreadsheet](accessibility.md#configuration-recipes) - configurations for keyboard and screen-reader users, including the read-only mode
 - [Conformance report (VPAT)](accessibility_conformance_report.md) - conformance with WCAG 2.2 AA, Section 508, and EN 301 549
 
 ### AI-assisted development

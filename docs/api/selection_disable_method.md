@@ -44,3 +44,4 @@ If the selection is already turned off, the method does nothing.
 **Related articles:**
 - [`selection`](api/spreadsheet_selection_config.md)
 - [`enable()`](api/selection_enable_method.md)
+- [Accessibility: read-only setup](accessibility.md#read-only-setup)
