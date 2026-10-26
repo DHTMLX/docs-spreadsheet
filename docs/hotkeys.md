@@ -12,6 +12,8 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 The shortcuts for cells work while the focus is in the cells or in the formula bar. The formatting, undo, search and link shortcuts also work while the focus is on the toolbar. When the focus is on the toolbar, the menu bar or the sheet tabs, the arrow keys, **Home**, **End**, **Enter** and **Space** work within that bar (see [Moving the focus](#moving-the-focus)).
 
 In the [read-only mode](api/spreadsheet_readonly_config.md), the shortcuts for navigation, selection, copying and search work, and the editing shortcuts are refused.
+
+To learn how the keyboard navigation works with screen readers, check the [Accessibility](accessibility.md#keyboard-navigation) guide.
 :::
 
 ## Editing

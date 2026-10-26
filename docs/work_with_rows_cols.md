@@ -126,6 +126,8 @@ To change the column width so that it would automatically fit the longest conten
 
 ## Setting column width and row height
 
+### Setting column width
+
 To set an exact width of columns, take the following steps:
 
 1\. Select a column or a cell in the column. To change several columns, select a range of cells that spans them.
@@ -134,11 +136,25 @@ To set an exact width of columns, take the following steps:
 
 3\. In the *Column width* dialog, enter the width in pixels and click **Apply** or press `Enter`.
 
-To set an exact height of rows, choose *Rows -> Row height* in the context menu and enter the height in the *Row height* dialog.
+### Setting row height
+
+To set an exact height of rows, take the following steps:
+
+1\. Select a row or a cell in the row. To change several rows, select a range of cells that spans them.
+
+2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Rows -> Row height*.
+
+3\. In the *Row height* dialog, enter the height in pixels and click **Apply** or press `Enter`.
+
+### How the new size is applied
 
 The dialog shows the current size of the first selected column or row and applies the new size to every column or row of the selected range. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller value is replaced with the minimum. The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
 
-The new size can be undone with `Ctrl (Cmd) + Z`. The command runs the `resizeCol` or `resizeRow` [action](api/overview/actions_overview.md). The `config` object that the [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) events receive contains the range of the columns or rows in `cell` and the new size in `val`. Unlike a resize by dragging, the `config` object has no `mouseEvent` property.
+### Undoing the change
+
+The new size can be undone with `Ctrl (Cmd) + Z`.
+
+To handle the change in code, use the `resizeCol` and `resizeRow` [actions](api/overview/actions_overview.md#list-of-actions).
 
 ## Freezing/unfreezing rows and columns
 

@@ -157,7 +157,11 @@ For example, to make a series North, South, North, South, ..., type North and So
 
 ## Copying cells to and from Excel
 
-Cells copied with **Ctrl (Cmd) + C** keep their values and styles, including the font size, when you paste them into Microsoft Excel or into another place of the Spreadsheet. Cells copied in Microsoft Excel keep the font size when you paste them into the Spreadsheet with **Ctrl (Cmd) + V**.
+You can copy cells with **Ctrl (Cmd) + C** and paste them with **Ctrl (Cmd) + V** within the Spreadsheet and between the Spreadsheet and Microsoft Excel:
+
+- within the Spreadsheet, the cells keep their values, formulas, styles, number formats and links. The cell references in the formulas are shifted to the new position
+- in Excel, the pasted cells get the values (the results of the formulas, not the formulas), the styles (including the font size), merged cells and links. The rows hidden by a filter are skipped
+- cells copied from Excel keep their values, styles (including the font size), number formats, merged cells and links when you paste them into the Spreadsheet
 
 ## Locking cells
 

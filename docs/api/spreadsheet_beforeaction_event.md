@@ -21,7 +21,18 @@ beforeAction: (action: string, config: object) => void | boolean;
 The callback of the event takes the following parameters:
 
 - `action` - (required) the name of the action. Check the full list of available actions [here](api/overview/actions_overview.md#list-of-actions)
-- `config` - (required) an object with parameters of the action
+- `config` - (required) an object with parameters of the action. The set of properties depends on the action. The object can include:
+    - `action` - (string) the name of the action
+    - `cell` - (string) the id of the cell or the range of cells the action is applied to, for example, `"A1"` or `"B2:D5"`
+    - `row` - (number) the zero-based index of the row of the cell
+    - `col` - (number) the zero-based index of the column of the cell
+    - `val` - (any) the new value that the action applies, for example, a cell value, a style or a size
+    - `prev` - (any) the previous value
+    - `groupAction` - (string) the name of the group action, if the action is applied to a range of cells
+    - `pageId` - (string | number) the id of the sheet
+    - `pageName` - (string) the name of the sheet
+
+    When several actions are executed together, for example, on paste, the `action` parameter is `"groupAction"`, and `config` is an array of such objects.
 
 ### Returns
 

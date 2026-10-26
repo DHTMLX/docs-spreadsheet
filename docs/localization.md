@@ -279,7 +279,7 @@ const en = {
 };
 ~~~
 
-The keys that start with `aria_` are not shown in the interface. Screen readers read them as the names of the controls, as the descriptions of the active cell, and as the messages of the live region that the [`announce()`](api/spreadsheet_announce_method.md) method also uses. The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the values when the string is read. Keep them in the translated strings.
+The keys that start with `aria_` are not shown in the interface. Screen readers read them as the names of the controls, as the descriptions of the active cell, and as the messages of the live region that the [`announce()`](api/spreadsheet_announce_method.md) method also uses. The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the values when the string is read. Keep them in the translated strings. For an example of translated accessibility strings, check the [Accessibility](accessibility.md#translated-accessibility-strings) guide.
 
 The `defaultSheetName` key sets the prefix of the default sheet names. The Spreadsheet adds a number to it, so the default value `"sheet"` gives the names "sheet1", "sheet2" and so on. For example, with `"Tabelle"`, the prefix that Microsoft Excel uses in German, the sheets are named "Tabelle1", "Tabelle2" and so on.
 

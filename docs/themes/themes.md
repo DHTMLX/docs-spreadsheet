@@ -13,7 +13,7 @@ The DHTMLX Spreadsheet library provides 4 predefined themes:
 - [light high contrast theme](#light-high-contrast-theme) ("contrast-light")
 - [dark high contrast theme](#dark-high-contrast-theme) ("contrast-dark")
 
-The Spreadsheet themes are developed in accordance with international standards. The high contrast themes help users with vision impairment. For more details, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
+The Spreadsheet themes are developed in accordance with international standards. The high contrast themes help users with vision impairment. For the contrast of the themes and the keyboard focus indicator in Spreadsheet, check the [High contrast and focus](accessibility.md#high-contrast-and-focus) section of the Accessibility guide. For the accessibility of the DHTMLX Suite widgets, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
 
 You can try all themes in the example below:
 

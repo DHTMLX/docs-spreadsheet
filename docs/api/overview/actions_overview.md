@@ -67,8 +67,8 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **merge**            | The action is executed when merging a range of cells                                                                                                                                                    |
 | **removeCellStyles** | The action is executed when clearing styles of a cell                                                                                                                                                   |
 | **renameSheet**      | The action is executed when renaming a sheet                                                                                                                                                            |
-| **resizeCol**        | The action is executed when resizing a column                                                                                                                                                           |
-| **resizeRow**        | The action is executed when resizing a row                                                                                                                                                              |
+| **resizeCol**        | The action is executed when resizing a column by dragging its border or with the *Column width* command |
+| **resizeRow**        | The action is executed when resizing a row by dragging its border or with the *Row height* command |
 | **setCellFormat**    | The action is executed when changing the format of a cell                                                                                                                                               |
 | **setCellValue**     | The action is executed when changing or removing the value of a cell                                                                                                                                    |
 | **setValidation**    | The action is executed when setting data validation for a cell                                                                                                                                          |
@@ -77,6 +77,13 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **toggleVisibility** | The action is executed when hiding/showing columns/rows                                                                                                                                                 |
 | **toggleFreeze**     | The action is executed when freezing/unfreezing columns/rows                                                                                                                                            |
 | **unmerge**          | The action is executed when splitting cells                                                                                                                                                             |
+
+:::note
+In the `config` object of the [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) events, the **resizeCol** and **resizeRow** actions pass:
+
+- `cell` - the cell or range of cells whose columns or rows are resized
+- `val` - the new width or height in pixels. It is set only for the *Column width* and *Row height* commands, not for resizing by dragging
+:::
 
 **Change log:**
 
