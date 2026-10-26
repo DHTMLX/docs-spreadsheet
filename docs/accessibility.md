@@ -22,7 +22,7 @@ Conformance is reported criterion by criterion for DHTMLX Spreadsheet 6.0.4. The
 | ---- | ------- |
 | Keyboard operation | Every command on the cells has a key. The toolbar, the menu bar and the sheet tabs are single tab stops navigated with the arrow keys. The column width, the row height and the column filter have context menu commands, so they don't require dragging or a click on an icon |
 | WAI-ARIA semantics | The cells are a `grid` with `columnheader`, `rowheader` and `gridcell` elements. The roles are always rendered |
-| Focus model | The keyboard focus is on the active cell. <kbd>Tab</kbd> enters the sheet on the active cell and leaves the Spreadsheet from the last and the first cell. <kbd>Ctrl</kbd> + <kbd>F6</kbd> moves the focus between the menu, the toolbar, the sheet and the sheet tabs |
+| Focus model | The keyboard focus is on the active cell. <kbd>Tab</kbd> enters the sheet on the active cell and leaves it from the last and the first cell. <kbd>Ctrl</kbd> + <kbd>F6</kbd> moves the focus between the menu, the toolbar, the sheet and the sheet tabs |
 | Selection model | The active cell, a range and several ranges are exposed through `aria-selected`, and the extent of a range is announced. The selection can be turned off with the [`selection`](api/spreadsheet_selection_config.md) option |
 | Read-only mode | The sheet can be navigated, selected, copied and searched; edits are refused and announced |
 | Screen readers | Tested with NVDA, JAWS and VoiceOver |
@@ -87,9 +87,9 @@ The following table lists the roles and the position and state attributes of the
 | Cell | `role="gridcell"` + `aria-colindex` | A cell. Column A has `aria-colindex="2"`, since the row numbers are the first column |
 | Row number | `role="rowheader"` | The header of the row |
 | Cell | `aria-selected` | `"true"` on the active cell and on every cell of the selected ranges |
-| Cell | `aria-readonly` | `"true"` in the read-only mode and on [locked cells](work_with_cells.md#locking-cells) |
+| Cell | `aria-readonly` | `"true"` in the read-only mode, while the [selection](api/spreadsheet_selection_config.md) is turned off, and on [locked cells](work_with_cells.md#locking-cells) |
 | Cell | `tabindex` | `"0"` on the active cell and `"-1"` on the other cells, so the cells are one tab stop |
-| Active cell | DOM focus | The keyboard focus is on the active cell itself, not on a separate input |
+| Active cell | DOM focus | The keyboard focus is on the active cell itself, not on a separate input. While the cell is edited, the focus is on the cell editor |
 | Merged cell | `aria-colspan` / `aria-rowspan` | The number of columns or rows that the merged cell spans. The cells it covers are hidden with `aria-hidden="true"` |
 | Link in a cell | `<a href>` with `target="_blank"` and `rel="noopener noreferrer"` | A link with the `http`, `https`, `mailto`, `ftp` or `tel` scheme |
 
@@ -119,11 +119,11 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
-| Formula bar input | `aria-label` | "Formula bar, B7", with the address of the active cell. The input is `readonly` on a locked cell, so its value can still be read |
+| Formula bar input | `aria-label` | "Formula bar, B7", with the address of the active cell. The input is `readonly` on a locked cell and while the selection is turned off, so its value can still be read |
 | Cell editor input | `aria-label` | "Cell editor, B7" |
 | Editor of a cell with a list of values | `role="combobox"`, `aria-controls`, `aria-expanded`, `aria-activedescendant` | The list of values is a `listbox` of `option` elements, and the highlighted option is `aria-selected` |
-| Editor with an invalid value | `aria-invalid="true"` | The value is not in the list of values |
-| Close icon of the formula help | `role="button"` + `aria-label` | "Close formula help" |
+| Editor with an invalid value | `aria-invalid="true"` | The saved value of the cell is not in its list of values. The attribute is updated after the value is saved, not while the user types |
+| Close icon of the formula help | `role="button"` + `aria-label` | "Close formula help". The icon is focusable and closes the help on <kbd>Enter</kbd> or <kbd>Space</kbd> |
 
 ### Toolbar and menus
 
@@ -137,7 +137,7 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 | Text color, Background color, Border color | `aria-label` | The name of the control and of the current color, for example, "Text color: dark gray" |
 | Color palette | `role="grid"` of `gridcell` elements | The grid is named "Color palette". Each color cell is named after its color, and the chosen one has `aria-selected="true"` |
 | Border style list | `role="listbox"` of `option` elements | The options are named "Thin line", "Medium line", "Thick line", "Dashed line", "Dotted line", "Double line" |
-| Menu bar | `role="menubar"` + `aria-label` | "Main". Its items open popups with `role="menu"`. In the popups, the formatting items have `role="menuitemcheckbox"`, and the alignment and number format items have `role="menuitemradio"` |
+| Menu bar | `role="menubar"` + `aria-label` | "Main". Its items open popups with `role="menu"`. In the popups, the formatting items have `role="menuitemcheckbox"`, and the alignment, text wrapping and number format items have `role="menuitemradio"`. Both report their state with `aria-checked` |
 | Context menus | `role="menu"` + `aria-label` | "Cell" for the cells and "Sheet" for the sheet tabs |
 
 ### Sheet tabs
@@ -153,7 +153,8 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
 | Column width and Row height dialogs | `role="dialog"`, `aria-modal="true"`, `aria-label` | Named by the dialog title. The input is labeled "Width in pixels" / "Height in pixels" |
-| Search bar, Insert link, Data validation | `role="dialog"` + `aria-label` | Named by the dialog title. The search bar buttons are named "Previous match", "Next match" and "Close search" |
+| Search bar | `role="dialog"` + `aria-label` | Named "Search". The search input is labeled "Search", and the buttons are named "Previous match", "Next match" and "Close search" |
+| Insert link, Data validation | `role="dialog"` + `aria-label` | Named by the dialog title |
 | Alerts | `role="alertdialog"`, `aria-modal="true"`, `aria-labelledby`, `aria-describedby` | Named by the alert header and described by its text |
 
 ### Hidden and decorative elements
@@ -162,7 +163,7 @@ The Spreadsheet hides decorative parts from assistive technology with `aria-hidd
 
 ## Selection and editing model
 
-The DOM focus is on the active cell itself, so a screen reader reads the cell, not a separate input. When the active cell moves, the screen reader reads the address of the new cell first, then its value and its hidden descriptions. When the user selects a range with <kbd>Shift</kbd> + arrow keys or with the mouse, the screen reader announces the extent of the range once the selection stops changing.
+The DOM focus is on the active cell itself, so a screen reader reads the cell, not a separate input. When the active cell moves, the screen reader reads the address of the new cell first, then its value and its hidden descriptions. When the user selects a range with the keyboard or the mouse, the screen reader announces the extent of the range once the selection stops changing. A cell shared by several ranges is counted once, and the cells of hidden rows and columns are counted. Nothing is announced while a cell is edited. When a range is reduced to the active cell, the address of the cell is announced.
 
 | Situation | What the screen reader gets |
 | --------- | --------------------------- |
@@ -170,12 +171,12 @@ The DOM focus is on the active cell itself, so a screen reader reads the cell, n
 | A range is selected | "B2 to D7, 18 cells" |
 | Several ranges are selected with <kbd>Ctrl</kbd> | "B2 to B4, D2 to D4, 6 cells" |
 | The editor opens with <kbd>Enter</kbd>, <kbd>F2</kbd> or typing | The editor input named "Cell editor, B7" |
-| The editor of a cell with a list of values opens | A combobox with its list and the highlighted option |
-| The edit is saved | New formula errors and invalid values in the edited cell and in the cells that depend on it are announced |
+| The editor of a cell with a list of values opens | An expanded combobox. After <kbd>↑</kbd> or <kbd>↓</kbd>, the highlighted option of the list is read |
+| The edit is saved | New formula errors in the edited cells and in the cells that depend on them, and invalid values in the edited cells, are announced |
 | An edit of a locked cell is refused | "The cell is locked" |
 | An editing key is pressed in the read-only mode | "The sheet is read-only" |
 
-<kbd>Enter</kbd>, <kbd>F2</kbd> or typing opens the editor. <kbd>Enter</kbd> saves the value and moves down, <kbd>Tab</kbd> saves it and moves right, and <kbd>Esc</kbd> cancels the edit.
+<kbd>Enter</kbd>, <kbd>F2</kbd> or typing opens the editor. <kbd>Enter</kbd> saves the value and moves down, <kbd>Tab</kbd> saves it and moves right, and <kbd>Esc</kbd> cancels the edit. Text composed with an input method editor (IME) is shown over the active cell from the first key and opens the editor when the composition ends.
 
 ## Keyboard navigation
 
@@ -189,7 +190,7 @@ The keyboard works as soon as the Spreadsheet is on the page; no configuration i
 | <kbd>Shift</kbd> + arrow keys | Extend the selected range |
 | <kbd>Home</kbd> / <kbd>End</kbd> | Move to the first or the last visible cell of the row |
 | <kbd>Ctrl</kbd> + arrow keys, <kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd> | Move to the edge of the sheet |
-| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move right or left within the row. From the last or the first cell of the sheet, move the focus out of the Spreadsheet |
+| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move right or left within the row. From the last or the first cell of the sheet, move the focus out of the cells to the next or the previous part of the page, for example, the sheet tabs or the formula bar |
 | <kbd>Enter</kbd>, <kbd>F2</kbd> | Open the editor |
 | <kbd>Esc</kbd> | Close the editor without saving |
 | <kbd>Ctrl</kbd> + <kbd>Space</kbd> / <kbd>Shift</kbd> + <kbd>Space</kbd> | Select the column or the row |
@@ -202,7 +203,7 @@ The keyboard works as soon as the Spreadsheet is on the page; no configuration i
 
 | Keys | Action |
 | ---- | ------ |
-| <kbd>Ctrl</kbd> + <kbd>F6</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> | Move the focus to the next or the previous part: the menu, the toolbar, the sheet, the sheet tabs. An open edit is saved first |
+| <kbd>Ctrl</kbd> + <kbd>F6</kbd> / <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F6</kbd> | Move the focus to the next or the previous part: the menu, the toolbar, the sheet, the sheet tabs. The formula bar and hidden parts are skipped. An open edit is saved first |
 | <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move the focus to the next or the previous part in the page tab order. Each bar is one tab stop, and the focus lands on the control used last |
 
 ### Toolbar, menu bar and sheet tabs
@@ -222,8 +223,8 @@ The keyboard works as soon as the Spreadsheet is on the page; no configuration i
 | ---- | ------ |
 | Arrow keys, <kbd>Home</kbd> / <kbd>End</kbd> | Move between the colors of the color palette |
 | <kbd>Enter</kbd> | Apply the color, the border, or the size in the Column width and Row height dialogs |
-| <kbd>Esc</kbd> | Close the popup, the dialog or the search bar and return the focus to the control or the cell that opened it |
-| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move between the controls of a dialog; in a color popup, close it and return the focus to its button |
+| <kbd>Esc</kbd> | Close the popup, the dialog or the search bar and return the focus to the control or the cell that opened it. In the custom color mode, return to the palette. In a color or style popup opened from the Border popup, close it and return the focus to its button in the Border popup |
+| <kbd>Tab</kbd> / <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move between the controls of a dialog or of the custom color mode. In a color popup or the Border popup, close it and return the focus to its toolbar button |
 | <kbd>↑</kbd> / <kbd>↓</kbd>, <kbd>Enter</kbd> | Move through the list of values of a cell and choose a value |
 
 :::note
@@ -244,13 +245,13 @@ Screen readers get each state from the element it belongs to:
 
 | State | Exposed through | Read on |
 | ----- | --------------- | ------- |
-| Position | `aria-rowindex`, `aria-colindex`, and the cell address in the cell text | Each cell |
+| Position | `aria-rowindex`, `aria-colindex`, and the cell address in the cell text | Each cell. The address is in the text of the active cell and of the cells of the selected ranges |
 | Selection | `aria-selected` | The active cell and the cells of the selected ranges |
-| Editability | `aria-readonly` | The grid in the read-only mode, and locked cells |
+| Editability | `aria-readonly` | The grid and the cells in the read-only mode and while the selection is turned off, and locked cells |
 | Merged cells | `aria-colspan`, `aria-rowspan` | The merged cell |
 | Row headers | `role="rowheader"` | The row numbers |
-| Toggle state | `aria-pressed` | The formatting buttons and the sheet tabs |
-| Exclusive options | `aria-checked` | The alignment, wrapping and number format items |
+| Toggle state | `aria-pressed` | The Bold, Italic, Underline, Strikethrough, Lock and Filter buttons and the sheet tabs |
+| Checked state | `aria-checked` | The formatting items of the menu bar, and the alignment, text wrapping and number format items |
 | Errors and invalid values | Hidden text in the cell, `aria-invalid` | The cell and its editor |
 | Links | `<a href>` and the hidden text "link" | The cell with a link |
 
@@ -274,7 +275,8 @@ The keyboard focus is shown in every theme:
 
 - the active cell has a 2px solid border in the primary color of the theme
 - a cell and the cell editor that have the keyboard focus get a 2px outline in the primary color of the theme
-- the formula bar and the controls of the toolbar, the menu bar and the sheet tabs get a 2px outline in the color of the `--dhx-spreadsheet-focus-color` variable
+- the formula bar and the controls of the toolbar, the menu bar, the sheet tabs, the Border popup, the link popup and the search bar get a 2px outline in the color of the `--dhx-spreadsheet-focus-color` variable
+- in the color palette and the border style list, the focused item gets a 1px dashed outline in the `--dhx-color-focused` color
 
 The `--dhx-spreadsheet-focus-color` variable is lighter than the primary color in the dark themes and can be redefined in a [custom theme](themes/custom_theme.md). The contrast of each indicator in each theme is given in the [Accessibility Conformance Report](accessibility_conformance_report.md).
 
@@ -296,10 +298,10 @@ The Spreadsheet announces the changes that have no element of their own through 
 | An edit causes several errors / invalid values | "3 new errors. B7: ..." / "3 invalid values. B7: ..." | `aria_newErrors`, `aria_invalidValues` |
 | An edit of a locked cell / range is refused | "The cell is locked" / "Locked cells were not changed" | `aria_lockedCell`, `aria_lockedCells` |
 | An editing key is pressed in the read-only mode | "The sheet is read-only" | `aria_readonlySheet` |
-| The search text changes | "Results: 5." and the first match | `aria_searchResults`, `aria_searchNoResults` |
+| The search text is typed | "Results: 5. 1 of 5, B2" or "No results" | `aria_searchResults`, `aria_searchMatch`, `aria_searchNoResults` |
 | The next or previous match is shown | "2 of 5, B7" | `aria_searchMatch` |
-| A file is exported | "Exporting the file", "The file is exported" | `aria_exportStarted`, `aria_exportDone` |
-| A file is imported | "Importing the file", "The file is imported" | `aria_importStarted`, `aria_importDone` |
+| An Excel file is exported | "Exporting the file", "The file is exported" | `aria_exportStarted`, `aria_exportDone` |
+| A file chosen in the file dialog is imported | "Importing the file", "The file is imported" | `aria_importStarted`, `aria_importDone` |
 | The Column width / Row height command is applied | "Column width set to 120 pixels" | `aria_columnWidthSet`, `aria_rowHeightSet` |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> / <kbd>0</kbd> finds nothing to show | "No hidden rows in the selection" | `aria_noHiddenRows`, `aria_noHiddenCols` |
 
@@ -326,7 +328,7 @@ dhx.i18n.setLocale("spreadsheet", {
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 ~~~
 
-The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the values and must be kept in the translated strings. The names of the colors, the dialogs and the alert buttons come from the `colorpicker`, `window` and `message` locales. See [Localization](localization.md#default-locale) for the full list of keys and [Localizing built-in widgets](localization.md#localizing-built-in-widgets) for the other locales.
+The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the values and must be kept in the translated strings. The names of the colors and of the alert buttons come from the `colorpicker` and `message` locales. See [Localization](localization.md#default-locale) for the full list of keys and [Localizing built-in widgets](localization.md#localizing-built-in-widgets) for the other locales.
 
 ## Configuration recipes
 
@@ -371,7 +373,6 @@ const deColorpicker = {
     aria_colorRed: "rot"
 };
 const deMessage = {
-    aria_alert: "Meldung",
     aria_confirm: "Bestätigen"
 };
 

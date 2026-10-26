@@ -42,6 +42,8 @@ The method makes the specified cell active and, after the redraw, moves the keyb
 
 If the keyboard focus is on the page body, for example, right after the page is loaded, the method moves it to the cell.
 
+The same rules apply to any other change of the active cell, for example, by another API method.
+
 If the [`beforeFocusSet`](api/spreadsheet_beforefocusset_event.md) event handler returns `false`, the active cell isn't changed and the keyboard focus isn't moved.
 
 The method does nothing while the selection is turned off with the [`selection: false`](api/spreadsheet_selection_config.md) configuration option or the [`selection.disable()`](api/selection_disable_method.md) method.

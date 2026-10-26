@@ -226,7 +226,7 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 
 ### Read-only mode
 
-In read-only mode, users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers. Since `readonly` is an init-only prop, changing it recreates the widget.
+In read-only mode, users can navigate the cells with the keyboard, select them with the mouse, copy and search them. Edits are refused and announced to screen readers. Since `readonly` is an init-only prop, changing it recreates the widget. The data is kept, while the undo/redo history and the UI state (selection, scroll position) are reset.
 
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} readonly={true} />

@@ -9,9 +9,9 @@ description: Keyboard shortcuts of DHTMLX Spreadsheet for editing, formatting, n
 Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet.
 
 :::note
-The shortcuts for cells work while the focus is in the cells or in the formula bar. The formatting, undo, search and link shortcuts also work while the focus is on the toolbar. When the focus is on the toolbar, the menu bar or the sheet tabs, the arrow keys, **Home**, **End**, **Enter** and **Space** work within that bar (see [Moving the focus](#moving-the-focus)).
+The shortcuts for cells work while the focus is in the cells or in the formula bar. The formatting, undo, search, link and add-sheet shortcuts also work while the focus is on the toolbar. When the focus is on the toolbar, the menu bar or the sheet tabs, the arrow keys, **Home**, **End**, **Enter** and **Space** work within that bar (see [Moving the focus](#moving-the-focus)).
 
-In the [read-only mode](api/spreadsheet_readonly_config.md), the shortcuts for navigation, selection, copying and search work, and the editing shortcuts are refused.
+In the [read-only mode](api/spreadsheet_readonly_config.md), the shortcuts for navigation, selection, copying and search work. The shortcuts that change the sheet, including **Ctrl (Cmd) + Shift + 9**, **Ctrl (Cmd) + Shift + 0** and **Shift + F11**, are refused, and screen readers announce "The sheet is read-only".
 
 To learn how the keyboard navigation works with screen readers, check the [Accessibility](accessibility.md#keyboard-navigation) guide.
 :::
@@ -130,11 +130,11 @@ To learn how the keyboard navigation works with screen readers, check the [Acces
         </tr>
         <tr>
             <td><b>Tab</b></td>
-            <td>moves selection one cell right (in a row). From the rightmost cell, moves selection to the first cell of the same row. If a range of cells is selected, moves selection one cell right within the bounds of a range. From the last cell of the sheet, moves the focus out of the Spreadsheet.</td>
+            <td>moves selection one cell right (in a row). From the rightmost cell, moves selection to the first cell of the same row. If a range of cells is selected, moves selection one cell right within the bounds of a range. From the last cell of the sheet, saves the edited value and moves the focus out of the cells to the next part of the page, for example, the sheet tabs.</td>
         </tr>
         <tr>
             <td><b>Tab + Shift</b></td>
-            <td>moves selection one cell left (in a row). From the leftmost cell, moves selection to the last cell of the same row. If a range of cells is selected, moves selection one cell left within the bounds of a range. From the first cell of the sheet, moves the focus out of the Spreadsheet.</td>
+            <td>moves selection one cell left (in a row). From the leftmost cell, moves selection to the last cell of the same row. If a range of cells is selected, moves selection one cell left within the bounds of a range. From the first cell of the sheet, saves the edited value and moves the focus out of the cells to the previous part of the page, for example, the formula bar.</td>
         </tr>
         <tr>
             <td><b>Arrow keys</b></td>
@@ -195,7 +195,7 @@ The toolbar, the menu bar and the sheet tabs are single tab stops: <b>Tab</b> mo
     <tbody>
         <tr>
             <td><b>Ctrl + F6</b></td>
-            <td>moves the focus to the next part of the Spreadsheet in the order: the menu, the toolbar, the sheet (the active cell), the sheet tabs. Saves the value of the edited cell first</td>
+            <td>moves the focus to the next part of the Spreadsheet in the order: the menu, the toolbar, the sheet (the active cell), the sheet tabs, and then back to the menu. The formula bar and hidden parts are skipped. Saves the value of the edited cell first</td>
         </tr>
         <tr>
             <td><b>Ctrl + Shift + F6</b></td>
@@ -231,7 +231,7 @@ The toolbar, the menu bar and the sheet tabs are single tab stops: <b>Tab</b> mo
         </tr>
         <tr>
             <td><b>Esc</b></td>
-            <td>closes the dropdown or the menu and returns the focus to the control that opened it. Closes the tooltip of a toolbar control</td>
+            <td>closes the dropdown or the menu and returns the focus to the control that opened it. Closes the tooltip of a toolbar control. Without <b>Esc</b>, the tooltip stays open while the pointer is over it</td>
         </tr>
         <tr>
             <td><b>Shift + F10 or Menu key</b></td>
@@ -356,11 +356,11 @@ The keys below work in the popups of the *Text color*, *Background color* and *B
         </tr>
         <tr>
             <td><b>Esc</b></td>
-            <td>returns from the custom color mode to the palette, or closes the color or style popup opened over the Border popup. Otherwise, closes the popup and returns the focus to its toolbar control</td>
+            <td>returns from the custom color mode to the palette. In a color or style popup opened over the Border popup, closes it and returns the focus to its button in the Border popup. Otherwise, closes the popup and returns the focus to its toolbar control</td>
         </tr>
         <tr>
             <td><b>Tab/Tab + Shift</b></td>
-            <td>closes the popup and returns the focus to its toolbar control</td>
+            <td>closes the popup and returns the focus to its toolbar control. In the Border popup and the popups opened over it, closes them all and returns the focus to the Border control. In the custom color mode, moves the focus between the controls of the color picker</td>
         </tr>
     </tbody>
 </table>

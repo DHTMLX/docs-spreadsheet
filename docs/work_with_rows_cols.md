@@ -148,7 +148,7 @@ To set an exact height of rows, take the following steps:
 
 ### How the new size is applied
 
-The dialog shows the current size of the first selected column or row and applies the new size to every column or row of the selected range. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller value is replaced with the minimum. The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
+The dialog shows the current size of the first column or row of the selected range and applies the new size to every column or row of this range. If several ranges are selected, the last selected range is used. The size is rounded to whole pixels. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller positive value is replaced with the minimum. While the field is empty or the value isn't a positive number, the **Apply** button is disabled. The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
 
 ### Undoing the change
 
@@ -253,7 +253,7 @@ To hide a row, take the following steps:
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Hide rows](/img/hide_row_context_menu.png)
 
 :::info
-If the active cell is in a row that becomes hidden, the active cell moves to the first visible row below it. If there are no visible rows below, it moves to the last visible row above.
+If the active cell is in a row that becomes hidden, the active cell moves to the first visible row below it, and the selection is reduced to this cell. If there are no visible rows below, it moves to the last visible row above.
 :::
 
 ### Showing rows
@@ -291,7 +291,7 @@ To hide a column, take the following steps:
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Hide columns](/img/hide_columns_context_menu.png)
 
 :::info
-If the active cell is in a column that becomes hidden, the active cell moves to the first visible column on the right of it. If there are no visible columns on the right, it moves to the last visible column on the left.
+If the active cell is in a column that becomes hidden, the active cell moves to the first visible column on the right of it, and the selection is reduced to this cell. If there are no visible columns on the right, it moves to the last visible column on the left.
 :::
 
 ### Showing columns

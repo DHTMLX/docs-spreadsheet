@@ -23,9 +23,15 @@ Released on October , 2026
 
 ### Updates
 
-- Keyboard navigation: the focus stays on the active cell, `Ctrl + F6` moves it between the menu, the toolbar, the sheet and the sheet tabs, and new shortcuts are added. Check the [Hot keys list](hotkeys.md)
+- Keyboard navigation (check the [Hot keys list](hotkeys.md)):
+    - the focus stays on the active cell, `Tab` and `Shift + Tab` leave the cells from the last and the first cell of the sheet, and `Ctrl + F6` moves the focus between the menu, the toolbar, the sheet and the sheet tabs
+    - the toolbar, the menu bar and the sheet tabs are single tab stops navigated with the arrow keys
+    - new shortcuts are added, for example, `Shift + F10` for the context menu and `Ctrl (Cmd) + Shift + 9` / `Ctrl (Cmd) + Shift + 0` for showing hidden rows and columns
+- The arrow keys stop at the first and last visible row and column instead of moving to the opposite edge, and an arrow key at the edge reduces a selected range to the active cell
+- The toolbar color and border popups take the keyboard focus when they open and close with `Esc` and `Tab`
+- Text composed with an input method editor (IME) is shown in the active cell and starts the edit through the [`startEdit()`](api/spreadsheet_startedit_method.md) method, so the `beforeEditStart` and `afterEditStart` events fire for it
 - The [`setFocusedCell()`](api/selection_setfocusedcell_method.md) method moves the keyboard focus to the cell
-- The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search. To turn the selection off, use the `selection: false` option
+- The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search, and screen readers announce the refused edits. To turn the selection off, use the `selection: false` option
 - [Removing a row or a column through a merged cell](merge_cells.md#removing-rows-and-columns-of-merged-cells) removes all the rows or columns of the merged cell
 - New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)
 - The [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
@@ -33,15 +39,17 @@ Released on October , 2026
 
 ### Fixes
 
-- A merged cell was dropped instead of shifted when a row or column before it was deleted
+- The keyboard focus indicator wasn't shown on the cells, the toolbar and the formula bar
+- The active cell stayed in a row or column after it was hidden
+- A merged cell was dropped instead of shifted when a row or column before it was deleted. Now a merged cell left with a single cell becomes an ordinary cell and keeps its value
 - Deleting a row or column through a merged cell removed only one line of the merge
 - The context menu labels for removing rows and columns didn't show all the rows or columns of a merged cell that would be removed
 - Rows were not deleted when they covered the whole filtered range
 - The frozen area didn't shrink when frozen rows or columns were deleted
 - Autofill threw an error when the dragged cells held no plain number
-- The page froze on `Home`, `End` and `Ctrl (Cmd) + Arrow` keys when the first or last row or column was hidden
+- The page froze on `Home`, `End`, `Ctrl (Cmd) + Home`, `Ctrl (Cmd) + End` and `Ctrl (Cmd) + Arrow` keys when the first or last row or column was hidden
 - The font size was lost when cells were copied to Excel or pasted from Excel or within the Spreadsheet
-- The invalid-value tooltip appeared away from the invalid cell
+- The invalid-value tooltip appeared away from the invalid cell or wasn't shown
 - `Esc` and `Tab` didn't work in the list editor after the arrow keys were used
 - The search highlighted the second match first and didn't refresh the results after an edit or a sheet switch
 - A script error occurred on import or export in a browser without WebAssembly
@@ -49,6 +57,7 @@ Released on October , 2026
 - The keyboard focus was lost after the search bar closed
 - A closed context menu reopened
 - The active cell was scrolled one cell short of the viewport edge during keyboard navigation
+- Screen readers announced the cells as buttons, read wrong row positions with frozen rows, and read placeholder names of the parts of the Spreadsheet
 - React Spreadsheet: the event callbacks and `onStateChange` didn't fire after the Spreadsheet was recreated by an init-only prop change
 - React Spreadsheet: the event handlers of the wrapper were not removed on unmount
 - React Spreadsheet: the data from `loadUrl` was loaded twice on mount and again over the kept data after the Spreadsheet was recreated

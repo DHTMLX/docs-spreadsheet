@@ -165,7 +165,7 @@ You can copy cells with **Ctrl (Cmd) + C** and paste them with **Ctrl (Cmd) + V*
 
 ## Locking cells
 
-You can lock cells to protect their values from changes. When you lock a cell, it shows a gray "key" in the top right corner. Locked cells do not respond to any attempts to edit them.
+You can lock cells to protect their values from changes. When you lock a cell, it shows a gray "key" in the top right corner. Locked cells do not respond to any attempts to edit them. Screen readers announce the refused edit: "The cell is locked" for a single cell, or "Locked cells were not changed" when the selected range holds locked cells.
 
 ![DHTMLX Spreadsheet locked cells marked with a gray key icon in the top right corner](/img/lockedcells.png)
 

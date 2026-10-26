@@ -31,7 +31,7 @@ Then you can use the name of the icon as the value of the `icon` property in the
 
 You can add the following types of controls: `button`, `menuItem`, `separator`, and `spacer`.
 
-The *Text color* and *Background color* controls of the [default toolbar](#default-controls), and the *Border color* control in the *Border* popup, are of the `navItem` type. They show the current color in their value and open a color popup.
+The *Text color* and *Background color* controls of the [default toolbar](#default-controls), and the *Border color* control in the *Border* popup, are of the `navItem` type. They draw the current color with the `html` property, take their accessible name from the `value` property, for example, "Text color: dark gray", and open a color popup. The Spreadsheet updates both properties when the active cell changes.
 
 The `button` object has the following properties:
 
@@ -381,7 +381,7 @@ The [default context menu](/#context-menu) has the following structure:
 - the **Columns** menuItem (id: "columns")
   - the *Add column* menuItem (id: "add-col")
   - the *Remove column* menuItem (id: "remove-col")
-  - the *Fit to data* menuItem (id: "fit-col")
+  - the *Fit to data* menuItem (id: "fit-col"), shown in the column menu and when whole columns are selected
   - the *Column width* menuItem (id: "col-width")
   - the separator
   - the *Unfreeze columns* menuItem (id: "unfreeze-cols")

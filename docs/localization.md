@@ -196,7 +196,7 @@ const en = {
     invalidValue: "Invalid value",
 
     // Accessible names, read by screen readers
-    // accessible name of a color button; {color} is a name from the colorpicker locale
+    // accessible name of a color button; {label} is the name of the control, {color} is a name from the colorpicker locale
     aria_colorButton: "{label}: {color}",
     // accessible names of the toolbars; the screen reader adds the word "toolbar" itself
     aria_toolbarFormatting: "Formatting",
@@ -323,6 +323,10 @@ const deColorpicker = {
     aria_palette: "Farbpalette",
     aria_colorRed: "rot",
     // other strings
+};
+
+const deMessage = {
+    aria_confirm: "Bestätigen"
 };
 
 dhx.i18n.setLocale("spreadsheet", de);
