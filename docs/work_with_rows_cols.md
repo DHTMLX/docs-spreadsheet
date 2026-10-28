@@ -134,7 +134,11 @@ To set an exact width of columns, take the following steps:
 
 2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Columns -> Column width*. The same command is available in the menu of the 3 dots icon of the column.
 
+![DHTMLX Spreadsheet context menu with the Columns submenu showing Column width](/img/column_width_context_menu.png)
+
 3\. In the *Column width* dialog, enter the width in pixels and click **Apply** or press `Enter`.
+
+![DHTMLX Spreadsheet Column width dialog with the width in pixels and the Cancel and Apply buttons](/img/column_width_dialog.png)
 
 ### Setting row height
 
@@ -144,11 +148,19 @@ To set an exact height of rows, take the following steps:
 
 2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Rows -> Row height*.
 
+![DHTMLX Spreadsheet context menu with the Rows submenu showing Row height](/img/row_height_context_menu.png)
+
 3\. In the *Row height* dialog, enter the height in pixels and click **Apply** or press `Enter`.
+
+![DHTMLX Spreadsheet Row height dialog with the height in pixels and the Cancel and Apply buttons](/img/row_height_dialog.png)
 
 ### How the new size is applied
 
-The dialog shows the current size of the first column or row of the selected range and applies the new size to every column or row of this range. If several ranges are selected, the last selected range is used. The size is rounded to whole pixels. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller positive value is replaced with the minimum. While the field is empty or the value isn't a positive number, the **Apply** button is disabled. The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
+The dialog shows the current size of the first column or row of the selected range and applies the new size to every column or row of this range. If several ranges are selected, the last selected range is used.
+
+The size is rounded to whole pixels. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller positive value is replaced with the minimum. While the field is empty or the value isn't a positive number, the **Apply** button is disabled.
+
+The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
 
 ### Undoing the change
 

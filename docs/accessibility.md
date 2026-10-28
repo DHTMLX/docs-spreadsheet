@@ -182,6 +182,8 @@ The DOM focus is on the active cell itself, so a screen reader reads the cell, n
 
 The keyboard works as soon as the Spreadsheet is on the page; no configuration is needed. The tables below summarize the keyboard model. See [Hot keys list](hotkeys.md) for the complete set of shortcuts.
 
+![The Horizontal align dropdown of the toolbar opened with the Down arrow key, with the focus on its first item](/img/accessibility/toolbar_dropdown_focus.png)
+
 ### Cells
 
 | Keys | Action |
@@ -269,6 +271,14 @@ See the [Built-in themes](/themes/) article for the details.
 
 In the light themes, the colors that mark the cell references of a formula have a contrast of at least 4.5:1.
 
+The `contrast-light` theme draws dark text and borders on a white background. In the Spreadsheet below, the context menu of a cell with the filter icon is opened with the keyboard. Its focused command, [*Open filter*](filtering_data.md#opening-a-filter-with-the-keyboard), is marked by a dashed outline, and the active cell is marked by a solid border in the primary color of the theme:
+
+![Spreadsheet in the contrast-light theme](/img/accessibility/spreadsheet_contrast_light.png)
+
+The `contrast-dark` theme draws light text and borders on a dark background. When the focus is on a toolbar control, the control is marked by a focus ring in the `--dhx-spreadsheet-focus-color` color, which is lighter than the primary color of the active cell border in the dark themes:
+
+![Spreadsheet in the contrast-dark theme](/img/accessibility/spreadsheet_contrast_dark.png)
+
 ### Focus indicator
 
 The keyboard focus is shown in every theme:
@@ -276,7 +286,8 @@ The keyboard focus is shown in every theme:
 - the active cell has a 2px solid border in the primary color of the theme
 - a cell and the cell editor that have the keyboard focus get a 2px outline in the primary color of the theme
 - the formula bar and the controls of the toolbar, the menu bar, the sheet tabs, the Border popup, the link popup and the search bar get a 2px outline in the color of the `--dhx-spreadsheet-focus-color` variable
-- in the color palette and the border style list, the focused item gets a 1px dashed outline in the `--dhx-color-focused` color
+- in the color palette, the border style list, the dropdowns of the toolbar and the menu bar, and the context menus, the focused item gets a 1px dashed outline in the `--dhx-color-focused` color
+- in the list editor of a cell, the focus stays in the editor, and the current item of the list is highlighted with a background color
 
 The `--dhx-spreadsheet-focus-color` variable is lighter than the primary color in the dark themes and can be redefined in a [custom theme](themes/custom_theme.md). The contrast of each indicator in each theme is given in the [Accessibility Conformance Report](accessibility_conformance_report.md).
 
