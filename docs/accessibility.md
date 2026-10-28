@@ -24,7 +24,7 @@ Conformance is reported criterion by criterion for DHTMLX Spreadsheet 6.0.4. The
 | WAI-ARIA semantics | The cells are a `grid` with `columnheader`, `rowheader` and `gridcell` elements. The roles are always rendered |
 | Focus model | The keyboard focus is on the active cell. <kbd>Tab</kbd> enters the sheet on the active cell and leaves it from the last and the first cell. <kbd>Ctrl</kbd> + <kbd>F6</kbd> moves the focus between the menu, the toolbar, the sheet and the sheet tabs |
 | Selection model | The active cell, a range and several ranges are exposed through `aria-selected`, and the extent of a range is announced. The selection can be turned off with the [`selection`](api/spreadsheet_selection_config.md) option |
-| Read-only mode | The sheet can be navigated, selected, copied and searched; edits are refused and announced |
+| Read-only mode | The sheet can be navigated, selected, copied and searched; edits are refused and announced, and the context menu is not available |
 | Screen readers | Tested with NVDA, JAWS and VoiceOver |
 | Visual accessibility | The `contrast-light` and `contrast-dark` themes, a visible focus indicator in every theme, and cues that don't depend on color |
 | Text resize and zoom | The layout stays operable at 200% and 400% zoom and with text spacing overrides |
@@ -119,7 +119,7 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 
 | Selector | Role / attribute | Purpose |
 | -------- | ---------------- | ------- |
-| Formula bar input | `aria-label` | "Formula bar, B7", with the address of the active cell. The input is `readonly` on a locked cell and while the selection is turned off, so its value can still be read |
+| Formula bar input | `aria-label` | "Formula bar, B7", with the address of the active cell. The input is `readonly` on a locked cell, so its value can still be read. While the selection is turned off, the formula bar is empty and locked |
 | Cell editor input | `aria-label` | "Cell editor, B7" |
 | Editor of a cell with a list of values | `role="combobox"`, `aria-controls`, `aria-expanded`, `aria-activedescendant` | The list of values is a `listbox` of `option` elements, and the highlighted option is `aria-selected` |
 | Editor with an invalid value | `aria-invalid="true"` | The saved value of the cell is not in its list of values. The attribute is updated after the value is saved, not while the user types |
@@ -371,7 +371,7 @@ To show the data without an active cell and without selection, add [`selection: 
 
 ### Translated accessibility strings
 
-Screen readers read the accessibility strings from three locales: `spreadsheet` holds the names, cell descriptions and announcements, `colorpicker` holds the color names, and `message` holds the names of the alert buttons. Set all three before you create the Spreadsheet. See [Localizing built-in widgets](localization.md#localizing-built-in-widgets) for the keys:
+Screen readers read the accessibility strings from four locales: `spreadsheet` holds the names, cell descriptions and announcements, `colorpicker` holds the color names, `message` holds the names of the alert buttons, and `grid` holds the announcement of the number of loaded rows. Set all four before you create the Spreadsheet. See [Localizing built-in widgets](localization.md#localizing-built-in-widgets) for the keys:
 
 ~~~jsx
 const deSpreadsheet = {
@@ -386,10 +386,14 @@ const deColorpicker = {
 const deMessage = {
     aria_confirm: "Bestätigen"
 };
+const deGrid = {
+    aria_rowsLoaded: "{count} Zeilen geladen"
+};
 
 dhx.i18n.setLocale("spreadsheet", deSpreadsheet);
 dhx.i18n.setLocale("colorpicker", deColorpicker);
 dhx.i18n.setLocale("message", deMessage);
+dhx.i18n.setLocale("grid", deGrid);
 
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 ~~~

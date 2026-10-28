@@ -31,7 +31,7 @@ Then you can use the name of the icon as the value of the `icon` property in the
 
 You can add the following types of controls: `button`, `menuItem`, `separator`, and `spacer`.
 
-The *Text color* and *Background color* controls of the [default toolbar](#default-controls), and the *Border color* control in the *Border* popup, are of the [`navItem`](https://docs.dhtmlx.com/suite/toolbar/navitem/) type. They draw the current color with the [`html`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) property, take their accessible name from the [`value`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) property, for example, "Text color: dark gray", and open a color popup. The Spreadsheet updates both properties of the *Text color* and *Background color* controls when the active cell changes, and of the *Border color* control when a border color is chosen.
+Like the other controls of the [default toolbar](#default-controls), the *Text color* and *Background color* controls, and the *Border color* control in the *Border* popup, are of the [`navItem`](https://docs.dhtmlx.com/suite/toolbar/navitem/) type. They draw the current color with the [`html`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) property, take their accessible name from the [`value`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) property, for example, "Text color: dark gray", and open a color popup. The Spreadsheet updates both properties of the *Text color* and *Background color* controls when the active cell changes, and of the *Border color* control when a border color is chosen.
 
 The `button` object has the following properties:
 
@@ -119,8 +119,8 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the *Undo* button (id: "undo")
   - the *Redo* button (id: "redo")
 - the **Colors** block
-  - the *Text color* navItem (id: "color")
-  - the *Background color* navItem (id: "background")
+  - the *Text color* button (id: "color")
+  - the *Background color* button (id: "background")
 - the **Font** block
   - the *Font size* combobox (id: "font-size")
 - the **Decoration** block

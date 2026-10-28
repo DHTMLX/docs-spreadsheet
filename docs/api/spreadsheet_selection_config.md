@@ -39,7 +39,7 @@ When the property is set to `false`:
 - the cells can't be selected with the mouse, the keyboard or the API: the [`setSelectedCell()`](api/selection_setselectedcell_method.md) and [`setFocusedCell()`](api/selection_setfocusedcell_method.md) methods are ignored, and the [`getSelectedCell()`](api/selection_getselectedcell_method.md) and [`getFocusedCell()`](api/selection_getfocusedcell_method.md) methods return `undefined`
 - the cells can't be edited from the interface: the formula bar is locked, the fill handle is hidden, and the [`startEdit()`](api/spreadsheet_startedit_method.md) method is ignored
 - the context menu and the column menu icon are not available
-- `Tab` stops on the grid once and moves the focus further, and `Ctrl + F6` skips the sheet
+- `Tab` stops on the grid once and moves the focus further, and `Ctrl + F6` skips the grid
 
 The columns and rows can still be resized by dragging their borders, and the data can still be changed with the API, for example, with the [`setValue()`](api/spreadsheet_setvalue_method.md) method.
 

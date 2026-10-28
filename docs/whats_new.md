@@ -31,6 +31,7 @@ Released on October , 2026
 - The toolbar color and border popups take the keyboard focus when they open and close with `Esc` and `Tab`
 - Text composed with an input method editor (IME) is shown in the active cell and starts the edit through the [`startEdit()`](api/spreadsheet_startedit_method.md) method, so the `beforeEditStart` and `afterEditStart` events fire for it
 - The [`setFocusedCell()`](api/selection_setfocusedcell_method.md) method moves the keyboard focus to the cell
+- A [link in a cell](work_with_cells.md#inserting-a-hyperlink-into-a-cell) is rendered as a real link that opens in a new tab, and `Alt (Option) + Enter` opens the link of the active cell
 - The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search, and screen readers announce the refused edits. To turn the selection off, use the `selection: false` option
 - [Removing a row or a column through a merged cell](merge_cells.md#removing-rows-and-columns-of-merged-cells) removes all the rows or columns of the merged cell
 - New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)

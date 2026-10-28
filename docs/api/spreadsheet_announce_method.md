@@ -24,9 +24,10 @@ announce(message: string): void;
 
 In the example below, a custom menu command counts the empty cells in the selected range and announces the result:
 
-~~~jsx {17}
+~~~jsx {18}
 const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
-    // config parameters
+    menu: true,
+    // other config parameters
 });
 spreadsheet.parse(data);
 

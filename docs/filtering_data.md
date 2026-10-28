@@ -30,7 +30,7 @@ To open the filter of a column without the mouse:
 
 ![DHTMLX Spreadsheet context menu of a header cell with the filter icon and the Open filter command focused](/img/open_filter_context_menu.png)
 
-The *Open filter* command appears in the context menu only for the cells with the **filter** icon. You can also choose it after right-clicking such a cell.
+The *Open filter* command appears in the context menu only for the cells with the **filter** icon. You can also choose it after right-clicking such a cell. In the [read-only mode](api/spreadsheet_readonly_config.md), the context menu and the *Open filter* command are not available.
 
 The filter popup takes the focus, and `Tab` moves between its controls. `Esc` closes the popup and returns the focus to the cell. If a dropdown list or a date picker is open in the popup, `Esc` closes it first.
 

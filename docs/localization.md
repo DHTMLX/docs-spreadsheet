@@ -304,12 +304,14 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 
 ## Localizing built-in widgets
 
-Spreadsheet uses the Colorpicker, Grid, Toolbar, Window and Message widgets of DHTMLX Suite inside. Their strings are stored in separate locales, which you can translate in the same way as the `spreadsheet` locale:
+Spreadsheet uses the Calendar, Colorpicker, Grid, Timepicker, Toolbar, Window and Message widgets of DHTMLX Suite inside. Their strings are stored in separate locales, which you can translate in the same way as the `spreadsheet` locale:
 
 | Locale | Strings used in Spreadsheet |
 | ------ | --------------------------- |
+| `calendar` | the month and day names of the date editor and of the date filter |
 | `colorpicker` | the labels of the custom color mode in the color popups of the toolbar, the name of the palette, and the color names that screen readers read for the swatches and the color buttons, for example, "Text color: dark gray" |
 | `grid` | the announcement of the number of loaded rows |
+| `timepicker` | the labels of the time editor |
 | `toolbar` | the default accessible name of a toolbar |
 | `window` | the default accessible name of a dialog |
 | `message` | the accessible names of the alert and confirm dialogs and of their buttons |

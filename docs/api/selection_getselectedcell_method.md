@@ -18,7 +18,7 @@ getSelectedCell(): string;
 
 ### Returns
 
-The method returns the id(s) or a range of selected cell(s)
+The method returns the id(s) or a range of selected cell(s), or `undefined` if no cell is selected, for example, while the selection is turned off with the [`selection: false`](api/spreadsheet_selection_config.md) configuration option or the [`selection.disable()`](api/selection_disable_method.md) method
 
 ### Example
 

@@ -11,7 +11,7 @@ Here is a list of hotkeys that you can use while working with DHTMLX Spreadsheet
 :::note
 The shortcuts for cells work while the focus is in the cells or in the formula bar. The formatting, undo, search, link and add-sheet shortcuts also work while the focus is on the toolbar. When the focus is on the toolbar, the menu bar or the sheet tabs, the arrow keys, **Home**, **End**, **Enter** and **Space** work within that bar (see [Moving the focus](#moving-the-focus)).
 
-In the [read-only mode](api/spreadsheet_readonly_config.md), the shortcuts for navigation, selection, copying and search work. The shortcuts that change the sheet, including **Ctrl (Cmd) + Shift + 9**, **Ctrl (Cmd) + Shift + 0** and **Shift + F11**, are refused, and screen readers announce "The sheet is read-only".
+In the [read-only mode](api/spreadsheet_readonly_config.md), the shortcuts for navigation, selection, copying and search work. The shortcuts that change the sheet, including **Ctrl (Cmd) + Shift + 9**, **Ctrl (Cmd) + Shift + 0** and **Shift + F11**, are refused, and screen readers announce "The sheet is read-only". The context menu isn't available, so **Shift + F10** and the Menu key don't work.
 
 To learn how the keyboard navigation works with screen readers, check the [Accessibility](accessibility.md#keyboard-navigation) guide.
 :::
@@ -250,11 +250,11 @@ The toolbar, the menu bar and the sheet tabs are single tab stops: <b>Tab</b> mo
         </tr>
         <tr>
             <td><b>Ctrl (Cmd) + G</b></td>
-            <td>moves selection to the next found match</td>
+            <td>highlights the next found match</td>
         </tr>
         <tr>
             <td><b>Ctrl (Cmd) + Shift + G</b></td>
-            <td>moves selection to the previous found match</td>
+            <td>highlights the previous found match</td>
         </tr>
         <tr>
             <td><b>Esc</b></td>

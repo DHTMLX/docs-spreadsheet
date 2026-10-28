@@ -52,6 +52,6 @@ When you remove a row or a column through a merged cell, every row or column tha
 
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Remove rows 2-4 for a merged cell](/img/remove_merged_rows_context_menu.png)
 
-When whole rows or columns are selected by clicking their headers, only the selected rows or columns are removed. A merged cell that spans them becomes smaller, and a merged cell left with a single cell becomes an ordinary cell.
+When whole rows or columns are selected, for example, by clicking their headers or with `Shift + Space` or `Ctrl (Cmd) + Space`, only the selected rows or columns are removed. A merged cell that spans them becomes smaller, and a merged cell left with a single cell becomes an ordinary cell.
 
 Merged cells located below or on the right of the removed rows or columns move together with them.
