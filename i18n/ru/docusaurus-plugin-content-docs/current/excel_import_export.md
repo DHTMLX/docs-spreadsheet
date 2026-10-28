@@ -1,7 +1,7 @@
 ---
 sidebar_label: Импорт/экспорт Excel
 title: Импорт и экспорт Excel
-description: Вы можете узнать об импорте и экспорте Excel в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Импорт данных из файлов Excel в DHTMLX Spreadsheet и экспорт в .xlsx через панель инструментов или меню File.
 ---
 
 # Импорт/экспорт Excel {#excel-importexport}
@@ -37,3 +37,9 @@ description: Вы можете узнать об импорте и экспор�
 ![DHTMLX Spreadsheet File menu with the Download As option for Microsoft Excel XLSX export](/img/file_export.png)
 
 2\. Проверьте папку загрузок: там будет файл Excel с данными из Spreadsheet.
+
+Программы чтения с экрана озвучивают начало и завершение импорта и экспорта.
+
+:::note
+Импорт и экспорт файлов Excel используют WebAssembly. Если браузер не поддерживает WebAssembly, команды Import и Export показывают сообщение с текстом ключа `wasmNotSupported` [локали](localization.md#default-locale). Метод [`load()`](api/spreadsheet_load_method.md) с типом `"xlsx"` и метод [`export.xlsx()`](api/export_xlsx_method.md) выбрасывают `Error` с тем же текстом, который можно перехватить в коде.
+:::

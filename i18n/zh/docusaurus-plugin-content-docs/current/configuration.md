@@ -1,7 +1,7 @@
 ---
 sidebar_label: 配置
 title: 配置
-description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的配置方式。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 配置 DHTMLX Spreadsheet。设置工具栏、编辑栏、菜单、行数和列数、只读模式、单元格选择以及数字格式。
 ---
 
 # 配置 {#configuration}
@@ -48,9 +48,42 @@ Spreadsheet 的菜单默认隐藏。您可以通过相应的配置选项 [`menu`
 
 您还可以通过 [`readonly`](api/spreadsheet_readonly_config.md) 配置选项启用只读模式，以防止对 Spreadsheet 单元格进行编辑。
 
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    readonly: true,
+});
+~~~
+
+在只读模式下，工具栏、菜单和公式栏会被隐藏。用户可以使用键盘在单元格间导航，使用鼠标选择单元格，以及复制和搜索单元格。编辑操作会被拒绝，并向屏幕阅读器播报"The sheet is read-only"。填充柄会被隐藏。详细信息请参阅 [`readonly`](api/spreadsheet_readonly_config.md#details) 文章。要了解键盘和屏幕阅读器用户如何使用只读 Spreadsheet，请参阅无障碍指南的[只读设置](accessibility.md#read-only-setup)部分。
+
+要在只读模式下关闭键盘导航和选择，请将 [`selection`](api/spreadsheet_selection_config.md) 选项设置为 `false`：
+
+~~~jsx {3}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    readonly: true,
+    selection: false,
+});
+~~~
+
 您也可以[自定义 Spreadsheet 的只读行为](customization.md#custom-read-only-mode)。
 
 <iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+## 单元格选择 {#selection-of-cells}
+
+默认情况下，用户可以使用鼠标和键盘选择单元格，并且 Spreadsheet 具有活动单元格。要关闭选择，请将 [`selection`](api/spreadsheet_selection_config.md) 配置选项设置为 `false`：
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    selection: false,
+});
+~~~
+
+此时，Spreadsheet 没有活动单元格，无法通过界面选择或编辑单元格，上下文菜单也不可用。
+
+要在运行时关闭和开启选择，请使用 [`selection.disable()`](api/selection_disable_method.md) 和 [`selection.enable()`](api/selection_enable_method.md) 方法。[`selection.isDisabled()`](api/selection_isdisabled_method.md) 方法用于检查选择是否已关闭。
+
+没有选择时，网格会成为键盘可直接跳过的单个 Tab 停靠点。请参阅无障碍指南的[只读设置](accessibility.md#read-only-setup)部分。
 
 ## 单元格自定义数字格式 {#custom-number-formats-for-cells}
 

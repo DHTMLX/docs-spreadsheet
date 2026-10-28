@@ -35,4 +35,10 @@ spreadsheet.parse(data);
 spreadsheet.startEdit();
 ~~~
 
+### Details {#details}
+
+Die Eingabe in der aktiven Zelle startet die Bearbeitung über diese Methode. Text, der mit einem Input Method Editor (IME) verfasst wird, wird nach Abschluss der Komposition als `initialValue` übergeben. Somit erhalten die Events [`beforeEditStart`](api/spreadsheet_beforeeditstart_event.md) und [`afterEditStart`](api/spreadsheet_aftereditstart_event.md) den eingegebenen bzw. verfassten Text, und `beforeEditStart` kann die Bearbeitung abbrechen.
+
+**Changelog:** Das Starten der Bearbeitung mit dem per IME verfassten Text wurde in v6.0.4 hinzugefügt
+
 **Verwandter Artikel:** [Mit dem Spreadsheet arbeiten](working_with_cells.md#editing-a-cell)

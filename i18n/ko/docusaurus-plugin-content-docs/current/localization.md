@@ -1,7 +1,7 @@
 ---
 sidebar_label: 로컬라이제이션
 title: 로컬라이제이션
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 로컬라이제이션에 대한 문서를 확인하세요. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해보며, DHTMLX Spreadsheet의 30일 무료 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet를 현지화합니다. 기본 로케일을 확인하고, 사용자 정의 로케일을 만들고, 내장 위젯과 수식 팝업을 번역하고, 로케일을 적용하는 방법을 설명합니다.
 ---
 
 # 로컬라이제이션 {#localization}
@@ -22,6 +22,8 @@ const en = {
 
     textColor: "Text color",
     backgroundColor: "Background color",
+
+    fontSize: "Font size",
 
     bold: "Bold",
     italic: "Italic",
@@ -60,6 +62,10 @@ const en = {
     addRow: "Add row above",
     removeRow: "Remove row {row}",
     removeRows: "Remove rows {row}",
+    columnWidth: "Column width",
+    rowHeight: "Row height",
+    widthInPixels: "Width in pixels",
+    heightInPixels: "Height in pixels",
     row: "row",
     col: "col",
     freeze: "Freeze",
@@ -82,8 +88,10 @@ const en = {
     text: "Text",
     date: "Date",
     time: "Time",
+    scientific: "Scientific",
 
     filter: "Filter",
+    openFilter: "Open filter",
 
     help: "Help",
 
@@ -104,6 +112,9 @@ const en = {
     border_style: "Border style",
 
     // Tabbar
+    // the name of a new sheet is this prefix followed by a number: sheet1, sheet2
+    defaultSheetName: "sheet",
+    addSheet: "Add sheet",
     deleteSheet: "Delete",
     renameSheet: "Rename",
     renameSheetAlert: "A sheet with the name $name already exists. Please enter another name. ",
@@ -114,10 +125,14 @@ const en = {
     export: "Export",
     downloadAs: "Download as...",
     importAs: "Import as...",
+    xlsxFormat: "Microsoft Excel(.xlsx)",
 
     data: "Data",
     validation: "Data validation",
     search: "Search",
+    previousMatch: "Previous match",
+    nextMatch: "Next match",
+    closeSearch: "Close search",
     sort: "Sort",
     ascSort: "Sort A to Z",
     descSort: "Sort Z to A",
@@ -177,17 +192,105 @@ const en = {
     spanUnmergeLockedError: "You can't unmerge locked cells!",
     spanOverFilteredRow: "You can't merge cells over a filtered row.",
     removeAlert: "You can't remove last $name!",
+    wasmNotSupported: "WebAssembly is not supported by your browser",
+    invalidValue: "Invalid value",
+
+    // Accessible names, read by screen readers
+    // accessible name of a color button; {label} is the name of the control, {color} is a name from the colorpicker locale
+    aria_colorButton: "{label}: {color}",
+    // accessible names of the toolbars; the screen reader adds the word "toolbar" itself
+    aria_toolbarFormatting: "Formatting",
+    aria_toolbarBorders: "Borders",
+    aria_toolbarSheets: "Sheets",
+    aria_toolbarSearch: "Search",
+    aria_toolbarLink: "Link",
+    // accessible names of the line styles in the border style list
+    aria_borderStyleThin: "Thin line",
+    aria_borderStyleMedium: "Medium line",
+    aria_borderStyleThick: "Thick line",
+    aria_borderStyleDashed: "Dashed line",
+    aria_borderStyleDotted: "Dotted line",
+    aria_borderStyleDouble: "Double line",
+    // accessible names of the context menus; the screen reader adds the word "menu" itself
+    aria_cellMenu: "Cell",
+    aria_sheetMenu: "Sheet",
+    // accessible name of the menu bar; the screen reader adds the words "menu bar" itself
+    aria_menuBar: "Main",
+    // accessible name of the cell grid; the screen reader adds the word "grid" itself
+    aria_grid: "Spreadsheet",
+    // accessible name of the select-all corner, the first column header
+    aria_selectAll: "Select all",
+    // accessible name of the formula bar; {cell} is the address of the cell it shows, for example "B7"
+    aria_formulaBar: "Formula bar, {cell}",
+    // accessible name of the input that edits a cell; {cell} is the address of the cell, for example "B7"
+    aria_cellEditor: "Cell editor, {cell}",
+    // accessible name of the close icon of the formula help panel
+    aria_closeFormulaHelp: "Close formula help",
+
+    // Cell descriptions, read with the content of the active cell
+    // read with the content of a cell that has a filter icon; the icon itself is hidden from assistive technology
+    aria_filter: "Filter",
+    aria_filterApplied: "Filter applied",
+    // read after the content of a selected cell that holds a link; Alt+Enter opens the link
+    aria_cellLink: "link",
+    // read after the content of a selected locked cell; the lock icon itself is hidden from assistive technology
+    aria_lockedState: "locked",
+    // read after the value of a cell with a formula error; the formula engine writes the error as #ERROR, #REF! or #SPILL!
+    aria_errorSyntax: "Syntax error. Check the formula",
+    aria_errorCalc: "Calculation error. Check the values and functions",
+    aria_errorRef: "Reference error. Check the cell references",
+    aria_errorSpill: "Spill error. Clear the cells the result needs",
+    // read after the value of a cell that breaks its list validation
+    aria_invalidValue: "Invalid value. Choose a value from the list",
+
+    // Screen reader announcements
+    // announced when an editing key is pressed in the read-only mode
+    aria_readonlySheet: "The sheet is read-only",
+    // announced when Ctrl+Shift+9 or Ctrl+Shift+0 finds nothing to reveal
+    aria_noHiddenRows: "No hidden rows in the selection",
+    aria_noHiddenCols: "No hidden columns in the selection",
+    // announced when a selection of several cells changes; {range} is built from aria_rangeExtent
+    aria_selectedRange: "{range}, {count} cells",
+    aria_rangeExtent: "{start} to {end}",
+    // joins the ranges of a selection made with Ctrl
+    aria_rangeSeparator: ", ",
+    // announced after an action; {message} is one of the texts above
+    aria_cellMessage: "{cell}: {message}",
+    // announced when an action makes several errors appear; {first} is aria_cellMessage for the first of them
+    aria_newErrors: "{count} new errors. {first}",
+    // announced when an action puts several invalid values; {first} is aria_cellMessage for the first of them
+    aria_invalidValues: "{count} invalid values. {first}",
+    // announced once when an edit of a locked cell is refused; the second one when a range holds locked cells
+    aria_lockedCell: "The cell is locked",
+    aria_lockedCells: "Locked cells were not changed",
+    // announced when the search text changes; followed by aria_searchMatch for the first match
+    aria_searchResults: "Results: {count}.",
+    // announced for the current match; {cell} is its address, for example "B7"
+    aria_searchMatch: "{index} of {count}, {cell}",
+    aria_searchNoResults: "No results",
+    // announced when an export or an import of a file starts and ends
+    aria_exportStarted: "Exporting the file",
+    aria_exportDone: "The file is exported",
+    aria_importStarted: "Importing the file",
+    aria_importDone: "The file is imported",
+    // announced when the column width or the row height command is applied; {size} is the applied size
+    aria_columnWidthSet: "Column width set to {size} pixels",
+    aria_rowHeightSet: "Row height set to {size} pixels",
 };
 ~~~
+
+`aria_`로 시작하는 키는 인터페이스에 표시되지 않습니다. 스크린 리더는 이 키를 컨트롤의 이름, 활성 셀의 설명, 그리고 [`announce()`](api/spreadsheet_announce_method.md) 메서드도 사용하는 라이브 영역의 메시지로 읽습니다. `{cell}`, `{count}`와 같이 중괄호로 둘러싸인 부분은 문자열을 읽을 때 값으로 대체됩니다. 번역한 문자열에도 이 부분을 그대로 유지하십시오. 번역된 접근성 문자열의 예는 [접근성](accessibility.md#translated-accessibility-strings) 가이드를 참조하십시오.
+
+`defaultSheetName` 키는 기본 시트 이름의 접두사를 설정합니다. Spreadsheet는 여기에 숫자를 붙이므로 기본값 `"sheet"`는 "sheet1", "sheet2" 등의 이름을 만듭니다. 예를 들어 Microsoft Excel이 독일어에서 사용하는 접두사인 `"Tabelle"`을 사용하면 시트 이름은 "Tabelle1", "Tabelle2" 등이 됩니다.
 
 ## 사용자 정의 로케일 {#custom-locale}
 
 다른 로케일을 적용하려면 다음을 수행해야 합니다:
 
-- Spreadsheet의 모든 텍스트 레이블에 대한 번역을 제공합니다. 예를 들어 러시아어 로케일의 경우:
+- Spreadsheet의 모든 텍스트 레이블에 대한 번역을 제공합니다. 예를 들어 독일어 로케일의 경우:
 
 ~~~jsx
-const ru = {
+const de = {
     // 언어 설정
 };
 ~~~
@@ -195,9 +298,47 @@ const ru = {
 - Spreadsheet를 초기화하기 전에 `dhx.i18n.setLocale()` 메서드를 호출하여 새 로케일을 적용합니다:
 
 ~~~jsx
-dhx.i18n.setLocale("spreadsheet", ru);
+dhx.i18n.setLocale("spreadsheet", de);
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 ~~~
+
+## 내장 위젯 현지화 {#localizing-built-in-widgets}
+
+Spreadsheet는 내부적으로 DHTMLX Suite의 Calendar, Colorpicker, Grid, Timepicker, Toolbar, Window, Message 위젯을 사용합니다. 이 위젯들의 문자열은 별도의 로케일에 저장되어 있으며, `spreadsheet` 로케일과 같은 방식으로 번역할 수 있습니다:
+
+| 로케일 | Spreadsheet에서 사용하는 문자열 |
+| ------ | --------------------------- |
+| `calendar` | 날짜 편집기와 날짜 필터의 월 및 요일 이름 |
+| `colorpicker` | 툴바의 색상 팝업에 있는 사용자 지정 색상 모드의 레이블, 팔레트 이름, 그리고 스크린 리더가 색상 견본과 색상 버튼에 대해 읽는 색상 이름(예: "Text color: dark gray") |
+| `grid` | 로드된 행 수 안내 |
+| `timepicker` | 시간 편집기의 레이블 |
+| `toolbar` | 툴바의 기본 접근 가능한 이름 |
+| `window` | 대화 상자의 기본 접근 가능한 이름 |
+| `message` | alert 및 confirm 대화 상자와 해당 버튼의 접근 가능한 이름 |
+
+툴바, 메뉴, 컨텍스트 메뉴는 생성될 때 로케일을 읽으므로, Spreadsheet를 초기화하기 전에 로케일 이름과 함께 `dhx.i18n.setLocale()`을 호출하십시오:
+
+~~~jsx
+const deColorpicker = {
+    cancel: "Abbrechen",
+    select: "Auswählen",
+    aria_palette: "Farbpalette",
+    aria_colorRed: "rot",
+    // other strings
+};
+
+const deMessage = {
+    aria_confirm: "Bestätigen"
+};
+
+dhx.i18n.setLocale("spreadsheet", de);
+dhx.i18n.setLocale("colorpicker", deColorpicker);
+dhx.i18n.setLocale("message", deMessage);
+
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
+~~~
+
+로케일 키는 평면 구조입니다. 각 키를 객체의 최상위 수준에 전달하십시오. 자세한 내용은 DHTMLX Suite 문서의 [스크린 리더 문자열 현지화](https://docs.dhtmlx.com/suite/common_features/accessibility_support/#localization-of-screen-reader-strings) 문서를 참조하십시오.
 
 ## 수식의 기본 로케일 {#default-locale-for-formulas}
 

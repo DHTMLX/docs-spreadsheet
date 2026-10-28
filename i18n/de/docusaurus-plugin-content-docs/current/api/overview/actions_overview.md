@@ -67,8 +67,8 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **merge**            | Die Aktion wird beim Verbinden eines Zellbereichs ausgeführt                                                                                                                                                  |
 | **removeCellStyles** | Die Aktion wird beim Löschen der Stile einer Zelle ausgeführt                                                                                                                                                 |
 | **renameSheet**      | Die Aktion wird beim Umbenennen eines Blatts ausgeführt                                                                                                                                                       |
-| **resizeCol**        | Die Aktion wird beim Ändern der Spaltenbreite ausgeführt                                                                                                                                                      |
-| **resizeRow**        | Die Aktion wird beim Ändern der Zeilenhöhe ausgeführt                                                                                                                                                         |
+| **resizeCol**        | Die Aktion wird beim Ändern der Spaltenbreite durch Ziehen des Spaltenrands oder mit dem Befehl *Spaltenbreite* ausgeführt                                                                                                                                                      |
+| **resizeRow**        | Die Aktion wird beim Ändern der Zeilenhöhe durch Ziehen des Zeilenrands oder mit dem Befehl *Zeilenhöhe* ausgeführt                                                                                                                                                         |
 | **setCellFormat**    | Die Aktion wird beim Ändern des Formats einer Zelle ausgeführt                                                                                                                                                |
 | **setCellValue**     | Die Aktion wird beim Ändern oder Entfernen des Werts einer Zelle ausgeführt                                                                                                                                   |
 | **setValidation**    | Die Aktion wird beim Festlegen der Datenvalidierung für eine Zelle ausgeführt                                                                                                                                 |
@@ -77,6 +77,13 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **toggleVisibility** | Die Aktion wird beim Ein-/Ausblenden von Spalten/Zeilen ausgeführt                                                                                                                                            |
 | **toggleFreeze**     | Die Aktion wird beim Einfrieren/Aufheben des Einfrierens von Spalten/Zeilen ausgeführt                                                                                                                        |
 | **unmerge**          | Die Aktion wird beim Aufheben der Verbindung von Zellen ausgeführt                                                                                                                                            |
+
+:::note
+Im `config`-Objekt der Events [`beforeAction`](api/spreadsheet_beforeaction_event.md) und [`afterAction`](api/spreadsheet_afteraction_event.md) übergeben die Aktionen **resizeCol** und **resizeRow** Folgendes:
+
+- `cell` - die Zelle oder der Zellbereich, dessen Spalten oder Zeilen in der Größe geändert werden
+- `val` - die neue Breite oder Höhe in Pixeln. Der Wert wird nur für die Befehle *Spaltenbreite* und *Zeilenhöhe* gesetzt, nicht beim Ändern der Größe durch Ziehen
+:::
 
 **Changelog:**
 

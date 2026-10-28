@@ -67,8 +67,8 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **merge**            | 合并一组单元格时执行该操作                                                                                                                                             |
 | **removeCellStyles** | 清除单元格样式时执行该操作                                                                                                                                             |
 | **renameSheet**      | 重命名工作表时执行该操作                                                                                                                                               |
-| **resizeCol**        | 调整列宽时执行该操作                                                                                                                                                   |
-| **resizeRow**        | 调整行高时执行该操作                                                                                                                                                   |
+| **resizeCol**        | 通过拖动列边框或使用*列宽*命令调整列宽时执行该操作 |
+| **resizeRow**        | 通过拖动行边框或使用*行高*命令调整行高时执行该操作 |
 | **setCellFormat**    | 更改单元格格式时执行该操作                                                                                                                                             |
 | **setCellValue**     | 更改或删除单元格值时执行该操作                                                                                                                                         |
 | **setValidation**    | 为单元格设置数据验证时执行该操作                                                                                                                                       |
@@ -77,6 +77,13 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **toggleVisibility** | 隐藏/显示列/行时执行该操作                                                                                                                                             |
 | **toggleFreeze**     | 冻结/取消冻结列/行时执行该操作                                                                                                                                         |
 | **unmerge**          | 拆分单元格时执行该操作                                                                                                                                                 |
+
+:::note
+在 [`beforeAction`](api/spreadsheet_beforeaction_event.md) 和 [`afterAction`](api/spreadsheet_afteraction_event.md) 事件的 `config` 对象中，**resizeCol** 和 **resizeRow** 操作会传递：
+
+- `cell` - 被调整列宽或行高的单元格或单元格范围
+- `val` - 新的宽度或高度（单位为像素）。仅在使用*列宽*和*行高*命令时设置，拖动调整时不设置
+:::
 
 **更新日志：**
 

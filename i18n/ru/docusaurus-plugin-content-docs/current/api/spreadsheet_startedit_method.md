@@ -35,4 +35,10 @@ spreadsheet.parse(data);
 spreadsheet.startEdit();
 ~~~
 
+### Подробности {#details}
+
+Ввод текста в активной ячейке запускает редактирование через этот метод. Текст, набранный с помощью редактора метода ввода (IME), передаётся как `initialValue` по завершении набора. Поэтому события [`beforeEditStart`](api/spreadsheet_beforeeditstart_event.md) и [`afterEditStart`](api/spreadsheet_aftereditstart_event.md) получают введённый или набранный текст, а `beforeEditStart` может отменить редактирование.
+
+**Журнал изменений:** Запуск редактирования с текстом, набранным с помощью IME, добавлен в v6.0.4
+
 **Полезная статья:** [Работа с таблицей](working_with_cells.md#editing-a-cell)

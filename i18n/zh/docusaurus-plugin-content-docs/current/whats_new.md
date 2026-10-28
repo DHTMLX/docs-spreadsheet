@@ -8,6 +8,58 @@ description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最
 
 如果您正在从旧版本升级 Spreadsheet，请查阅[迁移到新版本](migration.md)了解详细信息。
 
+## 版本 6.0.4 {#version-604}
+
+发布于 2026 年 10 月
+
+### 新功能 {#new-functionality-604}
+
+- 无障碍支持，目标为 WCAG 2.2 AA、Section 508 和 EN 301 549：Spreadsheet 的每个部分均可通过键盘操作，支持屏幕阅读器，并且在每个主题中都有可见的焦点。请查阅[无障碍](accessibility.md)指南和[无障碍合规报告](accessibility_conformance_report.md)
+- 可关闭和开启单元格选择：
+    - 新增配置属性：[`selection`](api/spreadsheet_selection_config.md)
+    - selection 模块的新方法：[`enable()`](api/selection_enable_method.md)、[`disable()`](api/selection_disable_method.md)、[`isDisabled()`](api/selection_isdisabled_method.md)
+- [`announce()`](api/spreadsheet_announce_method.md) 方法用于向屏幕阅读器发送状态消息
+- [上下文菜单](customization.md#context-menu)的新命令：[*列宽*、*行高*](work_with_rows_cols.md#setting-column-width-and-row-height)和*打开筛选器*（见[使用键盘打开筛选器](filtering_data.md#opening-a-filter-with-the-keyboard)）
+
+### 更新 {#updates-604}
+
+- 键盘导航（请查阅[快捷键列表](hotkeys.md)）：
+    - 焦点保持在活动单元格上，`Tab` 和 `Shift + Tab` 可分别从工作表的最后一个和第一个单元格移出，`Ctrl + F6` 在菜单、工具栏、工作表和工作表标签之间移动焦点
+    - 工具栏、菜单栏和工作表标签均为单一 Tab 停靠点，可使用方向键在其中导航
+    - 新增快捷键，例如用于上下文菜单的 `Shift + F10`，以及用于显示隐藏行和列的 `Ctrl (Cmd) + Shift + 9` / `Ctrl (Cmd) + Shift + 0`
+    - 工具栏的颜色和边框弹出窗口在打开时获得焦点，并可通过 `Esc` 和 `Tab` 关闭
+- 方向键在第一个和最后一个可见行和列处停止，而不是跳到对侧边缘；在边缘处按方向键会将选中的区域缩小为活动单元格
+- 使用输入法编辑器（IME）输入的文本会显示在活动单元格中，并通过 [`startEdit()`](api/spreadsheet_startedit_method.md) 方法开始编辑，因此会触发 `beforeEditStart` 和 `afterEditStart` 事件
+- [`setFocusedCell()`](api/selection_setfocusedcell_method.md) 方法将键盘焦点移动到单元格
+- [单元格中的链接](work_with_cells.md#inserting-a-hyperlink-into-a-cell)呈现为在新标签页中打开的真实链接，`Alt (Option) + Enter` 可打开活动单元格的链接
+- [只读模式](api/spreadsheet_readonly_config.md)保留键盘导航、选择、复制和搜索，屏幕阅读器会播报被拒绝的编辑。要关闭选择，请使用 `selection: false` 选项
+- [通过合并单元格删除行或列](merge_cells.md#removing-rows-and-columns-of-merged-cells)时，会删除该合并单元格的所有行或列
+- [`spreadsheet` 语言包](localization.md#default-locale)中新增界面和屏幕阅读器字符串，并支持[内置组件的翻译](localization.md#localizing-built-in-widgets)
+- 用于键盘焦点的 [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) 变量，以及浅色主题中对比度更高的公式引用颜色
+- React Spreadsheet：[`selection`](react/props.md#runtime-props) 属性、[`ISelection`](react/types.md#re-exported-upstream-types) 类型，以及作为仅初始化属性的 [`readonly`](react/props.md#init-only-props)
+
+### 修复 {#fixes-604}
+
+- 删除合并单元格之前的行或列时，合并单元格被丢弃而不是被移动的问题。现在只剩一个单元格的合并单元格会变成普通单元格并保留其值
+- 通过合并单元格删除行或列时只删除合并区域中的一行（列）的问题
+- 删除行和列的上下文菜单标签未显示将被删除的合并单元格的所有行或列的问题
+- 行覆盖整个筛选范围时未被删除的问题
+- 删除冻结的行或列时冻结区域没有缩小的问题
+- 拖动的单元格不包含普通数字时自动填充抛出错误的问题
+- 当第一行或最后一行（列）被隐藏时，按 `Home`、`End`、`Ctrl (Cmd) + Home`、`Ctrl (Cmd) + End` 和 `Ctrl (Cmd) + 方向键` 页面卡死的问题
+- 将单元格复制到 Excel、从 Excel 粘贴或在 Spreadsheet 内部粘贴时字体大小丢失的问题
+- 无效值提示框出现在远离无效单元格的位置或未显示的问题
+- 使用方向键后，列表编辑器中 `Esc` 和 `Tab` 不起作用的问题
+- 搜索先高亮第二个匹配项，且在编辑或切换工作表后未刷新结果的问题
+- 在不支持 WebAssembly 的浏览器中导入或导出时出现脚本错误的问题
+- `destructor()` 之后遗留文档监听器和内部组件的问题
+- 搜索栏关闭后键盘焦点丢失的问题
+- 已关闭的上下文菜单再次打开的问题
+- 键盘导航时活动单元格滚动到距视口边缘差一个单元格的问题
+- React Spreadsheet：因仅初始化属性变化而重新创建 Spreadsheet 后，事件回调和 `onStateChange` 不触发的问题
+- React Spreadsheet：卸载时未移除封装组件的事件处理程序的问题
+- React Spreadsheet：挂载时 `loadUrl` 的数据被加载两次，以及 Spreadsheet 重新创建后再次覆盖保留数据的问题
+
 ## 版本 6.0.3 {#version-603}
 
 发布于 2026 年 8 月 24 日

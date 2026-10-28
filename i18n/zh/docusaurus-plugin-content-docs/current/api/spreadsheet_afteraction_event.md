@@ -13,7 +13,21 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 af
 ### 用法 {#usage}
 
 ~~~jsx
-afterAction: (action: string, config: object) => void;
+afterAction: (
+    action: string,
+    config: {
+        action?: string,
+        cell?: string,
+        row?: number,
+        col?: number,
+        val?: any,
+        prev?: any,
+        groupAction?: string,
+        pageId?: string | number,
+        pageName?: string,
+        // other properties of the action
+    } | object[]
+) => void;
 ~~~
 
 ### 参数 {#parameters}
@@ -21,7 +35,18 @@ afterAction: (action: string, config: object) => void;
 事件的 callback 接收以下参数：
 
 - `action` - （必填）操作名称。查看可用操作的完整列表，请参阅[此处](api/overview/actions_overview.md#list-of-actions)
-- `config` - （必填）包含操作参数的对象
+- `config` - （必填）包含操作参数的对象。属性集合取决于具体操作。该对象可包含：
+    - `action` - （可选）操作名称
+    - `cell` - （可选）操作所应用的单元格或单元格区域的 id，例如 `"A1"` 或 `"B2:D5"`
+    - `row` - （可选）该单元格所在行的从零开始的索引
+    - `col` - （可选）该单元格所在列的从零开始的索引
+    - `val` - （可选）操作应用的新值，例如单元格的值、样式或尺寸
+    - `prev` - （可选）先前的值
+    - `groupAction` - （可选）当 `cell` 为单元格区域时，代替 `action` 执行的操作名称，例如 `"groupAction"`、`"groupRowAction"` 或 `"resizeCol"`
+    - `pageId` - （可选）工作表的 id
+    - `pageName` - （可选）工作表的名称
+
+    当多个操作一起执行时（例如粘贴时），`action` 参数为 `"groupAction"`，`config` 是由此类对象组成的数组。
 
 ### 示例 {#example}
 

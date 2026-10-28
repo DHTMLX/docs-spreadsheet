@@ -1,7 +1,7 @@
 ---
 sidebar_label: 내장 테마
 title: 내장 테마
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 내장 테마에 대해 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 직접 사용해 보거나, DHTMLX Spreadsheet 30일 무료 평가판을 다운로드하십시오.
+description: DHTMLX Spreadsheet의 기본 제공 테마(라이트, 다크 및 각각의 고대비 변형)입니다. Spreadsheet 전용 CSS 변수와 테마를 설정하는 방법을 알아봅니다.
 ---
 
 # 내장 테마 {#built-in-themes}
@@ -13,7 +13,7 @@ DHTMLX Spreadsheet 라이브러리는 4가지 사전 정의된 테마를 제공�
 - [라이트 고대비 테마](#light-high-contrast-theme) ("contrast-light")
 - [다크 고대비 테마](#dark-high-contrast-theme) ("contrast-dark")
 
-Spreadsheet 테마는 국제 표준에 따라 개발되었습니다. 고대비 테마는 시각 장애가 있는 사용자를 돕습니다. 자세한 내용은 [접근성 지원](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) 문서를 참조하십시오.
+Spreadsheet 테마는 국제 표준에 따라 개발되었습니다. 고대비 테마는 시각 장애가 있는 사용자를 돕습니다. Spreadsheet에서 테마의 대비와 키보드 포커스 표시기에 대한 내용은 접근성 가이드의 [고대비 및 포커스](accessibility.md#high-contrast-and-focus) 섹션을 확인하십시오. DHTMLX Suite 위젯의 접근성에 대해서는 [접근성 지원](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) 문서를 참조하십시오.
 
 아래 예제에서 모든 테마를 직접 사용해 볼 수 있습니다.
 
@@ -377,14 +377,15 @@ Spreadsheet 컴포넌트에 특화된 변수 목록은 다음과 같습니다.
     --dhx-spreadsheet-range-background-8: #ecb6ff;
 
     --dhx-spreadsheet-range-color-1: #00815a;
-    --dhx-spreadsheet-range-color-2: #bfc000;
-    --dhx-spreadsheet-range-color-3: #c55933;
-    --dhx-spreadsheet-range-color-4: #0cc1d6;
-    --dhx-spreadsheet-range-color-5: #0080a3;
-    --dhx-spreadsheet-range-color-6: #529a0a;
+    --dhx-spreadsheet-range-color-2: #8b7300;
+    --dhx-spreadsheet-range-color-3: #a34729;
+    --dhx-spreadsheet-range-color-4: #007a8c;
+    --dhx-spreadsheet-range-color-5: #135db1;
+    --dhx-spreadsheet-range-color-6: #2f6500;
     --dhx-spreadsheet-range-color-7: #6d767b;
-    --dhx-spreadsheet-range-color-8: #ba38e7;
+    --dhx-spreadsheet-range-color-8: #b82fe5;
 
+    --dhx-spreadsheet-focus-color: var(--dhx-color-primary);
 }
 ~~~
 
@@ -411,6 +412,17 @@ Spreadsheet 컴포넌트에 특화된 변수 목록은 다음과 같습니다.
     --dhx-spreadsheet-range-color-7: #e4e4e4;
     --dhx-spreadsheet-range-color-8: #ecb6ff;
 
+    --dhx-spreadsheet-focus-color: hsl(var(--dhx-h-primary), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 12% - var(--dhx-l-contrast-offset)));
+}
+~~~
+
+`--dhx-spreadsheet-range-color-*` 및 `--dhx-spreadsheet-range-background-*` 변수는 수식을 편집하는 동안 수식의 셀 참조를 표시하는 색상을 설정합니다. 라이트 테마에서 `--dhx-spreadsheet-range-color-*` 색상은 수식 입력줄 배경에 대해 최소 4.5:1의 대비를 가집니다.
+
+`--dhx-spreadsheet-focus-color` 변수는 수식 입력줄과 툴바, 메뉴 바, 시트 탭, 테두리 팝업, 링크 팝업, 검색 바의 컨트롤에 표시되는 키보드 포커스 윤곽선의 색상을 설정합니다. 다크 테마에서는 윤곽선이 최소 3:1의 대비를 유지하도록 기본 색상보다 밝은 색상이 사용됩니다. [사용자 지정 테마](themes/custom_theme.md)에서 이 변수를 재정의할 수 있습니다:
+
+~~~css
+[data-dhx-theme='custom-theme-dark'] {
+    --dhx-spreadsheet-focus-color: #7fc8ff;
 }
 ~~~
 

@@ -96,8 +96,8 @@ Props werden danach kategorisiert, wie die Komponente mit Änderungen umgeht:
 
 | Kategorie | Props | Was passiert bei Änderung |
 |----------|-------|----------------------|
-| **Init-Only** | `menu`, `editLine`, `toolbarBlocks`, `multiSheets`, `formats`, `localization`, `importModulePath`, `exportModulePath`, `spreadsheetLocale` | Das Widget wird zerstört und neu erstellt. Tabellendaten bleiben erhalten, aber Rückgängig/Wiederherstellen-Verlauf und UI-Zustand (Auswahl, Scrollposition) werden zurückgesetzt. |
-| **Laufzeit** | `readonly`, `rowsCount`, `colsCount` | Wird sofort ohne Datenverlust oder UI-Zustandsreset angewendet. |
+| **Init-Only** | `menu`, `editLine`, `toolbarBlocks`, `multiSheets`, `formats`, `localization`, `importModulePath`, `exportModulePath`, `spreadsheetLocale`, `readonly` | Das Widget wird zerstört und neu erstellt. Tabellendaten bleiben erhalten, aber Rückgängig/Wiederherstellen-Verlauf und UI-Zustand (Auswahl, Scrollposition) werden zurückgesetzt. |
+| **Laufzeit** | `selection`, `rowsCount`, `colsCount` | Wird sofort ohne Datenverlust oder UI-Zustandsreset angewendet. |
 | **Daten** | `sheets`, `activeSheet` | Wird inkrementell angewendet; nur geänderte Zellen, Bereiche oder Einstellungen werden aktualisiert. |
 | **Neu-Parsen** | `styles` | Stiländerungen erfordern einen vollständigen Datenneulade. Tabellendaten bleiben erhalten, aber Rückgängig/Wiederherstellen-Verlauf und UI-Zustand werden zurückgesetzt. |
 | **Zustand** | `search`, `theme`, `loadUrl` | Wird über dedizierte Widget-APIs ohne Nebeneffekte angewendet. |
@@ -197,6 +197,10 @@ function App() {
 ~~~
 
 Die `instance`-Eigenschaft ist `null`, bevor das Widget initialisiert wird und nach dem Unmount.
+
+:::info
+Handler, die mit `ref.current.instance.events.on()` hinzugefügt wurden, werden entfernt, wenn das Widget nach der Änderung eines Init-Only-Props neu erstellt wird und wenn die Komponente unmountet wird. Verwenden Sie die [Event-Callback-Props](react/events.md), die die Komponente an jede neue Widget-Instanz anhängt.
+:::
 
 ## API-Referenz {#api-reference}
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: 内置主题
 title: 内置主题
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解内置主题。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: DHTMLX Spreadsheet 的内置主题，包括浅色和深色及其高对比度变体。了解 Spreadsheet 专属的 CSS 变量以及如何设置主题。
 ---
 
 # 内置主题 {#built-in-themes}
@@ -13,7 +13,7 @@ DHTMLX Spreadsheet 库提供 4 个预定义主题：
 - [浅色高对比度主题](#light-high-contrast-theme)（"contrast-light"）
 - [深色高对比度主题](#dark-high-contrast-theme)（"contrast-dark"）
 
-Spreadsheet 主题根据国际标准开发。高对比度主题有助于视力障碍用户使用。更多详情，请阅读[无障碍支持](https://docs.dhtmlx.com/suite/common_features/accessibility_support/)文章。
+Spreadsheet 主题根据国际标准开发。高对比度主题有助于视力障碍用户使用。有关 Spreadsheet 中主题的对比度和键盘焦点指示器，请查阅无障碍指南的[高对比度与焦点](accessibility.md#high-contrast-and-focus)部分。有关 DHTMLX Suite 组件的无障碍性，请阅读[无障碍支持](https://docs.dhtmlx.com/suite/common_features/accessibility_support/)文章。
 
 您可以在下面的示例中试用所有主题：
 
@@ -377,14 +377,15 @@ Spreadsheet 组件专用变量列表如下：
     --dhx-spreadsheet-range-background-8: #ecb6ff;
 
     --dhx-spreadsheet-range-color-1: #00815a;
-    --dhx-spreadsheet-range-color-2: #bfc000;
-    --dhx-spreadsheet-range-color-3: #c55933;
-    --dhx-spreadsheet-range-color-4: #0cc1d6;
-    --dhx-spreadsheet-range-color-5: #0080a3;
-    --dhx-spreadsheet-range-color-6: #529a0a;
+    --dhx-spreadsheet-range-color-2: #8b7300;
+    --dhx-spreadsheet-range-color-3: #a34729;
+    --dhx-spreadsheet-range-color-4: #007a8c;
+    --dhx-spreadsheet-range-color-5: #135db1;
+    --dhx-spreadsheet-range-color-6: #2f6500;
     --dhx-spreadsheet-range-color-7: #6d767b;
-    --dhx-spreadsheet-range-color-8: #ba38e7;
+    --dhx-spreadsheet-range-color-8: #b82fe5;
 
+    --dhx-spreadsheet-focus-color: var(--dhx-color-primary);
 }
 ~~~
 
@@ -411,6 +412,17 @@ Spreadsheet 组件专用变量列表如下：
     --dhx-spreadsheet-range-color-7: #e4e4e4;
     --dhx-spreadsheet-range-color-8: #ecb6ff;
 
+    --dhx-spreadsheet-focus-color: hsl(var(--dhx-h-primary), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 12% - var(--dhx-l-contrast-offset)));
+}
+~~~
+
+`--dhx-spreadsheet-range-color-*` 和 `--dhx-spreadsheet-range-background-*` 变量用于设置编辑公式时标记单元格引用的颜色。在浅色主题中，`--dhx-spreadsheet-range-color-*` 颜色与公式栏背景的对比度至少为 4.5:1。
+
+`--dhx-spreadsheet-focus-color` 变量用于设置公式栏，以及工具栏、菜单栏、工作表标签、Border 弹出窗口、链接弹出窗口和搜索栏中各控件的键盘焦点轮廓颜色。在深色主题中，该颜色比主色更浅，从而使轮廓保持至少 3:1 的对比度。您可以在[自定义主题](themes/custom_theme.md)中重新定义该变量：
+
+~~~css
+[data-dhx-theme='custom-theme-dark'] {
+    --dhx-spreadsheet-focus-color: #7fc8ff;
 }
 ~~~
 

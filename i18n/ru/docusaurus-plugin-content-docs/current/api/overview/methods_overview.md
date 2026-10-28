@@ -1,7 +1,7 @@
 ---
 sidebar_label: Обзор методов
 title: Обзор методов
-description: Вы можете ознакомиться с обзором методов библиотеки DHTMLX JavaScript Spreadsheet в документации. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Список методов DHTMLX Spreadsheet для загрузки и сохранения данных, редактирования ячеек, стилизации, объединения, сортировки, фильтрации и управления листами.
 ---
 
 # Обзор методов {#methods-overview}
@@ -11,6 +11,7 @@ description: Вы можете ознакомиться с обзором мет
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(../spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addformula_method.md)     | @getshort(../spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(../spreadsheet_addrow_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(../spreadsheet_announce_method.md)         |
 | [](api/spreadsheet_clear_method.md)          | @getshort(../spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(../spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(../spreadsheet_deleterow_method.md)      |

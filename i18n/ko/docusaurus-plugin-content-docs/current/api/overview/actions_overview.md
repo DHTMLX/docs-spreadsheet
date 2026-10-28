@@ -67,8 +67,8 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **merge**            | 셀 범위를 병합할 때 실행됩니다                                                                                                                                                            |
 | **removeCellStyles** | 셀 스타일을 지울 때 실행됩니다                                                                                                                                                            |
 | **renameSheet**      | 시트 이름을 바꿀 때 실행됩니다                                                                                                                                                            |
-| **resizeCol**        | 열 크기를 조정할 때 실행됩니다                                                                                                                                                            |
-| **resizeRow**        | 행 크기를 조정할 때 실행됩니다                                                                                                                                                            |
+| **resizeCol**        | 경계를 드래그하거나 *Column width* 명령으로 열 크기를 조정할 때 실행됩니다 |
+| **resizeRow**        | 경계를 드래그하거나 *Row height* 명령으로 행 크기를 조정할 때 실행됩니다 |
 | **setCellFormat**    | 셀 형식을 변경할 때 실행됩니다                                                                                                                                                            |
 | **setCellValue**     | 셀 값을 변경하거나 제거할 때 실행됩니다                                                                                                                                                   |
 | **setValidation**    | 셀에 데이터 유효성 검사를 설정할 때 실행됩니다                                                                                                                                            |
@@ -77,6 +77,13 @@ spreadsheet.events.on("beforeColumnAdd", function(cell){
 | **toggleVisibility** | 열/행을 숨기거나 표시할 때 실행됩니다                                                                                                                                                     |
 | **toggleFreeze**     | 열/행을 고정하거나 고정 해제할 때 실행됩니다                                                                                                                                              |
 | **unmerge**          | 셀을 분할할 때 실행됩니다                                                                                                                                                                 |
+
+:::note
+[`beforeAction`](api/spreadsheet_beforeaction_event.md) 및 [`afterAction`](api/spreadsheet_afteraction_event.md) 이벤트의 `config` 객체에서 **resizeCol** 및 **resizeRow** 액션은 다음 값을 전달합니다:
+
+- `cell` - 열 또는 행의 크기가 조정되는 셀 또는 셀 범위
+- `val` - 픽셀 단위의 새 너비 또는 높이. *Column width* 및 *Row height* 명령에서만 설정되며, 드래그로 크기를 조정할 때는 설정되지 않습니다
+:::
 
 **변경 로그:**
 

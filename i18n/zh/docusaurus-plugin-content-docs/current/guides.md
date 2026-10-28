@@ -1,12 +1,12 @@
 ---
 sidebar_label: 指南概览
 title: 开发者与用户指南
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中查阅开发者与用户指南。浏览 API 参考、尝试代码示例和在线演示，并下载免费 30 天试用版 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet 的开发者指南和用户指南，涵盖初始化、配置、数据加载，以及单元格编辑、格式设置和工作表操作。
 ---
 
 # 指南 {#guides}
 
-DHTMLX Spreadsheet 提供了丰富的功能：支持多种格式的数据导入与导出、便捷的单元格内容与样式操作、灵活的表格结构、只读模式、广泛的外观自定义，以及与主流框架的集成。
+DHTMLX Spreadsheet 提供了丰富的功能：支持多种格式的数据导入与导出、便捷的单元格内容与样式操作、灵活的表格结构、只读模式、广泛的外观自定义、键盘和屏幕阅读器无障碍支持，以及与主流框架的集成。
 
 ## 开发者指南 {#developer-guides}
 
@@ -37,6 +37,12 @@ DHTMLX Spreadsheet 提供了丰富的功能：支持多种格式的数据导入�
 - [与 Angular 集成](angular_integration.md) - 在 Angular 应用中使用 Spreadsheet 的 GitHub 示例
 - [与 Svelte 集成](svelte_integration.md) - 在 Svelte 应用中使用 Spreadsheet 的 GitHub 示例
 - [与 Vue.js 集成](vuejs_integration.md) - 在 Vue 应用中使用 Spreadsheet 的 GitHub 示例
+
+### 无障碍 {#accessibility}
+
+- [无障碍](accessibility.md) - WAI-ARIA 支持、键盘导航、屏幕阅读器播报和高对比度主题
+- [设置无障碍的 Spreadsheet](accessibility.md#configuration-recipes) - 面向键盘和屏幕阅读器用户的配置，包括只读模式
+- [符合性报告（VPAT）](accessibility_conformance_report.md) - 对 WCAG 2.2 AA、Section 508 和 EN 301 549 的符合情况
 
 ### AI 辅助开发 {#ai-assisted-development}
 

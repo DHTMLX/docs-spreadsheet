@@ -77,6 +77,9 @@ DHTMLX Spreadsheet использует многоуровневую систе�
     /* цвета диапазонов таблицы */
     --dhx-spreadsheet-range-background-1: #bee3f8;
     --dhx-spreadsheet-range-color-1: #2b6cb0;
+
+    /* keyboard focus outline of the formula bar and the toolbar controls */
+    --dhx-spreadsheet-focus-color: #2b6cb0;
 }
 ~~~
 

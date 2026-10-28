@@ -1,7 +1,7 @@
 ---
 sidebar_label: Built-in themes
 title: Integrierte Themes
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr uber die integrierten Themes. Durchsuchen Sie Entwickleranleitungen und die API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Integrierte Themes von DHTMLX Spreadsheet, hell und dunkel mit ihren Hochkontrast-Varianten. Lernen Sie die Spreadsheet-spezifischen CSS-Variablen kennen und erfahren Sie, wie Sie ein Theme setzen.
 ---
 
 # Integrierte Themes {#built-in-themes}
@@ -13,7 +13,7 @@ Die DHTMLX Spreadsheet-Bibliothek bietet 4 vordefinierte Themes:
 - [Helles Hochkontrast-Theme](#light-high-contrast-theme) ("contrast-light")
 - [Dunkles Hochkontrast-Theme](#dark-high-contrast-theme) ("contrast-dark")
 
-Die Spreadsheet-Themes wurden in Ubereinstimmung mit internationalen Standards entwickelt. Die Hochkontrast-Themes helfen Benutzern mit Sehbehinderungen. Weitere Details finden Sie im Artikel [Barrierefreiheitsunterstutzung](https://docs.dhtmlx.com/suite/common_features/accessibility_support/).
+Die Spreadsheet-Themes wurden in Ubereinstimmung mit internationalen Standards entwickelt. Die Hochkontrast-Themes helfen Benutzern mit Sehbehinderungen. Informationen zum Kontrast der Themes und zum Indikator für den Tastaturfokus in Spreadsheet finden Sie im Abschnitt [High contrast and focus](accessibility.md#high-contrast-and-focus) des Leitfadens zur Barrierefreiheit. Informationen zur Barrierefreiheit der DHTMLX Suite-Widgets finden Sie im Artikel [Barrierefreiheitsunterstutzung](https://docs.dhtmlx.com/suite/common_features/accessibility_support/).
 
 Sie konnen alle Themes im folgenden Beispiel ausprobieren:
 
@@ -377,14 +377,15 @@ Die Liste der fur die Spreadsheet-Komponente spezifischen Variablen umfasst folg
     --dhx-spreadsheet-range-background-8: #ecb6ff;
 
     --dhx-spreadsheet-range-color-1: #00815a;
-    --dhx-spreadsheet-range-color-2: #bfc000;
-    --dhx-spreadsheet-range-color-3: #c55933;
-    --dhx-spreadsheet-range-color-4: #0cc1d6;
-    --dhx-spreadsheet-range-color-5: #0080a3;
-    --dhx-spreadsheet-range-color-6: #529a0a;
+    --dhx-spreadsheet-range-color-2: #8b7300;
+    --dhx-spreadsheet-range-color-3: #a34729;
+    --dhx-spreadsheet-range-color-4: #007a8c;
+    --dhx-spreadsheet-range-color-5: #135db1;
+    --dhx-spreadsheet-range-color-6: #2f6500;
     --dhx-spreadsheet-range-color-7: #6d767b;
-    --dhx-spreadsheet-range-color-8: #ba38e7;
+    --dhx-spreadsheet-range-color-8: #b82fe5;
 
+    --dhx-spreadsheet-focus-color: var(--dhx-color-primary);
 }
 ~~~
 
@@ -411,6 +412,17 @@ Die Liste der fur die Spreadsheet-Komponente spezifischen Variablen umfasst folg
     --dhx-spreadsheet-range-color-7: #e4e4e4;
     --dhx-spreadsheet-range-color-8: #ecb6ff;
 
+    --dhx-spreadsheet-focus-color: hsl(var(--dhx-h-primary), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 12% - var(--dhx-l-contrast-offset)));
+}
+~~~
+
+Die Variablen `--dhx-spreadsheet-range-color-*` und `--dhx-spreadsheet-range-background-*` legen die Farben fest, mit denen die Zellbezüge einer Formel während der Bearbeitung markiert werden. In den hellen Themes haben die Farben `--dhx-spreadsheet-range-color-*` einen Kontrast von mindestens 4,5:1 gegenüber dem Hintergrund der Formelleiste.
+
+Die Variable `--dhx-spreadsheet-focus-color` legt die Farbe des Tastaturfokus-Rahmens der Formelleiste sowie der Steuerelemente der Symbolleiste, der Menüleiste, der Tabellenblatt-Registerkarten, des Border-Popups, des Link-Popups und der Suchleiste fest. In den dunklen Themes ist die Farbe heller als die Primärfarbe, sodass der Rahmen einen Kontrast von mindestens 3:1 behält. Sie können die Variable in einem [benutzerdefinierten Theme](themes/custom_theme.md) neu definieren:
+
+~~~css
+[data-dhx-theme='custom-theme-dark'] {
+    --dhx-spreadsheet-focus-color: #7fc8ff;
 }
 ~~~
 

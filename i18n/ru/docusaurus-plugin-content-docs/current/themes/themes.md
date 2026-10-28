@@ -1,7 +1,7 @@
 ---
 sidebar_label: Встроенные темы
 title: Встроенные темы
-description: Вы можете узнать о встроенных темах библиотеки DHTMLX JavaScript Spreadsheet в документации. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: "Встроенные темы DHTMLX Spreadsheet: светлая и тёмная, а также их высококонтрастные варианты. Узнайте о CSS-переменных, специфичных для Spreadsheet, и о том, как установить тему."
 ---
 
 # Встроенные темы {#built-in-themes}
@@ -13,7 +13,7 @@ description: Вы можете узнать о встроенных темах �
 - [светлая высококонтрастная тема](#light-high-contrast-theme) ("contrast-light")
 - [тёмная высококонтрастная тема](#dark-high-contrast-theme) ("contrast-dark")
 
-Темы Spreadsheet разработаны в соответствии с международными стандартами. Высококонтрастные темы помогают пользователям с нарушениями зрения. Подробнее читайте в статье [Поддержка доступности](https://docs.dhtmlx.com/suite/common_features/accessibility_support/).
+Темы Spreadsheet разработаны в соответствии с международными стандартами. Высококонтрастные темы помогают пользователям с нарушениями зрения. О контрастности тем и индикаторе фокуса клавиатуры в Spreadsheet см. раздел [Высокий контраст и фокус](accessibility.md#high-contrast-and-focus) руководства по доступности. О доступности виджетов DHTMLX Suite читайте в статье [Поддержка доступности](https://docs.dhtmlx.com/suite/common_features/accessibility_support/).
 
 Все темы можно попробовать в примере ниже:
 
@@ -377,14 +377,15 @@ description: Вы можете узнать о встроенных темах �
     --dhx-spreadsheet-range-background-8: #ecb6ff;
 
     --dhx-spreadsheet-range-color-1: #00815a;
-    --dhx-spreadsheet-range-color-2: #bfc000;
-    --dhx-spreadsheet-range-color-3: #c55933;
-    --dhx-spreadsheet-range-color-4: #0cc1d6;
-    --dhx-spreadsheet-range-color-5: #0080a3;
-    --dhx-spreadsheet-range-color-6: #529a0a;
+    --dhx-spreadsheet-range-color-2: #8b7300;
+    --dhx-spreadsheet-range-color-3: #a34729;
+    --dhx-spreadsheet-range-color-4: #007a8c;
+    --dhx-spreadsheet-range-color-5: #135db1;
+    --dhx-spreadsheet-range-color-6: #2f6500;
     --dhx-spreadsheet-range-color-7: #6d767b;
-    --dhx-spreadsheet-range-color-8: #ba38e7;
+    --dhx-spreadsheet-range-color-8: #b82fe5;
 
+    --dhx-spreadsheet-focus-color: var(--dhx-color-primary);
 }
 ~~~
 
@@ -411,6 +412,17 @@ description: Вы можете узнать о встроенных темах �
     --dhx-spreadsheet-range-color-7: #e4e4e4;
     --dhx-spreadsheet-range-color-8: #ecb6ff;
 
+    --dhx-spreadsheet-focus-color: hsl(var(--dhx-h-primary), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 12% - var(--dhx-l-contrast-offset)));
+}
+~~~
+
+Переменные `--dhx-spreadsheet-range-color-*` и `--dhx-spreadsheet-range-background-*` задают цвета, которыми отмечаются ссылки на ячейки в формуле во время её редактирования. В светлых темах цвета `--dhx-spreadsheet-range-color-*` имеют контрастность не менее 4.5:1 относительно фона строки формул.
+
+Переменная `--dhx-spreadsheet-focus-color` задаёт цвет контура фокуса клавиатуры строки формул и элементов панели инструментов, строки меню, вкладок листов, всплывающего окна Border, всплывающего окна ссылки и строки поиска. В тёмных темах этот цвет светлее основного, чтобы контур сохранял контрастность не менее 3:1. Переменную можно переопределить в [пользовательской теме](themes/custom_theme.md):
+
+~~~css
+[data-dhx-theme='custom-theme-dark'] {
+    --dhx-spreadsheet-focus-color: #7fc8ff;
 }
 ~~~
 

@@ -13,12 +13,13 @@ description: Sie können die setSelectedCell Selection-Methode in der Dokumentat
 ### Verwendung {#usage}
 
 ~~~jsx
-setSelectedCell(cell: string): void;
+setSelectedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### Parameter {#parameters}
 
 - `cell` - (erforderlich) die ID(s) oder ein Bereich der auszuwählenden Zelle(n)
+- `scroll` - (optional) legt fest, ob die Tabellenkalkulation zur Zelle gescrollt wird, standardmäßig `true`
 
 ### Beispiel {#example}
 

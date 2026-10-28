@@ -83,6 +83,10 @@
     "message": "使用单元格",
     "description": "The generated-index page title for category 'Work with cells' in sidebar 'docs'"
   },
+  "sidebar.docs.category.Accessibility": {
+    "message": "无障碍",
+    "description": "The label for category 'Accessibility' in sidebar 'docs'"
+  },
   "sidebar.docs.category.Frameworks & integrations": {
     "message": "框架与集成",
     "description": "The label for category 'Frameworks & integrations' in sidebar 'docs'"

@@ -188,6 +188,13 @@ ref.current?.instance?.selection.setSelectedCell("A1:C5");
 // Ruckgangig/Wiederholen
 ref.current?.instance?.undo();
 ref.current?.instance?.redo();
+
+// Turn the selection off and on
+ref.current?.instance?.selection.disable();
+ref.current?.instance?.selection.enable();
+
+// Send a status message to screen readers
+ref.current?.instance?.announce("The report is saved");
 ~~~
 
 ## Actions-Enum {#actions-enum}
@@ -270,6 +277,7 @@ Diese Typen werden der Einfachheit halber aus `@dhx/ts-spreadsheet` erneut expor
 | `IStylesList` | Stildefinitions-Map. |
 | `IDataWithStyles` | Datenstruktur mit eingebetteten Stilen (verwendet von `serialize()`/`parse()`). |
 | `ICellInfo` | Zellinformationen, die von Widget-Methoden zuruckgegeben werden. |
+| `ISelection` | Selection-Modul-Interface (`instance.selection`), einschließlich der Methoden [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md) und [`isDisabled()`](api/selection_isdisabled_method.md). |
 | `FileFormat` | Dateiformat fur das Laden von Daten (z. B. `"json"` oder `"xlsx"`). |
 | `ToolbarBlocks` | Bezeichner fur Toolbar-Blocke (z. B. `"default"`, `"undo"` oder `"font"`). |
 | `FilterConditions` | Enum der verfugbaren Filterbedingungstypen. |

@@ -13,7 +13,21 @@ description: Вы можете узнать о событии beforeAction в д
 ### Использование {#usage}
 
 ~~~jsx
-beforeAction: (action: string, config: object) => void | boolean;
+beforeAction: (
+    action: string,
+    config: {
+        action?: string,
+        cell?: string,
+        row?: number,
+        col?: number,
+        val?: any,
+        prev?: any,
+        groupAction?: string,
+        pageId?: string | number,
+        pageName?: string,
+        // other properties of the action
+    } | object[]
+) => void | boolean;
 ~~~
 
 ### Параметры {#parameters}
@@ -21,7 +35,18 @@ beforeAction: (action: string, config: object) => void | boolean;
 Колбэк события принимает следующие параметры:
 
 - `action` - (обязательный) имя действия. Полный список доступных действий см. [здесь](api/overview/actions_overview.md#list-of-actions)
-- `config` - (обязательный) объект с параметрами действия
+- `config` - (обязательный) объект с параметрами действия. Набор свойств зависит от действия. Объект может содержать:
+    - `action` - (необязательный) имя действия
+    - `cell` - (необязательный) идентификатор ячейки или диапазона ячеек, к которым применяется действие, например, `"A1"` или `"B2:D5"`
+    - `row` - (необязательный) индекс строки ячейки, начиная с нуля
+    - `col` - (необязательный) индекс столбца ячейки, начиная с нуля
+    - `val` - (необязательный) новое значение, которое применяет действие, например, значение ячейки, стиль или размер
+    - `prev` - (необязательный) предыдущее значение
+    - `groupAction` - (необязательный) имя действия, которое выполняется вместо `action`, когда `cell` является диапазоном ячеек, например, `"groupAction"`, `"groupRowAction"` или `"resizeCol"`
+    - `pageId` - (необязательный) идентификатор листа
+    - `pageName` - (необязательный) имя листа
+
+    Когда несколько действий выполняются вместе, например, при вставке, параметр `action` равен `"groupAction"`, а `config` - массив таких объектов.
 
 ### Возвращаемое значение {#returns}
 

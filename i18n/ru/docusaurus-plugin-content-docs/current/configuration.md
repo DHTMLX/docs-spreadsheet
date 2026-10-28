@@ -1,7 +1,7 @@
 ---
 sidebar_label: Конфигурация
 title: Конфигурация
-description: Вы можете узнать о конфигурации библиотеки DHTMLX JavaScript Spreadsheet в документации. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Настройка DHTMLX Spreadsheet. Параметры панели инструментов, строки редактирования, меню, количества строк и столбцов, режима только для чтения, выделения ячеек и числовых форматов.
 ---
 
 # Конфигурация {#configuration}
@@ -50,7 +50,40 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 
 Вы также можете [настроить поведение Spreadsheet в режиме только для чтения](customization.md#custom-read-only-mode).
 
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    readonly: true,
+});
+~~~
+
+В режиме только для чтения панель инструментов, меню и строка формул скрыты. Пользователи могут перемещаться по ячейкам с помощью клавиатуры, выделять их мышью, копировать и искать в них. Попытки редактирования отклоняются и озвучиваются программами чтения с экрана как "The sheet is read-only". Маркер заполнения скрыт. Подробности смотрите в статье [`readonly`](api/spreadsheet_readonly_config.md#details). О том, как с Spreadsheet в режиме только для чтения работают пользователи клавиатуры и программ чтения с экрана, читайте в разделе [Read-only setup](accessibility.md#read-only-setup) руководства по доступности.
+
+Чтобы отключить навигацию с клавиатуры и выделение в режиме только для чтения, установите для параметра [`selection`](api/spreadsheet_selection_config.md) значение `false`:
+
+~~~jsx {3}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    readonly: true,
+    selection: false,
+});
+~~~
+
 <iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+## Выделение ячеек {#selection-of-cells}
+
+По умолчанию пользователи могут выделять ячейки мышью и с клавиатуры, а в Spreadsheet есть активная ячейка. Чтобы отключить выделение, установите для параметра конфигурации [`selection`](api/spreadsheet_selection_config.md) значение `false`:
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+    selection: false,
+});
+~~~
+
+В этом случае в Spreadsheet нет активной ячейки, ячейки нельзя выделять или редактировать из интерфейса, а контекстное меню недоступно.
+
+Чтобы отключать и включать выделение во время работы, используйте методы [`selection.disable()`](api/selection_disable_method.md) и [`selection.enable()`](api/selection_enable_method.md). Метод [`selection.isDisabled()`](api/selection_isdisabled_method.md) проверяет, отключено ли выделение.
+
+Без выделения сетка становится одной точкой табуляции, через которую проходит клавиатурный фокус. Смотрите раздел [Read-only setup](accessibility.md#read-only-setup) руководства по доступности.
 
 ## Пользовательские числовые форматы ячеек {#custom-number-formats-for-cells}
 

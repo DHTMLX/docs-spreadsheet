@@ -1,7 +1,7 @@
 ---
 sidebar_label: Zellen zusammenführen
 title: Zellen zusammenführen
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie, wie Sie Zellen zusammenführen. Lesen Sie Entwicklerhandbücher und API-Referenzen, testen Sie Code-Beispiele und Live-Demos, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Führen Sie Zellen in DHTMLX Spreadsheet über die Symbolleiste oder das Menü „Format" zusammen und teilen Sie sie wieder auf. Erfahren Sie außerdem, wie sich das Entfernen von Zeilen und Spalten auf zusammengeführte Zellen auswirkt.
 ---
 
 # Zellen zusammenführen {#merging-cells}
@@ -45,3 +45,13 @@ oder
 2\. Navigieren Sie zu: *Format -> Unmerge* im Menü
 
 ![DHTMLX Spreadsheet-Menü „Format" mit der Option „Unmerge" zum Aufteilen zusammengeführter Zellen](/img/unmerge_cells_via_menu.png)
+
+## Zeilen und Spalten zusammengeführter Zellen entfernen {#removing-rows-and-columns-of-merged-cells}
+
+Wenn Sie eine Zeile oder eine Spalte über eine zusammengeführte Zelle entfernen, werden alle Zeilen oder Spalten entfernt, die sich über die zusammengeführte Zelle erstrecken. Das gilt, wenn eine Zelle oder ein Zellbereich ausgewählt ist und die Zeile oder Spalte über die Symbolleiste, das Menü, das Kontextmenü oder die Methoden [`deleteRow()`](api/spreadsheet_deleterow_method.md) / [`deleteColumn()`](api/spreadsheet_deletecolumn_method.md) entfernt wird. Das Kontextmenü zeigt den gesamten Bereich im Namen des Befehls an, zum Beispiel *Remove rows 2-4*.
+
+![DHTMLX Spreadsheet context menu with the Rows submenu showing Remove rows 2-4 for a merged cell](/img/remove_merged_rows_context_menu.png)
+
+Wenn ganze Zeilen oder Spalten ausgewählt sind, zum Beispiel durch Klicken auf ihre Kopfzellen oder mit `Shift + Space` bzw. `Ctrl (Cmd) + Space`, werden nur die ausgewählten Zeilen oder Spalten entfernt. Eine zusammengeführte Zelle, die sich über sie erstreckt, wird kleiner, und eine zusammengeführte Zelle, von der nur eine einzelne Zelle übrig bleibt, wird zu einer gewöhnlichen Zelle.
+
+Zusammengeführte Zellen, die unterhalb oder rechts von den entfernten Zeilen oder Spalten liegen, werden mit ihnen verschoben.

@@ -13,12 +13,13 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 se
 ### 用法 {#usage}
 
 ~~~jsx
-setSelectedCell(cell: string): void;
+setSelectedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### 参数 {#parameters}
 
 - `cell` - （必填）选中单元格的 id 或单元格区域
+- `scroll` - （可选）是否将 Spreadsheet 滚动到该单元格，默认为 `true`
 
 ### 示例 {#example}
 

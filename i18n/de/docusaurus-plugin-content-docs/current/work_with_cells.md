@@ -1,7 +1,7 @@
 ---
 sidebar_label: Zellen bearbeiten
 title: Zellen bearbeiten
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie alles über die Arbeit mit Zellen. Lesen Sie Entwicklerhandbücher und die API-Referenz, testen Sie Codebeispiele und Live-Demos, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Bearbeiten Sie Zellen in DHTMLX Spreadsheet. Geben Sie Inhalte ein, fügen Sie Hyperlinks ein, verwenden Sie Dropdown-Listen, füllen Sie mehrere Zellen aus, kopieren Sie Zellen von und nach Excel und sperren Sie Zellen.
 ---
 
 # Zellen bearbeiten {#editing-cells}
@@ -145,14 +145,27 @@ Sie können Zellen automatisch mit Daten füllen. So funktioniert es:
     - Um die Reihe 1, 3, 5, 7, 9, ... zu erstellen, geben Sie 1 und 3 in die ersten beiden Zellen ein.
     - Um die Reihe 2, 4, 6, 8, 10, ... zu erstellen, geben Sie 2 und 4 in die ersten beiden Zellen ein.
     - Neben Zahlen können Sie auch Buchstaben in einem Muster verwenden, zum Beispiel: Um eine Reihe wie 1, a, 2, b, 3, a, 4, b, ... zu erstellen, geben Sie 1, a, 2, b in die ersten vier Zellen ein.
+    - Um eine Zahl am Ende eines Textes fortzusetzen, geben Sie die ersten Werte ein, zum Beispiel: Um eine Reihe item1, item2, item3, ... zu erstellen, geben Sie item1 und item2 in die ersten beiden Zellen ein.
+    - Um eine Reihe von Datumsangaben zu erstellen, geben Sie ein Datum in die erste Zelle ein: Jede weitere Zelle erhält den nächsten Tag.
+- Wiederholen des Texts
+
+Beispiel: Um die Reihe North, South, North, South, ... zu erstellen, geben Sie North und South in die ersten beiden Zellen ein. Zahlen in Zellen mit dem Format *Text* werden auf dieselbe Weise wiederholt.
 
 3\. Ziehen Sie den **Ausfüllpunkt**
 
 ![DHTMLX Spreadsheet-Autofill: Ausfüllpunkt ziehen, um Zelldaten zu replizieren](/img/autofill.gif)
 
+## Zellen von und nach Excel kopieren {#copying-cells-to-and-from-excel}
+
+Sie können Zellen mit **Ctrl (Cmd) + C** kopieren und mit **Ctrl (Cmd) + V** einfügen, und zwar innerhalb von Spreadsheet sowie zwischen Spreadsheet und Microsoft Excel:
+
+- innerhalb von Spreadsheet behalten die Zellen ihre Werte, Formeln, Stile, Zahlenformate und Links. Die Zellbezüge in den Formeln werden an die neue Position verschoben
+- in Excel erhalten die eingefügten Zellen die Werte (die Ergebnisse der Formeln, nicht die Formeln), die Stile (einschließlich der Schriftgröße), zusammengeführte Zellen und Links. Zeilen, die durch einen Filter ausgeblendet sind, werden übersprungen
+- aus Excel kopierte Zellen behalten beim Einfügen in Spreadsheet ihre Werte, Stile (einschließlich der Schriftgröße), Zahlenformate, zusammengeführte Zellen und Links
+
 ## Zellen sperren {#locking-cells}
 
-Sie können Zellen sperren, um ihre Werte vor Änderungen zu schützen. Wenn Sie eine Zelle sperren, wird in der oberen rechten Ecke ein graues "Schlüssel"-Symbol angezeigt. Gesperrte Zellen reagieren nicht auf Bearbeitungsversuche.
+Sie können Zellen sperren, um ihre Werte vor Änderungen zu schützen. Wenn Sie eine Zelle sperren, wird in der oberen rechten Ecke ein graues "Schlüssel"-Symbol angezeigt. Gesperrte Zellen reagieren nicht auf Bearbeitungsversuche. Screenreader kündigen die abgelehnte Bearbeitung an: „Die Zelle ist gesperrt" ("The cell is locked") bei einer einzelnen Zelle oder „Gesperrte Zellen wurden nicht geändert" ("Locked cells were not changed"), wenn der ausgewählte Bereich gesperrte Zellen enthält.
 
 ![DHTMLX Spreadsheet: gesperrte Zellen, markiert mit einem grauen Schlüssel-Symbol in der oberen rechten Ecke](/img/lockedcells.png)
 
