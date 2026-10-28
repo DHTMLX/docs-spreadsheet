@@ -1,7 +1,7 @@
 ---
 sidebar_label: isDisabled() 
 title: isDisabled selection method
-description: You can learn about the isDisabled selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Check whether the selection of cells is turned off in DHTMLX Spreadsheet with the selection.isDisabled() method.
 ---
 
 # isDisabled()
@@ -38,3 +38,4 @@ const disabled = spreadsheet.selection.isDisabled(); // -> true
 - [`selection`](api/spreadsheet_selection_config.md)
 - [`enable()`](api/selection_enable_method.md)
 - [`disable()`](api/selection_disable_method.md)
+- [Accessibility: read-only setup](accessibility.md#read-only-setup)

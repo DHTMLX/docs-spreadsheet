@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: Customization
-description: You can learn about the customization of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Customize DHTMLX Spreadsheet. Change icons, and add, update and delete controls of the toolbar, the menu and the context menu, or build a custom read-only mode.
 ---
 
 # Customization
@@ -31,7 +31,7 @@ Then you can use the name of the icon as the value of the `icon` property in the
 
 You can add the following types of controls: `button`, `menuItem`, `separator`, and `spacer`.
 
-The *Text color* and *Background color* controls of the [default toolbar](#default-controls), and the *Border color* control in the *Border* popup, are of the `navItem` type. They show the current color in their value and open a color popup.
+Like the other controls of the [default toolbar](#default-controls), the *Text color* and *Background color* controls, and the *Border color* control in the *Border* popup, are of the [`navItem`](https://docs.dhtmlx.com/suite/toolbar/navitem/) type. They draw the current color with the [`html`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) property, take their accessible name from the [`value`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) property, for example, "Text color: dark gray", and open a color popup. The Spreadsheet updates both properties of the *Text color* and *Background color* controls when the active cell changes, and of the *Border color* control when a border color is chosen.
 
 The `button` object has the following properties:
 
@@ -119,8 +119,8 @@ The [default toolbar](/#toolbar) contains the following blocks of controls:
   - the *Undo* button (id: "undo")
   - the *Redo* button (id: "redo")
 - the **Colors** block
-  - the *Text color* navItem (id: "color")
-  - the *Background color* navItem (id: "background")
+  - the *Text color* button (id: "color")
+  - the *Background color* button (id: "background")
 - the **Font** block
   - the *Font size* combobox (id: "font-size")
 - the **Decoration** block
@@ -381,7 +381,7 @@ The [default context menu](/#context-menu) has the following structure:
 - the **Columns** menuItem (id: "columns")
   - the *Add column* menuItem (id: "add-col")
   - the *Remove column* menuItem (id: "remove-col")
-  - the *Fit to data* menuItem (id: "fit-col")
+  - the *Fit to data* menuItem (id: "fit-col"), shown in the column menu and when whole columns are selected
   - the *Column width* menuItem (id: "col-width")
   - the separator
   - the *Unfreeze columns* menuItem (id: "unfreeze-cols")

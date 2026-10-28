@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: API Overview
-description: You can check an API overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Overview of the DHTMLX Spreadsheet API, covering the constructor, methods, events, properties, and the sheet manager, selection, event bus and export modules.
 ---
 
 # API overview

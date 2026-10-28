@@ -1,7 +1,7 @@
 ---
 sidebar_label: disable() 
 title: disable selection method
-description: You can learn about the disable selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Turn the selection of cells off in DHTMLX Spreadsheet at runtime with the selection.disable() method, which removes the active cell and ignores selection by the mouse, the keyboard and the API.
 ---
 
 # disable()
@@ -44,3 +44,4 @@ If the selection is already turned off, the method does nothing.
 **Related articles:**
 - [`selection`](api/spreadsheet_selection_config.md)
 - [`enable()`](api/selection_enable_method.md)
+- [Accessibility: read-only setup](accessibility.md#read-only-setup)

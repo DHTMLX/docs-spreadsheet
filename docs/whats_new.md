@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 6.0.4
 
-Released on <TBD>
+Released on October , 2026
 
 ### New functionality
 
@@ -19,27 +19,36 @@ Released on <TBD>
     - new configuration property: [`selection`](api/spreadsheet_selection_config.md)
     - new methods of the selection module: [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md), [`isDisabled()`](api/selection_isdisabled_method.md)
 - The [`announce()`](api/spreadsheet_announce_method.md) method sends a status message to screen readers
-- New commands of the [context menu](customization.md#context-menu): *Column width*, *Row height* and *Open filter*
+- New commands of the [context menu](customization.md#context-menu): [*Column width*, *Row height*](work_with_rows_cols.md#setting-column-width-and-row-height) and [*Open filter*](filtering_data.md#opening-a-filter-with-the-keyboard)
 
 ### Updates
 
-- Keyboard navigation: the focus stays on the active cell, `Ctrl + F6` moves it between the menu, the toolbar, the sheet and the sheet tabs, and new shortcuts are added. Check the [Hot keys list](hotkeys.md)
-- The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search. To turn the selection off, use the `selection: false` option
-- Removing a row or a column through a merged cell removes all the rows or columns of the merged cell
+- Keyboard navigation (check the [Hot keys list](hotkeys.md)):
+    - the focus stays on the active cell, `Tab` and `Shift + Tab` leave the cells from the last and the first cell of the sheet, and `Ctrl + F6` moves the focus between the menu, the toolbar, the sheet and the sheet tabs
+    - the toolbar, the menu bar and the sheet tabs are single tab stops navigated with the arrow keys
+    - new shortcuts are added, for example, `Shift + F10` for the context menu and `Ctrl (Cmd) + Shift + 9` / `Ctrl (Cmd) + Shift + 0` for showing hidden rows and columns
+    - the toolbar color and border popups take the focus when they open and close with `Esc` and `Tab`
+- The arrow keys stop at the first and last visible row and column instead of moving to the opposite edge, and an arrow key at the edge reduces a selected range to the active cell
+- Text composed with an input method editor (IME) is shown in the active cell and starts the edit through the [`startEdit()`](api/spreadsheet_startedit_method.md) method, so the `beforeEditStart` and `afterEditStart` events fire for it
+- The [`setFocusedCell()`](api/selection_setfocusedcell_method.md) method moves the keyboard focus to the cell
+- A [link in a cell](work_with_cells.md#inserting-a-hyperlink-into-a-cell) is rendered as a real link that opens in a new tab, and `Alt (Option) + Enter` opens the link of the active cell
+- The [read-only mode](api/spreadsheet_readonly_config.md) keeps the keyboard navigation, the selection, copying and search, and screen readers announce the refused edits. To turn the selection off, use the `selection: false` option
+- [Removing a row or a column through a merged cell](merge_cells.md#removing-rows-and-columns-of-merged-cells) removes all the rows or columns of the merged cell
 - New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)
-- The [`--dhx-spreadsheet-focus-color`](themes/themes.md#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
+- The [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
 - React Spreadsheet: the [`selection`](react/props.md#runtime-props) prop, the [`ISelection`](react/types.md#re-exported-upstream-types) type, and [`readonly`](react/props.md#init-only-props) as an init-only prop
 
 ### Fixes
 
-- A merged cell was dropped instead of shifted when a row or column before it was deleted
+- A merged cell was dropped instead of shifted when a row or column before it was deleted. Now a merged cell left with a single cell becomes an ordinary cell and keeps its value
 - Deleting a row or column through a merged cell removed only one line of the merge
+- The context menu labels for removing rows and columns didn't show all the rows or columns of a merged cell that would be removed
 - Rows were not deleted when they covered the whole filtered range
 - The frozen area didn't shrink when frozen rows or columns were deleted
 - Autofill threw an error when the dragged cells held no plain number
-- The page froze on `Home`, `End` and `Ctrl (Cmd) + Arrow` keys when the first or last row or column was hidden
+- The page froze on `Home`, `End`, `Ctrl (Cmd) + Home`, `Ctrl (Cmd) + End` and `Ctrl (Cmd) + Arrow` keys when the first or last row or column was hidden
 - The font size was lost when cells were copied to Excel or pasted from Excel or within the Spreadsheet
-- The invalid-value tooltip appeared away from the invalid cell
+- The invalid-value tooltip appeared away from the invalid cell or wasn't shown
 - `Esc` and `Tab` didn't work in the list editor after the arrow keys were used
 - The search highlighted the second match first and didn't refresh the results after an edit or a sheet switch
 - A script error occurred on import or export in a browser without WebAssembly

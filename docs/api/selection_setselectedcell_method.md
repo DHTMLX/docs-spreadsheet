@@ -13,12 +13,13 @@ description: You can learn about the setSelectedCell selection method in the doc
 ### Usage
 
 ~~~jsx
-setSelectedCell(cell: string): void;
+setSelectedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### Parameters
 
 - `cell` - (required) the id(s) or a range of selected cell(s)
+- `scroll` - (optional) whether to scroll the Spreadsheet to the cell, `true` by default
 
 ### Example
 

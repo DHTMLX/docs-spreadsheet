@@ -35,4 +35,10 @@ spreadsheet.parse(data);
 spreadsheet.startEdit();
 ~~~
 
+### Details
+
+Typing in the active cell starts editing through this method. Text composed with an input method editor (IME) is passed as `initialValue` when the composition ends. So the [`beforeEditStart`](api/spreadsheet_beforeeditstart_event.md) and [`afterEditStart`](api/spreadsheet_aftereditstart_event.md) events receive the typed or the composed text, and `beforeEditStart` can cancel the edit.
+
+**Change log:** Starting the edit with the text composed with an IME was added in v6.0.4
+
 **Related article:** [Work with Spreadsheet](working_with_cells.md#editing-a-cell)

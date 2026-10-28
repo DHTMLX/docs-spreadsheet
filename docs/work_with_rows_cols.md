@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with rows and columns
 title: Work with rows and columns
-description: You can learn about how to work with rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Work with rows and columns in DHTMLX Spreadsheet. Add and remove them, autofit and set the column width and row height, freeze, hide and show them.
 ---
 
 # Work with rows and columns
@@ -126,19 +126,47 @@ To change the column width so that it would automatically fit the longest conten
 
 ## Setting column width and row height
 
+### Setting column width
+
 To set an exact width of columns, take the following steps:
 
 1\. Select a column or a cell in the column. To change several columns, select a range of cells that spans them.
 
 2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Columns -> Column width*. The same command is available in the menu of the 3 dots icon of the column.
 
+![DHTMLX Spreadsheet context menu with the Columns submenu showing Column width](/img/column_width_context_menu.png)
+
 3\. In the *Column width* dialog, enter the width in pixels and click **Apply** or press `Enter`.
 
-To set an exact height of rows, choose *Rows -> Row height* in the context menu and enter the height in the *Row height* dialog.
+![DHTMLX Spreadsheet Column width dialog with the width in pixels and the Cancel and Apply buttons](/img/column_width_dialog.png)
 
-The dialog shows the current size of the first selected column or row and applies the new size to every column or row of the selected range. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller value is replaced with the minimum. The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
+### Setting row height
 
-The new size can be undone with `Ctrl (Cmd) + Z`. The command runs the `resizeCol` or `resizeRow` [action](api/overview/actions_overview.md). The `config` object that the [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) events receive contains the range of the columns or rows in `cell` and the new size in `val`. Unlike a resize by dragging, the `config` object has no `mouseEvent` property.
+To set an exact height of rows, take the following steps:
+
+1\. Select a row or a cell in the row. To change several rows, select a range of cells that spans them.
+
+2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Rows -> Row height*.
+
+![DHTMLX Spreadsheet context menu with the Rows submenu showing Row height](/img/row_height_context_menu.png)
+
+3\. In the *Row height* dialog, enter the height in pixels and click **Apply** or press `Enter`.
+
+![DHTMLX Spreadsheet Row height dialog with the height in pixels and the Cancel and Apply buttons](/img/row_height_dialog.png)
+
+### How the new size is applied
+
+The dialog shows the current size of the first column or row of the selected range and applies the new size to every column or row of this range. If several ranges are selected, the last selected range is used.
+
+The size is rounded to whole pixels. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller positive value is replaced with the minimum. While the field is empty or the value isn't a positive number, the **Apply** button is disabled.
+
+The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
+
+### Undoing the change
+
+The new size can be undone with `Ctrl (Cmd) + Z`.
+
+To handle the change in code, use the `resizeCol` and `resizeRow` [actions](api/overview/actions_overview.md#list-of-actions).
 
 ## Freezing/unfreezing rows and columns
 
@@ -237,7 +265,7 @@ To hide a row, take the following steps:
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Hide rows](/img/hide_row_context_menu.png)
 
 :::info
-If the active cell is in a row that becomes hidden, the active cell moves to the first visible row below it. If there are no visible rows below, it moves to the last visible row above.
+If the active cell is in a row that becomes hidden, the active cell moves to the first visible row below it, and the selection is reduced to this cell. If there are no visible rows below, it moves to the last visible row above.
 :::
 
 ### Showing rows
@@ -275,7 +303,7 @@ To hide a column, take the following steps:
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Hide columns](/img/hide_columns_context_menu.png)
 
 :::info
-If the active cell is in a column that becomes hidden, the active cell moves to the first visible column on the right of it. If there are no visible columns on the right, it moves to the last visible column on the left.
+If the active cell is in a column that becomes hidden, the active cell moves to the first visible column on the right of it, and the selection is reduced to this cell. If there are no visible columns on the right, it moves to the last visible column on the left.
 :::
 
 ### Showing columns

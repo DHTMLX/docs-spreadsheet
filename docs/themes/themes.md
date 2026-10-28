@@ -1,7 +1,7 @@
 ---
 sidebar_label: Built-in themes
 title: Built-in Themes
-description: You can learn about the built-in themes of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Built-in themes of DHTMLX Spreadsheet, light and dark with their high contrast variants. Learn the Spreadsheet-specific CSS variables and how to set a theme.
 ---
 
 # Built-in themes
@@ -13,7 +13,7 @@ The DHTMLX Spreadsheet library provides 4 predefined themes:
 - [light high contrast theme](#light-high-contrast-theme) ("contrast-light")
 - [dark high contrast theme](#dark-high-contrast-theme) ("contrast-dark")
 
-The Spreadsheet themes are developed in accordance with international standards. The high contrast themes help users with vision impairment. For more details, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
+The Spreadsheet themes are developed in accordance with international standards. The high contrast themes help users with vision impairment. For the contrast of the themes and the keyboard focus indicator in Spreadsheet, check the [High contrast and focus](accessibility.md#high-contrast-and-focus) section of the Accessibility guide. For the accessibility of the DHTMLX Suite widgets, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
 
 You can try all themes in the example below:
 
@@ -416,9 +416,9 @@ The list of variables specific to the Spreadsheet component includes the followi
 }
 ~~~
 
-The `--dhx-spreadsheet-range-color-*` and `--dhx-spreadsheet-range-background-*` variables set the colors that mark the cell references of a formula while it is edited. In the light themes, the `--dhx-spreadsheet-range-color-*` colors have a contrast of at least 4.5:1.
+The `--dhx-spreadsheet-range-color-*` and `--dhx-spreadsheet-range-background-*` variables set the colors that mark the cell references of a formula while it is edited. In the light themes, the `--dhx-spreadsheet-range-color-*` colors have a contrast of at least 4.5:1 against the background of the formula bar.
 
-The `--dhx-spreadsheet-focus-color` variable sets the color of the keyboard focus outline of the formula bar and of the toolbar, menu and sheet tab controls. In the dark themes, the color is lighter than the primary color, so that the outline keeps a contrast of at least 3:1. You can redefine the variable in a [custom theme](themes/custom_theme.md):
+The `--dhx-spreadsheet-focus-color` variable sets the color of the keyboard focus outline of the formula bar and of the controls of the toolbar, the menu bar, the sheet tabs, the Border popup, the link popup and the search bar. In the dark themes, the color is lighter than the primary color, so that the outline keeps a contrast of at least 3:1. You can redefine the variable in a [custom theme](themes/custom_theme.md):
 
 ~~~css
 [data-dhx-theme='custom-theme-dark'] {

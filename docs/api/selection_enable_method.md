@@ -1,7 +1,7 @@
 ---
 sidebar_label: enable() 
 title: enable selection method
-description: You can learn about the enable selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Turn the selection of cells back on in DHTMLX Spreadsheet with the selection.enable() method, which makes the A1 cell active and fires the selection events.
 ---
 
 # enable()
@@ -39,3 +39,4 @@ If the selection is already turned on, the method does nothing.
 **Related articles:**
 - [`selection`](api/spreadsheet_selection_config.md)
 - [`disable()`](api/selection_disable_method.md)
+- [Accessibility: read-only setup](accessibility.md#read-only-setup)

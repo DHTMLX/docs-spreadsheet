@@ -1,7 +1,7 @@
 ---
 sidebar_label: deleteColumn()
 title: deleteColumn method
-description: You can learn about the deleteColumn method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Remove a column or a range of columns from DHTMLX Spreadsheet with the deleteColumn() method, including all the columns of a merged cell.
 ---
 
 # deleteColumn()
@@ -37,7 +37,7 @@ spreadsheet.deleteColumn("G2");
 ~~~
 
 :::note
-You can delete several columns by providing a range of cells' ids as a parameter of the method, for example: "A1:C3". If the range touches a merged cell, the columns of the whole merged cell are deleted.
+You can delete several columns by providing a range of cells' ids as a parameter of the method, for example: "A1:C3". If the range touches a merged cell, the columns of the whole merged cell are deleted. A range that covers whole columns, for example, "B1:C100" in a sheet with 100 rows, is deleted as is.
 :::
 
 ### Details
@@ -51,7 +51,7 @@ spreadsheet.mergeCells("B2:D2");
 spreadsheet.deleteColumn("C2");
 ~~~
 
-Merged cells on the right of the deleted columns move to the left together with their columns. If the deleted columns are frozen, the frozen area shrinks by the number of the deleted frozen columns.
+When whole columns are deleted, a merged cell that spans them becomes smaller. Merged cells on the right of the deleted columns move to the left together with their columns. If the deleted columns are frozen, the frozen area shrinks by the number of the deleted frozen columns.
 
 The [`beforeAction`](api/spreadsheet_beforeaction_event.md) and [`afterAction`](api/spreadsheet_afteraction_event.md) events of the `"deleteColumn"` action receive the cell that is passed to the method, not the range of the deleted columns.
 

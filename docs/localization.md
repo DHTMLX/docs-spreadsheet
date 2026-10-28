@@ -1,7 +1,7 @@
 ---
 sidebar_label: Localization
 title: Localization
-description: You can learn about the localization of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Localize DHTMLX Spreadsheet. Check the default locale, create a custom one, translate the built-in widgets and the formula popup, and apply a locale.
 ---
 
 # Localization
@@ -196,7 +196,7 @@ const en = {
     invalidValue: "Invalid value",
 
     // Accessible names, read by screen readers
-    // accessible name of a color button; {color} is a name from the colorpicker locale
+    // accessible name of a color button; {label} is the name of the control, {color} is a name from the colorpicker locale
     aria_colorButton: "{label}: {color}",
     // accessible names of the toolbars; the screen reader adds the word "toolbar" itself
     aria_toolbarFormatting: "Formatting",
@@ -279,9 +279,9 @@ const en = {
 };
 ~~~
 
-The keys that start with `aria_` are not shown in the interface. Screen readers read them as the names of the controls, as the descriptions of the active cell, and as the messages of the live region that the [`announce()`](api/spreadsheet_announce_method.md) method also uses. The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the values when the string is read. Keep them in the translated strings.
+The keys that start with `aria_` are not shown in the interface. Screen readers read them as the names of the controls, as the descriptions of the active cell, and as the messages of the live region that the [`announce()`](api/spreadsheet_announce_method.md) method also uses. The parts in curly braces, such as `{cell}` or `{count}`, are replaced with the values when the string is read. Keep them in the translated strings. For an example of translated accessibility strings, check the [Accessibility](accessibility.md#translated-accessibility-strings) guide.
 
-The `defaultSheetName` key sets the prefix of the names of new sheets: with the value `"Blatt"`, new sheets are named "Blatt1", "Blatt2" and so on.
+The `defaultSheetName` key sets the prefix of the default sheet names. The Spreadsheet adds a number to it, so the default value `"sheet"` gives the names "sheet1", "sheet2" and so on. For example, with `"Tabelle"`, the prefix that Microsoft Excel uses in German, the sheets are named "Tabelle1", "Tabelle2" and so on.
 
 ## Custom locale
 
@@ -304,12 +304,14 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 
 ## Localizing built-in widgets
 
-Spreadsheet uses the Colorpicker, Grid, Toolbar, Window and Message widgets of DHTMLX Suite inside. Their strings are stored in separate locales, which you can translate in the same way as the `spreadsheet` locale:
+Spreadsheet uses the Calendar, Colorpicker, Grid, Timepicker, Toolbar, Window and Message widgets of DHTMLX Suite inside. Their strings are stored in separate locales, which you can translate in the same way as the `spreadsheet` locale:
 
 | Locale | Strings used in Spreadsheet |
 | ------ | --------------------------- |
+| `calendar` | the month and day names of the date editor and of the date filter |
 | `colorpicker` | the labels of the custom color mode in the color popups of the toolbar, the name of the palette, and the color names that screen readers read for the swatches and the color buttons, for example, "Text color: dark gray" |
 | `grid` | the announcement of the number of loaded rows |
+| `timepicker` | the labels of the time editor |
 | `toolbar` | the default accessible name of a toolbar |
 | `window` | the default accessible name of a dialog |
 | `message` | the accessible names of the alert and confirm dialogs and of their buttons |
@@ -323,6 +325,10 @@ const deColorpicker = {
     aria_palette: "Farbpalette",
     aria_colorRed: "rot",
     // other strings
+};
+
+const deMessage = {
+    aria_confirm: "Bestätigen"
 };
 
 dhx.i18n.setLocale("spreadsheet", de);
