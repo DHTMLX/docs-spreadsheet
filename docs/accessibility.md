@@ -123,7 +123,7 @@ The headers are not tab stops. A click on a column letter, a row number or the c
 | Cell editor input | `aria-label` | "Cell editor, B7" |
 | Editor of a cell with a list of values | `role="combobox"`, `aria-controls`, `aria-expanded`, `aria-activedescendant` | The list of values is a `listbox` of `option` elements, and the highlighted option is `aria-selected` |
 | Editor with an invalid value | `aria-invalid="true"` | The saved value of the cell is not in its list of values. The attribute is updated after the value is saved, not while the user types |
-| Close icon of the formula help | `role="button"` + `aria-label` | "Close formula help". The icon is focusable and closes the help on <kbd>Enter</kbd> or <kbd>Space</kbd> |
+| Close icon of the formula help | `role="button"` + `aria-label` | "Close formula help" |
 
 ### Toolbar and menus
 

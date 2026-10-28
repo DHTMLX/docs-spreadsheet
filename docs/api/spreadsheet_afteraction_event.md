@@ -42,7 +42,7 @@ The callback of the event takes the following parameters:
     - `col` - (optional) the zero-based index of the column of the cell
     - `val` - (optional) the new value that the action applies, for example, a cell value, a style or a size
     - `prev` - (optional) the previous value
-    - `groupAction` - (optional) the name of the group action, if the action is applied to a range of cells
+    - `groupAction` - (optional) the name of the action that is executed instead of `action` when `cell` is a range of cells, for example, `"groupAction"`, `"groupRowAction"` or `"resizeCol"`
     - `pageId` - (optional) the id of the sheet
     - `pageName` - (optional) the name of the sheet
 
