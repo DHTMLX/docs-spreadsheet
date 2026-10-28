@@ -27,8 +27,8 @@ Released on October , 2026
     - the focus stays on the active cell, `Tab` and `Shift + Tab` leave the cells from the last and the first cell of the sheet, and `Ctrl + F6` moves the focus between the menu, the toolbar, the sheet and the sheet tabs
     - the toolbar, the menu bar and the sheet tabs are single tab stops navigated with the arrow keys
     - new shortcuts are added, for example, `Shift + F10` for the context menu and `Ctrl (Cmd) + Shift + 9` / `Ctrl (Cmd) + Shift + 0` for showing hidden rows and columns
+    - the toolbar color and border popups take the focus when they open and close with `Esc` and `Tab`
 - The arrow keys stop at the first and last visible row and column instead of moving to the opposite edge, and an arrow key at the edge reduces a selected range to the active cell
-- The toolbar color and border popups take the keyboard focus when they open and close with `Esc` and `Tab`
 - Text composed with an input method editor (IME) is shown in the active cell and starts the edit through the [`startEdit()`](api/spreadsheet_startedit_method.md) method, so the `beforeEditStart` and `afterEditStart` events fire for it
 - The [`setFocusedCell()`](api/selection_setfocusedcell_method.md) method moves the keyboard focus to the cell
 - A [link in a cell](work_with_cells.md#inserting-a-hyperlink-into-a-cell) is rendered as a real link that opens in a new tab, and `Alt (Option) + Enter` opens the link of the active cell
