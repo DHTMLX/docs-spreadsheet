@@ -176,7 +176,7 @@ The DOM focus is on the active cell itself, so a screen reader reads the cell, n
 | An edit of a locked cell is refused | "The cell is locked" |
 | An editing key is pressed in the read-only mode | "The sheet is read-only" |
 
-<kbd>Enter</kbd>, <kbd>F2</kbd> or typing opens the editor. <kbd>Enter</kbd> saves the value and moves down, <kbd>Tab</kbd> saves it and moves right, and <kbd>Esc</kbd> cancels the edit. Text composed with an input method editor (IME) is shown over the active cell from the first key and opens the editor when the composition ends.
+<kbd>Enter</kbd>, <kbd>F2</kbd> or typing opens the editor. <kbd>Enter</kbd> saves the value and moves down, <kbd>Tab</kbd> saves it and moves right, and <kbd>Esc</kbd> cancels the edit. 
 
 ## Keyboard navigation
 
