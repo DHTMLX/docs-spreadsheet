@@ -1,7 +1,7 @@
 ---
 sidebar_label: Excel 가져오기/내보내기
 title: Excel 가져오기 및 내보내기
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 Excel 가져오기 및 내보내기에 대해 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: Excel 파일의 데이터를 DHTMLX Spreadsheet로 가져오고 툴바 또는 파일 메뉴에서 .xlsx로 내보냅니다.
 ---
 
 # Excel 가져오기/내보내기 {#excel-importexport}
@@ -37,3 +37,9 @@ Spreadsheet에 입력한 데이터를 Excel 파일로 내보낼 수 있습니다
 ![Microsoft Excel XLSX 내보내기를 위한 다음으로 다운로드 옵션이 있는 DHTMLX Spreadsheet 파일 메뉴](/img/file_export.png)
 
 2\. 다운로드 디렉터리에서 Spreadsheet의 데이터가 포함된 Excel 파일을 확인합니다.
+
+스크린 리더는 가져오기와 내보내기의 시작과 끝을 안내합니다.
+
+:::note
+Excel 파일의 가져오기와 내보내기는 WebAssembly를 사용합니다. 브라우저가 WebAssembly를 지원하지 않으면 Import 및 Export 명령이 `wasmNotSupported` [로케일](localization.md#default-locale) 키의 텍스트로 메시지를 표시합니다. `"xlsx"` 유형의 [`load()`](api/spreadsheet_load_method.md) 메서드와 [`export.xlsx()`](api/export_xlsx_method.md) 메서드는 같은 텍스트의 `Error`를 발생시키며, 코드에서 이를 잡아 처리할 수 있습니다.
+:::

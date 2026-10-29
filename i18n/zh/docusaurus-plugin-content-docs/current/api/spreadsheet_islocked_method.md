@@ -27,7 +27,7 @@ isLocked(cell: string): boolean;
 ### 示例 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 检查单个单元格是否被锁定

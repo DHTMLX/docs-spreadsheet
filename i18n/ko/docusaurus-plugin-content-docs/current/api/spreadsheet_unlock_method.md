@@ -23,7 +23,7 @@ unlock(cell: string): void;
 ### 예제 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 셀 잠금을 해제합니다

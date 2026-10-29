@@ -8,6 +8,58 @@ description: Sie erfahren in der Dokumentation, was neu in der DHTMLX JavaScript
 
 Wenn Sie Spreadsheet von einer älteren Version aktualisieren, lesen Sie die [Migration auf eine neuere Version](migration.md) für Details.
 
+## Version 6.0.4 {#version-604}
+
+Veröffentlicht am Oktober , 2026
+
+### Neue Funktionen {#new-functionality-604}
+
+- Unterstützung der Barrierefreiheit nach WCAG 2.2 AA, Section 508 und EN 301 549: Tastaturbedienung aller Teile von Spreadsheet, Screenreader-Unterstützung und ein sichtbarer Fokus in jedem Theme. Weitere Informationen finden Sie im Leitfaden [Accessibility](accessibility.md) und im [Accessibility Conformance Report](accessibility_conformance_report.md)
+- Die Möglichkeit, die Auswahl von Zellen aus- und einzuschalten:
+    - neue Konfigurationseigenschaft: [`selection`](api/spreadsheet_selection_config.md)
+    - neue Methoden des Selection-Moduls: [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md), [`isDisabled()`](api/selection_isdisabled_method.md)
+- Die Methode [`announce()`](api/spreadsheet_announce_method.md) sendet eine Statusmeldung an Screenreader
+- Neue Befehle des [Kontextmenüs](customization.md#context-menu): [*Column width*, *Row height*](work_with_rows_cols.md#setting-column-width-and-row-height) und [*Open filter*](filtering_data.md#opening-a-filter-with-the-keyboard)
+
+### Aktualisierungen {#updates-604}
+
+- Tastaturnavigation (siehe die [Liste der Hotkeys](hotkeys.md)):
+    - der Fokus bleibt auf der aktiven Zelle, `Tab` und `Shift + Tab` verlassen die Zellen von der letzten bzw. der ersten Zelle des Tabellenblatts aus, und `Ctrl + F6` verschiebt den Fokus zwischen Menü, Symbolleiste, Tabellenblatt und Tabellenblatt-Registerkarten
+    - die Symbolleiste, die Menüleiste und die Tabellenblatt-Registerkarten sind jeweils ein einzelner Tab-Stopp und werden mit den Pfeiltasten navigiert
+    - neue Tastenkombinationen wurden hinzugefügt, zum Beispiel `Shift + F10` für das Kontextmenü und `Ctrl (Cmd) + Shift + 9` / `Ctrl (Cmd) + Shift + 0` zum Einblenden ausgeblendeter Zeilen und Spalten
+    - die Farb- und Rahmen-Popups der Symbolleiste übernehmen beim Öffnen den Fokus und werden mit `Esc` und `Tab` geschlossen
+- Die Pfeiltasten stoppen an der ersten und letzten sichtbaren Zeile und Spalte, anstatt zum gegenüberliegenden Rand zu springen, und eine Pfeiltaste am Rand reduziert einen ausgewählten Bereich auf die aktive Zelle
+- Mit einem Input Method Editor (IME) eingegebener Text wird in der aktiven Zelle angezeigt und startet die Bearbeitung über die Methode [`startEdit()`](api/spreadsheet_startedit_method.md), sodass die Events `beforeEditStart` und `afterEditStart` dafür ausgelöst werden
+- Die Methode [`setFocusedCell()`](api/selection_setfocusedcell_method.md) verschiebt den Tastaturfokus auf die Zelle
+- Ein [Link in einer Zelle](work_with_cells.md#inserting-a-hyperlink-into-a-cell) wird als echter Link dargestellt, der in einem neuen Tab geöffnet wird, und `Alt (Option) + Enter` öffnet den Link der aktiven Zelle
+- Der [Nur-Lese-Modus](api/spreadsheet_readonly_config.md) behält die Tastaturnavigation, die Auswahl, das Kopieren und die Suche bei, und Screenreader kündigen abgelehnte Bearbeitungen an. Um die Auswahl auszuschalten, verwenden Sie die Option `selection: false`
+- [Das Entfernen einer Zeile oder Spalte über eine zusammengeführte Zelle](merge_cells.md#removing-rows-and-columns-of-merged-cells) entfernt alle Zeilen bzw. Spalten der zusammengeführten Zelle
+- Neue Oberflächen- und Screenreader-Texte im [Gebietsschema `spreadsheet`](localization.md#default-locale) sowie [Übersetzung der integrierten Widgets](localization.md#localizing-built-in-widgets)
+- Die Variable [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) für den Tastaturfokus sowie die Referenzfarben von Formeln mit höherem Kontrast in den hellen Themes
+- React Spreadsheet: die Prop [`selection`](react/props.md#runtime-props), der Typ [`ISelection`](react/types.md#re-exported-upstream-types) und [`readonly`](react/props.md#init-only-props) als Init-only-Prop
+
+### Fehlerbehebungen {#fixes-604}
+
+- Eine zusammengeführte Zelle wurde verworfen, anstatt verschoben zu werden, wenn eine Zeile oder Spalte vor ihr gelöscht wurde. Jetzt wird eine zusammengeführte Zelle, von der nur eine einzelne Zelle übrig bleibt, zu einer gewöhnlichen Zelle und behält ihren Wert
+- Das Löschen einer Zeile oder Spalte über eine zusammengeführte Zelle entfernte nur eine Zeile bzw. Spalte der Zusammenführung
+- Die Beschriftungen des Kontextmenüs zum Entfernen von Zeilen und Spalten zeigten nicht alle Zeilen oder Spalten einer zusammengeführten Zelle an, die entfernt würden
+- Zeilen wurden nicht gelöscht, wenn sie den gesamten gefilterten Bereich abdeckten
+- Der fixierte Bereich wurde nicht kleiner, wenn fixierte Zeilen oder Spalten gelöscht wurden
+- Autofill löste einen Fehler aus, wenn die gezogenen Zellen keine einfache Zahl enthielten
+- Die Seite fror bei den Tasten `Home`, `End`, `Ctrl (Cmd) + Home`, `Ctrl (Cmd) + End` und `Ctrl (Cmd) + Pfeiltaste` ein, wenn die erste oder letzte Zeile oder Spalte ausgeblendet war
+- Die Schriftgröße ging verloren, wenn Zellen nach Excel kopiert oder aus Excel bzw. innerhalb von Spreadsheet eingefügt wurden
+- Der Tooltip für ungültige Werte erschien abseits der ungültigen Zelle oder wurde nicht angezeigt
+- `Esc` und `Tab` funktionierten im Listen-Editor nicht mehr, nachdem die Pfeiltasten verwendet wurden
+- Die Suche hob zuerst den zweiten Treffer hervor und aktualisierte die Ergebnisse nach einer Bearbeitung oder einem Wechsel des Tabellenblatts nicht
+- Beim Import oder Export in einem Browser ohne WebAssembly trat ein Skriptfehler auf
+- Nach `destructor()` blieben Dokument-Listener und innere Widgets zurück
+- Der Tastaturfokus ging verloren, nachdem die Suchleiste geschlossen wurde
+- Ein geschlossenes Kontextmenü wurde erneut geöffnet
+- Die aktive Zelle wurde bei der Tastaturnavigation eine Zelle zu kurz an den Rand des Viewports gescrollt
+- React Spreadsheet: die Event-Callbacks und `onStateChange` wurden nicht ausgelöst, nachdem Spreadsheet durch eine Änderung einer Init-only-Prop neu erstellt wurde
+- React Spreadsheet: die Event-Handler des Wrappers wurden beim Unmount nicht entfernt
+- React Spreadsheet: die Daten aus `loadUrl` wurden beim Mount zweimal geladen und nach dem Neuerstellen von Spreadsheet erneut über die beibehaltenen Daten
+
 ## Version 6.0.3 {#version-603}
 
 Veröffentlicht am 24. August 2026

@@ -27,7 +27,7 @@ getValue(cell: string): any | array;
 ### 예제 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 단일 셀의 값 반환

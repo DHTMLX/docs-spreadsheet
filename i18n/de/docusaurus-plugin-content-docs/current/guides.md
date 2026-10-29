@@ -1,12 +1,12 @@
 ---
 sidebar_label: Leitfaden-Übersicht
 title: Entwickler- und Benutzerhandbücher
-description: Entwickler- und Benutzerhandbücher finden Sie in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek. Durchsuchen Sie die API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: "Entwickler- und Benutzerhandbücher von DHTMLX Spreadsheet: von Initialisierung, Konfiguration und Datenladen bis zum Bearbeiten von Zellen, Formatieren und Arbeiten mit Tabellenblättern."
 ---
 
 # Leitfäden {#guides}
 
-DHTMLX Spreadsheet bietet ein breites Spektrum an Funktionen: Import und Export von Daten in verschiedenen Formaten, komfortables Arbeiten mit Zellinhalten und -stilen, eine flexible Tabellenstruktur, einen Nur-Lesen-Modus, umfangreiche Anpassungsmöglichkeiten für das Erscheinungsbild und Integration mit gängigen Frameworks.
+DHTMLX Spreadsheet bietet ein breites Spektrum an Funktionen: Import und Export von Daten in verschiedenen Formaten, komfortables Arbeiten mit Zellinhalten und -stilen, eine flexible Tabellenstruktur, einen Nur-Lesen-Modus, umfangreiche Anpassungsmöglichkeiten für das Erscheinungsbild, Barrierefreiheit für Tastatur- und Screenreader-Nutzer und Integration mit gängigen Frameworks.
 
 ## Entwicklerhandbücher {#developer-guides}
 
@@ -41,6 +41,12 @@ Zeigt, wie Sie Daten in Spreadsheet laden, Events verarbeiten und die wichtigste
 ### KI-gestützte Entwicklung {#ai-assisted-development}
 
 - [DHTMLX MCP-Server](mcp-server.md) - verbindet KI-Coding-Assistenten mit der Live-Dokumentation von Spreadsheet
+
+### Barrierefreiheit {#accessibility}
+
+- [Barrierefreiheit](accessibility.md) - WAI-ARIA-Unterstützung, Tastaturnavigation, Screenreader-Ankündigungen und High-Contrast-Themes
+- [Einen barrierefreien Spreadsheet einrichten](accessibility.md#configuration-recipes) - Konfigurationen für Tastatur- und Screenreader-Nutzer, einschließlich des schreibgeschützten Modus
+- [Konformitätsbericht (VPAT)](accessibility_conformance_report.md) - Konformität mit WCAG 2.2 AA, Section 508 und EN 301 549
 
 ## Benutzerhandbücher {#user-guides}
 

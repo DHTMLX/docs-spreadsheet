@@ -19,7 +19,7 @@ redo(): void;
 ### 예제 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 취소된 작업을 다시 적용합니다

@@ -88,7 +88,7 @@ To make your own custom theme, override the values of the internal CSS variables
 </style>
 
 <script>
-    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet_container",{});
     
     dhx.setTheme("custom-theme-dark");
 </script>

@@ -13,17 +13,18 @@ description: Вы можете узнать о методе setSelectedCell об
 ### Использование {#usage}
 
 ~~~jsx
-setSelectedCell(cell: string): void;
+setSelectedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### Параметры {#parameters}
 
 - `cell` - (обязательный) идентификатор(ы) или диапазон выбранной(ых) ячейки(ек)
+- `scroll` - (необязательный) определяет, нужно ли прокручивать Spreadsheet к ячейке, по умолчанию `true`
 
 ### Пример {#example}
 
 ~~~jsx {7,10,13}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // параметры конфигурации
 });
 spreadsheet.parse(data);

@@ -27,7 +27,7 @@ Die Methode gibt `true` zurück, wenn die Zelle gesperrt ist, und `false`, wenn 
 ### Beispiel {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Prüft, ob eine Zelle gesperrt ist

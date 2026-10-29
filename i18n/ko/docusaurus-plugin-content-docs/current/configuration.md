@@ -1,7 +1,7 @@
 ---
 sidebar_label: 구성
 title: 구성
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 구성에 대해 문서에서 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: DHTMLX Spreadsheet를 구성합니다. 툴바, 편집 바, 메뉴, 행과 열의 수, 읽기 전용 모드, 셀 선택, 숫자 형식을 설정합니다.
 ---
 
 # 구성 {#configuration}
@@ -48,9 +48,42 @@ Spreadsheet의 메뉴는 기본적으로 숨겨져 있습니다. 해당 구성 �
 
 [`readonly`](api/spreadsheet_readonly_config.md) 구성 옵션을 통해 Spreadsheet 셀 편집을 방지하는 읽기 전용 모드를 활성화할 수도 있습니다.
 
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    readonly: true,
+});
+~~~
+
+읽기 전용 모드에서는 툴바, 메뉴, 수식 바가 숨겨집니다. 사용자는 키보드로 셀을 탐색하고, 마우스로 선택하고, 복사하고, 검색할 수 있습니다. 편집은 거부되며 스크린 리더에 "The sheet is read-only"로 안내됩니다. 채우기 핸들은 숨겨집니다. 자세한 내용은 [`readonly`](api/spreadsheet_readonly_config.md#details) 문서를 확인하십시오. 키보드 및 스크린 리더 사용자가 읽기 전용 Spreadsheet를 사용하는 방법은 접근성 가이드의 [Read-only setup](accessibility.md#read-only-setup) 섹션을 참고하십시오.
+
+읽기 전용 모드에서 키보드 탐색과 선택을 끄려면 [`selection`](api/spreadsheet_selection_config.md) 옵션을 `false`로 설정합니다:
+
+~~~jsx {3}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    readonly: true,
+    selection: false,
+});
+~~~
+
 [Spreadsheet의 읽기 전용 동작을 커스터마이징](customization.md#custom-read-only-mode)할 수도 있습니다.
 
 <iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+## 셀 선택 {#selection-of-cells}
+
+기본적으로 사용자는 마우스와 키보드로 셀을 선택할 수 있으며, Spreadsheet에는 활성 셀이 있습니다. 선택을 끄려면 [`selection`](api/spreadsheet_selection_config.md) 구성 옵션을 `false`로 설정합니다:
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    selection: false,
+});
+~~~
+
+이 경우 Spreadsheet에는 활성 셀이 없으며, 인터페이스에서 셀을 선택하거나 편집할 수 없고 컨텍스트 메뉴도 사용할 수 없습니다.
+
+런타임에 선택을 끄고 켜려면 [`selection.disable()`](api/selection_disable_method.md) 및 [`selection.enable()`](api/selection_enable_method.md) 메서드를 사용합니다. [`selection.isDisabled()`](api/selection_isdisabled_method.md) 메서드는 선택이 꺼져 있는지 확인합니다.
+
+선택이 없으면 그리드는 키보드가 그냥 지나가는 하나의 탭 정지 지점이 됩니다. 접근성 가이드의 [Read-only setup](accessibility.md#read-only-setup) 섹션을 확인하십시오.
 
 ## 셀에 대한 사용자 정의 숫자 형식 {#custom-number-formats-for-cells}
 

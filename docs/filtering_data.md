@@ -1,7 +1,7 @@
 ---
 sidebar_label: Filtering data
 title: Filtering data
-description: You can learn about data filtering in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Filter data in DHTMLX Spreadsheet by condition or by values, open a filter with the keyboard, and clear or remove filters.
 ---
 
 # Filtering data
@@ -19,6 +19,20 @@ To activate filtering, use one of two ways:
 ![DHTMLX Spreadsheet Data menu with the Filter option for activating column filters](/img/filter_menu.png)
 
 After that, a **filter** icon appears on the right of each column header in the range. 
+
+## Opening a filter with the keyboard
+
+To open the filter of a column without the mouse:
+
+- Move the active cell to the column header cell with the **filter** icon
+
+- Press `Shift + F10` or the Menu key to call the context menu and choose *Open filter*
+
+![DHTMLX Spreadsheet context menu of a header cell with the filter icon and the Open filter command focused](/img/open_filter_context_menu.png)
+
+The *Open filter* command appears in the context menu only for the cells with the **filter** icon. You can also choose it after right-clicking such a cell. In the [read-only mode](api/spreadsheet_readonly_config.md), the context menu and the *Open filter* command are not available.
+
+The filter popup takes the focus, and `Tab` moves between its controls. `Esc` closes the popup and returns the focus to the cell. If a dropdown list or a date picker is open in the popup, `Esc` closes it first.
 
 ## Filtering by condition
 

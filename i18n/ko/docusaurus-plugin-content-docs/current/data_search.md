@@ -1,7 +1,7 @@
 ---
 sidebar_label: 데이터 검색
 title: 데이터 검색
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 데이터 검색에 대해 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: 검색 바로 DHTMLX Spreadsheet에서 데이터를 검색합니다. Ctrl (Cmd) + F 또는 데이터 메뉴로 열고, 일치 항목 사이를 이동하며, Esc로 닫습니다.
 ---
 
 # 데이터 검색 {#searching-for-data}
@@ -12,3 +12,11 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 데이�
 - 또는 *데이터* -> *검색*으로 이동합니다
 
 ![데이터 검색을 위한 텍스트 입력이 있는 DHTMLX Spreadsheet 검색 바](/img/search_data.png)
+
+검색 바에 찾을 텍스트를 입력합니다. 텍스트가 포함된 첫 번째 셀이 강조 표시되고 화면에 스크롤되며, 카운터에 일치 항목 수가 표시됩니다. 일치 항목 사이를 이동하려면 검색 바의 화살표 버튼을 클릭합니다.
+
+검색 결과는 셀을 편집한 후와 다른 시트를 연 후에 업데이트됩니다. 스크린 리더는 입력을 멈춘 뒤 일치 항목 수와 첫 번째 일치 항목의 주소를 안내합니다(예: "Results: 5. 1 of 5, B2" 또는 "No results"). 다른 일치 항목으로 이동하면 해당 항목의 위치와 주소를 안내합니다(예: "2 of 5, B7").
+
+검색 바를 닫으려면 **Esc**를 누르거나 닫기 버튼을 클릭합니다. 포커스는 활성 셀로 돌아갑니다.
+
+API로 데이터를 검색하려면 [`search()`](api/spreadsheet_search_method.md) 메서드를 사용합니다.

@@ -28,7 +28,7 @@ load(url: string, type?: string): promise;
 ### 示例 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 以 JSON 格式加载数据（默认）
@@ -84,7 +84,7 @@ DHTMLX Spreadsheet 使用基于 WebAssembly 的库 [Excel2Json](https://github.c
 - 以两个参数调用 `load()` 方法：空字符串作为 URL，以及要加载的数据类型（"json"）：
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
 });
 

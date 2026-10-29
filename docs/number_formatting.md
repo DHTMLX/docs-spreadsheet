@@ -107,7 +107,7 @@ With Spreadsheet configuration options, you can localize time and date, specify 
 For example, you can change the default localization settings as shown below:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     localization: {
         decimal: ",", 
         thousands: " ", 

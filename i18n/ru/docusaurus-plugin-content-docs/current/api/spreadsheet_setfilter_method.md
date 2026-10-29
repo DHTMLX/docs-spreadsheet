@@ -44,7 +44,7 @@ setFilter(
 ### Пример {#example}
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // filter data by condition specified for column A

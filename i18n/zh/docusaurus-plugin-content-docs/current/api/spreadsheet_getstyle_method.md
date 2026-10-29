@@ -27,7 +27,7 @@ getStyle(cell: string): any;
 ### 示例 {#example}
 
 ~~~jsx {5,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 获取单个单元格的样式

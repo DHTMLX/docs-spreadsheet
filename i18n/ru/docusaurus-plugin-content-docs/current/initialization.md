@@ -39,10 +39,10 @@ description: Вы можете узнать об инициализации би
 
 ## Создание контейнера {#creating-container}
 
-Добавьте контейнер для Spreadsheet и задайте ему идентификатор, например "spreadsheet":
+Добавьте контейнер для Spreadsheet и задайте ему идентификатор, например "spreadsheet_container":
 
 ~~~html title="index.html"
-<div id="spreadsheet"></div>
+<div id="spreadsheet_container"></div>
 ~~~
 
 ## Инициализация DHTMLX Spreadsheet {#initializing-dhtmlx-spreadsheet}
@@ -54,7 +54,7 @@ description: Вы можете узнать об инициализации би
 
 ~~~jsx title="index.js"
 // creating DHTMLX Spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config options
 });
 ~~~

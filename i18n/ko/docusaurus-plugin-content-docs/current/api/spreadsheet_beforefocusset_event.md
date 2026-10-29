@@ -29,7 +29,7 @@ beforeFocusSet: (cell: string) => void | boolean;
 ### 예제 {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // "beforeFocusSet" 이벤트를 구독합니다

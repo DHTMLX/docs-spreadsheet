@@ -188,6 +188,13 @@ ref.current?.instance?.selection.setSelectedCell("A1:C5");
 // Отмена/возврат
 ref.current?.instance?.undo();
 ref.current?.instance?.redo();
+
+// Turn the selection off and on
+ref.current?.instance?.selection.disable();
+ref.current?.instance?.selection.enable();
+
+// Send a status message to screen readers
+ref.current?.instance?.announce("The report is saved");
 ~~~
 
 ## Перечисление Actions {#actions-enum}
@@ -270,6 +277,7 @@ type SpreadsheetConfigProps = Omit<
 | `IStylesList` | Карта определений стилей. |
 | `IDataWithStyles` | Структура данных со встроенными стилями (используется `serialize()`/`parse()`). |
 | `ICellInfo` | Информация о ячейке, возвращаемая методами виджета. |
+| `ISelection` | Интерфейс модуля выделения (`instance.selection`), включая методы [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md) и [`isDisabled()`](api/selection_isdisabled_method.md). |
 | `FileFormat` | Формат файла для загрузки данных (например, `"json"` или `"xlsx"`). |
 | `ToolbarBlocks` | Идентификаторы блоков панели инструментов (например, `"default"`, `"undo"` или `"font"`). |
 | `FilterConditions` | Перечисление доступных типов условий фильтрации. |

@@ -30,7 +30,7 @@ Geben Sie `true` zurück, um die Bearbeitung einer Zelle abzuschließen, `false`
 ### Beispiel {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeEditEnd" event

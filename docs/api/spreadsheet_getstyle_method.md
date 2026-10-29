@@ -27,7 +27,7 @@ The method returns the styles set for the cells
 ### Example
 
 ~~~jsx {5,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // getting style of one cell

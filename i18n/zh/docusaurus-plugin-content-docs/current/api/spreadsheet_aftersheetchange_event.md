@@ -25,7 +25,7 @@ afterSheetChange: (sheet: object) => void;
 ### 示例 {#example}
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 订阅 "afterSheetChange" 事件

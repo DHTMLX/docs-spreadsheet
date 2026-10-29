@@ -8,6 +8,58 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리의 새로운 기능�
 
 이전 버전에서 Spreadsheet를 업그레이드하는 경우 [최신 버전으로 마이그레이션](migration.md)에서 자세한 내용을 확인하세요.
 
+## 버전 6.0.4 {#version-604}
+
+2026년 10월 일 출시
+
+### 새로운 기능 {#new-functionality-604}
+
+- WCAG 2.2 AA, Section 508 및 EN 301 549를 목표로 하는 접근성 지원: Spreadsheet 모든 부분의 키보드 조작, 스크린 리더 지원, 모든 테마에서 눈에 보이는 포커스. [접근성](accessibility.md) 가이드와 [접근성 적합성 보고서](accessibility_conformance_report.md)를 확인하세요
+- 셀 선택을 끄고 켜는 기능:
+    - 새로운 구성 속성: [`selection`](api/spreadsheet_selection_config.md)
+    - selection 모듈의 새로운 메서드: [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md), [`isDisabled()`](api/selection_isdisabled_method.md)
+- [`announce()`](api/spreadsheet_announce_method.md) 메서드는 스크린 리더에 상태 메시지를 전달합니다
+- [컨텍스트 메뉴](customization.md#context-menu)의 새로운 명령: [*열 너비*, *행 높이*](work_with_rows_cols.md#setting-column-width-and-row-height) 및 [*필터 열기*](filtering_data.md#opening-a-filter-with-the-keyboard)
+
+### 업데이트 {#updates-604}
+
+- 키보드 탐색 ([단축키 목록](hotkeys.md) 확인):
+    - 포커스가 활성 셀에 유지되며, `Tab` 및 `Shift + Tab`은 시트의 마지막 셀과 첫 번째 셀에서 셀 영역을 벗어나고, `Ctrl + F6`은 메뉴, 툴바, 시트, 시트 탭 간에 포커스를 이동합니다
+    - 툴바, 메뉴 바, 시트 탭은 방향키로 탐색하는 단일 탭 정지점입니다
+    - 새로운 단축키가 추가되었습니다. 예를 들어 컨텍스트 메뉴용 `Shift + F10`, 숨겨진 행과 열을 표시하는 `Ctrl (Cmd) + Shift + 9` / `Ctrl (Cmd) + Shift + 0`이 있습니다
+    - 툴바의 색상 및 테두리 팝업은 열릴 때 포커스를 받고 `Esc` 및 `Tab`으로 닫힙니다
+- 방향키는 반대편 가장자리로 이동하지 않고 첫 번째 및 마지막 표시된 행과 열에서 멈추며, 가장자리에서 방향키를 누르면 선택한 범위가 활성 셀로 줄어듭니다
+- 입력기(IME)로 작성한 텍스트가 활성 셀에 표시되고 [`startEdit()`](api/spreadsheet_startedit_method.md) 메서드를 통해 편집이 시작되므로 이 경우 `beforeEditStart` 및 `afterEditStart` 이벤트가 발생합니다
+- [`setFocusedCell()`](api/selection_setfocusedcell_method.md) 메서드는 키보드 포커스를 셀로 이동합니다
+- [셀의 링크](work_with_cells.md#inserting-a-hyperlink-into-a-cell)는 새 탭에서 열리는 실제 링크로 렌더링되며, `Alt (Option) + Enter`는 활성 셀의 링크를 엽니다
+- [읽기 전용 모드](api/spreadsheet_readonly_config.md)는 키보드 탐색, 선택, 복사, 검색을 유지하며, 스크린 리더는 거부된 편집을 안내합니다. 선택을 끄려면 `selection: false` 옵션을 사용하세요
+- [병합된 셀을 통한 행 또는 열 제거](merge_cells.md#removing-rows-and-columns-of-merged-cells)는 병합된 셀의 모든 행 또는 열을 제거합니다
+- [`spreadsheet` 로케일](localization.md#default-locale)의 새로운 인터페이스 및 스크린 리더 문자열과 [기본 제공 위젯의 번역](localization.md#localizing-built-in-widgets)
+- 키보드 포커스용 [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) 변수와, 라이트 테마에서 더 높은 대비를 가지는 수식 참조 색상
+- React Spreadsheet: [`selection`](react/props.md#runtime-props) prop, [`ISelection`](react/types.md#re-exported-upstream-types) 타입, 초기화 전용 prop인 [`readonly`](react/props.md#init-only-props)
+
+### 수정 사항 {#fixes-604}
+
+- 병합된 셀 앞의 행 또는 열이 삭제될 때 병합된 셀이 이동하지 않고 삭제되는 문제. 이제 셀이 하나만 남은 병합된 셀은 일반 셀이 되며 값을 유지합니다
+- 병합된 셀을 통해 행 또는 열을 삭제하면 병합의 한 줄만 제거되는 문제
+- 행과 열 제거용 컨텍스트 메뉴 레이블이 제거될 병합된 셀의 모든 행 또는 열을 표시하지 않는 문제
+- 행이 필터링된 전체 범위를 포함할 때 삭제되지 않는 문제
+- 고정된 행 또는 열이 삭제될 때 고정 영역이 줄어들지 않는 문제
+- 드래그한 셀에 일반 숫자가 없을 때 자동 채우기에서 오류가 발생하는 문제
+- 첫 번째 또는 마지막 행이나 열이 숨겨진 상태에서 `Home`, `End`, `Ctrl (Cmd) + Home`, `Ctrl (Cmd) + End` 및 `Ctrl (Cmd) + Arrow` 키를 누르면 페이지가 멈추는 문제
+- 셀을 Excel로 복사하거나 Excel 또는 Spreadsheet 내에서 붙여넣을 때 글꼴 크기가 사라지는 문제
+- 잘못된 값 툴팁이 잘못된 셀에서 떨어진 위치에 나타나거나 표시되지 않는 문제
+- 방향키를 사용한 후 목록 편집기에서 `Esc` 및 `Tab`이 작동하지 않는 문제
+- 검색이 두 번째 일치 항목을 먼저 강조 표시하고 편집이나 시트 전환 후 결과를 새로 고치지 않는 문제
+- WebAssembly가 없는 브라우저에서 가져오기 또는 내보내기 시 스크립트 오류가 발생하는 문제
+- `destructor()` 후에 document 리스너와 내부 위젯이 남아 있는 문제
+- 검색 바가 닫힌 후 키보드 포커스가 사라지는 문제
+- 닫힌 컨텍스트 메뉴가 다시 열리는 문제
+- 키보드 탐색 중 활성 셀이 뷰포트 가장자리보다 한 셀 모자라게 스크롤되는 문제
+- React Spreadsheet: init-only prop 변경으로 Spreadsheet가 다시 생성된 후 이벤트 콜백과 `onStateChange`가 발생하지 않는 문제
+- React Spreadsheet: 언마운트 시 래퍼의 이벤트 핸들러가 제거되지 않는 문제
+- React Spreadsheet: `loadUrl`의 데이터가 마운트 시 두 번 로드되고, Spreadsheet가 다시 생성된 후 유지된 데이터 위에 다시 로드되는 문제
+
 ## 버전 6.0.3 {#version-603}
 
 2026년 8월 24일 출시

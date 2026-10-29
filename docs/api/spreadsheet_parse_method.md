@@ -167,7 +167,7 @@ const data = [
     // more data
 ];
 
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 ~~~
 
@@ -246,7 +246,7 @@ const styledData = {
     ],
 };
 
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(styledData);
 ~~~
 

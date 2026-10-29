@@ -35,7 +35,7 @@ search(
 ### Пример {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // возвращает идентификаторы ячеек с найденными совпадениями, открывает строку поиска и выделяет найденные ячейки

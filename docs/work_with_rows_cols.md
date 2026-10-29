@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with rows and columns
 title: Work with rows and columns
-description: You can learn about how to work with rows and columns in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Work with rows and columns in DHTMLX Spreadsheet. Add and remove them, autofit and set the column width and row height, freeze, hide and show them.
 ---
 
 # Work with rows and columns
@@ -54,6 +54,10 @@ To remove a row, take the following steps:
 To remove several rows at once: select the rows, right-click to call the context menu and choose *Rows -> Remove rows [ids]*.
 :::
 
+:::info
+If the selected cell is inside a merged cell, all the rows of the merged cell are removed. Check the [Merging cells](merge_cells.md#removing-rows-and-columns-of-merged-cells) article for details.
+:::
+
 ### Adding columns
 
 To add a new column, take the following steps:
@@ -98,6 +102,10 @@ To remove a column, take the following steps:
 To remove several columns at once: select the columns, right-click to call the context menu and choose *Columns -> Remove columns [ids]*.
 :::
 
+:::info
+If the selected cell is inside a merged cell, all the columns of the merged cell are removed. Check the [Merging cells](merge_cells.md#removing-rows-and-columns-of-merged-cells) article for details.
+:::
+
 ## AutoFit column width
 
 To change the column width so that it would automatically fit the longest content in the column, you can:
@@ -115,6 +123,50 @@ To change the column width so that it would automatically fit the longest conten
 2\. Choose *Columns -> Fit to data*
 
 ![DHTMLX Spreadsheet Columns submenu with the Fit to data option for autofit column width](/img/column_autofit.png)
+
+## Setting column width and row height
+
+### Setting column width
+
+To set an exact width of columns, take the following steps:
+
+1\. Select a column or a cell in the column. To change several columns, select a range of cells that spans them.
+
+2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Columns -> Column width*. The same command is available in the menu of the 3 dots icon of the column.
+
+![DHTMLX Spreadsheet context menu with the Columns submenu showing Column width](/img/column_width_context_menu.png)
+
+3\. In the *Column width* dialog, enter the width in pixels and click **Apply** or press `Enter`.
+
+![DHTMLX Spreadsheet Column width dialog with the width in pixels and the Cancel and Apply buttons](/img/column_width_dialog.png)
+
+### Setting row height
+
+To set an exact height of rows, take the following steps:
+
+1\. Select a row or a cell in the row. To change several rows, select a range of cells that spans them.
+
+2\. Right-click the selection, or press `Shift + F10` or the Menu key, and choose *Rows -> Row height*.
+
+![DHTMLX Spreadsheet context menu with the Rows submenu showing Row height](/img/row_height_context_menu.png)
+
+3\. In the *Row height* dialog, enter the height in pixels and click **Apply** or press `Enter`.
+
+![DHTMLX Spreadsheet Row height dialog with the height in pixels and the Cancel and Apply buttons](/img/row_height_dialog.png)
+
+### How the new size is applied
+
+The dialog shows the current size of the first column or row of the selected range and applies the new size to every column or row of this range. If several ranges are selected, the last selected range is used.
+
+The size is rounded to whole pixels. The minimum width of a column is 20 px, and the minimum height of a row is 10 px: a smaller positive value is replaced with the minimum. While the field is empty or the value isn't a positive number, the **Apply** button is disabled.
+
+The **Cancel** button or `Esc` closes the dialog without changes. Screen readers announce the new size, for example, "Column width set to 120 pixels".
+
+### Undoing the change
+
+The new size can be undone with `Ctrl (Cmd) + Z`.
+
+To handle the change in code, use the `resizeCol` and `resizeRow` [actions](api/overview/actions_overview.md#list-of-actions).
 
 ## Freezing/unfreezing rows and columns
 
@@ -212,6 +264,10 @@ To hide a row, take the following steps:
 
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Hide rows](/img/hide_row_context_menu.png)
 
+:::info
+If the active cell is in a row that becomes hidden, the active cell moves to the first visible row below it, and the selection is reduced to this cell. If there are no visible rows below, it moves to the last visible row above.
+:::
+
 ### Showing rows
 
 To show hidden rows, take one of the following steps:
@@ -227,6 +283,8 @@ To show hidden rows, take one of the following steps:
 (*In the image below the row 8 is hidden*)
 
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Show rows](/img/show_rows_context_menu.png)
+
+- or select rows or several cells so that the hidden rows were included into the selection, and press `Ctrl (Cmd) + Shift + 9`. For example, select rows 2-4 to show the hidden row 3. If the selection includes no hidden rows, screen readers announce "No hidden rows in the selection"
 
 ### Hiding columns
 
@@ -244,6 +302,10 @@ To hide a column, take the following steps:
 
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Hide columns](/img/hide_columns_context_menu.png)
 
+:::info
+If the active cell is in a column that becomes hidden, the active cell moves to the first visible column on the right of it, and the selection is reduced to this cell. If there are no visible columns on the right, it moves to the last visible column on the left.
+:::
+
 ### Showing columns
 
 To show hidden columns, take one of the following steps:
@@ -260,4 +322,4 @@ To show hidden columns, take one of the following steps:
 
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Show columns](/img/show_columns_context_menu.png)
 
-
+- or select columns or several cells so that the hidden columns were included into the selection, and press `Ctrl (Cmd) + Shift + 0`. If the selection includes no hidden columns, screen readers announce "No hidden columns in the selection"

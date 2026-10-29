@@ -30,7 +30,7 @@ beforeEditEnd: (cell: string, value: string) => void | boolean;
 ### 示例 {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 订阅 "beforeEditEnd" 事件

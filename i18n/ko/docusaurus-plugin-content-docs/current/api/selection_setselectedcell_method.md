@@ -13,17 +13,18 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 setSelec
 ### 사용법 {#usage}
 
 ~~~jsx
-setSelectedCell(cell: string): void;
+setSelectedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### 매개변수 {#parameters}
 
 - `cell` - (필수) 선택할 셀의 id 또는 범위
+- `scroll` - (선택 사항) Spreadsheet를 해당 셀로 스크롤할지 여부이며, 기본값은 `true`입니다
 
 ### 예제 {#example}
 
 ~~~jsx {7,10,13}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

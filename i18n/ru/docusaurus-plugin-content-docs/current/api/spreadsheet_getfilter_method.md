@@ -30,7 +30,7 @@ getFilter(id?: string): {cell, rules};
 ### Пример {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // получает критерии фильтрации для текущего листа

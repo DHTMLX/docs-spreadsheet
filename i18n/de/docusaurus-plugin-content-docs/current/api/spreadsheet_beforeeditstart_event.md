@@ -30,7 +30,7 @@ Geben Sie `true` zurück, um eine Zelle zu bearbeiten, oder `false`, um die Bear
 ### Beispiel {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Event "beforeEditStart" abonnieren

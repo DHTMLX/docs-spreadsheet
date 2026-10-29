@@ -19,7 +19,7 @@ undo(): void;
 ### 예제 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 한 단계 뒤로 되돌립니다

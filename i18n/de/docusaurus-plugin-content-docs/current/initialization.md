@@ -39,10 +39,10 @@ Die Struktur des Spreadsheet-Pakets ist wie folgt:
 
 ## Container erstellen {#creating-container}
 
-Fügen Sie einen Container für Spreadsheet hinzu und geben Sie ihm eine ID, zum Beispiel "spreadsheet":
+Fügen Sie einen Container für Spreadsheet hinzu und geben Sie ihm eine ID, zum Beispiel "spreadsheet_container":
 
 ~~~html title="index.html"
-<div id="spreadsheet"></div>
+<div id="spreadsheet_container"></div>
 ~~~
 
 ## DHTMLX Spreadsheet initialisieren {#initializing-dhtmlx-spreadsheet}
@@ -54,7 +54,7 @@ Initialisieren Sie DHTMLX Spreadsheet mit dem `dhx.Spreadsheet`-Objekt-Konstrukt
 
 ~~~jsx title="index.js"
 // DHTMLX Spreadsheet erstellen
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsoptionen
 });
 ~~~

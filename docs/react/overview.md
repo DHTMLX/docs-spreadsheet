@@ -96,8 +96,8 @@ Props are categorized by how the component handles changes:
 
 | Category | Props | What happens on change |
 |----------|-------|----------------------|
-| **Init-only** | `menu`, `editLine`, `toolbarBlocks`, `multiSheets`, `formats`, `localization`, `importModulePath`, `exportModulePath`, `spreadsheetLocale` | The widget is destroyed and recreated. Spreadsheet data is preserved, but undo/redo history and UI state (selection, scroll position) are reset. |
-| **Runtime** | `readonly`, `rowsCount`, `colsCount` | Applied immediately without data loss or UI state reset. |
+| **Init-only** | `menu`, `editLine`, `toolbarBlocks`, `multiSheets`, `formats`, `localization`, `importModulePath`, `exportModulePath`, `spreadsheetLocale`, `readonly` | The widget is destroyed and recreated. Spreadsheet data is preserved, but undo/redo history and UI state (selection, scroll position) are reset. |
+| **Runtime** | `selection`, `rowsCount`, `colsCount` | Applied immediately without data loss or UI state reset. |
 | **Data** | `sheets`, `activeSheet` | Applied incrementally; only changed cells, ranges, or settings are updated. |
 | **Re-parse** | `styles` | Style changes require a full data reload. Spreadsheet data is preserved, but undo/redo history and UI state are reset. |
 | **State** | `search`, `theme`, `loadUrl` | Applied via dedicated widget APIs with no side effects. |
@@ -197,6 +197,10 @@ function App() {
 ~~~
 
 The `instance` property is `null` before the widget initializes and after unmount.
+
+:::info
+Handlers attached with `ref.current.instance.events.on()` are removed when the widget is recreated after a change of an init-only prop and when the component is unmounted. Use the [event callback props](react/events.md), which the component attaches to every new widget instance.
+:::
 
 ## API reference
 

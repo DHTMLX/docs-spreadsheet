@@ -27,7 +27,7 @@ addRow(cell: string): void;
 ### Пример {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // добавляет пустую вторую строку

@@ -79,7 +79,7 @@ Als Parameter nimmt die Konstruktorfunktion den HTML-Container, in den Spreadshe
 <body>
     <div id="spreadsheet_container"></div>
     <script>
-        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
             //config options
         });
     </script>
@@ -94,7 +94,7 @@ Als Nächstes können Sie zusätzliche Konfigurationsoptionen festlegen, die die
 Sie können das Erscheinungsbild von Spreadsheet mit mehreren Optionen anpassen, zum Beispiel: `toolbarBlocks`, `rowsCount` und `colsCount`. [Weitere Details finden Sie hier](configuration.md).
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
     colsCount: 10
@@ -129,7 +129,7 @@ const data = [
 ]
 
 // Spreadsheet initialisieren
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     //config
 });
 // Daten in Spreadsheet laden

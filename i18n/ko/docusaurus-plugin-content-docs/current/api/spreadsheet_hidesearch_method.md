@@ -19,7 +19,7 @@ hideSearch(): void;
 ### 예제 {#example}
 
 ~~~jsx {5,8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 검색 바를 열고 발견된 셀을 강조 표시합니다

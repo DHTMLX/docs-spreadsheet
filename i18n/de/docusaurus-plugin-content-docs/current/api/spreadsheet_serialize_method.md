@@ -94,7 +94,7 @@ Beachten Sie:
 ### Beispiel {#example}
 
 ~~~jsx {4}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 const state = spreadsheet.serialize();

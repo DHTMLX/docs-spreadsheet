@@ -19,7 +19,7 @@ colsCount?: number;
 ### Example
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     colsCount: 10,
     // other config parameters
 });

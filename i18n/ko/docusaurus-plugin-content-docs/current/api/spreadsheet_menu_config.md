@@ -25,7 +25,7 @@ menu: true
 ### 예제 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   menu: false,
   // 다른 설정 매개변수
 });

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Интеграция с Angular
 title: Интеграция с Angular
-description: Вы можете узнать об интеграции DHTMLX JavaScript Spreadsheet с Angular в документации. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Используйте DHTMLX Spreadsheet в приложении Angular. Создайте проект, добавьте Spreadsheet как компонент Angular, загрузите данные и обработайте события.
 ---
 
 # Интеграция с Angular {#integration-with-angular}
@@ -233,6 +233,10 @@ ngOnDestroy() {
     this._spreadsheet.destructor();
 }
 ~~~
+
+:::info
+Метод `destructor()` удаляет обработчики событий, добавленные через `spreadsheet.events.on()`. При создании нового экземпляра Spreadsheet, например при повторном создании компонента, подключите обработчики к новому экземпляру.
+:::
 
 ### Шаг 3. Добавление Spreadsheet в приложение {#step-3-adding-spreadsheet-into-the-app}
 

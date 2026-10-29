@@ -29,7 +29,7 @@ Return `true` to select cells, `false` to prevent selection of cells
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeSelectionSet" event

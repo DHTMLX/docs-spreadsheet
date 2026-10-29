@@ -39,10 +39,10 @@ Spreadsheet 安装包的结构如下：
 
 ## 创建容器 {#creating-container}
 
-为 Spreadsheet 添加一个容器并为其设置 id，例如 "spreadsheet"：
+为 Spreadsheet 添加一个容器并为其设置 id，例如 "spreadsheet_container"：
 
 ~~~html title="index.html"
-<div id="spreadsheet"></div>
+<div id="spreadsheet_container"></div>
 ~~~
 
 ## 初始化 DHTMLX Spreadsheet {#initializing-dhtmlx-spreadsheet}
@@ -54,7 +54,7 @@ Spreadsheet 安装包的结构如下：
 
 ~~~jsx title="index.js"
 // creating DHTMLX Spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config options
 });
 ~~~

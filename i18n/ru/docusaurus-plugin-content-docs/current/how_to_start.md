@@ -79,7 +79,7 @@ description: Вы можете узнать, как начать работу с
 <body>
     <div id="spreadsheet_container"></div>
     <script>
-        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
             //config options
         });
     </script>
@@ -94,7 +94,7 @@ description: Вы можете узнать, как начать работу с
 Вы можете настроить внешний вид Spreadsheet с помощью нескольких параметров, например: `toolbarBlocks`, `rowsCount` и `colsCount`. [Подробности](configuration.md).
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
     colsCount: 10
@@ -129,7 +129,7 @@ const data = [
 ]
 
 // initializing spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     //config
 });
 // loading data into spreadsheet

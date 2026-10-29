@@ -35,7 +35,7 @@ search(
 ### 예제 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 일치하는 셀의 ID를 반환하고, 검색 바를 열며 검색된 셀을 강조 표시합니다

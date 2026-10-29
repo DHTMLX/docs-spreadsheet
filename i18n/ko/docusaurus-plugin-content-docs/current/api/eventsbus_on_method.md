@@ -24,7 +24,7 @@ on(name: string, callback: function): void;
 ### 예제 {#example}
 
 ~~~jsx {6-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

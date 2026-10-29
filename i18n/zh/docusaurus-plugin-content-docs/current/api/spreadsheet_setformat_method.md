@@ -24,7 +24,7 @@ setFormat(cell: string, format: string | array): void;
 ### 示例 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 将货币格式应用于单元格 A1

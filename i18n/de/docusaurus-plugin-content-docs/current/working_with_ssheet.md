@@ -282,7 +282,7 @@ Ab v4.3 können Sie Daten in der Tabellenkalkulation mit der Methode [`sortCells
 - `dir` - die Sortierrichtung: 1 - aufsteigende Sortierreihenfolge, -1 - absteigende Sortierreihenfolge
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsparameter
 });
 

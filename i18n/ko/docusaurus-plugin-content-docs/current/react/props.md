@@ -25,6 +25,7 @@ description: "타입과 예시가 포함된 ReactSpreadsheet 컴포넌트의 모
 | `importModulePath` | `string` | XLSX 가져오기 모듈의 경로입니다. JS API: [`importModulePath`](api/spreadsheet_importmodulepath_config.md) 참조. |
 | `exportModulePath` | `string` | XLSX 내보내기 모듈의 경로입니다. JS API: [`exportModulePath`](api/spreadsheet_exportmodulepath_config.md) 참조. |
 | `spreadsheetLocale` | [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) | UI 번역 및 로컬라이즈된 수식 이름입니다. `localization`과는 별개입니다. |
+| `readonly` | `boolean` | 읽기 전용 모드를 활성화합니다. 사용자는 셀을 탐색, 선택, 복사 및 검색할 수 있으며 편집은 거부됩니다. JS API: [`readonly`](api/spreadsheet_readonly_config.md) 참조. |
 
 </div>
 
@@ -40,7 +41,7 @@ description: "타입과 예시가 포함된 ReactSpreadsheet 컴포넌트의 모
 |------|------|-------------|
 | `rowsCount` | `number` | 그리드의 행 수입니다. JS API: [`rowsCount`](api/spreadsheet_rowscount_config.md) 참조. |
 | `colsCount` | `number` | 그리드의 열 수입니다. JS API: [`colsCount`](api/spreadsheet_colscount_config.md) 참조. |
-| `readonly` | `boolean` | 읽기 전용 모드를 활성화합니다. JS API: [`readonly`](api/spreadsheet_readonly_config.md) 참조. |
+| `selection` | `boolean` | 셀 선택을 켜거나 끕니다. 기본값: `true`. `false`로 설정하면 스프레드시트에 활성 셀이 없으며 UI에서 셀을 선택하거나 편집할 수 없습니다. JS API: [`selection`](api/spreadsheet_selection_config.md) 참조. |
 
 ## 데이터 props {#data-props}
 
@@ -225,8 +226,16 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 
 ### 읽기 전용 모드 {#read-only-mode}
 
+읽기 전용 모드에서 사용자는 키보드로 셀을 탐색하고, 마우스로 선택하고, 복사 및 검색할 수 있습니다. 편집은 거부되며 스크린 리더에 알림이 전달됩니다. `readonly`는 초기화 전용 prop이므로 변경하면 위젯이 재생성됩니다. 데이터는 유지되지만 실행 취소/다시 실행 기록과 UI 상태(선택 영역, 스크롤 위치)는 초기화됩니다.
+
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} readonly={true} />
+~~~
+
+키보드 탐색과 선택도 끄려면 `selection={false}`를 추가하세요. `selection` prop은 런타임에 적용되므로 위젯을 재생성하지 않고 전환할 수 있습니다:
+
+~~~tsx
+<ReactSpreadsheet sheets={sheets} readonly={true} selection={false} />
 ~~~
 
 ### URL에서 데이터 로드 {#loading-data-from-url}

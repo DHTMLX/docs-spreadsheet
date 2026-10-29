@@ -28,11 +28,17 @@ startEdit(cell?: string, initialValue?: string): void;
 ### 示例 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 开始编辑当前选中的单元格
 spreadsheet.startEdit();
 ~~~
+
+### 详情 {#details}
+
+在活动单元格中输入内容时，会通过该方法开始编辑。使用输入法编辑器 (IME) 组合的文本会在组合结束时作为 `initialValue` 传入。因此 [`beforeEditStart`](api/spreadsheet_beforeeditstart_event.md) 和 [`afterEditStart`](api/spreadsheet_aftereditstart_event.md) 事件会接收到输入或组合的文本，并且 `beforeEditStart` 可以取消编辑。
+
+**更新日志：** 使用 IME 组合的文本开始编辑的功能在 v6.0.4 中新增
 
 **相关文章：** [使用电子表格](working_with_cells.md#editing-a-cell)

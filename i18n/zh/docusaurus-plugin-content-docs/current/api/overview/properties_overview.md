@@ -1,7 +1,7 @@
 ---
 sidebar_label: 属性概览
 title: 属性概览
-description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的属性概览。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: DHTMLX Spreadsheet 配置属性列表，用于设置工具栏、菜单、只读模式、选择、网格大小等。
 ---
 
 # 属性概览 {#properties-overview}
@@ -18,4 +18,7 @@ description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的属
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |

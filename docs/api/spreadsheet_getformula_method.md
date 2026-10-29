@@ -27,7 +27,7 @@ The method returns the formula of the cell
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // returns "ABS(C2)"

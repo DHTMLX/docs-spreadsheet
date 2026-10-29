@@ -19,7 +19,7 @@ exportModulePath?: string;
 ### 예제 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     exportModulePath: "../libs/json2excel/x.x/worker.js?vx", // 내보내기 모듈의 `worker.js` 파일에 대한 로컬 경로
     // other config parameters
 });

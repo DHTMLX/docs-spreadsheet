@@ -94,7 +94,7 @@ CSS-переменные темы [по умолчанию](/themes/#light-theme
 </style>
 
 <script>
-    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet_container",{});
     
     dhx.setTheme("light");
 </script>

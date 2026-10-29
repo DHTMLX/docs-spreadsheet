@@ -19,7 +19,7 @@ hideSearch(): void;
 ### 示例 {#example}
 
 ~~~jsx {5,8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 打开搜索栏并高亮显示找到的单元格

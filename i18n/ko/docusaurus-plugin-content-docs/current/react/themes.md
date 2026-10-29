@@ -77,6 +77,9 @@ DHTMLX Spreadsheet는 레이어드 CSS 변수 시스템을 사용합니다. 이 
     /* 스프레드시트 범위 색상 */
     --dhx-spreadsheet-range-background-1: #bee3f8;
     --dhx-spreadsheet-range-color-1: #2b6cb0;
+
+    /* 수식 입력줄과 툴바 컨트롤의 키보드 포커스 윤곽선 */
+    --dhx-spreadsheet-focus-color: #2b6cb0;
 }
 ~~~
 

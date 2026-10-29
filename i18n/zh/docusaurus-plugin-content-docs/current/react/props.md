@@ -25,6 +25,7 @@ description: "ReactSpreadsheet 组件所有 props 的完整参考，包含类型
 | `importModulePath` | `string` | XLSX 导入模块的路径。JS API 参见：[`importModulePath`](api/spreadsheet_importmodulepath_config.md)。 |
 | `exportModulePath` | `string` | XLSX 导出模块的路径。JS API 参见：[`exportModulePath`](api/spreadsheet_exportmodulepath_config.md)。 |
 | `spreadsheetLocale` | [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) | UI 翻译及本地化公式名称。与 `localization` 独立。 |
+| `readonly` | `boolean` | 启用只读模式。用户可以导航、选择、复制和搜索单元格，编辑操作会被拒绝。JS API 参见：[`readonly`](api/spreadsheet_readonly_config.md)。 |
 
 </div>
 
@@ -40,7 +41,7 @@ description: "ReactSpreadsheet 组件所有 props 的完整参考，包含类型
 |------|------|-------------|
 | `rowsCount` | `number` | 表格的行数。JS API 参见：[`rowsCount`](api/spreadsheet_rowscount_config.md)。 |
 | `colsCount` | `number` | 表格的列数。JS API 参见：[`colsCount`](api/spreadsheet_colscount_config.md)。 |
-| `readonly` | `boolean` | 启用只读模式。JS API 参见：[`readonly`](api/spreadsheet_readonly_config.md)。 |
+| `selection` | `boolean` | 开启或关闭单元格选择。默认值：`true`。设为 `false` 时，电子表格没有活动单元格，也无法通过 UI 选择或编辑单元格。JS API 参见：[`selection`](api/spreadsheet_selection_config.md)。 |
 
 ## 数据 props {#data-props}
 
@@ -225,8 +226,16 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 
 ### 只读模式 {#read-only-mode}
 
+在只读模式下，用户可以使用键盘在单元格间导航，用鼠标选择单元格，以及复制和搜索单元格。编辑操作会被拒绝，并向屏幕阅读器播报。由于 `readonly` 是仅初始化 prop，修改它会重新创建 widget。数据会被保留，而撤销/重做历史记录及 UI 状态（选区、滚动位置）将被重置。
+
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} readonly={true} />
+~~~
+
+若要同时关闭键盘导航和选择，请添加 `selection={false}`。`selection` prop 在运行时生效，因此无需重新创建 widget 即可切换：
+
+~~~tsx
+<ReactSpreadsheet sheets={sheets} readonly={true} selection={false} />
 ~~~
 
 ### 从 URL 加载数据 {#loading-data-from-url}

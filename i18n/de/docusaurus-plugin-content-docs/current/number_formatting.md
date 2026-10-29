@@ -107,7 +107,7 @@ Mit den Konfigurationsoptionen von Spreadsheet können Sie Uhrzeit und Datum lok
 Sie können beispielsweise die Standard-Lokalisierungseinstellungen wie folgt ändern:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     localization: {
         decimal: ",", 
         thousands: " ", 

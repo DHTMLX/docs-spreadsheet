@@ -1,7 +1,7 @@
 ---
 sidebar_label: Vue 통합
 title: Vue 통합
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 Vue 통합에 대한 내용을 문서에서 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. 또한 DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수 있습니다.
+description: Vue 애플리케이션에서 DHTMLX Spreadsheet를 사용하는 방법입니다. 프로젝트를 만들고, Spreadsheet를 Vue 컴포넌트로 추가하고, 데이터를 로드하고, 이벤트를 처리합니다.
 ---
 
 # Vue 통합 {#integration-with-vue}
@@ -259,6 +259,10 @@ export default {
 
 //...
 ~~~
+
+:::info
+`destructor()` 메서드는 `spreadsheet.events.on()`으로 연결한 이벤트 핸들러를 제거합니다. 새 Spreadsheet 인스턴스를 생성할 때(예: 컴포넌트가 다시 생성될 때) 새 인스턴스에 핸들러를 다시 연결하세요.
+:::
 
 그런 다음 앱을 시작하면 페이지에 데이터가 로드된 Spreadsheet를 볼 수 있습니다.
 

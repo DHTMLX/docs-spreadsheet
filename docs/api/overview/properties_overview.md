@@ -1,7 +1,7 @@
 ---
 sidebar_label: Properties overview
 title: Properties Overview
-description: You can check a Properties overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: List of the DHTMLX Spreadsheet configuration properties that set up the toolbar, the menu, the read-only mode, the selection, the grid size and more.
 ---
 
 # Properties overview
@@ -18,5 +18,6 @@ description: You can check a Properties overview of the DHTMLX JavaScript Spread
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |
 

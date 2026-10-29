@@ -27,7 +27,7 @@ isLocked(cell: string): boolean;
 ### Пример {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // проверяет, заблокирована ли ячейка

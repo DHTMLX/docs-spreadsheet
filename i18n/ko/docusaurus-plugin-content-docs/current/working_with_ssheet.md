@@ -282,7 +282,7 @@ v4.3부터 [`sortCells()`](api/spreadsheet_sortcells_method.md) 메서드를 사
 - `dir` - 정렬 방향: 1 - 오름차순, -1 - 내림차순
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // 구성 파라미터
 });
 

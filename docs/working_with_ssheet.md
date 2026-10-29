@@ -282,7 +282,7 @@ From v4.3, you can sort data in the spreadsheet with the [`sortCells()`](api/spr
 - `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 

@@ -27,7 +27,7 @@ getStyle(cell: string): any;
 ### Пример {#example}
 
 ~~~jsx {5,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // получение стиля одной ячейки

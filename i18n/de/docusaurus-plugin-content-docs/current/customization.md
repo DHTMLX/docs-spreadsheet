@@ -1,7 +1,7 @@
 ---
 sidebar_label: Anpassung
 title: Anpassung
-description: Sie erfahren in der Dokumentation, wie Sie die DHTMLX JavaScript Spreadsheet-Bibliothek anpassen. Durchsuchen Sie Entwicklerleitfaden und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: DHTMLX Spreadsheet anpassen. Icons ändern sowie Controls der Symbolleiste, des Menüs und des Kontextmenüs hinzufügen, aktualisieren und löschen oder einen benutzerdefinierten schreibgeschützten Modus erstellen.
 ---
 
 # Anpassung {#customization}
@@ -31,6 +31,8 @@ Anschließend können Sie den Namen des Icons als Wert der Eigenschaft `icon` im
 
 Sie können die folgenden Control-Typen hinzufügen: `button`, `menuItem`, `separator` und `spacer`.
 
+Wie die anderen Controls der [Standard-Toolbar](#default-controls) sind auch die Controls *Textfarbe* und *Hintergrundfarbe* sowie das Control *Rahmenfarbe* im Popup *Rahmen* vom Typ [`navItem`](https://docs.dhtmlx.com/suite/toolbar/navitem/). Sie zeichnen die aktuelle Farbe über die Eigenschaft [`html`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/), beziehen ihren zugänglichen Namen aus der Eigenschaft [`value`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/), zum Beispiel "Text color: dark gray", und öffnen ein Farb-Popup. Spreadsheet aktualisiert beide Eigenschaften der Controls *Textfarbe* und *Hintergrundfarbe*, wenn sich die aktive Zelle ändert, und des Controls *Rahmenfarbe*, wenn eine Rahmenfarbe gewählt wird.
+
 Das `button`-Objekt hat folgende Eigenschaften:
 
 - `type` - der Typ eines Buttons, setzen Sie diesen auf "button"
@@ -51,7 +53,7 @@ Das `menuItem`-Objekt hat folgende Eigenschaften:
 - `value` - der Wert eines Menüeintrags
 - `childs` - ein Array von untergeordneten Controls (beachten Sie, dass alle untergeordneten Elemente den Typ `menuItem` haben müssen)
 
-Die Datensammlungs-API der **Toolbar**, des **Menüs** und des **Kontextmenüs** ermöglicht Ihnen die Verwaltung von Controls: Sie können benutzerdefinierte Controls hinzufügen, nicht benötigte entfernen oder vorhandene aktualisieren - beispielsweise deren Icons ändern.
+Die Datensammlungs-API der **Toolbar**, des **Menüs** und des **Kontextmenüs** ermöglicht Ihnen die Verwaltung von Controls: Sie können benutzerdefinierte Controls hinzufügen, nicht benötigte entfernen oder vorhandene aktualisieren, beispielsweise deren Icons ändern.
 
 ### Controls hinzufügen {#adding-controls}
 
@@ -379,7 +381,8 @@ Das [Standard-Kontextmenü](/#context-menu) hat folgende Struktur:
 - das **Spalten**-menuItem (id: "columns")
   - das *Spalte hinzufügen*-menuItem (id: "add-col")
   - das *Spalte entfernen*-menuItem (id: "remove-col")
-  - das *An Daten anpassen*-menuItem (id: "fit-col")
+  - das *An Daten anpassen*-menuItem (id: "fit-col"), angezeigt im Spaltenmenü und bei Auswahl ganzer Spalten
+  - das *Spaltenbreite*-menuItem (id: "col-width")
   - der Trenner
   - das *Spalten einblenden*-menuItem (id: "unfreeze-cols")
   - das *Bis Spalte [id] fixieren*-menuItem (id: "freeze-cols")
@@ -388,6 +391,7 @@ Das [Standard-Kontextmenü](/#context-menu) hat folgende Struktur:
 - das **Zeilen**-menuItem (id: "rows")
   - das *Zeile hinzufügen*-menuItem (id: "add-row")
   - das *Zeile entfernen*-menuItem (id: "remove-row")
+  - das *Zeilenhöhe*-menuItem (id: "row-height")
   - der Trenner
   - das *Zeilen einblenden*-menuItem (id: "unfreeze-rows")
   - das *Bis Zeile [id] fixieren*-menuItem (id: "freeze-rows")
@@ -397,6 +401,7 @@ Das [Standard-Kontextmenü](/#context-menu) hat folgende Struktur:
   - das *A bis Z sortieren*-menuItem (id: "asc-sort")
   - das *Z bis A sortieren*-menuItem (id: "desc-sort")
 - das **Link einfügen**-menuItem (id: "link")
+- das **Filter öffnen**-menuItem (id: "open-filter"), angezeigt, wenn die aktive Zelle das Filtersymbol enthält
 
 ### Controls hinzufügen {#adding-controls-3}
 

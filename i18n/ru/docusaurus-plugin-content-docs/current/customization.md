@@ -1,7 +1,7 @@
 ---
 sidebar_label: Кастомизация
 title: Кастомизация
-description: Вы можете узнать о кастомизации библиотеки DHTMLX JavaScript Spreadsheet в документации. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Настройка DHTMLX Spreadsheet. Изменение иконок, добавление, обновление и удаление элементов управления панели инструментов, меню и контекстного меню, а также создание собственного режима только для чтения.
 ---
 
 # Кастомизация {#customization}
@@ -30,6 +30,8 @@ description: Вы можете узнать о кастомизации библ
 ### Типы {#types}
 
 Вы можете добавлять следующие типы элементов управления: `button`, `menuItem`, `separator` и `spacer`.
+
+Как и остальные элементы управления [панели инструментов по умолчанию](#default-controls), элементы *Text color* и *Background color*, а также элемент *Border color* во всплывающем окне *Border* имеют тип [`navItem`](https://docs.dhtmlx.com/suite/toolbar/navitem/). Они отображают текущий цвет с помощью свойства [`html`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/), берут доступное имя из свойства [`value`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/), например "Text color: dark gray", и открывают всплывающее окно выбора цвета. Spreadsheet обновляет оба свойства элементов *Text color* и *Background color* при смене активной ячейки, а элемента *Border color* при выборе цвета границы.
 
 Объект `button` имеет следующие свойства:
 
@@ -379,7 +381,8 @@ spreadsheet.menu.data.remove("undo");
 - пункт меню **Columns** (id: "columns")
   - пункт меню *Add column* (id: "add-col")
   - пункт меню *Remove column* (id: "remove-col")
-  - пункт меню *Fit to data* (id: "fit-col")
+  - пункт меню *Fit to data* (id: "fit-col"), отображается в меню столбца и при выделении столбцов целиком
+  - пункт меню *Column width* (id: "col-width")
   - разделитель
   - пункт меню *Unfreeze columns* (id: "unfreeze-cols")
   - пункт меню *Freeze up to column [id]* (id: "freeze-cols")
@@ -388,6 +391,7 @@ spreadsheet.menu.data.remove("undo");
 - пункт меню **Rows** (id: "rows")
   - пункт меню *Add row* (id: "add-row")
   - пункт меню *Remove row* (id: "remove-row")
+  - пункт меню *Row height* (id: "row-height")
   - разделитель
   - пункт меню *Unfreeze rows* (id: "unfreeze-rows")
   - пункт меню *Freeze up to row [id]* (id: "freeze-rows")
@@ -396,6 +400,7 @@ spreadsheet.menu.data.remove("undo");
 - пункт меню **Sort** (id: "sort")
   - пункт меню *Sort A to Z* (id: "asc-sort")
   - пункт меню *Sort Z to A* (id: "desc-sort")
+- пункт меню **Open filter** (id: "open-filter"), отображается, когда активная ячейка содержит значок фильтра
 - пункт меню **Insert link** (id: "link")
 
 ### Добавление элементов управления {#adding-controls-3}

@@ -29,7 +29,7 @@ Return `true` to set focus on a cell, `false` to prevent setting focus
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeFocusSet" event

@@ -1,7 +1,7 @@
 ---
 sidebar_label: 데이터 필터링
 title: 데이터 필터링
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 데이터 필터링에 대해 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: 조건 또는 값으로 DHTMLX Spreadsheet의 데이터를 필터링하고, 키보드로 필터를 열고, 필터를 지우거나 제거합니다.
 ---
 
 # 데이터 필터링 {#filtering-data}
@@ -35,6 +35,20 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 데이�
 필터를 지우려면 열 헤더의 **필터** 아이콘을 클릭하고 _조건으로: **없음**_을 선택한 다음 **적용**을 클릭합니다.
 
 ![필터를 지우기 위한 조건으로 없음 옵션이 있는 DHTMLX Spreadsheet 필터 대화상자](/img/clear_filter_bycondition.png)
+
+## 키보드로 필터 열기 {#opening-a-filter-with-the-keyboard}
+
+마우스 없이 열의 필터를 열려면 다음과 같이 합니다:
+
+- 활성 셀을 **필터** 아이콘이 있는 열 헤더 셀로 이동합니다
+
+- `Shift + F10` 또는 Menu 키를 눌러 컨텍스트 메뉴를 호출하고 *필터 열기*를 선택합니다
+
+![필터 아이콘이 있는 헤더 셀의 DHTMLX Spreadsheet 컨텍스트 메뉴에서 필터 열기 명령에 포커스가 있는 모습](/img/open_filter_context_menu.png)
+
+*필터 열기* 명령은 **필터** 아이콘이 있는 셀의 컨텍스트 메뉴에만 나타납니다. 해당 셀을 마우스 오른쪽 버튼으로 클릭한 후에도 선택할 수 있습니다. [읽기 전용 모드](api/spreadsheet_readonly_config.md)에서는 컨텍스트 메뉴와 *필터 열기* 명령을 사용할 수 없습니다.
+
+필터 팝업이 포커스를 받으며, `Tab`으로 팝업의 컨트롤 사이를 이동합니다. `Esc`는 팝업을 닫고 포커스를 셀로 돌려줍니다. 팝업에 드롭다운 목록이나 날짜 선택기가 열려 있으면 `Esc`가 먼저 그것을 닫습니다.
 
 ## 값으로 필터링 {#filtering-by-values}
 

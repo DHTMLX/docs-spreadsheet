@@ -32,7 +32,7 @@ fire(name: string, arguments: array): boolean;
 ### 예제 {#example}
 
 ~~~jsx {10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

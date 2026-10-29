@@ -1,7 +1,7 @@
 ---
 sidebar_label: Обзор свойств
 title: Обзор свойств
-description: Вы можете ознакомиться с обзором свойств библиотеки DHTMLX JavaScript Spreadsheet в документации. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Список параметров конфигурации DHTMLX Spreadsheet, которые настраивают панель инструментов, меню, режим только для чтения, выделение, размер сетки и другое.
 ---
 
 # Обзор свойств {#properties-overview}
@@ -18,4 +18,5 @@ description: Вы можете ознакомиться с обзором сво
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |

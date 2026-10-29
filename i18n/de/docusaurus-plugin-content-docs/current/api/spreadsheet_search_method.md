@@ -35,7 +35,7 @@ Die Methode gibt ein Array mit den IDs der gefundenen Zellen zurück
 ### Beispiel {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // gibt IDs der Zellen mit übereinstimmendem Ergebnis zurück, öffnet die Suchleiste und hebt die gefundenen Zellen hervor

@@ -1,7 +1,7 @@
 ---
 sidebar_label: 메서드 개요
 title: 메서드 개요
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 메서드 개요를 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드할 수 있습니다.
+description: 데이터 로드 및 저장, 셀 편집, 스타일 지정, 병합, 정렬, 필터링, 시트 관리를 위한 DHTMLX Spreadsheet 메서드 목록입니다.
 ---
 
 # 메서드 개요 {#methods-overview}
@@ -11,6 +11,7 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 메서�
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(../spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addformula_method.md)     | @getshort(../spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(../spreadsheet_addrow_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(../spreadsheet_announce_method.md)         |
 | [](api/spreadsheet_clear_method.md)          | @getshort(../spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(../spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(../spreadsheet_deleterow_method.md)      |

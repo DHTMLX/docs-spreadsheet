@@ -107,7 +107,7 @@ spreadsheet.parse({
 例如，您可以按如下方式更改默认本地化设置：
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     localization: {
         decimal: ",", 
         thousands: " ", 

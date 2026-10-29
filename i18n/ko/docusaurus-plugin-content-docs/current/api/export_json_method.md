@@ -19,7 +19,7 @@ json(): void;
 ### 예제 {#example}
 
 ~~~jsx {7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

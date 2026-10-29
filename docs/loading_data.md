@@ -179,7 +179,7 @@ Note that you should not use the `value` property of the `cell` object and the `
 By default, Spreadsheet expects data in JSON format. To load data from an external source, use the [](api/spreadsheet_load_method.md) method. It takes the URL of the file with data as a parameter:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ If you need to let users import a JSON file into the spreadsheet through the Fil
 You can also load data in CSV format. For this, you need to call the [](api/spreadsheet_load_method.md) method and pass the name of the format ("csv") as the second parameter:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 To load data from a local source, make use of the [](api/spreadsheet_parse_method.md) method. Pass a [predefined data set](#preparing-data) as a parameter of this method:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

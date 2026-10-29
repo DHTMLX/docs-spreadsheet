@@ -32,7 +32,7 @@ Die Methode gibt `false` zurück, wenn einer der Event-Handler `false` zurückgi
 ### Beispiel {#example}
 
 ~~~jsx {10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

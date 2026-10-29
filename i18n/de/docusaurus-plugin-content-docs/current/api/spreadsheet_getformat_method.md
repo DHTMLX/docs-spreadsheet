@@ -27,7 +27,7 @@ Die Methode gibt das bzw. die Format(e) zurück, das bzw. die auf den Wert der Z
 ### Beispiel {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // gibt "currency" zurück

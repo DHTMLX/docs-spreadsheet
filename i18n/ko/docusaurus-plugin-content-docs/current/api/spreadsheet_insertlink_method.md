@@ -36,7 +36,7 @@ insertLink(
 ### 예제 {#example}
 
 ~~~jsx {5-7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // "A2" 셀에 링크 삽입

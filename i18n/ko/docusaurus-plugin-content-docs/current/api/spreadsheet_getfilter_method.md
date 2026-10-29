@@ -30,7 +30,7 @@ getFilter(id?: string): {cell, rules};
 ### 예제 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 현재 시트의 필터링 기준을 가져옵니다

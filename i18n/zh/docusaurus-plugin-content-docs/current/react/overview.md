@@ -96,8 +96,8 @@ Props 按组件处理变更的方式分为以下几类：
 
 | 类别 | Props | 变更时的行为 |
 |----------|-------|----------------------|
-| **仅初始化** | `menu`、`editLine`、`toolbarBlocks`、`multiSheets`、`formats`、`localization`、`importModulePath`、`exportModulePath`、`spreadsheetLocale` | widget 被销毁并重新创建。电子表格数据会被保留，但撤销/重做历史记录及 UI 状态（选区、滚动位置）将被重置。 |
-| **运行时** | `readonly`、`rowsCount`、`colsCount` | 立即生效，不会造成数据丢失或 UI 状态重置。 |
+| **仅初始化** | `menu`、`editLine`、`toolbarBlocks`、`multiSheets`、`formats`、`localization`、`importModulePath`、`exportModulePath`、`spreadsheetLocale`、`readonly` | widget 被销毁并重新创建。电子表格数据会被保留，但撤销/重做历史记录及 UI 状态（选区、滚动位置）将被重置。 |
+| **运行时** | `selection`、`rowsCount`、`colsCount` | 立即生效，不会造成数据丢失或 UI 状态重置。 |
 | **数据** | `sheets`、`activeSheet` | 增量应用；仅更新已变更的单元格、区域或设置。 |
 | **重新解析** | `styles` | 样式变更需要完整的数据重新加载。电子表格数据会被保留，但撤销/重做历史记录及 UI 状态将被重置。 |
 | **状态** | `search`、`theme`、`loadUrl` | 通过专用 widget API 应用，无副作用。 |
@@ -197,6 +197,10 @@ function App() {
 ~~~
 
 `instance` 属性在 widget 初始化之前及卸载之后均为 `null`。
+
+:::info
+通过 `ref.current.instance.events.on()` 附加的处理器，会在修改仅初始化 prop 后 widget 被重新创建时，以及组件卸载时被移除。请使用[事件回调 props](react/events.md)，组件会将其附加到每个新的 widget 实例上。
+:::
 
 ## API 参考 {#api-reference}
 

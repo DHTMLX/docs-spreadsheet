@@ -30,7 +30,7 @@ The method returns an object with filtering criteria. The object includes two at
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // gets criteria of filtering for the current sheet

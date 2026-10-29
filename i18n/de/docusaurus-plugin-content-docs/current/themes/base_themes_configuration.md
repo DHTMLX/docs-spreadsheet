@@ -94,7 +94,7 @@ Wenn Sie einige Farbwerte fur ein einzelnes [Spreadsheet-Theme](/themes/) ubersc
 </style>
 
 <script>
-    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet_container",{});
     
     dhx.setTheme("light");
 </script>

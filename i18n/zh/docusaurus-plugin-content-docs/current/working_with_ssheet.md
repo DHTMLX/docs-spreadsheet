@@ -282,7 +282,7 @@ spreadsheet.hideSearch();
 - `dir` - 排序方向：1 - 升序，-1 - 降序
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 

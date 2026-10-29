@@ -28,7 +28,7 @@ Die Methode gibt ein Promise des Datenladevorgangs zurück
 ### Beispiel {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Daten im JSON-Format laden (Standard)
@@ -84,7 +84,7 @@ Sie können Benutzern ermöglichen, eine JSON-Datei über den Datei-Explorer in 
 - Rufen Sie die Methode `load()` mit zwei Parametern auf: einem leeren String als URL und dem Typ der zu ladenden Daten ("json"):
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
 });
 

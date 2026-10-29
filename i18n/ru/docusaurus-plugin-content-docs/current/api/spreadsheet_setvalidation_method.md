@@ -29,7 +29,7 @@ setValidation(
 ### Пример {#example}
 
 ~~~jsx {8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 

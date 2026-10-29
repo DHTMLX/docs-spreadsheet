@@ -27,7 +27,7 @@ The method returns the format(s) applied to the value of the cell(s)
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // returns "currency"

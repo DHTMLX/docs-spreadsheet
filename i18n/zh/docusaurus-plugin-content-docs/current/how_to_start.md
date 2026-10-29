@@ -79,7 +79,7 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如
 <body>
     <div id="spreadsheet_container"></div>
     <script>
-        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
             //config options
         });
     </script>
@@ -94,7 +94,7 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如
 您可以使用多个选项来调整 Spreadsheet 的外观与行为，例如：`toolbarBlocks`、`rowsCount` 和 `colsCount`。[查看详情](configuration.md)。
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
     colsCount: 10
@@ -129,7 +129,7 @@ const data = [
 ]
 
 // initializing spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     //config
 });
 // loading data into spreadsheet
