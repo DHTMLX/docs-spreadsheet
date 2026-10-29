@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterEditEnd
 title: Событие afterEditEnd
-description: Вы можете узнать о событии afterEditEnd в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Обработайте завершение редактирования ячейки в DHTMLX Spreadsheet с помощью события afterEditEnd, которое получает id ячейки и её новое значение.
 ---
 
 # afterEditEnd

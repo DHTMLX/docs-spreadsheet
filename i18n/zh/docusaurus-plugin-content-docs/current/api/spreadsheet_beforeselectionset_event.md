@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSelectionSet
 title: beforeSelectionSet 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 beforeSelectionSet 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费试用版本。
+description: 使用 beforeSelectionSet 事件控制 DHTMLX Spreadsheet 中单元格的选择，该事件在选中单元格之前触发，当处理函数返回 false 时阻止选择。
 ---
 
 # beforeSelectionSet

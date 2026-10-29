@@ -1,7 +1,7 @@
 ---
 sidebar_label: 配置内置主题
 title: 配置内置主题
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如何配置主题。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 通过覆盖 CSS 变量更改 DHTMLX Spreadsheet 内置主题的颜色，可一次应用于所有主题或单独应用于某个主题。
 ---
 
 # 配置内置主题 {#configuring-built-in-themes}

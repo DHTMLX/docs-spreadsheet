@@ -1,7 +1,7 @@
 ---
 sidebar_label: mergeCells()
 title: mergeCells method
-description: You can learn about the mergeCells method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Merge a range of cells into one cell or split merged cells in DHTMLX Spreadsheet with the mergeCells() method.
 ---
 
 # mergeCells()

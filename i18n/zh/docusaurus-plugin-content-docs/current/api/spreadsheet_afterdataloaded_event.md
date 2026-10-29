@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterDataLoaded
 title: afterDataLoaded 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 afterDataLoaded 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 afterDataLoaded 事件在数据加载到 DHTMLX Spreadsheet 之后执行代码，例如在加载完成时显示一条消息。
 ---
 
 # afterDataLoaded

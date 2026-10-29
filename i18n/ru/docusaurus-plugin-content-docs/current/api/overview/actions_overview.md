@@ -1,7 +1,7 @@
 ---
 sidebar_label: Действия Spreadsheet
 title: Обзор действий
-description: Вы можете ознакомиться с обзором действий библиотеки DHTMLX JavaScript Spreadsheet в документации. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Обзор действий DHTMLX Spreadsheet и полный список действий, которые можно обработать в событиях beforeAction и afterAction.
 ---
 
 # Обзор действий {#actions-overview}

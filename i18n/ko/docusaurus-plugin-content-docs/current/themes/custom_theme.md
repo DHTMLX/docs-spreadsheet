@@ -1,7 +1,7 @@
 ---
 sidebar_label: 커스텀 테마
 title: 커스텀 테마
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 커스텀 테마를 만드는 방법을 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 직접 사용해 보거나, DHTMLX Spreadsheet 30일 무료 평가판을 다운로드하십시오.
+description: CSS 변수로 DHTMLX Spreadsheet의 사용자 지정 색상 테마를 만들고 dhx.setTheme() 메서드로 적용합니다.
 ---
 
 # 커스텀 테마 {#custom-theme}

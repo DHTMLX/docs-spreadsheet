@@ -1,7 +1,7 @@
 ---
 sidebar_label: AwaitRedraw 헬퍼
 title: AwaitRedraw 헬퍼
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 AwaitRedraw 헬퍼에 대해 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: dhx.awaitRedraw 헬퍼로 DHTMLX Spreadsheet의 렌더링이 끝난 후 코드를 실행합니다. 컴포넌트가 페이지에 표시된 후에만 적용되는 API 메서드에 사용합니다.
 ---
 
 # AwaitRedraw 헬퍼 {#awaitredraw-helper}

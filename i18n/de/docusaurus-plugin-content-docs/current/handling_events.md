@@ -1,7 +1,7 @@
 ---
 sidebar_label: Event-Handling
 title: Event-Handling
-description: In der Dokumentation zur DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das Event-Handling. Lesen Sie Entwickleranleitungen und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Fügen Sie in DHTMLX Spreadsheet mit den Methoden events.on(), events.detach() und events.fire() Event-Listener hinzu, entfernen Sie sie und lösen Sie Events aus.
 ---
 
 # Event-Handling {#event-handling}

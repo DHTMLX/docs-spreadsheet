@@ -1,7 +1,7 @@
 ---
 sidebar_label: showRows()
 title: Метод showRows
-description: Вы можете узнать о методе showRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Покажите скрытые строки в DHTMLX Spreadsheet с помощью метода showRows() по строке переданной или выбранной ячейки.
 ---
 
 # showRows()

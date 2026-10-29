@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSheetChange
 title: beforeSheetChange event
-description: Sie können im Dokumentationsbereich der DHTMLX JavaScript Spreadsheet-Bibliothek mehr über das beforeSheetChange-Event erfahren. Lesen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Steuern Sie den Wechsel von Tabellenblättern in DHTMLX Spreadsheet mit dem Event beforeSheetChange und geben Sie false zurück, um das aktuelle Tabellenblatt aktiv zu lassen.
 ---
 
 # beforeSheetChange

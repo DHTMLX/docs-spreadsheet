@@ -1,7 +1,7 @@
 ---
 sidebar_label: on()
 title: on events bus 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 on events bus 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드하실 수 있습니다.
+description: DHTMLX Spreadsheet에서 events.on() 메서드로 내부 이벤트에 핸들러를 연결합니다. 예를 들어 셀 스타일 변경에 대응할 수 있습니다.
 ---
 
 # on()

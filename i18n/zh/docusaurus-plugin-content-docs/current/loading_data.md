@@ -1,7 +1,7 @@
 ---
 sidebar_label: 数据加载与导出
 title: 加载数据
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解数据加载的相关内容。浏览开发者指南和 API 参考、尝试代码示例和在线演示，并下载免费 30 天试用版 DHTMLX Spreadsheet。
+description: 从文件或本地数据源将带有样式、锁定单元格和链接的 JSON、CSV 或 Excel 数据加载到 DHTMLX Spreadsheet，保存和恢复状态，并将数据导出为 Excel 或 JSON。
 ---
 
 # 数据加载与导出 {#data-loading-and-export}

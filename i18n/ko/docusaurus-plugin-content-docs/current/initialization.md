@@ -1,7 +1,7 @@
 ---
 sidebar_label: 초기화
 title: 초기화
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 초기화에 대해 문서에서 학습할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보고, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하십시오.
+description: 소스 파일을 포함하고 컨테이너를 추가한 다음 구성 객체와 함께 dhx.Spreadsheet 생성자를 호출하여 페이지에서 DHTMLX Spreadsheet를 초기화합니다.
 ---
 
 # 초기화 {#initialization}

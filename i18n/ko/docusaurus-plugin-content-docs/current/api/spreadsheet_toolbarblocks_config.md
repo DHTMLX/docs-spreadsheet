@@ -1,7 +1,7 @@
 ---
 sidebar_label: toolbarBlocks
 title: toolbarBlocks 설정
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 toolbarBlocks 설정에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 확인하며, DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 toolbarBlocks 속성으로 툴바에 표시할 버튼 블록(undo, colors, font, align, format 등)을 선택합니다.
 ---
 
 # toolbarBlocks

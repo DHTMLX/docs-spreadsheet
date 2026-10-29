@@ -1,7 +1,7 @@
 ---
 sidebar_label: Mit der Tabellenkalkulation arbeiten
 title: Mit der Tabellenkalkulation arbeiten
-description: Sie können in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren, wie Sie mit der Tabellenkalkulation arbeiten. Durchsuchen Sie Entwicklerhandbücher und die API-Referenz, testen Sie Codebeispiele und Live-Demos, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Machen Sie über die API Aktionen in DHTMLX Spreadsheet rückgängig und wiederholen Sie sie, fügen Sie Zeilen und Spalten hinzu, entfernen, fixieren und blenden Sie sie aus, passen Sie die Spaltenbreite an, filtern, durchsuchen und sortieren Sie Daten und leeren Sie die Tabelle.
 ---
 
 # Mit der Tabellenkalkulation arbeiten {#work-with-spreadsheet}

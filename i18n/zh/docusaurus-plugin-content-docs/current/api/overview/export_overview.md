@@ -1,7 +1,7 @@
 ---
 sidebar_label: 导出方法概览
 title: 导出方法概览
-description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的导出方法概览。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet Export 模块方法列表，用于将数据保存为 JSON 或 Excel (.xlsx) 文件。
 ---
 
 # 导出方法概览 {#export-methods-overview}

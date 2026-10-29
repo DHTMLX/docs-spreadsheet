@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFilter()
 title: getFilter-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die getFilter-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Rufen Sie mit der Methode getFilter() die Filterkriterien eines Tabellenblatts in DHTMLX Spreadsheet ab. Sie gibt den gefilterten Zellbereich und die Filterregeln zurück.
 ---
 
 # getFilter()

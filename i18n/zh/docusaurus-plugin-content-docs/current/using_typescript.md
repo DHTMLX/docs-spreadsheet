@@ -1,7 +1,7 @@
 ---
 sidebar_label: TypeScript 支持
 title: TypeScript 支持
-description: 您可以在文档中了解如何在 DHTMLX JavaScript Spreadsheet 库中使用 TypeScript。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 DHTMLX Spreadsheet 内置的 TypeScript 定义，在 IDE 中获得类型检查、自动补全和 JSDoc 提示。
 ---
 
 # TypeScript 支持 {#typescript-support}

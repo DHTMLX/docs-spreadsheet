@@ -1,7 +1,7 @@
 ---
 sidebar_label: sortCells()
 title: Метод sortCells
-description: Вы можете узнать о методе sortCells в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Отсортируйте данные DHTMLX Spreadsheet по возрастанию или убыванию по столбцу или диапазону ячеек с помощью метода sortCells().
 ---
 
 # sortCells()

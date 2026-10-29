@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration mit Svelte
 title: Svelte-Integration
-description: In der Dokumentation erfahren Sie mehr über die Svelte-Integration der DHTMLX JavaScript Spreadsheet-Bibliothek. Lesen Sie Entwicklerleitfäden und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: DHTMLX Spreadsheet in einer Svelte-Anwendung verwenden. Erstellen Sie ein Projekt, fügen Sie Spreadsheet als Svelte-Komponente hinzu, laden Sie Daten und verarbeiten Sie Events.
 ---
 
 # Integration mit Svelte {#integration-with-svelte}

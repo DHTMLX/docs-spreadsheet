@@ -1,7 +1,7 @@
 ---
 sidebar_label: Zahlenformatierung
 title: Leitfaden zur Zahlenformatierung
-description: Sie können den Benutzerhandbuch zur Zahlenformatierung in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek nachlesen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Wählen Sie in DHTMLX Spreadsheet über die Toolbar ein Zahlenformat für Zellwerte aus, etwa Zahl, Währung, Prozent, Datum, Uhrzeit oder Text.
 ---
 
 # Zahlenformatierung {#number-formatting}

@@ -1,7 +1,7 @@
 ---
 sidebar_label: hideSearch()
 title: hideSearch 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 hideSearch 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 hideSearch() 方法隐藏 DHTMLX Spreadsheet 的搜索栏，例如在通过 search() 方法打开搜索后将其关闭。
 ---
 
 # hideSearch()

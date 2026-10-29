@@ -1,7 +1,7 @@
 ---
 sidebar_label: clear()
 title: clear method
-description: You can learn about the clear method of the Sheet Manager in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Clear the values, styles and formatting of a sheet in DHTMLX Spreadsheet with the sheets.clear() method, without deleting the sheet itself.
 ---
 
 # clear()

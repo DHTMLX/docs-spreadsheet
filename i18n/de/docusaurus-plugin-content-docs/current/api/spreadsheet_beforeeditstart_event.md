@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditStart
 title: beforeEditStart event
-description: Sie können im Dokumentationsbereich der DHTMLX JavaScript Spreadsheet-Bibliothek mehr über das beforeEditStart-Event erfahren. Lesen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Steuern Sie mit dem Event beforeEditStart, welche Zellen in DHTMLX Spreadsheet bearbeitet werden können, und geben Sie false zurück, um das Öffnen des Editors zu verhindern.
 ---
 
 # beforeEditStart

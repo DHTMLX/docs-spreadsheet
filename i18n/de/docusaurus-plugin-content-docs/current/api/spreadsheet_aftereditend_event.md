@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterEditEnd
 title: afterEditEnd event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das afterEditEnd-Event. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Reagieren Sie mit dem Event afterEditEnd auf das Ende der Zellbearbeitung in DHTMLX Spreadsheet. Das Event erhält die ID der Zelle und ihren neuen Wert.
 ---
 
 # afterEditEnd

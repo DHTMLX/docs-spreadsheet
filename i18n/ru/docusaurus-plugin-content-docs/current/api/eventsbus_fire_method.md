@@ -1,7 +1,7 @@
 ---
 sidebar_label: fire()
 title: Метод fire
-description: Вы можете узнать о Event Bus методе fire в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Вызовите внутреннее событие DHTMLX Spreadsheet с помощью метода events.fire(), передав имя события и массив его данных.
 ---
 
 # fire()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: remove()
 title: remove-Methode
-description: Sie können mehr über die remove-Methode des Sheet Managers in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren. Lesen Sie Entwicklerleitfäden und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Entfernen Sie mit der Methode sheets.remove() ein Tabellenblatt anhand seiner ID aus DHTMLX Spreadsheet. Mindestens ein Tabellenblatt bleibt erhalten, und beim Entfernen des aktiven Tabellenblatts wird zu einem anderen gewechselt.
 ---
 
 # remove()

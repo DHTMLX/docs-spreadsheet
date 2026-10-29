@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFormula()
 title: getFormula-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die getFormula-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Rufen Sie mit der Methode getFormula() die Formel einer Zelle in DHTMLX Spreadsheet ab, auch einer Zelle auf einem anderen Tabellenblatt.
 ---
 
 # getFormula()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: fire()
 title: fire events bus 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 fire events bus 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: 使用 events.fire() 方法触发 DHTMLX Spreadsheet 的内部事件，并传入事件名称和事件数据数组。
 ---
 
 # fire()

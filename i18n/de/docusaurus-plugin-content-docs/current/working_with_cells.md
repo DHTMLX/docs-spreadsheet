@@ -1,7 +1,7 @@
 ---
 sidebar_label: Mit Zellen arbeiten
 title: Mit Zellen arbeiten
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie, wie Sie mit Zellen arbeiten. Entwickleranleitungen und API-Referenz, Code-Beispiele, Live-Demos und eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet stehen zur Verfügung.
+description: Setzen und lesen Sie über die API Werte und Stile von Zellen in DHTMLX Spreadsheet, validieren Sie Zellen, fügen Sie Links ein und bearbeiten, sperren, verbinden und markieren Sie Zellen.
 ---
 
 # Mit Zellen arbeiten {#work-with-cells}

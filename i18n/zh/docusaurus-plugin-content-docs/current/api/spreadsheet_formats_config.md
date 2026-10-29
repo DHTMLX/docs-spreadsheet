@@ -1,7 +1,7 @@
 ---
 sidebar_label: formats
 title: formats 配置
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 formats 配置。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 formats 属性定义 DHTMLX Spreadsheet 中可用的数字格式，该属性是一个对象数组，包含每种格式的 id、掩码、名称和示例。
 ---
 
 # formats

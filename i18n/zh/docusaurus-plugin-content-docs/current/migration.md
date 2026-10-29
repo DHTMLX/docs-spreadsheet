@@ -1,7 +1,7 @@
 ---
 sidebar_label: 迁移到新版本
 title: 迁移
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解有关迁移的内容。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 参照各版本中已弃用、已更改和已移除的属性、方法和事件及其替代项列表，迁移到新版本的 DHTMLX Spreadsheet。
 ---
 
 # 迁移到新版本 {#migration-to-newer-versions}

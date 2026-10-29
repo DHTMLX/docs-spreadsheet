@@ -1,7 +1,7 @@
 ---
 sidebar_label: 시트 작업
 title: 시트 작업
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 시트 작업에 대한 내용을 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. 또한 DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수 있습니다.
+description: DHTMLX Spreadsheet에서 하단 툴바와 시트 탭으로 시트를 추가, 제거, 이름 변경, 전환하고 수식에서 다른 시트의 셀을 참조합니다.
 ---
 
 # 시트 작업 {#work-with-sheets}

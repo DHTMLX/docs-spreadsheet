@@ -1,7 +1,7 @@
 ---
 sidebar_label: add()
 title: add Methode
-description: Sie können die add Methode des Sheet Managers in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek kennenlernen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Fügen Sie mit der Methode sheets.add() ein neues leeres Tabellenblatt zu DHTMLX Spreadsheet hinzu. Die Methode gibt die ID des neuen Tabellenblatts zurück (erfordert die Option multiSheets).
 ---
 
 # add()

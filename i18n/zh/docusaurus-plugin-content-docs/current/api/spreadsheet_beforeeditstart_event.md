@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditStart
 title: beforeEditStart 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 beforeEditStart 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费试用版本。
+description: 使用 beforeEditStart 事件控制 DHTMLX Spreadsheet 中哪些单元格可以编辑，返回 false 可阻止编辑器打开。
 ---
 
 # beforeEditStart

@@ -1,7 +1,7 @@
 ---
 sidebar_label: 数据排序
 title: 数据排序
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解有关数据排序的内容。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 通过上下文菜单中的排序命令，按列或所选单元格区域对 DHTMLX Spreadsheet 中的数据进行 A 到 Z 或 Z 到 A 排序。
 ---
 
 # 数据排序 {#sorting-data}

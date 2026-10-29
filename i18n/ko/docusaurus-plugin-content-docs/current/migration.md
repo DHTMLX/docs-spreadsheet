@@ -1,7 +1,7 @@
 ---
 sidebar_label: 최신 버전으로 마이그레이션
 title: 마이그레이션
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 마이그레이션에 대해 알아보세요. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해보며, DHTMLX Spreadsheet의 30일 무료 평가판을 다운로드하세요.
+description: 버전별로 더 이상 사용되지 않거나 변경 또는 제거된 속성, 메서드, 이벤트와 그 대체 항목 목록을 참고하여 DHTMLX Spreadsheet의 새 버전으로 마이그레이션합니다.
 ---
 
 # 최신 버전으로 마이그레이션 {#migration-to-newer-versions}

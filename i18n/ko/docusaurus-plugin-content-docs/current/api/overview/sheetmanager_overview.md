@@ -1,7 +1,7 @@
 ---
 sidebar_label: Sheet Manager API 개요
 title: Sheet Manager API 개요
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 Sheet Manager API 개요를 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드할 수 있습니다.
+description: 시트를 추가, 제거, 초기화, 조회 및 전환하는 DHTMLX Spreadsheet 시트 관리자 메서드 목록입니다.
 ---
 
 # Sheet Manager API 개요 {#sheet-manager-api-overview}

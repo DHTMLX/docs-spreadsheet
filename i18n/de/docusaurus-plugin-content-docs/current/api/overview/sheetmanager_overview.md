@@ -1,7 +1,7 @@
 ---
 sidebar_label: Sheet Manager API-Übersicht
 title: Sheet Manager API-Übersicht
-description: Sie können die Sheet Manager API-Übersicht der DHTMLX JavaScript Spreadsheet-Bibliothek in der Dokumentation einsehen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Liste der Methoden des Sheet-Managers von DHTMLX Spreadsheet zum Hinzufügen, Entfernen, Leeren, Abrufen und Wechseln von Tabellenblättern.
 ---
 
 # Sheet Manager API-Übersicht {#sheet-manager-api-overview}

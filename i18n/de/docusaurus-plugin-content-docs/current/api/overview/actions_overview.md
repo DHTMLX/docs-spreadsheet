@@ -1,7 +1,7 @@
 ---
 sidebar_label: Spreadsheet-Aktionen
 title: Aktionen-Übersicht
-description: Sie können eine Aktionen-Übersicht der DHTMLX JavaScript Spreadsheet-Bibliothek in der Dokumentation einsehen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Überblick über die Aktionen von DHTMLX Spreadsheet und vollständige Liste der Aktionen, die Sie in den Events beforeAction und afterAction behandeln können.
 ---
 
 # Aktionen-Übersicht {#actions-overview}

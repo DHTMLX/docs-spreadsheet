@@ -1,7 +1,7 @@
 ---
 sidebar_label: addRow()
 title: addRow 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 addRow 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 addRow() 方法向 DHTMLX Spreadsheet 添加一个空行，该行插入到指定单元格所在行的位置，现有行向下移动。
 ---
 
 # addRow()

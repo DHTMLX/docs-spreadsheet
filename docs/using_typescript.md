@@ -1,7 +1,7 @@
 ---
 sidebar_label: TypeScript support
 title: TypeScript support
-description: You can learn about using typescript with the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Use the built-in TypeScript definitions of DHTMLX Spreadsheet for type checking, autocompletion and JSDoc hints in your IDE.
 ---
 
 # TypeScript support

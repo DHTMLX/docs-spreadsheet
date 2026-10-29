@@ -1,7 +1,7 @@
 ---
 sidebar_label: clear()
 title: clear 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Sheet Manager 的 clear 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 sheets.clear() 方法清除 DHTMLX Spreadsheet 中工作表的值、样式和格式，而不删除工作表本身。
 ---
 
 # clear()

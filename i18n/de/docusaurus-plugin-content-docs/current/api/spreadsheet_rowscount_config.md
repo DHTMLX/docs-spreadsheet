@@ -1,7 +1,7 @@
 ---
 sidebar_label: rowsCount
 title: rowsCount-Konfiguration
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die rowsCount-Konfiguration. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Legen Sie mit der Eigenschaft rowsCount die Anzahl der Zeilen fest, die DHTMLX Spreadsheet bei der Initialisierung anzeigt.
 ---
 
 # rowsCount

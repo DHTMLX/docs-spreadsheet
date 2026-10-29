@@ -1,7 +1,7 @@
 ---
 sidebar_label: 电子表格操作
 title: 电子表格操作
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解电子表格操作相关内容。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载免费的 30 天评估版 DHTMLX Spreadsheet。
+description: 通过 API 在 DHTMLX Spreadsheet 中撤销和重做操作，添加、删除、冻结和隐藏行与列，自动调整列宽，筛选、搜索和排序数据，以及清空表格。
 ---
 
 # 电子表格操作 {#work-with-spreadsheet}

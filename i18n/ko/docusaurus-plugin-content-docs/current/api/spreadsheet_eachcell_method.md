@@ -1,7 +1,7 @@
 ---
 sidebar_label: eachCell()
 title: eachCell 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 문서에서 eachcell 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 체험하며, DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 eachCell() 메서드로 셀 범위 또는 선택된 셀을 순회합니다. 이 메서드는 각 셀의 이름과 값으로 함수를 호출합니다.
 ---
 
 # eachCell()

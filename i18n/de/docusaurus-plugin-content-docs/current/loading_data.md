@@ -1,7 +1,7 @@
 ---
 sidebar_label: Datenladen und -export
 title: Daten laden
-description: In dieser Dokumentation erfahren Sie, wie Sie Daten in der DHTMLX JavaScript Spreadsheet-Bibliothek laden. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Laden Sie JSON-, CSV- oder Excel-Daten mit Stilen, gesperrten Zellen und Links aus einer Datei oder einer lokalen Quelle in DHTMLX Spreadsheet, speichern und stellen Sie den Zustand wieder her und exportieren Sie Daten nach Excel oder JSON.
 ---
 
 # Datenladen und -export {#data-loading-and-export}

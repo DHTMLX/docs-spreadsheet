@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFilter()
 title: setFilter 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 setFilter 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 확인하며, DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 setFilter() 메서드로 조건 또는 제외할 값을 기준으로 열의 데이터를 필터링하거나 필터링을 초기화합니다.
 ---
 
 # setFilter()

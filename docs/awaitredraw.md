@@ -1,7 +1,7 @@
 ---
 sidebar_label: AwaitRedraw helper
 title: AwaitRedraw helper
-description: You can explore the AwaitRedraw helper in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Run code after DHTMLX Spreadsheet finishes rendering with the dhx.awaitRedraw helper, for API methods that take effect only once the component is on the page.
 ---
 
 # AwaitRedraw helper

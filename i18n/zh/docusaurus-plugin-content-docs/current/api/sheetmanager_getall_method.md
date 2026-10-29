@@ -1,7 +1,7 @@
 ---
 sidebar_label: getAll()
 title: getAll 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Sheet Manager 的 getAll 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 sheets.getAll() 方法获取 DHTMLX Spreadsheet 的所有工作表，该方法返回包含工作表 id 和名称的对象数组。
 ---
 
 # getAll()

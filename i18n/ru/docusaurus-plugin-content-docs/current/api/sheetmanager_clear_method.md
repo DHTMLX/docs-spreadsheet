@@ -1,7 +1,7 @@
 ---
 sidebar_label: clear()
 title: метод clear
-description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о методе clear Sheet Manager. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Очистите значения, стили и форматирование листа в DHTMLX Spreadsheet с помощью метода sheets.clear(), не удаляя сам лист.
 ---
 
 # clear()

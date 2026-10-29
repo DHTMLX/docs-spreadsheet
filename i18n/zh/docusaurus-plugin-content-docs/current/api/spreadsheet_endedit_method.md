@@ -1,7 +1,7 @@
 ---
 sidebar_label: endEdit()
 title: endEdit 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 endEdit 方法。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 endEdit() 方法结束 DHTMLX Spreadsheet 中选定单元格的编辑，该方法会关闭编辑器并保存输入的值。
 ---
 
 # endEdit()

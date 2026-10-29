@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterAction
 title: afterAction 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 afterAction 事件。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 处理 DHTMLX Spreadsheet 的 afterAction 事件，该事件在操作执行后触发，并接收操作名称及其参数，例如单元格、新值和旧值。
 ---
 
 # afterAction

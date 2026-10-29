@@ -1,7 +1,7 @@
 ---
 sidebar_label: parse()
 title: parse-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die parse-Methode. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Laden Sie mit der Methode parse() Daten aus einer lokalen Datenquelle in DHTMLX Spreadsheet, einschließlich Zellwerten, Stilen, Formaten, Editoren, Links und mehreren Tabellenblättern.
 ---
 
 # parse()

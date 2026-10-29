@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFilter()
 title: getFilter 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 getFilter 方法。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 getFilter() 方法获取 DHTMLX Spreadsheet 中工作表的筛选条件，该方法返回已筛选的单元格区域和筛选规则。
 ---
 
 # getFilter()

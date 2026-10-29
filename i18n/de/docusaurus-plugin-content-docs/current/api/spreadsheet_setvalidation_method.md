@@ -1,7 +1,7 @@
 ---
 sidebar_label: setValidation()
 title: setValidation-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die setValidation-Methode. Entwicklerhandbücher und API-Referenz, Code-Beispiele, Live-Demos und eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet.
+description: Fügen Sie Zellen in DHTMLX Spreadsheet mit der Methode setValidation() eine Dropdown-Liste mit Werten aus einem Zellbereich oder einem Array hinzu oder entfernen Sie die Validierung.
 ---
 
 # setValidation()

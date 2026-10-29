@@ -2,7 +2,7 @@
 sidebar_label: Spreadsheet overview
 title: DHTMLX Spreadsheet Overview
 slug: /
-description: You can have an overview of the JavaScript Spreadsheet library in the DHTMLX documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Overview of DHTMLX Spreadsheet, a JavaScript component for editing and formatting spreadsheet data, with its toolbar, editing line, grid, menu and context menu.
 ---
 
 # DHTMLX Spreadsheet overview

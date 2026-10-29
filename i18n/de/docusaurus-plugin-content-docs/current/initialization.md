@@ -1,7 +1,7 @@
 ---
 sidebar_label: Initialisierung
 title: Initialisierung
-description: In der Dokumentation erfahren Sie, wie die DHTMLX JavaScript Spreadsheet-Bibliothek initialisiert wird. Lesen Sie Entwickleranleitungen und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-tägige Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Initialisieren Sie DHTMLX Spreadsheet auf einer Seite, indem Sie die Quelldateien einbinden, einen Container hinzufügen und den Konstruktor dhx.Spreadsheet mit einem Konfigurationsobjekt aufrufen.
 ---
 
 # Initialisierung {#initialization}

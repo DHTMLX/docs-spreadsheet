@@ -1,7 +1,7 @@
 ---
 sidebar_label: clear()
 title: clear 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 clear 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费试用版本。
+description: 使用 clear() 方法从 DHTMLX Spreadsheet 中删除所有数据。
 ---
 
 # clear()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: setActive()
 title: setActive-Methode
-description: Sie können mehr über die setActive-Methode des Sheet Managers in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren. Lesen Sie Entwicklerleitfäden und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Wechseln Sie mit der Methode sheets.setActive() das aktive (sichtbare) Tabellenblatt von DHTMLX Spreadsheet zum Tabellenblatt mit der angegebenen ID.
 ---
 
 # setActive()

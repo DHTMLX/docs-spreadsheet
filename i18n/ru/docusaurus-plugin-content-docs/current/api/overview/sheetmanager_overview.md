@@ -1,7 +1,7 @@
 ---
 sidebar_label: Обзор API Sheet Manager
 title: Обзор API Sheet Manager
-description: Вы можете ознакомиться с обзором API Sheet Manager библиотеки DHTMLX JavaScript Spreadsheet в документации. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Список методов менеджера листов DHTMLX Spreadsheet, которые добавляют, удаляют, очищают, получают и переключают листы.
 ---
 
 # Обзор API Sheet Manager {#sheet-manager-api-overview}

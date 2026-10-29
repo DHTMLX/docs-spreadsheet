@@ -1,7 +1,7 @@
 ---
 sidebar_label: Data formatting
 title: Data Formatting
-description: You can learn about data formatting in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Style cell data in DHTMLX Spreadsheet from the toolbar, including text and background colors, bold and italic, alignment, text wrapping and cell borders, and clear styles and values.
 ---
 
 # Data formatting

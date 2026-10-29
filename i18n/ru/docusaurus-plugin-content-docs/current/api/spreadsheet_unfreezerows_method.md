@@ -1,7 +1,7 @@
 ---
 sidebar_label: unfreezeRows() 
 title: метод unfreezeRows
-description: Вы можете узнать о методе unfreezeRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Открепите закреплённые строки в DHTMLX Spreadsheet с помощью метода unfreezeRows(), чтобы они прокручивались вместе с остальной сеткой.
 ---
 
 # unfreezeRows()

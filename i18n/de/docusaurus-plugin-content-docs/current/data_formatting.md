@@ -1,7 +1,7 @@
 ---
 sidebar_label: Datenformatierung
 title: Datenformatierung
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die Datenformatierung. Durchsuchen Sie Entwicklerhandbücher und die API-Referenz, testen Sie Codebeispiele und Live-Demos, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Formatieren Sie Zelldaten in DHTMLX Spreadsheet über die Toolbar, einschließlich Text- und Hintergrundfarbe, Fett und Kursiv, Ausrichtung, Textumbruch und Zellrahmen, und entfernen Sie Stile und Werte.
 ---
 
 # Datenformatierung {#data-formatting}

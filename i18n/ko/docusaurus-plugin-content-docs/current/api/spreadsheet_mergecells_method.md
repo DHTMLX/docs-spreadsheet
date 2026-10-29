@@ -1,7 +1,7 @@
 ---
 sidebar_label: mergeCells()
 title: mergeCells 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 mergeCells 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. 또한 DHTMLX Spreadsheet 30일 무료 평가판을 다운로드할 수 있습니다.
+description: DHTMLX Spreadsheet에서 mergeCells() 메서드로 셀 범위를 하나의 셀로 병합하거나 병합된 셀을 분할합니다.
 ---
 
 # mergeCells()

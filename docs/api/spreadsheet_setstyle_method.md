@@ -1,7 +1,7 @@
 ---
 sidebar_label: setStyle()
 title: setStyle method
-description: You can learn about the setStyle method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Apply the same style to a cell, several cells or a range of cells in DHTMLX Spreadsheet with the setStyle() method, passing the styles as an object or an array.
 ---
 
 # setStyle()

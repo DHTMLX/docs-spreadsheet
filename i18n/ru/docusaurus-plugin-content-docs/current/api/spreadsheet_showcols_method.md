@@ -1,7 +1,7 @@
 ---
 sidebar_label: showCols()
 title: Метод showCols
-description: Вы можете узнать о методе showCols в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Покажите скрытые столбцы в DHTMLX Spreadsheet с помощью метода showCols() по столбцу переданной или выбранной ячейки.
 ---
 
 # showCols()

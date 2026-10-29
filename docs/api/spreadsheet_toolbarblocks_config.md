@@ -1,7 +1,7 @@
 ---
 sidebar_label: toolbarBlocks
 title: toolbarBlocks config
-description: You can learn about the toolbarBlocks config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Choose which blocks of buttons the DHTMLX Spreadsheet toolbar shows, such as undo, colors, font, align and format, with the toolbarBlocks property.
 ---
 
 # toolbarBlocks

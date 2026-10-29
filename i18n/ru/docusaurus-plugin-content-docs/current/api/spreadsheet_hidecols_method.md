@@ -1,7 +1,7 @@
 ---
 sidebar_label: hideCols()
 title: Метод hideCols
-description: Вы можете узнать о методе hideCols в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Скройте один или несколько столбцов в DHTMLX Spreadsheet с помощью метода hideCols() по id ячейки, диапазону ячеек или выделенной ячейке.
 ---
 
 # hideCols()

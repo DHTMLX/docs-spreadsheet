@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSheetChange
 title: afterSheetChange 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 afterSheetChange 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 afterSheetChange 事件跟踪 DHTMLX Spreadsheet 中工作表的切换，该事件接收新活动工作表的名称和 id。
 ---
 
 # afterSheetChange

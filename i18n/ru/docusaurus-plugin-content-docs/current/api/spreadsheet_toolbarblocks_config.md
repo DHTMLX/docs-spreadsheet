@@ -1,7 +1,7 @@
 ---
 sidebar_label: toolbarBlocks
 title: Конфигурация toolbarBlocks
-description: Вы можете узнать о конфигурации toolbarBlocks в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Выберите блоки кнопок, которые показывает панель инструментов DHTMLX Spreadsheet, например undo, colors, font, align и format, с помощью свойства toolbarBlocks.
 ---
 
 # toolbarBlocks

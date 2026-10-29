@@ -1,7 +1,7 @@
 ---
 sidebar_label: 숫자 서식
 title: 숫자 서식
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 숫자 서식에 대한 개발자 가이드를 확인하세요. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해보며, DHTMLX Spreadsheet의 30일 무료 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 셀 값에 숫자, 통화, 백분율, 날짜, 시간, 지수 형식을 적용하고 현지화하며, 사용자 지정 형식 마스크를 정의하고 셀 형식을 설정하거나 가져옵니다.
 ---
 
 # 숫자 서식 {#number-formatting}

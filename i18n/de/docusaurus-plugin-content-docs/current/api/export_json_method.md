@@ -1,7 +1,7 @@
 ---
 sidebar_label: json()
 title: json Export-Methode
-description: Sie können sich über die json Export-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek informieren. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Exportieren Sie mit der Methode export.json() die Daten von DHTMLX Spreadsheet in eine JSON-Datei.
 ---
 
 # json()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: menu
 title: menu-Konfiguration
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die menu-Konfiguration. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Blenden Sie das Menü von DHTMLX Spreadsheet mit der Eigenschaft menu ein oder aus.
 ---
 
 # menu

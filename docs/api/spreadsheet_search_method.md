@@ -1,7 +1,7 @@
 ---
 sidebar_label: search()
 title: search method
-description: You can learn about the search method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Search for cells by a value in DHTMLX Spreadsheet with the search() method, which returns the ids of the found cells and can open the search bar with the matches highlighted.
 ---
 
 # search()

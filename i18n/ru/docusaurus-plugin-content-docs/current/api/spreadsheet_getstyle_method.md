@@ -1,7 +1,7 @@
 ---
 sidebar_label: getStyle()
 title: Метод getStyle
-description: Вы можете узнать о методе getStyle в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Получите стили, применённые к ячейке или диапазону ячеек в DHTMLX Spreadsheet, с помощью метода getStyle().
 ---
 
 # getStyle()

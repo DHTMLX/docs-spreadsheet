@@ -1,7 +1,7 @@
 ---
 sidebar_label: 自定义主题
 title: 自定义主题
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如何创建自定义主题。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 CSS 变量为 DHTMLX Spreadsheet 创建自定义颜色主题，并通过 dhx.setTheme() 方法应用。
 ---
 
 # 自定义主题 {#custom-theme}

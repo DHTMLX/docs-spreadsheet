@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeAction
 title: beforeAction event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das beforeAction-Event. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Fangen Sie Aktionen in DHTMLX Spreadsheet mit dem Event beforeAction ab. Es erhält den Namen und die Parameter einer Aktion und bricht sie ab, wenn der Handler false zurückgibt.
 ---
 
 # beforeAction

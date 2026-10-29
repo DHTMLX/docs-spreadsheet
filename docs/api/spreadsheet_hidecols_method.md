@@ -1,7 +1,7 @@
 ---
 sidebar_label: hideCols()
 title: hideCols method
-description: You can learn about the hideCols method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Hide one or several columns in DHTMLX Spreadsheet with the hideCols() method, by the id of a cell, a range of cells or the selected cell.
 ---
 
 # hideCols()

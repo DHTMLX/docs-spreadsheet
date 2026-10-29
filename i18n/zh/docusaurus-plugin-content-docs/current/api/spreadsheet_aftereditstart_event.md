@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterEditStart
 title: afterEditStart 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 afterEditStart 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 afterEditStart 事件处理 DHTMLX Spreadsheet 中单元格编辑的开始，该事件接收单元格的 id 及其值。
 ---
 
 # afterEditStart

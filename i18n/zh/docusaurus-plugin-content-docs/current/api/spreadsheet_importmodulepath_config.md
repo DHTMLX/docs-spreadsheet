@@ -1,7 +1,7 @@
 ---
 sidebar_label: importModulePath
 title: importModulePath 配置项
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 importModulePath 配置项。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 importModulePath 属性设置 Excel2json 库的 worker.js 文件路径，DHTMLX Spreadsheet 使用该库导入 Excel 文件。
 ---
 
 # importModulePath

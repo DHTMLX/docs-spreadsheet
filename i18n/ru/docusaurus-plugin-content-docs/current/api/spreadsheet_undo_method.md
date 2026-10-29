@@ -1,7 +1,7 @@
 ---
 sidebar_label: undo()
 title: метод undo
-description: Вы можете узнать о методе undo в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Отмените последнее действие в DHTMLX Spreadsheet с помощью метода undo() и верните его методом redo().
 ---
 
 # undo()

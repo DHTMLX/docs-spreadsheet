@@ -1,7 +1,7 @@
 ---
 sidebar_label: groupFill
 title: groupFill event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das groupFill-Event. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Verarbeiten Sie das automatische Ausfüllen von Zellen in DHTMLX Spreadsheet mit dem Event groupFill, das die fokussierte Zelle und die ausgewählten Zellen an den Callback übergibt.
 ---
 
 # groupFill

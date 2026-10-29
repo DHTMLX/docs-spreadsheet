@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterAction
 title: afterAction-Event
-description: Sie können mehr über das afterAction-Event in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren. Lesen Sie Entwicklerleitfäden und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Behandeln Sie das Event afterAction von DHTMLX Spreadsheet, das nach der Ausführung einer Aktion ausgelöst wird und den Namen der Aktion sowie ihre Parameter erhält, etwa die Zelle sowie den neuen und den vorherigen Wert.
 ---
 
 # afterAction

@@ -1,7 +1,7 @@
 ---
 sidebar_label: 事件处理
 title: 事件处理
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解事件处理的相关内容。浏览开发者指南和 API 参考、尝试代码示例和在线演示，并下载免费 30 天试用版 DHTMLX Spreadsheet。
+description: 使用 events.on()、events.detach() 和 events.fire() 方法在 DHTMLX Spreadsheet 中添加和移除事件监听器并调用事件。
 ---
 
 # 事件处理 {#event-handling}

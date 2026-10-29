@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeAction
 title: beforeAction event
-description: You can learn about the beforeAction event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Intercept actions in DHTMLX Spreadsheet with the beforeAction event, which receives the name and parameters of an action and cancels it when the handler returns false.
 ---
 
 # beforeAction

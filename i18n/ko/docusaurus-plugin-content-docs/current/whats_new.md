@@ -1,7 +1,7 @@
 ---
 sidebar_label: 새로운 기능
 title: DHTMLX Spreadsheet의 새로운 기능
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 새로운 기능에 대한 내용을 문서에서 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. 또한 DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수 있습니다.
+description: 버전별 새 기능, 업데이트, 수정 사항, 호환성이 깨지는 변경 사항을 담은 DHTMLX Spreadsheet 릴리스 노트입니다.
 ---
 
 # 새로운 기능 {#whats-new}

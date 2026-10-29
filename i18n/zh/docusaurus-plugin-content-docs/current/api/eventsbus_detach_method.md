@@ -1,7 +1,7 @@
 ---
 sidebar_label: detach()
 title: detach events bus 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 detach events bus 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: 使用 events.detach() 方法按事件名称从 DHTMLX Spreadsheet 中解除通过 on() 方法绑定的事件处理函数。
 ---
 
 # detach()

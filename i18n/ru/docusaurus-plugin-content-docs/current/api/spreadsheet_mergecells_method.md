@@ -1,7 +1,7 @@
 ---
 sidebar_label: mergeCells()
 title: метод mergeCells
-description: Вы можете узнать о методе mergeCells в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Объедините диапазон ячеек в одну ячейку или разделите объединённые ячейки в DHTMLX Spreadsheet с помощью метода mergeCells().
 ---
 
 # mergeCells()

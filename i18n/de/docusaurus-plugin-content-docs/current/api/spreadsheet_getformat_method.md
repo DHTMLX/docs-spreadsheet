@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFormat()
 title: getFormat-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die getFormat-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Rufen Sie mit der Methode getFormat() das Zahlenformat ab, das auf den Wert einer Zelle oder eines Zellbereichs in DHTMLX Spreadsheet angewendet ist.
 ---
 
 # getFormat()

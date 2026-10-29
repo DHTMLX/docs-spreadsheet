@@ -1,7 +1,7 @@
 ---
 sidebar_label: unlock()
 title: unlock 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 unlock 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 unlock() 方法解锁 DHTMLX Spreadsheet 中被锁定的一个单元格、多个单元格或单元格区域，使用户可以再次编辑它们。
 ---
 
 # unlock()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: startEdit()
 title: startEdit-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die startEdit-Methode. Entwicklerhandbücher und API-Referenz, Code-Beispiele, Live-Demos und eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet.
+description: Starten Sie mit der Methode startEdit() die Bearbeitung der übergebenen oder der ausgewählten Zelle in DHTMLX Spreadsheet, optional mit einem Anfangswert.
 ---
 
 # startEdit()

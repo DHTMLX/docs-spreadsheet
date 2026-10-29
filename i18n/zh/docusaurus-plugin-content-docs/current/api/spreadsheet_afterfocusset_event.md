@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterFocusSet
 title: afterFocusSet 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 afterFocusSet 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 afterFocusSet 事件跟踪 DHTMLX Spreadsheet 中获得焦点的单元格，该事件在单元格获得焦点后触发，并接收单元格的 id。
 ---
 
 # afterFocusSet

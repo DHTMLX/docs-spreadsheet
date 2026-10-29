@@ -1,7 +1,7 @@
 ---
 sidebar_label: TypeScript 지원
 title: TypeScript 지원
-description: DHTMLX JavaScript Spreadsheet 라이브러리와 TypeScript 사용에 대한 문서를 확인하세요. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해보며, DHTMLX Spreadsheet의 30일 무료 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에 내장된 TypeScript 정의로 IDE에서 타입 검사, 자동 완성, JSDoc 힌트를 사용합니다.
 ---
 
 # TypeScript 지원 {#typescript-support}

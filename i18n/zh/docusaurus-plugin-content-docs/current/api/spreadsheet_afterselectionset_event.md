@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSelectionSet
 title: afterSelectionSet 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 afterSelectionSet 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 afterSelectionSet 事件响应 DHTMLX Spreadsheet 中单元格的选择，该事件在单元格被选中后触发，并接收它们的 id。
 ---
 
 # afterSelectionSet

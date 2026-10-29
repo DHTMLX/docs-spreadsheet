@@ -1,7 +1,7 @@
 ---
 sidebar_label: 데이터 형식 지정
 title: 데이터 형식 지정
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 데이터 형식 지정에 대해 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: DHTMLX Spreadsheet에서 툴바로 셀 데이터의 텍스트 및 배경 색상, 굵게와 기울임꼴, 정렬, 텍스트 줄 바꿈, 셀 테두리를 지정하고 스타일과 값을 지웁니다.
 ---
 
 # 데이터 형식 지정 {#data-formatting}

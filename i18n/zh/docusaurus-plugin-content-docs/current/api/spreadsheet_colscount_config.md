@@ -1,7 +1,7 @@
 ---
 sidebar_label: colsCount
 title: colsCount 配置项
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 colsCount 配置项。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费试用版本。
+description: 使用 colsCount 属性设置 DHTMLX Spreadsheet 在初始化时显示的列数。
 ---
 
 # colsCount

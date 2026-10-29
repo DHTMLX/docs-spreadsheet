@@ -1,7 +1,7 @@
 ---
 sidebar_label: clear()
 title: Метод clear
-description: Вы можете узнать о методе clear в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Удалите все данные из DHTMLX Spreadsheet с помощью метода clear().
 ---
 
 # clear()

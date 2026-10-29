@@ -1,7 +1,7 @@
 ---
 sidebar_label: Обзор Event Bus методов
 title: Обзор Event Bus методов
-description: Вы можете ознакомиться с обзором Event Bus методов библиотеки DHTMLX JavaScript Spreadsheet в документации. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Список методов шины событий DHTMLX Spreadsheet, которые подключают, отсоединяют и вызывают события.
 ---
 
 # Обзор Event Bus методов {#event-bus-methods-overview}

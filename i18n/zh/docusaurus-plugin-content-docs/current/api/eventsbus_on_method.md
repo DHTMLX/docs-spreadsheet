@@ -1,7 +1,7 @@
 ---
 sidebar_label: on()
 title: on events bus 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 on events bus 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: 使用 events.on() 方法为 DHTMLX Spreadsheet 的内部事件绑定处理函数，例如在单元格样式更改时作出响应。
 ---
 
 # on()

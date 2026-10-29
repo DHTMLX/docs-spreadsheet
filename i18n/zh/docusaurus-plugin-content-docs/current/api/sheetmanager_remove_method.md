@@ -1,7 +1,7 @@
 ---
 sidebar_label: remove()
 title: remove 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Sheet Manager 的 remove 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 sheets.remove() 方法按 id 从 DHTMLX Spreadsheet 中删除工作表，至少会保留一个工作表；删除活动工作表时会切换到另一个工作表。
 ---
 
 # remove()

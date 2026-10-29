@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFormula()
 title: Метод getFormula
-description: Вы можете узнать о методе getFormula в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Получите формулу ячейки в DHTMLX Spreadsheet с помощью метода getFormula(), в том числе ячейки на другом листе.
 ---
 
 # getFormula()

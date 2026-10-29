@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSheetChange
 title: afterSheetChange event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das afterSheetChange-Event. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Verfolgen Sie den Wechsel von Tabellenblättern in DHTMLX Spreadsheet mit dem Event afterSheetChange. Es erhält den Namen und die ID des neu aktiven Tabellenblatts.
 ---
 
 # afterSheetChange

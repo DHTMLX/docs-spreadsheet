@@ -1,7 +1,7 @@
 ---
 sidebar_label: undo()
 title: undo-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die undo-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Machen Sie mit der Methode undo() die letzte Aktion in DHTMLX Spreadsheet rückgängig und stellen Sie sie mit der Methode redo() wieder her.
 ---
 
 # undo()

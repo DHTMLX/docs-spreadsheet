@@ -1,7 +1,7 @@
 ---
 sidebar_label: editLine
 title: editLine config
-description: You can learn about the editLine config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Show or hide the editing bar of DHTMLX Spreadsheet with the editLine property, which is turned on by default.
 ---
 
 # editLine

@@ -1,7 +1,7 @@
 ---
 sidebar_label: setSelectedCell() 
 title: Метод setSelectedCell объекта selection
-description: Вы можете узнать о методе setSelectedCell объекта selection в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Выделите ячейку, несколько ячеек или диапазон ячеек в DHTMLX Spreadsheet с помощью метода selection.setSelectedCell(), при необходимости прокрутив к ним таблицу.
 ---
 
 # setSelectedCell()

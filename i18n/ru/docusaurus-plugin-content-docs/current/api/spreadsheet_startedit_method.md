@@ -1,7 +1,7 @@
 ---
 sidebar_label: startEdit()
 title: Метод startEdit
-description: Вы можете узнать о методе startEdit в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Начните редактирование переданной или выбранной ячейки DHTMLX Spreadsheet с помощью метода startEdit(), при необходимости с начальным значением.
 ---
 
 # startEdit()

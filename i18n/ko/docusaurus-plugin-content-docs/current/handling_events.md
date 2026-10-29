@@ -1,7 +1,7 @@
 ---
 sidebar_label: 이벤트 처리
 title: 이벤트 처리
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 이벤트 처리에 대해 학습할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보고, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하십시오.
+description: DHTMLX Spreadsheet에서 events.on(), events.detach(), events.fire() 메서드로 이벤트 리스너를 연결 및 해제하고 이벤트를 호출합니다.
 ---
 
 # 이벤트 처리 {#event-handling}

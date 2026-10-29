@@ -1,7 +1,7 @@
 ---
 sidebar_label: 시작하는 방법
 title: DHTMLX Spreadsheet 시작하는 방법
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 시작 방법을 학습할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보고, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하십시오.
+description: 소스 파일 포함 또는 npm 패키지 설치부터 컴포넌트 구성과 데이터 로드까지 네 단계로 페이지에서 DHTMLX Spreadsheet를 실행합니다.
 ---
 
 # 시작하는 방법 {#how-to-start}

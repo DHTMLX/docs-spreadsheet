@@ -1,7 +1,7 @@
 ---
 sidebar_label: 내장 테마 구성
 title: 내장 테마 구성
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 테마를 구성하는 방법을 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 직접 사용해 보거나, DHTMLX Spreadsheet 30일 무료 평가판을 다운로드하십시오.
+description: CSS 변수를 재정의하여 DHTMLX Spreadsheet 기본 제공 테마의 색상을 모든 테마에 한 번에 또는 개별 테마별로 변경합니다.
 ---
 
 # 내장 테마 구성 {#configuring-built-in-themes}

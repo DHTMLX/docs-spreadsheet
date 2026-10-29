@@ -1,7 +1,7 @@
 ---
 sidebar_label: xlsx()
 title: xlsx Export-Methode
-description: Sie können sich über die xlsx Export-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek informieren. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Exportieren Sie mit der Methode export.xlsx() die Daten von DHTMLX Spreadsheet in eine Excel-Datei (.xlsx), optional mit einem eigenen Dateinamen.
 ---
 
 # xlsx()

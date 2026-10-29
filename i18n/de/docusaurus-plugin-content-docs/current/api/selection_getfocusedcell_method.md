@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFocusedCell() 
 title: getFocusedCell Selection-Methode
-description: Sie können die getFocusedCell Selection-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek kennenlernen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Ermitteln Sie mit der Methode selection.getFocusedCell() die ID der fokussierten (aktiven) Zelle in DHTMLX Spreadsheet.
 ---
 
 # getFocusedCell()

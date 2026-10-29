@@ -1,7 +1,7 @@
 ---
 sidebar_label: removeSelectedCell() 
 title: removeSelectedCell Selection-Methode
-description: Sie können die removeSelectedCell Selection-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek kennenlernen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Heben Sie mit der Methode selection.removeSelectedCell() die Auswahl der angegebenen Zellen oder Zellbereiche in DHTMLX Spreadsheet auf.
 ---
 
 # removeSelectedCell()

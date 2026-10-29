@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterAction
 title: событие afterAction
-description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о событии afterAction. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Обработайте событие afterAction DHTMLX Spreadsheet, которое вызывается после выполнения действия и получает имя действия и его параметры, например, ячейку, новое и предыдущее значения.
 ---
 
 # afterAction

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Daten sortieren
 title: Daten sortieren
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie, wie Sie Daten sortieren. Durchsuchen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Sortieren Sie Daten in DHTMLX Spreadsheet über den Sortierbefehl des Kontextmenüs von A bis Z oder von Z bis A nach einer Spalte oder einem ausgewählten Zellbereich.
 ---
 
 # Daten sortieren {#sorting-data}

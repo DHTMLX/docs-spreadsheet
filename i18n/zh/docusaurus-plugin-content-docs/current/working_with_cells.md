@@ -1,7 +1,7 @@
 ---
 sidebar_label: 单元格操作
 title: 单元格操作
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解单元格操作相关内容。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载免费的 30 天评估版 DHTMLX Spreadsheet。
+description: 通过 API 设置和获取 DHTMLX Spreadsheet 单元格的值和样式，验证单元格、插入链接，以及编辑、锁定、合并和选择单元格。
 ---
 
 # 单元格操作 {#work-with-cells}

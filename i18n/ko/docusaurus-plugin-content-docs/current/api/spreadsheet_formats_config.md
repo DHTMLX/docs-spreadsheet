@@ -1,7 +1,7 @@
 ---
 sidebar_label: formats
 title: formats 설정
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 formats 설정에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 확인하며, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 formats 속성으로 사용할 수 있는 숫자 형식을 정의합니다. 이 속성은 각 형식의 id, 마스크, 이름 및 예시를 담은 객체 배열입니다.
 ---
 
 # formats

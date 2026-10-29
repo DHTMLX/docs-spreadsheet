@@ -1,7 +1,7 @@
 ---
 sidebar_label: Configuring built-in themes
 title: Integrierte Themes konfigurieren
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie, wie Sie Themes konfigurieren. Durchsuchen Sie Entwickleranleitungen und die API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Ändern Sie die Farben der integrierten Themes von DHTMLX Spreadsheet, indem Sie ihre CSS-Variablen überschreiben, für alle Themes auf einmal oder für ein einzelnes Theme.
 ---
 
 # Integrierte Themes konfigurieren {#configuring-built-in-themes}

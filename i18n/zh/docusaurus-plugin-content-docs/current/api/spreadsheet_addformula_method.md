@@ -1,7 +1,7 @@
 ---
 sidebar_label: addFormula()
 title: addFormula 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 addFormula 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 addFormula() 方法在 DHTMLX Spreadsheet 中注册自定义公式函数，以便在单元格公式中通过其大写名称使用。
 ---
 
 # addFormula()

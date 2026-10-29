@@ -1,7 +1,7 @@
 ---
 sidebar_label: exportModulePath
 title: exportModulePath 配置
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 exportModulePath 配置。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 exportModulePath 属性设置 DHTMLX Spreadsheet 中 JSON2Excel 导出模块的 worker.js 文件路径，例如在您自己的服务器上导出到 Excel。
 ---
 
 # exportModulePath

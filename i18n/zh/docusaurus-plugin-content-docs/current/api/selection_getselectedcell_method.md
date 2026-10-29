@@ -1,7 +1,7 @@
 ---
 sidebar_label: getSelectedCell() 
 title: getSelectedCell selection 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 getSelectedCell selection 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 selection.getSelectedCell() 方法获取 DHTMLX Spreadsheet 中选中单元格的 id 或区域。
 ---
 
 # getSelectedCell()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Configuring built-in themes
 title: Configuring Built-in Themes
-description: You can explore how to configure themes in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Change the colors of the built-in DHTMLX Spreadsheet themes by overriding their CSS variables, for all themes at once or for a separate theme.
 ---
 
 # Configuring built-in themes

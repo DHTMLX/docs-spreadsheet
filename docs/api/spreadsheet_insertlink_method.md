@@ -1,7 +1,7 @@
 ---
 sidebar_label: insertLink()
 title: insertLink method
-description: You can learn about the insertLink method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Insert a hyperlink into a cell of DHTMLX Spreadsheet with the insertLink() method, or remove the hyperlink and keep the text of the cell.
 ---
 
 # insertLink()

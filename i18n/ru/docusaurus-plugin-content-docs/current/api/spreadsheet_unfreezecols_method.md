@@ -1,7 +1,7 @@
 ---
 sidebar_label: unfreezeCols() 
 title: метод unfreezeCols
-description: Вы можете узнать о методе unfreezeCols в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Открепите закреплённые столбцы в DHTMLX Spreadsheet с помощью метода unfreezeCols(), чтобы они прокручивались вместе с остальной сеткой.
 ---
 
 # unfreezeCols()

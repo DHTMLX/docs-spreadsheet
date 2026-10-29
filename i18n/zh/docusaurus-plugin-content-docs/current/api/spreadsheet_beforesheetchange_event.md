@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSheetChange
 title: beforeSheetChange 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 beforeSheetChange 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费试用版本。
+description: 使用 beforeSheetChange 事件控制 DHTMLX Spreadsheet 中工作表的切换，返回 false 可使当前工作表保持活动状态。
 ---
 
 # beforeSheetChange

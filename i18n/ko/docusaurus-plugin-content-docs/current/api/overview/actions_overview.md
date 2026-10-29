@@ -1,7 +1,7 @@
 ---
 sidebar_label: Spreadsheet 액션
 title: 액션 개요
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 액션 개요를 문서에서 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드하실 수 있습니다.
+description: DHTMLX Spreadsheet 액션 개요와 beforeAction 및 afterAction 이벤트에서 처리할 수 있는 전체 액션 목록입니다.
 ---
 
 # 액션 개요 {#actions-overview}

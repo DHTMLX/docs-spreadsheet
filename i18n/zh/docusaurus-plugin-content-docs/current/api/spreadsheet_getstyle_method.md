@@ -1,7 +1,7 @@
 ---
 sidebar_label: getStyle()
 title: getStyle 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 getStyle 方法。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 getStyle() 方法获取 DHTMLX Spreadsheet 中单元格或单元格区域所应用的样式。
 ---
 
 # getStyle()

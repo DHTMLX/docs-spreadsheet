@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFormat()
 title: Метод setFormat
-description: Вы можете узнать о методе setFormat в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Примените числовой формат к значению ячейки или диапазона ячеек в DHTMLX Spreadsheet с помощью метода setFormat().
 ---
 
 # setFormat()

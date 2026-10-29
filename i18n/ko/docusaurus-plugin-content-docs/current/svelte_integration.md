@@ -1,7 +1,7 @@
 ---
 sidebar_label: Svelte와의 통합
 title: Svelte 통합
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 Svelte 통합에 대한 문서를 확인하세요. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해보며, DHTMLX Spreadsheet의 30일 무료 평가판을 다운로드하세요.
+description: Svelte 애플리케이션에서 DHTMLX Spreadsheet를 사용하는 방법입니다. 프로젝트를 만들고, Spreadsheet를 Svelte 컴포넌트로 추가하고, 데이터를 로드하고, 이벤트를 처리합니다.
 ---
 
 # Svelte와의 통합 {#integration-with-svelte}

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Zahlenformatierung
 title: Zahlenformatierung
-description: Sie können den Entwicklerleitfaden zur Zahlenformatierung in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek lesen. Durchsuchen Sie Entwicklerleitfäden und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Wenden Sie in DHTMLX Spreadsheet Zahlen-, Währungs-, Prozent-, Datums-, Zeit- und wissenschaftliche Formate auf Zellwerte an, lokalisieren Sie sie, definieren Sie eigene Formatmasken und setzen oder lesen Sie das Format einer Zelle.
 ---
 
 # Zahlenformatierung {#number-formatting}

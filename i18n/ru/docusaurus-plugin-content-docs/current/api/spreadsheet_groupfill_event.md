@@ -1,7 +1,7 @@
 ---
 sidebar_label: groupFill
 title: Событие groupFill
-description: Вы можете узнать о событии groupFill в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Обработайте автозаполнение ячеек в DHTMLX Spreadsheet с помощью события groupFill, которое передаёт в обработчик ячейку в фокусе и выделенные ячейки.
 ---
 
 # groupFill

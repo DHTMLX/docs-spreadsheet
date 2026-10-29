@@ -1,7 +1,7 @@
 ---
 sidebar_label: unlock()
 title: unlock-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die unlock-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Entsperren Sie mit der Methode unlock() eine gesperrte Zelle, mehrere Zellen oder einen Zellbereich in DHTMLX Spreadsheet, damit Benutzer sie wieder bearbeiten können.
 ---
 
 # unlock()
