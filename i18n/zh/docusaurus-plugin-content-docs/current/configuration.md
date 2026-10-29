@@ -49,7 +49,7 @@ Spreadsheet 的菜单默认隐藏。您可以通过相应的配置选项 [`menu`
 您还可以通过 [`readonly`](api/spreadsheet_readonly_config.md) 配置选项启用只读模式，以防止对 Spreadsheet 单元格进行编辑。
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
 });
 ~~~
@@ -59,7 +59,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 要在只读模式下关闭键盘导航和选择，请将 [`selection`](api/spreadsheet_selection_config.md) 选项设置为 `false`：
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
 });
@@ -74,7 +74,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 默认情况下，用户可以使用鼠标和键盘选择单元格，并且 Spreadsheet 具有活动单元格。要关闭选择，请将 [`selection`](api/spreadsheet_selection_config.md) 配置选项设置为 `false`：
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
 });
 ~~~

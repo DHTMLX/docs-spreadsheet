@@ -25,7 +25,7 @@ readonly: false
 ### Example
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   // other config parameters
 });
@@ -53,7 +53,7 @@ Changes of the data are refused:
 To turn off the keyboard navigation and the selection as well, set the [`selection`](api/spreadsheet_selection_config.md) option to `false`. In this case, the Spreadsheet has no active cell, and the cells can't be selected by the mouse, the keyboard or the API:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   selection: false,
   // other config parameters

@@ -28,7 +28,7 @@ load(url: string, type?: string): promise;
 ### 예제 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // JSON 형식으로 데이터 로드 (기본값)
@@ -84,7 +84,7 @@ DHTMLX Spreadsheet는 WebAssembly 기반 라이브러리 [Excel2Json](https://gi
 - `load()` 메서드를 두 개의 매개변수와 함께 호출합니다: URL로 빈 문자열, 로드할 데이터 타입("json"):
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
 });
 

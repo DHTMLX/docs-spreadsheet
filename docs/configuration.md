@@ -50,7 +50,7 @@ The menu of the Spreadsheet is hidden by default. You can switch it on/off via t
 You can also enable read-only mode to prevent editing of Spreadsheet cells via the [`readonly`](api/spreadsheet_readonly_config.md) configuration option.
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
 });
 ~~~
@@ -60,7 +60,7 @@ In the read-only mode, the toolbar, the menu and the formula bar are hidden. Use
 To turn off the keyboard navigation and the selection in the read-only mode, set the [`selection`](api/spreadsheet_selection_config.md) option to `false`:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
 });
@@ -75,7 +75,7 @@ You can also [customize the read-only behavior of Spreadsheet](customization.md#
 By default, users can select cells with the mouse and the keyboard, and the Spreadsheet has an active cell. To turn the selection off, set the [`selection`](api/spreadsheet_selection_config.md) configuration option to `false`:
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
 });
 ~~~

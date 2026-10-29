@@ -24,7 +24,7 @@ setSelectedCell(cell: string, scroll?: boolean): void;
 ### 示例 {#example}
 
 ~~~jsx {7,10,13}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // 配置参数
 });
 spreadsheet.parse(data);

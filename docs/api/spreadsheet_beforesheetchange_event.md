@@ -29,7 +29,7 @@ Return `true` to change the active sheet, `false` to prevent the active sheet fr
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeSheetChange" event

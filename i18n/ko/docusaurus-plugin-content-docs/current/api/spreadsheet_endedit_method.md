@@ -19,7 +19,7 @@ endEdit(): void;
 ### 예제 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 선택된 셀의 편집을 종료합니다

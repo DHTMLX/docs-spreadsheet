@@ -282,7 +282,7 @@ spreadsheet.hideSearch();
 - `dir` - направление сортировки: 1 - по возрастанию, -1 - по убыванию
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // параметры конфигурации
 });
 

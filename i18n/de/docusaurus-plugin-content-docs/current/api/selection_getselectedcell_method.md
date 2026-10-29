@@ -23,7 +23,7 @@ Die Methode gibt die ID(s) oder einen Bereich der ausgewählten Zelle(n) zurück
 ### Beispiel {#example}
 
 ~~~jsx {8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsparameter
 });
 spreadsheet.parse(data);

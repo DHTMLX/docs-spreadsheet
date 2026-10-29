@@ -94,7 +94,7 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如
 </style>
 
 <script>
-    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet_container",{});
     
     dhx.setTheme("light");
 </script>

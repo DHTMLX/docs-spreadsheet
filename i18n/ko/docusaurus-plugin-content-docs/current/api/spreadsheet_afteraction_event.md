@@ -51,7 +51,7 @@ afterAction: (
 ### 예제 {#example}
 
 ~~~jsx {6-11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config 매개변수
 });
 spreadsheet.parse(dataset);

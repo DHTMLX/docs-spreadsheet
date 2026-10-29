@@ -55,7 +55,7 @@ Return `false` to prevent an action from being executed; otherwise, return `true
 ### Example
 
 ~~~jsx {6-11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(dataset);

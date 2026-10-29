@@ -44,7 +44,7 @@ setFilter(
 ### 예제 {#example}
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // A열에 지정된 조건으로 데이터 필터링

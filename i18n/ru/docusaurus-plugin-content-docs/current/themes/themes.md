@@ -438,7 +438,7 @@ description: "Встроенные темы DHTMLX Spreadsheet: светлая �
 
 ~~~html title="index.html"
 <!-- контейнер компонента -->
-<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet"></div>
+<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet_container"></div>
 ~~~
 
 - установить атрибут `data-dhx-theme` для HTML-элемента, например для `documentElement`:
@@ -465,31 +465,31 @@ document.documentElement.setAttribute("data-dhx-theme", "dark");
 - установка темы для body или контейнера
 
 ~~~html 
-<div id="container"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container");
+    new dhx.Spreadsheet("spreadsheet_container");
 
     dhx.setTheme("dark"); //применяет тему "dark" к body 
     //или
-    //применяет тему "dark" к контейнеру с id "container"
-    dhx.setTheme("dark", "container"); 
+    //применяет тему "dark" к контейнеру с id "spreadsheet_container"
+    dhx.setTheme("dark", "spreadsheet_container"); 
 </script>
 ~~~
 
 - установка темы для контейнера, указанного через HTMLElement
 
 ~~~html 
-<div id="container-1"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container-1");
+    new dhx.Spreadsheet("spreadsheet_container");
     
-    const container = document.getElementById("container-1");
+    const element = document.getElementById("spreadsheet_container");
     //применяет тему "dark" к контейнеру, указанному через HTMLElement
-    dhx.setTheme("dark", container); 
+    dhx.setTheme("dark", element); 
 </script>
 ~~~
 

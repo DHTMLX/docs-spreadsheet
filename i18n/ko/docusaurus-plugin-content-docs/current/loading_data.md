@@ -179,7 +179,7 @@ const dataset = [
 기본적으로 Spreadsheet는 JSON 형식의 데이터를 받습니다. 외부 소스에서 데이터를 로드하려면 [](api/spreadsheet_load_method.md) 메서드를 사용하십시오. 이 메서드는 데이터 파일의 URL을 매개변수로 받습니다.
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ spreadsheet.load("../common/data.json");
 CSV 형식의 데이터도 로드할 수 있습니다. 이를 위해 [](api/spreadsheet_load_method.md) 메서드를 호출하고 두 번째 매개변수로 형식 이름("csv")을 전달하십시오.
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 로컬 소스에서 데이터를 로드하려면 [](api/spreadsheet_parse_method.md) 메서드를 사용하십시오. 이 메서드의 매개변수로 [미리 정의된 데이터 세트](#preparing-data)를 전달하십시오.
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

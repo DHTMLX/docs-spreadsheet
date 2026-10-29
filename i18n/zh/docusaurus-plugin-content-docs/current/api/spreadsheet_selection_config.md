@@ -25,7 +25,7 @@ selection: true
 ### 示例 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
     // other config parameters
 });
@@ -46,7 +46,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 与 [`readonly`](api/spreadsheet_readonly_config.md) 属性结合使用时，该选项会关闭只读模式下可用的键盘导航和选择功能：
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
     // other config parameters

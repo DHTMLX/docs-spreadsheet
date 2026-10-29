@@ -25,7 +25,7 @@ editLine: true
 ### 예제 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     editLine: true,
     // 기타 설정 매개변수
 });

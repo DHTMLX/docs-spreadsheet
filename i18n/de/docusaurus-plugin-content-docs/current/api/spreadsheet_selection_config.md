@@ -25,7 +25,7 @@ selection: true
 ### Beispiel {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
     // other config parameters
 });
@@ -46,7 +46,7 @@ Die Spalten und Zeilen lassen sich weiterhin durch Ziehen ihrer Ränder in der G
 In Kombination mit der Eigenschaft [`readonly`](api/spreadsheet_readonly_config.md) schaltet die Option die Tastaturnavigation und die Auswahl aus, die im schreibgeschützten Modus verfügbar sind:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
     // other config parameters

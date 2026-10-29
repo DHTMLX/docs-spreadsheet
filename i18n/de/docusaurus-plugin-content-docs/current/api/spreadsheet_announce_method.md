@@ -25,7 +25,7 @@ announce(message: string): void;
 Im folgenden Beispiel zählt ein benutzerdefinierter Menübefehl die leeren Zellen im ausgewählten Bereich und gibt das Ergebnis aus:
 
 ~~~jsx {18}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
     // other config parameters
 });

@@ -25,7 +25,7 @@ announce(message: string): void;
 아래 예제에서는 사용자 정의 메뉴 명령이 선택한 범위의 빈 셀 개수를 세고 그 결과를 알립니다.
 
 ~~~jsx {18}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
     // other config parameters
 });

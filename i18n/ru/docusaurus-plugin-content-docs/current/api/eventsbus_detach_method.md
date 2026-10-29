@@ -23,7 +23,7 @@ detach(name: string): void;
 ### Пример {#example}
 
 ~~~jsx {10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

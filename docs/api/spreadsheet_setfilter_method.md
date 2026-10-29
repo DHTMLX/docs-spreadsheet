@@ -44,7 +44,7 @@ To reset filtering, call the method without parameters or pass only the `cell` p
 ### Example
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // filter data by condition specified for column A

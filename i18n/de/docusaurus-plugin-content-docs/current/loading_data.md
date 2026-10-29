@@ -179,7 +179,7 @@ Beachten Sie, dass Sie die `value`-Eigenschaft des `cell`-Objekts und die `text`
 Standardmäßig erwartet Spreadsheet Daten im JSON-Format. Um Daten aus einer externen Quelle zu laden, verwenden Sie die Methode [](api/spreadsheet_load_method.md). Sie nimmt die URL der Datei mit den Daten als Parameter entgegen:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ Wenn Sie es Benutzern ermöglichen möchten, eine JSON-Datei über den Datei-Exp
 Sie können auch Daten im CSV-Format laden. Dazu müssen Sie die Methode [](api/spreadsheet_load_method.md) aufrufen und den Namen des Formats ("csv") als zweiten Parameter übergeben:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 Um Daten aus einer lokalen Quelle zu laden, verwenden Sie die Methode [](api/spreadsheet_parse_method.md). Übergeben Sie einen [vorbereiteten Datensatz](#preparing-data) als Parameter dieser Methode:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

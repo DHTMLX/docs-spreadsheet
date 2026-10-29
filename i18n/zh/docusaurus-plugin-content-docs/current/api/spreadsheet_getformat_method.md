@@ -27,7 +27,7 @@ getFormat(cell: string): string | array;
 ### 示例 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 返回 "currency"

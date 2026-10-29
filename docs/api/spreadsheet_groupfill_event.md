@@ -26,7 +26,7 @@ The callback of the event takes the following parameters:
 ### Example
 
 ~~~jsx {5-7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "groupFill" event

@@ -26,7 +26,7 @@ groupFill: (focusedCell: string, selectedCell: string) => void;
 ### Пример {#example}
 
 ~~~jsx {5-7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // подписка на событие "groupFill"

@@ -38,7 +38,7 @@ Geben Sie `false` zurück, um das Leeren einer Tabellenkalkulation zu verhindern
 ### Beispiel {#example}
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeClear" event

@@ -29,7 +29,7 @@ mergeCells(
 ### 예제 {#example}
 
 ~~~jsx {5,8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // A3, A4, A5 셀을 병합합니다

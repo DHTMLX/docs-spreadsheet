@@ -179,7 +179,7 @@ const dataset = [
 默认情况下，Spreadsheet 接受 JSON 格式的数据。要从外部数据源加载数据，请使用 [](api/spreadsheet_load_method.md) 方法。该方法接受数据文件的 URL 作为参数：
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ spreadsheet.load("../common/data.json");
 您也可以加载 CSV 格式的数据。为此，需要调用 [](api/spreadsheet_load_method.md) 方法，并将格式名称（"csv"）作为第二个参数传入：
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 要从本地数据源加载数据，请使用 [](api/spreadsheet_parse_method.md) 方法。将[预先定义的数据集](#preparing-data)作为该方法的参数传入：
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

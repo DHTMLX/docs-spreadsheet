@@ -179,7 +179,7 @@ const dataset = [
 По умолчанию Spreadsheet ожидает данные в формате JSON. Чтобы загрузить данные из внешнего источника, используйте метод [](api/spreadsheet_load_method.md). Он принимает URL-адрес файла с данными в качестве параметра:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ spreadsheet.load("../common/data.json");
 Вы также можете загружать данные в формате CSV. Для этого нужно вызвать метод [](api/spreadsheet_load_method.md) и передать название формата ("csv") вторым параметром:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 Чтобы загрузить данные из локального источника, используйте метод [](api/spreadsheet_parse_method.md). Передайте [подготовленный набор данных](#preparing-data) в качестве параметра этого метода:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

@@ -23,7 +23,7 @@ The method returns `true` if the selection is turned off; otherwise, `false`
 ### Example
 
 ~~~jsx {7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
     // other config parameters
 });

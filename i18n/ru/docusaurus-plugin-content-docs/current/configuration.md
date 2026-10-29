@@ -51,7 +51,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 Вы также можете [настроить поведение Spreadsheet в режиме только для чтения](customization.md#custom-read-only-mode).
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
 });
 ~~~
@@ -61,7 +61,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 Чтобы отключить навигацию с клавиатуры и выделение в режиме только для чтения, установите для параметра [`selection`](api/spreadsheet_selection_config.md) значение `false`:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
 });
@@ -74,7 +74,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 По умолчанию пользователи могут выделять ячейки мышью и с клавиатуры, а в Spreadsheet есть активная ячейка. Чтобы отключить выделение, установите для параметра конфигурации [`selection`](api/spreadsheet_selection_config.md) значение `false`:
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
 });
 ~~~

@@ -55,7 +55,7 @@ beforeAction: (
 ### Пример {#example}
 
 ~~~jsx {6-11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // параметры конфигурации
 });
 spreadsheet.parse(dataset);

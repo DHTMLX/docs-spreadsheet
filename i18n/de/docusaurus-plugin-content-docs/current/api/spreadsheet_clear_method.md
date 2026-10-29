@@ -19,7 +19,7 @@ clear(): void;
 ### Beispiel {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // leert eine Tabellenkalkulation

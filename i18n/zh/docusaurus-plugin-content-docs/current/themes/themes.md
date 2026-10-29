@@ -438,7 +438,7 @@ Spreadsheet 组件专用变量列表如下：
 
 ~~~html title="index.html"
 <!-- 组件容器 -->
-<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet"></div>
+<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet_container"></div>
 ~~~
 
 - 为某个 HTML 元素设置 `data-dhx-theme` 属性，例如为 `documentElement` 设置：
@@ -465,31 +465,31 @@ document.documentElement.setAttribute("data-dhx-theme", "dark");
 - 为 body 或容器设置主题
 
 ~~~html 
-<div id="container"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container");
+    new dhx.Spreadsheet("spreadsheet_container");
 
     dhx.setTheme("dark"); // 将 "dark" 主题应用到 body
     // 或
-    // 将 "dark" 主题应用到 id 为 "container" 的容器
-    dhx.setTheme("dark", "container"); 
+    // 将 "dark" 主题应用到 id 为 "spreadsheet_container" 的容器
+    dhx.setTheme("dark", "spreadsheet_container"); 
 </script>
 ~~~
 
 - 通过 HTMLElement 为指定容器设置主题
 
 ~~~html 
-<div id="container-1"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container-1");
+    new dhx.Spreadsheet("spreadsheet_container");
     
-    const container = document.getElementById("container-1");
+    const element = document.getElementById("spreadsheet_container");
     // 将 "dark" 主题应用到通过 HTMLElement 指定的容器
-    dhx.setTheme("dark", container); 
+    dhx.setTheme("dark", element); 
 </script>
 ~~~
 

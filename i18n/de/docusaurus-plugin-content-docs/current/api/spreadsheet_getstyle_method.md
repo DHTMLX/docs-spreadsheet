@@ -27,7 +27,7 @@ Die Methode gibt die für die Zellen festgelegten Stile zurück
 ### Beispiel {#example}
 
 ~~~jsx {5,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Stil einer einzelnen Zelle abrufen

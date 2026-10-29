@@ -49,7 +49,7 @@ Spreadsheet의 메뉴는 기본적으로 숨겨져 있습니다. 해당 구성 �
 [`readonly`](api/spreadsheet_readonly_config.md) 구성 옵션을 통해 Spreadsheet 셀 편집을 방지하는 읽기 전용 모드를 활성화할 수도 있습니다.
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
 });
 ~~~
@@ -59,7 +59,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 읽기 전용 모드에서 키보드 탐색과 선택을 끄려면 [`selection`](api/spreadsheet_selection_config.md) 옵션을 `false`로 설정합니다:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
 });
@@ -74,7 +74,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 기본적으로 사용자는 마우스와 키보드로 셀을 선택할 수 있으며, Spreadsheet에는 활성 셀이 있습니다. 선택을 끄려면 [`selection`](api/spreadsheet_selection_config.md) 구성 옵션을 `false`로 설정합니다:
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
 });
 ~~~

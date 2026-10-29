@@ -25,7 +25,7 @@ selection: true
 ### 예제 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
     // other config parameters
 });
@@ -46,7 +46,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 [`readonly`](api/spreadsheet_readonly_config.md) 속성과 함께 사용하면, 읽기 전용 모드에서 제공되는 키보드 탐색과 선택 기능까지 끌 수 있습니다.
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
     // other config parameters

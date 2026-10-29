@@ -44,7 +44,7 @@ Um die Filterung zurückzusetzen, rufen Sie die Methode ohne Parameter auf oder 
 ### Beispiel {#example}
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Daten nach einer für Spalte A angegebenen Bedingung filtern

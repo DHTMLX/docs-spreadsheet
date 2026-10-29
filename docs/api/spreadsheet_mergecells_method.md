@@ -29,7 +29,7 @@ mergeCells(
 ### Example
 
 ~~~jsx {5,8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // merge cells A3, A4, and A5

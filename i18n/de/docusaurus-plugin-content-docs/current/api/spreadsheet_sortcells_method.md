@@ -26,7 +26,7 @@ sortCells(cell: string, dir: number): void;
 ### Beispiel {#example}
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsparameter
 });
 spreadsheet.parse(data);

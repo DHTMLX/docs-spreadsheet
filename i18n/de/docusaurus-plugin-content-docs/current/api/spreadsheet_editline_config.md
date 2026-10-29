@@ -25,7 +25,7 @@ editLine: true
 ### Beispiel {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     editLine: true,
     // andere Konfigurationsparameter
 });

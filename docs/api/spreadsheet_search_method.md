@@ -35,7 +35,7 @@ The method returns an array with IDs of the found cells
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // returns IDs of cells with the matched result, opens a search bar and highlights the found cells

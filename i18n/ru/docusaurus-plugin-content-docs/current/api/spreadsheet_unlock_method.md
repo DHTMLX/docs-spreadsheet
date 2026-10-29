@@ -23,7 +23,7 @@ unlock(cell: string): void;
 ### Пример {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // снимает блокировку с ячейки

@@ -25,7 +25,7 @@ readonly: false
 ### Beispiel {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   // other config parameters
 });
@@ -53,7 +53,7 @@ Benutzer können die Daten weiterhin lesen und kopieren:
 Um auch die Tastaturnavigation und die Auswahl zu deaktivieren, setzen Sie die Option [`selection`](api/spreadsheet_selection_config.md) auf `false`. In diesem Fall hat die Tabellenkalkulation keine aktive Zelle, und die Zellen können weder per Maus, Tastatur noch API ausgewählt werden:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   selection: false,
   // other config parameters

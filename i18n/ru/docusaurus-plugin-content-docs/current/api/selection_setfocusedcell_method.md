@@ -24,7 +24,7 @@ setFocusedCell(cell: string, scroll?: boolean): void;
 ### Пример {#example}
 
 ~~~jsx {6}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // параметры конфигурации
 });
 spreadsheet.parse(data);

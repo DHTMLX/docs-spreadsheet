@@ -29,7 +29,7 @@ Geben Sie `true` zurück, um das aktive Tabellenblatt zu wechseln, oder `false`,
 ### Beispiel {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Event "beforeSheetChange" abonnieren

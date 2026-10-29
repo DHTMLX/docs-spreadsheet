@@ -25,7 +25,7 @@ selection: true
 ### Пример {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
     // other config parameters
 });
@@ -46,7 +46,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 В сочетании со свойством [`readonly`](api/spreadsheet_readonly_config.md) параметр отключает клавиатурную навигацию и выделение, которые доступны в режиме только для чтения:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
     // other config parameters

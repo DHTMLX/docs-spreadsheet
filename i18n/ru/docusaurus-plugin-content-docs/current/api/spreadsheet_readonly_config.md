@@ -25,7 +25,7 @@ readonly: false
 ### Пример {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   // other config parameters
 });
@@ -53,7 +53,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 Чтобы отключить также навигацию с помощью клавиатуры и выделение, установите для параметра [`selection`](api/spreadsheet_selection_config.md) значение `false`. В этом случае в Spreadsheet нет активной ячейки, а ячейки нельзя выделить мышью, с помощью клавиатуры или API:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   selection: false,
   // other config parameters

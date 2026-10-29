@@ -88,7 +88,7 @@ description: Вы можете узнать, как создать пользо�
 </style>
 
 <script>
-    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet_container",{});
     
     dhx.setTheme("custom-theme-dark");
 </script>

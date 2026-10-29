@@ -25,7 +25,7 @@ readonly: false
 ### 예제 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   // 다른 설정 매개변수
 });
@@ -53,7 +53,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 키보드 탐색과 선택도 끄려면 [`selection`](api/spreadsheet_selection_config.md) 옵션을 `false`로 설정하세요. 이 경우 Spreadsheet에는 활성 셀이 없으며, 마우스, 키보드 또는 API로 셀을 선택할 수 없습니다:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   selection: false,
   // other config parameters

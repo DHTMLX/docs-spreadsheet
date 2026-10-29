@@ -25,7 +25,7 @@ announce(message: string): void;
 В примере ниже пользовательская команда меню подсчитывает пустые ячейки в выделенном диапазоне и озвучивает результат:
 
 ~~~jsx {18}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
     // other config parameters
 });

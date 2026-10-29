@@ -51,7 +51,7 @@ Der Callback des Events akzeptiert folgende Parameter:
 ### Beispiel {#example}
 
 ~~~jsx {6-11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsparameter
 });
 spreadsheet.parse(dataset);

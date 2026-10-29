@@ -25,7 +25,7 @@ announce(message: string): void;
 在下面的示例中，自定义菜单命令会统计所选范围内的空单元格数量，并播报统计结果：
 
 ~~~jsx {18}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
     // other config parameters
 });

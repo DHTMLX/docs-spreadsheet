@@ -438,7 +438,7 @@ Spreadsheet 컴포넌트에 특화된 변수 목록은 다음과 같습니다.
 
 ~~~html title="index.html"
 <!-- 컴포넌트 컨테이너 -->
-<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet"></div>
+<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet_container"></div>
 ~~~
 
 - HTML 요소(예: `documentElement`)에 `data-dhx-theme` 속성 설정:
@@ -465,31 +465,31 @@ document.documentElement.setAttribute("data-dhx-theme", "dark");
 - body 또는 컨테이너에 테마 설정
 
 ~~~html 
-<div id="container"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container");
+    new dhx.Spreadsheet("spreadsheet_container");
 
     dhx.setTheme("dark"); // body에 "dark" 테마 적용
     //또는
-    // "container" id를 가진 컨테이너에 "dark" 테마 적용
-    dhx.setTheme("dark", "container"); 
+    // "spreadsheet_container" id를 가진 컨테이너에 "dark" 테마 적용
+    dhx.setTheme("dark", "spreadsheet_container"); 
 </script>
 ~~~
 
 - HTMLElement로 지정된 컨테이너에 테마 설정
 
 ~~~html 
-<div id="container-1"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container-1");
+    new dhx.Spreadsheet("spreadsheet_container");
     
-    const container = document.getElementById("container-1");
+    const element = document.getElementById("spreadsheet_container");
     // HTMLElement로 지정된 컨테이너에 "dark" 테마 적용
-    dhx.setTheme("dark", container); 
+    dhx.setTheme("dark", element); 
 </script>
 ~~~
 

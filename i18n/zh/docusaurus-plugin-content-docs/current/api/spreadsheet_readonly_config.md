@@ -25,7 +25,7 @@ readonly: false
 ### 示例 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   // 其他配置参数
 });
@@ -53,7 +53,7 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
 若要同时关闭键盘导航和选择功能，请将 [`selection`](api/spreadsheet_selection_config.md) 选项设置为 `false`。此时 Spreadsheet 没有活动单元格，也无法通过鼠标、键盘或 API 选择单元格：
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   readonly: true,
   selection: false,
   // other config parameters

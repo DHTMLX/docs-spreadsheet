@@ -30,7 +30,7 @@ Return `true` to finish editing a cell, `false` to prevent closing of an editor
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeEditEnd" event

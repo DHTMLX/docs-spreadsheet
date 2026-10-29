@@ -19,7 +19,7 @@ rowsCount?: number;
 ### Пример {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   rowsCount: 10,
   // other config parameters
 });

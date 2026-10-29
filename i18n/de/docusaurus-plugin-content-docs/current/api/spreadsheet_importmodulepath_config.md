@@ -19,7 +19,7 @@ importModulePath?: string;
 ### Beispiel {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     importModulePath: "../libs/excel2json/1.0/worker.js",
     // weitere Konfigurationsparameter
 });

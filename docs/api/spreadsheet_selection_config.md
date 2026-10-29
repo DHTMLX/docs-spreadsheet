@@ -25,7 +25,7 @@ selection: true
 ### Example
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
     // other config parameters
 });
@@ -46,7 +46,7 @@ The columns and rows can still be resized by dragging their borders, and the dat
 Combined with the [`readonly`](api/spreadsheet_readonly_config.md) property, the option turns off the keyboard navigation and the selection that are available in the read-only mode:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
     // other config parameters

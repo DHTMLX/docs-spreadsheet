@@ -50,7 +50,7 @@ defaultFormats = [
 ### Пример {#example}
 
 ~~~jsx {2-19}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     formats: [
         {
             name: "U.S. Dollar",

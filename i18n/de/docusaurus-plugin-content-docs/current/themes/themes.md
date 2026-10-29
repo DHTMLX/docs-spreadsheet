@@ -438,7 +438,7 @@ Sie konnen zwischen den folgenden Varianten wahlen:
 
 ~~~html title="index.html"
 <!-- Komponenten-Container -->
-<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet"></div>
+<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet_container"></div>
 ~~~
 
 - Das Attribut `data-dhx-theme` fur ein HTML-Element setzen, z. B. fur `documentElement`:
@@ -465,31 +465,31 @@ Die folgenden Beispiele zeigen, wie die Methode `dhx.setTheme()` verwendet wird:
 - Theme auf den Body oder den Container setzen
 
 ~~~html 
-<div id="container"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container");
+    new dhx.Spreadsheet("spreadsheet_container");
 
     dhx.setTheme("dark"); // Wendet das "dark"-Theme auf den Body an 
     //or
-    // Wendet das "dark"-Theme auf den Container mit der ID "container" an
-    dhx.setTheme("dark", "container"); 
+    // Wendet das "dark"-Theme auf den Container mit der ID "spreadsheet_container" an
+    dhx.setTheme("dark", "spreadsheet_container"); 
 </script>
 ~~~
 
 - Theme auf den via HTMLElement angegebenen Container setzen
 
 ~~~html 
-<div id="container-1"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container-1");
+    new dhx.Spreadsheet("spreadsheet_container");
     
-    const container = document.getElementById("container-1");
+    const element = document.getElementById("spreadsheet_container");
     // Wendet das "dark"-Theme auf den via HTMLElement angegebenen Container an
-    dhx.setTheme("dark", container); 
+    dhx.setTheme("dark", element); 
 </script>
 ~~~
 

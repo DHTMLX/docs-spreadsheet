@@ -36,7 +36,7 @@ Um einen Hyperlink zu entfernen, aber den Text beizubehalten, rufen Sie die Meth
 ### Beispiel {#example}
 
 ~~~jsx {5-7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Einen Link in Zelle "A2" einfügen

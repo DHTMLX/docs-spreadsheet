@@ -19,7 +19,7 @@ exportModulePath?: string;
 ### Пример {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     exportModulePath: "../libs/json2excel/x.x/worker.js?vx", // локальный путь к файлу `worker.js` модуля экспорта
     // другие параметры конфигурации
 });

@@ -79,7 +79,7 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 시작 �
 <body>
     <div id="spreadsheet_container"></div>
     <script>
-        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
             //config options
         });
     </script>
@@ -94,7 +94,7 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 시작 �
 예를 들어 `toolbarBlocks`, `rowsCount`, `colsCount` 등 여러 옵션으로 Spreadsheet의 외관을 조정할 수 있습니다. [자세한 내용 확인하기](configuration.md).
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
     colsCount: 10
@@ -129,7 +129,7 @@ const data = [
 ]
 
 // initializing spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     //config
 });
 // loading data into spreadsheet

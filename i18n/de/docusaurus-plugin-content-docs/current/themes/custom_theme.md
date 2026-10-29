@@ -88,7 +88,7 @@ Um ein eigenes benutzerdefiniertes Theme zu erstellen, uberschreiben Sie die Wer
 </style>
 
 <script>
-    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet_container",{});
     
     dhx.setTheme("custom-theme-dark");
 </script>

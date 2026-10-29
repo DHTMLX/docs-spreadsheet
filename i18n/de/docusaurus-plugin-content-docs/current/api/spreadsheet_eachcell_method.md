@@ -31,7 +31,7 @@ eachCell(
 ### Beispiel {#example}
 
 ~~~jsx {21-27}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsparameter
 });
 

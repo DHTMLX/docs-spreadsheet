@@ -27,7 +27,7 @@ getStyle(cell: string): any;
 ### 예제 {#example}
 
 ~~~jsx {5,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 단일 셀의 스타일 가져오기

@@ -27,7 +27,7 @@ The method returns `true` if the cell is locked and `false` if it's unlocked
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // checks whether a cell is locked

@@ -31,7 +31,7 @@ eachCell(
 ### 예제 {#example}
 
 ~~~jsx {21-27}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // 설정 매개변수
 });
 

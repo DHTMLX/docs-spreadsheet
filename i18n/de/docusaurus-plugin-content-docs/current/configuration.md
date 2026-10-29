@@ -49,7 +49,7 @@ Das Menü des Spreadsheets ist standardmäßig ausgeblendet. Sie können es übe
 Sie können auch den schreibgeschützten Modus aktivieren, um die Bearbeitung von Spreadsheet-Zellen über die Konfigurationsoption [`readonly`](api/spreadsheet_readonly_config.md) zu verhindern.
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
 });
 ~~~
@@ -59,7 +59,7 @@ Im schreibgeschützten Modus sind die Symbolleiste, das Menü und die Formelleis
 Um die Tastaturnavigation und die Auswahl im schreibgeschützten Modus auszuschalten, setzen Sie die Option [`selection`](api/spreadsheet_selection_config.md) auf `false`:
 
 ~~~jsx {3}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     readonly: true,
     selection: false,
 });
@@ -74,7 +74,7 @@ Sie können auch das [schreibgeschützte Verhalten des Spreadsheets anpassen](cu
 Standardmäßig können Nutzer Zellen mit der Maus und der Tastatur auswählen, und das Spreadsheet hat eine aktive Zelle. Um die Auswahl auszuschalten, setzen Sie die Konfigurationsoption [`selection`](api/spreadsheet_selection_config.md) auf `false`:
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
 });
 ~~~

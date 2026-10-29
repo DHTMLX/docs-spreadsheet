@@ -19,7 +19,7 @@ endEdit(): void;
 ### 示例 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 结束对选定单元格的编辑

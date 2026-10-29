@@ -19,7 +19,7 @@ hideSearch(): void;
 ### Пример {#example}
 
 ~~~jsx {5,8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // открывает панель поиска и подсвечивает найденные ячейки

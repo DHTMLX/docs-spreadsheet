@@ -23,7 +23,7 @@ isDisabled(): boolean;
 ### 示例 {#example}
 
 ~~~jsx {7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     selection: false,
     // 其他配置参数
 });

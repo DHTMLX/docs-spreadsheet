@@ -107,7 +107,7 @@ spreadsheet.parse({
 Например, настройки локализации по умолчанию можно изменить следующим образом:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     localization: {
         decimal: ",", 
         thousands: " ", 

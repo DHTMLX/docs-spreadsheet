@@ -39,10 +39,10 @@ Spreadsheet 패키지의 구조는 다음과 같습니다.
 
 ## 컨테이너 만들기 {#creating-container}
 
-Spreadsheet용 컨테이너를 추가하고 예를 들어 "spreadsheet"와 같은 id를 지정하십시오.
+Spreadsheet용 컨테이너를 추가하고 예를 들어 "spreadsheet_container"와 같은 id를 지정하십시오.
 
 ~~~html title="index.html"
-<div id="spreadsheet"></div>
+<div id="spreadsheet_container"></div>
 ~~~
 
 ## DHTMLX Spreadsheet 초기화하기 {#initializing-dhtmlx-spreadsheet}
@@ -54,7 +54,7 @@ Spreadsheet용 컨테이너를 추가하고 예를 들어 "spreadsheet"와 같�
 
 ~~~jsx title="index.js"
 // creating DHTMLX Spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config options
 });
 ~~~

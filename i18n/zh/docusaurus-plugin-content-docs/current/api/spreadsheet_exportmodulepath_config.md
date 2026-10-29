@@ -19,7 +19,7 @@ exportModulePath?: string;
 ### 示例 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     exportModulePath: "../libs/json2excel/x.x/worker.js?vx", // 导出模块 `worker.js` 文件的本地路径
     // 其他配置参数
 });

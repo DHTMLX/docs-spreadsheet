@@ -94,7 +94,7 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 테마�
 </style>
 
 <script>
-    const spreadsheet = new dhx.Spreadsheet("spreadsheet",{});
+    const spreadsheet = new dhx.Spreadsheet("spreadsheet_container",{});
     
     dhx.setTheme("light");
 </script>

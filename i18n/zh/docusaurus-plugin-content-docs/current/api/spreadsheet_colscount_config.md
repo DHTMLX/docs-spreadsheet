@@ -19,7 +19,7 @@ colsCount?: number;
 ### 示例 {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     colsCount: 10,
     // 其他配置参数
 });

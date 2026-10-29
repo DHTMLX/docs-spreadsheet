@@ -29,7 +29,7 @@ Geben Sie `true` zurück, um den Fokus auf eine Zelle zu setzen, oder `false`, u
 ### Beispiel {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Event "beforeFocusSet" abonnieren

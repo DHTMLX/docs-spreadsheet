@@ -28,7 +28,7 @@ The method returns a promise of data loading
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // load data in the JSON format (default)
@@ -84,7 +84,7 @@ You can let users load a JSON file into the spreadsheet through the File Explore
 - Call the `load()` method with two parameters: an empty string as a URL and the type of data to load ("json"):
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
 });
 
