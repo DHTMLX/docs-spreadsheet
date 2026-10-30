@@ -56,6 +56,7 @@ Released on October , 2026
 - The keyboard focus was lost after the search bar closed
 - A closed context menu reopened
 - The active cell was scrolled one cell short of the viewport edge during keyboard navigation
+- A formula with an invalid reference showed a broken or repeated `#REF!` error instead of a single `#REF!`
 - React Spreadsheet: the event callbacks and `onStateChange` didn't fire after the Spreadsheet was recreated by an init-only prop change
 - React Spreadsheet: the event handlers of the wrapper were not removed on unmount
 - React Spreadsheet: the data from `loadUrl` was loaded twice on mount and again over the kept data after the Spreadsheet was recreated

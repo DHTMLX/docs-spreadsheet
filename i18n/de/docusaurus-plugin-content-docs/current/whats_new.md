@@ -56,6 +56,7 @@ Veröffentlicht am Oktober , 2026
 - Der Tastaturfokus ging verloren, nachdem die Suchleiste geschlossen wurde
 - Ein geschlossenes Kontextmenü wurde erneut geöffnet
 - Die aktive Zelle wurde bei der Tastaturnavigation eine Zelle zu kurz an den Rand des Viewports gescrollt
+- Eine Formel mit einem ungültigen Bezug zeigte einen fehlerhaften oder wiederholten `#REF!`-Fehler statt eines einzelnen `#REF!`
 - React Spreadsheet: die Event-Callbacks und `onStateChange` wurden nicht ausgelöst, nachdem Spreadsheet durch eine Änderung einer Init-only-Prop neu erstellt wurde
 - React Spreadsheet: die Event-Handler des Wrappers wurden beim Unmount nicht entfernt
 - React Spreadsheet: die Daten aus `loadUrl` wurden beim Mount zweimal geladen und nach dem Neuerstellen von Spreadsheet erneut über die beibehaltenen Daten

@@ -56,6 +56,7 @@ description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最
 - 搜索栏关闭后键盘焦点丢失的问题
 - 已关闭的上下文菜单再次打开的问题
 - 键盘导航时活动单元格滚动到距视口边缘差一个单元格的问题
+- 含无效引用的公式显示残缺或重复的 `#REF!` 错误，而不是单个 `#REF!` 的问题
 - React Spreadsheet：因仅初始化属性变化而重新创建 Spreadsheet 后，事件回调和 `onStateChange` 不触发的问题
 - React Spreadsheet：卸载时未移除封装组件的事件处理程序的问题
 - React Spreadsheet：挂载时 `loadUrl` 的数据被加载两次，以及 Spreadsheet 重新创建后再次覆盖保留数据的问题

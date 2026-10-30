@@ -56,6 +56,7 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리의 새로운 기능�
 - 검색 바가 닫힌 후 키보드 포커스가 사라지는 문제
 - 닫힌 컨텍스트 메뉴가 다시 열리는 문제
 - 키보드 탐색 중 활성 셀이 뷰포트 가장자리보다 한 셀 모자라게 스크롤되는 문제
+- 잘못된 참조가 있는 수식에 단일 `#REF!` 대신 깨지거나 반복된 `#REF!` 오류가 표시되는 문제
 - React Spreadsheet: init-only prop 변경으로 Spreadsheet가 다시 생성된 후 이벤트 콜백과 `onStateChange`가 발생하지 않는 문제
 - React Spreadsheet: 언마운트 시 래퍼의 이벤트 핸들러가 제거되지 않는 문제
 - React Spreadsheet: `loadUrl`의 데이터가 마운트 시 두 번 로드되고, Spreadsheet가 다시 생성된 후 유지된 데이터 위에 다시 로드되는 문제
