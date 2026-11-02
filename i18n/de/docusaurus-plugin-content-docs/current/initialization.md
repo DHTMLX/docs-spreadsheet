@@ -1,7 +1,7 @@
 ---
 sidebar_label: Initialisierung
 title: Initialisierung
-description: In der Dokumentation erfahren Sie, wie die DHTMLX JavaScript Spreadsheet-Bibliothek initialisiert wird. Lesen Sie Entwickleranleitungen und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-tägige Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Initialisieren Sie DHTMLX Spreadsheet auf einer Seite, indem Sie die Quelldateien einbinden, einen Container hinzufügen und den Konstruktor dhx.Spreadsheet mit einem Konfigurationsobjekt aufrufen.
 ---
 
 # Initialisierung {#initialization}
@@ -39,10 +39,10 @@ Die Struktur des Spreadsheet-Pakets ist wie folgt:
 
 ## Container erstellen {#creating-container}
 
-Fügen Sie einen Container für Spreadsheet hinzu und geben Sie ihm eine ID, zum Beispiel "spreadsheet":
+Fügen Sie einen Container für Spreadsheet hinzu und geben Sie ihm eine ID, zum Beispiel "spreadsheet_container":
 
 ~~~html title="index.html"
-<div id="spreadsheet"></div>
+<div id="spreadsheet_container"></div>
 ~~~
 
 ## DHTMLX Spreadsheet initialisieren {#initializing-dhtmlx-spreadsheet}
@@ -54,7 +54,7 @@ Initialisieren Sie DHTMLX Spreadsheet mit dem `dhx.Spreadsheet`-Objekt-Konstrukt
 
 ~~~jsx title="index.js"
 // DHTMLX Spreadsheet erstellen
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsoptionen
 });
 ~~~

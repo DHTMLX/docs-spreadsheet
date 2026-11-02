@@ -1,7 +1,7 @@
 ---
 sidebar_label: 커스터마이징
 title: 커스터마이징
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 커스터마이징에 대해 문서에서 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: DHTMLX Spreadsheet를 커스터마이징합니다. 아이콘을 변경하고, 툴바, 메뉴, 컨텍스트 메뉴의 컨트롤을 추가, 업데이트, 삭제하거나 사용자 정의 읽기 전용 모드를 구현합니다.
 ---
 
 # 커스터마이징 {#customization}
@@ -30,6 +30,8 @@ DHTMLX Spreadsheet는 기본적으로 [Material Design](https://pictogrammers.co
 ### 유형 {#types}
 
 `button`, `menuItem`, `separator`, `spacer` 유형의 컨트롤을 추가할 수 있습니다.
+
+[기본 툴바](#default-controls)의 다른 컨트롤과 마찬가지로 *텍스트 색상* 및 *배경색* 컨트롤과 *테두리* 팝업의 *테두리 색상* 컨트롤은 [`navItem`](https://docs.dhtmlx.com/suite/toolbar/navitem/) 유형입니다. 이 컨트롤은 [`html`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) 속성으로 현재 색상을 표시하고, [`value`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) 속성에서 접근 가능한 이름(예: "Text color: dark gray")을 가져오며, 색상 팝업을 엽니다. Spreadsheet는 활성 셀이 변경되면 *텍스트 색상* 및 *배경색* 컨트롤의 두 속성을 업데이트하고, 테두리 색상을 선택하면 *테두리 색상* 컨트롤의 두 속성을 업데이트합니다.
 
 `button` 객체에는 다음 속성이 있습니다:
 
@@ -379,7 +381,8 @@ spreadsheet.menu.data.remove("undo");
 - **열** menuItem (id: "columns")
   - *열 추가* menuItem (id: "add-col")
   - *열 제거* menuItem (id: "remove-col")
-  - *데이터에 맞추기* menuItem (id: "fit-col")
+  - *데이터에 맞추기* menuItem (id: "fit-col"), 열 메뉴와 전체 열이 선택된 경우에 표시됨
+  - *열 너비* menuItem (id: "col-width")
   - 구분선
   - *열 고정 해제* menuItem (id: "unfreeze-cols")
   - *[id]열까지 고정* menuItem (id: "freeze-cols")
@@ -388,6 +391,7 @@ spreadsheet.menu.data.remove("undo");
 - **행** menuItem (id: "rows")
   - *행 추가* menuItem (id: "add-row")
   - *행 제거* menuItem (id: "remove-row")
+  - *행 높이* menuItem (id: "row-height")
   - 구분선
   - *행 고정 해제* menuItem (id: "unfreeze-rows")
   - *[id]행까지 고정* menuItem (id: "freeze-rows")
@@ -396,6 +400,7 @@ spreadsheet.menu.data.remove("undo");
 - **정렬** menuItem (id: "sort")
   - *A에서 Z로 정렬* menuItem (id: "asc-sort")
   - *Z에서 A로 정렬* menuItem (id: "desc-sort")
+- **필터 열기** menuItem (id: "open-filter"), 활성 셀에 필터 아이콘이 있을 때 표시됨
 - **링크 삽입** menuItem (id: "link")
 
 ### 컨트롤 추가 {#adding-controls-3}

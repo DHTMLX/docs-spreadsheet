@@ -1,7 +1,7 @@
 ---
 sidebar_label: Angular 통합
 title: Angular 통합
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 Angular 통합에 대해 문서에서 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 실행해 보세요. DHTMLX Spreadsheet의 30일 무료 평가판도 다운로드할 수 있습니다.
+description: Angular 애플리케이션에서 DHTMLX Spreadsheet를 사용하는 방법입니다. 프로젝트를 만들고, Spreadsheet를 Angular 컴포넌트로 추가하고, 데이터를 로드하고, 이벤트를 처리합니다.
 ---
 
 # Angular 통합 {#integration-with-angular}
@@ -233,6 +233,10 @@ ngOnDestroy() {
     this._spreadsheet.destructor();
 }
 ~~~
+
+:::info
+`destructor()` 메서드는 `spreadsheet.events.on()`으로 연결한 이벤트 핸들러를 제거합니다. 새 Spreadsheet 인스턴스를 생성할 때(예: 컴포넌트가 다시 생성될 때) 새 인스턴스에 핸들러를 다시 연결하세요.
+:::
 
 ### 3단계. 앱에 Spreadsheet 추가 {#step-3-adding-spreadsheet-into-the-app}
 

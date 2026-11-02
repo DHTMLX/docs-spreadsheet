@@ -1,7 +1,7 @@
 ---
 sidebar_label: load()
 title: load 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 load 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 load() 方法将外部 JSON、CSV 或 XLSX 文件中的数据加载到 DHTMLX Spreadsheet，该方法返回一个 promise。
 ---
 
 # load()
@@ -28,7 +28,7 @@ load(url: string, type?: string): promise;
 ### 示例 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 以 JSON 格式加载数据（默认）
@@ -84,7 +84,7 @@ DHTMLX Spreadsheet 使用基于 WebAssembly 的库 [Excel2Json](https://github.c
 - 以两个参数调用 `load()` 方法：空字符串作为 URL，以及要加载的数据类型（"json"）：
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
 });
 

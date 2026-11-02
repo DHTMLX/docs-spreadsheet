@@ -1,7 +1,7 @@
 ---
 sidebar_label: detach()
 title: detach events bus method
-description: You can learn about the detach events bus method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Detach an event handler attached with the on() method from DHTMLX Spreadsheet with the events.detach() method, by the name of the event.
 ---
 
 # detach()
@@ -23,7 +23,7 @@ detach(name: string): void;
 ### Example
 
 ~~~jsx {10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

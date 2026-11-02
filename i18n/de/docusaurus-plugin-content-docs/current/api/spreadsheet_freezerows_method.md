@@ -1,7 +1,7 @@
 ---
 sidebar_label: freezeRows() 
 title: freezeRows-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die freezeRows-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Fixieren Sie Zeilen in DHTMLX Spreadsheet mit der Methode freezeRows(). Sie fixiert die Zeilen bis zur angegebenen oder ausgewählten Zelle, im aktuellen oder einem anderen Tabellenblatt.
 ---
 
 # freezeRows()

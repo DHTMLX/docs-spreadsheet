@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditEnd
 title: Событие beforeEditEnd
-description: Вы можете узнать о событии beforeEditEnd в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Проверьте значение ячейки перед завершением редактирования в DHTMLX Spreadsheet с помощью события beforeEditEnd и верните false, чтобы оставить редактор открытым.
 ---
 
 # beforeEditEnd
@@ -30,7 +30,7 @@ beforeEditEnd: (cell: string, value: string) => void | boolean;
 ### Пример {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // подписка на событие "beforeEditEnd"

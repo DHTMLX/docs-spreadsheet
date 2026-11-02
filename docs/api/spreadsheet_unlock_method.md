@@ -1,7 +1,7 @@
 ---
 sidebar_label: unlock()
 title: unlock method
-description: You can learn about the unlock method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Unlock a locked cell, several cells or a range of cells in DHTMLX Spreadsheet with the unlock() method, so that users can edit them again.
 ---
 
 # unlock()
@@ -23,7 +23,7 @@ unlock(cell: string): void;
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // unlocks a cell

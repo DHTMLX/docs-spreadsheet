@@ -1,7 +1,7 @@
 ---
 sidebar_label: fitColumn()
 title: fitColumn 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 fitColumn 方法。浏览开发者指南和 API 参考，试用代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 fitColumn() 方法将 DHTMLX Spreadsheet 中列的宽度调整为与其最长值匹配。
 ---
 
 # fitColumn()
@@ -24,7 +24,7 @@ fitColumn(cell: string): void;
 ### 示例 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 调整 "G" 列的宽度

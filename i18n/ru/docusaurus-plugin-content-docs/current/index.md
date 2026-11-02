@@ -2,7 +2,7 @@
 sidebar_label: Обзор Spreadsheet
 title: Обзор DHTMLX Spreadsheet
 slug: /
-description: Вы можете ознакомиться с обзором библиотеки JavaScript Spreadsheet в документации DHTMLX. Просматривайте руководства для разработчиков и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Обзор DHTMLX Spreadsheet, JavaScript-компонента для редактирования и форматирования табличных данных, с его панелью инструментов, строкой редактирования, сеткой, меню и контекстным меню.
 ---
 
 # Обзор DHTMLX Spreadsheet {#dhtmlx-spreadsheet-overview}

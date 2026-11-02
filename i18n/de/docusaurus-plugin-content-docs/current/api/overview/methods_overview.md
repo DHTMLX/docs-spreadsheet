@@ -1,7 +1,7 @@
 ---
 sidebar_label: Methoden-Übersicht
 title: Methoden-Übersicht
-description: Sie können die Methoden-Übersicht der DHTMLX JavaScript Spreadsheet-Bibliothek in der Dokumentation einsehen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Liste der DHTMLX Spreadsheet-Methoden zum Laden und Speichern von Daten, Bearbeiten von Zellen, Formatieren, Verbinden, Sortieren, Filtern und Verwalten von Tabellenblättern.
 ---
 
 # Methoden-Übersicht {#methods-overview}
@@ -11,6 +11,7 @@ description: Sie können die Methoden-Übersicht der DHTMLX JavaScript Spreadshe
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(../spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addformula_method.md)     | @getshort(../spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(../spreadsheet_addrow_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(../spreadsheet_announce_method.md)         |
 | [](api/spreadsheet_clear_method.md)          | @getshort(../spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(../spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(../spreadsheet_deleterow_method.md)      |

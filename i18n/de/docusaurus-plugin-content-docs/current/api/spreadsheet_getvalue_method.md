@@ -1,7 +1,7 @@
 ---
 sidebar_label: getValue()
 title: getValue method
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die getValue-Methode. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Rufen Sie mit der Methode getValue() den Wert einer Zelle oder die Werte eines Zellbereichs in DHTMLX Spreadsheet ab.
 ---
 
 # getValue()
@@ -27,7 +27,7 @@ Die Methode gibt die Werte der Zellen zurück
 ### Beispiel {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Wert einer einzelnen Zelle zurückgeben

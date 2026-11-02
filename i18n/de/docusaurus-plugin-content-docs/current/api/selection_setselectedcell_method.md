@@ -1,7 +1,7 @@
 ---
 sidebar_label: setSelectedCell() 
 title: setSelectedCell Selection-Methode
-description: Sie können die setSelectedCell Selection-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek kennenlernen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Wählen Sie mit der Methode selection.setSelectedCell() eine Zelle, mehrere Zellen oder einen Zellbereich in DHTMLX Spreadsheet aus und scrollen Sie optional dorthin.
 ---
 
 # setSelectedCell()
@@ -13,17 +13,18 @@ description: Sie können die setSelectedCell Selection-Methode in der Dokumentat
 ### Verwendung {#usage}
 
 ~~~jsx
-setSelectedCell(cell: string): void;
+setSelectedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### Parameter {#parameters}
 
 - `cell` - (erforderlich) die ID(s) oder ein Bereich der auszuwählenden Zelle(n)
+- `scroll` - (optional) legt fest, ob die Tabellenkalkulation zur Zelle gescrollt wird, standardmäßig `true`
 
 ### Beispiel {#example}
 
 ~~~jsx {7,10,13}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // Konfigurationsparameter
 });
 spreadsheet.parse(data);

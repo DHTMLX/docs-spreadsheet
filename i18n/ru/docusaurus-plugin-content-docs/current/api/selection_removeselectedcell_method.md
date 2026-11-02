@@ -1,7 +1,7 @@
 ---
 sidebar_label: removeSelectedCell() 
 title: Метод removeSelectedCell объекта selection
-description: Вы можете узнать о методе removeSelectedCell объекта selection в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Снимите выделение с указанных ячеек или диапазонов ячеек в DHTMLX Spreadsheet с помощью метода selection.removeSelectedCell().
 ---
 
 # removeSelectedCell()
@@ -23,7 +23,7 @@ removeSelectedCell(cell: string): void;
 ### Пример {#example}
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // параметры конфигурации
 });
 spreadsheet.parse(data);

@@ -1,7 +1,7 @@
 ---
 sidebar_label: load()
 title: load method
-description: You can learn about the load method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Load data into DHTMLX Spreadsheet from an external JSON, CSV or XLSX file with the load() method, which returns a promise.
 ---
 
 # load()
@@ -28,7 +28,7 @@ The method returns a promise of data loading
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // load data in the JSON format (default)
@@ -84,7 +84,7 @@ You can let users load a JSON file into the spreadsheet through the File Explore
 - Call the `load()` method with two parameters: an empty string as a URL and the type of data to load ("json"):
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
 });
 

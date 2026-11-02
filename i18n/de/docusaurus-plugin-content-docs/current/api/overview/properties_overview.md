@@ -1,7 +1,7 @@
 ---
 sidebar_label: Eigenschaften-Übersicht
 title: Eigenschaften-Übersicht
-description: Sie können die Eigenschaften-Übersicht der DHTMLX JavaScript Spreadsheet-Bibliothek in der Dokumentation einsehen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Liste der DHTMLX Spreadsheet-Konfigurationseigenschaften für Symbolleiste, Menü, schreibgeschützten Modus, Auswahl, Rastergröße und mehr.
 ---
 
 # Eigenschaften-Übersicht {#properties-overview}
@@ -18,4 +18,5 @@ description: Sie können die Eigenschaften-Übersicht der DHTMLX JavaScript Spre
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |

@@ -1,7 +1,7 @@
 ---
 sidebar_label: parse()
 title: метод parse
-description: Вы можете узнать о методе parse в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Загрузите данные в DHTMLX Spreadsheet из локального источника с помощью метода parse(), включая значения ячеек, стили, форматы, редакторы, ссылки и несколько листов.
 ---
 
 # parse()
@@ -167,7 +167,7 @@ const data = [
     // больше данных
 ];
 
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 ~~~
 
@@ -246,7 +246,7 @@ const styledData = {
     ],
 };
 
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(styledData);
 ~~~
 

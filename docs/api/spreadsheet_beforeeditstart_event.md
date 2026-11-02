@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditStart
 title: beforeEditStart event
-description: You can learn about the beforeEditStart event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Control which cells can be edited in DHTMLX Spreadsheet with the beforeEditStart event, and return false to prevent the editor from opening.
 ---
 
 # beforeEditStart
@@ -30,7 +30,7 @@ Return `true` to edit a cell, `false` to prevent editing
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeEditStart" event

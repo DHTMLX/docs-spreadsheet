@@ -188,6 +188,13 @@ ref.current?.instance?.selection.setSelectedCell("A1:C5");
 // 撤销/重做
 ref.current?.instance?.undo();
 ref.current?.instance?.redo();
+
+// 关闭和开启选区
+ref.current?.instance?.selection.disable();
+ref.current?.instance?.selection.enable();
+
+// 向屏幕阅读器发送状态消息
+ref.current?.instance?.announce("The report is saved");
 ~~~
 
 ## Actions 枚举 {#actions-enum}
@@ -270,6 +277,7 @@ type SpreadsheetConfigProps = Omit<
 | `IStylesList` | 样式定义映射。 |
 | `IDataWithStyles` | 含内嵌样式的数据结构（由 `serialize()`/`parse()` 使用）。 |
 | `ICellInfo` | widget 方法返回的单元格信息。 |
+| `ISelection` | 选区模块接口（`instance.selection`），包括 [`enable()`](api/selection_enable_method.md)、[`disable()`](api/selection_disable_method.md) 和 [`isDisabled()`](api/selection_isdisabled_method.md) 方法。 |
 | `FileFormat` | 数据加载的文件格式（例如 `"json"` 或 `"xlsx"`）。 |
 | `ToolbarBlocks` | 工具栏块标识符（例如 `"default"`、`"undo"` 或 `"font"`）。 |
 | `FilterConditions` | 可用筛选条件类型的枚举。 |

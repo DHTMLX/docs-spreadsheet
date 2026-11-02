@@ -1,7 +1,7 @@
 ---
 sidebar_label: setActive()
 title: метод setActive
-description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о методе setActive Sheet Manager. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Переключите активный (видимый) лист DHTMLX Spreadsheet на лист с указанным идентификатором с помощью метода sheets.setActive().
 ---
 
 # setActive()

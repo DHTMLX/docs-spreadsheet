@@ -1,7 +1,7 @@
 ---
 sidebar_label: showRows()
 title: showRows-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die showRows-Methode. Entwicklerhandbücher und API-Referenz, Code-Beispiele, Live-Demos und eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet.
+description: Blenden Sie mit der Methode showRows() ausgeblendete Zeilen in DHTMLX Spreadsheet wieder ein, bestimmt durch die Zeile der übergebenen oder der ausgewählten Zelle.
 ---
 
 # showRows()

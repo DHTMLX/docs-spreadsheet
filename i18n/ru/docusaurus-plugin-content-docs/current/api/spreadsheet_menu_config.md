@@ -1,7 +1,7 @@
 ---
 sidebar_label: menu
 title: конфигурация menu
-description: Вы можете узнать о конфигурации menu в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Покажите или скройте меню DHTMLX Spreadsheet с помощью свойства menu.
 ---
 
 # menu
@@ -25,7 +25,7 @@ menu: true
 ### Пример {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   menu: false,
   // other config parameters
 });

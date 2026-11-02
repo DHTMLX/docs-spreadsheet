@@ -1,7 +1,7 @@
 ---
 sidebar_label: isLocked()
 title: isLocked method
-description: You can learn about the isLocked method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Check whether a cell or any cell of a range is locked in DHTMLX Spreadsheet with the isLocked() method.
 ---
 
 # isLocked()
@@ -27,7 +27,7 @@ The method returns `true` if the cell is locked and `false` if it's unlocked
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // checks whether a cell is locked

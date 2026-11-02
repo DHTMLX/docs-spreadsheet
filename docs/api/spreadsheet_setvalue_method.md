@@ -1,7 +1,7 @@
 ---
 sidebar_label: setValue()
 title: setValue method
-description: You can learn about the setValue method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Set a value for a cell, several cells or a range of cells in DHTMLX Spreadsheet with the setValue() method, passing a single value or an array of values repeated across the cells.
 ---
 
 # setValue()
@@ -28,7 +28,7 @@ setValue(cell: string, value: string | number | array): void;
 ### Example
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // setting value for one cell

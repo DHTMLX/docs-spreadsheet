@@ -1,7 +1,7 @@
 ---
 sidebar_label: clear()
 title: clear 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 Sheet Manager의 clear 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 sheets.clear() 메서드로 시트 자체는 삭제하지 않고 시트의 값, 스타일 및 서식을 지웁니다.
 ---
 
 # clear()

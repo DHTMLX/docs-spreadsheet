@@ -1,7 +1,7 @@
 ---
 sidebar_label: json()
 title: json 导出方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 json 导出方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: 使用 export.json() 方法将 DHTMLX Spreadsheet 的数据导出为 JSON 文件。
 ---
 
 # json()
@@ -19,7 +19,7 @@ json(): void;
 ### 示例 {#example}
 
 ~~~jsx {7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

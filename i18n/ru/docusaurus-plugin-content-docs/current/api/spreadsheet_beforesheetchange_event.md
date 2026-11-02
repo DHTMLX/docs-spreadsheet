@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSheetChange
 title: Событие beforeSheetChange
-description: Вы можете узнать о событии beforeSheetChange в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Управляйте переключением листов в DHTMLX Spreadsheet с помощью события beforeSheetChange и верните false, чтобы текущий лист остался активным.
 ---
 
 # beforeSheetChange
@@ -29,7 +29,7 @@ beforeSheetChange: (sheet: object) => void | boolean;
 ### Пример {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // подписываемся на событие "beforeSheetChange"

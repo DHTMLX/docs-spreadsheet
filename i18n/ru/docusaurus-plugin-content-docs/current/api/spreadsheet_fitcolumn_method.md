@@ -1,7 +1,7 @@
 ---
 sidebar_label: fitColumn()
 title: Метод fitColumn
-description: Вы можете узнать о методе fitColumn в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Подстройте ширину столбца под его самое длинное значение в DHTMLX Spreadsheet с помощью метода fitColumn().
 ---
 
 # fitColumn()
@@ -24,7 +24,7 @@ fitColumn(cell: string): void;
 ### Пример {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // подстраивает ширину столбца "G"

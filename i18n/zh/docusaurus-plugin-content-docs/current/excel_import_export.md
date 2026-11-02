@@ -1,7 +1,7 @@
 ---
 sidebar_label: Excel 导入/导出
 title: Excel 导入与导出
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Excel 导入与导出的相关内容。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 通过工具栏或"文件"菜单，将 Excel 文件中的数据导入 DHTMLX Spreadsheet，并导出为 .xlsx 文件。
 ---
 
 # Excel 导入/导出 {#excel-importexport}
@@ -37,3 +37,9 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Ex
 ![DHTMLX Spreadsheet 文件菜单中用于导出 Microsoft Excel XLSX 文件的"下载为"选项](/img/file_export.png)
 
 2\. 在您的下载目录中查找包含 Spreadsheet 数据的 Excel 文件。
+
+屏幕阅读器会播报导入和导出的开始与结束。
+
+:::note
+Excel 文件的导入和导出使用 WebAssembly。如果浏览器不支持 WebAssembly，"导入"和"导出"命令会显示一条消息，内容为 `wasmNotSupported` [本地化](localization.md#default-locale)键的文本。使用 `"xlsx"` 类型的 [`load()`](api/spreadsheet_load_method.md) 方法和 [`export.xlsx()`](api/export_xlsx_method.md) 方法会抛出带有相同文本的 `Error`，您可以在代码中捕获它。
+:::

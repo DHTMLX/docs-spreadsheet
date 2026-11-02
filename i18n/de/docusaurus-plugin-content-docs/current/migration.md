@@ -1,7 +1,7 @@
 ---
 sidebar_label: Migration zu neueren Versionen
 title: Migration
-description: Sie finden Informationen zur Migration in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Migrieren Sie auf eine neuere Version von DHTMLX Spreadsheet anhand der Liste veralteter, geänderter und entfernter Eigenschaften, Methoden und Events jeder Version und ihrer Ersatzlösungen.
 ---
 
 # Migration zu neueren Versionen {#migration-to-newer-versions}

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Работа с таблицей
 title: Работа с таблицей
-description: В документации вы можете узнать о работе с таблицей в библиотеке DHTMLX JavaScript Spreadsheet. Изучите руководства для разработчиков и справочник API, попробуйте примеры кода и живые демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Отменяйте и повторяйте действия, добавляйте, удаляйте, закрепляйте и скрывайте строки и столбцы, подгоняйте ширину столбцов, фильтруйте, ищите и сортируйте данные и очищайте DHTMLX Spreadsheet через API.
 ---
 
 # Работа с таблицей {#work-with-spreadsheet}
@@ -282,7 +282,7 @@ spreadsheet.hideSearch();
 - `dir` - направление сортировки: 1 - по возрастанию, -1 - по убыванию
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // параметры конфигурации
 });
 

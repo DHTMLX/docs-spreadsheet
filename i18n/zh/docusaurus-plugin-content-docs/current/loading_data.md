@@ -1,7 +1,7 @@
 ---
 sidebar_label: 数据加载与导出
 title: 加载数据
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解数据加载的相关内容。浏览开发者指南和 API 参考、尝试代码示例和在线演示，并下载免费 30 天试用版 DHTMLX Spreadsheet。
+description: 从文件或本地数据源将带有样式、锁定单元格和链接的 JSON、CSV 或 Excel 数据加载到 DHTMLX Spreadsheet，保存和恢复状态，并将数据导出为 Excel 或 JSON。
 ---
 
 # 数据加载与导出 {#data-loading-and-export}
@@ -179,7 +179,7 @@ const dataset = [
 默认情况下，Spreadsheet 接受 JSON 格式的数据。要从外部数据源加载数据，请使用 [](api/spreadsheet_load_method.md) 方法。该方法接受数据文件的 URL 作为参数：
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ spreadsheet.load("../common/data.json");
 您也可以加载 CSV 格式的数据。为此，需要调用 [](api/spreadsheet_load_method.md) 方法，并将格式名称（"csv"）作为第二个参数传入：
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 要从本地数据源加载数据，请使用 [](api/spreadsheet_parse_method.md) 方法。将[预先定义的数据集](#preparing-data)作为该方法的参数传入：
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

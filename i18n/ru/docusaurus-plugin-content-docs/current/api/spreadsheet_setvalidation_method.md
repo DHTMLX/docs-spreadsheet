@@ -1,7 +1,7 @@
 ---
 sidebar_label: setValidation()
 title: Метод setValidation
-description: Вы можете узнать о методе setValidation в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Добавьте в ячейки DHTMLX Spreadsheet выпадающий список значений с помощью метода setValidation(), взяв варианты из диапазона ячеек или массива, или удалите проверку данных.
 ---
 
 # setValidation()
@@ -29,7 +29,7 @@ setValidation(
 ### Пример {#example}
 
 ~~~jsx {8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 

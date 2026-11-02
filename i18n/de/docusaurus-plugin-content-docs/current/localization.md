@@ -1,7 +1,7 @@
 ---
 sidebar_label: Lokalisierung
 title: Lokalisierung
-description: Sie können sich in der Dokumentation über die Lokalisierung der DHTMLX JavaScript Spreadsheet-Bibliothek informieren. Durchsuchen Sie Entwicklerleitfäden und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Lokalisieren Sie DHTMLX Spreadsheet. Lernen Sie das Standard-Gebietsschema kennen, erstellen Sie ein benutzerdefiniertes, übersetzen Sie die integrierten Widgets und das Formel-Popup und wenden Sie ein Gebietsschema an.
 ---
 
 # Lokalisierung {#localization}
@@ -22,6 +22,8 @@ const en = {
 
     textColor: "Text color",
     backgroundColor: "Background color",
+
+    fontSize: "Font size",
 
     bold: "Bold",
     italic: "Italic",
@@ -60,6 +62,10 @@ const en = {
     addRow: "Add row above",
     removeRow: "Remove row {row}",
     removeRows: "Remove rows {row}",
+    columnWidth: "Column width",
+    rowHeight: "Row height",
+    widthInPixels: "Width in pixels",
+    heightInPixels: "Height in pixels",
     row: "row",
     col: "col",
     freeze: "Freeze",
@@ -82,8 +88,10 @@ const en = {
     text: "Text",
     date: "Date",
     time: "Time",
+    scientific: "Scientific",
 
     filter: "Filter",
+    openFilter: "Open filter",
 
     help: "Help",
 
@@ -104,6 +112,9 @@ const en = {
     border_style: "Border style",
 
     // Tabbar
+    // the name of a new sheet is this prefix followed by a number: sheet1, sheet2
+    defaultSheetName: "sheet",
+    addSheet: "Add sheet",
     deleteSheet: "Delete",
     renameSheet: "Rename",
     renameSheetAlert: "A sheet with the name $name already exists. Please enter another name. ",
@@ -114,10 +125,14 @@ const en = {
     export: "Export",
     downloadAs: "Download as...",
     importAs: "Import as...",
+    xlsxFormat: "Microsoft Excel(.xlsx)",
 
     data: "Data",
     validation: "Data validation",
     search: "Search",
+    previousMatch: "Previous match",
+    nextMatch: "Next match",
+    closeSearch: "Close search",
     sort: "Sort",
     ascSort: "Sort A to Z",
     descSort: "Sort Z to A",
@@ -177,17 +192,105 @@ const en = {
     spanUnmergeLockedError: "You can't unmerge locked cells!",
     spanOverFilteredRow: "You can't merge cells over a filtered row.",
     removeAlert: "You can't remove last $name!",
+    wasmNotSupported: "WebAssembly is not supported by your browser",
+    invalidValue: "Invalid value",
+
+    // Accessible names, read by screen readers
+    // accessible name of a color button; {label} is the name of the control, {color} is a name from the colorpicker locale
+    aria_colorButton: "{label}: {color}",
+    // accessible names of the toolbars; the screen reader adds the word "toolbar" itself
+    aria_toolbarFormatting: "Formatting",
+    aria_toolbarBorders: "Borders",
+    aria_toolbarSheets: "Sheets",
+    aria_toolbarSearch: "Search",
+    aria_toolbarLink: "Link",
+    // accessible names of the line styles in the border style list
+    aria_borderStyleThin: "Thin line",
+    aria_borderStyleMedium: "Medium line",
+    aria_borderStyleThick: "Thick line",
+    aria_borderStyleDashed: "Dashed line",
+    aria_borderStyleDotted: "Dotted line",
+    aria_borderStyleDouble: "Double line",
+    // accessible names of the context menus; the screen reader adds the word "menu" itself
+    aria_cellMenu: "Cell",
+    aria_sheetMenu: "Sheet",
+    // accessible name of the menu bar; the screen reader adds the words "menu bar" itself
+    aria_menuBar: "Main",
+    // accessible name of the cell grid; the screen reader adds the word "grid" itself
+    aria_grid: "Spreadsheet",
+    // accessible name of the select-all corner, the first column header
+    aria_selectAll: "Select all",
+    // accessible name of the formula bar; {cell} is the address of the cell it shows, for example "B7"
+    aria_formulaBar: "Formula bar, {cell}",
+    // accessible name of the input that edits a cell; {cell} is the address of the cell, for example "B7"
+    aria_cellEditor: "Cell editor, {cell}",
+    // accessible name of the close icon of the formula help panel
+    aria_closeFormulaHelp: "Close formula help",
+
+    // Cell descriptions, read with the content of the active cell
+    // read with the content of a cell that has a filter icon; the icon itself is hidden from assistive technology
+    aria_filter: "Filter",
+    aria_filterApplied: "Filter applied",
+    // read after the content of a selected cell that holds a link; Alt+Enter opens the link
+    aria_cellLink: "link",
+    // read after the content of a selected locked cell; the lock icon itself is hidden from assistive technology
+    aria_lockedState: "locked",
+    // read after the value of a cell with a formula error; the formula engine writes the error as #ERROR, #REF! or #SPILL!
+    aria_errorSyntax: "Syntax error. Check the formula",
+    aria_errorCalc: "Calculation error. Check the values and functions",
+    aria_errorRef: "Reference error. Check the cell references",
+    aria_errorSpill: "Spill error. Clear the cells the result needs",
+    // read after the value of a cell that breaks its list validation
+    aria_invalidValue: "Invalid value. Choose a value from the list",
+
+    // Screen reader announcements
+    // announced when an editing key is pressed in the read-only mode
+    aria_readonlySheet: "The sheet is read-only",
+    // announced when Ctrl+Shift+9 or Ctrl+Shift+0 finds nothing to reveal
+    aria_noHiddenRows: "No hidden rows in the selection",
+    aria_noHiddenCols: "No hidden columns in the selection",
+    // announced when a selection of several cells changes; {range} is built from aria_rangeExtent
+    aria_selectedRange: "{range}, {count} cells",
+    aria_rangeExtent: "{start} to {end}",
+    // joins the ranges of a selection made with Ctrl
+    aria_rangeSeparator: ", ",
+    // announced after an action; {message} is one of the texts above
+    aria_cellMessage: "{cell}: {message}",
+    // announced when an action makes several errors appear; {first} is aria_cellMessage for the first of them
+    aria_newErrors: "{count} new errors. {first}",
+    // announced when an action puts several invalid values; {first} is aria_cellMessage for the first of them
+    aria_invalidValues: "{count} invalid values. {first}",
+    // announced once when an edit of a locked cell is refused; the second one when a range holds locked cells
+    aria_lockedCell: "The cell is locked",
+    aria_lockedCells: "Locked cells were not changed",
+    // announced when the search text changes; followed by aria_searchMatch for the first match
+    aria_searchResults: "Results: {count}.",
+    // announced for the current match; {cell} is its address, for example "B7"
+    aria_searchMatch: "{index} of {count}, {cell}",
+    aria_searchNoResults: "No results",
+    // announced when an export or an import of a file starts and ends
+    aria_exportStarted: "Exporting the file",
+    aria_exportDone: "The file is exported",
+    aria_importStarted: "Importing the file",
+    aria_importDone: "The file is imported",
+    // announced when the column width or the row height command is applied; {size} is the applied size
+    aria_columnWidthSet: "Column width set to {size} pixels",
+    aria_rowHeightSet: "Row height set to {size} pixels",
 };
 ~~~
+
+Die Schlüssel, die mit `aria_` beginnen, werden in der Oberfläche nicht angezeigt. Screenreader lesen sie als Namen der Steuerelemente, als Beschreibungen der aktiven Zelle und als Meldungen des Live-Bereichs, den auch die Methode [`announce()`](api/spreadsheet_announce_method.md) verwendet. Die Teile in geschweiften Klammern, wie `{cell}` oder `{count}`, werden beim Vorlesen der Zeichenfolge durch die Werte ersetzt. Behalten Sie sie in den übersetzten Zeichenfolgen bei. Ein Beispiel für übersetzte Barrierefreiheits-Zeichenfolgen finden Sie im Handbuch [Barrierefreiheit](accessibility.md#translated-accessibility-strings).
+
+Der Schlüssel `defaultSheetName` legt das Präfix der Standardnamen von Tabellenblättern fest. Spreadsheet hängt eine Nummer an, sodass der Standardwert `"sheet"` die Namen "sheet1", "sheet2" usw. ergibt. Mit `"Tabelle"`, dem Präfix, das Microsoft Excel im Deutschen verwendet, heißen die Tabellenblätter beispielsweise "Tabelle1", "Tabelle2" usw.
 
 ## Benutzerdefiniertes Gebietsschema {#custom-locale}
 
 Um ein anderes Gebietsschema anzuwenden, müssen Sie:
 
-- Übersetzungen für alle Textbeschriftungen in Spreadsheet bereitstellen, beispielsweise für das russische Gebietsschema:
+- Übersetzungen für alle Textbeschriftungen in Spreadsheet bereitstellen, beispielsweise für das deutsche Gebietsschema:
 
 ~~~jsx
-const ru = {
+const de = {
     // language settings
 };
 ~~~
@@ -195,9 +298,47 @@ const ru = {
 - das neue Gebietsschema anwenden, indem Sie die Methode `dhx.i18n.setLocale()` vor der Initialisierung von Spreadsheet aufrufen:
 
 ~~~jsx
-dhx.i18n.setLocale("spreadsheet", ru);
+dhx.i18n.setLocale("spreadsheet", de);
 const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 ~~~
+
+## Integrierte Widgets lokalisieren {#localizing-built-in-widgets}
+
+Spreadsheet verwendet intern die Widgets Calendar, Colorpicker, Grid, Timepicker, Toolbar, Window und Message von DHTMLX Suite. Ihre Zeichenfolgen sind in separaten Gebietsschemas gespeichert, die Sie auf dieselbe Weise übersetzen können wie das Gebietsschema `spreadsheet`:
+
+| Gebietsschema | In Spreadsheet verwendete Zeichenfolgen |
+| ------ | --------------------------- |
+| `calendar` | die Monats- und Tagesnamen des Datumseditors und des Datumsfilters |
+| `colorpicker` | die Beschriftungen des benutzerdefinierten Farbmodus in den Farb-Popups der Symbolleiste, der Name der Palette und die Farbnamen, die Screenreader für die Farbfelder und die Farbschaltflächen vorlesen, zum Beispiel "Text color: dark gray" |
+| `grid` | die Ansage der Anzahl geladener Zeilen |
+| `timepicker` | die Beschriftungen des Zeiteditors |
+| `toolbar` | der standardmäßige zugängliche Name einer Symbolleiste |
+| `window` | der standardmäßige zugängliche Name eines Dialogs |
+| `message` | die zugänglichen Namen der Alert- und Confirm-Dialoge und ihrer Schaltflächen |
+
+Rufen Sie `dhx.i18n.setLocale()` mit dem Namen des Gebietsschemas vor der Initialisierung von Spreadsheet auf, da die Symbolleisten, die Menüs und die Kontextmenüs das Gebietsschema beim Erstellen auslesen:
+
+~~~jsx
+const deColorpicker = {
+    cancel: "Abbrechen",
+    select: "Auswählen",
+    aria_palette: "Farbpalette",
+    aria_colorRed: "rot",
+    // other strings
+};
+
+const deMessage = {
+    aria_confirm: "Bestätigen"
+};
+
+dhx.i18n.setLocale("spreadsheet", de);
+dhx.i18n.setLocale("colorpicker", deColorpicker);
+dhx.i18n.setLocale("message", deMessage);
+
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
+~~~
+
+Die Gebietsschema-Schlüssel sind flach: Übergeben Sie jeden Schlüssel auf der obersten Ebene des Objekts. Weitere Informationen finden Sie im Artikel [Localization of screen-reader strings](https://docs.dhtmlx.com/suite/common_features/accessibility_support/#localization-of-screen-reader-strings) in der Dokumentation von DHTMLX Suite.
 
 ## Standard-Gebietsschema für Formeln {#default-locale-for-formulas}
 

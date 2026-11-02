@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFormula()
 title: getFormula 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 getFormula 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 확인하며, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 getFormula() 메서드로 셀의 수식을 가져옵니다. 다른 시트에 있는 셀의 수식도 가져올 수 있습니다.
 ---
 
 # getFormula()
@@ -27,7 +27,7 @@ getFormula(cell: string): string | array;
 ### 예제 {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // "ABS(C2)"를 반환합니다

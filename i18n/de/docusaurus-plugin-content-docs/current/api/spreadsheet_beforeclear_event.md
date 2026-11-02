@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeClear
 title: beforeClear event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das beforeClear-Event. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Verhindern Sie das Leeren von DHTMLX Spreadsheet mit dem veralteten Event beforeClear oder mit dem Event beforeAction und der Aktion clear, die es ersetzen.
 ---
 
 # beforeClear
@@ -38,7 +38,7 @@ Geben Sie `false` zurück, um das Leeren einer Tabellenkalkulation zu verhindern
 ### Beispiel {#example}
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeClear" event

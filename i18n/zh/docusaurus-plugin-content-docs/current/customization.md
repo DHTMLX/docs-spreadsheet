@@ -1,7 +1,7 @@
 ---
 sidebar_label: 自定义
 title: 自定义
-description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的自定义方式。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 自定义 DHTMLX Spreadsheet。更改图标，添加、更新和删除工具栏、菜单和上下文菜单的控件，或构建自定义只读模式。
 ---
 
 # 自定义 {#customization}
@@ -30,6 +30,8 @@ DHTMLX Spreadsheet 默认使用基于 [Material Design](https://pictogrammers.co
 ### 类型 {#types}
 
 您可以添加以下类型的控件：`button`、`menuItem`、`separator` 和 `spacer`。
+
+与[默认工具栏](#default-controls)的其他控件一样，*文字颜色*和*背景颜色*控件，以及*边框*弹出窗口中的*边框颜色*控件，均为 [`navItem`](https://docs.dhtmlx.com/suite/toolbar/navitem/) 类型。它们通过 [`html`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) 属性绘制当前颜色，通过 [`value`](https://docs.dhtmlx.com/suite/toolbar/api/api_navitem_properties/) 属性获取无障碍名称（例如"Text color: dark gray"），并打开颜色弹出窗口。当活动单元格更改时，Spreadsheet 会更新*文字颜色*和*背景颜色*控件的这两个属性；选择边框颜色时，会更新*边框颜色*控件的这两个属性。
 
 `button` 对象具有以下属性：
 
@@ -379,7 +381,8 @@ spreadsheet.menu.data.remove("undo");
 - **列（Columns）** menuItem（id: "columns"）
   - *添加列（Add column）* menuItem（id: "add-col"）
   - *删除列（Remove column）* menuItem（id: "remove-col"）
-  - *适应数据宽度（Fit to data）* menuItem（id: "fit-col"）
+  - *适应数据宽度（Fit to data）* menuItem（id: "fit-col"），显示在列菜单中以及选中整列时
+  - *列宽（Column width）* menuItem（id: "col-width"）
   - 分隔符
   - *取消冻结列（Unfreeze columns）* menuItem（id: "unfreeze-cols"）
   - *冻结到第 [id] 列（Freeze up to column [id]）* menuItem（id: "freeze-cols"）
@@ -388,6 +391,7 @@ spreadsheet.menu.data.remove("undo");
 - **行（Rows）** menuItem（id: "rows"）
   - *添加行（Add row）* menuItem（id: "add-row"）
   - *删除行（Remove row）* menuItem（id: "remove-row"）
+  - *行高（Row height）* menuItem（id: "row-height"）
   - 分隔符
   - *取消冻结行（Unfreeze rows）* menuItem（id: "unfreeze-rows"）
   - *冻结到第 [id] 行（Freeze up to row [id]）* menuItem（id: "freeze-rows"）
@@ -396,6 +400,7 @@ spreadsheet.menu.data.remove("undo");
 - **排序（Sort）** menuItem（id: "sort"）
   - *升序排序（Sort A to Z）* menuItem（id: "asc-sort"）
   - *降序排序（Sort Z to A）* menuItem（id: "desc-sort"）
+- **打开筛选（Open filter）** menuItem（id: "open-filter"），当活动单元格带有筛选图标时显示
 - **插入链接（Insert link）** menuItem（id: "link"）
 
 ### 添加控件 {#adding-controls-3}

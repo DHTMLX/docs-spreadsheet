@@ -1,7 +1,7 @@
 ---
 sidebar_label: sortCells()
 title: sortCells 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 sortCells 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 확인하며, DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 sortCells() 메서드로 열 또는 셀 범위를 기준으로 데이터를 오름차순 또는 내림차순으로 정렬합니다.
 ---
 
 # sortCells()
@@ -26,7 +26,7 @@ sortCells(cell: string, dir: number): void;
 ### 예제 {#example}
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // configuration parameters
 });
 spreadsheet.parse(data);

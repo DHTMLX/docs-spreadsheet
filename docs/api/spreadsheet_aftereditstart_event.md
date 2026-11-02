@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterEditStart
 title: afterEditStart event
-description: You can learn about the afterEditStart event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Handle the start of cell editing in DHTMLX Spreadsheet with the afterEditStart event, which receives the id of the cell and its value.
 ---
 
 # afterEditStart
@@ -26,7 +26,7 @@ The callback of the event takes the following parameters:
 ### Example
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "afterEditStart" event

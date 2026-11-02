@@ -1,7 +1,7 @@
 ---
 sidebar_label: 筛选数据
 title: 筛选数据
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解数据筛选的相关内容。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 按条件或按值筛选 DHTMLX Spreadsheet 中的数据，使用键盘打开筛选器，并清除或移除筛选。
 ---
 
 # 筛选数据 {#filtering-data}
@@ -19,6 +19,20 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解数
 ![DHTMLX Spreadsheet 数据菜单中用于激活列筛选的筛选选项](/img/filter_menu.png)
 
 之后，**筛选**图标将出现在选定范围内每个列标题的右侧。
+
+## 使用键盘打开筛选器 {#opening-a-filter-with-the-keyboard}
+
+不使用鼠标打开某一列的筛选器：
+
+- 将活动单元格移动到带有**筛选**图标的列标题单元格
+
+- 按 `Shift + F10` 或 Menu 键调出上下文菜单，然后选择*打开筛选*
+
+![DHTMLX Spreadsheet 带有筛选图标的标题单元格的上下文菜单，其中"打开筛选"命令处于焦点状态](/img/open_filter_context_menu.png)
+
+*打开筛选*命令仅在带有**筛选**图标的单元格的上下文菜单中显示。右键单击此类单元格后，您也可以选择该命令。在[只读模式](api/spreadsheet_readonly_config.md)下，上下文菜单和*打开筛选*命令不可用。
+
+筛选弹出窗口会获得焦点，`Tab` 键在其控件之间移动。`Esc` 键关闭弹出窗口并使焦点返回到单元格。如果弹出窗口中打开了下拉列表或日期选择器，`Esc` 会先关闭它。
 
 ## 按条件筛选 {#filtering-by-condition}
 

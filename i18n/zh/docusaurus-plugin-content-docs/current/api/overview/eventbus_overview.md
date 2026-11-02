@@ -1,7 +1,7 @@
 ---
 sidebar_label: Event Bus 方法概览
 title: Event Bus 方法概览
-description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的 Event Bus 方法概览。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet 事件总线方法列表，用于绑定、解除和触发事件。
 ---
 
 # Event Bus 方法概览 {#event-bus-methods-overview}

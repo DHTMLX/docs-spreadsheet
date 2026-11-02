@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeFocusSet
 title: beforeFocusSet event
-description: Sie können im Dokumentationsbereich der DHTMLX JavaScript Spreadsheet-Bibliothek mehr über das beforeFocusSet-Event erfahren. Lesen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Steuern Sie den Fokus in DHTMLX Spreadsheet mit dem Event beforeFocusSet. Es wird ausgelöst, bevor eine Zelle den Fokus erhält, und verhindert dies, wenn der Handler false zurückgibt.
 ---
 
 # beforeFocusSet
@@ -29,7 +29,7 @@ Geben Sie `true` zurück, um den Fokus auf eine Zelle zu setzen, oder `false`, u
 ### Beispiel {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Event "beforeFocusSet" abonnieren

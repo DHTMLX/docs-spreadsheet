@@ -1,7 +1,7 @@
 ---
 sidebar_label: endEdit()
 title: endEdit-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die endEdit-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Beenden Sie mit der Methode endEdit() die Bearbeitung der ausgewählten Zelle in DHTMLX Spreadsheet. Die Methode schließt den Editor und speichert den eingegebenen Wert.
 ---
 
 # endEdit()
@@ -19,7 +19,7 @@ endEdit(): void;
 ### Beispiel {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // beendet die Bearbeitung in der ausgewählten Zelle

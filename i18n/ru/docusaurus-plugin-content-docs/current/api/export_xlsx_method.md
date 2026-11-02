@@ -1,7 +1,7 @@
 ---
 sidebar_label: xlsx()
 title: Метод экспорта xlsx
-description: Вы можете узнать о методе экспорта xlsx в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Экспортируйте данные DHTMLX Spreadsheet в файл Excel (.xlsx) с помощью метода export.xlsx(), при необходимости задав имя файла.
 ---
 
 # xlsx()
@@ -23,7 +23,7 @@ xlsx(name:string): void;
 ### Пример {#example}
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

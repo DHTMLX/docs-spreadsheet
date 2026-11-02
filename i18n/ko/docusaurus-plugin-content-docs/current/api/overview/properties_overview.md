@@ -1,7 +1,7 @@
 ---
 sidebar_label: 속성 개요
 title: 속성 개요
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 속성 개요를 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드할 수 있습니다.
+description: 툴바, 메뉴, 읽기 전용 모드, 셀 선택, 그리드 크기 등을 설정하는 DHTMLX Spreadsheet 구성 속성 목록입니다.
 ---
 
 # 속성 개요 {#properties-overview}
@@ -18,4 +18,5 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 속성 �
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(../spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(../spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(../spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(../spreadsheet_selection_config.md)        |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(../spreadsheet_toolbarblocks_config.md)    |

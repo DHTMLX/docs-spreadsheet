@@ -1,7 +1,7 @@
 ---
 sidebar_label: 快速入门
 title: DHTMLX Spreadsheet 快速入门
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如何快速入门。浏览开发者指南和 API 参考、尝试代码示例和在线演示，并下载免费 30 天试用版 DHTMLX Spreadsheet。
+description: 通过四个步骤在页面上运行 DHTMLX Spreadsheet，从引入源文件或安装 npm 包，到配置组件和加载数据。
 ---
 
 # 快速入门 {#how-to-start}
@@ -79,7 +79,7 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如
 <body>
     <div id="spreadsheet_container"></div>
     <script>
-        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
             //config options
         });
     </script>
@@ -94,7 +94,7 @@ description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解如
 您可以使用多个选项来调整 Spreadsheet 的外观与行为，例如：`toolbarBlocks`、`rowsCount` 和 `colsCount`。[查看详情](configuration.md)。
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
     colsCount: 10
@@ -129,7 +129,7 @@ const data = [
 ]
 
 // initializing spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     //config
 });
 // loading data into spreadsheet

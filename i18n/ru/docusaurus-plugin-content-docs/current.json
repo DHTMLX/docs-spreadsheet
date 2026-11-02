@@ -83,6 +83,10 @@
     "message": "Работа с ячейками",
     "description": "The generated-index page title for category 'Work with cells' in sidebar 'docs'"
   },
+  "sidebar.docs.category.Accessibility": {
+    "message": "Доступность",
+    "description": "The label for category 'Accessibility' in sidebar 'docs'"
+  },
   "sidebar.docs.category.Frameworks & integrations": {
     "message": "Фреймворки и интеграции",
     "description": "The label for category 'Frameworks & integrations' in sidebar 'docs'"

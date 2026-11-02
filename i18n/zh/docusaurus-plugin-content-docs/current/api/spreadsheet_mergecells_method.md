@@ -1,7 +1,7 @@
 ---
 sidebar_label: mergeCells()
 title: mergeCells 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 mergeCells 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 mergeCells() 方法将 DHTMLX Spreadsheet 中的单元格区域合并为一个单元格，或拆分已合并的单元格。
 ---
 
 # mergeCells()
@@ -29,7 +29,7 @@ mergeCells(
 ### 示例 {#example}
 
 ~~~jsx {5,8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 合并单元格 A3、A4 和 A5

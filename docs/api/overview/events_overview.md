@@ -1,7 +1,7 @@
 ---
 sidebar_label: Events overview
 title: Events Overview
-description: You can have an Events overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: List of the DHTMLX Spreadsheet events that fire on actions, data loading, cell editing, selection, focus and sheet changes.
 ---
 
 # Events overview

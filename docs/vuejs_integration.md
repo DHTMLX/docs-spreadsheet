@@ -1,7 +1,7 @@
 ---
 sidebar_label: Integration with Vue
 title: Vue Integration
-description: You can learn about the Vue integration of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Use DHTMLX Spreadsheet in a Vue application. Create a project, add Spreadsheet as a Vue component, load data and handle events.
 ---
 
 # Integration with Vue
@@ -259,6 +259,10 @@ export default {
 
 //...
 ~~~
+
+:::info
+The `destructor()` method removes the event handlers attached with `spreadsheet.events.on()`. When a new Spreadsheet instance is created, for example, when the component is created again, attach the handlers to the new instance.
+:::
 
 After that, you can start the app to see Spreadsheet loaded with data on a page.
 

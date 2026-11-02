@@ -1,7 +1,7 @@
 ---
 sidebar_label: colsCount
 title: colsCount config
-description: Sie können im Dokumentationsbereich der DHTMLX JavaScript Spreadsheet-Bibliothek mehr über die colsCount-Konfiguration erfahren. Lesen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Legen Sie mit der Eigenschaft colsCount die Anzahl der Spalten fest, die DHTMLX Spreadsheet bei der Initialisierung anzeigt.
 ---
 
 # colsCount
@@ -19,7 +19,7 @@ colsCount?: number;
 ### Beispiel {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     colsCount: 10,
     // andere Konfigurationsparameter
 });

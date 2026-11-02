@@ -1,12 +1,12 @@
 ---
 sidebar_label: Guides overview
 title: Developer and User Guides
-description: You can study developer and user guides in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Developer and user guides of DHTMLX Spreadsheet, from initialization, configuration and data loading to editing cells, formatting and work with sheets.
 ---
 
 # Guides
 
-DHTMLX Spreadsheet includes a wide range of features: import and export of data in different formats, convenient work with cell content and styles, an adaptable spreadsheet structure, a read-only mode, extensive look-and-feel customization, and integration with popular frameworks.
+DHTMLX Spreadsheet includes a wide range of features: import and export of data in different formats, convenient work with cell content and styles, an adaptable spreadsheet structure, a read-only mode, extensive look-and-feel customization, keyboard and screen-reader accessibility, and integration with popular frameworks.
 
 ## Developer guides
 
@@ -37,6 +37,12 @@ Shows how to load data into Spreadsheet, handle events, and use the main functio
 - [Integration with Angular](angular_integration.md) - GitHub demo of using Spreadsheet in an Angular app
 - [Integration with Svelte](svelte_integration.md) - GitHub demo of using Spreadsheet in a Svelte app
 - [Integration with Vue.js](vuejs_integration.md) - GitHub demo of using Spreadsheet in a Vue app
+
+### Accessibility
+
+- [Accessibility](accessibility.md) - WAI-ARIA support, keyboard navigation, screen-reader announcements, and high-contrast themes
+- [Setting up an accessible Spreadsheet](accessibility.md#configuration-recipes) - configurations for keyboard and screen-reader users, including the read-only mode
+- [Conformance report (VPAT)](accessibility_conformance_report.md) - conformance with WCAG 2.2 AA, Section 508, and EN 301 549
 
 ### AI-assisted development
 

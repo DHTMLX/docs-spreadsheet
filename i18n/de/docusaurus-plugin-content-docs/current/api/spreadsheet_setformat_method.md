@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFormat()
 title: setFormat-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die setFormat-Methode. Entwicklerhandbücher und API-Referenz, Code-Beispiele, Live-Demos und eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet.
+description: Wenden Sie mit der Methode setFormat() ein Zahlenformat auf den Wert einer Zelle oder eines Zellbereichs in DHTMLX Spreadsheet an.
 ---
 
 # setFormat()
@@ -24,7 +24,7 @@ setFormat(cell: string, format: string | array): void;
 ### Beispiel {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // wendet das Währungsformat auf die Zelle A1 an

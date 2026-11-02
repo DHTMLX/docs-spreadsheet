@@ -1,7 +1,7 @@
 ---
 sidebar_label: 수식 및 함수
 title: 수식 및 함수
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 수식 및 함수에 대해 문서에서 학습할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 직접 확인하며, DHTMLX Spreadsheet의 30일 무료 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 수학, 날짜, 조회, 문자열, 재무 함수 등 Excel 및 Google Sheets와 호환되는 수식을 사용하고, 사용자 지정 수식을 추가하며 셀의 수식을 가져옵니다.
 ---
 
 # 수식 및 함수 {#formulas-and-functions}

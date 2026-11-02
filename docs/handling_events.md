@@ -1,7 +1,7 @@
 ---
 sidebar_label: Event handling
 title: Event handling
-description: You can learn about event handling in the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Attach and detach event listeners and call events in DHTMLX Spreadsheet with the events.on(), events.detach() and events.fire() methods.
 ---
 
 # Event handling

@@ -25,6 +25,7 @@ Das Ändern einer dieser Props führt dazu, dass das Widget zerstört und neu er
 | `importModulePath` | `string` | Pfad zum XLSX-Importmodul. Siehe JS-API: [`importModulePath`](api/spreadsheet_importmodulepath_config.md). |
 | `exportModulePath` | `string` | Pfad zum XLSX-Exportmodul. Siehe JS-API: [`exportModulePath`](api/spreadsheet_exportmodulepath_config.md). |
 | `spreadsheetLocale` | [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) | UI-Übersetzungen und lokalisierte Formelnamen. Unabhängig von `localization`. |
+| `readonly` | `boolean` | Schreibschutz-Modus aktivieren. Benutzer können die Zellen navigieren, auswählen, kopieren und durchsuchen, Bearbeitungen werden abgelehnt. Siehe JS-API: [`readonly`](api/spreadsheet_readonly_config.md). |
 
 </div>
 
@@ -40,7 +41,7 @@ Diese Props werden sofort angewendet, ohne das Widget zu zerstören. Kein Datenv
 |------|------|-------------|
 | `rowsCount` | `number` | Anzahl der Zeilen im Raster. Siehe JS-API: [`rowsCount`](api/spreadsheet_rowscount_config.md). |
 | `colsCount` | `number` | Anzahl der Spalten im Raster. Siehe JS-API: [`colsCount`](api/spreadsheet_colscount_config.md). |
-| `readonly` | `boolean` | Schreibschutz-Modus aktivieren. Siehe JS-API: [`readonly`](api/spreadsheet_readonly_config.md). |
+| `selection` | `boolean` | Auswahl von Zellen ein- und ausschalten. Standard: `true`. Bei `false` hat das Spreadsheet keine aktive Zelle, und die Zellen können nicht über die UI ausgewählt oder bearbeitet werden. Siehe JS-API: [`selection`](api/spreadsheet_selection_config.md). |
 
 ## Daten-Props {#data-props}
 
@@ -225,8 +226,16 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 
 ### Schreibschutz-Modus {#read-only-mode}
 
+Im Schreibschutz-Modus können Benutzer die Zellen mit der Tastatur navigieren, mit der Maus auswählen, kopieren und durchsuchen. Bearbeitungen werden abgelehnt und für Screenreader angekündigt. Da `readonly` ein Init-Only-Prop ist, wird das Widget bei einer Änderung neu erstellt. Die Daten bleiben erhalten, während der Rückgängig/Wiederherstellen-Verlauf und der UI-Zustand (Auswahl, Scrollposition) zurückgesetzt werden.
+
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} readonly={true} />
+~~~
+
+Um auch die Tastaturnavigation und die Auswahl zu deaktivieren, fügen Sie `selection={false}` hinzu. Das Prop `selection` wird zur Laufzeit angewendet und kann daher ohne Neuerstellung des Widgets umgeschaltet werden:
+
+~~~tsx
+<ReactSpreadsheet sheets={sheets} readonly={true} selection={false} />
 ~~~
 
 ### Daten von URL laden {#loading-data-from-url}

@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFocusedCell() 
 title: getFocusedCell selection method
-description: You can learn about the getFocusedCell selection method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get the id of the focused (active) cell in DHTMLX Spreadsheet with the selection.getFocusedCell() method.
 ---
 
 # getFocusedCell()
@@ -23,7 +23,7 @@ The method returns the id of the focused cell
 ### Example
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

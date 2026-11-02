@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFilter()
 title: getFilter method
-description: You can learn about the getFilter method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get the filtering criteria of a sheet in DHTMLX Spreadsheet with the getFilter() method, which returns the filtered range of cells and the filter rules.
 ---
 
 # getFilter()
@@ -30,7 +30,7 @@ The method returns an object with filtering criteria. The object includes two at
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // gets criteria of filtering for the current sheet

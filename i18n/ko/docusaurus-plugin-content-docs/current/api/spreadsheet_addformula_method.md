@@ -1,7 +1,7 @@
 ---
 sidebar_label: addFormula()
 title: addFormula 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 addFormula 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 addFormula() 메서드로 사용자 정의 수식 함수를 등록하여 셀 수식에서 대문자 이름으로 사용합니다.
 ---
 
 # addFormula()

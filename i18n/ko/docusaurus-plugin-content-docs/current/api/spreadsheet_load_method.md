@@ -1,7 +1,7 @@
 ---
 sidebar_label: load()
 title: load 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 load 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 시험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수도 있습니다.
+description: DHTMLX Spreadsheet에서 load() 메서드로 외부 JSON, CSV 또는 XLSX 파일의 데이터를 로드합니다. 이 메서드는 promise를 반환합니다.
 ---
 
 # load()
@@ -28,7 +28,7 @@ load(url: string, type?: string): promise;
 ### 예제 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // JSON 형식으로 데이터 로드 (기본값)
@@ -84,7 +84,7 @@ DHTMLX Spreadsheet는 WebAssembly 기반 라이브러리 [Excel2Json](https://gi
 - `load()` 메서드를 두 개의 매개변수와 함께 호출합니다: URL로 빈 문자열, 로드할 데이터 타입("json"):
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     menu: true,
 });
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Datenladen und -export
 title: Daten laden
-description: In dieser Dokumentation erfahren Sie, wie Sie Daten in der DHTMLX JavaScript Spreadsheet-Bibliothek laden. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Laden Sie JSON-, CSV- oder Excel-Daten mit Stilen, gesperrten Zellen und Links aus einer Datei oder einer lokalen Quelle in DHTMLX Spreadsheet, speichern und stellen Sie den Zustand wieder her und exportieren Sie Daten nach Excel oder JSON.
 ---
 
 # Datenladen und -export {#data-loading-and-export}
@@ -179,7 +179,7 @@ Beachten Sie, dass Sie die `value`-Eigenschaft des `cell`-Objekts und die `text`
 Standardmäßig erwartet Spreadsheet Daten im JSON-Format. Um Daten aus einer externen Quelle zu laden, verwenden Sie die Methode [](api/spreadsheet_load_method.md). Sie nimmt die URL der Datei mit den Daten als Parameter entgegen:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ Wenn Sie es Benutzern ermöglichen möchten, eine JSON-Datei über den Datei-Exp
 Sie können auch Daten im CSV-Format laden. Dazu müssen Sie die Methode [](api/spreadsheet_load_method.md) aufrufen und den Namen des Formats ("csv") als zweiten Parameter übergeben:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 Um Daten aus einer lokalen Quelle zu laden, verwenden Sie die Methode [](api/spreadsheet_parse_method.md). Übergeben Sie einen [vorbereiteten Datensatz](#preparing-data) als Parameter dieser Methode:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

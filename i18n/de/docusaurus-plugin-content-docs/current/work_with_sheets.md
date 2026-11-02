@@ -1,7 +1,7 @@
 ---
 sidebar_label: Mit Tabellenblättern arbeiten
 title: Mit Tabellenblättern arbeiten
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie, wie Sie mit Tabellenblättern arbeiten. Durchsuchen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Fügen Sie in DHTMLX Spreadsheet über die untere Toolbar und die Blattregister Tabellenblätter hinzu, entfernen, benennen und wechseln Sie sie und verweisen Sie in Formeln auf Zellen anderer Blätter.
 ---
 
 # Mit Tabellenblättern arbeiten {#work-with-sheets}

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Built-in themes
 title: Built-in Themes
-description: You can learn about the built-in themes of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Built-in themes of DHTMLX Spreadsheet, light and dark with their high contrast variants. Learn the Spreadsheet-specific CSS variables and how to set a theme.
 ---
 
 # Built-in themes
@@ -13,7 +13,7 @@ The DHTMLX Spreadsheet library provides 4 predefined themes:
 - [light high contrast theme](#light-high-contrast-theme) ("contrast-light")
 - [dark high contrast theme](#dark-high-contrast-theme) ("contrast-dark")
 
-The Spreadsheet themes are developed in accordance with international standards. The high contrast themes help users with vision impairment. For more details, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
+The Spreadsheet themes are developed in accordance with international standards. The high contrast themes help users with vision impairment. For the contrast of the themes and the keyboard focus indicator in Spreadsheet, check the [High contrast and focus](accessibility.md#high-contrast-and-focus) section of the Accessibility guide. For the accessibility of the DHTMLX Suite widgets, read the [Accessibility support](https://docs.dhtmlx.com/suite/common_features/accessibility_support/) article.
 
 You can try all themes in the example below:
 
@@ -377,14 +377,15 @@ The list of variables specific to the Spreadsheet component includes the followi
     --dhx-spreadsheet-range-background-8: #ecb6ff;
 
     --dhx-spreadsheet-range-color-1: #00815a;
-    --dhx-spreadsheet-range-color-2: #bfc000;
-    --dhx-spreadsheet-range-color-3: #c55933;
-    --dhx-spreadsheet-range-color-4: #0cc1d6;
-    --dhx-spreadsheet-range-color-5: #0080a3;
-    --dhx-spreadsheet-range-color-6: #529a0a;
+    --dhx-spreadsheet-range-color-2: #8b7300;
+    --dhx-spreadsheet-range-color-3: #a34729;
+    --dhx-spreadsheet-range-color-4: #007a8c;
+    --dhx-spreadsheet-range-color-5: #135db1;
+    --dhx-spreadsheet-range-color-6: #2f6500;
     --dhx-spreadsheet-range-color-7: #6d767b;
-    --dhx-spreadsheet-range-color-8: #ba38e7;
+    --dhx-spreadsheet-range-color-8: #b82fe5;
 
+    --dhx-spreadsheet-focus-color: var(--dhx-color-primary);
 }
 ~~~
 
@@ -411,6 +412,17 @@ The list of variables specific to the Spreadsheet component includes the followi
     --dhx-spreadsheet-range-color-7: #e4e4e4;
     --dhx-spreadsheet-range-color-8: #ecb6ff;
 
+    --dhx-spreadsheet-focus-color: hsl(var(--dhx-h-primary), var(--dhx-s-primary), calc(var(--dhx-l-primary) + 12% - var(--dhx-l-contrast-offset)));
+}
+~~~
+
+The `--dhx-spreadsheet-range-color-*` and `--dhx-spreadsheet-range-background-*` variables set the colors that mark the cell references of a formula while it is edited. In the light themes, the `--dhx-spreadsheet-range-color-*` colors have a contrast of at least 4.5:1 against the background of the formula bar.
+
+The `--dhx-spreadsheet-focus-color` variable sets the color of the keyboard focus outline of the formula bar and of the controls of the toolbar, the menu bar, the sheet tabs, the Border popup, the link popup and the search bar. In the dark themes, the color is lighter than the primary color, so that the outline keeps a contrast of at least 3:1. You can redefine the variable in a [custom theme](themes/custom_theme.md):
+
+~~~css
+[data-dhx-theme='custom-theme-dark'] {
+    --dhx-spreadsheet-focus-color: #7fc8ff;
 }
 ~~~
 
@@ -426,7 +438,7 @@ You can choose from the following variants:
 
 ~~~html title="index.html"
 <!-- component container -->
-<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet"></div>
+<div data-dhx-theme="dark" style="height: 100%" id="spreadsheet_container"></div>
 ~~~
 
 - set the `data-dhx-theme` attribute for an HTML element, for example, for `documentElement`:
@@ -453,31 +465,31 @@ The examples below show how to use the `dhx.setTheme()` method:
 - setting a theme either to the body or to the container 
 
 ~~~html 
-<div id="container"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container");
+    new dhx.Spreadsheet("spreadsheet_container");
 
     dhx.setTheme("dark"); //applies the "dark" theme to the body 
     //or
-    //applies the "dark" theme to the container with the "container" id
-    dhx.setTheme("dark", "container"); 
+    //applies the "dark" theme to the container with the "spreadsheet_container" id
+    dhx.setTheme("dark", "spreadsheet_container"); 
 </script>
 ~~~
 
 - setting a theme to the container specified via an HTMLElement
 
 ~~~html 
-<div id="container-1"></div>
+<div id="spreadsheet_container"></div>
 <div>Other content</div>
 
 <script>
-    new dhx.Spreadsheet("container-1");
+    new dhx.Spreadsheet("spreadsheet_container");
     
-    const container = document.getElementById("container-1");
+    const element = document.getElementById("spreadsheet_container");
     //applies the "dark" theme to the container specified via an HTMLElement
-    dhx.setTheme("dark", container); 
+    dhx.setTheme("dark", element); 
 </script>
 ~~~
 

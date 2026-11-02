@@ -1,7 +1,7 @@
 ---
 sidebar_label: setSelectedCell() 
 title: setSelectedCell selection 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 setSelectedCell selection 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드할 수 있습니다.
+description: DHTMLX Spreadsheet에서 selection.setSelectedCell() 메서드로 하나 또는 여러 셀이나 셀 범위를 선택하고, 필요하면 해당 위치로 스크롤합니다.
 ---
 
 # setSelectedCell()
@@ -13,17 +13,18 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 setSelec
 ### 사용법 {#usage}
 
 ~~~jsx
-setSelectedCell(cell: string): void;
+setSelectedCell(cell: string, scroll?: boolean): void;
 ~~~
 
 ### 매개변수 {#parameters}
 
 - `cell` - (필수) 선택할 셀의 id 또는 범위
+- `scroll` - (선택 사항) Spreadsheet를 해당 셀로 스크롤할지 여부이며, 기본값은 `true`입니다
 
 ### 예제 {#example}
 
 ~~~jsx {7,10,13}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

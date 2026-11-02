@@ -1,7 +1,7 @@
 ---
 sidebar_label: removeSelectedCell() 
 title: removeSelectedCell selection method
-description: You can learn about the removeSelectedCell method of Selection in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Remove the selection from the specified cells or ranges of cells in DHTMLX Spreadsheet with the selection.removeSelectedCell() method.
 ---
 
 # removeSelectedCell()
@@ -23,7 +23,7 @@ removeSelectedCell(cell: string): void;
 ### Example
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

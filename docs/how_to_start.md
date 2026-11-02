@@ -1,7 +1,7 @@
 ---
 sidebar_label: How to start
 title: How to start with DHTMLX Spreadsheet
-description: You can learn how to start with the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get DHTMLX Spreadsheet running on a page in four steps, from including the source files or installing the npm package to configuring the component and loading data.
 ---
 
 # How to start
@@ -79,7 +79,7 @@ As parameters, the constructor function takes the HTML container to place Spread
 <body>
     <div id="spreadsheet_container"></div>
     <script>
-        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
             //config options
         });
     </script>
@@ -94,7 +94,7 @@ Next you can specify additional configuration options you want the Spreadsheet c
 You can adjust the look and feel of Spreadsheet with several options, for example: `toolbarBlocks`, `rowsCount`, and `colsCount`. [Check the details](configuration.md).
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
     colsCount: 10
@@ -129,7 +129,7 @@ const data = [
 ]
 
 // initializing spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     //config
 });
 // loading data into spreadsheet

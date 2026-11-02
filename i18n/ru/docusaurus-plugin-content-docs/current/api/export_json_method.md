@@ -1,7 +1,7 @@
 ---
 sidebar_label: json()
 title: Метод экспорта json
-description: Вы можете узнать о методе экспорта json в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Экспортируйте данные DHTMLX Spreadsheet в файл JSON с помощью метода export.json().
 ---
 
 # json()
@@ -19,7 +19,7 @@ json(): void;
 ### Пример {#example}
 
 ~~~jsx {7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

@@ -77,6 +77,9 @@ DHTMLX Spreadsheet 使用分层 CSS 变量系统。您可以覆盖这些变量�
     /* 电子表格区域颜色 */
     --dhx-spreadsheet-range-background-1: #bee3f8;
     --dhx-spreadsheet-range-color-1: #2b6cb0;
+
+    /* 公式栏和工具栏控件的键盘焦点轮廓 */
+    --dhx-spreadsheet-focus-color: #2b6cb0;
 }
 ~~~
 

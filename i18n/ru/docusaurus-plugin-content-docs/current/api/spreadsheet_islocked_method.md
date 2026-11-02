@@ -1,7 +1,7 @@
 ---
 sidebar_label: isLocked()
 title: Метод isLocked
-description: Вы можете узнать о методе isLocked в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Проверьте, заблокирована ли ячейка или хотя бы одна ячейка диапазона в DHTMLX Spreadsheet, с помощью метода isLocked().
 ---
 
 # isLocked()
@@ -27,7 +27,7 @@ isLocked(cell: string): boolean;
 ### Пример {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // проверяет, заблокирована ли ячейка

@@ -1,7 +1,7 @@
 ---
 sidebar_label: lock()
 title: lock method
-description: You can learn about the lock method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Lock a cell, a range of cells or several cells in DHTMLX Spreadsheet with the lock() method, so that users can't edit them.
 ---
 
 # lock()
@@ -23,7 +23,7 @@ lock(cell: string): void;
 ### Example
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // locks a cell

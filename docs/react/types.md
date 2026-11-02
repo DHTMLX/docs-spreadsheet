@@ -188,6 +188,13 @@ ref.current?.instance?.selection.setSelectedCell("A1:C5");
 // Undo/redo
 ref.current?.instance?.undo();
 ref.current?.instance?.redo();
+
+// Turn the selection off and on
+ref.current?.instance?.selection.disable();
+ref.current?.instance?.selection.enable();
+
+// Send a status message to screen readers
+ref.current?.instance?.announce("The report is saved");
 ~~~
 
 ## Actions enum
@@ -270,6 +277,7 @@ These types are re-exported from `@dhx/ts-spreadsheet` for convenience:
 | `IStylesList` | Style definitions map. |
 | `IDataWithStyles` | Data structure with embedded styles (used by `serialize()`/`parse()`). |
 | `ICellInfo` | Cell information returned by widget methods. |
+| `ISelection` | Selection module interface (`instance.selection`), including the [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md) and [`isDisabled()`](api/selection_isdisabled_method.md) methods. |
 | `FileFormat` | File format for data loading (for example, `"json"` or `"xlsx"`). |
 | `ToolbarBlocks` | Toolbar block identifiers (for example, `"default"`, `"undo"`, or `"font"`). |
 | `FilterConditions` | Enum of available filter condition types. |

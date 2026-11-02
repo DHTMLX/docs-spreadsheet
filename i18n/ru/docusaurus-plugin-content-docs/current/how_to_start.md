@@ -1,7 +1,7 @@
 ---
 sidebar_label: Как начать
 title: Как начать работу с DHTMLX Spreadsheet
-description: Вы можете узнать, как начать работу с библиотекой DHTMLX JavaScript Spreadsheet в документации. Просматривайте руководства для разработчиков и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Запустите DHTMLX Spreadsheet на странице за четыре шага, от подключения исходных файлов или установки npm-пакета до настройки компонента и загрузки данных.
 ---
 
 # Как начать {#how-to-start}
@@ -79,7 +79,7 @@ description: Вы можете узнать, как начать работу с
 <body>
     <div id="spreadsheet_container"></div>
     <script>
-        const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+        const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
             //config options
         });
     </script>
@@ -94,7 +94,7 @@ description: Вы можете узнать, как начать работу с
 Вы можете настроить внешний вид Spreadsheet с помощью нескольких параметров, например: `toolbarBlocks`, `rowsCount` и `colsCount`. [Подробности](configuration.md).
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     toolbarBlocks: ["columns", "rows", "clear"],
     rowsCount: 10,
     colsCount: 10
@@ -129,7 +129,7 @@ const data = [
 ]
 
 // initializing spreadsheet
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     //config
 });
 // loading data into spreadsheet

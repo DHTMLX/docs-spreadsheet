@@ -1,7 +1,7 @@
 ---
 sidebar_label: groupFill
 title: groupFill event
-description: You can learn about the groupFill event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Handle the auto filling of cells in DHTMLX Spreadsheet with the groupFill event, which passes the focused cell and the selected cells to the callback.
 ---
 
 # groupFill
@@ -26,7 +26,7 @@ The callback of the event takes the following parameters:
 ### Example
 
 ~~~jsx {5-7}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "groupFill" event

@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeClear
 title: Событие beforeClear
-description: Вы можете узнать о событии beforeClear в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Запретите очистку DHTMLX Spreadsheet с помощью устаревшего события beforeClear или с помощью заменяющих его события beforeAction и действия clear.
 ---
 
 # beforeClear
@@ -38,7 +38,7 @@ beforeClear: () => void | boolean;
 ### Пример {#example}
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // подписка на событие "beforeClear"

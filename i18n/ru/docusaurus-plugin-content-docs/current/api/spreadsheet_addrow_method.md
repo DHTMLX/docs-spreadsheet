@@ -1,7 +1,7 @@
 ---
 sidebar_label: addRow()
 title: метод addRow
-description: В документации DHTMLX JavaScript Spreadsheet вы можете узнать о методе addRow. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Добавьте пустую строку в DHTMLX Spreadsheet с помощью метода addRow(), который вставляет её на место строки указанной ячейки и сдвигает существующие строки вниз.
 ---
 
 # addRow()
@@ -27,7 +27,7 @@ addRow(cell: string): void;
 ### Пример {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // добавляет пустую вторую строку

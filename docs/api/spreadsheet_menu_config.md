@@ -1,7 +1,7 @@
 ---
 sidebar_label: menu
 title: menu config
-description: You can learn about the menu config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Show or hide the menu of DHTMLX Spreadsheet with the menu property.
 ---
 
 # menu
@@ -25,7 +25,7 @@ menu: true
 ### Example
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   menu: false,
   // other config parameters
 });

@@ -1,7 +1,7 @@
 ---
 sidebar_label: on()
 title: Метод on
-description: Вы можете узнать о Event Bus методе on в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Подключите обработчик к внутреннему событию DHTMLX Spreadsheet с помощью метода events.on(), например, чтобы реагировать на изменение стиля ячейки.
 ---
 
 # on()
@@ -24,7 +24,7 @@ on(name: string, callback: function): void;
 ### Пример {#example}
 
 ~~~jsx {6-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

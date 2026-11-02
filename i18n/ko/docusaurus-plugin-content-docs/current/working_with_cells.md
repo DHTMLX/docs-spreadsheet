@@ -1,7 +1,7 @@
 ---
 sidebar_label: 셀 작업
 title: 셀 작업
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 셀 작업에 대한 내용을 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. 또한 DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수 있습니다.
+description: API로 DHTMLX Spreadsheet 셀의 값과 스타일을 설정하고 가져오며, 셀 유효성 검사, 링크 삽입, 셀 편집, 잠금, 병합, 선택을 수행합니다.
 ---
 
 # 셀 작업 {#work-with-cells}

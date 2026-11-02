@@ -1,7 +1,7 @@
 ---
 sidebar_label: mergeCells()
 title: mergeCells-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die mergeCells-Methode. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Verbinden Sie mit der Methode mergeCells() einen Zellbereich zu einer Zelle oder teilen Sie verbundene Zellen in DHTMLX Spreadsheet.
 ---
 
 # mergeCells()
@@ -29,7 +29,7 @@ mergeCells(
 ### Beispiel {#example}
 
 ~~~jsx {5,8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Zellen A3, A4 und A5 zusammenführen

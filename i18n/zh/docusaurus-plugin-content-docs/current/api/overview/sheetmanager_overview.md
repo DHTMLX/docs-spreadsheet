@@ -1,7 +1,7 @@
 ---
 sidebar_label: Sheet Manager API 概览
 title: Sheet Manager API 概览
-description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的 Sheet Manager API 概览。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: DHTMLX Spreadsheet 工作表管理器方法列表，用于添加、删除、清空、获取和切换工作表。
 ---
 
 # Sheet Manager API 概览 {#sheet-manager-api-overview}

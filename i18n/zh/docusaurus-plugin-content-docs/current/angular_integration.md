@@ -1,7 +1,7 @@
 ---
 sidebar_label: 与 Angular 集成
 title: Angular 集成
-description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的 Angular 集成方式。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: "在 Angular 应用中使用 DHTMLX Spreadsheet。创建项目，将 Spreadsheet 添加为 Angular 组件，加载数据并处理事件。"
 ---
 
 # 与 Angular 集成 {#integration-with-angular}
@@ -233,6 +233,10 @@ ngOnDestroy() {
     this._spreadsheet.destructor();
 }
 ~~~
+
+:::info
+`destructor()` 方法会移除通过 `spreadsheet.events.on()` 附加的事件处理器。创建新的 Spreadsheet 实例时（例如再次创建组件时），请将处理器附加到新实例上。
+:::
 
 ### 第三步：将 Spreadsheet 添加到应用 {#step-3-adding-spreadsheet-into-the-app}
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: lock()
 title: метод lock
-description: Вы можете узнать о методе lock в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Заблокируйте ячейку, диапазон ячеек или несколько ячеек в DHTMLX Spreadsheet с помощью метода lock(), чтобы пользователи не могли их редактировать.
 ---
 
 # lock()
@@ -23,7 +23,7 @@ lock(cell: string): void;
 ### Пример {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // блокирует ячейку

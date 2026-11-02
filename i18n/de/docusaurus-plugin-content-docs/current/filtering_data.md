@@ -1,7 +1,7 @@
 ---
 sidebar_label: Daten filtern
 title: Daten filtern
-description: Sie können mehr über das Filtern von Daten in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Daten in DHTMLX Spreadsheet nach Bedingung oder nach Werten filtern, einen Filter mit der Tastatur öffnen sowie Filter löschen oder entfernen.
 ---
 
 # Daten filtern {#filtering-data}
@@ -35,6 +35,20 @@ Danach erscheint rechts neben jeder Spaltenüberschrift im Bereich ein **Filter*
 Um einen Filter zu löschen, klicken Sie auf das **Filter**-Symbol in der Spaltenüberschrift, wählen Sie _Nach Bedingung: **Keine**_ aus und klicken Sie dann auf **Übernehmen**.
 
 ![DHTMLX Spreadsheet-Filterdialog mit der Option "Nach Bedingung: Keine" zum Löschen von Filtern](/img/clear_filter_bycondition.png)
+
+## Einen Filter mit der Tastatur öffnen {#opening-a-filter-with-the-keyboard}
+
+So öffnen Sie den Filter einer Spalte ohne Maus:
+
+- Bewegen Sie die aktive Zelle zur Kopfzelle der Spalte mit dem **Filter**-Symbol
+
+- Drücken Sie `Shift + F10` oder die Menütaste, um das Kontextmenü aufzurufen, und wählen Sie *Open filter*
+
+![DHTMLX Spreadsheet context menu of a header cell with the filter icon and the Open filter command focused](/img/open_filter_context_menu.png)
+
+Der Befehl *Open filter* erscheint im Kontextmenü nur für Zellen mit dem **Filter**-Symbol. Sie können ihn auch nach einem Rechtsklick auf eine solche Zelle wählen. Im [schreibgeschützten Modus](api/spreadsheet_readonly_config.md) sind das Kontextmenü und der Befehl *Open filter* nicht verfügbar.
+
+Das Filter-Popup erhält den Fokus, und `Tab` wechselt zwischen seinen Controls. `Esc` schließt das Popup und gibt den Fokus an die Zelle zurück. Ist im Popup eine Dropdown-Liste oder ein Datepicker geöffnet, schließt `Esc` zuerst diese.
 
 ## Filtern nach Werten {#filtering-by-values}
 

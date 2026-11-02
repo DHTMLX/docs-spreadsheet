@@ -1,7 +1,7 @@
 ---
 sidebar_label: getValue()
 title: Метод getValue
-description: Вы можете узнать о методе getValue в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Получите значение ячейки или значения диапазона ячеек в DHTMLX Spreadsheet с помощью метода getValue().
 ---
 
 # getValue()
@@ -27,7 +27,7 @@ getValue(cell: string): any | array;
 ### Пример {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // возвращает значение одной ячейки

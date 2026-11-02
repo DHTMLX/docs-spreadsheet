@@ -1,7 +1,7 @@
 ---
 sidebar_label: Konfiguration
 title: Konfiguration
-description: In der Dokumentation erfahren Sie alles über die Konfiguration der DHTMLX JavaScript Spreadsheet-Bibliothek. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: DHTMLX Spreadsheet konfigurieren. Symbolleiste, Bearbeitungsleiste, Menü, Anzahl der Zeilen und Spalten, schreibgeschützter Modus, Zellauswahl und Zahlenformate einrichten.
 ---
 
 # Konfiguration {#configuration}
@@ -48,9 +48,42 @@ Das Menü des Spreadsheets ist standardmäßig ausgeblendet. Sie können es übe
 
 Sie können auch den schreibgeschützten Modus aktivieren, um die Bearbeitung von Spreadsheet-Zellen über die Konfigurationsoption [`readonly`](api/spreadsheet_readonly_config.md) zu verhindern.
 
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    readonly: true,
+});
+~~~
+
+Im schreibgeschützten Modus sind die Symbolleiste, das Menü und die Formelleiste ausgeblendet. Nutzer können mit der Tastatur zwischen den Zellen navigieren, Zellen mit der Maus auswählen, kopieren und durchsuchen. Änderungen werden abgelehnt und Screenreadern mit der Meldung "The sheet is read-only" angekündigt. Das Ausfüllkästchen (Fill Handle) ist ausgeblendet. Details finden Sie im Artikel zu [`readonly`](api/spreadsheet_readonly_config.md#details). Wie Tastatur- und Screenreader-Nutzer mit einem schreibgeschützten Spreadsheet arbeiten, erfahren Sie im Abschnitt [Read-only setup](accessibility.md#read-only-setup) des Accessibility-Leitfadens.
+
+Um die Tastaturnavigation und die Auswahl im schreibgeschützten Modus auszuschalten, setzen Sie die Option [`selection`](api/spreadsheet_selection_config.md) auf `false`:
+
+~~~jsx {3}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    readonly: true,
+    selection: false,
+});
+~~~
+
 Sie können auch das [schreibgeschützte Verhalten des Spreadsheets anpassen](customization.md#custom-read-only-mode).
 
 <iframe src="https://snippet.dhtmlx.com/2w959gx2?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+## Zellauswahl {#selection-of-cells}
+
+Standardmäßig können Nutzer Zellen mit der Maus und der Tastatur auswählen, und das Spreadsheet hat eine aktive Zelle. Um die Auswahl auszuschalten, setzen Sie die Konfigurationsoption [`selection`](api/spreadsheet_selection_config.md) auf `false`:
+
+~~~jsx {2}
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
+    selection: false,
+});
+~~~
+
+In diesem Fall hat das Spreadsheet keine aktive Zelle, die Zellen können über die Oberfläche weder ausgewählt noch bearbeitet werden, und das Kontextmenü ist nicht verfügbar.
+
+Um die Auswahl zur Laufzeit aus- und einzuschalten, verwenden Sie die Methoden [`selection.disable()`](api/selection_disable_method.md) und [`selection.enable()`](api/selection_enable_method.md). Mit der Methode [`selection.isDisabled()`](api/selection_isdisabled_method.md) prüfen Sie, ob die Auswahl ausgeschaltet ist.
+
+Ohne Auswahl wird das Raster zu einem einzigen Tabstopp, den die Tastatur durchläuft. Siehe den Abschnitt [Read-only setup](accessibility.md#read-only-setup) des Accessibility-Leitfadens.
 
 ## Benutzerdefinierte Zahlenformate für Zellen {#custom-number-formats-for-cells}
 

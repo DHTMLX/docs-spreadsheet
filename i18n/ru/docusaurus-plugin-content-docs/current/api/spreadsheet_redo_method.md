@@ -1,7 +1,7 @@
 ---
 sidebar_label: redo()
 title: метод redo
-description: Вы можете узнать о методе redo в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Повторно примените отменённое действие в DHTMLX Spreadsheet с помощью метода redo().
 ---
 
 # redo()
@@ -19,7 +19,7 @@ redo(): void;
 ### Пример {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // повторно применяет отменённое действие

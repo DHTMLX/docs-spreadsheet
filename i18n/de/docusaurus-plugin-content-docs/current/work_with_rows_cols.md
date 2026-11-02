@@ -1,7 +1,7 @@
 ---
 sidebar_label: Arbeiten mit Zeilen und Spalten
 title: Arbeiten mit Zeilen und Spalten
-description: Sie erfahren, wie Sie in der DHTMLX JavaScript Spreadsheet-Bibliothek mit Zeilen und Spalten arbeiten. Entdecken Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Arbeiten Sie in DHTMLX Spreadsheet mit Zeilen und Spalten. Fügen Sie sie hinzu und entfernen Sie sie, passen Sie die Spaltenbreite automatisch an, legen Sie Spaltenbreite und Zeilenhöhe fest, fixieren Sie sie und blenden Sie sie aus und ein.
 ---
 
 # Arbeiten mit Zeilen und Spalten {#work-with-rows-and-columns}
@@ -54,6 +54,10 @@ Um eine Zeile zu entfernen, führen Sie die folgenden Schritte aus:
 Um mehrere Zeilen auf einmal zu entfernen: Wahlen Sie die Zeilen aus, klicken Sie mit der rechten Maustaste, um das Kontextmenü aufzurufen, und wählen Sie *Rows -> Remove rows [ids]*.
 :::
 
+:::info
+Wenn die ausgewählte Zelle innerhalb einer zusammengeführten Zelle liegt, werden alle Zeilen der zusammengeführten Zelle entfernt. Details finden Sie im Artikel [Zellen zusammenführen](merge_cells.md#removing-rows-and-columns-of-merged-cells).
+:::
+
 ### Spalten hinzufügen {#adding-columns}
 
 Um eine neue Spalte hinzuzufügen, führen Sie die folgenden Schritte aus:
@@ -98,6 +102,10 @@ Um eine Spalte zu entfernen, führen Sie die folgenden Schritte aus:
 Um mehrere Spalten auf einmal zu entfernen: Wahlen Sie die Spalten aus, klicken Sie mit der rechten Maustaste, um das Kontextmenü aufzurufen, und wählen Sie *Columns -> Remove columns [ids]*.
 :::
 
+:::info
+Wenn die ausgewählte Zelle innerhalb einer zusammengeführten Zelle liegt, werden alle Spalten der zusammengeführten Zelle entfernt. Details finden Sie im Artikel [Zellen zusammenführen](merge_cells.md#removing-rows-and-columns-of-merged-cells).
+:::
+
 ## Spaltenbreite automatisch anpassen {#autofit-column-width}
 
 Um die Spaltenbreite so zu ändern, dass sie automatisch dem längsten Inhalt der Spalte entspricht, können Sie:
@@ -115,6 +123,50 @@ Um die Spaltenbreite so zu ändern, dass sie automatisch dem längsten Inhalt de
 2\. Wahlen Sie *Columns -> Fit to data*
 
 ![DHTMLX Spreadsheet Columns submenu with the Fit to data option for autofit column width](/img/column_autofit.png)
+
+## Spaltenbreite und Zeilenhöhe festlegen {#setting-column-width-and-row-height}
+
+### Spaltenbreite festlegen {#setting-column-width}
+
+Um eine genaue Breite für Spalten festzulegen, führen Sie die folgenden Schritte aus:
+
+1\. Wählen Sie eine Spalte oder eine Zelle in der Spalte aus. Um mehrere Spalten zu ändern, wählen Sie einen Zellbereich aus, der sie umfasst.
+
+2\. Klicken Sie mit der rechten Maustaste auf die Auswahl oder drücken Sie `Shift + F10` bzw. die Menütaste und wählen Sie *Columns -> Column width*. Derselbe Befehl ist im Menü des 3-Punkte-Symbols der Spalte verfügbar.
+
+![DHTMLX Spreadsheet context menu with the Columns submenu showing Column width](/img/column_width_context_menu.png)
+
+3\. Geben Sie im Dialog *Column width* die Breite in Pixeln ein und klicken Sie auf **Apply** oder drücken Sie `Enter`.
+
+![DHTMLX Spreadsheet Column width dialog with the width in pixels and the Cancel and Apply buttons](/img/column_width_dialog.png)
+
+### Zeilenhöhe festlegen {#setting-row-height}
+
+Um eine genaue Höhe für Zeilen festzulegen, führen Sie die folgenden Schritte aus:
+
+1\. Wählen Sie eine Zeile oder eine Zelle in der Zeile aus. Um mehrere Zeilen zu ändern, wählen Sie einen Zellbereich aus, der sie umfasst.
+
+2\. Klicken Sie mit der rechten Maustaste auf die Auswahl oder drücken Sie `Shift + F10` bzw. die Menütaste und wählen Sie *Rows -> Row height*.
+
+![DHTMLX Spreadsheet context menu with the Rows submenu showing Row height](/img/row_height_context_menu.png)
+
+3\. Geben Sie im Dialog *Row height* die Höhe in Pixeln ein und klicken Sie auf **Apply** oder drücken Sie `Enter`.
+
+![DHTMLX Spreadsheet Row height dialog with the height in pixels and the Cancel and Apply buttons](/img/row_height_dialog.png)
+
+### Anwendung der neuen Größe {#how-the-new-size-is-applied}
+
+Der Dialog zeigt die aktuelle Größe der ersten Spalte bzw. Zeile des ausgewählten Bereichs an und wendet die neue Größe auf jede Spalte bzw. Zeile dieses Bereichs an. Wenn mehrere Bereiche ausgewählt sind, wird der zuletzt ausgewählte Bereich verwendet.
+
+Die Größe wird auf ganze Pixel gerundet. Die Mindestbreite einer Spalte beträgt 20 px und die Mindesthöhe einer Zeile 10 px: Ein kleinerer positiver Wert wird durch das Minimum ersetzt. Solange das Feld leer ist oder der Wert keine positive Zahl ist, ist die Schaltfläche **Apply** deaktiviert.
+
+Die Schaltfläche **Cancel** oder `Esc` schließt den Dialog ohne Änderungen. Screenreader kündigen die neue Größe an, zum Beispiel „Column width set to 120 pixels".
+
+### Änderung rückgängig machen {#undoing-the-change}
+
+Die neue Größe kann mit `Ctrl (Cmd) + Z` rückgängig gemacht werden.
+
+Um die Änderung im Code zu verarbeiten, verwenden Sie die [Actions](api/overview/actions_overview.md#list-of-actions) `resizeCol` und `resizeRow`.
 
 ## Zeilen und Spalten fixieren/Fixierung aufheben {#freezingunfreezing-rows-and-columns}
 
@@ -212,6 +264,10 @@ Um eine Zeile auszublenden, führen Sie die folgenden Schritte aus:
 
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Hide rows](/img/hide_row_context_menu.png)
 
+:::info
+Wenn sich die aktive Zelle in einer Zeile befindet, die ausgeblendet wird, wechselt die aktive Zelle zur ersten sichtbaren Zeile darunter, und die Auswahl wird auf diese Zelle reduziert. Wenn darunter keine sichtbaren Zeilen vorhanden sind, wechselt sie zur letzten sichtbaren Zeile darüber.
+:::
+
 ### Zeilen einblenden {#showing-rows}
 
 Um ausgeblendete Zeilen einzublenden, führen Sie einen der folgenden Schritte aus:
@@ -227,6 +283,8 @@ Um ausgeblendete Zeilen einzublenden, führen Sie einen der folgenden Schritte a
 (*In der folgenden Abbildung ist die Zeile 8 ausgeblendet*)
 
 ![DHTMLX Spreadsheet context menu with the Rows submenu showing Show rows](/img/show_rows_context_menu.png)
+
+- oder wählen Sie Zeilen oder mehrere Zellen aus, sodass die ausgeblendeten Zeilen in die Auswahl eingeschlossen sind, und drücken Sie `Ctrl (Cmd) + Shift + 9`. Wählen Sie zum Beispiel die Zeilen 2-4 aus, um die ausgeblendete Zeile 3 einzublenden. Wenn die Auswahl keine ausgeblendeten Zeilen enthält, kündigen Screenreader „No hidden rows in the selection" an
 
 ### Spalten ausblenden {#hiding-columns}
 
@@ -244,6 +302,10 @@ Um eine Spalte auszublenden, führen Sie die folgenden Schritte aus:
 
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Hide columns](/img/hide_columns_context_menu.png)
 
+:::info
+Wenn sich die aktive Zelle in einer Spalte befindet, die ausgeblendet wird, wechselt die aktive Zelle zur ersten sichtbaren Spalte rechts davon, und die Auswahl wird auf diese Zelle reduziert. Wenn rechts keine sichtbaren Spalten vorhanden sind, wechselt sie zur letzten sichtbaren Spalte links.
+:::
+
 ### Spalten einblenden {#showing-columns}
 
 Um ausgeblendete Spalten einzublenden, führen Sie einen der folgenden Schritte aus:
@@ -259,3 +321,5 @@ Um ausgeblendete Spalten einzublenden, führen Sie einen der folgenden Schritte 
 (*In der folgenden Abbildung ist die Spalte C ausgeblendet*)
 
 ![DHTMLX Spreadsheet context menu with the Columns submenu showing Show columns](/img/show_columns_context_menu.png)
+
+- oder wählen Sie Spalten oder mehrere Zellen aus, sodass die ausgeblendeten Spalten in die Auswahl eingeschlossen sind, und drücken Sie `Ctrl (Cmd) + Shift + 0`. Wenn die Auswahl keine ausgeblendeten Spalten enthält, kündigen Screenreader „No hidden columns in the selection" an

@@ -1,7 +1,7 @@
 ---
 sidebar_label: serialize()
 title: метод serialize
-description: Вы можете узнать о методе serialize в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Сохраните данные DHTMLX Spreadsheet в объект JSON с помощью метода serialize(), который включает листы, значения ячеек, стили и числовые форматы.
 ---
 
 # serialize()
@@ -94,7 +94,7 @@ serialize(): {
 ### Пример {#example}
 
 ~~~jsx {4}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 const state = spreadsheet.serialize();

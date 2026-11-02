@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with Spreadsheet
 title: Working with Spreadsheet
-description: You can learn about working with spreadsheet in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Undo and redo actions, add, remove, freeze and hide rows and columns, autofit column width, filter, search and sort data, and clear DHTMLX Spreadsheet with the API.
 ---
 
 # Work with Spreadsheet
@@ -282,7 +282,7 @@ From v4.3, you can sort data in the spreadsheet with the [`sortCells()`](api/spr
 - `dir` - the sorting direction: 1 - ascending sort order, -1 - descending sort order
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 

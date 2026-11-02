@@ -1,7 +1,7 @@
 ---
 sidebar_label: addColumn() 
 title: addColumn-Methode
-description: Sie können mehr über die addColumn-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren. Lesen Sie Entwicklerleitfäden und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Fügen Sie mit der Methode addColumn() eine leere Spalte in DHTMLX Spreadsheet ein. Sie wird an der Spalte der angegebenen Zelle eingefügt, und die vorhandenen Spalten werden nach rechts verschoben.
 ---
 
 # addColumn()
@@ -27,7 +27,7 @@ addColumn(cell: string): void;
 ### Beispiel {#example}
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // fügt eine leere Spalte "G" hinzu

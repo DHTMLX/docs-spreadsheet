@@ -1,7 +1,7 @@
 ---
 sidebar_label: toolbarBlocks
 title: toolbarBlocks-Konfiguration
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die toolbarBlocks-Konfiguration. Entwicklerhandbücher und API-Referenz, Code-Beispiele, Live-Demos und eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet.
+description: Legen Sie mit der Eigenschaft toolbarBlocks fest, welche Schaltflächenblöcke die Toolbar von DHTMLX Spreadsheet anzeigt, etwa undo, colors, font, align und format.
 ---
 
 # toolbarBlocks

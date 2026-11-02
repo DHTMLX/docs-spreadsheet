@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSheetChange
 title: beforeSheetChange event
-description: You can learn about the beforeSheetChange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Control the switching of sheets in DHTMLX Spreadsheet with the beforeSheetChange event, and return false to keep the current sheet active.
 ---
 
 # beforeSheetChange
@@ -29,7 +29,7 @@ Return `true` to change the active sheet, `false` to prevent the active sheet fr
 ### Example
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // subscribe on the "beforeSheetChange" event

@@ -1,7 +1,7 @@
 ---
 sidebar_label: freezeCols() 
 title: freezeCols-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die freezeCols-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Fixieren Sie Spalten in DHTMLX Spreadsheet mit der Methode freezeCols(). Sie fixiert die Spalten bis zur angegebenen oder ausgewählten Zelle, im aktuellen oder einem anderen Tabellenblatt.
 ---
 
 # freezeCols()

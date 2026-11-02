@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSelectionSet
 title: beforeSelectionSet event
-description: Sie können im Dokumentationsbereich der DHTMLX JavaScript Spreadsheet-Bibliothek mehr über das beforeSelectionSet-Event erfahren. Lesen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Steuern Sie die Auswahl von Zellen in DHTMLX Spreadsheet mit dem Event beforeSelectionSet. Es wird ausgelöst, bevor Zellen ausgewählt werden, und verhindert dies, wenn der Handler false zurückgibt.
 ---
 
 # beforeSelectionSet
@@ -29,7 +29,7 @@ Geben Sie `true` zurück, um Zellen auszuwählen, oder `false`, um die Auswahl v
 ### Beispiel {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Event "beforeSelectionSet" abonnieren

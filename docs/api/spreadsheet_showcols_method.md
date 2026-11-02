@@ -1,7 +1,7 @@
 ---
 sidebar_label: showCols()
 title: showCols method
-description: You can learn about the showCols method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Show hidden columns in DHTMLX Spreadsheet with the showCols() method, using the column of the passed cell or of the selected cell.
 ---
 
 # showCols()

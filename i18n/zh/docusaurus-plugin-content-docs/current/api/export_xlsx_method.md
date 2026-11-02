@@ -1,7 +1,7 @@
 ---
 sidebar_label: xlsx()
 title: xlsx 导出方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 xlsx 导出方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: 使用 export.xlsx() 方法将 DHTMLX Spreadsheet 的数据导出为 Excel (.xlsx) 文件，并可选择指定文件名。
 ---
 
 # xlsx()
@@ -23,7 +23,7 @@ xlsx(name:string): void;
 ### 示例 {#example}
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

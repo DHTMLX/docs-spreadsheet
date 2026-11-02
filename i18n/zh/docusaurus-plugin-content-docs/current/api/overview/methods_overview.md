@@ -1,7 +1,7 @@
 ---
 sidebar_label: 方法概览
 title: 方法概览
-description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的方法概览。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: DHTMLX Spreadsheet 方法列表，涵盖数据加载与保存、单元格编辑、样式设置、合并、排序、筛选以及工作表管理。
 ---
 
 # 方法概览 {#methods-overview}
@@ -11,6 +11,9 @@ description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的方
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(../spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addformula_method.md)     | @getshort(../spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(../spreadsheet_addrow_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(../spreadsheet_announce_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(../spreadsheet_announce_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(../spreadsheet_announce_method.md)         |
 | [](api/spreadsheet_clear_method.md)          | @getshort(../spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(../spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(../spreadsheet_deleterow_method.md)      |

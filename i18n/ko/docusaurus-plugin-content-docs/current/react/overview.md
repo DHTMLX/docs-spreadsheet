@@ -96,8 +96,8 @@ Props는 컴포넌트가 변경 사항을 처리하는 방식에 따라 분류�
 
 | 카테고리 | Props | 변경 시 동작 |
 |----------|-------|----------------------|
-| **초기화 전용** | `menu`, `editLine`, `toolbarBlocks`, `multiSheets`, `formats`, `localization`, `importModulePath`, `exportModulePath`, `spreadsheetLocale` | 위젯이 소멸되고 재생성됩니다. 스프레드시트 데이터는 보존되지만 실행 취소/다시 실행 기록과 UI 상태(선택 영역, 스크롤 위치)는 초기화됩니다. |
-| **런타임** | `readonly`, `rowsCount`, `colsCount` | 데이터 손실이나 UI 상태 초기화 없이 즉시 적용됩니다. |
+| **초기화 전용** | `menu`, `editLine`, `toolbarBlocks`, `multiSheets`, `formats`, `localization`, `importModulePath`, `exportModulePath`, `spreadsheetLocale`, `readonly` | 위젯이 소멸되고 재생성됩니다. 스프레드시트 데이터는 보존되지만 실행 취소/다시 실행 기록과 UI 상태(선택 영역, 스크롤 위치)는 초기화됩니다. |
+| **런타임** | `selection`, `rowsCount`, `colsCount` | 데이터 손실이나 UI 상태 초기화 없이 즉시 적용됩니다. |
 | **데이터** | `sheets`, `activeSheet` | 증분 방식으로 적용됩니다. 변경된 셀, 범위 또는 설정만 업데이트됩니다. |
 | **재파싱** | `styles` | 스타일 변경 시 전체 데이터 재로드가 필요합니다. 스프레드시트 데이터는 보존되지만 실행 취소/다시 실행 기록과 UI 상태는 초기화됩니다. |
 | **상태** | `search`, `theme`, `loadUrl` | 전용 위젯 API를 통해 부작용 없이 적용됩니다. |
@@ -197,6 +197,10 @@ function App() {
 ~~~
 
 `instance` 속성은 위젯이 초기화되기 전과 언마운트 후에는 `null`입니다.
+
+:::info
+`ref.current.instance.events.on()`으로 연결한 핸들러는 초기화 전용 prop 변경 후 위젯이 재생성될 때와 컴포넌트가 언마운트될 때 제거됩니다. 컴포넌트가 모든 새 위젯 인스턴스에 연결하는 [이벤트 콜백 props](react/events.md)를 사용하세요.
+:::
 
 ## API 참조 {#api-reference}
 

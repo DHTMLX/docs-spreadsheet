@@ -1,7 +1,7 @@
 ---
 sidebar_label: insertLink()
 title: Метод insertLink
-description: Вы можете узнать о методе insertLink в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Вставьте гиперссылку в ячейку DHTMLX Spreadsheet с помощью метода insertLink() или удалите гиперссылку, сохранив текст ячейки.
 ---
 
 # insertLink()
@@ -36,7 +36,7 @@ insertLink(
 ### Пример {#example}
 
 ~~~jsx {5-7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // вставить ссылку в ячейку "A2"

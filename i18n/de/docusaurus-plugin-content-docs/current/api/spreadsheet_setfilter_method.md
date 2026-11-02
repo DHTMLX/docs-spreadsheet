@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFilter()
 title: setFilter-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die setFilter-Methode. Entwicklerhandbücher und API-Referenz, Code-Beispiele, Live-Demos und eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet.
+description: Filtern Sie mit der Methode setFilter() die Daten einer Spalte in DHTMLX Spreadsheet nach Bedingungen oder ausgeschlossenen Werten, oder setzen Sie die Filterung zurück.
 ---
 
 # setFilter()
@@ -44,7 +44,7 @@ Um die Filterung zurückzusetzen, rufen Sie die Methode ohne Parameter auf oder 
 ### Beispiel {#example}
 
 ~~~jsx {5,8,11,14}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Daten nach einer für Spalte A angegebenen Bedingung filtern

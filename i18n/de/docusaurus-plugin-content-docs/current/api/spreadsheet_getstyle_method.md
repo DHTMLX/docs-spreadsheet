@@ -1,7 +1,7 @@
 ---
 sidebar_label: getStyle()
 title: getStyle-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die getStyle-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Rufen Sie mit der Methode getStyle() die Stile ab, die auf eine Zelle oder einen Zellbereich in DHTMLX Spreadsheet angewendet sind.
 ---
 
 # getStyle()
@@ -27,7 +27,7 @@ Die Methode gibt die für die Zellen festgelegten Stile zurück
 ### Beispiel {#example}
 
 ~~~jsx {5,9,12}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // Stil einer einzelnen Zelle abrufen

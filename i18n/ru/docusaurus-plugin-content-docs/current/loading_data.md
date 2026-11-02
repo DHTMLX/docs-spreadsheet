@@ -1,7 +1,7 @@
 ---
 sidebar_label: Загрузка и экспорт данных
 title: Загрузка данных
-description: Вы можете узнать о загрузке данных в библиотеке DHTMLX JavaScript Spreadsheet в документации. Просматривайте руководства для разработчиков и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Загрузите в DHTMLX Spreadsheet данные JSON, CSV или Excel со стилями, заблокированными ячейками и ссылками из файла или локального источника, сохраните и восстановите состояние и экспортируйте данные в Excel или JSON.
 ---
 
 # Загрузка и экспорт данных {#data-loading-and-export}
@@ -179,7 +179,7 @@ const dataset = [
 По умолчанию Spreadsheet ожидает данные в формате JSON. Чтобы загрузить данные из внешнего источника, используйте метод [](api/spreadsheet_load_method.md). Он принимает URL-адрес файла с данными в качестве параметра:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ spreadsheet.load("../common/data.json");
 Вы также можете загружать данные в формате CSV. Для этого нужно вызвать метод [](api/spreadsheet_load_method.md) и передать название формата ("csv") вторым параметром:
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 Чтобы загрузить данные из локального источника, используйте метод [](api/spreadsheet_parse_method.md). Передайте [подготовленный набор данных](#preparing-data) в качестве параметра этого метода:
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

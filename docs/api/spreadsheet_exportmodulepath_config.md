@@ -1,7 +1,7 @@
 ---
 sidebar_label: exportModulePath
 title: exportModulePath config
-description: You can learn about the exportModulePath config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Set the path to the worker.js file of the JSON2Excel export module in DHTMLX Spreadsheet with the exportModulePath property, for example, to export to Excel on your own server.
 ---
 
 # exportModulePath
@@ -19,7 +19,7 @@ exportModulePath?: string;
 ### Example
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     exportModulePath: "../libs/json2excel/x.x/worker.js?vx", // a local path to the `worker.js` file of the export module
     // other config parameters
 });

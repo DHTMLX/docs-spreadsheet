@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditEnd
 title: beforeEditEnd 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 beforeEditEnd 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 beforeEditEnd 事件在 DHTMLX Spreadsheet 中结束编辑之前检查单元格的值，返回 false 可使编辑器保持打开。
 ---
 
 # beforeEditEnd
@@ -30,7 +30,7 @@ beforeEditEnd: (cell: string, value: string) => void | boolean;
 ### 示例 {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 订阅 "beforeEditEnd" 事件

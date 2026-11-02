@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterClear
 title: Событие afterClear
-description: Вы можете узнать о событии afterClear в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Обработайте событие afterClear, которое вызывается после очистки DHTMLX Spreadsheet (устарело с версии v4.3, используйте вместо него событие afterAction).
 ---
 
 # afterClear
@@ -33,7 +33,7 @@ afterClear: () => void;
 ### Пример {#example}
 
 ~~~jsx {5-8}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // подписка на событие "afterClear"

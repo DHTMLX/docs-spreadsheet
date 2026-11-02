@@ -1,7 +1,7 @@
 ---
 sidebar_label: freezeCols() 
 title: freezeCols method
-description: You can learn about the freezeCols method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Freeze columns in DHTMLX Spreadsheet with the freezeCols() method, which fixes the columns up to the specified or the selected cell, on the current or another sheet.
 ---
 
 # freezeCols()

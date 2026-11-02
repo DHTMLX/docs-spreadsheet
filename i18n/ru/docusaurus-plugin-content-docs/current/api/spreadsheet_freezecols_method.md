@@ -1,7 +1,7 @@
 ---
 sidebar_label: freezeCols() 
 title: Метод freezeCols
-description: Вы можете узнать о методе freezeCols в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Закрепите столбцы в DHTMLX Spreadsheet с помощью метода freezeCols(), который фиксирует столбцы до указанной или выбранной ячейки на текущем или другом листе.
 ---
 
 # freezeCols()

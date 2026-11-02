@@ -1,7 +1,7 @@
 ---
 sidebar_label: localization
 title: localization config
-description: You can learn about the localization config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Set the decimal and thousands separators, the currency sign and the date and time formats of DHTMLX Spreadsheet with the localization property.
 ---
 
 # localization
@@ -41,7 +41,7 @@ const defaultLocales = {
 ### Example
 
 ~~~jsx 
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     localization: {
         decimal: ",", 
         thousands: " ", 

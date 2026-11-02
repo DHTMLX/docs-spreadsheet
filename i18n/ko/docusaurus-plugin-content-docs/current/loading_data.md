@@ -1,7 +1,7 @@
 ---
 sidebar_label: 데이터 로드 및 내보내기
 title: 데이터 로드하기
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 데이터 로드에 대해 학습할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보고, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하십시오.
+description: 파일 또는 로컬 소스에서 스타일, 잠긴 셀, 링크를 포함한 JSON, CSV, Excel 데이터를 DHTMLX Spreadsheet로 로드하고, 상태를 저장 및 복원하며 데이터를 Excel 또는 JSON으로 내보냅니다.
 ---
 
 # 데이터 로드 및 내보내기 {#data-loading-and-export}
@@ -179,7 +179,7 @@ const dataset = [
 기본적으로 Spreadsheet는 JSON 형식의 데이터를 받습니다. 외부 소스에서 데이터를 로드하려면 [](api/spreadsheet_load_method.md) 메서드를 사용하십시오. 이 메서드는 데이터 파일의 URL을 매개변수로 받습니다.
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.json");
 ~~~
 
@@ -195,7 +195,7 @@ spreadsheet.load("../common/data.json");
 CSV 형식의 데이터도 로드할 수 있습니다. 이를 위해 [](api/spreadsheet_load_method.md) 메서드를 호출하고 두 번째 매개변수로 형식 이름("csv")을 전달하십시오.
 
 ~~~jsx
-var spreadsheet = new dhx.Spreadsheet("spreadsheet");
+var spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.load("../common/data.csv", "csv");
 ~~~
 
@@ -262,7 +262,7 @@ spreadsheet.load("/some/data").then(function(){
 로컬 소스에서 데이터를 로드하려면 [](api/spreadsheet_parse_method.md) 메서드를 사용하십시오. 이 메서드의 매개변수로 [미리 정의된 데이터 세트](#preparing-data)를 전달하십시오.
 
 ~~~jsx
-const spreadsheet = new dhx.Spreadsheet("spreadsheet");
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container");
 spreadsheet.parse(data);
 ~~~
 

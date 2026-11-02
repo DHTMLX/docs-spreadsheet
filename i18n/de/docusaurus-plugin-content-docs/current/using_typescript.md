@@ -1,7 +1,7 @@
 ---
 sidebar_label: TypeScript-Unterstützung
 title: TypeScript-Unterstützung
-description: Sie erfahren, wie Sie TypeScript mit der DHTMLX JavaScript Spreadsheet-Bibliothek verwenden. Sehen Sie sich Entwicklerhandbücher und API-Referenzen an, probieren Sie Codebeispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Nutzen Sie die integrierten TypeScript-Definitionen von DHTMLX Spreadsheet für Typprüfung, Autovervollständigung und JSDoc-Hinweise in Ihrer IDE.
 ---
 
 # TypeScript-Unterstützung {#typescript-support}

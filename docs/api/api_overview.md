@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: API Overview
-description: You can check an API overview of the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Overview of the DHTMLX Spreadsheet API, covering the constructor, methods, events, properties, and the sheet manager, selection, event bus and export modules.
 ---
 
 # API overview
@@ -27,6 +27,7 @@ Parameters:
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(api/spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addformula_method.md)     | @getshort(api/spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(api/spreadsheet_addrow_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(api/spreadsheet_announce_method.md)        |
 | [](api/spreadsheet_clear_method.md)          | @getshort(api/spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(api/spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(api/spreadsheet_deleterow_method.md)      |
@@ -99,6 +100,7 @@ Parameters:
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(api/spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(api/spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(api/spreadsheet_selection_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
 
 
@@ -118,8 +120,11 @@ Parameters:
 
 | Name                                           | Description                                           |
 | :--------------------------------------------- | :---------------------------------------------------- |
+| [](api/selection_disable_method.md)            | @getshort(api/selection_disable_method.md)           |
+| [](api/selection_enable_method.md)             | @getshort(api/selection_enable_method.md)            |
 | [](api/selection_getfocusedcell_method.md)     | @getshort(api/selection_getfocusedcell_method.md)     |
 | [](api/selection_getselectedcell_method.md)    | @getshort(api/selection_getselectedcell_method.md)    |
+| [](api/selection_isdisabled_method.md)         | @getshort(api/selection_isdisabled_method.md)        |
 | [](api/selection_removeselectedcell_method.md) | @getshort(api/selection_removeselectedcell_method.md) |
 | [](api/selection_setfocusedcell_method.md)     | @getshort(api/selection_setfocusedcell_method.md)     |
 | [](api/selection_setselectedcell_method.md)    | @getshort(api/selection_setselectedcell_method.md)    |

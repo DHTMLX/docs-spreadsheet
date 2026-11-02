@@ -188,6 +188,13 @@ ref.current?.instance?.selection.setSelectedCell("A1:C5");
 // 실행 취소/다시 실행
 ref.current?.instance?.undo();
 ref.current?.instance?.redo();
+
+// 선택 끄기 및 켜기
+ref.current?.instance?.selection.disable();
+ref.current?.instance?.selection.enable();
+
+// 스크린 리더에 상태 메시지 전송
+ref.current?.instance?.announce("The report is saved");
 ~~~
 
 ## Actions 열거형 {#actions-enum}
@@ -264,6 +271,7 @@ type SpreadsheetConfigProps = Omit<
 | `ISpreadsheet` | 메인 스프레드시트 위젯 인스턴스 인터페이스. |
 | `ISpreadsheetConfig` | 생성자 구성 인터페이스. |
 | `ISheet` | 시트 인스턴스 인터페이스(시트 이벤트 콜백에서 사용). |
+| `ISelection` | 선택 모듈 인터페이스(`instance.selection`). [`enable()`](api/selection_enable_method.md), [`disable()`](api/selection_disable_method.md), [`isDisabled()`](api/selection_isdisabled_method.md) 메서드를 포함합니다. |
 | `IFormats` | 커스텀 숫자 형식 정의. |
 | `IFilterRules` | 필터 규칙 구성. |
 | `IFilter` | 필터 인스턴스 인터페이스. |

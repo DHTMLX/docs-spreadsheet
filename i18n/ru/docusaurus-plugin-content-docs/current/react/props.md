@@ -25,6 +25,7 @@ description: "Полный справочник всех пропсов комп
 | `importModulePath` | `string` | Путь к модулю импорта XLSX. JS API: [`importModulePath`](api/spreadsheet_importmodulepath_config.md). |
 | `exportModulePath` | `string` | Путь к модулю экспорта XLSX. JS API: [`exportModulePath`](api/spreadsheet_exportmodulepath_config.md). |
 | `spreadsheetLocale` | [`SpreadsheetLocale`](react/types.md#spreadsheetlocale) | Переводы интерфейса и локализованные имена формул. Отдельно от `localization`. |
+| `readonly` | `boolean` | Включить режим только для чтения. Пользователи могут перемещаться по ячейкам, выделять, копировать их и выполнять поиск, а редактирование отклоняется. JS API: [`readonly`](api/spreadsheet_readonly_config.md). |
 
 </div>
 
@@ -40,7 +41,7 @@ description: "Полный справочник всех пропсов комп
 |------|------|-------------|
 | `rowsCount` | `number` | Количество строк в сетке. JS API: [`rowsCount`](api/spreadsheet_rowscount_config.md). |
 | `colsCount` | `number` | Количество столбцов в сетке. JS API: [`colsCount`](api/spreadsheet_colscount_config.md). |
-| `readonly` | `boolean` | Включить режим только для чтения. JS API: [`readonly`](api/spreadsheet_readonly_config.md). |
+| `selection` | `boolean` | Включить и отключить выделение ячеек. По умолчанию: `true`. При значении `false` в таблице нет активной ячейки, а ячейки нельзя выделять и редактировать из интерфейса. JS API: [`selection`](api/spreadsheet_selection_config.md). |
 
 ## Пропсы данных {#data-props}
 
@@ -225,8 +226,16 @@ const [theme, setTheme] = useState<SpreadsheetTheme>("light");
 
 ### Режим только для чтения {#read-only-mode}
 
+В режиме только для чтения пользователи могут перемещаться по ячейкам с клавиатуры, выделять их мышью, копировать и выполнять поиск. Редактирование отклоняется, о чём сообщается программам экранного доступа. Поскольку `readonly` относится к пропсам только для инициализации, его изменение пересоздаёт виджет. Данные сохраняются, а история отмены/повтора и состояние интерфейса (выделение, позиция прокрутки) сбрасываются.
+
 ~~~tsx
 <ReactSpreadsheet sheets={sheets} readonly={true} />
+~~~
+
+Чтобы отключить также навигацию с клавиатуры и выделение, добавьте `selection={false}`. Пропс `selection` применяется во время выполнения, поэтому его можно переключать без пересоздания виджета:
+
+~~~tsx
+<ReactSpreadsheet sheets={sheets} readonly={true} selection={false} />
 ~~~
 
 ### Загрузка данных по URL {#loading-data-from-url}

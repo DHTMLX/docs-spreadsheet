@@ -1,7 +1,7 @@
 ---
 sidebar_label: fire()
 title: fire events bus method
-description: You can learn about the fire events bus method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Trigger an inner event of DHTMLX Spreadsheet with the events.fire() method, passing the name of the event and an array of the event data.
 ---
 
 # fire()
@@ -32,7 +32,7 @@ The method returns `false` if some of the event handlers return `false`. Otherwi
 ### Example
 
 ~~~jsx {10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // config parameters
 });
 spreadsheet.parse(data);

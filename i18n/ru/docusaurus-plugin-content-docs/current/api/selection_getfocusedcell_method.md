@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFocusedCell() 
 title: Метод getFocusedCell объекта selection
-description: Вы можете узнать о методе getFocusedCell объекта selection в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Получите идентификатор ячейки в фокусе (активной ячейки) в DHTMLX Spreadsheet с помощью метода selection.getFocusedCell().
 ---
 
 # getFocusedCell()
@@ -23,7 +23,7 @@ getFocusedCell(): string;
 ### Пример {#example}
 
 ~~~jsx {7,10}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
     // параметры конфигурации
 });
 spreadsheet.parse(data);

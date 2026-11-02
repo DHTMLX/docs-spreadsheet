@@ -1,7 +1,7 @@
 ---
 sidebar_label: API 概览
 title: API 概览
-description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的 API 概览。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet API 概览，涵盖构造函数、方法、事件、属性，以及 Sheet Manager、Selection、Event Bus 和导出模块。
 ---
 
 # API 概览 {#api-overview}
@@ -27,6 +27,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 | [](api/spreadsheet_addcolumn_method.md)      | @getshort(api/spreadsheet_addcolumn_method.md)      |
 | [](api/spreadsheet_addformula_method.md)     | @getshort(api/spreadsheet_addformula_method.md)     |
 | [](api/spreadsheet_addrow_method.md)         | @getshort(api/spreadsheet_addrow_method.md)         |
+| [](api/spreadsheet_announce_method.md)         | @getshort(api/spreadsheet_announce_method.md)        |
+| [](api/spreadsheet_announce_method.md)         | @getshort(api/spreadsheet_announce_method.md)        |
+| [](api/spreadsheet_announce_method.md)         | @getshort(api/spreadsheet_announce_method.md)        |
 | [](api/spreadsheet_clear_method.md)          | @getshort(api/spreadsheet_clear_method.md)          |
 | [](api/spreadsheet_deletecolumn_method.md)   | @getshort(api/spreadsheet_deletecolumn_method.md)   |
 | [](api/spreadsheet_deleterow_method.md)      | @getshort(api/spreadsheet_deleterow_method.md)      |
@@ -99,6 +102,9 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 | [](api/spreadsheet_multisheets_config.md)      | @getshort(api/spreadsheet_multisheets_config.md)      |
 | [](api/spreadsheet_readonly_config.md)         | @getshort(api/spreadsheet_readonly_config.md)         |
 | [](api/spreadsheet_rowscount_config.md)        | @getshort(api/spreadsheet_rowscount_config.md)        |
+| [](api/spreadsheet_selection_config.md)        | @getshort(api/spreadsheet_selection_config.md)       |
+| [](api/spreadsheet_selection_config.md)        | @getshort(api/spreadsheet_selection_config.md)       |
+| [](api/spreadsheet_selection_config.md)        | @getshort(api/spreadsheet_selection_config.md)       |
 | [](api/spreadsheet_toolbarblocks_config.md)    | @getshort(api/spreadsheet_toolbarblocks_config.md)    |
 
 
@@ -118,8 +124,17 @@ const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
 
 | 名称                                           | 描述                                                  |
 | :--------------------------------------------- | :---------------------------------------------------- |
+| [](api/selection_enable_method.md)             | @getshort(api/selection_enable_method.md)            |
+| [](api/selection_disable_method.md)            | @getshort(api/selection_disable_method.md)           |
+| [](api/selection_enable_method.md)             | @getshort(api/selection_enable_method.md)            |
+| [](api/selection_disable_method.md)            | @getshort(api/selection_disable_method.md)           |
+| [](api/selection_enable_method.md)             | @getshort(api/selection_enable_method.md)            |
+| [](api/selection_disable_method.md)            | @getshort(api/selection_disable_method.md)           |
 | [](api/selection_getfocusedcell_method.md)     | @getshort(api/selection_getfocusedcell_method.md)     |
 | [](api/selection_getselectedcell_method.md)    | @getshort(api/selection_getselectedcell_method.md)    |
+| [](api/selection_isdisabled_method.md)         | @getshort(api/selection_isdisabled_method.md)        |
+| [](api/selection_isdisabled_method.md)         | @getshort(api/selection_isdisabled_method.md)        |
+| [](api/selection_isdisabled_method.md)         | @getshort(api/selection_isdisabled_method.md)        |
 | [](api/selection_removeselectedcell_method.md) | @getshort(api/selection_removeselectedcell_method.md) |
 | [](api/selection_setfocusedcell_method.md)     | @getshort(api/selection_setfocusedcell_method.md)     |
 | [](api/selection_setselectedcell_method.md)    | @getshort(api/selection_setselectedcell_method.md)    |

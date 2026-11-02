@@ -1,7 +1,7 @@
 ---
 sidebar_label: rowsCount
 title: конфигурация rowsCount
-description: Вы можете узнать о конфигурации rowsCount в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Задайте количество строк, которое DHTMLX Spreadsheet показывает при инициализации, с помощью свойства rowsCount.
 ---
 
 # rowsCount
@@ -19,7 +19,7 @@ rowsCount?: number;
 ### Пример {#example}
 
 ~~~jsx {2}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {
   rowsCount: 10,
   // other config parameters
 });

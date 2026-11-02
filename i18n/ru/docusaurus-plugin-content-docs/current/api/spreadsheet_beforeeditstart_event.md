@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditStart
 title: Событие beforeEditStart
-description: Вы можете узнать о событии beforeEditStart в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Управляйте тем, какие ячейки можно редактировать в DHTMLX Spreadsheet, с помощью события beforeEditStart и верните false, чтобы редактор не открывался.
 ---
 
 # beforeEditStart
@@ -30,7 +30,7 @@ beforeEditStart: (cell: string, value: string) => void | boolean;
 ### Пример {#example}
 
 ~~~jsx {5-9}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // подписываемся на событие "beforeEditStart"

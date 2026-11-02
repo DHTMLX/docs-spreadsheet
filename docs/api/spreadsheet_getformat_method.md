@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFormat()
 title: getFormat method
-description: You can learn about the getFormat method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get the number format applied to the value of a cell or a range of cells in DHTMLX Spreadsheet with the getFormat() method.
 ---
 
 # getFormat()
@@ -27,7 +27,7 @@ The method returns the format(s) applied to the value of the cell(s)
 ### Example
 
 ~~~jsx {5}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // returns "currency"

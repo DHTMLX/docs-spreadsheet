@@ -1,7 +1,7 @@
 ---
 sidebar_label: isLocked()
 title: isLocked 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 isLocked 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 시험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수도 있습니다.
+description: DHTMLX Spreadsheet에서 isLocked() 메서드로 셀 또는 범위 내의 셀 중 하나라도 잠겨 있는지 확인합니다.
 ---
 
 # isLocked()
@@ -27,7 +27,7 @@ isLocked(cell: string): boolean;
 ### 예제 {#example}
 
 ~~~jsx {5,8,11}
-const spreadsheet = new dhx.Spreadsheet("spreadsheet", {});
+const spreadsheet = new dhx.Spreadsheet("spreadsheet_container", {});
 spreadsheet.parse(data);
 
 // 셀이 잠겨 있는지 확인

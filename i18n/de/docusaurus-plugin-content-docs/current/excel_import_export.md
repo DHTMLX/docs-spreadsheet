@@ -1,7 +1,7 @@
 ---
 sidebar_label: Excel-Import/Export
 title: Excel-Import und -Export
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über den Excel-Import und -Export. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Daten aus Excel-Dateien in DHTMLX Spreadsheet importieren und über die Symbolleiste oder das Menü Datei nach .xlsx exportieren.
 ---
 
 # Excel-Import/Export {#excel-importexport}
@@ -37,3 +37,9 @@ Gehen Sie zu: *Datei -> Herunterladen als... -> Microsoft Excel (.xlsx)* im Men�
 ![DHTMLX Spreadsheet File menu with the Download As option for Microsoft Excel XLSX export](/img/file_export.png)
 
 2\. Überprüfen Sie Ihr Download-Verzeichnis, um die Excel-Datei mit den Daten aus Spreadsheet zu finden.
+
+Screenreader kündigen den Beginn und das Ende von Import und Export an.
+
+:::note
+Import und Export von Excel-Dateien verwenden WebAssembly. Wenn der Browser WebAssembly nicht unterstützt, zeigen die Befehle Import und Export eine Meldung mit dem Text des Schlüssels `wasmNotSupported` der [Locale](localization.md#default-locale) an. Die Methode [`load()`](api/spreadsheet_load_method.md) mit dem Typ `"xlsx"` und die Methode [`export.xlsx()`](api/export_xlsx_method.md) werfen einen `Error` mit demselben Text, den Sie in Ihrem Code abfangen können.
+:::
