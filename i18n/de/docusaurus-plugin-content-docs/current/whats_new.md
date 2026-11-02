@@ -10,7 +10,7 @@ Wenn Sie Spreadsheet von einer älteren Version aktualisieren, lesen Sie die [Mi
 
 ## Version 6.0.4 {#version-604}
 
-Veröffentlicht am Oktober , 2026
+Veröffentlicht am 2. November 2026
 
 ### Neue Funktionen {#new-functionality-604}
 
@@ -36,7 +36,6 @@ Veröffentlicht am Oktober , 2026
 - [Das Entfernen einer Zeile oder Spalte über eine zusammengeführte Zelle](merge_cells.md#removing-rows-and-columns-of-merged-cells) entfernt alle Zeilen bzw. Spalten der zusammengeführten Zelle
 - Neue Oberflächen- und Screenreader-Texte im [Gebietsschema `spreadsheet`](localization.md#default-locale) sowie [Übersetzung der integrierten Widgets](localization.md#localizing-built-in-widgets)
 - Die Variable [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) für den Tastaturfokus sowie die Referenzfarben von Formeln mit höherem Kontrast in den hellen Themes
-- React Spreadsheet: die Prop [`selection`](react/props.md#runtime-props), der Typ [`ISelection`](react/types.md#re-exported-upstream-types) und [`readonly`](react/props.md#init-only-props) als Init-only-Prop
 
 ### Fehlerbehebungen {#fixes-604}
 
@@ -57,9 +56,20 @@ Veröffentlicht am Oktober , 2026
 - Ein geschlossenes Kontextmenü wurde erneut geöffnet
 - Die aktive Zelle wurde bei der Tastaturnavigation eine Zelle zu kurz an den Rand des Viewports gescrollt
 - Eine Formel mit einem ungültigen Bezug zeigte einen fehlerhaften oder wiederholten `#REF!`-Fehler statt eines einzelnen `#REF!`
-- React Spreadsheet: die Event-Callbacks und `onStateChange` wurden nicht ausgelöst, nachdem Spreadsheet durch eine Änderung einer Init-only-Prop neu erstellt wurde
-- React Spreadsheet: die Event-Handler des Wrappers wurden beim Unmount nicht entfernt
-- React Spreadsheet: die Daten aus `loadUrl` wurden beim Mount zweimal geladen und nach dem Neuerstellen von Spreadsheet erneut über die beibehaltenen Daten
+
+### React Spreadsheet {#react-spreadsheet-604}
+
+#### Aktualisierungen {#react-updates-604}
+
+- Die neue Prop [`selection`](react/props.md#runtime-props)
+- Der Typ [`ISelection`](react/types.md#re-exported-upstream-types) wird re-exportiert
+- [`readonly`](react/props.md#init-only-props) ist eine Init-only-Prop
+
+#### Fehlerbehebungen {#react-fixes-604}
+
+- Die Event-Callbacks und `onStateChange` wurden nicht ausgelöst, nachdem Spreadsheet durch eine Änderung einer Init-only-Prop neu erstellt wurde
+- Die Event-Handler des Wrappers wurden beim Unmount nicht entfernt
+- Die Daten aus `loadUrl` wurden beim Mount zweimal geladen und nach dem Neuerstellen von Spreadsheet erneut über die beibehaltenen Daten
 
 ## Version 6.0.3 {#version-603}
 

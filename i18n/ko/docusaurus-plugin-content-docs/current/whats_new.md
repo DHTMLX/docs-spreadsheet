@@ -10,7 +10,7 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리의 새로운 기능�
 
 ## 버전 6.0.4 {#version-604}
 
-2026년 10월 일 출시
+2026년 11월 2일 출시
 
 ### 새로운 기능 {#new-functionality-604}
 
@@ -36,7 +36,6 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리의 새로운 기능�
 - [병합된 셀을 통한 행 또는 열 제거](merge_cells.md#removing-rows-and-columns-of-merged-cells)는 병합된 셀의 모든 행 또는 열을 제거합니다
 - [`spreadsheet` 로케일](localization.md#default-locale)의 새로운 인터페이스 및 스크린 리더 문자열과 [기본 제공 위젯의 번역](localization.md#localizing-built-in-widgets)
 - 키보드 포커스용 [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) 변수와, 라이트 테마에서 더 높은 대비를 가지는 수식 참조 색상
-- React Spreadsheet: [`selection`](react/props.md#runtime-props) prop, [`ISelection`](react/types.md#re-exported-upstream-types) 타입, 초기화 전용 prop인 [`readonly`](react/props.md#init-only-props)
 
 ### 수정 사항 {#fixes-604}
 
@@ -57,9 +56,20 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리의 새로운 기능�
 - 닫힌 컨텍스트 메뉴가 다시 열리는 문제
 - 키보드 탐색 중 활성 셀이 뷰포트 가장자리보다 한 셀 모자라게 스크롤되는 문제
 - 잘못된 참조가 있는 수식에 단일 `#REF!` 대신 깨지거나 반복된 `#REF!` 오류가 표시되는 문제
-- React Spreadsheet: init-only prop 변경으로 Spreadsheet가 다시 생성된 후 이벤트 콜백과 `onStateChange`가 발생하지 않는 문제
-- React Spreadsheet: 언마운트 시 래퍼의 이벤트 핸들러가 제거되지 않는 문제
-- React Spreadsheet: `loadUrl`의 데이터가 마운트 시 두 번 로드되고, Spreadsheet가 다시 생성된 후 유지된 데이터 위에 다시 로드되는 문제
+
+### React Spreadsheet {#react-spreadsheet-604}
+
+#### 업데이트 {#react-updates-604}
+
+- 새로운 [`selection`](react/props.md#runtime-props) prop
+- [`ISelection`](react/types.md#re-exported-upstream-types) 타입 재내보내기
+- [`readonly`](react/props.md#init-only-props)가 초기화 전용 prop으로 변경
+
+#### 수정 사항 {#react-fixes-604}
+
+- init-only prop 변경으로 Spreadsheet가 다시 생성된 후 이벤트 콜백과 `onStateChange`가 발생하지 않는 문제
+- 언마운트 시 래퍼의 이벤트 핸들러가 제거되지 않는 문제
+- `loadUrl`의 데이터가 마운트 시 두 번 로드되고, Spreadsheet가 다시 생성된 후 유지된 데이터 위에 다시 로드되는 문제
 
 ## 버전 6.0.3 {#version-603}
 

@@ -10,7 +10,7 @@ description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最
 
 ## 版本 6.0.4 {#version-604}
 
-发布于 2026 年 10 月
+发布于 2026 年 11 月 2 日
 
 ### 新功能 {#new-functionality-604}
 
@@ -36,7 +36,6 @@ description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最
 - [通过合并单元格删除行或列](merge_cells.md#removing-rows-and-columns-of-merged-cells)时，会删除该合并单元格的所有行或列
 - [`spreadsheet` 语言包](localization.md#default-locale)中新增界面和屏幕阅读器字符串，并支持[内置组件的翻译](localization.md#localizing-built-in-widgets)
 - 用于键盘焦点的 [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) 变量，以及浅色主题中对比度更高的公式引用颜色
-- React Spreadsheet：[`selection`](react/props.md#runtime-props) 属性、[`ISelection`](react/types.md#re-exported-upstream-types) 类型，以及作为仅初始化属性的 [`readonly`](react/props.md#init-only-props)
 
 ### 修复 {#fixes-604}
 
@@ -57,9 +56,20 @@ description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最
 - 已关闭的上下文菜单再次打开的问题
 - 键盘导航时活动单元格滚动到距视口边缘差一个单元格的问题
 - 含无效引用的公式显示残缺或重复的 `#REF!` 错误，而不是单个 `#REF!` 的问题
-- React Spreadsheet：因仅初始化属性变化而重新创建 Spreadsheet 后，事件回调和 `onStateChange` 不触发的问题
-- React Spreadsheet：卸载时未移除封装组件的事件处理程序的问题
-- React Spreadsheet：挂载时 `loadUrl` 的数据被加载两次，以及 Spreadsheet 重新创建后再次覆盖保留数据的问题
+
+### React Spreadsheet {#react-spreadsheet-604}
+
+#### 更新 {#react-updates-604}
+
+- 新增 [`selection`](react/props.md#runtime-props) 属性
+- 重新导出 [`ISelection`](react/types.md#re-exported-upstream-types) 类型
+- [`readonly`](react/props.md#init-only-props) 改为仅初始化属性
+
+#### 修复 {#react-fixes-604}
+
+- 因仅初始化属性变化而重新创建 Spreadsheet 后，事件回调和 `onStateChange` 不触发的问题
+- 卸载时未移除封装组件的事件处理程序的问题
+- 挂载时 `loadUrl` 的数据被加载两次，以及 Spreadsheet 重新创建后再次覆盖保留数据的问题
 
 ## 版本 6.0.3 {#version-603}
 
