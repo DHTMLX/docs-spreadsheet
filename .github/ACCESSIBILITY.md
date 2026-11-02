@@ -177,7 +177,7 @@ The DOM focus is on the active cell itself, so a screen reader reads the cell, n
 
 The keyboard works as soon as the Spreadsheet is on the page; no configuration is needed. The tables below summarize the keyboard model. See [Hot keys list](https://docs.dhtmlx.com/spreadsheet/hotkeys/) for the complete set of shortcuts.
 
-![The Horizontal align dropdown of the toolbar opened with the Down arrow key, with the focus on its first item](../static/img/accessibility/toolbar_dropdown_focus.png)
+![The Horizontal align dropdown of the toolbar opened with the Down arrow key, with the focus on its first item](https://docs.dhtmlx.com/spreadsheet/img/accessibility/toolbar_dropdown_focus.png)
 
 ### Cells
 
@@ -267,11 +267,11 @@ In the light themes, the colors that mark the cell references of a formula have 
 
 The `contrast-light` theme draws dark text and borders on a white background. In the Spreadsheet below, the context menu of a cell with the filter icon is opened with the keyboard. Its focused command, [*Open filter*](https://docs.dhtmlx.com/spreadsheet/filtering_data/#opening-a-filter-with-the-keyboard), is marked by a dashed outline, and the active cell is marked by a solid border in the primary color of the theme:
 
-![Spreadsheet in the contrast-light theme](../static/img/accessibility/spreadsheet_contrast_light.png)
+![Spreadsheet in the contrast-light theme](https://docs.dhtmlx.com/spreadsheet/img/accessibility/spreadsheet_contrast_light.png)
 
 The `contrast-dark` theme draws light text and borders on a dark background. When the focus is on a toolbar control, the control is marked by a focus ring in the `--dhx-spreadsheet-focus-color` color, which is lighter than the primary color of the active cell border in the dark themes:
 
-![Spreadsheet in the contrast-dark theme](../static/img/accessibility/spreadsheet_contrast_dark.png)
+![Spreadsheet in the contrast-dark theme](https://docs.dhtmlx.com/spreadsheet/img/accessibility/spreadsheet_contrast_dark.png)
 
 ### Focus indicator
 
