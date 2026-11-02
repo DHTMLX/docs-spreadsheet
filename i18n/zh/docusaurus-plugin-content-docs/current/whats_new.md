@@ -59,6 +59,8 @@ description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最
 
 ### React Spreadsheet {#react-spreadsheet-604}
 
+React Spreadsheet 包含上述所有 Spreadsheet 更新和修复。以下是仅针对 React 封装的变更。
+
 #### 更新 {#react-updates-604}
 
 - 新增 [`selection`](react/props.md#runtime-props) 属性

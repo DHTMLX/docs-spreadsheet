@@ -59,6 +59,8 @@ description: DHTMLX JavaScript Spreadsheet 라이브러리의 새로운 기능�
 
 ### React Spreadsheet {#react-spreadsheet-604}
 
+React Spreadsheet에는 위에 나열된 Spreadsheet의 모든 업데이트와 수정 사항이 포함됩니다. 아래는 React 래퍼에만 해당하는 변경 사항입니다.
+
 #### 업데이트 {#react-updates-604}
 
 - 새로운 [`selection`](react/props.md#runtime-props) prop

@@ -59,6 +59,8 @@ Veröffentlicht am 2. November 2026
 
 ### React Spreadsheet {#react-spreadsheet-604}
 
+React Spreadsheet enthält alle oben aufgeführten Aktualisierungen und Fehlerbehebungen von Spreadsheet. Die folgenden Änderungen betreffen nur den React-Wrapper.
+
 #### Aktualisierungen {#react-updates-604}
 
 - Die neue Prop [`selection`](react/props.md#runtime-props)

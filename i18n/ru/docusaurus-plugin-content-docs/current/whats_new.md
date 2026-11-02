@@ -59,6 +59,8 @@ description: В документации вы можете узнать, что 
 
 ### React Spreadsheet {#react-spreadsheet-604}
 
+React Spreadsheet включает все обновления и исправления Spreadsheet, перечисленные выше. Ниже приведены изменения, относящиеся только к обёртке React.
+
 #### Обновления {#react-updates-604}
 
 - Новое свойство [`selection`](react/props.md#runtime-props)

@@ -59,6 +59,8 @@ Released on November 2, 2026
 
 ### React Spreadsheet
 
+React Spreadsheet includes all the Spreadsheet updates and fixes listed above. The changes below are specific to the React wrapper.
+
 #### Updates
 
 - The new [`selection`](react/props.md#runtime-props) prop
