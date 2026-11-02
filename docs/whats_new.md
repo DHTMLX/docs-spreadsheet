@@ -10,7 +10,7 @@ If you are updating Spreadsheet from an older version, check [Migration to Newer
 
 ## Version 6.0.4
 
-Released on October , 2026
+Released on November 2, 2026
 
 ### New functionality
 
@@ -36,7 +36,6 @@ Released on October , 2026
 - [Removing a row or a column through a merged cell](merge_cells.md#removing-rows-and-columns-of-merged-cells) removes all the rows or columns of the merged cell
 - New interface and screen reader strings in the [`spreadsheet` locale](localization.md#default-locale), and [translation of the built-in widgets](localization.md#localizing-built-in-widgets)
 - The [`--dhx-spreadsheet-focus-color`](/themes/#spreadsheet-specific-styles) variable for the keyboard focus, and the formula reference colors with a higher contrast in the light themes
-- React Spreadsheet: the [`selection`](react/props.md#runtime-props) prop, the [`ISelection`](react/types.md#re-exported-upstream-types) type, and [`readonly`](react/props.md#init-only-props) as an init-only prop
 
 ### Fixes
 
@@ -57,9 +56,20 @@ Released on October , 2026
 - A closed context menu reopened
 - The active cell was scrolled one cell short of the viewport edge during keyboard navigation
 - A formula with an invalid reference showed a broken or repeated `#REF!` error instead of a single `#REF!`
-- React Spreadsheet: the event callbacks and `onStateChange` didn't fire after the Spreadsheet was recreated by an init-only prop change
-- React Spreadsheet: the event handlers of the wrapper were not removed on unmount
-- React Spreadsheet: the data from `loadUrl` was loaded twice on mount and again over the kept data after the Spreadsheet was recreated
+
+### React Spreadsheet
+
+#### Updates
+
+- The new [`selection`](react/props.md#runtime-props) prop
+- The [`ISelection`](react/types.md#re-exported-upstream-types) type is re-exported
+- [`readonly`](react/props.md#init-only-props) is an init-only prop
+
+#### Fixes
+
+- The event callbacks and `onStateChange` didn't fire after the Spreadsheet was recreated by an init-only prop change
+- The event handlers of the wrapper were not removed on unmount
+- The data from `loadUrl` was loaded twice on mount and again over the kept data after the Spreadsheet was recreated
 
 ## Version 6.0.3
 
