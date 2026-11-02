@@ -1,7 +1,7 @@
 ---
 sidebar_label: formats
 title: formats config
-description: You can learn about the formats config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Define the number formats available in DHTMLX Spreadsheet with the formats property, an array of objects with the id, mask, name and example of each format.
 ---
 
 # formats

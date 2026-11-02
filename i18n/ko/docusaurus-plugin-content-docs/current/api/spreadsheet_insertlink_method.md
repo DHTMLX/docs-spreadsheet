@@ -1,7 +1,7 @@
 ---
 sidebar_label: insertLink()
 title: insertLink 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 insertLink 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 시험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수도 있습니다.
+description: DHTMLX Spreadsheet에서 insertLink() 메서드로 셀에 하이퍼링크를 삽입하거나, 셀의 텍스트는 유지한 채 하이퍼링크를 제거합니다.
 ---
 
 # insertLink()

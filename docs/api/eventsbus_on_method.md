@@ -1,7 +1,7 @@
 ---
 sidebar_label: on()
 title: on events bus method
-description: You can learn about the on events bus method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Attach a handler to an inner event of DHTMLX Spreadsheet with the events.on() method, for example, to react to a change of the cell style.
 ---
 
 # on()

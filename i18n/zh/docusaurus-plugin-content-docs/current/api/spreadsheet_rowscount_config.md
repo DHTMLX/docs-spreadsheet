@@ -1,7 +1,7 @@
 ---
 sidebar_label: rowsCount
 title: rowsCount 配置项
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 rowsCount 配置项。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 rowsCount 属性设置 DHTMLX Spreadsheet 初始化时显示的行数。
 ---
 
 # rowsCount

@@ -1,7 +1,7 @@
 ---
 sidebar_label: multiSheets
 title: multiSheets config
-description: You can learn about the multiSheets config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Turn the work with multiple sheets on or off in DHTMLX Spreadsheet with the multiSheets property, which shows or hides the bottom tabbar with sheet tabs.
 ---
 
 # multiSheets

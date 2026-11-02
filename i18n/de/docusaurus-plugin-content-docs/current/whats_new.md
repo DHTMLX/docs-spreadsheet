@@ -1,7 +1,7 @@
 ---
 sidebar_label: Was ist neu
 title: Was ist neu in DHTMLX Spreadsheet
-description: Sie erfahren in der Dokumentation, was neu in der DHTMLX JavaScript Spreadsheet-Bibliothek ist. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, testen Sie Code-Beispiele und Live-Demos, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Versionshinweise zu DHTMLX Spreadsheet mit neuen Funktionen, Aktualisierungen, Fehlerbehebungen und Breaking Changes jeder Version.
 ---
 
 # Was ist neu {#whats-new}

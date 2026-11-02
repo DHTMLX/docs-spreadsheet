@@ -1,7 +1,7 @@
 ---
 sidebar_label: Formeln und Funktionen
 title: Formeln und Funktionen
-description: In der Dokumentation erfahren Sie alles über die Formeln und Funktionen der DHTMLX JavaScript Spreadsheet-Bibliothek. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Nutzen Sie in DHTMLX Spreadsheet zu Excel und Google Sheets kompatible Formeln, darunter mathematische, Datums-, Such-, Text- und Finanzfunktionen, fügen Sie eigene Formeln hinzu und lesen Sie die Formel einer Zelle aus.
 ---
 
 # Formeln und Funktionen {#formulas-and-functions}

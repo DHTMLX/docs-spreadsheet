@@ -1,7 +1,7 @@
 ---
 sidebar_label: 公式与函数
 title: 公式与函数
-description: 您可以在本文档中了解 DHTMLX JavaScript Spreadsheet 库的公式与函数。浏览开发者指南和 API 参考，尝试代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 在 DHTMLX Spreadsheet 中使用与 Excel 和 Google Sheets 兼容的公式，包括数学、日期、查找、字符串和财务函数，添加自定义公式并获取单元格的公式。
 ---
 
 # 公式与函数 {#formulas-and-functions}

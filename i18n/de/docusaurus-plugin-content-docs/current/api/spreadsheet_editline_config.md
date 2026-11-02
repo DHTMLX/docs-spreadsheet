@@ -1,7 +1,7 @@
 ---
 sidebar_label: editLine
 title: editLine config
-description: Sie können im Dokumentationsbereich der DHTMLX JavaScript Spreadsheet-Bibliothek mehr über die editLine-Konfiguration erfahren. Lesen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Blenden Sie die Bearbeitungsleiste von DHTMLX Spreadsheet mit der Eigenschaft editLine ein oder aus. Standardmäßig ist sie eingeblendet.
 ---
 
 # editLine

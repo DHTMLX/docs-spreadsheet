@@ -1,7 +1,7 @@
 ---
 sidebar_label: getValue()
 title: getValue method
-description: You can learn about the getValue method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get the value of a cell or the values of a range of cells in DHTMLX Spreadsheet with the getValue() method.
 ---
 
 # getValue()

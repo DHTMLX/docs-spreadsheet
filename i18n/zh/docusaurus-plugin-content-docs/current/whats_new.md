@@ -1,7 +1,7 @@
 ---
 sidebar_label: 更新日志
 title: DHTMLX Spreadsheet 更新日志
-description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的最新动态。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载免费的 30 天评估版 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet 发布说明，介绍各版本的新功能、更新、修复和破坏性变更。
 ---
 
 # 更新日志 {#whats-new}

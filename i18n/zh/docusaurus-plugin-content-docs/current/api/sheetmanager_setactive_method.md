@@ -1,7 +1,7 @@
 ---
 sidebar_label: setActive()
 title: setActive 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Sheet Manager 的 setActive 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 sheets.setActive() 方法将 DHTMLX Spreadsheet 的活动（可见）工作表切换为指定 id 的工作表。
 ---
 
 # setActive()

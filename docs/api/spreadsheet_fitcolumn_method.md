@@ -1,7 +1,7 @@
 ---
 sidebar_label: fitColumn()
 title: fitColumn method
-description: You can learn about the fitColumn method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Adjust the width of a column to its longest value in DHTMLX Spreadsheet with the fitColumn() method.
 ---
 
 # fitColumn()

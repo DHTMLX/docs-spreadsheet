@@ -1,7 +1,7 @@
 ---
 sidebar_label: colsCount
 title: colsCount config
-description: You can learn about the colsCount config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Set the number of columns that DHTMLX Spreadsheet shows on initialization with the colsCount property.
 ---
 
 # colsCount

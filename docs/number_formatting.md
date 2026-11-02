@@ -1,7 +1,7 @@
 ---
 sidebar_label: Number formatting
 title: Number Formatting
-description: You can study the developer guide about number formatting in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Apply number, currency, percent, date, time and scientific formats to cell values in DHTMLX Spreadsheet, localize them, define custom format masks and set or get the format of a cell.
 ---
 
 # Number formatting

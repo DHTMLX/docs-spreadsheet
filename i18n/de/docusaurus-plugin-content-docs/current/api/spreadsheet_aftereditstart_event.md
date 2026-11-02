@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterEditStart
 title: afterEditStart event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das afterEditStart-Event. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Reagieren Sie mit dem Event afterEditStart auf den Beginn der Zellbearbeitung in DHTMLX Spreadsheet. Das Event erhält die ID der Zelle und ihren Wert.
 ---
 
 # afterEditStart

@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeClear
 title: beforeClear 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 beforeClear 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用已弃用的 beforeClear 事件，或使用替代它的 beforeAction 事件和 clear 操作，阻止清空 DHTMLX Spreadsheet。
 ---
 
 # beforeClear

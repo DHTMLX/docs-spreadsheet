@@ -1,7 +1,7 @@
 ---
 sidebar_label: getActive()
 title: getActive 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Sheet Manager 的 getActive 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 sheets.getActive() 方法获取 DHTMLX Spreadsheet 的活动（可见）工作表，该方法返回工作表的 id 和名称。
 ---
 
 # getActive()

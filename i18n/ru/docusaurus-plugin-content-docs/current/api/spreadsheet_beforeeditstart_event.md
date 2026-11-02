@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditStart
 title: Событие beforeEditStart
-description: Вы можете узнать о событии beforeEditStart в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Управляйте тем, какие ячейки можно редактировать в DHTMLX Spreadsheet, с помощью события beforeEditStart и верните false, чтобы редактор не открывался.
 ---
 
 # beforeEditStart

@@ -1,7 +1,7 @@
 ---
 sidebar_label: isLocked()
 title: isLocked method
-description: You can learn about the isLocked method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Check whether a cell or any cell of a range is locked in DHTMLX Spreadsheet with the isLocked() method.
 ---
 
 # isLocked()

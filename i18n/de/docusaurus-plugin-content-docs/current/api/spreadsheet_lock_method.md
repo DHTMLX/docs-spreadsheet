@@ -1,7 +1,7 @@
 ---
 sidebar_label: lock()
 title: lock-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die lock-Methode. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Sperren Sie mit der Methode lock() eine Zelle, einen Zellbereich oder mehrere Zellen in DHTMLX Spreadsheet, damit Benutzer sie nicht bearbeiten können.
 ---
 
 # lock()

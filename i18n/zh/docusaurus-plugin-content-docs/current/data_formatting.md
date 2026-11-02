@@ -1,7 +1,7 @@
 ---
 sidebar_label: 数据格式化
 title: 数据格式化
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解数据格式化的相关内容。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 通过 DHTMLX Spreadsheet 工具栏设置单元格数据的样式，包括文本和背景颜色、粗体和斜体、对齐方式、文本换行和单元格边框，并清除样式和值。
 ---
 
 # 数据格式化 {#data-formatting}

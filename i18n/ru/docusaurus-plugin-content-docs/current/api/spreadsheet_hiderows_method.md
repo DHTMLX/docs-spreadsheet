@@ -1,7 +1,7 @@
 ---
 sidebar_label: hideRows()
 title: Метод hideRows
-description: Вы можете узнать о методе hideRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Скройте одну или несколько строк в DHTMLX Spreadsheet с помощью метода hideRows() по id ячейки, диапазону ячеек или выделенной ячейке.
 ---
 
 # hideRows()

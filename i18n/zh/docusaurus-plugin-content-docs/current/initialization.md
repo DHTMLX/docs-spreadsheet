@@ -1,7 +1,7 @@
 ---
 sidebar_label: 初始化
 title: 初始化
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解初始化的相关内容。浏览开发者指南和 API 参考、尝试代码示例和在线演示，并下载免费 30 天试用版 DHTMLX Spreadsheet。
+description: 通过引入源文件、添加容器并使用配置对象调用 dhx.Spreadsheet 构造函数，在页面上初始化 DHTMLX Spreadsheet。
 ---
 
 # 初始化 {#initialization}

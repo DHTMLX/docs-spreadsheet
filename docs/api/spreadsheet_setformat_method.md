@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFormat()
 title: setFormat method
-description: You can learn about the setformat method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Apply a number format to the value of a cell or a range of cells in DHTMLX Spreadsheet with the setFormat() method.
 ---
 
 # setFormat()

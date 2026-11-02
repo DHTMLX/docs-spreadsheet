@@ -1,7 +1,7 @@
 ---
 sidebar_label: Spreadsheet 操作
 title: 操作概览
-description: 您可以在文档中查看 DHTMLX JavaScript Spreadsheet 库的操作概览。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet 操作（action）概述，以及可在 beforeAction 和 afterAction 事件中处理的完整操作列表。
 ---
 
 # 操作概览 {#actions-overview}

@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterClear
 title: afterClear event
-description: You can learn about the afterClear event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Handle the afterClear event that fires after DHTMLX Spreadsheet is cleared (deprecated since v4.3, use the afterAction event instead).
 ---
 
 # afterClear

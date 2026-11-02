@@ -1,7 +1,7 @@
 ---
 sidebar_label: Интеграция со Svelte
 title: Интеграция со Svelte
-description: Вы можете узнать об интеграции DHTMLX JavaScript Spreadsheet со Svelte в документации. Изучите руководства разработчика и справочник API, ознакомьтесь с примерами кода и живыми демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Используйте DHTMLX Spreadsheet в приложении Svelte. Создайте проект, добавьте Spreadsheet как компонент Svelte, загрузите данные и обработайте события.
 ---
 
 # Интеграция со Svelte {#integration-with-svelte}

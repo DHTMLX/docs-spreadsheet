@@ -1,7 +1,7 @@
 ---
 sidebar_label: load()
 title: load method
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die load-Methode. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Laden Sie mit der Methode load() Daten aus einer externen JSON-, CSV- oder XLSX-Datei in DHTMLX Spreadsheet. Die Methode gibt ein Promise zurück.
 ---
 
 # load()

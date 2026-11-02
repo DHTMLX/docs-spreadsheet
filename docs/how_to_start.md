@@ -1,7 +1,7 @@
 ---
 sidebar_label: How to start
 title: How to start with DHTMLX Spreadsheet
-description: You can learn how to start with the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get DHTMLX Spreadsheet running on a page in four steps, from including the source files or installing the npm package to configuring the component and loading data.
 ---
 
 # How to start

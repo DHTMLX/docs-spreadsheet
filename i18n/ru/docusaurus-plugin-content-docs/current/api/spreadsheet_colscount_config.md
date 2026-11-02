@@ -1,7 +1,7 @@
 ---
 sidebar_label: colsCount
 title: Конфигурация colsCount
-description: Вы можете узнать о конфигурации colsCount в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Задайте количество столбцов, которое DHTMLX Spreadsheet показывает при инициализации, с помощью свойства colsCount.
 ---
 
 # colsCount

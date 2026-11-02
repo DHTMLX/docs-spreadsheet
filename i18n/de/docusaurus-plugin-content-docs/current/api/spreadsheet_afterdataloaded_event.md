@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterDataLoaded
 title: afterDataLoaded event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das afterDataLoaded-Event. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Führen Sie mit dem Event afterDataLoaded Code aus, nachdem Daten in DHTMLX Spreadsheet geladen wurden, zum Beispiel, um nach dem Laden eine Meldung anzuzeigen.
 ---
 
 # afterDataLoaded

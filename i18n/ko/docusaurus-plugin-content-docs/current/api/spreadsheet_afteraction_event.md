@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterAction
 title: afterAction 이벤트
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 afterAction 이벤트에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: 작업이 실행된 후 발생하는 DHTMLX Spreadsheet의 afterAction 이벤트를 처리합니다. 이 이벤트는 액션 이름과 셀, 새 값 및 이전 값 등 액션의 매개변수를 전달받습니다.
 ---
 
 # afterAction

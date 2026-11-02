@@ -1,7 +1,7 @@
 ---
 sidebar_label: Custom theme
 title: Custom Theme
-description: You can learn how to create a custom theme in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Create a custom color theme for DHTMLX Spreadsheet with CSS variables and apply it with the dhx.setTheme() method.
 ---
 
 # Custom theme

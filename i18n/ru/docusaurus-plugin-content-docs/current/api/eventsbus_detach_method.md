@@ -1,7 +1,7 @@
 ---
 sidebar_label: detach()
 title: Метод detach
-description: Вы можете узнать о Event Bus методе detach в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучайте руководства разработчика и справочник API, пробуйте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Отсоедините обработчик события, подключённый методом on(), от DHTMLX Spreadsheet с помощью метода events.detach() по имени события.
 ---
 
 # detach()

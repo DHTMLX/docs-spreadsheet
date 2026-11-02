@@ -1,7 +1,7 @@
 ---
 sidebar_label: detach()
 title: detach Events Bus-Methode
-description: Sie können sich über die detach Events Bus-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek informieren. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Entfernen Sie mit der Methode events.detach() einen mit der Methode on() angehängten Event-Handler aus DHTMLX Spreadsheet anhand des Event-Namens.
 ---
 
 # detach()

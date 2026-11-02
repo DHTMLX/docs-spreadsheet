@@ -1,7 +1,7 @@
 ---
 sidebar_label: eachCell()
 title: eachCell 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 eachCell 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费试用版本。
+description: 使用 eachCell() 方法遍历 DHTMLX Spreadsheet 中的单元格区域或选中的单元格，该方法会以每个单元格的名称和值调用一个函数。
 ---
 
 # eachCell()

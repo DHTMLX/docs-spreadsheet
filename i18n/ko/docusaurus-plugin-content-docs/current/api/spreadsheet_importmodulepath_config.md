@@ -1,7 +1,7 @@
 ---
 sidebar_label: importModulePath
 title: importModulePath 설정
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 importModulePath 설정에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 시험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수도 있습니다.
+description: DHTMLX Spreadsheet에서 importModulePath 속성으로 Excel 파일 가져오기에 사용되는 Excel2json 라이브러리의 worker.js 파일 경로를 설정합니다.
 ---
 
 # importModulePath

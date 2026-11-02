@@ -1,7 +1,7 @@
 ---
 sidebar_label: 데이터 로드 및 내보내기
 title: 데이터 로드하기
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 데이터 로드에 대해 학습할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보고, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하십시오.
+description: 파일 또는 로컬 소스에서 스타일, 잠긴 셀, 링크를 포함한 JSON, CSV, Excel 데이터를 DHTMLX Spreadsheet로 로드하고, 상태를 저장 및 복원하며 데이터를 Excel 또는 JSON으로 내보냅니다.
 ---
 
 # 데이터 로드 및 내보내기 {#data-loading-and-export}

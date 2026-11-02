@@ -1,7 +1,7 @@
 ---
 sidebar_label: 数字格式化
 title: 数字格式化指南
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中学习有关数字格式化的用户指南。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 通过 DHTMLX Spreadsheet 工具栏为单元格值选择数字格式，例如数字、货币、百分比、日期、时间或文本。
 ---
 
 # 数字格式化 {#number-formatting}

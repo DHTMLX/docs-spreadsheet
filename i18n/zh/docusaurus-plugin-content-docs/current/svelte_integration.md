@@ -1,7 +1,7 @@
 ---
 sidebar_label: 与 Svelte 集成
 title: Svelte 集成
-description: 您可以在文档中了解 DHTMLX JavaScript Spreadsheet 库的 Svelte 集成。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 在 Svelte 应用中使用 DHTMLX Spreadsheet。创建项目，将 Spreadsheet 添加为 Svelte 组件，加载数据并处理事件。
 ---
 
 # 与 Svelte 集成 {#integration-with-svelte}

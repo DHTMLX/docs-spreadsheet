@@ -1,7 +1,7 @@
 ---
 sidebar_label: hideRows()
 title: hideRows method
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die hideRows-Methode. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Blenden Sie mit der Methode hideRows() eine oder mehrere Zeilen in DHTMLX Spreadsheet aus, anhand der ID einer Zelle, eines Zellbereichs oder der ausgewählten Zelle.
 ---
 
 # hideRows()

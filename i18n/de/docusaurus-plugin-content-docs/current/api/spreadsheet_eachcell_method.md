@@ -1,7 +1,7 @@
 ---
 sidebar_label: eachCell()
 title: eachCell method
-description: Sie können im Dokumentationsbereich der DHTMLX JavaScript Spreadsheet-Bibliothek mehr über die eachCell-Methode erfahren. Lesen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Durchlaufen Sie mit der Methode eachCell() einen Zellbereich oder die ausgewählten Zellen in DHTMLX Spreadsheet. Die Methode ruft für jede Zelle eine Funktion mit deren Namen und Wert auf.
 ---
 
 # eachCell()

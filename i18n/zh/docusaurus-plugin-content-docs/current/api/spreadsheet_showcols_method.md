@@ -1,7 +1,7 @@
 ---
 sidebar_label: showCols()
 title: showCols 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 showCols 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 showCols() 方法显示 DHTMLX Spreadsheet 中隐藏的列，列由传入的单元格或当前选中的单元格确定。
 ---
 
 # showCols()

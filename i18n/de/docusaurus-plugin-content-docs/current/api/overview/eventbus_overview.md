@@ -1,7 +1,7 @@
 ---
 sidebar_label: Übersicht der Event Bus-Methoden
 title: Übersicht der Event Bus-Methoden
-description: Sie können eine Übersicht der Event Bus-Methoden der DHTMLX JavaScript Spreadsheet-Bibliothek in der Dokumentation einsehen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Liste der Event-Bus-Methoden von DHTMLX Spreadsheet zum Anhängen, Entfernen und Auslösen von Events.
 ---
 
 # Übersicht der Event Bus-Methoden {#event-bus-methods-overview}

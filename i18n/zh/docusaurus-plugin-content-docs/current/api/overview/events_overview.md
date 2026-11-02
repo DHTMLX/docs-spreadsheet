@@ -1,7 +1,7 @@
 ---
 sidebar_label: 事件概览
 title: 事件概览
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中查看事件概览。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载免费 30 天试用版的 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet 事件列表，这些事件在执行操作、加载数据、编辑单元格、选择、设置焦点和切换工作表时触发。
 ---
 
 # 事件概览 {#events-overview}

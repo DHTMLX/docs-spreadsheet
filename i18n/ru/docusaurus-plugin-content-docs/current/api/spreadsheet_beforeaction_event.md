@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeAction
 title: Событие beforeAction
-description: Вы можете узнать о событии beforeAction в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Перехватывайте действия в DHTMLX Spreadsheet с помощью события beforeAction, которое получает имя и параметры действия и отменяет его, если обработчик возвращает false.
 ---
 
 # beforeAction

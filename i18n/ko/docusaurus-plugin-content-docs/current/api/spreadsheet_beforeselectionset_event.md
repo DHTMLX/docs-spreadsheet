@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSelectionSet
 title: beforeSelectionSet 이벤트
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 문서에서 beforeSelectionSet 이벤트에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 체험하며, DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하세요.
+description: DHTMLX Spreadsheet에서 beforeSelectionSet 이벤트로 셀 선택을 제어합니다. 이 이벤트는 셀이 선택되기 전에 발생하며, 핸들러가 false를 반환하면 선택을 막습니다.
 ---
 
 # beforeSelectionSet

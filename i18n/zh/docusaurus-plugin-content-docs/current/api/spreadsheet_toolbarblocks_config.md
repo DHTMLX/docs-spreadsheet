@@ -1,7 +1,7 @@
 ---
 sidebar_label: toolbarBlocks
 title: toolbarBlocks 配置项
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 toolbarBlocks 配置项。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 toolbarBlocks 属性选择 DHTMLX Spreadsheet 工具栏中显示的按钮块，例如 undo、colors、font、align 和 format。
 ---
 
 # toolbarBlocks

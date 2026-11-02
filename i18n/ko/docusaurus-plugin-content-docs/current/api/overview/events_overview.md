@@ -1,7 +1,7 @@
 ---
 sidebar_label: 이벤트 개요
 title: 이벤트 개요
-description: DHTMLX JavaScript Spreadsheet 라이브러리의 이벤트 개요를 문서에서 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드하실 수 있습니다.
+description: 액션, 데이터 로딩, 셀 편집, 선택, 포커스 및 시트 변경 시 발생하는 DHTMLX Spreadsheet 이벤트 목록입니다.
 ---
 
 # 이벤트 개요 {#events-overview}

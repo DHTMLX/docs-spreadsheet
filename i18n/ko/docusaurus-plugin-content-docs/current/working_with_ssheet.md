@@ -1,7 +1,7 @@
 ---
 sidebar_label: Spreadsheet 작업
 title: Spreadsheet 작업
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 스프레드시트 작업에 대한 내용을 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. 또한 DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수 있습니다.
+description: API로 DHTMLX Spreadsheet에서 작업을 실행 취소 및 다시 실행하고, 행과 열을 추가, 제거, 고정, 숨기고, 열 너비를 자동 맞춤하며, 데이터를 필터링, 검색, 정렬하고 스프레드시트를 지웁니다.
 ---
 
 # Spreadsheet 작업 {#work-with-spreadsheet}

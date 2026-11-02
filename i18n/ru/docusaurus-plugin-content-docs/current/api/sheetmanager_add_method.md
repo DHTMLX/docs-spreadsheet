@@ -1,7 +1,7 @@
 ---
 sidebar_label: add()
 title: Метод add
-description: Вы можете узнать о методе add объекта Sheet Manager в документации библиотеки DHTMLX JavaScript Spreadsheet. Изучите руководства разработчика и справочник по API, ознакомьтесь с примерами кода и живыми демо, а также загрузите бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Добавьте новый пустой лист в DHTMLX Spreadsheet с помощью метода sheets.add(), который возвращает идентификатор нового листа (требуется опция multiSheets).
 ---
 
 # add()

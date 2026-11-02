@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSheetChange
 title: afterSheetChange event
-description: You can learn about the afterSheetChange event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Track the switching of sheets in DHTMLX Spreadsheet with the afterSheetChange event, which receives the name and id of the newly active sheet.
 ---
 
 # afterSheetChange

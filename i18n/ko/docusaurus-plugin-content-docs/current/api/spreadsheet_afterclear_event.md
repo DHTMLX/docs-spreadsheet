@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterClear
 title: afterClear 이벤트
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 afterClear 이벤트에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하실 수 있습니다.
+description: DHTMLX Spreadsheet가 초기화된 후 발생하는 afterClear 이벤트를 처리합니다(v4.3부터 더 이상 사용되지 않으므로 afterAction 이벤트를 사용하십시오).
 ---
 
 # afterClear

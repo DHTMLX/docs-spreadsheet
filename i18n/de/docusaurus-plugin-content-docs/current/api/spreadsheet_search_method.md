@@ -1,7 +1,7 @@
 ---
 sidebar_label: search()
 title: search-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die search-Methode. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Suchen Sie mit der Methode search() nach Zellen mit einem Wert in DHTMLX Spreadsheet. Die Methode gibt die IDs der gefundenen Zellen zurück und kann die Suchleiste mit hervorgehobenen Treffern öffnen.
 ---
 
 # search()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterFocusSet
 title: afterFocusSet event
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über das afterFocusSet-Event. Durchsuchen Sie Entwicklerhandbücher und API-Referenzen, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Verfolgen Sie die fokussierte Zelle in DHTMLX Spreadsheet mit dem Event afterFocusSet. Es wird ausgelöst, nachdem der Fokus auf eine Zelle gesetzt wurde, und erhält die ID der Zelle.
 ---
 
 # afterFocusSet

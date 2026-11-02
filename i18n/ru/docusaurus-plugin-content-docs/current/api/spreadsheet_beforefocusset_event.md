@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeFocusSet
 title: Событие beforeFocusSet
-description: Вы можете узнать о событии beforeFocusSet в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Управляйте фокусом в DHTMLX Spreadsheet с помощью события beforeFocusSet, которое вызывается перед установкой фокуса на ячейку и отменяет её, если обработчик возвращает false.
 ---
 
 # beforeFocusSet

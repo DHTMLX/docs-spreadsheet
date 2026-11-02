@@ -1,7 +1,7 @@
 ---
 sidebar_label: Übersicht der Export-Methoden
 title: Übersicht der Export-Methoden
-description: Sie können eine Übersicht der Export-Methoden der DHTMLX JavaScript Spreadsheet-Bibliothek in der Dokumentation einsehen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Liste der Methoden des Export-Moduls von DHTMLX Spreadsheet, die die Daten in eine JSON- oder Excel-Datei (.xlsx) speichern.
 ---
 
 # Übersicht der Export-Methoden {#export-methods-overview}

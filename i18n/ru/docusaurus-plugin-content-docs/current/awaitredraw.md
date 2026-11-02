@@ -1,7 +1,7 @@
 ---
 sidebar_label: Хелпер AwaitRedraw
 title: Хелпер AwaitRedraw
-description: Вы можете изучить хелпер AwaitRedraw в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Выполните код после того, как DHTMLX Spreadsheet завершит отрисовку, с помощью хелпера dhx.awaitRedraw, для методов API, которые срабатывают только после отображения компонента на странице.
 ---
 
 # Хелпер AwaitRedraw {#awaitredraw-helper}

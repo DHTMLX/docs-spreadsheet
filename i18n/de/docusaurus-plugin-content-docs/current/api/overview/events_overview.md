@@ -1,7 +1,7 @@
 ---
 sidebar_label: Events-Übersicht
 title: Events-Übersicht
-description: Sie können eine Events-Übersicht der DHTMLX JavaScript Spreadsheet-Bibliothek in der Dokumentation einsehen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Liste der Events von DHTMLX Spreadsheet, die bei Aktionen, beim Laden von Daten, beim Bearbeiten von Zellen, bei Auswahl, Fokus und Tabellenblattwechsel ausgelöst werden.
 ---
 
 # Events-Übersicht {#events-overview}

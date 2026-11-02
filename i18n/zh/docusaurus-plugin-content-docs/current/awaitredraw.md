@@ -1,7 +1,7 @@
 ---
 sidebar_label: AwaitRedraw 辅助函数
 title: AwaitRedraw 辅助函数
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 AwaitRedraw 辅助函数。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 dhx.awaitRedraw 辅助函数在 DHTMLX Spreadsheet 完成渲染后运行代码，适用于仅在组件显示在页面上后才生效的 API 方法。
 ---
 
 # AwaitRedraw 辅助函数 {#awaitredraw-helper}

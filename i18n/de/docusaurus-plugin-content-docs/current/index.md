@@ -2,7 +2,7 @@
 sidebar_label: Spreadsheet-Übersicht
 title: DHTMLX Spreadsheet Übersicht
 slug: /
-description: Sie finden eine Übersicht der JavaScript-Spreadsheet-Bibliothek in der DHTMLX-Dokumentation. Durchsuchen Sie Entwickleranleitungen und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Überblick über DHTMLX Spreadsheet, eine JavaScript-Komponente zum Bearbeiten und Formatieren von Tabellendaten, mit Toolbar, Bearbeitungszeile, Grid, Menü und Kontextmenü.
 ---
 
 # DHTMLX Spreadsheet-Übersicht {#dhtmlx-spreadsheet-overview}

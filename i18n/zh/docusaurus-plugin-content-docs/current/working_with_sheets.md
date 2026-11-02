@@ -1,7 +1,7 @@
 ---
 sidebar_label: 工作表操作
 title: 工作表操作
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解工作表操作相关内容。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载免费的 30 天评估版 DHTMLX Spreadsheet。
+description: 将多个工作表加载到 DHTMLX Spreadsheet，并使用 API 方法添加、删除、获取、清除和切换工作表。
 ---
 
 # 工作表操作 {#work-with-sheets}

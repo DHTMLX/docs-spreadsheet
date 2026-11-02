@@ -1,7 +1,7 @@
 ---
 sidebar_label: hideSearch()
 title: hideSearch method
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die hideSearch-Methode. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Blenden Sie die Suchleiste von DHTMLX Spreadsheet mit der Methode hideSearch() aus, zum Beispiel nach einer mit der Methode search() geöffneten Suche.
 ---
 
 # hideSearch()

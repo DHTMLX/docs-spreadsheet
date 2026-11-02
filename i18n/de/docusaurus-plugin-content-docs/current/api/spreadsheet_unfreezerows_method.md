@@ -1,7 +1,7 @@
 ---
 sidebar_label: unfreezeRows() 
 title: unfreezeRows-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die unfreezeRows-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Geben Sie mit der Methode unfreezeRows() die fixierten Zeilen in DHTMLX Spreadsheet frei, sodass sie wieder mit dem restlichen Grid scrollen.
 ---
 
 # unfreezeRows()

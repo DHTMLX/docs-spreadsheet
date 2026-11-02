@@ -1,7 +1,7 @@
 ---
 sidebar_label: lock()
 title: lock 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 lock 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 lock() 方法锁定 DHTMLX Spreadsheet 中的单元格、单元格区域或多个单元格，使用户无法编辑它们。
 ---
 
 # lock()

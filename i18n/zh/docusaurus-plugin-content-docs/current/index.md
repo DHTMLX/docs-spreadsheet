@@ -2,7 +2,7 @@
 sidebar_label: Spreadsheet 概览
 title: DHTMLX Spreadsheet 概览
 slug: /
-description: 您可以在 DHTMLX 文档中查阅 JavaScript Spreadsheet 库的概览。浏览开发者指南和 API 参考、尝试代码示例和在线演示，并下载免费 30 天试用版 DHTMLX Spreadsheet。
+description: DHTMLX Spreadsheet 概览。这是一个用于编辑和格式化电子表格数据的 JavaScript 组件，包括工具栏、编辑栏、表格、菜单和上下文菜单。
 ---
 
 # DHTMLX Spreadsheet 概览 {#dhtmlx-spreadsheet-overview}

@@ -1,7 +1,7 @@
 ---
 sidebar_label: multiSheets
 title: конфигурация multiSheets
-description: Вы можете узнать о конфигурации multiSheets в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Включите или отключите работу с несколькими листами в DHTMLX Spreadsheet с помощью свойства multiSheets, которое показывает или скрывает нижнюю панель с вкладками листов.
 ---
 
 # multiSheets

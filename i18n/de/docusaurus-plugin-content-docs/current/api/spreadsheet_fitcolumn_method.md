@@ -1,7 +1,7 @@
 ---
 sidebar_label: fitColumn()
 title: fitColumn-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die fitColumn-Methode. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Passen Sie mit der Methode fitColumn() die Breite einer Spalte in DHTMLX Spreadsheet an ihren längsten Wert an.
 ---
 
 # fitColumn()

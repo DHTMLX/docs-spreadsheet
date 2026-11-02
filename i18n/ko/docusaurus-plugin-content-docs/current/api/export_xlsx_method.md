@@ -1,7 +1,7 @@
 ---
 sidebar_label: xlsx()
 title: xlsx 내보내기 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 xlsx 내보내기 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드하실 수 있습니다.
+description: DHTMLX Spreadsheet에서 export.xlsx() 메서드로 데이터를 Excel(.xlsx) 파일로 내보냅니다. 파일 이름을 지정할 수도 있습니다.
 ---
 
 # xlsx()

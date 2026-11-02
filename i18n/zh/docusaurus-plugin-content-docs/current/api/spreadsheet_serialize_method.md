@@ -1,7 +1,7 @@
 ---
 sidebar_label: serialize()
 title: serialize 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 serialize 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 serialize() 方法将 DHTMLX Spreadsheet 的数据保存为 JSON 对象，其中包括工作表、单元格值、样式和数字格式。
 ---
 
 # serialize()

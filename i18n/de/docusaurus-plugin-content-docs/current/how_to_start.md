@@ -1,7 +1,7 @@
 ---
 sidebar_label: Erste Schritte
 title: Erste Schritte mit DHTMLX Spreadsheet
-description: Sie können in der Dokumentation erfahren, wie Sie mit der DHTMLX JavaScript Spreadsheet-Bibliothek beginnen. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus, und laden Sie eine kostenlose 30-tägige Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Bringen Sie DHTMLX Spreadsheet in vier Schritten auf eine Seite, vom Einbinden der Quelldateien oder Installieren des npm-Pakets bis zum Konfigurieren der Komponente und Laden der Daten.
 ---
 
 # Erste Schritte {#how-to-start}

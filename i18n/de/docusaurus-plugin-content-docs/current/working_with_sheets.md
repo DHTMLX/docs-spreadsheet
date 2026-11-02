@@ -1,7 +1,7 @@
 ---
 sidebar_label: Mit Tabellen arbeiten
 title: Mit Tabellen arbeiten
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie, wie Sie mit Tabellen arbeiten. Hier finden Sie Entwickleranleitungen und API-Referenzen, Codebeispiele und Live-Demos sowie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet.
+description: Laden Sie mehrere Tabellenblätter in DHTMLX Spreadsheet und fügen Sie Blätter mit API-Methoden hinzu, entfernen, lesen, leeren und wechseln Sie sie.
 ---
 
 # Mit Tabellen arbeiten

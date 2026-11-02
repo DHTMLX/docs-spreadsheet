@@ -1,7 +1,7 @@
 ---
 sidebar_label: groupFill
 title: groupFill 事件
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 groupFill 事件。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 groupFill 事件处理 DHTMLX Spreadsheet 中的单元格自动填充，该事件会将获得焦点的单元格和选中的单元格传递给回调函数。
 ---
 
 # groupFill

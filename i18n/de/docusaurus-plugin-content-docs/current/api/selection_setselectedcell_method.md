@@ -1,7 +1,7 @@
 ---
 sidebar_label: setSelectedCell() 
 title: setSelectedCell Selection-Methode
-description: Sie können die setSelectedCell Selection-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek kennenlernen. Durchsuchen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Wählen Sie mit der Methode selection.setSelectedCell() eine Zelle, mehrere Zellen oder einen Zellbereich in DHTMLX Spreadsheet aus und scrollen Sie optional dorthin.
 ---
 
 # setSelectedCell()

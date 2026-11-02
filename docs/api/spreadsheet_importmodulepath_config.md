@@ -1,7 +1,7 @@
 ---
 sidebar_label: importModulePath
 title: importModulePath config
-description: You can learn about the importModulePath config in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Set the path to the worker.js file of the Excel2json library, which DHTMLX Spreadsheet uses to import Excel files, with the importModulePath property.
 ---
 
 # importModulePath

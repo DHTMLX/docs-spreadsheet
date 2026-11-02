@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeSelectionSet
 title: Событие beforeSelectionSet
-description: Вы можете узнать о событии beforeSelectionSet в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачивайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Управляйте выделением ячеек в DHTMLX Spreadsheet с помощью события beforeSelectionSet, которое вызывается перед выделением ячеек и отменяет его, если обработчик возвращает false.
 ---
 
 # beforeSelectionSet

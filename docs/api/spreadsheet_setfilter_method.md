@@ -1,7 +1,7 @@
 ---
 sidebar_label: setFilter()
 title: setFilter method
-description: You can learn about the setFilter method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Filter the data of a column in DHTMLX Spreadsheet by conditions or by excluded values with the setFilter() method, or reset the filtering.
 ---
 
 # setFilter()

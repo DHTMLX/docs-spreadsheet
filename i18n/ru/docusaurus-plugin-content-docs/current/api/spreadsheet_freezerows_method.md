@@ -1,7 +1,7 @@
 ---
 sidebar_label: freezeRows() 
 title: Метод freezeRows
-description: Вы можете узнать о методе freezeRows в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Закрепите строки в DHTMLX Spreadsheet с помощью метода freezeRows(), который фиксирует строки до указанной или выбранной ячейки на текущем или другом листе.
 ---
 
 # freezeRows()

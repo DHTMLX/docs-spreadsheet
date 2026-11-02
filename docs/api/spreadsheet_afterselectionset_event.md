@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSelectionSet
 title: afterSelectionSet event
-description: You can learn about the afterSelectionSet event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: React to the selection of cells in DHTMLX Spreadsheet with the afterSelectionSet event, which fires after cells are selected and receives their ids.
 ---
 
 # afterSelectionSet

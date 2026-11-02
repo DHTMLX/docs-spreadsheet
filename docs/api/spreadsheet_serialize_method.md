@@ -1,7 +1,7 @@
 ---
 sidebar_label: serialize()
 title: serialize method
-description: You can learn about the serialize method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Save the data of DHTMLX Spreadsheet to a JSON object with the serialize() method, which includes the sheets, the cell values, the styles and the number formats.
 ---
 
 # serialize()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSelectionSet
 title: Событие afterSelectionSet
-description: Вы можете узнать о событии afterSelectionSet в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Обработайте выделение ячеек в DHTMLX Spreadsheet с помощью события afterSelectionSet, которое вызывается после выделения ячеек и получает их id.
 ---
 
 # afterSelectionSet

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Data loading and export
 title: Loading data
-description: You can learn about loading data in the DHTMLX JavaScript Spreadsheet library in the documentation. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Load JSON, CSV or Excel data with styles, locked cells and links into DHTMLX Spreadsheet from a file or a local source, save and restore the state, and export data to Excel or JSON.
 ---
 
 # Data loading and export

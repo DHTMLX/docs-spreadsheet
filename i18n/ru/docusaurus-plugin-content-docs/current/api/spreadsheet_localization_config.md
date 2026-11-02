@@ -1,7 +1,7 @@
 ---
 sidebar_label: localization
 title: Конфигурация localization
-description: Вы можете узнать о конфигурации localization в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Задайте десятичный разделитель и разделитель тысяч, знак валюты, а также форматы даты и времени в DHTMLX Spreadsheet с помощью свойства localization.
 ---
 
 # localization

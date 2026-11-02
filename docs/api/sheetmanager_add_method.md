@@ -1,7 +1,7 @@
 ---
 sidebar_label: add()
 title: add method
-description: You can learn about the add method of the Sheet Manager in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Add a new empty sheet to DHTMLX Spreadsheet with the sheets.add() method, which returns the id of the new sheet (requires the multiSheets option).
 ---
 
 # add()

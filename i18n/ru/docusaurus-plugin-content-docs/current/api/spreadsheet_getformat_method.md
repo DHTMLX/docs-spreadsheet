@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFormat()
 title: Метод getFormat
-description: Вы можете узнать о методе getFormat в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также загружайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Получите числовой формат, применённый к значению ячейки или диапазона ячеек в DHTMLX Spreadsheet, с помощью метода getFormat().
 ---
 
 # getFormat()

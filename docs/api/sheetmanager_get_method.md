@@ -1,7 +1,7 @@
 ---
 sidebar_label: get()
 title: get method
-description: You can learn about the get method of the Sheet Manager in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get a sheet object by its id in DHTMLX Spreadsheet with the sheets.get() method.
 ---
 
 # get()

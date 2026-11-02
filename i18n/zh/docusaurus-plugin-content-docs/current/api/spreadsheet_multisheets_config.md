@@ -1,7 +1,7 @@
 ---
 sidebar_label: multiSheets
 title: multiSheets 配置项
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 multiSheets 配置项。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 multiSheets 属性开启或关闭 DHTMLX Spreadsheet 中的多工作表功能，该属性会显示或隐藏底部的工作表标签栏。
 ---
 
 # multiSheets

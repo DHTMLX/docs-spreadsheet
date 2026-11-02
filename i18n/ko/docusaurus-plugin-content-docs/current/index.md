@@ -2,7 +2,7 @@
 sidebar_label: Spreadsheet 개요
 title: DHTMLX Spreadsheet 개요
 slug: /
-description: DHTMLX 문서에서 JavaScript Spreadsheet 라이브러리의 개요를 확인할 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보고, DHTMLX Spreadsheet 무료 30일 평가판을 다운로드하십시오.
+description: 스프레드시트 데이터를 편집하고 서식을 지정하는 JavaScript 컴포넌트인 DHTMLX Spreadsheet와 툴바, 편집 표시줄, 그리드, 메뉴, 컨텍스트 메뉴를 소개합니다.
 ---
 
 # DHTMLX Spreadsheet 개요 {#dhtmlx-spreadsheet-overview}

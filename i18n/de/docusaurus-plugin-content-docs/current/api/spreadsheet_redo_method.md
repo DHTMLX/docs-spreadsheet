@@ -1,7 +1,7 @@
 ---
 sidebar_label: redo()
 title: redo-Methode
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die redo-Methode. Lesen Sie Entwicklerhandbücher und API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Wenden Sie mit der Methode redo() eine rückgängig gemachte Aktion in DHTMLX Spreadsheet erneut an.
 ---
 
 # redo()

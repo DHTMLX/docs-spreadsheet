@@ -1,7 +1,7 @@
 ---
 sidebar_label: get()
 title: get 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 Sheet Manager 的 get 方法。浏览开发指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的 30 天免费评估版本。
+description: 使用 sheets.get() 方法按 id 获取 DHTMLX Spreadsheet 中的工作表对象。
 ---
 
 # get()

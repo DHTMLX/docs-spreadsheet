@@ -1,7 +1,7 @@
 ---
 sidebar_label: addColumn() 
 title: addColumn method
-description: You can learn about the addColumn method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Add an empty column to DHTMLX Spreadsheet with the addColumn() method, which inserts it at the column of the specified cell and shifts the existing columns to the right.
 ---
 
 # addColumn()

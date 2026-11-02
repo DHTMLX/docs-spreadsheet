@@ -1,7 +1,7 @@
 ---
 sidebar_label: Custom theme
 title: Benutzerdefiniertes Theme
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie, wie Sie ein benutzerdefiniertes Theme erstellen. Durchsuchen Sie Entwickleranleitungen und die API-Referenz, probieren Sie Codebeispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Evaluierungsversion von DHTMLX Spreadsheet herunter.
+description: Erstellen Sie mit CSS-Variablen ein eigenes Farb-Theme für DHTMLX Spreadsheet und wenden Sie es mit der Methode dhx.setTheme() an.
 ---
 
 # Benutzerdefiniertes Theme {#custom-theme}

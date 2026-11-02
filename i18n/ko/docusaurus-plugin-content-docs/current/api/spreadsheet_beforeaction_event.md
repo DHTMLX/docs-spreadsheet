@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeAction
 title: beforeAction 이벤트
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 beforeAction 이벤트에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 체험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드하실 수 있습니다.
+description: DHTMLX Spreadsheet에서 beforeAction 이벤트로 액션을 가로챕니다. 이 이벤트는 액션의 이름과 매개변수를 받으며, 핸들러가 false를 반환하면 액션을 취소합니다.
 ---
 
 # beforeAction

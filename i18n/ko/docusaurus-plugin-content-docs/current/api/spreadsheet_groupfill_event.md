@@ -1,7 +1,7 @@
 ---
 sidebar_label: groupFill
 title: groupFill 이벤트
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 groupFill 이벤트에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 살펴보고, 코드 예제와 라이브 데모를 시험해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판을 다운로드할 수도 있습니다.
+description: DHTMLX Spreadsheet에서 groupFill 이벤트로 셀 자동 채우기를 처리합니다. 이 이벤트는 포커스된 셀과 선택된 셀을 콜백에 전달합니다.
 ---
 
 # groupFill

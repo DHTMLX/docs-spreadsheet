@@ -1,7 +1,7 @@
 ---
 sidebar_label: setSelectedCell() 
 title: setSelectedCell selection 方法
-description: 您可以在 DHTMLX JavaScript Spreadsheet 库的文档中了解 setSelectedCell selection 方法。浏览开发者指南和 API 参考，查看代码示例和在线演示，并下载 DHTMLX Spreadsheet 的免费 30 天评估版本。
+description: 使用 selection.setSelectedCell() 方法在 DHTMLX Spreadsheet 中选择一个单元格、多个单元格或单元格区域，并可选择滚动到该位置。
 ---
 
 # setSelectedCell()

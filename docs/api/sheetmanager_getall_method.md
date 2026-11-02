@@ -1,7 +1,7 @@
 ---
 sidebar_label: getAll()
 title: getAll method
-description: You can learn about the getAll method of the Sheet Manager in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Get all the sheets of DHTMLX Spreadsheet with the sheets.getAll() method, which returns an array of objects with the ids and the names of the sheets.
 ---
 
 # getAll()

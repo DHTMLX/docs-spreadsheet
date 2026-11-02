@@ -1,7 +1,7 @@
 ---
 sidebar_label: fire()
 title: fire events bus 메서드
-description: DHTMLX JavaScript Spreadsheet 라이브러리 문서에서 fire events bus 메서드에 대해 알아볼 수 있습니다. 개발자 가이드와 API 레퍼런스를 탐색하고, 코드 예제와 라이브 데모를 사용해 보세요. DHTMLX Spreadsheet의 무료 30일 평가판도 다운로드하실 수 있습니다.
+description: DHTMLX Spreadsheet에서 events.fire() 메서드로 이벤트 이름과 이벤트 데이터 배열을 전달하여 내부 이벤트를 트리거합니다.
 ---
 
 # fire()

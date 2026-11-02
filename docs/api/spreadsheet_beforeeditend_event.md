@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeEditEnd
 title: beforeEditEnd event
-description: You can learn about the beforeEditEnd event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Check a cell value before editing ends in DHTMLX Spreadsheet with the beforeEditEnd event, and return false to keep the editor open.
 ---
 
 # beforeEditEnd

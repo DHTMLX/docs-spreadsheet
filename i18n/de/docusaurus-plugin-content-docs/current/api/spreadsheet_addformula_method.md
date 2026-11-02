@@ -1,7 +1,7 @@
 ---
 sidebar_label: addFormula()
 title: addFormula-Methode
-description: Sie können mehr über die addFormula-Methode in der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren. Lesen Sie Entwicklerleitfäden und API-Referenz, testen Sie Code-Beispiele und Live-Demos und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Registrieren Sie mit der Methode addFormula() eine benutzerdefinierte Formelfunktion in DHTMLX Spreadsheet, um sie in Zellformeln über ihren Namen in Großbuchstaben zu verwenden.
 ---
 
 # addFormula()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: addRow()
 title: addRow method
-description: You can learn about the addRow method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Add an empty row to DHTMLX Spreadsheet with the addRow() method, which inserts it at the row of the specified cell and shifts the existing rows down.
 ---
 
 # addRow()

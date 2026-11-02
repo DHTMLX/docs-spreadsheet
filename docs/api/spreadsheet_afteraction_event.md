@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterAction
 title: afterAction event
-description: You can learn about the afterAction event in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Handle the afterAction event of DHTMLX Spreadsheet, which fires after an action is executed and receives the name of the action and its parameters, such as the cell and the new and previous values.
 ---
 
 # afterAction

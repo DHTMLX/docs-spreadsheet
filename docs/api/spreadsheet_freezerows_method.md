@@ -1,7 +1,7 @@
 ---
 sidebar_label: freezeRows() 
 title: freezeRows method
-description: You can learn about the freezeRows method in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Freeze rows in DHTMLX Spreadsheet with the freezeRows() method, which fixes the rows up to the specified or the selected cell, on the current or another sheet.
 ---
 
 # freezeRows()

@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSheetChange
 title: Событие afterSheetChange
-description: Вы можете узнать о событии afterSheetChange в документации библиотеки DHTMLX JavaScript Spreadsheet. Просматривайте руководства разработчика и справочник API, изучайте примеры кода и живые демо, а также скачайте бесплатную 30-дневную ознакомительную версию DHTMLX Spreadsheet.
+description: Отслеживайте переключение листов в DHTMLX Spreadsheet с помощью события afterSheetChange, которое получает имя и id нового активного листа.
 ---
 
 # afterSheetChange

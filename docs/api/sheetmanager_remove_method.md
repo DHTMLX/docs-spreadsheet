@@ -1,7 +1,7 @@
 ---
 sidebar_label: remove()
 title: remove method
-description: You can learn about the remove method of the Sheet Manager in the documentation of the DHTMLX JavaScript Spreadsheet library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Spreadsheet.
+description: Remove a sheet by its id from DHTMLX Spreadsheet with the sheets.remove() method, which keeps at least one sheet and switches to another sheet if the active one is removed.
 ---
 
 # remove()

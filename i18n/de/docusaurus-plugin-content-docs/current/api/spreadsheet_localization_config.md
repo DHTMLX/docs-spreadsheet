@@ -1,7 +1,7 @@
 ---
 sidebar_label: localization
 title: localization config
-description: In der Dokumentation der DHTMLX JavaScript Spreadsheet-Bibliothek erfahren Sie mehr über die localization-Konfiguration. Lesen Sie Entwicklerhandbücher und die API-Referenz, probieren Sie Code-Beispiele und Live-Demos aus und laden Sie eine kostenlose 30-Tage-Testversion von DHTMLX Spreadsheet herunter.
+description: Legen Sie mit der Eigenschaft localization das Dezimal- und das Tausendertrennzeichen, das Währungszeichen sowie das Datums- und Zeitformat von DHTMLX Spreadsheet fest.
 ---
 
 # localization
