@@ -15,6 +15,10 @@
     "message": "Spreadsheet 다운로드",
     "description": "The label of footer link with label=Download Spreadsheet linking to https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/download.shtml"
   },
+  "link.item.label.Product page": {
+    "message": "제품 페이지",
+    "description": "The label of footer link with label=Product page linking to https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/"
+  },
   "link.item.label.Examples": {
     "message": "예제",
     "description": "The label of footer link with label=Examples linking to https://snippet.dhtmlx.com/ihtkdcoc?tag=spreadsheet"

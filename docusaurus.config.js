@@ -267,6 +267,11 @@ module.exports = {
                             position: 'right'
                         },
                         {
+                            label: 'Product page',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSpreadsheet/',
+                            position: 'right'
+                        },
+                        {
                             label: 'Examples',
                             href: 'https://snippet.dhtmlx.com/ihtkdcoc?tag=spreadsheet',
                             position: 'right'
